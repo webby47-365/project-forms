@@ -2,9 +2,9 @@
 
 업무·법률·공공·생활 서식을 회원가입 없이 **PDF · Word(DOCX) · 한글(HWPX)** 세 형식으로
 제공하는 무료 서식 사이트. 서식은 명세(YAML) 하나에서 3형식을 동시에 생성하며,
-사이트는 정적 페이지로 빌드해 Cloudflare Pages에 배포한다.
+사이트는 정적 페이지로 빌드해 **GitHub Pages**에 배포한다.
 
-현재 서식 **46종** / 대분류 7개 · 중분류 15개.
+현재 서식 **98종** / 대분류 7개 · 중분류 15개. 서비스 주소는 <https://freeforms.kr>.
 
 ## 폴더 구조
 
@@ -16,7 +16,7 @@ C:\Project_Forms\
 │   ├─ categories.json      대분류·중분류 정의 (URL 키 ↔ 한글 폴더명 매핑)
 │   └─ catalog.json         빌드가 자동 생성하는 서식 메타데이터 (직접 수정 금지)
 ├─ masters\                 서식 DOCX 마스터 (빌드 산출물)
-├─ public\                  ★ 배포 대상 — Cloudflare Pages가 이 폴더를 서비스한다
+├─ public\                  ★ 배포 대상 — GitHub Pages가 이 폴더를 서비스한다
 │   ├─ files\{id}\          {id}.pdf / .docx / .hwpx / preview-1.webp
 │   └─ (빌드 생성) index.html, category\, form\, sitemap.xml, search-index.json
 ├─ templates\               사이트 HTML 템플릿 (Jinja2)
@@ -35,8 +35,11 @@ C:\Project_Forms\
 ├─ 기업\ 법률\ 공공\ 부동산\ 개인\ 교육\ 의료·복지\
 │                           사람이 찾아보기 위한 **내보내기 결과** (정본 아님)
 ├─ logs\                    일일 리포트 기록
+├─ .github\workflows\      [서버] GitHub Actions 배포 워크플로 (보호 경로 — 웹에서 편집)
+├─ CNAME                    커스텀 도메인 (freeforms.kr) — 지우면 도메인이 풀린다
+├─ _deploy_github_pages.md  배포 구성·복구 절차
 ├─ deploy_forms.ps1         ★ [로컬] 검증 → 커밋 → 푸시 → 배포 확인 (한 줄 실행)
-└─ requirements.txt         Cloudflare 빌드용 패키지 (jinja2)
+└─ requirements.txt         빌드용 패키지 (jinja2)
 ```
 
 ## 자주 쓰는 명령
@@ -122,10 +125,12 @@ python -m pip install python-docx python-hwpx jinja2 pyyaml pillow
 
 ## 설계 원칙
 
-- **정본은 로컬.** GitHub는 배포용 미러 겸 형상관리 저장소다. 에이전트가 클라우드에서
+- **정본은 로컬.** GitHub는 배포 엔진 겸 형상관리 저장소다. 에이전트가 클라우드에서
   올린 커밋은 `.\deploy_forms.ps1 -Pull`로 로컬에 반영해 로컬을 최종본으로 유지한다.
 - **매매봇 서버와 완전 분리.** 사이트는 정적 호스팅이므로 기존 가상서버에 포트를 열지
   않고 부하도 주지 않는다.
+- **호스팅은 교체 가능한 부품.** 산출물이 `public/` 정적 파일이므로 GitHub Pages·
+  Cloudflare Pages·Netlify 어디로든 옮길 수 있다. 현재는 GitHub Pages를 쓴다.
 - **3형식은 변환이 아니라 병행 생성.** 완성된 파일 1개에서 다른 형식을 만들어내는 변환은
   불가능하다(한글 포맷을 쓰는 변환기가 없음). 그래서 명세 하나에서 DOCX와 HWPX를 각각
   처음부터 생성한다. PDF는 DOCX에서 뽑는다.

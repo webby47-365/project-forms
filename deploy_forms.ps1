@@ -38,6 +38,13 @@ if (-not $python) { Write-Fail "Python을 찾을 수 없습니다."; exit 1 }
 # ── 0. 원격 변경 수신 (에이전트가 클라우드에서 커밋한 서식을 로컬 정본에 반영) ──
 if ($Pull) {
     Write-Step "0. 원격 변경 수신 (git pull)"
+    # 로컬에 커밋 안 된 변경이 있으면 rebase가 거부된다. 먼저 커밋해 둔다.
+    $dirty = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($dirty)) {
+        Write-Host "  로컬 미커밋 변경을 먼저 커밋합니다." -ForegroundColor Gray
+        git add -A
+        git commit -m "chore: pull 전 로컬 변경 커밋" | Out-Null
+    }
     git pull --rebase
     if ($LASTEXITCODE -ne 0) { Write-Fail "git pull 실패 — 충돌을 먼저 해결하십시오."; exit 1 }
     Write-Ok "로컬 정본을 최신 상태로 갱신"
@@ -103,7 +110,7 @@ if ([string]::IsNullOrWhiteSpace($changes)) {
 
     git push
     if ($LASTEXITCODE -ne 0) { Write-Fail "푸시 실패 — 원격 저장소 인증·연결을 확인하십시오."; exit 1 }
-    Write-Ok "푸시 (Cloudflare Pages 자동 배포가 시작됩니다 · 약 1~2분)"
+    Write-Ok "푸시 (GitHub Actions가 자동 배포합니다 · 약 1~2분)"
 }
 
 # ── 5. 배포 확인 ──
@@ -129,7 +136,7 @@ if ([string]::IsNullOrWhiteSpace($siteUrl)) {
         }
     }
     if ($fail -eq 0) { Write-Ok "배포 확인 ($ok/3)" }
-    else { Write-Host "  [주의] 일부 경로 확인 실패 — Cloudflare 빌드 로그를 확인하십시오." -ForegroundColor Yellow }
+    else { Write-Host "  [주의] 일부 경로 확인 실패 — 저장소 Actions 탭의 배포 로그를 확인하십시오." -ForegroundColor Yellow }
 }
 
 # ── 실행 구분선 ──
