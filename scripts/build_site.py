@@ -27,6 +27,12 @@ ADS = ROOT / "catalog" / "ads.json"
 
 SITE_NAME = "무료서식 다운로드"
 SITE_URL = "https://freeforms.kr"  # canonical·sitemap·JSON-LD에 사용
+
+# 운영자 표기와 문의처. 개인정보처리방침·푸터에 그대로 나간다.
+BIZ_NAME = "(주)프라임리츠"
+BIZ_NUMBER = "576-81-02412"
+CONTACT_EMAIL = "sherlockreturns365@gmail.com"
+PRIVACY_EFFECTIVE = "2026년 9월 14일"  # 처리방침 시행일. 내용을 고칠 때 함께 갱신한다
 # Google Analytics 4 측정 ID. 빈 문자열이면 추적 스크립트를 아예 내보내지 않는다.
 GA4_ID = "G-912YLRDN2B"
 KST = timezone(timedelta(hours=9))
@@ -183,6 +189,10 @@ def build() -> int:
         "total_forms": len(forms),
         "updated": now.strftime("%Y-%m-%d"),
         "ads": ads,
+        "biz_name": BIZ_NAME,
+        "biz_number": BIZ_NUMBER,
+        "contact_email": CONTACT_EMAIL,
+        "privacy_effective": PRIVACY_EFFECTIVE,
     }
     interstitial = bool(ads["download_interstitial"])
     dl_map = {f["id"]: download_urls(f["id"], interstitial) for f in forms}
@@ -280,6 +290,16 @@ def build() -> int:
                       ))
                 pages += 1
 
+    # 3-2) 정책 페이지 — 애드센스 심사는 쿠키 사용 고지를 요구한다
+    write(PUBLIC / "privacy" / "index.html", env.get_template("privacy.html").render(
+        page_title=f"개인정보처리방침 — {SITE_NAME}",
+        page_desc=f"{SITE_NAME}의 개인정보처리방침입니다. 회원가입 없이 이용할 수 있으며, "
+                  f"방문 통계 분석과 광고를 위해 쿠키를 사용합니다.",
+        canonical="/privacy/",
+        **common,
+    ))
+    pages += 1
+
     # 4) 검색 인덱스 (브라우저에서 내려받아 클라이언트 검색에 사용)
     index = {
         "generated_at": now.replace(microsecond=0).isoformat(),
@@ -298,7 +318,7 @@ def build() -> int:
 
     # 5) sitemap.xml / robots.txt
     urls = ["/"] + [f"/category/{c['key']}/{s['key']}/" for c in categories
-                    for s in c["subcategories"]] + [f"/form/{f['id']}/" for f in forms]
+                    for s in c["subcategories"]] + [f"/form/{f['id']}/" for f in forms] + ["/privacy/"]
     today = now.strftime("%Y-%m-%d")
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
