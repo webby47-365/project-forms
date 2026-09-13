@@ -1,0 +1,64 @@
+id: statement-of-facts
+title: 진술서
+category: legal
+subcategory: notice
+tags: [진술서, 사실확인서, 목격 진술서, 확인서 양식, 진술 조서]
+summary: 진술인의 인적사항과 경험한 사실을 육하원칙에 따라 기재하는 진술서 양식입니다.
+usage: >
+  본인이 직접 보거나 겪은 사실을 정리해 제출하는 문서로, 사건 확인이나 각종 심사 자료로
+  사용됩니다. 들은 이야기와 직접 경험한 사실을 구분해 적고, 추측이나 의견은 별도 항목에
+  표시하십시오. 일시·장소·관련자를 구체적으로 적고 시간순으로 서술하면 신뢰도가 높아집니다.
+  증거자료가 있으면 목록에 적고 사본을 함께 첨부합니다. 허위 진술은 법적 책임이 따를 수 있으므로
+  사실만 기재하고, 제출 전 사본을 보관하십시오. 제출처가 요구하는 양식과 첨부 요건을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 진술서
+  - type: subtitle
+    text: 1. 진술인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["연락처", "", "직업", ""]
+      - ["사건과의 관계", "당사자 / 목격자 / 관계인", "제출처", ""]
+  - type: subtitle
+    text: 2. 사건 개요
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["발생일시", "", "발생장소", ""]
+      - ["관련자", "", "", ""]
+  - type: subtitle
+    text: 3. 진술 내용
+  - type: textbox
+    hint: "직접 보고 들은 사실을 시간 순서대로 육하원칙에 따라 기재하십시오. 추측과 사실을 구분해 적으십시오."
+    height_mm: 80
+  - type: subtitle
+    text: 4. 첨부 증거자료
+  - type: table
+    widths: [8, 34, 22, 36]
+    header: ["No", 자료명, 형식, 설명]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+  - type: para
+    text: 위 진술 내용은 본인이 직접 경험한 사실과 다름이 없으며, 허위로 진술한 경우 그에 따른 책임을 감수할 것을 서약합니다.
+    align: center
+    size: 10.5
+  - type: date_line
+  - type: sign_line
+    label: 진술인
+  - type: notice
+    text: 제출처에 따라 요구하는 양식과 첨부 요건이 다를 수 있으므로 제출 전에 확인하십시오.

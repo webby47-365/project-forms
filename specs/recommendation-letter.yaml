@@ -1,0 +1,63 @@
+id: recommendation-letter
+title: 추천서
+category: personal
+subcategory: career
+tags: [추천서, 추천서 양식, 입사 추천서, 학업 추천서, 추천인 의견서]
+summary: 추천인과 피추천인의 관계, 역량 평가와 추천 사유를 기재하는 추천서 양식입니다.
+usage: >
+  취업·진학·장학 심사 등에 제출하기 위해 추천인이 작성하는 서류입니다. 피추천인과 어떤 관계에서
+  얼마나 오래 함께했는지 먼저 밝히면 신뢰도가 높아집니다. 추천 사유는 막연한 칭찬보다 구체적인
+  사례와 결과를 들어 적으십시오. 항목별 평가표는 근거가 되는 사례와 함께 작성하고, 보완이
+  필요한 부분도 균형 있게 쓰면 진정성이 전달됩니다. 추천인의 소속과 직위, 연락처를 정확히 적고
+  서명·날인한 뒤 제출처가 요구하는 방식(밀봉 여부 등)을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 추천서
+  - type: subtitle
+    text: 1. 피추천인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["소속(학교·직장)", "", "직위(학년)", ""]
+      - ["지원 분야", "", "제출처", ""]
+  - type: subtitle
+    text: 2. 추천인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "연락처", ""]
+      - ["피추천인과의 관계", "", "함께한 기간", ""]
+  - type: subtitle
+    text: 3. 역량 평가
+  - type: table
+    widths: [22, 12, 12, 12, 12, 30]
+    header: [평가 항목, 탁월, 우수, 보통, 미흡, 근거 사례]
+    empty_rows: 2
+    row_height_mm: 8
+    body_align: center
+  - type: subtitle
+    text: 4. 추천 사유
+  - type: textbox
+    hint: "구체적인 경험과 성과를 들어 추천 사유를 기재하십시오."
+    height_mm: 56
+  - type: textbox
+    hint: "보완이 필요한 점이나 그 밖에 전하고 싶은 의견을 기재하십시오."
+    height_mm: 22
+  - type: para
+    text: 위와 같이 추천합니다.
+    align: center
+    size: 11
+  - type: date_line
+  - type: sign_line
+    label: 추천인
+  - type: notice
+    text: 제출처에 따라 밀봉 제출이나 직접 발송이 요구될 수 있으므로 제출 방식을 확인하십시오.

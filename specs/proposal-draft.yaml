@@ -1,0 +1,53 @@
+id: proposal-draft
+title: 기안서
+category: corp
+subcategory: admin
+tags: [기안서, 사안건의, 정책건의, 안건]
+summary: 상급자 결재를 위해 업무 방안과 예산, 추진 일정 등을 정리한 기안서 양식입니다.
+usage: >
+  회사 정책 결정이나 주요 업무 추진을 위해 필요한 안건을 상급자에게 건의하는
+  문서입니다. 기안 내용의 목적과 현황, 추진 방안, 기대 효과를 명확히 기재하고
+  필요시 첨부자료를 함께 제출합니다. 담당자부터 대표까지 단계별 결재를 거쳐야 합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 기안서
+    spaced: true
+  - type: spacer
+    height_pt: 6
+  - type: grid
+    widths: [14, 21, 14, 21, 14, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["기안일자", "", "기안부서", "", "기안자", ""]
+      - ["안건명", "", "", "", "", ""]
+  - type: subtitle
+    text: 1. 안건 개요
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["현황", "", "문제점", ""]
+      - ["추진근거", "", "", ""]
+  - type: subtitle
+    text: 2. 추진 방안
+  - type: textbox
+    hint: "구체적인 추진 방법, 일정, 예산 등을 기재하십시오."
+    height_mm: 30
+  - type: subtitle
+    text: 3. 기대 효과 및 예상 비용
+  - type: textbox
+    hint: "시행에 따른 기대 효과와 소요 예산을 구체적으로 기재하십시오."
+    height_mm: 20
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 1, 2, 3]
+    row_height_mm: 12
+    rows:
+      - ["담당자 (인)", "팀장 (인)", "임원 (인)", "대표 (인)"]

@@ -1,0 +1,35 @@
+id: checklist
+title: 체크리스트 (범용)
+category: personal
+subcategory: life
+tags: [체크리스트, 할일, 항목관리, 일정체크, 과제]
+summary: 프로젝트, 행사, 일상 업무의 실행 과제를 항목별로 정리하고 진행 상황을 추적하는 범용 양식입니다.
+usage: >
+  프로젝트 진행, 행사 준비, 이사, 이직 준비 등 다양한 상황에서 할 일을 체계적으로
+  관리합니다. 각 항목마다 담당자, 마감 기한, 완료 여부를 기재하여 누가, 언제까지
+  무엇을 해야 하는지 한눈에 파악할 수 있습니다. 비고 란에는 진행 상황이나 주의사항을
+  간단히 메모하여 팀 협력 시 소통을 원활하게 합니다.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 체크리스트
+    spaced: false
+
+  - type: grid
+    widths: [100]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["체크리스트 제목: "]
+
+  - type: table
+    widths: [8, 30, 18, 18, 10, 16]
+    header: ["No", 항목, 담당자, 기한, "완료□", 비고]
+    empty_rows: 14
+    row_height_mm: 7.5
+
+  - type: notice
+    text: 완료 여부 열에 체크 표시를 하고, 진행 중인 항목은 진행률을 기재하십시오.

@@ -1,0 +1,66 @@
+id: household-budget
+title: 가계부 (월간)
+category: personal
+subcategory: life
+tags: [가계부, 월간지출관리, 가계관리, 생활비, 예산]
+summary: 월별 수입·지출을 항목별·분류별로 기록하고 월말 수지를 정산하는 가계부 양식입니다.
+usage: >
+  가정의 월간 재정 상황을 체계적으로 관리하는 양식입니다. 수입란에는 급여·용돈·기타수입을,
+  지출란에는 날짜·항목·분류·결제수단·금액을 기재합니다. 분류는 식비·교육·주거·건강·오락·교통 등
+  생활 패턴에 맞게 작성하고, 월말에 총 수입·총 지출·잔액을 계산하여 다음달 예산 수립의 근거로 삼습니다.
+source: original
+featured: false
+target_pages: 2
+
+blocks:
+  - type: doc_title
+    text: 가계부
+    spaced: false
+
+  - type: grid
+    widths: [30, 35, 35]
+    label_cols: [0]
+    row_height_mm: 7
+    rows:
+      - ["작성월", "", ""]
+      - ["기간", "~", ""]
+
+  - type: subtitle
+    text: 1. 월간 수입
+
+  - type: table
+    widths: [15, 40, 25, 20]
+    header: ["No", 항목, 금액(원), 비고]
+    empty_rows: 5
+    row_height_mm: 7.5
+
+  - type: grid
+    widths: [60, 40]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["월간 총 수입", ""]
+
+  - type: subtitle
+    text: 2. 월간 지출
+
+  - type: table
+    widths: [12, 18, 18, 15, 17, 20]
+    header: ["날짜", 항목, 분류, 결제수단, "금액(원)", 비고]
+    empty_rows: 15
+    row_height_mm: 7
+
+  - type: subtitle
+    text: 3. 월말 정산
+
+  - type: grid
+    widths: [25, 20, 25, 20, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 9
+    rows:
+      - ["월간 총 수입", "", "월간 총 지출", "", ""]
+      - ["", "", "", "", ""]
+      - ["월말 잔액 (수입-지출)", "", "", "", ""]
+
+  - type: notice
+    text: 지출 분류는 식비, 교육, 주거, 건강, 교통, 오락, 저축 등으로 구분하여 작성하면 가계 관리에 도움이 됩니다.

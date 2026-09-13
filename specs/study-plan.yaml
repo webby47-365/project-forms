@@ -1,0 +1,52 @@
+id: study-plan
+title: 학습계획표 (주간)
+category: edu
+subcategory: school
+tags: [학습계획, 시간표, 주간계획, 공부, 자기계발]
+summary: 요일별·시간대별 학습 활동을 배치하고 주간 목표와 회고를 기록하는 주간 학습계획 양식입니다.
+usage: >
+  매 주 시작할 때 요일과 시간대별 공부할 과목·내용을 미리 계획하면 학습 시간을
+  효율적으로 배분할 수 있습니다. 주간 목표 란에는 이번 주 달성할 학습 목표를,
+  주간 회고 란에는 실제 진행 상황, 어려웠던 점, 다음 주 개선 방안을 작성하여
+  학습 효율을 점진적으로 높일 수 있습니다.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 학습계획표
+    spaced: false
+
+  - type: grid
+    widths: [50, 50]
+    label_cols: [0]
+    row_height_mm: 7
+    rows:
+      - ["계획 기간", ""]
+
+  - type: subtitle
+    text: 1. 주간 학습 일정
+
+  - type: table
+    widths: [12, 13, 13, 13, 13, 13, 13, 10]
+    header: ["시간", 월, 화, 수, 목, 금, 토, 일]
+    empty_rows: 10
+    row_height_mm: 7
+
+  - type: subtitle
+    text: 2. 주간 목표
+
+  - type: textbox
+    hint: "이번 주 달성하고자 하는 학습 목표를 구체적으로 작성하십시오."
+    height_mm: 20
+
+  - type: subtitle
+    text: 3. 주간 회고
+
+  - type: textbox
+    hint: "실제 진행 상황, 어려웠던 점, 개선할 사항을 작성하십시오."
+    height_mm: 25
+
+  - type: notice
+    text: 계획에 맞춰 진행하지 못한 부분은 그 이유를 분석하고, 다음 주 계획에 반영하십시오.

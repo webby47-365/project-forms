@@ -1,0 +1,53 @@
+id: work-journal
+title: 업무일지
+category: corp
+subcategory: admin
+tags: [업무일지, 일일업무보고, 업무보고서, 일지]
+summary: 일일 업무 진행 현황과 주요 성과, 당일 처리 건수, 예정 업무 등을 기록하는 업무일지 양식입니다.
+usage: >
+  매일 업무 진행 상황을 체계적으로 기록하는 서류입니다. 완료한 업무, 진행 중인
+  업무, 다음 날 예정 업무를 구분하여 작성하고 주요 이슈나 건의사항을 별도로
+  기재합니다. 주 단위 또는 월 단위로 종합하여 상사에게 보고하는 용도로 활용됩니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 업무일지
+    spaced: true
+  - type: spacer
+    height_pt: 6
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "직책", ""]
+      - ["기록일자", "", "부서", ""]
+  - type: subtitle
+    text: 1. 금일 완료 업무
+  - type: table
+    widths: [5, 30, 40, 25]
+    header: ["No", "업무명", "처리 내용", "비고"]
+    empty_rows: 6
+    row_height_mm: 9
+  - type: subtitle
+    text: 2. 진행 중 업무
+  - type: table
+    widths: [5, 30, 40, 25]
+    header: ["No", "업무명", "진행 상황", "예상 완료일"]
+    empty_rows: 7
+    row_height_mm: 9
+  - type: subtitle
+    text: 3. 주요 이슈 및 건의사항
+  - type: textbox
+    hint: "금일 처리 중 발생한 주요 이슈나 건의사항을 기재하십시오."
+    height_mm: 24
+  - type: para
+    text: 위 업무일지가 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: sign_line
+    label: 작성자

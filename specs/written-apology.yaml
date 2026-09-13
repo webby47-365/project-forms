@@ -1,0 +1,62 @@
+id: written-apology
+title: 시말서
+category: corp
+subcategory: hr
+tags: [시말서, 경위서, 사유서, 반성문, 사내 징계]
+summary: 업무상 발생한 사건의 경위와 원인·재발방지 대책을 기재해 제출하는 시말서 양식입니다.
+usage: >
+  업무 과실이나 사규 위반이 발생했을 때 본인이 경위를 정리해 제출하는 사내 서류입니다.
+  사건 일시·장소·관련자를 먼저 사실대로 적고, 경위는 시간순으로 육하원칙에 따라 작성하십시오.
+  변명보다 원인 분석과 재발방지 대책을 구체적으로 쓰는 것이 좋습니다. 손실이 발생한 경우 금액과
+  처리 경과를 함께 적습니다. 제출 전 사본을 보관하고, 징계 절차와 연결되는 경우 사실관계가 다른
+  부분은 서명 전에 정정 요청하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 시말서
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["소속(부서)", "", "직위", ""]
+      - ["성명", "", "사번", ""]
+      - ["발생일시", "", "발생장소", ""]
+  - type: subtitle
+    text: 1. 사건 개요
+  - type: textbox
+    hint: "발생한 사건을 한두 문장으로 요약하십시오."
+    height_mm: 20
+  - type: subtitle
+    text: 2. 경위
+  - type: textbox
+    hint: "언제·어디서·누가·무엇을·어떻게·왜 발생했는지 시간순으로 사실대로 기재하십시오."
+    height_mm: 48
+  - type: subtitle
+    text: 3. 원인 및 재발방지 대책
+  - type: textbox
+    hint: "근본 원인과 앞으로의 개선·재발방지 방안을 구체적으로 기재하십시오."
+    height_mm: 36
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["피해·손실 금액", "", "처리 경과", ""]
+  - type: para
+    text: 위 내용은 사실과 다름이 없으며, 동일한 사안이 재발하지 않도록 성실히 근무할 것을 서약합니다.
+    align: center
+    size: 10.5
+  - type: date_line
+  - type: sign_line
+    label: 작성자
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 대표이사 귀하
+    align: center
+    size: 12
+  - type: notice
+    text: 제출 전 사본을 보관하시고, 기재 내용이 사실과 다른 부분이 있으면 서명 전에 정정하십시오.

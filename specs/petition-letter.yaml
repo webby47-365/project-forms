@@ -1,0 +1,61 @@
+id: petition-letter
+title: 탄원서
+category: legal
+subcategory: litigation
+tags: [탄원서, 선처탄원서, 반성문, 진정서, 정상참작]
+summary: 사건 관계자나 지인이 선처를 요청하는 사정을 기재해 제출하는 탄원서입니다.
+usage: >
+  수사기관이나 법원에 정상 참작을 요청할 때 제출하는 서면입니다. 작성자와 당사자의 관계를
+  분명히 밝히고, 당사자의 평소 생활과 사건 이후의 태도를 구체적인 사실로 적는 편이 설득력이
+  있습니다. 감정적 호소만 나열하거나 사건 자체를 부정하는 내용은 오히려 불리하게 작용할 수
+  있습니다. 서명과 연락처를 반드시 기재해야 진정성이 인정되며, 신분증 사본을 함께 제출하는
+  경우도 있습니다. 본 서식은 참고용이며 제출처의 요구 사항을 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 탄원서
+  - type: subtitle
+    text: 사건 및 당사자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사건번호", "", "담당 재판부 / 수사관", ""]
+      - ["당사자 성명", "", "작성자와의 관계", ""]
+  - type: subtitle
+    text: 작성자
+  - type: grid
+    widths: [14, 26, 14, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 4]
+    rows:
+      - ["성명", "", "생년월일", "", "연락처"]
+      - ["주소", "", "", "", ""]
+      - ["직업", "", "당사자와 알게 된 기간", "", "년"]
+  - type: subtitle
+    text: 탄원 내용
+  - type: textbox
+    hint: "당사자의 평소 생활, 사건 이후의 태도, 선처를 구하는 사정을 구체적인 사실로 기재하십시오. 사건 자체를 부정하는 내용은 피하십시오."
+    height_mm: 78
+  - type: para
+    text: 위와 같은 사정을 참작하여 선처해 주시기를 간곡히 부탁드립니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: sign_line
+    label: 작성자
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: "                        귀중"
+    align: center
+    size: 12
+    bold: true
+  - type: notice
+    text: 작성자의 서명과 연락처가 없으면 진정성이 인정되지 않을 수 있습니다. 제출처가 신분증 사본이나 인감을 요구하는지 미리 확인하십시오. 본 서식은 참고용입니다.

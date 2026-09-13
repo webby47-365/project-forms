@@ -1,0 +1,71 @@
+id: expense-approval
+title: 지출결의서
+category: corp
+subcategory: finance
+tags: [지출결의서, 지출승인, 경비결의, 결의서, expense]
+summary: 지출 사유·금액·결재를 기재하여 지출 승인을 요청하는 지출결의서입니다.
+usage: >
+  회사의 경비를 지출하기 전에 상급자의 승인을 받기 위한 문서입니다. 지출의 목적·내용·근거
+  자료(견적서·송장·영수증)를 명확히 기재해야 결의 심사가 신속하고, 사후 검증할 때도
+  필요합니다. 지출액은 공급가액과 부가세를 명확히 분리하여 기재하고, 담당자 → 팀장 → 임원 →
+  대표 순서로 결재를 받으며, 제출처 규정에 따른 결재 필수 범위를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 지출결의서
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["결의일자", "", "결의번호", ""]
+      - ["신청부서", "", "신청자", ""]
+      - ["지출일예정일", "", "예산과목", ""]
+  - type: subtitle
+    text: 지출 내용
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["지출 사유", ""]
+      - ["지출 내용", ""]
+  - type: table
+    widths: [12, 35, 15, 12, 12, 14]
+    header: ["No", 내용, 규격, 수량, 단가, 공급가액]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+  - type: grid
+    widths: [40, 20, 20, 20]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["공급가액 소계", "", "", ""]
+      - ["부가세(10%)", "", "", ""]
+      - ["합계금액", "", "", ""]
+      - ["금액(한글)", "", "", ""]
+  - type: subtitle
+    text: 첨부 증빙서류
+  - type: kv_list
+    items:
+      - "□ 견적서 / 발주서"
+      - "□ 영수증 / 인수증"
+      - "□ 통장 사본"
+      - "□ 기타 (              )"
+  - type: textbox
+    hint: "특기사항이 있으면 기재하십시오."
+    height_mm: 12
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 20
+    rows:
+      - ["담당자", "팀장", "임원", "대표"]
+      - ["서명(날인)", "서명(날인)", "서명(날인)", "서명(날인)"]
+  - type: notice
+    text: 지출 승인 후 영수증·기타 증명서류는 회계팀에 제출하고, 본 결의서 사본을 첨부하여 보관하십시오.

@@ -1,0 +1,162 @@
+id: articles-of-incorporation
+title: 정관 (주식회사 표준)
+category: corp
+subcategory: startup
+tags: [정관, 회사정관, 주식회사정관, 법인설립서류, 표준정관]
+summary: 상법상 절대적 기재사항을 포함한 주식회사 표준 정관 양식입니다.
+usage: >
+  법인 설립등기 시 반드시 첨부하는 서류로, 상호·목적·발행할 주식 총수·1주 금액·본점 소재지
+  등 상법이 정한 절대적 기재사항이 빠지면 정관 자체가 무효가 됩니다. 설립 시 정관은 공증을
+  받아야 하는 경우가 있으므로 자본금 규모와 발기인 수에 따른 요건을 먼저 확인하십시오.
+  사업 목적은 실제 영위할 업종을 빠뜨리지 않고 넓게 기재하는 편이 나중에 변경등기 비용을
+  줄입니다. 본 서식은 표준 골격이므로 개별 회사 사정에 맞게 수정하고 전문가 검토를 받으십시오.
+source: law-standard
+source_note: 상법 제289조(정관의 작성, 절대적 기재사항)를 참고하여 자체 제작
+featured: false
+target_pages: 3
+blocks:
+  - type: doc_title
+    text: 정관
+  - type: para
+    text: 제1장 총칙
+    align: center
+    size: 11.5
+    bold: true
+    space_after: 4
+  - type: article
+    heading: 제1조 (상호)
+    lines:
+      - "본 회사는 주식회사                                        (이하 \"회사\")라 한다."
+  - type: article
+    heading: 제2조 (목적)
+    lines:
+      - "회사는 다음의 사업을 영위함을 목적으로 한다."
+      - "1.                                                                       "
+      - "2.                                                                       "
+      - "3. 위 각 호에 부대하는 사업"
+  - type: article
+    heading: 제3조 (본점의 소재지)
+    lines:
+      - "회사의 본점은                              에 둔다."
+      - "회사는 이사회의 결의로 필요한 곳에 지점·출장소·사무소를 둘 수 있다."
+  - type: article
+    heading: 제4조 (공고방법)
+    lines:
+      - "회사의 공고는 회사의 인터넷 홈페이지에 게재한다. 다만 부득이한 사유로 게재할 수 없을 때에는                        에 게재한다."
+  - type: para
+    text: 제2장 주식
+    align: center
+    size: 11.5
+    bold: true
+    space_after: 4
+  - type: article
+    heading: 제5조 (발행예정 주식의 총수)
+    lines:
+      - "회사가 발행할 주식의 총수는                    주로 한다."
+  - type: article
+    heading: 제6조 (1주의 금액)
+    lines:
+      - "회사가 발행하는 주식 1주의 금액은 금            원으로 한다."
+  - type: article
+    heading: 제7조 (설립 시 발행하는 주식의 총수)
+    lines:
+      - "회사가 설립 시에 발행하는 주식의 총수는                    주로 한다."
+  - type: article
+    heading: 제8조 (주식의 종류)
+    lines:
+      - "회사가 발행할 주식은 기명식 보통주식으로 한다."
+  - type: article
+    heading: 제9조 (주식의 양도)
+    lines:
+      - "주식의 양도는 이사회의 승인을 받아야 한다. (양도 제한을 두지 않는 경우 본 조를 삭제한다)"
+  - type: article
+    heading: 제10조 (명의개서 및 주주명부)
+    lines:
+      - "회사는 주주명부를 본점에 비치하고, 주식 취득자의 청구에 따라 명의개서를 한다."
+  - type: para
+    text: 제3장 주주총회
+    align: center
+    size: 11.5
+    bold: true
+    space_after: 4
+  - type: article
+    heading: 제11조 (소집)
+    lines:
+      - "정기주주총회는 매 사업연도 종료 후 3개월 내에, 임시주주총회는 필요에 따라 소집한다."
+      - "주주총회는 대표이사가 이사회의 결의에 따라 소집한다."
+  - type: article
+    heading: 제12조 (결의방법)
+    lines:
+      - "주주총회의 결의는 법령에 다른 정함이 있는 경우를 제외하고 출석한 주주의 의결권의 과반수와 발행주식총수의 4분의 1 이상의 수로써 한다."
+  - type: para
+    text: 제4장 이사·감사
+    align: center
+    size: 11.5
+    bold: true
+    space_after: 4
+  - type: article
+    heading: 제13조 (이사와 감사의 수)
+    lines:
+      - "회사의 이사는      명 이상, 감사는      명 이상으로 한다. (자본금 10억원 미만인 회사는 이사 1명 또는 2명, 감사를 두지 않을 수 있다)"
+  - type: article
+    heading: 제14조 (임기)
+    lines:
+      - "이사의 임기는 3년, 감사의 임기는 취임 후 3년 내의 최종 결산기에 관한 정기주주총회 종결 시까지로 한다."
+  - type: article
+    heading: 제15조 (대표이사)
+    lines:
+      - "회사는 이사회의 결의로 대표이사 1명을 선임하며, 대표이사는 회사를 대표한다."
+  - type: article
+    heading: 제16조 (보수와 퇴직금)
+    lines:
+      - "이사와 감사의 보수는 주주총회의 결의로 정하고, 퇴직금은 주주총회의 결의를 거친 임원퇴직금 규정에 따른다."
+  - type: para
+    text: 제5장 계산
+    align: center
+    size: 11.5
+    bold: true
+    space_after: 4
+  - type: article
+    heading: 제17조 (사업연도)
+    lines:
+      - "회사의 사업연도는 매년      월      일부터      월      일까지로 한다."
+  - type: article
+    heading: 제18조 (이익배당)
+    lines:
+      - "이익배당은 주주총회의 결의로 정하며, 매 사업연도 말 현재 주주명부에 기재된 주주에게 지급한다."
+  - type: para
+    text: 부칙
+    align: center
+    size: 11.5
+    bold: true
+    space_after: 4
+  - type: article
+    heading: 제19조 (시행일)
+    lines:
+      - "본 정관은 회사의 설립등기일부터 시행한다."
+  - type: article
+    heading: 제20조 (발기인의 성명과 주소)
+    lines:
+      - "회사 설립 시의 발기인의 성명·주소는 아래와 같다."
+  - type: table
+    widths: [26, 44, 30]
+    header: [성명, 주소, 인수 주식수]
+    empty_rows: 3
+    row_height_mm: 9
+    body_align: center
+  - type: para
+    text: 위와 같이 주식회사를 설립하기 위하여 발기인 전원의 동의로 본 정관을 작성하고 발기인이 기명날인한다.
+    align: both
+    size: 10
+    space_after: 2
+  - type: date_line
+  - type: table
+    widths: [30, 40, 30]
+    header: [구분, 성명, 서명 또는 인]
+    rows:
+      - ["발기인", "", ""]
+    empty_rows: 2
+    row_height_mm: 11
+    body_align: center
+  - type: notice
+    text: 상법상 절대적 기재사항(상호·목적·발행할 주식 총수·1주 금액·설립 시 발행 주식수·본점 소재지·공고방법·발기인의 성명과 주소)이 빠지면 정관이 무효입니다. 설립등기 전 법무사 또는 변호사의 검토를 받으십시오.

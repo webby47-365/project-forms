@@ -1,0 +1,27 @@
+{
+  "_comment": "애드센스 설정. 승인 전에는 enabled를 false로 두면 광고 코드가 전혀 나가지 않습니다.",
+  "enabled": false,
+  "client": "",
+  "auto_ads": true,
+  "download_interstitial": false,
+  "download_delay_sec": 2,
+  "slots": {
+    "main_top": "",
+    "main_mid": "",
+    "category_side": "",
+    "category_bottom": "",
+    "detail_body": "",
+    "download_page": "",
+    "footer": ""
+  },
+  "_slots_guide": {
+    "main_top": "메인 히어로 바로 아래 (가로 반응형)",
+    "main_mid": "대표 10종과 최근 추가 서식 사이 (가로 반응형)",
+    "category_side": "카테고리 화면 좌측 사이드바 하단 (PC 전용 세로형)",
+    "category_bottom": "카테고리 카드 그리드 아래 (가로 반응형)",
+    "detail_body": "상세 화면 작성 요령 아래 (가로 반응형) — 다운로드 버튼과 충분히 떨어뜨려 오클릭 방지",
+    "download_page": "다운로드 중간 페이지 (가로 반응형)",
+    "footer": "푸터 바로 위 (가로 반응형)"
+  },
+  "_note": "광고는 페이지당 2~3개만 노출됩니다. 다운로드 버튼 바로 옆·아래에는 광고를 두지 않습니다(애드센스 오클릭 유도 금지). download_interstitial을 true로 하면 다운로드가 중간 페이지를 경유하며 파일은 자동으로 내려갑니다."
+}

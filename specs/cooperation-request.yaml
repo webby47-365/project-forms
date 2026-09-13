@@ -1,0 +1,72 @@
+id: cooperation-request
+title: 협조전
+category: corp
+subcategory: admin
+tags: [협조전, 업무협조 요청서, 부서간 협조, 사내 공문, 협조 요청]
+summary: 수신 부서에 협조가 필요한 업무의 내용과 기한을 정리해 요청하는 사내 협조전입니다.
+usage: >
+  다른 부서의 인력·자료·설비 지원이 필요할 때 공식적으로 요청하는 사내 문서입니다. 협조 요청
+  사항은 "무엇을, 언제까지, 어떤 형태로" 받고 싶은지 한 줄로 명확히 적어야 회신이 빠릅니다.
+  요청 배경과 목적을 함께 적어 수신 부서가 우선순위를 판단할 수 있게 하고, 회신 기한은 여유
+  있게 설정하십시오. 첨부자료가 있으면 목록 표에 빠짐없이 기재하고, 결재 후 수신 부서에
+  전달한 뒤 사본을 보관합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 협조전
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["수신", "", "발신(부서)", ""]
+      - ["문서번호", "", "시행일자", ""]
+      - ["제목", "", "", ""]
+      - ["담당자", "", "연락처", ""]
+  - type: subtitle
+    text: 1. 요청 배경 및 목적
+  - type: textbox
+    hint: "협조가 필요하게 된 배경과 업무 목적을 간단히 기재하십시오."
+    height_mm: 26
+  - type: subtitle
+    text: 2. 협조 요청 사항
+  - type: table
+    widths: [8, 32, 22, 18, 20]
+    header: ["No", 요청 내용, 요청 사유, 희망 완료일, 비고]
+    empty_rows: 2
+    row_height_mm: 8
+    body_align: center
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["회신 기한", "", "회신 방법", "공문 / 이메일 / 사내 시스템"]
+  - type: subtitle
+    text: 3. 첨부자료
+  - type: table
+    widths: [8, 42, 20, 30]
+    header: ["No", 자료명, 형식, 비고]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+  - type: para
+    text: 위와 같이 업무 협조를 요청드리오니 조치하여 주시기 바랍니다.
+    align: center
+    size: 11
+  - type: date_line
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [16, 21, 21, 21, 21]
+    label_cols: [0]
+    row_height_mm: 16
+    rows:
+      - ["결재", "담당", "팀장", "임원", "대표"]
+      - ["", "", "", "", ""]
+  - type: notice
+    text: 부서 간 협의가 필요한 사항은 사전 협의 후 문서로 확정하는 것이 혼선을 줄입니다.

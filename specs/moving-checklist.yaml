@@ -1,0 +1,66 @@
+id: moving-checklist
+title: 이사 체크리스트
+category: personal
+subcategory: life
+tags: [이사 체크리스트, 이사 준비 목록, 이사 점검표, 이삿짐 체크, 이사 할일]
+summary: 이사 전후로 처리할 일과 비용·연락처를 시기별로 정리해 점검하는 체크리스트입니다.
+usage: >
+  이사 준비부터 정리까지 빠뜨리기 쉬운 일을 시기별로 나누어 점검하는 표입니다. 이사 한 달 전에는
+  업체 견적과 계약, 일주일 전에는 공과금 정산과 주소 변경, 당일에는 파손 확인과 잔금 처리처럼
+  시기에 맞춰 항목을 배치했습니다. 담당과 기한을 정해 적어 두면 가족이나 동거인과 역할을 나누기
+  쉽습니다. 비용 항목에는 예상액과 실제 지출을 함께 적어 예산을 관리하고, 관련 연락처는 한곳에
+  모아 두면 당일에 헤매지 않습니다. 완료한 항목은 표시해 진행 상황을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 이사 체크리스트
+    spaced: false
+  - type: grid
+    widths: [16, 22, 14, 20, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["이사 예정일", "", "이사 업체", "", "연락처", ""]
+      - ["현 주소", "", "새 주소", "", "작성일", ""]
+  - type: subtitle
+    text: 1. 이사 전 (1개월~1주 전)
+  - type: table
+    widths: [8, 38, 16, 16, 12, 10]
+    header: ["No", 할 일, 담당, 기한, 완료, 비고]
+    empty_rows: 2
+    row_height_mm: 7
+    body_align: center
+  - type: subtitle
+    text: 2. 이사 당일 및 이후
+  - type: table
+    widths: [8, 38, 16, 16, 12, 10]
+    header: ["No", 할 일, 담당, 기한, 완료, 비고]
+    empty_rows: 2
+    row_height_mm: 7
+    body_align: center
+  - type: subtitle
+    text: 3. 비용 관리
+  - type: table
+    widths: [8, 30, 20, 20, 22]
+    header: ["No", 항목, 예상 금액, 실제 지출, 비고]
+    empty_rows: 2
+    row_height_mm: 7
+    body_align: center
+  - type: subtitle
+    text: 4. 관련 연락처
+  - type: table
+    widths: [26, 26, 24, 24]
+    header: [구분, 업체·기관명, 담당자, 연락처]
+    empty_rows: 4
+    row_height_mm: 7
+    body_align: center
+  - type: textbox
+    hint: "특이사항 — 사다리차 예약, 엘리베이터 사용 신청, 폐기물 처리 등을 기재하십시오."
+    height_mm: 18
+  - type: date_line
+  - type: sign_line
+    label: 작성자
+  - type: notice
+    text: 전입신고와 공과금 정산은 기한이 정해져 있으므로 일정에 맞춰 처리하십시오.

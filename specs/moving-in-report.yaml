@@ -1,0 +1,77 @@
+id: moving-in-report
+title: 전입신고서
+category: public
+subcategory: civil
+tags: [전입신고서, 전입신고, 주소이전 신고, 세대주 변경, 이사 신고]
+summary: 새 거주지 주소와 전입 세대원 정보를 기재해 주소 이전을 신고하는 전입신고서입니다.
+usage: >
+  이사한 뒤 새 주소지를 신고할 때 작성하는 서식으로, 정부24나 관할 주민센터에 제출합니다.
+  전입일과 새 주소를 정확히 적고, 함께 이사한 세대원을 빠짐없이 기재하십시오. 기존 세대에
+  합가하는 경우 세대주와의 관계를 표시하고 세대주 확인이 필요합니다. 우편물 주소 이전 서비스나
+  세대주 변경을 함께 신청하려면 해당 칸에 표시하십시오. 전입신고는 정해진 기간 내에 해야 하며,
+  임차인은 확정일자와 함께 처리하는 경우가 많으니 필요 서류를 미리 확인하십시오. 신고 요건과
+  기한은 관할 주민센터 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 전입신고서
+  - type: subtitle
+    text: 1. 신고인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "세대주와의 관계", ""]
+  - type: subtitle
+    text: 2. 전입 주소
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 3]
+      - [1, 1, 1, 3]
+    rows:
+      - ["전(종전) 주소", "", "", ""]
+      - ["새(전입) 주소", "", "", ""]
+      - ["전입일자", "", "세대 구성", "신규 세대 / 기존 세대 합가"]
+      - ["새 세대주 성명", "", "연락처", ""]
+  - type: subtitle
+    text: 3. 전입 세대원
+  - type: table
+    widths: [8, 20, 18, 18, 18, 18]
+    header: ["No", 성명, 생년월일, 세대주와의 관계, 전입 여부, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+  - type: subtitle
+    text: 4. 함께 신청할 사항
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["우편물 주소 이전", "신청 / 미신청", "세대주 변경", "신청 / 미신청"]
+      - ["초등학교 배정 정보", "신청 / 미신청", "기타", ""]
+  - type: textbox
+    hint: "기타 신고사항 — 다가구주택 상세주소, 임대차 관련 사항 등을 기재하십시오."
+    height_mm: 18
+  - type: para
+    text: 위와 같이 전입을 신고합니다.
+    align: center
+    size: 11
+  - type: date_line
+  - type: sign_line
+    labels: ["신고인", "세대주 확인"]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: ○○시장 · 군수 · 구청장 귀하
+    align: center
+    size: 11
+  - type: notice
+    text: 본 서식은 참고용입니다. 신고 기한과 필요 서류, 확정일자 동시 신청 여부는 관할 주민센터 또는 정부24 안내를 확인하십시오.

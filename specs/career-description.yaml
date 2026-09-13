@@ -1,0 +1,69 @@
+id: career-description
+title: 경력기술서
+category: personal
+subcategory: career
+tags: [경력기술서, 경력 소개서, 업무 경력서, 이직 서류, 경력사항 정리]
+summary: 회사별 담당업무와 프로젝트 수행 내용·성과를 구체적으로 정리하는 경력기술서입니다.
+usage: >
+  이직이나 경력직 지원 시 이력서와 함께 제출하는 서류로, 무엇을 어떻게 해서 어떤 결과를 냈는지
+  보여 주는 문서입니다. 회사별 경력은 최근 순으로 적고, 담당업무는 나열보다 역할과 범위가
+  드러나게 쓰십시오. 프로젝트는 기간·역할·사용 기술·성과를 한 묶음으로 정리하고, 성과는 가능한
+  한 수치로 표현하면 설득력이 높아집니다. 지원 직무와 관련 없는 경력은 간략히 줄이고 핵심
+  경험에 분량을 배분하십시오. 제출 전 회사명·기간·직위가 이력서와 일치하는지 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 경력기술서
+  - type: grid
+    widths: [16, 22, 14, 20, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "지원 직무", "", "연락처", ""]
+      - ["총 경력", "     년     개월", "이메일", "", "작성일", ""]
+  - type: subtitle
+    text: 1. 경력 요약
+  - type: textbox
+    hint: "핵심 역량과 대표 성과를 3~4줄로 요약하십시오."
+    height_mm: 24
+  - type: subtitle
+    text: 2. 경력 사항
+  - type: table
+    widths: [18, 20, 14, 14, 20, 14]
+    header: [회사명, 근무기간, 부서, 직위, 담당업무, 재직여부]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+  - type: subtitle
+    text: 3. 주요 프로젝트 및 성과
+  - type: table
+    widths: [8, 22, 16, 12, 22, 20]
+    header: ["No", 프로젝트명, 기간, 역할, 수행 내용, 성과]
+    empty_rows: 2
+    row_height_mm: 9
+  - type: subtitle
+    text: 4. 보유 기술 및 자격
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 3]
+      - [1, 1, 1, 3]
+    rows:
+      - ["직무 관련 기술", "", "", ""]
+      - ["자격·어학", "", "", ""]
+  - type: textbox
+    hint: "추가로 강조하고 싶은 경험이나 교육 이수 내역을 기재하십시오."
+    height_mm: 20
+  - type: para
+    text: 위 기재 내용은 사실과 다름이 없습니다.
+    align: center
+    size: 10.5
+  - type: date_line
+  - type: sign_line
+    label: 작성자
+  - type: notice
+    text: 회사명·근무기간·직위는 이력서 및 경력증명서와 일치하도록 작성하십시오.

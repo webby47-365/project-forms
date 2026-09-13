@@ -1,0 +1,51 @@
+id: supply-purchase-request
+title: 비품구매요청서
+category: corp
+subcategory: admin
+tags: [비품구매, 구매요청서, 물품요청, 구매신청]
+summary: 업무용 비품 구매를 요청하는 서류로, 품목·규격·수량·예상단가·용도를 기재하는 양식입니다.
+usage: >
+  업무 중 필요한 비품을 구매하기 위해 사전에 제출하는 신청서입니다. 구매 품목의
+  규격과 수량을 명확히 지정하고 예상 단가와 소요 예산을 기재하며 용도를 구체적으로
+  설명해야 심의와 발주가 순조로울 수 있습니다. 담당자·팀장·임원 결재 후 발주합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 비품구매요청서
+  - type: spacer
+    height_pt: 6
+  - type: grid
+    widths: [14, 21, 14, 21, 14, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["신청일자", "", "신청부서", "", "신청자", ""]
+      - ["예상 구매일", "", "예산 과목", "", "담당자연락처", ""]
+  - type: subtitle
+    text: 1. 구매 품목
+  - type: table
+    widths: [8, 25, 20, 12, 15, 12, 8]
+    header: ["No", "품목명", "규격(사양)", "단위", "수량", "예상단가", "합계"]
+    empty_rows: 7
+    row_height_mm: 9
+    body_align: center
+  - type: subtitle
+    text: 2. 구매 사유 및 용도
+  - type: textbox
+    hint: "비품 구매의 필요성, 사용 부서, 구체적인 용도를 기재하십시오."
+    height_mm: 24
+  - type: subtitle
+    text: 3. 비고
+  - type: textbox
+    hint: "업체 지정, 반납 예정일, 기타 특이사항을 기재하십시오."
+    height_mm: 14
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 1, 2, 3]
+    row_height_mm: 12
+    rows:
+      - ["담당자 (인)", "팀장 (인)", "임원 (인)", "대표 (인)"]

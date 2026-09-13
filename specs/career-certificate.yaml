@@ -1,0 +1,61 @@
+id: career-certificate
+title: 경력증명서
+category: corp
+subcategory: hr
+tags: [경력증명서, 경력확인서, 근무경력, 퇴직증명서]
+summary: 근무기간·부서·직위·담당업무 이력을 회사가 증명하는 경력증명서 양식입니다.
+usage: >
+  이직·자격취득·경력인정 시 제출하는 서류로 회사 인사부서가 발급합니다. 재직자·퇴직자
+  모두 발급 가능하며, 경력 인정 기관이 요구하는 항목(직급 변동 이력, 근무형태 등)이
+  있는지 먼저 확인한 뒤 발급받는 것이 안전합니다.
+source: original
+featured: true
+featured_rank: 5
+blocks:
+  - type: doc_title
+    text: 경력증명서
+  - type: spacer
+    height_pt: 4
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["재직구분", "", "총 경력기간", ""]
+      - ["주소", "", "", ""]
+  - type: subtitle
+    text: 경력사항
+  - type: table
+    widths: [24, 18, 16, 30, 12]
+    header: [근무기간, 부서, 직위, 담당업무, 근무형태]
+    empty_rows: 5
+    row_height_mm: 9
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["용도", ""]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: 위 사람의 경력은 위와 같음을 증명합니다.
+    align: center
+    size: 11.5
+    space_after: 2
+  - type: date_line
+  - type: spacer
+    height_pt: 4
+  - type: grid
+    widths: [20, 45, 35]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", ""]
+      - ["사업자등록번호", "", ""]
+      - ["대표자", "", "(직인)"]
+  - type: notice
+    text: 근무형태란에는 정규직·계약직·파견 등을 기재하며, 경력 인정 기준은 제출처 규정에 따릅니다.

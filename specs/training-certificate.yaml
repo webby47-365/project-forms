@@ -1,0 +1,61 @@
+id: training-certificate
+title: 교육훈련 참가확인서
+category: corp
+subcategory: hr
+tags: [교육훈련 참가확인서, 교육 이수확인서, 연수 참가확인, 직무교육, 수료확인서]
+summary: 교육명·기간·시간과 참가자 명단을 기재해 교육 참가 사실을 확인하는 서류입니다.
+usage: >
+  사내외 교육이나 연수에 참가한 사실을 확인해 주는 서류로, 교육비 정산이나 인사 기록 반영에
+  사용합니다. 교육명과 주관기관, 실제 이수시간을 정확히 적어야 하며, 이수시간은 출석부와
+  일치해야 합니다. 참가자가 여러 명인 경우 명단 표에 소속·직위·이수시간을 각각 기재하고,
+  일부만 이수한 경우 비고에 사유를 적습니다. 발급 후에는 담당 부서장이 확인·날인하고 사본을
+  교육 담당 부서에 보관하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 교육훈련 참가확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 교육 개요
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 3]
+      - [3, 1, 3, 3]
+    rows:
+      - ["교육명(과정명)", "", "", ""]
+      - ["주관기관", "", "교육방식", "집합 / 온라인 / 혼합"]
+      - ["교육기간", "20    년   월   일 ~ 20    년   월   일", "총 이수시간", "        시간"]
+      - ["교육장소", "", "", ""]
+  - type: subtitle
+    text: 2. 교육 내용
+  - type: table
+    widths: [14, 16, 34, 20, 16]
+    header: [일자, 시간, 교육 내용, 강사, 이수시간]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+  - type: subtitle
+    text: 3. 참가자 명단
+  - type: table
+    widths: [8, 20, 18, 16, 18, 20]
+    header: ["No", 성명, 소속(부서), 직위, 이수시간, 비고]
+    empty_rows: 6
+    row_height_mm: 8
+    body_align: center
+  - type: textbox
+    hint: "교육 성과 및 활용 계획 — 업무 적용 방안을 간단히 기재하십시오."
+    height_mm: 20
+  - type: para
+    text: 위 사람은 상기 교육훈련 과정에 참가하였음을 확인합니다.
+    align: center
+    size: 11
+  - type: date_line
+  - type: sign_line
+    labels: ["교육 담당자", "확인자(부서장)"]
+  - type: notice
+    text: 교육비 환급이나 자격 인정이 필요한 경우 주관기관이 발급하는 수료증을 별도로 확인하십시오.

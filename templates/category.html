@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+<div class="wrap">
+  <div class="crumb"><a href="/">홈</a> › {{ cat.name }} › {{ sub.name }}</div>
+  <h1 class="page">{{ cat.name }} · {{ sub.name }}</h1>
+  <p class="lead">{{ forms|length }}종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
+
+  <div class="cols">
+    <aside class="side">
+      {%- for c in categories %}
+      <h3>{{ c.name }}</h3>
+      <ul>
+        {%- for s in c.subcategories %}
+        <li><a href="/category/{{ c.key }}/{{ s.key }}/"
+               class="{% if c.key == cat.key and s.key == sub.key %}on{% endif %}">
+          <span>{{ s.name }}</span><span class="n">{{ counts[c.key ~ '/' ~ s.key] }}</span></a></li>
+        {%- endfor %}
+      </ul>
+      {%- endfor %}
+      {{ slot(ads, "category_side", "side") }}
+    </aside>
+
+    <div>
+      {%- if forms %}
+      <div class="grid g4">
+        {%- for f in forms %}
+        {{ m.card(f, cat.name ~ ' · ' ~ sub.name, dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+        {%- endfor %}
+      </div>
+      {%- else %}
+      <p class="lead">이 분류에는 아직 등록된 서식이 없습니다. 매일 새로운 서식이 추가됩니다.</p>
+      {%- endif %}
+      {{ slot(ads, "category_bottom") }}
+    </div>
+  </div>
+</div>
+{% endblock %}

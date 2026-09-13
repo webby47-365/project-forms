@@ -1,0 +1,59 @@
+id: portfolio-cover
+title: 포트폴리오 표지
+category: personal
+subcategory: career
+tags: [포트폴리오 표지, 포트폴리오 커버, 작품집 표지, 제출용 표지, 포트폴리오 양식]
+summary: 포트폴리오 제목과 작성자 정보, 수록 작품 목록을 정리해 첫 장에 두는 표지 서식입니다.
+usage: >
+  취업이나 입시, 제안용 포트폴리오의 첫 장에 붙이는 표지입니다. 제목은 어떤 분야의 작업물인지
+  드러나게 짓고, 지원 직무나 제출처를 함께 적어 용도를 분명히 하십시오. 수록 작품 목록에 순번과
+  작품명·제작기간·역할을 적어 두면 읽는 사람이 원하는 작업을 바로 찾을 수 있습니다. 연락처와
+  포트폴리오 링크는 오탈자가 없는지 꼭 확인하고, 공동 작업물은 본인의 기여 범위를 표시하십시오.
+  비공개 자료가 포함된 경우 열람 제한 안내를 함께 적는 것이 좋습니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 포트폴리오
+  - type: spacer
+    height_pt: 10
+  - type: grid
+    widths: [22, 78]
+    label_cols: [0]
+    row_height_mm: 12
+    rows:
+      - ["제목", ""]
+      - ["부제", ""]
+      - ["분야", ""]
+  - type: spacer
+    height_pt: 10
+  - type: subtitle
+    text: 작성자 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "소속(학교)", ""]
+      - ["연락처", "", "이메일", ""]
+      - ["포트폴리오 링크", "", "", ""]
+      - ["지원 직무", "", "제출처", ""]
+  - type: subtitle
+    text: 수록 작품 목록
+  - type: table
+    widths: [8, 28, 18, 16, 30]
+    header: ["No", 작품(프로젝트)명, 제작기간, 역할, 사용 도구·비고]
+    empty_rows: 10
+    row_height_mm: 8
+    body_align: center
+  - type: textbox
+    hint: "포트폴리오 소개 — 작업 방향과 강조하고 싶은 점을 간단히 기재하십시오."
+    height_mm: 24
+  - type: date_line
+  - type: sign_line
+    label: 작성자
+  - type: notice
+    text: 공동 작업물은 본인의 기여 범위를 표시하고, 비공개 자료가 포함된 경우 열람 제한 사항을 안내하십시오.

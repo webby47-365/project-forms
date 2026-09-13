@@ -1,0 +1,76 @@
+id: incident-report
+title: 경위서
+category: corp
+subcategory: hr
+tags: [경위서, 사고보고서, 사건보고, 안전사고보고, 직장사고]
+summary: 직장 내 사건·사고의 발생 경과와 대응 결과를 기록하는 서식입니다.
+usage: >
+  직장 내 안전사고, 클레임, 징계 대상 행위, 기타 특이사항 등을 보고할 때 사용하는 문서입니다.
+  사건 발생 직후 즉시 작성하되, 발생 일시, 장소, 관련자, 경위를 시간순으로 상세하게
+  기재하고, 당사자의 진술, 목격자 확인, 초기 조치 결과를 명시하십시오. 필요에 따라
+  보증인이나 관리자의 서명을 받아 인사담당자에게 제출합니다.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 경위서
+    spaced: true
+
+  - type: subtitle
+    text: 기본 정보
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["보고 일자", "", "보고자", ""]
+      - ["부서(팀)", "", "담당 사항", ""]
+
+  - type: subtitle
+    text: 사건 개요
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 10
+    rows:
+      - ["사건명", "", "사건 유형", ""]
+      - ["발생 일시", "", "발생 장소", ""]
+      - ["관련자 성명", "", "관련자 부서", ""]
+
+  - type: subtitle
+    text: 사건 경위
+
+  - type: textbox
+    hint: "사건의 발생 경과를 시간순으로 상세하게 기재하십시오. 당사자의 진술, 현장 상황, 목격자 확인 사항 등을 포함합니다."
+    height_mm: 45
+
+  - type: subtitle
+    text: 초기 조치 및 처리 결과
+
+  - type: textbox
+    hint: "사건 발생 후 취한 조치, 피해 규모, 안전 조치, 관계자 조치 결과 등을 기재하십시오."
+    height_mm: 32
+
+  - type: spacer
+    height_pt: 8
+
+  - type: para
+    text: 본인은 위 사항이 사실임을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+
+  - type: sign_line
+    labels: [보고자, 확인자]
+
+  - type: spacer
+    height_pt: 4
+
+  - type: notice
+    text: 사건 발생 후 가능한 빨리 제출하고, 필요시 당사자 진술서와 목격자 확인서를 별지로 첨부하십시오.

@@ -1,0 +1,19 @@
+{% macro card(f, cat_label, dl=None, interstitial=False, names=None) -%}
+<article class="card">
+  <a class="thumb" href="/form/{{ f.id }}/" aria-label="{{ f.title }} 미리보기">
+    <img src="/files/{{ f.id }}/{{ f.previews[0] }}" alt="{{ f.title }} 양식 미리보기" loading="lazy" width="800" height="1131">
+    {%- if f.pages > 1 %}<span class="badge">{{ f.pages }}페이지</span>{% endif %}
+  </a>
+  <div class="body">
+    <a class="name" href="/form/{{ f.id }}/">{{ f.title }}</a>
+    <div class="cat">{{ cat_label }}</div>
+    <div class="dl">
+      {%- set base = dl if dl else {'pdf': '/files/' ~ f.id ~ '/' ~ f.id ~ '.pdf', 'docx': '/files/' ~ f.id ~ '/' ~ f.id ~ '.docx', 'hwpx': '/files/' ~ f.id ~ '/' ~ f.id ~ '.hwpx'} %}
+      {%- set nm = names if names else {'pdf': f.id ~ '.pdf', 'docx': f.id ~ '.docx', 'hwpx': f.id ~ '.hwpx'} %}
+      <a href="{{ base.pdf }}"{% if not interstitial %} download="{{ nm.pdf }}"{% endif %} title="{{ f.title }} PDF 다운로드">PDF</a>
+      <a href="{{ base.docx }}"{% if not interstitial %} download="{{ nm.docx }}"{% endif %} title="{{ f.title }} Word 다운로드">Word</a>
+      <a href="{{ base.hwpx }}"{% if not interstitial %} download="{{ nm.hwpx }}"{% endif %} title="{{ f.title }} 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>
+{%- endmacro %}

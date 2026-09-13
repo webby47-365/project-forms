@@ -1,0 +1,94 @@
+id: guardian-consent
+title: 보호자 동의서
+category: public
+subcategory: consent
+tags: [보호자, 동의서, 미성년자, 보호자 동의, 학교]
+summary: 미성년자 자녀가 활동·행사에 참가할 때 보호자(부모)가 서명하는 동의서 양식입니다.
+usage: >
+  학교, 학원, 스포츠 클럽, 여행사, 캠프 등이 미성년자 참여자의 보호자로부터 법적 책임 동의를 받기 위해 사용합니다.
+  자녀의 기본정보, 보호자의 성명과 연락처, 응급상황 연락처, 건강상 주의사항(알레르기 등)을 반드시 명확히 기재해야 합니다.
+  비용 부담, 활동 중 사고 책임, 귀가 방법 등의 특수 사항이 있으면 사전에 고지해야 합니다.
+source: original
+featured: false
+target_pages: 2
+blocks:
+  - type: doc_title
+    text: 보호자 동의서
+    spaced: false
+  - type: spacer
+    height_pt: 4
+  - type: subtitle
+    text: 미성년자 정보
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["학교/학년", "", "성별", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 보호자 정보
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "관계", ""]
+      - ["연락처(휴대폰)", "", "이메일", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 동의 대상 활동
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 1]
+      - [1, 1, 1, 1]
+    rows:
+      - ["활동명", ""]
+      - ["기간", ""]
+      - ["장소", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 건강상 유의사항
+  - type: textbox
+    hint: "알레르기, 기저질환, 복용 약물, 복장 제한 등 건강상 주의사항을 상세히 기재하십시오."
+    height_mm: 16
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 응급상황 연락 및 조치 동의
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["응급연락처", ""]
+      - ["응급상황 시 병원 이송 동의", ""]
+  - type: spacer
+    height_pt: 2
+  - type: table
+    widths: [50, 25, 25]
+    header: ["동의 사항", "동의", "미동의"]
+    empty_rows: 0
+    row_height_mm: 8
+    body_align: left
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: "본인은 위 미성년자의 보호자로서 상기 활동 참가에 동의하며, 활동 중 발생할 수 있는 부상에 대해 인지하고 동의합니다."
+    align: center
+    size: 10.5
+    space_after: 2
+  - type: date_line
+  - type: spacer
+    height_pt: 2
+  - type: sign_line
+    label: 보호자 서명
+  - type: notice
+    text: 건강상 유의사항은 반드시 상세히 기재하십시오. 미성년자의 안전을 위해 거짓 기재는 금지됩니다.

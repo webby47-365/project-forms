@@ -1,0 +1,73 @@
+id: medical-treatment-consent
+title: 진료 동의서
+category: welfare
+subcategory: consent
+tags: [진료동의서, 수술동의서, 의료동의서, 설명동의서]
+summary: 진료·검사·시술의 내용과 예상 위험을 설명받고 동의하는 진료 동의서 양식입니다.
+usage: >
+  의료기관이 환자에게 진료 내용과 위험을 설명하고 동의를 받을 때 사용하는 서식입니다.
+  의료법은 수술·수혈·마취 등에 대해 설명의무와 서면 동의를 정하고 있으므로, 설명한 의사의
+  성명과 설명 일시를 반드시 기록해야 합니다. 환자가 미성년자이거나 의사표시가 어려운 경우
+  법정대리인의 동의란을 사용하십시오. 구체적인 질병명이나 진단 내용은 의료기관이 작성하는
+  부분이므로 이 양식은 틀만 제공합니다. 기관별로 법정 서식이 정해져 있으면 그 서식을
+  우선 사용하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 진료 동의서
+    spaced: false
+  - type: grid
+    widths: [14, 22, 14, 18, 14, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["의료기관명", "", "진료과", "", "등록번호", ""]
+      - ["환자 성명", "", "생년월일", "", "성별", ""]
+  - type: subtitle
+    text: 1. 진료 내용
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["진료·시술명", ""]
+      - ["예정 일시", ""]
+      - ["담당 의료인", ""]
+  - type: subtitle
+    text: 2. 설명받은 사항
+  - type: table
+    widths: [42, 38, 20]
+    header: [설명 항목, 설명 내용 요약, 확인]
+    rows:
+      - ["진료·시술의 필요성과 방법", "", ""]
+      - ["예상되는 효과", "", ""]
+      - ["발생 가능한 부작용·위험", "", ""]
+      - ["시행하지 않을 경우의 경과", "", ""]
+      - ["대체 가능한 방법", "", ""]
+      - ["진료 후 주의사항", "", ""]
+    empty_rows: 0
+    row_height_mm: 9
+    body_align: center
+  - type: subtitle
+    text: 3. 질문 및 특이사항
+  - type: textbox
+    hint: "환자가 질문한 내용과 그에 대한 답변, 그 밖에 확인이 필요한 사항을 기재하십시오."
+    height_mm: 22
+  - type: para
+    text: 본인은 위 사항에 대하여 충분한 설명을 듣고 이해하였으며, 위 진료에 동의합니다.
+    align: center
+    size: 10.5
+    space_after: 2
+  - type: date_line
+  - type: grid
+    widths: [20, 26, 18, 20, 16]
+    label_cols: [0, 2]
+    row_height_mm: 10
+    rows:
+      - ["환자 본인", "(서명 또는 인)", "연락처", "", ""]
+      - ["법정대리인", "(서명 또는 인)", "환자와의 관계", "", ""]
+      - ["설명한 의료인", "(서명 또는 인)", "설명 일시", "", ""]
+  - type: notice
+    text: 환자가 미성년자이거나 의사표시가 어려운 경우 법정대리인의 동의가 필요합니다. 의료법상 법정 서식이 정해진 시술은 해당 서식을 사용하십시오. 본 서식은 참고용입니다.

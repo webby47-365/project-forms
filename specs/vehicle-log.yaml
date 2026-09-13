@@ -1,0 +1,46 @@
+id: vehicle-log
+title: 차량운행일지
+category: corp
+subcategory: admin
+tags: [차량운행일지, 운행기록, 차량관리, 운행거리]
+summary: 회사 차량의 일일 운행 거리, 출발지·도착지, 운전자·사유를 기록하는 차량운행일지입니다.
+usage: >
+  회사 소유 차량을 관리하기 위해 매일 운행 내역을 기록하는 서류입니다. 운행 거리와
+  시간, 방문 지역, 운전자를 정확히 기재하면 유지보수 시기 판단과 유류비·보험료
+  관리에 도움이 됩니다. 월말에 운전자 서명 후 관리자에게 제출하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 차량운행일지
+    spaced: true
+  - type: spacer
+    height_pt: 6
+  - type: grid
+    widths: [15, 20, 15, 20, 15, 15]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["차량번호", "", "차명(모델)", "", "소유자", ""]
+      - ["기록 기간", "", "운전자명", "", "연락처", ""]
+  - type: subtitle
+    text: 운행 내역
+  - type: table
+    widths: [8, 12, 12, 12, 20, 12, 12, 12]
+    header: ["No", "운행일자", "출발지", "도착지", "운행사유", "출발시간", "도착시간", "운행거리(km)"]
+    empty_rows: 14
+    row_height_mm: 8
+    body_align: center
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 위 운행 내역이 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: sign_line
+    label: 운전자
+  - type: notice
+    text: 월별 운행 기록을 정확히 유지하고 월말에 서명 후 제출하시기 바랍니다. 필요시 주행거리계 사진을 첨부해 주십시오.

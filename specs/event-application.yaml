@@ -1,0 +1,81 @@
+id: event-application
+title: 참가신청서
+category: public
+subcategory: consent
+tags: [참가신청, 신청서, 행사신청, 이벤트, 접수]
+summary: 각종 행사·행동·프로그램에 참가 신청할 때 작성하는 신청서 양식입니다.
+usage: >
+  학교 활동, 학원 프로그램, 기업 행사, 공개 모집 이벤트, 경진대회 등에 참가 신청할 때 제출합니다.
+  신청자의 기본 정보(성명, 연락처), 신청 행사명, 참가 이유나 동기를 기재합니다.
+  미성년자는 보호자 동의가 필요할 수 있으므로 사전에 확인하고, 참가비가 있으면 납부 방법도 명시해야 합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 참가신청서
+    spaced: false
+  - type: spacer
+    height_pt: 4
+  - type: subtitle
+    text: 신청자 정보
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처(휴대폰)", "", "이메일", ""]
+      - ["소속·직책", "", "주소", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 신청 내용
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 1]
+    rows:
+      - ["행사명", ""]
+      - ["행사 기간", ""]
+      - ["참가 분야/직무", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 참가 동기 및 특이사항
+  - type: textbox
+    hint: "행사 참가 이유, 관심 분야, 특별히 참고할 사항이 있으면 기재하십시오."
+    height_mm: 20
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 보호자 동의 (미성년자인 경우)
+  - type: table
+    widths: [50, 25, 25]
+    header: ["동의 여부", "동의", "미동의"]
+    empty_rows: 0
+    row_height_mm: 8
+    body_align: left
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["보호자 성명", "", "관계", ""]
+      - ["보호자 연락처", "", "", ""]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: "본인은 위 행사에 참가 신청하며, 기재 내용이 사실임을 확인합니다."
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: spacer
+    height_pt: 2
+  - type: sign_line
+    label: 신청자
+  - type: notice
+    text: 참가비 납부 기일, 필요한 서류, 유의사항은 안내문을 참고하십시오. 미성년자는 보호자 동의가 필수입니다.

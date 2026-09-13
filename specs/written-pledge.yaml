@@ -1,0 +1,47 @@
+id: written-pledge
+title: 각서
+category: legal
+subcategory: notice
+tags: [각서, 서약서, 약속, 확약서, 시말서]
+summary: 일방이 상대방에게 특정 사항을 약속하고 확인하는 각서 양식입니다.
+usage: >
+  금전 변제, 책임 인정, 행동 약속 등을 글로 남기고 싶을 때 약속 일방이 작성하여
+  상대방과 함께 서명합니다. 각서는 합의서보다 한 쪽이 주된 의무를 지는 경우에 사용하며,
+  구체적인 약속 내용과 이행 기한을 명확히 기재해야 나중에 분쟁을 줄일 수 있습니다.
+  금전 약속의 경우 금액을 한글과 숫자로 함께 적고 지급 계좌를 명시하는 것이 좋습니다.
+  본 서식은 참고용이며 법적 효력과 적합성은 사용자가 확인해야 합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 각서
+  - type: subtitle
+    text: 당사자
+  - type: grid
+    widths: [18, 22, 18, 22, 20]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["약속인(의무자)", "성명", "", "생년월일", ""]
+      - ["", "주소", "", "연락처", ""]
+      - ["상대방(권리자)", "성명", "", "생년월일", ""]
+      - ["", "주소", "", "연락처", ""]
+  - type: subtitle
+    text: 약속 내용
+  - type: textbox
+    hint: "약속하는 구체적인 내용, 이행 기한, 지급액이나 이행 방법을 명확하게 기재하십시오."
+    height_mm: 38
+  - type: article
+    heading: 제1조 (약속의 확인)
+    lines:
+      - "약속인은 위 내용을 사실 그대로 확인하며, 위 기한까지 성실하게 이행할 것을 약속한다."
+  - type: article
+    heading: 제2조 (책임)
+    lines:
+      - "약속인이 위 약속을 이행하지 않을 경우 약속인이 그에 따른 모든 책임을 진다."
+  - type: date_line
+  - type: sign_line
+    labels: ["약속인", "상대방"]
+  - type: notice
+    text: 금전 약속의 경우 송금 기록(계좌이체 영수증)을 함께 보관하시기 바랍니다. 이행 기한이 경과한 후 미이행 상태가 지속되면 상대방이 법적 조치를 취할 수 있습니다.

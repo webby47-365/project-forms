@@ -1,0 +1,103 @@
+id: business-trip-request
+title: 출장신청서
+category: corp
+subcategory: hr
+tags: [출장신청서, 출장원, 출장신청, 여행경비, 출장보고]
+summary: 출장지·기간·목적·예산을 기재하고 부서장과 대표가 승인하는 출장신청 양식입니다.
+usage: >
+  업무상 출장이 필요할 때 출장지, 기간, 목적, 예상 비용을 기재하여 제출하는 서류입니다.
+  출장 예정일 최소 5일 전에 제출하여 사전 승인을 받아야 하며, 필요한 경우 업무대행자를
+  지정하고 비상연락처를 남겨두어야 합니다. 반드시 예상 예산과 실제 사용 내역을 명확히 기재하십시오.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 출장신청서
+    spaced: true
+
+  - type: grid
+    widths: [16, 18, 16, 18, 16, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 9
+    rows:
+      - ["부서(팀)", "", "직위", "", "성명", ""]
+      - ["사번", "", "생년월일", "", "연락처", ""]
+
+  - type: subtitle
+    text: 출장 정보
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 10
+    rows:
+      - ["출장지", "", "출장 기간", ""]
+      - ["출장 일수", "", "예상 복귀일", ""]
+
+  - type: subtitle
+    text: 출장 목적
+
+  - type: textbox
+    hint: "출장의 목적과 주요 활동을 구체적으로 기재하십시오. (예: 거래처 방문, 프로젝트 현장 점검, 교육 참석 등)"
+    height_mm: 28
+
+  - type: subtitle
+    text: 출장 예산
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["교통비", "", "숙박비", ""]
+      - ["식사비", "", "기타 비용", ""]
+      - ["합계", "", "결제 방법", ""]
+
+  - type: subtitle
+    text: 업무 인수인계
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["업무대행자", "", "연락처", ""]
+      - ["비상연락처", "", "상황 보고 방법", ""]
+
+  - type: spacer
+    height_pt: 8
+
+  - type: para
+    text: 본인은 위와 같이 출장을 신청하고자 하오니 승인하여 주시기 바랍니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+
+  - type: sign_line
+    label: 신청인
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: 결재
+    align: center
+    size: 11
+    bold: true
+
+  - type: grid
+    widths: [33, 34, 33]
+    label_cols: [0, 1, 2]
+    row_height_mm: 12
+    rows:
+      - ["부서장", "인사담당자", "대표이사"]
+
+  - type: spacer
+    height_pt: 4
+
+  - type: notice
+    text: 출장 예산은 실제 사용 가능한 예상액을 기재하고, 귀사 후 지급영수증과 함께 정산보고를 제출하십시오.

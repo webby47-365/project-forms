@@ -1,0 +1,53 @@
+id: travel-plan
+title: 여행계획표
+category: personal
+subcategory: life
+tags: [여행, 여행계획, 일정관리, 여행일정, 추천지]
+summary: 여행 기본정보·일자별 일정·준비물을 한눈에 정리하는 여행 계획 양식입니다.
+usage: >
+  휴가·여행 전에 목적지, 기간, 인원, 예산을 먼저 기입합니다. 일정표에는 각 날짜의
+  시간별 활동, 방문지, 이동수단, 예상 비용을 메모하여 시간을 효율적으로 배분할 수 있습니다.
+  준비물 체크리스트에서 여행복 · 서류 · 짐 · 약품 등을 미리 정리하면 현장에서
+  필요한 물품을 빠뜨리지 않을 수 있습니다.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 여행계획표
+    spaced: false
+
+  - type: subtitle
+    text: 1. 여행 기본정보
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["여행지", "", "여행기간", ""]
+      - ["출발일", "", "복귀일", ""]
+      - ["인원 수", "명", "총 예산", "원"]
+      - ["동반자", "", "숙소 정보", ""]
+
+  - type: subtitle
+    text: 2. 일자별 일정
+
+  - type: table
+    widths: [10, 12, 22, 18, 18, 20]
+    header: ["날짜", 시간, 장소/활동, 이동수단, "비용(원)", 메모]
+    empty_rows: 10
+    row_height_mm: 8
+
+  - type: subtitle
+    text: 3. 준비물 체크리스트
+
+  - type: table
+    widths: [40, 20, 20, 20]
+    header: [항목, "□ 확인", "□ 구매", 비고]
+    empty_rows: 10
+    row_height_mm: 7
+
+  - type: notice
+    text: 여행 출발 1주일 전부터 준비물을 확인하고, 여행 중 기상 변화와 일정 변동에 대비하여 계획을 조정하십시오.

@@ -1,0 +1,69 @@
+id: expense-report
+title: 경비정산서
+category: corp
+subcategory: finance
+tags: [경비정산서, 출장비정산, 경비보고서, 정산서, reimbursement]
+summary: 출장·교육·미팅 등 업무 경비를 항목별로 기재하고 정산하는 경비정산서입니다.
+usage: >
+  출장이나 업무 수행 중 개인이 선금하거나 부담한 경비를 회사에 청구하여 돌려받기 위한 문서입니다.
+  거래 증명서(영수증·티켓·명세서)를 반드시 첨부해야 하며, 항목별로 거래일·내용·금액을 명확히
+  작성하고, 사전 승인을 받은 항목인지 확인하십시오. 부가세 포함 여부는 증빙서류에 따라 결정되고,
+  분실이나 미확인 증빙은 정산 대상에서 제외될 수 있으므로 정산 전에 회계팀과 협의하여 진행하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 경비정산서
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["정산일자", "", "정산번호", ""]
+      - ["신청부서", "", "신청자", ""]
+      - ["정산기간", "(     년  월  일 ~  월  일)", "지출유형", "출장 / 교육 / 미팅"]
+  - type: subtitle
+    text: 정산 내역
+  - type: table
+    widths: [10, 16, 16, 12, 12, 12, 12, 10]
+    header: ["No", 거래일, 내용, 장소, 결제처, 공급가액, 부가세, 합계]
+    empty_rows: 2
+    row_height_mm: 8
+    body_align: center
+  - type: grid
+    widths: [40, 20, 20, 20]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["공급가액 합계", "", "", ""]
+      - ["부가세(10%) 합계", "", "", ""]
+      - ["정산액 합계", "", "", ""]
+      - ["금액(한글)", "", "", ""]
+  - type: subtitle
+    text: 정산 상세
+  - type: grid
+    widths: [30, 35, 35]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["경비 유형", "금액(원)", "비고"]
+      - ["교통비", "", "버스·기차·항공료 등"]
+      - ["숙박비", "", "호텔·민박 등"]
+      - ["식사비", "", "회의비·업무식사 등"]
+      - ["행사비", "", "교육·세미나·회의비 등"]
+      - ["기타", "", ""]
+  - type: textbox
+    hint: "특기사항 — 특별 승인이 필요한 항목, 분실 증빙, 환율 적용 기준 등을 기재하십시오."
+    height_mm: 12
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 20
+    rows:
+      - ["신청자", "팀장", "임원", "대표"]
+      - ["서명(날인)", "서명(날인)", "서명(날인)", "서명(날인)"]
+  - type: notice
+    text: 정산 승인 후 모든 거래 증빙서류는 본 정산서와 함께 회계팀에 제출하고, 정산 사본은 부서에서 보관하십시오.

@@ -1,0 +1,60 @@
+id: employee-roster
+title: 근로자명부
+category: corp
+subcategory: hr
+tags: [근로자명부, 직원명부, 임직원명부, 근로자현황, 직원현황]
+summary: 사업장의 모든 근로자 현황을 기재하는 법정 명부입니다.
+usage: >
+  「근로기준법」 제106조에 따라 사용자가 작성·관리해야 하는 필수 서식입니다. 모든 근로자의
+  성명, 생년월일, 입사일, 직위, 부서, 연락처 등을 정확하게 기재하고 별도로 보관하십시오.
+  신입 입사나 퇴사 시 최신 상태로 수정하여 관리해야 하며, 관할 고용노동청에 제출하거나
+  직원 이직 시 확인서로도 활용됩니다.
+source: law-standard
+source_note: "근로기준법 제106조(근로자명부)"
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 근로자명부
+
+  - type: subtitle
+    text: 사업장 정보
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "대표자명", ""]
+      - ["사업장 주소", "", "사업 규모", ""]
+      - ["업종", "", "기재 기준일", ""]
+
+  - type: subtitle
+    text: 근로자 현황
+
+  - type: table
+    widths: [6, 15, 13, 13, 10, 12, 16, 15]
+    header: ["No", 성명, 생년월일, 입사일, 직급, 부서, 휴대전화, 주소]
+    empty_rows: 10
+    row_height_mm: 8
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: 위 기재사항은 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+
+  - type: sign_line
+    label: 대표이사
+
+  - type: spacer
+    height_pt: 4
+
+  - type: notice
+    text: 근로자의 추가, 변경, 퇴사 등 변동사항을 수시로 기재하고, 법정 보존기간(3년) 동안 보관하십시오. 개인정보 관리에 주의하십시오.

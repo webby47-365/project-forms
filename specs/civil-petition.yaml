@@ -1,0 +1,88 @@
+id: civil-petition
+title: 민원신청서
+category: public
+subcategory: civil
+tags: [민원신청, 민원, 신청서, 공공기관, 행정신청]
+summary: 정부 부처나 지방자치단체 등 공공기관에 민원을 신청할 때 제출하는 신청서 양식입니다.
+usage: >
+  각 부처, 지자체, 공공기관의 민원 창구에 인허가, 확인, 증명, 보조금, 서비스 등을 신청할 때 사용합니다.
+  신청자의 기본정보, 신청 대상 기관, 신청 내용을 명확하고 구체적으로 기재해야 하며, 신청 사유와 배경도 상세히 기술합니다.
+  첨부 문서 목록을 명시하고 제출일자를 반드시 기재해야 하며, 신청 기한이 있으면 사전에 확인해야 합니다.
+source: original
+featured: false
+target_pages: 2
+blocks:
+  - type: doc_title
+    text: 민원신청서
+    spaced: false
+  - type: spacer
+    height_pt: 4
+  - type: subtitle
+    text: 신청자 정보
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["연락처(휴대폰)", "", "이메일", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 민원 신청 대상
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["신청 기관명", ""]
+      - ["담당 부서", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 신청 내용
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["신청 사항", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 신청 이유 및 사유
+  - type: textbox
+    hint: "민원 신청 배경, 경위, 상세한 신청 이유를 시간순으로 구체적으로 기재하십시오."
+    height_mm: 14
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 첨부문서
+  - type: table
+    widths: [10, 60, 15, 15]
+    header: ["No", "첨부 서류명", "선택", "비고"]
+    empty_rows: 3
+    row_height_mm: 8
+  - type: spacer
+    height_pt: 2
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["기타 첨부 사항", ""]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: "본인은 위와 같이 민원을 신청하며, 기재 내용이 사실임을 확인합니다."
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: spacer
+    height_pt: 2
+  - type: sign_line
+    label: 신청자
+  - type: notice
+    text: 신청 내용은 구체적으로 기재하여 주시기 바라며, 필요한 첨부 서류를 빠짐없이 제출하십시오. 신청 기한을 확인하여 기일 내에 제출해야 합니다.

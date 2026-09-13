@@ -1,0 +1,77 @@
+id: personnel-order
+title: 인사발령통지서
+category: corp
+subcategory: hr
+tags: [인사발령통지서, 발령장, 인사발령, 직위발령, 부서이동]
+summary: 인사발령의 대상·내용·발령일자를 공식적으로 통지하는 서식입니다.
+usage: >
+  신입사원 입사, 직위 승진, 부서 이동, 전직 등 인사 발령을 공식적으로 통지하는 문서입니다.
+  발령 대상자의 인적사항과 함께 변경 전·후의 부서·직위·급여를 명확하게 기재하고,
+  회사 대표이사의 서명·날인을 받아 본인과 인사담당자에게 교부합니다.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 인사발령통지서
+
+  - type: subtitle
+    text: 발령 대상자
+
+  - type: grid
+    widths: [16, 18, 16, 18, 16, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", "", "성별", ""]
+      - ["사번", "", "입사일", "", "현 직급", ""]
+
+  - type: subtitle
+    text: 발령 내용
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 10
+    rows:
+      - ["발령 구분", "", "발령 사유", ""]
+      - ["현 부서", "", "발령 부서", ""]
+      - ["현 직위", "", "발령 직위", ""]
+      - ["현 급여", "", "발령 급여", ""]
+
+  - type: subtitle
+    text: 발령 사항
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["발령 일자", "", "근무 시작일", ""]
+      - ["보직명(있는 경우)", "", "발령 권자", ""]
+
+  - type: spacer
+    height_pt: 8
+
+  - type: para
+    text: 위와 같이 인사발령하기로 결정하고 아래와 같이 통지합니다.
+    align: center
+    size: 11
+    space_after: 4
+
+  - type: date_line
+
+  - type: para
+    text: 대표이사
+    align: center
+    size: 12
+
+  - type: sign_line
+    label: 대표이사
+
+  - type: spacer
+    height_pt: 6
+
+  - type: notice
+    text: 본 발령은 법정 취업규칙의 규정에 따라 발령되었으며, 발령일자부터 효력이 발생합니다.

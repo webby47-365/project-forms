@@ -1,0 +1,64 @@
+id: internal-memo
+title: 내부 보고서
+category: corp
+subcategory: admin
+tags: [내부 보고서, 업무보고서, 사내 보고, 보고서 양식, 업무 리포트]
+summary: 보고 목적·현황·문제점·대안과 건의사항을 항목별로 정리해 상신하는 내부 보고서입니다.
+usage: >
+  업무 진행 상황이나 검토 결과를 상급자에게 보고할 때 쓰는 사내 문서입니다. 첫머리의 보고
+  요지에 결론을 먼저 적고 근거를 뒤에 배치하면 읽는 사람이 빠르게 판단할 수 있습니다. 현황은
+  수치와 사실 위주로 쓰고, 문제점과 대안은 짝을 이루도록 정리하십시오. 의사결정이 필요한
+  사항은 건의사항 칸에 선택지 형태로 명확히 적습니다. 후속조치 표에는 담당자와 기한을 반드시
+  지정해 보고가 실행으로 이어지게 하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 내부 보고서
+    spaced: false
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 7
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["수신", "", "보고부서", ""]
+      - ["보고일자", "", "문서번호", ""]
+      - ["제목", "", "", ""]
+      - ["작성자", "", "연락처", ""]
+  - type: subtitle
+    text: 1. 보고 요지
+  - type: textbox
+    hint: "결론과 요청사항을 먼저 3줄 이내로 요약하십시오."
+    height_mm: 14
+  - type: subtitle
+    text: 2. 현황
+  - type: textbox
+    hint: "진행 경과와 관련 수치를 사실 중심으로 기재하십시오."
+    height_mm: 14
+  - type: subtitle
+    text: 3. 문제점 및 대안
+  - type: table
+    widths: [8, 32, 32, 28]
+    header: ["No", 문제점, 대안, 기대효과]
+    empty_rows: 2
+    row_height_mm: 7
+  - type: subtitle
+    text: 4. 건의사항 및 후속조치
+  - type: textbox
+    hint: "결정이 필요한 사항을 선택지 형태로 기재하십시오."
+    height_mm: 16
+  - type: date_line
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [16, 21, 21, 21, 21]
+    label_cols: [0]
+    row_height_mm: 12
+    rows:
+      - ["결재", "담당", "팀장", "임원", "대표"]
+      - ["", "", "", "", ""]
+  - type: notice
+    text: 대외 공개가 제한된 자료를 인용하는 경우 문서 등급과 배포 범위를 표시하십시오.

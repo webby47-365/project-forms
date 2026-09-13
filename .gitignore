@@ -1,0 +1,13 @@
+# 빌드 부산물
+**/_tmp_preview/
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# 로컬 전용 설정 (사이트 주소 등)
+site.url
+
+# 이관용 임시 압축본
+update_forms.zip
+Project_Forms_bundle.zip

@@ -1,0 +1,61 @@
+id: employment-certificate
+title: 재직증명서
+category: corp
+subcategory: hr
+tags: [재직증명서, 재직확인서, 근무확인서, 재직증명]
+summary: 현재 재직 중임을 회사가 증명하는 서식으로, 대출·비자·전세계약 등에 제출합니다.
+usage: >
+  회사가 발급하는 증명서이므로 인사담당 부서에서 작성하고 대표자 직인을 날인합니다.
+  용도란에는 제출처를 기재하며(예: 금융기관 제출용), 발급 목적과 무관한 개인정보는
+  기재하지 않습니다. 사용처가 요구하는 기재항목(연봉 등)이 있으면 사전에 확인하십시오.
+source: original
+featured: true
+featured_rank: 4
+blocks:
+  - type: doc_title
+    text: 재직증명서
+  - type: spacer
+    height_pt: 4
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [3, 1, 3, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["소속(부서)", "", "직위", ""]
+      - ["입사일자", "", "재직기간", ""]
+      - ["주소", "", "", ""]
+  - type: subtitle
+    text: 담당업무
+  - type: textbox
+    hint: "담당업무를 간략히 기재하십시오."
+    height_mm: 20
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["용도", ""]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: 위 사람은 현재 당사에 재직 중임을 증명합니다.
+    align: center
+    size: 11.5
+    space_after: 2
+  - type: date_line
+  - type: spacer
+    height_pt: 6
+  - type: grid
+    widths: [20, 45, 35]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", ""]
+      - ["사업자등록번호", "", ""]
+      - ["소재지", "", ""]
+      - ["대표자", "", "(직인)"]
+  - type: notice
+    text: 본 증명서는 발급 목적 외의 용도로 사용할 수 없으며, 발급일 기준으로 효력이 있습니다.

@@ -1,0 +1,65 @@
+id: board-minutes
+title: 이사회 의사록
+category: corp
+subcategory: startup
+tags: [이사회의사록, 이사회결의서, 법인서류, 의사록]
+summary: 이사회의 일시·장소·출석 현황과 안건별 결의 결과를 기록하는 이사회 의사록입니다.
+usage: >
+  상법에 따라 이사회 결의는 의사록으로 남겨야 하며, 출석 이사와 감사가 기명날인 또는
+  서명해야 합니다. 대표이사 선임, 신주 발행, 지점 설치 등 등기가 필요한 사항은 이 의사록이
+  등기 첨부서류가 되므로 안건과 결의 내용을 법무사·등기소가 요구하는 문구로 정확히 적어야
+  합니다. 결의에 특별한 이해관계가 있는 이사는 의결권이 없으니 출석·의결 인원을 구분해
+  기재하십시오.
+source: law-standard
+source_note: 상법상 이사회 의사록 기재사항을 참고하여 자체 제작
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 이사회 의사록
+    spaced: false
+  - type: grid
+    widths: [14, 26, 14, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 4]
+    rows:
+      - ["회사명", "", "회차", "", "소집권자"]
+      - ["개최일시", "", "개최장소", "", "의장"]
+      - ["소집통지", "", "", "", ""]
+  - type: subtitle
+    text: 출석 현황
+  - type: grid
+    widths: [20, 13, 20, 13, 20, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["재임 이사 수", "명", "출석 이사 수", "명", "의결권 있는 이사", "명"]
+      - ["출석 이사 성명", "", "", "", "", ""]
+      - ["출석 감사 성명", "", "", "", "", ""]
+  - type: subtitle
+    text: 안건 및 결의 사항
+  - type: table
+    widths: [8, 32, 40, 20]
+    header: ["No", 안건, 결의 내용, 결의 결과]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+  - type: textbox
+    hint: "주요 논의 경과와 반대·유보 의견이 있었던 경우 그 내용을 기재하십시오."
+    height_mm: 24
+  - type: para
+    text: 의장은 이상으로 이사회의 모든 안건 심의를 마쳤음을 알리고 폐회를 선언하였다. 위 결의를 명확히 하기 위하여 본 의사록을 작성하고 출석한 이사 및 감사가 기명날인한다.
+    align: both
+    size: 10
+    space_after: 2
+  - type: date_line
+  - type: table
+    widths: [25, 30, 45]
+    header: [직위, 성명, 서명 또는 인]
+    empty_rows: 4
+    row_height_mm: 11
+    body_align: center
+  - type: notice
+    text: 등기 첨부서류로 사용하는 경우 요구되는 문구와 인감증명·공증 필요 여부를 등기소 또는 법무사에게 먼저 확인하십시오. 결의에 특별한 이해관계가 있는 이사는 의결권이 없습니다.

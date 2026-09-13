@@ -1,0 +1,38 @@
+id: attendance-sheet
+title: 출석부
+category: edu
+subcategory: school
+tags: [출석부, 학급, 출석관리, 학교, 학원]
+summary: 학급 학생들의 출석, 결석, 지각 현황을 날짜별로 기록하는 학교·학원 출석관리 양식입니다.
+usage: >
+  학년도 초에 학생 이름을 기입한 후, 매일 또는 매 수업마다 출석 상황을 표기합니다.
+  출석(○), 결석(×), 지각(△), 공결(◎) 등의 기호로 간단히 기록할 수 있습니다. 월말이나
+  학기말에 개인별·날짜별 출석률을 한눈에 파악하여 성적 평가나 상담 자료로 활용할 수 있습니다.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 출석부
+    spaced: false
+
+  - type: grid
+    widths: [30, 35, 35]
+    label_cols: [0]
+    row_height_mm: 7
+    rows:
+      - ["학급(반)", "", "월"]
+      - ["담임교사", "", ""]
+
+  - type: table
+    widths: [5, 25, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+    header: ["No", 이름, "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
+    empty_rows: 12
+    row_height_mm: 8
+
+  - type: spacer
+    height_pt: 8
+
+  - type: notice
+    text: "출석(○), 결석(×), 지각(△), 공결(◎) 등의 기호로 표기하십시오. 월별로 나누어 사용하거나 학기 초 여러 장을 미리 인쇄하여 활용하면 편리합니다."

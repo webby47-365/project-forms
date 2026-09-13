@@ -1,0 +1,57 @@
+id: class-timetable
+title: 시간표
+category: edu
+subcategory: school
+tags: [시간표, 주간 시간표, 수업 시간표, 학급 시간표, 학원 시간표]
+summary: 교시별·요일별 수업 과목과 담당 교사, 준비물을 한 장에 정리하는 시간표 양식입니다.
+usage: >
+  학교나 학원의 주간 수업 일정을 정리해 붙여 두고 쓰는 표입니다. 교시별 시작·종료 시각을 먼저
+  적고 요일별 과목을 채우면 이동 수업이나 공강을 한눈에 파악할 수 있습니다. 과목별 담당 교사와
+  교실을 함께 적어 두면 학기 초에 헷갈리지 않습니다. 요일마다 챙겨야 할 준비물을 따로 표시해
+  두면 빠뜨리는 일이 줄어듭니다. 방과 후 활동이나 학원 일정은 아래 칸에 적어 하루 전체 동선을
+  정리하십시오. 학기 중 시간표가 변경되면 새로 작성해 사용하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 시간표
+  - type: grid
+    widths: [16, 22, 14, 20, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["학교(학원)", "", "학년·반", "", "이름", ""]
+      - ["학기", "", "적용 기간", "", "담임", ""]
+  - type: subtitle
+    text: 1. 주간 시간표
+  - type: table
+    widths: [10, 16, 12, 12, 12, 12, 12, 14]
+    header: [교시, 시간, 월, 화, 수, 목, 금, 토]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+  - type: subtitle
+    text: 2. 과목별 담당 및 교실
+  - type: table
+    widths: [8, 24, 22, 20, 26]
+    header: ["No", 과목, 담당 교사, 교실, 비고]
+    empty_rows: 4
+    row_height_mm: 7
+    body_align: center
+  - type: subtitle
+    text: 3. 요일별 준비물 및 방과 후 일정
+  - type: table
+    widths: [14, 43, 43]
+    header: [요일, 준비물, 방과 후·학원 일정]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+  - type: textbox
+    hint: "메모 — 수행평가 일정, 변경된 수업 등을 기재하십시오."
+    height_mm: 18
+  - type: date_line
+  - type: sign_line
+    label: 작성자
+  - type: notice
+    text: 학기 중 시간표가 변경되면 새로 작성해 사용하십시오.

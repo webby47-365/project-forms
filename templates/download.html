@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+<div class="wrap" style="max-width:760px">
+  <div class="crumb">
+    <a href="/">홈</a> › <a href="/form/{{ f.id }}/">{{ f.title }}</a> › 다운로드
+  </div>
+
+  <div class="dlpage">
+    <h1 class="page">다운로드가 시작됩니다</h1>
+    <p class="lead"><strong>{{ f.title }}</strong> · {{ fmt_label }} ({{ size_kb }} KB)</p>
+
+    <div class="dlnow">
+      <p id="dlmsg">잠시만 기다려 주세요. 파일이 자동으로 내려갑니다.</p>
+      <a id="dlink" class="dlbtn" href="{{ file_url }}" download="{{ file_name }}">바로 내려받기</a>
+      <p class="dlhint">자동으로 시작되지 않으면 위 버튼을 누르세요.</p>
+    </div>
+  </div>
+
+  {{ slot(ads, "download_page") }}
+
+  <div class="dlback">
+    <a href="/form/{{ f.id }}/">← {{ f.title }} 상세로 돌아가기</a>
+    <a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ cat.name }} · {{ sub.name }} 서식 더 보기</a>
+  </div>
+
+  {%- if related %}
+  <h2 class="sec">함께 찾는 서식</h2>
+  <div class="grid g4">
+    {%- for r in related %}
+    {{ m.card(r, cat.name ~ ' · ' ~ sub.name, dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+</div>
+<script>
+(function(){
+  var url = {{ file_url | tojson }};
+  var delay = {{ delay_ms }};
+  var fileName = {{ file_name | tojson }};
+  setTimeout(function(){
+    var a = document.createElement('a');
+    a.href = url; a.download = fileName;
+    document.body.appendChild(a); a.click(); a.remove();
+    var msg = document.getElementById('dlmsg');
+    if (msg) msg.textContent = '다운로드를 시작했습니다. 브라우저의 다운로드 목록을 확인하세요.';
+  }, delay);
+})();
+</script>
+{% endblock %}

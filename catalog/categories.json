@@ -1,0 +1,76 @@
+{
+  "_comment": "대분류/중분류 정의. folder는 C:\\Project_Forms 하위 실제 폴더명(서식 원본 보관 위치)이며, key는 URL·카탈로그에 쓰이는 영문 식별자입니다.",
+  "categories": [
+    {
+      "key": "corp",
+      "name": "기업",
+      "folder": "기업",
+      "order": 1,
+      "subcategories": [
+        { "key": "hr", "name": "인사·노무", "folder": "인사·노무" },
+        { "key": "admin", "name": "총무·행정", "folder": "총무·행정" },
+        { "key": "finance", "name": "회계·세무", "folder": "회계·세무" },
+        { "key": "sales", "name": "영업·마케팅", "folder": "영업·마케팅" },
+        { "key": "startup", "name": "창업·법인", "folder": "창업·법인" }
+      ]
+    },
+    {
+      "key": "legal",
+      "name": "법률",
+      "folder": "법률",
+      "order": 2,
+      "subcategories": [
+        { "key": "contract", "name": "계약", "folder": "계약" },
+        { "key": "notice", "name": "통지·증명", "folder": "통지·증명" },
+        { "key": "litigation", "name": "소송·민원", "folder": "소송·민원" }
+      ]
+    },
+    {
+      "key": "public",
+      "name": "공공",
+      "folder": "공공",
+      "order": 3,
+      "subcategories": [
+        { "key": "civil", "name": "민원·신고", "folder": "민원·신고" },
+        { "key": "consent", "name": "신청·동의", "folder": "신청·동의" }
+      ]
+    },
+    {
+      "key": "estate",
+      "name": "부동산",
+      "folder": "부동산",
+      "order": 4,
+      "subcategories": [
+        { "key": "lease", "name": "임대·매매", "folder": "임대·매매" }
+      ]
+    },
+    {
+      "key": "personal",
+      "name": "개인",
+      "folder": "개인",
+      "order": 5,
+      "subcategories": [
+        { "key": "career", "name": "취업·경력", "folder": "취업·경력" },
+        { "key": "life", "name": "생활·가정", "folder": "생활·가정" }
+      ]
+    },
+    {
+      "key": "edu",
+      "name": "교육",
+      "folder": "교육",
+      "order": 6,
+      "subcategories": [
+        { "key": "school", "name": "학교·학원", "folder": "학교·학원" }
+      ]
+    },
+    {
+      "key": "welfare",
+      "name": "의료·복지",
+      "folder": "의료·복지",
+      "order": 7,
+      "subcategories": [
+        { "key": "consent", "name": "동의·신청", "folder": "동의·신청" }
+      ]
+    }
+  ]
+}

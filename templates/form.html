@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+<div class="wrap">
+  <div class="crumb">
+    <a href="/">홈</a> › <a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ cat.name }}</a> ›
+    <a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ sub.name }}</a> › {{ f.title }}
+  </div>
+
+  <div class="detail">
+    <div class="preview">
+      {%- for p in f.previews %}
+      <img src="/files/{{ f.id }}/{{ p }}" alt="{{ f.title }} {{ loop.index }}페이지 미리보기" width="800" height="1131"{% if loop.index > 1 %} loading="lazy"{% endif %}>
+      {%- endfor %}
+    </div>
+
+    <div class="meta">
+      <h1 class="page">{{ f.title }}</h1>
+      <p class="lead" style="margin-bottom:0">{{ f.summary }}</p>
+
+      <div class="dlbox">
+        <h3>양식 다운로드</h3>
+        <p>원하는 형식을 선택하세요. 회원가입 없이 바로 내려받습니다.</p>
+        <div class="dlbtns">
+          <a href="{{ dl.pdf }}"{% if not ads.download_interstitial %} download="{{ names.pdf }}"{% endif %}>PDF<span class="fmt">{{ kb.pdf }} KB</span></a>
+          <a href="{{ dl.docx }}"{% if not ads.download_interstitial %} download="{{ names.docx }}"{% endif %}>Word<span class="fmt">{{ kb.docx }} KB</span></a>
+          <a href="{{ dl.hwpx }}"{% if not ads.download_interstitial %} download="{{ names.hwpx }}"{% endif %}>한글<span class="fmt">{{ kb.hwpx }} KB</span></a>
+        </div>
+      </div>
+
+      <dl>
+        <dt>분류</dt><dd><a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ cat.name }} · {{ sub.name }}</a></dd>
+        <dt>페이지</dt><dd>{{ f.pages }}페이지 (A4)</dd>
+        <dt>제공 형식</dt><dd>PDF · Word(DOCX) · 한글(HWPX)</dd>
+        <dt>저장 파일명</dt><dd>{{ names.pdf }}</dd>
+        <dt>등록일</dt><dd>{{ f.created_at[:10] }}</dd>
+      </dl>
+
+      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
+      <div class="usage">{{ f.usage }}</div>
+
+      {%- if f.source == 'law-standard' and f.source_note %}
+      <div class="notice-box">{{ f.source_note }}. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>
+      {%- endif %}
+      <div class="notice-box">
+        한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
+        본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
+      </div>
+
+      <div class="tags">
+        {%- for t in f.tags %}<span>{{ t }}</span>{% endfor %}
+      </div>
+
+      {{ slot(ads, "detail_body") }}
+    </div>
+  </div>
+
+  {%- if related %}
+  <h2 class="sec">같은 분류의 다른 서식</h2>
+  <div class="grid">
+    {%- for r in related %}
+    {{ m.card(r, cat.name ~ ' · ' ~ sub.name, dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+</div>
+<script type="application/ld+json">
+{{ jsonld }}
+</script>
+{% endblock %}

@@ -1,0 +1,78 @@
+id: transaction-statement
+title: 거래명세서
+category: corp
+subcategory: finance
+tags: [거래명세서, 거래명세표, 납품명세서, 물품거래명세서]
+summary: 공급자·수령자 정보와 품목별 수량·단가·공급가액·부가세 합계를 기재하는 거래명세서입니다.
+usage: >
+  물품이나 용역을 공급할 때 거래 내용을 확인하기 위해 발행하는 문서입니다. 세금계산서와 달리
+  세법상 필수 서류는 아니지만, 납품 확인과 대금 청구의 근거가 되므로 공급자와 수령자가 각각
+  1부를 보관합니다. 공급가액과 부가세를 분리해 적고, 합계금액은 숫자와 한글을 함께 써서
+  위조를 막습니다. 세금계산서 발행 여부와 세액 기준은 제출처와 세법 기준을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 거래명세서
+  - type: grid
+    widths: [14, 20, 14, 18, 16, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["거래번호", "", "거래일자", "", "담당자", ""]
+
+  - type: subtitle
+    text: 공급자
+  - type: grid
+    widths: [16, 26, 12, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사업자등록번호", "", "상호", "", "대표자 (직인)"]
+      - ["소재지", "", "연락처", "", ""]
+
+  - type: subtitle
+    text: 수령자
+  - type: grid
+    widths: [16, 26, 12, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사업자등록번호", "", "상호", "", "대표자"]
+      - ["소재지", "", "연락처", "", ""]
+
+  - type: subtitle
+    text: 거래 내역
+  - type: table
+    widths: [7, 24, 15, 8, 9, 13, 13, 11]
+    header: ["No", 품명, 규격, 단위, 수량, 단가, 공급가액, 비고]
+    empty_rows: 6
+    row_height_mm: 8
+    body_align: center
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["공급가액 합계", "", "부가세(10%)", ""]
+      - ["합계금액", "", "금액(한글)", ""]
+
+  - type: subtitle
+    text: 거래조건
+  - type: grid
+    widths: [14, 24, 14, 22, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["결제조건", "", "납품일", "", "인수자 확인 :"]
+
+  - type: para
+    text: 위와 같이 거래하였음을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: notice
+    text: 본 명세서는 거래 사실 확인용이며 세금계산서를 대체하지 않습니다. 공급자와 수령자가 각각 1부를 보관하십시오.

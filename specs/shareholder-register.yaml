@@ -1,0 +1,54 @@
+id: shareholder-register
+title: 주주명부
+category: corp
+subcategory: startup
+tags: [주주명부, 주주현황, 주식보유현황, 법인서류]
+summary: 주주의 성명·주소·보유 주식 종류와 수량, 취득일을 기재하는 상법상 주주명부입니다.
+usage: >
+  상법에 따라 주식회사는 주주명부를 작성해 본점에 비치해야 합니다. 주식 양도나 증자가
+  있으면 변경 내용을 즉시 반영하고, 명의개서 없이는 회사에 대해 주주권을 주장할 수 없으므로
+  취득일과 명의개서일을 함께 적습니다. 법인 설립등기나 세무신고, 정부지원사업 신청 시
+  제출 서류로 자주 요구됩니다. 개인 식별번호 대신 생년월일만 적으십시오.
+source: law-standard
+source_note: 상법상 주주명부 기재사항을 참고하여 자체 제작
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 주주명부
+  - type: grid
+    widths: [16, 24, 16, 20, 24]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["회사명", "", "법인등록번호", "", "기준일"]
+      - ["발행주식 총수", "", "1주 금액", "", "자본금"]
+  - type: subtitle
+    text: 주주 현황
+  - type: table
+    widths: [6, 14, 22, 11, 11, 12, 12, 12]
+    header: ["No", 주주명, 주소, 생년월일, 주식종류, 주식수, 지분율, 취득일]
+    empty_rows: 11
+    row_height_mm: 8
+    body_align: center
+  - type: grid
+    widths: [20, 20, 20, 20, 20]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["합계", "주주 수:      명", "주식수:", "지분율: 100%", ""]
+  - type: para
+    text: 위 주주명부는 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: grid
+    widths: [20, 45, 35]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", ""]
+      - ["대표이사", "", "(직인)"]
+  - type: notice
+    text: 주식 양도·증자 등 변동이 발생하면 지체 없이 명부를 갱신하고 본점에 비치하십시오. 개인 식별번호는 적지 않고 생년월일만 기재합니다.

@@ -1,0 +1,72 @@
+id: daily-cash-report
+title: 자금일보
+category: corp
+subcategory: finance
+tags: [자금일보, 일일자금현황, 현금출납부, 자금수지, 일일 자금관리]
+summary: 전일이월액과 당일 입금·출금 내역, 계좌별 잔액을 정리해 자금 현황을 보고하는 일보입니다.
+usage: >
+  매일 마감 시점의 현금·예금 흐름을 정리해 자금 담당자가 보고하는 서식입니다. 전일이월액에서
+  시작해 당일 수입과 지출을 더하고 빼면 당일 잔액이 나오도록 작성하고, 계좌별 잔액 합계와
+  일치하는지 반드시 대사하십시오. 입출금은 거래처와 적요를 구체적으로 적어야 나중에 추적이
+  쉽습니다. 익일 이후 예정된 지출은 자금계획 칸에 미리 적어 자금 부족을 예방하고, 특이사항에는
+  결제 지연이나 대출 만기 같은 위험 요인을 기재하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 자금일보
+  - type: grid
+    widths: [16, 22, 14, 20, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["일자", "", "부서", "", "작성자", ""]
+  - type: subtitle
+    text: 1. 자금 요약
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["전일 이월액", "", "당일 수입 합계", ""]
+      - ["당일 지출 합계", "", "당일 잔액", ""]
+  - type: subtitle
+    text: 2. 입금 내역
+  - type: table
+    widths: [10, 24, 22, 16, 14, 14]
+    header: [구분, 거래처, 적요, 금액, 입금계좌, 비고]
+    empty_rows: 2
+    row_height_mm: 7
+    body_align: center
+  - type: subtitle
+    text: 3. 출금 내역
+  - type: table
+    widths: [10, 24, 22, 16, 14, 14]
+    header: [구분, 거래처, 적요, 금액, 출금계좌, 비고]
+    empty_rows: 2
+    row_height_mm: 7
+    body_align: center
+  - type: subtitle
+    text: 4. 계좌별 잔액
+  - type: table
+    widths: [20, 26, 20, 18, 16]
+    header: [금융기관, 계좌구분, 전일 잔액, 당일 증감, 당일 잔액]
+    empty_rows: 2
+    row_height_mm: 7
+    body_align: center
+  - type: textbox
+    hint: "특이사항 및 익일 자금계획 — 예정 지출, 결제 지연, 차입금 만기 등을 기재하십시오."
+    height_mm: 20
+  - type: date_line
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [16, 21, 21, 21, 21]
+    label_cols: [0]
+    row_height_mm: 15
+    rows:
+      - ["결재", "담당", "팀장", "임원", "대표"]
+      - ["", "", "", "", ""]
+  - type: notice
+    text: 계좌 잔액은 금융기관 조회 내역과 대사한 후 보고하십시오.

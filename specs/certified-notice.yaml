@@ -1,0 +1,55 @@
+id: certified-notice
+title: 내용증명
+category: legal
+subcategory: notice
+tags: [내용증명, 우체국내용증명, 통지서, 공식통지, 법적증거]
+summary: 발신인·수신인 정보와 통지 내용, 요구사항과 이행기한을 명시하는 내용증명 양식입니다.
+usage: >
+  임차인·계약상대방에게 중요한 사항을 공식적으로 통보하고 그 기록을 남기고자 할 때 사용합니다.
+  내용증명은 우체국을 통해 등기로 발송되며, 동일 문서 3부(발신인 보관, 수신인 수령, 우체국 보관)
+  가 작성됩니다. 구체적인 요구사항과 명확한 이행기한을 적어야 법적 효력이 강합니다.
+  본 서식은 참고용이며 법적 효력과 적합성은 사용자가 확인해야 합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 내용증명
+  - type: subtitle
+    text: 발신인·수신인 정보
+  - type: grid
+    widths: [20, 40, 20, 20]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["발신인 성명", "", "생년월일", ""]
+      - ["발신인 주소", "", "", ""]
+      - ["수신인 성명", "", "생년월일", ""]
+      - ["수신인 주소", "", "", ""]
+  - type: subtitle
+    text: 통지 내용
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 7
+    rows:
+      - ["제목", ""]
+  - type: textbox
+    hint: "통지 사유, 배경, 구체적인 내용을 명확하게 작성하십시오."
+    height_mm: 45
+  - type: subtitle
+    text: 요구사항 및 이행기한
+  - type: textbox
+    hint: "상대방에게 요구하는 사항과 구체적인 이행기한(예: 2026년 9월 30일까지)을 명시하십시오."
+    height_mm: 20
+  - type: spacer
+    height_pt: 8
+  - type: para
+    text: 위와 같이 통보합니다.
+    align: center
+    size: 11
+  - type: date_line
+  - type: sign_line
+    label: 발신인
+  - type: notice
+    text: 본 내용증명은 우체국 창구에서 등기로 발송하며, 발신인용·수신인용·우체국 보관용 3부가 작성됩니다. 통지 내용이 명확할수록 법적 효력이 강하므로 정확하고 구체적으로 기재하십시오.

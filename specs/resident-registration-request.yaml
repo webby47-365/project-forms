@@ -1,0 +1,86 @@
+id: resident-registration-request
+title: 주민등록등본 교부신청서
+category: public
+subcategory: civil
+tags: [주민등록등본 신청서, 등본 교부신청, 초본 발급, 주민센터 신청서, 등초본 발급]
+summary: 신청인 정보와 교부 대상·용도·통수를 기재해 주민등록 등초본 교부를 신청하는 서식입니다.
+usage: >
+  주민등록 등본이나 초본을 발급받기 위해 주민센터에 제출하는 신청서입니다. 필요한 서류 종류와
+  통수를 정확히 적고, 사용 용도를 구체적으로 기재해야 기재 범위를 맞출 수 있습니다. 과거 주소
+  변동 이력이나 세대원 표시 여부처럼 포함할 항목을 선택란에 표시하십시오. 본인이 아닌 사람이
+  신청할 때는 위임 여부와 대리인 정보를 적고 위임장과 신분증을 함께 준비해야 합니다. 개인정보가
+  담긴 서류이므로 발급 후 용도 외 사용에 주의하고, 발급 요건과 수수료는 관할 주민센터 안내를
+  확인하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 주민등록표 등·초본 교부신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["연락처", "", "본인 여부", "본인 / 대리인"]
+  - type: subtitle
+    text: 2. 교부 대상자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["신청인과의 관계", "", "연락처", ""]
+  - type: subtitle
+    text: 3. 신청 내용
+  - type: table
+    widths: [8, 24, 12, 32, 24]
+    header: ["No", 서류 종류, 통수, 사용 용도, 제출처]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+  - type: grid
+    widths: [22, 28, 22, 28]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["과거 주소 변동사항", "포함 / 미포함", "세대원 표시", "포함 / 미포함"]
+      - ["세대주 성명 표시", "포함 / 미포함", "수령 방법", "방문 / 우편"]
+  - type: subtitle
+    text: 4. 대리인 (해당 시)
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["대리인 성명", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["신청인과의 관계", "", "연락처", ""]
+  - type: para
+    text: 위와 같이 주민등록표 등·초본의 교부를 신청합니다.
+    align: center
+    size: 11
+  - type: date_line
+  - type: sign_line
+    label: 신청인
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: ○○시장 · 군수 · 구청장 귀하
+    align: center
+    size: 11
+  - type: notice
+    text: 대리 신청 시 위임장과 신분증이 필요할 수 있습니다. 발급 요건·수수료·기재 범위는 관할 주민센터 안내를 확인하십시오.

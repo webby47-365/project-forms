@@ -1,0 +1,98 @@
+id: info-disclosure-request
+title: 정보공개청구서
+category: public
+subcategory: civil
+tags: [정보공개, 청구서, 정보공개청구, 공공기관, 민원]
+summary: 공공기관에 보유된 정보의 공개를 청구하기 위해 제출하는 법정 청구서입니다.
+usage: >
+  국가·지방자치단체·공공기관의 정보공개에 관한 법률에 따라 공공기관의 정보 공개를 청구할 때 반드시 제출해야 합니다.
+  청구인의 성명·연락처, 공개를 원하는 정보의 구체적인 내용, 공개 방법(열람·사본·전자파일), 수령 방법(직접·우편·팩스), 수수료 감면 여부를 명확히 기재합니다.
+  청구 정보가 모호하면 반려될 수 있으므로 가능한 한 구체적으로 특정해야 하며, 수수료 감면 대상(기초생활보장 수급자 등)인 경우 증명서를 첨부해야 합니다.
+source: law-standard
+source_note: "공공기관의 정보공개에 관한 법률 제9조·제11조"
+featured: false
+target_pages: 2
+blocks:
+  - type: doc_title
+    text: 정보공개청구서
+    spaced: false
+  - type: spacer
+    height_pt: 4
+  - type: subtitle
+    text: 청구인 정보
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["연락처(휴대폰)", "", "이메일", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 청구 대상 기관
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["기관명", ""]
+      - ["부서", ""]
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 공개 청구 정보
+  - type: textbox
+    hint: "공개를 청구하는 정보를 구체적으로 기재하십시오. (예: 2024년 1월~6월 간 채용 공고 문서, 회의록 등)"
+    height_mm: 14
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 공개 방법 선택
+  - type: table
+    widths: [40, 30, 30]
+    header: ["공개 방법", "선택", "비고"]
+    empty_rows: 0
+    row_height_mm: 8
+    body_align: left
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 수령 방법 선택
+  - type: table
+    widths: [40, 30, 30]
+    header: ["수령 방법", "선택", "배송주소/연락처"]
+    empty_rows: 0
+    row_height_mm: 8
+    body_align: left
+  - type: spacer
+    height_pt: 2
+  - type: subtitle
+    text: 수수료 및 감면
+  - type: table
+    widths: [50, 25, 25]
+    header: ["감면 대상 해당 여부", "해당", "미해당"]
+    empty_rows: 0
+    row_height_mm: 8
+    body_align: left
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["감면 사유(해당 시)", ""]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: "본인은 위와 같이 정보공개를 청구합니다."
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: spacer
+    height_pt: 2
+  - type: sign_line
+    label: 청구인
+  - type: notice
+    text: 감면 대상(기초생활보장 수급자, 장애인 등)인 경우 증명서를 첨부해야 합니다. 청구 정보가 불명확하면 보완을 요청받을 수 있습니다.

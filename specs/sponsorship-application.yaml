@@ -1,0 +1,77 @@
+id: sponsorship-application
+title: 후원신청서
+category: public
+subcategory: consent
+tags: [후원신청서, 정기후원 신청, 기부금 약정서, 후원 약정, 후원자 등록]
+summary: 후원 유형과 후원금액·납부방법, 기부금 영수증 발급 여부를 기재하는 후원신청서입니다.
+usage: >
+  단체나 기관에 정기 또는 일시 후원을 시작할 때 작성하는 신청서입니다. 후원 유형과 금액,
+  납부일을 정확히 적고 자동이체를 선택한 경우 출금 계좌 정보와 예금주를 확인해 기재하십시오.
+  기부금 영수증이 필요하면 발급 여부와 발급 명의를 표시해야 연말정산에서 활용할 수 있습니다.
+  후원자 정보 수집·이용 동의란은 목적과 보유기간을 확인한 뒤 표시하고, 소식지 수신 여부도 함께
+  선택합니다. 후원은 언제든지 변경하거나 중단할 수 있으므로 문의처를 확인해 두십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 후원신청서
+  - type: subtitle
+    text: 1. 후원자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명(단체명)", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["연락처", "", "이메일", ""]
+      - ["직업", "", "가입 경로", ""]
+  - type: subtitle
+    text: 2. 후원 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["후원 유형", "정기후원 / 일시후원", "후원 시작일", ""]
+      - ["후원 금액", "월(회)          원", "납부일", "매월      일"]
+      - ["후원 지정 사업 (해당 시)", "", "", ""]
+  - type: subtitle
+    text: 3. 납부 방법
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["납부 방법", "자동이체 / 카드 / 무통장입금", "금융기관", ""]
+      - ["계좌(카드) 번호", "", "예금주(명의자)", ""]
+      - ["기부금 영수증", "발급 / 미발급", "발급 명의", ""]
+  - type: subtitle
+    text: 4. 동의 사항
+  - type: table
+    widths: [40, 24, 18, 18]
+    header: [동의 항목, 수집·이용 목적, 보유기간, 동의 여부]
+    empty_rows: 2
+    row_height_mm: 9
+  - type: kv_list
+    items:
+      - "후원자 정보는 후원금 관리와 영수증 발급, 안내 목적으로만 이용합니다."
+      - "후원 금액과 납부 방법은 언제든지 변경하거나 중단할 수 있습니다."
+      - "소식지 및 활동 안내 수신 여부: 수신 / 수신 거부"
+  - type: textbox
+    hint: "전하고 싶은 말씀이나 요청사항을 기재하십시오."
+    height_mm: 18
+  - type: para
+    text: 위와 같이 후원을 신청하며, 기재 내용에 동의합니다.
+    align: center
+    size: 11
+  - type: date_line
+  - type: sign_line
+    label: 신청인
+  - type: notice
+    text: 기부금 영수증 발급 요건과 세액공제 적용 여부는 해당 단체 및 관할 세무서 안내를 확인하십시오.

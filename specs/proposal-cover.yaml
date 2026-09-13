@@ -1,0 +1,69 @@
+id: proposal-cover
+title: 제안서 표지
+category: corp
+subcategory: sales
+tags: [제안서표지, 제안서양식, 사업제안서, 입찰제안서]
+summary: 제안명·제안대상·제안사 정보와 제출일자를 담은 제안서 표지 및 목차 양식입니다.
+usage: >
+  입찰이나 영업 제안 시 제안서 첫 장에 붙이는 표지입니다. 발주처가 요구하는 제안서 양식이
+  있으면 그 기준을 우선 따르고, 없으면 이 표지를 쓰십시오. 제안명은 발주 공고의 사업명을
+  그대로 인용해야 심사에서 누락되지 않습니다. 대외비 표시가 필요한 경우 우측 상단 보안등급
+  칸에 기재하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: grid
+    widths: [60, 20, 20]
+    label_cols: [1]
+    row_height_mm: 8
+    rows:
+      - ["", "보안등급", "대외비 / 일반"]
+  - type: spacer
+    height_pt: 30
+  - type: para
+    text: 제안서
+    align: center
+    size: 14
+    bold: true
+    space_after: 6
+  - type: doc_title
+    text: 제안명 기재
+    spaced: false
+  - type: spacer
+    height_pt: 24
+  - type: grid
+    widths: [22, 78]
+    label_cols: [0]
+    row_height_mm: 11
+    rows:
+      - ["제안 대상 (발주처)", ""]
+      - ["사업명 / 공고번호", ""]
+      - ["제안 범위", ""]
+      - ["제안 금액", ""]
+      - ["제안 유효기간", ""]
+  - type: spacer
+    height_pt: 24
+  - type: subtitle
+    text: 제안사 정보
+  - type: grid
+    widths: [22, 28, 22, 28]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["상호(법인명)", "", "대표자", ""]
+      - ["사업자등록번호", "", "설립연도", ""]
+      - ["소재지", "", "연락처", ""]
+      - ["제안 책임자", "", "연락처 / 이메일", ""]
+  - type: spacer
+    height_pt: 18
+  - type: date_line
+  - type: para
+    text: 위 제안사는 본 제안 내용에 책임을 집니다.
+    align: center
+    size: 10
+    space_after: 2
+  - type: sign_line
+    label: 대표자
+  - type: notice
+    text: 발주처가 지정한 제안서 양식이 있는 경우 그 양식을 우선 사용하십시오. 제안 금액과 유효기간은 반드시 기재해야 심사 대상이 됩니다.

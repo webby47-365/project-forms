@@ -1,0 +1,91 @@
+id: leave-request
+title: 휴가신청서
+category: corp
+subcategory: hr
+tags: [휴가신청서, 연차신청, 휴가원, 병가신청, 휴직]
+summary: 휴가 종류·기간·사유를 기재하고 부서장과 대표가 재가하는 휴가신청 양식입니다.
+usage: >
+  휴가 또는 특별휴가(병가, 경조사휴가 등)를 신청할 때 사용하는 서류입니다. 휴가 종류와
+  정확한 기간을 먼저 선택한 후 사유를 명확하게 기재하고, 출근 중인 업무는 동료에게 인계할
+  대행자를 반드시 지정하십시오. 일반적으로 휴가 예정일 3~5일 전에 제출합니다.
+source: original
+featured: false
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 휴가신청서
+    spaced: true
+
+  - type: grid
+    widths: [16, 18, 16, 18, 16, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 9
+    rows:
+      - ["부서(팀)", "", "직위", "", "성명", ""]
+      - ["사번", "", "생년월일", "", "연락처", ""]
+
+  - type: subtitle
+    text: 휴가 정보
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 10
+    rows:
+      - ["휴가 종류", "", "휴가 기간", ""]
+      - ["휴가 일수", "", "예상 복귀일", ""]
+
+  - type: subtitle
+    text: 휴가 사유
+
+  - type: textbox
+    hint: "휴가 사유를 구체적으로 기재하십시오. (예: 연차, 병가, 경조사휴가, 특별휴가 등)"
+    height_mm: 32
+
+  - type: subtitle
+    text: 업무 인수인계
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["업무대행자", "", "연락처", ""]
+      - ["비상연락처", "", "상황 보고 방법", ""]
+
+  - type: spacer
+    height_pt: 8
+
+  - type: para
+    text: 본인은 위와 같이 휴가를 신청하고자 하오니 재가하여 주시기 바랍니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+
+  - type: sign_line
+    label: 신청인
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: 결재
+    align: center
+    size: 11
+    bold: true
+
+  - type: grid
+    widths: [33, 34, 33]
+    label_cols: [0, 1, 2]
+    row_height_mm: 12
+    rows:
+      - ["부서장", "인사담당자", "대표이사"]
+
+  - type: spacer
+    height_pt: 4
+
+  - type: notice
+    text: 휴가 종류와 기간을 명확히 기재하고, 제출 전 당일 업무 배분을 완료하십시오. 미승인 휴가는 무단결근 처리될 수 있습니다.

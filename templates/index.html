@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+<section class="hero">
+  <div class="wrap">
+    <h1>필요한 서식을 무료로 받으세요.</h1>
+    <p>회원가입도, 로그인도 없습니다. 양식을 미리 확인하고 PDF · Word · 한글 중 원하는 형식으로 내려받으세요.</p>
+    <div class="hsearch">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" id="q2" placeholder="예: 이력서, 사직서, 위임장" autocomplete="off" aria-label="서식 검색">
+    </div>
+    <div class="chips">
+      {%- for f in featured[:6] %}
+      <a href="/form/{{ f.id }}/">{{ f.title.split(' (')[0] }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  {{ slot(ads, "main_top") }}
+
+  <h2 class="sec">많이 찾는 서식 10</h2>
+  <div class="grid">
+    {%- for f in featured %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+
+  {{ slot(ads, "main_mid") }}
+
+  <h2 class="sec">최근 추가된 서식</h2>
+  <div class="grid">
+    {%- for f in recent %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+
+  <h2 class="sec">카테고리로 찾기</h2>
+  <div class="grid g4">
+    {%- for c in categories %}{%- for s in c.subcategories %}
+    <a href="/category/{{ c.key }}/{{ s.key }}/" class="card" style="padding:15px 16px">
+      <div class="cat" style="margin-bottom:3px">{{ c.name }}</div>
+      <div class="name">{{ s.name }}</div>
+      <div class="cat" style="margin-top:6px">{{ counts[c.key ~ '/' ~ s.key] }}종</div>
+    </a>
+    {%- endfor %}{%- endfor %}
+  </div>
+</div>
+<script>
+(function(){
+  var a=document.getElementById('q2'), b=document.getElementById('q');
+  if(a&&b){ a.addEventListener('input',function(){ b.value=a.value; b.dispatchEvent(new Event('input')); });
+            a.addEventListener('keydown',function(e){ if(e.key==='Enter'){ b.focus(); } }); }
+})();
+</script>
+{% endblock %}

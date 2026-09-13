@@ -1,0 +1,80 @@
+id: administrative-objection
+title: 이의신청서 (행정처분)
+category: legal
+subcategory: litigation
+tags: [이의신청서, 행정심판청구, 과태료이의신청, 처분불복]
+summary: 행정기관의 처분이나 과태료 부과에 불복해 재심사를 요구하는 이의신청서입니다.
+usage: >
+  과태료 부과, 각종 인허가 거부, 지원금 환수 등 행정처분에 불복할 때 처분청에 제출합니다.
+  이의신청 기간은 법령마다 다르고 대체로 처분을 통지받은 날부터 30일 또는 60일이며,
+  기간을 넘기면 내용과 무관하게 각하되므로 통지서에 적힌 기간을 먼저 확인하십시오.
+  이의신청과 행정심판·행정소송은 별개 절차이므로 어느 절차를 택할지 판단이 필요합니다.
+  본 서식은 참고용이며 처분청이 지정한 양식이 있으면 그 양식을 우선 사용하십시오.
+source: original
+featured: false
+target_pages: 2
+blocks:
+  - type: doc_title
+    text: 이의신청서
+    spaced: false
+  - type: subtitle
+    text: 신청인
+  - type: grid
+    widths: [14, 26, 14, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 4]
+    rows:
+      - ["성명(법인명)", "", "생년월일", "", "연락처"]
+      - ["주소", "", "", "", ""]
+      - ["대리인", "", "관계", "", "연락처"]
+  - type: subtitle
+    text: 처분 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["처분청", "", "처분 통지일", ""]
+      - ["처분 종류", "", "처분 금액", ""]
+      - ["문서번호 / 사건번호", "", "", ""]
+  - type: subtitle
+    text: 이의신청 취지
+  - type: textbox
+    hint: "무엇을 구하는지 한두 문장으로 적으십시오. (예: 위 과태료 부과처분을 취소해 주시기 바랍니다)"
+    height_mm: 20
+  - type: subtitle
+    text: 이의신청 이유
+  - type: textbox
+    hint: "처분이 부당하다고 보는 근거를 사실과 법령을 들어 기재하십시오. 사실관계를 시간순으로 적고 증빙을 인용합니다."
+    height_mm: 44
+  - type: subtitle
+    text: 첨부 서류
+  - type: table
+    widths: [10, 44, 46]
+    header: ["No", 서류명, 비고]
+    rows:
+      - ["1", "처분 통지서 사본", ""]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+  - type: para
+    text: 위와 같이 이의를 신청합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: sign_line
+    label: 신청인
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: "                        귀중"
+    align: center
+    size: 12
+    bold: true
+  - type: notice
+    text: 이의신청 기간은 법령마다 다르며 기간을 넘기면 각하됩니다. 처분 통지서에 적힌 불복 기간과 방법을 먼저 확인하고, 처분청이 정한 양식이 있으면 그 양식을 사용하십시오.

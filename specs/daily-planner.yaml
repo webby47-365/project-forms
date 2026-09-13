@@ -1,0 +1,57 @@
+id: daily-planner
+title: 생활계획표
+category: personal
+subcategory: life
+tags: [생활계획표, 하루 계획표, 시간 계획표, 방학 계획표, 일과표]
+summary: 시간대별 일과와 요일별 계획, 목표와 점검 항목을 한 장에 정리하는 생활계획표입니다.
+usage: >
+  하루 일과를 시간대별로 계획하고 실천 여부를 점검할 때 쓰는 표입니다. 기상과 취침 시각을 먼저
+  고정하고 식사·학습·휴식 시간을 배치하면 계획이 흐트러지지 않습니다. 요일별 계획표에는 반복되는
+  일정을 먼저 채우고 남는 시간에 목표 활동을 넣으십시오. 계획은 처음부터 빡빡하게 짜기보다 여유
+  시간을 두어야 오래 유지됩니다. 하루를 마치며 실천 점검란에 표시하고 한 주 단위로 돌아보면
+  개선점이 보입니다. 방학이나 시험 기간처럼 상황이 달라지면 새로 작성해 쓰십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 생활계획표
+  - type: grid
+    widths: [16, 22, 14, 20, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["이름", "", "기간", "", "작성일", ""]
+      - ["기상 시각", "", "취침 시각", "", "학교·직장", ""]
+  - type: subtitle
+    text: 1. 이번 기간 목표
+  - type: table
+    widths: [8, 34, 20, 20, 18]
+    header: ["No", 목표, 실천 방법, 목표 횟수, 달성]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+  - type: subtitle
+    text: 2. 요일별 시간 계획
+  - type: table
+    widths: [16, 12, 12, 12, 12, 12, 12, 12]
+    header: [시간, 월, 화, 수, 목, 금, 토, 일]
+    empty_rows: 4
+    row_height_mm: 7
+    body_align: center
+  - type: subtitle
+    text: 3. 하루 점검
+  - type: table
+    widths: [34, 11, 11, 11, 11, 11, 11]
+    header: [점검 항목, 월, 화, 수, 목, 금, 토]
+    empty_rows: 4
+    row_height_mm: 7
+    body_align: center
+  - type: textbox
+    hint: "이번 기간을 돌아보며 잘한 점과 개선할 점을 기재하십시오."
+    height_mm: 20
+  - type: date_line
+  - type: sign_line
+    label: 작성자
+  - type: notice
+    text: 계획은 여유 시간을 두고 작성해야 오래 유지됩니다. 상황이 바뀌면 새로 작성해 사용하십시오.

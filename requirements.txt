@@ -1,0 +1,8 @@
+# 사이트 생성(Cloudflare Pages 빌드)에 필요한 패키지
+jinja2>=3.1
+
+# 서식 생성에 추가로 필요한 패키지 (로컬·에이전트 환경에서만 사용)
+# python-docx>=1.1
+# python-hwpx>=2.9
+# pyyaml>=6.0
+# pillow>=10.0

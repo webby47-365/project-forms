@@ -1,0 +1,47 @@
+id: fact-confirmation
+title: 사실확인서
+category: legal
+subcategory: notice
+tags: [사실확인서, 사실인정, 확인서, 사실증명, 재해증명]
+summary: 특정 사실의 존재 여부를 당사자들이 공동으로 확인하는 사실확인서 양식입니다.
+usage: >
+  계약 이행 여부, 금전 거래 사실, 재해나 사건 발생 등의 사실을 문서로 남기고 싶을 때
+  당사자들이 함께 작성합니다. 사실확인서는 법적 분쟁 시 증거로 활용될 수 있으므로
+  가능한 한 구체적이고 정확하게 기재해야 합니다. 향후 분쟁을 방지하려면 확인하는
+  사실의 범위를 명확히 하고 양 당사자가 모두 서명하는 것이 중요합니다.
+  본 서식은 참고용이며 법적 효력과 적합성은 사용자가 확인해야 합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 사실확인서
+  - type: subtitle
+    text: 당사자
+  - type: grid
+    widths: [18, 22, 18, 22, 20]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["일방당사자", "성명", "", "생년월일", ""]
+      - ["", "주소", "", "연락처", ""]
+      - ["타방당사자", "성명", "", "생년월일", ""]
+      - ["", "주소", "", "연락처", ""]
+  - type: subtitle
+    text: 확인 내용
+  - type: textbox
+    hint: "확인하는 사실(계약 이행, 금전 거래, 서비스 제공, 물품 인수 등)의 구체적 내용과 일시·장소를 명확하게 기재하십시오."
+    height_mm: 38
+  - type: article
+    heading: 제1조 (사실의 확인)
+    lines:
+      - "당사자들은 위 사실이 사실임을 공동으로 확인한다."
+  - type: article
+    heading: 제2조 (효력)
+    lines:
+      - "본 확인서는 위 사실에 관한 증거로 사용될 수 있으며, 당사자들은 추후 동일 사실을 부인할 수 없다."
+  - type: date_line
+  - type: sign_line
+    labels: ["일방당사자", "타방당사자"]
+  - type: notice
+    text: 사실확인서는 법적 분쟁에서 중요한 증거가 될 수 있으므로 확인 내용을 매우 신중하게 기재하시기 바랍니다. 서명 후 추후 부인할 수 없습니다.

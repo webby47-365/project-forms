@@ -1,0 +1,83 @@
+id: care-service-application
+title: 요양보호 서비스 신청서
+category: welfare
+subcategory: consent
+tags: [요양보호신청서, 재가급여신청, 방문요양신청서, 돌봄서비스신청]
+summary: 방문요양·방문목욕 등 요양보호 서비스의 희망 내용과 보호자 정보를 기재하는 신청서입니다.
+usage: >
+  재가 요양기관에 방문요양이나 방문목욕 서비스를 신청할 때 사용합니다. 장기요양등급이 있는
+  경우 등급과 인정번호를 적으면 급여 적용 여부를 바로 확인할 수 있고, 등급이 없으면
+  전액 본인부담이 되므로 먼저 국민건강보험공단에 등급 신청을 하는 편이 유리합니다.
+  희망 요일과 시간대를 구체적으로 적어야 배정이 빠르며, 거동 상태와 주거 환경은 서비스
+  계획 수립에 쓰입니다. 질병명이나 진단 내용은 기재하지 않고 기관의 상담 과정에서
+  별도로 확인합니다.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 요양보호 서비스 신청서
+    spaced: false
+  - type: grid
+    widths: [16, 22, 16, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["신청일자", "", "희망 개시일", "", "신청 경로"]
+  - type: subtitle
+    text: 1. 대상자 정보
+  - type: grid
+    widths: [14, 24, 14, 20, 28]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 4]
+    rows:
+      - ["성명", "", "생년월일", "", "성별"]
+      - ["연락처", "", "장기요양 인정번호", "", "장기요양 등급"]
+      - ["주소", "", "", "", ""]
+      - ["동거 가족", "", "주거 형태", "", "엘리베이터 유무"]
+  - type: subtitle
+    text: 2. 보호자(신청인) 정보
+  - type: grid
+    widths: [14, 24, 14, 20, 28]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "대상자와의 관계", "", "연락처"]
+      - ["비상 연락처", "", "연락 가능 시간", "", "이메일"]
+  - type: subtitle
+    text: 3. 희망 서비스
+  - type: table
+    widths: [26, 18, 26, 30]
+    header: [서비스 종류, 주 횟수, 희망 요일, 희망 시간대]
+    rows:
+      - ["방문요양", "", "", ""]
+      - ["방문목욕", "", "", ""]
+      - ["방문간호", "", "", ""]
+      - ["주·야간보호", "", "", ""]
+    empty_rows: 0
+    row_height_mm: 9
+    body_align: center
+  - type: subtitle
+    text: 4. 생활 지원 필요 사항
+  - type: grid
+    widths: [20, 13, 20, 13, 20, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["식사", "도움 필요", "세면·목욕", "도움 필요", "이동", "도움 필요"]
+      - ["배설", "도움 필요", "가사 지원", "도움 필요", "외출 동행", "도움 필요"]
+  - type: textbox
+    hint: "서비스 제공 시 유의할 사항(선호하는 요양보호사 성별, 반려동물, 출입 방법 등)을 기재하십시오."
+    height_mm: 16
+  - type: para
+    text: 위와 같이 요양보호 서비스를 신청하며, 서비스 제공에 필요한 범위에서 개인정보 수집·이용에 동의합니다.
+    align: center
+    size: 10
+    space_after: 2
+  - type: date_line
+  - type: sign_line
+    labels: ["신청인(보호자)", "대상자 본인"]
+  - type: notice
+    text: 장기요양등급이 없으면 급여가 적용되지 않아 전액 본인부담이 됩니다. 등급 신청은 국민건강보험공단에 하시고, 본인부담률과 급여 한도는 기관에 확인하십시오.

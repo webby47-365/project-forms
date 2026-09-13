@@ -1,0 +1,88 @@
+id: vendor-registration
+title: 거래처 등록신청서
+category: corp
+subcategory: sales
+tags: [거래처등록신청서, 협력업체등록, 신규거래처, 업체등록신청]
+summary: 신규 거래처의 사업자정보·담당자·결제조건·계좌정보를 받아 등록을 신청하는 서식입니다.
+usage: >
+  신규 거래를 시작하기 전 상대 업체의 정보를 받아 사내 거래처 원장에 등록할 때 사용합니다.
+  사업자등록증 사본과 통장 사본을 함께 받아야 대금 지급 시 문제가 없고, 결제조건과 세금계산서
+  발행 방식은 등록 단계에서 확정해 두는 편이 분쟁을 줄입니다. 계좌는 반드시 사업자명과
+  예금주가 일치하는지 확인하십시오.
+source: original
+featured: false
+target_pages: 2
+blocks:
+  - type: doc_title
+    text: 거래처 등록신청서
+    spaced: false
+  - type: grid
+    widths: [14, 20, 14, 18, 16, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["신청일자", "", "신청부서", "", "신청자", ""]
+  - type: subtitle
+    text: 1. 사업자 정보
+  - type: grid
+    widths: [16, 26, 14, 20, 24]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 4]
+    rows:
+      - ["사업자등록번호", "", "상호(법인명)", "", "대표자"]
+      - ["업태", "", "종목", "", "법인/개인"]
+      - ["사업장 소재지", "", "", "", ""]
+      - ["대표 전화", "", "팩스", "", "홈페이지"]
+  - type: subtitle
+    text: 2. 담당자 정보
+  - type: table
+    widths: [22, 18, 22, 20, 18]
+    header: [구분, 성명, 이메일, 연락처, 직위]
+    rows:
+      - ["영업 담당", "", "", "", ""]
+      - ["세금계산서 담당", "", "", "", ""]
+    empty_rows: 2
+    row_height_mm: 8
+    body_align: center
+  - type: subtitle
+    text: 3. 거래 조건
+  - type: grid
+    widths: [16, 24, 16, 20, 24]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["주요 거래품목", "", "예상 거래규모", "", "연 / 월 기준"]
+      - ["결제조건", "", "결제주기", "", "현금 / 어음 / 카드"]
+      - ["세금계산서", "전자 / 수기", "발행시점", "", "월합계 / 건별"]
+  - type: subtitle
+    text: 4. 입금 계좌
+  - type: grid
+    widths: [16, 24, 16, 20, 24]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["은행명", "", "예금주", "", "사업자명과 일치 여부"]
+      - ["계좌번호", "", "", "", ""]
+  - type: subtitle
+    text: 5. 첨부서류
+  - type: kv_list
+    items:
+      - "사업자등록증 사본 (필수)"
+      - "통장 사본 (필수)"
+      - "법인등기부등본 (법인인 경우)"
+      - "회사소개서·제품 카탈로그 (선택)"
+  - type: textbox
+    hint: "등록 사유와 특기사항을 기재하십시오. (예: 기존 업체 단가 대비 15% 절감, 납기 단축)"
+    height_mm: 24
+  - type: date_line
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 1, 2, 3]
+    row_height_mm: 13
+    rows:
+      - ["신청자", "팀장", "임원", "대표"]
+      - ["", "", "", ""]
+  - type: notice
+    text: 계좌 예금주가 사업자명과 다른 경우 반드시 사유를 확인하고 증빙을 받아 두십시오. 세금계산서 발행 기준은 세법과 사내 규정을 함께 확인하십시오.

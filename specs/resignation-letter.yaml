@@ -1,0 +1,58 @@
+id: resignation-letter
+title: 사직서
+category: corp
+subcategory: hr
+tags: [사직서, 퇴직원, 퇴사서류, 사표, 의원면직]
+summary: 소속·직위·사직일자·사직사유를 기재하는 표준 사직서 양식입니다.
+usage: >
+  퇴직 의사를 회사에 공식적으로 알리는 서류입니다. 근로기준법상 퇴직 통보 기한은 취업규칙에
+  따르며 통상 30일 전 제출이 관행입니다. 사직일자는 '마지막 근무일'이 아니라 '근로관계가
+  종료되는 날'을 기재하고, 제출 전 사본을 보관하십시오.
+source: original
+featured: true
+featured_rank: 3
+blocks:
+  - type: doc_title
+    text: 사직서
+  - type: spacer
+    height_pt: 6
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["소속(부서)", "", "직위", ""]
+      - ["성명", "", "사번", ""]
+      - ["입사일자", "", "사직일자", ""]
+      - ["연락처", "", "이메일", ""]
+  - type: subtitle
+    text: 사직 사유
+  - type: textbox
+    hint: "사직 사유를 구체적으로 기재하십시오. (예: 개인사정, 이직, 학업, 건강 등)"
+    height_mm: 38
+  - type: subtitle
+    text: 인수인계 사항
+  - type: table
+    widths: [30, 45, 25]
+    header: [업무명, 인수인계 내용, 인계 대상자]
+    empty_rows: 3
+    row_height_mm: 9
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: 본인은 위와 같은 사유로 사직하고자 하오니 재가하여 주시기 바랍니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+  - type: sign_line
+    label: 신청인
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 대표이사 귀하
+    align: center
+    size: 12
+    bold: true
+  - type: notice
+    text: 제출 전 사본을 보관하시고, 사직일자와 잔여 연차·퇴직금 정산 기준을 인사담당자와 사전에 확인하십시오.
