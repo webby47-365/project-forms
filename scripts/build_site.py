@@ -27,6 +27,8 @@ ADS = ROOT / "catalog" / "ads.json"
 
 SITE_NAME = "무료서식 다운로드"
 SITE_URL = "https://freeforms.kr"  # canonical·sitemap·JSON-LD에 사용
+# Google Analytics 4 측정 ID. 빈 문자열이면 추적 스크립트를 아예 내보내지 않는다.
+GA4_ID = "G-912YLRDN2B"
 KST = timezone(timedelta(hours=9))
 
 RECENT_COUNT = 10
@@ -159,6 +161,7 @@ def build() -> int:
     common = {
         "site_name": SITE_NAME,
         "site_url": SITE_URL,
+        "ga4_id": GA4_ID,
         "categories": categories,
         "counts": counts,
         "cat_label": cat_label,

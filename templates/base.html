@@ -12,6 +12,30 @@
 <meta property="og:site_name" content="{{ site_name }}">
 <meta name="naver-site-verification" content="84f0aadaca88d57ca53e9c0eb1b5705bb0a29425">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{% if ga4_id %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga4_id }}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{ ga4_id }}', { anonymize_ip: true });
+
+// 다운로드 집계 — 형식별로 이벤트 이름을 나눈다(dl_pdf / dl_docx / dl_hwpx).
+// 이름만으로 형식별 집계가 되므로 맞춤 측정기준을 등록하지 않아도 API에서 바로 읽힌다.
+// hwpx는 GA4 '향상된 측정'의 자동 파일 감지 목록에 없어 직접 보내야 한다.
+document.addEventListener('click', function (ev) {
+  var a = ev.target && ev.target.closest ? ev.target.closest('a[href*="/files/"]') : null;
+  if (!a) return;
+  var m = a.getAttribute('href').match(/\/files\/([^\/]+)\/[^\/]+\.(pdf|docx|hwpx)(?:$|[?#])/);
+  if (!m) return;
+  var card = a.closest('[data-form-title]');
+  gtag('event', 'dl_' + m[2], {
+    form_id: m[1],
+    form_title: card ? card.getAttribute('data-form-title') : (a.getAttribute('download') || m[1])
+  });
+}, true);
+</script>
+{% endif %}
 {% if ads.enabled and ads.client %}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ ads.client }}" crossorigin="anonymous"></script>
 {% endif %}
