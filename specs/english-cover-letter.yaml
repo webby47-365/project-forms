@@ -29,6 +29,10 @@ blocks:
       - ["Full Name", "", "Phone", ""]
       - ["Address", "", "", ""]
       - ["Email", "", "LinkedIn / Portfolio", ""]
+    sample_rows:
+      - ["", "HONG GILDONG", "", "+82 10-1234-5678"]
+      - ["", "100 World Cup-ro, Mapo-gu, Seoul", "", ""]
+      - ["", "gildong.hong@example.com", "", "linkedin.com/in/gildonghong"]
   - type: subtitle
     text: Recipient
   - type: grid
@@ -41,28 +45,38 @@ blocks:
       - ["Hiring Manager", "", "Company", ""]
       - ["Company Address", "", "", ""]
       - ["Position Applied For", "", "Job Reference No.", ""]
+    sample_rows:
+      - ["", "Ms. Sarah Lee", "", "Hanbit Commerce Co., Ltd."]
+      - ["", "200 Teheran-ro, Gangnam-gu, Seoul", "", ""]
+      - ["", "Marketing Specialist", "", "REQ-2026-014"]
   - type: date_line
     text: "Date : 20    /      /      "
+    sample_text: "Date : 2026 / 09 / 13"
   - type: subtitle
     text: Letter Body
   - type: para
     text: "Dear ________________________ ,"
     align: left
     size: 10.5
+    sample_text: "Dear Ms. Sarah Lee,"
   - type: textbox
     hint: "Opening — State the position you are applying for and how you learned about it."
     height_mm: 24
+    sample_text: "I am writing to apply for the Marketing Specialist position at Hanbit Commerce, which I found on your careers page. My background in digital marketing fits this role well."
   - type: textbox
     hint: "Body — Highlight two or three achievements that match the job requirements, with measurable results."
     height_mm: 52
+    sample_text: "In my current role at Saegil Data, I led a social media campaign that grew our audience by 40% in three months. I also redesigned our email newsletter, raising open rates from 18% to 27%. These results reflect the data-driven approach I would bring to your team."
   - type: textbox
     hint: "Closing — Express interest in an interview and thank the reader."
     height_mm: 22
+    sample_text: "I would welcome the chance to discuss how my experience can support your marketing goals. Thank you for your time and consideration."
   - type: para
     text: "Sincerely,"
     align: left
     size: 10.5
   - type: sign_line
     label: Signature
+    sample_names: [HONG GILDONG]
   - type: notice
     text: 회사명과 담당자 이름의 철자를 확인하고, 전체 분량은 A4 한 장을 넘기지 않도록 작성하십시오.

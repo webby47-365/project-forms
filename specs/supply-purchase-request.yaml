@@ -23,6 +23,9 @@ blocks:
     rows:
       - ["신청일자", "", "신청부서", "", "신청자", ""]
       - ["예상 구매일", "", "예산 과목", "", "담당자연락처", ""]
+    sample_rows:
+      - ["", "2026-09-15", "", "총무팀", "", "김서연"]
+      - ["", "2026-09-20", "", "사무관리비", "", "010-1234-5678"]
   - type: subtitle
     text: 1. 구매 품목
   - type: table
@@ -31,16 +34,21 @@ blocks:
     empty_rows: 7
     row_height_mm: 9
     body_align: center
+    sample_rows:
+      - ["1", "무선 마우스", "로지텍 M185", "개", "5", "15,000", "75,000"]
+      - ["2", "A4 복사용지", "80g 2500매", "박스", "10", "25,000", "250,000"]
   - type: subtitle
     text: 2. 구매 사유 및 용도
   - type: textbox
     hint: "비품 구매의 필요성, 사용 부서, 구체적인 용도를 기재하십시오."
     height_mm: 24
+    sample_text: 기존 사무용 마우스 고장으로 디자인팀 공용 비품을 교체합니다. 복사용지는 재고 소진에 따라 3개월분을 추가로 확보하기 위한 요청입니다.
   - type: subtitle
     text: 3. 비고
   - type: textbox
     hint: "업체 지정, 반납 예정일, 기타 특이사항을 기재하십시오."
     height_mm: 14
+    sample_text: 지정 업체 없음. 납품은 총무팀 사무실로 직접 배송 요청.
   - type: subtitle
     text: 결재
   - type: grid

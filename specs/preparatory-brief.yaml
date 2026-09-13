@@ -1,0 +1,89 @@
+id: preparatory-brief
+title: 준비서면
+category: legal
+subcategory: litigation
+tags: [준비서면, 민사준비서면, 변론준비서면, 준비서면작성, 소송준비서면]
+summary: 변론기일 전 당사자의 주장과 반박을 정리하여 법원과 상대방에게 제출하는 준비서면 양식입니다.
+usage: >
+  소송이 진행되는 중에 당사자가 자신의 주장을 보완하거나 상대방의 새로운 주장에 반박하기
+  위해 작성하는 문서입니다. 당사자 간 다툼이 없는 사실을 먼저 정리하고, 자신의 주장 요지와
+  상대방 주장에 대한 반박을 순서대로 기재합니다. 새로 제출하는 증거가 있으면 입증방법 표에
+  정리하여 함께 냅니다. 제출 기한과 부본 수는 재판부의 안내나 송달받은 문서를 확인하십시오.
+source: law-standard
+source_note: 민사소송법상 준비서면 기재사항을 참고하여 자체 제작
+featured: false
+target_pages: 2
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 준비서면
+    spaced: true
+
+  - type: subtitle
+    text: 사건의 표시
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사건번호", "", "사건명", ""]
+      - ["원고", "", "피고", ""]
+    sample_rows:
+      - ["", "2026가소12345", "", "대여금 반환 청구"]
+      - ["", "홍길동", "", "김서연"]
+
+  - type: subtitle
+    text: 다툼 없는 사실
+  - type: textbox
+    hint: "당사자 간 이미 인정되어 다툼이 없는 사실을 정리하여 기재하십시오."
+    height_mm: 25
+    sample_text: 피고가 원고로부터 2025년 6월 10일 금 10,000,000원을 차용한 사실 및 변제기일이 2026년 6월 10일인 사실에는 당사자 간 다툼이 없습니다.
+
+  - type: subtitle
+    text: 주장의 요지
+  - type: textbox
+    hint: "본인이 이 준비서면에서 주장하고자 하는 내용을 요약하여 기재하십시오."
+    height_mm: 30
+    sample_text: 원고는 피고가 변제기일까지 대여금을 변제하지 않았으므로 대여금 전액과 그 지연손해금을 지급할 의무가 있다고 주장합니다.
+
+  - type: subtitle
+    text: 상대방 주장에 대한 반박
+  - type: textbox
+    hint: "상대방이 제출한 서면에서 새로 주장한 내용을 인용하고 이에 대한 반박을 기재하십시오."
+    height_mm: 30
+    sample_text: 피고는 변제기일 연장에 관하여 원고와 협의하였다고 주장하나, 원고는 이러한 협의나 동의를 한 사실이 없으므로 피고의 주장은 사실과 다릅니다.
+
+  - type: subtitle
+    text: 입증 방법
+  - type: table
+    widths: [10, 34, 30, 26]
+    header: ["No", 서증명, 내용, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "갑 제3호증", "내용증명 발송 확인서", ""]
+      - ["2", "갑 제4호증", "문자메시지 캡처", ""]
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 원고
+    sample_names: [홍길동]
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: "                        법원  귀중"
+    align: center
+    size: 12
+    bold: true
+    sample_text: 서울서부지방법원  귀중
+
+  - type: notice
+    text: 준비서면은 변론기일 전 법원과 상대방에게 미리 제출하는 것이 원칙이며, 제출 기한과 부본 수는 재판부의 안내에 따라 확인하십시오.

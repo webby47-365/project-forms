@@ -1,0 +1,93 @@
+id: vaccination-consent
+title: 예방접종 동의서
+category: welfare
+subcategory: consent
+tags: [예방접종동의서, 백신접종동의서, 접종동의서, 예방접종확인서, 접종전확인서]
+summary: 예방접종 전 대상자 정보와 사전 확인 사항을 점검하고 본인 또는 보호자 동의를 받는 서식입니다.
+usage: >
+  어린이나 성인이 예방접종을 받기 전에 접종기관이 대상자 상태를 확인하고 본인 또는
+  보호자의 동의를 받을 때 사용하는 서식입니다. 미성년자는 보호자가 사전 확인 항목에
+  답하고 동의란에 서명합니다. 발열, 이전 접종 후 이상반응, 알레르기 여부는 접종 가능
+  여부 판단에 중요하므로 빠짐없이 표시하십시오. 백신명과 접종 차수는 접종기관이
+  기재합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 예방접종 동의서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 접종 대상자 정보
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", "", "연락처", ""]
+      - ["보호자(미성년자인 경우)", "", "관계", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1958-03-02", "", "010-1234-5678"]
+      - ["", "김서연", "", "자녀", "", "010-1234-5678"]
+
+  - type: subtitle
+    text: 2. 접종 정보
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["백신명", "", "접종 차수", ""]
+      - ["접종 예정일", "", "접종 기관", ""]
+    sample_rows:
+      - ["", "(접종기관 기재)", "", "1차"]
+      - ["", "2026-09-25", "", "한빛병원"]
+
+  - type: subtitle
+    text: 3. 사전 확인 사항
+
+  - type: table
+    widths: [54, 23, 23]
+    header: [확인 항목, 예, 아니오]
+    rows:
+      - ["현재 발열이 있습니까", "", ""]
+      - ["이전 접종 후 이상반응이 있었습니까", "", ""]
+      - ["알레르기 반응 경험이 있습니까", "", ""]
+    empty_rows: 0
+    row_height_mm: 8
+    body_align: center
+
+  - type: subtitle
+    text: 4. 설명 확인
+
+  - type: para
+    text: 접종의 효과와 이상반응이 나타날 가능성, 접종 후 이상반응 발생 시 대응 방법에 대한 설명을 들었으며, 접종 후 15~30분간 관찰이 필요함을 안내받았습니다.
+    align: left
+    size: 10
+    space_after: 2
+
+  - type: para
+    text: 위 내용을 확인하였으며, 예방접종에 동의합니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월    25 일
+
+  - type: sign_line
+    labels: ["동의자(본인 또는 보호자) 서명", "보호자 서명(미성년자인 경우)"]
+    sample_names: [홍길동, 김서연]
+
+  - type: notice
+    text: 개인정보(건강정보 포함)의 수집 목적은 예방접종 사전 확인 및 동의 기록이며, 보유기간은 관계 법령에 따라 보관한 후 파기합니다.
+
+  - type: notice
+    text: 본 서식은 참고용이며, 의학적 설명과 판단은 담당 의료진이 수행합니다. 기관별 양식이 따로 있는 경우 해당 기관 양식을 사용하십시오.

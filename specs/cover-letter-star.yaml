@@ -1,0 +1,84 @@
+id: cover-letter-star
+title: 자기소개서 (항목형·STAR)
+category: personal
+subcategory: career
+tags: [자기소개서, 자소서, STAR, 경험 기술, 항목형 자기소개서, cover letter]
+summary: 문항별로 상황-과제-행동-결과(STAR)를 나누어 작성하는 경험 기술형 자기소개서 양식입니다.
+usage: >
+  직무 역량을 경험 중심으로 구체적으로 검증하려는 기업에서 자주 요구하는 항목형 자기소개서
+  서식입니다. 문항마다 상황(Situation)-과제(Task)-행동(Action)-결과(Result) 순서로 칸을
+  나누어 작성하면 두괄식으로 경험을 정리하기 쉽습니다. 행동 칸에는 본인이 실제로 한 일을
+  구체적으로 쓰고, 결과 칸에는 가능한 한 수치나 변화로 마무리하십시오. 문항은 채용 공고의
+  요구 역량에 맞게 바꾸어 사용할 수 있습니다.
+source: original
+featured: false
+target_pages: 2
+series: cover-letter
+series_name: 자기소개서
+variant: 항목형
+variant_rank: 5
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 자기소개서
+
+  - type: grid
+    widths: [14, 20, 12, 18, 14, 22]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "지원분야", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "영업 직무", "", "010-1234-5678"]
+
+  - type: subtitle
+    text: "문항 1. 목표를 달성하기 위해 도전했던 경험을 서술하십시오."
+
+  - type: grid
+    widths: [15, 85]
+    label_cols: [0]
+    row_height_mm: 16
+    rows:
+      - ["S (상황)", ""]
+      - ["T (과제)", ""]
+      - ["A (행동)", ""]
+      - ["R (결과)", ""]
+    sample_rows:
+      - ["", "3학년 2학기, 교내 창업경진대회에 학과 대표로 처음 참가하게 되었습니다."]
+      - ["", "예선을 통과해 2주 안에 실제 수익모델을 검증할 시제품과 발표자료를 완성해야 했습니다."]
+      - ["", "팀원 4명과 역할을 나눠 매일 저녁 모여 시장 조사와 프로토타입 제작을 병행했고, 멘토 피드백을 반영해 발표안을 세 번 수정했습니다."]
+      - ["", "본선에 진출해 장려상을 받았고, 짧은 기간에도 목표를 쪼개어 실행하면 성과를 낼 수 있다는 확신을 얻었습니다."]
+
+  - type: subtitle
+    text: "문항 2. 협업 과정에서 갈등을 해결했던 경험을 서술하십시오."
+
+  - type: grid
+    widths: [15, 85]
+    label_cols: [0]
+    row_height_mm: 16
+    rows:
+      - ["S (상황)", ""]
+      - ["T (과제)", ""]
+      - ["A (행동)", ""]
+      - ["R (결과)", ""]
+    sample_rows:
+      - ["", "동아리 축제 준비 과정에서 기획팀과 운영팀 사이에 일정에 대한 의견 차이로 갈등이 생겼습니다."]
+      - ["", "행사 2주 전까지 양쪽이 만족할 수 있는 일정안을 다시 조율해야 했습니다."]
+      - ["", "양측 팀장과 개별 면담으로 우려사항을 파악한 뒤, 전체 회의에서 우선순위를 함께 정리하고 절충안을 제안했습니다."]
+      - ["", "수정된 일정으로 행사를 무사히 마쳤고, 이후에도 두 팀이 정기적으로 소통하는 체계를 만들었습니다."]
+
+  - type: para
+    text: 위 내용은 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 지원자
+    sample_names: [홍길동]

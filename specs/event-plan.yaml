@@ -1,0 +1,103 @@
+id: event-plan
+title: 행사 기획서
+category: corp
+subcategory: admin
+version: 1
+created_by: agent
+status: published
+tags: [행사기획서, 행사계획서, 이벤트기획안, 행사운영계획, event plan]
+summary: 행사의 개요와 추진 목적, 세부 프로그램·예산·준비 일정을 정리해 결재받는 행사 기획서입니다.
+usage: >
+  사내 행사나 대외 행사를 준비할 때 개요부터 세부 일정까지 한 번에 정리해 결재받는
+  서류입니다. 추진 배경과 목적을 먼저 적고, 세부 프로그램은 시간대별 내용과 담당을
+  명확히 구분합니다. 예산은 산출근거를 함께 적어 금액의 타당성을 검토받고, 준비
+  일정은 항목별 담당과 진행 상태를 표시해 누락 없이 진행하십시오.
+source: original
+featured: false
+target_pages: 2
+blocks:
+  - type: doc_title
+    text: 행사 기획서
+    spaced: true
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["행사명", "", "일시", ""]
+      - ["장소", "", "주최", ""]
+      - ["대상", "", "예상인원", ""]
+    sample_rows:
+      - ["", "2026 한빛커머스 협력사 간담회", "", "2026-10-15 14:00~17:00"]
+      - ["", "그랜드볼룸 2층 컨벤션홀", "", "㈜한빛커머스 마케팅팀"]
+      - ["", "주요 협력사 대표 및 실무자", "", "80명"]
+
+  - type: subtitle
+    text: 1. 추진 배경 및 목적
+
+  - type: textbox
+    hint: "행사를 추진하는 배경과 기대효과를 작성하십시오."
+    height_mm: 24
+    sample_text: 협력사와의 신뢰 관계를 강화하고 2027년 사업 방향을 공유하기 위한 자리로, 우수 협력사 시상과 네트워킹 세션을 통해 장기적인 협업 기반을 마련하고자 합니다.
+
+  - type: subtitle
+    text: 2. 세부 프로그램
+
+  - type: table
+    widths: [14, 40, 20, 26]
+    header: [시간, 내용, 담당, 장소]
+    empty_rows: 6
+    row_height_mm: 9
+    sample_rows:
+      - ["14:00~14:10", "등록 및 환영", "총무팀", "로비"]
+      - ["14:10~14:40", "대표이사 인사말 및 사업 방향 발표", "박민준", "컨벤션홀"]
+      - ["14:40~16:00", "협력사 우수사례 발표 및 시상", "마케팅팀", "컨벤션홀"]
+      - ["16:00~17:00", "네트워킹 및 만찬", "전 부서", "컨벤션홀"]
+
+  - type: subtitle
+    text: 3. 예산
+
+  - type: table
+    widths: [10, 22, 38, 30]
+    header: ["No", 항목, 산출근거, "금액(원)"]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "대관료", "컨벤션홀 3시간 대관", "1,500,000"]
+      - ["2", "식음료", "80명 × 45,000원", "3,600,000"]
+      - ["3", "기념품", "80명 × 20,000원", "1,600,000"]
+
+  - type: grid
+    widths: [25, 75]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["합계", ""]
+    sample_rows:
+      - ["", "6,700,000"]
+
+  - type: subtitle
+    text: 4. 준비 일정
+
+  - type: table
+    widths: [16, 50, 20, 14]
+    header: [일자, "준비 내용", 담당, 상태]
+    empty_rows: 5
+    row_height_mm: 9
+    sample_rows:
+      - ["2026-09-20", "행사 장소 계약 및 견적 확정", "총무팀", "완료"]
+      - ["2026-09-30", "초청장 발송", "마케팅팀", "진행 중"]
+      - ["2026-10-10", "현장 리허설", "총무팀", "예정"]
+
+  - type: subtitle
+    text: 결재
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 16
+    rows:
+      - ["담당", "팀장", "임원", "대표"]
+      - ["서명(날인)", "서명(날인)", "서명(날인)", "서명(날인)"]

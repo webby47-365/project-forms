@@ -1,0 +1,57 @@
+id: business-reg-checklist
+title: 사업자등록 준비 체크리스트
+category: corp
+subcategory: startup
+tags: [사업자등록체크리스트, 사업자등록준비, 사업자등록구비서류, 홈택스, 창업준비]
+summary: 업종·과세유형 선택과 사업자등록에 필요한 구비서류를 점검하는 체크리스트입니다.
+usage: >
+  사업자등록 신청 전에 업종과 과세유형(일반·간이·면세)을 정하고, 개인사업자와 법인사업자가
+  각각 준비해야 하는 서류를 빠짐없이 확인하는 서식입니다. 임대차계약서, 인허가증, 법인이라면
+  법인등기부등본·정관처럼 업종과 사업 형태에 따라 필요한 서류가 다르므로 준비여부를 표시하며
+  점검하십시오. 업종별 인허가 요건과 과세유형 적용 기준은 홈택스 또는 관할 세무서에 문의해
+  사전에 확인하는 것이 안전합니다.
+source: original
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 사업자등록 준비 체크리스트
+    spaced: false
+
+  - type: subtitle
+    text: 사업 기본 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["업종", "", "과세유형(일반/간이/면세)", ""]
+    sample_rows:
+      - ["", "온라인 쇼핑몰 운영", "", "간이과세자"]
+
+  - type: subtitle
+    text: 구비서류 체크
+  - type: table
+    widths: [16, 24, 10, 10, 12, 28]
+    header: [구분, 필요서류, 개인, 법인, 준비여부, 비고]
+    empty_rows: 8
+    row_height_mm: 7.5
+    sample_rows:
+      - ["사업장", "임대차계약서", "○", "○", "☑", "사업장 주소 확인용"]
+      - ["신원확인", "신분증(대표자)", "○", "○", "☑", ""]
+      - ["인허가", "업종별 인허가증·신고필증", "△", "△", "□", "통신판매업 신고 진행 중"]
+      - ["동업관계", "동업계약서", "△", "-", "□", "공동사업자인 경우만"]
+      - ["법인서류", "법인등기부등본·정관", "-", "○", "□", "법인인 경우만"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 작성자
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 업종별 인허가 요건과 과세유형 적용 기준은 홈택스 또는 관할 세무서에 문의해 확인하십시오. 신청은 홈택스 전자신청 또는 세무서 방문으로 가능합니다.

@@ -27,11 +27,17 @@ blocks:
       - ["문서번호", "", "시행일자", ""]
       - ["제목", "", "", ""]
       - ["담당자", "", "연락처", ""]
+    sample_rows:
+      - ["", "영업팀", "", "총무팀"]
+      - ["", "협조-2026-042", "", "2026-09-13"]
+      - ["", "3분기 프로모션 전시자료 지원 요청", "", ""]
+      - ["", "김서연", "", "010-1234-5678"]
   - type: subtitle
     text: 1. 요청 배경 및 목적
   - type: textbox
     hint: "협조가 필요하게 된 배경과 업무 목적을 간단히 기재하십시오."
     height_mm: 26
+    sample_text: 3분기 프로모션 준비로 영업팀 고객 데이터와 전시 자료가 필요하여 협조를 요청합니다. 행사 일정에 맞춰 자료를 확보해 준비 지연을 방지하고자 합니다.
   - type: subtitle
     text: 2. 협조 요청 사항
   - type: table
@@ -40,12 +46,16 @@ blocks:
     empty_rows: 2
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "고객 명단 자료 제공", "프로모션 타겟 선정", "2026-09-20", "비밀유지 준수"]
   - type: grid
     widths: [18, 32, 18, 32]
     label_cols: [0, 2]
     row_height_mm: 8
     rows:
       - ["회신 기한", "", "회신 방법", "공문 / 이메일 / 사내 시스템"]
+    sample_rows:
+      - ["", "2026-09-20", "", "이메일"]
   - type: subtitle
     text: 3. 첨부자료
   - type: table
@@ -54,11 +64,15 @@ blocks:
     empty_rows: 3
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "프로모션 기획안.pptx", "PPTX", "최종안"]
+      - ["2", "고객 명단.xlsx", "XLSX", ""]
   - type: para
     text: 위와 같이 업무 협조를 요청드리오니 조치하여 주시기 바랍니다.
     align: center
     size: 11
   - type: date_line
+    sample_text: 2026 년    9 월   13 일
   - type: subtitle
     text: 결재
   - type: grid

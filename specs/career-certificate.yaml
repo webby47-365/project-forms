@@ -26,6 +26,10 @@ blocks:
       - ["성명", "", "생년월일", ""]
       - ["재직구분", "", "총 경력기간", ""]
       - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-03-02"]
+      - ["", "퇴직자", "", "3년 6개월"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
   - type: subtitle
     text: 경력사항
   - type: table
@@ -33,12 +37,17 @@ blocks:
     header: [근무기간, 부서, 직위, 담당업무, 근무형태]
     empty_rows: 5
     row_height_mm: 9
+    sample_rows:
+      - ["2020.03 ~ 2022.08", "마케팅팀", "사원", "온라인 광고 운영", "정규직"]
+      - ["2022.09 ~ 2025.12", "전략기획팀", "대리", "사업계획 수립", "정규직"]
   - type: grid
     widths: [16, 84]
     label_cols: [0]
     row_height_mm: 9
     rows:
       - ["용도", ""]
+    sample_rows:
+      - ["", "이직 제출용"]
   - type: spacer
     height_pt: 4
   - type: para
@@ -47,6 +56,7 @@ blocks:
     size: 11.5
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: spacer
     height_pt: 4
   - type: grid
@@ -57,5 +67,9 @@ blocks:
       - ["회사명", "", ""]
       - ["사업자등록번호", "", ""]
       - ["대표자", "", "(직인)"]
+    sample_rows:
+      - ["", "(주)한빛커머스", ""]
+      - ["", "000-00-00000", ""]
+      - ["", "홍길동", ""]
   - type: notice
     text: 근무형태란에는 정규직·계약직·파견 등을 기재하며, 경력 인정 기준은 제출처 규정에 따릅니다.

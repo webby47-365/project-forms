@@ -1,0 +1,108 @@
+id: business-trip-report
+title: 출장 보고서
+category: corp
+subcategory: admin
+version: 1
+created_by: agent
+status: published
+tags: [출장보고서, 출장결과보고, 출장복귀보고, 출장경비, business trip]
+summary: 출장자 정보와 일정별 활동 내용, 주요 결과, 소요 경비를 정리해 복귀 후 보고하는 출장 보고서입니다.
+usage: >
+  출장을 마친 뒤 복귀 보고용으로 작성하는 서류입니다. 일자별 방문처와 면담자, 협의
+  내용을 간결히 적고 주요 결과는 성과와 후속 과제로 구분해 기재합니다. 소요 경비는
+  항목별 금액과 합계가 일치해야 하며, 교통비·숙박비 등 증빙서류를 첨부하여 경비
+  정산과 함께 제출하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 출장 보고서
+    spaced: true
+
+  - type: grid
+    widths: [14, 20, 14, 20, 14, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    merges:
+      - [1, 3, 1, 5]
+      - [2, 1, 2, 5]
+    rows:
+      - ["성명", "", "부서", "", "직위", ""]
+      - ["출장지", "", "출장기간", "", "", ""]
+      - ["출장목적", "", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "총무팀", "", "과장"]
+      - ["", "부산 본사 협력업체", "", "2026-09-14 ~ 2026-09-16", "", ""]
+      - ["", "신규 협력업체 실사 및 계약 조건 협의", "", "", "", ""]
+
+  - type: subtitle
+    text: 1. 일정별 활동
+
+  - type: table
+    widths: [14, 22, 18, 46]
+    header: [일자, 방문처, 면담자, 내용]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["2026-09-14", "㈜한빛물산 본사", "김도현 이사", "협력 조건 1차 협의"]
+      - ["2026-09-15", "생산공장 현장", "박지훈 공장장", "품질 기준 점검"]
+      - ["2026-09-16", "㈜한빛물산 본사", "김도현 이사", "계약서 초안 검토"]
+
+  - type: subtitle
+    text: 2. 주요 결과
+
+  - type: textbox
+    hint: "출장의 성과와 후속 과제를 구분하여 작성하십시오."
+    height_mm: 24
+    sample_text: 협력업체 실사 결과 생산 품질과 일정 관리 체계는 양호하였으며, 납품가 조건은 본사 재협의가 필요한 것으로 확인되었습니다. 계약서 초안은 법무팀 검토 후 확정할 예정입니다.
+
+  - type: subtitle
+    text: 3. 소요 경비
+
+  - type: table
+    widths: [10, 30, 35, 25]
+    header: ["No", 항목, "금액(원)", 비고]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "교통비", "320,000", "왕복 KTX"]
+      - ["2", "숙박비", "180,000", "2박"]
+      - ["3", "식비", "90,000", "3일"]
+
+  - type: grid
+    widths: [25, 75]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["합계", ""]
+    sample_rows:
+      - ["", "590,000"]
+
+  - type: para
+    text: 위와 같이 출장 결과를 보고합니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월   17 일
+
+  - type: sign_line
+    label: 출장자
+    sample_names: [홍길동]
+
+  - type: subtitle
+    text: 결재
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 16
+    rows:
+      - ["담당", "팀장", "임원", "대표"]
+      - ["서명(날인)", "서명(날인)", "서명(날인)", "서명(날인)"]
+
+  - type: notice
+    text: 출장 경비는 사내 경비 규정에 따라 정산하며, 관련 증빙서류를 첨부하여 제출하십시오.

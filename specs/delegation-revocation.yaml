@@ -1,0 +1,101 @@
+id: delegation-revocation
+title: 위임 해지 통지서
+category: legal
+subcategory: notice
+tags: [위임해지통지서, 위임계약해지, 위임해지, 위임종료통지, 위임해제]
+summary: 위임인이 수임인에게 위임계약의 해지 의사와 해지 효력 발생일, 인계 요구사항을 통지하는 양식입니다.
+usage: >
+  위임인이 기존에 맺은 위임계약을 더 이상 유지하지 않기로 하고 이를 수임인에게 공식적으로
+  알릴 때 사용합니다. 원 위임의 내용(위임일, 위임 사무, 위임 범위, 보수)을 먼저 밝히고 해지
+  사유와 해지 효력이 발생하는 날짜를 명확히 기재합니다. 서류·인장·잔여 금원 등 인계받아야
+  할 사항을 표로 정리해 두면 인수인계가 매끄럽습니다. 통지서는 등기우편 등으로 발송해 도달
+  사실을 남겨 두는 것이 좋습니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 위임 해지 통지서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 당사자
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+      - [3, 1, 3, 3]
+    rows:
+      - ["위임인", "", "연락처", ""]
+      - ["주소", "", "", ""]
+      - ["수임인", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+      - ["", "김서연", "", "010-9876-5432"]
+      - ["", "서울특별시 서대문구 충정로 30", "", ""]
+
+  - type: subtitle
+    text: 2. 원 위임 내역
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["위임일", "", "위임 범위", ""]
+      - ["위임 사무", "", "", ""]
+      - ["보수", "", "", ""]
+    sample_rows:
+      - ["", "2025-09-01", "", "임대차 계약 체결 및 관리"]
+      - ["", "서울특별시 마포구 소재 오피스텔 임대차 계약 체결·관리 업무", "", ""]
+      - ["", "월 200,000원", "", ""]
+
+  - type: subtitle
+    text: 3. 해지 의사 및 사유
+  - type: textbox
+    hint: "해지 사유와 경위를 간략히 기재하십시오."
+    height_mm: 25
+    sample_text: 위임인은 개인적인 사정으로 수임인과의 위임 관계를 더 이상 유지하기 어렵다고 판단하여 본 위임계약을 해지합니다. 이는 수임인의 업무 처리와 무관한 위임인의 사정에 따른 것입니다.
+
+  - type: subtitle
+    text: 4. 해지 효력 발생일
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["해지 효력 발생일", ""]
+    sample_rows:
+      - ["", "2026-09-27"]
+
+  - type: subtitle
+    text: 5. 인계 요구 사항
+  - type: table
+    widths: [25, 45, 30]
+    header: [구분, 인계 내용, 인계 기한]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["서류", "임대차 계약서 원본 및 관련 서류 일체", "2026-09-27"]
+      - ["인장", "업무용 인장 및 관련 증빙", "2026-09-27"]
+      - ["잔여 금원", "보관 중인 보증금 잔액", "2026-09-27"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 위임인
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 위임 해지의 효력 발생 시점과 범위에 관한 구체적 판단은 계약 내용에 따라 다르므로 필요시 법률 전문가에게 확인하십시오.

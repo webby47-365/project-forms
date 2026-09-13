@@ -24,6 +24,9 @@ blocks:
     rows:
       - ["차량번호", "", "차명(모델)", "", "소유자", ""]
       - ["기록 기간", "", "운전자명", "", "연락처", ""]
+    sample_rows:
+      - ["", "12가 3456", "", "아반떼 CN7", "", "(주)한빛커머스"]
+      - ["", "2026-09-01 ~ 2026-09-30", "", "홍길동", "", "010-1234-5678"]
   - type: subtitle
     text: 운행 내역
   - type: table
@@ -32,6 +35,9 @@ blocks:
     empty_rows: 14
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "09-01", "본사", "거래처 방문", "영업 미팅", "09:00", "11:30", "42"]
+      - ["2", "09-02", "본사", "공장", "자재 납품 확인", "14:00", "16:00", "58"]
   - type: spacer
     height_pt: 6
   - type: para
@@ -40,7 +46,9 @@ blocks:
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    30 일
   - type: sign_line
     label: 운전자
+    sample_names: [홍길동]
   - type: notice
     text: 월별 운행 기록을 정확히 유지하고 월말에 서명 후 제출하시기 바랍니다. 필요시 주행거리계 사진을 첨부해 주십시오.

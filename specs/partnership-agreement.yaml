@@ -29,6 +29,9 @@ blocks:
     empty_rows: 4
     row_height_mm: 9
     body_align: center
+    sample_rows:
+      - ["홍길동", "1985-03-11", "현금", "3,000만원", "60%", "대표/영업"]
+      - ["김서연", "1988-07-22", "현물", "2,000만원", "40%", "생산/품질"]
   - type: grid
     widths: [18, 32, 18, 32]
     label_cols: [0, 2]
@@ -36,6 +39,9 @@ blocks:
     rows:
       - ["사업체명", "", "사업 개시일", ""]
       - ["사업장 소재지", "", "사업 종목", ""]
+    sample_rows:
+      - ["", "한빛물산", "", "2026-10-01"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "생활용품 유통업"]
   - type: article
     heading: 제1조 (목적)
     lines:
@@ -93,12 +99,14 @@ blocks:
   - type: textbox
     hint: "상표·특허 등 지식재산의 귀속, 가족의 사업 참여, 배우자 동의 여부 등 합의한 내용을 기재하십시오."
     height_mm: 22
+    sample_text: 상표 출원비용은 공동 부담하며, 등록 후 권리는 사업체 명의로 한다.
   - type: para
     text: 본 계약을 증명하기 위하여 동업자 수만큼 계약서를 작성하여 각자 1부씩 보관한다.
     align: center
     size: 10
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: table
     widths: [22, 30, 26, 22]
     header: [구분, 성명, 주소, 서명 또는 인]
@@ -107,5 +115,7 @@ blocks:
     empty_rows: 2
     row_height_mm: 11
     body_align: center
+    sample_rows:
+      - ["동업자", "김서연", "서울특별시 강남구 테헤란로 50", ""]
   - type: notice
     text: 본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다. 출자금이 크거나 지식재산이 관련된 경우 반드시 전문가의 검토를 받으십시오.

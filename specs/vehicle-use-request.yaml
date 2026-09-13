@@ -1,0 +1,94 @@
+id: vehicle-use-request
+title: 업무용 차량 사용 신청서
+category: corp
+subcategory: admin
+version: 1
+created_by: agent
+status: published
+tags: [차량사용신청서, 업무용차량신청, 차량운행신청, 법인차량사용, vehicle request]
+summary: 업무용 차량의 사용일시·목적지·동승자를 적어 사전 승인을 받고 운행 기록을 남기는 신청서입니다.
+usage: >
+  회사 소유 차량을 업무상 사용하기 전에 사용일시와 목적지, 사용목적을 기재해 승인을
+  받는 서류입니다. 동승자와 운행 기록을 함께 적어 두면 차량 배정이 겹치지 않도록
+  관리할 수 있습니다. 사용 후에는 주행거리와 유류비·통행료를 기재하고 영수증을
+  첨부하여 차량관리자에게 제출하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 업무용 차량 사용 신청서
+    spaced: false
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["신청부서", "", "신청자", ""]
+      - ["연락처", "", "사번", ""]
+    sample_rows:
+      - ["", "영업팀", "", "박민준"]
+      - ["", "010-5678-1234", "", "20230145"]
+
+  - type: subtitle
+    text: 사용 정보
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["차량번호", "", "차종", ""]
+      - ["사용일시", "", "목적지", ""]
+      - ["동승자", "", "사용목적", ""]
+    sample_rows:
+      - ["", "12가 3456", "", "아반떼"]
+      - ["", "2026-09-16 09:00~18:00", "", "수원 물류센터"]
+      - ["", "김서연, 이수현", "", "거래처 배송 및 미팅"]
+
+  - type: subtitle
+    text: 운행 기록
+
+  - type: table
+    widths: [15, 15, 25, 25, 20]
+    header: [출발시각, 도착시각, 출발지, 도착지, "주행거리(km)"]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["09:10", "10:20", "본사 주차장", "수원 물류센터", "42"]
+      - ["16:30", "17:45", "수원 물류센터", "본사 주차장", "43"]
+
+  - type: subtitle
+    text: 유류비 및 통행료
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["유류비", "", "통행료", ""]
+    sample_rows:
+      - ["", "35,000", "", "8,200"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월   16 일
+
+  - type: sign_line
+    label: 신청자
+    sample_names: [박민준]
+
+  - type: subtitle
+    text: 결재
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 16
+    rows:
+      - ["신청자", "팀장", "차량관리자", "확인"]
+      - ["서명(날인)", "서명(날인)", "서명(날인)", "서명(날인)"]
+
+  - type: notice
+    text: 차량 사용 후에는 운행 기록과 유류비·통행료 영수증을 첨부하여 차량관리자에게 제출하십시오.

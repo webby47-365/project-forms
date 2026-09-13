@@ -1,0 +1,96 @@
+id: parking-fine-objection
+title: 주차위반 과태료 이의신청서
+category: public
+subcategory: civil
+tags: [주차위반이의신청서, 과태료이의신청, 주차과태료, 이의신청서, 주차단속]
+summary: 주차위반 과태료 부과에 이의가 있을 때 관할 지자체에 재심사를 요청하는 신청서입니다.
+usage: >
+  주차위반 단속으로 과태료 고지서를 받았으나 부과에 이의가 있을 때 관할 지자체에 제출합니다.
+  고지번호, 위반일시·장소, 차량번호, 과태료 금액을 고지서와 동일하게 기재하고, 이의 사유는
+  사실관계를 중심으로 구체적으로 적습니다. 현장 사진이나 상황 설명서 같은 증빙 자료를
+  함께 제출하면 심사에 도움이 됩니다. 이의신청 기간(통상 고지를 받은 날부터 60일 이내)을
+  넘기면 심사 자체가 어려우므로 기한을 먼저 확인하십시오.
+source: original
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 주차위반 과태료 이의신청서
+    spaced: false
+
+  - type: subtitle
+    text: 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-06-02"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "010-1234-5678"]
+
+  - type: subtitle
+    text: 처분 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["고지번호", "", "위반일시", ""]
+      - ["위반장소", "", "차량번호", ""]
+      - ["과태료 금액", "", "", ""]
+    sample_rows:
+      - ["", "2026-1234567", "", "2026-08-14 15:20"]
+      - ["", "서울특별시 마포구 공덕동 123 앞", "", "12가 3456"]
+      - ["", "60,000원", "", ""]
+
+  - type: subtitle
+    text: 이의신청 사유
+  - type: textbox
+    hint: "과태료 부과가 부당하다고 보는 사유를 구체적으로 기재하십시오."
+    height_mm: 18
+    sample_text: "당시 환자 이동을 위해 긴급히 하차하던 중으로, 단속 시점에는 이미 차량을 이동하려던 상태였습니다."
+
+  - type: subtitle
+    text: 증빙 자료
+  - type: table
+    widths: [10, 60, 30]
+    header: ["No", 자료명, 매수]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "현장 사진", "2매"]
+      - ["2", "상황 설명서", "1매"]
+
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["제출처(관할 지자체)", ""]
+    sample_rows:
+      - ["", "○○구청 교통행정과"]
+
+  - type: para
+    text: 위와 같이 이의를 신청합니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    8 월   20 일
+
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 이의신청 처리 결과는 관할 지자체의 판단에 따릅니다. 이의신청 기간(통상 고지를 받은 날부터 60일 이내)을 확인하여 기한 내에 제출하십시오.

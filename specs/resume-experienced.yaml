@@ -1,0 +1,113 @@
+id: resume-experienced
+title: 이력서 (경력용)
+category: personal
+subcategory: career
+tags: [이력서, 경력이력서, 경력직, 이직서류, 연봉협상, resume]
+summary: 경력사항과 주요 프로젝트·성과를 중심으로 작성하는 경력직 이직·전직용 이력서입니다.
+usage: >
+  경력직 채용이나 이직 시 제출하는 이력서로, 학력은 최종학력만 간단히 적고 경력사항과 성과에
+  분량을 집중합니다. 근무기간은 최근 순으로 적고, 담당업무는 역할과 범위가 드러나게 씁니다.
+  주요 프로젝트는 기간·역할·수행내용·성과를 함께 기재해 구체적인 기여를 보여주고, 희망연봉과
+  입사가능일은 채용 담당자가 바로 확인할 수 있도록 명확히 적으십시오.
+source: original
+featured: false
+target_pages: 1
+series: resume
+series_name: 이력서
+variant: 경력용
+variant_rank: 3
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 이력서
+
+  - type: grid
+    widths: [13, 16, 11, 14, 12, 16, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 7.5
+    merges:
+      - [2, 1, 2, 5]
+      - [3, 1, 3, 5]
+      - [0, 6, 3, 6]
+    photo_cell: [0, 6]
+    photo_mm: [24, 32]
+    rows:
+      - ["성명(한글)", "", "성명(한문)", "", "생년월일", "", "사진"]
+      - ["성명(영문)", "", "성별", "", "휴대전화", "", ""]
+      - ["이메일", "", "", "", "", "", ""]
+      - ["주소", "", "", "", "", "", ""]
+    sample_rows:
+      - ["", "김민준", "", "金民俊", "", "1990-08-02", ""]
+      - ["", "KIM MINJUN", "", "남", "", "010-5555-7777", ""]
+      - ["", "minjun.kim@example.com", "", "", "", "", ""]
+      - ["", "서울특별시 영등포구 여의대로 60", "", "", "", "", ""]
+
+  - type: subtitle
+    text: 1. 학력사항 (최종학력)
+
+  - type: table
+    widths: [22, 30, 20, 16, 12]
+    header: [재학기간, 학교명, 전공(학과), 졸업구분, 소재지]
+    empty_rows: 2
+    row_height_mm: 7.5
+    sample_rows:
+      - ["2009.03 ~ 2015.02", "한국대학교", "경영학과", "졸업", "서울"]
+
+  - type: subtitle
+    text: 2. 경력사항
+
+  - type: table
+    widths: [20, 24, 16, 20, 20]
+    header: [근무기간, 회사명, 부서/직위, 담당업무, 퇴직사유]
+    empty_rows: 4
+    row_height_mm: 7.5
+    sample_rows:
+      - ["2015.03 ~ 2018.12", "(주)한빛커머스", "영업팀/사원", "거래처 발굴 및 관리", "이직"]
+      - ["2019.01 ~ 2022.06", "(주)새길데이터", "영업기획팀/대리", "채널 영업전략 수립", "이직"]
+      - ["2022.07 ~ 재직중", "한빛물산", "영업기획팀/과장", "신규사업 영업총괄", "-"]
+
+  - type: subtitle
+    text: 3. 주요 프로젝트 및 성과
+
+  - type: table
+    widths: [8, 22, 16, 12, 22, 20]
+    header: ["No", 프로젝트명, 기간, 역할, 수행 내용, 성과]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "신규 거래처 발굴 프로젝트", "2021.03~2021.09", "팀 리더", "거래처 100곳 접촉 및 계약", "매출 18% 증가"]
+      - ["2", "영업관리 시스템 도입", "2022.09~2023.02", "실무 담당", "CRM 도입 및 데이터 이전", "응대시간 30% 단축"]
+
+  - type: subtitle
+    text: 4. 자격·어학 및 희망조건
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 7.5
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["자격·어학", "", "희망연봉", ""]
+      - ["입사가능일", "", "", ""]
+    sample_rows:
+      - ["", "TOEIC 900 / 유통관리사 2급", "", "4,800만원 이상"]
+      - ["", "2026-11-01 이후 협의 가능", "", ""]
+
+  - type: para
+    text: 위 기재사항은 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 지원자
+    sample_names: [김민준]
+
+  - type: notice
+    text: 경력·근무기간은 경력증명서와 일치하도록 작성하고, 희망연봉은 협의 가능 여부를 함께 적으십시오.

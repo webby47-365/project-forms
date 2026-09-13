@@ -54,6 +54,11 @@ class FormSpec:
     source_note: str = ""
     featured: bool = False
     featured_rank: int = 99  # 메인 노출 순서 (작을수록 먼저)
+    # 같은 서식의 실무 변형끼리 묶는 계열 키. 예: resume → 신입/경력/서술형 이력서
+    series: str = ""
+    series_name: str = ""   # 계열 표시명 (예: "이력서")
+    variant: str = ""       # 이 서식의 변형 이름 (예: "신입용", "경력용")
+    variant_rank: int = 99  # 계열 안에서의 나열 순서
     version: int = 1
     created_by: str = "manual"
     status: str = "published"
@@ -65,6 +70,18 @@ class FormSpec:
         if self.target_pages > 0:
             return self.target_pages
         return 1 + sum(1 for b in self.blocks if b.get("type") == "page_break")
+
+    @property
+    def has_sample(self) -> bool:
+        """미리보기용 '작성 예시' 데이터가 하나라도 들어 있는지 여부.
+
+        True면 build_form.py가 빈 양식과 별도로 예시 기입본을 한 번 더 렌더링해
+        그 결과로 미리보기 이미지를 만든다(다운로드 파일은 빈 양식 그대로다).
+        """
+        return any(
+            blk.get(k) for blk in self.blocks
+            for k in ("sample_rows", "sample_text", "sample_names", "photo_cell")
+        )
 
 
 class SpecError(ValueError):
@@ -127,6 +144,10 @@ def load_spec(path: Path) -> FormSpec:
         source_note=str(raw.get("source_note", "")),
         featured=bool(raw.get("featured", False)),
         featured_rank=int(raw.get("featured_rank", 99)),
+        series=str(raw.get("series", "")),
+        series_name=str(raw.get("series_name", "")),
+        variant=str(raw.get("variant", "")),
+        variant_rank=int(raw.get("variant_rank", 99)),
         version=int(raw.get("version", 1)),
         created_by=str(raw.get("created_by", "manual")),
         status=str(raw.get("status", "published")),
@@ -150,7 +171,7 @@ def _check_yaml_bool_trap(fname: str, idx: int, blk: dict[str, Any]) -> None:
             for v in value:
                 scan(v, where)
 
-    for key in ("header", "rows", "items", "lines", "labels"):
+    for key in ("header", "rows", "items", "lines", "labels", "sample_rows", "sample_names"):
         if key in blk:
             scan(blk[key], key)
 

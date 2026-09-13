@@ -1,0 +1,80 @@
+id: work-report-weekly
+title: 주간업무보고서
+category: corp
+subcategory: admin
+series: work-report
+series_name: 업무보고서
+variant: 주간
+variant_rank: 2
+version: 1
+created_by: agent
+status: published
+tags: [주간업무보고서, 주간보고, 업무보고서, 주간실적, weekly report]
+summary: 한 주간의 업무 실적과 차주 계획, 이슈 사항을 정리해 상급자에게 보고하는 주간업무보고서입니다.
+usage: >
+  매주 말 또는 매주 초에 지난 한 주의 업무 진행 상황과 다음 주 계획을 보고하는 사내
+  서류입니다. 금주 실적은 진행률과 함께 구체적으로 적고, 차주 계획은 우선순위가
+  드러나도록 정리합니다. 의사결정이 필요한 이슈나 지원 요청사항은 별도 칸에 적어
+  상급자가 빠르게 확인할 수 있도록 하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 주간업무보고서
+    spaced: true
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["보고부서", "", "보고자", ""]
+      - ["보고기간", "", "작성일", ""]
+    sample_rows:
+      - ["", "마케팅팀", "", "김서연"]
+      - ["", "2026-09-07 ~ 2026-09-11", "", "2026-09-11"]
+
+  - type: subtitle
+    text: 1. 금주 실적
+
+  - type: table
+    widths: [10, 50, 15, 25]
+    header: ["No", "업무 내용", "진행률", "비고"]
+    empty_rows: 5
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "3분기 마케팅 캠페인 기획안 작성", "80%", "임원 보고 후 확정"]
+      - ["2", "신규 거래처 미팅 3건 진행", "100%", "2건 계약 진행 중"]
+      - ["3", "SNS 광고 소재 제작", "60%", "디자인팀 협업 중"]
+
+  - type: subtitle
+    text: 2. 차주 계획
+
+  - type: table
+    widths: [10, 60, 30]
+    header: ["No", "계획 업무", "비고"]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "4분기 캠페인 예산안 확정", "재무팀 협의 필요"]
+      - ["2", "거래처 계약서 최종 검토", "법무팀 검토 요청"]
+
+  - type: subtitle
+    text: 3. 이슈 및 요청사항
+
+  - type: textbox
+    hint: "의사결정이 필요한 사항, 지원·협조 요청 내용을 기재하십시오."
+    height_mm: 18
+    sample_text: 신규 거래처 계약 법무 검토가 지연되고 있어 우선 검토를 요청드립니다. 광고 소재 외주 비용이 예산을 초과할 것으로 예상되어 별도 승인이 필요합니다.
+
+  - type: subtitle
+    text: 결재
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 16
+    rows:
+      - ["담당", "팀장", "임원", "대표"]
+      - ["서명(날인)", "서명(날인)", "서명(날인)", "서명(날인)"]

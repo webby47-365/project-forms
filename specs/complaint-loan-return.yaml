@@ -1,0 +1,124 @@
+id: complaint-loan-return
+title: 소장 (대여금 반환청구)
+category: legal
+subcategory: litigation
+tags: [소장, 대여금반환청구소송, 대여금소장, 대여금청구, 민사소장]
+summary: 빌려준 돈을 갚지 않는 채무자를 상대로 대여금 반환을 구하는 민사 소장 양식입니다.
+usage: >
+  금전을 대여하였으나 변제기일이 지나도록 돌려받지 못한 경우 법원에 제출하는 소장입니다.
+  대여 일자와 금액, 변제기일, 이자율 등 대여 내역을 먼저 밝히고 청구취지에 정확한 금액과
+  이자 기산일을 기재해야 합니다. 청구원인에는 대여 경위와 피고의 미지급 사실을 시간순으로
+  담백하게 적는 것이 유리합니다. 본 서식은 참고용이며 제출 전 법원 전자소송 사이트의 최신
+  양식과 관할을 확인하십시오.
+source: law-standard
+source_note: 민사소송법상 소장 기재사항을 참고하여 자체 제작
+featured: false
+target_pages: 2
+series: complaint
+series_name: 소장
+variant: 대여금
+variant_rank: 3
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 소장
+    spaced: true
+
+  - type: subtitle
+    text: 당사자
+  - type: grid
+    widths: [14, 26, 14, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 4]
+      - [3, 1, 3, 4]
+    rows:
+      - ["원고 성명", "", "생년월일", "", "연락처"]
+      - ["원고 주소", "", "", "", ""]
+      - ["피고 성명", "", "생년월일", "", "연락처"]
+      - ["피고 주소", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-03-15", "010-1234-5678"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "", ""]
+      - ["", "김서연", "", "1988-11-02", "010-9876-5432"]
+      - ["", "서울특별시 서대문구 충정로 30", "", "", ""]
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사건명", "", "소가(청구금액)", "금                                원"]
+    sample_rows:
+      - ["", "대여금 반환 청구의 소", "", "금 10,000,000원(금 일천만원)"]
+
+  - type: subtitle
+    text: 청구 취지
+  - type: textbox
+    hint: "피고가 원고에게 지급할 금액과 소송비용 부담, 가집행 등 구하는 판결 내용을 기재하십시오."
+    height_mm: 25
+    sample_text: 피고는 원고에게 금 10,000,000원 및 이에 대하여 2026년 6월 11일부터 다 갚는 날까지 연 12%의 비율로 계산한 돈을 지급하라. 소송비용은 피고가 부담한다. 제1항은 가집행할 수 있다.
+
+  - type: subtitle
+    text: 청구 원인
+  - type: textbox
+    hint: "대여 경위와 변제기일, 피고의 미지급 사실을 시간순으로 기재하십시오."
+    height_mm: 50
+    sample_text: 원고는 2025년 6월 10일 피고에게 금 10,000,000원을 변제기일 2026년 6월 10일로 정하여 대여하였습니다. 그러나 피고는 변제기일이 지난 현재까지 위 대여금을 변제하지 않고 있습니다. 원고는 피고에게 수차례 변제를 요청하였으나 피고로부터 별다른 답변을 받지 못하였습니다.
+
+  - type: subtitle
+    text: 대여 내역
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["대여일", "", "변제기일", ""]
+      - ["대여금액", "", "이자율", ""]
+    sample_rows:
+      - ["", "2025-06-10", "", "2026-06-10"]
+      - ["", "금 10,000,000원(금 일천만원)", "", "연 12%"]
+
+  - type: subtitle
+    text: 입증 방법
+  - type: table
+    widths: [10, 34, 30, 26]
+    header: ["No", 서증명, 내용, 비고]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "갑 제1호증", "금전차용증서", ""]
+      - ["2", "갑 제2호증", "계좌이체 내역서", ""]
+
+  - type: subtitle
+    text: 첨부 서류
+  - type: kv_list
+    items:
+      - "위 입증방법 사본 각 1부"
+      - "금전차용증서 사본 1부"
+      - "법인인 경우 법인등기부등본 1부"
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 원고
+    sample_names: [홍길동]
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: "                        법원  귀중"
+    align: center
+    size: 12
+    bold: true
+    sample_text: 서울서부지방법원  귀중
+
+  - type: notice
+    text: 본 서식은 참고용이며, 청구금액과 이자 산정, 관할 법원 등 구체적인 내용은 법률 전문가 또는 법원에 확인하십시오.

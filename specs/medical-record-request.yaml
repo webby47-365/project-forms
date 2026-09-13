@@ -1,0 +1,91 @@
+id: medical-record-request
+title: 진료기록 사본 발급 신청서
+category: welfare
+subcategory: consent
+tags: [진료기록사본발급신청서, 진료기록열람신청, 의무기록사본발급, 진단서발급신청, 진료기록신청서]
+summary: 환자 본인 또는 대리인이 진료기록 사본 발급이나 열람을 신청할 때 사용하는 서식입니다.
+usage: >
+  의료법 제21조에 따라 환자 또는 그 대리인이 진료기록의 열람이나 사본 발급을 요청할 때
+  작성합니다. 대리인이 신청하는 경우 가족관계증명서 등 관계를 증명하는 서류를 함께
+  제출해야 하며, 신청 목적과 필요한 기록 종류·기간을 구체적으로 적어야 처리 기간이
+  단축됩니다. 발급 수수료는 기관마다 다르므로 담당 부서에 문의하십시오.
+source: law-standard
+source_note: 의료법 제21조에 따른 기록 열람·사본 발급 요건 반영
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 진료기록 사본 발급 신청서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 신청인 정보
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "생년월일", "", "연락처", ""]
+      - ["주소", "", "", "", "환자와의 관계", ""]
+    sample_rows:
+      - ["", "김서연", "", "1985-11-03", "", "010-1234-5678"]
+      - ["", "서울특별시 마포구 월드컵북로 100, 202동 1503호", "", "", "", "자녀"]
+
+  - type: subtitle
+    text: 2. 환자 정보 (신청인이 환자 본인이 아닌 경우)
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", "", "등록번호", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1958-03-02", "", "00-000000"]
+
+  - type: subtitle
+    text: 3. 신청 내역
+
+  - type: table
+    widths: [22, 30, 16, 32]
+    header: [기록 종류, 진료 기간, 부수, 용도]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["진료기록부", "2026-01-05 ~ 2026-01-20", "1부", "보험 청구"]
+      - ["검사결과지", "2026-01-05 ~ 2026-01-20", "1부", "타 병원 진료 참고"]
+
+  - type: subtitle
+    text: 4. 구비서류 확인
+
+  - type: kv_list
+    items:
+      - "본인 신청: 신분증 사본 1부"
+      - "대리인 신청(가족): 신분증 사본, 가족관계증명서, 위임장 각 1부"
+      - "대리인 신청(기타): 신분증 사본, 위임장, 인감증명서 각 1부"
+
+  - type: para
+    text: 위 신청인은 진료기록 열람·사본 발급 목적으로 개인정보를 수집·이용하는 데 동의합니다.
+    align: center
+    size: 10
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    labels: ["신청인", "환자 본인(대리 신청 시)"]
+    sample_names: [김서연, 홍길동]
+
+  - type: notice
+    text: 개인정보(건강정보 포함)의 수집 목적은 진료기록 사본 발급·열람이며, 보유기간은 관계 법령에 따라 보관한 후 파기합니다.
+
+  - type: notice
+    text: 본 서식은 참고용이며, 의학적 설명과 판단은 담당 의료진이 수행합니다. 기관별 양식이 따로 있는 경우 해당 기관 양식을 사용하십시오.

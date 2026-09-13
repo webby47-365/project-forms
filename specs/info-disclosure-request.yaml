@@ -28,6 +28,10 @@ blocks:
       - ["성명", "", "생년월일", ""]
       - ["주소", "", "", ""]
       - ["연락처(휴대폰)", "", "이메일", ""]
+    sample_rows:
+      - ["", "박민준", "", "1990-05-12"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+      - ["", "010-1234-5678", "", "minjun.park@example.com"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -39,6 +43,9 @@ blocks:
     rows:
       - ["기관명", ""]
       - ["부서", ""]
+    sample_rows:
+      - ["", "서울특별시 마포구청"]
+      - ["", "정보공개담당관실"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -46,6 +53,7 @@ blocks:
   - type: textbox
     hint: "공개를 청구하는 정보를 구체적으로 기재하십시오. (예: 2024년 1월~6월 간 채용 공고 문서, 회의록 등)"
     height_mm: 14
+    sample_text: 2026년 1월~6월 마포구 주민센터 리모델링 공사 계약서 및 예산 집행 내역 공개를 청구합니다.
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -82,6 +90,8 @@ blocks:
     row_height_mm: 8
     rows:
       - ["감면 사유(해당 시)", ""]
+    sample_rows:
+      - ["", "해당없음"]
   - type: spacer
     height_pt: 4
   - type: para
@@ -90,9 +100,11 @@ blocks:
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: spacer
     height_pt: 2
   - type: sign_line
     label: 청구인
+    sample_names: [박민준]
   - type: notice
     text: 감면 대상(기초생활보장 수급자, 장애인 등)인 경우 증명서를 첨부해야 합니다. 청구 정보가 불명확하면 보완을 요청받을 수 있습니다.

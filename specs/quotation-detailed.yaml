@@ -1,0 +1,106 @@
+id: quotation-detailed
+title: 견적서 (상세형)
+category: corp
+subcategory: finance
+tags: [견적서, 상세견적서, 사업자견적서, 견적내역서, estimate]
+summary: 공급자 사업자정보와 수신처, 품목별 세액까지 모두 기재하는 상세형 견적서입니다.
+usage: >
+  금액이 크거나 공식 거래처 검토가 필요한 견적에 사용하는 상세형 견적서입니다. 공급자의
+  사업자등록번호·업태·종목까지 모두 밝히고 품목별로 공급가액과 세액을 구분해 기재합니다.
+  유효기간·납기일·결제조건을 명확히 표기해야 추후 분쟁을 막을 수 있고, 발행 전 담당자와
+  대표자 결재를 거쳐 직인을 날인한 뒤 송부하십시오.
+source: original
+featured: false
+target_pages: 2
+series: quotation
+series_name: 견적서
+variant: 상세형
+variant_rank: 3
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 견적서
+  - type: subtitle
+    text: 공급자
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["상호(법인명)", "", "사업자등록번호", ""]
+      - ["대표자", "", "담당자", ""]
+      - ["주소", "", "", ""]
+      - ["업태", "", "종목", ""]
+      - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "000-00-00000"]
+      - ["", "김서연", "", "박민준"]
+      - ["", "서울특별시 강남구 테헤란로 123", "", ""]
+      - ["", "도매 및 상품중개업", "", "사무용 가구"]
+      - ["", "02-1234-5678", "", "sales@hanbit.example.com"]
+  - type: subtitle
+    text: 수신처 및 견적 정보
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["견적번호", "", "견적일자", "", "유효기간", ""]
+      - ["수신(상호)", "", "담당자", "", "연락처", ""]
+    sample_rows:
+      - ["", "Q-2026-0913", "", "2026-09-13", "", "2026-10-13"]
+      - ["", "(주)새길데이터", "", "이수현", "", "010-9876-5432"]
+  - type: subtitle
+    text: 견적 내역
+  - type: table
+    widths: [6, 18, 12, 8, 8, 12, 14, 12, 10]
+    header: ["No", 품명, 규격, 수량, 단위, 단가, 공급가액, 세액, 비고]
+    empty_rows: 10
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "컴퓨터 모니터", "27형", "3", "EA", "200,000", "600,000", "60,000", "-"]
+      - ["2", "무선 키보드", "블랙", "5", "EA", "80,000", "400,000", "40,000", "-"]
+      - ["3", "마우스패드", "L", "2", "EA", "60,000", "120,000", "12,000", "-"]
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["공급가액 합계", "", "부가세(10%)", ""]
+      - ["총 견적금액", "", "금액(한글)", ""]
+    sample_rows:
+      - ["", "1,120,000", "", "112,000"]
+      - ["", "1,232,000", "", "일백이십삼만이천원"]
+  - type: subtitle
+    text: 거래조건
+  - type: grid
+    widths: [16, 24, 14, 22, 12, 12]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["유효기간", "", "납기일", "", "결제조건", ""]
+      - ["납품장소", "", "", "", "", ""]
+    sample_rows:
+      - ["", "발행일로부터 30일", "", "2026-09-27", "", "현금/계좌이체"]
+      - ["", "수신처 본사 창고", "", "", "", ""]
+  - type: textbox
+    hint: "특기사항 — 하자보증, 운송비 부담, 추가 비용 발생 조건 등을 기재하십시오."
+    height_mm: 16
+    sample_text: 본 견적은 부가세 별도이며, 운송비는 구매자 부담입니다. 계약 체결 후 7일 이내 계약금 10%를 납부하여 주시기 바랍니다.
+  - type: para
+    text: 위와 같이 견적합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+  - type: sign_line
+    label: 공급자(직인)
+    sample_names: ["(주)한빛커머스 대표이사 김서연"]
+  - type: notice
+    text: 본 견적서는 유효기간 내에만 효력이 있으며, 원자재 가격 변동 시 협의 후 조정될 수 있습니다.

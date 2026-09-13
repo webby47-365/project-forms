@@ -1,0 +1,84 @@
+id: noise-complaint
+title: 층간소음 민원 신청서
+category: public
+subcategory: civil
+tags: [층간소음민원, 층간소음신고서, 층간소음이웃사이센터, 공동주택민원, 소음민원]
+summary: 공동주택 층간소음 피해를 관리사무소나 중재기관에 알리고 조치를 요청하는 신청서입니다.
+usage: >
+  아파트·오피스텔 등 공동주택에서 다른 세대의 소음으로 불편을 겪을 때 관리사무소나 층간소음
+  이웃사이센터에 제출합니다. 소음이 발생한 세대와 일시·유형·지속시간을 구체적으로 기록하고,
+  그간 관리사무소 요청이나 직접 대화 등 취했던 조치를 적어야 중재에 도움이 됩니다. 감정적인
+  표현보다는 사실 위주로 기재하고, 관리사무소 중재로 해결되지 않으면 외부 중재기관에 조정을
+  신청할 수 있습니다.
+source: original
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 층간소음 민원 신청서
+    spaced: false
+
+  - type: subtitle
+    text: 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소(동·호수)", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "마포구 ○○아파트 101동 502호", "", ""]
+
+  - type: subtitle
+    text: 소음 발생 세대
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["동·호수", "", "세대주(추정)", ""]
+    sample_rows:
+      - ["", "101동 602호", "", "미확인"]
+
+  - type: subtitle
+    text: 소음 발생 내용
+  - type: table
+    widths: [25, 25, 20, 30]
+    header: [발생일시, 소음유형, 지속시간, 정도]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["2026-08-20 23:10", "발걸음 소리", "약 20분", "야간 시간대 경미한 소음"]
+      - ["2026-08-22 22:40", "가구 끄는 소리", "약 10분", "간헐적"]
+      - ["2026-08-25 23:30", "발걸음 소리", "약 15분", "야간 시간대 경미한 소음"]
+
+  - type: subtitle
+    text: 그간의 조치
+  - type: textbox
+    hint: "관리사무소 요청, 직접 대화 등 그간 취한 조치를 적으십시오."
+    height_mm: 14
+    sample_text: "관리사무소에 2회 민원을 접수하였고, 해당 세대에 안내문을 전달하였으나 개선되지 않았습니다."
+
+  - type: subtitle
+    text: 요청 사항
+  - type: textbox
+    hint: "관리사무소나 중재기관에 바라는 조치를 적으십시오."
+    height_mm: 14
+    sample_text: "관리사무소의 중재와 소음 저감을 위한 안내를 요청드립니다."
+
+  - type: date_line
+    sample_text: 2026 년    8 월   26 일
+
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 관리사무소 중재로 해결되지 않으면 층간소음 이웃사이센터(1661-2642) 등 중재기관에 조정을 신청할 수 있습니다. 처리 결과는 중재기관의 판단에 따릅니다.

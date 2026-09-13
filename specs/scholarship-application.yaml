@@ -1,0 +1,111 @@
+id: scholarship-application
+title: 장학금 신청서
+category: edu
+subcategory: school
+tags: [장학금신청서, 장학금신청, 교내장학금, 학업장학금, 장학지원]
+summary: 장학 구분과 학업 현황, 활동·수상 실적을 기재해 장학금을 신청하는 서식입니다.
+usage: >
+  학교나 기관의 장학금에 지원할 때 제출하는 서식으로, 신청자 정보와 신청하는 장학금의
+  종류·학기·금액을 먼저 적습니다. 학업 현황표에는 최근 학기의 취득학점과 평점을 적어
+  선발 기준 충족 여부를 확인할 수 있게 하고, 활동·수상 실적은 관련 기관과 일자를 함께
+  적어야 증빙이 쉬워집니다. 신청 사유는 구체적으로 작성하고, 제출 서류 목록을 확인한 뒤
+  빠짐없이 첨부하여 제출 기한을 지키십시오.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+
+blocks:
+  - type: doc_title
+    text: 장학금 신청서
+
+  - type: subtitle
+    text: 1. 신청자 정보
+
+  - type: grid
+    widths: [14, 22, 14, 14, 14, 22]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "학과·학년", "", "학번", ""]
+      - ["연락처", "", "이메일", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "경영학과 2학년", "", "2025123456"]
+      - ["", "010-1234-5678", "", "gildong.hong@example.com", "", ""]
+
+  - type: subtitle
+    text: 2. 장학 구분
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["장학금명", "", "신청 학기", ""]
+      - ["신청 금액", "", "", ""]
+    sample_rows:
+      - ["", "성적우수 장학금", "", "2026학년도 2학기"]
+      - ["", "1,500,000원", "", ""]
+
+  - type: subtitle
+    text: 3. 학업 현황
+
+  - type: table
+    widths: [22, 26, 26, 26]
+    header: [학기, 취득학점, 평점, 석차]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["2026학년도 1학기", "18학점", "4.2/4.5", "3/120"]
+      - ["2025학년도 2학기", "19학점", "4.1/4.5", "5/118"]
+
+  - type: subtitle
+    text: 4. 활동·수상 실적
+
+  - type: table
+    widths: [18, 40, 24, 18]
+    header: [구분, 내용, 기관, 일자]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["수상", "전공 학술 공모전 우수상", "한국대학교", "2026-05-20"]
+      - ["활동", "학과 학술동아리 활동", "경영학과", "2026.03~현재"]
+
+  - type: subtitle
+    text: 5. 신청 사유
+
+  - type: textbox
+    hint: "장학금 신청 이유와 학업 계획을 구체적으로 작성하십시오."
+    height_mm: 26
+    sample_text: 꾸준한 성적 향상과 학술동아리 활동 성과를 바탕으로 전공 학업에 더 집중하고자 신청합니다.
+
+  - type: subtitle
+    text: 6. 제출 서류
+
+  - type: kv_list
+    items:
+      - "장학금 신청서 1부"
+      - "성적증명서 1부"
+      - "수상·활동 증빙자료 사본"
+      - "통장사본 1부(해당 시)"
+
+  - type: para
+    text: 본인은 장학금 선발 심사를 위하여 위 기재한 개인정보 수집·이용에 동의합니다.
+    align: center
+    size: 10.5
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 이 신청서의 개인정보는 장학금 심사 목적으로만 수집·이용하며, 심사 종료 후 학칙에서 정한 보유기간이 지나면 파기합니다.
+
+  - type: notice
+    text: 제출 서류와 선발 기준은 학교(기관)의 장학금 운영 규정에 따라 다를 수 있으니 공고문을 확인하십시오.

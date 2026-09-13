@@ -1,0 +1,108 @@
+id: student-record-card
+title: 학생 생활기록 카드
+category: edu
+subcategory: school
+tags: [생활기록카드, 학생카드, 학생생활기록부, 담임, 학생관리카드]
+summary: 학생 인적사항과 보호자 연락처, 학기별 출결, 교과 성취, 상담 이력을 한 장에 관리하는 카드입니다.
+usage: >
+  담임교사가 학기 초 학생 인적사항과 보호자 연락처를 받아 작성해 두고 학년 내내 참고하는
+  기초 자료입니다. 학기별 출결과 교과 성취를 누적해 두면 학부모 상담이나 학기말 평가 때
+  한눈에 확인할 수 있습니다. 행동특성 및 종합의견은 관찰한 사실 위주로 간결하게 기재하고,
+  상담 이력은 일자와 방식만 간단히 남겨 누가 봐도 흐름을 알 수 있게 적으십시오. 가정 형편이나
+  건강 상태처럼 민감한 항목은 기재하지 않습니다.
+source: original
+featured: false
+target_pages: 2
+created_by: agent
+status: published
+version: 1
+
+blocks:
+  - type: doc_title
+    text: 학생 생활기록 카드
+
+  - type: subtitle
+    text: 1. 학생 인적사항
+
+  - type: grid
+    widths: [14, 20, 14, 12, 14, 26]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    merges:
+      - [0, 5, 3, 5]
+    photo_cell: [0, 5]
+    photo_mm: [22, 28]
+    rows:
+      - ["성명", "", "학년·반·번호", "", "생년월일", "사진"]
+      - ["주소", "", "", "", "", ""]
+      - ["연락처", "", "비상연락처", "", "", ""]
+      - ["특이사항", "", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "2학년 3반 15번", "", ""]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "", "", ""]
+      - ["", "010-1234-5678", "", "010-1234-5678", "", ""]
+      - ["", "없음", "", "", "", ""]
+
+  - type: subtitle
+    text: 2. 보호자 인적사항
+
+  - type: grid
+    widths: [14, 26, 14, 16, 14, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "관계", "", "연락처", ""]
+      - ["직장 연락처", "", "", "", "", ""]
+    sample_rows:
+      - ["", "홍판서", "", "부", "", "010-8765-4321"]
+      - ["", "02-123-4567", "", "", "", ""]
+
+  - type: subtitle
+    text: 3. 학기별 출결 현황
+
+  - type: table
+    widths: [16, 18, 16, 16, 16, 18]
+    header: [학기, 수업일수, 결석, 지각, 조퇴, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1학기", "95", "0", "1", "0", "-"]
+      - ["2학기", "92", "", "", "", ""]
+
+  - type: subtitle
+    text: 4. 교과 성취 현황
+
+  - type: table
+    widths: [22, 20, 20, 38]
+    header: [과목, 1학기, 2학기, 비고]
+    empty_rows: 6
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["국어", "A", "A", "-"]
+      - ["수학", "B", "", ""]
+      - ["영어", "A", "", ""]
+
+  - type: subtitle
+    text: 5. 행동특성 및 종합의견
+
+  - type: textbox
+    hint: "관찰한 사실을 바탕으로 긍정적이고 중립적으로 기술하십시오."
+    height_mm: 26
+    sample_text: 수업 참여가 적극적이며 모둠 활동에서 의견을 잘 조율함. 친구들과 원만하게 지내고 맡은 역할을 책임감 있게 수행함.
+
+  - type: subtitle
+    text: 6. 상담 이력
+
+  - type: table
+    widths: [18, 18, 64]
+    header: [일자, 방식, 내용]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["2026-04-08", "대면", "1학기 학습 계획 상담"]
+      - ["2026-06-17", "전화", "교우관계 관련 안내"]
+
+  - type: notice
+    text: 이 카드의 개인정보는 학생 지도·상담 목적으로만 수집하며, 졸업 또는 전출 후 학교 규정에서 정한 보유기간이 지나면 파기합니다.

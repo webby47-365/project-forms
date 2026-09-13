@@ -27,6 +27,10 @@ blocks:
       - ["성명", "", "생년월일", ""]
       - ["주소", "", "", ""]
       - ["연락처(휴대폰)", "", "이메일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-03-02"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+      - ["", "010-1234-5678", "", "gildong.hong@example.com"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -38,6 +42,9 @@ blocks:
     rows:
       - ["신청 기관명", ""]
       - ["담당 부서", ""]
+    sample_rows:
+      - ["", "마포구청"]
+      - ["", "민원여권과"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -48,6 +55,8 @@ blocks:
     row_height_mm: 8
     rows:
       - ["신청 사항", ""]
+    sample_rows:
+      - ["", "주민등록등본 발급 신청"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -55,6 +64,7 @@ blocks:
   - type: textbox
     hint: "민원 신청 배경, 경위, 상세한 신청 이유를 시간순으로 구체적으로 기재하십시오."
     height_mm: 14
+    sample_text: 전입신고 후 행정복지센터 방문이 어려워 온라인으로 등본 발급을 신청합니다.
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -64,6 +74,9 @@ blocks:
     header: ["No", "첨부 서류명", "선택", "비고"]
     empty_rows: 3
     row_height_mm: 8
+    sample_rows:
+      - ["1", "신분증 사본", "", ""]
+      - ["2", "신청서", "", ""]
   - type: spacer
     height_pt: 2
   - type: grid
@@ -72,6 +85,8 @@ blocks:
     row_height_mm: 8
     rows:
       - ["기타 첨부 사항", ""]
+    sample_rows:
+      - ["", "해당없음"]
   - type: spacer
     height_pt: 4
   - type: para
@@ -80,9 +95,11 @@ blocks:
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: spacer
     height_pt: 2
   - type: sign_line
     label: 신청자
+    sample_names: [홍길동]
   - type: notice
     text: 신청 내용은 구체적으로 기재하여 주시기 바라며, 필요한 첨부 서류를 빠짐없이 제출하십시오. 신청 기한을 확인하여 기일 내에 제출해야 합니다.

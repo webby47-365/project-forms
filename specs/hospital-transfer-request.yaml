@@ -1,0 +1,117 @@
+id: hospital-transfer-request
+title: 전원(轉院) 요청서
+category: welfare
+subcategory: consent
+tags: [전원요청서, 병원전원신청서, 전원신청서, 상급병원전원요청, 전원의뢰서]
+summary: 입원 중인 환자가 다른 의료기관으로 전원을 요청할 때 사유와 이송 방법을 기재하는 서식입니다.
+usage: >
+  입원 치료 중 상급병원 진료나 거주지 인접, 재활 치료 등의 이유로 다른 의료기관으로
+  옮기고자 할 때 작성하는 요청서입니다. 현재 의료기관과 전원 희망 기관의 정보를 함께
+  적고, 인계가 필요한 진료기록·영상자료 등을 표시해 두면 전원 절차가 빨라집니다. 전원
+  가능 여부와 병상 사정은 전원 희망 기관의 사정에 따라 달라질 수 있습니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 전원(轉院) 요청서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 환자 정보
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", "", "등록번호", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1958-03-02", "", "00-000000"]
+
+  - type: subtitle
+    text: 2. 현 의료기관
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["기관명", "", "진료과", "", "담당의", ""]
+      - ["입원일", "", "", "", "", ""]
+    sample_rows:
+      - ["", "한빛병원", "", "내과", "", "김현우"]
+      - ["", "2026-08-10", "", "", "", ""]
+
+  - type: subtitle
+    text: 3. 전원 희망 기관
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["기관명", "", "진료과", "", "희망일", ""]
+    sample_rows:
+      - ["", "새길요양병원", "", "재활의학과", "", "2026-09-25"]
+
+  - type: subtitle
+    text: 4. 전원 사유
+
+  - type: grid
+    widths: [22, 78]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["사유 구분", ""]
+      - ["상세 사유", ""]
+    sample_rows:
+      - ["", "거주지 인접"]
+      - ["", "자택 인근에서 재활 치료를 이어가기를 희망합니다."]
+
+  - type: subtitle
+    text: 5. 이송 방법
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["이송 수단", "", "보호자 동행 여부", ""]
+    sample_rows:
+      - ["", "구급차", "", "동행"]
+
+  - type: subtitle
+    text: 6. 인계 요청 자료
+
+  - type: kv_list
+    items:
+      - "진료기록 사본"
+      - "영상자료(CT·MRI 등)"
+      - "검사결과지"
+
+  - type: para
+    text: 위와 같이 전원을 요청하며, 전원에 필요한 자료 인계에 동의합니다.
+    align: center
+    size: 10
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월    18 일
+
+  - type: sign_line
+    labels: ["환자 본인", "보호자"]
+    sample_names: [홍길동, 김서연]
+
+  - type: notice
+    text: 전원 가능 여부와 병상 사정은 전원 희망 기관의 판단에 따릅니다.
+
+  - type: notice
+    text: 개인정보(건강정보 포함)의 수집 목적은 전원 절차 진행이며, 보유기간은 관계 법령에 따라 보관한 후 파기합니다.
+
+  - type: notice
+    text: 본 서식은 참고용이며, 의학적 설명과 판단은 담당 의료진이 수행합니다. 기관별 양식이 따로 있는 경우 해당 기관 양식을 사용하십시오.

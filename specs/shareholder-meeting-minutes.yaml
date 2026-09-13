@@ -1,0 +1,86 @@
+id: shareholder-meeting-minutes
+title: 주주총회 의사록
+category: corp
+subcategory: startup
+tags: [주주총회의사록, 주주총회, 정기주주총회, 임시주주총회, 법인서류]
+summary: 주주총회의 일시·장소·출석 현황과 의안별 결의 결과를 기록하는 주주총회 의사록입니다.
+usage: >
+  상법에 따라 주주총회 결의는 의사록으로 남겨야 하며, 정기총회와 임시총회 모두 작성합니다.
+  총 발행주식수와 출석 주식수를 기재해 결의 정족수를 갖추었는지 확인할 수 있도록 하고,
+  의안별 내용과 찬반 결과, 결의 결과를 명확히 적습니다. 대표이사 선임, 정관 변경처럼
+  등기가 필요한 의안은 이 의사록이 등기 첨부서류가 되므로 법무사·등기소가 요구하는
+  문구로 정확히 작성해야 합니다.
+source: law-standard
+source_note: 상법상 주주총회 의사록 기재사항을 참고하여 자체 제작
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+series: meeting-minutes
+series_name: 회의록
+variant: 주주총회
+variant_rank: 3
+blocks:
+  - type: doc_title
+    text: 주주총회 의사록
+    spaced: false
+
+  - type: subtitle
+    text: 회사 정보
+  - type: grid
+    widths: [14, 36, 14, 36]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["회사명", "", "법인등록번호", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "000000-0000000"]
+
+  - type: subtitle
+    text: 총회 개요
+  - type: grid
+    widths: [14, 36, 14, 36]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["구분(정기/임시)", "", "일시", ""]
+      - ["장소", "", "총 발행주식수", ""]
+      - ["출석 주식수", "", "의장", ""]
+    sample_rows:
+      - ["", "정기총회", "", "2026-03-20 10:00"]
+      - ["", "본사 3층 대회의실", "", "100,000주"]
+      - ["", "85,000주", "", "김서연"]
+
+  - type: subtitle
+    text: 의안 및 결의 사항
+  - type: table
+    widths: [8, 22, 45, 25]
+    header: ["No", 의안, 내용, "찬반 및 결의결과"]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "제1호 의안: 재무제표 승인의 건", "2025년도 재무제표(안) 승인", "찬성 85,000주 – 원안대로 승인"]
+      - ["2", "제2호 의안: 이사 선임의 건", "사내이사 1인 선임(후보자: 박민준)", "찬성 85,000주 – 원안대로 승인"]
+
+  - type: para
+    text: 의장은 위 의안이 모두 원안대로 가결되었음을 선언하고 폐회를 선언하였다. 위 결의를 명확히 하기 위하여 본 의사록을 작성하고 의장과 출석 이사·감사가 기명날인한다.
+    align: both
+    size: 10
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    3 월   20 일
+
+  - type: table
+    widths: [25, 30, 45]
+    header: [직위, 성명, 서명 또는 인]
+    empty_rows: 4
+    row_height_mm: 10
+    body_align: center
+    sample_rows:
+      - ["의장", "김서연", ""]
+      - ["이사", "박민준", ""]
+
+  - type: notice
+    text: 등기가 필요한 안건(이사 선임, 정관 변경 등)은 등기소·법무사가 요구하는 문구와 공증 필요 여부를 사전에 확인하십시오.

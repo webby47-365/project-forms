@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>기업 회계·세무 서식 11종 — 무료서식 다운로드</title>
-<meta name="description" content="기업 회계·세무 분야 무료 서식 11종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<title>기업 회계·세무 서식 22종 — 무료서식 다운로드</title>
+<meta name="description" content="기업 회계·세무 분야 무료 서식 22종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <link rel="canonical" href="https://freeforms.kr/category/corp/finance/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="기업 회계·세무 서식 11종 — 무료서식 다운로드">
-<meta property="og:description" content="기업 회계·세무 분야 무료 서식 11종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<meta property="og:title" content="기업 회계·세무 서식 22종 — 무료서식 다운로드">
+<meta property="og:description" content="기업 회계·세무 분야 무료 서식 22종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <meta property="og:site_name" content="무료서식 다운로드">
 <meta name="naver-site-verification" content="84f0aadaca88d57ca53e9c0eb1b5705bb0a29425">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -283,50 +304,61 @@ footer.site li{margin:3px 0}
 <main><div class="wrap">
   <div class="crumb"><a href="/">홈</a> › 기업 › 회계·세무</div>
   <h1 class="page">기업 · 회계·세무</h1>
-  <p class="lead">11종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
+  <p class="lead">22종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
 
   <div class="cols">
     <aside class="side">      <h3>기업</h3>
       <ul>        <li><a href="/category/corp/hr/"
                class="">
-          <span>인사·노무</span><span class="n">15</span></a></li>        <li><a href="/category/corp/admin/"
+          <span>인사·노무</span><span class="n">30</span></a></li>        <li><a href="/category/corp/admin/"
                class="">
-          <span>총무·행정</span><span class="n">10</span></a></li>        <li><a href="/category/corp/finance/"
+          <span>총무·행정</span><span class="n">23</span></a></li>        <li><a href="/category/corp/finance/"
                class="on">
-          <span>회계·세무</span><span class="n">11</span></a></li>        <li><a href="/category/corp/sales/"
+          <span>회계·세무</span><span class="n">22</span></a></li>        <li><a href="/category/corp/sales/"
                class="">
-          <span>영업·마케팅</span><span class="n">4</span></a></li>        <li><a href="/category/corp/startup/"
+          <span>영업·마케팅</span><span class="n">13</span></a></li>        <li><a href="/category/corp/startup/"
                class="">
-          <span>창업·법인</span><span class="n">4</span></a></li>      </ul>      <h3>법률</h3>
+          <span>창업·법인</span><span class="n">11</span></a></li>      </ul>      <h3>법률</h3>
       <ul>        <li><a href="/category/legal/contract/"
                class="">
-          <span>계약</span><span class="n">7</span></a></li>        <li><a href="/category/legal/notice/"
+          <span>계약</span><span class="n">17</span></a></li>        <li><a href="/category/legal/notice/"
                class="">
-          <span>통지·증명</span><span class="n">8</span></a></li>        <li><a href="/category/legal/litigation/"
+          <span>통지·증명</span><span class="n">15</span></a></li>        <li><a href="/category/legal/litigation/"
                class="">
-          <span>소송·민원</span><span class="n">4</span></a></li>      </ul>      <h3>공공</h3>
+          <span>소송·민원</span><span class="n">10</span></a></li>      </ul>      <h3>공공</h3>
       <ul>        <li><a href="/category/public/civil/"
                class="">
-          <span>민원·신고</span><span class="n">5</span></a></li>        <li><a href="/category/public/consent/"
+          <span>민원·신고</span><span class="n">10</span></a></li>        <li><a href="/category/public/consent/"
                class="">
-          <span>신청·동의</span><span class="n">7</span></a></li>      </ul>      <h3>부동산</h3>
+          <span>신청·동의</span><span class="n">12</span></a></li>      </ul>      <h3>부동산</h3>
       <ul>        <li><a href="/category/estate/lease/"
                class="">
-          <span>임대·매매</span><span class="n">3</span></a></li>      </ul>      <h3>개인</h3>
+          <span>임대·매매</span><span class="n">11</span></a></li>      </ul>      <h3>개인</h3>
       <ul>        <li><a href="/category/personal/career/"
                class="">
-          <span>취업·경력</span><span class="n">6</span></a></li>        <li><a href="/category/personal/life/"
+          <span>취업·경력</span><span class="n">20</span></a></li>        <li><a href="/category/personal/life/"
                class="">
-          <span>생활·가정</span><span class="n">6</span></a></li>      </ul>      <h3>교육</h3>
+          <span>생활·가정</span><span class="n">15</span></a></li>      </ul>      <h3>교육</h3>
       <ul>        <li><a href="/category/edu/school/"
                class="">
-          <span>학교·학원</span><span class="n">6</span></a></li>      </ul>      <h3>의료·복지</h3>
+          <span>학교·학원</span><span class="n">16</span></a></li>      </ul>      <h3>의료·복지</h3>
       <ul>        <li><a href="/category/welfare/consent/"
                class="">
-          <span>동의·신청</span><span class="n">2</span></a></li>      </ul>      
+          <span>동의·신청</span><span class="n">10</span></a></li>      </ul>      
     </aside>
 
     <div>      <div class="grid g4">        <article class="card">
+  <a class="thumb" href="/form/depreciation-schedule/" aria-label="감가상각 내역서 미리보기">
+    <img src="/files/depreciation-schedule/preview-1.webp" alt="감가상각 내역서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/depreciation-schedule/">감가상각 내역서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/depreciation-schedule/depreciation-schedule.pdf" download="감가상각 내역서.pdf" title="감가상각 내역서 PDF 다운로드">PDF</a>
+      <a href="/files/depreciation-schedule/depreciation-schedule.docx" download="감가상각 내역서.docx" title="감가상각 내역서 Word 다운로드">Word</a>
+      <a href="/files/depreciation-schedule/depreciation-schedule.hwpx" download="감가상각 내역서.hwpx" title="감가상각 내역서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/transaction-statement/" aria-label="거래명세서 미리보기">
     <img src="/files/transaction-statement/preview-1.webp" alt="거래명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -338,6 +370,17 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/account-ledger/" aria-label="거래처 원장 미리보기">
+    <img src="/files/account-ledger/preview-1.webp" alt="거래처 원장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/account-ledger/">거래처 원장</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/account-ledger/account-ledger.pdf" download="거래처 원장.pdf" title="거래처 원장 PDF 다운로드">PDF</a>
+      <a href="/files/account-ledger/account-ledger.docx" download="거래처 원장.docx" title="거래처 원장 Word 다운로드">Word</a>
+      <a href="/files/account-ledger/account-ledger.hwpx" download="거래처 원장.hwpx" title="거래처 원장 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/quotation/" aria-label="견적서 미리보기">
     <img src="/files/quotation/preview-1.webp" alt="견적서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -346,6 +389,28 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/quotation/quotation.pdf" download="견적서.pdf" title="견적서 PDF 다운로드">PDF</a>
       <a href="/files/quotation/quotation.docx" download="견적서.docx" title="견적서 Word 다운로드">Word</a>
       <a href="/files/quotation/quotation.hwpx" download="견적서.hwpx" title="견적서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/quotation-simple/" aria-label="견적서 (간편형) 미리보기">
+    <img src="/files/quotation-simple/preview-1.webp" alt="견적서 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/quotation-simple/">견적서 (간편형)</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/quotation-simple/quotation-simple.pdf" download="견적서 (간편형).pdf" title="견적서 (간편형) PDF 다운로드">PDF</a>
+      <a href="/files/quotation-simple/quotation-simple.docx" download="견적서 (간편형).docx" title="견적서 (간편형) Word 다운로드">Word</a>
+      <a href="/files/quotation-simple/quotation-simple.hwpx" download="견적서 (간편형).hwpx" title="견적서 (간편형) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/quotation-detailed/" aria-label="견적서 (상세형) 미리보기">
+    <img src="/files/quotation-detailed/preview-1.webp" alt="견적서 (상세형) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/quotation-detailed/">견적서 (상세형)</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/quotation-detailed/quotation-detailed.pdf" download="견적서 (상세형).pdf" title="견적서 (상세형) PDF 다운로드">PDF</a>
+      <a href="/files/quotation-detailed/quotation-detailed.docx" download="견적서 (상세형).docx" title="견적서 (상세형) Word 다운로드">Word</a>
+      <a href="/files/quotation-detailed/quotation-detailed.hwpx" download="견적서 (상세형).hwpx" title="견적서 (상세형) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -404,6 +469,28 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/petty-cash-ledger/" aria-label="소액현금 출납장 미리보기">
+    <img src="/files/petty-cash-ledger/preview-1.webp" alt="소액현금 출납장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/petty-cash-ledger/">소액현금 출납장</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/petty-cash-ledger/petty-cash-ledger.pdf" download="소액현금 출납장.pdf" title="소액현금 출납장 PDF 다운로드">PDF</a>
+      <a href="/files/petty-cash-ledger/petty-cash-ledger.docx" download="소액현금 출납장.docx" title="소액현금 출납장 Word 다운로드">Word</a>
+      <a href="/files/petty-cash-ledger/petty-cash-ledger.hwpx" download="소액현금 출납장.hwpx" title="소액현금 출납장 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/year-end-tax-checklist/" aria-label="연말정산 서류 점검표 미리보기">
+    <img src="/files/year-end-tax-checklist/preview-1.webp" alt="연말정산 서류 점검표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/year-end-tax-checklist/">연말정산 서류 점검표</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/year-end-tax-checklist/year-end-tax-checklist.pdf" download="연말정산 서류 점검표.pdf" title="연말정산 서류 점검표 PDF 다운로드">PDF</a>
+      <a href="/files/year-end-tax-checklist/year-end-tax-checklist.docx" download="연말정산 서류 점검표.docx" title="연말정산 서류 점검표 Word 다운로드">Word</a>
+      <a href="/files/year-end-tax-checklist/year-end-tax-checklist.hwpx" download="연말정산 서류 점검표.hwpx" title="연말정산 서류 점검표 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/receipt/" aria-label="영수증 미리보기">
     <img src="/files/receipt/preview-1.webp" alt="영수증 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -412,6 +499,39 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/receipt/receipt.pdf" download="영수증.pdf" title="영수증 PDF 다운로드">PDF</a>
       <a href="/files/receipt/receipt.docx" download="영수증.docx" title="영수증 Word 다운로드">Word</a>
       <a href="/files/receipt/receipt.hwpx" download="영수증.hwpx" title="영수증 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/budget-plan/" aria-label="예산 계획서 미리보기">
+    <img src="/files/budget-plan/preview-1.webp" alt="예산 계획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/budget-plan/">예산 계획서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/budget-plan/budget-plan.pdf" download="예산 계획서.pdf" title="예산 계획서 PDF 다운로드">PDF</a>
+      <a href="/files/budget-plan/budget-plan.docx" download="예산 계획서.docx" title="예산 계획서 Word 다운로드">Word</a>
+      <a href="/files/budget-plan/budget-plan.hwpx" download="예산 계획서.hwpx" title="예산 계획서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/budget-execution/" aria-label="예산 집행 내역서 미리보기">
+    <img src="/files/budget-execution/preview-1.webp" alt="예산 집행 내역서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/budget-execution/">예산 집행 내역서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/budget-execution/budget-execution.pdf" download="예산 집행 내역서.pdf" title="예산 집행 내역서 PDF 다운로드">PDF</a>
+      <a href="/files/budget-execution/budget-execution.docx" download="예산 집행 내역서.docx" title="예산 집행 내역서 Word 다운로드">Word</a>
+      <a href="/files/budget-execution/budget-execution.hwpx" download="예산 집행 내역서.hwpx" title="예산 집행 내역서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/withholding-request/" aria-label="원천징수영수증 발급 요청서 미리보기">
+    <img src="/files/withholding-request/preview-1.webp" alt="원천징수영수증 발급 요청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/withholding-request/">원천징수영수증 발급 요청서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/withholding-request/withholding-request.pdf" download="원천징수영수증 발급 요청서.pdf" title="원천징수영수증 발급 요청서 PDF 다운로드">PDF</a>
+      <a href="/files/withholding-request/withholding-request.docx" download="원천징수영수증 발급 요청서.docx" title="원천징수영수증 발급 요청서 Word 다운로드">Word</a>
+      <a href="/files/withholding-request/withholding-request.hwpx" download="원천징수영수증 발급 요청서.hwpx" title="원천징수영수증 발급 요청서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -447,6 +567,28 @@ footer.site li{margin:3px 0}
       <a href="/files/expense-approval/expense-approval.hwpx" download="지출결의서.hwpx" title="지출결의서 한글 다운로드">한글</a>
     </div>
   </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/balance-confirmation/" aria-label="채권·채무 잔액확인서 미리보기">
+    <img src="/files/balance-confirmation/preview-1.webp" alt="채권·채무 잔액확인서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/balance-confirmation/">채권·채무 잔액확인서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/balance-confirmation/balance-confirmation.pdf" download="채권·채무 잔액확인서.pdf" title="채권·채무 잔액확인서 PDF 다운로드">PDF</a>
+      <a href="/files/balance-confirmation/balance-confirmation.docx" download="채권·채무 잔액확인서.docx" title="채권·채무 잔액확인서 Word 다운로드">Word</a>
+      <a href="/files/balance-confirmation/balance-confirmation.hwpx" download="채권·채무 잔액확인서.hwpx" title="채권·채무 잔액확인서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/invoice-request/" aria-label="청구서 미리보기">
+    <img src="/files/invoice-request/preview-1.webp" alt="청구서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/invoice-request/">청구서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/invoice-request/invoice-request.pdf" download="청구서.pdf" title="청구서 PDF 다운로드">PDF</a>
+      <a href="/files/invoice-request/invoice-request.docx" download="청구서.docx" title="청구서 Word 다운로드">Word</a>
+      <a href="/files/invoice-request/invoice-request.hwpx" download="청구서.hwpx" title="청구서 한글 다운로드">한글</a>
+    </div>
+  </div>
 </article>      </div>      
     </div>
   </div>
@@ -471,7 +613,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

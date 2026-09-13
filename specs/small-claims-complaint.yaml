@@ -14,6 +14,10 @@ source: law-standard
 source_note: 소액사건심판법 및 민사소송법상 소장 기재사항을 참고하여 자체 제작
 featured: false
 target_pages: 2
+series: complaint
+series_name: 소장
+variant: 소액사건
+variant_rank: 1
 blocks:
   - type: doc_title
     text: 소장
@@ -31,12 +35,19 @@ blocks:
       - ["원고 주소", "", "", "", ""]
       - ["피고 성명", "", "생년월일", "", "연락처"]
       - ["피고 주소", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-05-20", ""]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "", ""]
+      - ["", "박민준", "", "1988-11-02", ""]
+      - ["", "서울특별시 마포구 월드컵북로 120", "", "", ""]
   - type: grid
     widths: [18, 32, 18, 32]
     label_cols: [0, 2]
     row_height_mm: 8
     rows:
       - ["사건명", "", "소가(청구금액)", "금                원"]
+    sample_rows:
+      - ["", "물품대금 청구", "", "금 5,000,000원"]
   - type: subtitle
     text: 청구 취지
   - type: para
@@ -44,6 +55,7 @@ blocks:
     align: both
     size: 10
     space_after: 2
+    sample_text: "1. 피고는 원고에게 금 5,000,000원 및 이에 대하여 2026년 4월 20일부터 다 갚는 날까지 연 12%의 비율로 계산한 돈을 지급하라."
   - type: para
     text: "2. 소송비용은 피고가 부담한다."
     align: both
@@ -62,6 +74,7 @@ blocks:
   - type: textbox
     hint: "다툼의 경위를 시간순으로 기재하십시오. 언제, 누구와, 어떤 약정을 했고, 피고가 무엇을 이행하지 않았는지 사실만 적습니다."
     height_mm: 50
+    sample_text: 원고는 2026년 3월 10일 피고와 사무용 가구 공급계약을 체결하고 같은 달 20일 물품을 인도하였습니다. 계약상 대금 지급기일은 2026년 4월 20일이었으나 피고는 현재까지 물품대금 5,000,000원을 지급하지 않고 있습니다. 원고는 2026년 5월부터 수차례 전화와 문자로 지급을 요청하였으나 피고로부터 지급이 이루어지지 않아 이 사건 청구에 이르게 되었습니다.
   - type: subtitle
     text: 입증 방법
   - type: table
@@ -70,6 +83,9 @@ blocks:
     empty_rows: 5
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "물품공급계약서", "2026-03-10 체결 계약서 사본", ""]
+      - ["2", "거래명세서", "물품 인도 내역 확인서", ""]
   - type: subtitle
     text: 첨부 서류
   - type: kv_list
@@ -78,8 +94,10 @@ blocks:
       - "인지·송달료 납부서 각 1부"
       - "법인인 경우 법인등기부등본 1부"
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 원고
+    sample_names: [홍길동]
   - type: spacer
     height_pt: 6
   - type: para
@@ -87,5 +105,6 @@ blocks:
     align: center
     size: 12
     bold: true
+    sample_text: 서울서부지방법원 귀중
   - type: notice
     text: 소액사건은 청구금액 3천만원 이하가 대상입니다. 인지대와 송달료는 청구금액·당사자 수에 따라 달라지므로 제출 직전 법원에 확인하십시오. 본 서식은 참고용이며 법적 효력과 적합성은 이용자가 확인해야 합니다.

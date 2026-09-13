@@ -165,6 +165,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -188,6 +192,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}

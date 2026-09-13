@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -287,17 +308,21 @@ footer.site li{margin:3px 0}
   </div>
 
   <div class="detail">
-    <div class="preview">      <img src="/files/resident-registration-request/preview-1.webp" alt="주민등록등본 교부신청서 1페이지 미리보기" width="800" height="1131">    </div>
+    <div>
+      <div class="preview">        <img src="/files/resident-registration-request/preview-1.webp" alt="주민등록등본 교부신청서 1페이지 작성 예시 미리보기" width="800" height="1131">      </div>      <p class="preview-note">
+        <span aria-hidden="true">✎</span>
+        <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
+        내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
+      </p>    </div>
 
     <div class="meta">
       <h1 class="page">주민등록등본 교부신청서</h1>
       <p class="lead" style="margin-bottom:0">신청인 정보와 교부 대상·용도·통수를 기재해 주민등록 등초본 교부를 신청하는 서식입니다.</p>
-
       <div class="dlbox">
         <h3>양식 다운로드</h3>
         <p>원하는 형식을 선택하세요. 회원가입 없이 바로 내려받습니다.</p>
         <div class="dlbtns">
-          <a href="/files/resident-registration-request/resident-registration-request.pdf" download="주민등록등본 교부신청서.pdf">PDF<span class="fmt">66 KB</span></a>
+          <a href="/files/resident-registration-request/resident-registration-request.pdf" download="주민등록등본 교부신청서.pdf">PDF<span class="fmt">64 KB</span></a>
           <a href="/files/resident-registration-request/resident-registration-request.docx" download="주민등록등본 교부신청서.docx">Word<span class="fmt">38 KB</span></a>
           <a href="/files/resident-registration-request/resident-registration-request.hwpx" download="주민등록등본 교부신청서.hwpx">한글<span class="fmt">10 KB</span></a>
         </div>
@@ -324,6 +349,17 @@ footer.site li{margin:3px 0}
     </div>
   </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
   <div class="grid">    <article class="card">
+  <a class="thumb" href="/form/road-repair-request/" aria-label="도로·가로등 보수 요청 민원 미리보기">
+    <img src="/files/road-repair-request/preview-1.webp" alt="도로·가로등 보수 요청 민원 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/road-repair-request/">도로·가로등 보수 요청 민원</a>
+    <div class="cat">공공 · 민원·신고</div>
+    <div class="dl">      <a href="/files/road-repair-request/road-repair-request.pdf" download="도로·가로등 보수 요청 민원.pdf" title="도로·가로등 보수 요청 민원 PDF 다운로드">PDF</a>
+      <a href="/files/road-repair-request/road-repair-request.docx" download="도로·가로등 보수 요청 민원.docx" title="도로·가로등 보수 요청 민원 Word 다운로드">Word</a>
+      <a href="/files/road-repair-request/road-repair-request.hwpx" download="도로·가로등 보수 요청 민원.hwpx" title="도로·가로등 보수 요청 민원 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/civil-petition/" aria-label="민원신청서 미리보기">
     <img src="/files/civil-petition/preview-1.webp" alt="민원신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
@@ -332,6 +368,17 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/civil-petition/civil-petition.pdf" download="민원신청서.pdf" title="민원신청서 PDF 다운로드">PDF</a>
       <a href="/files/civil-petition/civil-petition.docx" download="민원신청서.docx" title="민원신청서 Word 다운로드">Word</a>
       <a href="/files/civil-petition/civil-petition.hwpx" download="민원신청서.hwpx" title="민원신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/illegal-dumping-report/" aria-label="불법투기 신고서 미리보기">
+    <img src="/files/illegal-dumping-report/preview-1.webp" alt="불법투기 신고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/illegal-dumping-report/">불법투기 신고서</a>
+    <div class="cat">공공 · 민원·신고</div>
+    <div class="dl">      <a href="/files/illegal-dumping-report/illegal-dumping-report.pdf" download="불법투기 신고서.pdf" title="불법투기 신고서 PDF 다운로드">PDF</a>
+      <a href="/files/illegal-dumping-report/illegal-dumping-report.docx" download="불법투기 신고서.docx" title="불법투기 신고서 Word 다운로드">Word</a>
+      <a href="/files/illegal-dumping-report/illegal-dumping-report.hwpx" download="불법투기 신고서.hwpx" title="불법투기 신고서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -356,20 +403,9 @@ footer.site li{margin:3px 0}
       <a href="/files/moving-in-report/moving-in-report.hwpx" download="전입신고서.hwpx" title="전입신고서 한글 다운로드">한글</a>
     </div>
   </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/info-disclosure-request/" aria-label="정보공개청구서 미리보기">
-    <img src="/files/info-disclosure-request/preview-1.webp" alt="정보공개청구서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
-  <div class="body">
-    <a class="name" href="/form/info-disclosure-request/">정보공개청구서</a>
-    <div class="cat">공공 · 민원·신고</div>
-    <div class="dl">      <a href="/files/info-disclosure-request/info-disclosure-request.pdf" download="정보공개청구서.pdf" title="정보공개청구서 PDF 다운로드">PDF</a>
-      <a href="/files/info-disclosure-request/info-disclosure-request.docx" download="정보공개청구서.docx" title="정보공개청구서 Word 다운로드">Word</a>
-      <a href="/files/info-disclosure-request/info-disclosure-request.hwpx" download="정보공개청구서.hwpx" title="정보공개청구서 한글 다운로드">한글</a>
-    </div>
-  </div>
 </article>  </div></div>
 <script type="application/ld+json">
-{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;주민등록등본 교부신청서&#34;, &#34;description&#34;: &#34;신청인 정보와 교부 대상·용도·통수를 기재해 주민등록 등초본 교부를 신청하는 서식입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/resident-registration-request/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-13&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
+{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;주민등록등본 교부신청서&#34;, &#34;description&#34;: &#34;신청인 정보와 교부 대상·용도·통수를 기재해 주민등록 등초본 교부를 신청하는 서식입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/resident-registration-request/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-14&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
 </script>
 </main>
 
@@ -391,7 +427,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

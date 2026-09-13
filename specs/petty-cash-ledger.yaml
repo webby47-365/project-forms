@@ -1,0 +1,60 @@
+id: petty-cash-ledger
+title: 소액현금 출납장
+category: corp
+subcategory: finance
+tags: [소액현금출납장, 현금출납부, 소액현금관리, 가지급금관리, petty-cash]
+summary: 부서에서 보관하는 소액현금의 수입·지출 내역을 일자별로 기록하는 출납장입니다.
+usage: >
+  부서 운영에 필요한 소액 경비를 현금으로 지급·수령할 때 거래를 일자순으로 기록하는
+  서식입니다. 전기이월액에서 시작해 수입과 지출을 반영하며 매 거래 후 잔액을 즉시
+  갱신하고, 증빙번호에는 영수증이나 지출결의서 번호를 적어 추적이 가능하게 합니다.
+  월말에는 합계와 차기이월액을 계산해 출납담당과 책임자가 함께 확인·서명합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 소액현금 출납장
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["부서", "", "기간", ""]
+      - ["전기이월", "", "작성자", ""]
+    sample_rows:
+      - ["", "총무팀", "", "2026-09-01 ~ 2026-09-30"]
+      - ["", "500,000", "", "최지우"]
+  - type: subtitle
+    text: 출납 내역
+  - type: table
+    widths: [12, 28, 15, 15, 15, 15]
+    header: [일자, 적요, 수입, 지출, 잔액, 증빙번호]
+    empty_rows: 15
+    row_height_mm: 7
+    body_align: center
+    sample_rows:
+      - ["2026-09-02", "택배비 지급", "", "15,000", "485,000", "V-0901"]
+      - ["2026-09-05", "사무용품 구입", "", "32,000", "453,000", "V-0902"]
+      - ["2026-09-12", "현금 충당", "200,000", "", "653,000", "V-0903"]
+      - ["2026-09-20", "회식비 일부 지급", "", "48,000", "605,000", "V-0904"]
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["수입 합계", "", "지출 합계", ""]
+      - ["차기이월", "", "", ""]
+    sample_rows:
+      - ["", "200,000", "", "95,000"]
+      - ["", "605,000", "", ""]
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+  - type: sign_line
+    labels: ["출납담당", "책임자"]
+    sample_names: [최지우, 김서연]
+  - type: notice
+    text: 잔액은 전기이월액부터 순차적으로 누적 계산하며, 매월 말 현금 실사 후 장부 금액과 대사하십시오.

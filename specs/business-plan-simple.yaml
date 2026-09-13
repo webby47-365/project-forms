@@ -1,0 +1,89 @@
+id: business-plan-simple
+title: 사업계획서 (간편형)
+category: corp
+subcategory: startup
+tags: [사업계획서, 간편사업계획서, 사업계획서양식, 소상공인사업계획서, 창업지원]
+summary: 아이템 요약부터 수익 모델과 자금 계획까지 한 장으로 정리하는 간편 사업계획서입니다.
+usage: >
+  소규모 창업이나 간단한 사업자등록·소상공인 지원 신청처럼 상세 양식이 필요 없는 경우에
+  사용합니다. 아이템을 한눈에 설명하고 고객과 시장, 수익을 내는 방식을 짧게 정리하면
+  충분합니다. 소요 자금과 일정만 표로 보여주어 1페이지 안에 핵심을 전달하도록 구성했습니다.
+  제출 기관이 정식 사업계획서를 요구하면 표준형 서식을 사용하십시오.
+source: original
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+series: business-plan
+series_name: 사업계획서
+variant: 간편형
+variant_rank: 2
+blocks:
+  - type: doc_title
+    text: 사업계획서
+    spaced: false
+
+  - type: grid
+    widths: [14, 36, 14, 36]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사업명", "", "대표자", ""]
+      - ["업종", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "이수현"]
+      - ["", "온라인 교육 콘텐츠 제작", "", "010-9876-5432"]
+
+  - type: subtitle
+    text: 아이템 요약
+  - type: textbox
+    hint: "무엇을 파는 사업인지 한두 문장으로 적으십시오."
+    height_mm: 14
+    sample_text: "초중등 학생 대상 맞춤형 온라인 수학 강의를 제작해 구독형으로 제공하는 에듀테크 서비스입니다."
+
+  - type: subtitle
+    text: 고객 및 시장
+  - type: textbox
+    hint: "주요 고객층과 시장 상황을 간단히 적으십시오."
+    height_mm: 14
+    sample_text: "주요 고객은 사교육비 부담을 줄이려는 수도권 학부모층이며, 온라인 학습 시장은 매년 꾸준히 성장하고 있습니다."
+
+  - type: subtitle
+    text: 수익 모델
+  - type: textbox
+    hint: "어떻게 돈을 버는지 적으십시오."
+    height_mm: 14
+    sample_text: "월 구독료 기반의 정기결제 모델로, 무료 체험 후 유료 전환을 유도하는 방식입니다."
+
+  - type: subtitle
+    text: 소요 자금
+  - type: table
+    widths: [30, 30, 40]
+    header: [용도, 금액, 조달방법]
+    empty_rows: 2
+    row_height_mm: 8
+    sample_rows:
+      - ["콘텐츠 제작비", "20,000,000원", "자기자본"]
+      - ["마케팅비", "10,000,000원", "정책자금"]
+
+  - type: subtitle
+    text: 추진 일정
+  - type: table
+    widths: [20, 50, 30]
+    header: [단계, 내용, 기간]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["준비", "콘텐츠 기획 및 제작", "2026.10~2026.11"]
+      - ["출시", "서비스 오픈 및 홍보", "2026.12"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 대표자
+    sample_names: [이수현]
+
+  - type: notice
+    text: 본 서식은 간편 작성용입니다. 제출 기관이 상세 사업계획서를 요구하면 표준형 서식을 사용하십시오.

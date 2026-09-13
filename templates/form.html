@@ -9,15 +9,40 @@
   </div>
 
   <div class="detail">
-    <div class="preview">
-      {%- for p in f.previews %}
-      <img src="/files/{{ f.id }}/{{ p }}" alt="{{ f.title }} {{ loop.index }}페이지 미리보기" width="800" height="1131"{% if loop.index > 1 %} loading="lazy"{% endif %}>
-      {%- endfor %}
+    <div>
+      <div class="preview">
+        {%- for p in f.previews %}
+        <img src="/files/{{ f.id }}/{{ p }}" alt="{{ f.title }} {{ loop.index }}페이지 작성 예시 미리보기" width="800" height="1131"{% if loop.index > 1 %} loading="lazy"{% endif %}>
+        {%- endfor %}
+      </div>
+      {%- if f.sample_preview %}
+      <p class="preview-note">
+        <span aria-hidden="true">✎</span>
+        <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
+        내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
+      </p>
+      {%- endif %}
     </div>
 
     <div class="meta">
       <h1 class="page">{{ f.title }}</h1>
       <p class="lead" style="margin-bottom:0">{{ f.summary }}</p>
+
+      {%- if series_forms %}
+      <div class="series-box">
+        <h3>{{ f.series_name }} {{ series_forms|length }}종</h3>
+        <p>상황에 맞는 양식을 고르세요. 항목 구성이 서로 다릅니다.</p>
+        <ul class="series-list">
+          {%- for s in series_forms %}
+          {%- if s.id == f.id %}
+          <li><span class="cur">{{ s.variant or s.title }}</span></li>
+          {%- else %}
+          <li><a href="/form/{{ s.id }}/" title="{{ s.title }}">{{ s.variant or s.title }}</a></li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
 
       <div class="dlbox">
         <h3>양식 다운로드</h3>

@@ -1,0 +1,69 @@
+id: monthly-rent-receipt
+title: 월세 영수증
+category: estate
+subcategory: lease
+tags: [월세영수증, 차임영수증, 임대료영수증, 월세수령확인서, 관리비영수증]
+summary: 해당 월의 차임과 관리비 납부 내역을 정리하고 임대인이 수령을 확인하는 반 페이지 영수증입니다.
+usage: >
+  매달 월세를 받을 때 임대인이 임차인에게 발급하는 영수증입니다. 임대 목적물과 해당 월,
+  차임·관리비·기타 금액을 항목별로 적고 합계가 영수 금액과 일치하는지 확인하십시오.
+  임차인은 이 영수증을 소득공제나 분쟁 시 납부 증거로 보관할 수 있으므로 임대인의 서명을
+  반드시 받으십시오.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+blocks:
+  - type: doc_title
+    text: 월세 영수증
+    spaced: true
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 1]
+    rows:
+      - ["영수 금액", ""]
+    sample_rows:
+      - ["", "금 870,000원 (금 팔십칠만원)"]
+  - type: subtitle
+    text: 내역
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["임대 목적물", "", "해당 월", ""]
+      - ["차임", "", "관리비", ""]
+      - ["기타", "", "합계", ""]
+    sample_rows:
+      - ["", "서울특별시 마포구 월드컵북로 100, 202동 1503호", "", "2026년 9월"]
+      - ["", "금 800,000원", "", "금 70,000원"]
+      - ["", "금 0원", "", "금 870,000원"]
+  - type: subtitle
+    text: 임차인(지급인)·임대인(수령인)
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["임차인(지급인)", "", "연락처", ""]
+      - ["임대인(수령인)", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-9876-5432"]
+      - ["", "김서연", "", "010-1234-5678"]
+  - type: para
+    text: 위 금액을 해당 월의 차임 및 관리비로 정히 수령하였음을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    9 월   30 일
+  - type: sign_line
+    label: 임대인(수령인)
+    sample_names: [김서연]
+  - type: notice
+    text: 영수증은 분실에 대비해 임대인과 임차인이 각각 1부씩 보관하십시오.

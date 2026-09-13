@@ -26,6 +26,10 @@ blocks:
       - ["제목", ""]
       - ["부제", ""]
       - ["분야", ""]
+    sample_rows:
+      - ["", "브랜드 아이덴티티 디자인 작업"]
+      - ["", "2024-2026 작업 모음"]
+      - ["", "브랜드·그래픽 디자인"]
   - type: spacer
     height_pt: 10
   - type: subtitle
@@ -41,6 +45,11 @@ blocks:
       - ["연락처", "", "이메일", ""]
       - ["포트폴리오 링크", "", "", ""]
       - ["지원 직무", "", "제출처", ""]
+    sample_rows:
+      - ["", "김서연", "", "한국대학교"]
+      - ["", "010-1234-5678", "", "seoyeon.kim@example.com"]
+      - ["", "portfolio.example.com/seoyeon", "", ""]
+      - ["", "브랜드 디자이너", "", "(주)한빛커머스"]
   - type: subtitle
     text: 수록 작품 목록
   - type: table
@@ -49,11 +58,18 @@ blocks:
     empty_rows: 10
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "한빛커머스 리브랜딩", "2025.11~2026.01", "디자인 총괄", "Illustrator, Figma"]
+      - ["2", "새길데이터 앱 아이콘", "2026.02~2026.03", "디자인", "Figma"]
+      - ["3", "한빛물산 패키지 디자인", "2026.04~2026.05", "공동 작업", "Photoshop"]
   - type: textbox
     hint: "포트폴리오 소개 — 작업 방향과 강조하고 싶은 점을 간단히 기재하십시오."
     height_mm: 24
+    sample_text: 브랜드의 본질을 단순한 조형으로 표현하는 작업을 지향합니다. 클라이언트와의 소통을 바탕으로 실무 적용 가능한 결과물을 만듭니다.
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 작성자
+    sample_names: [김서연]
   - type: notice
     text: 공동 작업물은 본인의 기여 범위를 표시하고, 비공개 자료가 포함된 경우 열람 제한 사항을 안내하십시오.

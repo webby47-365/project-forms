@@ -1,0 +1,95 @@
+id: labor-contract-daily
+title: 일용직 근로계약서
+category: corp
+subcategory: hr
+tags: [일용직 근로계약서, 일당 근로계약서, 일일 근로계약, 단기 알바 계약서, 근로계약서]
+summary: 하루 단위로 채용하는 일용직 근로자와 체결하는 근로계약서입니다.
+usage: >
+  공사·물류·행사 보조 등 일 단위로 채용하는 일용직 근로자와 근로계약을 체결할 때
+  사용합니다. 근로일, 일급과 지급방법, 작업내용, 시업·종업 시각을 명확히 기재하고
+  안전보건 교육 및 보호장비 지급 여부를 함께 확인하십시오. 1일 단위 계약이라도 근로기준법
+  제17조의 서면 명시사항은 동일하게 적용되므로 항목을 빠뜨리지 않아야 합니다. 작성 후
+  2부를 만들어 사용자와 근로자가 각각 보관하십시오.
+source: law-standard
+source_note: 근로기준법 제17조에 따른 필수 기재사항 반영
+featured: false
+target_pages: 1
+series: labor-contract
+series_name: 근로계약서
+variant: 일용직
+variant_rank: 4
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 일용직 근로계약서
+    spaced: false
+  - type: para
+    text: 사업주(이하 "사용자")와 근로자는 다음과 같이 일용직 근로계약을 체결한다.
+    align: center
+    size: 10
+  - type: subtitle
+    text: 1. 당사자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["사업체명", "", "대표자", ""]
+      - ["사업장 주소", "", "", ""]
+      - ["근로자 성명", "", "생년월일", ""]
+      - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "(주)한빛물산", "", "김서연"]
+      - ["", "서울특별시 구로구 디지털로 300", "", ""]
+      - ["", "홍길동", "", "1990-11-03"]
+      - ["", "010-1234-5678", "", "gildong.hong@example.com"]
+  - type: subtitle
+    text: 2. 근로조건
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["근로일", "20    년    월    일", "근무장소", ""]
+      - ["작업내용", "", "시업 / 종업", "    시    분 ~     시    분"]
+      - ["휴게시간", "", "", ""]
+    sample_rows:
+      - ["", "2026-04-06", "", "물류센터 2층"]
+      - ["", "입출고 상품 분류·적재", "", "08:00 ~ 17:00"]
+      - ["", "12:00 ~ 13:00", "", ""]
+  - type: subtitle
+    text: 3. 임금
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["일급", "금          원", "가산수당", "연장·야간·휴일근로 시 법정 가산율 적용"]
+      - ["지급일", "근로 종료 당일 / 익일 (택1)", "지급방법", "근로자 명의 예금계좌 입금 / 현금 직접 지급"]
+    sample_rows:
+      - ["", "금      120,000원", "", ""]
+      - ["", "근로 종료 당일", "", "근로자 명의 예금계좌 입금"]
+  - type: subtitle
+    text: 4. 안전보건
+  - type: kv_list
+    items:
+      - "사용자는 작업 전 안전보건 교육을 실시하고 필요한 보호장비를 제공한다."
+      - "근로자는 안전수칙과 현장 관리자의 작업 지시를 준수한다."
+      - "산재보험은 1일 단위 근로라도 법령이 정하는 바에 따라 적용된다."
+  - type: para
+    text: 위 계약 내용을 확인하고 이에 동의하여 각자 서명·날인한다.
+    align: center
+    size: 10
+  - type: date_line
+    sample_text: 2026 년    4 월    6 일
+  - type: sign_line
+    labels: ["사용자", "근로자"]
+    sample_names: [김서연, 홍길동]
+  - type: notice
+    text: 동일 근로자를 반복해 채용하는 경우에도 근로일마다 근로조건이 달라질 수 있으므로 매 근로일 계약서를 새로 작성하는 것을 권장합니다. 세부 기준은 관할 고용노동청 안내를 확인하십시오.

@@ -1,0 +1,113 @@
+id: surgery-consent
+title: 수술·시술 동의서
+category: welfare
+subcategory: consent
+tags: [수술동의서, 시술동의서, 수술설명동의서, 의료동의서, 수술전동의서]
+summary: 수술·시술 전 환자에게 설명한 사항과 동의 여부를 기록하는 수술 동의서 양식입니다.
+usage: >
+  의료법 제24조의2에 따라 수술·수혈·전신마취 등을 시행하기 전 환자(또는 법정대리인)에게
+  내용과 위험성을 설명하고 서면 동의를 받을 때 사용합니다. 설명한 의료인의 성명과 설명
+  일시를 반드시 기재하고, 환자가 각 설명 항목을 이해했는지 확인란에 표시합니다. 진단명과
+  수술명은 의료기관이 직접 기재하며, 기관별로 정한 법정 서식이 있으면 해당 서식을
+  우선 사용하십시오.
+source: law-standard
+source_note: 의료법 제24조의2에 따른 수술등에 관한 설명·동의 기재사항 반영
+featured: false
+target_pages: 2
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 수술·시술 동의서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 환자 정보
+
+  - type: grid
+    widths: [14, 22, 14, 18, 14, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", "", "등록번호", ""]
+      - ["병동·병실", "", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1958-03-02", "", "00-000000"]
+      - ["", "101동 302호", "", "", "", ""]
+
+  - type: subtitle
+    text: 2. 수술·시술 정보
+
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["진단명", ""]
+      - ["수술명", ""]
+      - ["예정 일시", ""]
+      - ["집도의", ""]
+    sample_rows:
+      - ["", "(의료진 기재)"]
+      - ["", "(의료진 기재)"]
+      - ["", "2026-09-20 09:00"]
+      - ["", "김현우 교수"]
+
+  - type: subtitle
+    text: 3. 설명받은 사항 확인
+
+  - type: table
+    widths: [44, 28, 28]
+    header: [설명 항목, 설명 여부, 환자 이해 확인]
+    rows:
+      - ["진단명", "", ""]
+      - ["수술의 목적과 필요성", "", ""]
+      - ["수술 방법", "", ""]
+      - ["예상되는 합병증과 후유증", "", ""]
+      - ["수술 미시행 시 예후", "", ""]
+      - ["대체 가능한 치료법", "", ""]
+    empty_rows: 0
+    row_height_mm: 8
+    body_align: center
+
+  - type: subtitle
+    text: 4. 설명한 의료인
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "면허번호", ""]
+      - ["설명 일시", "", "서명", ""]
+    sample_rows:
+      - ["", "김현우", "", "12345"]
+      - ["", "2026-09-18 16:30", "", "(서명)"]
+
+  - type: para
+    text: 본인(법정대리인)은 위 수술·시술에 관한 설명을 충분히 듣고 이해하였으며, 수술·시술 시행에 동의합니다.
+    align: center
+    size: 10.5
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월    18 일
+
+  - type: grid
+    widths: [20, 26, 18, 36]
+    label_cols: [0, 2]
+    row_height_mm: 10
+    rows:
+      - ["환자 본인", "(서명 또는 인)", "관계", ""]
+      - ["법정대리인", "(서명 또는 인)", "연락처", ""]
+    sample_rows:
+      - ["", "", "", "본인"]
+      - ["", "", "", "010-1234-5678"]
+
+  - type: notice
+    text: 개인정보(건강정보 포함)의 수집 목적은 수술·시술 동의 확인이며, 보유기간은 관계 법령에 따라 보관한 후 파기합니다.
+
+  - type: notice
+    text: 본 서식은 참고용이며, 의학적 설명과 판단은 담당 의료진이 수행합니다. 기관별 양식이 따로 있는 경우 해당 기관 양식을 사용하십시오.

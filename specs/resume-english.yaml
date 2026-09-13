@@ -1,0 +1,109 @@
+id: resume-english
+title: 영문 이력서 (English Resume)
+category: personal
+subcategory: career
+tags: [영문이력서, English Resume, 외국계이력서, 해외취업, resume]
+summary: 해외취업·외국계 기업 지원 시 제출하는 영문 항목 구성의 표준 영문 이력서입니다.
+usage: >
+  외국계 기업이나 해외 채용에 지원할 때 제출하는 영문 이력서입니다. Personal Information,
+  Education, Work Experience, Skills & Certifications, References 순서로 작성하고,
+  기간은 연·월 형식으로 통일합니다. 회사명·직함·학위명은 영문 공식 명칭을 그대로 쓰고,
+  성명과 학교명 등은 여권이나 졸업증명서의 영문 표기와 일치시켜야 합니다. 사진은 넣지 않는
+  것이 영미권 이력서의 일반적인 관례입니다.
+source: original
+featured: false
+target_pages: 1
+series: resume
+series_name: 이력서
+variant: 영문
+variant_rank: 7
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: RESUME
+    spaced: false
+
+  - type: subtitle
+    text: Personal Information
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 7.5
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["Full Name", "", "Date of Birth", ""]
+      - ["Phone", "", "Email", ""]
+      - ["Address", "", "", ""]
+    sample_rows:
+      - ["", "HONG GILDONG", "", "1996-04-12"]
+      - ["", "+82-10-1234-5678", "", "gildong@example.com"]
+      - ["", "102 World Cup-ro, Seoul", "", ""]
+
+  - type: subtitle
+    text: Education
+
+  - type: table
+    widths: [20, 34, 26, 20]
+    header: ["Period", "School / University", "Major / Degree", "Location"]
+    empty_rows: 3
+    row_height_mm: 7.5
+    sample_rows:
+      - ["2015.03-2019.02", "Hanguk University", "B.A. Business Admin.", "Seoul"]
+      - ["2019.09-2021.08", "Hanguk University", "M.S. in Marketing", "Seoul"]
+
+  - type: subtitle
+    text: Work Experience
+
+  - type: table
+    widths: [18, 26, 18, 20, 18]
+    header: ["Period", "Company", "Position", "Responsibilities", "Reason for Leaving"]
+    empty_rows: 4
+    row_height_mm: 7.5
+    sample_rows:
+      - ["2019.09-2021.08", "Hanbit Commerce", "Marketing Associate", "Managed ad campaigns", "Career change"]
+      - ["2021.09-2024.06", "Saegil Data Inc.", "Marketing Specialist", "Led content strategy", "Career growth"]
+      - ["2024.07-Present", "Saegil Data Inc.", "Marketing Specialist", "Brand communications", "-"]
+
+  - type: subtitle
+    text: Skills & Certifications
+
+  - type: table
+    widths: [30, 30, 20, 20]
+    header: ["Skill / Certification", "Issuing Organization", "Date Acquired", "Level / Score"]
+    empty_rows: 3
+    row_height_mm: 7.5
+    sample_rows:
+      - ["TOEIC", "ETS", "2025-05-18", "905"]
+      - ["Google Analytics Cert.", "Google", "2024-11-02", "Pass"]
+
+  - type: subtitle
+    text: References
+
+  - type: table
+    widths: [22, 26, 26, 26]
+    header: ["Name", "Company / Title", "Phone", "Email"]
+    empty_rows: 2
+    row_height_mm: 7.5
+    sample_rows:
+      - ["KIM SEOYEON", "Hanbit Commerce, Lead", "+82-10-2222-3333", "seoyeon.kim@example.com"]
+
+  - type: para
+    text: I certify that the above information is true and correct.
+    align: center
+    size: 10.5
+
+  - type: date_line
+    text: "Date : 20    /      /      "
+    sample_text: "Date : 2026 / 09 / 13"
+
+  - type: sign_line
+    label: Signature
+    sample_names: [HONG GILDONG]
+
+  - type: notice
+    text: 영문 이력서의 성명·학교명·회사명 표기는 여권 및 제출 서류와 동일한 영문 철자로 통일하십시오.

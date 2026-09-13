@@ -1,0 +1,97 @@
+id: facility-repair-request
+title: 시설물 수리 요청서
+category: corp
+subcategory: admin
+version: 1
+created_by: agent
+status: published
+tags: [시설물수리요청서, 시설수리신청, 시설보수, 설비수리요청, repair request]
+summary: 고장 난 사무실 시설물의 위치와 고장 내용을 적어 수리를 요청하고 처리 결과를 확인하는 서식입니다.
+usage: >
+  사무실이나 시설의 설비가 고장 났을 때 총무부서에 수리를 요청하는 서류입니다.
+  시설물의 위치와 품목, 설치일을 정확히 적고 고장 내용은 증상과 발생 시점을 구체적으로
+  기재해야 신속한 점검이 가능합니다. 처리 결과란에는 처리일, 처리자, 소요 비용을
+  기록하여 신청자가 수리 완료 여부를 확인할 수 있게 하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 시설물 수리 요청서
+    spaced: true
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["요청부서", "", "요청자", ""]
+      - ["요청일자", "", "연락처", ""]
+    sample_rows:
+      - ["", "총무팀", "", "김서연"]
+      - ["", "2026-09-13", "", "010-1234-5678"]
+
+  - type: subtitle
+    text: 시설물 정보
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["위치", "", "품목", ""]
+      - ["설치일", "", "관리부서", ""]
+    sample_rows:
+      - ["", "3층 사무실 탕비실", "", "정수기"]
+      - ["", "2022-05-10", "", "총무팀"]
+
+  - type: subtitle
+    text: 고장 내용
+
+  - type: textbox
+    hint: "고장 증상과 발생 시점을 구체적으로 기재하십시오."
+    height_mm: 20
+    sample_text: 정수기 냉수 기능이 작동하지 않고 본체에서 물이 새어 바닥이 젖는 상태입니다. 어제 오후부터 증상이 발생해 사용 중단 안내문을 부착해 두었습니다.
+
+  - type: subtitle
+    text: 요청 사항
+
+  - type: textbox
+    hint: "희망 처리 방법이나 일정을 기재하십시오."
+    height_mm: 14
+    sample_text: 빠른 점검과 부품 교체를 요청드리며, 수리 전까지 임시 정수기 설치를 검토해 주시기 바랍니다.
+
+  - type: subtitle
+    text: 처리 결과
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 10
+    rows:
+      - ["처리일", "", "처리자", ""]
+      - ["비용", "", "확인", ""]
+    sample_rows:
+      - ["", "2026-09-15", "", "박민준"]
+      - ["", "85,000", "", "완료"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 요청자
+    sample_names: [김서연]
+
+  - type: subtitle
+    text: 결재
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 16
+    rows:
+      - ["신청자", "총무팀장", "시설담당", "확인"]
+      - ["서명(날인)", "서명(날인)", "서명(날인)", "서명(날인)"]
+
+  - type: notice
+    text: 수리 완료 후에는 처리 결과란에 처리일자와 비용을 기재하고 신청자에게 확인받으십시오.

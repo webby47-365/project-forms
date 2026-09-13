@@ -1,0 +1,82 @@
+id: sales-plan
+title: 영업 계획서
+category: corp
+subcategory: sales
+tags: [영업계획서, 영업목표, 매출계획, 영업전략, sales plan]
+summary: 전년 실적 대비 당해 목표와 고객·채널별 세부 목표, 월별 추진 계획을 담는 영업 계획서입니다.
+usage: >
+  연간 또는 반기 단위로 영업 목표를 수립할 때 작성합니다. 전년 실적을 기준으로 증감률을
+  산출해 목표의 근거를 밝히고, 고객·채널별로 목표를 쪼개어 실행 가능성을 높입니다.
+  핵심 추진 전략과 월별 계획을 함께 기재해 실행 단계에서 점검 기준으로 활용합니다.
+  결재 절차를 거쳐 시행하며, 실적 집계 시 본 계획과 비교합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 영업 계획서
+
+  - type: grid
+    widths: [16, 24, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["작성부서", "", "작성자", "", "대상기간", ""]
+    sample_rows:
+      - ["", "영업1팀", "", "홍길동", "", "2026년 4Q"]
+
+  - type: subtitle
+    text: 1. 영업 목표
+
+  - type: table
+    widths: [22, 20, 20, 16, 22]
+    header: [구분, 전년실적, 당해목표, 증감률, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["매출액", "8.2억원", "9.8억원", "+19.5%", "신규 거래처 확대"]
+      - ["신규 거래처 수", "12개사", "18개사", "+50%", "-"]
+
+  - type: subtitle
+    text: 2. 고객·채널별 목표
+
+  - type: table
+    widths: [26, 18, 20, 20, 16]
+    header: [고객/채널, 전년실적, 당해목표, 주요 품목, 담당자]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["(주)새길데이터(직거래)", "2.1억원", "2.6억원", "서버 장비", "홍길동"]
+      - ["한빛물산(대리점)", "1.4억원", "1.9억원", "사무용품", "박민준"]
+      - ["온라인몰", "0.9억원", "1.5억원", "소모품", "홍길동"]
+
+  - type: subtitle
+    text: 3. 핵심 추진 전략
+
+  - type: textbox
+    hint: "신규 거래처 발굴, 기존 거래처 확대, 채널 다변화 등 핵심 전략을 기재하십시오."
+    height_mm: 24
+    sample_text: 기존 거래처 재구매율 제고를 위해 분기별 정기 방문을 확대하고, 신규 거래처는 전시회·소개 경로로 발굴한다. 온라인몰 채널은 프로모션을 월 1회 진행해 유입을 늘린다.
+
+  - type: subtitle
+    text: 4. 월별 추진 계획
+
+  - type: table
+    widths: [12, 36, 36, 16]
+    header: [월, 주요 활동, 목표 매출, 담당자]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["10월", "신규 거래처 방문 10건", "3.1억원", "홍길동"]
+      - ["11월", "연말 프로모션 기획", "3.3억원", "박민준"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    labels: ["작성", "검토", "승인"]
+    sample_names: [홍길동, 김서연, 박민준]

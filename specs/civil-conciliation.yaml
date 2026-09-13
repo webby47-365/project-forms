@@ -1,0 +1,102 @@
+id: civil-conciliation
+title: 민사조정 신청서
+category: legal
+subcategory: litigation
+tags: [민사조정신청서, 조정신청서, 민사조정, 분쟁조정신청, 조정신청]
+summary: 소송에 앞서 법원의 조정 절차를 통해 당사자 간 분쟁의 원만한 해결을 구하는 신청서 양식입니다.
+usage: >
+  소송보다 간이하고 신속한 절차로 분쟁을 해결하고자 할 때 관할 법원에 제출하는 신청서입니다.
+  신청인과 피신청인의 인적사항, 분쟁이 된 사건의 경위, 조정으로 구하고자 하는 내용을
+  구체적으로 기재합니다. 조정이 성립하면 확정판결과 같은 효력이 있으므로 신청 취지를
+  명확히 적어야 합니다. 인지대와 송달료 등 구체적인 절차 비용은 관할 법원에 확인하십시오.
+source: law-standard
+source_note: 민사조정법상 조정신청서 기재사항을 참고하여 자체 제작
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 민사조정 신청서
+    spaced: false
+
+  - type: subtitle
+    text: 당사자
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+      - [3, 1, 3, 3]
+    rows:
+      - ["신청인", "", "연락처", ""]
+      - ["주소", "", "", ""]
+      - ["피신청인", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+      - ["", "김서연", "", "010-9876-5432"]
+      - ["", "서울특별시 서대문구 충정로 30", "", ""]
+
+  - type: subtitle
+    text: 사건명
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["사건명", ""]
+    sample_rows:
+      - ["", "대여금 반환 등 청구에 관한 조정신청"]
+
+  - type: subtitle
+    text: 신청 취지
+  - type: textbox
+    hint: "조정으로 구하고자 하는 내용을 간략히 기재하십시오."
+    height_mm: 20
+    sample_text: 피신청인은 신청인에게 금 10,000,000원을 지급한다는 조정을 구합니다.
+
+  - type: subtitle
+    text: 분쟁의 내용
+  - type: textbox
+    hint: "분쟁의 경위와 현재까지의 경과를 시간순으로 기재하십시오."
+    height_mm: 35
+    sample_text: 신청인은 2025년 6월 10일 피신청인에게 금 10,000,000원을 대여하였고 변제기일은 2026년 6월 10일로 정하였습니다. 변제기일이 지났으나 피신청인은 대여금을 변제하지 않고 있습니다.
+
+  - type: subtitle
+    text: 조정을 구하는 이유
+  - type: textbox
+    hint: "소송이 아닌 조정 절차를 택한 이유를 기재하십시오."
+    height_mm: 20
+    sample_text: 소송보다 신속하고 비용이 적게 드는 절차를 통해 당사자 간 원만한 해결을 도모하고자 조정을 신청합니다.
+
+  - type: subtitle
+    text: 첨부 서류
+  - type: kv_list
+    items:
+      - "금전차용증서 사본 1부"
+      - "계좌이체 내역서 사본 1부"
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: "                        법원  귀중"
+    align: center
+    size: 12
+    bold: true
+    sample_text: 서울서부지방법원  귀중
+
+  - type: notice
+    text: 민사조정은 인지대와 송달료가 소송에 비해 저렴한 경우가 일반적이나, 구체적인 금액과 절차는 관할 법원에 확인하십시오.

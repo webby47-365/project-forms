@@ -1,0 +1,89 @@
+id: career-desc-job
+title: 경력기술서 (직무 중심)
+category: personal
+subcategory: career
+tags: [경력기술서, 직무 경력, 경력직 이력, 담당업무, 보유역량]
+summary: 회사별 담당 직무와 주요 성과, 보유 역량을 정리하는 직무 중심 경력기술서 양식입니다.
+usage: >
+  여러 회사를 거치며 직무 범위가 바뀌어 온 경력직 지원자가 이력서와 함께 제출하는
+  서류입니다. 회사별로 부서·직위와 담당업무, 주요성과를 표로 정리해 경력 흐름을
+  한눈에 보여주고, 보유 역량은 직무 역량·사용 도구·자격으로 나누어 기재합니다.
+  핵심 성과는 재직 기간 전체를 아울러 가장 자신 있는 내용을 수치로 정리하십시오.
+  회사명·기간·직위는 이력서와 일치해야 합니다.
+source: original
+featured: false
+target_pages: 1
+series: career-desc
+series_name: 경력기술서
+variant: 직무 중심
+variant_rank: 3
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 경력기술서
+
+  - type: grid
+    widths: [16, 22, 14, 20, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "지원 직무", "", "연락처", ""]
+      - ["총 경력", "     년     개월", "이메일", "", "작성일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "마케팅·기획", "", "010-1234-5678"]
+      - ["", "", "", "gildong.hong@example.com", "", "2026-09-13"]
+
+  - type: subtitle
+    text: 1. 회사별 담당 직무
+  - type: table
+    widths: [18, 16, 16, 24, 26]
+    header: [회사, 기간, 부서·직위, 담당업무, 주요성과]
+    empty_rows: 3
+    row_height_mm: 9
+    sample_rows:
+      - ["(주)한빛커머스", "2021.03~2023.08", "마케팅팀 대리", "온라인 광고 운영 및 예산 관리", "광고 전환율 18% 개선"]
+      - ["(주)새길데이터", "2023.09~재직중", "전략기획팀 과장", "사업계획 수립 및 신규 제휴 발굴", "신규 채널 3건 발굴"]
+
+  - type: subtitle
+    text: 2. 보유 역량
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 3]
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["직무 역량", "", "", ""]
+      - ["사용 도구", "", "", ""]
+      - ["자격·어학", "", "", ""]
+    sample_rows:
+      - ["", "마케팅 전략 수립, 광고 매체 운영, 사업계획서 작성", "", ""]
+      - ["", "구글 애널리틱스, 엑셀, Looker Studio", "", ""]
+      - ["", "컴퓨터활용능력 1급, TOEIC 905점", "", ""]
+
+  - type: subtitle
+    text: 3. 핵심 성과
+  - type: textbox
+    hint: "재직 기간 전체에서 가장 자신 있는 성과를 수치로 작성하십시오."
+    height_mm: 28
+    sample_text: 마케팅팀에서는 광고 예산 재배분으로 전환율을 18% 끌어올렸고, 전략기획팀으로 이동한 이후에는 신규 제휴채널 3곳을 발굴해 연간 매출 목표의 12%에 해당하는 성과를 추가로 확보했습니다. 두 직무를 거치며 데이터를 근거로 의사결정하는 습관과 부서 간 협업을 조율하는 역량을 길렀습니다.
+
+  - type: para
+    text: 위 기재 내용은 사실과 다름이 없습니다.
+    align: center
+    size: 10.5
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 작성자
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 회사명·근무기간·직위는 이력서 및 경력증명서와 일치하도록 작성하십시오.

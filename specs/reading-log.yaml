@@ -1,0 +1,77 @@
+id: reading-log
+title: 독서기록장
+category: edu
+subcategory: school
+tags: [독서기록장, 독서록, 독후감, 독서일지, 책읽기기록]
+summary: 읽은 책의 정보와 줄거리, 인상 깊은 구절, 느낀 점을 정리하는 독서기록장 양식입니다.
+usage: >
+  책을 읽은 뒤 제목과 저자, 읽은 기간 같은 기본 정보를 먼저 적고 줄거리를 짧게 요약합니다.
+  인상 깊은 구절은 쪽수와 함께 옮겨 적고 왜 기억에 남았는지를 적어 두면 나중에 다시 찾아보기
+  쉽습니다. 느낀 점과 생각란에는 책에서 배운 점이나 자신의 경험과 연결된 생각을 자유롭게
+  적으십시오. 별점과 추천 여부를 함께 표시해 두면 다음에 읽을 책을 고를 때 참고할 수 있습니다.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+
+blocks:
+  - type: doc_title
+    text: 독서기록장
+
+  - type: subtitle
+    text: 1. 도서 정보
+
+  - type: grid
+    widths: [14, 36, 14, 36]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["제목", "", "저자", ""]
+      - ["출판사", "", "분야", ""]
+      - ["읽은 기간", "", "쪽수", ""]
+    sample_rows:
+      - ["", "어린 왕자", "", "생텍쥐페리"]
+      - ["", "한빛출판사", "", "문학"]
+      - ["", "2026.08.10 ~ 2026.08.17", "", "120쪽"]
+
+  - type: subtitle
+    text: 2. 줄거리 요약
+
+  - type: textbox
+    hint: "책의 전체적인 줄거리를 간단히 요약하십시오."
+    height_mm: 24
+    sample_text: 사막에 불시착한 조종사가 어린 왕자를 만나 그의 별과 여행 이야기를 들으며 진정한 소중함의 의미를 깨닫는 이야기이다.
+
+  - type: subtitle
+    text: 3. 인상 깊은 구절
+
+  - type: table
+    widths: [12, 46, 42]
+    header: [쪽, 구절, 느낀 점]
+    empty_rows: 3
+    row_height_mm: 10
+    sample_rows:
+      - ["36", "가장 중요한 것은 눈에 보이지 않아.", "겉모습보다 마음으로 보는 것이 중요하다는 뜻 같았다."]
+      - ["78", "네가 네 장미꽃을 그렇게 중요하게 만든 건 그 꽃에 바친 시간이야.", "시간과 정성이 관계를 특별하게 만든다는 것을 느꼼."]
+
+  - type: subtitle
+    text: 4. 느낀 점과 생각
+
+  - type: textbox
+    hint: "책을 읽고 느낀 점, 배운 점, 자신의 경험과 연결된 생각을 적으십시오."
+    height_mm: 26
+    sample_text: 소중한 것은 매일 들이는 시간과 관심에서 비롯된다는 말이 인상적이었고, 주변 사람들에게 더 마음을 쓰기로 다짐했다.
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["별점(5점 만점)", "", "추천 여부", ""]
+    sample_rows:
+      - ["", "★★★★☆", "", "추천"]
+
+  - type: notice
+    text: 읽은 책의 느낀 점은 과장 없이 자신의 생각을 솔직하게 적으십시오.

@@ -1,0 +1,93 @@
+id: job-description
+title: 직무기술서
+category: corp
+subcategory: hr
+tags: [직무기술서, 직무명세서, 직무기술, 직무분석표, JD]
+summary: 직무의 목적과 주요 책임, 요구 자격, 근무 조건을 정리해 채용과 평가에 활용하는 직무기술서입니다.
+usage: >
+  채용 공고 작성이나 직무 평가, 조직 개편 시 해당 직무의 내용을 명확히 정의하기 위해 사용하는
+  문서입니다. 직무명과 소속, 보고라인, 직무 목적을 먼저 정리하고, 주요 책임과 업무를 비중과
+  산출물 중심으로 구체적으로 기재합니다. 이어서 요구 학력과 경력, 자격증, 필수 역량을 명시하고
+  근무지와 근무시간 등 근무 조건을 함께 기록합니다. 조직 개편이나 직무 변경 시 내용을 주기적으로
+  갱신하는 것이 좋습니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 직무기술서
+    spaced: true
+
+  - type: subtitle
+    text: 1. 직무 개요
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["직무명", "", "소속", ""]
+      - ["직급", "", "보고라인", ""]
+      - ["직무 목적", "", "", ""]
+    sample_rows:
+      - ["", "온라인 마케팅 기획자", "", "마케팅팀"]
+      - ["", "대리", "", "마케팅팀장"]
+      - ["", "온라인 채널의 광고 전략 수립과 성과 관리로 매출 성장을 견인함", "", ""]
+
+  - type: subtitle
+    text: 2. 주요 책임과 업무
+
+  - type: table
+    widths: [10, 50, 14, 26]
+    header: ["No", 주요 업무, 비중(%), 산출물]
+    empty_rows: 5
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "온라인 광고 채널별 예산 배분 및 운영", "35", "월간 광고 운영 보고서"]
+      - ["2", "콘텐츠 캠페인 기획 및 실행", "25", "캠페인 기획안"]
+      - ["3", "채널별 성과 분석 및 리포트 작성", "25", "주간 성과 리포트"]
+      - ["4", "협력사·대행사 커뮤니케이션", "15", "협업 회의록"]
+
+  - type: subtitle
+    text: 3. 요구 자격
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["학력", "", "경력", ""]
+      - ["자격증", "", "필수 역량", ""]
+    sample_rows:
+      - ["", "대졸 이상", "", "마케팅 3년 이상"]
+      - ["", "GAIQ 우대", "", "데이터 분석, 기획력"]
+
+  - type: subtitle
+    text: 4. 근무 조건
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["근무지", "", "근무시간", ""]
+      - ["고용형태", "", "보고주기", ""]
+    sample_rows:
+      - ["", "서울 본사", "", "09:00 ~ 18:00"]
+      - ["", "정규직", "", "주간 보고"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월    15 일
+
+  - type: sign_line
+    labels: ["작성자", "승인자"]
+    sample_names: [김서연, 박민준]
+
+  - type: notice
+    text: 직무 범위와 평가 기준은 조직 개편에 따라 변경될 수 있습니다.

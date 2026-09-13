@@ -24,6 +24,9 @@ blocks:
     rows:
       - ["이사 예정일", "", "이사 업체", "", "연락처", ""]
       - ["현 주소", "", "새 주소", "", "작성일", ""]
+    sample_rows:
+      - ["", "2026-10-10", "", "한빛이삿짐센터", "", "1588-0000"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "서울특별시 강서구 공항대로 200", "", "2026-09-13"]
   - type: subtitle
     text: 1. 이사 전 (1개월~1주 전)
   - type: table
@@ -32,6 +35,8 @@ blocks:
     empty_rows: 2
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["1", "이사업체 견적 비교 및 계약", "홍길동", "2026-09-20", "완료", "계약금 입금"]
   - type: subtitle
     text: 2. 이사 당일 및 이후
   - type: table
@@ -40,6 +45,8 @@ blocks:
     empty_rows: 2
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["1", "전입신고 및 확정일자 받기", "홍길동", "2026-10-11", "", ""]
   - type: subtitle
     text: 3. 비용 관리
   - type: table
@@ -48,6 +55,8 @@ blocks:
     empty_rows: 2
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["1", "이사업체 용역비", "800,000원", "", ""]
   - type: subtitle
     text: 4. 관련 연락처
   - type: table
@@ -56,11 +65,17 @@ blocks:
     empty_rows: 4
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["이사업체", "한빛이삿짐센터", "박민준", "1588-0000"]
+      - ["인터넷·TV", "한빛통신", "고객센터", "1588-1111"]
   - type: textbox
     hint: "특이사항 — 사다리차 예약, 엘리베이터 사용 신청, 폐기물 처리 등을 기재하십시오."
     height_mm: 18
+    sample_text: 사다리차 1대 예약 완료(10월 10일 오전). 아파트 엘리베이터 사용 신청은 관리사무소에 사전 접수함.
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 작성자
+    sample_names: [홍길동]
   - type: notice
     text: 전입신고와 공과금 정산은 기한이 정해져 있으므로 일정에 맞춰 처리하십시오.

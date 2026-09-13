@@ -22,6 +22,8 @@ blocks:
     row_height_mm: 8
     rows:
       - ["일자", "", "부서", "", "작성자", ""]
+    sample_rows:
+      - ["", "2026-09-10", "", "총무팀", "", "김서연"]
   - type: subtitle
     text: 1. 자금 요약
   - type: grid
@@ -31,6 +33,9 @@ blocks:
     rows:
       - ["전일 이월액", "", "당일 수입 합계", ""]
       - ["당일 지출 합계", "", "당일 잔액", ""]
+    sample_rows:
+      - ["", "5,000,000원", "", "1,200,000원"]
+      - ["", "850,000원", "", "5,350,000원"]
   - type: subtitle
     text: 2. 입금 내역
   - type: table
@@ -39,6 +44,8 @@ blocks:
     empty_rows: 2
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["매출", "(주)한빛커머스", "제품 납품대금", "1,200,000", "한빛은행", "-"]
   - type: subtitle
     text: 3. 출금 내역
   - type: table
@@ -47,6 +54,8 @@ blocks:
     empty_rows: 2
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["경비", "한빛물산", "원재료 매입대금", "850,000", "한빛은행", "-"]
   - type: subtitle
     text: 4. 계좌별 잔액
   - type: table
@@ -55,10 +64,14 @@ blocks:
     empty_rows: 2
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["한빛은행", "보통예금", "5,000,000", "+350,000", "5,350,000"]
   - type: textbox
     hint: "특이사항 및 익일 자금계획 — 예정 지출, 결제 지연, 차입금 만기 등을 기재하십시오."
     height_mm: 20
+    sample_text: 익일 원재료 대금 300,000원 지급이 예정되어 있어 잔액 관리에 유의합니다. 결제 지연이나 대출 만기 관련 위험 요인은 없습니다.
   - type: date_line
+    sample_text: 2026 년    9 월   10 일
   - type: subtitle
     text: 결재
   - type: grid

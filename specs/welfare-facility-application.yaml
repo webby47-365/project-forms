@@ -1,0 +1,102 @@
+id: welfare-facility-application
+title: 복지시설 이용 신청서
+category: welfare
+subcategory: consent
+tags: [복지시설이용신청서, 복지관이용신청, 주간보호센터신청, 노인복지시설신청, 복지시설신청서]
+summary: 복지시설의 이용 대상자 정보와 희망 서비스를 기재하여 이용을 신청하는 서식입니다.
+usage: >
+  노인복지관, 주간보호센터, 장애인복지시설 등 복지시설의 서비스를 이용하고자 할 때
+  작성하는 신청서입니다. 이용 대상자와 신청인(보호자)의 연락처를 정확히 적어야 연락이
+  가능하며, 희망하는 서비스와 이용 요일·시간을 구체적으로 적으면 배정이 빨라집니다.
+  이용 중 유의가 필요한 사항은 시설이 안전하게 서비스를 제공하는 데 참고되므로 간단히
+  기재하십시오.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 복지시설 이용 신청서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 신청인 정보
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "연락처", "", "이용 대상자와의 관계", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-1234-5678", "", "자녀"]
+
+  - type: subtitle
+    text: 2. 이용 대상자 정보
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "생년월일", "", "연락처", ""]
+      - ["주소", "", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1945-02-17", "", "010-9876-5432"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "", "", ""]
+
+  - type: subtitle
+    text: 3. 신청 서비스
+
+  - type: table
+    widths: [28, 36, 36]
+    header: [서비스명, 희망 이용 요일·시간, 이용 목적]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["주간보호 서비스", "월·수·금 09:00~17:00", "낮 시간 돌봄"]
+      - ["물리치료 프로그램", "화·목 10:00~11:00", "거동 기능 유지"]
+
+  - type: subtitle
+    text: 4. 이용 시 유의 사항
+
+  - type: textbox
+    hint: "이동 보조, 식이, 알레르기 등 이용 시 시설이 참고할 유의 사항을 기재하십시오."
+    height_mm: 20
+    sample_text: 보행 시 지팡이를 사용하며, 식사 시 죽 형태 음식을 선호합니다.
+
+  - type: subtitle
+    text: 5. 비상연락처
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "관계", "", "연락처", ""]
+    sample_rows:
+      - ["", "박지훈", "", "자녀", "", "010-5555-7777"]
+
+  - type: para
+    text: 위 신청인은 복지시설 이용 신청 및 서비스 제공 목적으로 개인정보를 수집·이용하는 데 동의합니다.
+    align: center
+    size: 10
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    labels: ["신청인", "이용 대상자 본인"]
+    sample_names: [김서연, 홍길동]
+
+  - type: notice
+    text: 개인정보(건강정보 포함)의 수집 목적은 복지시설 이용 신청 및 서비스 제공이며, 보유기간은 관계 법령에 따라 보관한 후 파기합니다.
+
+  - type: notice
+    text: 본 서식은 참고용이며, 의학적 설명과 판단은 담당 의료진이 수행합니다. 기관별 양식이 따로 있는 경우 해당 기관 양식을 사용하십시오.

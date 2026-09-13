@@ -1,0 +1,96 @@
+id: family-event-notice
+title: 경조사 안내문
+category: personal
+subcategory: life
+tags: [경조사안내문, 청첩장, 결혼안내문, 경조사통지, 모시는글, invitation]
+summary: 결혼·회갑·돌·상장례 등 집안 경조사를 친지와 지인에게 격식 있게 알리는 안내문 양식입니다.
+usage: >
+  가족의 결혼·회갑·돌·상장례 등 경조사를 앞두고 친지와 지인에게 일시·장소와 인사말을
+  전할 때 사용하는 안내문입니다. 해당 경조사 구분에 표시하고 일시·장소·주소·연락처를
+  정확히 기재하며, 인사말은 격식 있는 문체로 짧게 씁니다. 오시는 길 안내에는 대중교통과
+  주차 정보를 함께 적어 참석자의 불편을 줄이고, 화환·축의금 등 계좌 안내는 필요한 경우에만
+  선택적으로 기재합니다.
+source: original
+featured: false
+version: 1
+created_by: agent
+status: published
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 경조사 안내문
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 9
+    rows:
+      - ["결혼", "회갑", "돌", "상장례"]
+      - ["", "", "", ""]
+    sample_rows:
+      - ["", "", "", ""]
+      - ["○", "", "", ""]
+
+  - type: subtitle
+    text: 행사 안내
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["일시", "", "장소", ""]
+      - ["주소", "", "", ""]
+      - ["연락처", "", "", ""]
+    sample_rows:
+      - ["", "2026-11-14(토) 12:00", "", "라비에벨 웨딩홀 3층 그랜드홀"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+      - ["", "010-1234-5678 (홍길동)", "", ""]
+
+  - type: subtitle
+    text: 인사말
+
+  - type: textbox
+    hint: "초청 인사말을 적으십시오."
+    height_mm: 30
+    sample_text: 항상 저희 가정에 따뜻한 관심과 사랑을 보내주셔서 감사합니다. 저희 두 사람이 이제 한 가정을 이루어 새 출발을 하게 되었습니다. 바쁘시더라도 오셔서 축복해 주시면 큰 기쁨으로 간직하겠습니다.
+
+  - type: subtitle
+    text: 오시는 길
+
+  - type: textbox
+    hint: "대중교통·주차 안내를 적으십시오."
+    height_mm: 20
+    sample_text: 지하철 2호선 홍대입구역 3번 출구에서 도보 5분 거리입니다. 건물 내 주차장은 2시간 무료이며 만차 시 인근 공영주차장을 이용해 주십시오.
+
+  - type: subtitle
+    text: 계좌 안내 (해당 시 기재)
+
+  - type: grid
+    widths: [20, 30, 50]
+    label_cols: [0]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 2]
+      - [1, 1, 1, 2]
+    rows:
+      - ["신랑측 계좌", "", ""]
+      - ["신부측 계좌", "", ""]
+    sample_rows:
+      - ["", "한빛은행 000-000000-00-000 (홍길동)", ""]
+      - ["", "새길은행 000-000000-00-000 (김서연)", ""]
+
+  - type: date_line
+    text: "20        년        월"
+    sample_text: 2026년 9월
+
+  - type: sign_line
+    label: 발신인
+    sample_names: ["홍길동 · 김서연 올림"]
+
+  - type: notice
+    text: 계좌 안내란은 필요한 경우에만 기재하며, 문구와 격식은 가정 상황에 맞게 수정하여 사용하십시오.

@@ -10,6 +10,10 @@ usage: >
   제3자 제공과 위탁이 있으면 별도 동의 칸을 두어야 하며, 동의 거부 시 불이익도 명시합니다.
 source: original
 featured: false
+series: privacy-consent
+series_name: 개인정보 동의서
+variant: 기본형
+variant_rank: 1
 target_pages: 2
 blocks:
   - type: doc_title
@@ -26,6 +30,9 @@ blocks:
     rows:
       - ["이름", ""]
       - ["연락처", ""]
+    sample_rows:
+      - ["", "홍길동"]
+      - ["", "010-1234-5678"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -35,6 +42,9 @@ blocks:
     header: ["항목", "수집·이용 목적", "보유 및 이용기간"]
     empty_rows: 4
     row_height_mm: 8
+    sample_rows:
+      - ["성명", "회원 식별 및 본인 확인", "회원 탈퇴 시까지"]
+      - ["연락처", "상담 및 안내 연락", "회원 탈퇴 시까지"]
   - type: spacer
     height_pt: 2
   - type: table
@@ -42,6 +52,9 @@ blocks:
     header: ["필수항목", "동의", "미동의"]
     empty_rows: 3
     row_height_mm: 8
+    sample_rows:
+      - ["성명 수집·이용", "동의", ""]
+      - ["연락처 수집·이용", "동의", ""]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -51,6 +64,8 @@ blocks:
     header: ["선택항목", "동의", "미동의"]
     empty_rows: 2
     row_height_mm: 8
+    sample_rows:
+      - ["마케팅 정보 수신", "", "미동의"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -63,6 +78,8 @@ blocks:
     header: ["제공·위탁 내용", "동의", "미동의", "거부 시 불이익"]
     empty_rows: 2
     row_height_mm: 8
+    sample_rows:
+      - ["배송업체 제공(성명·연락처)", "동의", "", "서비스 이용 제한"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -81,9 +98,11 @@ blocks:
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: spacer
     height_pt: 2
   - type: sign_line
     label: 본인(또는 법정대리인)
+    sample_names: [홍길동]
   - type: notice
     text: 본 동의서 사본은 발급 기관에서 보관하며, 개인정보 보호법 제15조·제22조를 준수합니다.

@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -287,17 +308,21 @@ footer.site li{margin:3px 0}
   </div>
 
   <div class="detail">
-    <div class="preview">      <img src="/files/daily-planner/preview-1.webp" alt="생활계획표 1페이지 미리보기" width="800" height="1131">    </div>
+    <div>
+      <div class="preview">        <img src="/files/daily-planner/preview-1.webp" alt="생활계획표 1페이지 작성 예시 미리보기" width="800" height="1131">      </div>      <p class="preview-note">
+        <span aria-hidden="true">✎</span>
+        <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
+        내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
+      </p>    </div>
 
     <div class="meta">
       <h1 class="page">생활계획표</h1>
       <p class="lead" style="margin-bottom:0">시간대별 일과와 요일별 계획, 목표와 점검 항목을 한 장에 정리하는 생활계획표입니다.</p>
-
       <div class="dlbox">
         <h3>양식 다운로드</h3>
         <p>원하는 형식을 선택하세요. 회원가입 없이 바로 내려받습니다.</p>
         <div class="dlbtns">
-          <a href="/files/daily-planner/daily-planner.pdf" download="생활계획표.pdf">PDF<span class="fmt">64 KB</span></a>
+          <a href="/files/daily-planner/daily-planner.pdf" download="생활계획표.pdf">PDF<span class="fmt">77 KB</span></a>
           <a href="/files/daily-planner/daily-planner.docx" download="생활계획표.docx">Word<span class="fmt">38 KB</span></a>
           <a href="/files/daily-planner/daily-planner.hwpx" download="생활계획표.hwpx">한글<span class="fmt">11 KB</span></a>
         </div>
@@ -324,6 +349,17 @@ footer.site li{margin:3px 0}
     </div>
   </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
   <div class="grid">    <article class="card">
+  <a class="thumb" href="/form/household-budget-yearly/" aria-label="가계부 (연간) 미리보기">
+    <img src="/files/household-budget-yearly/preview-1.webp" alt="가계부 (연간) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/household-budget-yearly/">가계부 (연간)</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/household-budget-yearly/household-budget-yearly.pdf" download="가계부 (연간).pdf" title="가계부 (연간) PDF 다운로드">PDF</a>
+      <a href="/files/household-budget-yearly/household-budget-yearly.docx" download="가계부 (연간).docx" title="가계부 (연간) Word 다운로드">Word</a>
+      <a href="/files/household-budget-yearly/household-budget-yearly.hwpx" download="가계부 (연간).hwpx" title="가계부 (연간) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/household-budget/" aria-label="가계부 (월간) 미리보기">
     <img src="/files/household-budget/preview-1.webp" alt="가계부 (월간) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
@@ -335,52 +371,41 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/travel-plan/" aria-label="여행계획표 미리보기">
-    <img src="/files/travel-plan/preview-1.webp" alt="여행계획표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/household-budget-weekly/" aria-label="가계부 (주간) 미리보기">
+    <img src="/files/household-budget-weekly/preview-1.webp" alt="가계부 (주간) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/travel-plan/">여행계획표</a>
+    <a class="name" href="/form/household-budget-weekly/">가계부 (주간)</a>
     <div class="cat">개인 · 생활·가정</div>
-    <div class="dl">      <a href="/files/travel-plan/travel-plan.pdf" download="여행계획표.pdf" title="여행계획표 PDF 다운로드">PDF</a>
-      <a href="/files/travel-plan/travel-plan.docx" download="여행계획표.docx" title="여행계획표 Word 다운로드">Word</a>
-      <a href="/files/travel-plan/travel-plan.hwpx" download="여행계획표.hwpx" title="여행계획표 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/household-budget-weekly/household-budget-weekly.pdf" download="가계부 (주간).pdf" title="가계부 (주간) PDF 다운로드">PDF</a>
+      <a href="/files/household-budget-weekly/household-budget-weekly.docx" download="가계부 (주간).docx" title="가계부 (주간) Word 다운로드">Word</a>
+      <a href="/files/household-budget-weekly/household-budget-weekly.hwpx" download="가계부 (주간).hwpx" title="가계부 (주간) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/moving-checklist/" aria-label="이사 체크리스트 미리보기">
-    <img src="/files/moving-checklist/preview-1.webp" alt="이사 체크리스트 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/thank-you-letter/" aria-label="감사장 미리보기">
+    <img src="/files/thank-you-letter/preview-1.webp" alt="감사장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/moving-checklist/">이사 체크리스트</a>
+    <a class="name" href="/form/thank-you-letter/">감사장</a>
     <div class="cat">개인 · 생활·가정</div>
-    <div class="dl">      <a href="/files/moving-checklist/moving-checklist.pdf" download="이사 체크리스트.pdf" title="이사 체크리스트 PDF 다운로드">PDF</a>
-      <a href="/files/moving-checklist/moving-checklist.docx" download="이사 체크리스트.docx" title="이사 체크리스트 Word 다운로드">Word</a>
-      <a href="/files/moving-checklist/moving-checklist.hwpx" download="이사 체크리스트.hwpx" title="이사 체크리스트 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/thank-you-letter/thank-you-letter.pdf" download="감사장.pdf" title="감사장 PDF 다운로드">PDF</a>
+      <a href="/files/thank-you-letter/thank-you-letter.docx" download="감사장.docx" title="감사장 Word 다운로드">Word</a>
+      <a href="/files/thank-you-letter/thank-you-letter.hwpx" download="감사장.hwpx" title="감사장 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/checklist/" aria-label="체크리스트 (범용) 미리보기">
-    <img src="/files/checklist/preview-1.webp" alt="체크리스트 (범용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/family-event-notice/" aria-label="경조사 안내문 미리보기">
+    <img src="/files/family-event-notice/preview-1.webp" alt="경조사 안내문 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/checklist/">체크리스트 (범용)</a>
+    <a class="name" href="/form/family-event-notice/">경조사 안내문</a>
     <div class="cat">개인 · 생활·가정</div>
-    <div class="dl">      <a href="/files/checklist/checklist.pdf" download="체크리스트 (범용).pdf" title="체크리스트 (범용) PDF 다운로드">PDF</a>
-      <a href="/files/checklist/checklist.docx" download="체크리스트 (범용).docx" title="체크리스트 (범용) Word 다운로드">Word</a>
-      <a href="/files/checklist/checklist.hwpx" download="체크리스트 (범용).hwpx" title="체크리스트 (범용) 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/invitation-card/" aria-label="초대장 미리보기">
-    <img src="/files/invitation-card/preview-1.webp" alt="초대장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/invitation-card/">초대장</a>
-    <div class="cat">개인 · 생활·가정</div>
-    <div class="dl">      <a href="/files/invitation-card/invitation-card.pdf" download="초대장.pdf" title="초대장 PDF 다운로드">PDF</a>
-      <a href="/files/invitation-card/invitation-card.docx" download="초대장.docx" title="초대장 Word 다운로드">Word</a>
-      <a href="/files/invitation-card/invitation-card.hwpx" download="초대장.hwpx" title="초대장 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/family-event-notice/family-event-notice.pdf" download="경조사 안내문.pdf" title="경조사 안내문 PDF 다운로드">PDF</a>
+      <a href="/files/family-event-notice/family-event-notice.docx" download="경조사 안내문.docx" title="경조사 안내문 Word 다운로드">Word</a>
+      <a href="/files/family-event-notice/family-event-notice.hwpx" download="경조사 안내문.hwpx" title="경조사 안내문 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>
 <script type="application/ld+json">
-{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;생활계획표&#34;, &#34;description&#34;: &#34;시간대별 일과와 요일별 계획, 목표와 점검 항목을 한 장에 정리하는 생활계획표입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/daily-planner/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-13&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
+{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;생활계획표&#34;, &#34;description&#34;: &#34;시간대별 일과와 요일별 계획, 목표와 점검 항목을 한 장에 정리하는 생활계획표입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/daily-planner/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-14&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
 </script>
 </main>
 
@@ -402,7 +427,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

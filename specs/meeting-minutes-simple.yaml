@@ -1,0 +1,67 @@
+id: meeting-minutes-simple
+title: 회의록 (간편형)
+category: corp
+subcategory: admin
+series: meeting-minutes
+series_name: 회의록
+variant: 간편형
+variant_rank: 2
+version: 1
+created_by: agent
+status: published
+tags: [회의록, 간편회의록, 미니회의록, 회의결과, minutes]
+summary: 회의 개요와 논의·결정사항, 후속조치를 한 장에 간단히 정리하는 간편형 회의록입니다.
+usage: >
+  짧은 실무 회의나 팀 내부 미팅처럼 격식 있는 회의록이 부담스러운 자리에 쓰는 간이
+  양식입니다. 회의명·일시·장소·참석자를 먼저 채우고, 안건별 논의 내용과 결정사항을
+  한 표에 바로 적어 작성 시간을 줄입니다. 결정사항마다 담당자와 기한을 후속조치
+  표에 남겨 실행 여부를 추적하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 회의록
+    spaced: true
+
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["회의명", "", "일시", ""]
+      - ["장소", "", "참석자", ""]
+    sample_rows:
+      - ["", "3분기 매출 점검 회의", "", "2026-09-10 10:00"]
+      - ["", "3층 소회의실", "", "홍길동, 김서연, 박민준"]
+
+  - type: subtitle
+    text: 1. 논의 및 결정사항
+
+  - type: table
+    widths: [10, 45, 45]
+    header: ["No", "논의 내용", "결정사항"]
+    empty_rows: 5
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "3분기 매출 실적 점검", "목표 대비 92% 달성, 4분기 전략 보완"]
+      - ["2", "신규 거래처 계약 건", "법무팀 검토 후 계약서 작성"]
+
+  - type: subtitle
+    text: 2. 후속조치
+
+  - type: table
+    widths: [10, 40, 25, 25]
+    header: ["No", "후속조치", "담당자", "기한"]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "4분기 매출 전략 수정안 작성", "김서연", "2026-09-20"]
+      - ["2", "신규 계약서 법무 검토 요청", "박민준", "2026-09-17"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월   10 일
+
+  - type: sign_line
+    label: 회의 주재자
+    sample_names: [홍길동]

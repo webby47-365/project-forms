@@ -86,6 +86,26 @@ def check_one(path: Path, keys: dict[str, set[str]]) -> list[str]:
                         f"blocks[{idx}] merges[{m_i}]: 열 범위 {c1}~{c2}가 표를 벗어났습니다 "
                         f"(열은 0~{n - 1})."
                     )
+            # 미리보기 예시값 검사 — 모양이 rows와 같아야 예시가 엉뚱한 칸에 들어가지 않는다
+            srows = blk.get("sample_rows")
+            if srows is not None:
+                if not isinstance(srows, list):
+                    problems.append(f"blocks[{idx}] grid: sample_rows는 목록이어야 합니다.")
+                else:
+                    if len(srows) > len(rows):
+                        problems.append(
+                            f"blocks[{idx}] grid: sample_rows {len(srows)}행 > rows {len(rows)}행")
+                    for r, srow in enumerate(srows):
+                        if not isinstance(srow, list) or len(srow) != n:
+                            problems.append(
+                                f"blocks[{idx}] grid sample_rows[{r}]: 셀 개수가 {n}개가 아닙니다.")
+            pc = blk.get("photo_cell")
+            if pc is not None:
+                if not (isinstance(pc, list) and len(pc) == 2):
+                    problems.append(f"blocks[{idx}] grid: photo_cell은 [행, 열] 2개여야 합니다.")
+                elif not (0 <= pc[0] < len(rows) and 0 <= pc[1] < n):
+                    problems.append(
+                        f"blocks[{idx}] grid: photo_cell {pc}이 표({len(rows)}x{n}) 범위를 벗어났습니다.")
         elif blk["type"] == "table":
             header = blk.get("header")
             if not header:
@@ -100,6 +120,30 @@ def check_one(path: Path, keys: dict[str, set[str]]) -> list[str]:
                 problems.append(
                     f"blocks[{idx}] table: 단일 칸 표는 자유기술란으로 보입니다 — textbox를 사용하십시오."
                 )
+            srows = blk.get("sample_rows")
+            if srows is not None:
+                n_empty = int(blk.get("empty_rows", 3))
+                if not isinstance(srows, list):
+                    problems.append(f"blocks[{idx}] table: sample_rows는 목록이어야 합니다.")
+                else:
+                    if len(srows) > n_empty:
+                        problems.append(
+                            f"blocks[{idx}] table: sample_rows {len(srows)}행 > empty_rows {n_empty}행 "
+                            f"— 초과분은 버려집니다.")
+                    for r, srow in enumerate(srows):
+                        if not isinstance(srow, list) or len(srow) != len(header):
+                            problems.append(
+                                f"blocks[{idx}] table sample_rows[{r}]: "
+                                f"셀 개수가 header {len(header)}개와 다릅니다.")
+        elif blk["type"] == "textbox":
+            stext = str(blk.get("sample_text", ""))
+            if stext:
+                # 박스 높이 대비 글자가 많으면 예시가 넘쳐 페이지 수가 늘어난다
+                budget = int(float(blk.get("height_mm", 30)) * 8)
+                if len(stext) > budget:
+                    problems.append(
+                        f"blocks[{idx}] textbox: sample_text가 {len(stext)}자로 박스 높이"
+                        f"({blk.get('height_mm', 30)}mm)에 비해 깁니다 — {budget}자 이하로 줄이십시오.")
     return problems
 
 

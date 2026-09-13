@@ -28,16 +28,23 @@ blocks:
       - ["보고일자", "", "문서번호", ""]
       - ["제목", "", "", ""]
       - ["작성자", "", "연락처", ""]
+    sample_rows:
+      - ["", "영업본부장", "", "전략기획팀"]
+      - ["", "2026-09-10", "", "전략-2026-034"]
+      - ["", "3분기 매출 현황 및 개선 방안 보고", "", ""]
+      - ["", "박민준", "", "010-1234-5678"]
   - type: subtitle
     text: 1. 보고 요지
   - type: textbox
     hint: "결론과 요청사항을 먼저 3줄 이내로 요약하십시오."
     height_mm: 14
+    sample_text: 3분기 매출이 전분기 대비 8% 감소하였습니다. 주요 원인은 경쟁사 프로모션 확대이며, 4분기 프로모션 예산 증액을 건의합니다.
   - type: subtitle
     text: 2. 현황
   - type: textbox
     hint: "진행 경과와 관련 수치를 사실 중심으로 기재하십시오."
     height_mm: 14
+    sample_text: 3분기 매출 12억 원으로 전분기 13억 원 대비 8% 감소하였고, 온라인 채널 매출은 5% 증가하였으나 오프라인 매출이 15% 감소하였습니다.
   - type: subtitle
     text: 3. 문제점 및 대안
   - type: table
@@ -45,12 +52,16 @@ blocks:
     header: ["No", 문제점, 대안, 기대효과]
     empty_rows: 2
     row_height_mm: 7
+    sample_rows:
+      - ["1", "오프라인 매장 방문객 감소", "주말 프로모션 및 팝업 행사 운영", "방문객 10% 증가 기대"]
   - type: subtitle
     text: 4. 건의사항 및 후속조치
   - type: textbox
     hint: "결정이 필요한 사항을 선택지 형태로 기재하십시오."
     height_mm: 16
+    sample_text: 4분기 프로모션 예산 3,000만원 증액 여부를 결정해 주시기 바랍니다. 승인 시 10월 첫째 주부터 집행하겠습니다.
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: subtitle
     text: 결재
   - type: grid

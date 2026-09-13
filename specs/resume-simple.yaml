@@ -1,0 +1,89 @@
+id: resume-simple
+title: 이력서 (간편형)
+category: personal
+subcategory: career
+tags: [이력서, 간편이력서, 간단이력서, 빠른제출, resume]
+summary: 인적사항과 학력·경력·자격을 핵심만 담아 A4 한 장으로 빠르게 제출하는 간편 이력서입니다.
+usage: >
+  서류를 급하게 제출해야 하거나 항목이 많은 정식 이력서가 부담스러울 때 쓰는 간편형 이력서입니다.
+  인적사항과 학력 2행, 경력 3행, 자격 2행만으로 구성해 작성 시간을 줄였습니다. 핵심 정보만
+  정확히 채우고, 채용공고에서 자기소개서나 경력기술서 등 추가 서류를 요구하면 별도로
+  준비해 함께 제출하십시오.
+source: original
+featured: false
+target_pages: 1
+series: resume
+series_name: 이력서
+variant: 간편형
+variant_rank: 5
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 이력서
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["휴대전화", "", "이메일", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1998-02-05"]
+      - ["", "010-1234-5678", "", "gildong.simple@example.com"]
+      - ["", "서울특별시 강남구 테헤란로 152", "", ""]
+
+  - type: subtitle
+    text: 1. 학력사항
+
+  - type: table
+    widths: [24, 32, 24, 20]
+    header: [재학기간, 학교명, 전공, 졸업구분]
+    empty_rows: 2
+    row_height_mm: 8
+    sample_rows:
+      - ["2015.03~2019.02", "한빛대학교", "경영학과", "졸업"]
+
+  - type: subtitle
+    text: 2. 경력사항
+
+  - type: table
+    widths: [24, 28, 28, 20]
+    header: [근무기간, 회사명, 담당업무, 퇴직사유]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["2019.05~2022.03", "(주)한빛커머스", "온라인 판매 관리", "이직"]
+      - ["2022.04~재직중", "(주)새길데이터", "고객지원 운영", "-"]
+
+  - type: subtitle
+    text: 3. 자격사항
+
+  - type: table
+    widths: [40, 34, 26]
+    header: [자격·면허명, 발급기관, 취득일]
+    empty_rows: 2
+    row_height_mm: 8
+    sample_rows:
+      - ["컴퓨터활용능력 2급", "대한상공회의소", "2021-06-11"]
+
+  - type: para
+    text: 위 기재사항은 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 지원자
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 항목을 줄인 간편 제출용 양식이므로 채용공고에서 추가 서류를 요구하면 별도로 준비하십시오.

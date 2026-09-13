@@ -1,0 +1,98 @@
+id: retirement-application
+title: 퇴직원
+category: corp
+subcategory: hr
+tags: [퇴직원, 퇴직신청서, 사직서, 퇴직금 정산, 퇴사서류]
+summary: 퇴직 사유와 퇴직일, 퇴직금·연차 정산 및 인수인계 확인란을 갖춘 퇴직원 양식입니다.
+usage: >
+  퇴직 의사를 정식으로 알리면서 퇴직금·미사용 연차 정산과 업무 인수인계 여부까지 함께
+  확인받는 서류입니다. 퇴직 사유를 선택하고 퇴직희망일을 기재한 뒤, 퇴직금과 미사용
+  연차수당 정산 확인란, 업무 인수인계 완료 확인란에 표시합니다. 담당·팀장·인사 결재를
+  거쳐 처리되므로 퇴직희망일로부터 충분한 여유를 두고 제출하십시오. 정산 기준은
+  취업규칙과 근로기준법을 따릅니다.
+source: original
+featured: false
+target_pages: 1
+series: resignation
+series_name: 사직서
+variant: 퇴직원
+variant_rank: 3
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 퇴직원
+    spaced: true
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["소속(부서)", "", "직위", ""]
+      - ["성명", "", "사번", ""]
+      - ["입사일자", "", "퇴직희망일", ""]
+      - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "경영지원팀", "", "과장"]
+      - ["", "홍길동", "", "2021034"]
+      - ["", "2021-03-15", "", "2026-05-31"]
+      - ["", "010-1234-5678", "", "gildong.hong@example.com"]
+  - type: subtitle
+    text: 퇴직 사유
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 10
+    rows:
+      - ["퇴직 사유", "개인사정 / 이직 / 건강 / 정년 / 계약만료 / 기타 (   )"]
+    sample_rows:
+      - ["", "이직(타사 합격으로 인한 이직)"]
+  - type: subtitle
+    text: 정산 및 인수인계 확인
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["퇴직금 정산 확인", "확인함 / 추후 별도 확인"]
+      - ["미사용 연차수당 정산 확인", "확인함 / 추후 별도 확인"]
+      - ["업무 인수인계 확인", "완료 / 진행중 / 해당없음"]
+    sample_rows:
+      - ["", "확인함"]
+      - ["", "확인함 (미사용 연차 4일)"]
+      - ["", "완료"]
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 본인은 위와 같은 사유로 퇴직하고자 하오니 재가하여 주시기 바랍니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    5 월    1 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 결재
+    align: center
+    size: 11
+    bold: true
+  - type: grid
+    widths: [33, 34, 33]
+    label_cols: [0, 1, 2]
+    row_height_mm: 12
+    rows:
+      - ["담당", "팀장", "인사"]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: 대표이사 귀하
+    align: center
+    size: 12
+    bold: true
+  - type: notice
+    text: 퇴직금과 미사용 연차수당 정산, 4대 보험 상실신고 일정은 인사담당자와 사전에 확인하십시오.

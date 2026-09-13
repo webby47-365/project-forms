@@ -11,6 +11,10 @@ usage: >
 source: original
 featured: true
 featured_rank: 3
+series: resignation
+series_name: 사직서
+variant: 기본형
+variant_rank: 1
 blocks:
   - type: doc_title
     text: 사직서
@@ -25,11 +29,17 @@ blocks:
       - ["성명", "", "사번", ""]
       - ["입사일자", "", "사직일자", ""]
       - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "마케팅팀", "", "대리"]
+      - ["", "홍길동", "", "2021015"]
+      - ["", "2021-03-15", "", "2026-10-15"]
+      - ["", "010-1234-5678", "", "gildong.hong@example.com"]
   - type: subtitle
     text: 사직 사유
   - type: textbox
     hint: "사직 사유를 구체적으로 기재하십시오. (예: 개인사정, 이직, 학업, 건강 등)"
     height_mm: 38
+    sample_text: 개인적인 사정으로 2026년 10월 15일부로 사직하고자 합니다. 재직 중 보살펴 주신 점에 감사드리며, 인수인계에 최선을 다하겠습니다.
   - type: subtitle
     text: 인수인계 사항
   - type: table
@@ -37,6 +47,9 @@ blocks:
     header: [업무명, 인수인계 내용, 인계 대상자]
     empty_rows: 3
     row_height_mm: 9
+    sample_rows:
+      - ["거래처 관리", "주요 거래처 연락처와 미수금 현황 인수", "김서연"]
+      - ["마케팅 자료", "진행 중인 캠페인 자료 공유 폴더 정리", "박민준"]
   - type: spacer
     height_pt: 4
   - type: para
@@ -45,8 +58,10 @@ blocks:
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 신청인
+    sample_names: [홍길동]
   - type: spacer
     height_pt: 6
   - type: para

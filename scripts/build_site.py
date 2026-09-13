@@ -103,9 +103,13 @@ def load_json(path: Path) -> dict[str, Any]:
 
 
 def write(path: Path, html: str) -> None:
-    """HTML을 UTF-8로 저장한다."""
+    """HTML을 UTF-8·LF로 저장한다.
+
+    newline="\\n"을 지정하지 않으면 Windows에서 줄바꿈이 CRLF로 바뀌어 저장되고,
+    저장소는 LF로 보관하므로(.gitattributes) 커밋할 때마다 변환 경고가 쏟아진다.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(html, encoding="utf-8")
+    path.write_text(html, encoding="utf-8", newline="\n")
 
 
 def build() -> int:
@@ -142,6 +146,17 @@ def build() -> int:
 
     for key in grouped:
         grouped[key].sort(key=lambda f: (-f.get("downloads", 0), f["title"]))
+
+    # 계열(series): 같은 서식의 실무 변형을 상세 화면에서 함께 보여주기 위한 묶음.
+    # 예) 이력서 → 기본형·신입용·경력용·서술형·간편형·아르바이트용·영문
+    series: dict[str, list[dict[str, Any]]] = {}
+    for f in forms:
+        if f.get("series"):
+            series.setdefault(f["series"], []).append(f)
+    for key in series:
+        series[key].sort(key=lambda f: (f.get("variant_rank", 99), f["title"]))
+    # 변형이 하나뿐인 계열은 보여줄 것이 없으므로 묶음에서 뺀다
+    series = {k: v for k, v in series.items() if len(v) > 1}
 
     # 메인 노출 순서: 명세의 featured_rank → 다운로드 수 → 제목
     featured = sorted(
@@ -236,6 +251,7 @@ def build() -> int:
                   sub=next(s for s in cat_obj[f["category"]]["subcategories"]
                            if s["key"] == f["subcategory"]),
                   related=related, kb=kb, jsonld=jsonld,
+                  series_forms=series.get(f.get("series", ""), []),
                   dl=dl_map[f["id"]], dl_map=dl_map, names=name_map[f["id"]], name_map=name_map, **common,
               ))
         pages += 1

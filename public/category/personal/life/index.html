@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>개인 생활·가정 서식 6종 — 무료서식 다운로드</title>
-<meta name="description" content="개인 생활·가정 분야 무료 서식 6종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<title>개인 생활·가정 서식 15종 — 무료서식 다운로드</title>
+<meta name="description" content="개인 생활·가정 분야 무료 서식 15종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <link rel="canonical" href="https://freeforms.kr/category/personal/life/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="개인 생활·가정 서식 6종 — 무료서식 다운로드">
-<meta property="og:description" content="개인 생활·가정 분야 무료 서식 6종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<meta property="og:title" content="개인 생활·가정 서식 15종 — 무료서식 다운로드">
+<meta property="og:description" content="개인 생활·가정 분야 무료 서식 15종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <meta property="og:site_name" content="무료서식 다운로드">
 <meta name="naver-site-verification" content="84f0aadaca88d57ca53e9c0eb1b5705bb0a29425">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -283,50 +304,61 @@ footer.site li{margin:3px 0}
 <main><div class="wrap">
   <div class="crumb"><a href="/">홈</a> › 개인 › 생활·가정</div>
   <h1 class="page">개인 · 생활·가정</h1>
-  <p class="lead">6종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
+  <p class="lead">15종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
 
   <div class="cols">
     <aside class="side">      <h3>기업</h3>
       <ul>        <li><a href="/category/corp/hr/"
                class="">
-          <span>인사·노무</span><span class="n">15</span></a></li>        <li><a href="/category/corp/admin/"
+          <span>인사·노무</span><span class="n">30</span></a></li>        <li><a href="/category/corp/admin/"
                class="">
-          <span>총무·행정</span><span class="n">10</span></a></li>        <li><a href="/category/corp/finance/"
+          <span>총무·행정</span><span class="n">23</span></a></li>        <li><a href="/category/corp/finance/"
                class="">
-          <span>회계·세무</span><span class="n">11</span></a></li>        <li><a href="/category/corp/sales/"
+          <span>회계·세무</span><span class="n">22</span></a></li>        <li><a href="/category/corp/sales/"
                class="">
-          <span>영업·마케팅</span><span class="n">4</span></a></li>        <li><a href="/category/corp/startup/"
+          <span>영업·마케팅</span><span class="n">13</span></a></li>        <li><a href="/category/corp/startup/"
                class="">
-          <span>창업·법인</span><span class="n">4</span></a></li>      </ul>      <h3>법률</h3>
+          <span>창업·법인</span><span class="n">11</span></a></li>      </ul>      <h3>법률</h3>
       <ul>        <li><a href="/category/legal/contract/"
                class="">
-          <span>계약</span><span class="n">7</span></a></li>        <li><a href="/category/legal/notice/"
+          <span>계약</span><span class="n">17</span></a></li>        <li><a href="/category/legal/notice/"
                class="">
-          <span>통지·증명</span><span class="n">8</span></a></li>        <li><a href="/category/legal/litigation/"
+          <span>통지·증명</span><span class="n">15</span></a></li>        <li><a href="/category/legal/litigation/"
                class="">
-          <span>소송·민원</span><span class="n">4</span></a></li>      </ul>      <h3>공공</h3>
+          <span>소송·민원</span><span class="n">10</span></a></li>      </ul>      <h3>공공</h3>
       <ul>        <li><a href="/category/public/civil/"
                class="">
-          <span>민원·신고</span><span class="n">5</span></a></li>        <li><a href="/category/public/consent/"
+          <span>민원·신고</span><span class="n">10</span></a></li>        <li><a href="/category/public/consent/"
                class="">
-          <span>신청·동의</span><span class="n">7</span></a></li>      </ul>      <h3>부동산</h3>
+          <span>신청·동의</span><span class="n">12</span></a></li>      </ul>      <h3>부동산</h3>
       <ul>        <li><a href="/category/estate/lease/"
                class="">
-          <span>임대·매매</span><span class="n">3</span></a></li>      </ul>      <h3>개인</h3>
+          <span>임대·매매</span><span class="n">11</span></a></li>      </ul>      <h3>개인</h3>
       <ul>        <li><a href="/category/personal/career/"
                class="">
-          <span>취업·경력</span><span class="n">6</span></a></li>        <li><a href="/category/personal/life/"
+          <span>취업·경력</span><span class="n">20</span></a></li>        <li><a href="/category/personal/life/"
                class="on">
-          <span>생활·가정</span><span class="n">6</span></a></li>      </ul>      <h3>교육</h3>
+          <span>생활·가정</span><span class="n">15</span></a></li>      </ul>      <h3>교육</h3>
       <ul>        <li><a href="/category/edu/school/"
                class="">
-          <span>학교·학원</span><span class="n">6</span></a></li>      </ul>      <h3>의료·복지</h3>
+          <span>학교·학원</span><span class="n">16</span></a></li>      </ul>      <h3>의료·복지</h3>
       <ul>        <li><a href="/category/welfare/consent/"
                class="">
-          <span>동의·신청</span><span class="n">2</span></a></li>      </ul>      
+          <span>동의·신청</span><span class="n">10</span></a></li>      </ul>      
     </aside>
 
     <div>      <div class="grid g4">        <article class="card">
+  <a class="thumb" href="/form/household-budget-yearly/" aria-label="가계부 (연간) 미리보기">
+    <img src="/files/household-budget-yearly/preview-1.webp" alt="가계부 (연간) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/household-budget-yearly/">가계부 (연간)</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/household-budget-yearly/household-budget-yearly.pdf" download="가계부 (연간).pdf" title="가계부 (연간) PDF 다운로드">PDF</a>
+      <a href="/files/household-budget-yearly/household-budget-yearly.docx" download="가계부 (연간).docx" title="가계부 (연간) Word 다운로드">Word</a>
+      <a href="/files/household-budget-yearly/household-budget-yearly.hwpx" download="가계부 (연간).hwpx" title="가계부 (연간) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/household-budget/" aria-label="가계부 (월간) 미리보기">
     <img src="/files/household-budget/preview-1.webp" alt="가계부 (월간) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
@@ -335,6 +367,61 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/household-budget/household-budget.pdf" download="가계부 (월간).pdf" title="가계부 (월간) PDF 다운로드">PDF</a>
       <a href="/files/household-budget/household-budget.docx" download="가계부 (월간).docx" title="가계부 (월간) Word 다운로드">Word</a>
       <a href="/files/household-budget/household-budget.hwpx" download="가계부 (월간).hwpx" title="가계부 (월간) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/household-budget-weekly/" aria-label="가계부 (주간) 미리보기">
+    <img src="/files/household-budget-weekly/preview-1.webp" alt="가계부 (주간) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/household-budget-weekly/">가계부 (주간)</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/household-budget-weekly/household-budget-weekly.pdf" download="가계부 (주간).pdf" title="가계부 (주간) PDF 다운로드">PDF</a>
+      <a href="/files/household-budget-weekly/household-budget-weekly.docx" download="가계부 (주간).docx" title="가계부 (주간) Word 다운로드">Word</a>
+      <a href="/files/household-budget-weekly/household-budget-weekly.hwpx" download="가계부 (주간).hwpx" title="가계부 (주간) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/thank-you-letter/" aria-label="감사장 미리보기">
+    <img src="/files/thank-you-letter/preview-1.webp" alt="감사장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/thank-you-letter/">감사장</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/thank-you-letter/thank-you-letter.pdf" download="감사장.pdf" title="감사장 PDF 다운로드">PDF</a>
+      <a href="/files/thank-you-letter/thank-you-letter.docx" download="감사장.docx" title="감사장 Word 다운로드">Word</a>
+      <a href="/files/thank-you-letter/thank-you-letter.hwpx" download="감사장.hwpx" title="감사장 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/family-event-notice/" aria-label="경조사 안내문 미리보기">
+    <img src="/files/family-event-notice/preview-1.webp" alt="경조사 안내문 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/family-event-notice/">경조사 안내문</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/family-event-notice/family-event-notice.pdf" download="경조사 안내문.pdf" title="경조사 안내문 PDF 다운로드">PDF</a>
+      <a href="/files/family-event-notice/family-event-notice.docx" download="경조사 안내문.docx" title="경조사 안내문 Word 다운로드">Word</a>
+      <a href="/files/family-event-notice/family-event-notice.hwpx" download="경조사 안내문.hwpx" title="경조사 안내문 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/car-accident-settlement/" aria-label="교통사고 합의서 미리보기">
+    <img src="/files/car-accident-settlement/preview-1.webp" alt="교통사고 합의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/car-accident-settlement/">교통사고 합의서</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/car-accident-settlement/car-accident-settlement.pdf" download="교통사고 합의서.pdf" title="교통사고 합의서 PDF 다운로드">PDF</a>
+      <a href="/files/car-accident-settlement/car-accident-settlement.docx" download="교통사고 합의서.docx" title="교통사고 합의서 Word 다운로드">Word</a>
+      <a href="/files/car-accident-settlement/car-accident-settlement.hwpx" download="교통사고 합의서.hwpx" title="교통사고 합의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/pet-adoption-contract/" aria-label="반려동물 분양 계약서 미리보기">
+    <img src="/files/pet-adoption-contract/preview-1.webp" alt="반려동물 분양 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/pet-adoption-contract/">반려동물 분양 계약서</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/pet-adoption-contract/pet-adoption-contract.pdf" download="반려동물 분양 계약서.pdf" title="반려동물 분양 계약서 PDF 다운로드">PDF</a>
+      <a href="/files/pet-adoption-contract/pet-adoption-contract.docx" download="반려동물 분양 계약서.docx" title="반려동물 분양 계약서 Word 다운로드">Word</a>
+      <a href="/files/pet-adoption-contract/pet-adoption-contract.hwpx" download="반려동물 분양 계약서.hwpx" title="반려동물 분양 계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -360,6 +447,17 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/monthly-schedule/" aria-label="월간 일정표 미리보기">
+    <img src="/files/monthly-schedule/preview-1.webp" alt="월간 일정표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/monthly-schedule/">월간 일정표</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/monthly-schedule/monthly-schedule.pdf" download="월간 일정표.pdf" title="월간 일정표 PDF 다운로드">PDF</a>
+      <a href="/files/monthly-schedule/monthly-schedule.docx" download="월간 일정표.docx" title="월간 일정표 Word 다운로드">Word</a>
+      <a href="/files/monthly-schedule/monthly-schedule.hwpx" download="월간 일정표.hwpx" title="월간 일정표 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/moving-checklist/" aria-label="이사 체크리스트 미리보기">
     <img src="/files/moving-checklist/preview-1.webp" alt="이사 체크리스트 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -368,6 +466,28 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/moving-checklist/moving-checklist.pdf" download="이사 체크리스트.pdf" title="이사 체크리스트 PDF 다운로드">PDF</a>
       <a href="/files/moving-checklist/moving-checklist.docx" download="이사 체크리스트.docx" title="이사 체크리스트 Word 다운로드">Word</a>
       <a href="/files/moving-checklist/moving-checklist.hwpx" download="이사 체크리스트.hwpx" title="이사 체크리스트 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/will-form/" aria-label="자필유언장 양식 미리보기">
+    <img src="/files/will-form/preview-1.webp" alt="자필유언장 양식 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/will-form/">자필유언장 양식</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/will-form/will-form.pdf" download="자필유언장 양식.pdf" title="자필유언장 양식 PDF 다운로드">PDF</a>
+      <a href="/files/will-form/will-form.docx" download="자필유언장 양식.docx" title="자필유언장 양식 Word 다운로드">Word</a>
+      <a href="/files/will-form/will-form.hwpx" download="자필유언장 양식.hwpx" title="자필유언장 양식 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/gift-contract/" aria-label="증여계약서 미리보기">
+    <img src="/files/gift-contract/preview-1.webp" alt="증여계약서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/gift-contract/">증여계약서</a>
+    <div class="cat">개인 · 생활·가정</div>
+    <div class="dl">      <a href="/files/gift-contract/gift-contract.pdf" download="증여계약서.pdf" title="증여계약서 PDF 다운로드">PDF</a>
+      <a href="/files/gift-contract/gift-contract.docx" download="증여계약서.docx" title="증여계약서 Word 다운로드">Word</a>
+      <a href="/files/gift-contract/gift-contract.hwpx" download="증여계약서.hwpx" title="증여계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -416,7 +536,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

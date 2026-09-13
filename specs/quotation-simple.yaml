@@ -1,0 +1,67 @@
+id: quotation-simple
+title: 견적서 (간편형)
+category: corp
+subcategory: finance
+tags: [견적서, 간편견적서, 견적서양식, 소액견적, estimate]
+summary: 공급자·수신처 정보와 품목 6행만으로 빠르게 작성하는 반 페이지 간편 견적서입니다.
+usage: >
+  소액 거래나 소규모 거래처에 빠르게 가격을 제시할 때 쓰는 축약형 견적서입니다. 공급자와
+  수신처 정보를 한 줄씩만 적고 품목표도 6행으로 줄여 작성 시간을 최소화했습니다. 거래
+  금액이 크거나 사업자 정보를 상세히 밝혀야 하는 경우에는 상세형 견적서를 사용하십시오.
+source: original
+featured: false
+target_pages: 1
+series: quotation
+series_name: 견적서
+variant: 간편형
+variant_rank: 2
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 견적서
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["공급자", "", "수신처", ""]
+      - ["견적일자", "", "유효기간", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "(주)새길데이터"]
+      - ["", "2026-09-13", "", "2026-10-13"]
+  - type: subtitle
+    text: 견적 내역
+  - type: table
+    widths: [8, 32, 12, 16, 16, 16]
+    header: ["No", 품명, 수량, 단가, 금액, 비고]
+    empty_rows: 6
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "사무용 의자", "4", "150,000", "600,000", "-"]
+      - ["2", "사무용 책상", "2", "220,000", "440,000", "-"]
+      - ["3", "모니터 거치대", "4", "25,000", "100,000", "-"]
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["공급가액 합계", "", "부가세(10%)", ""]
+      - ["총 견적금액", "", "", ""]
+    sample_rows:
+      - ["", "1,140,000", "", "114,000"]
+      - ["", "1,254,000", "", ""]
+  - type: para
+    text: 위와 같이 견적합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+  - type: sign_line
+    label: 공급자
+    sample_names: [한빛커머스 김서연]
+  - type: notice
+    text: 본 견적서는 유효기간 내에만 효력이 있으며, 상세 사업자정보가 필요한 경우 상세형 견적서를 사용하십시오.

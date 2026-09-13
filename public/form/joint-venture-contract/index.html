@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -287,17 +308,21 @@ footer.site li{margin:3px 0}
   </div>
 
   <div class="detail">
-    <div class="preview">      <img src="/files/joint-venture-contract/preview-1.webp" alt="공동사업 계약서 1페이지 미리보기" width="800" height="1131">      <img src="/files/joint-venture-contract/preview-2.webp" alt="공동사업 계약서 2페이지 미리보기" width="800" height="1131" loading="lazy">    </div>
+    <div>
+      <div class="preview">        <img src="/files/joint-venture-contract/preview-1.webp" alt="공동사업 계약서 1페이지 작성 예시 미리보기" width="800" height="1131">        <img src="/files/joint-venture-contract/preview-2.webp" alt="공동사업 계약서 2페이지 작성 예시 미리보기" width="800" height="1131" loading="lazy">      </div>      <p class="preview-note">
+        <span aria-hidden="true">✎</span>
+        <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
+        내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
+      </p>    </div>
 
     <div class="meta">
       <h1 class="page">공동사업 계약서</h1>
       <p class="lead" style="margin-bottom:0">공동사업의 목적·출자내용·지분비율과 손익분배·의사결정 방법을 정하는 동업계약서입니다.</p>
-
       <div class="dlbox">
         <h3>양식 다운로드</h3>
         <p>원하는 형식을 선택하세요. 회원가입 없이 바로 내려받습니다.</p>
         <div class="dlbtns">
-          <a href="/files/joint-venture-contract/joint-venture-contract.pdf" download="공동사업 계약서.pdf">PDF<span class="fmt">112 KB</span></a>
+          <a href="/files/joint-venture-contract/joint-venture-contract.pdf" download="공동사업 계약서.pdf">PDF<span class="fmt">91 KB</span></a>
           <a href="/files/joint-venture-contract/joint-venture-contract.docx" download="공동사업 계약서.docx">Word<span class="fmt">39 KB</span></a>
           <a href="/files/joint-venture-contract/joint-venture-contract.hwpx" download="공동사업 계약서.hwpx">한글<span class="fmt">12 KB</span></a>
         </div>
@@ -324,6 +349,17 @@ footer.site li{margin:3px 0}
     </div>
   </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
   <div class="grid">    <article class="card">
+  <a class="thumb" href="/form/franchise-contract/" aria-label="가맹계약서 미리보기">
+    <img src="/files/franchise-contract/preview-1.webp" alt="가맹계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/franchise-contract/">가맹계약서</a>
+    <div class="cat">법률 · 계약</div>
+    <div class="dl">      <a href="/files/franchise-contract/franchise-contract.pdf" download="가맹계약서.pdf" title="가맹계약서 PDF 다운로드">PDF</a>
+      <a href="/files/franchise-contract/franchise-contract.docx" download="가맹계약서.docx" title="가맹계약서 Word 다운로드">Word</a>
+      <a href="/files/franchise-contract/franchise-contract.hwpx" download="가맹계약서.hwpx" title="가맹계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/goods-sale-contract/" aria-label="매매계약서 (동산) 미리보기">
     <img src="/files/goods-sale-contract/preview-1.webp" alt="매매계약서 (동산) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
@@ -346,41 +382,30 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/service-contract/" aria-label="용역계약서 미리보기">
-    <img src="/files/service-contract/preview-1.webp" alt="용역계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/license-contract/" aria-label="상표·저작물 사용허락 계약서 미리보기">
+    <img src="/files/license-contract/preview-1.webp" alt="상표·저작물 사용허락 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/service-contract/">용역계약서</a>
+    <a class="name" href="/form/license-contract/">상표·저작물 사용허락 계약서</a>
     <div class="cat">법률 · 계약</div>
-    <div class="dl">      <a href="/files/service-contract/service-contract.pdf" download="용역계약서.pdf" title="용역계약서 PDF 다운로드">PDF</a>
-      <a href="/files/service-contract/service-contract.docx" download="용역계약서.docx" title="용역계약서 Word 다운로드">Word</a>
-      <a href="/files/service-contract/service-contract.hwpx" download="용역계약서.hwpx" title="용역계약서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/license-contract/license-contract.pdf" download="상표·저작물 사용허락 계약서.pdf" title="상표·저작물 사용허락 계약서 PDF 다운로드">PDF</a>
+      <a href="/files/license-contract/license-contract.docx" download="상표·저작물 사용허락 계약서.docx" title="상표·저작물 사용허락 계약서 Word 다운로드">Word</a>
+      <a href="/files/license-contract/license-contract.hwpx" download="상표·저작물 사용허락 계약서.hwpx" title="상표·저작물 사용허락 계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/lease-termination-notice/" aria-label="임대차계약 해지통보서 미리보기">
-    <img src="/files/lease-termination-notice/preview-1.webp" alt="임대차계약 해지통보서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/mou-agreement/" aria-label="업무협약서 (MOU) 미리보기">
+    <img src="/files/mou-agreement/preview-1.webp" alt="업무협약서 (MOU) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/lease-termination-notice/">임대차계약 해지통보서</a>
+    <a class="name" href="/form/mou-agreement/">업무협약서 (MOU)</a>
     <div class="cat">법률 · 계약</div>
-    <div class="dl">      <a href="/files/lease-termination-notice/lease-termination-notice.pdf" download="임대차계약 해지통보서.pdf" title="임대차계약 해지통보서 PDF 다운로드">PDF</a>
-      <a href="/files/lease-termination-notice/lease-termination-notice.docx" download="임대차계약 해지통보서.docx" title="임대차계약 해지통보서 Word 다운로드">Word</a>
-      <a href="/files/lease-termination-notice/lease-termination-notice.hwpx" download="임대차계약 해지통보서.hwpx" title="임대차계약 해지통보서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/loan-agreement/" aria-label="차용증 (금전소비대차계약서) 미리보기">
-    <img src="/files/loan-agreement/preview-1.webp" alt="차용증 (금전소비대차계약서) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
-  <div class="body">
-    <a class="name" href="/form/loan-agreement/">차용증 (금전소비대차계약서)</a>
-    <div class="cat">법률 · 계약</div>
-    <div class="dl">      <a href="/files/loan-agreement/loan-agreement.pdf" download="차용증 (금전소비대차계약서).pdf" title="차용증 (금전소비대차계약서) PDF 다운로드">PDF</a>
-      <a href="/files/loan-agreement/loan-agreement.docx" download="차용증 (금전소비대차계약서).docx" title="차용증 (금전소비대차계약서) Word 다운로드">Word</a>
-      <a href="/files/loan-agreement/loan-agreement.hwpx" download="차용증 (금전소비대차계약서).hwpx" title="차용증 (금전소비대차계약서) 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/mou-agreement/mou-agreement.pdf" download="업무협약서 (MOU).pdf" title="업무협약서 (MOU) PDF 다운로드">PDF</a>
+      <a href="/files/mou-agreement/mou-agreement.docx" download="업무협약서 (MOU).docx" title="업무협약서 (MOU) Word 다운로드">Word</a>
+      <a href="/files/mou-agreement/mou-agreement.hwpx" download="업무협약서 (MOU).hwpx" title="업무협약서 (MOU) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>
 <script type="application/ld+json">
-{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;공동사업 계약서&#34;, &#34;description&#34;: &#34;공동사업의 목적·출자내용·지분비율과 손익분배·의사결정 방법을 정하는 동업계약서입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/joint-venture-contract/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-13&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
+{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;공동사업 계약서&#34;, &#34;description&#34;: &#34;공동사업의 목적·출자내용·지분비율과 손익분배·의사결정 방법을 정하는 동업계약서입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/joint-venture-contract/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-14&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
 </script>
 </main>
 
@@ -402,7 +427,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

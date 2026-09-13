@@ -1,0 +1,74 @@
+id: career-desc-project
+title: 경력기술서 (프로젝트 중심)
+category: personal
+subcategory: career
+tags: [경력기술서, 프로젝트 경력, IT 경력기술서, 이직 서류, 프로젝트 경험]
+summary: 수행한 프로젝트별 기간·역할·기술·성과를 표로 정리하고 상세 내용을 덧붙이는 경력기술서입니다.
+usage: >
+  개발·데이터·기획 등 프로젝트 단위로 업무가 나뉘는 직무의 경력직 지원자가 이력서와
+  함께 제출하는 서류입니다. 프로젝트명·기간·역할·사용 기술을 표로 한눈에 정리한 뒤,
+  대표 프로젝트 한두 건은 목표와 진행 과정, 본인의 역할을 구체적으로 풀어 씁니다.
+  성과는 매출·처리 시간·오류율 등 가능한 한 수치로 표현하고, 회사명·기간은 이력서와
+  일치하도록 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+series: career-desc
+series_name: 경력기술서
+variant: 프로젝트 중심
+variant_rank: 2
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 경력기술서
+
+  - type: grid
+    widths: [16, 22, 14, 20, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "지원 직무", "", "연락처", ""]
+      - ["총 경력", "     년     개월", "이메일", "", "작성일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "백엔드 개발", "", "010-1234-5678"]
+      - ["", "", "", "gildong.hong@example.com", "", "2026-09-13"]
+
+  - type: subtitle
+    text: 1. 프로젝트 경력
+  - type: table
+    widths: [20, 14, 12, 26, 28]
+    header: [프로젝트명, 기간, 역할, 사용 기술·도구, 성과]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["커머스 추천시스템 고도화", "2023.09~2024.03", "백엔드 개발", "Python, Spark, Airflow", "추천 클릭률 15% 개선"]
+      - ["사내 데이터 마트 구축", "2024.04~2025.02", "데이터 엔지니어", "SQL, dbt, Tableau", "리포트 생성 시간 70% 단축"]
+
+  - type: subtitle
+    text: 2. 프로젝트 수행 상세
+  - type: textbox
+    hint: "대표 프로젝트 1 — 목표, 진행 과정, 본인의 역할과 성과를 구체적으로 작성하십시오."
+    height_mm: 30
+    sample_text: (주)한빛커머스의 추천시스템 고도화 프로젝트에서 백엔드 개발을 담당했습니다. 기존 배치 기반 추천 로직을 실시간 처리 구조로 전환하기 위해 Spark와 Airflow로 데이터 파이프라인을 재설계했고, 3개월간 매주 성능 테스트를 반복하며 지연 시간을 줄였습니다. 그 결과 추천 클릭률이 15% 개선되었고, 배치 처리 시간도 40% 단축되어 운영팀의 업무 부담을 크게 줄였습니다.
+  - type: textbox
+    hint: "대표 프로젝트 2 — 목표, 진행 과정, 본인의 역할과 성과를 구체적으로 작성하십시오."
+    height_mm: 30
+    sample_text: (주)새길데이터에서는 여러 부서에 흩어져 있던 매출·재고 데이터를 하나의 데이터 마트로 통합하는 프로젝트를 주도했습니다. dbt로 변환 로직을 표준화하고 Tableau 대시보드를 구축해 부서별로 반복 작성하던 수기 리포트를 대체했습니다. 그 결과 월간 리포트 생성 시간이 70% 단축되었고, 데이터 정합성 오류로 인한 재작업도 크게 줄었습니다.
+
+  - type: para
+    text: 위 기재 내용은 사실과 다름이 없습니다.
+    align: center
+    size: 10.5
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 작성자
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 회사명·근무기간·직위는 이력서 및 경력증명서와 일치하도록 작성하십시오.

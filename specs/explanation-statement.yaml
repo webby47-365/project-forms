@@ -1,0 +1,74 @@
+id: explanation-statement
+title: 경위서
+category: corp
+subcategory: hr
+tags: [경위서, 사유서, 사건경위보고서, 업무경위서, 경위보고]
+summary: 업무 중 발생한 사안의 경과와 원인, 재발 방지 대책을 사실 중심으로 기록하는 경위서 양식입니다.
+usage: >
+  업무 중 지각이나 보고 누락 등 경미한 사안이 발생했을 때 경과를 사실대로 정리해 제출하는
+  문서입니다. 발생 일시와 장소를 먼저 기재하고, 사건 경위는 시간순으로 구체적으로 작성합니다.
+  이어서 발생 원인을 분석하고 재발을 막기 위한 개선 방안을 제시합니다. 변명이나 책임 회피성
+  표현보다는 사실과 개선 계획을 중심으로 작성하는 것이 좋습니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 경위서
+    spaced: true
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["소속(부서)", "", "직위", ""]
+      - ["성명", "", "사번", ""]
+      - ["발생 일시", "", "발생 장소", ""]
+    sample_rows:
+      - ["", "마케팅팀", "", "사원"]
+      - ["", "홍길동", "", "M240215"]
+      - ["", "2026-08-18 09:40", "", "본사 3층 마케팅팀 사무실"]
+
+  - type: subtitle
+    text: 1. 사건 경위
+
+  - type: textbox
+    hint: "발생 경과를 시간순으로 사실대로 기재하십시오."
+    height_mm: 45
+    sample_text: 8월 18일 정기 주간보고 제출 기한인 오전 10시까지 보고서를 제출하지 못하였고, 팀장의 확인 요청을 받은 후인 오전 11시 20분에 뒤늦게 제출함.
+
+  - type: subtitle
+    text: 2. 원인 및 문제점
+
+  - type: textbox
+    hint: "사건 발생의 원인과 문제점을 분석하여 기재하십시오."
+    height_mm: 28
+    sample_text: 전날 거래처 미팅 일정이 늘어나며 보고서 작성 시간을 확보하지 못했고, 업무 우선순위 조정 없이 기한에 맞추려다 제출이 지연됨.
+
+  - type: subtitle
+    text: 3. 재발 방지 대책
+
+  - type: textbox
+    hint: "향후 동일한 사안이 재발하지 않도록 할 개선 방안을 구체적으로 기재하십시오."
+    height_mm: 28
+    sample_text: 주간보고 작성 시간을 전날 퇴근 전으로 고정하고, 외부 일정이 있는 경우 사전에 팀장에게 제출 지연 가능성을 미리 공유하기로 함.
+
+  - type: para
+    text: 위 내용은 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년    8 월    19 일
+
+  - type: sign_line
+    labels: ["작성자", "확인자"]
+    sample_names: [홍길동, 김서연]
+
+  - type: notice
+    text: 기재 내용이 사실과 다른 부분이 있으면 서명 전에 정정하십시오.

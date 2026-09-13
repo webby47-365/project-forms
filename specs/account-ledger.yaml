@@ -1,0 +1,58 @@
+id: account-ledger
+title: 거래처 원장
+category: corp
+subcategory: finance
+tags: [거래처원장, 거래원장, 거래내역관리, 매출매입관리, ledger]
+summary: 거래처별 거래일자·매출·입금 내역과 잔액을 누적 기록해 관리하는 거래처 원장입니다.
+usage: >
+  특정 거래처와의 거래 내역을 날짜순으로 누적 기록해 미수금과 잔액을 관리하는 서식입니다.
+  차변(매출)은 청구가 발생한 금액, 대변(입금)은 실제 수령한 금액으로 구분해 적고, 매
+  거래 후 잔액을 갱신합니다. 전월 이월액을 첫 행에 반영해야 잔액이 맞으며, 세금계산서
+  발행 여부 등은 비고란에 기재해 세무 처리 시 참고하십시오.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 거래처 원장
+  - type: grid
+    widths: [14, 20, 14, 20, 14, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["상호", "", "사업자등록번호", "", "대표", ""]
+      - ["연락처", "", "담당자", "", "거래개시일", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "000-00-00000", "", "이수현"]
+      - ["", "02-2345-6789", "", "박민준", "", "2024-03-02"]
+  - type: subtitle
+    text: 거래 내역
+  - type: table
+    widths: [10, 26, 16, 16, 16, 16]
+    header: [일자, 적요, "차변(매출)", "대변(입금)", 잔액, 비고]
+    empty_rows: 12
+    row_height_mm: 7.5
+    body_align: center
+    sample_rows:
+      - ["2026-08-01", "전월 이월", "", "", "1,000,000", "-"]
+      - ["2026-09-02", "제품 판매", "2,500,000", "", "3,500,000", "세금계산서"]
+      - ["2026-09-10", "대금 입금", "", "2,000,000", "1,500,000", "계좌입금"]
+      - ["2026-09-20", "제품 판매", "1,200,000", "", "2,700,000", "세금계산서"]
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["기말 잔액", ""]
+    sample_rows:
+      - ["", "2,700,000"]
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+  - type: sign_line
+    label: 작성자
+    sample_names: [박민준]
+  - type: notice
+    text: 잔액은 전월 이월액부터 순차적으로 누적 계산하며, 세무 처리에 관한 사항은 세무대리인에게 확인하십시오.

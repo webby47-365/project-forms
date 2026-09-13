@@ -1,0 +1,82 @@
+id: disciplinary-notice
+title: 징계 통보서
+category: corp
+subcategory: hr
+tags: [징계통보서, 징계처분통지서, 인사징계, 징계위원회, 정직통보]
+summary: 징계 종류와 사유, 근거 규정, 효력 발생일과 재심 청구 절차를 통지하는 사내 징계 통보서 양식입니다.
+usage: >
+  직원에게 징계위원회 심의 결과를 공식적으로 통지할 때 사용하는 문서입니다. 징계 종류와 사유,
+  근거 규정, 효력 발생일을 명확히 기재하고, 통보일자를 기준으로 재심 청구 기한을 안내합니다.
+  징계 사유는 사실관계를 중심으로 간결하게 작성하며, 세부 절차와 법적 기준은 회사의 취업규칙과
+  인사규정을 따릅니다. 통보서는 수신인에게 직접 전달하거나 등기우편으로 발송하고 전달 기록을
+  보관하는 것이 좋습니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 징계 통보서
+    spaced: true
+
+  - type: subtitle
+    text: 수신
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["소속(부서)", "", "직위", ""]
+      - ["성명", "", "사번", ""]
+      - ["생년월일", "", "입사일자", ""]
+    sample_rows:
+      - ["", "마케팅팀", "", "사원"]
+      - ["", "홍길동", "", "M240215"]
+      - ["", "1994-03-02", "", "2024-02-15"]
+
+  - type: subtitle
+    text: 1. 징계 내용
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["징계 종류", "", "효력 발생일", ""]
+      - ["근거 규정", "", "통보일자", ""]
+    sample_rows:
+      - ["", "정직 3일", "", "2026-10-12"]
+      - ["", "취업규칙 제45조", "", "2026-10-05"]
+
+  - type: subtitle
+    text: 2. 징계 사유
+
+  - type: textbox
+    hint: "징계 대상 행위의 경과와 판단 근거를 구체적으로 기재하십시오."
+    height_mm: 35
+    sample_text: 2026년 8월 한 달간 사전 연락 없이 3회 지각하여 근태 관리 규정을 위반하였고, 소명 절차를 거쳐 취업규칙 제45조에 따라 정직 3일을 의결함.
+
+  - type: subtitle
+    text: 3. 재심 청구 안내
+
+  - type: para
+    text: 본 처분에 이의가 있는 경우 통보일로부터 7일 이내에 재심을 청구할 수 있습니다.
+    align: left
+    size: 10.5
+
+  - type: notice
+    text: 재심 청구 절차와 세부 기준은 취업규칙을 확인하십시오.
+
+  - type: spacer
+    height_pt: 6
+
+  - type: date_line
+    sample_text: 2026 년    10 월    5 일
+
+  - type: sign_line
+    labels: ["발신인(회사)", "수신인(확인)"]
+    sample_names: ["대표이사 김서연", 홍길동]

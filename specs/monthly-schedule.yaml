@@ -1,0 +1,70 @@
+id: monthly-schedule
+title: 월간 일정표
+category: personal
+subcategory: life
+tags: [월간일정표, 월간계획표, 한달계획, 일정관리, monthly planner]
+summary: 한 달의 목표와 주별 일정, 주요 일정을 한눈에 정리하고 메모를 남기는 월간 일정표입니다.
+usage: >
+  한 달의 업무·개인 일정을 주 단위로 나누어 관리할 때 사용하는 양식입니다. 연도와 월,
+  이달의 목표를 먼저 적고 주별 표에는 요일마다 할 일을 짧게 기록합니다. 이달의 주요
+  일정 표에는 날짜가 정해진 약속이나 행사를 장소와 함께 적어 놓치지 않도록 하고,
+  메모란에는 이번 달 기억할 일이나 다짐을 남겨 두면 월말에 돌아보기 좋습니다.
+source: original
+featured: false
+version: 1
+created_by: agent
+status: published
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 월간 일정표
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["연도", "", "월", ""]
+      - ["이달의 목표", "", "", ""]
+    sample_rows:
+      - ["", "2026년", "", "9월"]
+      - ["", "업무 마감 관리와 운동 습관 만들기", "", ""]
+
+  - type: subtitle
+    text: 주별 일정
+
+  - type: table
+    widths: [10, 13, 13, 13, 13, 13, 13, 12]
+    header: [주차, 월, 화, 수, 목, 금, 토, 일]
+    empty_rows: 5
+    row_height_mm: 12
+    sample_rows:
+      - ["1주", "프로젝트 기획", "", "회의", "", "보고서 제출", "", ""]
+      - ["2주", "", "치과 예약", "", "세미나 참석", "", "가족 모임", ""]
+
+  - type: subtitle
+    text: 이달의 주요 일정
+
+  - type: table
+    widths: [14, 36, 30, 20]
+    header: [일자, 일정, 장소, 비고]
+    empty_rows: 6
+    row_height_mm: 8
+    sample_rows:
+      - ["09-05", "팀 프로젝트 착수 회의", "본사 3층 회의실", "자료 사전 공유"]
+      - ["09-18", "정기 건강검진", "한빛병원", "공복 상태 유지"]
+      - ["09-27", "부모님 생신 모임", "본가", "선물 준비"]
+
+  - type: subtitle
+    text: 메모
+
+  - type: textbox
+    hint: "이번 달 기억할 일이나 다짐을 적으십시오."
+    height_mm: 25
+    sample_text: 이번 달은 업무 마감이 몰려 있으니 우선순위를 정해 처리하고, 주말에는 운동과 휴식 시간을 꼭 확보한다.
+
+  - type: notice
+    text: 일정은 변동될 수 있으므로 주기적으로 확인하고 갱신하십시오.

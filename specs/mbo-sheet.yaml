@@ -1,0 +1,89 @@
+id: mbo-sheet
+title: 목표관리(MBO) 평가표
+category: corp
+subcategory: hr
+tags: [MBO평가표, 목표관리평가, 목표설정표, KPI평가, 성과목표관리]
+summary: 목표 설정부터 중간 점검, 최종 달성도 평가까지 한눈에 정리하는 목표관리(MBO) 평가표입니다.
+usage: >
+  연간 또는 반기 단위로 개인 목표를 설정하고 성과를 관리하는 MBO(목표관리) 방식의 평가
+  문서입니다. 먼저 목표와 핵심결과지표, 가중치, 목표 수준과 기한을 설정하고, 기간 중에는
+  진척률과 이슈를 중간 점검란에 기록합니다. 기간 종료 시 실적과 달성률을 자기평가·상사평가로
+  구분해 기재하고 종합 의견을 작성합니다. 목표와 가중치 기준은 팀 운영 방침에 맞추어 조정할
+  수 있습니다.
+source: original
+featured: false
+target_pages: 2
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 목표관리(MBO) 평가표
+    spaced: false
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "부서", ""]
+      - ["직위", "", "평가기간", ""]
+    sample_rows:
+      - ["", "홍길동", "", "마케팅팀"]
+      - ["", "대리", "", "2026-01-01 ~ 2026-06-30"]
+
+  - type: subtitle
+    text: 1. 목표 설정
+
+  - type: table
+    widths: [24, 26, 12, 26, 12]
+    header: [목표, 핵심결과지표(KR), 가중치(%), 목표 수준, 기한]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["온라인 매출 확대", "월 평균 매출액", "40", "전년 대비 15% 증가", "2026-06"]
+      - ["신규 채널 입점", "입점 채널 수", "30", "2개 채널 신규 입점", "2026-05"]
+      - ["고객 응대 품질 개선", "CS 만족도 점수", "30", "만족도 90점 이상", "2026-06"]
+
+  - type: subtitle
+    text: 2. 중간 점검
+
+  - type: table
+    widths: [20, 20, 60]
+    header: [점검일, 진척률(%), 이슈 및 조치]
+    empty_rows: 3
+    row_height_mm: 9
+    sample_rows:
+      - ["2026-04-15", "55", "신규 채널 입점 협상 지연 — 2주 내 계약 완료로 재조정"]
+      - ["2026-05-20", "78", "CS 만족도 조사 응답률 저조 — 조사 채널 추가 예정"]
+
+  - type: subtitle
+    text: 3. 최종 달성
+
+  - type: table
+    widths: [22, 14, 12, 12, 40]
+    header: [실적, 달성률(%), 자기평가, 상사평가, 의견]
+    empty_rows: 3
+    row_height_mm: 9
+    sample_rows:
+      - ["온라인 매출 18% 증가", "120", "A", "A-", "목표를 초과 달성함"]
+      - ["신규 채널 1개 입점", "50", "B", "B", "협상 지연으로 목표 미달"]
+
+  - type: subtitle
+    text: 4. 종합 의견
+
+  - type: textbox
+    hint: "전체 목표 달성도에 대한 종합 의견과 다음 기간 목표 방향을 기재하십시오."
+    height_mm: 24
+    sample_text: 상반기 핵심 목표인 온라인 매출 확대는 초과 달성했으나 신규 채널 입점은 협상 지연으로 목표에 다소 미달함. 하반기에는 채널 협상 전담 인력을 배정해 재도전할 계획임.
+
+  - type: date_line
+    sample_text: 2026 년    7 월    5 일
+
+  - type: sign_line
+    labels: ["본인", "상사(평가자)"]
+    sample_names: [홍길동, 김서연]
+
+  - type: notice
+    text: 목표와 가중치 기준은 팀 운영 방침에 따라 조정될 수 있습니다.

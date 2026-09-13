@@ -11,6 +11,10 @@ usage: >
 source: original
 featured: false
 target_pages: 1
+series: meeting-minutes
+series_name: 회의록
+variant: 기본형
+variant_rank: 1
 blocks:
   - type: doc_title
     text: 회의록
@@ -25,6 +29,10 @@ blocks:
       - ["회의명", "", "회의일시", ""]
       - ["회의장소", "", "", ""]
       - ["참석자", "", "", ""]
+    sample_rows:
+      - ["", "2분기 마케팅 전략 회의", "", "2026-09-10 14:00"]
+      - ["", "본사 3층 회의실 A", "", ""]
+      - ["", "박민준, 김서연, 이수현", "", ""]
   - type: subtitle
     text: 1. 안건별 논의 내용
   - type: table
@@ -32,6 +40,9 @@ blocks:
     header: [안건, "논의 내용 및 결정사항"]
     empty_rows: 10
     row_height_mm: 10
+    sample_rows:
+      - ["1. 3분기 광고 예산", "채널별 배분안을 검토한 결과 SNS 비중을 40%로 상향하기로 결정함."]
+      - ["2. 신제품 출시 일정", "생산 일정이 2주 지연되어 출시일을 10월 2주차로 연기하기로 함."]
   - type: subtitle
     text: 2. 결정사항 및 후속조치
   - type: table
@@ -39,6 +50,9 @@ blocks:
     header: ["No", "결정사항", "담당자", "기한", "상태"]
     empty_rows: 6
     row_height_mm: 9
+    sample_rows:
+      - ["1", "SNS 광고 예산 40%로 상향 집행", "박민준", "2026-09-20", "진행중"]
+      - ["2", "신제품 출시 일정 10월 2주차로 변경 공지", "김서연", "2026-09-15", "완료"]
   - type: spacer
     height_pt: 6
   - type: para
@@ -46,5 +60,7 @@ blocks:
     align: center
     size: 11
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 회의 주재자
+    sample_names: [박민준]

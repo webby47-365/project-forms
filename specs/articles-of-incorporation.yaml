@@ -144,12 +144,16 @@ blocks:
     empty_rows: 3
     row_height_mm: 9
     body_align: center
+    sample_rows:
+      - ["홍길동", "서울특별시 마포구 월드컵북로 100", "1,000주"]
+      - ["김서연", "서울특별시 마포구 월드컵북로 100", "1,000주"]
   - type: para
     text: 위와 같이 주식회사를 설립하기 위하여 발기인 전원의 동의로 본 정관을 작성하고 발기인이 기명날인한다.
     align: both
     size: 10
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: table
     widths: [30, 40, 30]
     header: [구분, 성명, 서명 또는 인]
@@ -158,5 +162,7 @@ blocks:
     empty_rows: 2
     row_height_mm: 11
     body_align: center
+    sample_rows:
+      - ["발기인", "김서연", ""]
   - type: notice
     text: 상법상 절대적 기재사항(상호·목적·발행할 주식 총수·1주 금액·설립 시 발행 주식수·본점 소재지·공고방법·발기인의 성명과 주소)이 빠지면 정관이 무효입니다. 설립등기 전 법무사 또는 변호사의 검토를 받으십시오.

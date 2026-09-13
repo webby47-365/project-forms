@@ -1,0 +1,102 @@
+id: certified-notice-loan
+title: 내용증명 (대여금 반환청구)
+category: legal
+subcategory: notice
+tags: [내용증명, 대여금반환청구, 채권추심, 대여금독촉장, 내용증명서식]
+summary: 빌려준 돈을 갚지 않는 채무자에게 대여금 반환을 공식적으로 요구하는 내용증명 양식입니다.
+usage: >
+  금전을 대여하였으나 변제기일이 지나도록 돈을 돌려받지 못한 경우 사용하는 통지서입니다.
+  대여 일자와 금액, 변제기일, 이자율을 정확히 기재하고 구체적인 이행 기한을 명시해야 효과가
+  있습니다. 우체국을 통해 등기로 발송하면 통지 사실과 도달 시점에 대한 증거가 남습니다.
+  이후 소송 등 절차를 진행할 경우 청구원인을 뒷받침하는 자료로 활용할 수 있습니다.
+source: original
+featured: false
+target_pages: 1
+series: certified-notice
+series_name: 내용증명
+variant: 대여금 반환
+variant_rank: 2
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 내용증명
+    spaced: true
+
+  - type: subtitle
+    text: 발신인
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+
+  - type: subtitle
+    text: 수신인
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-9876-5432"]
+      - ["", "서울특별시 서대문구 충정로 30", "", ""]
+
+  - type: subtitle
+    text: 1. 대여 내역
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["대여일", "", "변제기일", ""]
+      - ["대여금액", "", "이자율", ""]
+      - ["송금계좌", "", "", ""]
+    sample_rows:
+      - ["", "2025-06-10", "", "2026-06-10"]
+      - ["", "금 10,000,000원 (금 일천만원)", "", "연 5%"]
+      - ["", "국민은행 123-456-789012 (예금주 홍길동)", "", ""]
+
+  - type: subtitle
+    text: 2. 통지 내용
+  - type: textbox
+    hint: "대여 경위와 변제기일이 지난 사실을 구체적으로 기재하십시오."
+    height_mm: 35
+    sample_text: 발신인은 2025년 6월 10일 수신인에게 금 10,000,000원을 변제기일 2026년 6월 10일로 정하여 대여하였습니다. 변제기일이 지난 현재까지 수신인은 위 대여금을 변제하지 않고 있습니다.
+
+  - type: subtitle
+    text: 3. 요구 사항 및 이행 기한
+  - type: textbox
+    hint: "요구하는 사항과 구체적인 이행 기한을 명시하십시오."
+    height_mm: 20
+    sample_text: 본 통지서를 수령한 날로부터 14일 이내에 위 대여금 10,000,000원을 위 계좌로 입금하여 지급하여 주시기 바랍니다.
+
+  - type: para
+    text: 위 기한까지 이행되지 않을 경우 부득이 법적 절차를 진행할 수 있음을 알려드립니다.
+    align: center
+    size: 10.5
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 발신인
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 본 내용증명은 우체국 창구에서 발신인용·수신인용·우체국 보관용 3부를 작성하여 제출합니다. 개별 사안의 법적 효력과 대응 방법은 변호사 등 전문가에게 확인하십시오.

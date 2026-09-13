@@ -1,0 +1,87 @@
+id: performance-evaluation
+title: 인사고과표
+category: corp
+subcategory: hr
+tags: [인사고과표, 인사평가표, 성과평가, 업적평가, 역량평가]
+summary: 업적 평가와 역량 평가 결과를 종합해 등급을 산정하고 육성 계획을 기록하는 인사고과표입니다.
+usage: >
+  정기 인사평가 시점에 직원의 업적과 역량을 함께 평가하기 위해 사용하는 문서입니다. 업적평가는
+  목표별 가중치와 달성도를 기준으로 점수를 산출하고, 역량평가는 항목별로 등급과 의견을
+  기재합니다. 두 결과를 종합해 최종 등급을 정하고, 향후 역량 개발을 위한 육성 계획을 함께
+  작성합니다. 1차·2차 평가자의 서명을 받아 제출하며, 평가 기준과 가중치는 조직의 인사 규정에
+  따릅니다.
+source: original
+featured: false
+target_pages: 2
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 인사고과표
+    spaced: true
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "부서", ""]
+      - ["직위", "", "평가기간", ""]
+    sample_rows:
+      - ["", "홍길동", "", "마케팅팀"]
+      - ["", "대리", "", "2026-01-01 ~ 2026-06-30"]
+
+  - type: subtitle
+    text: 1. 업적평가
+
+  - type: table
+    widths: [34, 14, 18, 34]
+    header: [목표, 가중치(%), 달성도(%), 점수]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["3분기 매출 목표 달성", "40", "95", "38/40"]
+      - ["신규 거래처 2건 확보", "30", "100", "30/30"]
+      - ["마케팅 캠페인 2건 기획", "30", "90", "27/30"]
+
+  - type: subtitle
+    text: 2. 역량평가
+
+  - type: table
+    widths: [34, 18, 48]
+    header: [역량 항목, 평가등급, 의견]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["책임감", "A", "맡은 업무를 끝까지 완수하는 태도가 우수함"]
+      - ["협업", "B+", "타 부서와의 협조가 원활함"]
+      - ["문제해결력", "B", "돌발 상황 대응이 다소 느림"]
+
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["종합등급", ""]
+    sample_rows:
+      - ["", "B+ (우수)"]
+
+  - type: subtitle
+    text: 3. 육성 계획
+
+  - type: textbox
+    hint: "향후 역량 개발과 육성을 위한 계획을 구체적으로 기재하십시오."
+    height_mm: 24
+    sample_text: 데이터 분석 역량 강화를 위한 사내 교육에 참여시키고, 하반기에는 신규 프로젝트의 보조 리더 역할을 맡겨 책임 범위를 확대할 계획임.
+
+  - type: date_line
+    sample_text: 2026 년    7 월    5 일
+
+  - type: sign_line
+    labels: ["1차 평가자", "2차 평가자"]
+    sample_names: [김서연, 박민준]
+
+  - type: notice
+    text: 평가 결과는 인사위원회 심의를 거쳐 최종 확정됩니다.

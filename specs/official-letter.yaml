@@ -20,6 +20,8 @@ blocks:
     row_height_mm: 8
     rows:
       - ["문서번호", "", "시행일자", "", "부서", ""]
+    sample_rows:
+      - ["", "총무2026-045", "", "2026-09-13", "", "총무팀"]
   - type: grid
     widths: [15, 85]
     label_cols: [0]
@@ -27,17 +29,23 @@ blocks:
     rows:
       - ["수신(기관명)", ""]
       - ["참조(기관명)", ""]
+    sample_rows:
+      - ["", "서울특별시 마포구청"]
+      - ["", "(주)한빛커머스 총무팀"]
   - type: grid
     widths: [15, 85]
     label_cols: [0]
     row_height_mm: 8
     rows:
       - ["제목", ""]
+    sample_rows:
+      - ["", "2026년 하반기 정기점검 일정 안내"]
   - type: subtitle
     text: 본문
   - type: textbox
     hint: "공문 내용을 간명하고 정중하게 기재하십시오."
     height_mm: 40
+    sample_text: 귀 기관의 무궁한 발전을 기원합니다. 당사는 2026년 하반기 정기점검을 10월 중 실시할 예정이며, 세부 일정은 별첨 계획서를 참고하여 협조하여 주시기 바랍니다.
   - type: spacer
     height_pt: 8
   - type: grid
@@ -47,3 +55,6 @@ blocks:
     rows:
       - ["발신처", "", "직인", ""]
       - ["발신자(직위)", "", "성명", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "(직인)"]
+      - ["", "대표이사", "", "홍길동"]

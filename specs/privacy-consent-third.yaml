@@ -1,0 +1,67 @@
+id: privacy-consent-third
+title: 개인정보 제3자 제공 동의서
+category: public
+subcategory: consent
+series: privacy-consent
+series_name: 개인정보 동의서
+variant: 제3자 제공
+variant_rank: 3
+tags: [개인정보제3자제공동의서, 제3자제공동의, 개인정보동의서, 정보제공동의, privacy consent]
+summary: 개인정보를 제공받는 자와 제공 목적·항목·보유기간을 명시하고 항목별 동의 여부를 받는 동의서입니다.
+usage: >
+  배송·결제 대행처럼 수집한 개인정보를 다른 업체나 기관에 제공해야 할 때 사용하는 법정 고지형
+  동의서입니다. 제공받는 자, 제공 목적, 제공 항목, 보유 및 이용기간을 표에 구체적으로 기재하고
+  항목별로 동의 여부를 받습니다. 동의를 거부할 권리와 거부 시 받을 수 있는 불이익을 함께
+  안내해야 하며, 제공받는 자가 여러 곳이면 행을 추가해 모두 기재하십시오.
+source: law-standard
+source_note: 개인정보 보호법 제17조에 따른 고지사항 반영
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+blocks:
+  - type: doc_title
+    text: 개인정보 제3자 제공 동의서
+    spaced: false
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+  - type: subtitle
+    text: 1. 제공받는 자 및 제공 내용
+  - type: table
+    widths: [20, 30, 25, 25]
+    header: ["제공받는 자", "제공 목적", "제공 항목", "보유 및 이용기간"]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["(주)한빛배송", "배송 업무 수탁 및 배송 조회", "성명, 연락처, 배송지 주소", "배송 완료 후 6개월"]
+      - ["(주)새길페이먼츠", "결제 대금 정산", "성명, 연락처, 결제금액", "정산 완료 후 5년"]
+  - type: subtitle
+    text: 2. 동의 거부 권리 및 불이익 안내
+  - type: para
+    text: 귀하는 위 개인정보의 제3자 제공에 동의하지 않을 권리가 있습니다. 다만 동의하지 않을 경우 배송·결제 등 관련 서비스 이용이 제한될 수 있습니다.
+    align: left
+    size: 10.5
+  - type: subtitle
+    text: 3. 항목별 동의
+  - type: table
+    widths: [60, 20, 20]
+    header: ["제공 항목", "동의", "동의하지 않음"]
+    empty_rows: 2
+    row_height_mm: 8
+    sample_rows:
+      - ["(주)한빛배송에 대한 개인정보 제공", "○", ""]
+      - ["(주)새길페이먼츠에 대한 개인정보 제공", "○", ""]
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+  - type: sign_line
+    label: 본인(또는 법정대리인)
+    sample_names: [홍길동]
+  - type: notice
+    text: 개인정보 보호법 제17조에 따라 제공받는 자, 제공 목적, 제공 항목, 보유기간 및 동의 거부권을 고지합니다.

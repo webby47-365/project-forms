@@ -1,0 +1,87 @@
+id: illegal-dumping-report
+title: 불법투기 신고서
+category: public
+subcategory: civil
+tags: [불법투기신고서, 쓰레기불법투기, 무단투기신고, 폐기물투기신고, 환경민원]
+summary: 생활폐기물 등의 불법 투기 현장을 관할 지자체에 신고하는 서식입니다.
+usage: >
+  쓰레기나 폐기물을 허가 없이 무단으로 버린 현장을 발견했을 때 관할 지자체 환경관리부서에
+  신고하는 서식입니다. 발생 장소와 일시, 투기된 폐기물의 종류와 수량을 구체적으로 적고,
+  차량번호나 인적 정보가 확인된 경우에만 기재합니다. 현장과 폐기물 상태를 보여주는 사진을
+  함께 제출하면 처리에 도움이 되며, 신고포상금 지급 여부와 기준은 지자체 조례에 따라
+  다릅니다.
+source: original
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 불법투기 신고서
+    spaced: false
+
+  - type: subtitle
+    text: 신고인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["신고인 비공개 희망 여부", "", "", ""]
+    sample_rows:
+      - ["", "박민준", "", "010-3456-7890"]
+      - ["", "희망함", "", ""]
+
+  - type: subtitle
+    text: 발생 장소
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["주소", "", "상세위치", ""]
+      - ["발견일시", "", "", ""]
+    sample_rows:
+      - ["", "서울특별시 마포구 ○○로 45 인근", "", "공영주차장 옆 공터"]
+      - ["", "2026-08-30 07:20", "", ""]
+
+  - type: subtitle
+    text: 투기 내용
+  - type: table
+    widths: [30, 20, 50]
+    header: [폐기물 종류, 수량, 상태]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["생활폐기물 종량제 미부착 봉투", "5봉지", "장기간 방치된 것으로 보임"]
+      - ["폐가구", "1점", "-"]
+
+  - type: subtitle
+    text: 차량·인적 정보 (확인된 경우)
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["차량번호", "", "인상착의 등", ""]
+    sample_rows:
+      - ["", "확인되지 않음", "", "확인되지 않음"]
+
+  - type: notice
+    text: 투기 현장과 폐기물 상태를 확인할 수 있는 사진을 함께 제출하면 처리에 도움이 됩니다.
+
+  - type: date_line
+    sample_text: 2026 년    8 월   30 일
+
+  - type: sign_line
+    label: 신고인
+    sample_names: [박민준]
+
+  - type: notice
+    text: 신고포상금 지급 여부와 기준은 관할 지자체 조례에 따릅니다. 신고인의 신원은 요청 시 비공개로 처리됩니다.

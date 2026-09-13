@@ -1,0 +1,78 @@
+id: reference-check-consent
+title: 평판조회 동의서
+category: personal
+subcategory: career
+tags: [평판조회, 레퍼런스체크, 채용동의서, 경력조회, 개인정보동의]
+summary: 채용 전 전 직장 경력과 평판을 조회하는 데 필요한 지원자의 동의를 받는 서식입니다.
+usage: >
+  경력직 채용 과정에서 회사가 지원자의 전 직장 관계자에게 근무 경력과 평판을 확인하기 전에
+  본인 동의를 받기 위해 사용하는 서식입니다. 조회 대상 회사와 재직 기간을 명시하고, 조회할
+  항목을 구체적으로 열거한 뒤 동의 여부를 표기하도록 합니다. 지원자에게는 동의를 거부할
+  권리가 있으며 미동의가 채용에 불리하게 작용하지 않는다는 점을 반드시 함께 안내하십시오.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 평판조회 동의서
+
+  - type: subtitle
+    text: 1. 지원자 인적사항
+  - type: grid
+    widths: [16, 18, 16, 18, 16, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", "", "연락처", ""]
+      - ["지원분야", "", "이메일", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1998-03-21", "", "010-1234-5678"]
+      - ["", "마케팅 직무", "", "gildong.hong@example.com", "", ""]
+
+  - type: subtitle
+    text: 2. 조회 대상
+  - type: table
+    widths: [10, 30, 30, 30]
+    header: [연번, 전 직장명, 재직기간, 확인 담당자(연락처)]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "(주)한빛커머스", "2021.03~2023.08", "김서연 과장 (02-123-4567)"]
+      - ["2", "(주)새길데이터", "2023.09~2025.03", "박민준 팀장 (02-234-5678)"]
+
+  - type: subtitle
+    text: 3. 조회 항목
+  - type: kv_list
+    items:
+      - "재직 기간 및 퇴직 사유"
+      - "담당 직무 및 직위"
+      - "근태 및 업무 수행 태도"
+      - "동료·상급자와의 협업 관계"
+      - "그 밖에 채용 결정에 참고가 되는 사항"
+
+  - type: subtitle
+    text: 4. 동의 사항
+  - type: para
+    text: 채용 평가를 위하여 본인의 전 직장 관계자를 대상으로 근무 경력 및 평판을 조회하는 것에 동의합니다. 조회된 정보는 채용 결정 목적으로만 사용되며, 전형 종료 후 관련 법령이 정한 기간 동안 보관한 뒤 파기합니다.
+    size: 10.5
+  - type: table
+    widths: [70, 15, 15]
+    header: [동의 항목, 동의, 미동의]
+    empty_rows: 1
+    row_height_mm: 8
+    sample_rows:
+      - ["위 내용에 따라 평판조회를 진행하는 것에 동의합니다.", "○", ""]
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 지원자
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 본 동의에 응하지 않을 권리가 있으며, 미동의가 채용 결정에 불리하게 작용하지 않습니다.

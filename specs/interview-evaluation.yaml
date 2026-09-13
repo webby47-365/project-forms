@@ -1,0 +1,78 @@
+id: interview-evaluation
+title: 면접 평가표
+category: corp
+subcategory: hr
+tags: [면접평가표, 면접평가서, 채용면접평가, 인터뷰평가표, 면접채점표]
+summary: 지원자의 면접 답변을 항목별로 채점하고 종합 판정을 기록하는 면접 평가표입니다.
+usage: >
+  채용 면접 진행 시 지원자별 평가를 표준화하기 위해 사용하는 문서입니다. 직무역량, 전문지식,
+  문제해결력, 커뮤니케이션 등 항목별로 배점에 따라 점수를 매기고 구체적인 평가 의견을
+  기재합니다. 항목별 점수를 합산해 종합점수를 산출하고 합격·보류·불합격 중 하나로 판정합니다.
+  면접관은 총평란에 추천 사유를 간단히 남기고 서명을 남겨 채용 결정 자료로 활용합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 면접 평가표
+    spaced: true
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "지원 부문", ""]
+      - ["면접일시", "", "면접관", ""]
+    sample_rows:
+      - ["", "홍길동", "", "마케팅팀 대리"]
+      - ["", "2026-09-22 14:00", "", "김서연"]
+
+  - type: subtitle
+    text: 1. 평가 항목
+
+  - type: table
+    widths: [24, 12, 14, 50]
+    header: [평가 항목, 배점, 점수, 평가 의견]
+    empty_rows: 6
+    row_height_mm: 9
+    sample_rows:
+      - ["직무역량", "20", "17", "실무 경험이 직무와 잘 부합함"]
+      - ["전문지식", "20", "16", "기본 개념 이해도가 높음"]
+      - ["문제해결력", "20", "15", "사례 질문에 논리적으로 답변함"]
+      - ["커뮤니케이션", "20", "18", "답변이 명확하고 전달력이 좋음"]
+      - ["조직적합성", "20", "16", "팀 협업 경험을 구체적으로 제시함"]
+
+  - type: subtitle
+    text: 2. 종합 평가
+
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["종합점수", "", "판정", ""]
+    sample_rows:
+      - ["", "82", "", "합격"]
+
+  - type: subtitle
+    text: 3. 총평
+
+  - type: textbox
+    hint: "지원자에 대한 전반적인 평가와 추천 사유를 기재하십시오."
+    height_mm: 24
+    sample_text: 직무 이해도와 커뮤니케이션 능력이 우수하며, 제시한 사례가 실제 업무 경험에 기반해 구체적임. 조직 적합성도 양호하여 합격을 추천함.
+
+  - type: date_line
+    sample_text: 2026 년    9 월    22 일
+
+  - type: sign_line
+    labels: ["면접관1", "면접관2"]
+    sample_names: [김서연, 박민준]
+
+  - type: notice
+    text: 평가 점수와 판정 기준은 채용 공고 및 내부 기준에 따라 달라질 수 있습니다.

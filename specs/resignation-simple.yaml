@@ -1,0 +1,68 @@
+id: resignation-simple
+title: 사직서 (간편형)
+category: corp
+subcategory: hr
+tags: [사직서, 간편사직서, 퇴사서류, 사표, 사직서 양식]
+summary: 인적사항과 사직 사유 한 줄, 사직 희망일만 간단히 적는 반 페이지 분량의 사직서입니다.
+usage: >
+  긴 사유 설명 없이 빠르게 제출하는 간단한 사직서입니다. 소속·성명 등 인적사항을 적고
+  사직 사유는 한 줄로 간략히 밝힌 뒤 사직을 희망하는 날짜를 기재합니다. 인수인계나
+  퇴직금 정산 등 상세 절차가 필요한 경우에는 퇴직원 서식을 사용하는 것이 더 적합합니다.
+  제출 전 사본을 보관하고 사직일자는 회사와 사전에 협의하십시오.
+source: original
+featured: false
+target_pages: 1
+series: resignation
+series_name: 사직서
+variant: 간편형
+variant_rank: 2
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 사직서
+    spaced: true
+  - type: spacer
+    height_pt: 6
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["소속(부서)", "", "직위", ""]
+      - ["성명", "", "연락처", ""]
+    sample_rows:
+      - ["", "영업팀", "", "대리"]
+      - ["", "홍길동", "", "010-1234-5678"]
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 10
+    rows:
+      - ["사직 사유", ""]
+      - ["사직 희망일", ""]
+    sample_rows:
+      - ["", "개인 사정으로 인한 이직"]
+      - ["", "2026년 4월 30일"]
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 본인은 위와 같은 사유로 사직하고자 하오니 재가하여 주시기 바랍니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    3 월    30 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: spacer
+    height_pt: 4
+  - type: para
+    text: 대표이사 귀하
+    align: center
+    size: 12
+    bold: true
+  - type: notice
+    text: 제출 전 사본을 보관하시고, 사직일자와 잔여 연차·퇴직금 정산 기준을 인사담당자와 사전에 확인하십시오.

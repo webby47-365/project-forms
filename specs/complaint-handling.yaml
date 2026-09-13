@@ -1,0 +1,108 @@
+id: complaint-handling
+title: 고객 불만 처리서
+category: corp
+subcategory: sales
+tags: [고객불만처리서, 불만처리, 클레임처리, 고객응대, complaint handling]
+summary: 고객 불만의 접수 경위와 원인, 처리 결과와 재발 방지 대책을 기록하는 불만 처리서입니다.
+usage: >
+  고객으로부터 제품·서비스 불만이나 클레임이 접수되었을 때 처리 경과를 기록하는
+  서식입니다. 접수 경로와 불만 내용을 먼저 정리하고, 원인 분석 후 처리 방법과
+  보상 여부를 기재합니다. 고객 확인을 받아 종결하며, 재발 방지 대책까지 남겨
+  유사 사례 예방에 활용합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 고객 불만 처리서
+
+  - type: subtitle
+    text: 1. 접수 정보
+
+  - type: grid
+    widths: [16, 24, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["접수번호", "", "접수일", "", "접수자", ""]
+      - ["접수경로", "", "", "", "", ""]
+    merges:
+      - [1, 1, 1, 5]
+    sample_rows:
+      - ["", "CS-2026-0914", "", "2026-09-14", "", "김서연"]
+      - ["", "고객센터 전화", "", "", "", ""]
+
+  - type: subtitle
+    text: 2. 고객 정보
+
+  - type: grid
+    widths: [13, 27, 13, 27, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["상호/성명", "", "담당자", "", "연락처", ""]
+      - ["주소", "", "", "", "", ""]
+    merges:
+      - [1, 1, 1, 5]
+    sample_rows:
+      - ["", "한빛물산", "", "박민준", "", "010-1234-5678"]
+      - ["", "서울시 강남구 테헤란로 120", "", "", "", ""]
+
+  - type: subtitle
+    text: 3. 불만 내용
+
+  - type: textbox
+    hint: "고객이 제기한 불만을 구체적인 사실 위주로 기재하십시오."
+    height_mm: 22
+    sample_text: 9/10 납품된 사무용품 중 일부 포장 파손으로 10개가 사용 불가 상태로 도착하였다는 불만 제기.
+
+  - type: subtitle
+    text: 4. 원인 분석
+
+  - type: textbox
+    hint: "불만의 원인을 사실에 근거하여 분석하십시오."
+    height_mm: 18
+    sample_text: 운송 중 적재 방식 오류로 포장 손상이 발생한 것으로 확인됨. 물류 협력사 점검 필요.
+
+  - type: subtitle
+    text: 5. 처리 내용 및 결과
+
+  - type: grid
+    widths: [16, 24, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["처리일", "", "처리자", "", "보상여부", ""]
+      - ["처리방법", "", "", "", "", ""]
+    merges:
+      - [1, 1, 1, 5]
+    sample_rows:
+      - ["", "2026-09-15", "", "홍길동", "", "교환"]
+      - ["", "파손분 10개 즉시 재발송 및 사과 안내", "", "", "", ""]
+
+  - type: subtitle
+    text: 6. 고객 확인
+
+  - type: grid
+    widths: [16, 24, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["만족도", "", "확인일", "", "확인자", ""]
+    sample_rows:
+      - ["", "만족", "", "2026-09-16", "", "박민준"]
+
+  - type: subtitle
+    text: 7. 재발 방지 대책
+
+  - type: textbox
+    hint: "동일한 불만이 재발하지 않도록 개선할 사항을 기재하십시오."
+    height_mm: 16
+    sample_text: 물류 협력사에 적재 기준 재교육 요청, 파손 취약 품목은 완충 포장재 추가 적용.
+
+  - type: notice
+    text: 본 처리서에 기재된 고객 개인정보는 불만 처리 목적 외에는 사용하지 않으며, 처리 종료 후 3년간 보관한 뒤 파기합니다.

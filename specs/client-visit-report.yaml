@@ -1,0 +1,89 @@
+id: client-visit-report
+title: 고객 방문 보고서
+category: corp
+subcategory: sales
+tags: [고객방문보고서, 방문보고서, 거래처방문, 영업방문, visit report]
+summary: 거래처 방문 목적과 상담 내용, 고객 요구사항과 후속 조치 계획을 정리하는 방문 보고서입니다.
+usage: >
+  영업 담당자가 거래처를 방문한 뒤 결과를 상급자에게 보고할 때 작성합니다. 방문 목적과
+  상담 내용을 구체적으로 기재하고, 고객이 요구한 사항과 대응 방안·기한을 표로 정리해
+  이행 여부를 관리합니다. 후속 조치 계획까지 함께 기록해 다음 방문 시 참고 자료로
+  활용합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 고객 방문 보고서
+
+  - type: grid
+    widths: [16, 24, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["방문자", "", "소속", "", "일시", ""]
+    sample_rows:
+      - ["", "홍길동", "", "영업1팀", "", "2026-09-10 14:00"]
+
+  - type: subtitle
+    text: 1. 방문처 정보
+
+  - type: grid
+    widths: [13, 27, 13, 27, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["상호", "", "주소", "", "", ""]
+      - ["면담자", "", "직위", "", "연락처", ""]
+    merges:
+      - [0, 3, 0, 5]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "서울시 강남구 테헤란로 120", "", ""]
+      - ["", "박민준", "", "팀장", "", "010-1234-5678"]
+
+  - type: subtitle
+    text: 2. 방문 목적
+
+  - type: textbox
+    hint: "방문 배경과 목적을 간단히 기재하십시오."
+    height_mm: 12
+    sample_text: 분기 실적 점검 및 신제품 공급 조건 협의를 위한 정기 방문.
+
+  - type: subtitle
+    text: 3. 상담 내용
+
+  - type: textbox
+    hint: "상담에서 논의한 내용을 구체적으로 기재하십시오."
+    height_mm: 22
+    sample_text: 3분기 납품 실적과 재고 현황을 점검하고, 신제품 라인업을 소개함. 단가 인상안을 제시하였으며 10월 중 최종 회신을 받기로 함.
+
+  - type: subtitle
+    text: 4. 고객 요구사항
+
+  - type: table
+    widths: [18, 34, 30, 18]
+    header: [구분, 요구내용, 대응방안, 기한]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["단가", "원자재 인상분 일부 반영 요청", "5% 이내 조정안 검토", "2026-10-05"]
+      - ["납기", "성수기 대비 사전 물량 확보", "재고 200개 선확보", "2026-09-30"]
+
+  - type: subtitle
+    text: 5. 후속 조치 계획
+
+  - type: textbox
+    hint: "다음 방문 일정, 회신 기한, 내부 공유 사항 등을 기재하십시오."
+    height_mm: 14
+    sample_text: 10/5까지 단가 조정안 회신, 10/12 재방문하여 계약 조건 최종 확정 예정.
+
+  - type: date_line
+    sample_text: 2026 년    9 월    10 일
+
+  - type: sign_line
+    labels: ["작성", "팀장"]
+    sample_names: [홍길동, 김서연]

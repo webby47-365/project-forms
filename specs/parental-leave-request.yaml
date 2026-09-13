@@ -1,0 +1,96 @@
+id: parental-leave-request
+title: 육아휴직 신청서
+category: corp
+subcategory: hr
+tags: [육아휴직 신청서, 육아휴직원, 출산휴가, 양육휴직, 모성보호]
+summary: 자녀 정보와 육아휴직 기간·분할 사용 여부, 복직 예정일을 기재하는 육아휴직 신청서입니다.
+usage: >
+  만 8세 이하 또는 초등학교 2학년 이하의 자녀를 양육하기 위해 육아휴직을 신청할 때
+  사용하는 서류입니다. 자녀의 성명·생년월일·관계와 희망 휴직기간, 분할 사용 여부를
+  기재하고 휴직 중 연락 가능한 연락처와 복직 예정일을 명시합니다. 사업주는 법령상
+  정당한 사유가 없으면 육아휴직을 거부할 수 없으므로 신청서는 휴직 예정일 30일 전까지
+  제출하는 것을 권장합니다. 세부 요건은 남녀고용평등법과 사내 규정을 확인하십시오.
+source: law-standard
+source_note: 남녀고용평등과 일·가정 양립 지원에 관한 법률 제19조 반영
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 육아휴직 신청서
+    spaced: false
+  - type: subtitle
+    text: 신청인 정보
+  - type: grid
+    widths: [16, 18, 16, 18, 16, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 9
+    rows:
+      - ["소속(부서)", "", "직위", "", "성명", ""]
+      - ["사번", "", "입사일", "", "연락처", ""]
+    sample_rows:
+      - ["", "전략기획팀", "", "대리", "", "이수현"]
+      - ["", "2020078", "", "2020-03-02", "", "010-3456-7890"]
+  - type: subtitle
+    text: 자녀 정보
+  - type: grid
+    widths: [16, 28, 16, 18, 11, 11]
+    label_cols: [0, 2, 4]
+    row_height_mm: 9
+    rows:
+      - ["자녀 성명", "", "생년월일", "", "관계", ""]
+    sample_rows:
+      - ["", "이하늘", "", "2025-02-10", "", "자녀"]
+  - type: subtitle
+    text: 육아휴직 기간
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["휴직기간", "20    년    월    일 ~ 20    년    월    일 (    개월)", "", ""]
+      - ["분할 사용 여부", "분할함(   차) / 분할하지 않음", "복직 예정일", ""]
+    sample_rows:
+      - ["", "2026-07-01 ~ 2027-06-30 (12개월)", "", ""]
+      - ["", "분할하지 않음", "", "2027-07-01"]
+  - type: subtitle
+    text: 휴직 중 연락처
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "010-3456-7890", "", "suhyun.lee@example.com"]
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 본인은 위와 같이 육아휴직을 신청하고자 하오니 재가하여 주시기 바랍니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    5 월    20 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [이수현]
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 결재
+    align: center
+    size: 11
+    bold: true
+  - type: grid
+    widths: [33, 34, 33]
+    label_cols: [0, 1, 2]
+    row_height_mm: 12
+    rows:
+      - ["부서장", "인사담당자", "대표이사"]
+  - type: notice
+    text: 사업주는 남녀고용평등법상 정당한 사유가 없으면 육아휴직 신청을 거부할 수 없습니다. 세부 요건과 급여 지원은 고용센터 안내를 확인하십시오.

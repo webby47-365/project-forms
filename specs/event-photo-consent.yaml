@@ -1,0 +1,73 @@
+id: event-photo-consent
+title: 행사 사진·영상 활용 동의서
+category: public
+subcategory: consent
+tags: [행사사진동의서, 초상권동의서, 영상활용동의, 행사촬영동의, 사진영상동의]
+summary: 행사에서 촬영한 사진·영상의 활용 매체와 기간을 안내하고 초상권 사용에 대한 동의를 받는 서식입니다.
+usage: >
+  세미나, 고객 행사, 사내 행사 등에서 참가자를 촬영해 홈페이지·SNS·뉴스레터에 활용하기 전에
+  받는 동의서입니다. 행사명과 일시·장소, 촬영물을 어떤 매체로 얼마 동안 활용하는지 구체적으로
+  기재하십시오. 초상권 동의는 항목별로 동의·미동의를 표시받고, 참가자가 미성년자인 경우에는
+  보호자의 서명도 함께 받아야 합니다.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+blocks:
+  - type: doc_title
+    text: 행사 사진·영상 활용 동의서
+    spaced: false
+  - type: subtitle
+    text: 1. 행사 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["행사명", "", "일시", ""]
+      - ["장소", "", "주최", ""]
+    sample_rows:
+      - ["", "2026 한빛커머스 고객감사 행사", "", "2026-10-17 14:00"]
+      - ["", "서울 강남구 한빛컨벤션센터 2층", "", "(주)한빛커머스"]
+  - type: subtitle
+    text: 2. 촬영물 활용 범위
+  - type: table
+    widths: [30, 40, 30]
+    header: ["활용 매체", "활용 목적", "활용 기간"]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["공식 홈페이지·SNS", "행사 홍보 및 결과 보고", "게시일로부터 3년"]
+      - ["사내 뉴스레터", "행사 참가자 안내", "발행 후 1년"]
+  - type: subtitle
+    text: 3. 초상권 동의
+  - type: para
+    text: 본인은 위 행사에서 촬영된 사진·영상에 본인의 초상이 포함될 수 있음을 인지하며, 위 활용 범위 내 초상권 사용에 동의합니다. 동의하지 않을 권리가 있으며, 동의하지 않는 경우 별도 구역 안내 등 대체 방법을 요청할 수 있습니다.
+    align: left
+    size: 10.5
+  - type: table
+    widths: [60, 20, 20]
+    header: ["동의 항목", "동의", "동의하지 않음"]
+    empty_rows: 2
+    row_height_mm: 8
+    sample_rows:
+      - ["사진·영상 촬영 및 위 목적 활용에 동의", "○", ""]
+  - type: subtitle
+    text: 4. 참가자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+  - type: date_line
+    sample_text: 2026 년   10 월   17 일
+  - type: sign_line
+    labels: ["참가자(본인)", "보호자(미성년자인 경우)"]
+    sample_names: [홍길동, 박민준]
+  - type: notice
+    text: 참가자가 미성년자인 경우 보호자의 서명이 있어야 동의가 유효합니다.

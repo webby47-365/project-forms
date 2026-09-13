@@ -1,0 +1,74 @@
+id: minor-activity-consent
+title: 미성년자 활동 보호자 동의서
+category: public
+subcategory: consent
+tags: [미성년자동의서, 보호자동의서, 청소년활동동의, 캠프동의서, 체험활동동의]
+summary: 미성년자가 캠프·체험활동 등에 참가할 때 참가자·보호자 정보와 유의사항을 확인하고 보호자의 동의를 받는 서식입니다.
+usage: >
+  캠프, 수련활동, 체험학습처럼 미성년자가 참가하는 활동에서 보호자의 동의를 받는 서류입니다.
+  활동명·기간·장소·주관 기관을 안내하고, 참가자와 보호자의 연락처·비상연락처를 정확히
+  기재해야 합니다. 건강상 유의사항은 구체적인 질병명이 아니라 "유의가 필요한 사항" 수준으로
+  기재하도록 안내하고, 참가자의 고유식별정보는 받지 말고 생년월일로만 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+blocks:
+  - type: doc_title
+    text: 미성년자 활동 보호자 동의서
+    spaced: false
+  - type: subtitle
+    text: 1. 활동 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["활동명", "", "주관", ""]
+      - ["기간", "", "장소", ""]
+    sample_rows:
+      - ["", "2026 청소년 과학캠프", "", "(주)한빛교육재단"]
+      - ["", "2026-10-05~2026-10-07", "", "강원도 평창 청소년수련원"]
+  - type: subtitle
+    text: 2. 참가자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["학교·학년", "", "연락처", ""]
+    sample_rows:
+      - ["", "이수현", "", "2014-03-02"]
+      - ["", "한빛초등학교 5학년", "", "010-2222-3333"]
+  - type: subtitle
+    text: 3. 보호자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "관계", ""]
+      - ["연락처", "", "비상연락처", ""]
+    sample_rows:
+      - ["", "박민준", "", "부"]
+      - ["", "010-1234-5678", "", "010-9999-8888"]
+  - type: subtitle
+    text: 4. 건강·유의사항
+  - type: textbox
+    hint: "복용 약물, 신체 활동 제한 등 유의가 필요한 사항이 있으면 기재하십시오(구체적인 질병명 대신 유의사항만 기재)."
+    height_mm: 16
+    sample_text: 유의가 필요한 사항 없음. 특이 체질이나 알레르기가 있는 경우 참가 전 담당자에게 사전 안내 바랍니다.
+  - type: para
+    text: 본인은 위 미성년자의 보호자로서 상기 활동 참가에 동의하며, 활동 중 안전지도 방침에 따르는 것에 동의합니다. 동의하지 않을 권리가 있으며, 다만 동의하지 않을 경우 활동 참가가 제한될 수 있습니다.
+    align: left
+    size: 10.5
+  - type: date_line
+    sample_text: 2026 년    9 월   28 일
+  - type: sign_line
+    label: 보호자
+    sample_names: [박민준]
+  - type: notice
+    text: 참가자의 고유식별정보는 수집하지 않으며, 생년월일로만 확인합니다.

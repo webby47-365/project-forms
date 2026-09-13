@@ -10,6 +10,10 @@ usage: >
   기재합니다. 주 단위 또는 월 단위로 종합하여 상사에게 보고하는 용도로 활용됩니다.
 source: original
 featured: false
+series: work-report
+series_name: 업무보고서
+variant: 업무일지
+variant_rank: 1
 target_pages: 1
 blocks:
   - type: doc_title
@@ -24,6 +28,9 @@ blocks:
     rows:
       - ["성명", "", "직책", ""]
       - ["기록일자", "", "부서", ""]
+    sample_rows:
+      - ["", "홍길동", "", "사원"]
+      - ["", "2026-09-10", "", "영업팀"]
   - type: subtitle
     text: 1. 금일 완료 업무
   - type: table
@@ -31,6 +38,9 @@ blocks:
     header: ["No", "업무명", "처리 내용", "비고"]
     empty_rows: 6
     row_height_mm: 9
+    sample_rows:
+      - ["1", "거래처 견적서 발송", "(주)새길데이터에 견적서 전달", "-"]
+      - ["2", "주간 회의 자료 작성", "영업 실적 요약 정리", "-"]
   - type: subtitle
     text: 2. 진행 중 업무
   - type: table
@@ -38,16 +48,22 @@ blocks:
     header: ["No", "업무명", "진행 상황", "예상 완료일"]
     empty_rows: 7
     row_height_mm: 9
+    sample_rows:
+      - ["1", "신규 거래처 계약 검토", "법무팀 검토 중", "2026-09-15"]
+      - ["2", "하반기 영업 계획 수립", "초안 작성 완료", "2026-09-20"]
   - type: subtitle
     text: 3. 주요 이슈 및 건의사항
   - type: textbox
     hint: "금일 처리 중 발생한 주요 이슈나 건의사항을 기재하십시오."
     height_mm: 24
+    sample_text: 거래처 납기 지연으로 일부 발주 일정을 조정했습니다. 재고 관리 시스템 속도 개선을 건의합니다.
   - type: para
     text: 위 업무일지가 사실과 다름이 없음을 확인합니다.
     align: center
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    10 일
   - type: sign_line
     label: 작성자
+    sample_names: [홍길동]

@@ -31,6 +31,11 @@ blocks:
       - ["주관기관", "", "교육방식", "집합 / 온라인 / 혼합"]
       - ["교육기간", "20    년   월   일 ~ 20    년   월   일", "총 이수시간", "        시간"]
       - ["교육장소", "", "", ""]
+    sample_rows:
+      - ["", "2026년 상반기 직무역량 강화교육", "", ""]
+      - ["", "한빛인재개발원", "", ""]
+      - ["", "2026년 9월 10일 ~ 2026년 9월 11일", "", "7시간"]
+      - ["", "본사 3층 대강당", "", ""]
   - type: subtitle
     text: 2. 교육 내용
   - type: table
@@ -39,6 +44,9 @@ blocks:
     empty_rows: 4
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["09-10", "09:00~12:00", "조직문화와 커뮤니케이션", "김서연 강사", "3시간"]
+      - ["09-10", "13:00~17:00", "직무역량 강화 실습", "박민준 강사", "4시간"]
   - type: subtitle
     text: 3. 참가자 명단
   - type: table
@@ -47,15 +55,21 @@ blocks:
     empty_rows: 6
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "홍길동", "마케팅팀", "사원", "7시간", "-"]
+      - ["2", "이수현", "전략기획팀", "대리", "7시간", "-"]
   - type: textbox
     hint: "교육 성과 및 활용 계획 — 업무 적용 방안을 간단히 기재하십시오."
     height_mm: 20
+    sample_text: 조직 내 커뮤니케이션 개선 방안을 학습하였으며, 팀 회의 진행 방식에 적용할 계획입니다.
   - type: para
     text: 위 사람은 상기 교육훈련 과정에 참가하였음을 확인합니다.
     align: center
     size: 11
   - type: date_line
+    sample_text: 2026 년    9 월    10 일
   - type: sign_line
     labels: ["교육 담당자", "확인자(부서장)"]
+    sample_names: [김서연, 박민준]
   - type: notice
     text: 교육비 환급이나 자격 인정이 필요한 경우 주관기관이 발급하는 수료증을 별도로 확인하십시오.

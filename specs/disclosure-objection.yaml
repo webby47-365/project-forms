@@ -1,0 +1,93 @@
+id: disclosure-objection
+title: 정보공개 이의신청서
+category: public
+subcategory: civil
+tags: [정보공개이의신청서, 정보공개이의신청, 비공개결정이의, 정보공개법, 행정민원]
+summary: 공공기관의 정보 비공개·부분공개 결정에 불복해 재심사를 요구하는 이의신청서입니다.
+usage: >
+  정보공개를 청구했으나 공공기관이 비공개 또는 부분공개로 결정한 경우, 결정 통지를 받은
+  날부터 30일 이내에 해당 기관에 제출합니다. 원래 청구한 접수번호와 내용, 결정일·결정구분·
+  사유를 통지서와 동일하게 기재하고, 이의신청 취지와 이유를 구체적으로 적어야 재심사에
+  도움이 됩니다. 법령상 기재사항을 빠뜨리지 않아야 하며, 처리 결과는 해당 기관의 판단에
+  따릅니다.
+source: law-standard
+source_note: 공공기관의 정보공개에 관한 법률 제18조에 따른 이의신청 기재사항 반영
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 정보공개 이의신청서
+    spaced: false
+
+  - type: subtitle
+    text: 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "연락처", ""]
+    sample_rows:
+      - ["", "이수현", "", "1990-02-15"]
+      - ["", "서울특별시 서대문구 연희로 35", "", "010-4567-8901"]
+
+  - type: subtitle
+    text: 원 청구 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["접수번호", "", "청구일", ""]
+      - ["청구내용", "", "", ""]
+      - ["처리기관", "", "", ""]
+    sample_rows:
+      - ["", "2026-정보공개-00123", "", "2026-07-10"]
+      - ["", "2026년 상반기 지역 축제 예산 집행 내역", "", ""]
+      - ["", "○○구청 재무과", "", ""]
+
+  - type: subtitle
+    text: 결정 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["결정일", "", "결정구분(비공개/부분공개)", ""]
+      - ["결정 사유", "", "", ""]
+    sample_rows:
+      - ["", "2026-07-24", "", "부분공개"]
+      - ["", "개인정보가 포함된 부분은 비공개, 나머지는 공개", "", ""]
+
+  - type: subtitle
+    text: 이의신청 취지
+  - type: textbox
+    hint: "무엇을 구하는지 한두 문장으로 적으십시오."
+    height_mm: 16
+    sample_text: "위 결정 중 비공개 처리된 부분에 대하여 재심사하여 공개하여 주시기 바랍니다."
+
+  - type: subtitle
+    text: 이의신청 이유
+  - type: textbox
+    hint: "비공개 사유가 부당하다고 보는 근거를 구체적으로 기재하십시오."
+    height_mm: 30
+    sample_text: "비공개 사유로 제시된 개인정보 보호 필요성은 해당 문서의 통계 항목에는 적용되지 않는다고 판단되어 재검토를 요청합니다."
+
+  - type: date_line
+    sample_text: 2026 년    8 월    5 일
+
+  - type: sign_line
+    label: 신청인
+    sample_names: [이수현]
+
+  - type: notice
+    text: 이의신청은 결정 통지를 받은 날부터 30일 이내에 제출해야 합니다. 처리 결과는 해당 기관의 판단에 따릅니다.

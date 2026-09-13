@@ -1,0 +1,78 @@
+id: sales-daily-log
+title: 영업일지
+category: corp
+subcategory: sales
+tags: [영업일지, 영업일보, 방문일지, 일일업무보고, sales log]
+summary: 하루 동안의 거래처 방문·통화 활동과 수주·상담 현황, 익일 계획을 기록하는 영업일지입니다.
+usage: >
+  영업 담당자가 매일 업무를 마친 뒤 그날의 방문·통화 활동과 상담 진행 상황을 정리해
+  제출하는 서식입니다. 거래처별 활동 내용과 결과를 구체적으로 남겨야 이후 상담
+  이력 관리에 활용할 수 있습니다. 특이사항과 익일 계획을 함께 적어 인수인계와
+  다음 날 업무 준비에 참고합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 영업일지
+
+  - type: grid
+    widths: [16, 24, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["작성자", "", "일자", "", "날씨", ""]
+    sample_rows:
+      - ["", "홍길동", "", "2026-09-14", "", "맑음"]
+
+  - type: subtitle
+    text: 1. 방문·통화 활동
+
+  - type: table
+    widths: [10, 16, 12, 14, 28, 20]
+    header: [시간, 거래처, 담당자, 활동구분, 내용, 결과]
+    empty_rows: 8
+    row_height_mm: 7.5
+    sample_rows:
+      - ["09:30", "(주)새길데이터", "박민준", "방문", "신제품 카탈로그 전달 및 설명", "견적 요청"]
+      - ["11:00", "한빛물산", "김서연", "통화", "납기 일정 조율", "10/5 확정"]
+      - ["14:00", "(주)한빛커머스", "이수현", "방문", "분기 실적 점검 미팅", "재계약 논의"]
+
+  - type: subtitle
+    text: 2. 수주·상담 현황
+
+  - type: table
+    widths: [22, 26, 20, 32]
+    header: [거래처, 품목, 예상금액, 진행단계]
+    empty_rows: 5
+    row_height_mm: 7.5
+    sample_rows:
+      - ["(주)새길데이터", "서버 장비 10대", "4,200만원", "견적 제출 완료"]
+      - ["한빛물산", "사무용품 정기납품", "680만원", "계약 조건 협의중"]
+
+  - type: subtitle
+    text: 3. 특이사항
+
+  - type: textbox
+    hint: "거래처 불만, 경쟁사 동향, 지원 요청 사항 등을 기재하십시오."
+    height_mm: 16
+    sample_text: 한빛물산에서 경쟁사 견적을 비교 중이라는 언급이 있어 단가 재검토가 필요함.
+
+  - type: subtitle
+    text: 4. 익일 계획
+
+  - type: textbox
+    hint: "다음 영업일의 방문·통화 계획을 간단히 기재하십시오."
+    height_mm: 16
+    sample_text: (주)새길데이터 견적 회신 확인, 한빛물산 단가 재협의 방문 예정.
+
+  - type: date_line
+    sample_text: 2026 년    9 월    14 일
+
+  - type: sign_line
+    labels: ["작성자", "팀장"]
+    sample_names: [홍길동, 김서연]

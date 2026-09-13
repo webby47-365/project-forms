@@ -1,0 +1,67 @@
+id: director-acceptance
+title: 취임 승낙서
+category: corp
+subcategory: startup
+tags: [취임승낙서, 이사취임승낙서, 감사취임승낙서, 법인등기서류, 임원선임]
+summary: 이사·감사로 선임된 사람이 취임을 승낙함을 확인하는 법인등기 첨부서류입니다.
+usage: >
+  주주총회나 이사회에서 이사·감사로 선임된 사람이 그 직을 맡겠다는 의사를 확인하기 위해
+  작성합니다. 법인 임원 변경등기 시 선임을 증명하는 의사록과 함께 첨부하는 서류로, 성명·
+  생년월일·주소·직위를 정확히 기재해야 합니다. 인감증명서 첨부나 서명 방식은 등기소마다
+  요구사항이 다를 수 있으므로 등기 신청 전에 확인하십시오.
+source: original
+featured: false
+created_by: agent
+status: published
+version: 1
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 취임승낙서
+    spaced: false
+
+  - type: subtitle
+    text: 회사 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["회사명", "", "본점 소재지", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "서울특별시 마포구 월드컵북로 100"]
+
+  - type: subtitle
+    text: 취임자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "직위(이사/감사)", ""]
+    sample_rows:
+      - ["", "박민준", "", "1988-07-22"]
+      - ["", "서울특별시 강남구 테헤란로 152", "", "이사"]
+
+  - type: para
+    text: 본인은 위 회사의 이사(감사)로 선임됨에 있어 그 취임을 승낙합니다.
+    align: center
+    size: 11
+    space_after: 2
+
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["취임일", ""]
+    sample_rows:
+      - ["", "2026-03-20"]
+
+  - type: sign_line
+    label: 취임자
+    sample_names: [박민준]
+
+  - type: notice
+    text: 본 서식은 법인등기(임원 취임) 신청 시 첨부하는 서류입니다. 인감증명서 제출 여부와 서명·날인 방식은 관할 등기소에 확인하십시오.

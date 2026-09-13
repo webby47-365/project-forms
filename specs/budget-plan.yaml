@@ -1,0 +1,73 @@
+id: budget-plan
+title: 예산 계획서
+category: corp
+subcategory: finance
+tags: [예산계획서, 예산안, 연간예산, 부서예산, budget]
+summary: 부서별 예산 항목을 전년 대비 증감률과 산출근거와 함께 정리하는 예산 계획서입니다.
+usage: >
+  다음 회계연도 예산을 수립할 때 부서 단위로 작성하는 문서입니다. 계정과목별로 전년예산과
+  당해예산을 비교해 증감률을 산출하고, 산출근거에는 인원 변동·사업 확대 등 구체적인 이유를
+  적어야 결재 과정에서 설득력이 있습니다. 부문별 합계가 맞는지 확인한 뒤 편성 방침을 간단히
+  요약하고, 세부 집행 내역은 예산 집행 내역서로 별도 관리하십시오.
+source: original
+featured: false
+target_pages: 2
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 예산 계획서
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["부서", "", "회계연도", ""]
+      - ["작성자", "", "작성일자", ""]
+    sample_rows:
+      - ["", "마케팅팀", "", "2027년"]
+      - ["", "박민준", "", "2026-09-13"]
+  - type: subtitle
+    text: 예산 항목
+  - type: table
+    widths: [10, 18, 30, 14, 14, 14]
+    header: [구분, 계정과목, 산출근거, 전년예산, 당해예산, 증감률]
+    empty_rows: 8
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["인건비", "마케팅 인력 인건비", "신규 채용 2명 충원", "80,000,000", "160,000,000", "+100%"]
+      - ["광고비", "디지털 광고비", "SNS 광고 집행 확대", "50,000,000", "65,000,000", "+30%"]
+      - ["행사비", "프로모션 행사비", "오프라인 행사 2회", "20,000,000", "18,000,000", "-10%"]
+  - type: subtitle
+    text: 부문별 합계
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["전년예산 합계", "", "당해예산 합계", ""]
+      - ["증감률", "", "비고", ""]
+    sample_rows:
+      - ["", "150,000,000", "", "243,000,000"]
+      - ["", "+62%", "", "-"]
+  - type: subtitle
+    text: 편성 방침
+  - type: textbox
+    hint: "편성 방침 — 예산 수립의 기본 방향과 중점 과제를 기재하십시오."
+    height_mm: 20
+    sample_text: 디지털 마케팅 채널 투자를 확대하고 오프라인 행사는 효율 중심으로 축소 운영합니다. 인력 충원으로 콘텐츠 제작 역량을 강화하고 불필요한 고정비는 지속적으로 절감합니다.
+  - type: subtitle
+    text: 결재
+  - type: grid
+    widths: [25, 25, 25, 25]
+    row_height_mm: 18
+    rows:
+      - ["담당", "팀장", "본부장", "대표"]
+      - ["", "", "", ""]
+    sample_rows:
+      - ["", "", "", ""]
+      - ["박민준", "김서연", "이수현", "최지우"]
+  - type: notice
+    text: 실제 집행 단계의 세액 계산이나 세무 처리는 회계팀 또는 세무대리인에게 확인하십시오.

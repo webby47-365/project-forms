@@ -1,0 +1,80 @@
+id: campaign-result
+title: 캠페인 결과 보고서
+category: corp
+subcategory: sales
+tags: [캠페인결과보고서, 마케팅결과보고, 성과보고서, 캠페인평가, campaign report]
+summary: 마케팅 캠페인의 목표 대비 실적과 채널별 성과, 개선 제안을 정리하는 결과 보고서입니다.
+usage: >
+  캠페인 종료 후 성과를 집계해 보고하는 서식입니다. 지표별로 목표와 실적을 비교해
+  달성률을 산출하고, 채널별 성과를 나누어 어떤 채널이 효율적이었는지 파악합니다.
+  잘된 점과 아쉬운 점을 함께 기록해 다음 캠페인 기획에 반영할 개선 제안을
+  도출하는 데 활용합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 캠페인 결과 보고서
+
+  - type: grid
+    widths: [14, 26, 14, 16, 14, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["캠페인명", "", "기간", "", "담당", ""]
+    sample_rows:
+      - ["", "가을 신제품 런칭 캠페인", "", "10/1~10/31", "", "홍길동"]
+
+  - type: subtitle
+    text: 1. 성과 요약
+
+  - type: table
+    widths: [20, 18, 18, 18, 26]
+    header: [지표, 목표, 실적, 달성률, 전기대비]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["노출수", "200,000", "236,000", "118%", "+22%"]
+      - ["클릭수", "8,000", "7,400", "93%", "+10%"]
+      - ["전환수", "480", "520", "108%", "+15%"]
+      - ["매출", "4,800만원", "5,600만원", "117%", "+20%"]
+
+  - type: subtitle
+    text: 2. 채널별 성과
+
+  - type: table
+    widths: [18, 20, 20, 20, 22]
+    header: [채널, 노출수, 클릭수, 전환수, CPA]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["SNS 광고", "150,000", "5,200", "340", "1.2만원"]
+      - ["이메일", "60,000", "1,800", "150", "0.3만원"]
+      - ["검색 광고", "26,000", "400", "30", "2.1만원"]
+
+  - type: subtitle
+    text: 3. 잘된 점·아쉬운 점
+
+  - type: textbox
+    hint: "목표 대비 잘된 점과 부족했던 점을 구분하여 기재하십시오."
+    height_mm: 20
+    sample_text: SNS 광고의 전환율이 가장 높아 예산 효율이 좋았음. 검색 광고는 클릭당 비용이 높아 대비 전환이 적어 효율이 낮았음.
+
+  - type: subtitle
+    text: 4. 개선 제안
+
+  - type: textbox
+    hint: "다음 캠페인에 반영할 구체적인 개선안을 기재하십시오."
+    height_mm: 16
+    sample_text: 검색 광고 예산을 축소하고 SNS 광고 비중을 확대. 전환율이 높은 타깃 조건을 다음 캠페인에도 적용.
+
+  - type: date_line
+    sample_text: 2026 년    11 월    3 일
+
+  - type: sign_line
+    labels: ["작성", "검토", "승인"]
+    sample_names: [홍길동, 김서연, 박민준]

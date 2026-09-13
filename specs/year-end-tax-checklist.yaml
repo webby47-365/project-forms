@@ -1,0 +1,55 @@
+id: year-end-tax-checklist
+title: 연말정산 서류 점검표
+category: corp
+subcategory: finance
+tags: [연말정산, 연말정산서류, 소득공제서류, 연말정산체크리스트, year-end-tax]
+summary: 연말정산 제출 서류를 항목별로 점검하고 제출 여부를 확인하는 점검표입니다.
+usage: >
+  연말정산 시 보험료·의료비·교육비 등 소득·세액공제 서류를 빠짐없이 제출했는지 확인하는
+  문서입니다. 항목별로 해당 여부와 제출 여부를 표시하고, 비고란에는 추가로 필요한 서류나
+  미제출 사유를 기재합니다. 세액 계산이나 공제 한도 적용은 회사 급여 담당자 또는 국세청
+  홈택스 간소화서비스·세무대리인을 통해 확인하고, 제출 기한을 반드시 지키십시오.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 연말정산 서류 점검표
+  - type: grid
+    widths: [14, 36, 14, 36]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "부서", ""]
+      - ["사번", "", "연락처", ""]
+    sample_rows:
+      - ["", "이수현", "", "재무회계팀"]
+      - ["", "E20221033", "", "010-3456-7890"]
+  - type: subtitle
+    text: 점검 항목
+  - type: table
+    widths: [14, 30, 14, 14, 28]
+    header: [구분, 제출서류, 해당여부, 제출여부, 비고]
+    empty_rows: 8
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["보험료", "보험료 납입확인서", "해당", "제출", "국세청 간소화자료"]
+      - ["의료비", "의료비 지급내역서", "해당", "미제출", "추가 제출 예정"]
+      - ["교육비", "교육비 납입증명서", "해당", "제출", "-"]
+      - ["기부금", "기부금 영수증", "비해당", "-", "-"]
+      - ["주택자금", "주택자금 상환증명서", "해당", "제출", "장기주택저당차입금"]
+      - ["연금저축", "연금저축 납입확인서", "해당", "제출", "-"]
+      - ["부양가족", "가족관계증명서", "해당", "제출", "부모 1인 포함"]
+  - type: notice
+    text: "제출 기한: 회사가 공지한 연말정산 서류 제출 기한까지 인사·급여 담당 부서에 제출하십시오."
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+  - type: sign_line
+    label: 확인자(본인)
+    sample_names: [이수현]
+  - type: notice
+    text: 공제 항목별 한도와 세액 계산은 국세청 홈택스 간소화서비스 또는 세무대리인에게 확인하십시오.

@@ -23,6 +23,9 @@ blocks:
     rows:
       - ["학교(학원)", "", "학년·반", "", "이름", ""]
       - ["학기", "", "적용 기간", "", "담임", ""]
+    sample_rows:
+      - ["", "한국대학교", "", "2학년 3반", "", "박민준"]
+      - ["", "2학기", "", "2026.09~2027.02", "", "이수현"]
   - type: subtitle
     text: 1. 주간 시간표
   - type: table
@@ -31,6 +34,9 @@ blocks:
     empty_rows: 4
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "09:00~09:50", "국어", "수학", "영어", "과학", "체육", "-"]
+      - ["2", "10:00~10:50", "수학", "국어", "과학", "영어", "음악", "-"]
   - type: subtitle
     text: 2. 과목별 담당 및 교실
   - type: table
@@ -39,6 +45,9 @@ blocks:
     empty_rows: 4
     row_height_mm: 7
     body_align: center
+    sample_rows:
+      - ["1", "수학", "김서연", "303호", ""]
+      - ["2", "영어", "박민준", "201호", "원어민 수업"]
   - type: subtitle
     text: 3. 요일별 준비물 및 방과 후 일정
   - type: table
@@ -47,11 +56,17 @@ blocks:
     empty_rows: 5
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["월", "체육복", "영어학원 17:00"]
+      - ["수", "미술 도구", "수학학원 18:00"]
   - type: textbox
     hint: "메모 — 수행평가 일정, 변경된 수업 등을 기재하십시오."
     height_mm: 18
+    sample_text: 10월 둘째 주 수행평가(영어 말하기) 예정, 체육복 매주 월요일 준비.
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 작성자
+    sample_names: [박민준]
   - type: notice
     text: 학기 중 시간표가 변경되면 새로 작성해 사용하십시오.

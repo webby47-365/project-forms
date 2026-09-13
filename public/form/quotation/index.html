@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -287,17 +308,25 @@ footer.site li{margin:3px 0}
   </div>
 
   <div class="detail">
-    <div class="preview">      <img src="/files/quotation/preview-1.webp" alt="견적서 1페이지 미리보기" width="800" height="1131">    </div>
+    <div>
+      <div class="preview">        <img src="/files/quotation/preview-1.webp" alt="견적서 1페이지 작성 예시 미리보기" width="800" height="1131">      </div>      <p class="preview-note">
+        <span aria-hidden="true">✎</span>
+        <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
+        내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
+      </p>    </div>
 
     <div class="meta">
       <h1 class="page">견적서</h1>
-      <p class="lead" style="margin-bottom:0">공급자·수신처 정보와 품목별 단가·공급가액·부가세 합계를 기재하는 표준 견적서입니다.</p>
-
+      <p class="lead" style="margin-bottom:0">공급자·수신처 정보와 품목별 단가·공급가액·부가세 합계를 기재하는 표준 견적서입니다.</p>      <div class="series-box">
+        <h3>견적서 3종</h3>
+        <p>상황에 맞는 양식을 고르세요. 항목 구성이 서로 다릅니다.</p>
+        <ul class="series-list">          <li><span class="cur">기본형</span></li>          <li><a href="/form/quotation-simple/" title="견적서 (간편형)">간편형</a></li>          <li><a href="/form/quotation-detailed/" title="견적서 (상세형)">상세형</a></li>        </ul>
+      </div>
       <div class="dlbox">
         <h3>양식 다운로드</h3>
         <p>원하는 형식을 선택하세요. 회원가입 없이 바로 내려받습니다.</p>
         <div class="dlbtns">
-          <a href="/files/quotation/quotation.pdf" download="견적서.pdf">PDF<span class="fmt">72 KB</span></a>
+          <a href="/files/quotation/quotation.pdf" download="견적서.pdf">PDF<span class="fmt">71 KB</span></a>
           <a href="/files/quotation/quotation.docx" download="견적서.docx">Word<span class="fmt">38 KB</span></a>
           <a href="/files/quotation/quotation.hwpx" download="견적서.hwpx">한글<span class="fmt">11 KB</span></a>
         </div>
@@ -324,6 +353,17 @@ footer.site li{margin:3px 0}
     </div>
   </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
   <div class="grid">    <article class="card">
+  <a class="thumb" href="/form/depreciation-schedule/" aria-label="감가상각 내역서 미리보기">
+    <img src="/files/depreciation-schedule/preview-1.webp" alt="감가상각 내역서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/depreciation-schedule/">감가상각 내역서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/depreciation-schedule/depreciation-schedule.pdf" download="감가상각 내역서.pdf" title="감가상각 내역서 PDF 다운로드">PDF</a>
+      <a href="/files/depreciation-schedule/depreciation-schedule.docx" download="감가상각 내역서.docx" title="감가상각 내역서 Word 다운로드">Word</a>
+      <a href="/files/depreciation-schedule/depreciation-schedule.hwpx" download="감가상각 내역서.hwpx" title="감가상각 내역서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/transaction-statement/" aria-label="거래명세서 미리보기">
     <img src="/files/transaction-statement/preview-1.webp" alt="거래명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -335,52 +375,41 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/expense-report/" aria-label="경비정산서 미리보기">
-    <img src="/files/expense-report/preview-1.webp" alt="경비정산서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/account-ledger/" aria-label="거래처 원장 미리보기">
+    <img src="/files/account-ledger/preview-1.webp" alt="거래처 원장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/expense-report/">경비정산서</a>
+    <a class="name" href="/form/account-ledger/">거래처 원장</a>
     <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/expense-report/expense-report.pdf" download="경비정산서.pdf" title="경비정산서 PDF 다운로드">PDF</a>
-      <a href="/files/expense-report/expense-report.docx" download="경비정산서.docx" title="경비정산서 Word 다운로드">Word</a>
-      <a href="/files/expense-report/expense-report.hwpx" download="경비정산서.hwpx" title="경비정산서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/account-ledger/account-ledger.pdf" download="거래처 원장.pdf" title="거래처 원장 PDF 다운로드">PDF</a>
+      <a href="/files/account-ledger/account-ledger.docx" download="거래처 원장.docx" title="거래처 원장 Word 다운로드">Word</a>
+      <a href="/files/account-ledger/account-ledger.hwpx" download="거래처 원장.hwpx" title="거래처 원장 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/payslip/" aria-label="급여명세서 미리보기">
-    <img src="/files/payslip/preview-1.webp" alt="급여명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/quotation-simple/" aria-label="견적서 (간편형) 미리보기">
+    <img src="/files/quotation-simple/preview-1.webp" alt="견적서 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/payslip/">급여명세서</a>
+    <a class="name" href="/form/quotation-simple/">견적서 (간편형)</a>
     <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/payslip/payslip.pdf" download="급여명세서.pdf" title="급여명세서 PDF 다운로드">PDF</a>
-      <a href="/files/payslip/payslip.docx" download="급여명세서.docx" title="급여명세서 Word 다운로드">Word</a>
-      <a href="/files/payslip/payslip.hwpx" download="급여명세서.hwpx" title="급여명세서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/quotation-simple/quotation-simple.pdf" download="견적서 (간편형).pdf" title="견적서 (간편형) PDF 다운로드">PDF</a>
+      <a href="/files/quotation-simple/quotation-simple.docx" download="견적서 (간편형).docx" title="견적서 (간편형) Word 다운로드">Word</a>
+      <a href="/files/quotation-simple/quotation-simple.hwpx" download="견적서 (간편형).hwpx" title="견적서 (간편형) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/purchase-order/" aria-label="발주서 미리보기">
-    <img src="/files/purchase-order/preview-1.webp" alt="발주서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/quotation-detailed/" aria-label="견적서 (상세형) 미리보기">
+    <img src="/files/quotation-detailed/preview-1.webp" alt="견적서 (상세형) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/purchase-order/">발주서</a>
+    <a class="name" href="/form/quotation-detailed/">견적서 (상세형)</a>
     <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/purchase-order/purchase-order.pdf" download="발주서.pdf" title="발주서 PDF 다운로드">PDF</a>
-      <a href="/files/purchase-order/purchase-order.docx" download="발주서.docx" title="발주서 Word 다운로드">Word</a>
-      <a href="/files/purchase-order/purchase-order.hwpx" download="발주서.hwpx" title="발주서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/corporate-card-report/" aria-label="법인카드 사용내역서 미리보기">
-    <img src="/files/corporate-card-report/preview-1.webp" alt="법인카드 사용내역서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/corporate-card-report/">법인카드 사용내역서</a>
-    <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/corporate-card-report/corporate-card-report.pdf" download="법인카드 사용내역서.pdf" title="법인카드 사용내역서 PDF 다운로드">PDF</a>
-      <a href="/files/corporate-card-report/corporate-card-report.docx" download="법인카드 사용내역서.docx" title="법인카드 사용내역서 Word 다운로드">Word</a>
-      <a href="/files/corporate-card-report/corporate-card-report.hwpx" download="법인카드 사용내역서.hwpx" title="법인카드 사용내역서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/quotation-detailed/quotation-detailed.pdf" download="견적서 (상세형).pdf" title="견적서 (상세형) PDF 다운로드">PDF</a>
+      <a href="/files/quotation-detailed/quotation-detailed.docx" download="견적서 (상세형).docx" title="견적서 (상세형) Word 다운로드">Word</a>
+      <a href="/files/quotation-detailed/quotation-detailed.hwpx" download="견적서 (상세형).hwpx" title="견적서 (상세형) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>
 <script type="application/ld+json">
-{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;견적서&#34;, &#34;description&#34;: &#34;공급자·수신처 정보와 품목별 단가·공급가액·부가세 합계를 기재하는 표준 견적서입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/quotation/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-13&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
+{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;견적서&#34;, &#34;description&#34;: &#34;공급자·수신처 정보와 품목별 단가·공급가액·부가세 합계를 기재하는 표준 견적서입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/quotation/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-14&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
 </script>
 </main>
 
@@ -402,7 +431,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

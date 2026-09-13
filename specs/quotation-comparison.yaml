@@ -1,0 +1,78 @@
+id: quotation-comparison
+title: 견적 비교표
+category: corp
+subcategory: sales
+tags: [견적비교표, 업체비교, 구매비교, 견적대비표, quotation comparison]
+summary: 구매 건에 대해 복수 업체의 견적 조건을 나란히 비교하고 선정 사유를 기록하는 비교표입니다.
+usage: >
+  같은 구매 건에 대해 2~3개 업체로부터 견적을 받은 경우, 조건을 한눈에 비교하기 위해
+  작성합니다. 견적금액·납기·결제조건 등 항목별로 업체를 나란히 배치해 비교하고,
+  평가 및 선정 사유를 구체적으로 남겨 결재 근거로 사용합니다. 최종 선정 업체를
+  명시해 구매 진행의 기준으로 삼습니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 견적 비교표
+
+  - type: grid
+    widths: [14, 26, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["건명", "", "요청부서", "", "요청일", ""]
+      - ["납기", "", "", "", "", ""]
+    merges:
+      - [1, 1, 1, 5]
+    sample_rows:
+      - ["", "사무용 복합기 3대 구매", "", "총무팀", "", "2026-09-08"]
+      - ["", "2026-09-25까지", "", "", "", ""]
+
+  - type: subtitle
+    text: 업체별 비교
+
+  - type: table
+    widths: [18, 27, 27, 28]
+    header: [구분, A업체, B업체, C업체]
+    empty_rows: 7
+    row_height_mm: 8
+    sample_rows:
+      - ["견적금액", "480만원", "510만원", "455만원"]
+      - ["단가", "160만원", "170만원", "151.7만원"]
+      - ["납기", "15일", "10일", "20일"]
+      - ["결제조건", "월말 현금", "월말 현금", "세금계산서 30일"]
+      - ["보증기간", "1년", "2년", "1년"]
+      - ["A/S", "출장 4시간 내", "방문 익일", "출장 4시간 내"]
+      - ["비고", "-", "설치비 별도", "-"]
+
+  - type: subtitle
+    text: 평가 및 선정 사유
+
+  - type: textbox
+    hint: "가격·품질·납기 등을 종합하여 선정 이유를 기재하십시오."
+    height_mm: 20
+    sample_text: B업체는 보증기간과 A/S 대응이 우수하나 가격이 가장 높음. A업체는 대응은 양호하나 가격 경쟁력이 낮음. C업체는 가격이 가장 낮고 A/S 대응도 양호하여 최종 선정함.
+
+  - type: subtitle
+    text: 선정 업체
+
+  - type: grid
+    widths: [16, 24, 16, 24, 10, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["선정업체", "", "계약금액", "", "결정일", ""]
+    sample_rows:
+      - ["", "C업체", "", "455만원", "", "2026-09-12"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월    12 일
+
+  - type: sign_line
+    labels: ["작성", "검토", "승인"]
+    sample_names: [홍길동, 김서연, 박민준]

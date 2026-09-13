@@ -1,0 +1,100 @@
+id: tuition-refund-request
+title: 수강료 환불 신청서
+category: edu
+subcategory: school
+tags: [수강료환불신청서, 학원환불, 수강료환불, 환불신청, 학원환불요청]
+summary: 수강 과정과 결제 정보, 환불 사유와 환불 예정액을 기재해 수강료 환불을 요청하는 신청서입니다.
+usage: >
+  학원이나 교습소에서 수강을 중도 해지하거나 취소할 때 제출하는 서식입니다. 수강 과정과
+  결제일·결제금액을 정확히 적고, 환불 사유를 구체적으로 기재해야 처리가 빠릅니다. 환불
+  산정표에는 총 수강료에서 수강 경과분과 공제액을 뺀 환불 예정액을 적어 금액 산출 근거를
+  명확히 하십시오. 환불 계좌는 신청인 명의로 기재하는 것을 원칙으로 하며, 구체적인 환불
+  기준은 학원 규정과 관련 법령을 확인해 적용하십시오.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+
+blocks:
+  - type: doc_title
+    text: 수강료 환불 신청서
+
+  - type: subtitle
+    text: 1. 신청자 정보
+
+  - type: grid
+    widths: [14, 22, 14, 14, 14, 22]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "연락처", "", "등록일", ""]
+      - ["수강 과정", "", "", "", "수강 기간", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678", "", "2026-03-02"]
+      - ["", "중등 수학 종합반", "", "", "", "2026.03 ~ 2026.08"]
+
+  - type: subtitle
+    text: 2. 결제 정보
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["결제일", "", "결제금액", ""]
+      - ["결제수단", "", "", ""]
+    sample_rows:
+      - ["", "2026-03-02", "", "600,000원"]
+      - ["", "카드결제", "", ""]
+
+  - type: subtitle
+    text: 3. 환불 사유
+
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["사유 구분", "단순 변심 / 건강상 이유 / 이전·전학 / 수업 불만족 / 기타"]
+      - ["상세 사유", ""]
+    sample_rows:
+      - ["", ""]
+      - ["", "이사로 인해 학원 통학이 어려워 중도 해지를 신청함"]
+
+  - type: subtitle
+    text: 4. 환불 산정
+
+  - type: table
+    widths: [25, 25, 25, 25]
+    header: [총 수강료, 수강 경과분, 공제액, 환불 예정액]
+    empty_rows: 2
+    row_height_mm: 10
+    body_align: center
+    sample_rows:
+      - ["600,000원", "150,000원", "30,000원", "420,000원"]
+
+  - type: subtitle
+    text: 5. 환불 계좌
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["은행", "", "예금주", ""]
+      - ["계좌번호", "", "", ""]
+    sample_rows:
+      - ["", "한빛은행", "", "홍길동"]
+      - ["", "000-00-00000", "", ""]
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 환불 기준은 학원의 설립·운영 및 과외교습에 관한 법률 시행령의 반환 기준과 해당 학원의 환불 규정에 따릅니다.

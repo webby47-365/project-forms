@@ -29,6 +29,10 @@ blocks:
       - ["성명(법인명)", "", "생년월일", "", "연락처"]
       - ["주소", "", "", "", ""]
       - ["대리인", "", "관계", "", "연락처"]
+    sample_rows:
+      - ["", "홍길동", "", "1985-05-20", ""]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "", ""]
+      - ["", "해당없음", "", "", ""]
   - type: subtitle
     text: 처분 내용
   - type: grid
@@ -41,16 +45,22 @@ blocks:
       - ["처분청", "", "처분 통지일", ""]
       - ["처분 종류", "", "처분 금액", ""]
       - ["문서번호 / 사건번호", "", "", ""]
+    sample_rows:
+      - ["", "마포구청", "", "2026-08-20"]
+      - ["", "과태료 부과처분", "", "50,000원"]
+      - ["", "제2026-1234호", "", ""]
   - type: subtitle
     text: 이의신청 취지
   - type: textbox
     hint: "무엇을 구하는지 한두 문장으로 적으십시오. (예: 위 과태료 부과처분을 취소해 주시기 바랍니다)"
     height_mm: 20
+    sample_text: 위 과태료 50,000원 부과처분이 과중하다고 판단되어 취소 또는 감경하여 주시기 바랍니다.
   - type: subtitle
     text: 이의신청 이유
   - type: textbox
     hint: "처분이 부당하다고 보는 근거를 사실과 법령을 들어 기재하십시오. 사실관계를 시간순으로 적고 증빙을 인용합니다."
     height_mm: 44
+    sample_text: 2026년 8월 15일 자택 인근 도로에 단속 안내표지가 설치되기 전 주차한 점, 주차 공간 부족으로 불가피했던 사정을 고려하여 선처를 요청합니다. 당일 촬영한 사진과 거주지 확인서를 첨부합니다.
   - type: subtitle
     text: 첨부 서류
   - type: table
@@ -61,14 +71,19 @@ blocks:
     empty_rows: 3
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["2", "차량 등록증 사본", ""]
+      - ["3", "현장 사진", ""]
   - type: para
     text: 위와 같이 이의를 신청합니다.
     align: center
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 신청인
+    sample_names: [홍길동]
   - type: spacer
     height_pt: 4
   - type: para
@@ -76,5 +91,6 @@ blocks:
     align: center
     size: 12
     bold: true
+    sample_text: "마포구청장                귀중"
   - type: notice
     text: 이의신청 기간은 법령마다 다르며 기간을 넘기면 각하됩니다. 처분 통지서에 적힌 불복 기간과 방법을 먼저 확인하고, 처분청이 정한 양식이 있으면 그 양식을 사용하십시오.

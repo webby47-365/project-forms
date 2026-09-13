@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>개인 취업·경력 서식 6종 — 무료서식 다운로드</title>
-<meta name="description" content="개인 취업·경력 분야 무료 서식 6종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<title>개인 취업·경력 서식 20종 — 무료서식 다운로드</title>
+<meta name="description" content="개인 취업·경력 분야 무료 서식 20종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <link rel="canonical" href="https://freeforms.kr/category/personal/career/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="개인 취업·경력 서식 6종 — 무료서식 다운로드">
-<meta property="og:description" content="개인 취업·경력 분야 무료 서식 6종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<meta property="og:title" content="개인 취업·경력 서식 20종 — 무료서식 다운로드">
+<meta property="og:description" content="개인 취업·경력 분야 무료 서식 20종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <meta property="og:site_name" content="무료서식 다운로드">
 <meta name="naver-site-verification" content="84f0aadaca88d57ca53e9c0eb1b5705bb0a29425">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -283,47 +304,47 @@ footer.site li{margin:3px 0}
 <main><div class="wrap">
   <div class="crumb"><a href="/">홈</a> › 개인 › 취업·경력</div>
   <h1 class="page">개인 · 취업·경력</h1>
-  <p class="lead">6종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
+  <p class="lead">20종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
 
   <div class="cols">
     <aside class="side">      <h3>기업</h3>
       <ul>        <li><a href="/category/corp/hr/"
                class="">
-          <span>인사·노무</span><span class="n">15</span></a></li>        <li><a href="/category/corp/admin/"
+          <span>인사·노무</span><span class="n">30</span></a></li>        <li><a href="/category/corp/admin/"
                class="">
-          <span>총무·행정</span><span class="n">10</span></a></li>        <li><a href="/category/corp/finance/"
+          <span>총무·행정</span><span class="n">23</span></a></li>        <li><a href="/category/corp/finance/"
                class="">
-          <span>회계·세무</span><span class="n">11</span></a></li>        <li><a href="/category/corp/sales/"
+          <span>회계·세무</span><span class="n">22</span></a></li>        <li><a href="/category/corp/sales/"
                class="">
-          <span>영업·마케팅</span><span class="n">4</span></a></li>        <li><a href="/category/corp/startup/"
+          <span>영업·마케팅</span><span class="n">13</span></a></li>        <li><a href="/category/corp/startup/"
                class="">
-          <span>창업·법인</span><span class="n">4</span></a></li>      </ul>      <h3>법률</h3>
+          <span>창업·법인</span><span class="n">11</span></a></li>      </ul>      <h3>법률</h3>
       <ul>        <li><a href="/category/legal/contract/"
                class="">
-          <span>계약</span><span class="n">7</span></a></li>        <li><a href="/category/legal/notice/"
+          <span>계약</span><span class="n">17</span></a></li>        <li><a href="/category/legal/notice/"
                class="">
-          <span>통지·증명</span><span class="n">8</span></a></li>        <li><a href="/category/legal/litigation/"
+          <span>통지·증명</span><span class="n">15</span></a></li>        <li><a href="/category/legal/litigation/"
                class="">
-          <span>소송·민원</span><span class="n">4</span></a></li>      </ul>      <h3>공공</h3>
+          <span>소송·민원</span><span class="n">10</span></a></li>      </ul>      <h3>공공</h3>
       <ul>        <li><a href="/category/public/civil/"
                class="">
-          <span>민원·신고</span><span class="n">5</span></a></li>        <li><a href="/category/public/consent/"
+          <span>민원·신고</span><span class="n">10</span></a></li>        <li><a href="/category/public/consent/"
                class="">
-          <span>신청·동의</span><span class="n">7</span></a></li>      </ul>      <h3>부동산</h3>
+          <span>신청·동의</span><span class="n">12</span></a></li>      </ul>      <h3>부동산</h3>
       <ul>        <li><a href="/category/estate/lease/"
                class="">
-          <span>임대·매매</span><span class="n">3</span></a></li>      </ul>      <h3>개인</h3>
+          <span>임대·매매</span><span class="n">11</span></a></li>      </ul>      <h3>개인</h3>
       <ul>        <li><a href="/category/personal/career/"
                class="on">
-          <span>취업·경력</span><span class="n">6</span></a></li>        <li><a href="/category/personal/life/"
+          <span>취업·경력</span><span class="n">20</span></a></li>        <li><a href="/category/personal/life/"
                class="">
-          <span>생활·가정</span><span class="n">6</span></a></li>      </ul>      <h3>교육</h3>
+          <span>생활·가정</span><span class="n">15</span></a></li>      </ul>      <h3>교육</h3>
       <ul>        <li><a href="/category/edu/school/"
                class="">
-          <span>학교·학원</span><span class="n">6</span></a></li>      </ul>      <h3>의료·복지</h3>
+          <span>학교·학원</span><span class="n">16</span></a></li>      </ul>      <h3>의료·복지</h3>
       <ul>        <li><a href="/category/welfare/consent/"
                class="">
-          <span>동의·신청</span><span class="n">2</span></a></li>      </ul>      
+          <span>동의·신청</span><span class="n">10</span></a></li>      </ul>      
     </aside>
 
     <div>      <div class="grid g4">        <article class="card">
@@ -338,6 +359,39 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/career-desc-job/" aria-label="경력기술서 (직무 중심) 미리보기">
+    <img src="/files/career-desc-job/preview-1.webp" alt="경력기술서 (직무 중심) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/career-desc-job/">경력기술서 (직무 중심)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/career-desc-job/career-desc-job.pdf" download="경력기술서 (직무 중심).pdf" title="경력기술서 (직무 중심) PDF 다운로드">PDF</a>
+      <a href="/files/career-desc-job/career-desc-job.docx" download="경력기술서 (직무 중심).docx" title="경력기술서 (직무 중심) Word 다운로드">Word</a>
+      <a href="/files/career-desc-job/career-desc-job.hwpx" download="경력기술서 (직무 중심).hwpx" title="경력기술서 (직무 중심) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/career-desc-project/" aria-label="경력기술서 (프로젝트 중심) 미리보기">
+    <img src="/files/career-desc-project/preview-1.webp" alt="경력기술서 (프로젝트 중심) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/career-desc-project/">경력기술서 (프로젝트 중심)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/career-desc-project/career-desc-project.pdf" download="경력기술서 (프로젝트 중심).pdf" title="경력기술서 (프로젝트 중심) PDF 다운로드">PDF</a>
+      <a href="/files/career-desc-project/career-desc-project.docx" download="경력기술서 (프로젝트 중심).docx" title="경력기술서 (프로젝트 중심) Word 다운로드">Word</a>
+      <a href="/files/career-desc-project/career-desc-project.hwpx" download="경력기술서 (프로젝트 중심).hwpx" title="경력기술서 (프로젝트 중심) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/resume-english/" aria-label="영문 이력서 (English Resume) 미리보기">
+    <img src="/files/resume-english/preview-1.webp" alt="영문 이력서 (English Resume) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/resume-english/">영문 이력서 (English Resume)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/resume-english/resume-english.pdf" download="영문 이력서 (English Resume).pdf" title="영문 이력서 (English Resume) PDF 다운로드">PDF</a>
+      <a href="/files/resume-english/resume-english.docx" download="영문 이력서 (English Resume).docx" title="영문 이력서 (English Resume) Word 다운로드">Word</a>
+      <a href="/files/resume-english/resume-english.hwpx" download="영문 이력서 (English Resume).hwpx" title="영문 이력서 (English Resume) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/english-cover-letter/" aria-label="영문 커버레터 (Cover Letter) 미리보기">
     <img src="/files/english-cover-letter/preview-1.webp" alt="영문 커버레터 (Cover Letter) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -346,6 +400,28 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/english-cover-letter/english-cover-letter.pdf" download="영문 커버레터 (Cover Letter).pdf" title="영문 커버레터 (Cover Letter) PDF 다운로드">PDF</a>
       <a href="/files/english-cover-letter/english-cover-letter.docx" download="영문 커버레터 (Cover Letter).docx" title="영문 커버레터 (Cover Letter) Word 다운로드">Word</a>
       <a href="/files/english-cover-letter/english-cover-letter.hwpx" download="영문 커버레터 (Cover Letter).hwpx" title="영문 커버레터 (Cover Letter) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/resume-simple/" aria-label="이력서 (간편형) 미리보기">
+    <img src="/files/resume-simple/preview-1.webp" alt="이력서 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/resume-simple/">이력서 (간편형)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/resume-simple/resume-simple.pdf" download="이력서 (간편형).pdf" title="이력서 (간편형) PDF 다운로드">PDF</a>
+      <a href="/files/resume-simple/resume-simple.docx" download="이력서 (간편형).docx" title="이력서 (간편형) Word 다운로드">Word</a>
+      <a href="/files/resume-simple/resume-simple.hwpx" download="이력서 (간편형).hwpx" title="이력서 (간편형) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/resume-experienced/" aria-label="이력서 (경력용) 미리보기">
+    <img src="/files/resume-experienced/preview-1.webp" alt="이력서 (경력용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/resume-experienced/">이력서 (경력용)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/resume-experienced/resume-experienced.pdf" download="이력서 (경력용).pdf" title="이력서 (경력용) PDF 다운로드">PDF</a>
+      <a href="/files/resume-experienced/resume-experienced.docx" download="이력서 (경력용).docx" title="이력서 (경력용) Word 다운로드">Word</a>
+      <a href="/files/resume-experienced/resume-experienced.hwpx" download="이력서 (경력용).hwpx" title="이력서 (경력용) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -360,6 +436,61 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/resume-narrative/" aria-label="이력서 (서술형) 미리보기">
+    <img src="/files/resume-narrative/preview-1.webp" alt="이력서 (서술형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/resume-narrative/">이력서 (서술형)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/resume-narrative/resume-narrative.pdf" download="이력서 (서술형).pdf" title="이력서 (서술형) PDF 다운로드">PDF</a>
+      <a href="/files/resume-narrative/resume-narrative.docx" download="이력서 (서술형).docx" title="이력서 (서술형) Word 다운로드">Word</a>
+      <a href="/files/resume-narrative/resume-narrative.hwpx" download="이력서 (서술형).hwpx" title="이력서 (서술형) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/resume-newcomer/" aria-label="이력서 (신입용) 미리보기">
+    <img src="/files/resume-newcomer/preview-1.webp" alt="이력서 (신입용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/resume-newcomer/">이력서 (신입용)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/resume-newcomer/resume-newcomer.pdf" download="이력서 (신입용).pdf" title="이력서 (신입용) PDF 다운로드">PDF</a>
+      <a href="/files/resume-newcomer/resume-newcomer.docx" download="이력서 (신입용).docx" title="이력서 (신입용) Word 다운로드">Word</a>
+      <a href="/files/resume-newcomer/resume-newcomer.hwpx" download="이력서 (신입용).hwpx" title="이력서 (신입용) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/resume-parttime/" aria-label="이력서 (아르바이트용) 미리보기">
+    <img src="/files/resume-parttime/preview-1.webp" alt="이력서 (아르바이트용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/resume-parttime/">이력서 (아르바이트용)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/resume-parttime/resume-parttime.pdf" download="이력서 (아르바이트용).pdf" title="이력서 (아르바이트용) PDF 다운로드">PDF</a>
+      <a href="/files/resume-parttime/resume-parttime.docx" download="이력서 (아르바이트용).docx" title="이력서 (아르바이트용) Word 다운로드">Word</a>
+      <a href="/files/resume-parttime/resume-parttime.hwpx" download="이력서 (아르바이트용).hwpx" title="이력서 (아르바이트용) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/job-application-form/" aria-label="입사지원서 미리보기">
+    <img src="/files/job-application-form/preview-1.webp" alt="입사지원서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/job-application-form/">입사지원서</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/job-application-form/job-application-form.pdf" download="입사지원서.pdf" title="입사지원서 PDF 다운로드">PDF</a>
+      <a href="/files/job-application-form/job-application-form.docx" download="입사지원서.docx" title="입사지원서 Word 다운로드">Word</a>
+      <a href="/files/job-application-form/job-application-form.hwpx" download="입사지원서.hwpx" title="입사지원서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/cover-letter-experienced/" aria-label="자기소개서 (경력용) 미리보기">
+    <img src="/files/cover-letter-experienced/preview-1.webp" alt="자기소개서 (경력용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/cover-letter-experienced/">자기소개서 (경력용)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/cover-letter-experienced/cover-letter-experienced.pdf" download="자기소개서 (경력용).pdf" title="자기소개서 (경력용) PDF 다운로드">PDF</a>
+      <a href="/files/cover-letter-experienced/cover-letter-experienced.docx" download="자기소개서 (경력용).docx" title="자기소개서 (경력용) Word 다운로드">Word</a>
+      <a href="/files/cover-letter-experienced/cover-letter-experienced.hwpx" download="자기소개서 (경력용).hwpx" title="자기소개서 (경력용) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/cover-letter/" aria-label="자기소개서 (기본형) 미리보기">
     <img src="/files/cover-letter/preview-1.webp" alt="자기소개서 (기본형) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
@@ -371,6 +502,39 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/cover-letter-newcomer/" aria-label="자기소개서 (신입용) 미리보기">
+    <img src="/files/cover-letter-newcomer/preview-1.webp" alt="자기소개서 (신입용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/cover-letter-newcomer/">자기소개서 (신입용)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/cover-letter-newcomer/cover-letter-newcomer.pdf" download="자기소개서 (신입용).pdf" title="자기소개서 (신입용) PDF 다운로드">PDF</a>
+      <a href="/files/cover-letter-newcomer/cover-letter-newcomer.docx" download="자기소개서 (신입용).docx" title="자기소개서 (신입용) Word 다운로드">Word</a>
+      <a href="/files/cover-letter-newcomer/cover-letter-newcomer.hwpx" download="자기소개서 (신입용).hwpx" title="자기소개서 (신입용) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/cover-letter-free/" aria-label="자기소개서 (자유양식) 미리보기">
+    <img src="/files/cover-letter-free/preview-1.webp" alt="자기소개서 (자유양식) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/cover-letter-free/">자기소개서 (자유양식)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/cover-letter-free/cover-letter-free.pdf" download="자기소개서 (자유양식).pdf" title="자기소개서 (자유양식) PDF 다운로드">PDF</a>
+      <a href="/files/cover-letter-free/cover-letter-free.docx" download="자기소개서 (자유양식).docx" title="자기소개서 (자유양식) Word 다운로드">Word</a>
+      <a href="/files/cover-letter-free/cover-letter-free.hwpx" download="자기소개서 (자유양식).hwpx" title="자기소개서 (자유양식) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/cover-letter-star/" aria-label="자기소개서 (항목형·STAR) 미리보기">
+    <img src="/files/cover-letter-star/preview-1.webp" alt="자기소개서 (항목형·STAR) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/cover-letter-star/">자기소개서 (항목형·STAR)</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/cover-letter-star/cover-letter-star.pdf" download="자기소개서 (항목형·STAR).pdf" title="자기소개서 (항목형·STAR) PDF 다운로드">PDF</a>
+      <a href="/files/cover-letter-star/cover-letter-star.docx" download="자기소개서 (항목형·STAR).docx" title="자기소개서 (항목형·STAR) Word 다운로드">Word</a>
+      <a href="/files/cover-letter-star/cover-letter-star.hwpx" download="자기소개서 (항목형·STAR).hwpx" title="자기소개서 (항목형·STAR) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/recommendation-letter/" aria-label="추천서 미리보기">
     <img src="/files/recommendation-letter/preview-1.webp" alt="추천서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -379,6 +543,17 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/recommendation-letter/recommendation-letter.pdf" download="추천서.pdf" title="추천서 PDF 다운로드">PDF</a>
       <a href="/files/recommendation-letter/recommendation-letter.docx" download="추천서.docx" title="추천서 Word 다운로드">Word</a>
       <a href="/files/recommendation-letter/recommendation-letter.hwpx" download="추천서.hwpx" title="추천서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/reference-check-consent/" aria-label="평판조회 동의서 미리보기">
+    <img src="/files/reference-check-consent/preview-1.webp" alt="평판조회 동의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/reference-check-consent/">평판조회 동의서</a>
+    <div class="cat">개인 · 취업·경력</div>
+    <div class="dl">      <a href="/files/reference-check-consent/reference-check-consent.pdf" download="평판조회 동의서.pdf" title="평판조회 동의서 PDF 다운로드">PDF</a>
+      <a href="/files/reference-check-consent/reference-check-consent.docx" download="평판조회 동의서.docx" title="평판조회 동의서 Word 다운로드">Word</a>
+      <a href="/files/reference-check-consent/reference-check-consent.hwpx" download="평판조회 동의서.hwpx" title="평판조회 동의서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -416,7 +591,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

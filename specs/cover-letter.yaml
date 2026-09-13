@@ -11,6 +11,10 @@ usage: >
 source: original
 featured: true
 featured_rank: 2
+series: cover-letter
+series_name: 자기소개서
+variant: 기본형
+variant_rank: 1
 target_pages: 2
 blocks:
   - type: doc_title
@@ -21,36 +25,45 @@ blocks:
     row_height_mm: 8
     rows:
       - ["성명", "", "지원분야", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "마케팅", "", "010-1234-5678"]
   - type: subtitle
     text: 1. 성장과정 및 가치관
   - type: textbox
     hint: "가정환경, 학창시절, 형성된 가치관을 중심으로 작성하십시오."
     height_mm: 33
+    sample_text: 어릴 적부터 의견을 조율하는 역할을 맡으며 책임감과 소통의 가치를 배웠습니다. 부모님은 스스로 계획하고 실천하는 태도를 강조하셨고, 이는 목표를 끝까지 완수하는 습관으로 이어졌습니다. 이러한 경험을 바탕으로 팀 안에서 신뢰를 쌓는 사람이 되고자 노력하고 있습니다.
   - type: subtitle
     text: 2. 성격의 장점 및 보완점
   - type: textbox
     hint: "장점은 근거가 되는 경험과 함께, 보완점은 개선 노력과 함께 작성하십시오."
     height_mm: 30
+    sample_text: 저의 장점은 꾸준함입니다. 대학 시절 교내 마케팅 동아리에서 2년간 활동하며 매주 시장 분석 보고서를 작성한 경험이 이를 보여줍니다. 보완점은 완벽을 추구하다 속도가 느려지는 것인데, 우선순위를 정해 일정을 미리 나누는 방식으로 개선하고 있습니다.
   - type: subtitle
     text: 3. 학내외 활동 및 직무 관련 경험
   - type: textbox
     hint: "직무와 연관된 경험을 상황-행동-결과 순서로 구체적으로 작성하십시오."
     height_mm: 33
+    sample_text: 교내 마케팅 동아리에서 신제품 홍보 캠페인을 기획해 SNS 팔로워를 3개월간 40% 늘린 경험이 있습니다. 목표 고객층을 분석해 콘텐츠 주제를 정하고, 주 2회 콘텐츠를 제작·배포하며 참여율을 꾸준히 높인 결과 캠페인 우수상을 수상했습니다.
   - type: subtitle
     text: 4. 지원동기
   - type: textbox
     hint: "회사를 선택한 이유와 해당 직무를 지원한 이유를 함께 작성하십시오."
     height_mm: 30
+    sample_text: (주)한빛커머스의 데이터 기반 마케팅 전략에 관심을 갖게 되어 지원하였습니다. 동아리 활동에서 쌓은 콘텐츠 기획 경험을 살려 고객 데이터를 분석하고 실행 가능한 마케팅 전략을 제안하는 마케터가 되고 싶습니다.
   - type: subtitle
     text: 5. 입사 후 포부 및 계획
   - type: textbox
     hint: "입사 후 단기(1년)·중장기(3~5년) 목표를 나누어 작성하십시오."
     height_mm: 30
+    sample_text: 입사 후 1년은 회사의 마케팅 프로세스와 데이터 분석 도구를 익혀 담당 채널의 성과를 안정적으로 관리하겠습니다. 3~5년 차에는 캠페인을 직접 기획·운영하며 신규 고객 유입 성과를 높이는 마케터로 성장하겠습니다.
   - type: para
     text: 위 내용은 사실과 다름이 없음을 확인합니다.
     align: center
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월   13 일
   - type: sign_line
     label: 지원자
+    sample_names: [김서연]

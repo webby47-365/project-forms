@@ -1,0 +1,67 @@
+id: balance-confirmation
+title: 채권·채무 잔액확인서
+category: corp
+subcategory: finance
+tags: [잔액확인서, 채권채무확인서, 거래처잔액조회, 외상매출확인, balance-confirmation]
+summary: 기준일자 당사와 거래처의 장부금액을 대조해 채권·채무 잔액 일치 여부를 확인하는 문서입니다.
+usage: >
+  결산이나 외부감사 전에 거래처와 장부상 잔액이 일치하는지 상호 대조하기 위해 작성하는
+  문서입니다. 계정과목별로 당사 장부금액과 귀사 장부금액을 나란히 적고 차이가 있으면
+  사유를 구체적으로 기재합니다. 기준일자를 명확히 표기해야 비교 시점이 흐트러지지 않고,
+  차이가 확인되면 재대사 후 양측이 다시 서명해야 최종 확정됩니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 채권·채무 잔액확인서
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["요청자(당사)", "", "상대처(귀사)", ""]
+      - ["사업자등록번호", "", "사업자등록번호", ""]
+      - ["담당자/연락처", "", "담당자/연락처", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "(주)새길데이터"]
+      - ["", "000-00-00000", "", "000-00-00000"]
+      - ["", "김서연 / 02-1234-5678", "", "이수현 / 02-2345-6789"]
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["기준일자", ""]
+    sample_rows:
+      - ["", "2026-09-30"]
+  - type: subtitle
+    text: 잔액 내역
+  - type: table
+    widths: [18, 22, 22, 18, 20]
+    header: [계정과목, "당사 장부금액", "귀사 장부금액", 차이, 사유]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["외상매출금", "15,000,000", "15,000,000", "0", "-"]
+      - ["외상매입금", "8,000,000", "8,500,000", "500,000", "세금계산서 미반영분"]
+      - ["선수금", "2,000,000", "2,000,000", "0", "-"]
+  - type: para
+    text: 위와 같이 양사의 채권·채무 잔액을 기준일자로 대조하여 확인합니다. 차이가 있는 항목은 사유를 확인한 후 재대사합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+  - type: sign_line
+    label: 당사(직인)
+    sample_names: ["(주)한빛커머스 대표이사 김서연"]
+  - type: sign_line
+    label: 귀사(직인)
+    sample_names: ["(주)새길데이터 대표이사 이수현"]
+  - type: notice
+    text: 금액 차이가 확인된 경우 양측이 사유를 재검토한 후 정정하여 다시 확인하여 주시기 바랍니다.

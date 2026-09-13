@@ -26,6 +26,9 @@ blocks:
     rows:
       - ["성명", "", "생년월일", ""]
       - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "이수현", "", "1995-09-21"]
+      - ["", "010-1234-5678", "", "suhyeon.lee@example.com"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -69,6 +72,9 @@ blocks:
     rows:
       - ["사용 시작일", ""]
       - ["사용 종료일", ""]
+    sample_rows:
+      - ["", "2026-09-13"]
+      - ["", "2027-09-12"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -80,6 +86,9 @@ blocks:
     rows:
       - ["성명", "", "관계", ""]
       - ["연락처", "", "동의여부", ""]
+    sample_rows:
+      - ["", "해당없음", "", "해당없음"]
+      - ["", "해당없음", "", "해당없음"]
   - type: spacer
     height_pt: 4
   - type: para
@@ -88,9 +97,11 @@ blocks:
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: spacer
     height_pt: 2
   - type: sign_line
     labels: ["피촬영자", "법정대리인(미성년자)"]
+    sample_names: [이수현, ""]
   - type: notice
     text: 촬영·이용 내용 변경 시 사전 동의를 다시 받아야 하며, 미성년자는 부모 또는 법정대리인 동의가 필수입니다.

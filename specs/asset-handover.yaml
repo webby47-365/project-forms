@@ -1,0 +1,77 @@
+id: asset-handover
+title: 자산 인수인계서
+category: corp
+subcategory: admin
+version: 1
+created_by: agent
+status: published
+tags: [자산인수인계서, 업무인수인계, 인수인계서, 자산반납, handover]
+summary: 부서 이동이나 퇴사 시 인계자가 보유한 자산과 계정 권한을 인수자에게 넘기는 인수인계서입니다.
+usage: >
+  인사이동이나 퇴사로 업무를 이어받을 때 보유 자산과 시스템 계정을 명확히 인계하기
+  위한 서류입니다. 인계 자산은 자산번호와 상태를 함께 적어 분실·파손 책임을
+  분명히 하고, 계정·권한 인계 표에는 접속정보와 인계 방법을 구체적으로 기재합니다.
+  특이사항에는 추후 확인이 필요한 사항을 남기고 입회자와 함께 서명하십시오.
+source: original
+featured: false
+target_pages: 1
+blocks:
+  - type: doc_title
+    text: 자산 인수인계서
+    spaced: true
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["인계자", "", "인수자", ""]
+      - ["인계부서", "", "인수부서", ""]
+      - ["인수인계일", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "박민준"]
+      - ["", "총무팀", "", "마케팅팀"]
+      - ["", "2026-09-13", "", ""]
+
+  - type: subtitle
+    text: 1. 인계 자산
+
+  - type: table
+    widths: [8, 24, 18, 10, 15, 25]
+    header: ["No", 자산명, 자산번호, 수량, 상태, 비고]
+    empty_rows: 6
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "업무용 노트북", "AST-2023-041", "1", "양호", "충전기 포함"]
+      - ["2", "모니터", "AST-2022-118", "1", "양호", "-"]
+      - ["3", "사원증", "ID-30215", "1", "정상", "출입카드 포함"]
+
+  - type: subtitle
+    text: 2. 계정 및 권한 인계
+
+  - type: table
+    widths: [22, 28, 28, 22]
+    header: ["시스템/계정", 접속정보, "인계 방법", 비고]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["그룹웨어 계정", "hong.gd@example.com", "비밀번호 재설정 후 인계", "기존 이력 유지"]
+      - ["영업관리시스템", "사번 연동 계정", "권한 이전 신청 완료", "IT팀 처리"]
+
+  - type: subtitle
+    text: 3. 특이사항
+
+  - type: textbox
+    hint: "추후 확인이 필요한 사항이나 별도 보관 중인 물품을 기재하십시오."
+    height_mm: 16
+    sample_text: 모니터 받침대는 별도 보관함에서 인계하며, 사원증은 퇴사 처리 후 총무팀에 반납 예정입니다.
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    labels: [인계자, 인수자, 입회자]
+    sample_names: [홍길동, 박민준, 김서연]

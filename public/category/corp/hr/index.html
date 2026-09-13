@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>기업 인사·노무 서식 15종 — 무료서식 다운로드</title>
-<meta name="description" content="기업 인사·노무 분야 무료 서식 15종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<title>기업 인사·노무 서식 30종 — 무료서식 다운로드</title>
+<meta name="description" content="기업 인사·노무 분야 무료 서식 30종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <link rel="canonical" href="https://freeforms.kr/category/corp/hr/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="기업 인사·노무 서식 15종 — 무료서식 다운로드">
-<meta property="og:description" content="기업 인사·노무 분야 무료 서식 15종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
+<meta property="og:title" content="기업 인사·노무 서식 30종 — 무료서식 다운로드">
+<meta property="og:description" content="기업 인사·노무 분야 무료 서식 30종. 양식 미리보기 후 PDF·Word·한글로 다운로드하세요.">
 <meta property="og:site_name" content="무료서식 다운로드">
 <meta name="naver-site-verification" content="84f0aadaca88d57ca53e9c0eb1b5705bb0a29425">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -160,6 +160,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 
 /* 상세 */
 .detail{display:grid; grid-template-columns:1.05fr 1fr; gap:36px; align-items:start}
+/* 그리드 칸의 기본 min-width:auto 는 안쪽 미리보기 이미지(800px)를 따라가 좁은 화면에서
+   가로 스크롤을 만든다. 0으로 낮춰야 화면 폭에 맞춰 줄어든다. */
+.detail > *{min-width:0}
+.detail img{max-width:100%}
 .preview{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-2)}
 .preview img:last-child{border-bottom:0}
@@ -183,6 +187,23 @@ aside.side .n{font-size:12px; color:var(--muted)}
   padding:4px 11px; font-size:12.5px; color:#475467}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
+
+/* 미리보기 안내 — 화면은 작성 예시, 받는 파일은 빈 양식임을 알린다 */
+.preview-note{display:flex; gap:8px; align-items:flex-start; margin:10px 0 0;
+  padding:10px 12px; border:1px solid var(--line-2); border-radius:8px;
+  background:var(--bg-soft); font-size:12.5px; color:#475467; line-height:1.6}
+.preview-note b{color:var(--navy); font-weight:700}
+
+/* 계열(같은 서식의 실무 변형) 목록 */
+.series-box{margin:20px 0 0; border:1px solid var(--line); border-radius:var(--radius);
+  padding:15px 16px; background:#fff}
+.series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
+.series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
+.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
+  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+.series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
 /* 푸터 */
 footer.site{border-top:1px solid var(--line); background:var(--bg-soft); padding:30px 0; margin-top:20px}
@@ -283,47 +304,47 @@ footer.site li{margin:3px 0}
 <main><div class="wrap">
   <div class="crumb"><a href="/">홈</a> › 기업 › 인사·노무</div>
   <h1 class="page">기업 · 인사·노무</h1>
-  <p class="lead">15종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
+  <p class="lead">30종의 서식을 양식 미리보기로 확인하고 PDF · Word · 한글로 받을 수 있습니다.</p>
 
   <div class="cols">
     <aside class="side">      <h3>기업</h3>
       <ul>        <li><a href="/category/corp/hr/"
                class="on">
-          <span>인사·노무</span><span class="n">15</span></a></li>        <li><a href="/category/corp/admin/"
+          <span>인사·노무</span><span class="n">30</span></a></li>        <li><a href="/category/corp/admin/"
                class="">
-          <span>총무·행정</span><span class="n">10</span></a></li>        <li><a href="/category/corp/finance/"
+          <span>총무·행정</span><span class="n">23</span></a></li>        <li><a href="/category/corp/finance/"
                class="">
-          <span>회계·세무</span><span class="n">11</span></a></li>        <li><a href="/category/corp/sales/"
+          <span>회계·세무</span><span class="n">22</span></a></li>        <li><a href="/category/corp/sales/"
                class="">
-          <span>영업·마케팅</span><span class="n">4</span></a></li>        <li><a href="/category/corp/startup/"
+          <span>영업·마케팅</span><span class="n">13</span></a></li>        <li><a href="/category/corp/startup/"
                class="">
-          <span>창업·법인</span><span class="n">4</span></a></li>      </ul>      <h3>법률</h3>
+          <span>창업·법인</span><span class="n">11</span></a></li>      </ul>      <h3>법률</h3>
       <ul>        <li><a href="/category/legal/contract/"
                class="">
-          <span>계약</span><span class="n">7</span></a></li>        <li><a href="/category/legal/notice/"
+          <span>계약</span><span class="n">17</span></a></li>        <li><a href="/category/legal/notice/"
                class="">
-          <span>통지·증명</span><span class="n">8</span></a></li>        <li><a href="/category/legal/litigation/"
+          <span>통지·증명</span><span class="n">15</span></a></li>        <li><a href="/category/legal/litigation/"
                class="">
-          <span>소송·민원</span><span class="n">4</span></a></li>      </ul>      <h3>공공</h3>
+          <span>소송·민원</span><span class="n">10</span></a></li>      </ul>      <h3>공공</h3>
       <ul>        <li><a href="/category/public/civil/"
                class="">
-          <span>민원·신고</span><span class="n">5</span></a></li>        <li><a href="/category/public/consent/"
+          <span>민원·신고</span><span class="n">10</span></a></li>        <li><a href="/category/public/consent/"
                class="">
-          <span>신청·동의</span><span class="n">7</span></a></li>      </ul>      <h3>부동산</h3>
+          <span>신청·동의</span><span class="n">12</span></a></li>      </ul>      <h3>부동산</h3>
       <ul>        <li><a href="/category/estate/lease/"
                class="">
-          <span>임대·매매</span><span class="n">3</span></a></li>      </ul>      <h3>개인</h3>
+          <span>임대·매매</span><span class="n">11</span></a></li>      </ul>      <h3>개인</h3>
       <ul>        <li><a href="/category/personal/career/"
                class="">
-          <span>취업·경력</span><span class="n">6</span></a></li>        <li><a href="/category/personal/life/"
+          <span>취업·경력</span><span class="n">20</span></a></li>        <li><a href="/category/personal/life/"
                class="">
-          <span>생활·가정</span><span class="n">6</span></a></li>      </ul>      <h3>교육</h3>
+          <span>생활·가정</span><span class="n">15</span></a></li>      </ul>      <h3>교육</h3>
       <ul>        <li><a href="/category/edu/school/"
                class="">
-          <span>학교·학원</span><span class="n">6</span></a></li>      </ul>      <h3>의료·복지</h3>
+          <span>학교·학원</span><span class="n">16</span></a></li>      </ul>      <h3>의료·복지</h3>
       <ul>        <li><a href="/category/welfare/consent/"
                class="">
-          <span>동의·신청</span><span class="n">2</span></a></li>      </ul>      
+          <span>동의·신청</span><span class="n">10</span></a></li>      </ul>      
     </aside>
 
     <div>      <div class="grid g4">        <article class="card">
@@ -335,6 +356,17 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/career-certificate/career-certificate.pdf" download="경력증명서.pdf" title="경력증명서 PDF 다운로드">PDF</a>
       <a href="/files/career-certificate/career-certificate.docx" download="경력증명서.docx" title="경력증명서 Word 다운로드">Word</a>
       <a href="/files/career-certificate/career-certificate.hwpx" download="경력증명서.hwpx" title="경력증명서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/explanation-statement/" aria-label="경위서 미리보기">
+    <img src="/files/explanation-statement/preview-1.webp" alt="경위서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/explanation-statement/">경위서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/explanation-statement/explanation-statement.pdf" download="경위서.pdf" title="경위서 PDF 다운로드">PDF</a>
+      <a href="/files/explanation-statement/explanation-statement.docx" download="경위서.docx" title="경위서 Word 다운로드">Word</a>
+      <a href="/files/explanation-statement/explanation-statement.hwpx" download="경위서.hwpx" title="경위서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -382,6 +414,39 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/labor-contract-parttime/" aria-label="단시간 근로계약서 미리보기">
+    <img src="/files/labor-contract-parttime/preview-1.webp" alt="단시간 근로계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/labor-contract-parttime/">단시간 근로계약서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/labor-contract-parttime/labor-contract-parttime.pdf" download="단시간 근로계약서.pdf" title="단시간 근로계약서 PDF 다운로드">PDF</a>
+      <a href="/files/labor-contract-parttime/labor-contract-parttime.docx" download="단시간 근로계약서.docx" title="단시간 근로계약서 Word 다운로드">Word</a>
+      <a href="/files/labor-contract-parttime/labor-contract-parttime.hwpx" download="단시간 근로계약서.hwpx" title="단시간 근로계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/interview-evaluation/" aria-label="면접 평가표 미리보기">
+    <img src="/files/interview-evaluation/preview-1.webp" alt="면접 평가표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/interview-evaluation/">면접 평가표</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/interview-evaluation/interview-evaluation.pdf" download="면접 평가표.pdf" title="면접 평가표 PDF 다운로드">PDF</a>
+      <a href="/files/interview-evaluation/interview-evaluation.docx" download="면접 평가표.docx" title="면접 평가표 Word 다운로드">Word</a>
+      <a href="/files/interview-evaluation/interview-evaluation.hwpx" download="면접 평가표.hwpx" title="면접 평가표 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/mbo-sheet/" aria-label="목표관리(MBO) 평가표 미리보기">
+    <img src="/files/mbo-sheet/preview-1.webp" alt="목표관리(MBO) 평가표 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/mbo-sheet/">목표관리(MBO) 평가표</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/mbo-sheet/mbo-sheet.pdf" download="목표관리(MBO) 평가표.pdf" title="목표관리(MBO) 평가표 PDF 다운로드">PDF</a>
+      <a href="/files/mbo-sheet/mbo-sheet.docx" download="목표관리(MBO) 평가표.docx" title="목표관리(MBO) 평가표 Word 다운로드">Word</a>
+      <a href="/files/mbo-sheet/mbo-sheet.hwpx" download="목표관리(MBO) 평가표.hwpx" title="목표관리(MBO) 평가표 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/resignation-letter/" aria-label="사직서 미리보기">
     <img src="/files/resignation-letter/preview-1.webp" alt="사직서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -390,6 +455,28 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/resignation-letter/resignation-letter.pdf" download="사직서.pdf" title="사직서 PDF 다운로드">PDF</a>
       <a href="/files/resignation-letter/resignation-letter.docx" download="사직서.docx" title="사직서 Word 다운로드">Word</a>
       <a href="/files/resignation-letter/resignation-letter.hwpx" download="사직서.hwpx" title="사직서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/resignation-simple/" aria-label="사직서 (간편형) 미리보기">
+    <img src="/files/resignation-simple/preview-1.webp" alt="사직서 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/resignation-simple/">사직서 (간편형)</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/resignation-simple/resignation-simple.pdf" download="사직서 (간편형).pdf" title="사직서 (간편형) PDF 다운로드">PDF</a>
+      <a href="/files/resignation-simple/resignation-simple.docx" download="사직서 (간편형).docx" title="사직서 (간편형) Word 다운로드">Word</a>
+      <a href="/files/resignation-simple/resignation-simple.hwpx" download="사직서 (간편형).hwpx" title="사직서 (간편형) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/probation-evaluation/" aria-label="수습 평가서 미리보기">
+    <img src="/files/probation-evaluation/preview-1.webp" alt="수습 평가서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/probation-evaluation/">수습 평가서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/probation-evaluation/probation-evaluation.pdf" download="수습 평가서.pdf" title="수습 평가서 PDF 다운로드">PDF</a>
+      <a href="/files/probation-evaluation/probation-evaluation.docx" download="수습 평가서.docx" title="수습 평가서 Word 다운로드">Word</a>
+      <a href="/files/probation-evaluation/probation-evaluation.hwpx" download="수습 평가서.hwpx" title="수습 평가서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -404,6 +491,39 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/handover-report/" aria-label="업무 인수인계서 미리보기">
+    <img src="/files/handover-report/preview-1.webp" alt="업무 인수인계서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/handover-report/">업무 인수인계서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/handover-report/handover-report.pdf" download="업무 인수인계서.pdf" title="업무 인수인계서 PDF 다운로드">PDF</a>
+      <a href="/files/handover-report/handover-report.docx" download="업무 인수인계서.docx" title="업무 인수인계서 Word 다운로드">Word</a>
+      <a href="/files/handover-report/handover-report.hwpx" download="업무 인수인계서.hwpx" title="업무 인수인계서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/labor-contract-minor/" aria-label="연소근로자 근로계약서 미리보기">
+    <img src="/files/labor-contract-minor/preview-1.webp" alt="연소근로자 근로계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/labor-contract-minor/">연소근로자 근로계약서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/labor-contract-minor/labor-contract-minor.pdf" download="연소근로자 근로계약서.pdf" title="연소근로자 근로계약서 PDF 다운로드">PDF</a>
+      <a href="/files/labor-contract-minor/labor-contract-minor.docx" download="연소근로자 근로계약서.docx" title="연소근로자 근로계약서 Word 다운로드">Word</a>
+      <a href="/files/labor-contract-minor/labor-contract-minor.hwpx" download="연소근로자 근로계약서.hwpx" title="연소근로자 근로계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/overtime-application/" aria-label="연장·휴일근로 신청서 미리보기">
+    <img src="/files/overtime-application/preview-1.webp" alt="연장·휴일근로 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/overtime-application/">연장·휴일근로 신청서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/overtime-application/overtime-application.pdf" download="연장·휴일근로 신청서.pdf" title="연장·휴일근로 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/overtime-application/overtime-application.docx" download="연장·휴일근로 신청서.docx" title="연장·휴일근로 신청서 Word 다운로드">Word</a>
+      <a href="/files/overtime-application/overtime-application.hwpx" download="연장·휴일근로 신청서.hwpx" title="연장·휴일근로 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/annual-leave-plan/" aria-label="연차사용계획서 미리보기">
     <img src="/files/annual-leave-plan/preview-1.webp" alt="연차사용계획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -415,6 +535,28 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/parental-leave-request/" aria-label="육아휴직 신청서 미리보기">
+    <img src="/files/parental-leave-request/preview-1.webp" alt="육아휴직 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/parental-leave-request/">육아휴직 신청서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/parental-leave-request/parental-leave-request.pdf" download="육아휴직 신청서.pdf" title="육아휴직 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/parental-leave-request/parental-leave-request.docx" download="육아휴직 신청서.docx" title="육아휴직 신청서 Word 다운로드">Word</a>
+      <a href="/files/parental-leave-request/parental-leave-request.hwpx" download="육아휴직 신청서.hwpx" title="육아휴직 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/performance-evaluation/" aria-label="인사고과표 미리보기">
+    <img src="/files/performance-evaluation/preview-1.webp" alt="인사고과표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/performance-evaluation/">인사고과표</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/performance-evaluation/performance-evaluation.pdf" download="인사고과표.pdf" title="인사고과표 PDF 다운로드">PDF</a>
+      <a href="/files/performance-evaluation/performance-evaluation.docx" download="인사고과표.docx" title="인사고과표 Word 다운로드">Word</a>
+      <a href="/files/performance-evaluation/performance-evaluation.hwpx" download="인사고과표.hwpx" title="인사고과표 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/personnel-order/" aria-label="인사발령통지서 미리보기">
     <img src="/files/personnel-order/preview-1.webp" alt="인사발령통지서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -423,6 +565,17 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/personnel-order/personnel-order.pdf" download="인사발령통지서.pdf" title="인사발령통지서 PDF 다운로드">PDF</a>
       <a href="/files/personnel-order/personnel-order.docx" download="인사발령통지서.docx" title="인사발령통지서 Word 다운로드">Word</a>
       <a href="/files/personnel-order/personnel-order.hwpx" download="인사발령통지서.hwpx" title="인사발령통지서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/labor-contract-daily/" aria-label="일용직 근로계약서 미리보기">
+    <img src="/files/labor-contract-daily/preview-1.webp" alt="일용직 근로계약서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/labor-contract-daily/">일용직 근로계약서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/labor-contract-daily/labor-contract-daily.pdf" download="일용직 근로계약서.pdf" title="일용직 근로계약서 PDF 다운로드">PDF</a>
+      <a href="/files/labor-contract-daily/labor-contract-daily.docx" download="일용직 근로계약서.docx" title="일용직 근로계약서 Word 다운로드">Word</a>
+      <a href="/files/labor-contract-daily/labor-contract-daily.hwpx" download="일용직 근로계약서.hwpx" title="일용직 근로계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -448,6 +601,28 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>        <article class="card">
+  <a class="thumb" href="/form/job-description/" aria-label="직무기술서 미리보기">
+    <img src="/files/job-description/preview-1.webp" alt="직무기술서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/job-description/">직무기술서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/job-description/job-description.pdf" download="직무기술서.pdf" title="직무기술서 PDF 다운로드">PDF</a>
+      <a href="/files/job-description/job-description.docx" download="직무기술서.docx" title="직무기술서 Word 다운로드">Word</a>
+      <a href="/files/job-description/job-description.hwpx" download="직무기술서.hwpx" title="직무기술서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/disciplinary-notice/" aria-label="징계 통보서 미리보기">
+    <img src="/files/disciplinary-notice/preview-1.webp" alt="징계 통보서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/disciplinary-notice/">징계 통보서</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/disciplinary-notice/disciplinary-notice.pdf" download="징계 통보서.pdf" title="징계 통보서 PDF 다운로드">PDF</a>
+      <a href="/files/disciplinary-notice/disciplinary-notice.docx" download="징계 통보서.docx" title="징계 통보서 Word 다운로드">Word</a>
+      <a href="/files/disciplinary-notice/disciplinary-notice.hwpx" download="징계 통보서.hwpx" title="징계 통보서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
   <a class="thumb" href="/form/business-trip-request/" aria-label="출장신청서 미리보기">
     <img src="/files/business-trip-request/preview-1.webp" alt="출장신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -467,6 +642,17 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/severance-calculation/severance-calculation.pdf" download="퇴직금 정산서.pdf" title="퇴직금 정산서 PDF 다운로드">PDF</a>
       <a href="/files/severance-calculation/severance-calculation.docx" download="퇴직금 정산서.docx" title="퇴직금 정산서 Word 다운로드">Word</a>
       <a href="/files/severance-calculation/severance-calculation.hwpx" download="퇴직금 정산서.hwpx" title="퇴직금 정산서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>        <article class="card">
+  <a class="thumb" href="/form/retirement-application/" aria-label="퇴직원 미리보기">
+    <img src="/files/retirement-application/preview-1.webp" alt="퇴직원 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/retirement-application/">퇴직원</a>
+    <div class="cat">기업 · 인사·노무</div>
+    <div class="dl">      <a href="/files/retirement-application/retirement-application.pdf" download="퇴직원.pdf" title="퇴직원 PDF 다운로드">PDF</a>
+      <a href="/files/retirement-application/retirement-application.docx" download="퇴직원.docx" title="퇴직원 Word 다운로드">Word</a>
+      <a href="/files/retirement-application/retirement-application.hwpx" download="퇴직원.hwpx" title="퇴직원 한글 다운로드">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -515,7 +701,7 @@ footer.site li{margin:3px 0}
       본 사이트에서 제공하는 서식은 일반적인 참고용 양식입니다. 개별 사안에 대한 법적 효력과 적합성은
       이용자가 확인해야 하며, 서식 사용으로 발생한 결과에 대해 책임을 지지 않습니다.
       법률·세무 판단이 필요한 경우 전문가의 조언을 받으시기 바랍니다.<br>
-      회원가입과 개인정보 수집을 하지 않습니다. · 서식 98종 · 최종 업데이트 2026-09-14
+      회원가입과 개인정보 수집을 하지 않습니다. · 서식 235종 · 최종 업데이트 2026-09-14
     </p>
   </div>
 </footer>

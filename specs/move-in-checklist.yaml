@@ -1,0 +1,85 @@
+id: move-in-checklist
+title: 입주 점검표
+category: estate
+subcategory: lease
+tags: [입주점검표, 입주체크리스트, 하자점검표, 입주전점검, 설비점검표]
+summary: 입주 전 공간별·설비별 상태를 점검하고 하자 여부를 임대인·임차인이 함께 확인하는 점검표입니다.
+usage: >
+  임차인이 입주하기 전에 현관·거실·주방·욕실 등 공간별 상태와 보일러·수도·전기 등 설비
+  작동 여부를 점검하여 기록하는 서식입니다. 상태가 양호하지 않은 항목은 보수필요로 표시하고
+  비고에 구체적인 내용을 적으십시오. 하자가 있으면 사진을 촬영해 파일명을 적거나 별지로
+  첨부해 두면 퇴거 시 원상복구 분쟁을 줄일 수 있습니다. 점검이 끝나면 임대인과 임차인이
+  함께 서명하여 각각 보관하십시오.
+source: original
+featured: false
+target_pages: 2
+created_by: agent
+status: published
+version: 1
+blocks:
+  - type: doc_title
+    text: 입주 점검표
+    spaced: false
+  - type: subtitle
+    text: 1. 목적물 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["주소", "", "면적", ""]
+      - ["입주일", "", "점검자", ""]
+    sample_rows:
+      - ["", "서울특별시 마포구 월드컵북로 100, 202동 1503호", "", "84.95㎡"]
+      - ["", "2026-10-01", "", "홍길동"]
+  - type: subtitle
+    text: 2. 공간별 점검
+  - type: table
+    widths: [15, 35, 25, 25]
+    header: ["공간", "점검항목", "상태(양호/보수필요)", "비고"]
+    empty_rows: 10
+    row_height_mm: 7
+    sample_rows:
+      - ["현관", "신발장·조명 작동", "양호", ""]
+      - ["거실", "벽지·바닥·창문 상태", "양호", ""]
+      - ["주방", "수전·후드·타일 누수", "보수필요", "타일 틈 실리콘 보강 필요"]
+      - ["욕실", "배수·환풍기·타일", "양호", ""]
+      - ["침실", "벽지·콘센트·창문", "양호", ""]
+      - ["발코니", "방수·배수구·창틀", "양호", ""]
+  - type: subtitle
+    text: 3. 설비 점검
+  - type: table
+    widths: [25, 25, 50]
+    header: ["설비 항목", "작동 여부", "비고"]
+    empty_rows: 8
+    row_height_mm: 7
+    sample_rows:
+      - ["보일러", "정상", "2024년식, 소음 없음"]
+      - ["수도", "정상", ""]
+      - ["전기(콘센트·조명)", "정상", "안방 콘센트 1개 헐거움"]
+      - ["배수(하수구)", "정상", ""]
+  - type: subtitle
+    text: 4. 하자 사진 첨부
+  - type: textbox
+    hint: "발견된 하자 사진을 별지로 첨부하거나 촬영 파일명을 기재하십시오."
+    height_mm: 16
+    sample_text: "사진 파일: 주방타일_20261001_01.jpg, 안방콘센트_20261001_02.jpg (별지 첨부)"
+  - type: subtitle
+    text: 5. 확인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["임대인", "", "연락처", ""]
+      - ["임차인", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-1234-5678"]
+      - ["", "홍길동", "", "010-9876-5432"]
+  - type: date_line
+    sample_text: 2026 년   10 월    1 일
+  - type: sign_line
+    labels: ["임대인", "임차인"]
+    sample_names: [김서연, 홍길동]
+  - type: notice
+    text: 점검 결과는 원상복구 분쟁을 줄이기 위한 참고 자료이므로 사진과 함께 보관하십시오.

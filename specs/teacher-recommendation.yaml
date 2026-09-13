@@ -1,0 +1,85 @@
+id: teacher-recommendation
+title: 교사 추천서
+category: edu
+subcategory: school
+tags: [교사추천서, 학생추천서, 입시추천서, 교사의견서, 지도교사추천]
+summary: 지도교사가 대상 학생의 역량을 항목별로 평가하고 구체적 사례와 추천 사유를 적는 추천서입니다.
+usage: >
+  입시나 장학 지원을 위해 지도교사가 학생을 추천할 때 쓰는 서식입니다. 추천 대상과
+  지원 분야를 먼저 밝히고, 추천인의 소속과 대상자와 함께한 지도 기간을 적어 신뢰도를
+  뒷받침합니다. 평가 항목표는 학업 역량·성실성·리더십·협업·잠재력 등을 우수·양호·보통으로
+  나누어 표시하고 구체적인 관찰 사례를 함께 적으십시오. 추천 사유는 근거가 되는 사례를
+  들어 구체적으로 작성하고, 날짜와 추천인 서명·직인을 빠뜨리지 마십시오.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+
+blocks:
+  - type: doc_title
+    text: 교사 추천서
+
+  - type: subtitle
+    text: 1. 추천 대상
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "학교·학년", ""]
+      - ["지원 분야", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "한빛고등학교 2학년"]
+      - ["", "이공계열 학생부종합전형", "", ""]
+
+  - type: subtitle
+    text: 2. 추천인
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "연락처", ""]
+      - ["대상자와의 관계·지도 기간", "", "", ""]
+    sample_rows:
+      - ["", "김서연", "", "한빛고등학교"]
+      - ["", "담임교사", "", "010-1234-5678"]
+      - ["", "담임교사로 2년간 지도", "", ""]
+
+  - type: subtitle
+    text: 3. 평가 항목
+
+  - type: table
+    widths: [18, 18, 64]
+    header: [항목, "평가(우수·양호·보통)", 구체적 사례]
+    empty_rows: 5
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["학업 역량", "우수", "수학·과학 교내경시대회에서 2년 연속 입상함"]
+      - ["성실성", "우수", "과제와 수행평가를 기한 내 꼼꼼하게 제출함"]
+      - ["리더십", "양호", "학급 자치회 부회장으로 학급 행사를 주도함"]
+      - ["협업", "우수", "모둠 활동에서 역할을 조율하며 갈등을 중재함"]
+
+  - type: subtitle
+    text: 4. 추천 사유
+
+  - type: textbox
+    hint: "구체적인 관찰 사례를 들어 추천 사유를 작성하십시오."
+    height_mm: 50
+    sample_text: 학업에 대한 꾸준한 성실성과 또래를 이끄는 리더십을 갖추었으며, 모둠 과제를 통해 협업 능력을 꾸준히 보여 이 분야에 적합한 학생으로 추천합니다.
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 추천인(서명 또는 인)
+    sample_names: [김서연]
+
+  - type: notice
+    text: 제출처의 요구에 따라 학교장 직인이나 밀봉 제출이 필요할 수 있으니 제출 방식을 확인하십시오.

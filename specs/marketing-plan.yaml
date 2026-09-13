@@ -1,0 +1,95 @@
+id: marketing-plan
+title: 마케팅 기획서
+category: corp
+subcategory: sales
+tags: [마케팅기획서, 캠페인기획, 마케팅계획, 마케팅전략, marketing plan]
+summary: 캠페인 개요와 시장 분석, 목표·실행 전략·예산을 체계적으로 정리하는 마케팅 기획서입니다.
+usage: >
+  신제품 출시나 프로모션 등 마케팅 활동을 시작하기 전에 작성하는 기획 문서입니다.
+  시장·고객 분석을 바탕으로 측정 가능한 목표를 세우고, 채널별 실행 전략과 예산을
+  구체적으로 산정합니다. 기대효과를 함께 제시해 결재자가 투자 대비 효과를 판단할
+  수 있도록 합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 마케팅 기획서
+
+  - type: grid
+    widths: [14, 26, 14, 16, 14, 16]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["캠페인명", "", "기간", "", "담당", ""]
+      - ["대상", "", "예산", "", "", ""]
+    merges:
+      - [1, 3, 1, 5]
+    sample_rows:
+      - ["", "가을 신제품 런칭 캠페인", "", "10/1~10/31", "", "홍길동"]
+      - ["", "기존 거래처 및 신규 유입 고객", "", "1,500만원", "", ""]
+
+  - type: subtitle
+    text: 1. 시장·고객 분석
+
+  - type: textbox
+    hint: "시장 동향과 타깃 고객의 특성·니즈를 기재하십시오."
+    height_mm: 20
+    sample_text: 사무용품 시장은 온라인 구매 비중이 확대되는 추세. 주요 고객은 중소기업 구매담당자로, 가격과 납기 안정성을 중시함.
+
+  - type: subtitle
+    text: 2. 목표
+
+  - type: table
+    widths: [22, 20, 20, 38]
+    header: [지표, 현재, 목표, 측정방법]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["신규 리드 수", "30건/월", "50건/월", "랜딩페이지 폼 집계"]
+      - ["전환율", "4%", "6%", "CRM 전환 데이터 분석"]
+
+  - type: subtitle
+    text: 3. 실행 전략
+
+  - type: table
+    widths: [16, 22, 16, 14, 32]
+    header: [채널, 콘텐츠, 일정, 담당, 예산]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["이메일", "신제품 소개 뉴스레터", "10/1~10/5", "박민준", "50만원"]
+      - ["SNS 광고", "타깃 광고 배너", "10/1~10/31", "홍길동", "400만원"]
+
+  - type: subtitle
+    text: 4. 예산
+
+  - type: table
+    widths: [24, 46, 30]
+    header: [항목, 산출근거, 금액]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["SNS 광고", "CPC 500원 × 8,000클릭", "400만원"]
+      - ["이메일 발송", "발송대행 + 디자인", "50만원"]
+      - ["인쇄물", "전시회 배포용 리플릿 1,000부", "150만원"]
+      - ["합계", "-", "600만원"]
+
+  - type: subtitle
+    text: 5. 기대효과
+
+  - type: textbox
+    hint: "매출·인지도 측면의 기대효과를 기재하십시오."
+    height_mm: 16
+    sample_text: 신규 리드 월 50건 확보로 4분기 매출 약 8% 증가 기대, 브랜드 인지도 제고에도 기여할 것으로 예상.
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    labels: ["작성", "검토", "승인"]
+    sample_names: [홍길동, 김서연, 박민준]

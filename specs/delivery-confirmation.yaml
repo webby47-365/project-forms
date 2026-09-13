@@ -20,6 +20,8 @@ blocks:
     row_height_mm: 8
     rows:
       - ["납품번호", "", "납품일자", "", "발주번호", ""]
+    sample_rows:
+      - ["", "DV-2026-014", "", "2026-09-10", "", "PO-2026-031"]
   - type: subtitle
     text: 공급자 / 수령자
   - type: grid
@@ -30,6 +32,10 @@ blocks:
       - ["공급자 상호", "", "대표자", "", "연락처"]
       - ["수령자 상호", "", "담당자", "", "연락처"]
       - ["납품 장소", "", "", "", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "홍길동", ""]
+      - ["", "(주)새길데이터", "", "김서연", ""]
+      - ["", "본사 물류센터 (서울 마포구)", "", "", ""]
   - type: subtitle
     text: 납품 내역
   - type: table
@@ -38,22 +44,32 @@ blocks:
     empty_rows: 7
     row_height_mm: 8
     body_align: center
+    sample_rows:
+      - ["1", "A4 복사용지", "A4 80g", "BOX", "20", "20", "합격", "-"]
+      - ["2", "토너 카트리지", "HP 26A", "EA", "10", "10", "합격", "-"]
+      - ["3", "사무용 의자", "메쉬형", "EA", "5", "5", "합격", "-"]
+      - ["4", "화이트보드", "120x90", "EA", "2", "2", "합격", "-"]
   - type: grid
     widths: [18, 32, 18, 32]
     label_cols: [0, 2]
     row_height_mm: 8
     rows:
       - ["검수 결과", "합격 / 부분합격 / 불합격", "재납품 기한", ""]
+    sample_rows:
+      - ["", "합격", "", ""]
   - type: textbox
     hint: "불합격·부분합격 시 사유와 조치사항을 구체적으로 기재하십시오."
     height_mm: 18
+    sample_text: 해당 없음 (전 품목 합격)
   - type: para
     text: 위와 같이 납품하였으며 수령자는 이를 확인합니다.
     align: center
     size: 11
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월   10 일
   - type: sign_line
     labels: ["공급자", "수령자"]
+    sample_names: [홍길동, 김서연]
   - type: notice
     text: 본 확인서는 대금 청구의 근거가 되므로 수령자의 서명 또는 날인을 반드시 받고 공급자·수령자가 각각 1부를 보관하십시오.

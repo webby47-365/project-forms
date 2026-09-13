@@ -1,0 +1,90 @@
+id: answer-brief
+title: 답변서
+category: legal
+subcategory: litigation
+tags: [답변서, 소장답변서, 민사답변서, 답변서작성, 소송답변서]
+summary: 원고의 소장에 대하여 피고가 청구취지와 청구원인에 대한 반박을 제출하는 답변서 양식입니다.
+usage: >
+  소장 부본을 받은 피고가 정해진 기간 내에 법원에 제출하는 문서입니다. 원고의 청구취지에
+  대한 결론을 먼저 밝히고, 청구원인 중 인정하는 부분과 다투는 부분을 구분하여 구체적으로
+  기재해야 설득력이 있습니다. 반박을 뒷받침하는 자료는 입증방법 표에 을 제1호증부터
+  순서대로 정리합니다. 제출 기한은 소장 부본을 받은 날로부터 계산되므로 미리 확인하고
+  준비하십시오.
+source: law-standard
+source_note: 민사소송법상 답변서 기재사항을 참고하여 자체 제작
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 답변서
+    spaced: true
+
+  - type: subtitle
+    text: 사건의 표시
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사건번호", "", "사건명", ""]
+      - ["원고", "", "피고", ""]
+    sample_rows:
+      - ["", "2026가소12345", "", "대여금 반환 청구"]
+      - ["", "홍길동", "", "김서연"]
+
+  - type: subtitle
+    text: 청구취지에 대한 답변
+  - type: textbox
+    hint: "원고의 청구취지에 대한 결론(기각을 구하는 취지 등)을 간략히 기재하십시오."
+    height_mm: 20
+    sample_text: 원고의 청구를 기각한다. 소송비용은 원고가 부담한다. 라는 판결을 구합니다.
+
+  - type: subtitle
+    text: 청구원인에 대한 답변
+  - type: textbox
+    hint: "원고가 주장하는 사실관계 중 인정하는 부분과 다투는 부분을 구분하여 기재하십시오."
+    height_mm: 50
+    sample_text: 원고가 2025년 6월 10일 피고에게 금 10,000,000원을 대여한 사실은 인정합니다. 다만 피고는 2025년 12월 중 금 4,000,000원을 원고에게 지급하였고, 나머지 금액에 대하여는 변제기일 연장에 관하여 원고와 협의 중이었습니다. 따라서 원고의 청구는 일부 사실과 다릅니다.
+
+  - type: subtitle
+    text: 입증 방법
+  - type: table
+    widths: [10, 34, 30, 26]
+    header: ["No", 서증명, 내용, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "을 제1호증", "계좌이체 확인서", ""]
+      - ["2", "을 제2호증", "문자메시지 캡처", ""]
+
+  - type: subtitle
+    text: 첨부 서류
+  - type: kv_list
+    items:
+      - "위 입증방법 사본 각 1부"
+      - "답변서 부본 1부"
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 피고
+    sample_names: [김서연]
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: "                        법원  귀중"
+    align: center
+    size: 12
+    bold: true
+    sample_text: 서울서부지방법원  귀중
+
+  - type: notice
+    text: 본 답변서는 참고용 서식이며, 구체적인 답변 내용과 제출 기한은 소장 부본 수령일을 기준으로 확인하고 필요시 법률 전문가의 도움을 받으십시오.

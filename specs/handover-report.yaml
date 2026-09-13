@@ -1,0 +1,78 @@
+id: handover-report
+title: 업무 인수인계서
+category: corp
+subcategory: hr
+tags: [인수인계서, 업무인수인계서, 퇴사 인수인계, 부서이동 인수인계, 업무이관]
+summary: 퇴사·부서이동 시 담당 업무와 미결 사항, 보관 문서·계정을 인계자가 인수자에게 넘기는 인수인계서입니다.
+usage: >
+  퇴사, 휴직, 부서이동 등으로 담당 업무를 다른 사람에게 넘길 때 작성하는 서류입니다.
+  담당 업무별 진행상태와 인수인계 내용을 표로 정리하고, 아직 끝나지 않은 미결 사항과
+  보관 문서·계정 정보의 이관 여부를 빠짐없이 기재합니다. 인계자와 인수자가 함께 내용을
+  확인한 뒤 서명하고, 필요한 경우 입회자(부서장 등)가 함께 확인하면 분쟁을 예방할 수
+  있습니다. 계정 비밀번호는 본 문서에 직접 기재하지 말고 별도 보안 절차로 전달하십시오.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+blocks:
+  - type: doc_title
+    text: 업무 인수인계서
+    spaced: true
+  - type: grid
+    widths: [14, 19, 14, 19, 14, 20]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["인계자", "", "소속(부서)", "", "직위", ""]
+      - ["인수자", "", "소속(부서)", "", "직위", ""]
+      - ["인계일", "", "인계 사유", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "마케팅팀", "", "대리"]
+      - ["", "이수현", "", "마케팅팀", "", "사원"]
+      - ["", "2026-04-28", "", "퇴사", "", ""]
+  - type: subtitle
+    text: 담당 업무 현황
+  - type: table
+    widths: [24, 30, 15, 31]
+    header: [업무명, 인수인계 내용, 진행상태, 마감일]
+    empty_rows: 5
+    row_height_mm: 9
+    sample_rows:
+      - ["SNS 광고 운영", "월간 광고 예산 집행 및 성과 리포트 작성 방법 공유", "진행중", "매월 말일"]
+      - ["협력사 계약 관리", "계약서 원본 보관 위치 및 갱신 일정 안내", "완료", "2026-05-10"]
+      - ["월간 뉴스레터 발행", "발행 템플릿 위치와 구독자 명단 파일 전달", "완료", "매월 5일"]
+  - type: subtitle
+    text: 미결 사항
+  - type: table
+    widths: [24, 46, 30]
+    header: [항목, 현재 상태 및 처리 방법, 처리 예정일]
+    empty_rows: 3
+    row_height_mm: 9
+    sample_rows:
+      - ["4월 광고비 정산", "세금계산서 수령 대기 중, 수령 후 회계팀 전달", "2026-05-08"]
+  - type: subtitle
+    text: 보관 문서 및 계정 인계
+  - type: table
+    widths: [24, 30, 26, 20]
+    header: [문서/계정명, 보관 위치, 인계 방법, 인계 완료]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["광고 집행 내역 파일", "공유 드라이브 /마케팅/2026", "권한 재설정", "완료"]
+      - ["사내 메신저 계정", "IT팀 계정관리 시스템", "IT팀에 이관 요청 접수", "진행중"]
+  - type: notice
+    text: 계정 비밀번호나 인증서 등 보안 정보는 본 문서에 직접 기재하지 말고 IT팀의 별도 보안 절차로 전달하십시오.
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: 위와 같이 업무 인수인계 내용을 확인합니다.
+    align: center
+    size: 11
+    space_after: 2
+  - type: date_line
+    sample_text: 2026 년    4 월    28 일
+  - type: sign_line
+    labels: ["인계자", "인수자", "입회자"]
+    sample_names: [홍길동, 이수현, 박민준]

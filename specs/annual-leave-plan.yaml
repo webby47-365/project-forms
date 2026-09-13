@@ -24,6 +24,9 @@ blocks:
     rows:
       - ["부서(팀)", "", "직위", "", "성명", ""]
       - ["사번", "", "생년월일", "", "연락처", ""]
+    sample_rows:
+      - ["", "마케팅팀", "", "대리", "", "홍길동"]
+      - ["", "A1234", "", "1993-02-10", "", "010-1234-5678"]
 
   - type: subtitle
     text: 연차사용 계획
@@ -33,12 +36,16 @@ blocks:
     header: [1월, 2월, 3월, 4월, 5월, 6월, 7월, "분"]
     empty_rows: 2
     row_height_mm: 9
+    sample_rows:
+      - ["2일", "-", "3일", "-", "-", "1일", "-", ""]
 
   - type: table
     widths: [15, 15, 15, 15, 15, 15, 10]
     header: [8월, 9월, 10월, 11월, 12월, 소계, 일]
     empty_rows: 2
     row_height_mm: 9
+    sample_rows:
+      - ["1일", "-", "2일", "-", "3일", "6", ""]
 
   - type: subtitle
     text: 특별휴가 현황
@@ -48,6 +55,9 @@ blocks:
     header: [휴가 종류, 보유 일수, 사용 예정 일수, 잔여 일수]
     empty_rows: 3
     row_height_mm: 9
+    sample_rows:
+      - ["리프레시휴가", "3일", "1일", "2일"]
+      - ["경조휴가", "5일", "0일", "5일"]
 
   - type: spacer
     height_pt: 8
@@ -59,9 +69,11 @@ blocks:
     space_after: 2
 
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
 
   - type: sign_line
     label: 신청인
+    sample_names: [홍길동]
 
   - type: spacer
     height_pt: 6

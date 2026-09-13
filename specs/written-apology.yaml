@@ -24,34 +24,45 @@ blocks:
       - ["소속(부서)", "", "직위", ""]
       - ["성명", "", "사번", ""]
       - ["발생일시", "", "발생장소", ""]
+    sample_rows:
+      - ["", "총무팀", "", "사원"]
+      - ["", "홍길동", "", "20231045"]
+      - ["", "2026-09-08 15:00", "", "본사 3층 회의실"]
   - type: subtitle
     text: 1. 사건 개요
   - type: textbox
     hint: "발생한 사건을 한두 문장으로 요약하십시오."
     height_mm: 20
+    sample_text: 거래처 방문 일정 보고를 누락하여 팀장에게 사전 공유가 되지 않았습니다.
   - type: subtitle
     text: 2. 경위
   - type: textbox
     hint: "언제·어디서·누가·무엇을·어떻게·왜 발생했는지 시간순으로 사실대로 기재하십시오."
     height_mm: 48
+    sample_text: 2026년 9월 8일 오전 거래처 방문 일정이 갑자기 변경되어 급히 출발하면서 팀장께 구두 보고만 하고 별도 서면 보고를 누락했습니다. 이후 팀 회의에서 일정 공유가 되지 않아 업무 혼선이 있었습니다.
   - type: subtitle
     text: 3. 원인 및 재발방지 대책
   - type: textbox
     hint: "근본 원인과 앞으로의 개선·재발방지 방안을 구체적으로 기재하십시오."
     height_mm: 36
+    sample_text: 외부 일정 변경 시 보고 절차를 구두로만 처리한 것이 원인입니다. 앞으로는 일정 변경 즉시 팀 공유 채널에 서면으로 기록하겠습니다.
   - type: grid
     widths: [20, 30, 20, 30]
     label_cols: [0, 2]
     row_height_mm: 8
     rows:
       - ["피해·손실 금액", "", "처리 경과", ""]
+    sample_rows:
+      - ["", "해당없음", "", "재발방지 교육 이수"]
   - type: para
     text: 위 내용은 사실과 다름이 없으며, 동일한 사안이 재발하지 않도록 성실히 근무할 것을 서약합니다.
     align: center
     size: 10.5
   - type: date_line
+    sample_text: 2026 년    9 월    9 일
   - type: sign_line
     label: 작성자
+    sample_names: [홍길동]
   - type: spacer
     height_pt: 6
   - type: para

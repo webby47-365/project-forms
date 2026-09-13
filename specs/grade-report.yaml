@@ -1,0 +1,95 @@
+id: grade-report
+title: 성적 통지표
+category: edu
+subcategory: school
+tags: [성적통지표, 성적표, 학업성적통지서, 통지표, 성적안내]
+summary: 교과별 성적과 출결, 창의적 체험활동, 담임 종합 의견을 정리해 가정에 보내는 성적 통지표입니다.
+usage: >
+  학기말에 학생의 교과 성적과 출결, 체험활동 내용을 정리해 보호자에게 전달하는 서식입니다.
+  교과 성적은 원점수와 과목평균, 성취도를 함께 적어야 성취 수준을 가늠할 수 있습니다.
+  담임 종합 의견은 관찰한 사실을 바탕으로 긍정적이고 중립적으로 작성하고, 하단의 학부모
+  확인란에 서명을 받아 전달 여부를 확인하십시오. 학교별 평가 방식에 따라 석차등급 표기
+  여부는 조정해 사용하십시오.
+source: original
+featured: false
+target_pages: 1
+created_by: agent
+status: published
+version: 1
+
+blocks:
+  - type: doc_title
+    text: 성적 통지표
+
+  - type: grid
+    widths: [16, 22, 16, 22, 16, 8]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["학년·반·번호", "", "성명", "", "담임", ""]
+    sample_rows:
+      - ["", "2학년 3반 15번", "", "홍길동", "", "김서연"]
+
+  - type: subtitle
+    text: 1. 교과 성적
+
+  - type: table
+    widths: [18, 14, 16, 16, 16, 20]
+    header: [과목, 원점수, 과목평균, 성취도, 석차등급, 비고]
+    empty_rows: 8
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["국어", "92", "81.4", "A", "2", "-"]
+      - ["수학", "88", "75.2", "A", "2", ""]
+      - ["영어", "95", "84.0", "A", "1", ""]
+      - ["과학", "78", "72.6", "B", "3", ""]
+
+  - type: subtitle
+    text: 2. 출결 상황
+
+  - type: grid
+    widths: [16, 21, 16, 21, 16, 10]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["수업일수", "", "결석", "", "지각", ""]
+      - ["조퇴", "", "결과", "", "", ""]
+    sample_rows:
+      - ["", "95", "", "0", "", "1"]
+      - ["", "0", "", "0", "", ""]
+
+  - type: subtitle
+    text: 3. 창의적 체험활동
+
+  - type: table
+    widths: [22, 14, 64]
+    header: [영역, 시간, 특기사항]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["자율활동", "18", "학급 자치회의에서 서기 역할을 맡아 회의 내용을 기록함"]
+      - ["동아리활동", "17", "과학탐구반 활동에 꾸준히 참여함"]
+
+  - type: subtitle
+    text: 4. 담임 종합 의견
+
+  - type: textbox
+    hint: "관찰한 사실을 바탕으로 긍정적이고 중립적으로 작성하십시오."
+    height_mm: 22
+    sample_text: 수업 태도가 바르고 모둠 활동에서 의견을 적극적으로 제시하며 친구들과 협력하는 모습을 보임.
+
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["학부모 확인(서명)", ""]
+    sample_rows:
+      - ["", "홍판서 (인)"]
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: notice
+    text: 이 통지표의 개인정보는 성적 안내 목적으로만 사용하며, 학교 규정에서 정한 보유기간이 지나면 파기합니다.

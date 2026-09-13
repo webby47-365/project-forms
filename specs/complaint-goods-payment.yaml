@@ -1,0 +1,122 @@
+id: complaint-goods-payment
+title: 소장 (물품대금 청구)
+category: legal
+subcategory: litigation
+tags: [소장, 물품대금청구소송, 물품대금소장, 물품대금청구, 민사소장]
+summary: 물품을 공급하고도 대금을 받지 못한 공급자가 대금 지급을 구하는 민사 소장 양식입니다.
+usage: >
+  물품이나 용역을 공급하였음에도 대금을 지급받지 못한 경우 법원에 제출하는 소장입니다. 거래
+  경위와 공급 내역, 대금 지급 약정, 피고의 미지급 사실을 시간순으로 정리하고 청구취지에
+  정확한 금액과 이자 기산일을 기재해야 합니다. 거래명세서나 세금계산서 등 입증방법을 표로
+  정리해 함께 제출합니다. 본 서식은 참고용이며 제출 전 법원 전자소송 사이트의 최신 양식과
+  관할을 확인하십시오.
+source: law-standard
+source_note: 민사소송법상 소장 기재사항을 참고하여 자체 제작
+featured: false
+target_pages: 2
+series: complaint
+series_name: 소장
+variant: 물품대금
+variant_rank: 2
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 소장
+    spaced: true
+
+  - type: subtitle
+    text: 당사자
+  - type: grid
+    widths: [14, 26, 14, 20, 26]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 4]
+      - [3, 1, 3, 4]
+    rows:
+      - ["원고 성명", "", "생년월일", "", "연락처"]
+      - ["원고 주소", "", "", "", ""]
+      - ["피고 성명", "", "생년월일", "", "연락처"]
+      - ["피고 주소", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-03-15", "010-1234-5678"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", "", ""]
+      - ["", "김서연", "", "1988-11-02", "010-9876-5432"]
+      - ["", "서울특별시 서대문구 충정로 30", "", "", ""]
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["사건명", "", "소가(청구금액)", "금                                원"]
+    sample_rows:
+      - ["", "물품대금 청구의 소", "", "금 5,000,000원(금 오백만원)"]
+
+  - type: subtitle
+    text: 청구 취지
+  - type: textbox
+    hint: "피고가 원고에게 지급할 금액과 소송비용 부담, 가집행 등 구하는 판결 내용을 기재하십시오."
+    height_mm: 25
+    sample_text: 피고는 원고에게 금 5,000,000원 및 이에 대하여 2026년 3월 16일부터 다 갚는 날까지 연 12%의 비율로 계산한 돈을 지급하라. 소송비용은 피고가 부담한다. 제1항은 가집행할 수 있다.
+
+  - type: subtitle
+    text: 청구 원인
+  - type: textbox
+    hint: "물품 공급 경위, 대금 약정, 피고의 미지급 사실을 시간순으로 기재하십시오."
+    height_mm: 50
+    sample_text: 원고는 2025년 11월부터 피고에게 사무용품을 공급하는 거래를 하였습니다. 2026년 2월 10일 피고에게 사무용품 일체를 공급하였고 대금은 공급일로부터 30일 이내에 지급하기로 약정하였습니다. 그러나 피고는 지급기일인 2026년 3월 12일이 지난 현재까지 대금을 지급하지 않고 있습니다. 원고는 피고에게 수차례 대금 지급을 요청하였으나 답변이 없었습니다.
+
+  - type: subtitle
+    text: 거래 내역
+  - type: table
+    widths: [16, 28, 14, 21, 21]
+    header: [공급일, 품목, 수량, 단가, 금액]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["2026-02-10", "사무용 복합기", "1", "금 3,000,000원", "금 3,000,000원"]
+      - ["2026-02-10", "사무용 책상 세트", "4", "금 500,000원", "금 2,000,000원"]
+
+  - type: subtitle
+    text: 입증 방법
+  - type: table
+    widths: [10, 34, 30, 26]
+    header: ["No", 서증명, 내용, 비고]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "갑 제1호증", "거래명세서", ""]
+      - ["2", "갑 제2호증", "세금계산서", ""]
+
+  - type: subtitle
+    text: 첨부 서류
+  - type: kv_list
+    items:
+      - "위 입증방법 사본 각 1부"
+      - "거래명세서 및 세금계산서 사본 각 1부"
+      - "법인인 경우 법인등기부등본 1부"
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: sign_line
+    label: 원고
+    sample_names: [홍길동]
+
+  - type: spacer
+    height_pt: 6
+
+  - type: para
+    text: "                        법원  귀중"
+    align: center
+    size: 12
+    bold: true
+    sample_text: 서울서부지방법원  귀중
+
+  - type: notice
+    text: 본 서식은 참고용이며, 청구금액과 이자 산정, 관할 법원 등 구체적인 내용은 법률 전문가 또는 법원에 확인하십시오.

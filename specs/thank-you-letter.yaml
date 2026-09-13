@@ -1,0 +1,67 @@
+id: thank-you-letter
+title: 감사장
+category: personal
+subcategory: life
+tags: [감사장, 감사편지, 감사의글, 감사인사, thank you letter]
+summary: 도움을 준 분께 구체적인 사유와 감사의 마음을 편지 형식으로 전하는 감사장 양식입니다.
+usage: >
+  행사 준비나 업무 협조, 개인적인 도움 등에 대해 감사의 뜻을 격식 있게 전할 때 사용하는
+  편지 형식의 서식입니다. 수신인의 성명과 소속·직위를 정확히 적고, 본문에는 어떤 도움을
+  받았는지 구체적인 사유를 담아야 진심이 전달됩니다. 날짜와 발신인을 함께 적고 서명 또는
+  직인으로 마무리하며, 표는 최소화하여 편지다운 느낌을 살립니다.
+source: original
+featured: false
+version: 1
+created_by: agent
+status: published
+target_pages: 1
+
+blocks:
+  - type: doc_title
+    text: 감사장
+    spaced: true
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "소속·직위", ""]
+    sample_rows:
+      - ["", "박민준", "", "(주)한빛커머스 대표이사"]
+
+  - type: para
+    text: 귀하께 깊은 감사의 말씀을 전합니다.
+    align: center
+    size: 13
+
+  - type: textbox
+    hint: "감사의 구체적인 사유와 내용을 적으십시오."
+    height_mm: 60
+    sample_text: 귀하께서 지난 행사 준비 과정에서 보여주신 헌신과 협조에 깊은 감사를 드립니다. 바쁜 일정에도 기꺼이 시간을 내어 주신 덕분에 행사를 성공적으로 마칠 수 있었습니다. 앞으로도 좋은 인연을 이어가기를 바라며, 귀하의 건강과 하시는 모든 일에 행운이 함께하기를 기원합니다.
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: subtitle
+    text: 발신인
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["소속", "", "직위", ""]
+      - ["성명", "", "", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "대표이사"]
+      - ["", "홍길동", "", ""]
+
+  - type: sign_line
+    label: 발신인 (서명 또는 인)
+    sample_names: ["홍길동 (인)"]
+
+  - type: notice
+    text: 본 감사장은 참고용 서식이며 문구와 격식은 상황과 관계에 맞게 수정하여 사용하십시오.

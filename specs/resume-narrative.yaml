@@ -1,0 +1,93 @@
+id: resume-narrative
+title: 이력서 (서술형)
+category: personal
+subcategory: career
+tags: [이력서, 서술형이력서, 자유기술이력서, 에세이형이력서, resume]
+summary: 표 대신 문장으로 학력·경력·역량·지원동기를 서술하는 자유기술형 이력서입니다.
+usage: >
+  항목을 표로 잘라 적기보다 문장으로 풀어 자신의 역량과 경험을 보여주고 싶을 때 쓰는 이력서입니다.
+  인적사항만 표로 정리하고 나머지는 학력 및 전공, 주요 경력, 핵심 역량, 지원 동기 순서로 문단을
+  채웁니다. 각 항목은 사실과 숫자를 근거로 구체적으로 쓰고, 지원 동기는 해당 회사·직무와
+  연결되도록 작성해야 설득력이 높아집니다.
+source: original
+featured: false
+target_pages: 1
+series: resume
+series_name: 이력서
+variant: 서술형
+variant_rank: 4
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 이력서
+
+  - type: grid
+    widths: [13, 16, 11, 14, 12, 16, 18]
+    label_cols: [0, 2, 4]
+    row_height_mm: 7.5
+    merges:
+      - [2, 1, 2, 5]
+      - [3, 1, 3, 5]
+      - [0, 6, 3, 6]
+    photo_cell: [0, 6]
+    photo_mm: [24, 32]
+    rows:
+      - ["성명(한글)", "", "성명(한문)", "", "생년월일", "", "사진"]
+      - ["성명(영문)", "", "성별", "", "휴대전화", "", ""]
+      - ["이메일", "", "", "", "", "", ""]
+      - ["지원분야", "", "", "", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "洪吉童", "", "1994-07-22", ""]
+      - ["", "HONG GILDONG", "", "여", "", "010-9876-5432", ""]
+      - ["", "gildong.story@example.com", "", "", "", "", ""]
+      - ["", "마케팅·콘텐츠 기획", "", "", "", "", ""]
+
+  - type: subtitle
+    text: 1. 학력 및 전공
+
+  - type: textbox
+    hint: "최종학력과 전공, 전공 관련 학습·연구 경험을 중심으로 서술하십시오."
+    height_mm: 26
+    sample_text: 한국대학교 경영학과를 졸업했으며, 마케팅 전공 트랙에서 소비자행동과 데이터분석을 중점적으로 공부했습니다. 재학 중 교내 마케팅 학회에서 브랜드 사례 분석 프로젝트를 진행하며 시장조사와 보고서 작성 역량을 길렀습니다.
+
+  - type: subtitle
+    text: 2. 주요 경력
+
+  - type: textbox
+    hint: "근무한 회사와 담당 업무, 구체적인 성과를 시간 순서대로 서술하십시오."
+    height_mm: 34
+    sample_text: (주)한빛커머스 마케팅팀에서 2년간 온라인 광고 운영과 콘텐츠 제작을 담당했습니다. SNS 채널 리뉴얼을 주도해 팔로워를 6개월간 40% 늘렸고, 이후 (주)새길데이터로 이직하여 콘텐츠 전략 기획 업무를 맡아 월간 뉴스레터 오픈율을 15%p 높였습니다.
+
+  - type: subtitle
+    text: 3. 핵심 역량
+
+  - type: textbox
+    hint: "직무와 관련된 강점과 구체적인 수행 경험을 서술하십시오."
+    height_mm: 26
+    sample_text: 데이터 기반 콘텐츠 기획, SNS 채널 운영, 카피라이팅, 성과 분석 및 보고서 작성에 강점이 있습니다. 다양한 부서와 협업하며 일정과 예산을 관리한 경험이 많고, 새로운 마케팅 툴을 빠르게 습득해 실무에 적용합니다.
+
+  - type: subtitle
+    text: 4. 지원 동기
+
+  - type: textbox
+    hint: "해당 회사·직무에 관심을 갖게 된 계기와 기여하고 싶은 부분을 서술하십시오."
+    height_mm: 30
+    sample_text: 귀사의 브랜드 콘텐츠가 보여주는 일관된 톤앤매너에 깊은 인상을 받아 지원했습니다. 지난 경험에서 쌓은 콘텐츠 기획력과 데이터 분석 역량을 바탕으로 귀사의 마케팅팀에서 고객과의 접점을 넓히는 데 기여하고 싶습니다.
+
+  - type: para
+    text: 위 기재사항은 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 지원자
+    sample_names: [홍길동]
+
+  - type: notice
+    text: 문단마다 사실과 수치를 근거로 구체적으로 작성하고, 지원 동기는 해당 회사·직무와 연결되도록 쓰십시오.

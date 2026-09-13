@@ -26,6 +26,9 @@ blocks:
     rows:
       - ["성명", "", "생년월일", ""]
       - ["학교/학년", "", "성별", ""]
+    sample_rows:
+      - ["", "이수현", "", "2015-04-10"]
+      - ["", "한빛초등학교 5학년", "", "여"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -37,6 +40,9 @@ blocks:
     rows:
       - ["성명", "", "관계", ""]
       - ["연락처(휴대폰)", "", "이메일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "부"]
+      - ["", "010-1234-5678", "", "gildong@example.com"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -52,6 +58,10 @@ blocks:
       - ["활동명", ""]
       - ["기간", ""]
       - ["장소", ""]
+    sample_rows:
+      - ["", "2026 여름 캠프(수련활동)"]
+      - ["", "2026-07-20 ~ 2026-07-22 (2박 3일)"]
+      - ["", "강원도 평창 청소년수련원"]
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -59,6 +69,7 @@ blocks:
   - type: textbox
     hint: "알레르기, 기저질환, 복용 약물, 복장 제한 등 건강상 주의사항을 상세히 기재하십시오."
     height_mm: 16
+    sample_text: 특별한 알레르기나 기저질환 없음. 복용 중인 약물 없음.
   - type: spacer
     height_pt: 2
   - type: subtitle
@@ -70,6 +81,9 @@ blocks:
     rows:
       - ["응급연락처", ""]
       - ["응급상황 시 병원 이송 동의", ""]
+    sample_rows:
+      - ["", "010-9876-5432 (모 김서연)"]
+      - ["", "동의함"]
   - type: spacer
     height_pt: 2
   - type: table
@@ -86,9 +100,11 @@ blocks:
     size: 10.5
     space_after: 2
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: spacer
     height_pt: 2
   - type: sign_line
     label: 보호자 서명
+    sample_names: [홍길동]
   - type: notice
     text: 건강상 유의사항은 반드시 상세히 기재하십시오. 미성년자의 안전을 위해 거짓 기재는 금지됩니다.

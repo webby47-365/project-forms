@@ -1,0 +1,96 @@
+id: resume-parttime
+title: 이력서 (아르바이트용)
+category: personal
+subcategory: career
+tags: [이력서, 아르바이트이력서, 알바이력서, 근무가능시간표, 단기근무, resume]
+summary: 인적사항과 희망근무 조건·근무 가능 시간표를 중심으로 작성하는 아르바이트 지원용 이력서입니다.
+usage: >
+  아르바이트·단기근무 지원 시 제출하는 이력서로, 병역이나 한자 이름 같은 항목은 빼고 근무
+  조건을 중심으로 구성했습니다. 희망 요일·시간대·시급을 표에 적고, 근무 가능 시간표에는
+  가능한 요일과 시간대에 표시하십시오. 경험 사항에는 아르바이트나 활동 경험을 간단히
+  적어 성실성을 보여주고, 연락 가능한 시간대를 전화번호와 함께 확인해 두십시오.
+source: original
+featured: false
+target_pages: 1
+series: resume
+series_name: 이력서
+variant: 아르바이트용
+variant_rank: 6
+version: 1
+created_by: agent
+status: published
+
+blocks:
+  - type: doc_title
+    text: 이력서
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["휴대전화", "", "이메일", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "김서연", "", "2006-05-19"]
+      - ["", "010-2222-3333", "", "seoyeon.kim@example.com"]
+      - ["", "서울특별시 은평구 연서로 30", "", ""]
+
+  - type: subtitle
+    text: 1. 희망근무 조건
+
+  - type: table
+    widths: [25, 25, 25, 25]
+    header: [근무 가능 요일, 선호 시간대, 희망 시급, 근무 가능 기간]
+    empty_rows: 2
+    row_height_mm: 8
+    sample_rows:
+      - ["월~금", "오후(13~18시)", "12,000원", "2026.10.01~2027.02.28"]
+
+  - type: subtitle
+    text: 2. 근무 가능 시간표
+
+  - type: grid
+    widths: [16, 12, 12, 12, 12, 12, 12, 12]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["시간대", "월", "화", "수", "목", "금", "토", "일"]
+      - ["오전(09~13시)", "", "", "", "", "", "", ""]
+      - ["오후(13~18시)", "", "", "", "", "", "", ""]
+      - ["저녁(18~22시)", "", "", "", "", "", "", ""]
+    sample_rows:
+      - ["", "", "", "", "", "", "", ""]
+      - ["", "", "", "", "", "", "", ""]
+      - ["", "○", "○", "○", "", "", "", ""]
+      - ["", "", "", "", "○", "○", "", ""]
+
+  - type: subtitle
+    text: 3. 경험 사항
+
+  - type: table
+    widths: [22, 26, 32, 20]
+    header: [기간, 근무지/활동명, 담당업무, 비고]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["2025.07~2025.08", "한빛카페 홍대점", "주문 접수 및 음료 제조", "방학 중 근무"]
+      - ["2025.12~2026.02", "새길마트 포장알바", "상품 포장 및 재고 정리", "단기 근무"]
+
+  - type: para
+    text: 위 기재사항은 사실과 다름이 없음을 확인합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년    9 월    13 일
+
+  - type: sign_line
+    label: 지원자
+    sample_names: [김서연]
+
+  - type: notice
+    text: 만 18세 미만인 경우 보호자 동의서가 추가로 필요할 수 있으니 근무처 규정을 확인하십시오.

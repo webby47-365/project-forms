@@ -252,9 +252,42 @@ def build_one(spec: FormSpec) -> dict[str, Any]:
 
     shutil.copy2(docx_master, out_dir / f"{spec.id}.docx")
     render_hwpx(spec, out_dir / f"{spec.id}.hwpx", scale=scale)
-    previews = make_previews(pdf, out_dir, pages)
 
-    warnings = inspect_form(spec, pdf, out_dir)
+    warnings: list[str] = []
+
+    # 미리보기: 명세에 예시값이 있으면 '작성 예시' 판을 한 번 더 렌더링해서 그 화면을 쓴다.
+    # 레이아웃은 빈 양식과 동일하고 칸 안의 글자만 채워지므로 페이지 수가 달라지지 않는다.
+    # 다운로드되는 PDF·DOCX·HWPX는 위에서 만든 빈 양식 그대로다.
+    sample_used = False
+    if spec.has_sample:
+        sample_dir = out_dir / "_sample"
+        try:
+            # 예시값이 들어가면 칸 안에서 줄바꿈이 생겨 빈 양식보다 자리를 더 쓴다.
+            # 같은 배율로 넘치면 예시판만 한 단계씩 줄여 맞춘다(다운로드 파일은 영향 없음).
+            # 미리보기는 앞 2페이지까지만 쓰므로, 2페이지 이상 서식은 예시판이 한 장
+            # 더 밀려도 보이는 화면이 달라지지 않는다. 1페이지 서식만 엄격히 맞춘다.
+            allowed = pages if pages < 2 else pages + 1
+            for sc in (scale, *[s * scale for s in SHRINK_STEPS]):
+                sample_docx = render_docx(
+                    spec, master_dir / f"{spec.id}-sample.docx", scale=sc, sample=True)
+                sample_dir.mkdir(parents=True, exist_ok=True)
+                sample_pdf = docx_to_pdf(sample_docx, sample_dir)
+                if pdf_page_count(sample_pdf) <= allowed:
+                    previews = make_previews(sample_pdf, out_dir, pages)
+                    sample_used = True
+                    break
+            else:
+                warnings.append(
+                    "예시 미리보기가 목표 페이지를 넘겨 빈 양식 화면을 사용했습니다 "
+                    "— sample_text/sample_rows의 글자 수를 줄이십시오.")
+        except BuildError as exc:
+            warnings.append(f"예시 미리보기 생성 실패 — {exc}")
+        finally:
+            shutil.rmtree(sample_dir, ignore_errors=True)
+    if not sample_used:
+        previews = make_previews(pdf, out_dir, pages)
+
+    warnings += inspect_form(spec, pdf, out_dir)
     for w in warnings:
         print(f"  [경고] {spec.id}: {w}")
 
@@ -274,6 +307,11 @@ def build_one(spec: FormSpec) -> dict[str, Any]:
         "file_sizes": sizes,
         "pages": pages,
         "previews": previews,
+        "sample_preview": sample_used,
+        "series": spec.series,
+        "series_name": spec.series_name,
+        "variant": spec.variant,
+        "variant_rank": spec.variant_rank,
         "featured": spec.featured,
         "featured_rank": spec.featured_rank,
         "version": spec.version,

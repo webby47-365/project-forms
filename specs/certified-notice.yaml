@@ -11,6 +11,10 @@ usage: >
   본 서식은 참고용이며 법적 효력과 적합성은 사용자가 확인해야 합니다.
 source: original
 featured: false
+series: certified-notice
+series_name: 내용증명
+variant: 기본형
+variant_rank: 1
 target_pages: 1
 blocks:
   - type: doc_title
@@ -26,6 +30,11 @@ blocks:
       - ["발신인 주소", "", "", ""]
       - ["수신인 성명", "", "생년월일", ""]
       - ["수신인 주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-05-20"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+      - ["", "(주)한빛커머스", "", ""]
+      - ["", "서울특별시 강남구 테헤란로 200", "", ""]
   - type: subtitle
     text: 통지 내용
   - type: grid
@@ -34,14 +43,18 @@ blocks:
     row_height_mm: 7
     rows:
       - ["제목", ""]
+    sample_rows:
+      - ["", "물품대금 미지급에 따른 지급 요청"]
   - type: textbox
     hint: "통지 사유, 배경, 구체적인 내용을 명확하게 작성하십시오."
     height_mm: 45
+    sample_text: 2026년 6월 10일 체결한 물품공급계약(계약번호 2026-014)에 따라 귀사에 물품을 납품하였으나, 약정한 대금 3,000,000원이 지급기한인 2026년 7월 31일까지 지급되지 않았습니다. 이에 재차 대금 지급을 요청하며, 본 통지로 지급을 촉구합니다.
   - type: subtitle
     text: 요구사항 및 이행기한
   - type: textbox
     hint: "상대방에게 요구하는 사항과 구체적인 이행기한(예: 2026년 9월 30일까지)을 명시하십시오."
     height_mm: 20
+    sample_text: "미지급 대금 3,000,000원을 2026년 9월 30일까지 아래 계좌로 지급하여 주시기 바랍니다. (한빛은행 000-000000-00-000)"
   - type: spacer
     height_pt: 8
   - type: para
@@ -49,7 +62,9 @@ blocks:
     align: center
     size: 11
   - type: date_line
+    sample_text: 2026 년    9 월    13 일
   - type: sign_line
     label: 발신인
+    sample_names: [홍길동]
   - type: notice
     text: 본 내용증명은 우체국 창구에서 등기로 발송하며, 발신인용·수신인용·우체국 보관용 3부가 작성됩니다. 통지 내용이 명확할수록 법적 효력이 강하므로 정확하고 구체적으로 기재하십시오.
