@@ -1,0 +1,56 @@
+# =====================================================================
+#  [서버 작업 - GitHub Actions]  무료서식 다운로드 — GitHub Pages 배포
+#  main 브랜치에 푸시되면 사이트를 빌드해 GitHub Pages로 배포한다.
+#  Cloudflare Pages 대신 사용하는 대체 배포 경로.
+# =====================================================================
+name: deploy-pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 사이트 생성
+        run: python scripts/build_site.py
+
+      - name: 커스텀 도메인 지정 (CNAME)
+        run: |
+          if [ -f CNAME ]; then cp CNAME public/CNAME; fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
