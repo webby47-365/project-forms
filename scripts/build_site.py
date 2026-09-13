@@ -39,6 +39,7 @@ KST = timezone(timedelta(hours=9))
 
 RECENT_COUNT = 10
 RELATED_COUNT = 5
+TICKER_COUNT = 5  # 상단 롤링바에 띄울 최근 추가 서식 수
 
 FMT_LABEL = {"pdf": "PDF", "docx": "Word (DOCX)", "hwpx": "한글 (HWPX)"}
 
@@ -171,6 +172,17 @@ def build() -> int:
     )[:10]
     recent = sorted(forms, key=lambda f: f.get("created_at", ""), reverse=True)[:RECENT_COUNT]
 
+    # 상단 롤링바: 최근 추가 서식 5종. 빌드할 때마다 카탈로그에서 다시 뽑으므로
+    # 일일 에이전트가 서식을 등록하면 별도 작업 없이 이 띠도 함께 갱신된다.
+    ticker = [
+        {
+            "id": f["id"],
+            "title": f["title"],
+            "date": f.get("created_at", "")[:10].replace("-", "/"),
+        }
+        for f in recent[:TICKER_COUNT]
+    ]
+
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES)),
         autoescape=select_autoescape(["html"]),
@@ -188,6 +200,7 @@ def build() -> int:
         "cat_label": cat_label,
         "total_forms": len(forms),
         "updated": now.strftime("%Y-%m-%d"),
+        "ticker": ticker,
         "ads": ads,
         "biz_name": BIZ_NAME,
         "biz_number": BIZ_NUMBER,

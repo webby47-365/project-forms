@@ -188,6 +188,40 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
+/* 최근 추가 서식 롤링바 — 오른쪽에서 왼쪽으로 끊김 없이 순환한다 */
+.ticker{display:flex; align-items:center; gap:12px; background:#eaf1fa;
+  border-bottom:1px solid #d5e2f2; padding:0 16px; height:38px; overflow:hidden}
+.ticker-label{flex:0 0 auto; font-size:12.5px; font-weight:700; color:var(--navy);
+  letter-spacing:-.01em; white-space:nowrap}
+.ticker-label::after{content:''; display:inline-block; width:1px; height:13px;
+  background:#b9cce6; margin-left:12px; vertical-align:-2px}
+.ticker-view{flex:1 1 auto; overflow:hidden; position:relative; height:100%;
+  -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 34px), transparent 100%);
+          mask-image:linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 34px), transparent 100%)}
+.ticker-track{display:flex; width:max-content; height:100%;
+  animation:ticker-roll 44s linear infinite}
+.ticker-group{display:flex; align-items:center; height:100%}
+.ticker-item{display:inline-flex; align-items:center; gap:7px; white-space:nowrap;
+  padding:0 18px; font-size:13px; color:#2b3a4a; font-weight:500}
+.ticker-item:hover{color:var(--accent); text-decoration:underline}
+.ticker-new{font-size:10px; font-weight:800; letter-spacing:.04em; color:#fff;
+  background:var(--accent); border-radius:3px; padding:2px 5px; line-height:1}
+.ticker-date{font-size:12px; color:#6b7f99; font-variant-numeric:tabular-nums}
+@keyframes ticker-roll{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+/* 읽으려고 멈추는 사람을 위해 올려두면 정지한다 */
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track{animation-play-state:paused}
+/* 움직임을 줄이도록 설정한 이용자에게는 흐르지 않고 앞부분만 보여준다 */
+@media (prefers-reduced-motion:reduce){
+  .ticker-track{animation:none}
+}
+@media (max-width:560px){
+  .ticker{gap:9px; padding:0 11px; height:34px}
+  .ticker-label{font-size:11.5px}
+  .ticker-label::after{margin-left:9px; height:11px}
+  .ticker-item{padding:0 13px; font-size:12.5px; gap:6px}
+  .ticker-track{animation-duration:34s}
+}
+
 /* 정책 문서 (개인정보처리방침 등) */
 .doc{max-width:820px; margin:0 auto; padding-bottom:20px}
 .doc h2{font-size:17px; font-weight:700; color:var(--navy); margin:34px 0 10px;
@@ -315,8 +349,42 @@ footer.site li{margin:3px 0}
       <div id="sresults" role="listbox"></div>
     </div>
   </div>
-</header>
-
+</header><div class="ticker" aria-label="최근 추가된 서식">
+  <span class="ticker-label">최근 업데이트</span>
+  <div class="ticker-view">
+    <div class="ticker-track">      <div class="ticker-group">        <a class="ticker-item" href="/form/written-statement/">
+          <span class="ticker-new">NEW</span>진술서
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/weekly-study-plan/">
+          <span class="ticker-new">NEW</span>주간 학습계획표
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/work-report-monthly/">
+          <span class="ticker-new">NEW</span>월간업무보고서
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/vehicle-use-request/">
+          <span class="ticker-new">NEW</span>업무용 차량 사용 신청서
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/welfare-facility-application/">
+          <span class="ticker-new">NEW</span>복지시설 이용 신청서
+          <span class="ticker-date">2026/09/14</span>
+        </a>      </div>      <div class="ticker-group" aria-hidden="true">        <a class="ticker-item" href="/form/written-statement/" tabindex="-1">
+          <span class="ticker-new">NEW</span>진술서
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/weekly-study-plan/" tabindex="-1">
+          <span class="ticker-new">NEW</span>주간 학습계획표
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/work-report-monthly/" tabindex="-1">
+          <span class="ticker-new">NEW</span>월간업무보고서
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/vehicle-use-request/" tabindex="-1">
+          <span class="ticker-new">NEW</span>업무용 차량 사용 신청서
+          <span class="ticker-date">2026/09/14</span>
+        </a>        <a class="ticker-item" href="/form/welfare-facility-application/" tabindex="-1">
+          <span class="ticker-new">NEW</span>복지시설 이용 신청서
+          <span class="ticker-date">2026/09/14</span>
+        </a>      </div>    </div>
+  </div>
+</div>
 <main><section class="hero">
   <div class="wrap">
     <h1>필요한 서식을 무료로 받으세요.</h1>
