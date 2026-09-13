@@ -21,10 +21,27 @@ try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
 $env:PYTHONIOENCODING = "utf-8"
 $env:PYTHONUTF8 = "1"
 
+# 한글은 콘솔에서 2칸을 차지하므로 .Length로 구분선 길이를 계산하면 줄이 창 너비를
+# 넘어가 글자가 겹쳐 보인다. 표시 폭을 계산하고 창 너비 안으로 제한한다.
+function Get-DisplayWidth([string]$s) {
+    $w = 0
+    foreach ($ch in $s.ToCharArray()) {
+        $c = [int]$ch
+        if (($c -ge 0x1100 -and $c -le 0x115F) -or ($c -ge 0x2E80 -and $c -le 0xA4CF) -or
+            ($c -ge 0xAC00 -and $c -le 0xD7A3) -or ($c -ge 0xF900 -and $c -le 0xFAFF) -or
+            ($c -ge 0xFE30 -and $c -le 0xFE6F) -or ($c -ge 0xFF00 -and $c -le 0xFF60) -or
+            ($c -ge 0xFFE0 -and $c -le 0xFFE6)) { $w += 2 } else { $w += 1 }
+    }
+    return $w
+}
 function Write-Step([string]$text) {
+    $prefix = "── $text "
+    $limit = 70
+    try { $limit = [Math]::Max(24, $Host.UI.RawUI.WindowSize.Width - 2) } catch { }
+    $pad = [Math]::Max(0, [Math]::Min(70, $limit) - (Get-DisplayWidth $prefix))
     Write-Host ""
-    Write-Host "── $text " -ForegroundColor Cyan -NoNewline
-    Write-Host ("─" * [Math]::Max(0, 60 - $text.Length)) -ForegroundColor DarkGray
+    Write-Host $prefix -ForegroundColor Cyan -NoNewline
+    Write-Host ("─" * $pad) -ForegroundColor DarkGray
 }
 function Write-Fail([string]$text) { Write-Host "  [실패] $text" -ForegroundColor Red }
 function Write-Ok([string]$text)   { Write-Host "  [완료] $text" -ForegroundColor Green }
@@ -141,8 +158,10 @@ if ([string]::IsNullOrWhiteSpace($siteUrl)) {
 
 # ── 실행 구분선 ──
 $stamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$stampWidth = 74
+try { $stampWidth = [Math]::Max(40, [Math]::Min(74, $Host.UI.RawUI.WindowSize.Width - 2)) } catch { }
 $formCount = (Get-ChildItem "specs\*.yaml").Count
 Write-Host ""
-Write-Host ("=" * 74) -ForegroundColor DarkYellow
+Write-Host ("=" * $stampWidth) -ForegroundColor DarkYellow
 Write-Host ">>> deploy_forms.ps1 실행 완료 | $stamp KST | 서식 $formCount 종 | [로컬 작업] <<<" -ForegroundColor DarkYellow
-Write-Host ("=" * 74) -ForegroundColor DarkYellow
+Write-Host ("=" * $stampWidth) -ForegroundColor DarkYellow
