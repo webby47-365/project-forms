@@ -632,7 +632,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         </li>        <li><a href="/category/welfare/consent/">의료·복지</a>
           <ul class="submenu">            <li><a href="/category/welfare/consent/">동의·신청</a></li>          </ul>
         </li>        <li><a href="/tools/">직장인 도구<span class="nav-new">NEW</span></a>
-          <ul class="submenu">            <li><a href="/tools/stamp/">디지털 도장·서명 만들기</a></li>            <li><a href="/tools/severance/">퇴직금 계산기</a></li>            <li><a href="/tools/annual-leave/">연차 계산기</a></li>          </ul>
+          <ul class="submenu">            <li><a href="/tools/stamp/">디지털 도장·서명 만들기</a></li>            <li><a href="/tools/salary/">연봉 실수령액 계산기</a></li>            <li><a href="/tools/severance/">퇴직금 계산기</a></li>            <li><a href="/tools/annual-leave/">연차 계산기</a></li>          </ul>
         </li>
       </ul>
     </nav>
@@ -686,7 +686,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   <h1 class="page">퇴직금 계산기</h1>
   <p class="lead">입사일·퇴직일과 마지막 3개월 임금을 넣으면 평균임금과 법정 퇴직금이 계산됩니다. 고용노동부 계산 방식과 같은 산식을 씁니다.</p>
 
-  <div class="tool-tabs">    <a href="/tools/stamp/">도장·서명 만들기</a>    <a href="/tools/severance/" class="on">퇴직금 계산기</a>    <a href="/tools/annual-leave/">연차 계산기</a>  </div>
+  <div class="tool-tabs">    <a href="/tools/stamp/">도장·서명 만들기</a>    <a href="/tools/salary/">실수령액 계산기</a>    <a href="/tools/severance/" class="on">퇴직금 계산기</a>    <a href="/tools/annual-leave/">연차 계산기</a>  </div>
 
   <div class="calc-2col">
     <div>
@@ -865,7 +865,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "퇴직일에 무슨 날짜를 넣어야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "마지막으로 근무한 날의 다음 날입니다. 8월 31일까지 일했다면 9월 1일을 넣습니다. 재직일수는 입사일부터 8월 31일까지로 계산됩니다."}}, {"@type": "Question", "name": "1년을 못 채우면 퇴직금이 없나요?", "acceptedAnswer": {"@type": "Answer", "text": "계속 근로기간이 1년 미만이면 법정 퇴직금은 발생하지 않습니다. 다만 4주 평균 주 15시간 이상 근무했고 1년을 넘겼다면 계약직·아르바이트도 받을 수 있습니다."}}, {"@type": "Question", "name": "상여금과 연차수당은 왜 3/12만 넣나요?", "acceptedAnswer": {"@type": "Answer", "text": "평균임금은 3개월치 임금이므로, 1년 단위로 받는 돈은 3개월분(3/12)만 산입하도록 정해져 있습니다. 퇴직 전 1년간 실제로 받은 금액을 넣으면 됩니다."}}, {"@type": "Question", "name": "퇴직금은 언제까지 받나요?", "acceptedAnswer": {"@type": "Answer", "text": "퇴직일부터 14일 이내가 원칙입니다(당사자 합의로 연장 가능). 기한이 지나면 지연이자가 붙고, 받지 못하면 고용노동부에 진정을 넣을 수 있습니다."}}]}
 </script>
 <script>
-window.FF_RATES = {"year": 2026, "updated": "2026-09-14", "note": "직장인 계산기(4대보험·소득세)가 쓰는 요율 정본. 매년 1~3월에 아래 출처를 확인해 갱신한다. 값을 고치면 build_site.py 가 페이지에 다시 심는다.", "national_pension": {"label": "국민연금", "rate_employee": 0.0475, "rate_total": 0.095, "base_min": 410000, "base_max": 6590000, "base_period": "2026-07-01 ~ 2027-06-30", "desc": "연금개혁으로 2026년부터 총 9.5%(근로자 4.75%). 기준소득월액 상·하한은 매년 7월에 조정된다."}, "health": {"label": "건강보험", "rate_employee": 0.03595, "rate_total": 0.0719, "desc": "2026년 직장가입자 보험료율 7.19%(근로자 절반). 보수월액 상·하한은 월 보수 1억원 이상 등 예외 구간이라 반영하지 않았다."}, "long_term_care": {"label": "장기요양보험", "rate_of_health": 0.131405, "rate_of_income": 0.009448, "desc": "2026년 소득 대비 0.9448%. 실제 부과는 건강보험료 × 13.1405%(= 0.9448 ÷ 7.19)."}, "employment": {"label": "고용보험", "rate_employee": 0.009, "desc": "실업급여 계정 1.8%를 노사가 절반씩. 2027년 2.0%(근로자 1.0%) 인상이 심의됐으나 2026년에는 0.9%."}, "income_tax": {"local_rate": 0.1, "child_credit_monthly": {"1": 12500, "2": 29160, "3plus_add": 25000}, "desc": "매월 떼는 소득세는 국세청 근로소득 간이세액표(소득세법 시행령 별표2)를 그대로 찾아 쓴다. 지방소득세는 소득세의 10%."}, "tax_free": {"meal_monthly_max": 200000, "desc": "식대는 월 20만원까지 비과세. 차량유지비(월 20만원)·출산보육수당 등 다른 비과세 항목이 있으면 합산해서 넣는다."}, "work": {"monthly_standard_hours": 209, "desc": "주 40시간 근로자의 월 소정근로시간(주휴 포함). 통상임금 시급 = 월 통상임금 ÷ 209."}, "sources": ["국민연금 보험료율·기준소득월액: 국민연금공단 2026년 기준소득월액 상·하한액 조정 안내", "건강보험료율 7.19%: 보건복지부 2025-08-28 건강보험정책심의위원회 보도자료", "장기요양보험료율 0.9448%: 보건복지부 2025-11-04 보도자료", "고용보험료율: 고용노동부 고용보험위원회 2026-09-01 고용보험 제도 개편 방안", "간이세액표: 소득세법 시행령 별표2 (2026-02-27 개정)"]};
+window.FF_RATES = {"year": 2026, "updated": "2026-09-14", "note": "직장인 계산기(4대보험·소득세)가 쓰는 요율 정본. 매년 1~3월에 아래 출처를 확인해 갱신한다. 값을 고치면 build_site.py 가 페이지에 다시 심는다.", "national_pension": {"label": "국민연금", "rate_employee": 0.0475, "rate_total": 0.095, "base_min": 410000, "base_max": 6590000, "base_period": "2026-07-01 ~ 2027-06-30", "desc": "연금개혁으로 2026년부터 총 9.5%(근로자 4.75%). 기준소득월액 상·하한은 매년 7월에 조정된다."}, "health": {"label": "건강보험", "rate_employee": 0.03595, "rate_total": 0.0719, "desc": "2026년 직장가입자 보험료율 7.19%(근로자 절반). 보수월액 상·하한은 월 보수 1억원 이상 등 예외 구간이라 반영하지 않았다."}, "long_term_care": {"label": "장기요양보험", "rate_of_health": 0.131405, "rate_of_income": 0.009448, "desc": "2026년 소득 대비 0.9448%. 실제 부과는 건강보험료 × 13.1405%(= 0.9448 ÷ 7.19)."}, "employment": {"label": "고용보험", "rate_employee": 0.009, "desc": "실업급여 계정 1.8%를 노사가 절반씩. 2027년 2.0%(근로자 1.0%) 인상이 심의됐으나 2026년에는 0.9%."}, "income_tax": {"local_rate": 0.1, "child_credit_monthly": {"1": 20830, "2": 45830, "3plus_add": 33330}, "desc": "매월 떼는 소득세는 국세청 근로소득 간이세액표(소득세법 시행령 별표2)를 그대로 찾아 쓴다. 8세 이상 20세 이하 자녀가 있으면 표의 세액에서 자녀 수별 금액을 빼고, 음수면 0원으로 한다(별표2 비고 3). 지방소득세는 소득세의 10%."}, "tax_free": {"meal_monthly_max": 200000, "desc": "식대는 월 20만원까지 비과세. 차량유지비(월 20만원)·출산보육수당 등 다른 비과세 항목이 있으면 합산해서 넣는다."}, "work": {"monthly_standard_hours": 209, "desc": "주 40시간 근로자의 월 소정근로시간(주휴 포함). 통상임금 시급 = 월 통상임금 ÷ 209."}, "sources": ["국민연금 보험료율·기준소득월액: 국민연금공단 2026년 기준소득월액 상·하한액 조정 안내", "건강보험료율 7.19%: 보건복지부 2025-08-28 건강보험정책심의위원회 보도자료", "장기요양보험료율 0.9448%: 보건복지부 2025-11-04 보도자료", "고용보험료율: 고용노동부 고용보험위원회 2026-09-01 고용보험 제도 개편 방안", "간이세액표: 소득세법 시행령 별표2 (2026-02-27 개정)"]};
 document.addEventListener('DOMContentLoaded', function () {
   if (!window.FFCalc) return;
   var C = window.FFCalc, R = window.FF_RATES, $ = function (id) { return document.getElementById(id); };
@@ -992,7 +992,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <strong>무료서식 다운로드</strong>
         <p style="margin:8px 0 0">회원가입 없이 업무·법률·공공·생활 서식을<br>PDF · Word · 한글 형식으로 무료 다운로드.</p>
         <p style="margin:10px 0 0"><a href="/request/"><strong>찾는 서식이 없나요? 요청하기 →</strong></a></p>
-        <p style="margin:6px 0 0"><a href="/tools/"><strong>직장인 도구</strong></a> · <a href="/tools/stamp/">도장·서명 만들기</a> · <a href="/tools/severance/">퇴직금 계산기</a> · <a href="/tools/annual-leave/">연차 계산기</a></p>
+        <p style="margin:6px 0 0"><a href="/tools/"><strong>직장인 도구</strong></a> · <a href="/tools/stamp/">도장·서명 만들기</a> · <a href="/tools/salary/">실수령액 계산기</a> · <a href="/tools/severance/">퇴직금 계산기</a> · <a href="/tools/annual-leave/">연차 계산기</a></p>
         <p style="margin:6px 0 0"><a href="/about/">사이트 소개</a> · <a href="/rss.xml">RSS 구독</a></p>
       </div>
       <div style="flex:1 1 420px">

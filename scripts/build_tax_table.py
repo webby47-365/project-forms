@@ -65,17 +65,27 @@ def read_rows(path: Path) -> Iterable[list[Any]]:
             "엑셀을 읽으려면 openpyxl 이 필요합니다.  pip install openpyxl"
         ) from exc
     wb = load_workbook(path, read_only=True, data_only=True)
-    ws = wb[wb.sheetnames[0]]
-    return [list(r) for r in ws.iter_rows(values_only=True)]
+    # 국세청 배포본은 시트가 둘이다 — '소득령 별표2'(비고)와 '근로소득간이세액표'(본문).
+    # 본문 시트는 행이 압도적으로 많으므로 그것으로 고른다.
+    best, best_rows = None, -1
+    for name in wb.sheetnames:
+        n = wb[name].max_row or 0
+        if n > best_rows:
+            best, best_rows = name, n
+    return [list(r) for r in wb[best].iter_rows(values_only=True)]
 
 
 def to_num(v: Any) -> float | None:
-    """셀 값을 숫자로. 숫자가 아니면 None."""
+    """셀 값을 숫자로. '-'(세액 없음)는 0, 숫자가 아니면 None."""
     if v is None:
         return None
     if isinstance(v, (int, float)):
         return float(v)
-    s = re.sub(r"[,\s원]", "", str(v))
+    s = str(v).strip()
+    if s in {"-", "‐", "–", "—"}:
+        return 0.0
+    s = re.sub(r"천원.*$", "", s)          # '10,000천원' 같은 마지막 행
+    s = re.sub(r"[,\s원]", "", s)
     if not s or not re.fullmatch(r"-?\d+(\.\d+)?", s):
         return None
     return float(s)
@@ -84,40 +94,38 @@ def to_num(v: Any) -> float | None:
 def parse(cells: Iterable[list[Any]]) -> dict[str, Any]:
     """표 본문만 골라 구간 하한(원)과 가족수별 세액을 뽑는다.
 
-    본문 행은 '월급여액(이상) · 월급여액(미만) · 가족 1~11명 세액' 모양이라
-    숫자 칸이 13개 이상이고 앞 두 칸이 오름차순인 행으로 알아본다.
-    월급여액은 천원 단위로 적혀 있으므로 1,000을 곱해 원으로 바꾼다.
+    본문 행 모양: 월급여액(이상) · 월급여액(미만) · 공제대상가족 1~11명 세액.
+    월급여액은 천원 단위이고, 세액이 없는 칸은 '-' 로 적혀 있다(0원).
+    구간 간격은 낮은 구간 5천원 → 높은 구간에서 넓어지므로 하한 목록을 그대로 싣는다.
+    마지막 행은 '10,000천원' 한 칸짜리다.
     """
     bounds: list[int] = []
     rows: list[list[int]] = []
-    unit_thousand: bool | None = None
 
     for row in cells:
-        nums = [to_num(c) for c in row]
-        nums = [n for n in nums if n is not None]
-        if len(nums) < FAMILY_MAX + 2:
+        if len(row) < FAMILY_MAX + 2:
             continue
-        lo, hi = nums[0], nums[1]
-        if not (0 < lo <= hi):
+        lo = to_num(row[0])
+        if lo is None or lo <= 0:
             continue
-        taxes = [int(round(n)) for n in nums[2:2 + FAMILY_MAX]]
+        taxes_raw = [to_num(c) for c in row[2:2 + FAMILY_MAX]]
+        if any(t is None for t in taxes_raw):
+            continue                       # 머리글·주석 행
+        taxes = [int(round(t)) for t in taxes_raw]      # type: ignore[arg-type]
         if any(t < 0 for t in taxes):
             continue
-        # 세액은 가족 수가 늘수록 줄어든다. 이 성질로 머리글·주석 행을 걸러낸다.
+        # 세액은 가족 수가 늘수록 줄어든다. 이 성질로 남은 잡음 행을 거른다.
         if any(taxes[i] < taxes[i + 1] for i in range(FAMILY_MAX - 1)):
             continue
-        if unit_thousand is None:
-            unit_thousand = lo < 100000          # 천원 단위로 적힌 표인지
-        bounds.append(int(round(lo * (1000 if unit_thousand else 1))))
+        bounds.append(int(round(lo * 1000)))
         rows.append(taxes)
 
     if len(rows) < 100:
         raise TaxTableError(
-            f"표 본문을 {len(rows)}행밖에 읽지 못했습니다. 파일이 간이세액표 전체 파일이 맞는지 "
-            "확인하세요(요약본·조견표 일부는 안 됩니다)."
+            f"표 본문을 {len(rows)}행밖에 읽지 못했습니다. 홈택스에서 받은 "
+            "'근로소득 간이세액표' 전체 파일이 맞는지 확인하세요."
         )
 
-    # 구간이 오름차순이 되도록 정리하고 중복을 없앤다.
     pair = sorted(zip(bounds, rows), key=lambda x: x[0])
     bounds, rows = [], []
     for b, r in pair:
@@ -127,13 +135,13 @@ def parse(cells: Iterable[list[Any]]) -> dict[str, Any]:
         bounds.append(b)
         rows.append(r)
 
-    steps = {bounds[i + 1] - bounds[i] for i in range(len(bounds) - 1)}
+    steps = sorted({bounds[i + 1] - bounds[i] for i in range(len(bounds) - 1)})
     return {
         "year": YEAR,
         "family_max": FAMILY_MAX,
         "min": bounds[0],
         "max": bounds[-1],
-        "step": min(steps) if steps else 5000,
+        "step": steps[0] if steps else 5000,
         "uniform": len(steps) == 1,
         "bounds": bounds,
         "rows": rows,
