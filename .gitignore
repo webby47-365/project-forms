@@ -19,3 +19,6 @@ Claude outputs/
 
 # 같은 이름으로 다시 저장할 때 Windows가 붙이는 사본 (update_forms-1.ps1 등)
 update_forms-*.ps1
+
+# 원격 병합 전 안전 백업 (sync_forms.ps1) — 정본이 아니므로 형상관리 대상이 아니다
+_sync_backup_*/

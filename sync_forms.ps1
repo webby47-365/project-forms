@@ -6,7 +6,7 @@
 #
 # [무엇을 하나]
 #   0) 현재 로컬·원격 커밋을 보여 준다
-#   1) 소스 폴더를 통째로 백업한다 (_sync_backup_날짜시각)
+#   1) 소스 폴더를 통째로 백업한다 (C:\Project_Forms_sync_backup\날짜시각 — 저장소 밖)
 #   2) 원격 위로 내 커밋을 다시 얹는다(rebase). public/ 같은 생성물이 충돌하면 원격 것을 쓴다 —
 #      어차피 3)에서 다시 만든다. templates/·scripts/·assets/ 의 내 수정은 충돌 없이 그대로 남는다
 #   3) deploy_forms.ps1 을 불러 재빌드 → 검증 → 커밋 → 푸시 → 배포 확인까지 마친다
@@ -36,7 +36,8 @@ if ($behind -eq '0') {
 
 Line '1. 안전 백업'
 $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
-$bk = "C:\Project_Forms\_sync_backup_$stamp"
+# 백업은 저장소 '밖'에 만든다. 안에 만들면 deploy 가 통째로 커밋해 버린다(2026-09-15 사고).
+$bk = "C:\Project_Forms_sync_backup\$stamp"
 New-Item -ItemType Directory -Path $bk -Force | Out-Null
 foreach ($d in @('templates', 'scripts', 'assets', 'catalog')) {
   robocopy $d "$bk\$d" /E /NFL /NDL /NJH /NJS /NC /NS | Out-Null
@@ -62,5 +63,5 @@ Line '3. 재빌드 · 검증 · 커밋 · 푸시'
 
 Write-Host ''
 Write-Host ('=' * 74) -ForegroundColor DarkYellow
-Write-Host (">>> sync_forms.ps1 실행 완료 | " + (Get-Date -Format 'yyyy-MM-dd HH:mm:ss') + " KST | 백업 " + $stamp + " | [로컬 작업] <<<") -ForegroundColor DarkYellow
+Write-Host (">>> sync_forms.ps1 실행 완료 | " + (Get-Date -Format 'yyyy-MM-dd HH:mm:ss') + " KST | 백업 " + $bk + " | [로컬 작업] <<<") -ForegroundColor DarkYellow
 Write-Host ('=' * 74) -ForegroundColor DarkYellow
