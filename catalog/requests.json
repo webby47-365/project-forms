@@ -1,7 +1,7 @@
 {
   "_comment": "방문자 서식 요청 접수 설정. endpoint가 비어 있으면 사이트에 요청 폼이 전혀 나오지 않습니다.",
-  "enabled": false,
-  "endpoint": "",
+  "enabled": true,
+  "endpoint": "https://script.google.com/macros/s/AKfycbzSxsJ2q1r_uEf-Dedz5hyeqy7_8-O17BzrwdslJ8mOoA6Ug6O0FGIHEFFRHVW7pOx3/exec",
   "max_title": 40,
   "max_purpose": 120,
   "_guide": {
