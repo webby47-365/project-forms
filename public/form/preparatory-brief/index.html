@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>사건 표시와 당사자를 적어 문서를 시작합니다.</li>        <li>다툼 없는 사실을 먼저 정리합니다.</li>        <li>자신의 주장과 상대방 주장에 대한 반박을 적습니다.</li>        <li>새 증거를 입증방법 표에 정리해 함께 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">소송이 진행되는 중에 당사자가 자신의 주장을 보완하거나 상대방의 새로운 주장에 반박하기 위해 작성하는 문서입니다. 당사자 간 다툼이 없는 사실을 먼저 정리하고, 자신의 주장 요지와 상대방 주장에 대한 반박을 순서대로 기재합니다. 새로 제출하는 증거가 있으면 입증방법 표에 정리하여 함께 냅니다. 제출 기한과 부본 수는 재판부의 안내나 송달받은 문서를 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>사건의 표시</b><span>사건번호 · 사건명 · 원고 · 피고</span>        </li>        <li><b>다툼 없는 사실</b><span class="note">당사자 간 이미 인정되어 다툼이 없는 사실을 정리하여 기재하십시오.</span>        </li>        <li><b>주장의 요지</b><span class="note">본인이 이 준비서면에서 주장하고자 하는 내용을 요약하여 기재하십시오.</span>        </li>        <li><b>상대방 주장에 대한 반박</b><span class="note">상대방이 제출한 서면에서 새로 주장한 내용을 인용하고 이에 대한 반박을 기재하십시오.</span>        </li>        <li><b>입증 방법</b><span>서증명 · 내용</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>제출 기한은 어떻게 확인하나요?</summary>
           <p class="a">재판부의 안내나 송달받은 문서에 기한이 나와 있으니, 그 내용을 확인해 기한 안에 제출하십시오.</p>

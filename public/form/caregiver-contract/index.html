@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>보호자와 간병인의 인적사항을 적습니다.</li>        <li>간병 기간과 근무 형태를 정합니다.</li>        <li>1일 간병비와 지급일을 정합니다.</li>        <li>업무 범위와 사고 발생 시 조치를 적습니다.</li>        <li>서명하고 각자 1부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">병원이나 가정에서 환자를 돌볼 간병인을 개인적으로 계약할 때 사용하는 서식입니다. 간병 기간과 근무 형태, 1일 간병비와 지급일을 명확히 적어야 분쟁을 예방할 수 있습니다. 간병인은 의료 행위를 할 수 없으므로 투약이나 처치가 필요한 경우 의료진에게 요청해야 하며, 업무 범위와 사고 발생 시 조치를 계약서에 구체적으로 명시하는 것이 좋습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 위탁인(보호자) 정보</b><span>성명 · 연락처 · 환자와의 관계</span>        </li>        <li><b>2. 간병인 정보</b><span>생년월일</span>        </li>        <li><b>3. 환자 정보</b><span>입원 병원·병동</span>        </li>        <li><b>4. 계약 조건</b><span>간병 기간 · 근무 형태 · 1일 간병비 · 지급일 · 지급방법</span>        </li>        <li><b>5. 간병 업무 범위</b><span>업무 내용 · 수행 여부 · 제1조 (업무 범위 준수) · 제2조 (의료 행위 금지) · 제3조 (비밀유지) · 제4조 (사고 시 조치와 책임) · 제5조 (계약 해지) · 제6조 (대체 간병인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>간병인이 투약이나 처치를 해도 되나요?</summary>
           <p class="a">간병인은 의료 행위를 할 수 없으므로 투약이나 처치가 필요하면 의료진에게 요청해야 합니다.</p>

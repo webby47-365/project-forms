@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>위탁 업무 범위와 산출물, 납품 기한을 정합니다.</li>        <li>용역대금과 지급 시기, 수정 횟수를 정합니다.</li>        <li>저작권 귀속과 포트폴리오 사용 가능 여부를 정합니다.</li>        <li>비밀유지 조항을 확인하고 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">개인 사업자나 프리랜서에게 업무를 위탁할 때 체결하는 계약서입니다. 업무 범위와 산출물, 납품 기한을 구체적으로 적어야 추가 요청을 둘러싼 다툼을 줄일 수 있습니다. 용역대금은 지급 시기와 방법, 수정 횟수 포함 여부를 함께 정하고 원천징수 여부를 명시하십시오. 산출물의 저작권을 누가 갖는지, 포트폴리오 사용이 가능한지 반드시 합의해 기재해야 합니다. 프리랜서 계약이라도 실질이 근로관계로 판단될 수 있으므로 지휘·감독 관계와 근로자성 여부는 제출처 또는 전문가 기준을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>계약 개요</b><span>용역명(프로젝트명) · 계약기간 · 납품기한 · 용역대금 · 원천징수 · 업무 수행 장소</span>        </li>        <li><b>업무 범위 및 산출물</b><span>업무 내용 · 산출물(형식) · 완료 기한 · 제1조 (목적 및 업무 범위) · 제2조 (용역대금의 지급) · 제3조 (수정 및 검수) · 제4조 (지식재산권의 귀속) · 제5조 (비밀유지) · 제6조 (계약의 해지 및 지체) · 제7조 (기타)</span><span class="note">특약사항 — 저작권 귀속 범위, 2차적 저작물 이용, 비용 부담, 재위탁 가능 여부 등을 기재하십시오.</span>        </li>        <li><b>당사자</b><span>위탁자 · 수탁자</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>원천징수는 누가 처리하나요?</summary>
           <p class="a">계약서에 원천징수 여부를 명시하고 통상 위탁자가 세금을 뗀 나머지를 지급합니다.</p>

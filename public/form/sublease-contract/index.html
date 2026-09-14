@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>목적물 주소와 전대인·전차인 인적사항을 적습니다.</li>        <li>전대차 기간과 보증금·차임을 정합니다.</li>        <li>원 임대인의 동의 여부를 확인하고 동의란에 서명받습니다.</li>        <li>특약사항을 적은 뒤 양 당사자가 서명 날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">임차인(전대인)이 빌린 주택이나 사무실을 다른 사람(전차인)에게 다시 임대할 때 사용합니다. 전대차는 원 임대인의 서면 동의를 받아야 효력이 있으므로 동의란을 별도로 두고 임대인의 성명과 서명을 받으십시오. 원 임대차계약이 끝나면 전대차도 함께 끝난다는 점과 사용 목적을 임의로 바꿀 수 없다는 점을 명시합니다. 임대인의 동의 없는 전대는 원 임대차계약의 해지 사유가 될 수 있으므로 계약 전에 반드시 동의 절차를 거치십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>전대인(원 임차인) · 연락처 · 전차인</span>        </li>        <li><b>2. 목적물 및 원 임대차 내역</b><span>목적물 주소 · 원 임대차 계약일 · 원 임대차 기간</span>        </li>        <li><b>3. 전대차 조건</b><span>전대 기간 · 보증금 · 차임(월세) · 관리비 · 제1조 (임대인의 동의) · 제2조 (원 임대차 종료 시 전대차의 종료) · 제3조 (사용목적의 제한) · 제4조 (원상회복) · 제5조 (해지)</span>        </li>        <li><b>임대인 동의란</b><span>임대인 성명</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>임대인 동의 없이 전대해도 되나요?</summary>
           <p class="a">원칙적으로 안 되며, 동의 없는 전대는 원 임대차계약 해지 사유가 될 수 있습니다.</p>

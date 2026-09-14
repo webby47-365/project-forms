@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>접수 경로와 고객 정보, 불만 내용을 적습니다.</li>        <li>불만이 발생한 원인을 분석해 기록합니다.</li>        <li>처리 방법과 보상 여부를 정해 실행합니다.</li>        <li>고객 확인을 받고 재발 방지 대책을 적어 종결합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">고객으로부터 제품·서비스 불만이나 클레임이 접수되었을 때 처리 경과를 기록하는 서식입니다. 접수 경로와 불만 내용을 먼저 정리하고, 원인 분석 후 처리 방법과 보상 여부를 기재합니다. 고객 확인을 받아 종결하며, 재발 방지 대책까지 남겨 유사 사례 예방에 활용합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 접수 정보</b><span>접수번호 · 접수일 · 접수자 · 접수경로</span>        </li>        <li><b>2. 고객 정보</b><span>상호/성명 · 담당자 · 연락처 · 주소</span>        </li>        <li><b>3. 불만 내용</b><span class="note">고객이 제기한 불만을 구체적인 사실 위주로 기재하십시오.</span>        </li>        <li><b>4. 원인 분석</b><span class="note">불만의 원인을 사실에 근거하여 분석하십시오.</span>        </li>        <li><b>5. 처리 내용 및 결과</b><span>처리일 · 처리자 · 보상여부 · 처리방법</span>        </li>        <li><b>6. 고객 확인</b><span>만족도 · 확인일 · 확인자</span>        </li>        <li><b>7. 재발 방지 대책</b><span class="note">동일한 불만이 재발하지 않도록 개선할 사항을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>보상 여부는 누가 결정하나요?</summary>
           <p class="a">사안의 경중에 따라 담당자 전결 또는 부서장 결재로 정하는 경우가 많습니다.</p>

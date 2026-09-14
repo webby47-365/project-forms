@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인의 인적사항을 적습니다.</li>        <li>대리 신청이면 대리인 정보를 함께 적습니다.</li>        <li>갱신이나 등급 변경이면 해당 항목에 표시합니다.</li>        <li>제출처인 국민건강보험공단 지사를 확인합니다.</li>        <li>방문 조사 일정을 안내받습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">65세 이상 노인이나 노인성 질병이 있는 국민이 장기요양 급여를 받으려면 국민건강보험공단에 등급 인정을 신청해야 합니다. 본인이 신청하기 어려운 경우 가족 등 대리인이 신청할 수 있으며, 이 경우 대리 신청인 정보를 함께 적습니다. 이미 등급을 받은 경우에는 갱신이나 등급 변경 신청에 해당 항목을 표시하십시오. 공단 직원의 방문 조사 후 등급판정위원회가 등급을 결정합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 신청인 정보</b><span>성명 · 생년월일 · 연락처 · 주소</span>        </li>        <li><b>2. 대리 신청인 정보 (본인이 신청하기 어려운 경우)</b><span>관계</span>        </li>        <li><b>3. 신청 구분</b><span>신청 구분 · 선택</span>        </li>        <li><b>4. 일상생활 수행 정도</b><span>항목 · 독립 수행 · 부분 도움 · 전적 도움</span>        </li>        <li><b>5. 현재 돌봄 상황</b><span class="note">현재 돌봄을 제공하는 사람과 돌봄 시간, 생활 환경 등을 간단히 적으십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>신청은 본인만 할 수 있나요?</summary>
           <p class="a">본인이 어려우면 가족 등 대리인이 신청할 수 있으며, 이때 대리 신청인 정보를 함께 적어야 합니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>파손된 시설물의 정확한 위치를 적습니다.</li>        <li>관리번호가 있으면 함께 적습니다.</li>        <li>하자 상태와 위험도를 구체적으로 씁니다.</li>        <li>현장 사진을 첨부해 관할 기관에 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">도로·보도·가로등 등 공공시설물이 파손되거나 고장 난 것을 발견했을 때 관할 구청이나 시설관리부서에 보수를 요청하는 서식입니다. 시설물의 정확한 위치와 관리번호(있는 경우)를 적고, 하자 상태와 위험도를 구체적으로 기재하면 처리에 도움이 됩니다. 사진을 함께 제출하면 현장 확인 없이도 상태를 빠르게 파악할 수 있습니다. 처리 순서와 일정은 관할 기관의 예산과 현장 여건에 따라 달라질 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>신청인</b><span>성명 · 연락처</span>        </li>        <li><b>시설물 위치</b><span>도로명주소 · 상세위치 · 시설 종류 · 관리번호</span>        </li>        <li><b>하자 내용</b><span>상태 · 위험도 · 발견일</span>        </li>        <li><b>요청 사항</b><span>제출처(관할 구청·시설관리부서)</span><span class="note">보수를 요청하는 이유와 바라는 조치를 적으십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>관리번호를 모르면 못 내나요?</summary>
           <p class="a">관리번호가 없어도 접수할 수 있으며, 위치와 하자 상태를 최대한 자세히 적으면 됩니다.</p>

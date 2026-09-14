@@ -76,6 +76,11 @@ class FormSpec:
         return 1 + sum(1 for b in self.blocks if b.get("type") == "page_break")
 
     @property
+    def outline(self) -> list[dict[str, Any]]:
+        """상세 화면 '이 서식에 들어 있는 항목' 목차. blocks에서 자동으로 뽑는다."""
+        return outline_of(self.blocks)
+
+    @property
     def has_sample(self) -> bool:
         """미리보기용 '작성 예시' 데이터가 하나라도 들어 있는지 여부.
 
@@ -90,6 +95,89 @@ class FormSpec:
 
 class SpecError(ValueError):
     """명세 파일이 스키마를 위반한 경우."""
+
+
+# 목차(outline) 추출 설정. 화면에서 훑어보는 목록이므로 과하게 길면 안 된다.
+_OUTLINE_MAX_SECTIONS = 12
+_OUTLINE_MAX_ITEMS_PER_SECTION = 14
+_OUTLINE_MAX_ITEMS_TOTAL = 48
+_OUTLINE_ITEM_MAX_CHARS = 24
+# 표의 일련번호 칸처럼 항목으로서 의미가 없는 머리글은 뺀다.
+_OUTLINE_SKIP = {"no", "번호", "연번", "순번", "구분", "비고", "계", "합계", "-", "※"}
+
+
+def outline_of(blocks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """명세의 blocks에서 '이 서식에 들어 있는 항목' 목차를 뽑는다.
+
+    상세 화면에 넣을 목록이다. 서식을 열지 않고도 어떤 칸을 채워야 하는지 미리 보게 해
+    체류시간을 늘리고, 항목명이 그대로 본문 텍스트가 되어 검색 유입(롱테일)에도 쓰인다.
+
+    구역 제목(subtitle)을 만나면 새 묶음을 시작하고, 그 아래의 grid 라벨·table 머리글·
+    계약서 조 제목을 항목으로 모은다. 값 칸("")과 일련번호 머리글은 제외한다.
+
+    Args:
+        blocks: FormSpec.blocks (명세의 블록 목록).
+
+    Returns:
+        [{"title": 구역명(없으면 ""), "items": [항목명, ...]}, ...]
+    """
+    sections: list[dict[str, Any]] = [{"title": "", "items": [], "note": ""}]
+    seen: set[str] = set()
+    total = 0
+
+    def add(section: dict[str, Any], raw: Any) -> None:
+        nonlocal total
+        if total >= _OUTLINE_MAX_ITEMS_TOTAL:
+            return
+        if not isinstance(raw, str):
+            return
+        text = " ".join(raw.split()).rstrip(":：").strip()
+        if not text or text.lower() in _OUTLINE_SKIP:
+            return
+        if len(text) > _OUTLINE_ITEM_MAX_CHARS or text.isdigit():
+            return
+        if text in seen or len(section["items"]) >= _OUTLINE_MAX_ITEMS_PER_SECTION:
+            return
+        seen.add(text)
+        section["items"].append(text)
+        total += 1
+
+    for blk in blocks:
+        kind = blk.get("type")
+        if kind == "subtitle":
+            if len(sections) >= _OUTLINE_MAX_SECTIONS:
+                break
+            sections.append(
+                {"title": " ".join(str(blk.get("text", "")).split()), "items": [], "note": ""})
+            continue
+
+        cur = sections[-1]
+        if kind == "grid":
+            rows = blk.get("rows") or []
+            n = len(rows[0]) if rows and isinstance(rows[0], list) else 0
+            cols = blk.get("label_cols")
+            if not cols:
+                cols = list(range(0, n, 2))  # label_cols 생략 시 짝수 열이 라벨이다
+            for row in rows:
+                if not isinstance(row, list):
+                    continue
+                for c in cols:
+                    if 0 <= c < len(row):
+                        add(cur, row[c])
+        elif kind == "table":
+            for cell in blk.get("header") or []:
+                add(cur, cell)
+        elif kind == "article":
+            add(cur, blk.get("heading"))
+        elif kind == "textbox" and not cur["note"]:
+            # 자기소개서처럼 서술형 칸만 있는 구역은 채울 항목이 없다.
+            # 대신 칸 위의 안내문을 그대로 보여주면 무엇을 써야 하는지 알 수 있다.
+            hint = " ".join(str(blk.get("hint", "")).split())
+            if 0 < len(hint) <= 80:
+                cur["note"] = hint
+
+    # 항목도 안내문도 없는 묶음은 버린다 (제목만 있는 구역, 앞머리의 빈 묶음)
+    return [s for s in sections if s["items"] or s["note"]]
 
 
 _REQUIRED = ("id", "title", "category", "subcategory", "tags", "summary", "usage", "blocks")

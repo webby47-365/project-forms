@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>회사명과 법인등록번호, 기준일을 적습니다.</li>        <li>발행주식 총수와 1주 금액을 적습니다.</li>        <li>주주별 성명과 주소를 적습니다.</li>        <li>보유 주식 종류와 수량을 적습니다.</li>        <li>취득일과 명의개서일을 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">상법에 따라 주식회사는 주주명부를 작성해 본점에 비치해야 합니다. 주식 양도나 증자가 있으면 변경 내용을 즉시 반영하고, 명의개서 없이는 회사에 대해 주주권을 주장할 수 없으므로 취득일과 명의개서일을 함께 적습니다. 법인 설립등기나 세무신고, 정부지원사업 신청 시 제출 서류로 자주 요구됩니다. 개인 식별번호 대신 생년월일만 적으십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>회사명 · 법인등록번호 · 발행주식 총수 · 1주 금액</span>        </li>        <li><b>주주 현황</b><span>주주명 · 주소 · 생년월일 · 주식종류 · 주식수 · 지분율 · 취득일 · 대표이사</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>주민등록번호를 적어야 하나요?</summary>
           <p class="a">아니요, 개인 식별번호 대신 생년월일만 적어 개인정보 노출을 줄이십시오.</p>

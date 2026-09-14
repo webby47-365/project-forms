@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발신인과 수신인 정보를 적습니다.</li>        <li>계약명과 계약일, 계약기간을 적습니다.</li>        <li>해지 사유와 근거 조항을 적습니다.</li>        <li>해지 효력 발생일을 적습니다.</li>        <li>등기우편으로 발송하고 사본을 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">계약 상대방의 의무 위반이나 기타 사유로 계약을 더 이상 유지하기 어려울 때 해지 의사를 공식적으로 알리기 위해 사용합니다. 계약명과 계약일, 계약기간, 계약금액 등 원 계약 내용을 먼저 특정하고 해지 사유와 근거가 되는 계약 조항을 구체적으로 기재합니다. 해지의 효력이 발생하는 날짜를 명확히 밝히고 필요한 조치를 함께 요구합니다. 우체국 등기로 발송해 통지 사실과 도달 시점의 증거를 남겨 두는 것이 좋습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>발신인</b><span>성명 · 연락처 · 주소</span>        </li>        <li><b>1. 계약 내역</b><span>계약명 · 계약일 · 계약기간 · 계약금액</span>        </li>        <li><b>2. 해지 사유 및 근거 조항</b><span class="note">해지 사유와 근거가 되는 계약 조항을 구체적으로 기재하십시오.</span>        </li>        <li><b>3. 해지 효력 발생일</b><span>해지 효력 발생일</span>        </li>        <li><b>4. 요청 사항</b><span class="note">해지에 따라 상대방에게 요구하는 조치(원상회복, 반환 등)를 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>다른 내용증명과 무엇이 다른가요?</summary>
           <p class="a">계약 해지 의사와 효력 발생일 통보에 맞춘 서식으로, 대여금·임금체불 통보와는 목적이 다릅니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>이용 대상자와 신청인(보호자) 정보를 적습니다.</li>        <li>희망하는 서비스 종류를 선택합니다.</li>        <li>이용 요일과 시간을 구체적으로 적습니다.</li>        <li>유의사항을 적고 신청서를 시설에 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">노인복지관, 주간보호센터, 장애인복지시설 등 복지시설의 서비스를 이용하고자 할 때 작성하는 신청서입니다. 이용 대상자와 신청인(보호자)의 연락처를 정확히 적어야 연락이 가능하며, 희망하는 서비스와 이용 요일·시간을 구체적으로 적으면 배정이 빨라집니다. 이용 중 유의가 필요한 사항은 시설이 안전하게 서비스를 제공하는 데 참고되므로 간단히 기재하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 신청인 정보</b><span>성명 · 연락처 · 이용 대상자와의 관계</span>        </li>        <li><b>2. 이용 대상자 정보</b><span>생년월일 · 주소</span>        </li>        <li><b>3. 신청 서비스</b><span>서비스명 · 희망 이용 요일·시간 · 이용 목적</span>        </li>        <li><b>4. 이용 시 유의 사항</b><span class="note">이동 보조, 식이, 알레르기 등 이용 시 시설이 참고할 유의 사항을 기재하십시오.</span>        </li>        <li><b>5. 비상연락처</b><span>관계</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>신청인과 이용 대상자가 달라도 되나요?</summary>
           <p class="a">네, 보호자가 대신 신청하는 경우가 많으니 신청인 정보를 정확히 적으면 됩니다.</p>

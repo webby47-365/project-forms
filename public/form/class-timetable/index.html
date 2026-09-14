@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>학교(학원)명과 학년·반, 적용 기간을 적습니다.</li>        <li>교시별 시작·종료 시각을 먼저 채웁니다.</li>        <li>요일별 과목과 담당 교사, 교실을 채웁니다.</li>        <li>요일별 준비물과 방과 후 일정을 적어 마무리합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">학교나 학원의 주간 수업 일정을 정리해 붙여 두고 쓰는 표입니다. 교시별 시작·종료 시각을 먼저 적고 요일별 과목을 채우면 이동 수업이나 공강을 한눈에 파악할 수 있습니다. 과목별 담당 교사와 교실을 함께 적어 두면 학기 초에 헷갈리지 않습니다. 요일마다 챙겨야 할 준비물을 따로 표시해 두면 빠뜨리는 일이 줄어듭니다. 방과 후 활동이나 학원 일정은 아래 칸에 적어 하루 전체 동선을 정리하십시오. 학기 중 시간표가 변경되면 새로 작성해 사용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>학교(학원) · 학년·반 · 이름 · 학기 · 적용 기간 · 담임</span>        </li>        <li><b>1. 주간 시간표</b><span>교시 · 시간 · 월 · 화 · 수 · 목 · 금 · 토</span>        </li>        <li><b>2. 과목별 담당 및 교실</b><span>과목 · 담당 교사 · 교실</span>        </li>        <li><b>3. 요일별 준비물 및 방과 후 일정</b><span>요일 · 준비물 · 방과 후·학원 일정</span><span class="note">메모 — 수행평가 일정, 변경된 수업 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>학기 중 시간표가 바뀌면 어떻게 하나요?</summary>
           <p class="a">기존 표를 수정하기보다 새로 작성해 사용하는 것이 헷갈리지 않습니다.</p>

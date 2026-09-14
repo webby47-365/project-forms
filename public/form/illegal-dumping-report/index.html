@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발생 장소와 일시를 적습니다.</li>        <li>투기된 폐기물의 종류와 수량을 적습니다.</li>        <li>확인된 경우에만 차량번호를 적습니다.</li>        <li>현장 사진을 첨부합니다.</li>        <li>신고인 연락처를 적고 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">쓰레기나 폐기물을 허가 없이 무단으로 버린 현장을 발견했을 때 관할 지자체 환경관리부서에 신고하는 서식입니다. 발생 장소와 일시, 투기된 폐기물의 종류와 수량을 구체적으로 적고, 차량번호나 인적 정보가 확인된 경우에만 기재합니다. 현장과 폐기물 상태를 보여주는 사진을 함께 제출하면 처리에 도움이 되며, 신고포상금 지급 여부와 기준은 지자체 조례에 따라 다릅니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>신고인</b><span>성명 · 연락처 · 신고인 비공개 희망 여부</span>        </li>        <li><b>발생 장소</b><span>주소 · 상세위치 · 발견일시</span>        </li>        <li><b>투기 내용</b><span>폐기물 종류 · 수량 · 상태</span>        </li>        <li><b>차량·인적 정보 (확인된 경우)</b><span>차량번호 · 인상착의 등</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>신고자 정보를 꼭 밝혀야 하나요?</summary>
           <p class="a">처리 결과 안내가 필요하면 연락처를 적고, 비공개를 원하면 담당 부서에 문의하십시오.</p>

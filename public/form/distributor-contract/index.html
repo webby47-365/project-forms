@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>공급자와 대리점 정보를 적고 판매지역을 정합니다.</li>        <li>공급가격과 결제조건, 최소 판매수량을 정합니다.</li>        <li>상표 사용 범위와 재고·반품 처리 방법을 정합니다.</li>        <li>계약기간과 해지 조건을 확인하고 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">제조사나 공급자가 특정 지역에서 대리점에게 판매를 위탁할 때 체결하는 계약서입니다. 판매지역과 최소 판매수량, 공급가격과 결제조건을 명확히 정해야 분쟁을 막을 수 있습니다. 상표 사용 범위와 재고·반품 처리, 계약기간과 해지 조건도 함께 정해 둡니다. 본 서식은 참고용이며 개별 사안의 법적 적합성은 이용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>계약 당사자</b><span>공급자 상호 · 대표자 · 사업자등록번호 · 소재지 · 담당자 · 연락처 · 대리점 상호 · 제1조 (목적) · 제2조 (대리점 지정과 판매지역) · 제3조 (공급가격과 결제) · 제4조 (최소 판매수량) · 제5조 (판매촉진과 광고) · 제6조 (상표 사용) · 제7조 (재고와 반품)</span>        </li>        <li><b>특약사항</b><span class="note">독점 공급 여부, 재고 인수 조건 등 추가로 합의한 사항을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>판매지역은 겹쳐도 되나요?</summary>
           <p class="a">분쟁을 막으려면 대리점별 판매지역을 서로 겹치지 않게 명확히 정하는 것이 좋습니다.</p>

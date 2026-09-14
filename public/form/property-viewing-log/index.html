@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>조사일과 조사자, 지역, 목적을 적습니다.</li>        <li>매물별로 주소·면적·층·보증금(또는 매매가)을 기재합니다.</li>        <li>교통·채광·소음·주차 등 공통 항목을 매물별로 평가합니다.</li>        <li>매물별로 짧은 소감을 남깁니다.</li>        <li>마지막에 종합 의견과 우선순위를 정리합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">전세·월세나 매매 매물을 여러 곳 둘러볼 때 조건과 느낀 점을 그 자리에서 기록해 두는 서식입니다. 매물별로 주소·면적·층·보증금 또는 매매가·관리비·입주가능일을 적고 짧은 평가를 남기면 나중에 비교하기 쉽습니다. 교통·채광·소음·주차처럼 공통 항목을 매물별로 나란히 적어 비교 평가표를 채우고, 마지막에 종합 의견을 정리해 우선순위를 정하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 조사 개요</b><span>조사일 · 조사자 · 지역 · 목적</span>        </li>        <li><b>2. 매물별 조사</b><span>매물명·주소 · 면적 · 층 · 보증금·월세/매매가 · 관리비 · 입주가능일 · 평가</span>        </li>        <li><b>3. 비교 평가</b><span>항목 · A매물 · B매물 · C매물</span>        </li>        <li><b>4. 종합 의견</b><span class="note">비교한 매물 중 우선순위와 선택 이유를 정리하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>매물을 몇 곳까지 비교할 수 있나요?</summary>
           <p class="a">표 형식이라 여러 매물을 나란히 적어 한 번에 비교할 수 있습니다.</p>

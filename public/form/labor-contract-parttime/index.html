@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>근로자와 사업주 정보를 적습니다.</li>        <li>근로계약기간과 근무 장소, 업무 내용을 적습니다.</li>        <li>요일별 시업·종업 시간과 휴게시간을 표에 적습니다.</li>        <li>시급 등 임금과 지급일을 적습니다.</li>        <li>양쪽이 서명하고 각각 한 부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">하루 또는 1주의 소정근로시간이 통상근로자보다 짧은 단시간(파트타임·아르바이트) 근로자를 채용할 때 사용합니다. 근로기준법과 기간제법은 단시간 근로자에게 근로일별 근로시간을 서면으로 명시하도록 정하고 있으므로 요일별 시업·종업·휴게시간을 표에 정확히 기재하십시오. 초과근로 동의와 주휴수당 지급 기준도 함께 확인해 작성하고, 작성 후 2부를 만들어 각각 보관하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>사업체명 · 대표자 · 사업장 주소 · 근로자 성명 · 생년월일 · 근로자 주소 · 연락처 · 이메일</span>        </li>        <li><b>2. 근로조건</b><span>근로계약기간 · 근무장소 / 업무내용 · 주 소정근로시간 · 근무요일 · 주휴일 · 시간급</span>        </li>        <li><b>3. 근로일별 근로시간</b><span>월 · 화 · 수 · 목 · 금 · 토</span>        </li>        <li><b>4. 임금</b><span>주휴수당 · 임금 지급일 · 지급 방법</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>요일마다 근무시간이 다르면 어떻게 적나요?</summary>
           <p class="a">근로일별 근무표에 요일마다 시업·종업·휴게시간을 따로 적으면 됩니다.</p>

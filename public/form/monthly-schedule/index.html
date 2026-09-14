@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>연도와 월, 이달의 목표를 적습니다.</li>        <li>주별 표에는 요일별 할 일을 짧게 적습니다.</li>        <li>날짜가 정해진 주요 일정을 장소와 함께 적습니다.</li>        <li>메모란에 이번 달 기억할 일을 남깁니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">한 달의 업무·개인 일정을 주 단위로 나누어 관리할 때 사용하는 양식입니다. 연도와 월, 이달의 목표를 먼저 적고 주별 표에는 요일마다 할 일을 짧게 기록합니다. 이달의 주요 일정 표에는 날짜가 정해진 약속이나 행사를 장소와 함께 적어 놓치지 않도록 하고, 메모란에는 이번 달 기억할 일이나 다짐을 남겨 두면 월말에 돌아보기 좋습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>연도 · 월 · 이달의 목표</span>        </li>        <li><b>주별 일정</b><span>주차 · 화 · 수 · 목 · 금 · 토 · 일</span>        </li>        <li><b>이달의 주요 일정</b><span>일자 · 일정 · 장소</span>        </li>        <li><b>메모</b><span class="note">이번 달 기억할 일이나 다짐을 적으십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>목표는 꼭 채워야 하나요?</summary>
           <p class="a">필수는 아니지만 적어두면 월말에 돌아볼 때 도움이 됩니다.</p>

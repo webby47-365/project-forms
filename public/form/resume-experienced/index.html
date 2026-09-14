@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>인적사항과 연락처를 적습니다.</li>        <li>최종학력만 간단히 기재합니다.</li>        <li>근무기간을 최근 순으로 적고 담당업무를 씁니다.</li>        <li>주요 프로젝트의 기간·역할·성과를 정리합니다.</li>        <li>희망연봉과 입사가능일을 명확히 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">경력직 채용이나 이직 시 제출하는 이력서로, 학력은 최종학력만 간단히 적고 경력사항과 성과에 분량을 집중합니다. 근무기간은 최근 순으로 적고, 담당업무는 역할과 범위가 드러나게 씁니다. 주요 프로젝트는 기간·역할·수행내용·성과를 함께 기재해 구체적인 기여를 보여주고, 희망연봉과 입사가능일은 채용 담당자가 바로 확인할 수 있도록 명확히 적으십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명(한글) · 성명(한문) · 생년월일 · 성명(영문) · 성별 · 휴대전화 · 이메일 · 주소</span>        </li>        <li><b>1. 학력사항 (최종학력)</b><span>재학기간 · 학교명 · 전공(학과) · 졸업구분 · 소재지</span>        </li>        <li><b>2. 경력사항</b><span>근무기간 · 회사명 · 부서/직위 · 담당업무 · 퇴직사유</span>        </li>        <li><b>3. 주요 프로젝트 및 성과</b><span>프로젝트명 · 기간 · 역할 · 수행 내용 · 성과</span>        </li>        <li><b>4. 자격·어학 및 희망조건</b><span>자격·어학 · 희망연봉 · 입사가능일</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>학력은 얼마나 자세히 써야 하나요?</summary>
           <p class="a">경력직은 최종학력만 간단히 적고 경력사항에 분량을 집중하십시오.</p>

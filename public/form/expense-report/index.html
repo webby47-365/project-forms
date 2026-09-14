@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>정산 기간과 지출 유형을 적습니다.</li>        <li>항목별로 거래일과 내용, 금액을 순서대로 적습니다.</li>        <li>영수증 등 증빙서류를 항목마다 첨부합니다.</li>        <li>사전 승인 여부를 확인하고 합계 금액을 계산합니다.</li>        <li>회계팀에 제출해 확인 서명을 받습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">출장이나 업무 수행 중 개인이 선금하거나 부담한 경비를 회사에 청구하여 돌려받기 위한 문서입니다. 거래 증명서(영수증·티켓·명세서)를 반드시 첨부해야 하며, 항목별로 거래일·내용·금액을 명확히 작성하고, 사전 승인을 받은 항목인지 확인하십시오. 부가세 포함 여부는 증빙서류에 따라 결정되고, 분실이나 미확인 증빙은 정산 대상에서 제외될 수 있으므로 정산 전에 회계팀과 협의하여 진행하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>정산일자 · 정산번호 · 신청부서 · 신청자 · 정산기간 · 지출유형</span>        </li>        <li><b>정산 내역</b><span>거래일 · 내용 · 장소 · 결제처 · 공급가액 · 부가세 · 공급가액 합계 · 부가세(10%) 합계 · 정산액 합계 · 금액(한글)</span>        </li>        <li><b>정산 상세</b><span>경비 유형 · 교통비 · 숙박비 · 식사비 · 행사비 · 기타</span><span class="note">특기사항 — 특별 승인이 필요한 항목, 분실 증빙, 환율 적용 기준 등을 기재하십시오.</span>        </li>        <li><b>결재</b><span>임원 · 서명(날인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>증빙서류를 분실하면 어떻게 하나요?</summary>
           <p class="a">정산 대상에서 제외될 수 있으니 정산 전 회계팀과 먼저 협의하십시오.</p>

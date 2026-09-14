@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>작성자의 인적사항을 적습니다.</li>        <li>포기하는 권리의 종류와 발생 원인을 구체적으로 적습니다.</li>        <li>권리의 대상과 금액을 명확히 특정합니다.</li>        <li>향후 이의나 청구를 하지 않겠다는 확약을 적습니다.</li>        <li>날짜를 적고 서명 또는 날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">채권 등 특정 권리를 보유한 사람이 이를 포기하고자 할 때 그 의사를 명확히 밝히기 위해 작성합니다. 포기하는 권리의 종류와 대상, 발생 원인, 금액 등을 구체적으로 특정해야 나중에 다툼이 생기지 않습니다. 포기 의사와 함께 향후 이의나 청구를 제기하지 않겠다는 확약을 함께 기재합니다. 포기의 효력 범위는 개별 사안에 따라 달라질 수 있으므로 서명 전 전문가 확인을 받는 것이 안전합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 작성자</b><span>성명 · 생년월일 · 주소</span>        </li>        <li><b>2. 포기 대상 권리의 표시</b><span>권리 종류 · 대상 · 발생 원인 · 금액</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>포기한 권리를 나중에 다시 주장할 수 있나요?</summary>
           <p class="a">원칙적으로 어렵기 때문에 서명 전 포기 범위를 전문가와 함께 확인하는 것이 안전합니다.</p>

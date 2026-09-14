@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인의 인적사항과 연락처를 적습니다.</li>        <li>고지번호와 위반일시, 장소, 차량번호를 고지서와 똑같이 적습니다.</li>        <li>이의 사유를 사실관계 중심으로 구체적으로 씁니다.</li>        <li>사진이나 상황 설명 등 증빙자료를 첨부합니다.</li>        <li>이의신청 기간 내에 관할 지자체에 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">주차위반 단속으로 과태료 고지서를 받았으나 부과에 이의가 있을 때 관할 지자체에 제출합니다. 고지번호, 위반일시·장소, 차량번호, 과태료 금액을 고지서와 동일하게 기재하고, 이의 사유는 사실관계를 중심으로 구체적으로 적습니다. 현장 사진이나 상황 설명서 같은 증빙 자료를 함께 제출하면 심사에 도움이 됩니다. 이의신청 기간(통상 고지를 받은 날부터 60일 이내)을 넘기면 심사 자체가 어려우므로 기한을 먼저 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>신청인</b><span>성명 · 생년월일 · 주소 · 연락처</span>        </li>        <li><b>처분 내용</b><span>고지번호 · 위반일시 · 위반장소 · 차량번호 · 과태료 금액</span>        </li>        <li><b>이의신청 사유</b><span class="note">과태료 부과가 부당하다고 보는 사유를 구체적으로 기재하십시오.</span>        </li>        <li><b>증빙 자료</b><span>자료명 · 매수 · 제출처(관할 지자체)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>이의신청 기간이 지나면 신청할 수 없나요?</summary>
           <p class="a">통상 고지를 받은 날부터 60일이 지나면 심사가 어려우니 기한을 꼭 확인하십시오.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발령 대상자의 인적사항을 적습니다.</li>        <li>변경 전과 변경 후의 부서·직위를 나란히 적습니다.</li>        <li>발령일자와 발령 사유를 명시합니다.</li>        <li>대표이사 서명을 받아 본인에게 교부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">신입사원 입사, 직위 승진, 부서 이동, 전직 등 인사 발령을 공식적으로 통지하는 문서입니다. 발령 대상자의 인적사항과 함께 변경 전·후의 부서·직위·급여를 명확하게 기재하고, 회사 대표이사의 서명·날인을 받아 본인과 인사담당자에게 교부합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>발령 대상자</b><span>성명 · 생년월일 · 성별 · 사번 · 입사일 · 현 직급</span>        </li>        <li><b>발령 내용</b><span>발령 구분 · 발령 사유 · 현 부서 · 발령 부서 · 현 직위 · 발령 직위 · 현 급여 · 발령 급여</span>        </li>        <li><b>발령 사항</b><span>발령 일자 · 근무 시작일 · 보직명(있는 경우) · 발령 권자</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>급여 변경도 반드시 적어야 하나요?</summary>
           <p class="a">급여가 바뀌는 발령이면 변경 전후 금액을 함께 적어야 나중에 근로조건 관련 다툼을 줄일 수 있습니다.</p>

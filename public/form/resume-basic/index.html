@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>사진은 3개월 이내에 찍은 것을 붙입니다.</li>        <li>학력은 최종학력부터 거꾸로 적습니다.</li>        <li>경력은 최근 근무지부터 거꾸로 적습니다.</li>        <li>자격증은 취득일과 발급기관을 함께 적습니다.</li>        <li>마지막에 작성일을 쓰고 이름 옆에 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">입사지원 시 자기소개서와 함께 제출하는 기본 서식입니다. 학력은 최종학력부터 역순으로, 경력은 최근 근무지부터 역순으로 작성합니다. 사진은 3개월 이내 촬영본을 사용하고, 기재사항이 사실과 다를 경우 채용이 취소될 수 있으므로 정확하게 작성합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명(한글) · 성명(한문) · 생년월일 · 성명(영문) · 성별 · 휴대전화 · 이메일 · 주소 · 비상연락처 · 관계 · 전화</span>        </li>        <li><b>1. 학력사항</b><span>재학기간 · 학교명 · 전공(학과) · 졸업구분 · 소재지</span>        </li>        <li><b>2. 경력사항</b><span>근무기간 · 회사명 · 부서/직위 · 담당업무 · 퇴직사유</span>        </li>        <li><b>3. 자격·면허 및 어학</b><span>자격·면허명 · 발급기관 · 취득일 · 등급/점수</span>        </li>        <li><b>4. 병역 및 기타</b><span>병역구분 · 복무기간 · 계급 · 보훈대상 · 장애여부 · 희망연봉</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>사진은 꼭 붙여야 하나요?</summary>
           <p class="a">채용공고에 요구가 없으면 비워도 됩니다. 사진란이 있는 서식이라면 넣는 쪽이 무난합니다.</p>

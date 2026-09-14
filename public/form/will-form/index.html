@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>유언자 성명과 작성일, 주소를 적습니다.</li>        <li>재산 처분 내용을 구체적으로 정리합니다.</li>        <li>유언 집행자를 정해 적습니다.</li>        <li>내용을 확인한 뒤 백지에 전부 자필로 옮겨 씁니다.</li>        <li>연월일, 주소, 성명을 자필로 쓰고 도장을 찍습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">자필증서에 의한 유언을 준비할 때 들어가야 할 항목과 순서를 미리 정리해 보는 초안용 양식입니다. 민법 제1066조에 따라 유언자 본인이 전문·연월일·주소·성명을 모두 손으로 직접 쓰고 날인해야 효력이 있으며, 컴퓨터로 작성하거나 다른 사람이 대신 쓰면 무효가 됩니다. 이 양식으로 내용을 먼저 정리한 뒤, 실제 유언장은 백지에 전부 자필로 옮겨 작성하십시오. 유언의 효력이나 유류분 등 법률 문제는 변호사·공증인 등 전문가에게 반드시 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>유언 내용 (초안)</b><span class="note">유언의 내용을 구체적으로 적으십시오. (예: 재산의 종류와 수증자, 비율 등)</span>        </li>        <li><b>연월일·주소·성명·날인</b><span>주소 · 성명</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>이 양식에 바로 인쇄해서 써도 되나요?</summary>
           <p class="a">이 양식은 내용을 미리 정리하는 초안용이며 실제 유언장은 백지에 전부 자필로 다시 써야 효력이 있습니다.</p>

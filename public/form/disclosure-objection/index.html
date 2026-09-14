@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인 정보와 원래 청구 접수번호를 적습니다.</li>        <li>통지받은 결정일과 결정구분, 사유를 적습니다.</li>        <li>이의신청 취지와 이유를 적습니다.</li>        <li>증거나 참고 자료를 첨부합니다.</li>        <li>결정을 통지한 기관에 기한 내 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">정보공개를 청구했으나 공공기관이 비공개 또는 부분공개로 결정한 경우, 결정 통지를 받은 날부터 30일 이내에 해당 기관에 제출합니다. 원래 청구한 접수번호와 내용, 결정일·결정구분· 사유를 통지서와 동일하게 기재하고, 이의신청 취지와 이유를 구체적으로 적어야 재심사에 도움이 됩니다. 법령상 기재사항을 빠뜨리지 않아야 하며, 처리 결과는 해당 기관의 판단에 따릅니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>신청인</b><span>성명 · 생년월일 · 주소 · 연락처</span>        </li>        <li><b>원 청구 내용</b><span>접수번호 · 청구일 · 청구내용 · 처리기관</span>        </li>        <li><b>결정 내용</b><span>결정일 · 결정구분(비공개/부분공개) · 결정 사유</span>        </li>        <li><b>이의신청 취지</b><span class="note">무엇을 구하는지 한두 문장으로 적으십시오.</span>        </li>        <li><b>이의신청 이유</b><span class="note">비공개 사유가 부당하다고 보는 근거를 구체적으로 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>언제까지 제출해야 하나요?</summary>
           <p class="a">결정 통지를 받은 날부터 30일 이내에 제출해야 합니다.</p>

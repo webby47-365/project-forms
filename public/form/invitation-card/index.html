@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>행사명과 일시, 장소를 적습니다.</li>        <li>초대 인사말을 간결하게 작성합니다.</li>        <li>교통편과 주차 안내를 적습니다.</li>        <li>회신 기한과 연락처를 기재합니다.</li>        <li>발송 전 날짜·요일·장소명을 다시 확인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">개업이나 돌잔치, 모임, 발표회처럼 손님을 모시는 자리에 보내는 초청 문서입니다. 행사명과 일시, 장소를 눈에 띄게 적고 주소는 찾아오기 쉽도록 교통편과 주차 안내를 함께 기재하십시오. 회신이 필요하면 회신 기한과 연락처를 명확히 적어야 인원 파악이 수월합니다. 초대 인사말은 격식을 갖추되 간결하게 쓰고, 복장이나 선물 사양 같은 안내사항이 있으면 따로 적습니다. 발송 전에 날짜와 요일이 맞는지, 장소명이 정확한지 다시 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span class="note">초대 인사말 — 모시는 마음을 담아 간결하게 작성하십시오.</span>        </li>        <li><b>행사 안내</b><span>행사명 · 일시 · 시각 · 장소 · 주소 · 주최(초대인) · 연락처</span>        </li>        <li><b>참석 안내</b><span>회신 기한 · 회신 방법 · 복장 · 동반 인원 · 교통편·주차 안내</span>        </li>        <li><b>초대 명단</b><span>성함 · 관계 · 회신 여부</span><span class="note">기타 안내사항 — 식사 제공, 선물 사양, 우천 시 안내 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>회신 기한은 꼭 적어야 하나요?</summary>
           <p class="a">인원 파악을 위해 회신 기한과 연락처를 명확히 적는 것이 좋습니다.</p>

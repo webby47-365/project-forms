@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>지출 목적과 내용을 적고 공급가액과 부가세를 나눠 씁니다.</li>        <li>견적서·송장·영수증 등 증빙자료를 첨부합니다.</li>        <li>담당자부터 팀장, 임원, 대표 순으로 결재를 받습니다.</li>        <li>승인된 결의서로 지출을 집행하고 결과를 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">회사의 경비를 지출하기 전에 상급자의 승인을 받기 위한 문서입니다. 지출의 목적·내용·근거 자료(견적서·송장·영수증)를 명확히 기재해야 결의 심사가 신속하고, 사후 검증할 때도 필요합니다. 지출액은 공급가액과 부가세를 명확히 분리하여 기재하고, 담당자 → 팀장 → 임원 → 대표 순서로 결재를 받으며, 제출처 규정에 따른 결재 필수 범위를 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>결의일자 · 결의번호 · 신청부서 · 신청자 · 지출일예정일 · 예산과목</span>        </li>        <li><b>지출 내용</b><span>지출 사유 · 지출 내용 · 내용 · 규격 · 수량 · 단가 · 공급가액 · 공급가액 소계 · 부가세(10%) · 합계금액 · 금액(한글)</span>        </li>        <li><b>첨부 증빙서류</b><span class="note">특기사항이 있으면 기재하십시오.</span>        </li>        <li><b>결재</b><span>담당자 · 임원 · 서명(날인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>결재 순서를 꼭 지켜야 하나요?</summary>
           <p class="a">회사마다 결재 범위와 순서가 다르므로, 정해진 전결 규정을 확인한 뒤 그 순서대로 받으십시오.</p>

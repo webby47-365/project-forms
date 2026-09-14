@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>목적물 소재지와 계약일·기간을 적습니다.</li>        <li>해지 사유와 해지 예정일을 적습니다.</li>        <li>보증금 반환 계좌를 적습니다.</li>        <li>명도 예정일을 적습니다.</li>        <li>서명한 뒤 내용증명으로 발송합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">임대인이나 임차인이 임대차계약을 끝내겠다는 뜻을 상대방에게 서면으로 알리는 문서입니다. 목적물의 소재지와 계약일·기간을 정확히 적어 어떤 계약에 대한 통보인지 특정하십시오. 해지 사유와 해지 예정일을 명확히 적고, 보증금 반환 계좌와 명도 예정일을 함께 기재하면 정산이 수월합니다. 통보 기한은 계약서와 관련 법령에 따라 다르므로 반드시 확인한 뒤 발송하고, 도달 사실을 남기기 위해 내용증명 우편으로 보내는 것이 안전합니다. 발송 전 사본을 보관하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>발신인(통보인) · 연락처 · 주소 · 수신인(피통보인)</span>        </li>        <li><b>2. 임대차계약의 표시</b><span>목적물 소재지 · 계약일자 · 임대차 기간 · 보증금 · 월 차임 · 통보인 지위 · 해지 예정일</span>        </li>        <li><b>3. 통보 내용</b><span class="note">해지 사유와 경위를 구체적으로 기재하십시오. (예: 계약기간 만료, 갱신 거절, 차임 연체 등)</span>        </li>        <li><b>4. 보증금 반환 및 명도</b><span>명도 예정일 · 정산 예정일 · 보증금 반환계좌 · 공제 예정 항목 · 기타</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>통보 기한은 며칠 전에 보내야 하나요?</summary>
           <p class="a">계약서와 관련 법령에 따라 다르므로 발송 전에 반드시 확인해야 합니다.</p>

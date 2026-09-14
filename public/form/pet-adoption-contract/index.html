@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>반려동물의 종·품종과 예방접종 이력을 사실대로 적습니다.</li>        <li>분양 조건과 대금 지급 방법을 정합니다.</li>        <li>인수 후 관리 의무와 유기 금지 조항을 확인합니다.</li>        <li>양 당사자가 서명하고 한 부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">반려동물을 분양하거나 입양할 때 분양자와 입양자가 동물의 정보와 건강 상태를 확인하고 분양 조건을 명확히 하기 위해 작성합니다. 종·품종·예방접종 이력 등을 사실대로 기재하고, 인수 후 관리 의무와 유기 금지, 파양 시 통보 의무를 조항으로 남겨 분쟁을 예방합니다. 소유자가 변경되면 동물보호법에 따른 동물등록 변경신고도 잊지 말고 진행하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>분양자 · 성명 · 생년월일 · 주소 · 연락처 · 입양자</span>        </li>        <li><b>동물 정보</b><span>종 · 품종 · 성별 · 생년월일(추정) · 모색 · 체중 · 개체등록번호</span>        </li>        <li><b>건강 상태</b><span>예방접종 이력 · 중성화 여부 · 최근 검진일</span>        </li>        <li><b>분양 조건</b><span>분양일 · 분양비 · 인도 장소 · 제1조 (건강 상태의 고지) · 제2조 (인수 후 관리 의무) · 제3조 (파양 시 통보 의무) · 제4조 (유기 금지) · 제5조 (동물등록 의무) · 제6조 (분쟁 해결)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>소유자 변경 신고도 해야 하나요?</summary>
           <p class="a">예. 동물보호법에 따라 소유자가 바뀌면 동물등록 변경신고를 별도로 진행해야 합니다.</p>

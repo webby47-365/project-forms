@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>제공받는 자와 제공 목적을 적습니다.</li>        <li>제공 항목과 보유 및 이용기간을 구체적으로 기재합니다.</li>        <li>동의 거부 권리와 거부 시 불이익을 안내합니다.</li>        <li>정보주체가 항목별 동의 여부를 표시합니다.</li>        <li>서명 또는 날인 후 제출받습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">배송·결제 대행처럼 수집한 개인정보를 다른 업체나 기관에 제공해야 할 때 사용하는 법정 고지형 동의서입니다. 제공받는 자, 제공 목적, 제공 항목, 보유 및 이용기간을 표에 구체적으로 기재하고 항목별로 동의 여부를 받습니다. 동의를 거부할 권리와 거부 시 받을 수 있는 불이익을 함께 안내해야 하며, 제공받는 자가 여러 곳이면 행을 추가해 모두 기재하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 연락처</span>        </li>        <li><b>1. 제공받는 자 및 제공 내용</b><span>제공받는 자 · 제공 목적 · 제공 항목 · 보유 및 이용기간</span>        </li>        <li><b>3. 항목별 동의</b><span>동의 · 동의하지 않음</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>제공받는 곳이 여러 곳이면 어떻게 하나요?</summary>
           <p class="a">표에 행을 추가해 제공받는 자마다 목적과 항목을 각각 적으십시오.</p>

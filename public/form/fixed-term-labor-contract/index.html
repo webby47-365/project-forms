@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>사용자와 근로자의 인적사항을 적습니다.</li>        <li>계약기간과 근무장소, 업무내용을 기재합니다.</li>        <li>근로일과 근로시간, 휴게시간을 적습니다.</li>        <li>임금 구성항목과 계산방법, 지급방법을 나누어 적습니다.</li>        <li>서명 후 2부를 작성해 각각 1부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">계약기간을 정해 채용하는 계약직·단기 근로자와 체결하는 근로계약서입니다. 기간제 근로자에게는 근로계약기간과 근로일별 근로시간을 서면으로 명시하고 교부해야 하므로 해당 칸을 반드시 채우십시오. 임금은 구성항목·계산방법·지급방법을 나누어 적고, 수습기간을 두는 경우 기간과 수습 중 임금 비율을 함께 기재합니다. 작성 후 2부를 만들어 사용자와 근로자가 각각 1부씩 보관하십시오. 세부 적용 기준은 사업장 취업규칙과 관할 고용노동청 안내를 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>사업체명 · 대표자 · 사업장 주소 · 근로자 성명 · 생년월일 · 근로자 주소 · 연락처 · 이메일</span>        </li>        <li><b>2. 계약기간 및 근무조건</b><span>계약기간 · 근무장소 · 담당업무 · 소정근로시간 · 근무일 / 주휴일 · 주휴일 · 수습기간 · 수습 중 임금</span>        </li>        <li><b>3. 근로일별 근로시간</b><span>월 · 화 · 수 · 목 · 금 · 토</span>        </li>        <li><b>4. 임금</b><span>임금 형태 · 기본급 · 제수당 · 상여금 · 임금 지급일 · 지급 방법 · 계좌</span>        </li>        <li><b>5. 연차·사회보험·기타</b><span>제1조 (계약의 갱신) · 제2조 (비밀유지 및 성실의무) · 제3조 (계약의 해지)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>수습기간을 두면 임금을 줄여도 되나요?</summary>
           <p class="a">수습기간과 그 기간의 임금 비율을 계약서에 명시하면 정할 수 있습니다.</p>

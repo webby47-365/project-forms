@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청일자와 신청부서, 신청자 정보를 적습니다.</li>        <li>구매할 품목과 규격, 수량을 항목별로 기재합니다.</li>        <li>예상 단가와 소요 예산, 용도를 적습니다.</li>        <li>담당자, 팀장, 임원 순으로 결재를 받습니다.</li>        <li>결재가 끝나면 발주 담당자에게 전달합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">업무 중 필요한 비품을 구매하기 위해 사전에 제출하는 신청서입니다. 구매 품목의 규격과 수량을 명확히 지정하고 예상 단가와 소요 예산을 기재하며 용도를 구체적으로 설명해야 심의와 발주가 순조로울 수 있습니다. 담당자·팀장·임원 결재 후 발주합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>신청일자 · 신청부서 · 신청자 · 예상 구매일 · 예산 과목 · 담당자연락처</span>        </li>        <li><b>1. 구매 품목</b><span>품목명 · 규격(사양) · 단위 · 수량 · 예상단가</span>        </li>        <li><b>2. 구매 사유 및 용도</b><span class="note">비품 구매의 필요성, 사용 부서, 구체적인 용도를 기재하십시오.</span>        </li>        <li><b>3. 비고</b><span class="note">업체 지정, 반납 예정일, 기타 특이사항을 기재하십시오.</span>        </li>        <li><b>결재</b><span>담당자 (인) · 팀장 (인) · 임원 (인) · 대표 (인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>여러 품목을 한 번에 신청할 수 있나요?</summary>
           <p class="a">네, 표에 행을 추가해 품목별로 규격과 수량을 나누어 적으면 됩니다.</p>

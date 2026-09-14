@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>위임인의 인적사항을 적고 인감을 날인합니다.</li>        <li>대리인의 인적사항을 정확히 적습니다.</li>        <li>발급 용도와 필요한 통수를 적습니다.</li>        <li>위임 기간을 정해 적습니다.</li>        <li>대리인이 위임장을 지참해 주민센터를 방문합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">본인이 직접 방문하기 어려울 때 인감증명서 발급을 다른 사람에게 맡기는 서류입니다. 위임인과 대리인의 인적사항을 정확히 적고, 위임인의 인감을 날인해야 합니다. 발급 용도와 통수를 구체적으로 적어 위임 범위를 한정하는 것이 안전하며, 부동산 매도용처럼 용도가 특정된 경우 상대방 정보가 필요할 수 있습니다. 위임 기간을 정해 두면 남용을 막을 수 있습니다. 인감증명서는 재산 처분에 쓰일 수 있는 중요한 서류이므로 신뢰할 수 있는 사람에게만 위임하고, 필요 서류와 절차는 관할 주민센터 안내를 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 위임인 (본인)</b><span>성명 · 생년월일 · 주소 · 연락처 · 인감 날인</span>        </li>        <li><b>2. 대리인</b><span>위임인과의 관계</span>        </li>        <li><b>3. 위임 내용</b><span>발급 서류 · 통수 · 사용 용도 · 용도 관련 상대방 (해당 시) · 위임 기간 · 위임 범위</span><span class="note">특기사항 — 발급 제한 조건이나 추가 위임 사항이 있으면 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>위임 기간을 정하지 않으면 어떻게 되나요?</summary>
           <p class="a">기간을 정해 두지 않으면 남용될 위험이 있으므로 목적에 맞는 기간을 적어 두는 것이 안전합니다.</p>

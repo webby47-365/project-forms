@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발신인과 수신인(사업주) 정보를 적습니다.</li>        <li>근무한 사업장과 근로기간, 월 임금을 밝힙니다.</li>        <li>체불된 항목과 금액을 구분해 합계를 냅니다.</li>        <li>지급 기한을 명시하고 등기우편으로 발송합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">근로를 제공하였음에도 임금이나 퇴직금, 수당을 받지 못한 근로자가 사업주에게 지급을 공식적으로 요구할 때 사용하는 통지서입니다. 근무한 사업장과 근로기간, 직위, 월 임금을 먼저 밝히고 체불된 항목과 기간, 금액을 구분하여 합계를 정확히 기재합니다. 구체적인 지급 기한을 명시하고 우체국 등기로 발송하면 통지 사실에 대한 증거가 남습니다. 기한까지 지급되지 않으면 고용노동부에 진정을 제기하는 등 별도 절차를 검토할 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>발신인</b><span>성명 · 연락처 · 주소</span>        </li>        <li><b>1. 근로 내역</b><span>사업장 · 직위 · 근로기간 · 월 임금</span>        </li>        <li><b>2. 체불 내역</b><span>기간 · 금액</span>        </li>        <li><b>3. 통지 내용</b><span class="note">근로 제공 사실과 임금·퇴직금을 지급받지 못한 경위를 기재하십시오.</span>        </li>        <li><b>4. 요구 사항 및 이행 기한</b><span class="note">요구하는 사항과 구체적인 이행 기한을 명시하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>기한까지 지급하지 않으면 어떻게 하나요?</summary>
           <p class="a">고용노동부에 진정을 제기하거나 소액사건심판 등 별도 법적 절차를 검토할 수 있습니다.</p>

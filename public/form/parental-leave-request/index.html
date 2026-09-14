@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인의 인적사항과 소속을 적습니다.</li>        <li>자녀의 성명, 생년월일, 관계를 기재합니다.</li>        <li>희망 휴직기간과 분할 사용 여부를 적습니다.</li>        <li>휴직 중 연락처와 복직 예정일을 기재합니다.</li>        <li>휴직 예정일 30일 전까지 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">만 8세 이하 또는 초등학교 2학년 이하의 자녀를 양육하기 위해 육아휴직을 신청할 때 사용하는 서류입니다. 자녀의 성명·생년월일·관계와 희망 휴직기간, 분할 사용 여부를 기재하고 휴직 중 연락 가능한 연락처와 복직 예정일을 명시합니다. 사업주는 법령상 정당한 사유가 없으면 육아휴직을 거부할 수 없으므로 신청서는 휴직 예정일 30일 전까지 제출하는 것을 권장합니다. 세부 요건은 남녀고용평등법과 사내 규정을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>신청인 정보</b><span>소속(부서) · 직위 · 성명 · 사번 · 입사일 · 연락처</span>        </li>        <li><b>자녀 정보</b><span>자녀 성명 · 생년월일 · 관계</span>        </li>        <li><b>육아휴직 기간</b><span>휴직기간 · 분할 사용 여부 · 복직 예정일</span>        </li>        <li><b>휴직 중 연락처</b><span>이메일 · 부서장 · 인사담당자 · 대표이사</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>육아휴직을 여러 번 나눠 쓸 수 있나요?</summary>
           <p class="a">네, 분할 사용 여부 칸에 희망 횟수를 적어 신청할 수 있습니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>회사 상호와 목적, 본점 소재지를 적습니다.</li>        <li>발행할 주식의 총수와 1주의 금액을 기재합니다.</li>        <li>설립 시 발행하는 주식의 수를 적습니다.</li>        <li>발기인의 성명과 주소, 인수 주식 수를 기재합니다.</li>        <li>발기인 전원이 기명날인하고 공증 여부를 확인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">법인 설립등기 시 반드시 첨부하는 서류로, 상호·목적·발행할 주식 총수·1주 금액·본점 소재지 등 상법이 정한 절대적 기재사항이 빠지면 정관 자체가 무효가 됩니다. 설립 시 정관은 공증을 받아야 하는 경우가 있으므로 자본금 규모와 발기인 수에 따른 요건을 먼저 확인하십시오. 사업 목적은 실제 영위할 업종을 빠뜨리지 않고 넓게 기재하는 편이 나중에 변경등기 비용을 줄입니다. 본 서식은 표준 골격이므로 개별 회사 사정에 맞게 수정하고 전문가 검토를 받으십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>제1조 (상호) · 제2조 (목적) · 제3조 (본점의 소재지) · 제4조 (공고방법) · 제5조 (발행예정 주식의 총수) · 제6조 (1주의 금액) · 제7조 (설립 시 발행하는 주식의 총수) · 제8조 (주식의 종류) · 제9조 (주식의 양도) · 제10조 (명의개서 및 주주명부) · 제11조 (소집) · 제12조 (결의방법) · 제13조 (이사와 감사의 수) · 제14조 (임기)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>정관은 꼭 공증을 받아야 하나요?</summary>
           <p class="a">자본금 규모와 발기인 수에 따라 공증이 필요 없는 경우도 있으니 미리 확인하십시오.</p>

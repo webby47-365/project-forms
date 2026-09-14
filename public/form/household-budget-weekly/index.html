@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>날짜와 요일별로 수입·지출 항목을 적습니다.</li>        <li>항목별로 분류(식비·교통비 등)를 정합니다.</li>        <li>분류별 소계를 계산해 지출 비중을 확인합니다.</li>        <li>주간 총평에 다음 주 예산 조정 방향을 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">매주 정해진 요일에 한 주의 수입과 지출을 기록하면서 예산 대비 소비 흐름을 점검하는 양식입니다. 날짜와 요일별로 항목·분류를 적고 수입·지출을 반영하여 남은 잔액을 계산합니다. 분류별 소계로 식비·교통비 등 지출 비중을 한눈에 파악할 수 있고, 주간 총평에는 다음 주 예산 조정 방향을 적어 두면 월간 가계부를 작성할 때에도 참고 자료로 활용할 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>주차 · 기간 · 주간 예산</span>        </li>        <li><b>1. 일별 수입·지출</b><span>날짜 · 요일 · 항목 · 분류 · 수입(원) · 지출(원) · 잔액(원)</span>        </li>        <li><b>2. 분류별 소계</b><span>식비 · 교통 · 주거 · 통신 · 여가 · 기타</span>        </li>        <li><b>3. 주간 총평</b><span class="note">이번 주 소비 패턴과 다음 주 예산 계획을 적으십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>고정 지출은 어느 주에 적나요?</summary>
           <p class="a">실제로 결제된 주에 적는 것이 원칙이나, 매주 나누어 적어도 무방합니다.</p>

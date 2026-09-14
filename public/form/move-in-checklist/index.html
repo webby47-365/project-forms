@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>주소와 면적 등 목적물 정보를 적습니다.</li>        <li>공간별 상태를 확인해 양호·보수필요로 표시합니다.</li>        <li>설비 작동 여부를 점검하고 결과를 기재합니다.</li>        <li>하자가 있으면 사진을 찍고 임대인·임차인이 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">임차인이 입주하기 전에 현관·거실·주방·욕실 등 공간별 상태와 보일러·수도·전기 등 설비 작동 여부를 점검하여 기록하는 서식입니다. 상태가 양호하지 않은 항목은 보수필요로 표시하고 비고에 구체적인 내용을 적으십시오. 하자가 있으면 사진을 촬영해 파일명을 적거나 별지로 첨부해 두면 퇴거 시 원상복구 분쟁을 줄일 수 있습니다. 점검이 끝나면 임대인과 임차인이 함께 서명하여 각각 보관하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 목적물 정보</b><span>주소 · 면적 · 입주일 · 점검자</span>        </li>        <li><b>2. 공간별 점검</b><span>공간 · 점검항목 · 상태(양호/보수필요)</span>        </li>        <li><b>3. 설비 점검</b><span>설비 항목 · 작동 여부</span>        </li>        <li><b>4. 하자 사진 첨부</b><span class="note">발견된 하자 사진을 별지로 첨부하거나 촬영 파일명을 기재하십시오.</span>        </li>        <li><b>5. 확인</b><span>임대인 · 연락처 · 임차인</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>하자 사진은 어디에 첨부하나요?</summary>
           <p class="a">비고란에 파일명을 적거나 점검표 뒤에 별지로 첨부해 함께 보관하십시오.</p>

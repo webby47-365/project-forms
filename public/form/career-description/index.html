@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>성명과 지원 직무, 총 경력을 적습니다.</li>        <li>회사별 경력을 최근 순으로 나열합니다.</li>        <li>담당업무는 역할과 범위가 드러나게 씁니다.</li>        <li>프로젝트별 기간·역할·성과를 정리합니다.</li>        <li>이력서와 회사명·기간이 일치하는지 확인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">이직이나 경력직 지원 시 이력서와 함께 제출하는 서류로, 무엇을 어떻게 해서 어떤 결과를 냈는지 보여 주는 문서입니다. 회사별 경력은 최근 순으로 적고, 담당업무는 나열보다 역할과 범위가 드러나게 쓰십시오. 프로젝트는 기간·역할·사용 기술·성과를 한 묶음으로 정리하고, 성과는 가능한 한 수치로 표현하면 설득력이 높아집니다. 지원 직무와 관련 없는 경력은 간략히 줄이고 핵심 경험에 분량을 배분하십시오. 제출 전 회사명·기간·직위가 이력서와 일치하는지 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 지원 직무 · 연락처 · 총 경력 · 이메일 · 작성일</span>        </li>        <li><b>1. 경력 요약</b><span class="note">핵심 역량과 대표 성과를 3~4줄로 요약하십시오.</span>        </li>        <li><b>2. 경력 사항</b><span>회사명 · 근무기간 · 부서 · 직위 · 담당업무 · 재직여부</span>        </li>        <li><b>3. 주요 프로젝트 및 성과</b><span>프로젝트명 · 기간 · 역할 · 수행 내용 · 성과</span>        </li>        <li><b>4. 보유 기술 및 자격</b><span>직무 관련 기술 · 자격·어학</span><span class="note">추가로 강조하고 싶은 경험이나 교육 이수 내역을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>성과는 어떻게 표현해야 하나요?</summary>
           <p class="a">가능하면 매출 증가율이나 처리 건수처럼 수치로 표현하면 설득력이 높아집니다.</p>

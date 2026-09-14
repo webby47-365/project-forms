@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>캠페인명과 기간, 담당자를 정합니다.</li>        <li>시장과 고객을 분석해 현황을 정리합니다.</li>        <li>측정 가능한 목표를 세웁니다.</li>        <li>채널별 실행 전략과 예산을 산정합니다.</li>        <li>기대효과를 정리해 결재를 받습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">신제품 출시나 프로모션 등 마케팅 활동을 시작하기 전에 작성하는 기획 문서입니다. 시장·고객 분석을 바탕으로 측정 가능한 목표를 세우고, 채널별 실행 전략과 예산을 구체적으로 산정합니다. 기대효과를 함께 제시해 결재자가 투자 대비 효과를 판단할 수 있도록 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>캠페인명 · 기간 · 담당 · 대상 · 예산</span>        </li>        <li><b>1. 시장·고객 분석</b><span class="note">시장 동향과 타깃 고객의 특성·니즈를 기재하십시오.</span>        </li>        <li><b>2. 목표</b><span>지표 · 현재 · 목표 · 측정방법</span>        </li>        <li><b>3. 실행 전략</b><span>채널 · 콘텐츠 · 일정</span>        </li>        <li><b>4. 예산</b><span>항목 · 산출근거 · 금액</span>        </li>        <li><b>5. 기대효과</b><span class="note">매출·인지도 측면의 기대효과를 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>예산은 얼마나 자세히 적어야 하나요?</summary>
           <p class="a">채널별로 나눠 금액을 적으면 결재자가 비용 대비 효과를 판단하기 쉽습니다.</p>

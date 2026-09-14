@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>지원구분과 지원부문, 지원경로를 적습니다.</li>        <li>인적사항과 학력을 최근 순으로 적습니다.</li>        <li>경력사항을 최근 순으로 적습니다.</li>        <li>병역 및 개인정보 동의 항목을 확인합니다.</li>        <li>사진을 붙이고 서명해 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">채용 공고에 지원할 때 이력서 대신 또는 이력서와 함께 제출하는 회사 양식입니다. 지원구분과 지원부문, 지원경로를 먼저 밝히고 인적사항·학력·경력을 최종 순부터 역순으로 적습니다. 병역 및 보훈 사항은 해당 여부를 정확히 표기하고, 개인정보 수집·이용 동의 항목은 반드시 확인 후 체크합니다. 사진은 3개월 이내 촬영본을 사용하고, 기재 내용이 사실과 다르면 채용이 취소될 수 있으므로 빠짐없이 정확하게 작성하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>지원구분 · 지원부문 · 지원경로 · 성명 · 생년월일 · 성별 · 연락처 · 이메일 · 주소</span>        </li>        <li><b>학력사항</b><span>재학기간 · 학교명 · 전공(학과) · 졸업구분 · 소재지</span>        </li>        <li><b>경력사항</b><span>근무기간 · 회사명 · 부서/직위 · 담당업무 · 퇴직사유</span>        </li>        <li><b>병역 및 보훈</b><span>병역구분 · 복무기간 · 계급 · 보훈대상 · 장애여부</span>        </li>        <li><b>개인정보 수집·이용 동의</b><span>동의 항목 · 동의 · 미동의</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>경력이 없으면 경력란은 비워도 되나요?</summary>
           <p class="a">신입으로 지원하는 경우 경력란에 해당 없음이라고 적으면 됩니다.</p>

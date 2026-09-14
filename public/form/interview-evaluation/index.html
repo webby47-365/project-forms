@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>지원자 성명과 지원 부문, 면접 일시를 적습니다.</li>        <li>항목별 배점 기준에 따라 점수를 매깁니다.</li>        <li>항목마다 구체적인 평가 의견을 적습니다.</li>        <li>점수를 합산해 종합점수를 계산합니다.</li>        <li>합격·보류·불합격 중 하나로 판정하고 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">채용 면접 진행 시 지원자별 평가를 표준화하기 위해 사용하는 문서입니다. 직무역량, 전문지식, 문제해결력, 커뮤니케이션 등 항목별로 배점에 따라 점수를 매기고 구체적인 평가 의견을 기재합니다. 항목별 점수를 합산해 종합점수를 산출하고 합격·보류·불합격 중 하나로 판정합니다. 면접관은 총평란에 추천 사유를 간단히 남기고 서명을 남겨 채용 결정 자료로 활용합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 지원 부문 · 면접일시 · 면접관</span>        </li>        <li><b>1. 평가 항목</b><span>평가 항목 · 배점 · 점수 · 평가 의견</span>        </li>        <li><b>2. 종합 평가</b><span>종합점수 · 판정</span>        </li>        <li><b>3. 총평</b><span class="note">지원자에 대한 전반적인 평가와 추천 사유를 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>항목별 배점은 바꿔도 되나요?</summary>
           <p class="a">직무 특성에 맞게 회사 기준에서 배점 비중을 조정해 사용할 수 있습니다.</p>

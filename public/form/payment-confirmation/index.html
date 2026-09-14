@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>통장 거래내역을 보고 입금일자와 금액을 확인합니다.</li>        <li>금액은 숫자와 한글로 함께 적습니다.</li>        <li>어떤 거래인지 계약명이나 세금계산서 번호를 적습니다.</li>        <li>발행자 상호와 대표자를 적고 날인해 사본을 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">거래처로부터 대금을 받았을 때 수령 사실을 문서로 확인해 주는 서류입니다. 입금일자와 금액은 통장 거래내역과 일치해야 하며, 금액은 한글과 숫자를 함께 적어 변조를 막으십시오. 어떤 거래에 대한 입금인지 계약명이나 세금계산서 번호를 함께 적어야 나중에 대사하기 쉽습니다. 일부 입금인 경우 총 거래금액과 잔여금액을 구분해 적고, 잔금 지급 예정일을 기재하십시오. 발행자는 상호와 대표자를 적고 날인한 뒤 사본을 보관합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 입금 내역</b><span>입금금액 · 입금일자 · 입금방법 · 입금계좌 (수취) · 입금자명 · 거래 구분</span>        </li>        <li><b>2. 관련 거래</b><span>거래(계약)명 · 계약일자 · 세금계산서 번호 · 총 거래금액 · 기수령 누계 · 잔여금액 · 잔금 지급 예정일</span>        </li>        <li><b>3. 당사자</b><span>입금자(지급인) 상호 · 대표자 · 주소 · 수령자(수취인) 상호</span><span class="note">비고 — 분할 입금 일정, 수수료 부담 주체 등 특이사항을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>대금 일부만 입금됐을 때는 어떻게 적나요?</summary>
           <p class="a">총 거래금액과 이번 입금액, 남은 잔금을 나눠 적고 잔금 지급 예정일도 함께 적습니다.</p>

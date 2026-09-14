@@ -28,10 +28,12 @@ CATALOG = ROOT / "catalog" / "catalog.json"
 
 # 렌더링과 무관한 '글·분류' 필드만 동기화한다.
 # 파일 크기·페이지 수·미리보기 목록은 렌더링 결과이므로 건드리지 않는다.
+# outline은 blocks에서 뽑은 항목 목차다. blocks를 고친 뒤 이 스크립트만 돌리면
+# 목차는 새 내용, 실제 파일은 옛 내용이 되므로 그때는 build_form.py를 써야 한다.
 META_FIELDS = (
     "title", "category", "subcategory", "tags", "summary", "usage",
     "series", "series_name", "variant", "variant_rank", "variant_use",
-    "howto", "faq", "featured", "featured_rank", "source", "source_note", "status",
+    "howto", "faq", "outline", "featured", "featured_rank", "source", "source_note", "status",
 )
 
 

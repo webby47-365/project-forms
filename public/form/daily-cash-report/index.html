@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>일자, 부서, 작성자를 적습니다.</li>        <li>전일이월액을 옮겨 적고 당일 입금과 출금 내역을 기재합니다.</li>        <li>입금과 출금을 반영해 당일 잔액을 계산합니다.</li>        <li>계좌별 잔액 합계가 당일 잔액과 일치하는지 확인합니다.</li>        <li>예정된 지출과 특이사항을 적어 마감합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">매일 마감 시점의 현금·예금 흐름을 정리해 자금 담당자가 보고하는 서식입니다. 전일이월액에서 시작해 당일 수입과 지출을 더하고 빼면 당일 잔액이 나오도록 작성하고, 계좌별 잔액 합계와 일치하는지 반드시 대사하십시오. 입출금은 거래처와 적요를 구체적으로 적어야 나중에 추적이 쉽습니다. 익일 이후 예정된 지출은 자금계획 칸에 미리 적어 자금 부족을 예방하고, 특이사항에는 결제 지연이나 대출 만기 같은 위험 요인을 기재하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>일자 · 부서 · 작성자</span>        </li>        <li><b>1. 자금 요약</b><span>전일 이월액 · 당일 수입 합계 · 당일 지출 합계 · 당일 잔액</span>        </li>        <li><b>2. 입금 내역</b><span>거래처 · 적요 · 금액 · 입금계좌</span>        </li>        <li><b>3. 출금 내역</b><span>출금계좌</span>        </li>        <li><b>4. 계좌별 잔액</b><span>금융기관 · 계좌구분 · 전일 잔액 · 당일 증감</span><span class="note">특이사항 및 익일 자금계획 — 예정 지출, 결제 지연, 차입금 만기 등을 기재하십시오.</span>        </li>        <li><b>결재</b><span>결재</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>계좌별 잔액이 안 맞으면 어떻게 하나요?</summary>
           <p class="a">누락되거나 중복 기재된 거래가 없는지 확인하고 통장 잔액과 다시 대사하십시오.</p>

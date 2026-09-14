@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>원 임대차계약 내용과 당사자를 적습니다.</li>        <li>양도할 보증금 승계액과 권리금을 적습니다.</li>        <li>권리금 등 지급 일정을 적습니다.</li>        <li>양도일 기준 채무 부담 주체를 정리합니다.</li>        <li>임대인의 서면 동의를 받아 서명·날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">이사나 사정으로 임차권을 제3자에게 넘길 때 사용합니다. 원 임대차계약의 내역과 보증금 승계액, 권리금, 지급 일정을 구체적으로 적고 임대인의 서면 동의란을 반드시 둡니다. 양도일을 기준으로 연체 채무는 양도인이, 그 이후 채무는 양수인이 부담하도록 정리하고 원상회복 의무도 양수인이 승계한다는 점을 명시하십시오. 임대인의 동의 없는 양도는 원 임대차계약의 해지 사유가 될 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>양도인(현 임차인) · 연락처 · 양수인(신 임차인)</span>        </li>        <li><b>2. 목적물 및 원 임대차 내역</b><span>목적물 주소 · 원 임대차 계약일 · 원 임대차 기간 · 원 보증금 · 원 차임</span>        </li>        <li><b>3. 양도 조건</b><span>양도일 · 보증금 승계액 · 권리금 · 지급 일정 · 제1조 (양도의 합의) · 제2조 (임대인의 동의) · 제3조 (보증금 반환청구권의 이전) · 제4조 (연체 채무의 정산) · 제5조 (원상회복 의무의 승계) · 제6조 (해제)</span>        </li>        <li><b>임대인 동의란</b><span>임대인 성명</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>임대인 동의 없이 양도해도 되나요?</summary>
           <p class="a">안 됩니다. 동의 없는 양도는 원 임대차계약의 해지 사유가 될 수 있으므로 서면 동의를 반드시 받으십시오.</p>

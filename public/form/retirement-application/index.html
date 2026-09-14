@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>성명과 소속, 직위를 적습니다.</li>        <li>퇴직 사유와 퇴직희망일을 적습니다.</li>        <li>퇴직금과 미사용 연차수당 정산 확인란에 표시합니다.</li>        <li>업무 인수인계 완료 여부를 표시합니다.</li>        <li>담당·팀장·인사 결재를 받아 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">퇴직 의사를 정식으로 알리면서 퇴직금·미사용 연차 정산과 업무 인수인계 여부까지 함께 확인받는 서류입니다. 퇴직 사유를 선택하고 퇴직희망일을 기재한 뒤, 퇴직금과 미사용 연차수당 정산 확인란, 업무 인수인계 완료 확인란에 표시합니다. 담당·팀장·인사 결재를 거쳐 처리되므로 퇴직희망일로부터 충분한 여유를 두고 제출하십시오. 정산 기준은 취업규칙과 근로기준법을 따릅니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>소속(부서) · 직위 · 성명 · 사번 · 입사일자 · 퇴직희망일 · 연락처 · 이메일</span>        </li>        <li><b>퇴직 사유</b><span>퇴직 사유</span>        </li>        <li><b>정산 및 인수인계 확인</b><span>퇴직금 정산 확인 · 미사용 연차수당 정산 확인 · 업무 인수인계 확인 · 담당 · 팀장 · 인사</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>퇴직원과 사직서는 다른 건가요?</summary>
           <p class="a">같은 목적의 서류입니다. 이 양식은 정산·인수인계 확인란을 함께 두어 처리 절차를 한 번에 정리합니다.</p>

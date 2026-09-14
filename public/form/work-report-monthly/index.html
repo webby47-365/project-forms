@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>이번 달 목표와 실적 수치를 정리합니다.</li>        <li>부문별 실적을 담당 조직별로 나눠 비교합니다.</li>        <li>목표 달성을 가로막은 애로사항과 필요한 지원을 적습니다.</li>        <li>다음 달 계획을 세워 함께 첨부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">매월 말 부서의 한 달 성과를 목표·실적·달성률로 정리해 경영진에 보고하는 서류입니다. 월간 주요 성과는 수치 중심으로 작성하고, 부문별 실적은 담당 조직별로 나누어 비교가 가능하도록 정리합니다. 애로사항에는 목표 달성을 가로막은 요인과 필요한 지원을 함께 적어 다음 달 계획에 반영될 수 있도록 하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>보고부서 · 보고자 · 보고월 · 작성일</span>        </li>        <li><b>1. 월간 주요 성과</b><span>목표 · 실적 · 달성률</span>        </li>        <li><b>2. 부문별 실적</b><span>부문 · 담당 · 주요 내용</span>        </li>        <li><b>3. 익월 중점 추진 계획</b><span>추진 계획</span>        </li>        <li><b>4. 애로사항</b><span class="note">목표 달성을 가로막은 요인과 필요한 지원사항을 기재하십시오.</span>        </li>        <li><b>결재</b><span>임원 · 서명(날인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>주간업무보고서와 무엇이 다른가요?</summary>
           <p class="a">월간보고서는 한 달 전체 성과와 다음 달 계획을 종합해 경영진에 보고하는 문서입니다.</p>

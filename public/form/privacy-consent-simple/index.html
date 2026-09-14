@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>성명과 연락처를 적습니다.</li>        <li>수집 항목과 목적, 보유기간을 확인합니다.</li>        <li>동의 거부 권리와 불이익 안내를 확인합니다.</li>        <li>동의함 또는 동의하지 않음 중 하나를 표시합니다.</li>        <li>서명 후 담당자에게 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">설문, 상담 신청, 이벤트 접수처럼 간단한 접점에서 개인정보를 수집할 때 사용하는 짧은 동의서입니다. 수집 항목·목적·보유기간을 표에 정리해두면 상담원이나 담당자가 항목만 채워 바로 사용할 수 있습니다. 동의를 거부할 권리와 거부 시 불이익을 반드시 안내하고, 동의함·동의하지 않음 중 하나를 표시받으십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 연락처</span>        </li>        <li><b>수집·이용 내역</b><span>수집 항목 · 수집·이용 목적 · 보유 및 이용기간 · 동의 항목 · 동의함 · 동의하지 않음</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>상세형과 어떻게 다른가요?</summary>
           <p class="a">간편형은 표 하나로 수집 항목과 목적을 정리한 반 페이지 축약 양식입니다.</p>

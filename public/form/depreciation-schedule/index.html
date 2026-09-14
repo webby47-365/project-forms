@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>자산명과 취득가액, 취득일을 적습니다.</li>        <li>내용연수와 상각방법을 정합니다.</li>        <li>당기상각비를 계산해 감가상각누계액에 더합니다.</li>        <li>취득가액에서 누계액을 뺀 장부가액을 적어 마감합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">회계연도별로 고정자산의 감가상각 현황을 정리해 결산에 반영하기 위한 문서입니다. 자산별로 취득가액, 내용연수, 상각방법을 적고 당기상각비와 감가상각누계액을 누적해 장부가액을 계산합니다. 장부가액은 취득가액에서 감가상각누계액을 뺀 값과 일치해야 하며, 상각방법 변경이나 세무상 처리 기준은 회계팀 또는 세무대리인에게 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>회계연도 · 작성부서 · 작성자 · 작성일자</span>        </li>        <li><b>자산 현황</b><span>자산명 · 취득일 · 취득가액 · 내용연수 · 상각방법 · 당기상각비 · 감가상각누계액 · 장부가액 · 취득가액 합계 · 당기상각비 합계 · 감가상각누계액 합계 · 장부가액 합계</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>상각방법은 마음대로 바꿀 수 있나요?</summary>
           <p class="a">세무상 신고된 방법은 임의로 바꿀 수 없으므로 변경 전 세무대리인과 상의하십시오.</p>

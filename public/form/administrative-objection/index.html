@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인 정보와 처분 내용을 적습니다.</li>        <li>처분청과 처분일, 처분번호를 적습니다.</li>        <li>이의신청 취지와 이유를 적습니다.</li>        <li>증거 자료를 첨부합니다.</li>        <li>처분을 통지받은 기관에 기한 내 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">과태료 부과, 각종 인허가 거부, 지원금 환수 등 행정처분에 불복할 때 처분청에 제출합니다. 이의신청 기간은 법령마다 다르고 대체로 처분을 통지받은 날부터 30일 또는 60일이며, 기간을 넘기면 내용과 무관하게 각하되므로 통지서에 적힌 기간을 먼저 확인하십시오. 이의신청과 행정심판·행정소송은 별개 절차이므로 어느 절차를 택할지 판단이 필요합니다. 본 서식은 참고용이며 처분청이 지정한 양식이 있으면 그 양식을 우선 사용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>신청인</b><span>성명(법인명) · 생년월일 · 주소 · 대리인 · 관계</span>        </li>        <li><b>처분 내용</b><span>처분청 · 처분 통지일 · 처분 종류 · 처분 금액 · 문서번호 / 사건번호</span>        </li>        <li><b>이의신청 취지</b><span class="note">무엇을 구하는지 한두 문장으로 적으십시오. (예: 위 과태료 부과처분을 취소해 주시기 바랍니다)</span>        </li>        <li><b>이의신청 이유</b><span class="note">처분이 부당하다고 보는 근거를 사실과 법령을 들어 기재하십시오. 사실관계를 시간순으로 적고 증빙을 인용합니다.</span>        </li>        <li><b>첨부 서류</b><span>서류명</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>이의신청 기간은 며칠인가요?</summary>
           <p class="a">법령마다 다르며 대체로 통지받은 날부터 30일 또는 60일입니다. 처분 통지서에 적힌 기간을 먼저 확인하십시오.</p>

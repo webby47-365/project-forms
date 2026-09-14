@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>부서와 직위, 성명, 사번을 적습니다.</li>        <li>휴가 종류와 시작일·종료일을 선택합니다.</li>        <li>휴가 사유를 구체적으로 기재합니다.</li>        <li>업무 대행자를 지정하고 결재를 받습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">휴가 또는 특별휴가(병가, 경조사휴가 등)를 신청할 때 사용하는 서류입니다. 휴가 종류와 정확한 기간을 먼저 선택한 후 사유를 명확하게 기재하고, 출근 중인 업무는 동료에게 인계할 대행자를 반드시 지정하십시오. 일반적으로 휴가 예정일 3~5일 전에 제출합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>부서(팀) · 직위 · 성명 · 사번 · 생년월일 · 연락처</span>        </li>        <li><b>휴가 정보</b><span>휴가 종류 · 휴가 기간 · 휴가 일수 · 예상 복귀일</span>        </li>        <li><b>휴가 사유</b><span class="note">휴가 사유를 구체적으로 기재하십시오. (예: 연차, 병가, 경조사휴가, 특별휴가 등)</span>        </li>        <li><b>업무 인수인계</b><span>업무대행자 · 비상연락처 · 상황 보고 방법 · 부서장 · 인사담당자 · 대표이사</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>반차도 이 서식으로 신청하나요?</summary>
           <p class="a">네, 휴가 종류란에 반차를 표시하고 시간을 함께 적으면 됩니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>사건 발생 직후 일시와 장소를 먼저 적습니다.</li>        <li>경위를 시간 순서대로 구체적으로 기록합니다.</li>        <li>당사자 진술과 목격자 확인 내용을 정리합니다.</li>        <li>초기 조치 결과를 적고 서명을 받아 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">직장 내 안전사고, 클레임, 징계 대상 행위, 기타 특이사항 등을 보고할 때 사용하는 문서입니다. 사건 발생 직후 즉시 작성하되, 발생 일시, 장소, 관련자, 경위를 시간순으로 상세하게 기재하고, 당사자의 진술, 목격자 확인, 초기 조치 결과를 명시하십시오. 필요에 따라 보증인이나 관리자의 서명을 받아 인사담당자에게 제출합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>기본 정보</b><span>보고 일자 · 보고자 · 부서(팀) · 담당 사항</span>        </li>        <li><b>사건 개요</b><span>사건명 · 사건 유형 · 발생 일시 · 발생 장소 · 관련자 성명 · 관련자 부서</span>        </li>        <li><b>사건 경위</b><span class="note">사건의 발생 경과를 시간순으로 상세하게 기재하십시오. 당사자의 진술, 현장 상황, 목격자 확인 사항 등을 포함합니다.</span>        </li>        <li><b>초기 조치 및 처리 결과</b><span class="note">사건 발생 후 취한 조치, 피해 규모, 안전 조치, 관계자 조치 결과 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>반성문과 같은 문서인가요?</summary>
           <p class="a">경위서는 사건 경과를 사실대로 알리는 문서이고, 반성문은 잘못을 인정하고 사과하는 성격이 강해 목적이 다릅니다.</p>

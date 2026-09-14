@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>원고와 피고의 인적사항을 적습니다.</li>        <li>청구취지에 청구 금액과 이자 기산일을 정확히 적습니다.</li>        <li>청구원인에 다툼의 경위를 시간순으로 적습니다.</li>        <li>증거서류 목록을 정리해 첨부합니다.</li>        <li>인지대와 송달료를 확인해 법원에 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">소액사건은 절차가 간이하고 1회 변론으로 종결되는 경우가 많아 변호사 없이도 진행할 수 있습니다. 청구취지는 판결문에 그대로 옮겨지는 문장이므로 금액과 이자 기산일을 정확히 써야 하고, 청구원인은 다툼의 경위를 시간순으로 담백하게 적는 편이 유리합니다. 인지대는 청구금액에 따라 달라지고 송달료는 당사자 수에 따라 계산되므로 제출 직전에 확인하십시오. 본 서식은 참고용이며 실제 제출 전 대한민국 법원 전자소송 사이트의 최신 양식을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>원고 성명 · 생년월일 · 원고 주소 · 피고 성명 · 피고 주소 · 사건명 · 소가(청구금액)</span>        </li>        <li><b>청구 원인</b><span class="note">다툼의 경위를 시간순으로 기재하십시오. 언제, 누구와, 어떤 약정을 했고, 피고가 무엇을 이행하지 않았는지 사실만 적습니다.</span>        </li>        <li><b>입증 방법</b><span>서증명 · 내용</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>변호사 없이도 진행할 수 있나요?</summary>
           <p class="a">소액사건은 절차가 간단해 변호사 없이 본인이 직접 진행하는 경우가 많습니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>상단에 본인 연락처와 수신인 정보, 날짜를 적습니다.</li>        <li>첫 문단에 지원 직무와 지원 경로를 밝힙니다.</li>        <li>직무와 관련된 경험 두세 가지를 결과 중심으로 적습니다.</li>        <li>면접 기회를 요청하는 문장으로 마무리합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">외국계 기업이나 해외 채용에 영문 이력서와 함께 제출하는 서한입니다. 상단에 본인 연락처와 수신인 정보를 적고 날짜를 넣는 표준 비즈니스 레터 형식을 따르십시오. 첫 문단에서 지원 직무와 지원 경로를 밝히고, 본문에서는 이력서를 반복하지 말고 직무 요구사항에 맞는 경험 두세 가지를 결과 중심으로 서술합니다. 마지막 문단에서 면접 기회를 요청하며 마무리하고, 전체 분량은 한 장을 넘기지 않는 것이 좋습니다. 회사명과 담당자 이름의 철자를 반드시 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>Applicant Information</b><span>Full Name · Phone · Address · Email · LinkedIn / Portfolio</span>        </li>        <li><b>Recipient</b><span>Hiring Manager · Company · Company Address · Position Applied For · Job Reference No.</span>        </li>        <li><b>Letter Body</b><span class="note">Opening — State the position you are applying for and how you learned about it.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>이력서 내용을 그대로 반복해도 되나요?</summary>
           <p class="a">반복하지 말고 직무 요구사항에 맞는 핵심 경험 위주로 새롭게 서술하는 것이 좋습니다.</p>

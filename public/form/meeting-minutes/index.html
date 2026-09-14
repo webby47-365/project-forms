@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>회의명과 일시, 장소, 참석자를 먼저 적습니다.</li>        <li>안건을 순서대로 나열합니다.</li>        <li>안건별 논의 내용과 결정사항을 정리합니다.</li>        <li>담당자와 처리 기한을 적습니다.</li>        <li>작성자가 서명하고 참석자 확인을 받습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">회의 진행 과정을 공식 기록으로 남기는 서류입니다. 회의 중 논의된 안건별로 의견을 정리하고 최종 결정사항과 개별 담당사항을 명확히 기재해야 향후 이행 여부 추적이 가능합니다. 회의 직후 작성하여 참석자 일원으로부터 확인받으십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>회의명 · 회의일시 · 회의장소 · 참석자</span>        </li>        <li><b>1. 안건별 논의 내용</b><span>안건 · 논의 내용 및 결정사항</span>        </li>        <li><b>2. 결정사항 및 후속조치</b><span>결정사항 · 담당자 · 기한 · 상태</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>회의 중에 바로 작성해야 하나요?</summary>
           <p class="a">기억이 정확한 회의 직후에 정리하는 것이 좋습니다. 결정사항과 담당자만 먼저 메모해 두면 편합니다.</p>

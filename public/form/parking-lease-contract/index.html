@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>임대인과 임차인의 인적사항을 적습니다.</li>        <li>주차 구획번호와 차량 규격을 기재합니다.</li>        <li>등록 차량번호와 사용기간을 적습니다.</li>        <li>월 사용료와 보증금, 납부일을 정합니다.</li>        <li>관리책임 범위를 확인하고 서명 날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">건물이나 공용 주차장의 구획 1개를 임대할 때 사용합니다. 구획번호와 주차 가능 차량의 규격, 등록 차량번호를 정확히 적어 다른 차량이 주차하는 분쟁을 막으십시오. 월 사용료와 보증금, 납부일을 명시하고 차량을 변경할 때는 임대인에게 미리 통지하도록 정합니다. 주차장 내 차량 손해에 대한 관리책임 범위를 명확히 해 두면 사고 발생 시 다툼을 줄일 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>임대인 · 연락처 · 임차인</span>        </li>        <li><b>2. 주차 구획의 표시</b><span>주차장 주소 · 구획번호 · 주차 가능 차량 · 차량번호</span>        </li>        <li><b>3. 임대차 조건</b><span>사용 기간 · 월 사용료 · 보증금 · 납부일 · 제1조 (사용 범위) · 제2조 (차량 변경 통지) · 제3조 (관리책임과 손해) · 제4조 (해지) · 제5조 (원상회복)</span>        </li>        <li><b>계약 당사자</b><span>주소 · 성명 · 생년월일</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>차량을 바꾸면 어떻게 하나요?</summary>
           <p class="a">차량을 변경할 때는 미리 임대인에게 통지하도록 계약서에 정해 두시면 됩니다.</p>

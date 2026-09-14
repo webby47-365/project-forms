@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>대상자 정보와 신청일자, 희망 개시일을 적습니다.</li>        <li>장기요양등급이 있으면 등급과 인정번호를 적습니다.</li>        <li>희망하는 요일과 시간대를 구체적으로 적습니다.</li>        <li>거동 상태와 주거 환경을 적어 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">재가 요양기관에 방문요양이나 방문목욕 서비스를 신청할 때 사용합니다. 장기요양등급이 있는 경우 등급과 인정번호를 적으면 급여 적용 여부를 바로 확인할 수 있고, 등급이 없으면 전액 본인부담이 되므로 먼저 국민건강보험공단에 등급 신청을 하는 편이 유리합니다. 희망 요일과 시간대를 구체적으로 적어야 배정이 빠르며, 거동 상태와 주거 환경은 서비스 계획 수립에 쓰입니다. 질병명이나 진단 내용은 기재하지 않고 기관의 상담 과정에서 별도로 확인합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>신청일자 · 희망 개시일</span>        </li>        <li><b>1. 대상자 정보</b><span>성명 · 생년월일 · 연락처 · 장기요양 인정번호 · 주소 · 동거 가족 · 주거 형태</span>        </li>        <li><b>2. 보호자(신청인) 정보</b><span>대상자와의 관계 · 비상 연락처 · 연락 가능 시간</span>        </li>        <li><b>3. 희망 서비스</b><span>서비스 종류 · 주 횟수 · 희망 요일 · 희망 시간대</span>        </li>        <li><b>4. 생활 지원 필요 사항</b><span>식사 · 세면·목욕 · 이동 · 배설 · 가사 지원 · 외출 동행</span><span class="note">서비스 제공 시 유의할 사항(선호하는 요양보호사 성별, 반려동물, 출입 방법 등)을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>장기요양등급이 없으면 신청 못하나요?</summary>
           <p class="a">신청은 가능하지만 등급이 없으면 비용 전액을 본인이 부담하게 됩니다.</p>

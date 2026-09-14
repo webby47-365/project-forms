@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발신인과 수신인의 인적사항을 적습니다.</li>        <li>임대차 목적물과 계약일, 보증금·차임을 적습니다.</li>        <li>계약 종료일과 명도일을 적습니다.</li>        <li>반환을 요구하는 구체적 기한을 적습니다.</li>        <li>우체국 등기로 발송합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">임대차 계약 종료일이나 명도일이 지났는데도 임대인이 보증금을 반환하지 않는 경우 사용하는 통지서입니다. 임대차 목적물과 계약일, 보증금·차임, 계약 종료일과 명도일을 정확히 기재해야 합니다. 구체적인 반환 기한을 명시하고 우체국 등기로 발송하면 통지 사실에 대한 증거를 남길 수 있습니다. 반환이 지연될 경우 지연손해금 청구 등 추가 절차를 검토할 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>발신인</b><span>성명 · 연락처 · 주소</span>        </li>        <li><b>1. 임대차 내역</b><span>목적물 주소 · 계약일 · 계약 종료일 · 보증금 · 차임 · 명도일</span>        </li>        <li><b>2. 통지 내용</b><span class="note">임대차 경위와 명도 후 보증금을 반환받지 못한 사실을 구체적으로 기재하십시오.</span>        </li>        <li><b>3. 요구 사항 및 이행 기한</b><span class="note">요구하는 사항과 구체적인 이행 기한을 명시하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>꼭 등기로 보내야 하나요?</summary>
           <p class="a">내용증명은 등기우편으로 발송해야 발송 사실과 내용에 대한 증거로 남길 수 있습니다.</p>

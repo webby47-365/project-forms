@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청자 정보와 수강 과정, 결제일·결제금액을 적습니다.</li>        <li>환불을 요청하는 사유를 구체적으로 적습니다.</li>        <li>총 수강료에서 경과분과 공제액을 뺀 환불 예정액을 계산합니다.</li>        <li>환불받을 계좌 정보를 적고 신청서를 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">학원이나 교습소에서 수강을 중도 해지하거나 취소할 때 제출하는 서식입니다. 수강 과정과 결제일·결제금액을 정확히 적고, 환불 사유를 구체적으로 기재해야 처리가 빠릅니다. 환불 산정표에는 총 수강료에서 수강 경과분과 공제액을 뺀 환불 예정액을 적어 금액 산출 근거를 명확히 하십시오. 환불 계좌는 신청인 명의로 기재하는 것을 원칙으로 하며, 구체적인 환불 기준은 학원 규정과 관련 법령을 확인해 적용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 신청자 정보</b><span>성명 · 연락처 · 등록일 · 수강 과정 · 수강 기간</span>        </li>        <li><b>2. 결제 정보</b><span>결제일 · 결제금액 · 결제수단</span>        </li>        <li><b>3. 환불 사유</b><span>사유 구분 · 상세 사유</span>        </li>        <li><b>4. 환불 산정</b><span>총 수강료 · 수강 경과분 · 공제액 · 환불 예정액</span>        </li>        <li><b>5. 환불 계좌</b><span>은행 · 예금주 · 계좌번호</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>환불 계좌는 꼭 본인 명의여야 하나요?</summary>
           <p class="a">원칙적으로 신청인 명의 계좌를 사용하며, 다를 경우 학원에 별도로 확인하십시오.</p>

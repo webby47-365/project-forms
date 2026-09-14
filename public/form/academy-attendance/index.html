@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>반 정보에 과목과 담당강사, 수업 요일·시간을 적습니다.</li>        <li>수강생 명단을 적습니다.</li>        <li>회차별로 출결 기호로 표시합니다.</li>        <li>출석 회차를 총 회차로 나눠 출석률을 계산합니다.</li>        <li>특이사항이 있으면 하단에 기록합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">학원이나 교습소에서 반별 수강생의 출결을 회차마다 표시해 관리하는 서식입니다. 반 정보에 과목과 담당강사, 수업 요일·시간을 먼저 적어 두고, 회차가 진행될 때마다 출결 기호로 표시합니다. 출석률 칸은 출석 회차를 총 회차로 나누어 계산해 적으면 보호자 상담이나 환불 처리 때 근거 자료로 활용할 수 있습니다. 출결 기호의 의미는 범례를 참고해 통일해서 사용하고, 특이사항이 있으면 하단에 간단히 기록해 두십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 반 정보</b><span>반명 · 과목 · 담당강사 · 수업 요일·시간 · 기간</span>        </li>        <li><b>2. 출결 현황</b><span>성명 · 1회 · 2회 · 3회 · 4회 · 5회 · 6회 · 7회 · 8회 · 출석률</span>        </li>        <li><b>4. 특이사항</b><span class="note">결석·보강 등 특이사항을 간단히 기록하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>출결 기호는 정해져 있나요?</summary>
           <p class="a">범례에 맞춰 출석·결석·지각 등 기호 의미를 통일해서 사용하면 됩니다.</p>

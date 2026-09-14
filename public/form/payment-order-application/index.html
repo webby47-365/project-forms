@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>채권자와 채무자의 인적사항과 주소를 적습니다.</li>        <li>청구금액과 이자 기산일을 기재합니다.</li>        <li>청구 원인이 되는 사실관계를 간단히 적습니다.</li>        <li>첨부서류 목록을 확인해 함께 준비합니다.</li>        <li>관할 법원에 인지대와 함께 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">대여금·물품대금·용역대금처럼 다툼이 적은 금전 채권을 회수할 때 쓰는 절차입니다. 법정에 출석하지 않고 서면만으로 진행되며 인지대가 소송의 10분의 1이어서 비용이 적게 듭니다. 다만 채무자가 송달받은 날부터 2주 내에 이의신청을 하면 통상의 소송으로 넘어갑니다. 채무자의 주소를 정확히 알아야 하고, 청구금액과 이자 기산일을 명확히 적어야 합니다. 본 서식은 참고용이며 실제 제출 전 대한민국 법원 전자소송 사이트의 최신 양식과 인지·송달료 기준을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>채권자 성명 · 생년월일 · 채권자 주소 · 채무자 성명 · 채무자 주소</span>        </li>        <li><b>청구 취지</b><span>청구금액(원금) · 이자율 · 이자 기산일 · 독촉절차비용 · 청구 총액 · 송달료·인지대</span>        </li>        <li><b>청구 원인</b><span class="note">채권이 발생한 경위를 시간순으로 기재하십시오. (예: 20 년 월 일 금전을 대여하고 변제기를 20 년 월 일로 약정하였으나 변제하지 않음)</span>        </li>        <li><b>입증 방법</b><span>서증명 · 내용</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>채무자가 이의신청을 하면 어떻게 되나요?</summary>
           <p class="a">송달일부터 2주 내 이의신청이 있으면 통상의 소송 절차로 넘어갑니다.</p>

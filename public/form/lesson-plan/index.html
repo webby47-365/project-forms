@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>수업 대상과 단원, 차시를 적습니다.</li>        <li>학습 목표를 적습니다.</li>        <li>도입·전개·정리 단계별로 학습 내용과 활동을 적습니다.</li>        <li>단계별 소요 시간과 준비 자료를 적습니다.</li>        <li>평가 내용과 방법, 기준을 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">교사가 한 차시 수업을 준비하며 학습 목표부터 평가 계획까지 체계적으로 정리할 때 쓰는 서식입니다. 교수·학습 과정은 도입·전개·정리 단계별로 학습 내용과 교수·학생 활동, 소요 시간, 준비 자료를 나누어 적으면 수업 흐름을 한눈에 점검할 수 있습니다. 평가 계획에는 평가 내용과 방법, 기준을 함께 적어 수업 목표 달성 여부를 확인할 수 있게 하십시오. 수업 대상과 차시를 정확히 기재해 동 교과 협의회 자료로도 활용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 수업 개요</b><span>과목 · 단원 · 차시 · 대상 · 일시 · 장소 · 지도교사</span>        </li>        <li><b>3. 교수·학습 과정</b><span>단계 · 학습 내용 · 교수 활동 · 학생 활동 · 시간 · 자료</span>        </li>        <li><b>4. 평가 계획</b><span>평가 내용 · 평가 방법 · 기준</span>        </li>        <li><b>5. 유의사항</b><span class="note">지도상 유의할 점, 학습 지원이 필요한 부분 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>도입·전개·정리 시간 배분은 어떻게 하나요?</summary>
           <p class="a">한 차시 전체 시간에 맞춰 도입과 정리는 짧게, 전개는 가장 길게 배분하는 것이 일반적입니다.</p>

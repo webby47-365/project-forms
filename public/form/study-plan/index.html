@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>이번 주 계획 기간을 적습니다.</li>        <li>주간 목표를 먼저 작성합니다.</li>        <li>요일·시간대별로 공부할 과목과 내용을 채웁니다.</li>        <li>한 주를 마친 뒤 주간 회고를 작성합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">매 주 시작할 때 요일과 시간대별 공부할 과목·내용을 미리 계획하면 학습 시간을 효율적으로 배분할 수 있습니다. 주간 목표 란에는 이번 주 달성할 학습 목표를, 주간 회고 란에는 실제 진행 상황, 어려웠던 점, 다음 주 개선 방안을 작성하여 학습 효율을 점진적으로 높일 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>계획 기간</span>        </li>        <li><b>1. 주간 학습 일정</b><span>시간 · 월 · 화 · 수 · 목 · 금 · 토 · 일</span>        </li>        <li><b>2. 주간 목표</b><span class="note">이번 주 달성하고자 하는 학습 목표를 구체적으로 작성하십시오.</span>        </li>        <li><b>3. 주간 회고</b><span class="note">실제 진행 상황, 어려웠던 점, 개선할 사항을 작성하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>시간대는 꼭 나눠서 써야 하나요?</summary>
           <p class="a">시간대별로 나눠 적으면 계획이 구체적이 되어 실천하기 쉽습니다.</p>

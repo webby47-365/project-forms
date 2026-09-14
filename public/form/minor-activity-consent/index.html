@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>활동명과 기간, 장소, 주관 기관을 적습니다.</li>        <li>참가자 정보와 생년월일을 적습니다.</li>        <li>보호자와 비상연락처를 적습니다.</li>        <li>건강상 유의사항을 적습니다.</li>        <li>보호자가 동의 내용을 확인하고 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">캠프, 수련활동, 체험학습처럼 미성년자가 참가하는 활동에서 보호자의 동의를 받는 서류입니다. 활동명·기간·장소·주관 기관을 안내하고, 참가자와 보호자의 연락처·비상연락처를 정확히 기재해야 합니다. 건강상 유의사항은 구체적인 질병명이 아니라 &#34;유의가 필요한 사항&#34; 수준으로 기재하도록 안내하고, 참가자의 고유식별정보는 받지 말고 생년월일로만 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 활동 정보</b><span>활동명 · 주관 · 기간 · 장소</span>        </li>        <li><b>2. 참가자 정보</b><span>성명 · 생년월일 · 학교·학년 · 연락처</span>        </li>        <li><b>3. 보호자 정보</b><span>관계 · 비상연락처</span>        </li>        <li><b>4. 건강·유의사항</b><span class="note">복용 약물, 신체 활동 제한 등 유의가 필요한 사항이 있으면 기재하십시오(구체적인 질병명 대신 유의사항만 기재).</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>지병을 구체적으로 적어야 하나요?</summary>
           <p class="a">병명 대신 유의가 필요한 사항 정도로만 적어도 충분합니다.</p>

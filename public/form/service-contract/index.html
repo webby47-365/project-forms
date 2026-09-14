@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발주처와 수급인의 인적사항을 적습니다.</li>        <li>용역의 범위와 구체적인 업무 내용을 적습니다.</li>        <li>계약기간과 용역대금, 지급 기한을 적습니다.</li>        <li>지식재산권 귀속 여부를 명시합니다.</li>        <li>검수 기준과 특약사항을 적고 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">프리랜서·개인사업자가 용역비로 소정의 작업을 수행하기로 계약할 때 사용합니다. 용역의 범위를 구체적으로 특정하고 계약기간, 용역대금, 지급 기한과 방법을 명확히 해야 나중의 금전 분쟁을 방지할 수 있습니다. 지식재산권(저작권, 특허권 등) 귀속 여부도 반드시 명시하여야 합니다. 큰 규모의 용역은 검수 기준과 기일, 부분 지급 일정을 미리 정하는 것이 좋습니다. 본 서식은 참고용이며 법적 효력과 적합성은 사용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>발주처 · 용역인(수급인)</span>        </li>        <li><b>계약 내용</b><span>용역의 명칭 · 계약기간 · 용역기간 · 용역대금 · 지급방법 · 검수기한 · 제1조 (목적) · 제2조 (용역의 범위) · 제3조 (계약기간) · 제4조 (용역대금 및 지급방법) · 제5조 (검수 및 인수) · 제6조 (지식재산권 귀속) · 제7조 (비밀유지) · 제8조 (계약의 해제·해지)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>저작권은 누구에게 귀속되나요?</summary>
           <p class="a">계약서에 명시한 대로 귀속되므로 지식재산권 조항을 반드시 확인해야 합니다.</p>

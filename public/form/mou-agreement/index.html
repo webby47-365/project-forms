@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>협약 당사자의 명칭과 대표자를 적습니다.</li>        <li>협력 분야와 각자가 맡을 역할을 정합니다.</li>        <li>협약 기간과 비밀유지 범위를 정합니다.</li>        <li>양측 대표자가 서명하고 각자 1부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">두 기관이나 회사가 특정 분야에서 협력하기로 뜻을 모을 때 작성하는 협약서입니다. 협력 분야와 각 기관이 맡을 역할, 협약 기간을 구체적으로 적어야 실행 단계에서 혼선을 줄일 수 있습니다. MOU는 일반적으로 구체적인 법적 구속력보다는 협력의 의지를 확인하는 성격이 강하므로 본 계약이 필요한 사항은 별도의 계약서로 정하는 것이 좋습니다. 협약 과정에서 공유한 정보의 비밀유지 범위도 함께 정해 두십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>협약 당사자</b><span>갑 · 을 · 제1조 (협약의 목적) · 제2조 (협력 분야) · 제3조 (각 기관의 역할) · 제4조 (협약 기간) · 제5조 (법적 구속력의 범위) · 제6조 (비밀유지) · 제7조 (협약의 변경과 해지)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>MOU도 법적 구속력이 있나요?</summary>
           <p class="a">대체로 협력 의지를 확인하는 성격이 강하며, 구체적인 의무는 별도 계약서로 정하는 것이 좋습니다.</p>

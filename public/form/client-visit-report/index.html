@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>방문자, 소속, 방문 일시를 적습니다.</li>        <li>방문 목적과 상담 내용을 구체적으로 기재합니다.</li>        <li>고객 요구사항과 대응 방안, 기한을 표로 정리합니다.</li>        <li>후속 조치 계획을 적습니다.</li>        <li>작성 후 상급자에게 보고합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">영업 담당자가 거래처를 방문한 뒤 결과를 상급자에게 보고할 때 작성합니다. 방문 목적과 상담 내용을 구체적으로 기재하고, 고객이 요구한 사항과 대응 방안·기한을 표로 정리해 이행 여부를 관리합니다. 후속 조치 계획까지 함께 기록해 다음 방문 시 참고 자료로 활용합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>방문자 · 소속 · 일시</span>        </li>        <li><b>1. 방문처 정보</b><span>상호 · 주소 · 면담자 · 직위 · 연락처</span>        </li>        <li><b>2. 방문 목적</b><span class="note">방문 배경과 목적을 간단히 기재하십시오.</span>        </li>        <li><b>3. 상담 내용</b><span class="note">상담에서 논의한 내용을 구체적으로 기재하십시오.</span>        </li>        <li><b>4. 고객 요구사항</b><span>요구내용 · 대응방안 · 기한</span>        </li>        <li><b>5. 후속 조치 계획</b><span class="note">다음 방문 일정, 회신 기한, 내부 공유 사항 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>고객 요구사항이 여러 건이면 어떻게 적나요?</summary>
           <p class="a">표에 행을 추가해 요구사항마다 대응 방안과 기한을 따로 적으면 됩니다.</p>

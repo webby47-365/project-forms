@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>부서와 회계연도, 집행기간을 적습니다.</li>        <li>계정과목별로 예산액과 실제 집행액을 기재합니다.</li>        <li>잔액과 집행률을 계산해 표에 채웁니다.</li>        <li>특이사항에 집행률이 낮거나 높은 이유를 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">편성된 예산이 계획대로 집행되고 있는지 정기적으로 점검할 때 작성하는 문서입니다. 계정과목별로 예산액과 집행액을 적고 잔액을 계산해 집행률을 산출하며, 적요에는 구체적인 지출 내용과 증빙 종류를 함께 기재합니다. 집행률이 지나치게 낮거나 높은 항목은 특이사항에 사유를 적어 보고하고, 세부 세액 처리는 회계팀과 별도로 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>부서 · 회계연도 · 집행기간 · 작성자</span>        </li>        <li><b>집행 내역</b><span>집행일 · 계정과목 · 적요 · 예산액 · 집행액 · 잔액 · 증빙 · 예산액 합계 · 집행액 합계 · 잔액 합계 · 집행률</span>        </li>        <li><b>특이사항</b><span class="note">특이사항 — 예산 초과, 집행 지연 사유 등을 기재하십시오.</span>        </li>        <li><b>결재</b><span>담당 · 본부장</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>집행률은 어떻게 계산하나요?</summary>
           <p class="a">집행액을 예산액으로 나눈 뒤 100을 곱하면 됩니다.</p>

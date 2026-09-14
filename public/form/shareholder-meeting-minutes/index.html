@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>총회 일시와 장소, 회사 정보를 적습니다.</li>        <li>총 발행주식수와 출석 주식수를 적습니다.</li>        <li>의안을 순서대로 상정합니다.</li>        <li>의안별 찬반 결과와 결의 결과를 적습니다.</li>        <li>의장과 출석 이사가 서명·날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">상법에 따라 주주총회 결의는 의사록으로 남겨야 하며, 정기총회와 임시총회 모두 작성합니다. 총 발행주식수와 출석 주식수를 기재해 결의 정족수를 갖추었는지 확인할 수 있도록 하고, 의안별 내용과 찬반 결과, 결의 결과를 명확히 적습니다. 대표이사 선임, 정관 변경처럼 등기가 필요한 의안은 이 의사록이 등기 첨부서류가 되므로 법무사·등기소가 요구하는 문구로 정확히 작성해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>회사 정보</b><span>회사명 · 법인등록번호</span>        </li>        <li><b>총회 개요</b><span>구분(정기/임시) · 일시 · 장소 · 총 발행주식수 · 출석 주식수 · 의장</span>        </li>        <li><b>의안 및 결의 사항</b><span>의안 · 내용 · 찬반 및 결의결과 · 직위 · 성명 · 서명 또는 인</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>정족수는 어떻게 확인하나요?</summary>
           <p class="a">총 발행주식수 대비 출석 주식수 비율을 계산해 의안별로 필요한 정족수를 채웠는지 확인하면 됩니다.</p>

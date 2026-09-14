@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청자 성명과 연락처를 적습니다.</li>        <li>신청할 행사명을 적습니다.</li>        <li>참가 이유나 동기를 간단히 적습니다.</li>        <li>참가비가 있으면 납부 방법을 확인하고 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">학교 활동, 학원 프로그램, 기업 행사, 공개 모집 이벤트, 경진대회 등에 참가 신청할 때 제출합니다. 신청자의 기본 정보(성명, 연락처), 신청 행사명, 참가 이유나 동기를 기재합니다. 미성년자는 보호자 동의가 필요할 수 있으므로 사전에 확인하고, 참가비가 있으면 납부 방법도 명시해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>신청자 정보</b><span>성명 · 생년월일 · 연락처(휴대폰) · 이메일 · 소속·직책 · 주소</span>        </li>        <li><b>신청 내용</b><span>행사명 · 행사 기간 · 참가 분야/직무</span>        </li>        <li><b>참가 동기 및 특이사항</b><span class="note">행사 참가 이유, 관심 분야, 특별히 참고할 사항이 있으면 기재하십시오.</span>        </li>        <li><b>보호자 동의 (미성년자인 경우)</b><span>동의 여부 · 동의 · 미동의 · 보호자 성명 · 관계 · 보호자 연락처</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>미성년자도 신청할 수 있나요?</summary>
           <p class="a">가능하지만 보호자 동의가 필요할 수 있으니 사전에 주최 측에 확인하십시오.</p>

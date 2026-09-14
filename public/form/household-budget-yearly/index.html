@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>월별로 수입과 고정지출·변동지출·저축을 기록합니다.</li>        <li>매달 말 잔액을 계산합니다.</li>        <li>연말에 항목별 연간 합계를 집계합니다.</li>        <li>지출 비중을 확인하고 내년 목표를 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">한 해 동안의 가계 흐름을 월 단위로 누적 관리하는 양식입니다. 매월 수입과 고정지출·변동지출· 저축을 기록하여 월말 잔액을 계산하고, 연말에는 연간 합계와 항목별 집계표로 지출 비중을 점검합니다. 내년 목표란에는 개선하고 싶은 소비·저축 계획을 적어 두면 다음 해 예산을 수립할 때 근거 자료로 활용할 수 있습니다. 금액 산출이나 세무 처리가 필요한 경우에는 별도로 전문가와 상담하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>연도 · 월평균 예산 · 연간 저축 목표</span>        </li>        <li><b>1. 월별 수지</b><span>월 · 수입 · 고정지출 · 변동지출 · 저축 · 잔액 · 1월 · 2월 · 3월 · 4월 · 5월 · 6월 · 7월 · 8월</span>        </li>        <li><b>2. 연간 합계</b><span>연간 총수입 · 연간 총지출 · 연간 총저축 · 연말 잔액</span>        </li>        <li><b>3. 항목별 연간 집계</b><span>항목 · 상반기(원) · 하반기(원) · 연간 합계(원)</span>        </li>        <li><b>4. 내년 목표</b><span class="note">다음 해에 개선하고 싶은 소비·저축 계획을 적으십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>매일 기록해야 하나요?</summary>
           <p class="a">이 서식은 월 단위 정리용이므로 매일 지출은 따로 적고 월말에 옮겨 적으면 됩니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>매도인과 매수인 정보를 적습니다.</li>        <li>판매 품목과 수량, 단가를 적습니다.</li>        <li>대금 지급 방법과 시기를 적습니다.</li>        <li>인도조건과 소유권 이전 시점을 적습니다.</li>        <li>하자담보와 해지 조항을 확인하고 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">물품을 계속적·반복적으로 공급하는 거래에서 조건을 미리 확정해 두는 계약서입니다. 단가 변동 조건, 하자 발생 시 처리 방법, 소유권 이전 시점을 명확히 해야 분쟁을 막을 수 있습니다. 개별 발주는 이 계약을 근거로 발주서로 처리하는 것이 일반적입니다. 본 서식은 참고용이며 개별 사안의 법적 적합성은 이용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>계약 당사자</b><span>매도인 상호 · 대표자 · 소재지 · 담당자 · 매수인 상호</span>        </li>        <li><b>계약 내용</b><span>품명 · 규격 · 단위 · 단가 · 월 예상수량 · 계약기간 · 대금 지급방법 · 결제조건 · 인도 장소 · 제1조 (목적) · 제2조 (개별 발주) · 제3조 (단가의 조정) · 제4조 (인도 및 검수) · 제5조 (소유권 및 위험부담)</span>        </li>        <li><b>특약사항</b><span class="note">반품 조건, 최소 발주수량, 독점 공급 여부 등 합의한 내용을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>개별 주문은 어떻게 처리하나요?</summary>
           <p class="a">이 계약을 근거로 발주서를 주고받아 개별 거래를 처리하는 것이 일반적입니다.</p>

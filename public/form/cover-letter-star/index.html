@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>문항이 요구하는 역량을 먼저 파악합니다.</li>        <li>상황 칸에 당시 배경을 간단히 적습니다.</li>        <li>과제 칸에 맡았던 목표나 문제를 적습니다.</li>        <li>행동 칸에 본인이 실제로 한 일을 적습니다.</li>        <li>결과 칸에 수치나 변화로 마무리합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">직무 역량을 경험 중심으로 구체적으로 검증하려는 기업에서 자주 요구하는 항목형 자기소개서 서식입니다. 문항마다 상황(Situation)-과제(Task)-행동(Action)-결과(Result) 순서로 칸을 나누어 작성하면 두괄식으로 경험을 정리하기 쉽습니다. 행동 칸에는 본인이 실제로 한 일을 구체적으로 쓰고, 결과 칸에는 가능한 한 수치나 변화로 마무리하십시오. 문항은 채용 공고의 요구 역량에 맞게 바꾸어 사용할 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 지원분야 · 연락처</span>        </li>        <li><b>문항 1. 목표를 달성하기 위해 도전했던 경험을 서술하십시오.</b><span>S (상황) · T (과제) · A (행동) · R (결과)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>항목 순서를 바꿔도 되나요?</summary>
           <p class="a">채용 공고가 요구하는 역량에 맞게 문항 구성과 순서를 자유롭게 바꾸어 사용할 수 있습니다.</p>

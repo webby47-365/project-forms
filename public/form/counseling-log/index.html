@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>상담 일시와 상담자, 대상 학생을 적습니다.</li>        <li>상담 유형과 면담 시간을 적습니다.</li>        <li>상담 내용을 자유기술란에 구체적으로 적습니다.</li>        <li>실시한 조치와 후속 지도 방안을 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">학생 개인 상담, 학부모 상담, 진로 지도 등 상담 업무를 기록합니다. 상담 일시와 참석자, 상담의 주제·유형을 명확히 기입하고, 상담 내용은 자유기술란에 구체적으로 작성합니다. 상담을 통해 실시한 조치와 후속 지도 방안을 함께 기재하여 일관성 있는 학생 지도가 이루어지도록 합니다. 학생의 개인 건강정보나 진단명은 기재하지 않습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>상담 일시 · 상담자(교사명) · 대상자(학생명) · 학년·반 · 상담 유형 · 면담 시간</span>        </li>        <li><b>상담 내용</b><span class="note">상담의 주요 내용, 학생이 제시한 고민이나 문제 상황, 상담 과정을 구체적으로 기재하십시오.</span>        </li>        <li><b>조치 사항 및 후속 계획</b><span>조치 사항 · 후속 계획</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>학생의 건강 정보도 적어야 하나요?</summary>
           <p class="a">개인 건강정보나 진단명은 적지 않고 상담 내용과 지도 방안 위주로 기록합니다.</p>

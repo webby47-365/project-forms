@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>위임인과 수임인의 인적사항을 적습니다.</li>        <li>원 위임의 내용(위임일, 사무, 범위, 보수)을 적습니다.</li>        <li>해지 사유와 해지 효력 발생일을 기재합니다.</li>        <li>인계받아야 할 서류·인장·잔여 금원을 표로 정리합니다.</li>        <li>등기우편 등으로 발송해 도달 사실을 남깁니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">위임인이 기존에 맺은 위임계약을 더 이상 유지하지 않기로 하고 이를 수임인에게 공식적으로 알릴 때 사용합니다. 원 위임의 내용(위임일, 위임 사무, 위임 범위, 보수)을 먼저 밝히고 해지 사유와 해지 효력이 발생하는 날짜를 명확히 기재합니다. 서류·인장·잔여 금원 등 인계받아야 할 사항을 표로 정리해 두면 인수인계가 매끄럽습니다. 통지서는 등기우편 등으로 발송해 도달 사실을 남겨 두는 것이 좋습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>위임인 · 연락처 · 주소 · 수임인</span>        </li>        <li><b>2. 원 위임 내역</b><span>위임일 · 위임 범위 · 위임 사무 · 보수</span>        </li>        <li><b>3. 해지 의사 및 사유</b><span class="note">해지 사유와 경위를 간략히 기재하십시오.</span>        </li>        <li><b>4. 해지 효력 발생일</b><span>해지 효력 발생일</span>        </li>        <li><b>5. 인계 요구 사항</b><span>인계 내용 · 인계 기한</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>해지 효력은 언제부터 발생하나요?</summary>
           <p class="a">통지서에 적은 해지 효력 발생일부터이며, 명확히 기재해야 분쟁을 줄일 수 있습니다.</p>

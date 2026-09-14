@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>방문일자와 방문자 성명, 소속을 적습니다.</li>        <li>방문 목적과 만나려는 담당자를 적습니다.</li>        <li>입실 시각을 기록하고 출입증을 지급합니다.</li>        <li>퇴실 시 시각을 기록하고 출입증을 회수합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">사무실을 방문하는 외부인의 출입 현황을 기록하여 보안과 안전을 관리하는 대장입니다. 방문목적과 피방문자를 함께 적어 누구를 만나러 왔는지 추적할 수 있게 하고, 입실과 퇴실 시각을 기록해 체류 시간을 확인합니다. 수집한 개인정보는 출입 관리 목적 외에는 사용하지 않으며 정해진 보관기간이 지나면 파기합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>관리부서 · 작성월</span>        </li>        <li><b>방문 현황</b><span>방문일자 · 방문자명 · 소속 · 연락처 · 방문목적 · 피방문자 · 입실시각 · 퇴실시각</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>방문자 연락처는 꼭 받아야 하나요?</summary>
           <p class="a">비상 연락과 사후 확인을 위해 받는 것이 안전하지만 방침에 따라 생략할 수 있습니다.</p>

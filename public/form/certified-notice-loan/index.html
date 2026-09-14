@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발신인과 수신인 정보를 적습니다.</li>        <li>대여 일자와 금액, 변제기일을 적습니다.</li>        <li>갚지 않은 사실과 이자율을 적습니다.</li>        <li>구체적인 이행 기한을 정해 요구합니다.</li>        <li>우체국 내용증명으로 등기 발송합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">금전을 대여하였으나 변제기일이 지나도록 돈을 돌려받지 못한 경우 사용하는 통지서입니다. 대여 일자와 금액, 변제기일, 이자율을 정확히 기재하고 구체적인 이행 기한을 명시해야 효과가 있습니다. 우체국을 통해 등기로 발송하면 통지 사실과 도달 시점에 대한 증거가 남습니다. 이후 소송 등 절차를 진행할 경우 청구원인을 뒷받침하는 자료로 활용할 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>발신인</b><span>성명 · 연락처 · 주소</span>        </li>        <li><b>1. 대여 내역</b><span>대여일 · 변제기일 · 대여금액 · 이자율 · 송금계좌</span>        </li>        <li><b>2. 통지 내용</b><span class="note">대여 경위와 변제기일이 지난 사실을 구체적으로 기재하십시오.</span>        </li>        <li><b>3. 요구 사항 및 이행 기한</b><span class="note">요구하는 사항과 구체적인 이행 기한을 명시하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>내용증명을 보내면 바로 법적 효력이 생기나요?</summary>
           <p class="a">내용증명 자체는 통지 사실을 남기는 증거일 뿐이며, 돈을 받으려면 이후 소송 등 절차가 필요할 수 있습니다.</p>

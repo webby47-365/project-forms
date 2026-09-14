@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>사용일시와 목적지, 사용목적을 적어 신청합니다.</li>        <li>동승자와 예상 주행거리를 함께 기재합니다.</li>        <li>차량관리자의 승인을 받아 차량을 배정받습니다.</li>        <li>사용 후 주행거리와 유류비를 적고 영수증을 첨부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">회사 소유 차량을 업무상 사용하기 전에 사용일시와 목적지, 사용목적을 기재해 승인을 받는 서류입니다. 동승자와 운행 기록을 함께 적어 두면 차량 배정이 겹치지 않도록 관리할 수 있습니다. 사용 후에는 주행거리와 유류비·통행료를 기재하고 영수증을 첨부하여 차량관리자에게 제출하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>신청부서 · 신청자 · 연락처 · 사번</span>        </li>        <li><b>사용 정보</b><span>차량번호 · 차종 · 사용일시 · 목적지 · 동승자 · 사용목적</span>        </li>        <li><b>운행 기록</b><span>출발시각 · 도착시각 · 출발지 · 도착지 · 주행거리(km)</span>        </li>        <li><b>유류비 및 통행료</b><span>유류비 · 통행료</span>        </li>        <li><b>결재</b><span>차량관리자 · 서명(날인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>개인 차량으로 업무를 볼 때도 쓰나요?</summary>
           <p class="a">이 서식은 회사 소유 차량 신청용이며, 개인 차량은 별도의 유류비 정산 서식을 쓰는 것이 일반적입니다.</p>

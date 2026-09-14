@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>회사명과 본점 소재지를 적습니다.</li>        <li>선임된 사람의 성명, 생년월일, 주소를 적습니다.</li>        <li>맡을 직위와 취임 승낙 의사를 적습니다.</li>        <li>서명 또는 날인하고 등기 신청 서류에 첨부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">주주총회나 이사회에서 이사·감사로 선임된 사람이 그 직을 맡겠다는 의사를 확인하기 위해 작성합니다. 법인 임원 변경등기 시 선임을 증명하는 의사록과 함께 첨부하는 서류로, 성명· 생년월일·주소·직위를 정확히 기재해야 합니다. 인감증명서 첨부나 서명 방식은 등기소마다 요구사항이 다를 수 있으므로 등기 신청 전에 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>회사 정보</b><span>회사명 · 본점 소재지</span>        </li>        <li><b>취임자</b><span>성명 · 생년월일 · 주소 · 직위(이사/감사) · 취임일</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>인감증명서도 함께 첨부해야 하나요?</summary>
           <p class="a">등기소마다 요구사항이 다를 수 있으므로 신청 전 관할 등기소에 확인하는 것이 안전합니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>활동명과 일시, 장소를 안내합니다.</li>        <li>이동 수단과 인솔 교사를 적습니다.</li>        <li>참가비, 준비물, 우천 시 계획을 안내합니다.</li>        <li>보호자 서명과 비상연락처를 받습니다.</li>        <li>회신 기한 안에 걷어 인원을 확정합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">학교나 기관의 교외 활동에 학생이 참여할 때 보호자의 동의를 받는 서류입니다. 활동 일시와 장소, 이동 수단과 인솔 교사를 구체적으로 안내해 보호자가 판단할 수 있게 하십시오. 비상연락처는 반드시 연결 가능한 번호를 적고, 활동 중 유의해야 할 사항이 있으면 보호자가 특이사항란에 적도록 안내합니다. 참가비와 준비물, 우천 시 대체 일정도 함께 안내하면 문의를 줄일 수 있습니다. 동의서는 회신 기한 전에 제출받아 인원을 확정하고, 안전보험 가입 여부를 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 활동 안내</b><span>활동명 · 일시 · 인솔 교사 · 장소 및 주소 · 이동 수단 · 참가비 · 준비물 · 우천 시</span>        </li>        <li><b>2. 학생 정보</b><span>성명 · 학년·반·번호 · 생년월일 · 학생 연락처</span>        </li>        <li><b>3. 보호자 및 비상연락</b><span>보호자 성명 · 학생과의 관계 · 주소 · 연락처 · 비상 연락처</span>        </li>        <li><b>4. 동의 사항</b><span>동의 항목 · 내용 · 동의 · 참가 여부 · 회신 기한</span><span class="note">특이사항 — 활동 중 유의할 점이나 사전에 알려야 할 사항을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>특이사항란에는 무엇을 적어야 하나요?</summary>
           <p class="a">알레르기나 지병처럼 활동 중 교사가 알아야 할 학생의 건강 정보를 적으면 됩니다.</p>

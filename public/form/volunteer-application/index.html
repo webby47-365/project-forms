@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인의 성명과 연락처, 주소를 적습니다.</li>        <li>희망하는 활동 분야를 적습니다.</li>        <li>가능한 요일과 시간대를 구체적으로 적습니다.</li>        <li>관련 경험이나 보유 기술을 적습니다.</li>        <li>미성년자는 보호자 동의란을 작성합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">기관이나 단체의 자원봉사 활동에 참여하기 위해 제출하는 신청서입니다. 희망하는 활동 분야와 가능한 요일·시간대를 구체적으로 적어야 배치가 원활합니다. 관련 경험이나 보유 기술이 있으면 적어 두면 적합한 활동에 연결되기 쉽습니다. 봉사시간 인정이 필요한 경우 인정기관과 아이디를 함께 기재하십시오. 미성년자는 보호자 동의란을 작성해야 하며, 활동 중 안전사고에 대비한 보험 가입 여부도 확인합니다. 개인정보 수집·이용 동의는 목적과 보유기간을 확인한 뒤 표시하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 신청인 정보</b><span>성명 · 생년월일 · 주소 · 연락처 · 이메일 · 소속(학교·직장) · 비상 연락처</span>        </li>        <li><b>2. 희망 활동</b><span>희망 활동 분야 · 활동 희망기간 · 희망 활동 장소 · 봉사시간 인정 · 인정기관·아이디</span>        </li>        <li><b>3. 가능 요일 및 시간</b><span>시간대 · 월 · 화 · 수 · 목 · 금 · 토 · 일</span>        </li>        <li><b>4. 활동 경험 및 보유 기술</b><span>활동(교육)명 · 기관 · 기간 · 역할·내용</span><span class="note">지원 동기와 전하고 싶은 말씀을 기재하십시오.</span>        </li>        <li><b>5. 동의 및 보호자 확인</b><span>개인정보 수집·이용 동의 · 활동사진 이용 동의 · 보호자 성명 (미성년자) · 보호자 연락처</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>봉사시간 인정은 어떻게 받나요?</summary>
           <p class="a">인정기관과 본인의 봉사 아이디를 함께 적어야 활동 시간이 정확히 인정됩니다.</p>

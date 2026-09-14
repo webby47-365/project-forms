@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>접종 대상자의 인적사항을 적습니다.</li>        <li>발열, 이전 이상반응, 알레르기 여부를 사전 확인 항목에 표시합니다.</li>        <li>미성년자는 보호자가 확인 항목에 답합니다.</li>        <li>본인 또는 보호자가 동의란에 서명합니다.</li>        <li>백신명과 접종 차수는 접종기관이 기재합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">어린이나 성인이 예방접종을 받기 전에 접종기관이 대상자 상태를 확인하고 본인 또는 보호자의 동의를 받을 때 사용하는 서식입니다. 미성년자는 보호자가 사전 확인 항목에 답하고 동의란에 서명합니다. 발열, 이전 접종 후 이상반응, 알레르기 여부는 접종 가능 여부 판단에 중요하므로 빠짐없이 표시하십시오. 백신명과 접종 차수는 접종기관이 기재합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 접종 대상자 정보</b><span>성명 · 생년월일 · 연락처 · 보호자(미성년자인 경우) · 관계</span>        </li>        <li><b>2. 접종 정보</b><span>백신명 · 접종 차수 · 접종 예정일 · 접종 기관</span>        </li>        <li><b>3. 사전 확인 사항</b><span>확인 항목 · 예 · 아니오</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>이전에 이상반응이 있었으면 접종할 수 없나요?</summary>
           <p class="a">반드시 사전 확인 항목에 표시해 의료진과 상담 후 접종 여부를 결정해야 합니다.</p>

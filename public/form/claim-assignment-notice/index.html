@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>양도인과 양수인, 채무자의 인적사항을 적습니다.</li>        <li>양도한 채권의 발생일과 금액으로 채권을 특정합니다.</li>        <li>일부만 양도했다면 양도 범위를 명확히 적습니다.</li>        <li>양수인의 입금계좌를 안내합니다.</li>        <li>내용증명 우편으로 발송하고 사본을 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">채권을 다른 사람에게 넘긴 사실을 채무자에게 알려 변제받을 상대방을 확정하는 문서입니다. 통지는 양도인이 하는 것이 원칙이므로 발신인 명의를 확인하십시오. 어떤 채권인지 원인관계와 발생일·금액으로 특정해야 하며, 일부만 양도한 경우 양도 범위를 명확히 적습니다. 양수인의 성명과 입금계좌를 기재해 통지 이후에는 양수인에게 변제하도록 안내하십시오. 도달 사실을 남기기 위해 내용증명 우편으로 발송하고 사본을 보관하는 것이 안전합니다. 대항요건과 효력 발생 시점은 관련 법령 기준을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 당사자</b><span>양도인(발신인) · 연락처 · 주소 · 양수인 · 채무자(수신인)</span>        </li>        <li><b>2. 양도 채권의 표시</b><span>채권의 원인 · 채권 발생일 · 변제기일 · 채권 원금 · 이자·지연손해금 · 양도 금액 · 양도 범위 · 양도일자 · 양도 원인</span>        </li>        <li><b>3. 통지 내용</b><span>변제 받을 계좌 (양수인) · 변제 기한 · 문의처</span><span class="note">기타 안내사항 — 분할 양도 내역, 기존 변제 내역 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>통지는 누가 해야 하나요?</summary>
           <p class="a">원칙적으로 양도인이 통지해야 채무자에게 효력이 있으니 발신인 명의를 확인하십시오.</p>

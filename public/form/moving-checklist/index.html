@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>이사 예정일과 현 주소·새 주소를 적습니다.</li>        <li>이사 한 달 전 항목부터 순서대로 확인합니다.</li>        <li>담당과 기한을 정해 항목별로 적습니다.</li>        <li>완료한 항목을 표시하며 비용을 함께 기록합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">이사 준비부터 정리까지 빠뜨리기 쉬운 일을 시기별로 나누어 점검하는 표입니다. 이사 한 달 전에는 업체 견적과 계약, 일주일 전에는 공과금 정산과 주소 변경, 당일에는 파손 확인과 잔금 처리처럼 시기에 맞춰 항목을 배치했습니다. 담당과 기한을 정해 적어 두면 가족이나 동거인과 역할을 나누기 쉽습니다. 비용 항목에는 예상액과 실제 지출을 함께 적어 예산을 관리하고, 관련 연락처는 한곳에 모아 두면 당일에 헤매지 않습니다. 완료한 항목은 표시해 진행 상황을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>이사 예정일 · 이사 업체 · 연락처 · 현 주소 · 새 주소 · 작성일</span>        </li>        <li><b>1. 이사 전 (1개월~1주 전)</b><span>할 일 · 담당 · 기한 · 완료</span>        </li>        <li><b>3. 비용 관리</b><span>항목 · 예상 금액 · 실제 지출</span>        </li>        <li><b>4. 관련 연락처</b><span>업체·기관명 · 담당자</span><span class="note">특이사항 — 사다리차 예약, 엘리베이터 사용 신청, 폐기물 처리 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>항목 순서를 꼭 지켜야 하나요?</summary>
           <p class="a">시기별로 배치되어 있지만 상황에 맞게 순서를 바꿔 사용해도 됩니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>성명과 부서, 사번을 적습니다.</li>        <li>보험료, 의료비, 교육비 등 항목별 해당 여부를 표시합니다.</li>        <li>항목별로 서류 제출 여부를 확인해 표시합니다.</li>        <li>미제출 서류와 사유를 비고란에 적어 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">연말정산 시 보험료·의료비·교육비 등 소득·세액공제 서류를 빠짐없이 제출했는지 확인하는 문서입니다. 항목별로 해당 여부와 제출 여부를 표시하고, 비고란에는 추가로 필요한 서류나 미제출 사유를 기재합니다. 세액 계산이나 공제 한도 적용은 회사 급여 담당자 또는 국세청 홈택스 간소화서비스·세무대리인을 통해 확인하고, 제출 기한을 반드시 지키십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 부서 · 사번 · 연락처</span>        </li>        <li><b>점검 항목</b><span>제출서류 · 해당여부 · 제출여부</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>공제 한도는 어디서 확인하나요?</summary>
           <p class="a">정확한 공제 한도나 세액 계산은 회사 급여 담당자나 홈택스 간소화서비스에서 확인하십시오.</p>

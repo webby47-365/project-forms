@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>약속인과 상대방 정보를 적습니다.</li>        <li>약속하는 내용을 구체적으로 적습니다.</li>        <li>이행 기한을 적습니다.</li>        <li>금전 약속이면 금액을 한글과 숫자로 함께 적습니다.</li>        <li>양쪽이 서명·날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">금전 변제, 책임 인정, 행동 약속 등을 글로 남기고 싶을 때 약속 일방이 작성하여 상대방과 함께 서명합니다. 각서는 합의서보다 한 쪽이 주된 의무를 지는 경우에 사용하며, 구체적인 약속 내용과 이행 기한을 명확히 기재해야 나중에 분쟁을 줄일 수 있습니다. 금전 약속의 경우 금액을 한글과 숫자로 함께 적고 지급 계좌를 명시하는 것이 좋습니다. 본 서식은 참고용이며 법적 효력과 적합성은 사용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>약속인(의무자) · 상대방(권리자)</span>        </li>        <li><b>약속 내용</b><span>제1조 (약속의 확인) · 제2조 (책임)</span><span class="note">약속하는 구체적인 내용, 이행 기한, 지급액이나 이행 방법을 명확하게 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>각서와 합의서는 어떻게 다른가요?</summary>
           <p class="a">각서는 한쪽이 주된 의무를 약속하는 문서이고, 합의서는 양쪽이 서로 조건을 주고받을 때 씁니다.</p>

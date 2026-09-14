@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>출장자 정보와 출장 기간, 목적지를 먼저 적습니다.</li>        <li>일자별 방문처와 면담자, 협의 내용을 순서대로 기록합니다.</li>        <li>출장 성과와 후속 과제를 구분해 정리합니다.</li>        <li>교통비·숙박비 등 경비 항목과 금액을 적고 합계를 맞춥니다.</li>        <li>증빙서류를 첨부해 상급자에게 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">출장을 마친 뒤 복귀 보고용으로 작성하는 서류입니다. 일자별 방문처와 면담자, 협의 내용을 간결히 적고 주요 결과는 성과와 후속 과제로 구분해 기재합니다. 소요 경비는 항목별 금액과 합계가 일치해야 하며, 교통비·숙박비 등 증빙서류를 첨부하여 경비 정산과 함께 제출하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 부서 · 직위 · 출장지 · 출장기간 · 출장목적</span>        </li>        <li><b>1. 일정별 활동</b><span>일자 · 방문처 · 면담자 · 내용</span>        </li>        <li><b>2. 주요 결과</b><span class="note">출장의 성과와 후속 과제를 구분하여 작성하십시오.</span>        </li>        <li><b>3. 소요 경비</b><span>항목 · 금액(원)</span>        </li>        <li><b>결재</b><span>담당 · 임원 · 서명(날인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>경비 증빙은 꼭 첨부해야 하나요?</summary>
           <p class="a">교통비와 숙박비 등은 영수증이나 카드전표를 첨부해야 정산이 가능합니다.</p>

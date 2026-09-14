@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>환자 정보와 진단명, 수술명을 적습니다.</li>        <li>설명한 의료인의 성명과 설명 일시를 기재합니다.</li>        <li>수술 방법과 위험성 등 설명 항목을 확인란에 표시합니다.</li>        <li>환자 또는 법정대리인이 동의 여부에 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">의료법 제24조의2에 따라 수술·수혈·전신마취 등을 시행하기 전 환자(또는 법정대리인)에게 내용과 위험성을 설명하고 서면 동의를 받을 때 사용합니다. 설명한 의료인의 성명과 설명 일시를 반드시 기재하고, 환자가 각 설명 항목을 이해했는지 확인란에 표시합니다. 진단명과 수술명은 의료기관이 직접 기재하며, 기관별로 정한 법정 서식이 있으면 해당 서식을 우선 사용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 환자 정보</b><span>성명 · 생년월일 · 등록번호 · 병동·병실</span>        </li>        <li><b>2. 수술·시술 정보</b><span>진단명 · 수술명 · 예정 일시 · 집도의</span>        </li>        <li><b>3. 설명받은 사항 확인</b><span>설명 항목 · 설명 여부 · 환자 이해 확인</span>        </li>        <li><b>4. 설명한 의료인</b><span>면허번호 · 설명 일시 · 서명 · 환자 본인 · 관계 · 법정대리인 · 연락처</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>환자 본인이 아니어도 서명할 수 있나요?</summary>
           <p class="a">환자가 의사결정을 할 수 없는 경우 법정대리인이 대신 서명할 수 있습니다.</p>

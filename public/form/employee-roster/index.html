@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>회사명과 대표자명, 사업장 주소를 적습니다.</li>        <li>근로자별 성명과 생년월일, 입사일을 기재합니다.</li>        <li>직위와 부서, 연락처를 채웁니다.</li>        <li>입사·퇴사가 생기면 즉시 수정해 최신 상태로 관리합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">「근로기준법」 제106조에 따라 사용자가 작성·관리해야 하는 필수 서식입니다. 모든 근로자의 성명, 생년월일, 입사일, 직위, 부서, 연락처 등을 정확하게 기재하고 별도로 보관하십시오. 신입 입사나 퇴사 시 최신 상태로 수정하여 관리해야 하며, 관할 고용노동청에 제출하거나 직원 이직 시 확인서로도 활용됩니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>사업장 정보</b><span>회사명 · 대표자명 · 사업장 주소 · 사업 규모 · 업종 · 기재 기준일</span>        </li>        <li><b>근로자 현황</b><span>성명 · 생년월일 · 입사일 · 직급 · 부서 · 휴대전화 · 주소</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>근로자명부는 몇 년간 보관하나요?</summary>
           <p class="a">관련 서류와 함께 3년간 보관하는 것이 일반적이므로 인사 규정을 확인하십시오.</p>

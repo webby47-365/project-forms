@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>환자 성명과 생년월일, 진료과를 적습니다.</li>        <li>설명한 의사의 성명과 설명 일시를 기록합니다.</li>        <li>진료·검사·시술 내용과 예상 위험을 확인합니다.</li>        <li>환자 본인이 서명하고 동의 여부를 표시합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">의료기관이 환자에게 진료 내용과 위험을 설명하고 동의를 받을 때 사용하는 서식입니다. 의료법은 수술·수혈·마취 등에 대해 설명의무와 서면 동의를 정하고 있으므로, 설명한 의사의 성명과 설명 일시를 반드시 기록해야 합니다. 환자가 미성년자이거나 의사표시가 어려운 경우 법정대리인의 동의란을 사용하십시오. 구체적인 질병명이나 진단 내용은 의료기관이 작성하는 부분이므로 이 양식은 틀만 제공합니다. 기관별로 법정 서식이 정해져 있으면 그 서식을 우선 사용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>의료기관명 · 진료과 · 등록번호 · 환자 성명 · 생년월일 · 성별</span>        </li>        <li><b>1. 진료 내용</b><span>진료·시술명 · 예정 일시 · 담당 의료인</span>        </li>        <li><b>2. 설명받은 사항</b><span>설명 항목 · 설명 내용 요약 · 확인</span>        </li>        <li><b>3. 질문 및 특이사항</b><span>환자 본인 · 연락처 · 법정대리인 · 환자와의 관계 · 설명한 의료인 · 설명 일시</span><span class="note">환자가 질문한 내용과 그에 대한 답변, 그 밖에 확인이 필요한 사항을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>미성년자는 누가 서명하나요?</summary>
           <p class="a">환자 본인 대신 법정대리인의 동의란을 사용해 서명받습니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발주번호와 발주일자, 발주처를 적습니다.</li>        <li>공급자명과 담당자, 연락처를 적습니다.</li>        <li>품목별 규격·수량·단가·납기일을 적습니다.</li>        <li>결제조건을 확인하고 적습니다.</li>        <li>결재 순서에 따라 서명을 받습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">구매 부서가 공급업체에 상품 또는 서비스의 구매를 공식적으로 의뢰하는 문서로, 발주 내용의 이행 기준이 되고 분쟁 해결의 근거가 됩니다. 견적서와 달리 실제 주문 의도를 담으므로 품목·규격·수량·단가·납기일·결제조건을 정확하게 작성해야 합니다. 발주 금액이 크거나 정기 발주인 경우 담당자·팀장·임원을 거쳐 대표가 최종 결재하며, 결재 기준은 회사의 결재규정을 확인하여 반영하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>발주번호 · 발주일자 · 발주처 · 공급자명 · 담당자 · 연락처</span>        </li>        <li><b>발주자 정보</b><span>회사명 · 부서 · 소재지 · 전화 / 팩스</span>        </li>        <li><b>발주 내용</b><span>품명 · 규격 · 단위 · 수량 · 단가 · 공급가액 · 공급가액 합계 · 부가세(10%) · 발주금액 · 금액(한글)</span>        </li>        <li><b>거래조건</b><span>납기일 · 납품장소 · 결제기일 · 결제방법 · 하자보증기간 · 배송비부담</span><span class="note">특기사항 — 반품 조건, 하자 보증, 사양 변경 조건, 추가 비용 발생 조건 등을 기재하십시오.</span>        </li>        <li><b>결재</b><span>임원 · 서명(날인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>견적서와 무엇이 다른가요?</summary>
           <p class="a">견적서는 가격 제안이고, 발주서는 실제 주문 의사를 담아 이행 기준이 되는 문서입니다.</p>

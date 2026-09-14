@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>작성자와 일자, 날씨를 적습니다.</li>        <li>거래처별 방문·통화 활동 내용을 기록합니다.</li>        <li>상담 결과와 수주 현황을 정리합니다.</li>        <li>특이사항과 다음 날 계획을 적어 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">영업 담당자가 매일 업무를 마친 뒤 그날의 방문·통화 활동과 상담 진행 상황을 정리해 제출하는 서식입니다. 거래처별 활동 내용과 결과를 구체적으로 남겨야 이후 상담 이력 관리에 활용할 수 있습니다. 특이사항과 익일 계획을 함께 적어 인수인계와 다음 날 업무 준비에 참고합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>작성자 · 일자 · 날씨</span>        </li>        <li><b>1. 방문·통화 활동</b><span>시간 · 거래처 · 담당자 · 활동구분 · 내용 · 결과</span>        </li>        <li><b>2. 수주·상담 현황</b><span>품목 · 예상금액 · 진행단계</span>        </li>        <li><b>3. 특이사항</b><span class="note">거래처 불만, 경쟁사 동향, 지원 요청 사항 등을 기재하십시오.</span>        </li>        <li><b>4. 익일 계획</b><span class="note">다음 영업일의 방문·통화 계획을 간단히 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>방문하지 않은 날도 작성해야 하나요?</summary>
           <p class="a">내근이나 전화 상담만 있었어도 활동 내용을 간단히 기록해 두는 것이 좋습니다.</p>

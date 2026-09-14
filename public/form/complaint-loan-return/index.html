@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>원고와 피고의 인적사항을 적습니다.</li>        <li>대여 일자와 금액, 이자율, 변제기일을 밝힙니다.</li>        <li>청구취지에 청구 금액과 이자 기산일을 적습니다.</li>        <li>청구원인에 대여 경위와 미지급 사실을 시간순으로 적습니다.</li>        <li>관할 법원을 확인한 뒤 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">금전을 대여하였으나 변제기일이 지나도록 돌려받지 못한 경우 법원에 제출하는 소장입니다. 대여 일자와 금액, 변제기일, 이자율 등 대여 내역을 먼저 밝히고 청구취지에 정확한 금액과 이자 기산일을 기재해야 합니다. 청구원인에는 대여 경위와 피고의 미지급 사실을 시간순으로 담백하게 적는 것이 유리합니다. 본 서식은 참고용이며 제출 전 법원 전자소송 사이트의 최신 양식과 관할을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>원고 성명 · 생년월일 · 원고 주소 · 피고 성명 · 피고 주소 · 사건명 · 소가(청구금액)</span>        </li>        <li><b>청구 취지</b><span class="note">피고가 원고에게 지급할 금액과 소송비용 부담, 가집행 등 구하는 판결 내용을 기재하십시오.</span>        </li>        <li><b>청구 원인</b><span class="note">대여 경위와 변제기일, 피고의 미지급 사실을 시간순으로 기재하십시오.</span>        </li>        <li><b>대여 내역</b><span>대여일 · 변제기일 · 대여금액 · 이자율</span>        </li>        <li><b>입증 방법</b><span>서증명 · 내용</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>이자 기산일은 어떻게 정하나요?</summary>
           <p class="a">통상 변제기일 다음 날부터 이자를 계산해 청구취지에 기재합니다.</p>

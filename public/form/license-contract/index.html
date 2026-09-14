@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>갑과 을의 인적사항과 상표·저작물 등록번호를 적습니다.</li>        <li>사용 범위와 지역, 기간을 정합니다.</li>        <li>사용료 산정 방식과 정산 시기를 기재합니다.</li>        <li>품질 유지 의무를 확인하고 양쪽이 서명 날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">상표권자·저작권자(갑)가 제3자(을)에게 상표나 저작물을 일정 범위에서 사용하도록 허락할 때 사용합니다. 허락 대상을 등록번호 등으로 구체적으로 특정하고, 사용 지역·기간·매체와 독점 여부를 명확히 정해야 합니다. 사용료의 산정 방식과 정산 시기, 품질 유지와 출처 표시 의무, 재허락(서브라이선스) 가능 여부도 분쟁이 많은 항목이므로 구체적으로 기재하십시오. 본 서식은 참고용이며 법적 효력은 사용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>갑(허락권자) · 을(사용자)</span>        </li>        <li><b>허락 대상의 표시</b><span>명칭 · 등록번호/출원번호</span>        </li>        <li><b>사용 조건</b><span>사용지역 · 독점 여부 · 사용기간 · 사용매체 · 사용료 · 정산일 · 제1조 (목적) · 제2조 (허락 대상) · 제3조 (사용 범위) · 제4조 (사용료와 정산) · 제5조 (품질 유지와 표시 의무) · 제6조 (제3자 권리 침해) · 제7조 (재허락 금지) · 제8조 (계약 종료 후의 처리)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>독점 사용과 비독점 사용은 어떻게 다르나요?</summary>
           <p class="a">독점은 을에게만 사용을 허락하는 것이고, 비독점은 갑이 다른 사람에게도 동시에 허락할 수 있습니다.</p>

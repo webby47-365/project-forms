@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>차량번호와 차대번호로 차량을 특정해 적습니다.</li>        <li>매매대금과 계약금·잔금 지급일정을 적습니다.</li>        <li>성능점검기록부로 사고·침수 여부를 확인합니다.</li>        <li>압류·저당 등 권리관계 여부를 확인합니다.</li>        <li>인도일과 명의이전 기한을 정합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">개인 간 또는 개인과 매매상사 간에 중고차를 사고팔 때 사용하는 계약서입니다. 차량번호와 차대번호로 대상 차량을 정확히 특정하고, 계약금·잔금의 지급일정과 인도일을 명확히 정해야 합니다. 성능점검기록부로 사고·침수 여부를 확인하고 압류·저당 등 권리관계가 없는지 자동차등록사업소나 카히스토리 등에서 확인한 후 계약하는 것이 안전합니다. 명의이전은 법령이 정한 기한 내에 처리하고 미납 과태료·자동차세도 인도 전에 정산해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>차량의 표시</b><span>차명(모델) · 연식 · 차량번호 · 색상 · 차대번호 · 배기량 · 주행거리</span>        </li>        <li><b>매매대금 및 지급일정</b><span>매매대금 · 계약금 · 지급일 · 잔금 · 입금계좌 · 인도예정일 · 제1조 (목적) · 제2조 (소유권 이전 등록) · 제3조 (차량의 인도) · 제4조 (하자담보책임과 성능점검) · 제5조 (압류·저당 등 권리관계) · 제6조 (미납 과태료·세금의 정산) · 제7조 (계약의 해제)</span>        </li>        <li><b>당사자</b><span>매도인 · 매수인</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>성능점검기록부는 꼭 확인해야 하나요?</summary>
           <p class="a">네, 사고나 침수 여부를 확인할 수 있는 자료이므로 계약 전 반드시 확인하는 것이 안전합니다.</p>

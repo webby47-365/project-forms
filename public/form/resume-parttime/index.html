@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>인적사항과 연락처를 적습니다.</li>        <li>희망 요일·시간대와 희망 시급을 적습니다.</li>        <li>근무 가능 시간표에 가능한 요일과 시간을 표시합니다.</li>        <li>경험 사항을 간단히 적고 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">아르바이트·단기근무 지원 시 제출하는 이력서로, 병역이나 한자 이름 같은 항목은 빼고 근무 조건을 중심으로 구성했습니다. 희망 요일·시간대·시급을 표에 적고, 근무 가능 시간표에는 가능한 요일과 시간대에 표시하십시오. 경험 사항에는 아르바이트나 활동 경험을 간단히 적어 성실성을 보여주고, 연락 가능한 시간대를 전화번호와 함께 확인해 두십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 생년월일 · 휴대전화 · 이메일 · 주소</span>        </li>        <li><b>1. 희망근무 조건</b><span>근무 가능 요일 · 선호 시간대 · 희망 시급 · 근무 가능 기간</span>        </li>        <li><b>2. 근무 가능 시간표</b><span>시간대 · 오전(09~13시) · 오후(13~18시) · 저녁(18~22시)</span>        </li>        <li><b>3. 경험 사항</b><span>기간 · 근무지/활동명 · 담당업무</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>학력이나 경력이 없어도 제출할 수 있나요?</summary>
           <p class="a">네, 경험 사항은 짧은 아르바이트나 활동이라도 있는 대로 간단히 적으면 됩니다.</p>

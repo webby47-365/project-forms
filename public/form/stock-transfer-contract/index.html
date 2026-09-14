@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>양도인과 양수인의 인적사항을 적습니다.</li>        <li>양도할 주식의 종류와 수량, 액면가를 특정합니다.</li>        <li>양도대금과 지급방법, 지급기일을 정합니다.</li>        <li>대금 지급과 명의개서의 순서를 명확히 적습니다.</li>        <li>서명 날인 후 정관상 제한 여부를 확인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">비상장회사의 주주가 보유 주식을 다른 사람에게 넘길 때 작성하는 계약서입니다. 양도 대상 주식의 종류·수량·액면가를 정확히 특정하고, 양도대금과 지급방법, 대금 지급과 명의개서의 선후 관계를 명확히 적어야 분쟁을 막을 수 있습니다. 정관에 주식 양도를 이사회 승인 등으로 제한하는 경우가 있으므로 계약 전에 정관을 확인하고, 지분 비율이 높은 거래는 법무사· 변호사의 검토를 받으십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>양도인 · 양수인</span>        </li>        <li><b>양도 주식의 표시</b><span>주식 종류 · 수량 · 1주 액면가 · 제1조 (목적) · 제2조 (양도 주식의 표시) · 제3조 (양도대금과 지급방법) · 제4조 (명의개서) · 제5조 (진술과 보장) · 제6조 (선행조건) · 제7조 (계약의 해제) · 제8조 (비밀유지) · 제9조 (관할법원)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>정관 확인은 왜 필요한가요?</summary>
           <p class="a">이사회 승인 등으로 주식 양도를 제한하는 회사가 있어 계약 전에 확인해야 합니다.</p>

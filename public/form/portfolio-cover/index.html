@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>포트폴리오 제목과 부제를 적습니다.</li>        <li>지원 분야나 제출처를 적습니다.</li>        <li>수록 작품 목록에 순번과 작품명, 제작기간을 적습니다.</li>        <li>공동 작업물은 본인의 기여 범위를 표시합니다.</li>        <li>연락처와 링크에 오탈자가 없는지 확인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">취업이나 입시, 제안용 포트폴리오의 첫 장에 붙이는 표지입니다. 제목은 어떤 분야의 작업물인지 드러나게 짓고, 지원 직무나 제출처를 함께 적어 용도를 분명히 하십시오. 수록 작품 목록에 순번과 작품명·제작기간·역할을 적어 두면 읽는 사람이 원하는 작업을 바로 찾을 수 있습니다. 연락처와 포트폴리오 링크는 오탈자가 없는지 꼭 확인하고, 공동 작업물은 본인의 기여 범위를 표시하십시오. 비공개 자료가 포함된 경우 열람 제한 안내를 함께 적는 것이 좋습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>제목 · 부제 · 분야</span>        </li>        <li><b>작성자 정보</b><span>성명 · 소속(학교) · 연락처 · 이메일 · 포트폴리오 링크 · 지원 직무 · 제출처</span>        </li>        <li><b>수록 작품 목록</b><span>작품(프로젝트)명 · 제작기간 · 역할 · 사용 도구·비고</span><span class="note">포트폴리오 소개 — 작업 방향과 강조하고 싶은 점을 간단히 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>비공개 자료가 있으면 어떻게 하나요?</summary>
           <p class="a">열람 제한 안내 문구를 표지에 함께 적어두는 것이 좋습니다.</p>

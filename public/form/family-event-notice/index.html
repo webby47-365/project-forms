@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>결혼, 회갑, 돌, 상장례 중 해당 항목에 표시합니다.</li>        <li>일시와 장소, 주소를 정확히 적습니다.</li>        <li>인사말을 격식 있는 문체로 짧게 적습니다.</li>        <li>오시는 길에 교통과 주차 정보를 적습니다.</li>        <li>필요한 경우에만 계좌 안내를 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">가족의 결혼·회갑·돌·상장례 등 경조사를 앞두고 친지와 지인에게 일시·장소와 인사말을 전할 때 사용하는 안내문입니다. 해당 경조사 구분에 표시하고 일시·장소·주소·연락처를 정확히 기재하며, 인사말은 격식 있는 문체로 짧게 씁니다. 오시는 길 안내에는 대중교통과 주차 정보를 함께 적어 참석자의 불편을 줄이고, 화환·축의금 등 계좌 안내는 필요한 경우에만 선택적으로 기재합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>결혼 · 돌</span>        </li>        <li><b>행사 안내</b><span>일시 · 장소 · 주소 · 연락처</span>        </li>        <li><b>인사말</b><span class="note">초청 인사말을 적으십시오.</span>        </li>        <li><b>오시는 길</b><span class="note">대중교통·주차 안내를 적으십시오.</span>        </li>        <li><b>계좌 안내 (해당 시 기재)</b><span>신랑측 계좌 · 신부측 계좌</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>계좌 안내는 꼭 넣어야 하나요?</summary>
           <p class="a">아니요, 화환이나 축의금 계좌 안내는 필요한 경우에만 선택적으로 적으면 됩니다.</p>

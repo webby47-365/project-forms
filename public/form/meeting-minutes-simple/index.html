@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>회의명·일시·장소·참석자를 먼저 적습니다.</li>        <li>안건별로 논의 내용을 표에 적습니다.</li>        <li>결정사항을 안건 옆에 바로 적습니다.</li>        <li>후속조치 표에 담당자와 기한을 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">짧은 실무 회의나 팀 내부 미팅처럼 격식 있는 회의록이 부담스러운 자리에 쓰는 간이 양식입니다. 회의명·일시·장소·참석자를 먼저 채우고, 안건별 논의 내용과 결정사항을 한 표에 바로 적어 작성 시간을 줄입니다. 결정사항마다 담당자와 기한을 후속조치 표에 남겨 실행 여부를 추적하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>회의명 · 일시 · 장소 · 참석자</span>        </li>        <li><b>1. 논의 및 결정사항</b><span>논의 내용 · 결정사항</span>        </li>        <li><b>2. 후속조치</b><span>후속조치 · 담당자 · 기한</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>기본형 회의록과 어떻게 다른가요?</summary>
           <p class="a">안건과 결정사항을 한 표에 바로 적어 더 짧고 빠르게 작성할 수 있습니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>매도인과 매수인의 인적사항을 적습니다.</li>        <li>매매할 부동산의 표시를 등기부등본과 같게 기재합니다.</li>        <li>매매대금과 계약금, 중도금, 잔금 지급일정을 적습니다.</li>        <li>제한물권 말소와 소유권 이전 조건을 명시합니다.</li>        <li>특약사항을 적고 양측이 서명 날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">주택·토지·상가를 매매할 때 사용합니다. 계약 전 등기부등본으로 소유자와 근저당·가압류 등 제한물권을 반드시 확인하고, 잔금일에 이를 말소하는 조건을 계약서에 명시해야 합니다. 계약금 배액 상환으로 해제할 수 있는 시점, 중도금 지급 이후의 해제 제한, 취득세와 양도소득세의 부담 주체를 분명히 해 두십시오. 잔금과 동시에 소유권이전등기를 신청하는 것이 원칙이며, 등기 서류 목록을 특약에 적어두면 잔금일 혼선을 막을 수 있습니다. 본 서식은 참고용이며 세금과 법적 효력은 전문가에게 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 부동산의 표시</b><span>소재지 · 토지 · 건물 · 대지권 · 거래 대상 지분 · 전부 / 일부</span>        </li>        <li><b>2. 매매대금 및 지급 일정</b><span>매매대금 · 계약금 · 지급일 · 중도금 · 잔금 · 입금계좌 · 예금주 · 제1조 (소유권의 이전과 인도) · 제2조 (제한물권 등의 말소) · 제3조 (계약의 해제) · 제4조 (채무불이행과 손해배상) · 제5조 (위험부담) · 제6조 (제세공과금의 부담) · 제7조 (임대차 등 승계)</span>        </li>        <li><b>특약사항</b><span class="note">승계할 임대차 내용, 잔금일 제출 서류 목록, 시설물·옵션의 포함 범위, 하자 처리 기준 등을 구체적으로 기재하십시오.</span>        </li>        <li><b>계약 당사자</b><span>매도인 · 주소 · 성명 · 생년월일 · 연락처 · 매수인 · 개업공인중개사 · 사무소명 · 대표 · 등록번호</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>계약 전 등기부등본은 꼭 확인해야 하나요?</summary>
           <p class="a">네, 소유자와 근저당·가압류 등 제한물권을 반드시 확인해야 합니다.</p>

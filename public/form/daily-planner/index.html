@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>기상 시각과 취침 시각을 먼저 정합니다.</li>        <li>식사, 학습, 휴식 시간을 배치합니다.</li>        <li>이번 기간 목표를 적습니다.</li>        <li>요일별 반복 일정을 채우고 남는 시간에 목표 활동을 넣습니다.</li>        <li>하루를 마치며 실천 여부를 점검합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">하루 일과를 시간대별로 계획하고 실천 여부를 점검할 때 쓰는 표입니다. 기상과 취침 시각을 먼저 고정하고 식사·학습·휴식 시간을 배치하면 계획이 흐트러지지 않습니다. 요일별 계획표에는 반복되는 일정을 먼저 채우고 남는 시간에 목표 활동을 넣으십시오. 계획은 처음부터 빡빡하게 짜기보다 여유 시간을 두어야 오래 유지됩니다. 하루를 마치며 실천 점검란에 표시하고 한 주 단위로 돌아보면 개선점이 보입니다. 방학이나 시험 기간처럼 상황이 달라지면 새로 작성해 쓰십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>이름 · 기간 · 작성일 · 기상 시각 · 취침 시각 · 학교·직장</span>        </li>        <li><b>1. 이번 기간 목표</b><span>목표 · 실천 방법 · 목표 횟수 · 달성</span>        </li>        <li><b>2. 요일별 시간 계획</b><span>시간 · 월 · 화 · 수 · 목 · 금 · 토 · 일</span>        </li>        <li><b>3. 하루 점검</b><span>점검 항목</span><span class="note">이번 기간을 돌아보며 잘한 점과 개선할 점을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>계획을 빡빡하게 짜는 것이 좋나요?</summary>
           <p class="a">처음부터 빡빡하게 짜면 지키기 어려우니 여유 시간을 두고 짜는 것이 좋습니다.</p>

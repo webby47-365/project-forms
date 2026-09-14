@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>납품번호와 납품일자, 발주번호를 적습니다.</li>        <li>공급자와 수령자의 인적사항을 적습니다.</li>        <li>납품 품목과 수량, 검수 결과를 적습니다.</li>        <li>이상이 있으면 비고란에 내용과 재납품 기한을 적습니다.</li>        <li>수령자가 서명 또는 날인하고 각자 1부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">물품이나 용역을 인도한 사실을 문서로 남겨 대금 청구의 근거로 삼는 서식입니다. 수령자의 서명 또는 날인을 반드시 받아야 하며, 검수 결과에 이상이 있으면 비고란에 구체적으로 적고 재납품 기한을 함께 기재합니다. 공급자와 수령자가 각각 1부를 보관하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>납품번호 · 납품일자 · 발주번호</span>        </li>        <li><b>공급자 / 수령자</b><span>공급자 상호 · 대표자 · 수령자 상호 · 담당자 · 납품 장소</span>        </li>        <li><b>납품 내역</b><span>품명 · 규격 · 단위 · 발주수량 · 납품수량 · 검수결과 · 검수 결과 · 재납품 기한</span><span class="note">불합격·부분합격 시 사유와 조치사항을 구체적으로 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>검수 중 하자를 발견하면 어떻게 하나요?</summary>
           <p class="a">비고란에 하자 내용과 재납품 기한을 구체적으로 적어 공급자와 협의합니다.</p>

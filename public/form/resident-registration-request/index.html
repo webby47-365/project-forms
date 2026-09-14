@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인의 성명과 생년월일, 주소를 적습니다.</li>        <li>발급받을 서류 종류와 통수를 적습니다.</li>        <li>사용 용도와 포함할 항목을 선택해 표시합니다.</li>        <li>대리 신청이면 대리인 정보를 적고 위임장을 준비합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">주민등록 등본이나 초본을 발급받기 위해 주민센터에 제출하는 신청서입니다. 필요한 서류 종류와 통수를 정확히 적고, 사용 용도를 구체적으로 기재해야 기재 범위를 맞출 수 있습니다. 과거 주소 변동 이력이나 세대원 표시 여부처럼 포함할 항목을 선택란에 표시하십시오. 본인이 아닌 사람이 신청할 때는 위임 여부와 대리인 정보를 적고 위임장과 신분증을 함께 준비해야 합니다. 개인정보가 담긴 서류이므로 발급 후 용도 외 사용에 주의하고, 발급 요건과 수수료는 관할 주민센터 안내를 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 신청인</b><span>성명 · 생년월일 · 주소 · 연락처 · 본인 여부</span>        </li>        <li><b>2. 교부 대상자</b><span>신청인과의 관계</span>        </li>        <li><b>3. 신청 내용</b><span>서류 종류 · 통수 · 사용 용도 · 제출처 · 과거 주소 변동사항 · 세대원 표시 · 세대주 성명 표시 · 수령 방법</span>        </li>        <li><b>4. 대리인 (해당 시)</b><span>대리인 성명</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>대리인이 신청할 수도 있나요?</summary>
           <p class="a">네, 위임장과 대리인 신분증을 함께 준비하면 대리 신청이 가능합니다.</p>

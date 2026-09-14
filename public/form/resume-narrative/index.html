@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>인적사항을 표에 적습니다.</li>        <li>학력 및 전공을 문단으로 서술합니다.</li>        <li>주요 경력을 사실과 숫자 중심으로 작성합니다.</li>        <li>핵심 역량을 구체적으로 적습니다.</li>        <li>지원 동기를 지원 회사·직무와 연결해 작성합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">항목을 표로 잘라 적기보다 문장으로 풀어 자신의 역량과 경험을 보여주고 싶을 때 쓰는 이력서입니다. 인적사항만 표로 정리하고 나머지는 학력 및 전공, 주요 경력, 핵심 역량, 지원 동기 순서로 문단을 채웁니다. 각 항목은 사실과 숫자를 근거로 구체적으로 쓰고, 지원 동기는 해당 회사·직무와 연결되도록 작성해야 설득력이 높아집니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명(한글) · 성명(한문) · 생년월일 · 성명(영문) · 성별 · 휴대전화 · 이메일 · 지원분야</span>        </li>        <li><b>1. 학력 및 전공</b><span class="note">최종학력과 전공, 전공 관련 학습·연구 경험을 중심으로 서술하십시오.</span>        </li>        <li><b>2. 주요 경력</b><span class="note">근무한 회사와 담당 업무, 구체적인 성과를 시간 순서대로 서술하십시오.</span>        </li>        <li><b>3. 핵심 역량</b><span class="note">직무와 관련된 강점과 구체적인 수행 경험을 서술하십시오.</span>        </li>        <li><b>4. 지원 동기</b><span class="note">해당 회사·직무에 관심을 갖게 된 계기와 기여하고 싶은 부분을 서술하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>표 형식 이력서와 함께 써도 되나요?</summary>
           <p class="a">네, 필요에 따라 표 형식 이력서 대신 또는 함께 제출할 수 있습니다.</p>

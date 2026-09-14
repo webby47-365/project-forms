@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>차량번호와 운전자, 기록 기간을 적습니다.</li>        <li>운행할 때 출발지·도착지와 사유를 적습니다.</li>        <li>출발·도착 시 계기판 거리를 적어 운행거리를 계산합니다.</li>        <li>월말에 운전자 서명 후 관리자에게 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">회사 소유 차량을 관리하기 위해 매일 운행 내역을 기록하는 서류입니다. 운행 거리와 시간, 방문 지역, 운전자를 정확히 기재하면 유지보수 시기 판단과 유류비·보험료 관리에 도움이 됩니다. 월말에 운전자 서명 후 관리자에게 제출하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>차량번호 · 차명(모델) · 소유자 · 기록 기간 · 운전자명 · 연락처</span>        </li>        <li><b>운행 내역</b><span>운행일자 · 출발지 · 도착지 · 운행사유 · 출발시간 · 도착시간 · 운행거리(km)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>개인 용무로 사용한 경우도 적나요?</summary>
           <p class="a">네, 사적 사용 여부와 사유를 구분해 적어야 유류비 정산 시 문제가 없습니다.</p>

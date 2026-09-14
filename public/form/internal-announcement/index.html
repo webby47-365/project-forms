@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>공지 제목과 수신 범위를 먼저 정합니다.</li>        <li>공지 배경과 핵심 내용을 간단히 씁니다.</li>        <li>일정, 장소 등 세부 안내를 항목별로 정리합니다.</li>        <li>문의처를 남기고 결재 후 게시합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">조직 내부에 정책 변경, 행사, 시설 이전 등을 알릴 때 쓰는 문서입니다. 수신 범위와 제목을 먼저 명확히 하고, 본문에는 공지 배경과 핵심 내용을 요약한 뒤 세부 안내 표에 일정·장소 등 실무 정보를 항목별로 정리합니다. 문의처를 반드시 남겨 궁금한 점이 있는 직원이 바로 연락할 수 있도록 하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>수신 · 발신 · 제목 · 날짜</span>        </li>        <li><b>공지 내용</b><span class="note">공지 배경과 핵심 내용을 간결하게 작성하십시오.</span>        </li>        <li><b>세부 안내</b><span>항목 · 내용</span>        </li>        <li><b>문의처</b><span>담당부서 · 연락처</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>전 직원 공지와 부서 공지를 나눠 써야 하나요?</summary>
           <p class="a">수신 범위 항목에 대상을 명확히 적으면 하나의 서식으로 두 경우 모두 처리할 수 있습니다.</p>

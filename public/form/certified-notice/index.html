@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발신인과 수신인의 성명, 주소를 적습니다.</li>        <li>통지하려는 내용과 사실관계를 구체적으로 적습니다.</li>        <li>요구사항과 이행기한을 명확히 적습니다.</li>        <li>동일 문서 3부를 만들어 우체국에서 내용증명으로 발송합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">임차인·계약상대방에게 중요한 사항을 공식적으로 통보하고 그 기록을 남기고자 할 때 사용합니다. 내용증명은 우체국을 통해 등기로 발송되며, 동일 문서 3부(발신인 보관, 수신인 수령, 우체국 보관) 가 작성됩니다. 구체적인 요구사항과 명확한 이행기한을 적어야 법적 효력이 강합니다. 본 서식은 참고용이며 법적 효력과 적합성은 사용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>발신인·수신인 정보</b><span>발신인 성명 · 생년월일 · 발신인 주소 · 수신인 성명 · 수신인 주소</span>        </li>        <li><b>통지 내용</b><span>제목</span><span class="note">통지 사유, 배경, 구체적인 내용을 명확하게 작성하십시오.</span>        </li>        <li><b>요구사항 및 이행기한</b><span class="note">상대방에게 요구하는 사항과 구체적인 이행기한(예: 2026년 9월 30일까지)을 명시하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>왜 꼭 3부를 만들어야 하나요?</summary>
           <p class="a">발신인 보관용, 수신인 수령용, 우체국 보관용으로 동일한 문서 3부가 필요합니다.</p>

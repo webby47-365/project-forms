@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>인계자와 인수자의 소속·성명을 적습니다.</li>        <li>인계할 자산을 자산번호와 현재 상태별로 나열합니다.</li>        <li>계정·시스템 권한과 인계 방법을 표에 기재합니다.</li>        <li>특이사항을 남기고 입회자와 함께 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">인사이동이나 퇴사로 업무를 이어받을 때 보유 자산과 시스템 계정을 명확히 인계하기 위한 서류입니다. 인계 자산은 자산번호와 상태를 함께 적어 분실·파손 책임을 분명히 하고, 계정·권한 인계 표에는 접속정보와 인계 방법을 구체적으로 기재합니다. 특이사항에는 추후 확인이 필요한 사항을 남기고 입회자와 함께 서명하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>인계자 · 인수자 · 인계부서 · 인수부서 · 인수인계일</span>        </li>        <li><b>1. 인계 자산</b><span>자산명 · 자산번호 · 수량 · 상태</span>        </li>        <li><b>2. 계정 및 권한 인계</b><span>시스템/계정 · 접속정보 · 인계 방법</span>        </li>        <li><b>3. 특이사항</b><span class="note">추후 확인이 필요한 사항이나 별도 보관 중인 물품을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>자산번호를 모르면 어떻게 하나요?</summary>
           <p class="a">자산관리팀에 문의해 번호를 확인한 뒤 적거나, 모델명과 시리얼번호로 대신 적어도 됩니다.</p>

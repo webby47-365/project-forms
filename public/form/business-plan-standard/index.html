@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>기업 개요와 대표자, 업종을 먼저 적습니다.</li>        <li>시장 규모와 경쟁 현황을 분석해 적습니다.</li>        <li>제품·서비스의 특징과 차별점을 구체적으로 적습니다.</li>        <li>소요 자금과 조달 계획, 손익 추정치를 숫자로 적습니다.</li>        <li>추진 일정표를 채워 실행 가능성을 보여줍니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">은행 대출, 정책자금 신청, 투자 유치, 정부 지원사업 제출용으로 사업 전반을 체계적으로 설명할 때 사용합니다. 사업 개요와 시장·경쟁 분석으로 사업의 타당성을 보이고, 제품·서비스의 차별점과 판매 전략을 구체적으로 적어야 신뢰를 얻습니다. 소요 자금과 조달 계획, 3개년 손익 추정치를 숫자로 제시하고, 추진 일정으로 실행 가능성을 보여주십시오. 제출 기관이 별도 양식을 지정한 경우 그 양식을 우선 사용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 기업 개요</b><span>사업명 · 대표자 · 업종 · 설립예정일 · 소재지 · 연락처</span>        </li>        <li><b>2. 사업 개요</b><span class="note">사업 아이템과 핵심 가치를 요약하십시오.</span>        </li>        <li><b>3. 시장 및 경쟁 분석</b><span class="note">목표 시장 규모, 성장성, 경쟁사 현황과 자사의 강점을 기재하십시오.</span>        </li>        <li><b>4. 제품·서비스</b><span>내용 · 차별점</span>        </li>        <li><b>5. 판매 전략</b><span class="note">고객 확보·마케팅·가격 전략을 구체적으로 기재하십시오.</span>        </li>        <li><b>6. 소요 자금 및 조달 계획</b><span>용도 · 금액 · 조달방법</span>        </li>        <li><b>7. 추정 손익</b><span>1년차 · 2년차 · 3년차</span>        </li>        <li><b>8. 추진 일정</b><span>단계 · 기간</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>제출 기관이 자체 양식을 요구하면 어떻게 하나요?</summary>
           <p class="a">그 경우 제출 기관의 지정 양식을 우선 사용하고 이 서식은 초안 작성용으로 활용하십시오.</p>

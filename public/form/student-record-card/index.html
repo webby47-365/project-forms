@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>학생 인적사항과 보호자 연락처를 적습니다.</li>        <li>학기별 출결과 교과 성취를 누적해 기록합니다.</li>        <li>행동특성 및 종합의견을 관찰 사실 위주로 적습니다.</li>        <li>상담 이력을 일자와 방식만 간단히 남깁니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">담임교사가 학기 초 학생 인적사항과 보호자 연락처를 받아 작성해 두고 학년 내내 참고하는 기초 자료입니다. 학기별 출결과 교과 성취를 누적해 두면 학부모 상담이나 학기말 평가 때 한눈에 확인할 수 있습니다. 행동특성 및 종합의견은 관찰한 사실 위주로 간결하게 기재하고, 상담 이력은 일자와 방식만 간단히 남겨 누가 봐도 흐름을 알 수 있게 적으십시오. 가정 형편이나 건강 상태처럼 민감한 항목은 기재하지 않습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 학생 인적사항</b><span>성명 · 학년·반·번호 · 생년월일 · 주소 · 연락처 · 비상연락처 · 특이사항</span>        </li>        <li><b>2. 보호자 인적사항</b><span>관계 · 직장 연락처</span>        </li>        <li><b>3. 학기별 출결 현황</b><span>학기 · 수업일수 · 결석 · 지각 · 조퇴</span>        </li>        <li><b>4. 교과 성취 현황</b><span>과목 · 1학기 · 2학기</span>        </li>        <li><b>5. 행동특성 및 종합의견</b><span class="note">관찰한 사실을 바탕으로 긍정적이고 중립적으로 기술하십시오.</span>        </li>        <li><b>6. 상담 이력</b><span>일자 · 방식 · 내용</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>가정 형편도 적어야 하나요?</summary>
           <p class="a">아니요, 가정 형편이나 건강 상태 같은 민감한 항목은 기재하지 않습니다.</p>

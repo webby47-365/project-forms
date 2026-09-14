@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>소속·직위·성명과 카드번호 뒤 4자리를 적습니다.</li>        <li>사용일자별로 가맹점명과 금액을 기재합니다.</li>        <li>사용목적과 계정과목을 항목별로 구분해 적습니다.</li>        <li>영수증을 순번에 맞춰 첨부합니다.</li>        <li>작성 후 결재선에 따라 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">월 단위 또는 사용 건별로 법인카드 지출을 정리해 보고하는 서식입니다. 사용일자와 가맹점명, 금액은 카드사 명세서와 일치해야 하며, 사용목적은 업무 관련성이 드러나도록 구체적으로 적으십시오. 식대나 접대성 지출은 참석자 수와 대상을 함께 기재해야 증빙이 인정되기 쉽습니다. 계정과목을 미리 분류해 두면 회계 처리가 빨라집니다. 영수증은 순번과 맞추어 첨부하고, 사적 사용분이 있으면 반납 예정액에 표시하십시오. 증빙 요건은 사내 경비규정과 세무 기준을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>소속(부서) · 직위 · 성명 · 카드번호(끝 4자리) · 사용월 · 작성일자</span>        </li>        <li><b>1. 사용 내역</b><span>사용일자 · 가맹점명 · 금액 · 계정과목 · 사용목적</span>        </li>        <li><b>2. 집계</b><span>사용 건수 · 사용 합계 · 업무 사용액 · 반납 예정액(사적 사용)</span><span class="note">특이사항 — 접대성 지출의 참석자·대상, 증빙 누락 사유 등을 기재하십시오.</span>        </li>        <li><b>결재</b><span>결재</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>사적 사용분이 섞였으면 어떻게 하나요?</summary>
           <p class="a">반납 예정액 칸에 금액을 적고 회사 규정에 따라 반환 절차를 진행하십시오.</p>

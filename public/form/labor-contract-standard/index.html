@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>근로자와 사용자의 인적사항을 적습니다.</li>        <li>근무 장소와 담당 업무를 적습니다.</li>        <li>소정근로시간과 휴게시간을 적습니다.</li>        <li>임금 구성항목과 계산·지급방법을 적습니다.</li>        <li>양측이 서명하고 계약서 1부를 교부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">근로자를 채용하면 반드시 서면으로 작성하여 1부를 근로자에게 교부해야 하며, 미교부 시 과태료가 부과됩니다. 임금은 구성항목·계산방법·지급방법을 모두 적어야 하고, 소정근로시간과 휴게시간을 명확히 기재해야 합니다. 기간제·단시간 근로자는 계약기간과 근로일별 근로시간을 추가로 명시해야 하므로 해당 전용 서식을 사용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>계약 당사자</b><span>사업체명 · 대표자 · 소재지 · 연락처 · 사업자등록번호 · 근로자 성명 · 생년월일 · 근로자 주소 · 이메일 · 제1조 (근로계약기간) · 제2조 (근무장소 및 업무내용) · 제3조 (소정근로시간 및 휴게시간) · 제4조 (근무일 및 주휴일)</span>        </li>        <li><b>제5조 (임금)</b><span>기본급(월/일/시간) · 상여금 · 연장근로수당 · 야간근로수당 · 휴일근로수당 · 기타 수당 · 임금 지급일 · 지급방법 · 제6조 (연차유급휴가) · 제7조 (사회보험 적용) · 제8조 (근로계약서 교부) · 제9조 (기타) · 사업주 · 근로자</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>근로자에게 꼭 1부를 줘야 하나요?</summary>
           <p class="a">네, 서면으로 작성해 근로자에게 교부해야 하며, 주지 않으면 과태료가 부과될 수 있습니다.</p>

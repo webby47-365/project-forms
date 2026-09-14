@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>작성부서와 작성자, 대상기간을 적습니다.</li>        <li>전년 실적을 기준으로 당해 목표와 증감률을 산출합니다.</li>        <li>고객·채널별로 세부 목표를 나눕니다.</li>        <li>핵심 추진 전략과 월별 계획을 정리합니다.</li>        <li>결재를 받아 시행하고 실적과 비교합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">연간 또는 반기 단위로 영업 목표를 수립할 때 작성합니다. 전년 실적을 기준으로 증감률을 산출해 목표의 근거를 밝히고, 고객·채널별로 목표를 쪼개어 실행 가능성을 높입니다. 핵심 추진 전략과 월별 계획을 함께 기재해 실행 단계에서 점검 기준으로 활용합니다. 결재 절차를 거쳐 시행하며, 실적 집계 시 본 계획과 비교합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>작성부서 · 작성자 · 대상기간</span>        </li>        <li><b>1. 영업 목표</b><span>전년실적 · 당해목표 · 증감률</span>        </li>        <li><b>2. 고객·채널별 목표</b><span>고객/채널 · 주요 품목 · 담당자</span>        </li>        <li><b>3. 핵심 추진 전략</b><span class="note">신규 거래처 발굴, 기존 거래처 확대, 채널 다변화 등 핵심 전략을 기재하십시오.</span>        </li>        <li><b>4. 월별 추진 계획</b><span>월 · 주요 활동 · 목표 매출</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>목표는 어떻게 나눠야 하나요?</summary>
           <p class="a">고객이나 판매 채널 단위로 쪼개면 실행 가능성과 점검이 쉬워집니다.</p>

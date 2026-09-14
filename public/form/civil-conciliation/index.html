@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>신청인과 피신청인의 인적사항을 적습니다.</li>        <li>분쟁이 된 사건의 경위를 시간 순서로 정리합니다.</li>        <li>조정으로 원하는 내용(신청 취지)을 구체적으로 씁니다.</li>        <li>관할 법원에 제출하고 인지대·송달료를 납부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">소송보다 간이하고 신속한 절차로 분쟁을 해결하고자 할 때 관할 법원에 제출하는 신청서입니다. 신청인과 피신청인의 인적사항, 분쟁이 된 사건의 경위, 조정으로 구하고자 하는 내용을 구체적으로 기재합니다. 조정이 성립하면 확정판결과 같은 효력이 있으므로 신청 취지를 명확히 적어야 합니다. 인지대와 송달료 등 구체적인 절차 비용은 관할 법원에 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>신청인 · 연락처 · 주소 · 피신청인</span>        </li>        <li><b>사건명</b><span>사건명</span>        </li>        <li><b>신청 취지</b><span class="note">조정으로 구하고자 하는 내용을 간략히 기재하십시오.</span>        </li>        <li><b>분쟁의 내용</b><span class="note">분쟁의 경위와 현재까지의 경과를 시간순으로 기재하십시오.</span>        </li>        <li><b>조정을 구하는 이유</b><span class="note">소송이 아닌 조정 절차를 택한 이유를 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>어느 법원에 제출해야 하나요?</summary>
           <p class="a">원칙적으로 상대방의 주소지나 분쟁이 발생한 곳을 관할하는 법원에 제출합니다.</p>

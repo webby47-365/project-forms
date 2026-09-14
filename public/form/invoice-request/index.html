@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>청구번호와 청구일자, 공급자·수신처 정보를 적습니다.</li>        <li>거래일자별 품목과 공급가액, 세액을 표에 채웁니다.</li>        <li>총 청구금액을 숫자와 한글로 함께 적습니다.</li>        <li>입금 계좌와 지급 기한을 적어 발송합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">용역이나 물품을 공급한 뒤 대금 지급을 요청할 때 사용하는 문서입니다. 거래일자별로 품목·내용과 공급가액·세액을 구분해 적고 총 청구금액은 숫자와 한글을 함께 표기해 오기를 방지합니다. 입금 계좌와 예금주명을 정확히 기재하고, 지급 기한을 명시해야 미수금 관리가 쉬워지며, 세금계산서 발행 여부는 거래처와 사전에 협의하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>청구번호 · 청구일자 · 청구인(공급자) · 연락처 · 피청구인(수신) · 담당자</span>        </li>        <li><b>청구 내역</b><span>거래일자 · 품목·내용 · 공급가액 · 세액 · 공급가액 합계 · 세액 합계 · 총 청구금액 · 금액(한글)</span>        </li>        <li><b>입금 계좌</b><span>은행 · 계좌번호 · 예금주 · 지급기한</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>세금계산서와 같이 보내야 하나요?</summary>
           <p class="a">거래처와 사전에 협의한 방식에 따라 세금계산서를 별도로 발행해 함께 보내면 됩니다.</p>

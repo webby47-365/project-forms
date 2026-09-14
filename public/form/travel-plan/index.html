@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>여행지와 여행기간, 인원을 적습니다.</li>        <li>예산을 정해 항목별로 나눠 적습니다.</li>        <li>날짜별 시간대와 방문지, 이동수단을 적습니다.</li>        <li>준비물을 체크리스트로 정리해 빠뜨리지 않게 확인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">휴가·여행 전에 목적지, 기간, 인원, 예산을 먼저 기입합니다. 일정표에는 각 날짜의 시간별 활동, 방문지, 이동수단, 예상 비용을 메모하여 시간을 효율적으로 배분할 수 있습니다. 준비물 체크리스트에서 여행복 · 서류 · 짐 · 약품 등을 미리 정리하면 현장에서 필요한 물품을 빠뜨리지 않을 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 여행 기본정보</b><span>여행지 · 여행기간 · 출발일 · 복귀일 · 인원 수 · 총 예산 · 동반자 · 숙소 정보</span>        </li>        <li><b>2. 일자별 일정</b><span>날짜 · 시간 · 장소/활동 · 이동수단 · 비용(원) · 메모</span>        </li>        <li><b>3. 준비물 체크리스트</b><span>항목 · □ 확인 · □ 구매</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>일정이 바뀌면 어떻게 하나요?</summary>
           <p class="a">계획표는 참고용이므로 현지 상황에 맞춰 자유롭게 수정해서 사용하면 됩니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>소속·직위·성명과 사번을 적습니다.</li>        <li>발생 일시와 장소를 먼저 기재합니다.</li>        <li>사건 경위를 시간 순서대로 사실대로 적습니다.</li>        <li>발생 원인과 재발 방지 대책을 작성합니다.</li>        <li>작성일을 적고 서명한 뒤 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">업무 중 지각이나 보고 누락 등 경미한 사안이 발생했을 때 경과를 사실대로 정리해 제출하는 문서입니다. 발생 일시와 장소를 먼저 기재하고, 사건 경위는 시간순으로 구체적으로 작성합니다. 이어서 발생 원인을 분석하고 재발을 막기 위한 개선 방안을 제시합니다. 변명이나 책임 회피성 표현보다는 사실과 개선 계획을 중심으로 작성하는 것이 좋습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>소속(부서) · 직위 · 성명 · 사번 · 발생 일시 · 발생 장소</span>        </li>        <li><b>1. 사건 경위</b><span class="note">발생 경과를 시간순으로 사실대로 기재하십시오.</span>        </li>        <li><b>2. 원인 및 문제점</b><span class="note">사건 발생의 원인과 문제점을 분석하여 기재하십시오.</span>        </li>        <li><b>3. 재발 방지 대책</b><span class="note">향후 동일한 사안이 재발하지 않도록 할 개선 방안을 구체적으로 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>변명을 적어도 되나요?</summary>
           <p class="a">변명보다는 사실과 개선 계획 중심으로 작성하는 것이 좋습니다.</p>

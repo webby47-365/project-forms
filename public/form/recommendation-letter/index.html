@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>피추천인 정보와 추천인과의 관계를 적습니다.</li>        <li>함께한 기간과 계기를 적습니다.</li>        <li>항목별 역량을 구체적인 사례와 함께 평가합니다.</li>        <li>추천 사유를 정리해 적습니다.</li>        <li>추천인 정보를 적고 서명·날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">취업·진학·장학 심사 등에 제출하기 위해 추천인이 작성하는 서류입니다. 피추천인과 어떤 관계에서 얼마나 오래 함께했는지 먼저 밝히면 신뢰도가 높아집니다. 추천 사유는 막연한 칭찬보다 구체적인 사례와 결과를 들어 적으십시오. 항목별 평가표는 근거가 되는 사례와 함께 작성하고, 보완이 필요한 부분도 균형 있게 쓰면 진정성이 전달됩니다. 추천인의 소속과 직위, 연락처를 정확히 적고 서명·날인한 뒤 제출처가 요구하는 방식(밀봉 여부 등)을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 피추천인</b><span>성명 · 생년월일 · 소속(학교·직장) · 직위(학년) · 지원 분야 · 제출처</span>        </li>        <li><b>2. 추천인</b><span>소속 · 직위 · 연락처 · 피추천인과의 관계 · 함께한 기간</span>        </li>        <li><b>3. 역량 평가</b><span>평가 항목 · 탁월 · 우수 · 보통 · 미흡 · 근거 사례</span>        </li>        <li><b>4. 추천 사유</b><span class="note">구체적인 경험과 성과를 들어 추천 사유를 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>부족한 점도 적어야 하나요?</summary>
           <p class="a">보완이 필요한 부분을 균형 있게 적으면 오히려 추천서의 신뢰도가 높아집니다.</p>

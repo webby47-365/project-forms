@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>이번 주 실적을 진행률과 함께 구체적으로 적습니다.</li>        <li>다음 주 계획을 우선순위 순서로 정리합니다.</li>        <li>지원이 필요한 이슈사항을 별도로 적습니다.</li>        <li>작성일과 부서를 확인하고 상급자에게 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">매주 말 또는 매주 초에 지난 한 주의 업무 진행 상황과 다음 주 계획을 보고하는 사내 서류입니다. 금주 실적은 진행률과 함께 구체적으로 적고, 차주 계획은 우선순위가 드러나도록 정리합니다. 의사결정이 필요한 이슈나 지원 요청사항은 별도 칸에 적어 상급자가 빠르게 확인할 수 있도록 하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>보고부서 · 보고자 · 보고기간 · 작성일</span>        </li>        <li><b>1. 금주 실적</b><span>업무 내용 · 진행률</span>        </li>        <li><b>2. 차주 계획</b><span>계획 업무</span>        </li>        <li><b>3. 이슈 및 요청사항</b><span class="note">의사결정이 필요한 사항, 지원·협조 요청 내용을 기재하십시오.</span>        </li>        <li><b>결재</b><span>담당 · 임원 · 서명(날인)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>일일보고서와 무엇이 다른가요?</summary>
           <p class="a">일일보고서는 하루 단위 업무를, 주간업무보고서는 한 주 전체의 실적과 다음 주 계획을 정리합니다.</p>

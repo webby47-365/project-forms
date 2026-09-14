@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>증여자와 수증자 정보를 적습니다.</li>        <li>증여할 재산의 종류와 수량·금액을 적습니다.</li>        <li>인도 시기와 방법을 적습니다.</li>        <li>부담부 증여 여부와 조건을 적습니다.</li>        <li>양쪽이 서명·날인하고 증여세 신고를 준비합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">부동산·예금·동산 등 재산을 가족이나 지인에게 무상으로 넘길 때 증여자와 수증자의 합의 내용을 남기기 위해 작성합니다. 증여할 재산의 종류와 수량·금액을 구체적으로 적고, 인도 시기와 방법, 부담부 증여 여부를 명확히 기재합니다. 증여일이 속하는 달의 말일부터 3개월 이내에 수증자가 증여세를 신고해야 하므로 세액과 공제 여부는 반드시 관할 세무서나 세무대리인에게 확인한 뒤 신고 기한을 넘기지 않도록 하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>증여자 · 성명 · 생년월일 · 주소 · 관계 · 수증자</span>        </li>        <li><b>증여 재산의 표시</b><span>재산 종류 · 소재지 또는 내역 · 수량·금액 · 제1조 (증여의 의사) · 제2조 (인도 시기와 방법) · 제3조 (부담부 증여 여부) · 제4조 (증여자의 담보책임) · 제5조 (해제 사유)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>증여세는 언제까지 신고해야 하나요?</summary>
           <p class="a">증여일이 속한 달의 말일부터 3개월 이내에 수증자가 신고해야 합니다.</p>

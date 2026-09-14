@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>청구인의 성명과 연락처를 적습니다.</li>        <li>공개를 원하는 정보의 내용을 구체적으로 씁니다.</li>        <li>공개 방법과 수령 방법을 선택합니다.</li>        <li>수수료 감면 대상이면 증명서를 첨부해 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">국가·지방자치단체·공공기관의 정보공개에 관한 법률에 따라 공공기관의 정보 공개를 청구할 때 반드시 제출해야 합니다. 청구인의 성명·연락처, 공개를 원하는 정보의 구체적인 내용, 공개 방법(열람·사본·전자파일), 수령 방법(직접·우편·팩스), 수수료 감면 여부를 명확히 기재합니다. 청구 정보가 모호하면 반려될 수 있으므로 가능한 한 구체적으로 특정해야 하며, 수수료 감면 대상(기초생활보장 수급자 등)인 경우 증명서를 첨부해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>청구인 정보</b><span>성명 · 생년월일 · 주소 · 연락처(휴대폰) · 이메일</span>        </li>        <li><b>청구 대상 기관</b><span>기관명 · 부서</span>        </li>        <li><b>공개 청구 정보</b><span class="note">공개를 청구하는 정보를 구체적으로 기재하십시오. (예: 2024년 1월~6월 간 채용 공고 문서, 회의록 등)</span>        </li>        <li><b>공개 방법 선택</b><span>공개 방법 · 선택</span>        </li>        <li><b>수령 방법 선택</b><span>수령 방법 · 배송주소/연락처</span>        </li>        <li><b>수수료 및 감면</b><span>감면 대상 해당 여부 · 해당 · 미해당 · 감면 사유(해당 시)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>청구 내용을 너무 넓게 써도 되나요?</summary>
           <p class="a">범위가 모호하면 반려될 수 있으므로 문서명이나 기간을 구체적으로 특정하는 것이 좋습니다.</p>

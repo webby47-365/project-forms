@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>가맹본부와 가맹점사업자 정보를 적고 영업지역을 정합니다.</li>        <li>가입비·보증금·로열티 등 가맹금 구성을 정합니다.</li>        <li>교육과 지원 내용, 상품 공급 방식을 정합니다.</li>        <li>계약기간과 해지 조건을 확인하고 서명합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">가맹본부(갑)가 가맹점사업자(을)에게 브랜드와 영업시스템을 사용하도록 허락하고 가맹점을 운영하게 할 때 체결하는 계약서입니다. 영업지역과 가입비·보증금·로열티 등 가맹금의 구성, 교육과 지원 내용, 상품 공급 방식을 구체적으로 정해야 합니다. 가맹계약은 체결 전에 가맹사업법에 따라 가맹본부가 정보공개서를 제공해야 하는 등 별도의 절차가 있으므로 계약 전에 관련 법령을 반드시 확인해야 합니다. 본 서식은 참고용이며 법적 효력은 사용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>당사자</b><span>갑(가맹본부) · 을(가맹점사업자)</span>        </li>        <li><b>가맹점 개요</b><span>가맹점명 · 영업표지(브랜드) · 영업소재지 · 영업지역 · 계약기간 · 개점예정일</span>        </li>        <li><b>가맹금</b><span>금액 · 납부시기 · 제1조 (목적) · 제2조 (영업표지의 사용) · 제3조 (영업지역) · 제4조 (가맹금) · 제5조 (교육과 지원) · 제6조 (상품 공급) · 제7조 (가맹점 준수사항) · 제8조 (계약기간과 갱신) · 제9조 (계약의 해지) · 제10조 (계약 종료 후의 의무) · 제11조 (분쟁 해결)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>계약 전에 꼭 확인할 게 있나요?</summary>
           <p class="a">가맹사업법에 따라 가맹본부가 정보공개서를 미리 제공해야 하니 계약 전에 확인하십시오.</p>

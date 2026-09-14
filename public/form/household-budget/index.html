@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>작성월과 기간을 적습니다.</li>        <li>급여·용돈 등 수입을 적습니다.</li>        <li>날짜별 지출을 항목·분류로 적습니다.</li>        <li>결제수단과 금액을 적습니다.</li>        <li>월말에 총수입·총지출·잔액을 계산합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">가정의 월간 재정 상황을 체계적으로 관리하는 양식입니다. 수입란에는 급여·용돈·기타수입을, 지출란에는 날짜·항목·분류·결제수단·금액을 기재합니다. 분류는 식비·교육·주거·건강·오락·교통 등 생활 패턴에 맞게 작성하고, 월말에 총 수입·총 지출·잔액을 계산하여 다음달 예산 수립의 근거로 삼습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>작성월 · 기간</span>        </li>        <li><b>1. 월간 수입</b><span>항목 · 금액(원) · 월간 총 수입</span>        </li>        <li><b>2. 월간 지출</b><span>날짜 · 분류 · 결제수단</span>        </li>        <li><b>3. 월말 정산</b><span>월간 총 지출 · 월말 잔액 (수입-지출)</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>주간·연간 가계부와 무엇이 다른가요?</summary>
           <p class="a">이 서식은 한 달 단위로 자세히 기록하며, 주간은 짧은 주기로, 연간은 한 해 흐름을 봅니다.</p>

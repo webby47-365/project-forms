@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>임대인과 임차인의 인적사항을 적습니다.</li>        <li>상가 소재지와 면적, 용도를 적습니다.</li>        <li>보증금과 차임, 지급일을 적습니다.</li>        <li>계약 기간과 갱신, 원상복구 조건을 적습니다.</li>        <li>특약사항을 적고 양측이 서명 날인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">점포나 사무실을 임차할 때 사용합니다. 상가건물임대차보호법의 보호를 받으려면 사업자등록과 확정일자를 받아야 하고, 환산보증금이 지역별 기준을 넘으면 일부 조항만 적용되므로 계약 전에 확인해야 합니다. 임차인은 최초 계약일부터 10년까지 계약갱신을 요구할 수 있고, 권리금 회수 기회도 법으로 보호됩니다. 원상복구 범위와 인테리어 설치물의 소유권은 분쟁이 가장 많은 항목이므로 특약에 구체적으로 적으십시오. 본 서식은 참고용이며 법적 효력과 적합성은 이용자가 확인해야 합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 임대차 목적물의 표시</b><span>소재지 · 건물 · 임차할 부분 · 층 / 호 · 면적 · 업종 · 사업자등록 예정 · 가능 / 불가</span>        </li>        <li><b>2. 계약 내용 — 제1조 (보증금·차임·권리금)</b><span>보증금 · 계약금 · 지급일 · 잔금 · 차임(월세) · 관리비 · 부가세 · 권리금 · 제2조 (임대차기간) · 제3조 (사용 목적과 용도 변경) · 제4조 (시설물의 설치와 원상복구) · 제5조 (수선 의무) · 제6조 (계약갱신요구권) · 제7조 (권리금 회수기회의 보호)</span>        </li>        <li><b>특약사항</b><span class="note">원상복구 범위, 인테리어 소유권, 간판 설치, 주차 대수, 영업시간 제한, 관리비 포함내역 등을 구체적으로 기재하십시오.</span>        </li>        <li><b>계약 당사자</b><span>임대인 · 주소 · 성명 · 생년월일 · 연락처 · 임차인 · 사업자번호 · 개업공인중개사 · 사무소명 · 대표 · 등록번호</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>확정일자는 꼭 받아야 하나요?</summary>
           <p class="a">상가건물임대차보호법의 보호를 받으려면 사업자등록과 확정일자를 함께 받아야 합니다.</p>

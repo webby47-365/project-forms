@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>상호와 담당자 등 거래처 기본정보를 적습니다.</li>        <li>결제조건과 여신한도 등 거래 조건을 정합니다.</li>        <li>거래나 상담이 있을 때마다 이력을 추가로 적습니다.</li>        <li>정보가 바뀌면 그때그때 갱신해 최신 상태로 유지합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">신규 거래처를 등록하거나 기존 거래처 정보를 갱신할 때 작성하는 서식입니다. 상호·담당자 등 기본정보와 결제조건·여신한도 등 거래 조건을 먼저 확정한 뒤, 거래와 상담이 발생할 때마다 이력을 추가로 기재해 누적 관리합니다. 담당자 변경 시 인수인계 자료로도 활용할 수 있습니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 고객 기본정보</b><span>상호 · 대표자 · 사업자등록번호 · 업종 · 주소 · 전화 · 이메일 · 담당자 · 직위 · 연락처</span>        </li>        <li><b>2. 거래 조건</b><span>결제조건 · 여신한도 · 할인율 · 거래개시일</span>        </li>        <li><b>3. 거래 이력</b><span>일자 · 품목 · 수량 · 금액</span>        </li>        <li><b>4. 상담 이력</b><span>방식 · 내용 · 후속조치</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>거래 이력은 얼마나 자세히 적나요?</summary>
           <p class="a">날짜와 담당자, 상담 내용을 간단히 요약해 남기면 충분하며, 다음 담당자가 흐름을 파악할 수 있으면 됩니다.</p>

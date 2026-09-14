@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>지급일과 귀속 기간을 먼저 확인해 적습니다.</li>        <li>기본급과 각종 수당을 항목별로 나눠 적습니다.</li>        <li>4대보험과 세금 공제액을 항목별로 계산해 적습니다.</li>        <li>지급액 합계에서 공제액 합계를 빼 실지급액을 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">근로기준법에 따라 사용자는 임금을 지급할 때마다 근로자에게 임금명세서를 교부해야 합니다. 임금의 구성항목별 금액, 공제항목별 금액과 산출내역을 반드시 적어야 하며, 연장·야간·휴일근로가 있으면 해당 시간 수까지 알 수 있게 기재해야 합니다. 서면 외에 전자문서(메일·사내 시스템)로도 교부할 수 있습니다. 구체적인 공제 요율과 세액 기준은 매년 달라지므로 해당 연도 기준을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 사번 · 지급일 · 부서 · 직위 · 귀속 기간</span>        </li>        <li><b>지급 및 공제 내역</b><span>지급 항목 · 공제 항목 · 기본급 · 국민연금 · 연장근로수당 · 건강보험 · 야간근로수당 · 장기요양보험 · 휴일근로수당 · 고용보험 · 연차수당 · 소득세 · 식대·교통비 · 지방소득세</span>        </li>        <li><b>산출 내역</b><span>회사명 · 대표자</span><span class="note">연장·야간·휴일근로의 시간 수와 단가, 일할계산 기준, 공제 요율 등 금액 산출 근거를 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>매달 새로 작성해야 하나요?</summary>
           <p class="a">네, 급여를 지급할 때마다 그 달의 항목과 금액을 새로 기재해 교부해야 합니다.</p>

@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>공급자의 사업자등록번호와 업태·종목을 적습니다.</li>        <li>수신처와 견적 유효기간, 납기일을 기재합니다.</li>        <li>품목별 수량과 단가, 공급가액·세액을 구분해 적습니다.</li>        <li>합계금액과 결제조건을 확인합니다.</li>        <li>담당자와 대표자 결재 후 직인을 찍어 송부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">금액이 크거나 공식 거래처 검토가 필요한 견적에 사용하는 상세형 견적서입니다. 공급자의 사업자등록번호·업태·종목까지 모두 밝히고 품목별로 공급가액과 세액을 구분해 기재합니다. 유효기간·납기일·결제조건을 명확히 표기해야 추후 분쟁을 막을 수 있고, 발행 전 담당자와 대표자 결재를 거쳐 직인을 날인한 뒤 송부하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>공급자</b><span>상호(법인명) · 사업자등록번호 · 대표자 · 담당자 · 주소 · 업태 · 종목 · 연락처 · 이메일</span>        </li>        <li><b>수신처 및 견적 정보</b><span>견적번호 · 견적일자 · 유효기간 · 수신(상호)</span>        </li>        <li><b>견적 내역</b><span>품명 · 규격 · 수량 · 단위 · 단가 · 공급가액 · 세액 · 공급가액 합계 · 부가세(10%) · 총 견적금액 · 금액(한글)</span>        </li>        <li><b>거래조건</b><span>납기일 · 결제조건 · 납품장소</span><span class="note">특기사항 — 하자보증, 운송비 부담, 추가 비용 발생 조건 등을 기재하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>세액은 어떻게 계산하나요?</summary>
           <p class="a">공급가액의 10%를 부가세로 별도 표기하는 것이 일반적입니다.</p>

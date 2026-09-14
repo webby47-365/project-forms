@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>진술인의 인적사항을 적습니다.</li>        <li>일시, 장소, 관련자를 구체적으로 적습니다.</li>        <li>직접 경험한 사실을 시간순으로 서술합니다.</li>        <li>들은 이야기나 의견은 별도로 구분해 표시합니다.</li>        <li>증거자료 목록을 적고 사본을 첨부합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">본인이 직접 보거나 겪은 사실을 정리해 제출하는 문서로, 사건 확인이나 각종 심사 자료로 사용됩니다. 들은 이야기와 직접 경험한 사실을 구분해 적고, 추측이나 의견은 별도 항목에 표시하십시오. 일시·장소·관련자를 구체적으로 적고 시간순으로 서술하면 신뢰도가 높아집니다. 증거자료가 있으면 목록에 적고 사본을 함께 첨부합니다. 허위 진술은 법적 책임이 따를 수 있으므로 사실만 기재하고, 제출 전 사본을 보관하십시오. 제출처가 요구하는 양식과 첨부 요건을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>1. 진술인</b><span>성명 · 생년월일 · 주소 · 연락처 · 직업 · 사건과의 관계 · 제출처</span>        </li>        <li><b>2. 사건 개요</b><span>발생일시 · 발생장소 · 관련자</span>        </li>        <li><b>3. 진술 내용</b><span class="note">직접 보고 들은 사실을 시간 순서대로 육하원칙에 따라 기재하십시오. 추측과 사실을 구분해 적으십시오.</span>        </li>        <li><b>4. 첨부 증거자료</b><span>자료명 · 형식 · 설명</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>들은 이야기도 그대로 적어도 되나요?</summary>
           <p class="a">직접 경험한 사실과 구분해 별도 항목에 표시해야 신뢰도가 떨어지지 않습니다.</p>

@@ -75,6 +75,20 @@
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">{{ f.usage }}</div>
 
+      {%- if f.outline %}
+      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">
+        {%- for sec in f.outline %}
+        <li>
+          {%- if sec.title %}<b>{{ sec.title }}</b>{% endif %}
+          {%- if sec['items'] %}<span>{{ sec['items'] | join(' · ') }}</span>{% endif %}
+          {%- if sec.note %}<span class="note">{{ sec.note }}</span>{% endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+
       {%- if f.faq %}
       <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">

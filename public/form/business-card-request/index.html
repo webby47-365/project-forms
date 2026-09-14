@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>소속·직위·성명 등 기본 정보를 적습니다.</li>        <li>국문과 영문 표기를 정확히 확인해 기재합니다.</li>        <li>수량과 납품 희망일을 적습니다.</li>        <li>변경사항이 있으면 별도 칸에 표시합니다.</li>        <li>작성 후 총무부서에 제출합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">입사·승진·부서 이동이나 연락처 변경으로 명함을 새로 제작할 때 총무부서에 제출하는 신청서입니다. 국문과 영문 표기를 모두 적고, 직위 영문 표기와 이메일 주소는 오타가 잦으므로 신청자가 직접 확인하십시오. 기존 명함과 달라지는 부분은 변경사항 칸에 표시하면 제작 오류를 줄일 수 있습니다. 수량은 소진 속도를 고려해 정하고, 시안 확인이 필요한 경우 회신받을 연락처를 적으십시오. 제작 단가와 납기는 총무부서의 계약 업체 기준을 따릅니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>소속(부서) · 직위 · 성명 · 신청일자 · 사번 · 연락처</span>        </li>        <li><b>1. 명함 표기 정보 (국문)</b><span>부서(팀) · 회사명 · 주소 · 휴대전화 · 사무실 전화 · 팩스 · 이메일</span>        </li>        <li><b>2. 명함 표기 정보 (영문)</b><span>Name · Title · Department · Company · Mobile · Office</span>        </li>        <li><b>3. 신청 내역</b><span>신청 구분 · 수량 · 명함 종류 · 납품 희망일 · 시안 확인 · 회신 연락처</span><span class="note">변경사항 및 요청사항 — 기존 명함과 달라지는 항목을 기재하십시오.</span>        </li>        <li><b>결재</b><span>결재</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>영문 이름 표기는 어떻게 정하나요?</summary>
           <p class="a">여권 표기법을 기준으로 하되 기존 명함과 다르면 변경사항 칸에 표시하십시오.</p>

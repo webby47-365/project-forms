@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>부서와 회계연도, 작성자를 기재합니다.</li>        <li>계정과목별로 전년예산과 당해예산을 나란히 적습니다.</li>        <li>증감률을 계산하고 산출근거를 구체적으로 씁니다.</li>        <li>부문별 합계를 확인한 뒤 편성 방침을 요약합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">다음 회계연도 예산을 수립할 때 부서 단위로 작성하는 문서입니다. 계정과목별로 전년예산과 당해예산을 비교해 증감률을 산출하고, 산출근거에는 인원 변동·사업 확대 등 구체적인 이유를 적어야 결재 과정에서 설득력이 있습니다. 부문별 합계가 맞는지 확인한 뒤 편성 방침을 간단히 요약하고, 세부 집행 내역은 예산 집행 내역서로 별도 관리하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>부서 · 회계연도 · 작성자 · 작성일자</span>        </li>        <li><b>예산 항목</b><span>계정과목 · 산출근거 · 전년예산 · 당해예산 · 증감률</span>        </li>        <li><b>부문별 합계</b><span>전년예산 합계 · 당해예산 합계</span>        </li>        <li><b>편성 방침</b><span class="note">편성 방침 — 예산 수립의 기본 방향과 중점 과제를 기재하십시오.</span>        </li>        <li><b>결재</b><span>담당 · 본부장</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>산출근거는 얼마나 자세히 써야 하나요?</summary>
           <p class="a">인원 변동이나 사업 확대처럼 증감 이유가 드러나야 결재 과정에서 설득력이 있습니다.</p>

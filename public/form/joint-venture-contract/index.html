@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>사업 목적과 당사자 정보를 적습니다.</li>        <li>각자의 출자 내용과 지분비율을 적습니다.</li>        <li>손익분배 시기와 방법을 정합니다.</li>        <li>의사결정 방법과 탈퇴·지분양도 조건을 정합니다.</li>        <li>당사자가 서명·날인하고 각 1부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">두 사람 이상이 함께 사업을 운영할 때 권리와 책임을 미리 정해 두는 계약서입니다. 출자는 현금·현물·노무를 구분해 평가금액과 함께 적고, 지분비율은 합계가 100%가 되도록 기재하십시오. 손익분배 시기와 방법, 그리고 중요한 의사결정을 어떤 요건으로 할지 정해 두어야 교착을 막을 수 있습니다. 탈퇴와 지분양도, 경업금지, 청산 절차는 분쟁이 가장 잦은 부분이므로 구체적으로 합의해 적으십시오. 사업자등록과 세무 처리 방식은 관할 세무서 기준을 확인하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><b>사업 개요</b><span>사업명 · 사업 개시일 · 사업장 소재지 · 사업 내용(업종) · 총 출자금 · 계약기간</span>        </li>        <li><b>출자 및 지분</b><span>성명(상호) · 출자 종류 · 출자 내용 · 평가금액 · 지분율 · 제1조 (목적) · 제2조 (출자) · 제3조 (업무집행 및 의사결정) · 제4조 (손익의 분배) · 제5조 (경업금지 및 비밀유지) · 제6조 (지분의 양도 및 탈퇴) · 제7조 (계약의 해지 및 청산) · 제8조 (분쟁의 해결)</span><span class="note">특약사항 — 역할 분담, 급여·활동비 지급, 추가 출자 요건, 사업자등록 명의 등을 기재하십시오.</span>        </li>        <li><b>당사자</b><span>당사자 1 · 당사자 2 · 당사자 3</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>노무 출자는 금액으로 어떻게 평가하나요?</summary>
           <p class="a">당사자끼리 협의해 노무의 가치를 금액으로 환산하고 그 근거를 계약서에 함께 적어 두십시오.</p>

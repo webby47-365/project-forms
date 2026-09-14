@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -483,7 +492,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>아이템과 사업 개요를 한눈에 알아보게 요약합니다.</li>        <li>목표 고객과 시장, 수익을 내는 방식을 간단히 적습니다.</li>        <li>필요한 자금과 조달 계획을 표로 정리합니다.</li>        <li>추진 일정을 적어 1페이지로 마무리합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">소규모 창업이나 간단한 사업자등록·소상공인 지원 신청처럼 상세 양식이 필요 없는 경우에 사용합니다. 아이템을 한눈에 설명하고 고객과 시장, 수익을 내는 방식을 짧게 정리하면 충분합니다. 소요 자금과 일정만 표로 보여주어 1페이지 안에 핵심을 전달하도록 구성했습니다. 제출 기관이 정식 사업계획서를 요구하면 표준형 서식을 사용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>사업명 · 대표자 · 업종 · 연락처</span>        </li>        <li><b>아이템 요약</b><span class="note">무엇을 파는 사업인지 한두 문장으로 적으십시오.</span>        </li>        <li><b>고객 및 시장</b><span class="note">주요 고객층과 시장 상황을 간단히 적으십시오.</span>        </li>        <li><b>수익 모델</b><span class="note">어떻게 돈을 버는지 적으십시오.</span>        </li>        <li><b>소요 자금</b><span>용도 · 금액 · 조달방법</span>        </li>        <li><b>추진 일정</b><span>단계 · 내용 · 기간</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>정식 사업계획서 대신 낼 수 있나요?</summary>
           <p class="a">제출 기관이 정식 양식을 요구하면 사용할 수 없으니, 요구 서식을 먼저 확인한 뒤 필요하면 표준형을 사용하십시오.</p>

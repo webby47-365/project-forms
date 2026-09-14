@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>발급 대상자의 성명과 생년월일을 적습니다.</li>        <li>재직 여부와 입사일, 퇴사일(해당 시)을 적습니다.</li>        <li>부서와 직위, 담당 업무를 근무 기간별로 적습니다.</li>        <li>발급 목적을 적습니다.</li>        <li>회사 직인을 날인해 발급합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">이직·자격취득·경력인정 시 제출하는 서류로 회사 인사부서가 발급합니다. 재직자·퇴직자 모두 발급 가능하며, 경력 인정 기관이 요구하는 항목(직급 변동 이력, 근무형태 등)이 있는지 먼저 확인한 뒤 발급받는 것이 안전합니다.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>성명 · 생년월일 · 재직구분 · 총 경력기간 · 주소</span>        </li>        <li><b>경력사항</b><span>근무기간 · 부서 · 직위 · 담당업무 · 근무형태 · 용도 · 회사명 · 사업자등록번호 · 대표자</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>퇴사자도 발급받을 수 있나요?</summary>
           <p class="a">가능합니다. 재직구분에 퇴직자로 표시하고 최종 근무일까지의 경력을 적으면 됩니다.</p>

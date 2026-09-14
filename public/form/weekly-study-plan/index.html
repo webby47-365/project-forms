@@ -298,6 +298,15 @@ footer.site li{margin:3px 0}
   font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
 .howto li:last-child{margin-bottom:0}
 
+/* 이 서식에 들어 있는 항목 — 구역별로 한 줄씩. 서식을 열지 않고도 채울 칸을 보게 한다 */
+.outline-lead{margin:10px 0 0; font-size:13px; color:var(--muted)}
+.outline{list-style:none; margin:10px 0 0; padding:0; border-top:1px solid var(--line)}
+.outline li{padding:10px 2px; border-bottom:1px solid var(--line); font-size:14px;
+  line-height:1.75; color:#475467}
+.outline li b{display:block; color:var(--navy); font-size:13.5px; font-weight:700;
+  margin-bottom:2px; letter-spacing:-.01em}
+.outline li .note{color:var(--muted); font-size:13.5px}
+
 /* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
 .faq{margin:12px 0 0; border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -478,7 +487,9 @@ footer.site li{margin:3px 0}
       <ol class="howto">        <li>이번 주 학습 목표를 먼저 정합니다.</li>        <li>과목별로 이번 주에 끝낼 분량을 적습니다.</li>        <li>요일·시간대별로 공부할 내용을 배치합니다.</li>        <li>주말에 진행 상황과 다음 주 계획을 적습니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">한 주를 시작하기 전에 이번 주 학습 목표를 정하고 요일·시간대별로 공부할 내용을 미리 배치해 두는 서식입니다. 과목별 학습 목표 표에는 이번 주에 끝낼 분량과 완료 여부를 함께 적어 진도를 점검하십시오. 시간표 칸은 과목명만 간단히 적어야 한눈에 들어오며, 주말에는 주간 성찰란에 실제 진행 상황과 다음 주 보완할 점을 적어 스스로 관리하는 습관을 기르는 데 활용하십시오.
-</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">        <li><span>주차 · 기간 · 이번 주 목표</span>        </li>        <li><b>1. 시간대별 학습 일정</b><span>시간대 · 16~17시 · 17~18시 · 19~20시 · 20~21시</span>        </li>        <li><b>2. 과목별 학습 목표</b><span>과목 · 분량 · 완료여부</span>        </li>        <li><b>3. 주간 성찰</b><span class="note">실제 진행 상황, 어려웠던 점, 다음 주 계획을 작성하십시오.</span>        </li>      </ul>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
       <div class="faq">        <details open>
           <summary>시간표는 얼마나 자세히 적나요?</summary>
           <p class="a">시간대별 칸에는 과목명만 간단히 적어야 한눈에 들어오며, 세부 내용은 따로 메모하는 것이 좋습니다.</p>
