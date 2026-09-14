@@ -1086,9 +1086,9 @@ def build() -> int:
     # 3-7) 직장인 도구 — 허브(/tools/)와 도장·서명 생성기(/tools/stamp/).
     #      정적 호스팅이므로 계산·그리기는 전부 브라우저(assets/stamp.js)에서 한다.
     write(PUBLIC / "tools" / "index.html", env.get_template("tools.html").render(
-        page_title=f"직장인 도구 — 디지털 도장·서명 만들기 | {SITE_NAME}",
-        page_desc="서식과 함께 쓰는 무료 브라우저 도구. 디지털 도장·손글씨 서명 이미지를 회원가입 없이 만들어 "
-                  "PNG로 저장합니다. 입력값은 서버로 보내지 않습니다.",
+        page_title=f"직장인 도구 — 실수령액·퇴직금·연차 계산기, 디지털 도장·서명 | {SITE_NAME}",
+        page_desc="서식과 함께 쓰는 무료 브라우저 도구. 연봉 실수령액·퇴직금·연차 계산기와 디지털 도장·손글씨 "
+                  "서명 만들기를 회원가입 없이 씁니다. 입력값은 서버로 보내지 않습니다.",
         canonical="/tools/",
         breadcrumb_jsonld=breadcrumb_ld([("홈", "/"), ("직장인 도구", "/tools/")]),
         tools_soon=TOOLS_SOON,
