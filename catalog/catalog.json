@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T17:30:15+09:00",
-  "count": 239,
+  "generated_at": "2026-09-15T07:54:48+09:00",
+  "count": 240,
   "forms": [
     {
       "id": "academy-attendance",
@@ -14785,6 +14785,118 @@
         "proposal-draft"
       ],
       "seal": true
+    },
+    {
+      "id": "outpatient-visit-certificate",
+      "title": "통원확인서",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "통원확인서",
+        "통원치료확인서",
+        "병원방문확인서",
+        "진료확인서",
+        "통원증명서"
+      ],
+      "summary": "환자가 특정 일시에 병원에 통원해 진료를 받았음을 의료기관이 확인해 주는 서식으로, 지각·조퇴 사유를 회사에 소명할 때 제출합니다.",
+      "usage": "지각이나 조퇴 사유로 병원 진료를 받았을 때, 그 사실을 의료기관이 확인해 회사 등 제출처에 내는 서식입니다. 환자 정보와 내원 일시·진료과를 적고 의료기관에서 발급 확인 후 직인을 받아야 효력이 있습니다. 병명은 회사가 요구하지 않는 한 굳이 적지 않아도 되며, 구체적인 진단명 기재 여부는 의료기관의 방침에 따릅니다. 제출처마다 요구 양식이 다를 수 있으니 회사 규정을 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55738,
+        "docx": 38886,
+        "hwpx": 10258
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "환자의 성명과 생년월일, 연락처를 적습니다.",
+        "내원일과 내원·종료 시각, 진료과를 적습니다.",
+        "제출처와 용도를 적습니다(예: 지각 사유 소명 제출용).",
+        "의료기관 정보를 적고 담당의사 확인 직인을 받습니다."
+      ],
+      "faq": [
+        {
+          "q": "병명도 꼭 적어야 하나요?",
+          "a": "회사가 요구하지 않으면 통원 사실과 시각만 적어도 됩니다. 병명 기재 여부는 병원 방침에 따라 다를 수 있습니다."
+        },
+        {
+          "q": "진단서 대신 제출해도 되나요?",
+          "a": "지각·조퇴 소명이 목적이면 통원확인서로 충분한 경우가 많지만, 회사 규정을 먼저 확인하십시오."
+        },
+        {
+          "q": "내원 시각은 왜 필요한가요?",
+          "a": "도착·종료 시각을 함께 적으면 지각·조퇴 시간과 진료 시간이 맞는지 회사가 확인하기 쉽습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 환자 정보",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 통원 내역",
+          "items": [
+            "내원일",
+            "진료과",
+            "담당의",
+            "내원 시각",
+            "종료 시각"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 진료 내용",
+          "items": [],
+          "note": "진료받은 내용을 간단히 적습니다. 병명은 제출처가 요구하는 경우에만 기재합니다."
+        },
+        {
+          "title": "4. 제출처",
+          "items": [
+            "제출처",
+            "용도",
+            "의료기관명",
+            "소재지",
+            "전화번호",
+            "담당의사"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": true,
+      "related": [
+        "leave-request",
+        "explanation-statement",
+        "medical-record-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-15T07:54:48+09:00",
+      "updated_at": "2026-09-15T07:54:48+09:00",
+      "downloads": 0
     },
     {
       "id": "overtime-application",

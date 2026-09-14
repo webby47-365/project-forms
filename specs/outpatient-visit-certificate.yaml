@@ -1,0 +1,128 @@
+id: outpatient-visit-certificate
+title: 통원확인서
+category: welfare
+subcategory: consent
+tags: [통원확인서, 통원치료확인서, 병원방문확인서, 진료확인서, 통원증명서]
+summary: 환자가 특정 일시에 병원에 통원해 진료를 받았음을 의료기관이 확인해 주는 서식으로, 지각·조퇴 사유를 회사에 소명할 때 제출합니다.
+usage: >
+  지각이나 조퇴 사유로 병원 진료를 받았을 때, 그 사실을 의료기관이 확인해 회사 등 제출처에
+  내는 서식입니다. 환자 정보와 내원 일시·진료과를 적고 의료기관에서 발급 확인 후 직인을
+  받아야 효력이 있습니다. 병명은 회사가 요구하지 않는 한 굳이 적지 않아도 되며, 구체적인
+  진단명 기재 여부는 의료기관의 방침에 따릅니다. 제출처마다 요구 양식이 다를 수 있으니
+  회사 규정을 먼저 확인하십시오.
+source: original
+featured: false
+from_request: true
+target_pages: 1
+
+howto:
+  - 환자의 성명과 생년월일, 연락처를 적습니다.
+  - 내원일과 내원·종료 시각, 진료과를 적습니다.
+  - "제출처와 용도를 적습니다(예: 지각 사유 소명 제출용)."
+  - 의료기관 정보를 적고 담당의사 확인 직인을 받습니다.
+
+faq:
+  - q: 병명도 꼭 적어야 하나요?
+    a: 회사가 요구하지 않으면 통원 사실과 시각만 적어도 됩니다. 병명 기재 여부는 병원 방침에 따라 다를 수 있습니다.
+  - q: 진단서 대신 제출해도 되나요?
+    a: 지각·조퇴 소명이 목적이면 통원확인서로 충분한 경우가 많지만, 회사 규정을 먼저 확인하십시오.
+  - q: 내원 시각은 왜 필요한가요?
+    a: 도착·종료 시각을 함께 적으면 지각·조퇴 시간과 진료 시간이 맞는지 회사가 확인하기 쉽습니다.
+
+related: [leave-request, explanation-statement, medical-record-request]
+
+blocks:
+  - type: doc_title
+    text: 통원확인서
+    spaced: true
+
+  - type: subtitle
+    text: 1. 환자 정보
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-03-15", "", "010-1234-5678"]
+
+  - type: subtitle
+    text: 2. 통원 내역
+
+  - type: grid
+    widths: [14, 22, 14, 22, 14, 14]
+    label_cols: [0, 2, 4]
+    row_height_mm: 8
+    rows:
+      - ["내원일", "", "진료과", "", "담당의", ""]
+    sample_rows:
+      - ["", "2026-09-11", "", "내과", "", "김현우"]
+
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["내원 시각", "", "종료 시각", ""]
+    sample_rows:
+      - ["", "09:20", "", "10:40"]
+
+  - type: subtitle
+    text: 3. 진료 내용
+
+  - type: textbox
+    hint: "진료받은 내용을 간단히 적습니다. 병명은 제출처가 요구하는 경우에만 기재합니다."
+    height_mm: 20
+    sample_text: 발열과 복통으로 내원하여 진찰과 처치를 받았습니다.
+
+  - type: subtitle
+    text: 4. 제출처
+
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["제출처", ""]
+      - ["용도", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스 인사팀"]
+      - ["", "지각 사유 소명 제출용"]
+
+  - type: spacer
+    height_pt: 4
+
+  - type: para
+    text: 위 환자는 상기 일시에 본원에 내원하여 진료를 받았음을 확인합니다.
+    align: center
+    size: 11.5
+    space_after: 2
+
+  - type: date_line
+    sample_text: 2026 년    9 월   13 일
+
+  - type: spacer
+    height_pt: 6
+
+  - type: grid
+    widths: [20, 45, 35]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["의료기관명", "", ""]
+      - ["소재지", "", ""]
+      - ["전화번호", "", ""]
+      - ["담당의사", "", "(직인)"]
+    sample_rows:
+      - ["", "한빛내과의원", ""]
+      - ["", "서울특별시 마포구 월드컵북로 100", ""]
+      - ["", "02-1234-5678", ""]
+      - ["", "김현우", ""]
+
+  - type: notice
+    text: 구체적인 진단명과 진료 내용은 의료기관이 확인한 범위에서만 기재합니다.
+
+  - type: notice
+    text: 본 확인서는 발급 목적 외의 용도로 사용할 수 없으며, 개인정보(건강정보 포함)는 제출 목적 범위에서만 사용하십시오.
