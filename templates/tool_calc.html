@@ -339,11 +339,17 @@ document.addEventListener('DOMContentLoaded', function () {
       heroEl.textContent = '0'; lastHero = '0일'; subEl.textContent = r.error; lastSub = r.error; put([]); return;
     }
     heroEl.textContent = r.remain; lastHero = r.remain + '일';
-    lastSub = '근속 ' + r.serviceLabel + ' · 총 발생 ' + r.total + '일 중 ' + r.used + '일 사용' +
+    lastSub = '근속 ' + r.serviceLabel + ' · 누적 발생 ' + r.total + '일 중 ' +
+      (r.expired > 0 ? r.expired + '일 소멸, ' : '') + r.used + '일 사용' +
       (r.pay > 0 ? ' · 미사용 수당 ' + C.fmt(r.pay) + '원' : '');
     subEl.textContent = lastSub;
-    var rows = r.rows.map(function (x) { return [x.name + ' <i>' + x.when + '</i>', x.days + '일']; });
-    rows.push(['총 발생 연차', r.total + '일', true]);
+    var rows = r.rows.map(function (x) {
+      return [x.name + ' <i>' + x.when + (x.alive ? '' : ' · ' + x.expiresLabel + ' 소멸') + '</i>',
+              (x.alive ? '' : '<span style="color:#9aa4b2">') + x.days + '일' + (x.alive ? '' : '</span>')];
+    });
+    rows.push(['누적 발생 연차', r.total + '일']);
+    if (r.expired > 0) rows.push(['기간이 지나 소멸', '−' + r.expired + '일']);
+    rows.push(['지금 쓸 수 있는 연차', r.active + '일', true]);
     rows.push(['사용한 연차', '−' + r.used + '일']);
     rows.push(['남은 연차', r.remain + '일', true]);
     if (r.pay > 0) {

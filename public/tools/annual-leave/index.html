@@ -542,7 +542,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .ad-wide{min-height:100px}
 }
 </style>
-<script src="/assets/calc.js?v=83b742e6" defer></script>
+<script src="/assets/calc.js?v=b1b8c960" defer></script>
 <style>
 /* ── 계산기 공통 ── */
 .tool-tabs{display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 20px}
@@ -709,7 +709,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="sticky">
       <div class="res-box">
         <div class="res-hero">
-          <p class="k" id="r-k">남은 연차</p>
+          <p class="k" id="r-k">지금 쓸 수 있는 남은 연차</p>
           <div class="v"><span id="r-v">0</span><small>일</small></div>
           <p class="sub" id="r-sub">&nbsp;</p>
         </div>
@@ -729,7 +729,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   
 
   <h2 class="sec" style="font-size:17px">이렇게 계산합니다</h2>
-  <ol class="howto">    <li>입사 1년 미만일 때는 <b>1개월 개근마다 1일</b>씩, 최대 11일이 생깁니다.</li>    <li>입사 1년이 되는 날 <b>15일</b>이 한꺼번에 생깁니다(출근율 80% 이상).</li>    <li>근속 3년째부터 <b>2년마다 1일</b>씩 늘어나고, 최대 25일에서 멈춥니다.</li>    <li>회사가 회계연도 기준을 쓰면 입사 다음 해 1월 1일에 <b>첫 해 재직일수에 비례</b>해 먼저 주고, 그 뒤로는 매년 1월 1일에 발생합니다.</li>    <li>남은 연차에 <b>1일 통상임금</b>(월 통상임금 ÷ 209 × 8)을 곱하면 미사용 연차수당입니다.</li>  </ol>
+  <ol class="howto">    <li>입사 1년 미만일 때는 <b>1개월 개근마다 1일</b>씩, 최대 11일이 생깁니다.</li>    <li>입사 1년이 되는 날 <b>15일</b>이 한꺼번에 생깁니다(출근율 80% 이상).</li>    <li>근속 3년째부터 <b>2년마다 1일</b>씩 늘어나고, 최대 25일에서 멈춥니다.</li>    <li>회사가 회계연도 기준을 쓰면 입사 다음 해 1월 1일에 <b>첫 해 재직일수에 비례</b>해 먼저 주고, 그 뒤로는 매년 1월 1일에 발생합니다.</li>    <li>연차는 <b>발생일로부터 1년</b> 안에 써야 합니다. 기간이 지난 연차는 소멸하므로 큰 숫자에는 <b>지금 쓸 수 있는 연차</b>만 넣고, 지나간 발생분은 아래 표에 회색으로 표시합니다.</li>    <li>남은 연차에 <b>1일 통상임금</b>(월 통상임금 ÷ 209 × 8)을 곱하면 미사용 연차수당입니다.</li>  </ol>
 
   <h2 class="sec" style="font-size:17px">자주 묻는 질문</h2>
   <div class="faq">    <details open>
@@ -738,6 +738,9 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     </details>    <details>
       <summary>1년만 일하고 퇴사하면 연차가 26일인가요?</summary>
       <p class="a">2021년 대법원 판결에 따라 정확히 1년(365일)만 근무하고 퇴사하면 11일만 인정됩니다. 15일까지 받으려면 1년 하고 하루를 더 근무해야 합니다.</p>
+    </details>    <details>
+      <summary>입사 3년 차인데 왜 41일이 아니라 15일인가요?</summary>
+      <p class="a">연차는 쌓이지 않습니다. 발생일로부터 1년 안에 쓰지 않으면 소멸하고 수당으로 정산됩니다. 그래서 지금 쓸 수 있는 연차는 가장 최근에 발생한 15일입니다. 아래 표에서 연도별로 언제 발생해 언제까지 쓸 수 있는지 확인하세요.</p>
     </details>    <details>
       <summary>연차를 안 쓰면 무조건 돈으로 받나요?</summary>
       <p class="a">회사가 연차사용촉진제도를 법대로 진행했다면 수당 지급 의무가 사라집니다. 서면으로 사용 시기를 지정하라고 통보받은 적이 있는지 확인하세요.</p>
@@ -860,7 +863,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "연차 계산기", "url": "https://freeforms.kr/tools/annual-leave/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "ko", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "근로기준법 제60조에 따라 입사일 기준·회계연도 기준 연차 발생일수를 연도별로 계산하고, 남은 연차의 미사용 연차수당까지 알려줍니다. 회원가입 없이 무료입니다.", "publisher": {"@type": "Organization", "@id": "https://freeforms.kr/#org", "name": "무료서식 다운로드"}, "isPartOf": {"@type": "WebSite", "@id": "https://freeforms.kr/#website", "name": "무료서식 다운로드"}}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "입사일 기준과 회계연도 기준 중 어느 쪽이 맞나요?", "acceptedAnswer": {"@type": "Answer", "text": "법의 원칙은 입사일 기준입니다. 다만 관리 편의를 위해 회계연도 기준을 쓰는 회사가 많고, 이 경우 퇴직할 때 입사일 기준으로 계산해 모자라면 채워 줘야 합니다."}}, {"@type": "Question", "name": "1년만 일하고 퇴사하면 연차가 26일인가요?", "acceptedAnswer": {"@type": "Answer", "text": "2021년 대법원 판결에 따라 정확히 1년(365일)만 근무하고 퇴사하면 11일만 인정됩니다. 15일까지 받으려면 1년 하고 하루를 더 근무해야 합니다."}}, {"@type": "Question", "name": "연차를 안 쓰면 무조건 돈으로 받나요?", "acceptedAnswer": {"@type": "Answer", "text": "회사가 연차사용촉진제도를 법대로 진행했다면 수당 지급 의무가 사라집니다. 서면으로 사용 시기를 지정하라고 통보받은 적이 있는지 확인하세요."}}, {"@type": "Question", "name": "5인 미만 사업장도 연차가 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "없습니다. 연차유급휴가는 상시 근로자 5인 이상 사업장에만 적용됩니다. 다만 회사가 취업규칙으로 정했다면 그 규정을 따릅니다."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "입사일 기준과 회계연도 기준 중 어느 쪽이 맞나요?", "acceptedAnswer": {"@type": "Answer", "text": "법의 원칙은 입사일 기준입니다. 다만 관리 편의를 위해 회계연도 기준을 쓰는 회사가 많고, 이 경우 퇴직할 때 입사일 기준으로 계산해 모자라면 채워 줘야 합니다."}}, {"@type": "Question", "name": "1년만 일하고 퇴사하면 연차가 26일인가요?", "acceptedAnswer": {"@type": "Answer", "text": "2021년 대법원 판결에 따라 정확히 1년(365일)만 근무하고 퇴사하면 11일만 인정됩니다. 15일까지 받으려면 1년 하고 하루를 더 근무해야 합니다."}}, {"@type": "Question", "name": "입사 3년 차인데 왜 41일이 아니라 15일인가요?", "acceptedAnswer": {"@type": "Answer", "text": "연차는 쌓이지 않습니다. 발생일로부터 1년 안에 쓰지 않으면 소멸하고 수당으로 정산됩니다. 그래서 지금 쓸 수 있는 연차는 가장 최근에 발생한 15일입니다. 아래 표에서 연도별로 언제 발생해 언제까지 쓸 수 있는지 확인하세요."}}, {"@type": "Question", "name": "연차를 안 쓰면 무조건 돈으로 받나요?", "acceptedAnswer": {"@type": "Answer", "text": "회사가 연차사용촉진제도를 법대로 진행했다면 수당 지급 의무가 사라집니다. 서면으로 사용 시기를 지정하라고 통보받은 적이 있는지 확인하세요."}}, {"@type": "Question", "name": "5인 미만 사업장도 연차가 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "없습니다. 연차유급휴가는 상시 근로자 5인 이상 사업장에만 적용됩니다. 다만 회사가 취업규칙으로 정했다면 그 규정을 따릅니다."}}]}
 </script>
 <script>
 window.FF_RATES = {"year": 2026, "updated": "2026-09-14", "note": "직장인 계산기(4대보험·소득세)가 쓰는 요율 정본. 매년 1~3월에 아래 출처를 확인해 갱신한다. 값을 고치면 build_site.py 가 페이지에 다시 심는다.", "national_pension": {"label": "국민연금", "rate_employee": 0.0475, "rate_total": 0.095, "base_min": 410000, "base_max": 6590000, "base_period": "2026-07-01 ~ 2027-06-30", "desc": "연금개혁으로 2026년부터 총 9.5%(근로자 4.75%). 기준소득월액 상·하한은 매년 7월에 조정된다."}, "health": {"label": "건강보험", "rate_employee": 0.03595, "rate_total": 0.0719, "desc": "2026년 직장가입자 보험료율 7.19%(근로자 절반). 보수월액 상·하한은 월 보수 1억원 이상 등 예외 구간이라 반영하지 않았다."}, "long_term_care": {"label": "장기요양보험", "rate_of_health": 0.131405, "rate_of_income": 0.009448, "desc": "2026년 소득 대비 0.9448%. 실제 부과는 건강보험료 × 13.1405%(= 0.9448 ÷ 7.19)."}, "employment": {"label": "고용보험", "rate_employee": 0.009, "desc": "실업급여 계정 1.8%를 노사가 절반씩. 2027년 2.0%(근로자 1.0%) 인상이 심의됐으나 2026년에는 0.9%."}, "income_tax": {"local_rate": 0.1, "child_credit_monthly": {"1": 20830, "2": 45830, "3plus_add": 33330}, "desc": "매월 떼는 소득세는 국세청 근로소득 간이세액표(소득세법 시행령 별표2)를 그대로 찾아 쓴다. 8세 이상 20세 이하 자녀가 있으면 표의 세액에서 자녀 수별 금액을 빼고, 음수면 0원으로 한다(별표2 비고 3). 지방소득세는 소득세의 10%."}, "tax_free": {"meal_monthly_max": 200000, "desc": "식대는 월 20만원까지 비과세. 차량유지비(월 20만원)·출산보육수당 등 다른 비과세 항목이 있으면 합산해서 넣는다."}, "work": {"monthly_standard_hours": 209, "desc": "주 40시간 근로자의 월 소정근로시간(주휴 포함). 통상임금 시급 = 월 통상임금 ÷ 209."}, "sources": ["국민연금 보험료율·기준소득월액: 국민연금공단 2026년 기준소득월액 상·하한액 조정 안내", "건강보험료율 7.19%: 보건복지부 2025-08-28 건강보험정책심의위원회 보도자료", "장기요양보험료율 0.9448%: 보건복지부 2025-11-04 보도자료", "고용보험료율: 고용노동부 고용보험위원회 2026-09-01 고용보험 제도 개편 방안", "간이세액표: 소득세법 시행령 별표2 (2026-02-27 개정)"]};
@@ -915,11 +918,17 @@ document.addEventListener('DOMContentLoaded', function () {
       heroEl.textContent = '0'; lastHero = '0일'; subEl.textContent = r.error; lastSub = r.error; put([]); return;
     }
     heroEl.textContent = r.remain; lastHero = r.remain + '일';
-    lastSub = '근속 ' + r.serviceLabel + ' · 총 발생 ' + r.total + '일 중 ' + r.used + '일 사용' +
+    lastSub = '근속 ' + r.serviceLabel + ' · 누적 발생 ' + r.total + '일 중 ' +
+      (r.expired > 0 ? r.expired + '일 소멸, ' : '') + r.used + '일 사용' +
       (r.pay > 0 ? ' · 미사용 수당 ' + C.fmt(r.pay) + '원' : '');
     subEl.textContent = lastSub;
-    var rows = r.rows.map(function (x) { return [x.name + ' <i>' + x.when + '</i>', x.days + '일']; });
-    rows.push(['총 발생 연차', r.total + '일', true]);
+    var rows = r.rows.map(function (x) {
+      return [x.name + ' <i>' + x.when + (x.alive ? '' : ' · ' + x.expiresLabel + ' 소멸') + '</i>',
+              (x.alive ? '' : '<span style="color:#9aa4b2">') + x.days + '일' + (x.alive ? '' : '</span>')];
+    });
+    rows.push(['누적 발생 연차', r.total + '일']);
+    if (r.expired > 0) rows.push(['기간이 지나 소멸', '−' + r.expired + '일']);
+    rows.push(['지금 쓸 수 있는 연차', r.active + '일', true]);
     rows.push(['사용한 연차', '−' + r.used + '일']);
     rows.push(['남은 연차', r.remain + '일', true]);
     if (r.pay > 0) {
@@ -934,7 +943,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── 결과 저장·복사 ── */
   function plain(s) { return String(s).replace(/<[^>]*>/g, ''); }
   $('r-copy').addEventListener('click', function () {
-    var txt = ['연차 계산기 — freeforms.kr', '남은 연차: ' + lastHero, lastSub, ''];
+    var txt = ['연차 계산기 — freeforms.kr', '지금 쓸 수 있는 남은 연차: ' + lastHero, lastSub, ''];
     lastRows.forEach(function (r) { txt.push(plain(r[0]) + ': ' + plain(r[1])); });
     C.copyText(txt.join('\n'));
     var b = $('r-copy'), t = b.textContent; b.textContent = '복사했습니다';
@@ -943,7 +952,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   $('r-img').addEventListener('click', function () {
     var cv = C.resultImage({
-      title: '연차 계산기 · 남은 연차',
+      title: '연차 계산기 · 지금 쓸 수 있는 남은 연차',
       heroValue: lastHero, heroSub: lastSub,
       rows: lastRows.map(function (r) { return [plain(r[0]), plain(r[1]), r[2]]; }),
       note: '2026년 기준 · 참고용'

@@ -226,8 +226,10 @@
    */
   function salary(opt, table, R) {
     var amount = Math.max(0, num(opt.amount));
-    var gross = opt.mode === 'month' ? amount : amount / 12;
-    gross = Math.round(gross);
+    // 연봉을 12로 나눠 떨어지지 않을 때는 내림한다. 급여대장이 원 미만을 버리는 관행과 같고,
+    // 반올림하면 보험료가 한 단계(10원) 올라가 다른 계산기와 어긋난다.
+    var gross = opt.mode === 'month' ? amount : Math.floor(amount / 12);
+    gross = Math.floor(gross);
     var free = Math.max(0, Math.min(num(opt.taxFree), gross));
     var taxable = gross - free;
 
@@ -346,25 +348,29 @@
     }
     var rows = [], total = 0;
 
-    // 1) 입사 1년 미만 — 1개월 개근마다 1일 (최대 11일)
+    // 1) 입사 1년 미만 — 1개월 개근마다 1일 (최대 11일).
+    //    2020.3.31 개정으로 이 휴가는 모두 '입사일로부터 1년' 안에만 쓸 수 있다.
     var monthly = 0;
     for (var k = 1; k <= 11; k++) {
       if (diffDays(addMonths(join, k), base) >= 0) monthly = k;
     }
     if (monthly > 0) {
-      rows.push({ when: ymd(addMonths(join, monthly)) + '까지',
-                  name: '입사 1년 미만 — 1개월 개근마다 1일', days: monthly });
+      rows.push({ when: ymd(addMonths(join, 1)) + (monthly > 1 ? ' ~ ' + ymd(addMonths(join, monthly)) : ''),
+                  name: '입사 1년 미만 — 1개월 개근마다 1일', days: monthly,
+                  expires: addDays(addMonths(join, 12), -1) });
       total += monthly;
     }
 
     if (opt.mode === 'fiscal') {
-      // 2-A) 회계연도 기준 — 입사 다음 해 1월 1일에 첫 해 재직일수에 비례해 발생
+      // 2-A) 회계연도 기준 — 입사 다음 해 1월 1일에 첫 해 재직일수에 비례해 발생.
+      //      각 발생분은 그 해 12월 31일까지 쓴다.
       var firstJan = new Date(Date.UTC(join.getUTCFullYear() + 1, 0, 1));
       if (diffDays(firstJan, base) >= 0) {
         var yearEnd = new Date(Date.UTC(join.getUTCFullYear(), 11, 31));
         var worked = diffDays(join, yearEnd) + 1;
         var pro = Math.round(15 * worked / 365 * 10) / 10;
-        rows.push({ when: ymd(firstJan), name: '회계연도 첫 해 비례 (15일 × ' + worked + '/365)', days: pro });
+        rows.push({ when: ymd(firstJan), name: '회계연도 첫 해 비례 (15일 × ' + worked + '/365)', days: pro,
+                    expires: new Date(Date.UTC(firstJan.getUTCFullYear(), 11, 31)) });
         total += pro;
         var y = join.getUTCFullYear() + 2;
         while (diffDays(new Date(Date.UTC(y, 0, 1)), base) >= 0) {
@@ -372,27 +378,39 @@
           var d = leaveDaysFor(yrs);
           rows.push({ when: ymd(new Date(Date.UTC(y, 0, 1))),
                       name: y + '년 회계연도 (근속 ' + yrs + '년차' + (d > 15 ? ', 가산 ' + (d - 15) + '일' : '') + ')',
-                      days: d });
+                      days: d, expires: new Date(Date.UTC(y, 11, 31)) });
           total += d;
           y++;
         }
       }
     } else {
-      // 2-B) 입사일 기준 — 매년 입사일에 발생
+      // 2-B) 입사일 기준 — 매년 입사일에 발생하고, 그 발생일로부터 1년간 쓴다.
       var n = 1;
       while (diffDays(addMonths(join, 12 * n), base) >= 0) {
         var dd = leaveDaysFor(n);
-        rows.push({ when: ymd(addMonths(join, 12 * n)),
-                    name: '근속 ' + n + '년차' + (dd > 15 ? ' (가산 ' + (dd - 15) + '일)' : ''), days: dd });
+        var on = addMonths(join, 12 * n);
+        rows.push({ when: ymd(on),
+                    name: '근속 ' + n + '년차' + (dd > 15 ? ' (가산 ' + (dd - 15) + '일)' : ''), days: dd,
+                    expires: addDays(addMonths(on, 12), -1) });
         total += dd;
         n++;
         if (n > 60) break;
       }
     }
 
+    // 3) 유효기간이 지난 발생분은 소멸한다(미사용분은 수당으로 정산되거나 사라진다).
+    var active = 0, expired = 0;
+    rows.forEach(function (r) {
+      r.alive = diffDays(base, r.expires) >= 0;
+      r.expiresLabel = ymd(r.expires) + '까지';
+      if (r.alive) active += r.days; else expired += r.days;
+    });
+
     total = Math.round(total * 10) / 10;
+    active = Math.round(active * 10) / 10;
+    expired = Math.round(expired * 10) / 10;
     var used = Math.max(0, num(opt.used));
-    var remain = Math.round((total - used) * 10) / 10;
+    var remain = Math.round((active - used) * 10) / 10;
 
     var mo = num(opt.monthlyOrdinary);
     var hourly = mo > 0 ? mo / R.work.monthly_standard_hours : 0;
@@ -400,7 +418,8 @@
     var pay = remain > 0 ? Math.floor(daily * remain) : 0;
 
     return {
-      rows: rows, total: total, used: used, remain: remain,
+      rows: rows, total: total, active: active, expired: expired,
+      used: used, remain: remain,
       serviceLabel: serviceLabel(join, base),
       hourly: Math.floor(hourly), daily: Math.floor(daily), pay: pay,
       nextOn: opt.mode === 'fiscal'
