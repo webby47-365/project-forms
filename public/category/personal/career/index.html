@@ -195,7 +195,27 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .detail img{max-width:100%}
 .preview{border:1px solid var(--line-img); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-img-2)}
-.preview img:last-child{border-bottom:0}
+/* 미리보기 이미지는 누르면 크게 보는 버튼이다 (모양은 그대로, 커서만 돋보기) */
+.pv-zoom{display:block; width:100%; margin:0; padding:0; border:0; background:none; cursor:zoom-in}
+.preview .pv-zoom:last-child img{border-bottom:0}
+/* 모바일 전용 요소 — '더 보기'·'탭하면 크게 보기'·HWPX 안내는 1000px 이하에서만 보인다 */
+.pv-more, .pv-hint, .dl-hwpx{display:none}
+/* 미리보기 확대(라이트박스) */
+.lb{position:fixed; inset:0; z-index:200; display:flex; overflow:auto; padding:58px 12px 24px;
+  background:rgba(10,16,28,.92); touch-action:pinch-zoom}
+.lb[hidden]{display:none}
+.lb img{flex:0 0 auto; margin:auto; width:800px; max-width:100%; height:auto; background:#fff;
+  box-shadow:0 6px 30px rgba(0,0,0,.45); touch-action:pinch-zoom}
+.lb-x{position:fixed; top:10px; right:10px; width:44px; height:44px; border:0; border-radius:50%;
+  background:rgba(255,255,255,.16); color:#fff; font-size:21px; line-height:44px; cursor:pointer}
+.lb-x:hover{background:rgba(255,255,255,.28)}
+html.lb-lock, html.lb-lock body{overflow:hidden}
+/* PC: 미리보기가 오른쪽 열보다 길 때(2페이지 이상 등)만 스크립트가 .stick 을 붙여
+   다운로드 패널이 화면에 남게 한다. 1페이지 서식은 오른쪽 열이 더 길어 붙이지 않는다 */
+@media (min-width:1001px){
+  .detail .meta.stick{position:sticky; top:78px; max-height:calc(100vh - 94px); overflow-y:auto;
+    scrollbar-width:thin}
+}
 .meta dl{display:grid; grid-template-columns:92px 1fr; gap:0; margin:18px 0 0; font-size:14px;
   border-top:1px solid var(--line)}
 .meta dt{padding:9px 0; color:var(--muted); border-bottom:1px solid var(--line-2)}
@@ -524,7 +544,22 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
-  .detail{grid-template-columns:1fr; gap:24px}
+  .detail{grid-template-columns:1fr; gap:0}
+  /* 상세가 한 줄로 쌓이면 제목·요약 → 다운로드 → 미리보기 순서로 보여준다.
+     .meta 상자를 풀어(display:contents) 안쪽 블록도 .detail 의 order 를 따르게 한다 (마크업 복제 없음) */
+  .detail .meta{display:contents}
+  .detail .meta > *{min-width:0}
+  .detail .meta > h1.page, .detail .meta > .lead{order:-3}
+  .detail .meta > .dlbox{order:-2}
+  .detail > .pv-col{order:-1; margin-top:20px}
+  .detail .meta > .series-box{margin-top:18px}
+  .preview.pv-fold:not(.open) .pv-zoom + .pv-zoom{display:none}
+  .preview.pv-fold:not(.open) .pv-zoom:first-child img{border-bottom:0}
+  .pv-hint{display:block; margin:6px 0 0; text-align:center; font-size:12px; color:var(--muted)}
+  .pv-more{display:block; width:100%; margin:8px 0 0; padding:11px 12px; border:1px solid var(--line-img);
+    border-radius:8px; background:#fff; color:var(--navy); font-family:inherit; font-size:14px;
+    font-weight:700; cursor:pointer}
+  .dlbox .dl-hwpx{display:block; margin:10px 0 0; font-size:12.5px; color:var(--muted)}
   .cols{grid-template-columns:1fr; gap:18px}
   aside.side{position:static; max-height:none; overflow:visible}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
@@ -557,6 +592,23 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .nav-toggle{display:block; min-width:40px; text-align:center}
   .search-box{flex:1 1 auto; min-width:0}
   .grid{grid-template-columns:repeat(2,1fr); gap:13px}
+  /* 카드 다운로드 버튼은 손가락으로 누를 크기(40px)로. 2열 카드 폭에서 14px 'Word'는 칸을 넘어 13px */
+  .dl{gap:8px}
+  .dl a{min-height:40px; display:flex; align-items:center; justify-content:center; padding:0;
+    font-size:13px; white-space:nowrap}
+  /* 계열 비교표는 좁은 화면에서 행마다 카드로 펼친다 (같은 표 마크업, 머리글만 숨김) */
+  .cmp, .cmp tbody, .cmp tr, .cmp td{display:block; width:auto}
+  .cmp thead{display:none}
+  .cmp tbody tr, .cmp tbody tr:nth-child(even){background:#fff; border:1px solid var(--line);
+    border-radius:var(--radius); padding:13px 14px; margin:0 0 10px}
+  .cmp th, .cmp td{border:0; padding:0}
+  .cmp .vname{font-size:15.5px; white-space:normal}
+  .cmp .vuse{margin:4px 0 0; font-size:13.5px}
+  .cmp .vpages{margin:3px 0 0; font-size:12.5px; color:var(--muted)}
+  .cmp .vpages::before{content:'분량 '}
+  .cmp .vdl{display:flex; gap:8px; margin:10px 0 0; white-space:normal}
+  .cmp .vdl a{flex:1 1 0; margin:0; min-height:40px; display:flex; align-items:center;
+    justify-content:center; padding:0 6px; font-size:14px}
   .grid.g4{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:24px}
   .hero{padding:32px 0 30px}
@@ -691,7 +743,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/career-description/career-description.pdf" download="경력기술서.pdf" title="경력기술서 PDF 다운로드">PDF</a>
       <a href="/files/career-description/career-description.docx" download="경력기술서.docx" title="경력기술서 Word 다운로드">Word</a>
-      <a href="/files/career-description/career-description.hwpx" download="경력기술서.hwpx" title="경력기술서 한글 다운로드">한글</a>
+      <a href="/files/career-description/career-description.hwpx" download="경력기술서.hwpx" title="경력기술서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -702,7 +754,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/career-desc-job/career-desc-job.pdf" download="경력기술서 (직무 중심).pdf" title="경력기술서 (직무 중심) PDF 다운로드">PDF</a>
       <a href="/files/career-desc-job/career-desc-job.docx" download="경력기술서 (직무 중심).docx" title="경력기술서 (직무 중심) Word 다운로드">Word</a>
-      <a href="/files/career-desc-job/career-desc-job.hwpx" download="경력기술서 (직무 중심).hwpx" title="경력기술서 (직무 중심) 한글 다운로드">한글</a>
+      <a href="/files/career-desc-job/career-desc-job.hwpx" download="경력기술서 (직무 중심).hwpx" title="경력기술서 (직무 중심) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -713,7 +765,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/career-desc-project/career-desc-project.pdf" download="경력기술서 (프로젝트 중심).pdf" title="경력기술서 (프로젝트 중심) PDF 다운로드">PDF</a>
       <a href="/files/career-desc-project/career-desc-project.docx" download="경력기술서 (프로젝트 중심).docx" title="경력기술서 (프로젝트 중심) Word 다운로드">Word</a>
-      <a href="/files/career-desc-project/career-desc-project.hwpx" download="경력기술서 (프로젝트 중심).hwpx" title="경력기술서 (프로젝트 중심) 한글 다운로드">한글</a>
+      <a href="/files/career-desc-project/career-desc-project.hwpx" download="경력기술서 (프로젝트 중심).hwpx" title="경력기술서 (프로젝트 중심) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -724,7 +776,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/resume-english/resume-english.pdf" download="영문 이력서 (English Resume).pdf" title="영문 이력서 (English Resume) PDF 다운로드">PDF</a>
       <a href="/files/resume-english/resume-english.docx" download="영문 이력서 (English Resume).docx" title="영문 이력서 (English Resume) Word 다운로드">Word</a>
-      <a href="/files/resume-english/resume-english.hwpx" download="영문 이력서 (English Resume).hwpx" title="영문 이력서 (English Resume) 한글 다운로드">한글</a>
+      <a href="/files/resume-english/resume-english.hwpx" download="영문 이력서 (English Resume).hwpx" title="영문 이력서 (English Resume) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -735,7 +787,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/english-cover-letter/english-cover-letter.pdf" download="영문 커버레터 (Cover Letter).pdf" title="영문 커버레터 (Cover Letter) PDF 다운로드">PDF</a>
       <a href="/files/english-cover-letter/english-cover-letter.docx" download="영문 커버레터 (Cover Letter).docx" title="영문 커버레터 (Cover Letter) Word 다운로드">Word</a>
-      <a href="/files/english-cover-letter/english-cover-letter.hwpx" download="영문 커버레터 (Cover Letter).hwpx" title="영문 커버레터 (Cover Letter) 한글 다운로드">한글</a>
+      <a href="/files/english-cover-letter/english-cover-letter.hwpx" download="영문 커버레터 (Cover Letter).hwpx" title="영문 커버레터 (Cover Letter) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -746,7 +798,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/resume-simple/resume-simple.pdf" download="이력서 (간편형).pdf" title="이력서 (간편형) PDF 다운로드">PDF</a>
       <a href="/files/resume-simple/resume-simple.docx" download="이력서 (간편형).docx" title="이력서 (간편형) Word 다운로드">Word</a>
-      <a href="/files/resume-simple/resume-simple.hwpx" download="이력서 (간편형).hwpx" title="이력서 (간편형) 한글 다운로드">한글</a>
+      <a href="/files/resume-simple/resume-simple.hwpx" download="이력서 (간편형).hwpx" title="이력서 (간편형) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -757,7 +809,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/resume-experienced/resume-experienced.pdf" download="이력서 (경력용).pdf" title="이력서 (경력용) PDF 다운로드">PDF</a>
       <a href="/files/resume-experienced/resume-experienced.docx" download="이력서 (경력용).docx" title="이력서 (경력용) Word 다운로드">Word</a>
-      <a href="/files/resume-experienced/resume-experienced.hwpx" download="이력서 (경력용).hwpx" title="이력서 (경력용) 한글 다운로드">한글</a>
+      <a href="/files/resume-experienced/resume-experienced.hwpx" download="이력서 (경력용).hwpx" title="이력서 (경력용) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -768,7 +820,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/resume-basic/resume-basic.pdf" download="이력서 (기본형).pdf" title="이력서 (기본형) PDF 다운로드">PDF</a>
       <a href="/files/resume-basic/resume-basic.docx" download="이력서 (기본형).docx" title="이력서 (기본형) Word 다운로드">Word</a>
-      <a href="/files/resume-basic/resume-basic.hwpx" download="이력서 (기본형).hwpx" title="이력서 (기본형) 한글 다운로드">한글</a>
+      <a href="/files/resume-basic/resume-basic.hwpx" download="이력서 (기본형).hwpx" title="이력서 (기본형) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -779,7 +831,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/resume-narrative/resume-narrative.pdf" download="이력서 (서술형).pdf" title="이력서 (서술형) PDF 다운로드">PDF</a>
       <a href="/files/resume-narrative/resume-narrative.docx" download="이력서 (서술형).docx" title="이력서 (서술형) Word 다운로드">Word</a>
-      <a href="/files/resume-narrative/resume-narrative.hwpx" download="이력서 (서술형).hwpx" title="이력서 (서술형) 한글 다운로드">한글</a>
+      <a href="/files/resume-narrative/resume-narrative.hwpx" download="이력서 (서술형).hwpx" title="이력서 (서술형) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -790,7 +842,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/resume-newcomer/resume-newcomer.pdf" download="이력서 (신입용).pdf" title="이력서 (신입용) PDF 다운로드">PDF</a>
       <a href="/files/resume-newcomer/resume-newcomer.docx" download="이력서 (신입용).docx" title="이력서 (신입용) Word 다운로드">Word</a>
-      <a href="/files/resume-newcomer/resume-newcomer.hwpx" download="이력서 (신입용).hwpx" title="이력서 (신입용) 한글 다운로드">한글</a>
+      <a href="/files/resume-newcomer/resume-newcomer.hwpx" download="이력서 (신입용).hwpx" title="이력서 (신입용) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -801,7 +853,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/resume-parttime/resume-parttime.pdf" download="이력서 (아르바이트용).pdf" title="이력서 (아르바이트용) PDF 다운로드">PDF</a>
       <a href="/files/resume-parttime/resume-parttime.docx" download="이력서 (아르바이트용).docx" title="이력서 (아르바이트용) Word 다운로드">Word</a>
-      <a href="/files/resume-parttime/resume-parttime.hwpx" download="이력서 (아르바이트용).hwpx" title="이력서 (아르바이트용) 한글 다운로드">한글</a>
+      <a href="/files/resume-parttime/resume-parttime.hwpx" download="이력서 (아르바이트용).hwpx" title="이력서 (아르바이트용) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -812,7 +864,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/job-application-form/job-application-form.pdf" download="입사지원서.pdf" title="입사지원서 PDF 다운로드">PDF</a>
       <a href="/files/job-application-form/job-application-form.docx" download="입사지원서.docx" title="입사지원서 Word 다운로드">Word</a>
-      <a href="/files/job-application-form/job-application-form.hwpx" download="입사지원서.hwpx" title="입사지원서 한글 다운로드">한글</a>
+      <a href="/files/job-application-form/job-application-form.hwpx" download="입사지원서.hwpx" title="입사지원서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -823,7 +875,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-experienced/cover-letter-experienced.pdf" download="자기소개서 (경력용).pdf" title="자기소개서 (경력용) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-experienced/cover-letter-experienced.docx" download="자기소개서 (경력용).docx" title="자기소개서 (경력용) Word 다운로드">Word</a>
-      <a href="/files/cover-letter-experienced/cover-letter-experienced.hwpx" download="자기소개서 (경력용).hwpx" title="자기소개서 (경력용) 한글 다운로드">한글</a>
+      <a href="/files/cover-letter-experienced/cover-letter-experienced.hwpx" download="자기소개서 (경력용).hwpx" title="자기소개서 (경력용) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -834,7 +886,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter/cover-letter.pdf" download="자기소개서 (기본형).pdf" title="자기소개서 (기본형) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter/cover-letter.docx" download="자기소개서 (기본형).docx" title="자기소개서 (기본형) Word 다운로드">Word</a>
-      <a href="/files/cover-letter/cover-letter.hwpx" download="자기소개서 (기본형).hwpx" title="자기소개서 (기본형) 한글 다운로드">한글</a>
+      <a href="/files/cover-letter/cover-letter.hwpx" download="자기소개서 (기본형).hwpx" title="자기소개서 (기본형) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -845,7 +897,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-newcomer/cover-letter-newcomer.pdf" download="자기소개서 (신입용).pdf" title="자기소개서 (신입용) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-newcomer/cover-letter-newcomer.docx" download="자기소개서 (신입용).docx" title="자기소개서 (신입용) Word 다운로드">Word</a>
-      <a href="/files/cover-letter-newcomer/cover-letter-newcomer.hwpx" download="자기소개서 (신입용).hwpx" title="자기소개서 (신입용) 한글 다운로드">한글</a>
+      <a href="/files/cover-letter-newcomer/cover-letter-newcomer.hwpx" download="자기소개서 (신입용).hwpx" title="자기소개서 (신입용) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -856,7 +908,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-free/cover-letter-free.pdf" download="자기소개서 (자유양식).pdf" title="자기소개서 (자유양식) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-free/cover-letter-free.docx" download="자기소개서 (자유양식).docx" title="자기소개서 (자유양식) Word 다운로드">Word</a>
-      <a href="/files/cover-letter-free/cover-letter-free.hwpx" download="자기소개서 (자유양식).hwpx" title="자기소개서 (자유양식) 한글 다운로드">한글</a>
+      <a href="/files/cover-letter-free/cover-letter-free.hwpx" download="자기소개서 (자유양식).hwpx" title="자기소개서 (자유양식) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -867,7 +919,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-star/cover-letter-star.pdf" download="자기소개서 (항목형·STAR).pdf" title="자기소개서 (항목형·STAR) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-star/cover-letter-star.docx" download="자기소개서 (항목형·STAR).docx" title="자기소개서 (항목형·STAR) Word 다운로드">Word</a>
-      <a href="/files/cover-letter-star/cover-letter-star.hwpx" download="자기소개서 (항목형·STAR).hwpx" title="자기소개서 (항목형·STAR) 한글 다운로드">한글</a>
+      <a href="/files/cover-letter-star/cover-letter-star.hwpx" download="자기소개서 (항목형·STAR).hwpx" title="자기소개서 (항목형·STAR) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -878,7 +930,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/recommendation-letter/recommendation-letter.pdf" download="추천서.pdf" title="추천서 PDF 다운로드">PDF</a>
       <a href="/files/recommendation-letter/recommendation-letter.docx" download="추천서.docx" title="추천서 Word 다운로드">Word</a>
-      <a href="/files/recommendation-letter/recommendation-letter.hwpx" download="추천서.hwpx" title="추천서 한글 다운로드">한글</a>
+      <a href="/files/recommendation-letter/recommendation-letter.hwpx" download="추천서.hwpx" title="추천서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -889,7 +941,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/reference-check-consent/reference-check-consent.pdf" download="평판조회 동의서.pdf" title="평판조회 동의서 PDF 다운로드">PDF</a>
       <a href="/files/reference-check-consent/reference-check-consent.docx" download="평판조회 동의서.docx" title="평판조회 동의서 Word 다운로드">Word</a>
-      <a href="/files/reference-check-consent/reference-check-consent.hwpx" download="평판조회 동의서.hwpx" title="평판조회 동의서 한글 다운로드">한글</a>
+      <a href="/files/reference-check-consent/reference-check-consent.hwpx" download="평판조회 동의서.hwpx" title="평판조회 동의서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -900,7 +952,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/portfolio-cover/portfolio-cover.pdf" download="포트폴리오 표지.pdf" title="포트폴리오 표지 PDF 다운로드">PDF</a>
       <a href="/files/portfolio-cover/portfolio-cover.docx" download="포트폴리오 표지.docx" title="포트폴리오 표지 Word 다운로드">Word</a>
-      <a href="/files/portfolio-cover/portfolio-cover.hwpx" download="포트폴리오 표지.hwpx" title="포트폴리오 표지 한글 다운로드">한글</a>
+      <a href="/files/portfolio-cover/portfolio-cover.hwpx" download="포트폴리오 표지.hwpx" title="포트폴리오 표지 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>      </div>      

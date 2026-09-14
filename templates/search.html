@@ -69,10 +69,10 @@
   }
 
   function cardHtml(f){
-    var fmts = [['pdf','PDF'], ['docx','Word'], ['hwpx','한글']];
+    var fmts = [['pdf','PDF',''], ['docx','Word',''], ['hwpx','한글',' — HWPX (한글 2010 이상)']];
     var links = fmts.map(function(x){
       var dl = INTERSTITIAL ? '' : ' download="' + esc(fileName(f.title, x[0])) + '"';
-      return '<a href="' + dlHref(f.id, x[0]) + '"' + dl + ' title="' + esc(f.title) + ' ' + x[1] + ' 다운로드">' + x[1] + '</a>';
+      return '<a href="' + dlHref(f.id, x[0]) + '"' + dl + ' title="' + esc(f.title) + ' ' + x[1] + ' 다운로드' + x[2] + '">' + x[1] + '</a>';
     }).join('');
     var badge = f.pages > 1 ? '<span class="badge">' + f.pages + '페이지</span>' : '';
     return '<article class="card" data-form-title="' + esc(f.title) + '">' +

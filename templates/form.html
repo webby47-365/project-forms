@@ -9,12 +9,16 @@
   </div>
 
   <div class="detail">
-    <div>
-      <div class="preview">
+    <div class="pv-col">
+      <div class="preview{% if f.previews|length > 1 %} pv-fold{% endif %}" id="pv">
         {%- for p in f.previews %}
-        <img src="/files/{{ f.id }}/{{ p }}" alt="{{ f.title }} {{ loop.index }}페이지 작성 예시 미리보기" width="800" height="1131"{% if loop.index > 1 %} loading="lazy"{% endif %}>
+        <button type="button" class="pv-zoom" aria-label="{{ loop.index }}페이지 크게 보기"><img src="/files/{{ f.id }}/{{ p }}" alt="{{ f.title }} {{ loop.index }}페이지 작성 예시 미리보기" width="800" height="1131"{% if loop.index > 1 %} loading="lazy"{% endif %}></button>
         {%- endfor %}
       </div>
+      <p class="pv-hint">탭하면 크게 보기</p>
+      {%- if f.previews|length > 1 %}
+      <button type="button" class="pv-more" id="pvMore">나머지 {{ f.previews|length - 1 }}페이지 더 보기</button>
+      {%- endif %}
       {%- if f.sample_preview %}
       <p class="preview-note">
         <span aria-hidden="true">✎</span>
@@ -51,8 +55,9 @@
         <div class="dlbtns">
           <a href="{{ dl.pdf }}"{% if not ads.download_interstitial %} download="{{ names.pdf }}"{% endif %}>PDF<span class="fmt">{{ kb.pdf }} KB</span></a>
           <a href="{{ dl.docx }}"{% if not ads.download_interstitial %} download="{{ names.docx }}"{% endif %}>Word<span class="fmt">{{ kb.docx }} KB</span></a>
-          <a href="{{ dl.hwpx }}"{% if not ads.download_interstitial %} download="{{ names.hwpx }}"{% endif %}>한글<span class="fmt">{{ kb.hwpx }} KB</span></a>
+          <a href="{{ dl.hwpx }}"{% if not ads.download_interstitial %} download="{{ names.hwpx }}"{% endif %} title="HWPX (한글 2010 이상)">한글<span class="fmt">{{ kb.hwpx }} KB</span></a>
         </div>
+        <p class="dl-hwpx">한글 파일은 HWPX 형식입니다 — 한글 2010 이상에서 열립니다.</p>
       </div>
 
       {%- if f.seal %}
@@ -162,6 +167,50 @@
   </div>
   {%- endif %}
 </div>
+<script>
+(function(){
+  var pv=document.getElementById('pv'); if(!pv) return;
+  // 미리보기 확대 — 원본 이미지를 어두운 배경 위에 띄운다. ✕·배경·Esc 로 닫고, 핀치 줌은 허용한다
+  var lb=null, img=null, xb=null, back=null;
+  function close(){
+    if(!lb || lb.hidden) return;
+    lb.hidden=true; document.documentElement.classList.remove('lb-lock');
+    if(back) back.focus();
+  }
+  function open(src, alt, from){
+    if(!lb){
+      lb=document.createElement('div'); lb.className='lb'; lb.hidden=true;
+      lb.setAttribute('role','dialog'); lb.setAttribute('aria-modal','true'); lb.setAttribute('aria-label','미리보기 크게 보기');
+      lb.innerHTML='<button type="button" class="lb-x" aria-label="닫기">✕</button><img alt="">';
+      document.body.appendChild(lb); xb=lb.firstChild; img=lb.lastChild;
+      lb.addEventListener('click', function(e){ if(e.target!==img) close(); });
+    }
+    img.src=src; img.alt=alt; back=from;
+    lb.hidden=false; lb.scrollTop=0; document.documentElement.classList.add('lb-lock'); xb.focus();
+  }
+  pv.addEventListener('click', function(e){
+    var b=e.target.closest('.pv-zoom'); if(!b) return;
+    var i=b.querySelector('img'); open(i.currentSrc || i.src, i.alt, b);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+
+  // 모바일: 2페이지 이상이면 첫 페이지만 보이고 버튼으로 나머지를 펼친다 (PC는 버튼이 보이지 않는다)
+  var more=document.getElementById('pvMore');
+  if(more) more.addEventListener('click', function(){
+    pv.classList.add('open'); more.remove();
+    var next=pv.querySelectorAll('.pv-zoom')[1]; if(next) next.focus({preventScroll:true});
+  });
+
+  // PC: 미리보기 열이 오른쪽 열보다 길 때만 오른쪽 열을 화면에 고정한다
+  var col=pv.parentNode, meta=document.querySelector('.detail .meta'), wide=window.matchMedia('(min-width:1001px)');
+  function fit(){
+    if(!meta) return;
+    meta.classList.remove('stick');
+    if(wide.matches && meta.offsetHeight < col.offsetHeight) meta.classList.add('stick');
+  }
+  fit(); window.addEventListener('load', fit); window.addEventListener('resize', fit);
+})();
+</script>
 <script type="application/ld+json">
 {{ jsonld | safe }}
 </script>

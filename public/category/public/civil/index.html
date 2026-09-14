@@ -195,7 +195,27 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .detail img{max-width:100%}
 .preview{border:1px solid var(--line-img); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-img-2)}
-.preview img:last-child{border-bottom:0}
+/* 미리보기 이미지는 누르면 크게 보는 버튼이다 (모양은 그대로, 커서만 돋보기) */
+.pv-zoom{display:block; width:100%; margin:0; padding:0; border:0; background:none; cursor:zoom-in}
+.preview .pv-zoom:last-child img{border-bottom:0}
+/* 모바일 전용 요소 — '더 보기'·'탭하면 크게 보기'·HWPX 안내는 1000px 이하에서만 보인다 */
+.pv-more, .pv-hint, .dl-hwpx{display:none}
+/* 미리보기 확대(라이트박스) */
+.lb{position:fixed; inset:0; z-index:200; display:flex; overflow:auto; padding:58px 12px 24px;
+  background:rgba(10,16,28,.92); touch-action:pinch-zoom}
+.lb[hidden]{display:none}
+.lb img{flex:0 0 auto; margin:auto; width:800px; max-width:100%; height:auto; background:#fff;
+  box-shadow:0 6px 30px rgba(0,0,0,.45); touch-action:pinch-zoom}
+.lb-x{position:fixed; top:10px; right:10px; width:44px; height:44px; border:0; border-radius:50%;
+  background:rgba(255,255,255,.16); color:#fff; font-size:21px; line-height:44px; cursor:pointer}
+.lb-x:hover{background:rgba(255,255,255,.28)}
+html.lb-lock, html.lb-lock body{overflow:hidden}
+/* PC: 미리보기가 오른쪽 열보다 길 때(2페이지 이상 등)만 스크립트가 .stick 을 붙여
+   다운로드 패널이 화면에 남게 한다. 1페이지 서식은 오른쪽 열이 더 길어 붙이지 않는다 */
+@media (min-width:1001px){
+  .detail .meta.stick{position:sticky; top:78px; max-height:calc(100vh - 94px); overflow-y:auto;
+    scrollbar-width:thin}
+}
 .meta dl{display:grid; grid-template-columns:92px 1fr; gap:0; margin:18px 0 0; font-size:14px;
   border-top:1px solid var(--line)}
 .meta dt{padding:9px 0; color:var(--muted); border-bottom:1px solid var(--line-2)}
@@ -524,7 +544,22 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
-  .detail{grid-template-columns:1fr; gap:24px}
+  .detail{grid-template-columns:1fr; gap:0}
+  /* 상세가 한 줄로 쌓이면 제목·요약 → 다운로드 → 미리보기 순서로 보여준다.
+     .meta 상자를 풀어(display:contents) 안쪽 블록도 .detail 의 order 를 따르게 한다 (마크업 복제 없음) */
+  .detail .meta{display:contents}
+  .detail .meta > *{min-width:0}
+  .detail .meta > h1.page, .detail .meta > .lead{order:-3}
+  .detail .meta > .dlbox{order:-2}
+  .detail > .pv-col{order:-1; margin-top:20px}
+  .detail .meta > .series-box{margin-top:18px}
+  .preview.pv-fold:not(.open) .pv-zoom + .pv-zoom{display:none}
+  .preview.pv-fold:not(.open) .pv-zoom:first-child img{border-bottom:0}
+  .pv-hint{display:block; margin:6px 0 0; text-align:center; font-size:12px; color:var(--muted)}
+  .pv-more{display:block; width:100%; margin:8px 0 0; padding:11px 12px; border:1px solid var(--line-img);
+    border-radius:8px; background:#fff; color:var(--navy); font-family:inherit; font-size:14px;
+    font-weight:700; cursor:pointer}
+  .dlbox .dl-hwpx{display:block; margin:10px 0 0; font-size:12.5px; color:var(--muted)}
   .cols{grid-template-columns:1fr; gap:18px}
   aside.side{position:static; max-height:none; overflow:visible}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
@@ -557,6 +592,23 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .nav-toggle{display:block; min-width:40px; text-align:center}
   .search-box{flex:1 1 auto; min-width:0}
   .grid{grid-template-columns:repeat(2,1fr); gap:13px}
+  /* 카드 다운로드 버튼은 손가락으로 누를 크기(40px)로. 2열 카드 폭에서 14px 'Word'는 칸을 넘어 13px */
+  .dl{gap:8px}
+  .dl a{min-height:40px; display:flex; align-items:center; justify-content:center; padding:0;
+    font-size:13px; white-space:nowrap}
+  /* 계열 비교표는 좁은 화면에서 행마다 카드로 펼친다 (같은 표 마크업, 머리글만 숨김) */
+  .cmp, .cmp tbody, .cmp tr, .cmp td{display:block; width:auto}
+  .cmp thead{display:none}
+  .cmp tbody tr, .cmp tbody tr:nth-child(even){background:#fff; border:1px solid var(--line);
+    border-radius:var(--radius); padding:13px 14px; margin:0 0 10px}
+  .cmp th, .cmp td{border:0; padding:0}
+  .cmp .vname{font-size:15.5px; white-space:normal}
+  .cmp .vuse{margin:4px 0 0; font-size:13.5px}
+  .cmp .vpages{margin:3px 0 0; font-size:12.5px; color:var(--muted)}
+  .cmp .vpages::before{content:'분량 '}
+  .cmp .vdl{display:flex; gap:8px; margin:10px 0 0; white-space:normal}
+  .cmp .vdl a{flex:1 1 0; margin:0; min-height:40px; display:flex; align-items:center;
+    justify-content:center; padding:0 6px; font-size:14px}
   .grid.g4{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:24px}
   .hero{padding:32px 0 30px}
@@ -691,7 +743,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/road-repair-request/road-repair-request.pdf" download="도로·가로등 보수 요청 민원.pdf" title="도로·가로등 보수 요청 민원 PDF 다운로드">PDF</a>
       <a href="/files/road-repair-request/road-repair-request.docx" download="도로·가로등 보수 요청 민원.docx" title="도로·가로등 보수 요청 민원 Word 다운로드">Word</a>
-      <a href="/files/road-repair-request/road-repair-request.hwpx" download="도로·가로등 보수 요청 민원.hwpx" title="도로·가로등 보수 요청 민원 한글 다운로드">한글</a>
+      <a href="/files/road-repair-request/road-repair-request.hwpx" download="도로·가로등 보수 요청 민원.hwpx" title="도로·가로등 보수 요청 민원 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -702,7 +754,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/civil-petition/civil-petition.pdf" download="민원신청서.pdf" title="민원신청서 PDF 다운로드">PDF</a>
       <a href="/files/civil-petition/civil-petition.docx" download="민원신청서.docx" title="민원신청서 Word 다운로드">Word</a>
-      <a href="/files/civil-petition/civil-petition.hwpx" download="민원신청서.hwpx" title="민원신청서 한글 다운로드">한글</a>
+      <a href="/files/civil-petition/civil-petition.hwpx" download="민원신청서.hwpx" title="민원신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -713,7 +765,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/illegal-dumping-report/illegal-dumping-report.pdf" download="불법투기 신고서.pdf" title="불법투기 신고서 PDF 다운로드">PDF</a>
       <a href="/files/illegal-dumping-report/illegal-dumping-report.docx" download="불법투기 신고서.docx" title="불법투기 신고서 Word 다운로드">Word</a>
-      <a href="/files/illegal-dumping-report/illegal-dumping-report.hwpx" download="불법투기 신고서.hwpx" title="불법투기 신고서 한글 다운로드">한글</a>
+      <a href="/files/illegal-dumping-report/illegal-dumping-report.hwpx" download="불법투기 신고서.hwpx" title="불법투기 신고서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -724,7 +776,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/seal-certificate-poa/seal-certificate-poa.pdf" download="인감증명 발급 위임장.pdf" title="인감증명 발급 위임장 PDF 다운로드">PDF</a>
       <a href="/files/seal-certificate-poa/seal-certificate-poa.docx" download="인감증명 발급 위임장.docx" title="인감증명 발급 위임장 Word 다운로드">Word</a>
-      <a href="/files/seal-certificate-poa/seal-certificate-poa.hwpx" download="인감증명 발급 위임장.hwpx" title="인감증명 발급 위임장 한글 다운로드">한글</a>
+      <a href="/files/seal-certificate-poa/seal-certificate-poa.hwpx" download="인감증명 발급 위임장.hwpx" title="인감증명 발급 위임장 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -735,7 +787,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/moving-in-report/moving-in-report.pdf" download="전입신고서.pdf" title="전입신고서 PDF 다운로드">PDF</a>
       <a href="/files/moving-in-report/moving-in-report.docx" download="전입신고서.docx" title="전입신고서 Word 다운로드">Word</a>
-      <a href="/files/moving-in-report/moving-in-report.hwpx" download="전입신고서.hwpx" title="전입신고서 한글 다운로드">한글</a>
+      <a href="/files/moving-in-report/moving-in-report.hwpx" download="전입신고서.hwpx" title="전입신고서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -746,7 +798,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/disclosure-objection/disclosure-objection.pdf" download="정보공개 이의신청서.pdf" title="정보공개 이의신청서 PDF 다운로드">PDF</a>
       <a href="/files/disclosure-objection/disclosure-objection.docx" download="정보공개 이의신청서.docx" title="정보공개 이의신청서 Word 다운로드">Word</a>
-      <a href="/files/disclosure-objection/disclosure-objection.hwpx" download="정보공개 이의신청서.hwpx" title="정보공개 이의신청서 한글 다운로드">한글</a>
+      <a href="/files/disclosure-objection/disclosure-objection.hwpx" download="정보공개 이의신청서.hwpx" title="정보공개 이의신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -757,7 +809,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/info-disclosure-request/info-disclosure-request.pdf" download="정보공개청구서.pdf" title="정보공개청구서 PDF 다운로드">PDF</a>
       <a href="/files/info-disclosure-request/info-disclosure-request.docx" download="정보공개청구서.docx" title="정보공개청구서 Word 다운로드">Word</a>
-      <a href="/files/info-disclosure-request/info-disclosure-request.hwpx" download="정보공개청구서.hwpx" title="정보공개청구서 한글 다운로드">한글</a>
+      <a href="/files/info-disclosure-request/info-disclosure-request.hwpx" download="정보공개청구서.hwpx" title="정보공개청구서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -768,7 +820,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/resident-registration-request/resident-registration-request.pdf" download="주민등록등본 교부신청서.pdf" title="주민등록등본 교부신청서 PDF 다운로드">PDF</a>
       <a href="/files/resident-registration-request/resident-registration-request.docx" download="주민등록등본 교부신청서.docx" title="주민등록등본 교부신청서 Word 다운로드">Word</a>
-      <a href="/files/resident-registration-request/resident-registration-request.hwpx" download="주민등록등본 교부신청서.hwpx" title="주민등록등본 교부신청서 한글 다운로드">한글</a>
+      <a href="/files/resident-registration-request/resident-registration-request.hwpx" download="주민등록등본 교부신청서.hwpx" title="주민등록등본 교부신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -779,7 +831,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/parking-fine-objection/parking-fine-objection.pdf" download="주차위반 과태료 이의신청서.pdf" title="주차위반 과태료 이의신청서 PDF 다운로드">PDF</a>
       <a href="/files/parking-fine-objection/parking-fine-objection.docx" download="주차위반 과태료 이의신청서.docx" title="주차위반 과태료 이의신청서 Word 다운로드">Word</a>
-      <a href="/files/parking-fine-objection/parking-fine-objection.hwpx" download="주차위반 과태료 이의신청서.hwpx" title="주차위반 과태료 이의신청서 한글 다운로드">한글</a>
+      <a href="/files/parking-fine-objection/parking-fine-objection.hwpx" download="주차위반 과태료 이의신청서.hwpx" title="주차위반 과태료 이의신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -790,7 +842,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/noise-complaint/noise-complaint.pdf" download="층간소음 민원 신청서.pdf" title="층간소음 민원 신청서 PDF 다운로드">PDF</a>
       <a href="/files/noise-complaint/noise-complaint.docx" download="층간소음 민원 신청서.docx" title="층간소음 민원 신청서 Word 다운로드">Word</a>
-      <a href="/files/noise-complaint/noise-complaint.hwpx" download="층간소음 민원 신청서.hwpx" title="층간소음 민원 신청서 한글 다운로드">한글</a>
+      <a href="/files/noise-complaint/noise-complaint.hwpx" download="층간소음 민원 신청서.hwpx" title="층간소음 민원 신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>      </div>      

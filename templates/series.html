@@ -21,11 +21,11 @@
         <tr>
           <td class="vname"><a href="/form/{{ f.id }}/">{{ f.variant or f.title }}</a></td>
           <td class="vuse">{{ f.variant_use or f.summary }}</td>
-          <td>{{ f.pages }}쪽</td>
+          <td class="vpages">{{ f.pages }}쪽</td>
           <td class="vdl" data-form-title="{{ f.title }}">
             <a href="{{ dl_map[f.id].pdf }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].pdf }}"{% endif %}>PDF</a>
             <a href="{{ dl_map[f.id].docx }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].docx }}"{% endif %}>Word</a>
-            <a href="{{ dl_map[f.id].hwpx }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].hwpx }}"{% endif %}>한글</a>
+            <a href="{{ dl_map[f.id].hwpx }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].hwpx }}"{% endif %} title="HWPX (한글 2010 이상)">한글</a>
           </td>
         </tr>
         {%- endfor %}

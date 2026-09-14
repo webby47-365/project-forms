@@ -195,7 +195,27 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .detail img{max-width:100%}
 .preview{border:1px solid var(--line-img); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-img-2)}
-.preview img:last-child{border-bottom:0}
+/* 미리보기 이미지는 누르면 크게 보는 버튼이다 (모양은 그대로, 커서만 돋보기) */
+.pv-zoom{display:block; width:100%; margin:0; padding:0; border:0; background:none; cursor:zoom-in}
+.preview .pv-zoom:last-child img{border-bottom:0}
+/* 모바일 전용 요소 — '더 보기'·'탭하면 크게 보기'·HWPX 안내는 1000px 이하에서만 보인다 */
+.pv-more, .pv-hint, .dl-hwpx{display:none}
+/* 미리보기 확대(라이트박스) */
+.lb{position:fixed; inset:0; z-index:200; display:flex; overflow:auto; padding:58px 12px 24px;
+  background:rgba(10,16,28,.92); touch-action:pinch-zoom}
+.lb[hidden]{display:none}
+.lb img{flex:0 0 auto; margin:auto; width:800px; max-width:100%; height:auto; background:#fff;
+  box-shadow:0 6px 30px rgba(0,0,0,.45); touch-action:pinch-zoom}
+.lb-x{position:fixed; top:10px; right:10px; width:44px; height:44px; border:0; border-radius:50%;
+  background:rgba(255,255,255,.16); color:#fff; font-size:21px; line-height:44px; cursor:pointer}
+.lb-x:hover{background:rgba(255,255,255,.28)}
+html.lb-lock, html.lb-lock body{overflow:hidden}
+/* PC: 미리보기가 오른쪽 열보다 길 때(2페이지 이상 등)만 스크립트가 .stick 을 붙여
+   다운로드 패널이 화면에 남게 한다. 1페이지 서식은 오른쪽 열이 더 길어 붙이지 않는다 */
+@media (min-width:1001px){
+  .detail .meta.stick{position:sticky; top:78px; max-height:calc(100vh - 94px); overflow-y:auto;
+    scrollbar-width:thin}
+}
 .meta dl{display:grid; grid-template-columns:92px 1fr; gap:0; margin:18px 0 0; font-size:14px;
   border-top:1px solid var(--line)}
 .meta dt{padding:9px 0; color:var(--muted); border-bottom:1px solid var(--line-2)}
@@ -524,7 +544,22 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
-  .detail{grid-template-columns:1fr; gap:24px}
+  .detail{grid-template-columns:1fr; gap:0}
+  /* 상세가 한 줄로 쌓이면 제목·요약 → 다운로드 → 미리보기 순서로 보여준다.
+     .meta 상자를 풀어(display:contents) 안쪽 블록도 .detail 의 order 를 따르게 한다 (마크업 복제 없음) */
+  .detail .meta{display:contents}
+  .detail .meta > *{min-width:0}
+  .detail .meta > h1.page, .detail .meta > .lead{order:-3}
+  .detail .meta > .dlbox{order:-2}
+  .detail > .pv-col{order:-1; margin-top:20px}
+  .detail .meta > .series-box{margin-top:18px}
+  .preview.pv-fold:not(.open) .pv-zoom + .pv-zoom{display:none}
+  .preview.pv-fold:not(.open) .pv-zoom:first-child img{border-bottom:0}
+  .pv-hint{display:block; margin:6px 0 0; text-align:center; font-size:12px; color:var(--muted)}
+  .pv-more{display:block; width:100%; margin:8px 0 0; padding:11px 12px; border:1px solid var(--line-img);
+    border-radius:8px; background:#fff; color:var(--navy); font-family:inherit; font-size:14px;
+    font-weight:700; cursor:pointer}
+  .dlbox .dl-hwpx{display:block; margin:10px 0 0; font-size:12.5px; color:var(--muted)}
   .cols{grid-template-columns:1fr; gap:18px}
   aside.side{position:static; max-height:none; overflow:visible}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
@@ -557,6 +592,23 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .nav-toggle{display:block; min-width:40px; text-align:center}
   .search-box{flex:1 1 auto; min-width:0}
   .grid{grid-template-columns:repeat(2,1fr); gap:13px}
+  /* 카드 다운로드 버튼은 손가락으로 누를 크기(40px)로. 2열 카드 폭에서 14px 'Word'는 칸을 넘어 13px */
+  .dl{gap:8px}
+  .dl a{min-height:40px; display:flex; align-items:center; justify-content:center; padding:0;
+    font-size:13px; white-space:nowrap}
+  /* 계열 비교표는 좁은 화면에서 행마다 카드로 펼친다 (같은 표 마크업, 머리글만 숨김) */
+  .cmp, .cmp tbody, .cmp tr, .cmp td{display:block; width:auto}
+  .cmp thead{display:none}
+  .cmp tbody tr, .cmp tbody tr:nth-child(even){background:#fff; border:1px solid var(--line);
+    border-radius:var(--radius); padding:13px 14px; margin:0 0 10px}
+  .cmp th, .cmp td{border:0; padding:0}
+  .cmp .vname{font-size:15.5px; white-space:normal}
+  .cmp .vuse{margin:4px 0 0; font-size:13.5px}
+  .cmp .vpages{margin:3px 0 0; font-size:12.5px; color:var(--muted)}
+  .cmp .vpages::before{content:'분량 '}
+  .cmp .vdl{display:flex; gap:8px; margin:10px 0 0; white-space:normal}
+  .cmp .vdl a{flex:1 1 0; margin:0; min-height:40px; display:flex; align-items:center;
+    justify-content:center; padding:0 6px; font-size:14px}
   .grid.g4{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:24px}
   .hero{padding:32px 0 30px}
@@ -651,47 +703,47 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
       <tbody>        <tr>
           <td class="vname"><a href="/form/certified-notice/">기본형</a></td>
           <td class="vuse">상대방에게 공식 통지 내용을 기록으로 남길 때 씁니다.</td>
-          <td>1쪽</td>
+          <td class="vpages">1쪽</td>
           <td class="vdl" data-form-title="내용증명">
             <a href="/files/certified-notice/certified-notice.pdf" download="내용증명.pdf">PDF</a>
             <a href="/files/certified-notice/certified-notice.docx" download="내용증명.docx">Word</a>
-            <a href="/files/certified-notice/certified-notice.hwpx" download="내용증명.hwpx">한글</a>
+            <a href="/files/certified-notice/certified-notice.hwpx" download="내용증명.hwpx" title="HWPX (한글 2010 이상)">한글</a>
           </td>
         </tr>        <tr>
           <td class="vname"><a href="/form/certified-notice-loan/">대여금 반환</a></td>
           <td class="vuse">빌려준 돈을 갚지 않는 채무자에게 반환을 요구할 때 씁니다.</td>
-          <td>1쪽</td>
+          <td class="vpages">1쪽</td>
           <td class="vdl" data-form-title="내용증명 (대여금 반환청구)">
             <a href="/files/certified-notice-loan/certified-notice-loan.pdf" download="내용증명 (대여금 반환청구).pdf">PDF</a>
             <a href="/files/certified-notice-loan/certified-notice-loan.docx" download="내용증명 (대여금 반환청구).docx">Word</a>
-            <a href="/files/certified-notice-loan/certified-notice-loan.hwpx" download="내용증명 (대여금 반환청구).hwpx">한글</a>
+            <a href="/files/certified-notice-loan/certified-notice-loan.hwpx" download="내용증명 (대여금 반환청구).hwpx" title="HWPX (한글 2010 이상)">한글</a>
           </td>
         </tr>        <tr>
           <td class="vname"><a href="/form/certified-notice-deposit/">보증금 반환</a></td>
           <td class="vuse">임대차 종료 후 보증금을 돌려받지 못했을 때 씁니다.</td>
-          <td>1쪽</td>
+          <td class="vpages">1쪽</td>
           <td class="vdl" data-form-title="내용증명 (보증금 반환청구)">
             <a href="/files/certified-notice-deposit/certified-notice-deposit.pdf" download="내용증명 (보증금 반환청구).pdf">PDF</a>
             <a href="/files/certified-notice-deposit/certified-notice-deposit.docx" download="내용증명 (보증금 반환청구).docx">Word</a>
-            <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx">한글</a>
+            <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx" title="HWPX (한글 2010 이상)">한글</a>
           </td>
         </tr>        <tr>
           <td class="vname"><a href="/form/certified-notice-terminate/">계약 해지</a></td>
           <td class="vuse">계약 상대방에게 해지 의사를 통보할 때 씁니다.</td>
-          <td>1쪽</td>
+          <td class="vpages">1쪽</td>
           <td class="vdl" data-form-title="내용증명 (계약 해지 통보)">
             <a href="/files/certified-notice-terminate/certified-notice-terminate.pdf" download="내용증명 (계약 해지 통보).pdf">PDF</a>
             <a href="/files/certified-notice-terminate/certified-notice-terminate.docx" download="내용증명 (계약 해지 통보).docx">Word</a>
-            <a href="/files/certified-notice-terminate/certified-notice-terminate.hwpx" download="내용증명 (계약 해지 통보).hwpx">한글</a>
+            <a href="/files/certified-notice-terminate/certified-notice-terminate.hwpx" download="내용증명 (계약 해지 통보).hwpx" title="HWPX (한글 2010 이상)">한글</a>
           </td>
         </tr>        <tr>
           <td class="vname"><a href="/form/certified-notice-wage/">임금체불</a></td>
           <td class="vuse">임금·퇴직금 등 체불된 금품 지급을 요구할 때 씁니다.</td>
-          <td>1쪽</td>
+          <td class="vpages">1쪽</td>
           <td class="vdl" data-form-title="내용증명 (임금체불 청구)">
             <a href="/files/certified-notice-wage/certified-notice-wage.pdf" download="내용증명 (임금체불 청구).pdf">PDF</a>
             <a href="/files/certified-notice-wage/certified-notice-wage.docx" download="내용증명 (임금체불 청구).docx">Word</a>
-            <a href="/files/certified-notice-wage/certified-notice-wage.hwpx" download="내용증명 (임금체불 청구).hwpx">한글</a>
+            <a href="/files/certified-notice-wage/certified-notice-wage.hwpx" download="내용증명 (임금체불 청구).hwpx" title="HWPX (한글 2010 이상)">한글</a>
           </td>
         </tr>      </tbody>
     </table>
@@ -708,7 +760,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice/certified-notice.pdf" download="내용증명.pdf" title="내용증명 PDF 다운로드">PDF</a>
       <a href="/files/certified-notice/certified-notice.docx" download="내용증명.docx" title="내용증명 Word 다운로드">Word</a>
-      <a href="/files/certified-notice/certified-notice.hwpx" download="내용증명.hwpx" title="내용증명 한글 다운로드">한글</a>
+      <a href="/files/certified-notice/certified-notice.hwpx" download="내용증명.hwpx" title="내용증명 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -719,7 +771,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice-loan/certified-notice-loan.pdf" download="내용증명 (대여금 반환청구).pdf" title="내용증명 (대여금 반환청구) PDF 다운로드">PDF</a>
       <a href="/files/certified-notice-loan/certified-notice-loan.docx" download="내용증명 (대여금 반환청구).docx" title="내용증명 (대여금 반환청구) Word 다운로드">Word</a>
-      <a href="/files/certified-notice-loan/certified-notice-loan.hwpx" download="내용증명 (대여금 반환청구).hwpx" title="내용증명 (대여금 반환청구) 한글 다운로드">한글</a>
+      <a href="/files/certified-notice-loan/certified-notice-loan.hwpx" download="내용증명 (대여금 반환청구).hwpx" title="내용증명 (대여금 반환청구) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -730,7 +782,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice-deposit/certified-notice-deposit.pdf" download="내용증명 (보증금 반환청구).pdf" title="내용증명 (보증금 반환청구) PDF 다운로드">PDF</a>
       <a href="/files/certified-notice-deposit/certified-notice-deposit.docx" download="내용증명 (보증금 반환청구).docx" title="내용증명 (보증금 반환청구) Word 다운로드">Word</a>
-      <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx" title="내용증명 (보증금 반환청구) 한글 다운로드">한글</a>
+      <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx" title="내용증명 (보증금 반환청구) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -741,7 +793,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice-terminate/certified-notice-terminate.pdf" download="내용증명 (계약 해지 통보).pdf" title="내용증명 (계약 해지 통보) PDF 다운로드">PDF</a>
       <a href="/files/certified-notice-terminate/certified-notice-terminate.docx" download="내용증명 (계약 해지 통보).docx" title="내용증명 (계약 해지 통보) Word 다운로드">Word</a>
-      <a href="/files/certified-notice-terminate/certified-notice-terminate.hwpx" download="내용증명 (계약 해지 통보).hwpx" title="내용증명 (계약 해지 통보) 한글 다운로드">한글</a>
+      <a href="/files/certified-notice-terminate/certified-notice-terminate.hwpx" download="내용증명 (계약 해지 통보).hwpx" title="내용증명 (계약 해지 통보) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -752,7 +804,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice-wage/certified-notice-wage.pdf" download="내용증명 (임금체불 청구).pdf" title="내용증명 (임금체불 청구) PDF 다운로드">PDF</a>
       <a href="/files/certified-notice-wage/certified-notice-wage.docx" download="내용증명 (임금체불 청구).docx" title="내용증명 (임금체불 청구) Word 다운로드">Word</a>
-      <a href="/files/certified-notice-wage/certified-notice-wage.hwpx" download="내용증명 (임금체불 청구).hwpx" title="내용증명 (임금체불 청구) 한글 다운로드">한글</a>
+      <a href="/files/certified-notice-wage/certified-notice-wage.hwpx" download="내용증명 (임금체불 청구).hwpx" title="내용증명 (임금체불 청구) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>  </div>  <h2 class="sec">다른 서식도 버전이 있습니다</h2>

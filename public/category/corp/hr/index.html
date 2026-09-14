@@ -195,7 +195,27 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .detail img{max-width:100%}
 .preview{border:1px solid var(--line-img); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-img-2)}
-.preview img:last-child{border-bottom:0}
+/* 미리보기 이미지는 누르면 크게 보는 버튼이다 (모양은 그대로, 커서만 돋보기) */
+.pv-zoom{display:block; width:100%; margin:0; padding:0; border:0; background:none; cursor:zoom-in}
+.preview .pv-zoom:last-child img{border-bottom:0}
+/* 모바일 전용 요소 — '더 보기'·'탭하면 크게 보기'·HWPX 안내는 1000px 이하에서만 보인다 */
+.pv-more, .pv-hint, .dl-hwpx{display:none}
+/* 미리보기 확대(라이트박스) */
+.lb{position:fixed; inset:0; z-index:200; display:flex; overflow:auto; padding:58px 12px 24px;
+  background:rgba(10,16,28,.92); touch-action:pinch-zoom}
+.lb[hidden]{display:none}
+.lb img{flex:0 0 auto; margin:auto; width:800px; max-width:100%; height:auto; background:#fff;
+  box-shadow:0 6px 30px rgba(0,0,0,.45); touch-action:pinch-zoom}
+.lb-x{position:fixed; top:10px; right:10px; width:44px; height:44px; border:0; border-radius:50%;
+  background:rgba(255,255,255,.16); color:#fff; font-size:21px; line-height:44px; cursor:pointer}
+.lb-x:hover{background:rgba(255,255,255,.28)}
+html.lb-lock, html.lb-lock body{overflow:hidden}
+/* PC: 미리보기가 오른쪽 열보다 길 때(2페이지 이상 등)만 스크립트가 .stick 을 붙여
+   다운로드 패널이 화면에 남게 한다. 1페이지 서식은 오른쪽 열이 더 길어 붙이지 않는다 */
+@media (min-width:1001px){
+  .detail .meta.stick{position:sticky; top:78px; max-height:calc(100vh - 94px); overflow-y:auto;
+    scrollbar-width:thin}
+}
 .meta dl{display:grid; grid-template-columns:92px 1fr; gap:0; margin:18px 0 0; font-size:14px;
   border-top:1px solid var(--line)}
 .meta dt{padding:9px 0; color:var(--muted); border-bottom:1px solid var(--line-2)}
@@ -524,7 +544,22 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
-  .detail{grid-template-columns:1fr; gap:24px}
+  .detail{grid-template-columns:1fr; gap:0}
+  /* 상세가 한 줄로 쌓이면 제목·요약 → 다운로드 → 미리보기 순서로 보여준다.
+     .meta 상자를 풀어(display:contents) 안쪽 블록도 .detail 의 order 를 따르게 한다 (마크업 복제 없음) */
+  .detail .meta{display:contents}
+  .detail .meta > *{min-width:0}
+  .detail .meta > h1.page, .detail .meta > .lead{order:-3}
+  .detail .meta > .dlbox{order:-2}
+  .detail > .pv-col{order:-1; margin-top:20px}
+  .detail .meta > .series-box{margin-top:18px}
+  .preview.pv-fold:not(.open) .pv-zoom + .pv-zoom{display:none}
+  .preview.pv-fold:not(.open) .pv-zoom:first-child img{border-bottom:0}
+  .pv-hint{display:block; margin:6px 0 0; text-align:center; font-size:12px; color:var(--muted)}
+  .pv-more{display:block; width:100%; margin:8px 0 0; padding:11px 12px; border:1px solid var(--line-img);
+    border-radius:8px; background:#fff; color:var(--navy); font-family:inherit; font-size:14px;
+    font-weight:700; cursor:pointer}
+  .dlbox .dl-hwpx{display:block; margin:10px 0 0; font-size:12.5px; color:var(--muted)}
   .cols{grid-template-columns:1fr; gap:18px}
   aside.side{position:static; max-height:none; overflow:visible}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
@@ -557,6 +592,23 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .nav-toggle{display:block; min-width:40px; text-align:center}
   .search-box{flex:1 1 auto; min-width:0}
   .grid{grid-template-columns:repeat(2,1fr); gap:13px}
+  /* 카드 다운로드 버튼은 손가락으로 누를 크기(40px)로. 2열 카드 폭에서 14px 'Word'는 칸을 넘어 13px */
+  .dl{gap:8px}
+  .dl a{min-height:40px; display:flex; align-items:center; justify-content:center; padding:0;
+    font-size:13px; white-space:nowrap}
+  /* 계열 비교표는 좁은 화면에서 행마다 카드로 펼친다 (같은 표 마크업, 머리글만 숨김) */
+  .cmp, .cmp tbody, .cmp tr, .cmp td{display:block; width:auto}
+  .cmp thead{display:none}
+  .cmp tbody tr, .cmp tbody tr:nth-child(even){background:#fff; border:1px solid var(--line);
+    border-radius:var(--radius); padding:13px 14px; margin:0 0 10px}
+  .cmp th, .cmp td{border:0; padding:0}
+  .cmp .vname{font-size:15.5px; white-space:normal}
+  .cmp .vuse{margin:4px 0 0; font-size:13.5px}
+  .cmp .vpages{margin:3px 0 0; font-size:12.5px; color:var(--muted)}
+  .cmp .vpages::before{content:'분량 '}
+  .cmp .vdl{display:flex; gap:8px; margin:10px 0 0; white-space:normal}
+  .cmp .vdl a{flex:1 1 0; margin:0; min-height:40px; display:flex; align-items:center;
+    justify-content:center; padding:0 6px; font-size:14px}
   .grid.g4{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:24px}
   .hero{padding:32px 0 30px}
@@ -691,7 +743,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/career-certificate/career-certificate.pdf" download="경력증명서.pdf" title="경력증명서 PDF 다운로드">PDF</a>
       <a href="/files/career-certificate/career-certificate.docx" download="경력증명서.docx" title="경력증명서 Word 다운로드">Word</a>
-      <a href="/files/career-certificate/career-certificate.hwpx" download="경력증명서.hwpx" title="경력증명서 한글 다운로드">한글</a>
+      <a href="/files/career-certificate/career-certificate.hwpx" download="경력증명서.hwpx" title="경력증명서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -702,7 +754,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/explanation-statement/explanation-statement.pdf" download="경위서.pdf" title="경위서 PDF 다운로드">PDF</a>
       <a href="/files/explanation-statement/explanation-statement.docx" download="경위서.docx" title="경위서 Word 다운로드">Word</a>
-      <a href="/files/explanation-statement/explanation-statement.hwpx" download="경위서.hwpx" title="경위서 한글 다운로드">한글</a>
+      <a href="/files/explanation-statement/explanation-statement.hwpx" download="경위서.hwpx" title="경위서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -713,7 +765,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/incident-report/incident-report.pdf" download="경위서.pdf" title="경위서 PDF 다운로드">PDF</a>
       <a href="/files/incident-report/incident-report.docx" download="경위서.docx" title="경위서 Word 다운로드">Word</a>
-      <a href="/files/incident-report/incident-report.hwpx" download="경위서.hwpx" title="경위서 한글 다운로드">한글</a>
+      <a href="/files/incident-report/incident-report.hwpx" download="경위서.hwpx" title="경위서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -724,7 +776,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/training-certificate/training-certificate.pdf" download="교육훈련 참가확인서.pdf" title="교육훈련 참가확인서 PDF 다운로드">PDF</a>
       <a href="/files/training-certificate/training-certificate.docx" download="교육훈련 참가확인서.docx" title="교육훈련 참가확인서 Word 다운로드">Word</a>
-      <a href="/files/training-certificate/training-certificate.hwpx" download="교육훈련 참가확인서.hwpx" title="교육훈련 참가확인서 한글 다운로드">한글</a>
+      <a href="/files/training-certificate/training-certificate.hwpx" download="교육훈련 참가확인서.hwpx" title="교육훈련 참가확인서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -735,7 +787,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/fixed-term-labor-contract/fixed-term-labor-contract.pdf" download="근로계약서 (기간제).pdf" title="근로계약서 (기간제) PDF 다운로드">PDF</a>
       <a href="/files/fixed-term-labor-contract/fixed-term-labor-contract.docx" download="근로계약서 (기간제).docx" title="근로계약서 (기간제) Word 다운로드">Word</a>
-      <a href="/files/fixed-term-labor-contract/fixed-term-labor-contract.hwpx" download="근로계약서 (기간제).hwpx" title="근로계약서 (기간제) 한글 다운로드">한글</a>
+      <a href="/files/fixed-term-labor-contract/fixed-term-labor-contract.hwpx" download="근로계약서 (기간제).hwpx" title="근로계약서 (기간제) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -746,7 +798,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/employee-roster/employee-roster.pdf" download="근로자명부.pdf" title="근로자명부 PDF 다운로드">PDF</a>
       <a href="/files/employee-roster/employee-roster.docx" download="근로자명부.docx" title="근로자명부 Word 다운로드">Word</a>
-      <a href="/files/employee-roster/employee-roster.hwpx" download="근로자명부.hwpx" title="근로자명부 한글 다운로드">한글</a>
+      <a href="/files/employee-roster/employee-roster.hwpx" download="근로자명부.hwpx" title="근로자명부 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -757,7 +809,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/labor-contract-parttime/labor-contract-parttime.pdf" download="단시간 근로계약서.pdf" title="단시간 근로계약서 PDF 다운로드">PDF</a>
       <a href="/files/labor-contract-parttime/labor-contract-parttime.docx" download="단시간 근로계약서.docx" title="단시간 근로계약서 Word 다운로드">Word</a>
-      <a href="/files/labor-contract-parttime/labor-contract-parttime.hwpx" download="단시간 근로계약서.hwpx" title="단시간 근로계약서 한글 다운로드">한글</a>
+      <a href="/files/labor-contract-parttime/labor-contract-parttime.hwpx" download="단시간 근로계약서.hwpx" title="단시간 근로계약서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -768,7 +820,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/interview-evaluation/interview-evaluation.pdf" download="면접 평가표.pdf" title="면접 평가표 PDF 다운로드">PDF</a>
       <a href="/files/interview-evaluation/interview-evaluation.docx" download="면접 평가표.docx" title="면접 평가표 Word 다운로드">Word</a>
-      <a href="/files/interview-evaluation/interview-evaluation.hwpx" download="면접 평가표.hwpx" title="면접 평가표 한글 다운로드">한글</a>
+      <a href="/files/interview-evaluation/interview-evaluation.hwpx" download="면접 평가표.hwpx" title="면접 평가표 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -779,7 +831,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/mbo-sheet/mbo-sheet.pdf" download="목표관리(MBO) 평가표.pdf" title="목표관리(MBO) 평가표 PDF 다운로드">PDF</a>
       <a href="/files/mbo-sheet/mbo-sheet.docx" download="목표관리(MBO) 평가표.docx" title="목표관리(MBO) 평가표 Word 다운로드">Word</a>
-      <a href="/files/mbo-sheet/mbo-sheet.hwpx" download="목표관리(MBO) 평가표.hwpx" title="목표관리(MBO) 평가표 한글 다운로드">한글</a>
+      <a href="/files/mbo-sheet/mbo-sheet.hwpx" download="목표관리(MBO) 평가표.hwpx" title="목표관리(MBO) 평가표 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -790,7 +842,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/resignation-letter/resignation-letter.pdf" download="사직서.pdf" title="사직서 PDF 다운로드">PDF</a>
       <a href="/files/resignation-letter/resignation-letter.docx" download="사직서.docx" title="사직서 Word 다운로드">Word</a>
-      <a href="/files/resignation-letter/resignation-letter.hwpx" download="사직서.hwpx" title="사직서 한글 다운로드">한글</a>
+      <a href="/files/resignation-letter/resignation-letter.hwpx" download="사직서.hwpx" title="사직서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -801,7 +853,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/resignation-simple/resignation-simple.pdf" download="사직서 (간편형).pdf" title="사직서 (간편형) PDF 다운로드">PDF</a>
       <a href="/files/resignation-simple/resignation-simple.docx" download="사직서 (간편형).docx" title="사직서 (간편형) Word 다운로드">Word</a>
-      <a href="/files/resignation-simple/resignation-simple.hwpx" download="사직서 (간편형).hwpx" title="사직서 (간편형) 한글 다운로드">한글</a>
+      <a href="/files/resignation-simple/resignation-simple.hwpx" download="사직서 (간편형).hwpx" title="사직서 (간편형) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -812,7 +864,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/probation-evaluation/probation-evaluation.pdf" download="수습 평가서.pdf" title="수습 평가서 PDF 다운로드">PDF</a>
       <a href="/files/probation-evaluation/probation-evaluation.docx" download="수습 평가서.docx" title="수습 평가서 Word 다운로드">Word</a>
-      <a href="/files/probation-evaluation/probation-evaluation.hwpx" download="수습 평가서.hwpx" title="수습 평가서 한글 다운로드">한글</a>
+      <a href="/files/probation-evaluation/probation-evaluation.hwpx" download="수습 평가서.hwpx" title="수습 평가서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -823,7 +875,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/written-apology/written-apology.pdf" download="시말서.pdf" title="시말서 PDF 다운로드">PDF</a>
       <a href="/files/written-apology/written-apology.docx" download="시말서.docx" title="시말서 Word 다운로드">Word</a>
-      <a href="/files/written-apology/written-apology.hwpx" download="시말서.hwpx" title="시말서 한글 다운로드">한글</a>
+      <a href="/files/written-apology/written-apology.hwpx" download="시말서.hwpx" title="시말서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -834,7 +886,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/handover-report/handover-report.pdf" download="업무 인수인계서.pdf" title="업무 인수인계서 PDF 다운로드">PDF</a>
       <a href="/files/handover-report/handover-report.docx" download="업무 인수인계서.docx" title="업무 인수인계서 Word 다운로드">Word</a>
-      <a href="/files/handover-report/handover-report.hwpx" download="업무 인수인계서.hwpx" title="업무 인수인계서 한글 다운로드">한글</a>
+      <a href="/files/handover-report/handover-report.hwpx" download="업무 인수인계서.hwpx" title="업무 인수인계서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -845,7 +897,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/labor-contract-minor/labor-contract-minor.pdf" download="연소근로자 근로계약서.pdf" title="연소근로자 근로계약서 PDF 다운로드">PDF</a>
       <a href="/files/labor-contract-minor/labor-contract-minor.docx" download="연소근로자 근로계약서.docx" title="연소근로자 근로계약서 Word 다운로드">Word</a>
-      <a href="/files/labor-contract-minor/labor-contract-minor.hwpx" download="연소근로자 근로계약서.hwpx" title="연소근로자 근로계약서 한글 다운로드">한글</a>
+      <a href="/files/labor-contract-minor/labor-contract-minor.hwpx" download="연소근로자 근로계약서.hwpx" title="연소근로자 근로계약서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -856,7 +908,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/overtime-application/overtime-application.pdf" download="연장·휴일근로 신청서.pdf" title="연장·휴일근로 신청서 PDF 다운로드">PDF</a>
       <a href="/files/overtime-application/overtime-application.docx" download="연장·휴일근로 신청서.docx" title="연장·휴일근로 신청서 Word 다운로드">Word</a>
-      <a href="/files/overtime-application/overtime-application.hwpx" download="연장·휴일근로 신청서.hwpx" title="연장·휴일근로 신청서 한글 다운로드">한글</a>
+      <a href="/files/overtime-application/overtime-application.hwpx" download="연장·휴일근로 신청서.hwpx" title="연장·휴일근로 신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -867,7 +919,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/annual-leave-plan/annual-leave-plan.pdf" download="연차사용계획서.pdf" title="연차사용계획서 PDF 다운로드">PDF</a>
       <a href="/files/annual-leave-plan/annual-leave-plan.docx" download="연차사용계획서.docx" title="연차사용계획서 Word 다운로드">Word</a>
-      <a href="/files/annual-leave-plan/annual-leave-plan.hwpx" download="연차사용계획서.hwpx" title="연차사용계획서 한글 다운로드">한글</a>
+      <a href="/files/annual-leave-plan/annual-leave-plan.hwpx" download="연차사용계획서.hwpx" title="연차사용계획서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -878,7 +930,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/parental-leave-request/parental-leave-request.pdf" download="육아휴직 신청서.pdf" title="육아휴직 신청서 PDF 다운로드">PDF</a>
       <a href="/files/parental-leave-request/parental-leave-request.docx" download="육아휴직 신청서.docx" title="육아휴직 신청서 Word 다운로드">Word</a>
-      <a href="/files/parental-leave-request/parental-leave-request.hwpx" download="육아휴직 신청서.hwpx" title="육아휴직 신청서 한글 다운로드">한글</a>
+      <a href="/files/parental-leave-request/parental-leave-request.hwpx" download="육아휴직 신청서.hwpx" title="육아휴직 신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -889,7 +941,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/performance-evaluation/performance-evaluation.pdf" download="인사고과표.pdf" title="인사고과표 PDF 다운로드">PDF</a>
       <a href="/files/performance-evaluation/performance-evaluation.docx" download="인사고과표.docx" title="인사고과표 Word 다운로드">Word</a>
-      <a href="/files/performance-evaluation/performance-evaluation.hwpx" download="인사고과표.hwpx" title="인사고과표 한글 다운로드">한글</a>
+      <a href="/files/performance-evaluation/performance-evaluation.hwpx" download="인사고과표.hwpx" title="인사고과표 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -900,7 +952,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/personnel-order/personnel-order.pdf" download="인사발령통지서.pdf" title="인사발령통지서 PDF 다운로드">PDF</a>
       <a href="/files/personnel-order/personnel-order.docx" download="인사발령통지서.docx" title="인사발령통지서 Word 다운로드">Word</a>
-      <a href="/files/personnel-order/personnel-order.hwpx" download="인사발령통지서.hwpx" title="인사발령통지서 한글 다운로드">한글</a>
+      <a href="/files/personnel-order/personnel-order.hwpx" download="인사발령통지서.hwpx" title="인사발령통지서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -911,7 +963,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/labor-contract-daily/labor-contract-daily.pdf" download="일용직 근로계약서.pdf" title="일용직 근로계약서 PDF 다운로드">PDF</a>
       <a href="/files/labor-contract-daily/labor-contract-daily.docx" download="일용직 근로계약서.docx" title="일용직 근로계약서 Word 다운로드">Word</a>
-      <a href="/files/labor-contract-daily/labor-contract-daily.hwpx" download="일용직 근로계약서.hwpx" title="일용직 근로계약서 한글 다운로드">한글</a>
+      <a href="/files/labor-contract-daily/labor-contract-daily.hwpx" download="일용직 근로계약서.hwpx" title="일용직 근로계약서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -922,7 +974,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/employment-certificate/employment-certificate.pdf" download="재직증명서.pdf" title="재직증명서 PDF 다운로드">PDF</a>
       <a href="/files/employment-certificate/employment-certificate.docx" download="재직증명서.docx" title="재직증명서 Word 다운로드">Word</a>
-      <a href="/files/employment-certificate/employment-certificate.hwpx" download="재직증명서.hwpx" title="재직증명서 한글 다운로드">한글</a>
+      <a href="/files/employment-certificate/employment-certificate.hwpx" download="재직증명서.hwpx" title="재직증명서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -933,7 +985,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/remote-work-request/remote-work-request.pdf" download="재택근무 신청서.pdf" title="재택근무 신청서 PDF 다운로드">PDF</a>
       <a href="/files/remote-work-request/remote-work-request.docx" download="재택근무 신청서.docx" title="재택근무 신청서 Word 다운로드">Word</a>
-      <a href="/files/remote-work-request/remote-work-request.hwpx" download="재택근무 신청서.hwpx" title="재택근무 신청서 한글 다운로드">한글</a>
+      <a href="/files/remote-work-request/remote-work-request.hwpx" download="재택근무 신청서.hwpx" title="재택근무 신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -944,7 +996,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/job-description/job-description.pdf" download="직무기술서.pdf" title="직무기술서 PDF 다운로드">PDF</a>
       <a href="/files/job-description/job-description.docx" download="직무기술서.docx" title="직무기술서 Word 다운로드">Word</a>
-      <a href="/files/job-description/job-description.hwpx" download="직무기술서.hwpx" title="직무기술서 한글 다운로드">한글</a>
+      <a href="/files/job-description/job-description.hwpx" download="직무기술서.hwpx" title="직무기술서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -955,7 +1007,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/disciplinary-notice/disciplinary-notice.pdf" download="징계 통보서.pdf" title="징계 통보서 PDF 다운로드">PDF</a>
       <a href="/files/disciplinary-notice/disciplinary-notice.docx" download="징계 통보서.docx" title="징계 통보서 Word 다운로드">Word</a>
-      <a href="/files/disciplinary-notice/disciplinary-notice.hwpx" download="징계 통보서.hwpx" title="징계 통보서 한글 다운로드">한글</a>
+      <a href="/files/disciplinary-notice/disciplinary-notice.hwpx" download="징계 통보서.hwpx" title="징계 통보서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -966,7 +1018,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/business-trip-request/business-trip-request.pdf" download="출장신청서.pdf" title="출장신청서 PDF 다운로드">PDF</a>
       <a href="/files/business-trip-request/business-trip-request.docx" download="출장신청서.docx" title="출장신청서 Word 다운로드">Word</a>
-      <a href="/files/business-trip-request/business-trip-request.hwpx" download="출장신청서.hwpx" title="출장신청서 한글 다운로드">한글</a>
+      <a href="/files/business-trip-request/business-trip-request.hwpx" download="출장신청서.hwpx" title="출장신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -977,7 +1029,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/severance-calculation/severance-calculation.pdf" download="퇴직금 정산서.pdf" title="퇴직금 정산서 PDF 다운로드">PDF</a>
       <a href="/files/severance-calculation/severance-calculation.docx" download="퇴직금 정산서.docx" title="퇴직금 정산서 Word 다운로드">Word</a>
-      <a href="/files/severance-calculation/severance-calculation.hwpx" download="퇴직금 정산서.hwpx" title="퇴직금 정산서 한글 다운로드">한글</a>
+      <a href="/files/severance-calculation/severance-calculation.hwpx" download="퇴직금 정산서.hwpx" title="퇴직금 정산서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -988,7 +1040,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/retirement-application/retirement-application.pdf" download="퇴직원.pdf" title="퇴직원 PDF 다운로드">PDF</a>
       <a href="/files/retirement-application/retirement-application.docx" download="퇴직원.docx" title="퇴직원 Word 다운로드">Word</a>
-      <a href="/files/retirement-application/retirement-application.hwpx" download="퇴직원.hwpx" title="퇴직원 한글 다운로드">한글</a>
+      <a href="/files/retirement-application/retirement-application.hwpx" download="퇴직원.hwpx" title="퇴직원 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -999,7 +1051,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/labor-contract-standard/labor-contract-standard.pdf" download="표준근로계약서 (기간의 정함이 없는 경우).pdf" title="표준근로계약서 (기간의 정함이 없는 경우) PDF 다운로드">PDF</a>
       <a href="/files/labor-contract-standard/labor-contract-standard.docx" download="표준근로계약서 (기간의 정함이 없는 경우).docx" title="표준근로계약서 (기간의 정함이 없는 경우) Word 다운로드">Word</a>
-      <a href="/files/labor-contract-standard/labor-contract-standard.hwpx" download="표준근로계약서 (기간의 정함이 없는 경우).hwpx" title="표준근로계약서 (기간의 정함이 없는 경우) 한글 다운로드">한글</a>
+      <a href="/files/labor-contract-standard/labor-contract-standard.hwpx" download="표준근로계약서 (기간의 정함이 없는 경우).hwpx" title="표준근로계약서 (기간의 정함이 없는 경우) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>        <article class="card">
@@ -1010,7 +1062,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/leave-request/leave-request.pdf" download="휴가신청서.pdf" title="휴가신청서 PDF 다운로드">PDF</a>
       <a href="/files/leave-request/leave-request.docx" download="휴가신청서.docx" title="휴가신청서 Word 다운로드">Word</a>
-      <a href="/files/leave-request/leave-request.hwpx" download="휴가신청서.hwpx" title="휴가신청서 한글 다운로드">한글</a>
+      <a href="/files/leave-request/leave-request.hwpx" download="휴가신청서.hwpx" title="휴가신청서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>      </div>      

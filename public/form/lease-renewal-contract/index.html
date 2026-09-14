@@ -195,7 +195,27 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .detail img{max-width:100%}
 .preview{border:1px solid var(--line-img); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-img-2)}
-.preview img:last-child{border-bottom:0}
+/* 미리보기 이미지는 누르면 크게 보는 버튼이다 (모양은 그대로, 커서만 돋보기) */
+.pv-zoom{display:block; width:100%; margin:0; padding:0; border:0; background:none; cursor:zoom-in}
+.preview .pv-zoom:last-child img{border-bottom:0}
+/* 모바일 전용 요소 — '더 보기'·'탭하면 크게 보기'·HWPX 안내는 1000px 이하에서만 보인다 */
+.pv-more, .pv-hint, .dl-hwpx{display:none}
+/* 미리보기 확대(라이트박스) */
+.lb{position:fixed; inset:0; z-index:200; display:flex; overflow:auto; padding:58px 12px 24px;
+  background:rgba(10,16,28,.92); touch-action:pinch-zoom}
+.lb[hidden]{display:none}
+.lb img{flex:0 0 auto; margin:auto; width:800px; max-width:100%; height:auto; background:#fff;
+  box-shadow:0 6px 30px rgba(0,0,0,.45); touch-action:pinch-zoom}
+.lb-x{position:fixed; top:10px; right:10px; width:44px; height:44px; border:0; border-radius:50%;
+  background:rgba(255,255,255,.16); color:#fff; font-size:21px; line-height:44px; cursor:pointer}
+.lb-x:hover{background:rgba(255,255,255,.28)}
+html.lb-lock, html.lb-lock body{overflow:hidden}
+/* PC: 미리보기가 오른쪽 열보다 길 때(2페이지 이상 등)만 스크립트가 .stick 을 붙여
+   다운로드 패널이 화면에 남게 한다. 1페이지 서식은 오른쪽 열이 더 길어 붙이지 않는다 */
+@media (min-width:1001px){
+  .detail .meta.stick{position:sticky; top:78px; max-height:calc(100vh - 94px); overflow-y:auto;
+    scrollbar-width:thin}
+}
 .meta dl{display:grid; grid-template-columns:92px 1fr; gap:0; margin:18px 0 0; font-size:14px;
   border-top:1px solid var(--line)}
 .meta dt{padding:9px 0; color:var(--muted); border-bottom:1px solid var(--line-2)}
@@ -524,7 +544,22 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
-  .detail{grid-template-columns:1fr; gap:24px}
+  .detail{grid-template-columns:1fr; gap:0}
+  /* 상세가 한 줄로 쌓이면 제목·요약 → 다운로드 → 미리보기 순서로 보여준다.
+     .meta 상자를 풀어(display:contents) 안쪽 블록도 .detail 의 order 를 따르게 한다 (마크업 복제 없음) */
+  .detail .meta{display:contents}
+  .detail .meta > *{min-width:0}
+  .detail .meta > h1.page, .detail .meta > .lead{order:-3}
+  .detail .meta > .dlbox{order:-2}
+  .detail > .pv-col{order:-1; margin-top:20px}
+  .detail .meta > .series-box{margin-top:18px}
+  .preview.pv-fold:not(.open) .pv-zoom + .pv-zoom{display:none}
+  .preview.pv-fold:not(.open) .pv-zoom:first-child img{border-bottom:0}
+  .pv-hint{display:block; margin:6px 0 0; text-align:center; font-size:12px; color:var(--muted)}
+  .pv-more{display:block; width:100%; margin:8px 0 0; padding:11px 12px; border:1px solid var(--line-img);
+    border-radius:8px; background:#fff; color:var(--navy); font-family:inherit; font-size:14px;
+    font-weight:700; cursor:pointer}
+  .dlbox .dl-hwpx{display:block; margin:10px 0 0; font-size:12.5px; color:var(--muted)}
   .cols{grid-template-columns:1fr; gap:18px}
   aside.side{position:static; max-height:none; overflow:visible}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
@@ -557,6 +592,23 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .nav-toggle{display:block; min-width:40px; text-align:center}
   .search-box{flex:1 1 auto; min-width:0}
   .grid{grid-template-columns:repeat(2,1fr); gap:13px}
+  /* 카드 다운로드 버튼은 손가락으로 누를 크기(40px)로. 2열 카드 폭에서 14px 'Word'는 칸을 넘어 13px */
+  .dl{gap:8px}
+  .dl a{min-height:40px; display:flex; align-items:center; justify-content:center; padding:0;
+    font-size:13px; white-space:nowrap}
+  /* 계열 비교표는 좁은 화면에서 행마다 카드로 펼친다 (같은 표 마크업, 머리글만 숨김) */
+  .cmp, .cmp tbody, .cmp tr, .cmp td{display:block; width:auto}
+  .cmp thead{display:none}
+  .cmp tbody tr, .cmp tbody tr:nth-child(even){background:#fff; border:1px solid var(--line);
+    border-radius:var(--radius); padding:13px 14px; margin:0 0 10px}
+  .cmp th, .cmp td{border:0; padding:0}
+  .cmp .vname{font-size:15.5px; white-space:normal}
+  .cmp .vuse{margin:4px 0 0; font-size:13.5px}
+  .cmp .vpages{margin:3px 0 0; font-size:12.5px; color:var(--muted)}
+  .cmp .vpages::before{content:'분량 '}
+  .cmp .vdl{display:flex; gap:8px; margin:10px 0 0; white-space:normal}
+  .cmp .vdl a{flex:1 1 0; margin:0; min-height:40px; display:flex; align-items:center;
+    justify-content:center; padding:0 6px; font-size:14px}
   .grid.g4{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:24px}
   .hero{padding:32px 0 30px}
@@ -643,8 +695,9 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   </div>
 
   <div class="detail">
-    <div>
-      <div class="preview">        <img src="/files/lease-renewal-contract/preview-1.webp" alt="임대차 계약 갱신계약서 1페이지 작성 예시 미리보기" width="800" height="1131">      </div>      <p class="preview-note">
+    <div class="pv-col">
+      <div class="preview" id="pv">        <button type="button" class="pv-zoom" aria-label="1페이지 크게 보기"><img src="/files/lease-renewal-contract/preview-1.webp" alt="임대차 계약 갱신계약서 1페이지 작성 예시 미리보기" width="800" height="1131"></button>      </div>
+      <p class="pv-hint">탭하면 크게 보기</p>      <p class="preview-note">
         <span aria-hidden="true">✎</span>
         <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
         내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
@@ -664,8 +717,9 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         <div class="dlbtns">
           <a href="/files/lease-renewal-contract/lease-renewal-contract.pdf" download="임대차 계약 갱신계약서.pdf">PDF<span class="fmt">60 KB</span></a>
           <a href="/files/lease-renewal-contract/lease-renewal-contract.docx" download="임대차 계약 갱신계약서.docx">Word<span class="fmt">38 KB</span></a>
-          <a href="/files/lease-renewal-contract/lease-renewal-contract.hwpx" download="임대차 계약 갱신계약서.hwpx">한글<span class="fmt">10 KB</span></a>
+          <a href="/files/lease-renewal-contract/lease-renewal-contract.hwpx" download="임대차 계약 갱신계약서.hwpx" title="HWPX (한글 2010 이상)">한글<span class="fmt">10 KB</span></a>
         </div>
+        <p class="dl-hwpx">한글 파일은 HWPX 형식입니다 — 한글 2010 이상에서 열립니다.</p>
       </div>      <div class="stampbox" id="stampbox">
         <div class="sb-head"><h3>이 서식에 찍을 도장 만들기</h3><span class="new">NEW</span></div>
         <p>이름을 입력하면 (인) 자리에 넣을 도장 이미지를 바로 만듭니다. 입력한 이름은 서버로 보내지 않습니다.</p>
@@ -717,7 +771,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.pdf" download="월세 영수증.pdf" title="월세 영수증 PDF 다운로드">PDF</a>
       <a href="/files/monthly-rent-receipt/monthly-rent-receipt.docx" download="월세 영수증.docx" title="월세 영수증 Word 다운로드">Word</a>
-      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.hwpx" download="월세 영수증.hwpx" title="월세 영수증 한글 다운로드">한글</a>
+      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.hwpx" download="월세 영수증.hwpx" title="월세 영수증 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -728,7 +782,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/lease-termination-notice/lease-termination-notice.pdf" download="임대차계약 해지통보서.pdf" title="임대차계약 해지통보서 PDF 다운로드">PDF</a>
       <a href="/files/lease-termination-notice/lease-termination-notice.docx" download="임대차계약 해지통보서.docx" title="임대차계약 해지통보서 Word 다운로드">Word</a>
-      <a href="/files/lease-termination-notice/lease-termination-notice.hwpx" download="임대차계약 해지통보서.hwpx" title="임대차계약 해지통보서 한글 다운로드">한글</a>
+      <a href="/files/lease-termination-notice/lease-termination-notice.hwpx" download="임대차계약 해지통보서.hwpx" title="임대차계약 해지통보서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -739,7 +793,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/deposit-return-notice/deposit-return-notice.pdf" download="전세보증금 반환 내용증명.pdf" title="전세보증금 반환 내용증명 PDF 다운로드">PDF</a>
       <a href="/files/deposit-return-notice/deposit-return-notice.docx" download="전세보증금 반환 내용증명.docx" title="전세보증금 반환 내용증명 Word 다운로드">Word</a>
-      <a href="/files/deposit-return-notice/deposit-return-notice.hwpx" download="전세보증금 반환 내용증명.hwpx" title="전세보증금 반환 내용증명 한글 다운로드">한글</a>
+      <a href="/files/deposit-return-notice/deposit-return-notice.hwpx" download="전세보증금 반환 내용증명.hwpx" title="전세보증금 반환 내용증명 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -750,7 +804,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/lease-transfer-contract/lease-transfer-contract.pdf" download="임차권 양도계약서.pdf" title="임차권 양도계약서 PDF 다운로드">PDF</a>
       <a href="/files/lease-transfer-contract/lease-transfer-contract.docx" download="임차권 양도계약서.docx" title="임차권 양도계약서 Word 다운로드">Word</a>
-      <a href="/files/lease-transfer-contract/lease-transfer-contract.hwpx" download="임차권 양도계약서.hwpx" title="임차권 양도계약서 한글 다운로드">한글</a>
+      <a href="/files/lease-transfer-contract/lease-transfer-contract.hwpx" download="임차권 양도계약서.hwpx" title="임차권 양도계약서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -761,7 +815,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/equipment-lease-contract/equipment-lease-contract.pdf" download="장비 임대차계약서.pdf" title="장비 임대차계약서 PDF 다운로드">PDF</a>
       <a href="/files/equipment-lease-contract/equipment-lease-contract.docx" download="장비 임대차계약서.docx" title="장비 임대차계약서 Word 다운로드">Word</a>
-      <a href="/files/equipment-lease-contract/equipment-lease-contract.hwpx" download="장비 임대차계약서.hwpx" title="장비 임대차계약서 한글 다운로드">한글</a>
+      <a href="/files/equipment-lease-contract/equipment-lease-contract.hwpx" download="장비 임대차계약서.hwpx" title="장비 임대차계약서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -772,7 +826,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.pdf" download="부동산 매매계약서.pdf" title="부동산 매매계약서 PDF 다운로드">PDF</a>
       <a href="/files/real-estate-sale-contract/real-estate-sale-contract.docx" download="부동산 매매계약서.docx" title="부동산 매매계약서 Word 다운로드">Word</a>
-      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.hwpx" download="부동산 매매계약서.hwpx" title="부동산 매매계약서 한글 다운로드">한글</a>
+      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.hwpx" download="부동산 매매계약서.hwpx" title="부동산 매매계약서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -783,7 +837,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice-deposit/certified-notice-deposit.pdf" download="내용증명 (보증금 반환청구).pdf" title="내용증명 (보증금 반환청구) PDF 다운로드">PDF</a>
       <a href="/files/certified-notice-deposit/certified-notice-deposit.docx" download="내용증명 (보증금 반환청구).docx" title="내용증명 (보증금 반환청구) Word 다운로드">Word</a>
-      <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx" title="내용증명 (보증금 반환청구) 한글 다운로드">한글</a>
+      <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx" title="내용증명 (보증금 반환청구) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -794,7 +848,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/move-in-checklist/move-in-checklist.pdf" download="입주 점검표.pdf" title="입주 점검표 PDF 다운로드">PDF</a>
       <a href="/files/move-in-checklist/move-in-checklist.docx" download="입주 점검표.docx" title="입주 점검표 Word 다운로드">Word</a>
-      <a href="/files/move-in-checklist/move-in-checklist.hwpx" download="입주 점검표.hwpx" title="입주 점검표 한글 다운로드">한글</a>
+      <a href="/files/move-in-checklist/move-in-checklist.hwpx" download="입주 점검표.hwpx" title="입주 점검표 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -805,7 +859,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/property-viewing-log/property-viewing-log.pdf" download="부동산 임장 기록표.pdf" title="부동산 임장 기록표 PDF 다운로드">PDF</a>
       <a href="/files/property-viewing-log/property-viewing-log.docx" download="부동산 임장 기록표.docx" title="부동산 임장 기록표 Word 다운로드">Word</a>
-      <a href="/files/property-viewing-log/property-viewing-log.hwpx" download="부동산 임장 기록표.hwpx" title="부동산 임장 기록표 한글 다운로드">한글</a>
+      <a href="/files/property-viewing-log/property-viewing-log.hwpx" download="부동산 임장 기록표.hwpx" title="부동산 임장 기록표 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -816,10 +870,54 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/franchise-contract/franchise-contract.pdf" download="가맹계약서.pdf" title="가맹계약서 PDF 다운로드">PDF</a>
       <a href="/files/franchise-contract/franchise-contract.docx" download="가맹계약서.docx" title="가맹계약서 Word 다운로드">Word</a>
-      <a href="/files/franchise-contract/franchise-contract.hwpx" download="가맹계약서.hwpx" title="가맹계약서 한글 다운로드">한글</a>
+      <a href="/files/franchise-contract/franchise-contract.hwpx" download="가맹계약서.hwpx" title="가맹계약서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>  </div></div>
+<script>
+(function(){
+  var pv=document.getElementById('pv'); if(!pv) return;
+  // 미리보기 확대 — 원본 이미지를 어두운 배경 위에 띄운다. ✕·배경·Esc 로 닫고, 핀치 줌은 허용한다
+  var lb=null, img=null, xb=null, back=null;
+  function close(){
+    if(!lb || lb.hidden) return;
+    lb.hidden=true; document.documentElement.classList.remove('lb-lock');
+    if(back) back.focus();
+  }
+  function open(src, alt, from){
+    if(!lb){
+      lb=document.createElement('div'); lb.className='lb'; lb.hidden=true;
+      lb.setAttribute('role','dialog'); lb.setAttribute('aria-modal','true'); lb.setAttribute('aria-label','미리보기 크게 보기');
+      lb.innerHTML='<button type="button" class="lb-x" aria-label="닫기">✕</button><img alt="">';
+      document.body.appendChild(lb); xb=lb.firstChild; img=lb.lastChild;
+      lb.addEventListener('click', function(e){ if(e.target!==img) close(); });
+    }
+    img.src=src; img.alt=alt; back=from;
+    lb.hidden=false; lb.scrollTop=0; document.documentElement.classList.add('lb-lock'); xb.focus();
+  }
+  pv.addEventListener('click', function(e){
+    var b=e.target.closest('.pv-zoom'); if(!b) return;
+    var i=b.querySelector('img'); open(i.currentSrc || i.src, i.alt, b);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+
+  // 모바일: 2페이지 이상이면 첫 페이지만 보이고 버튼으로 나머지를 펼친다 (PC는 버튼이 보이지 않는다)
+  var more=document.getElementById('pvMore');
+  if(more) more.addEventListener('click', function(){
+    pv.classList.add('open'); more.remove();
+    var next=pv.querySelectorAll('.pv-zoom')[1]; if(next) next.focus({preventScroll:true});
+  });
+
+  // PC: 미리보기 열이 오른쪽 열보다 길 때만 오른쪽 열을 화면에 고정한다
+  var col=pv.parentNode, meta=document.querySelector('.detail .meta'), wide=window.matchMedia('(min-width:1001px)');
+  function fit(){
+    if(!meta) return;
+    meta.classList.remove('stick');
+    if(wide.matches && meta.offsetHeight < col.offsetHeight) meta.classList.add('stick');
+  }
+  fit(); window.addEventListener('load', fit); window.addEventListener('resize', fit);
+})();
+</script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "DigitalDocument", "@id": "https://freeforms.kr/form/lease-renewal-contract/#doc", "name": "임대차 계약 갱신계약서", "headline": "임대차 계약 갱신계약서 양식 무료 다운로드", "description": "기존 임대차계약의 보증금·차임을 조정하며 계약기간을 연장할 때 작성하는 갱신계약서입니다.", "inLanguage": "ko", "isAccessibleForFree": true, "isFamilyFriendly": true, "genre": "부동산 · 임대·매매", "keywords": "임대차갱신계약서, 재계약서, 전세갱신계약, 월세갱신계약, 계약갱신", "about": {"@type": "Thing", "name": "부동산 임대·매매 서식"}, "encodingFormat": ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/hwp+zip"], "associatedMedia": [{"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/lease-renewal-contract/lease-renewal-contract.pdf", "encodingFormat": "application/pdf", "contentSize": "60KB", "name": "임대차 계약 갱신계약서 (PDF)"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/lease-renewal-contract/lease-renewal-contract.docx", "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "contentSize": "38KB", "name": "임대차 계약 갱신계약서 (Word (DOCX))"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/lease-renewal-contract/lease-renewal-contract.hwpx", "encodingFormat": "application/hwp+zip", "contentSize": "10KB", "name": "임대차 계약 갱신계약서 (한글 (HWPX))"}], "thumbnailUrl": "https://freeforms.kr/files/lease-renewal-contract/preview-1.webp", "url": "https://freeforms.kr/form/lease-renewal-contract/", "mainEntityOfPage": "https://freeforms.kr/form/lease-renewal-contract/", "datePublished": "2026-09-14", "dateModified": "2026-09-14", "isPartOf": {"@type": "WebSite", "@id": "https://freeforms.kr/#website", "name": "무료서식 다운로드"}, "publisher": {"@type": "Organization", "@id": "https://freeforms.kr/#org", "name": "무료서식 다운로드"}}
 </script><script type="application/ld+json">

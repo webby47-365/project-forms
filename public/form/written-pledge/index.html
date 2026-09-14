@@ -195,7 +195,27 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .detail img{max-width:100%}
 .preview{border:1px solid var(--line-img); border-radius:var(--radius); overflow:hidden; background:var(--bg-soft)}
 .preview img{width:100%; border-bottom:1px solid var(--line-img-2)}
-.preview img:last-child{border-bottom:0}
+/* 미리보기 이미지는 누르면 크게 보는 버튼이다 (모양은 그대로, 커서만 돋보기) */
+.pv-zoom{display:block; width:100%; margin:0; padding:0; border:0; background:none; cursor:zoom-in}
+.preview .pv-zoom:last-child img{border-bottom:0}
+/* 모바일 전용 요소 — '더 보기'·'탭하면 크게 보기'·HWPX 안내는 1000px 이하에서만 보인다 */
+.pv-more, .pv-hint, .dl-hwpx{display:none}
+/* 미리보기 확대(라이트박스) */
+.lb{position:fixed; inset:0; z-index:200; display:flex; overflow:auto; padding:58px 12px 24px;
+  background:rgba(10,16,28,.92); touch-action:pinch-zoom}
+.lb[hidden]{display:none}
+.lb img{flex:0 0 auto; margin:auto; width:800px; max-width:100%; height:auto; background:#fff;
+  box-shadow:0 6px 30px rgba(0,0,0,.45); touch-action:pinch-zoom}
+.lb-x{position:fixed; top:10px; right:10px; width:44px; height:44px; border:0; border-radius:50%;
+  background:rgba(255,255,255,.16); color:#fff; font-size:21px; line-height:44px; cursor:pointer}
+.lb-x:hover{background:rgba(255,255,255,.28)}
+html.lb-lock, html.lb-lock body{overflow:hidden}
+/* PC: 미리보기가 오른쪽 열보다 길 때(2페이지 이상 등)만 스크립트가 .stick 을 붙여
+   다운로드 패널이 화면에 남게 한다. 1페이지 서식은 오른쪽 열이 더 길어 붙이지 않는다 */
+@media (min-width:1001px){
+  .detail .meta.stick{position:sticky; top:78px; max-height:calc(100vh - 94px); overflow-y:auto;
+    scrollbar-width:thin}
+}
 .meta dl{display:grid; grid-template-columns:92px 1fr; gap:0; margin:18px 0 0; font-size:14px;
   border-top:1px solid var(--line)}
 .meta dt{padding:9px 0; color:var(--muted); border-bottom:1px solid var(--line-2)}
@@ -524,7 +544,22 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
-  .detail{grid-template-columns:1fr; gap:24px}
+  .detail{grid-template-columns:1fr; gap:0}
+  /* 상세가 한 줄로 쌓이면 제목·요약 → 다운로드 → 미리보기 순서로 보여준다.
+     .meta 상자를 풀어(display:contents) 안쪽 블록도 .detail 의 order 를 따르게 한다 (마크업 복제 없음) */
+  .detail .meta{display:contents}
+  .detail .meta > *{min-width:0}
+  .detail .meta > h1.page, .detail .meta > .lead{order:-3}
+  .detail .meta > .dlbox{order:-2}
+  .detail > .pv-col{order:-1; margin-top:20px}
+  .detail .meta > .series-box{margin-top:18px}
+  .preview.pv-fold:not(.open) .pv-zoom + .pv-zoom{display:none}
+  .preview.pv-fold:not(.open) .pv-zoom:first-child img{border-bottom:0}
+  .pv-hint{display:block; margin:6px 0 0; text-align:center; font-size:12px; color:var(--muted)}
+  .pv-more{display:block; width:100%; margin:8px 0 0; padding:11px 12px; border:1px solid var(--line-img);
+    border-radius:8px; background:#fff; color:var(--navy); font-family:inherit; font-size:14px;
+    font-weight:700; cursor:pointer}
+  .dlbox .dl-hwpx{display:block; margin:10px 0 0; font-size:12.5px; color:var(--muted)}
   .cols{grid-template-columns:1fr; gap:18px}
   aside.side{position:static; max-height:none; overflow:visible}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
@@ -557,6 +592,23 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .nav-toggle{display:block; min-width:40px; text-align:center}
   .search-box{flex:1 1 auto; min-width:0}
   .grid{grid-template-columns:repeat(2,1fr); gap:13px}
+  /* 카드 다운로드 버튼은 손가락으로 누를 크기(40px)로. 2열 카드 폭에서 14px 'Word'는 칸을 넘어 13px */
+  .dl{gap:8px}
+  .dl a{min-height:40px; display:flex; align-items:center; justify-content:center; padding:0;
+    font-size:13px; white-space:nowrap}
+  /* 계열 비교표는 좁은 화면에서 행마다 카드로 펼친다 (같은 표 마크업, 머리글만 숨김) */
+  .cmp, .cmp tbody, .cmp tr, .cmp td{display:block; width:auto}
+  .cmp thead{display:none}
+  .cmp tbody tr, .cmp tbody tr:nth-child(even){background:#fff; border:1px solid var(--line);
+    border-radius:var(--radius); padding:13px 14px; margin:0 0 10px}
+  .cmp th, .cmp td{border:0; padding:0}
+  .cmp .vname{font-size:15.5px; white-space:normal}
+  .cmp .vuse{margin:4px 0 0; font-size:13.5px}
+  .cmp .vpages{margin:3px 0 0; font-size:12.5px; color:var(--muted)}
+  .cmp .vpages::before{content:'분량 '}
+  .cmp .vdl{display:flex; gap:8px; margin:10px 0 0; white-space:normal}
+  .cmp .vdl a{flex:1 1 0; margin:0; min-height:40px; display:flex; align-items:center;
+    justify-content:center; padding:0 6px; font-size:14px}
   .grid.g4{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:24px}
   .hero{padding:32px 0 30px}
@@ -643,8 +695,9 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   </div>
 
   <div class="detail">
-    <div>
-      <div class="preview">        <img src="/files/written-pledge/preview-1.webp" alt="각서 1페이지 작성 예시 미리보기" width="800" height="1131">      </div>      <p class="preview-note">
+    <div class="pv-col">
+      <div class="preview" id="pv">        <button type="button" class="pv-zoom" aria-label="1페이지 크게 보기"><img src="/files/written-pledge/preview-1.webp" alt="각서 1페이지 작성 예시 미리보기" width="800" height="1131"></button>      </div>
+      <p class="pv-hint">탭하면 크게 보기</p>      <p class="preview-note">
         <span aria-hidden="true">✎</span>
         <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
         내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
@@ -659,8 +712,9 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         <div class="dlbtns">
           <a href="/files/written-pledge/written-pledge.pdf" download="각서.pdf">PDF<span class="fmt">44 KB</span></a>
           <a href="/files/written-pledge/written-pledge.docx" download="각서.docx">Word<span class="fmt">37 KB</span></a>
-          <a href="/files/written-pledge/written-pledge.hwpx" download="각서.hwpx">한글<span class="fmt">9 KB</span></a>
+          <a href="/files/written-pledge/written-pledge.hwpx" download="각서.hwpx" title="HWPX (한글 2010 이상)">한글<span class="fmt">9 KB</span></a>
         </div>
+        <p class="dl-hwpx">한글 파일은 HWPX 형식입니다 — 한글 2010 이상에서 열립니다.</p>
       </div>      <div class="stampbox" id="stampbox">
         <div class="sb-head"><h3>이 서식에 찍을 도장 만들기</h3><span class="new">NEW</span></div>
         <p>이름을 입력하면 (인) 자리에 넣을 도장 이미지를 바로 만듭니다. 입력한 이름은 서버로 보내지 않습니다.</p>
@@ -712,7 +766,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/settlement-agreement/settlement-agreement.pdf" download="합의서.pdf" title="합의서 PDF 다운로드">PDF</a>
       <a href="/files/settlement-agreement/settlement-agreement.docx" download="합의서.docx" title="합의서 Word 다운로드">Word</a>
-      <a href="/files/settlement-agreement/settlement-agreement.hwpx" download="합의서.hwpx" title="합의서 한글 다운로드">한글</a>
+      <a href="/files/settlement-agreement/settlement-agreement.hwpx" download="합의서.hwpx" title="합의서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -723,7 +777,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/payment-pledge/payment-pledge.pdf" download="지급각서.pdf" title="지급각서 PDF 다운로드">PDF</a>
       <a href="/files/payment-pledge/payment-pledge.docx" download="지급각서.docx" title="지급각서 Word 다운로드">Word</a>
-      <a href="/files/payment-pledge/payment-pledge.hwpx" download="지급각서.hwpx" title="지급각서 한글 다운로드">한글</a>
+      <a href="/files/payment-pledge/payment-pledge.hwpx" download="지급각서.hwpx" title="지급각서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -734,7 +788,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/repayment-plan/repayment-plan.pdf" download="채무 변제계획서.pdf" title="채무 변제계획서 PDF 다운로드">PDF</a>
       <a href="/files/repayment-plan/repayment-plan.docx" download="채무 변제계획서.docx" title="채무 변제계획서 Word 다운로드">Word</a>
-      <a href="/files/repayment-plan/repayment-plan.hwpx" download="채무 변제계획서.hwpx" title="채무 변제계획서 한글 다운로드">한글</a>
+      <a href="/files/repayment-plan/repayment-plan.hwpx" download="채무 변제계획서.hwpx" title="채무 변제계획서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -745,7 +799,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice-terminate/certified-notice-terminate.pdf" download="내용증명 (계약 해지 통보).pdf" title="내용증명 (계약 해지 통보) PDF 다운로드">PDF</a>
       <a href="/files/certified-notice-terminate/certified-notice-terminate.docx" download="내용증명 (계약 해지 통보).docx" title="내용증명 (계약 해지 통보) Word 다운로드">Word</a>
-      <a href="/files/certified-notice-terminate/certified-notice-terminate.hwpx" download="내용증명 (계약 해지 통보).hwpx" title="내용증명 (계약 해지 통보) 한글 다운로드">한글</a>
+      <a href="/files/certified-notice-terminate/certified-notice-terminate.hwpx" download="내용증명 (계약 해지 통보).hwpx" title="내용증명 (계약 해지 통보) 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -756,7 +810,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/fact-confirmation/fact-confirmation.pdf" download="사실확인서.pdf" title="사실확인서 PDF 다운로드">PDF</a>
       <a href="/files/fact-confirmation/fact-confirmation.docx" download="사실확인서.docx" title="사실확인서 Word 다운로드">Word</a>
-      <a href="/files/fact-confirmation/fact-confirmation.hwpx" download="사실확인서.hwpx" title="사실확인서 한글 다운로드">한글</a>
+      <a href="/files/fact-confirmation/fact-confirmation.hwpx" download="사실확인서.hwpx" title="사실확인서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -767,7 +821,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/quitclaim-letter/quitclaim-letter.pdf" download="권리포기 각서.pdf" title="권리포기 각서 PDF 다운로드">PDF</a>
       <a href="/files/quitclaim-letter/quitclaim-letter.docx" download="권리포기 각서.docx" title="권리포기 각서 Word 다운로드">Word</a>
-      <a href="/files/quitclaim-letter/quitclaim-letter.hwpx" download="권리포기 각서.hwpx" title="권리포기 각서 한글 다운로드">한글</a>
+      <a href="/files/quitclaim-letter/quitclaim-letter.hwpx" download="권리포기 각서.hwpx" title="권리포기 각서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -778,7 +832,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 소송·민원</div>
     <div class="dl">      <a href="/files/preparatory-brief/preparatory-brief.pdf" download="준비서면.pdf" title="준비서면 PDF 다운로드">PDF</a>
       <a href="/files/preparatory-brief/preparatory-brief.docx" download="준비서면.docx" title="준비서면 Word 다운로드">Word</a>
-      <a href="/files/preparatory-brief/preparatory-brief.hwpx" download="준비서면.hwpx" title="준비서면 한글 다운로드">한글</a>
+      <a href="/files/preparatory-brief/preparatory-brief.hwpx" download="준비서면.hwpx" title="준비서면 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -789,7 +843,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/delegation-revocation/delegation-revocation.pdf" download="위임 해지 통지서.pdf" title="위임 해지 통지서 PDF 다운로드">PDF</a>
       <a href="/files/delegation-revocation/delegation-revocation.docx" download="위임 해지 통지서.docx" title="위임 해지 통지서 Word 다운로드">Word</a>
-      <a href="/files/delegation-revocation/delegation-revocation.hwpx" download="위임 해지 통지서.hwpx" title="위임 해지 통지서 한글 다운로드">한글</a>
+      <a href="/files/delegation-revocation/delegation-revocation.hwpx" download="위임 해지 통지서.hwpx" title="위임 해지 통지서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -800,7 +854,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/statement-of-facts/statement-of-facts.pdf" download="진술서.pdf" title="진술서 PDF 다운로드">PDF</a>
       <a href="/files/statement-of-facts/statement-of-facts.docx" download="진술서.docx" title="진술서 Word 다운로드">Word</a>
-      <a href="/files/statement-of-facts/statement-of-facts.hwpx" download="진술서.hwpx" title="진술서 한글 다운로드">한글</a>
+      <a href="/files/statement-of-facts/statement-of-facts.hwpx" download="진술서.hwpx" title="진술서 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -811,10 +865,54 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
     <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/certified-notice/certified-notice.pdf" download="내용증명.pdf" title="내용증명 PDF 다운로드">PDF</a>
       <a href="/files/certified-notice/certified-notice.docx" download="내용증명.docx" title="내용증명 Word 다운로드">Word</a>
-      <a href="/files/certified-notice/certified-notice.hwpx" download="내용증명.hwpx" title="내용증명 한글 다운로드">한글</a>
+      <a href="/files/certified-notice/certified-notice.hwpx" download="내용증명.hwpx" title="내용증명 한글 다운로드 — HWPX (한글 2010 이상)">한글</a>
     </div>
   </div>
 </article>  </div></div>
+<script>
+(function(){
+  var pv=document.getElementById('pv'); if(!pv) return;
+  // 미리보기 확대 — 원본 이미지를 어두운 배경 위에 띄운다. ✕·배경·Esc 로 닫고, 핀치 줌은 허용한다
+  var lb=null, img=null, xb=null, back=null;
+  function close(){
+    if(!lb || lb.hidden) return;
+    lb.hidden=true; document.documentElement.classList.remove('lb-lock');
+    if(back) back.focus();
+  }
+  function open(src, alt, from){
+    if(!lb){
+      lb=document.createElement('div'); lb.className='lb'; lb.hidden=true;
+      lb.setAttribute('role','dialog'); lb.setAttribute('aria-modal','true'); lb.setAttribute('aria-label','미리보기 크게 보기');
+      lb.innerHTML='<button type="button" class="lb-x" aria-label="닫기">✕</button><img alt="">';
+      document.body.appendChild(lb); xb=lb.firstChild; img=lb.lastChild;
+      lb.addEventListener('click', function(e){ if(e.target!==img) close(); });
+    }
+    img.src=src; img.alt=alt; back=from;
+    lb.hidden=false; lb.scrollTop=0; document.documentElement.classList.add('lb-lock'); xb.focus();
+  }
+  pv.addEventListener('click', function(e){
+    var b=e.target.closest('.pv-zoom'); if(!b) return;
+    var i=b.querySelector('img'); open(i.currentSrc || i.src, i.alt, b);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+
+  // 모바일: 2페이지 이상이면 첫 페이지만 보이고 버튼으로 나머지를 펼친다 (PC는 버튼이 보이지 않는다)
+  var more=document.getElementById('pvMore');
+  if(more) more.addEventListener('click', function(){
+    pv.classList.add('open'); more.remove();
+    var next=pv.querySelectorAll('.pv-zoom')[1]; if(next) next.focus({preventScroll:true});
+  });
+
+  // PC: 미리보기 열이 오른쪽 열보다 길 때만 오른쪽 열을 화면에 고정한다
+  var col=pv.parentNode, meta=document.querySelector('.detail .meta'), wide=window.matchMedia('(min-width:1001px)');
+  function fit(){
+    if(!meta) return;
+    meta.classList.remove('stick');
+    if(wide.matches && meta.offsetHeight < col.offsetHeight) meta.classList.add('stick');
+  }
+  fit(); window.addEventListener('load', fit); window.addEventListener('resize', fit);
+})();
+</script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "DigitalDocument", "@id": "https://freeforms.kr/form/written-pledge/#doc", "name": "각서", "headline": "각서 양식 무료 다운로드", "description": "일방이 상대방에게 특정 사항을 약속하고 확인하는 각서 양식입니다.", "inLanguage": "ko", "isAccessibleForFree": true, "isFamilyFriendly": true, "genre": "법률 · 통지·증명", "keywords": "각서, 서약서, 약속, 확약서, 시말서", "about": {"@type": "Thing", "name": "법률 통지·증명 서식"}, "encodingFormat": ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/hwp+zip"], "associatedMedia": [{"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/written-pledge/written-pledge.pdf", "encodingFormat": "application/pdf", "contentSize": "44KB", "name": "각서 (PDF)"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/written-pledge/written-pledge.docx", "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "contentSize": "37KB", "name": "각서 (Word (DOCX))"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/written-pledge/written-pledge.hwpx", "encodingFormat": "application/hwp+zip", "contentSize": "9KB", "name": "각서 (한글 (HWPX))"}], "thumbnailUrl": "https://freeforms.kr/files/written-pledge/preview-1.webp", "url": "https://freeforms.kr/form/written-pledge/", "mainEntityOfPage": "https://freeforms.kr/form/written-pledge/", "datePublished": "2026-09-13", "dateModified": "2026-09-14", "isPartOf": {"@type": "WebSite", "@id": "https://freeforms.kr/#website", "name": "무료서식 다운로드"}, "publisher": {"@type": "Organization", "@id": "https://freeforms.kr/#org", "name": "무료서식 다운로드"}}
 </script><script type="application/ld+json">
