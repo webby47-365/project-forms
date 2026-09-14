@@ -27,6 +27,29 @@
 2. `catalog/categories.json` — 유효한 분류 키
 3. `catalog/catalog.json` — 이미 있는 서식 목록 (중복 방지)
 
+## 1-1. 밀린 방문자 요청 먼저 (가장 우선)
+
+방문자 요청은 즉시 제작(`request-form.yml`)이 맡지만, 시간당·하루 상한을 넘긴 요청은
+접수함에만 쌓여 있다. **오늘 만들 3종 중 앞자리를 이 요청들이 가져간다.**
+
+```bash
+# 접수 주소는 catalog/requests.json 의 endpoint 와 같다
+python - <<'EOS'
+import json, urllib.request
+cfg = json.load(open('catalog/requests.json', encoding='utf-8'))
+if cfg.get('endpoint'):
+    with urllib.request.urlopen(cfg['endpoint'], timeout=20) as r:
+        print(r.read().decode('utf-8'))
+EOS
+```
+
+- 돌아온 `pending` 목록을 오래된 순으로 본다.
+- `request_form_agent.md` **2절의 거르는 기준**을 똑같이 적용한다(이미 있음·법정 서식·
+  특정 기업 양식·개인정보·서식 아님·장난).
+- 통과한 요청을 **먼저** 만든다. 명세에 `from_request: true` 를 넣는다.
+- 요청으로 3종을 채웠으면 아래 수요 조사는 건너뛴다. 모자란 만큼만 자체 후보로 채운다.
+- 접수 주소가 비어 있거나 조회에 실패하면 이 절을 건너뛰고 정상 진행한다.
+
 ## 2. 수요 조사 (08:00~08:10)
 
 웹 검색으로 다음 신호를 모은다.
@@ -119,7 +142,7 @@ git push
 
 ```
 [무료서식 일일 리포트] 2026-00-00 (목) 08:42 KST
-검수 통과: 2/5  생성: 2  실패: 0  푸시: 완료
+밀린 요청: 1건 처리  검수 통과: 2/5  생성: 3  실패: 0  푸시: 완료
  1) 거래처등록신청서 (기업·영업·마케팅)  /form/vendor-registration/
  2) 상가임대차계약서 (부동산·임대·매매)  /form/commercial-lease-contract/
 다음날 재검토 후보: 지급명령신청서, 반성문, 진료 동의서

@@ -64,6 +64,8 @@ class FormSpec:
     howto: list[str] = field(default_factory=list)          # 작성 단계 3~5개, 각 한 문장
     faq: list[dict[str, str]] = field(default_factory=list)  # [{q, a}] 2~4문항, 아코디언으로 표시
     version: int = 1
+    # 방문자 요청으로 만든 서식이면 True. 요청 페이지의 "요청으로 등록된 서식"에 노출된다.
+    from_request: bool = False
     created_by: str = "manual"
     status: str = "published"
     target_pages: int = 0  # 0이면 page_break 개수로 자동 산출
@@ -244,6 +246,7 @@ def load_spec(path: Path) -> FormSpec:
         howto=_load_howto(path.name, raw.get("howto")),
         faq=_load_faq(path.name, raw.get("faq")),
         version=int(raw.get("version", 1)),
+        from_request=bool(raw.get("from_request", False)),
         created_by=str(raw.get("created_by", "manual")),
         status=str(raw.get("status", "published")),
         target_pages=int(raw.get("target_pages", 0)),

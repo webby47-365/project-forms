@@ -49,6 +49,13 @@
     {%- endfor %}
   </div>
 
+  {%- if reqs.enabled %}
+  <div class="reqbanner">
+    <p><b>찾으시는 서식이 없나요?</b> 요청하시면 보통 5분 안에 만들어 올려 드립니다.</p>
+    <a href="/request/">서식 요청하기</a>
+  </div>
+  {%- endif %}
+
   <h2 class="sec">카테고리로 찾기</h2>
   <div class="grid g4">
     {%- for c in categories %}{%- for s in c.subcategories %}

@@ -97,7 +97,8 @@
           "items": [],
           "note": "결석·보강 등 특이사항을 간단히 기록하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "access-pass-request",
@@ -208,7 +209,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "account-ledger",
@@ -297,7 +299,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "administrative-objection",
@@ -401,7 +404,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "annual-leave-plan",
@@ -510,7 +514,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "answer-brief",
@@ -603,7 +608,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "articles-of-incorporation",
@@ -689,7 +695,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "asset-handover",
@@ -788,7 +795,8 @@
           "items": [],
           "note": "추후 확인이 필요한 사항이나 별도 보관 중인 물품을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "asset-ledger",
@@ -873,7 +881,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "attendance-sheet",
@@ -946,7 +955,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "balance-confirmation",
@@ -1033,7 +1043,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "blood-transfusion-consent",
@@ -1138,7 +1149,8 @@
       "warnings": [],
       "created_at": "2026-09-14T13:01:20+09:00",
       "updated_at": "2026-09-14T13:01:20+09:00",
-      "downloads": 0
+      "downloads": 0,
+      "from_request": false
     },
     {
       "id": "board-minutes",
@@ -1235,7 +1247,8 @@
           ],
           "note": "주요 논의 경과와 반대·유보 의견이 있었던 경우 그 내용을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "budget-execution",
@@ -1339,7 +1352,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "budget-plan",
@@ -1445,7 +1459,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "business-card-request",
@@ -1566,7 +1581,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "business-plan-simple",
@@ -1673,7 +1689,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "business-plan-standard",
@@ -1800,7 +1817,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "business-reg-checklist",
@@ -1882,7 +1900,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "business-trip-report",
@@ -1991,7 +2010,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "business-trip-request",
@@ -2106,7 +2126,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "campaign-result",
@@ -2212,7 +2233,8 @@
           "items": [],
           "note": "다음 캠페인에 반영할 구체적인 개선안을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "car-accident-settlement",
@@ -2315,7 +2337,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "care-service-application",
@@ -2430,7 +2453,8 @@
           ],
           "note": "서비스 제공 시 유의할 사항(선호하는 요양보호사 성별, 반려동물, 출입 방법 등)을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "career-certificate",
@@ -2520,7 +2544,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "career-desc-job",
@@ -2622,7 +2647,8 @@
           "items": [],
           "note": "재직 기간 전체에서 가장 자신 있는 성과를 수치로 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "career-desc-project",
@@ -2714,7 +2740,8 @@
           "items": [],
           "note": "대표 프로젝트 1 — 목표, 진행 과정, 본인의 역할과 성과를 구체적으로 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "career-description",
@@ -2827,7 +2854,8 @@
           ],
           "note": "추가로 강조하고 싶은 경험이나 교육 이수 내역을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "caregiver-contract",
@@ -2941,7 +2969,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "certified-notice",
@@ -3028,7 +3057,8 @@
           "items": [],
           "note": "상대방에게 요구하는 사항과 구체적인 이행기한(예: 2026년 9월 30일까지)을 명시하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "certified-notice-deposit",
@@ -3124,7 +3154,8 @@
           "items": [],
           "note": "요구하는 사항과 구체적인 이행 기한을 명시하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "certified-notice-loan",
@@ -3219,7 +3250,8 @@
           "items": [],
           "note": "요구하는 사항과 구체적인 이행 기한을 명시하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "certified-notice-terminate",
@@ -3320,7 +3352,8 @@
           "items": [],
           "note": "해지에 따라 상대방에게 요구하는 조치(원상회복, 반환 등)를 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "certified-notice-wage",
@@ -3421,7 +3454,8 @@
           "items": [],
           "note": "요구하는 사항과 구체적인 이행 기한을 명시하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "checklist",
@@ -3496,7 +3530,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "civil-conciliation",
@@ -3592,7 +3627,8 @@
           "items": [],
           "note": "소송이 아닌 조정 절차를 택한 이유를 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "civil-petition",
@@ -3698,7 +3734,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "claim-assignment-notice",
@@ -3798,7 +3835,8 @@
           ],
           "note": "기타 안내사항 — 분할 양도 내역, 기존 변제 내역 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "class-timetable",
@@ -3906,7 +3944,8 @@
           ],
           "note": "메모 — 수행평가 일정, 변경된 수업 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "client-visit-report",
@@ -4015,7 +4054,8 @@
           "items": [],
           "note": "다음 방문 일정, 회신 기한, 내부 공유 사항 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "club-activity-record",
@@ -4119,7 +4159,8 @@
           "items": [],
           "note": "관찰한 활동 태도와 성장한 부분을 간결하게 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "commercial-lease-contract",
@@ -4241,7 +4282,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "complaint-goods-payment",
@@ -4349,7 +4391,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "complaint-handling",
@@ -4467,7 +4510,8 @@
           "items": [],
           "note": "동일한 불만이 재발하지 않도록 개선할 사항을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "complaint-loan-return",
@@ -4574,7 +4618,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "consulting-contract",
@@ -4667,7 +4712,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "cooperation-request",
@@ -4775,7 +4821,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "corporate-card-report",
@@ -4880,7 +4927,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "counseling-log",
@@ -4969,7 +5017,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "course-registration",
@@ -5080,7 +5129,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "cover-letter",
@@ -5180,7 +5230,8 @@
           "items": [],
           "note": "입사 후 단기(1년)·중장기(3~5년) 목표를 나누어 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "cover-letter-experienced",
@@ -5283,7 +5334,8 @@
           "items": [],
           "note": "단기·중기로 나누어 구체적인 기여 계획을 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "cover-letter-free",
@@ -5358,7 +5410,8 @@
           ],
           "note": "항목 구분 없이 성장과정, 성격, 경험 등을 자유롭게 작성하십시오. (1/2)"
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "cover-letter-newcomer",
@@ -5452,7 +5505,8 @@
           "items": [],
           "note": "회사를 선택한 이유와 단기·중장기 목표를 구분하여 800자 내외로 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "cover-letter-star",
@@ -5537,7 +5591,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "customer-card",
@@ -5646,7 +5701,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "daily-cash-report",
@@ -5764,7 +5820,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "daily-planner",
@@ -5872,7 +5929,8 @@
           ],
           "note": "이번 기간을 돌아보며 잘한 점과 개선할 점을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "delegation-revocation",
@@ -5977,7 +6035,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "delivery-confirmation",
@@ -6075,7 +6134,8 @@
           ],
           "note": "불합격·부분합격 시 사유와 조치사항을 구체적으로 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "deposit-return-notice",
@@ -6170,7 +6230,8 @@
           "items": [],
           "note": "보증금 반환 계좌와 반환 기한을 명시하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "depreciation-schedule",
@@ -6262,7 +6323,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "director-acceptance",
@@ -6345,7 +6407,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "disciplinary-notice",
@@ -6437,7 +6500,8 @@
           "items": [],
           "note": "징계 대상 행위의 경과와 판단 근거를 구체적으로 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "disclosure-objection",
@@ -6541,7 +6605,8 @@
           "items": [],
           "note": "비공개 사유가 부당하다고 보는 근거를 구체적으로 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "distributor-contract",
@@ -6631,7 +6696,8 @@
           "items": [],
           "note": "독점 공급 여부, 재고 인수 조건 등 추가로 합의한 사항을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "document-register",
@@ -6716,7 +6782,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "employee-roster",
@@ -6805,7 +6872,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "employment-certificate",
@@ -6892,7 +6960,8 @@
           ],
           "note": "담당업무를 간략히 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "english-cover-letter",
@@ -6983,7 +7052,8 @@
           "items": [],
           "note": "Opening — State the position you are applying for and how you learned about it."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "equipment-lease-contract",
@@ -7086,7 +7156,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "event-application",
@@ -7188,7 +7259,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "event-photo-consent",
@@ -7288,7 +7360,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "event-plan",
@@ -7406,7 +7479,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "expense-approval",
@@ -7513,7 +7587,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "expense-report",
@@ -7626,7 +7701,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "explanation-statement",
@@ -7718,7 +7794,8 @@
           "items": [],
           "note": "향후 동일한 사안이 재발하지 않도록 할 개선 방안을 구체적으로 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "facility-repair-request",
@@ -7831,7 +7908,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "fact-confirmation",
@@ -7911,7 +7989,8 @@
           ],
           "note": "확인하는 사실(계약 이행, 금전 거래, 서비스 제공, 물품 인수 등)의 구체적 내용과 일시·장소를 명확하게 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "family-event-notice",
@@ -8013,7 +8092,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "field-trip-consent",
@@ -8125,7 +8205,8 @@
           ],
           "note": "특이사항 — 활동 중 유의할 점이나 사전에 알려야 할 사항을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "fixed-term-labor-contract",
@@ -8253,7 +8334,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "franchise-contract",
@@ -8357,7 +8439,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "freelance-contract",
@@ -8458,7 +8541,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "gift-contract",
@@ -8549,7 +8633,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "goods-sale-contract",
@@ -8656,7 +8741,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "grade-report",
@@ -8768,7 +8854,8 @@
           ],
           "note": "관찰한 사실을 바탕으로 긍정적이고 중립적으로 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "guardian-consent",
@@ -8878,7 +8965,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "handover-report",
@@ -8983,7 +9071,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "hospital-transfer-request",
@@ -9090,7 +9179,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "household-budget",
@@ -9190,7 +9280,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "household-budget-weekly",
@@ -9294,7 +9385,8 @@
           "items": [],
           "note": "이번 주 소비 패턴과 다음 주 예산 계획을 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "household-budget-yearly",
@@ -9414,7 +9506,8 @@
           "items": [],
           "note": "다음 해에 개선하고 싶은 소비·저축 계획을 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "housing-lease-contract",
@@ -9532,7 +9625,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "illegal-dumping-report",
@@ -9632,7 +9726,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "incident-report",
@@ -9728,7 +9823,8 @@
           "items": [],
           "note": "사건 발생 후 취한 조치, 피해 규모, 안전 조치, 관계자 조치 결과 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "info-disclosure-request",
@@ -9843,7 +9939,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "internal-announcement",
@@ -9938,7 +10035,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "internal-memo",
@@ -10047,7 +10145,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "interview-evaluation",
@@ -10145,7 +10244,8 @@
           "items": [],
           "note": "지원자에 대한 전반적인 평가와 추천 사유를 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "invitation-card",
@@ -10248,7 +10348,8 @@
           ],
           "note": "기타 안내사항 — 식사 제공, 선물 사양, 우천 시 안내 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "invoice-request",
@@ -10348,7 +10449,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "job-application-form",
@@ -10471,7 +10573,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "job-description",
@@ -10575,7 +10678,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "joint-venture-contract",
@@ -10681,7 +10785,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "labor-contract-daily",
@@ -10780,7 +10885,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "labor-contract-minor",
@@ -10891,7 +10997,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "labor-contract-parttime",
@@ -11004,7 +11111,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "labor-contract-standard",
@@ -11109,7 +11217,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "lease-renewal-contract",
@@ -11218,7 +11327,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "lease-termination-notice",
@@ -11322,7 +11432,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "lease-transfer-contract",
@@ -11431,7 +11542,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "leave-request",
@@ -11534,7 +11646,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "lesson-plan",
@@ -11638,7 +11751,8 @@
           "items": [],
           "note": "지도상 유의할 점, 학습 지원이 필요한 부분 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "license-contract",
@@ -11739,7 +11853,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "loan-agreement",
@@ -11832,7 +11947,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "loan-note-guaranteed",
@@ -11933,7 +12049,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "loan-note-simple",
@@ -12022,7 +12139,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "long-term-care-application",
@@ -12127,7 +12245,8 @@
           "items": [],
           "note": "현재 돌봄을 제공하는 사람과 돌봄 시간, 생활 환경 등을 간단히 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "marketing-plan",
@@ -12241,7 +12360,8 @@
           "items": [],
           "note": "매출·인지도 측면의 기대효과를 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "mbo-sheet",
@@ -12353,7 +12473,8 @@
           "items": [],
           "note": "전체 목표 달성도에 대한 종합 의견과 다음 기간 목표 방향을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "medical-expense-support",
@@ -12455,7 +12576,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "medical-record-request",
@@ -12547,7 +12669,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "medical-treatment-consent",
@@ -12652,7 +12775,8 @@
           ],
           "note": "환자가 질문한 내용과 그에 대한 답변, 그 밖에 확인이 필요한 사항을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "meeting-minutes",
@@ -12745,7 +12869,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "meeting-minutes-simple",
@@ -12836,7 +12961,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "minor-activity-consent",
@@ -12934,7 +13060,8 @@
           "items": [],
           "note": "복용 약물, 신체 활동 제한 등 유의가 필요한 사항이 있으면 기재하십시오(구체적인 질병명 대신 유의사항만 기재)."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "monthly-rent-receipt",
@@ -13025,7 +13152,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "monthly-schedule",
@@ -13125,7 +13253,8 @@
           "items": [],
           "note": "이번 달 기억할 일이나 다짐을 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "mou-agreement",
@@ -13204,7 +13333,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "move-in-checklist",
@@ -13310,7 +13440,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "moving-checklist",
@@ -13413,7 +13544,8 @@
           ],
           "note": "특이사항 — 사다리차 예약, 엘리베이터 사용 신청, 폐기물 처리 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "moving-in-report",
@@ -13516,7 +13648,8 @@
           ],
           "note": "기타 신고사항 — 다가구주택 상세주소, 임대차 관련 사항 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "nda",
@@ -13606,7 +13739,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "noise-complaint",
@@ -13708,7 +13842,8 @@
           "items": [],
           "note": "관리사무소나 중재기관에 바라는 조치를 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "official-letter",
@@ -13794,7 +13929,8 @@
           ],
           "note": "공문 내용을 간명하고 정중하게 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "overtime-application",
@@ -13885,7 +14021,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "parental-leave-request",
@@ -13990,7 +14127,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "parking-fine-objection",
@@ -14090,7 +14228,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "parking-lease-contract",
@@ -14198,7 +14337,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "partnership-agreement",
@@ -14291,7 +14431,8 @@
           ],
           "note": "상표·특허 등 지식재산의 귀속, 가족의 사업 참여, 배우자 동의 여부 등 합의한 내용을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "partnership-dissolution-agreement",
@@ -14390,7 +14531,8 @@
       "warnings": [],
       "created_at": "2026-09-14T13:01:30+09:00",
       "updated_at": "2026-09-14T13:02:02+09:00",
-      "downloads": 0
+      "downloads": 0,
+      "from_request": false
     },
     {
       "id": "payment-confirmation",
@@ -14489,7 +14631,8 @@
           ],
           "note": "비고 — 분할 입금 일정, 수수료 부담 주체 등 특이사항을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "payment-order-application",
@@ -14591,7 +14734,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "payment-pledge",
@@ -14693,7 +14837,8 @@
           "items": [],
           "note": "특약사항 — 담보 제공, 연대보증, 변제 순서 등 추가로 합의한 내용을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "payslip",
@@ -14797,7 +14942,8 @@
           ],
           "note": "연장·야간·휴일근로의 시간 수와 단가, 일할계산 기준, 공제 요율 등 금액 산출 근거를 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "performance-evaluation",
@@ -14896,7 +15042,8 @@
           "items": [],
           "note": "향후 역량 개발과 육성을 위한 계획을 구체적으로 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "personnel-order",
@@ -14996,7 +15143,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "pet-adoption-contract",
@@ -15110,7 +15258,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "petition-letter",
@@ -15200,7 +15349,8 @@
           "items": [],
           "note": "당사자의 평소 생활, 사건 이후의 태도, 선처를 구하는 사정을 구체적인 사실로 기재하십시오. 사건 자체를 부정하는 내용은 피하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "petty-cash-ledger",
@@ -15290,7 +15440,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "portfolio-cover",
@@ -15387,7 +15538,8 @@
           ],
           "note": "포트폴리오 소개 — 작업 방향과 강조하고 싶은 점을 간단히 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "portrait-rights-consent",
@@ -15500,7 +15652,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "power-of-attorney",
@@ -15590,7 +15743,8 @@
           ],
           "note": "위임하는 업무를 구체적으로 특정하여 기재하십시오. (예: OO은행 OO지점 예금계좌 해지 신청 및 잔액 수령)"
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "preparatory-brief",
@@ -15688,7 +15842,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "privacy-consent",
@@ -15788,7 +15943,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "privacy-consent-marketing",
@@ -15878,7 +16034,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "privacy-consent-simple",
@@ -15963,7 +16120,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "privacy-consent-third",
@@ -16054,7 +16212,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "probation-evaluation",
@@ -16148,7 +16307,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "property-viewing-log",
@@ -16251,7 +16411,8 @@
           "items": [],
           "note": "비교한 매물 중 우선순위와 선택 이유를 정리하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "proposal-cover",
@@ -16340,7 +16501,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "proposal-draft",
@@ -16443,7 +16605,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "purchase-order",
@@ -16566,7 +16729,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "quitclaim-letter",
@@ -16650,7 +16814,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "quotation",
@@ -16765,7 +16930,8 @@
           ],
           "note": "특기사항 — 하자보증, 운송비 부담, 추가 비용 발생 조건 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "quotation-comparison",
@@ -16863,7 +17029,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "quotation-detailed",
@@ -16980,7 +17147,8 @@
           ],
           "note": "특기사항 — 하자보증, 운송비 부담, 추가 비용 발생 조건 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "quotation-simple",
@@ -17067,7 +17235,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "reading-log",
@@ -17166,7 +17335,8 @@
           ],
           "note": "책을 읽고 느낀 점, 배운 점, 자신의 경험과 연결된 생각을 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "real-estate-sale-contract",
@@ -17284,7 +17454,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "receipt",
@@ -17389,7 +17560,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "recommendation-letter",
@@ -17494,7 +17666,8 @@
           "items": [],
           "note": "구체적인 경험과 성과를 들어 추천 사유를 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "reference-check-consent",
@@ -17587,7 +17760,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "remote-work-request",
@@ -17702,7 +17876,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "repayment-plan",
@@ -17797,7 +17972,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resident-registration-request",
@@ -17900,7 +18076,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resignation-letter",
@@ -17992,7 +18169,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resignation-simple",
@@ -18068,7 +18246,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resume-basic",
@@ -18198,7 +18377,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resume-english",
@@ -18311,7 +18491,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resume-experienced",
@@ -18433,7 +18614,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resume-narrative",
@@ -18532,7 +18714,8 @@
           "items": [],
           "note": "해당 회사·직무에 관심을 갖게 된 계기와 기여하고 싶은 부분을 서술하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resume-newcomer",
@@ -18663,7 +18846,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resume-parttime",
@@ -18768,7 +18952,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "resume-simple",
@@ -18872,7 +19057,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "retirement-application",
@@ -18970,7 +19156,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "return-exchange-request",
@@ -19074,7 +19261,8 @@
       "warnings": [],
       "created_at": "2026-09-14T13:02:09+09:00",
       "updated_at": "2026-09-14T13:02:09+09:00",
-      "downloads": 0
+      "downloads": 0,
+      "from_request": false
     },
     {
       "id": "road-repair-request",
@@ -19172,7 +19360,8 @@
           ],
           "note": "보수를 요청하는 이유와 바라는 조치를 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "sales-contract",
@@ -19273,7 +19462,8 @@
           "items": [],
           "note": "반품 조건, 최소 발주수량, 독점 공급 여부 등 합의한 내용을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "sales-daily-log",
@@ -19377,7 +19567,8 @@
           "items": [],
           "note": "다음 영업일의 방문·통화 계획을 간단히 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "sales-plan",
@@ -19483,7 +19674,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "scholarship-application",
@@ -19591,7 +19783,8 @@
           "items": [],
           "note": "장학금 신청 이유와 학업 계획을 구체적으로 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "seal-certificate-poa",
@@ -19686,7 +19879,8 @@
           ],
           "note": "특기사항 — 발급 제한 조건이나 추가 위임 사항이 있으면 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "seal-usage-log",
@@ -19771,7 +19965,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "service-contract",
@@ -19865,7 +20060,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "service-contract-simple",
@@ -19953,7 +20149,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "settlement-agreement",
@@ -20034,7 +20231,8 @@
           ],
           "note": "분쟁의 원인이 된 사건, 당사자 간의 분쟁 내용, 분쟁 해결 조건(금전 지급, 물품 인수, 이용 제한 등)을 상세히 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "severance-calculation",
@@ -20148,7 +20346,8 @@
           ],
           "note": "특이사항 — 퇴직연금(DB/DC) 가입 여부, 미사용 연차 처리, 대여금 상계 등을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "shareholder-meeting-minutes",
@@ -20245,7 +20444,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "shareholder-register",
@@ -20333,7 +20533,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "small-claims-complaint",
@@ -20425,7 +20626,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "sponsorship-application",
@@ -20535,7 +20737,8 @@
           ],
           "note": "전하고 싶은 말씀이나 요청사항을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "startup-checklist",
@@ -20612,7 +20815,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "statement-of-facts",
@@ -20713,7 +20917,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "stock-transfer-contract",
@@ -20805,7 +21010,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "student-record-card",
@@ -20925,7 +21131,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "study-plan",
@@ -21020,7 +21227,8 @@
           "items": [],
           "note": "실제 진행 상황, 어려웠던 점, 개선할 사항을 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "subcontract-agreement",
@@ -21113,7 +21321,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "sublease-contract",
@@ -21217,7 +21426,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "supply-purchase-request",
@@ -21324,7 +21534,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "surgery-consent",
@@ -21430,7 +21641,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "survey-consent",
@@ -21547,7 +21759,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "tax-invoice",
@@ -21646,7 +21859,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "teacher-recommendation",
@@ -21744,7 +21958,8 @@
           "items": [],
           "note": "구체적인 관찰 사례를 들어 추천 사유를 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "thank-you-letter",
@@ -21824,7 +22039,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "training-certificate",
@@ -21920,7 +22136,8 @@
           ],
           "note": "교육 성과 및 활용 계획 — 업무 적용 방안을 간단히 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "transaction-statement",
@@ -22026,7 +22243,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "travel-plan",
@@ -22125,7 +22343,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "tuition-refund-request",
@@ -22236,7 +22455,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "used-car-sale-contract",
@@ -22342,7 +22562,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "vaccination-consent",
@@ -22437,7 +22658,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "vehicle-log",
@@ -22525,7 +22747,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "vehicle-use-request",
@@ -22638,7 +22861,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "vendor-registration",
@@ -22765,7 +22989,8 @@
           ],
           "note": "등록 사유와 특기사항을 기재하십시오. (예: 기존 업체 단가 대비 15% 절감, 납기 단축)"
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "visitor-log",
@@ -22851,7 +23076,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "volunteer-application",
@@ -22975,7 +23201,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "weekly-study-plan",
@@ -23073,7 +23300,8 @@
           "items": [],
           "note": "실제 진행 상황, 어려웠던 점, 다음 주 계획을 작성하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "welfare-facility-application",
@@ -23175,7 +23403,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "will-form",
@@ -23253,7 +23482,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "withholding-request",
@@ -23339,7 +23569,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "work-journal",
@@ -23433,7 +23664,8 @@
           "items": [],
           "note": "금일 처리 중 발생한 주요 이슈나 건의사항을 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "work-report-monthly",
@@ -23546,7 +23778,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "work-report-weekly",
@@ -23649,7 +23882,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "written-apology",
@@ -23744,7 +23978,8 @@
           ],
           "note": "근본 원인과 앞으로의 개선·재발방지 방안을 구체적으로 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "written-pledge",
@@ -23825,7 +24060,8 @@
           ],
           "note": "약속하는 구체적인 내용, 이행 기한, 지급액이나 이행 방법을 명확하게 기재하십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "written-statement",
@@ -23914,7 +24150,8 @@
           "items": [],
           "note": "직접 보고 들은 사실을 시간순으로 육하원칙에 따라 기재하십시오. 추측과 사실을 구분해 적으십시오."
         }
-      ]
+      ],
+      "from_request": false
     },
     {
       "id": "year-end-tax-checklist",
@@ -23997,7 +24234,8 @@
           ],
           "note": ""
         }
-      ]
+      ],
+      "from_request": false
     }
   ]
 }

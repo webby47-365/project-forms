@@ -341,6 +341,52 @@ footer.site li{margin:3px 0}
 .hub-link{display:inline-block; margin:10px 0 0; font-size:13px; font-weight:600; color:var(--accent)}
 .hub-link:hover{text-decoration:underline}
 
+/* 서식 요청 */
+.reqbox{display:grid; grid-template-columns:1fr 320px; gap:26px; align-items:start;
+  border:1px solid var(--line); border-radius:var(--radius); background:#fff; padding:22px 24px; margin:6px 0 0}
+.reqform label{display:block; font-size:14px; font-weight:700; color:var(--navy); margin:0 0 7px}
+.reqform label b{color:#c0392b}
+.reqform label[for="rq-purpose"]{margin-top:18px}
+.reqform input[type=text], .reqform textarea{width:100%; padding:11px 13px; font-size:15px;
+  font-family:inherit; border:1px solid var(--line-img); border-radius:9px; background:#fff; color:var(--ink)}
+.reqform input[type=text]:focus, .reqform textarea:focus{outline:none; border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.reqform textarea{resize:vertical; line-height:1.6}
+.reqform .cnt{text-align:right; font-size:12px; color:var(--muted); margin-top:5px}
+.reqform button{margin-top:16px; padding:13px 30px; font-size:15px; font-weight:700; color:#fff;
+  background:var(--navy); border:0; border-radius:9px; cursor:pointer}
+.reqform button:hover{background:var(--navy-700)}
+.reqform button:disabled{background:#8fa6c2; cursor:default}
+/* 봇 차단용 숨김 칸 — display:none은 일부 봇이 걸러내므로 화면 밖으로 밀어낸다 */
+.rq-hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
+.rq-msg{margin:14px 0 0; padding:12px 14px; border-radius:9px; font-size:14px; line-height:1.7}
+.rq-msg.ok{background:#eef5ff; border:1px solid #c9dcf7; color:#1d3c63}
+.rq-msg.bad{background:#fdf0ee; border:1px solid #f3d2cc; color:#8c2f22}
+.rq-msg b{font-weight:700}
+.rq-msg a{color:var(--accent); font-weight:600}
+.rq-msg a:hover{text-decoration:underline}
+.reqnote{margin:0; padding:16px 18px; list-style:none; background:var(--bg-soft);
+  border:1px solid var(--line); border-radius:var(--radius); font-size:13.5px; line-height:1.8; color:#475467}
+.reqnote li{position:relative; padding-left:14px; margin:0 0 9px}
+.reqnote li:last-child{margin-bottom:0}
+.reqnote li::before{content:'·'; position:absolute; left:2px; color:var(--navy); font-weight:700}
+.reqnote b{color:var(--navy)}
+.reqlead{display:flex; flex-wrap:wrap; align-items:baseline; gap:9px; color:#374151; font-size:15.5px}
+.reqlead b{color:var(--navy); font-weight:700}
+.reqbadge{flex:0 0 auto; background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
+
+/* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+.reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
+  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  background:var(--bg-soft); text-align:center}
+.reqbanner p{margin:0; font-size:15px; color:#374151}
+.reqbanner b{color:var(--navy)}
+.reqbanner a{flex:0 0 auto; padding:11px 22px; border-radius:9px; background:var(--navy);
+  color:#fff; font-weight:700; font-size:14.5px}
+.reqbanner a:hover{background:var(--navy-700)}
+@media (max-width:860px){ .reqbox{grid-template-columns:1fr; gap:18px} }
+
 /* 검색 결과 페이지 */
 .sform{display:flex; gap:8px; margin:0 0 6px; max-width:560px}
 .sform input{flex:1 1 auto; min-width:0; padding:12px 14px; font-size:15px;
@@ -571,6 +617,7 @@ footer.site li{margin:3px 0}
       <div style="flex:1 1 260px">
         <strong>무료서식 다운로드</strong>
         <p style="margin:8px 0 0">회원가입 없이 업무·법률·공공·생활 서식을<br>PDF · Word · 한글 형식으로 무료 다운로드.</p>
+        <p style="margin:10px 0 0"><a href="/request/"><strong>찾는 서식이 없나요? 요청하기 →</strong></a></p>
       </div>
       <div style="flex:1 1 420px">
         <strong>카테고리</strong>

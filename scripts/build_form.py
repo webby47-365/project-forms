@@ -316,6 +316,7 @@ def build_one(spec: FormSpec) -> dict[str, Any]:
         "howto": spec.howto,
         "faq": spec.faq,
         "outline": spec.outline,
+        "from_request": spec.from_request,
         "featured": spec.featured,
         "featured_rank": spec.featured_rank,
         "version": spec.version,

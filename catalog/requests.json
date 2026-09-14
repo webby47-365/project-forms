@@ -1,0 +1,14 @@
+{
+  "_comment": "방문자 서식 요청 접수 설정. endpoint가 비어 있으면 사이트에 요청 폼이 전혀 나오지 않습니다.",
+  "enabled": false,
+  "endpoint": "",
+  "max_title": 40,
+  "max_purpose": 120,
+  "_guide": {
+    "enabled": "true로 바꾸고 endpoint를 채워야 폼이 노출됩니다. 둘 중 하나라도 비면 꺼진 상태입니다.",
+    "endpoint": "구글 Apps Script 웹앱 배포 주소 (https://script.google.com/macros/s/.../exec)",
+    "max_title": "서식 이름 입력칸 최대 글자수",
+    "max_purpose": "용도 입력칸 최대 글자수"
+  },
+  "_note": "이메일 등 개인정보는 받지 않습니다. 받는 항목은 '서식 이름'과 '용도' 두 가지뿐이며, 그래서 개인정보처리방침을 고칠 필요가 없습니다. 항목을 늘릴 때는 처리방침을 먼저 검토하십시오."
+}

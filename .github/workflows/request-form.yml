@@ -1,0 +1,150 @@
+# =====================================================================
+#  [서버 작업 - GitHub Actions]  무료서식 다운로드 — 방문자 요청 즉시 제작
+#
+#  사이트의 서식 요청 폼 → 구글 Apps Script → 이 워크플로(신호 방식)로 이어진다.
+#  요청 한 건당 서식 1종을 만들어 배포까지 끝낸다. 목표 소요 5~7분.
+#
+#  일일 작업(daily-forms.yml)과 같은 순번 그룹을 쓰므로 둘이 동시에 밀어넣지 않는다.
+#  절차의 정본은 scripts/agent/request_form_agent.md 이다.
+# =====================================================================
+name: 요청 서식 즉시 제작
+
+on:
+  repository_dispatch:
+    types: [form-request]
+  # 시험용. Actions 탭에서 서식 이름을 직접 넣어 돌려볼 수 있다.
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "요청 서식 이름 (예: 반려견 분양 계약서)"
+        required: true
+      purpose:
+        description: "용도 (선택)"
+        required: false
+        default: ""
+
+concurrency:
+  group: forms-pipeline
+  cancel-in-progress: false
+
+jobs:
+  make-form:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 서식 생성 도구 설치
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-writer poppler-utils fonts-noto-cjk
+          pip install --quiet python-docx python-hwpx jinja2 pyyaml pillow
+
+      - name: 한글 글꼴 대체 설정
+        run: |
+          mkdir -p ~/.config/fontconfig
+          cat > ~/.config/fontconfig/fonts.conf <<'EOF'
+          <?xml version="1.0"?>
+          <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+          <fontconfig>
+            <match target="pattern">
+              <test name="family"><string>Malgun Gothic</string></test>
+              <edit name="family" mode="assign" binding="strong">
+                <string>Noto Sans CJK KR</string>
+              </edit>
+            </match>
+            <match target="pattern">
+              <test name="family"><string>맑은 고딕</string></test>
+              <edit name="family" mode="assign" binding="strong">
+                <string>Noto Sans CJK KR</string>
+              </edit>
+            </match>
+          </fontconfig>
+          EOF
+          fc-cache -f
+
+      # 신호(repository_dispatch)로 왔는지 손으로 돌렸는지에 따라 값이 오는 자리가 다르다
+      - name: 요청 내용 정리
+        id: req
+        env:
+          D_TITLE: ${{ github.event.client_payload.title }}
+          D_PURPOSE: ${{ github.event.client_payload.purpose }}
+          W_TITLE: ${{ inputs.title }}
+          W_PURPOSE: ${{ inputs.purpose }}
+        run: |
+          TITLE="${D_TITLE:-$W_TITLE}"
+          PURPOSE="${D_PURPOSE:-$W_PURPOSE}"
+          if [ -z "$TITLE" ]; then echo "요청 서식 이름이 비어 있습니다."; exit 1; fi
+          # 개행을 지워 한 줄로 만든다 (뒤에서 프롬프트에 그대로 들어간다)
+          TITLE=$(printf '%s' "$TITLE" | tr -d '\r\n' | cut -c1-40)
+          PURPOSE=$(printf '%s' "$PURPOSE" | tr -d '\r\n' | cut -c1-120)
+          echo "title=$TITLE" >> "$GITHUB_OUTPUT"
+          echo "purpose=$PURPOSE" >> "$GITHUB_OUTPUT"
+          echo "요청 서식: $TITLE"
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          show_full_output: true
+          prompt: |
+            방문자가 아래 서식을 요청했다.
+
+            요청 서식 이름: ${{ steps.req.outputs.title }}
+            용도: ${{ steps.req.outputs.purpose }}
+
+            저장소의 scripts/agent/request_form_agent.md 를 먼저 읽고, 그 절차를 그대로 수행하라.
+            요청은 기다리는 사람이 있으므로 군더더기 없이 곧장 진행한다.
+            작업 요약은 한국어로 남긴다.
+          claude_args: |
+            --max-turns 80
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+
+  # 워크플로 안에서 만든 푸시로는 deploy-pages가 깨어나지 않으므로 여기서 배포까지 끝낸다
+  deploy:
+    needs: make-form
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: 사이트 생성
+        run: python scripts/build_site.py
+
+      - name: 커스텀 도메인 지정 (CNAME)
+        run: if [ -f CNAME ]; then cp CNAME public/CNAME; fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

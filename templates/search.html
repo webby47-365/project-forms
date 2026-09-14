@@ -23,6 +23,12 @@
       한 단어로 줄여서 다시 찾아보세요. 예를 들어 <b>근로계약서(정규직)</b> 대신 <b>근로계약</b>으로 찾으면 관련 서식이 모두 나옵니다.<br>
       아래 분류에서 직접 골라볼 수도 있습니다.
     </div>
+    {%- if reqs.enabled %}
+    <div class="reqbanner">
+      <p><b>그래도 없으면 요청하세요.</b> 보통 5분 안에 만들어 올려 드립니다.</p>
+      <a href="/request/" id="snone-req">이 서식 요청하기</a>
+    </div>
+    {%- endif %}
     <div class="grid g4">
       {%- for c in categories %}{%- for s in c.subcategories %}
       <a href="/category/{{ c.key }}/{{ s.key }}/" class="card" style="padding:15px 16px">
@@ -93,6 +99,9 @@
     if (!list.length){
       grid.innerHTML = '';
       noneEl.hidden = false;
+      // 못 찾은 검색어를 요청 폼에 그대로 넘겨 준다
+      var reqLink = document.getElementById('snone-req');
+      if (reqLink) reqLink.href = '/request/?q=' + encodeURIComponent(term);
       countEl.innerHTML = '<b>' + esc(term) + '</b> 검색 결과가 없습니다.';
       return;
     }

@@ -24,6 +24,7 @@ PUBLIC = ROOT / "public"
 CATALOG = ROOT / "catalog" / "catalog.json"
 CATEGORIES = ROOT / "catalog" / "categories.json"
 ADS = ROOT / "catalog" / "ads.json"
+REQUESTS = ROOT / "catalog" / "requests.json"
 
 SITE_NAME = "무료서식 다운로드"
 SITE_URL = "https://freeforms.kr"  # canonical·sitemap·JSON-LD에 사용
@@ -88,6 +89,32 @@ def load_ads() -> dict[str, Any]:
     return cfg
 
 
+# 방문자 서식 요청 접수 설정 기본값. 파일이 없거나 항목이 빠져도 '꺼짐'으로 동작한다.
+REQUESTS_DEFAULT: dict[str, Any] = {
+    "enabled": False,
+    "endpoint": "",
+    "max_title": 40,
+    "max_purpose": 120,
+}
+
+
+def load_requests() -> dict[str, Any]:
+    """요청 접수 설정을 읽는다. 접수 주소가 없으면 폼을 전혀 내보내지 않는다."""
+    cfg = dict(REQUESTS_DEFAULT)
+    if REQUESTS.exists():
+        try:
+            raw = json.loads(REQUESTS.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise SiteBuildError(f"requests.json 파싱 실패 — {exc}") from exc
+        for key in REQUESTS_DEFAULT:
+            if key in raw:
+                cfg[key] = raw[key]
+    # 광고와 같은 2단계 게이트: 켜짐 + 주소가 모두 있어야 화면에 나온다
+    if not (cfg["enabled"] and cfg["endpoint"]):
+        cfg["enabled"] = False
+    return cfg
+
+
 def download_urls(form_id: str, interstitial: bool) -> dict[str, str]:
     """형식별 다운로드 링크. 중간 페이지 사용 여부에 따라 경로가 달라진다."""
     if interstitial:
@@ -124,6 +151,7 @@ def build() -> int:
     catalog = load_json(CATALOG)
     cats_data = load_json(CATEGORIES)
     ads = load_ads()
+    reqs = load_requests()
     categories: list[dict[str, Any]] = sorted(
         cats_data["categories"], key=lambda c: c.get("order", 99))
 
@@ -210,6 +238,7 @@ def build() -> int:
         "ticker": ticker,
         "series_hubs": series_hubs,
         "ads": ads,
+        "reqs": reqs,
         "biz_name": BIZ_NAME,
         "biz_number": BIZ_NUMBER,
         "contact_email": CONTACT_EMAIL,
@@ -368,6 +397,21 @@ def build() -> int:
     ))
     pages += 1
 
+    # 3-5) 서식 요청 페이지 — 방문자가 필요한 서식을 남기면 일일 에이전트가 우선 제작한다.
+    #      접수 주소(requests.json)가 없으면 폼 없이 안내만 나가므로 항상 만들어 둔다.
+    from_request = sorted(
+        (f for f in forms if f.get("from_request")),
+        key=lambda f: f.get("created_at", ""), reverse=True,
+    )[:8]
+    write(PUBLIC / "request" / "index.html", env.get_template("request.html").render(
+        page_title=f"서식 요청 — {SITE_NAME}",
+        page_desc="찾으시는 서식이 없으면 알려주세요. 매일 아침 검토해 무료로 만들어 올립니다.",
+        canonical="/request/",
+        from_request=from_request,
+        dl_map=dl_map, name_map=name_map, **common,
+    ))
+    pages += 1
+
     # 3-2) 정책 페이지 — 애드센스 심사는 쿠키 사용 고지를 요구한다
     write(PUBLIC / "privacy" / "index.html", env.get_template("privacy.html").render(
         page_title=f"개인정보처리방침 — {SITE_NAME}",
@@ -401,7 +445,7 @@ def build() -> int:
             + [f"/category/{c['key']}/{s['key']}/" for c in categories for s in c["subcategories"]]
             + [f"/series/{h['key']}/" for h in series_hubs]
             + [f"/form/{f['id']}/" for f in forms]
-            + ["/privacy/"])
+            + ["/privacy/", "/request/"])
     today = now.strftime("%Y-%m-%d")
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
