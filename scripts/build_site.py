@@ -9,6 +9,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import os
@@ -91,13 +92,37 @@ TOOLS: list[dict[str, str]] = [
         "key": "stamp",
         "path": "/tools/stamp/",
         "name": "디지털 도장·서명 만들기",
+        "short": "도장·서명 만들기",
         "desc": "이름만 넣으면 계약서·위임장의 (인) 자리에 넣을 도장 이미지를 만듭니다. 손글씨 서명도 그려서 PNG로 저장합니다.",
         "icon": _ICON_STAMP,
+    },
+    {
+        "key": "salary",
+        "path": "/tools/salary/",
+        "name": "연봉 실수령액 계산기",
+        "short": "실수령액 계산기",
+        "desc": "연봉·월급에서 4대보험과 소득세를 빼고 통장에 실제로 들어오는 금액을 계산합니다.",
+        "icon": _ICON_CALC,
+    },
+    {
+        "key": "severance",
+        "path": "/tools/severance/",
+        "name": "퇴직금 계산기",
+        "short": "퇴직금 계산기",
+        "desc": "입사일·퇴직일과 마지막 3개월 임금으로 평균임금과 법정 퇴직금을 계산합니다.",
+        "icon": _ICON_CALC,
+    },
+    {
+        "key": "annual-leave",
+        "path": "/tools/annual-leave/",
+        "name": "연차 계산기",
+        "short": "연차 계산기",
+        "desc": "입사일 기준·회계연도 기준으로 발생한 연차 일수와 미사용 연차수당을 계산합니다.",
+        "icon": _ICON_CALC,
     },
 ]
 # 아직 만들지 않은 도구. 허브에 '준비 중'으로만 보이고 페이지·링크는 없다.
 TOOLS_SOON: list[dict[str, str]] = [
-    {"name": "퇴직금·연차·실수령액 계산기", "desc": "사직서·근로계약서와 함께 쓰는 직장인 계산기.", "icon": _ICON_CALC},
     {"name": "금액 한글 표기·글자수 세기", "desc": "차용증의 '일금 삼백만원정', 자기소개서 글자수·바이트 확인.", "icon": _ICON_TEXT},
 ]
 
@@ -131,6 +156,141 @@ TOOLS_UPDATED = "2026-09-14"
 STAMP_RELATED_IDS = ["loan-agreement", "power-of-attorney", "written-pledge", "labor-contract-standard",
                      "housing-lease-contract", "settlement-agreement", "nda", "quotation-simple",
                      "service-contract", "resignation-letter"]
+
+# 직장인 계산기 3종의 본문. 계산 로직은 assets/calc.js, 요율은 catalog/rates_2026.json 이 정본이고
+# 여기에는 화면 글(제목·사용법·FAQ)과 관련 서식만 둔다. 셋 다 templates/tool_calc.html 을 쓴다.
+CALCULATORS: list[dict[str, Any]] = [
+    {
+        "key": "salary",
+        "path": "/tools/salary/",
+        "short": "실수령액 계산기",
+        "h1": "연봉 실수령액 계산기",
+        "lead": "연봉이나 월급을 넣으면 4대보험과 소득세를 뺀 실수령액이 바로 나옵니다. "
+                "2026년 요율과 국세청 근로소득 간이세액표를 적용합니다.",
+        "page_title": "연봉 실수령액 계산기 (2026년 4대보험·간이세액표 적용)",
+        "page_desc": "연봉·월급에서 국민연금·건강보험·장기요양·고용보험과 소득세를 빼고 실제로 받는 월 실수령액을 "
+                     "계산합니다. 2026년 요율 기준, 회원가입 없이 무료이며 입력값은 서버로 보내지 않습니다.",
+        "hero_label": "월 실수령액",
+        "hero_unit": "원",
+        "note": "2026년 요율 기준입니다. 실제 공제액은 회사의 비과세 항목·중도 입사 여부에 따라 조금씩 다를 수 있고, "
+                "소득세는 연말정산으로 최종 정산됩니다.",
+        "disclaimer": "계산 결과는 참고용이며 실제 급여명세서와 원 단위 차이가 날 수 있습니다.",
+        "related_title": "급여·근로 관련 서식",
+        "related": ["labor-contract-standard", "payslip", "resignation-letter",
+                    "employment-certificate", "career-certificate", "fixed-term-labor-contract",
+                    "certified-notice-wage", "labor-contract-parttime", "household-budget",
+                    "remote-work-request"],
+        "howto": [
+            "연봉이면 12로 나눠 <b>월 급여</b>를 구하고, 비과세액(식대 등)을 뺀 금액을 <b>과세 대상 급여</b>로 잡습니다.",
+            "과세 대상 급여에 2026년 요율을 곱합니다 — 국민연금 4.75%, 건강보험 3.595%, "
+            "장기요양은 건강보험료의 13.14%, 고용보험 0.9%. 모두 근로자 부담분이며 10원 미만은 버립니다.",
+            "국민연금은 기준소득월액 상한(월 659만원)·하한(월 41만원) 안에서만 부과합니다.",
+            "소득세는 국세청 <b>근로소득 간이세액표</b>에서 급여 구간과 부양가족 수로 찾고, "
+            "8~20세 자녀가 있으면 자녀 수만큼 뺍니다. 지방소득세는 소득세의 10%입니다.",
+            "월 급여에서 위 공제액을 모두 빼면 <b>실수령액</b>입니다.",
+        ],
+        "faq": [
+            {"q": "왜 회사에서 받은 급여명세서와 몇백 원이 다른가요?",
+             "a": "회사마다 비과세로 처리하는 항목(식대·차량유지비·보육수당)이 다르고, 원 단위 절사 방식도 조금씩 "
+                  "다릅니다. 비과세액 칸에 급여명세서의 비과세 합계를 그대로 넣으면 거의 일치합니다."},
+            {"q": "부양가족 수는 어떻게 세나요?",
+             "a": "본인과 배우자를 각각 1명으로 세고, 소득 요건을 충족하는 부모·자녀를 더합니다. 혼자 살고 "
+                  "부양가족이 없으면 1명입니다. 숫자가 커질수록 매월 떼는 소득세가 줄어듭니다."},
+            {"q": "매월 떼는 소득세가 정확한 세금인가요?",
+             "a": "아닙니다. 간이세액표는 미리 걷어 두는 금액이고, 실제 세금은 이듬해 2월 연말정산에서 "
+                  "의료비·신용카드·보험료 공제를 반영해 확정합니다. 더 걷혔으면 돌려받습니다."},
+            {"q": "연봉에 퇴직금이 포함돼 있으면요?",
+             "a": "'연봉에 퇴직금 포함' 계약이면 실제 월급은 연봉 ÷ 13입니다. 급여 기준을 월급으로 바꾸고 "
+                  "연봉 ÷ 13 금액을 넣으세요."},
+        ],
+    },
+    {
+        "key": "severance",
+        "path": "/tools/severance/",
+        "short": "퇴직금 계산기",
+        "h1": "퇴직금 계산기",
+        "lead": "입사일·퇴직일과 마지막 3개월 임금을 넣으면 평균임금과 법정 퇴직금이 계산됩니다. "
+                "고용노동부 계산 방식과 같은 산식을 씁니다.",
+        "page_title": "퇴직금 계산기 (평균임금 자동 계산, 2026년)",
+        "page_desc": "입사일과 퇴직일, 퇴직 전 3개월 임금으로 1일 평균임금과 법정 퇴직금을 계산합니다. "
+                     "상여금·연차수당 산입까지 반영하며 회원가입 없이 무료입니다.",
+        "hero_label": "세전 퇴직금",
+        "hero_unit": "원",
+        "note": "근로자퇴직급여 보장법의 법정 퇴직금(30일분 평균임금 × 재직일수 ÷ 365)입니다. "
+                "회사 규정이 더 유리하면 그 규정을 따릅니다. 실제 지급액에서는 퇴직소득세가 빠집니다.",
+        "disclaimer": "회사 규정·퇴직연금(DC/DB) 가입 여부에 따라 실제 금액이 달라질 수 있습니다.",
+        "related_title": "퇴사할 때 쓰는 서식",
+        "related": ["resignation-letter", "resignation-simple", "career-certificate",
+                    "employment-certificate", "handover-report", "asset-handover",
+                    "labor-contract-standard", "certified-notice-wage", "payslip",
+                    "power-of-attorney"],
+        "howto": [
+            "<b>퇴직일 이전 3개월</b>을 평균임금 산정기간으로 잡습니다. 달 경계로 나뉘어 보통 칸이 3~4개 생깁니다.",
+            "그 기간에 받은 <b>임금 총액</b>(기본급 + 각종 수당)을 넣습니다. 연간 상여금과 연차수당은 "
+            "3/12만 더합니다.",
+            "임금 총액을 기간의 <b>총일수</b>로 나누면 <b>1일 평균임금</b>입니다.",
+            "퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365). 재직일수는 입사일부터 퇴직일 전날까지입니다.",
+            "평균임금이 통상임금보다 적으면 <b>통상임금</b>으로 계산합니다(근로기준법 제2조).",
+        ],
+        "faq": [
+            {"q": "퇴직일에 무슨 날짜를 넣어야 하나요?",
+             "a": "마지막으로 근무한 날의 다음 날입니다. 8월 31일까지 일했다면 9월 1일을 넣습니다. "
+                  "재직일수는 입사일부터 8월 31일까지로 계산됩니다."},
+            {"q": "1년을 못 채우면 퇴직금이 없나요?",
+             "a": "계속 근로기간이 1년 미만이면 법정 퇴직금은 발생하지 않습니다. 다만 4주 평균 주 15시간 이상 "
+                  "근무했고 1년을 넘겼다면 계약직·아르바이트도 받을 수 있습니다."},
+            {"q": "상여금과 연차수당은 왜 3/12만 넣나요?",
+             "a": "평균임금은 3개월치 임금이므로, 1년 단위로 받는 돈은 3개월분(3/12)만 산입하도록 정해져 "
+                  "있습니다. 퇴직 전 1년간 실제로 받은 금액을 넣으면 됩니다."},
+            {"q": "퇴직금은 언제까지 받나요?",
+             "a": "퇴직일부터 14일 이내가 원칙입니다(당사자 합의로 연장 가능). 기한이 지나면 지연이자가 "
+                  "붙고, 받지 못하면 고용노동부에 진정을 넣을 수 있습니다."},
+        ],
+    },
+    {
+        "key": "annual-leave",
+        "path": "/tools/annual-leave/",
+        "short": "연차 계산기",
+        "h1": "연차 계산기",
+        "lead": "입사일만 넣으면 지금까지 발생한 연차 일수와 남은 연차가 나옵니다. "
+                "입사일 기준과 회계연도(1월 1일) 기준을 모두 계산합니다.",
+        "page_title": "연차 계산기 (입사일·회계연도 기준, 미사용 수당 포함)",
+        "page_desc": "근로기준법 제60조에 따라 입사일 기준·회계연도 기준 연차 발생일수를 연도별로 계산하고, "
+                     "남은 연차의 미사용 연차수당까지 알려줍니다. 회원가입 없이 무료입니다.",
+        "hero_label": "남은 연차",
+        "hero_unit": "일",
+        "note": "근로기준법 제60조 기준입니다. 회사 규정이 법보다 유리하면 그 규정이 우선하고, "
+                "출근율이 80% 미만인 해에는 연차가 다르게 발생할 수 있습니다.",
+        "disclaimer": "육아휴직·병가 등 장기 휴직이 있으면 실제 발생일수가 달라집니다.",
+        "related_title": "휴가·근태 관련 서식",
+        "related": ["leave-request", "annual-leave-plan", "parental-leave-request",
+                    "attendance-sheet", "labor-contract-standard", "remote-work-request",
+                    "business-trip-request", "employment-certificate", "work-report-monthly",
+                    "resignation-letter"],
+        "howto": [
+            "입사 1년 미만일 때는 <b>1개월 개근마다 1일</b>씩, 최대 11일이 생깁니다.",
+            "입사 1년이 되는 날 <b>15일</b>이 한꺼번에 생깁니다(출근율 80% 이상).",
+            "근속 3년째부터 <b>2년마다 1일</b>씩 늘어나고, 최대 25일에서 멈춥니다.",
+            "회사가 회계연도 기준을 쓰면 입사 다음 해 1월 1일에 <b>첫 해 재직일수에 비례</b>해 먼저 주고, "
+            "그 뒤로는 매년 1월 1일에 발생합니다.",
+            "남은 연차에 <b>1일 통상임금</b>(월 통상임금 ÷ 209 × 8)을 곱하면 미사용 연차수당입니다.",
+        ],
+        "faq": [
+            {"q": "입사일 기준과 회계연도 기준 중 어느 쪽이 맞나요?",
+             "a": "법의 원칙은 입사일 기준입니다. 다만 관리 편의를 위해 회계연도 기준을 쓰는 회사가 많고, "
+                  "이 경우 퇴직할 때 입사일 기준으로 계산해 모자라면 채워 줘야 합니다."},
+            {"q": "1년만 일하고 퇴사하면 연차가 26일인가요?",
+             "a": "2021년 대법원 판결에 따라 정확히 1년(365일)만 근무하고 퇴사하면 11일만 인정됩니다. "
+                  "15일까지 받으려면 1년 하고 하루를 더 근무해야 합니다."},
+            {"q": "연차를 안 쓰면 무조건 돈으로 받나요?",
+             "a": "회사가 연차사용촉진제도를 법대로 진행했다면 수당 지급 의무가 사라집니다. "
+                  "서면으로 사용 시기를 지정하라고 통보받은 적이 있는지 확인하세요."},
+            {"q": "5인 미만 사업장도 연차가 있나요?",
+             "a": "없습니다. 연차유급휴가는 상시 근로자 5인 이상 사업장에만 적용됩니다. "
+                  "다만 회사가 취업규칙으로 정했다면 그 규정을 따릅니다."},
+        ],
+    },
+]
 
 # 파일명에 쓸 수 없는 문자 (Windows 기준)
 _BAD_FILENAME_CHARS = '\\/:*?"<>|'
@@ -398,6 +558,35 @@ def xml_text(s: str) -> str:
     return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
 
+RATES = ROOT / "catalog" / "rates_2026.json"
+TAX_TABLE = ROOT / "catalog" / "tax_table_2026.json"
+
+
+def load_rates() -> dict[str, Any]:
+    """직장인 계산기가 쓰는 4대보험·소득세 요율. 없으면 계산기 페이지를 만들지 않는다."""
+    if not RATES.exists():
+        return {}
+    try:
+        return json.loads(RATES.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SiteBuildError(f"catalog/rates_2026.json 을 읽을 수 없습니다: {exc}") from exc
+
+
+def file_version(path: Path) -> str:
+    """파일 내용 해시 앞 8자리. 캐시 무효화용. 파일이 없으면 '0'."""
+    if not path.exists():
+        return "0"
+    return hashlib.sha1(path.read_bytes()).hexdigest()[:8]
+
+
+def asset_version(name: str) -> str:
+    """assets/<name> 내용 해시 앞 8자리. 파일이 없으면 '0'."""
+    src = ROOT / "assets" / name
+    if not src.exists():
+        return "0"
+    return hashlib.md5(src.read_bytes()).hexdigest()[:8]
+
+
 def make_og_default(dest: Path) -> bool:
     """공유 카드 기본 이미지를 assets/에서 public/으로 복사한다.
 
@@ -530,6 +719,11 @@ def build() -> int:
         lstrip_blocks=True,
     )
     now = datetime.now(KST)
+    # 실수령액 계산기는 간이세액표가 있어야 만든다. 없으면 메뉴·푸터·사이트맵에서도 빼서
+    # 링크만 남고 404가 나는 일이 없게 한다.
+    tools_active = [t for t in TOOLS
+                    if not (t["key"] == "salary" and not TAX_TABLE.exists())
+                    and not (t["key"] in {"salary", "severance", "annual-leave"} and not RATES.exists())]
     common = {
         "site_name": SITE_NAME,
         "site_url": SITE_URL,
@@ -544,7 +738,12 @@ def build() -> int:
         "collection_hubs": collection_hubs,
         "ads": ads,
         "reqs": reqs,
-        "tools": TOOLS,
+        "tools": tools_active,
+        # 도구 스크립트 캐시 무효화용 버전. 내용이 바뀌면 값이 바뀌어 방문자 브라우저가
+        # 새 파일을 받는다 (GitHub Pages는 10분 캐시라, 이것이 없으면 옛 JS로 그린 도장이 보였다).
+        "asset_ver": asset_version("stamp.js"),
+        "calc_ver": asset_version("calc.js"),
+        "tax_ver": file_version(TAX_TABLE),
         "biz_name": BIZ_NAME,
         "biz_number": BIZ_NUMBER,
         "contact_email": CONTACT_EMAIL,
@@ -937,6 +1136,60 @@ def build() -> int:
     ))
     pages += 1
 
+    # 3-7-1) 직장인 계산기 3종 — 퇴직금·연차·실수령액.
+    #        화면 글은 CALCULATORS, 계산은 assets/calc.js, 요율은 catalog/rates_2026.json.
+    #        실수령액은 간이세액표(catalog/tax_table_2026.json)가 있어야 정확하므로,
+    #        표가 없으면 그 페이지만 건너뛴다(퇴직금·연차는 표와 무관하다).
+    rates = load_rates()
+    if not rates:
+        print("[사이트] 알림: catalog/rates_2026.json 이 없어 계산기 페이지를 만들지 않았습니다.")
+    else:
+        default_join = (now - timedelta(days=365 * 3)).strftime("%Y-%m-%d")
+        rates_json = jd(rates)
+        for calc in CALCULATORS:
+            if calc["key"] == "salary" and not TAX_TABLE.exists():
+                print("[사이트] 알림: catalog/tax_table_2026.json 이 없어 "
+                      "/tools/salary/ 는 만들지 않았습니다 (간이세액표 필요).")
+                continue
+            calc_related = [by_id[i] for i in calc["related"] if i in by_id][:10]
+            write(PUBLIC / "tools" / calc["key"] / "index.html",
+                  env.get_template("tool_calc.html").render(
+                      page_title=f"{calc['page_title']} — {SITE_NAME}",
+                      page_desc=calc["page_desc"],
+                      canonical=calc["path"],
+                      breadcrumb_jsonld=breadcrumb_ld([
+                          ("홈", "/"), ("직장인 도구", "/tools/"), (calc["short"], calc["path"])]),
+                      jsonld=jd({
+                          "@context": "https://schema.org",
+                          "@type": "WebApplication",
+                          "name": calc["h1"],
+                          "url": f"{SITE_URL}{calc['path']}",
+                          "applicationCategory": "FinanceApplication",
+                          "operatingSystem": "Web",
+                          "inLanguage": "ko",
+                          "isAccessibleForFree": True,
+                          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
+                          "description": calc["page_desc"],
+                          "publisher": {"@type": "Organization", "@id": f"{SITE_URL}/#org",
+                                        "name": SITE_NAME},
+                          "isPartOf": {"@type": "WebSite", "@id": f"{SITE_URL}/#website",
+                                       "name": SITE_NAME},
+                      }),
+                      faq_jsonld=jd({
+                          "@context": "https://schema.org",
+                          "@type": "FAQPage",
+                          "mainEntity": [
+                              {"@type": "Question", "name": item["q"],
+                               "acceptedAnswer": {"@type": "Answer", "text": item["a"]}}
+                              for item in calc["faq"]
+                          ],
+                      }),
+                      calc=calc, rates=rates, rates_json=rates_json,
+                      default_join=default_join, related=calc_related,
+                      dl_map=dl_map, name_map=name_map, **common,
+                  ))
+            pages += 1
+
     # 3-2) 정책 페이지 — 애드센스 심사는 쿠키 사용 고지를 요구한다
     write(PUBLIC / "privacy" / "index.html", env.get_template("privacy.html").render(
         page_title=f"개인정보처리방침 — {SITE_NAME}",
@@ -993,7 +1246,7 @@ def build() -> int:
              ("/privacy/", today, "0.3"),
              ("/request/", today, "0.5"),
              ("/tools/", TOOLS_UPDATED, "0.7")]
-    urls += [(t["path"], TOOLS_UPDATED, "0.8") for t in TOOLS]
+    urls += [(t["path"], TOOLS_UPDATED, "0.8") for t in tools_active]
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -1056,7 +1309,7 @@ def build() -> int:
           f"- [서식 요청]({SITE_URL}/request/): 필요한 서식을 요청하면 무료로 제작",
           f"- [개인정보처리방침]({SITE_URL}/privacy/)", "",
           "## 직장인 도구 (브라우저 안에서만 동작, 입력값 서버 전송 없음)", "",
-          *[f"- [{t['name']}]({SITE_URL}{t['path']}): {t['desc']}" for t in TOOLS], "",
+          *[f"- [{t['name']}]({SITE_URL}{t['path']}): {t['desc']}" for t in tools_active], "",
           "## 분야별 서식", ""]
     for c in categories:
         for s in c["subcategories"]:
@@ -1102,12 +1355,18 @@ def build() -> int:
     write(PUBLIC / "llms-full.txt", "\n".join(lf))
 
     # 5-4-1) 도구 스크립트 — assets/ 가 정본이고 public/assets/ 는 빌드 산출물이다
-    for name in ("stamp.js",):
+    for name in ("stamp.js", "calc.js"):
         src = ROOT / "assets" / name
         if not src.exists():
             raise SiteBuildError(f"assets/{name} 가 없습니다 — 도구 페이지가 동작하지 않습니다.")
         (PUBLIC / "assets").mkdir(parents=True, exist_ok=True)
         shutil.copyfile(src, PUBLIC / "assets" / name)
+
+    # 5-4-2) 근로소득 간이세액표 — 실수령액 계산기가 필요할 때만 내려받는다.
+    #        catalog/ 가 정본이고 public/assets/tax_table.json 은 빌드 산출물이다.
+    if TAX_TABLE.exists():
+        (PUBLIC / "assets").mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(TAX_TABLE, PUBLIC / "assets" / "tax_table.json")
 
     # 5-4) 공유 카드 기본 이미지
     if not make_og_default(PUBLIC / "og-default.png"):

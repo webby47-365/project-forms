@@ -159,10 +159,38 @@ FORMS_PREVIEW_ADS=1 python scripts/build_site.py    # (PowerShell) $env:FORMS_PR
 |---|---|---|
 | `/tools/` | 허브. 도구 카드 + '준비 중' 목록 | `build_site.py` `TOOLS`·`TOOLS_SOON`, `templates/tools.html` |
 | `/tools/stamp/` | 디지털 도장(원형·사각·타원 × 전서체풍·명조·고딕) + 손글씨·글꼴 서명 → 투명 PNG | `templates/tool_stamp.html`, `assets/stamp.js` |
+| `/tools/salary/` | 연봉 실수령액 — 4대보험 + 간이세액표 소득세 | `templates/tool_calc.html`, `assets/calc.js` |
+| `/tools/severance/` | 퇴직금 — 평균임금 자동 구간 분할, 상여·연차수당 3/12 산입 | 〃 |
+| `/tools/annual-leave/` | 연차 — 입사일/회계연도 기준, 미사용 연차수당 | 〃 |
 | 서식 상세 위젯 | 서명·날인 칸이 있는 서식(카탈로그 `seal: true`)에만 "이 서식에 찍을 도장 만들기" | `templates/form.html`, `form_spec.seal_of` |
 
 새 도구를 추가하려면 ① `TOOLS`에 한 줄 ② `templates/tool_<key>.html` ③ `build()`에 렌더링 한 블록.
 상단 메뉴·허브·사이트맵·llms.txt는 `TOOLS` 목록을 그대로 따라간다. 도구를 고친 날은 `TOOLS_UPDATED`에 적는다.
+
+### 계산기 3종의 데이터 (연 1회 갱신)
+
+계산기는 화면 글(`build_site.py` `CALCULATORS`), 계산 로직(`assets/calc.js`), **요율 데이터** 세 가지로
+나뉜다. 매년 바뀌는 것은 요율뿐이라 코드를 건드릴 일이 없다.
+
+| 파일 | 내용 | 갱신 시기 |
+|---|---|---|
+| `catalog/rates_2026.json` | 4대보험 요율, 국민연금 기준소득월액 상·하한, 자녀 세액공제액, 월 소정근로시간 209 | 매년 1월(요율)·7월(연금 상하한) |
+| `catalog/tax_table_2026.json` | 근로소득 간이세액표 원문 (구간별 가족수 1~11명 세액) | 매년 2월경 개정 시 |
+
+간이세액표는 **계산식이 아니라 표**다(소득세법 시행령 별표2). 그래서 원문 파일이 있어야 한다.
+
+```powershell
+# 1) 홈택스 → 세금신고 → 원천세 신고 → 근로소득 간이세액표 → 전체 파일(엑셀) 내려받아 catalog\ 에 넣는다
+# 2) [로컬 작업]
+python scripts\build_tax_table.py
+```
+
+`catalog/tax_table_2026.json` 이 없으면 빌드가 실패하지 않고 **`/tools/salary/` 만 건너뛴다**
+(메뉴·푸터·사이트맵에서도 빠져 404가 나지 않는다). 퇴직금·연차 계산기는 표와 무관하게 동작한다.
+표가 생기면 빌드가 `public/assets/tax_table.json` 으로 복사하고, 페이지는 그때만 내려받는다.
+
+요율을 고칠 때는 `rates_2026.json` 의 `sources` 에 적힌 출처(복지부 보도자료·공단 안내)를 확인하고
+`updated` 날짜를 함께 고친다. 일일 에이전트에게 맡기지 않는다 — 틀리면 방문자가 바로 알아본다.
 
 ## 설계 원칙
 

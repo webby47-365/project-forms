@@ -171,7 +171,7 @@
 </script>
 {%- endif %}
 {%- if f.seal %}
-<script src="/assets/stamp.js" defer></script>
+<script src="/assets/stamp.js?v={{ asset_ver }}" defer></script>
 <script>
 // stamp.js 가 defer 로 오므로 DOMContentLoaded 뒤에 시작한다 (defer 스크립트는 그 전에 실행된다)
 document.addEventListener('DOMContentLoaded', function(){
