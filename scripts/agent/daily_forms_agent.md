@@ -130,6 +130,10 @@ python scripts/validate_catalog.py     # 오류 0건이어야 한다
 git add -A
 git commit -m "feat(forms): add {id1},{id2} [agent]"
 git push
+
+# 푸시 직후 IndexNow 통보 — 빙·네이버·Yandex 에 새 서식을 즉시 알린다(구글은 미지원).
+# 오늘 등록한 id 만 지정한다. --recent 를 쓰면 메타 일괄 수정 때 엉뚱한 것이 섞인다.
+python scripts/ping_indexnow.py --ids {id1},{id2}
 ```
 
 푸시하면 `deploy-pages` 워크플로가 자동으로 깨어나 GitHub Pages에 반영한다(약 1~2분).
@@ -139,6 +143,12 @@ git push
 - `https://freeforms.kr/form/{전날 추가한 id}/` 가 200
 - `.pdf` `.docx` `.hwpx` 3개 파일이 모두 200
 - 200이 아니면 리포트에 "전날 배포 미반영"으로 적고 원인을 조사한다
+
+**IndexNow 통보에 대하여.** 통보를 보내는 시점에는 아직 배포가 끝나지 않았을 수 있다.
+검색엔진은 곧바로 오지 않고 뒤에 다시 시도하므로 문제가 되지 않는다. 통보가 실패해도
+**배포를 되돌리거나 실행을 중단하지 않는다** — 검색 노출이 조금 늦어질 뿐이다.
+실패하면 리포트에 한 줄로 적는다. `403`이 나오면 키 파일
+(`https://freeforms.kr/<INDEXNOW_KEY>.txt`)이 사라진 것이므로 그 사실을 보고한다.
 
 ## 7. 리포트
 

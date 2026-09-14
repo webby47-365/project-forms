@@ -39,6 +39,10 @@ CONTACT_EMAIL = "sherlockreturns365@gmail.com"
 PRIVACY_EFFECTIVE = "2026년 9월 14일"  # 처리방침 시행일. 내용을 고칠 때 함께 갱신한다
 # Google Analytics 4 측정 ID. 빈 문자열이면 추적 스크립트를 아예 내보내지 않는다.
 GA4_ID = "G-912YLRDN2B"
+# IndexNow 키. 빙·네이버·Yandex 등이 이 규약으로 "새 글이 올라왔다"는 통보를 받는다
+# (구글은 미지원). 값을 넣으면 public/<키>.txt 를 만들어 소유 증명 파일로 내보낸다.
+# 비우면 키 파일을 만들지 않고 scripts/ping_indexnow.py 도 동작하지 않는다.
+INDEXNOW_KEY = "96443ef2b9a8744c3219eb8fde60e0f3"
 KST = timezone(timedelta(hours=9))
 
 RECENT_COUNT = 10
@@ -305,15 +309,22 @@ def form_date(f: dict[str, Any], field: str = "updated_at") -> str:
     return (f.get(field) or f.get("created_at") or "")[:10]
 
 
+# RFC822 날짜에 쓸 영문 요일·월 이름. strftime("%a")·("%b")를 쓰면 실행 환경의 로캘을
+# 따라가서, 한국어 로캘 윈도에서는 "월, 14 9월 2026"처럼 나와 피드가 통째로 거부된다.
+# 빌드가 로컬(윈도)과 GitHub Actions(리눅스) 두 곳에서 돌아가므로 표로 고정한다.
+_WDAY = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+_MON = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
 def rfc822(day: str) -> str:
     """YYYY-MM-DD → RSS가 요구하는 RFC822 날짜 문자열(KST 기준)."""
-    if not day:
-        day = datetime.now(KST).strftime("%Y-%m-%d")
     try:
         dt = datetime.strptime(day, "%Y-%m-%d").replace(tzinfo=KST)
-    except ValueError:
+    except (ValueError, TypeError):
         dt = datetime.now(KST)
-    return dt.strftime("%a, %d %b %Y 00:00:00 +0900")
+    return (f"{_WDAY[dt.weekday()]}, {dt.day:02d} {_MON[dt.month - 1]} "
+            f"{dt.year} 00:00:00 +0900")
 
 
 def xml_text(s: str) -> str:
@@ -958,6 +969,10 @@ def build() -> int:
     if ads["client"]:
         pub = ads["client"].replace("ca-", "", 1)
         write(PUBLIC / "ads.txt", f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n")
+
+    # 5-5) IndexNow 소유 증명 파일. 내용은 키 문자열 한 줄이면 된다.
+    if INDEXNOW_KEY:
+        write(PUBLIC / f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY + "\n")
 
     # 6) 파비콘 (외부 파일 없이 SVG로 생성)
     write(PUBLIC / "favicon.svg",

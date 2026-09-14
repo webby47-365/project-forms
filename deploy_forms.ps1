@@ -111,6 +111,7 @@ Write-Ok "검증 통과"
 # ── 4. 변경 확인 및 커밋 ──
 Write-Step "4. 형상관리 (git)"
 $changes = git status --porcelain
+$pushed = $false
 if ([string]::IsNullOrWhiteSpace($changes)) {
     Write-Host "  변경 사항이 없습니다. 커밋·푸시를 건너뜁니다." -ForegroundColor Yellow
 } else {
@@ -128,6 +129,7 @@ if ([string]::IsNullOrWhiteSpace($changes)) {
     git push
     if ($LASTEXITCODE -ne 0) { Write-Fail "푸시 실패 — 원격 저장소 인증·연결을 확인하십시오."; exit 1 }
     Write-Ok "푸시 (GitHub Actions가 자동 배포합니다 · 약 1~2분)"
+    $pushed = $true
 }
 
 # ── 5. 배포 확인 ──
@@ -154,6 +156,20 @@ if ([string]::IsNullOrWhiteSpace($siteUrl)) {
     }
     if ($fail -eq 0) { Write-Ok "배포 확인 ($ok/3)" }
     else { Write-Host "  [주의] 일부 경로 확인 실패 — 저장소 Actions 탭의 배포 로그를 확인하십시오." -ForegroundColor Yellow }
+}
+
+# ── 6. IndexNow 통보 ──
+# 빙·네이버·Yandex 등에 "새 페이지가 올라왔다"를 즉시 알린다(구글은 미지원).
+# 배포가 끝난 뒤에 보내야 한다 — 키 파일이 사이트에 올라가 있어야 소유 증명이 된다.
+# 바뀐 것이 없으면 보내지 않는다(같은 URL을 반복해 보내면 요청 제한에 걸린다).
+if ($pushed) {
+    Write-Step "6. IndexNow 통보 (빙·네이버)"
+    & $python "scripts\ping_indexnow.py" --recent 5
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "  [주의] 통보에 실패했습니다. 검색 노출에는 영향이 없으니 다음 배포 때 다시 시도됩니다." -ForegroundColor Yellow
+    } else {
+        Write-Ok "IndexNow 통보"
+    }
 }
 
 # ── 실행 구분선 ──
