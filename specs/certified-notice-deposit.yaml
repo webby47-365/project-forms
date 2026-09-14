@@ -35,6 +35,8 @@ faq:
   - q: 반환이 계속 지연되면 어떻게 하나요?
     a: 지연손해금 청구 등 추가 절차를 검토할 수 있으니 관련 상담을 받아보는 것이 좋습니다.
 
+related: [deposit-return-notice, lease-termination-notice, payment-order-application]
+
 blocks:
   - type: doc_title
     text: 내용증명

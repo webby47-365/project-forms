@@ -27,6 +27,8 @@ faq:
   - q: 전자문서도 함께 기록하나요?
     a: 예. 이메일이나 전자결재로 받은 문서도 종이 문서와 동일하게 발신·수신을 구분해 기록하는 것이 좋습니다.
 
+related: [official-letter, cooperation-request, proposal-draft]
+
 blocks:
   - type: doc_title
     text: 문서 수발대장

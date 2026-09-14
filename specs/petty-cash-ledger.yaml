@@ -28,6 +28,8 @@ faq:
   - q: 잔액과 실제 보유 현금이 다르면 어떻게 하나요?
     a: 기록 누락이나 계산 오류가 없는지 거래 순서대로 다시 확인하고 차이를 비고란에 남기십시오.
 
+related: [expense-approval, receipt, expense-report, daily-cash-report]
+
 blocks:
   - type: doc_title
     text: 소액현금 출납장

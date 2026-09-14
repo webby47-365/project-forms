@@ -25,6 +25,8 @@ faq:
   - q: 보호자가 두 명이면 모두 서명해야 하나요?
     a: 기관 방침에 따라 다르므로 한 명의 서명으로 충분한지 사전에 확인하는 것이 좋습니다.
 
+related: [minor-activity-consent, field-trip-consent, event-application]
+
 blocks:
   - type: doc_title
     text: 보호자 동의서

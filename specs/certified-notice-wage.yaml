@@ -35,6 +35,8 @@ faq:
 created_by: agent
 status: published
 
+related: [labor-contract-standard, payslip, severance-calculation, small-claims-complaint]
+
 blocks:
   - type: doc_title
     text: 내용증명

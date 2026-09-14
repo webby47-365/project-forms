@@ -28,6 +28,8 @@ faq:
   - q: 채무자 주소를 모르면 신청할 수 없나요?
     a: 정확한 송달 주소가 필요하므로 먼저 주소를 확인한 후 신청하십시오.
 
+related: [certified-notice-loan, complaint-loan-return, loan-agreement, payment-pledge]
+
 blocks:
   - type: doc_title
     text: 지급명령 신청서

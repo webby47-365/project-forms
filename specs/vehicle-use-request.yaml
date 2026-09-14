@@ -27,6 +27,8 @@ faq:
   - q: 사용 도중 목적지가 바뀌면 어떻게 하나요?
     a: 변경 사유를 차량관리자에게 알리고, 가능하면 신청서 비고란에 실제 이동 경로를 남겨 두십시오.
 
+related: [vehicle-log, business-trip-request, expense-report]
+
 blocks:
   - type: doc_title
     text: 업무용 차량 사용 신청서

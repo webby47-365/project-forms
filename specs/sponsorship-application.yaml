@@ -25,6 +25,8 @@ faq:
   - q: 기부금 영수증은 누구 명의로 받나요?
     a: 실제 후원금을 낸 사람 명의로 발급받아야 연말정산에 사용할 수 있습니다.
 
+related: [privacy-consent, privacy-consent-marketing, year-end-tax-checklist]
+
 blocks:
   - type: doc_title
     text: 후원신청서

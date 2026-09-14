@@ -35,6 +35,8 @@ faq:
   - q: 숫자를 꼭 넣어야 하나요?
     a: 성과를 숫자로 제시하면 설득력이 높아지므로 가능하면 넣는 것이 좋습니다.
 
+related: [cover-letter-free, career-description, job-application-form]
+
 blocks:
   - type: doc_title
     text: 이력서

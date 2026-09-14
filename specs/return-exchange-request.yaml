@@ -25,6 +25,8 @@ faq:
   - q: 배송비는 누가 부담하나요?
     a: 불량·오배송은 판매자가, 단순 변심은 통상 구매자가 부담하며 사전에 정한 정책을 따릅니다.
 
+related: [delivery-confirmation, complaint-handling, transaction-statement, payment-confirmation]
+
 blocks:
   - type: doc_title
     text: 반품·교환 신청서

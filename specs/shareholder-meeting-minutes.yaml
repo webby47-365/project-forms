@@ -36,6 +36,8 @@ faq:
   - q: 등기에 필요한 의안은 문구를 다르게 써야 하나요?
     a: 대표이사 선임이나 정관 변경처럼 등기가 필요한 의안은 등기소가 요구하는 문구를 미리 확인해 그대로 반영하십시오.
 
+related: [shareholder-register, board-minutes, articles-of-incorporation, director-acceptance]
+
 blocks:
   - type: doc_title
     text: 주주총회 의사록

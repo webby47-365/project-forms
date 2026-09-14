@@ -35,6 +35,19 @@ HOWTO_MAX_CHARS = 60      # 한 단계 = 한 문장
 FAQ_MIN, FAQ_MAX = 2, 4
 FAQ_Q_MAX, FAQ_A_MAX = 34, 140
 VARIANT_USE_MAX = 40
+RELATED_MIN, RELATED_MAX = 2, 4
+
+
+def _series_of(form_id: str) -> str:
+    """다른 명세의 series 값만 싸게 읽는다 (전체 파싱 없이 머리말 몇 줄만 본다)."""
+    path = SPECS / f"{form_id}.yaml"
+    try:
+        for line in path.read_text(encoding="utf-8").splitlines()[:40]:
+            if line.startswith("series:"):
+                return line.split(":", 1)[1].strip()
+    except OSError:
+        return ""
+    return ""
 
 
 def _check_readable(spec) -> list[str]:  # noqa: ANN001 (FormSpec)
@@ -68,6 +81,22 @@ def _check_readable(spec) -> list[str]:  # noqa: ANN001 (FormSpec)
     if spec.variant_use and len(spec.variant_use) > VARIANT_USE_MAX:
         out.append(
             f"variant_use가 {len(spec.variant_use)}자입니다 — {VARIANT_USE_MAX}자 이내 한 줄로.")
+    if spec.related:
+        if not RELATED_MIN <= len(spec.related) <= RELATED_MAX:
+            out.append(
+                f"related는 {RELATED_MIN}~{RELATED_MAX}개로 (현재 {len(spec.related)}개).")
+        if spec.id in spec.related:
+            out.append("related에 자기 자신이 들어 있습니다.")
+        if len(set(spec.related)) != len(spec.related):
+            out.append("related에 같은 id가 중복됩니다.")
+        known = {p.stem for p in SPECS.glob("*.yaml")}
+        for rid in spec.related:
+            if rid not in known:
+                out.append(f"related의 '{rid}'는 없는 서식입니다 — specs/{rid}.yaml이 없습니다.")
+            elif spec.series and _series_of(rid) == spec.series:
+                out.append(
+                    f"related의 '{rid}'는 같은 계열({spec.series})입니다 — "
+                    f"계열 목록에 이미 나오므로 빼십시오.")
     return out
 
 
@@ -80,6 +109,8 @@ def content_todo(spec) -> list[str]:  # noqa: ANN001 (FormSpec)
         todo.append("faq 미작성 — 상세 화면 '자주 묻는 질문'이 비어 있습니다.")
     if spec.series and not spec.variant_use:
         todo.append("variant_use 미작성 — 계열 비교표의 '이럴 때 쓰세요'가 비어 있습니다.")
+    if not spec.related:
+        todo.append("related 미작성 — '함께 찾는 서식'이 전부 기계 추천으로 채워집니다.")
     return todo
 
 

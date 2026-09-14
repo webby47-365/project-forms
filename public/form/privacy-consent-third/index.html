@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -558,22 +587,42 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">개인정보 보호법 제17조에 따른 고지사항 반영. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>개인정보제3자제공동의서</span><span>제3자제공동의</span><span>개인정보동의서</span><span>정보제공동의</span><span>privacy consent</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%A0%9C3%EC%9E%90%EC%A0%9C%EA%B3%B5%EB%8F%99%EC%9D%98%EC%84%9C">개인정보제3자제공동의서</a><a href="/search/?q=%EC%A0%9C3%EC%9E%90%EC%A0%9C%EA%B3%B5%EB%8F%99%EC%9D%98">제3자제공동의</a><a href="/search/?q=%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%8F%99%EC%9D%98%EC%84%9C">개인정보동의서</a><a href="/search/?q=%EC%A0%95%EB%B3%B4%EC%A0%9C%EA%B3%B5%EB%8F%99%EC%9D%98">정보제공동의</a><a href="/search/?q=privacy%20consent">privacy consent</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/consent/">동의서 모음</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/privacy-consent/" aria-label="개인정보 수집·이용 동의서 미리보기">
-    <img src="/files/privacy-consent/preview-1.webp" alt="개인정보 수집·이용 동의서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/nda/" aria-label="비밀유지계약서 (NDA) 미리보기">
+    <img src="/files/nda/preview-1.webp" alt="비밀유지계약서 (NDA) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/privacy-consent/">개인정보 수집·이용 동의서</a>
+    <a class="name" href="/form/nda/">비밀유지계약서 (NDA)</a>
     <div class="cat">공공 · 신청·동의</div>
-    <div class="dl">      <a href="/files/privacy-consent/privacy-consent.pdf" download="개인정보 수집·이용 동의서.pdf" title="개인정보 수집·이용 동의서 PDF 다운로드">PDF</a>
-      <a href="/files/privacy-consent/privacy-consent.docx" download="개인정보 수집·이용 동의서.docx" title="개인정보 수집·이용 동의서 Word 다운로드">Word</a>
-      <a href="/files/privacy-consent/privacy-consent.hwpx" download="개인정보 수집·이용 동의서.hwpx" title="개인정보 수집·이용 동의서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/nda/nda.pdf" download="비밀유지계약서 (NDA).pdf" title="비밀유지계약서 (NDA) PDF 다운로드">PDF</a>
+      <a href="/files/nda/nda.docx" download="비밀유지계약서 (NDA).docx" title="비밀유지계약서 (NDA) Word 다운로드">Word</a>
+      <a href="/files/nda/nda.hwpx" download="비밀유지계약서 (NDA).hwpx" title="비밀유지계약서 (NDA) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/service-contract/" aria-label="용역계약서 미리보기">
+    <img src="/files/service-contract/preview-1.webp" alt="용역계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/service-contract/">용역계약서</a>
+    <div class="cat">공공 · 신청·동의</div>
+    <div class="dl">      <a href="/files/service-contract/service-contract.pdf" download="용역계약서.pdf" title="용역계약서 PDF 다운로드">PDF</a>
+      <a href="/files/service-contract/service-contract.docx" download="용역계약서.docx" title="용역계약서 Word 다운로드">Word</a>
+      <a href="/files/service-contract/service-contract.hwpx" download="용역계약서.hwpx" title="용역계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/vendor-registration/" aria-label="거래처 등록신청서 미리보기">
+    <img src="/files/vendor-registration/preview-1.webp" alt="거래처 등록신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/vendor-registration/">거래처 등록신청서</a>
+    <div class="cat">공공 · 신청·동의</div>
+    <div class="dl">      <a href="/files/vendor-registration/vendor-registration.pdf" download="거래처 등록신청서.pdf" title="거래처 등록신청서 PDF 다운로드">PDF</a>
+      <a href="/files/vendor-registration/vendor-registration.docx" download="거래처 등록신청서.docx" title="거래처 등록신청서 Word 다운로드">Word</a>
+      <a href="/files/vendor-registration/vendor-registration.hwpx" download="거래처 등록신청서.hwpx" title="거래처 등록신청서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -588,14 +637,36 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/privacy-consent-marketing/" aria-label="마케팅 활용 동의서 미리보기">
-    <img src="/files/privacy-consent-marketing/preview-1.webp" alt="마케팅 활용 동의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/survey-consent/" aria-label="설문조사 동의서 미리보기">
+    <img src="/files/survey-consent/preview-1.webp" alt="설문조사 동의서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/privacy-consent-marketing/">마케팅 활용 동의서</a>
+    <a class="name" href="/form/survey-consent/">설문조사 동의서</a>
     <div class="cat">공공 · 신청·동의</div>
-    <div class="dl">      <a href="/files/privacy-consent-marketing/privacy-consent-marketing.pdf" download="마케팅 활용 동의서.pdf" title="마케팅 활용 동의서 PDF 다운로드">PDF</a>
-      <a href="/files/privacy-consent-marketing/privacy-consent-marketing.docx" download="마케팅 활용 동의서.docx" title="마케팅 활용 동의서 Word 다운로드">Word</a>
-      <a href="/files/privacy-consent-marketing/privacy-consent-marketing.hwpx" download="마케팅 활용 동의서.hwpx" title="마케팅 활용 동의서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/survey-consent/survey-consent.pdf" download="설문조사 동의서.pdf" title="설문조사 동의서 PDF 다운로드">PDF</a>
+      <a href="/files/survey-consent/survey-consent.docx" download="설문조사 동의서.docx" title="설문조사 동의서 Word 다운로드">Word</a>
+      <a href="/files/survey-consent/survey-consent.hwpx" download="설문조사 동의서.hwpx" title="설문조사 동의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/portrait-rights-consent/" aria-label="초상권 이용 동의서 미리보기">
+    <img src="/files/portrait-rights-consent/preview-1.webp" alt="초상권 이용 동의서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/portrait-rights-consent/">초상권 이용 동의서</a>
+    <div class="cat">공공 · 신청·동의</div>
+    <div class="dl">      <a href="/files/portrait-rights-consent/portrait-rights-consent.pdf" download="초상권 이용 동의서.pdf" title="초상권 이용 동의서 PDF 다운로드">PDF</a>
+      <a href="/files/portrait-rights-consent/portrait-rights-consent.docx" download="초상권 이용 동의서.docx" title="초상권 이용 동의서 Word 다운로드">Word</a>
+      <a href="/files/portrait-rights-consent/portrait-rights-consent.hwpx" download="초상권 이용 동의서.hwpx" title="초상권 이용 동의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/event-photo-consent/" aria-label="행사 사진·영상 활용 동의서 미리보기">
+    <img src="/files/event-photo-consent/preview-1.webp" alt="행사 사진·영상 활용 동의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/event-photo-consent/">행사 사진·영상 활용 동의서</a>
+    <div class="cat">공공 · 신청·동의</div>
+    <div class="dl">      <a href="/files/event-photo-consent/event-photo-consent.pdf" download="행사 사진·영상 활용 동의서.pdf" title="행사 사진·영상 활용 동의서 PDF 다운로드">PDF</a>
+      <a href="/files/event-photo-consent/event-photo-consent.docx" download="행사 사진·영상 활용 동의서.docx" title="행사 사진·영상 활용 동의서 Word 다운로드">Word</a>
+      <a href="/files/event-photo-consent/event-photo-consent.hwpx" download="행사 사진·영상 활용 동의서.hwpx" title="행사 사진·영상 활용 동의서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -607,6 +678,17 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/minor-activity-consent/minor-activity-consent.pdf" download="미성년자 활동 보호자 동의서.pdf" title="미성년자 활동 보호자 동의서 PDF 다운로드">PDF</a>
       <a href="/files/minor-activity-consent/minor-activity-consent.docx" download="미성년자 활동 보호자 동의서.docx" title="미성년자 활동 보호자 동의서 Word 다운로드">Word</a>
       <a href="/files/minor-activity-consent/minor-activity-consent.hwpx" download="미성년자 활동 보호자 동의서.hwpx" title="미성년자 활동 보호자 동의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/sponsorship-application/" aria-label="후원신청서 미리보기">
+    <img src="/files/sponsorship-application/preview-1.webp" alt="후원신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/sponsorship-application/">후원신청서</a>
+    <div class="cat">공공 · 신청·동의</div>
+    <div class="dl">      <a href="/files/sponsorship-application/sponsorship-application.pdf" download="후원신청서.pdf" title="후원신청서 PDF 다운로드">PDF</a>
+      <a href="/files/sponsorship-application/sponsorship-application.docx" download="후원신청서.docx" title="후원신청서 Word 다운로드">Word</a>
+      <a href="/files/sponsorship-application/sponsorship-application.hwpx" download="후원신청서.hwpx" title="후원신청서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">

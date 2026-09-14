@@ -33,6 +33,8 @@ faq:
   - q: 기간제 근로자도 이 서식을 쓰나요?
     a: 아니요, 기간제·단시간 근로자는 계약기간과 근로일별 근로시간을 담은 전용 서식을 써야 합니다.
 
+related: [employee-roster, payslip, job-description, employment-certificate]
+
 blocks:
   - type: doc_title
     text: 표준근로계약서

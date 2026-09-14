@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,33 +582,86 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>예산계획서</span><span>예산안</span><span>연간예산</span><span>부서예산</span><span>budget</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%98%88%EC%82%B0%EA%B3%84%ED%9A%8D%EC%84%9C">예산계획서</a><a href="/search/?q=%EC%98%88%EC%82%B0%EC%95%88">예산안</a><a href="/search/?q=%EC%97%B0%EA%B0%84%EC%98%88%EC%82%B0">연간예산</a><a href="/search/?q=%EB%B6%80%EC%84%9C%EC%98%88%EC%82%B0">부서예산</a><a href="/search/?q=budget">budget</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/startup/">창업 첫 달 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/depreciation-schedule/" aria-label="감가상각 내역서 미리보기">
-    <img src="/files/depreciation-schedule/preview-1.webp" alt="감가상각 내역서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/budget-execution/" aria-label="예산 집행 내역서 미리보기">
+    <img src="/files/budget-execution/preview-1.webp" alt="예산 집행 내역서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/depreciation-schedule/">감가상각 내역서</a>
+    <a class="name" href="/form/budget-execution/">예산 집행 내역서</a>
     <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/depreciation-schedule/depreciation-schedule.pdf" download="감가상각 내역서.pdf" title="감가상각 내역서 PDF 다운로드">PDF</a>
-      <a href="/files/depreciation-schedule/depreciation-schedule.docx" download="감가상각 내역서.docx" title="감가상각 내역서 Word 다운로드">Word</a>
-      <a href="/files/depreciation-schedule/depreciation-schedule.hwpx" download="감가상각 내역서.hwpx" title="감가상각 내역서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/budget-execution/budget-execution.pdf" download="예산 집행 내역서.pdf" title="예산 집행 내역서 PDF 다운로드">PDF</a>
+      <a href="/files/budget-execution/budget-execution.docx" download="예산 집행 내역서.docx" title="예산 집행 내역서 Word 다운로드">Word</a>
+      <a href="/files/budget-execution/budget-execution.hwpx" download="예산 집행 내역서.hwpx" title="예산 집행 내역서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/transaction-statement/" aria-label="거래명세서 미리보기">
-    <img src="/files/transaction-statement/preview-1.webp" alt="거래명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/expense-approval/" aria-label="지출결의서 미리보기">
+    <img src="/files/expense-approval/preview-1.webp" alt="지출결의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/transaction-statement/">거래명세서</a>
+    <a class="name" href="/form/expense-approval/">지출결의서</a>
     <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/transaction-statement/transaction-statement.pdf" download="거래명세서.pdf" title="거래명세서 PDF 다운로드">PDF</a>
-      <a href="/files/transaction-statement/transaction-statement.docx" download="거래명세서.docx" title="거래명세서 Word 다운로드">Word</a>
-      <a href="/files/transaction-statement/transaction-statement.hwpx" download="거래명세서.hwpx" title="거래명세서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/expense-approval/expense-approval.pdf" download="지출결의서.pdf" title="지출결의서 PDF 다운로드">PDF</a>
+      <a href="/files/expense-approval/expense-approval.docx" download="지출결의서.docx" title="지출결의서 Word 다운로드">Word</a>
+      <a href="/files/expense-approval/expense-approval.hwpx" download="지출결의서.hwpx" title="지출결의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/business-plan-standard/" aria-label="사업계획서 (표준형) 미리보기">
+    <img src="/files/business-plan-standard/preview-1.webp" alt="사업계획서 (표준형) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/business-plan-standard/">사업계획서 (표준형)</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/business-plan-standard/business-plan-standard.pdf" download="사업계획서 (표준형).pdf" title="사업계획서 (표준형) PDF 다운로드">PDF</a>
+      <a href="/files/business-plan-standard/business-plan-standard.docx" download="사업계획서 (표준형).docx" title="사업계획서 (표준형) Word 다운로드">Word</a>
+      <a href="/files/business-plan-standard/business-plan-standard.hwpx" download="사업계획서 (표준형).hwpx" title="사업계획서 (표준형) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/household-budget-yearly/" aria-label="가계부 (연간) 미리보기">
+    <img src="/files/household-budget-yearly/preview-1.webp" alt="가계부 (연간) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/household-budget-yearly/">가계부 (연간)</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/household-budget-yearly/household-budget-yearly.pdf" download="가계부 (연간).pdf" title="가계부 (연간) PDF 다운로드">PDF</a>
+      <a href="/files/household-budget-yearly/household-budget-yearly.docx" download="가계부 (연간).docx" title="가계부 (연간) Word 다운로드">Word</a>
+      <a href="/files/household-budget-yearly/household-budget-yearly.hwpx" download="가계부 (연간).hwpx" title="가계부 (연간) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/household-budget-weekly/" aria-label="가계부 (주간) 미리보기">
+    <img src="/files/household-budget-weekly/preview-1.webp" alt="가계부 (주간) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/household-budget-weekly/">가계부 (주간)</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/household-budget-weekly/household-budget-weekly.pdf" download="가계부 (주간).pdf" title="가계부 (주간) PDF 다운로드">PDF</a>
+      <a href="/files/household-budget-weekly/household-budget-weekly.docx" download="가계부 (주간).docx" title="가계부 (주간) Word 다운로드">Word</a>
+      <a href="/files/household-budget-weekly/household-budget-weekly.hwpx" download="가계부 (주간).hwpx" title="가계부 (주간) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/sales-plan/" aria-label="영업 계획서 미리보기">
+    <img src="/files/sales-plan/preview-1.webp" alt="영업 계획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/sales-plan/">영업 계획서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/sales-plan/sales-plan.pdf" download="영업 계획서.pdf" title="영업 계획서 PDF 다운로드">PDF</a>
+      <a href="/files/sales-plan/sales-plan.docx" download="영업 계획서.docx" title="영업 계획서 Word 다운로드">Word</a>
+      <a href="/files/sales-plan/sales-plan.hwpx" download="영업 계획서.hwpx" title="영업 계획서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/payslip/" aria-label="급여명세서 미리보기">
+    <img src="/files/payslip/preview-1.webp" alt="급여명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/payslip/">급여명세서</a>
+    <div class="cat">기업 · 회계·세무</div>
+    <div class="dl">      <a href="/files/payslip/payslip.pdf" download="급여명세서.pdf" title="급여명세서 PDF 다운로드">PDF</a>
+      <a href="/files/payslip/payslip.docx" download="급여명세서.docx" title="급여명세서 Word 다운로드">Word</a>
+      <a href="/files/payslip/payslip.hwpx" download="급여명세서.hwpx" title="급여명세서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -594,25 +676,25 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/quotation/" aria-label="견적서 미리보기">
-    <img src="/files/quotation/preview-1.webp" alt="견적서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/corporate-card-report/" aria-label="법인카드 사용내역서 미리보기">
+    <img src="/files/corporate-card-report/preview-1.webp" alt="법인카드 사용내역서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/quotation/">견적서</a>
+    <a class="name" href="/form/corporate-card-report/">법인카드 사용내역서</a>
     <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/quotation/quotation.pdf" download="견적서.pdf" title="견적서 PDF 다운로드">PDF</a>
-      <a href="/files/quotation/quotation.docx" download="견적서.docx" title="견적서 Word 다운로드">Word</a>
-      <a href="/files/quotation/quotation.hwpx" download="견적서.hwpx" title="견적서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/corporate-card-report/corporate-card-report.pdf" download="법인카드 사용내역서.pdf" title="법인카드 사용내역서 PDF 다운로드">PDF</a>
+      <a href="/files/corporate-card-report/corporate-card-report.docx" download="법인카드 사용내역서.docx" title="법인카드 사용내역서 Word 다운로드">Word</a>
+      <a href="/files/corporate-card-report/corporate-card-report.hwpx" download="법인카드 사용내역서.hwpx" title="법인카드 사용내역서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/quotation-simple/" aria-label="견적서 (간편형) 미리보기">
-    <img src="/files/quotation-simple/preview-1.webp" alt="견적서 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/marketing-plan/" aria-label="마케팅 기획서 미리보기">
+    <img src="/files/marketing-plan/preview-1.webp" alt="마케팅 기획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/quotation-simple/">견적서 (간편형)</a>
+    <a class="name" href="/form/marketing-plan/">마케팅 기획서</a>
     <div class="cat">기업 · 회계·세무</div>
-    <div class="dl">      <a href="/files/quotation-simple/quotation-simple.pdf" download="견적서 (간편형).pdf" title="견적서 (간편형) PDF 다운로드">PDF</a>
-      <a href="/files/quotation-simple/quotation-simple.docx" download="견적서 (간편형).docx" title="견적서 (간편형) Word 다운로드">Word</a>
-      <a href="/files/quotation-simple/quotation-simple.hwpx" download="견적서 (간편형).hwpx" title="견적서 (간편형) 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/marketing-plan/marketing-plan.pdf" download="마케팅 기획서.pdf" title="마케팅 기획서 PDF 다운로드">PDF</a>
+      <a href="/files/marketing-plan/marketing-plan.docx" download="마케팅 기획서.docx" title="마케팅 기획서 Word 다운로드">Word</a>
+      <a href="/files/marketing-plan/marketing-plan.hwpx" download="마케팅 기획서.hwpx" title="마케팅 기획서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

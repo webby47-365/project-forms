@@ -27,6 +27,8 @@ faq:
   - q: 인수자가 아직 정해지지 않았다면?
     a: 부서장이나 팀장을 임시 인수자로 적고, 정식 인수자가 정해지면 다시 서명받으십시오.
 
+related: [handover-report, resignation-letter, asset-ledger]
+
 blocks:
   - type: doc_title
     text: 자산 인수인계서

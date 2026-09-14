@@ -10,6 +10,8 @@
 from __future__ import annotations
 
 import json
+import math
+import re
 import shutil
 import sys
 from datetime import datetime, timedelta, timezone
@@ -25,6 +27,7 @@ CATALOG = ROOT / "catalog" / "catalog.json"
 CATEGORIES = ROOT / "catalog" / "categories.json"
 ADS = ROOT / "catalog" / "ads.json"
 REQUESTS = ROOT / "catalog" / "requests.json"
+COLLECTIONS = ROOT / "catalog" / "collections.json"
 
 SITE_NAME = "무료서식 다운로드"
 SITE_URL = "https://freeforms.kr"  # canonical·sitemap·JSON-LD에 사용
@@ -39,7 +42,8 @@ GA4_ID = "G-912YLRDN2B"
 KST = timezone(timedelta(hours=9))
 
 RECENT_COUNT = 10
-RELATED_COUNT = 5
+RELATED_COUNT = 10       # 상세 화면 '함께 찾는 서식' 개수
+TAG_MIN_FORMS = 3        # 태그 허브를 만들 최소 서식 수 (이보다 적으면 얇은 페이지가 된다)
 TICKER_COUNT = 5  # 상단 롤링바에 띄울 최근 추가 서식 수
 
 FMT_LABEL = {"pdf": "PDF", "docx": "Word (DOCX)", "hwpx": "한글 (HWPX)"}
@@ -122,6 +126,106 @@ def download_urls(form_id: str, interstitial: bool) -> dict[str, str]:
     return {ext: f"/files/{form_id}/{form_id}.{ext}" for ext in ("pdf", "docx", "hwpx")}
 
 
+def tag_slug(tag: str) -> str:
+    """태그를 URL·폴더에 쓸 수 있는 이름으로 바꾼다.
+
+    한글·영문·숫자만 남기고 나머지는 하이픈으로 바꾼다. 슬래시·콜론이 든 태그가
+    폴더 경로를 깨뜨리는 것을 막는다.
+    """
+    out = []
+    for ch in tag.strip():
+        if ch.isalnum() or "\uac00" <= ch <= "\ud7a3":
+            out.append(ch.lower())
+        else:
+            out.append("-")
+    return "-".join(x for x in "".join(out).split("-") if x)
+
+
+# 분량·문체를 설명하는 말. 용도와 무관한데 서식 몇 종에만 나와 가중치가 커지므로 뺀다.
+_STOP = {
+    "간편", "간편형", "기본", "기본형", "간단히", "간단한", "빠르게", "한눈에",
+    "페이지", "분량", "양식", "서식", "서식입니다", "문서", "작성", "사용",
+    "표준", "무료", "다운로드", "한장", "반",
+}
+
+
+def _tokens(f: dict[str, Any]) -> set[str]:
+    """유사도 계산용 토큰. 제목·태그·요약·작성요령에서 뽑는다.
+
+    한국어는 어미가 붙어 어절이 그대로 겹치는 일이 드물다. 그래서 어절과 함께
+    두 글자 조각도 넣어 '사직'·'퇴직' 같은 부분 일치를 잡는다.
+    """
+    # 제목의 괄호 안(간편형·기본형 등 변형 이름)은 뺀다. 견적서(간편형)과
+    # 사직서(간편형)처럼 용도가 전혀 다른 서식이 '간편형' 때문에 묶이기 때문이다.
+    # 작성요령(usage)은 '빠르게·간단히' 같은 문체가 섞여 오히려 잡음이 되므로 쓰지 않는다.
+    title = re.sub(r"\([^)]*\)", " ", f.get("title", ""))
+    txt = " ".join([title, " ".join(f.get("tags", [])), f.get("summary", "")])
+    txt = re.sub(r"[^가-힣A-Za-z0-9 ]", " ", txt).lower()
+    out: set[str] = set()
+    for word in txt.split():
+        if word in _STOP:
+            continue
+        if len(word) >= 2:
+            out.add(word)
+        if len(word) >= 3:
+            for i in range(len(word) - 1):
+                out.add(word[i:i + 2])
+    return out
+
+
+def related_forms(
+    target: dict[str, Any],
+    forms: list[dict[str, Any]],
+    by_id: dict[str, dict[str, Any]],
+    tokens: dict[str, set[str]],
+    idf: dict[str, float],
+    limit: int,
+) -> list[dict[str, Any]]:
+    """'함께 찾는 서식'을 고른다.
+
+    1) 명세의 related에 사람이 적어 둔 서식을 앞에 놓는다 (사직서 → 인수인계서처럼
+       글자는 안 겹치지만 실제로 함께 쓰는 관계는 기계가 알 수 없다).
+    2) 남는 자리는 본문 유사도 + 같은 분류 가점으로 채운다.
+    계열 서식은 상세 화면 위쪽 목록에 이미 나오므로 제외한다.
+    """
+    my_series = target.get("series") or ""
+    picked: list[dict[str, Any]] = []
+    seen = {target["id"]}
+
+    for rid in target.get("related", []):
+        f = by_id.get(rid)
+        if f and f["id"] not in seen:
+            picked.append(f)
+            seen.add(f["id"])
+
+    if len(picked) >= limit:
+        return picked[:limit]
+
+    mine = tokens[target["id"]]
+    mine_norm = sum(idf.get(w, 0.0) for w in mine) or 1.0
+    scored: list[tuple[float, str, dict[str, Any]]] = []
+    for f in forms:
+        if f["id"] in seen:
+            continue
+        if my_series and f.get("series") == my_series:
+            continue
+        other = tokens[f["id"]]
+        shared = mine & other
+        if not shared:
+            continue
+        num = sum(idf.get(w, 0.0) for w in shared)
+        den = (mine_norm * (sum(idf.get(w, 0.0) for w in other) or 1.0)) ** 0.5
+        score = num / den
+        if f["category"] == target["category"]:
+            score += 0.04
+            if f["subcategory"] == target["subcategory"]:
+                score += 0.06
+        scored.append((-score, f["title"], f))
+    scored.sort(key=lambda x: (x[0], x[1]))
+    picked.extend(f for _, _, f in scored[:limit - len(picked)])
+    return picked
+
+
 class SiteBuildError(RuntimeError):
     """사이트 빌드 실패."""
 
@@ -160,6 +264,17 @@ def build() -> int:
         raise SiteBuildError("게시 상태(published) 서식이 없습니다.")
 
     by_id = {f["id"]: f for f in forms}
+
+    # '함께 찾는 서식' 유사도 계산용 표. 한 번만 만들어 전 서식이 돌려 쓴다.
+    # idf: 여러 서식에 흔히 나오는 말('서식', '작성')의 가중치를 낮춘다.
+    tokens = {f["id"]: _tokens(f) for f in forms}
+    df: dict[str, int] = {}
+    for toks in tokens.values():
+        for w in toks:
+            df[w] = df.get(w, 0) + 1
+    total_docs = len(forms)
+    idf = {w: math.log(total_docs / (1 + n)) + 1.0 for w, n in df.items()}
+
     sub_name = {
         f"{c['key']}/{s['key']}": (c["name"], s["name"])
         for c in categories for s in c["subcategories"]
@@ -192,6 +307,34 @@ def build() -> int:
         series[key].sort(key=lambda f: (f.get("variant_rank", 99), f["title"]))
     # 변형이 하나뿐인 계열은 보여줄 것이 없으므로 묶음에서 뺀다
     series = {k: v for k, v in series.items() if len(v) > 1}
+
+    # 주제 모음(collection): 분류가 달라도 한 가지 일에 연달아 쓰는 서식 묶음.
+    # 파일이 없으면 기능을 끄고 넘어간다(빌드는 멈추지 않는다).
+    collections: list[dict[str, Any]] = []
+    if COLLECTIONS.exists():
+        for c in load_json(COLLECTIONS).get("collections", []):
+            members = []
+            for fid in c["ids"]:
+                f = by_id.get(fid)
+                if f is None:
+                    raise SiteBuildError(
+                        f"collections.json '{c['key']}': 없는 서식 id '{fid}' — "
+                        f"명세를 먼저 등록하거나 목록에서 빼십시오.")
+                if f not in members:
+                    members.append(f)
+            if len(members) < 4:
+                raise SiteBuildError(
+                    f"collections.json '{c['key']}': 서식이 {len(members)}종뿐입니다(최소 4종).")
+            collections.append({**c, "forms": members, "count": len(members)})
+    collection_hubs = [
+        {"key": c["key"], "name": c["name"], "count": c["count"]} for c in collections
+    ]
+    # 상세 화면에서 '이 서식이 들어 있는 모음'을 보여주기 위한 역참조표
+    in_collections: dict[str, list[dict[str, str]]] = {}
+    for c in collections:
+        for f in c["forms"]:
+            in_collections.setdefault(f["id"], []).append(
+                {"key": c["key"], "name": c["name"]})
 
     # 계열 허브 목록 (메인·허브 상호 링크용). 종수가 많은 계열을 앞에 둔다.
     series_hubs = sorted(
@@ -237,6 +380,7 @@ def build() -> int:
         "updated": now.strftime("%Y-%m-%d"),
         "ticker": ticker,
         "series_hubs": series_hubs,
+        "collection_hubs": collection_hubs,
         "ads": ads,
         "reqs": reqs,
         "biz_name": BIZ_NAME,
@@ -284,7 +428,7 @@ def build() -> int:
     # 3) 서식 상세
     for f in forms:
         key = f"{f['category']}/{f['subcategory']}"
-        related = [r for r in grouped[key] if r["id"] != f["id"]][:RELATED_COUNT]
+        related = related_forms(f, forms, by_id, tokens, idf, RELATED_COUNT)
         kb = {k: max(1, v // 1024) for k, v in f["file_sizes"].items()}
         jsonld = json.dumps({
             "@context": "https://schema.org",
@@ -327,6 +471,7 @@ def build() -> int:
                            if s["key"] == f["subcategory"]),
                   related=related, kb=kb, jsonld=jsonld, faq_jsonld=faq_jsonld,
                   series_forms=series.get(f.get("series", ""), []),
+                  my_collections=in_collections.get(f["id"], []),
                   dl=dl_map[f["id"]], dl_map=dl_map, names=name_map[f["id"]], name_map=name_map, **common,
               ))
         pages += 1
@@ -382,6 +527,34 @@ def build() -> int:
                   canonical=f"/series/{hub['key']}/",
                   s_key=hub["key"], s_name=hub["name"], forms=members,
                   other_hubs=others, jsonld=hub_jsonld,
+                  dl_map=dl_map, name_map=name_map, **common,
+              ))
+        pages += 1
+
+    # 3-3-1) 주제 모음 허브 — '퇴사할 때', '이사할 때'처럼 일 단위로 서식을 묶는다.
+    #        계열 허브가 세로(같은 서식의 변형)라면 이쪽은 가로(일의 흐름)다.
+    for c in collections:
+        c_jsonld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": f"{c['name']} {c['count']}종",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": i,
+                    "name": m["title"],
+                    "url": f"{SITE_URL}/form/{m['id']}/",
+                }
+                for i, m in enumerate(c["forms"], start=1)
+            ],
+        }, ensure_ascii=False, indent=None)
+        others = [h for h in collection_hubs if h["key"] != c["key"]][:8]
+        write(PUBLIC / "collection" / c["key"] / "index.html",
+              env.get_template("collection.html").render(
+                  page_title=f"{c['name']} {c['count']}종 — 무료 다운로드",
+                  page_desc=f"{c['lead'][:90]} PDF·Word·한글 무료 다운로드.",
+                  canonical=f"/collection/{c['key']}/",
+                  c=c, forms=c["forms"], others=others, jsonld=c_jsonld,
                   dl_map=dl_map, name_map=name_map, **common,
               ))
         pages += 1
@@ -443,6 +616,7 @@ def build() -> int:
     # /search/는 결과가 검색어마다 달라 색인 대상이 아니므로 사이트맵에 넣지 않는다.
     urls = (["/"]
             + [f"/category/{c['key']}/{s['key']}/" for c in categories for s in c["subcategories"]]
+            + [f"/collection/{h['key']}/" for h in collection_hubs]
             + [f"/series/{h['key']}/" for h in series_hubs]
             + [f"/form/{f['id']}/" for f in forms]
             + ["/privacy/", "/request/"])
@@ -452,7 +626,7 @@ def build() -> int:
     for u in urls:
         priority = ("1.0" if u == "/"
                     else "0.8" if u.startswith("/form/")
-                    else "0.7" if u.startswith("/series/")
+                    else "0.7" if u.startswith(("/series/", "/collection/"))
                     else "0.6")
         sitemap.append(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{today}</lastmod>"
                        f"<priority>{priority}</priority></url>")

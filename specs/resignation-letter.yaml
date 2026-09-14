@@ -29,6 +29,8 @@ faq:
   - q: 사직서를 내면 바로 퇴사할 수 있나요?
     a: 취업규칙에 정한 통보 기한이 있으므로 통상 협의된 날짜까지 근무하게 됩니다.
 
+related: [handover-report, severance-calculation, career-certificate, asset-handover]
+
 blocks:
   - type: doc_title
     text: 사직서

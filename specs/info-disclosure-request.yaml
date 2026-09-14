@@ -25,6 +25,8 @@ faq:
   - q: 처리 기한은 얼마나 걸리나요?
     a: 접수일로부터 10일 이내에 공개 여부를 결정해 통지하는 것이 원칙입니다.
 
+related: [disclosure-objection, civil-petition, administrative-objection]
+
 blocks:
   - type: doc_title
     text: 정보공개청구서

@@ -25,6 +25,8 @@ faq:
   - q: 상대방이 합의금을 주지 않으면 어떻게 하나요?
     a: 공증을 받아두면 별도 소송 없이 강제집행을 신청할 수 있어 이행을 확보하기 유리합니다.
 
+related: [payment-pledge, repayment-plan, quitclaim-letter, written-pledge]
+
 blocks:
   - type: doc_title
     text: 합의서

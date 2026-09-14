@@ -36,6 +36,8 @@ faq:
   - q: 여러 날 반복해서 채용하면 매번 새로 써야 하나요?
     a: 근무 조건이 같다면 기간을 정해 한 번에 계약하는 방식도 가능합니다.
 
+related: [employee-roster, payslip, privacy-consent]
+
 blocks:
   - type: doc_title
     text: 일용직 근로계약서

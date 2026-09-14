@@ -27,6 +27,8 @@ faq:
   - q: 서류를 늦게 내면 어떻게 되나요?
     a: 회사가 정한 제출 기한을 넘기면 반영이 늦어지거나 다음 정산에서 처리될 수 있습니다.
 
+related: [withholding-request, payslip, employment-certificate]
+
 blocks:
   - type: doc_title
     text: 연말정산 서류 점검표

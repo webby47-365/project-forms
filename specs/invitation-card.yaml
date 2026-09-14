@@ -27,6 +27,8 @@ faq:
   - q: 복장 안내도 넣을 수 있나요?
     a: 네, 복장이나 선물 사양 같은 안내사항이 있으면 별도로 적으면 됩니다.
 
+related: [event-plan, event-application, family-event-notice, thank-you-letter]
+
 blocks:
   - type: doc_title
     text: 초대장

@@ -28,6 +28,8 @@ faq:
   - q: 파양하고 싶으면 어떻게 하나요?
     a: 계약서에 정한 통보 의무에 따라 분양자에게 미리 알리고, 정해진 절차를 거쳐 처리하십시오.
 
+related: [receipt, gift-contract, written-pledge]
+
 blocks:
   - type: doc_title
     text: 반려동물 분양 계약서

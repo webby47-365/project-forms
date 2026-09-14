@@ -27,6 +27,8 @@ faq:
   - q: 수량은 얼마나 신청해야 하나요?
     a: 평소 소진 속도를 고려해 1~2년 사용분을 기준으로 정하는 경우가 많습니다.
 
+related: [access-pass-request, supply-purchase-request, personnel-order]
+
 blocks:
   - type: doc_title
     text: 명함신청서

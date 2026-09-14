@@ -25,6 +25,8 @@ faq:
   - q: 학원 수업도 같이 적을 수 있나요?
     a: 네, 방과 후 활동 칸에 학원 일정을 함께 적으면 하루 전체 동선을 파악하기 좋습니다.
 
+related: [weekly-study-plan, academy-attendance, daily-planner]
+
 blocks:
   - type: doc_title
     text: 시간표

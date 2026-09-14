@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,33 +582,64 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>견적비교표</span><span>업체비교</span><span>구매비교</span><span>견적대비표</span><span>quotation comparison</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EA%B2%AC%EC%A0%81%EB%B9%84%EA%B5%90%ED%91%9C">견적비교표</a><a href="/search/?q=%EC%97%85%EC%B2%B4%EB%B9%84%EA%B5%90">업체비교</a><a href="/search/?q=%EA%B5%AC%EB%A7%A4%EB%B9%84%EA%B5%90">구매비교</a><a href="/search/?q=%EA%B2%AC%EC%A0%81%EB%8C%80%EB%B9%84%ED%91%9C">견적대비표</a><a href="/search/?q=quotation%20comparison">quotation comparison</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/trading/">거래·정산 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/vendor-registration/" aria-label="거래처 등록신청서 미리보기">
-    <img src="/files/vendor-registration/preview-1.webp" alt="거래처 등록신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/quotation/" aria-label="견적서 미리보기">
+    <img src="/files/quotation/preview-1.webp" alt="견적서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/vendor-registration/">거래처 등록신청서</a>
+    <a class="name" href="/form/quotation/">견적서</a>
     <div class="cat">기업 · 영업·마케팅</div>
-    <div class="dl">      <a href="/files/vendor-registration/vendor-registration.pdf" download="거래처 등록신청서.pdf" title="거래처 등록신청서 PDF 다운로드">PDF</a>
-      <a href="/files/vendor-registration/vendor-registration.docx" download="거래처 등록신청서.docx" title="거래처 등록신청서 Word 다운로드">Word</a>
-      <a href="/files/vendor-registration/vendor-registration.hwpx" download="거래처 등록신청서.hwpx" title="거래처 등록신청서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/quotation/quotation.pdf" download="견적서.pdf" title="견적서 PDF 다운로드">PDF</a>
+      <a href="/files/quotation/quotation.docx" download="견적서.docx" title="견적서 Word 다운로드">Word</a>
+      <a href="/files/quotation/quotation.hwpx" download="견적서.hwpx" title="견적서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/client-visit-report/" aria-label="고객 방문 보고서 미리보기">
-    <img src="/files/client-visit-report/preview-1.webp" alt="고객 방문 보고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/purchase-order/" aria-label="발주서 미리보기">
+    <img src="/files/purchase-order/preview-1.webp" alt="발주서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/client-visit-report/">고객 방문 보고서</a>
+    <a class="name" href="/form/purchase-order/">발주서</a>
     <div class="cat">기업 · 영업·마케팅</div>
-    <div class="dl">      <a href="/files/client-visit-report/client-visit-report.pdf" download="고객 방문 보고서.pdf" title="고객 방문 보고서 PDF 다운로드">PDF</a>
-      <a href="/files/client-visit-report/client-visit-report.docx" download="고객 방문 보고서.docx" title="고객 방문 보고서 Word 다운로드">Word</a>
-      <a href="/files/client-visit-report/client-visit-report.hwpx" download="고객 방문 보고서.hwpx" title="고객 방문 보고서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/purchase-order/purchase-order.pdf" download="발주서.pdf" title="발주서 PDF 다운로드">PDF</a>
+      <a href="/files/purchase-order/purchase-order.docx" download="발주서.docx" title="발주서 Word 다운로드">Word</a>
+      <a href="/files/purchase-order/purchase-order.hwpx" download="발주서.hwpx" title="발주서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/supply-purchase-request/" aria-label="비품구매요청서 미리보기">
+    <img src="/files/supply-purchase-request/preview-1.webp" alt="비품구매요청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/supply-purchase-request/">비품구매요청서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/supply-purchase-request/supply-purchase-request.pdf" download="비품구매요청서.pdf" title="비품구매요청서 PDF 다운로드">PDF</a>
+      <a href="/files/supply-purchase-request/supply-purchase-request.docx" download="비품구매요청서.docx" title="비품구매요청서 Word 다운로드">Word</a>
+      <a href="/files/supply-purchase-request/supply-purchase-request.hwpx" download="비품구매요청서.hwpx" title="비품구매요청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/expense-approval/" aria-label="지출결의서 미리보기">
+    <img src="/files/expense-approval/preview-1.webp" alt="지출결의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/expense-approval/">지출결의서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/expense-approval/expense-approval.pdf" download="지출결의서.pdf" title="지출결의서 PDF 다운로드">PDF</a>
+      <a href="/files/expense-approval/expense-approval.docx" download="지출결의서.docx" title="지출결의서 Word 다운로드">Word</a>
+      <a href="/files/expense-approval/expense-approval.hwpx" download="지출결의서.hwpx" title="지출결의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/distributor-contract/" aria-label="대리점 계약서 미리보기">
+    <img src="/files/distributor-contract/preview-1.webp" alt="대리점 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/distributor-contract/">대리점 계약서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/distributor-contract/distributor-contract.pdf" download="대리점 계약서.pdf" title="대리점 계약서 PDF 다운로드">PDF</a>
+      <a href="/files/distributor-contract/distributor-contract.docx" download="대리점 계약서.docx" title="대리점 계약서 Word 다운로드">Word</a>
+      <a href="/files/distributor-contract/distributor-contract.hwpx" download="대리점 계약서.hwpx" title="대리점 계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -594,6 +654,17 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
+  <a class="thumb" href="/form/return-exchange-request/" aria-label="반품·교환 신청서 미리보기">
+    <img src="/files/return-exchange-request/preview-1.webp" alt="반품·교환 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/return-exchange-request/">반품·교환 신청서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/return-exchange-request/return-exchange-request.pdf" download="반품·교환 신청서.pdf" title="반품·교환 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/return-exchange-request/return-exchange-request.docx" download="반품·교환 신청서.docx" title="반품·교환 신청서 Word 다운로드">Word</a>
+      <a href="/files/return-exchange-request/return-exchange-request.hwpx" download="반품·교환 신청서.hwpx" title="반품·교환 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/customer-card/" aria-label="고객관리 카드 미리보기">
     <img src="/files/customer-card/preview-1.webp" alt="고객관리 카드 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -605,14 +676,25 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/delivery-confirmation/" aria-label="납품확인서 미리보기">
-    <img src="/files/delivery-confirmation/preview-1.webp" alt="납품확인서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/campaign-result/" aria-label="캠페인 결과 보고서 미리보기">
+    <img src="/files/campaign-result/preview-1.webp" alt="캠페인 결과 보고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/delivery-confirmation/">납품확인서</a>
+    <a class="name" href="/form/campaign-result/">캠페인 결과 보고서</a>
     <div class="cat">기업 · 영업·마케팅</div>
-    <div class="dl">      <a href="/files/delivery-confirmation/delivery-confirmation.pdf" download="납품확인서.pdf" title="납품확인서 PDF 다운로드">PDF</a>
-      <a href="/files/delivery-confirmation/delivery-confirmation.docx" download="납품확인서.docx" title="납품확인서 Word 다운로드">Word</a>
-      <a href="/files/delivery-confirmation/delivery-confirmation.hwpx" download="납품확인서.hwpx" title="납품확인서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/campaign-result/campaign-result.pdf" download="캠페인 결과 보고서.pdf" title="캠페인 결과 보고서 PDF 다운로드">PDF</a>
+      <a href="/files/campaign-result/campaign-result.docx" download="캠페인 결과 보고서.docx" title="캠페인 결과 보고서 Word 다운로드">Word</a>
+      <a href="/files/campaign-result/campaign-result.hwpx" download="캠페인 결과 보고서.hwpx" title="캠페인 결과 보고서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/sales-daily-log/" aria-label="영업일지 미리보기">
+    <img src="/files/sales-daily-log/preview-1.webp" alt="영업일지 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/sales-daily-log/">영업일지</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/sales-daily-log/sales-daily-log.pdf" download="영업일지.pdf" title="영업일지 PDF 다운로드">PDF</a>
+      <a href="/files/sales-daily-log/sales-daily-log.docx" download="영업일지.docx" title="영업일지 Word 다운로드">Word</a>
+      <a href="/files/sales-daily-log/sales-daily-log.hwpx" download="영업일지.hwpx" title="영업일지 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

@@ -35,6 +35,8 @@ faq:
   - q: 희망연봉은 꼭 적어야 하나요?
     a: 채용 담당자가 협상 기준으로 참고하므로 적어 두는 것이 좋습니다.
 
+related: [career-desc-job, cover-letter-experienced, job-application-form, career-certificate]
+
 blocks:
   - type: doc_title
     text: 이력서

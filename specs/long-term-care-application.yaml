@@ -31,6 +31,8 @@ faq:
   - q: 등급 판정은 어떻게 이루어지나요?
     a: 공단 직원이 방문 조사한 뒤 그 결과를 바탕으로 등급판정위원회가 등급을 결정합니다.
 
+related: [care-service-application, welfare-facility-application, caregiver-contract, power-of-attorney]
+
 blocks:
   - type: doc_title
     text: 장기요양 급여 신청서

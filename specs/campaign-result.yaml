@@ -29,6 +29,8 @@ faq:
   - q: 채널이 여러 개면 어떻게 정리하나요?
     a: 채널별로 행을 나누어 성과를 비교할 수 있도록 표에 정리하십시오.
 
+related: [marketing-plan, sales-plan, budget-execution]
+
 blocks:
   - type: doc_title
     text: 캠페인 결과 보고서

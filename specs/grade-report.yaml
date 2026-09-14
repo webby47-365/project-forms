@@ -30,6 +30,8 @@ faq:
   - q: 담임 의견은 어떻게 써야 하나요?
     a: 관찰한 사실을 바탕으로 긍정적이고 중립적인 표현으로 짧게 적습니다.
 
+related: [attendance-sheet, student-record-card, counseling-log]
+
 blocks:
   - type: doc_title
     text: 성적 통지표

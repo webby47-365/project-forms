@@ -30,6 +30,8 @@ faq:
   - q: 재심 절차는 꼭 안내해야 하나요?
     a: 회사 인사규정에 재심 절차가 있다면 청구 기한을 통보서에 함께 적어야 합니다.
 
+related: [explanation-statement, written-apology, personnel-order]
+
 blocks:
   - type: doc_title
     text: 징계 통보서

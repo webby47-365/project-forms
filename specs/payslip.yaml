@@ -26,6 +26,8 @@ faq:
   - q: 공제 요율은 어디서 확인하나요?
     a: 국민연금공단, 건강보험공단 등 관련 기관의 해당 연도 고시 요율을 확인하십시오.
 
+related: [labor-contract-standard, year-end-tax-checklist, severance-calculation, employee-roster]
+
 blocks:
   - type: doc_title
     text: 급여명세서

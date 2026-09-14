@@ -25,6 +25,8 @@ faq:
   - q: 분량은 어느 정도가 적당한가요?
     a: 한 장을 넘기지 않는 선에서 간결하게 작성하는 것이 좋습니다.
 
+related: [resume-english, portfolio-cover, recommendation-letter]
+
 blocks:
   - type: doc_title
     text: Cover Letter

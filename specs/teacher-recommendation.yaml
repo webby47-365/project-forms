@@ -30,6 +30,8 @@ faq:
   - q: 추천 사유는 몇 가지 사례를 들어야 하나요?
     a: 한두 가지 구체적인 사례로도 충분하니 근거가 분명한 사례를 고르십시오.
 
+related: [scholarship-application, student-record-card, grade-report]
+
 blocks:
   - type: doc_title
     text: 교사 추천서

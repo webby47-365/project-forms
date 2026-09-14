@@ -23,6 +23,8 @@ faq:
   - q: 참가비는 언제 내나요?
     a: 행사마다 다르므로 신청서 제출 시 안내되는 납부 방법과 기한을 따르면 됩니다.
 
+related: [privacy-consent, guardian-consent, event-photo-consent]
+
 blocks:
   - type: doc_title
     text: 참가신청서

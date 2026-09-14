@@ -29,6 +29,8 @@ faq:
   - q: 응급 상황에서도 동의서가 필요한가요?
     a: 의식이 없는 응급환자는 사후에 보호자 동의를 받거나 병원 내부 규정에 따라 처리합니다.
 
+related: [surgery-consent, medical-treatment-consent, guardian-consent]
+
 blocks:
   - type: doc_title
     text: 수혈 동의서

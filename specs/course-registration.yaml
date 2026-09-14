@@ -25,6 +25,8 @@ faq:
   - q: 환불 규정은 어디서 확인하나요?
     a: 기관마다 환불 규정이 다르므로 신청 전에 해당 기관에 직접 확인하십시오.
 
+related: [tuition-refund-request, academy-attendance, privacy-consent, guardian-consent]
+
 blocks:
   - type: doc_title
     text: 수강신청서

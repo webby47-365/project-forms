@@ -26,6 +26,8 @@ faq:
   - q: 이의신청과 행정심판은 같이 할 수 있나요?
     a: 별개 절차이므로 함께 진행할 수도 있습니다. 다만 처분 근거 법령에 정해진 절차와 기한을 각각 확인해야 합니다.
 
+related: [info-disclosure-request, parking-fine-objection, civil-petition]
+
 blocks:
   - type: doc_title
     text: 이의신청서

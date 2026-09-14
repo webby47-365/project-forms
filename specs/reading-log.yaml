@@ -29,6 +29,8 @@ faq:
   - q: 인상 깊은 구절이 없으면 어떻게 하나요?
     a: 비워 두어도 되고, 대신 가장 기억에 남는 장면을 적어도 됩니다.
 
+related: [weekly-study-plan, study-plan, club-activity-record]
+
 blocks:
   - type: doc_title
     text: 독서기록장

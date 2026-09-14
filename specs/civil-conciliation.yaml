@@ -29,6 +29,8 @@ faq:
   - q: 조정이 성립하지 않으면 어떻게 되나요?
     a: 조정이 불성립하면 신청인의 의사에 따라 소송으로 이어질 수 있습니다.
 
+related: [small-claims-complaint, payment-order-application, certified-notice, settlement-agreement]
+
 blocks:
   - type: doc_title
     text: 민사조정 신청서

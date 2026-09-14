@@ -30,6 +30,8 @@ faq:
   - q: 회사가 육아휴직을 거부할 수 있나요?
     a: 법령상 정당한 사유가 없으면 거부할 수 없습니다.
 
+related: [leave-request, personnel-order, employment-certificate]
+
 blocks:
   - type: doc_title
     text: 육아휴직 신청서

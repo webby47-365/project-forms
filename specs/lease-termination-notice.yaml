@@ -27,6 +27,8 @@ faq:
   - q: 꼭 내용증명으로 보내야 하나요?
     a: 필수는 아니지만, 도달 사실을 증거로 남길 수 있어 내용증명 발송을 권장합니다.
 
+related: [certified-notice-terminate, deposit-return-notice, certified-notice-deposit, move-in-checklist]
+
 blocks:
   - type: doc_title
     text: 임대차계약 해지통보서

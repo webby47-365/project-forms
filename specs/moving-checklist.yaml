@@ -25,6 +25,8 @@ faq:
   - q: 비용은 예상액만 적어도 되나요?
     a: 예상액과 실제 지출을 함께 적어야 이사 후 예산 차이를 확인하기 좋습니다.
 
+related: [moving-in-report, move-in-checklist, housing-lease-contract]
+
 blocks:
   - type: doc_title
     text: 이사 체크리스트

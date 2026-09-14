@@ -26,6 +26,8 @@ faq:
   - q: 대금을 나눠서 받을 수 있나요?
     a: 규모가 큰 용역은 검수 기준과 함께 부분 지급 일정을 미리 정해 두는 것이 좋습니다.
 
+related: [nda, invoice-request, tax-invoice, subcontract-agreement]
+
 blocks:
   - type: doc_title
     text: 용역계약서

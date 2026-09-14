@@ -28,6 +28,8 @@ faq:
   - q: 사진 자료도 첨부하나요?
     a: 필수는 아니지만, 활동 사진을 함께 보관하면 발표나 생활기록부 작성에 참고 자료로 쓰기 좋습니다.
 
+related: [student-record-card, attendance-sheet, field-trip-consent]
+
 blocks:
   - type: doc_title
     text: 동아리 활동 기록부

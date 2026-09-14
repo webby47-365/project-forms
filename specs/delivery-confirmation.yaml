@@ -24,6 +24,8 @@ faq:
   - q: 서명 없이도 효력이 있나요?
     a: 수령자의 서명이나 날인이 있어야 인수 사실을 증명하는 효력을 가집니다.
 
+related: [purchase-order, transaction-statement, tax-invoice, invoice-request]
+
 blocks:
   - type: doc_title
     text: 납품확인서

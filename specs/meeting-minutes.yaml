@@ -30,6 +30,8 @@ faq:
   - q: 참석자가 서명을 거부하면 어떻게 하나요?
     a: 참석 여부와 의견을 회의록에 그대로 기록해 두면 됩니다. 서명은 확인용이지 효력 요건은 아닙니다.
 
+related: [proposal-draft, cooperation-request, internal-announcement]
+
 blocks:
   - type: doc_title
     text: 회의록

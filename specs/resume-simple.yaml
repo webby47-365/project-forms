@@ -34,6 +34,8 @@ faq:
   - q: 항목이 부족하면 어떻게 하나요?
     a: 경력이나 학력이 많아 간편형 칸이 부족하면, 항목이 더 많은 정식 이력서 양식을 사용하는 것이 좋습니다.
 
+related: [cover-letter, career-description, job-application-form]
+
 blocks:
   - type: doc_title
     text: 이력서

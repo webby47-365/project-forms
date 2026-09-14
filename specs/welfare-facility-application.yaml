@@ -29,6 +29,8 @@ faq:
   - q: 이용 요일은 정해진 대로만 가능한가요?
     a: 희망 요일과 시간을 적으면 시설 사정에 따라 배정되며 일부 조정될 수 있습니다.
 
+related: [long-term-care-application, care-service-application, privacy-consent]
+
 blocks:
   - type: doc_title
     text: 복지시설 이용 신청서

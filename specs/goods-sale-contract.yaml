@@ -27,6 +27,8 @@ faq:
   - q: 명의이전이 필요한 물건은 어떻게 하나요?
     a: 명의이전 절차와 그 비용을 누가 부담할지 계약서에 함께 정해 두십시오.
 
+related: [used-car-sale-contract, delivery-confirmation, receipt]
+
 blocks:
   - type: doc_title
     text: 동산 매매계약서

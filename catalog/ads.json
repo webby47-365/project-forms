@@ -15,7 +15,8 @@
     "search_bottom": "",
     "series_bottom": "",
     "footer": "",
-    "request_bottom": ""
+    "request_bottom": "",
+    "collection_bottom": ""
   },
   "_slots_guide": {
     "main_top": "메인 히어로 바로 아래 (가로 반응형)",
@@ -27,7 +28,8 @@
     "search_bottom": "검색 결과 목록 아래 (가로 반응형)",
     "series_bottom": "계열 비교표 아래 (가로 반응형)",
     "footer": "푸터 바로 위 (가로 반응형)",
-    "request_bottom": "서식 요청 페이지, 요청 폼 아래 (가로 반응형)"
+    "request_bottom": "서식 요청 페이지, 요청 폼 아래 (가로 반응형)",
+    "collection_bottom": "주제 모음 목록 아래 (가로 반응형)"
   },
   "_note": "광고는 페이지당 2~3개만 노출됩니다. 다운로드 버튼 바로 옆·아래에는 광고를 두지 않습니다(애드센스 오클릭 유도 금지). download_interstitial을 true로 하면 다운로드가 중간 페이지를 경유하며 파일은 자동으로 내려갑니다."
 }

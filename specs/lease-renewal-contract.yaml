@@ -36,6 +36,8 @@ faq:
   - q: 보증금을 올릴 수 있는 한도가 있나요?
     a: 계약 형태와 개별 사안에 따라 다르므로 작성 전 관련 법령과 상한 기준을 확인하십시오.
 
+related: [monthly-rent-receipt, lease-termination-notice, deposit-return-notice]
+
 blocks:
   - type: doc_title
     text: 임대차 계약 갱신계약서

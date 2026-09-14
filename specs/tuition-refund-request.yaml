@@ -29,6 +29,8 @@ faq:
   - q: 환불 기준은 어디에서 확인하나요?
     a: 학원 자체 규정과 관련 법령에 따라 다르므로 학원에 기준을 먼저 문의하십시오.
 
+related: [course-registration, academy-attendance, certified-notice]
+
 blocks:
   - type: doc_title
     text: 수강료 환불 신청서

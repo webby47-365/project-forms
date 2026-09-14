@@ -29,6 +29,8 @@ faq:
 created_by: agent
 status: published
 
+related: [medical-record-request, medical-treatment-consent, medical-expense-support]
+
 blocks:
   - type: doc_title
     text: 전원(轉院) 요청서

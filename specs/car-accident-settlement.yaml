@@ -30,6 +30,8 @@ faq:
   - q: 사람이 다친 사고도 이 서식을 쓸 수 있나요?
     a: 인적 피해가 있는 사고는 이 서식으로 섣불리 합의하지 말고 전문가와 먼저 상담하십시오.
 
+related: [settlement-agreement, payment-pledge, fact-confirmation]
+
 blocks:
   - type: doc_title
     text: 교통사고 합의서

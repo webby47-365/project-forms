@@ -26,6 +26,8 @@ faq:
   - q: 적요는 얼마나 자세히 적어야 하나요?
     a: 거래처명과 거래 목적을 알아볼 수 있을 정도로 간단히 적으면 충분합니다.
 
+related: [petty-cash-ledger, budget-execution, payment-confirmation]
+
 blocks:
   - type: doc_title
     text: 자금일보

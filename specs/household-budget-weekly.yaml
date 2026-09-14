@@ -34,6 +34,8 @@ faq:
     a: 주간 기록을 모아 월말에 월간 가계부로 옮겨 정리하면 흐름을 파악하기 좋습니다.
 target_pages: 1
 
+related: [daily-planner, monthly-schedule, checklist]
+
 blocks:
   - type: doc_title
     text: 가계부 (주간)

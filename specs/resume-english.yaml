@@ -35,6 +35,8 @@ faq:
 created_by: agent
 status: published
 
+related: [english-cover-letter, career-description, portfolio-cover, reference-check-consent]
+
 blocks:
   - type: doc_title
     text: RESUME

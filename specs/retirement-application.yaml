@@ -35,6 +35,8 @@ faq:
   - q: 제출은 언제까지 해야 하나요?
     a: 정해진 기한은 없지만 인수인계와 결재에 걸리는 시간을 고려해 퇴직희망일보다 충분히 앞서 제출하십시오.
 
+related: [severance-calculation, handover-report, career-certificate, asset-handover]
+
 blocks:
   - type: doc_title
     text: 퇴직원

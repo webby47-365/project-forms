@@ -27,6 +27,8 @@ faq:
   - q: 결재는 누구까지 받아야 하나요?
     a: 금액과 발주 성격에 따라 다르므로 회사의 결재규정을 확인해 반영하십시오.
 
+related: [quotation-comparison, delivery-confirmation, transaction-statement, tax-invoice]
+
 blocks:
   - type: doc_title
     text: 발주서

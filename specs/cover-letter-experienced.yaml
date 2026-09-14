@@ -35,6 +35,8 @@ faq:
   - q: 성과에 수치가 없으면 어떻게 적나요?
     a: 정확한 수치가 없다면 규모나 비중을 가늠할 수 있는 표현으로 대신 적으십시오.
 
+related: [resume-experienced, career-description, career-certificate, portfolio-cover]
+
 blocks:
   - type: doc_title
     text: 자기소개서

@@ -27,6 +27,8 @@ faq:
   - q: 계약금만 걸고 해제할 수 있나요?
     a: 중도금 지급 전까지는 계약금 배액을 상환하고 해제할 수 있습니다.
 
+related: [property-viewing-log, moving-in-report, moving-checklist, power-of-attorney]
+
 blocks:
   - type: doc_title
     text: 부동산 매매계약서

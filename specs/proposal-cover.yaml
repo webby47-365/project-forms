@@ -25,6 +25,8 @@ faq:
   - q: 대외비 표시는 언제 하나요?
     a: 제안서 내용에 외부 공개를 제한할 정보가 있을 때 우측 상단 보안등급 칸에 표시합니다.
 
+related: [quotation, nda, sales-contract, business-plan-standard]
+
 blocks:
   - type: grid
     widths: [60, 20, 20]

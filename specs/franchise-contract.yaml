@@ -30,6 +30,8 @@ faq:
   - q: 이 서식만으로 계약해도 되나요?
     a: 본 서식은 참고용이므로 법적 효력과 세부 조건은 이용자가 직접 확인해야 합니다.
 
+related: [nda, license-contract, distributor-contract]
+
 blocks:
   - type: doc_title
     text: 가맹계약서

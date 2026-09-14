@@ -36,6 +36,8 @@ faq:
   - q: 초과근로는 시켜도 되나요?
     a: 정해진 근로시간을 넘겨 일하려면 근로자의 동의가 필요하며, 동의 여부를 계약서에 표시해 두십시오.
 
+related: [employee-roster, payslip, overtime-application]
+
 blocks:
   - type: doc_title
     text: 단시간 근로계약서

@@ -29,6 +29,8 @@ faq:
   - q: 사진 증빙은 꼭 있어야 하나요?
     a: 필수는 아니지만 현장 사진이 있으면 심사에 도움이 됩니다.
 
+related: [administrative-objection, civil-petition, fact-confirmation]
+
 blocks:
   - type: doc_title
     text: 주차위반 과태료 이의신청서

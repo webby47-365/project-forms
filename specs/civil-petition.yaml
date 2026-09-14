@@ -25,6 +25,8 @@ faq:
   - q: 첨부서류는 어디까지 준비해야 하나요?
     a: 기관마다 요구하는 서류가 다르므로 접수 창구나 홈페이지에서 필요한 목록을 확인하십시오.
 
+related: [info-disclosure-request, administrative-objection, power-of-attorney]
+
 blocks:
   - type: doc_title
     text: 민원신청서

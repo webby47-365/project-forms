@@ -27,6 +27,8 @@ faq:
   - q: 꼭 내용증명으로 보내야 하나요?
     a: 필수는 아니지만 도달 사실을 남기기 위해 내용증명 우편 발송을 권장합니다.
 
+related: [certified-notice, balance-confirmation, loan-agreement, repayment-plan]
+
 blocks:
   - type: doc_title
     text: 채권양도 통지서

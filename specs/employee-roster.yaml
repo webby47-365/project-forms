@@ -26,6 +26,8 @@ faq:
   - q: 일용직도 명부에 포함하나요?
     a: 상시 근로자가 아니어도 근로계약을 맺었다면 포함해 관리하는 것이 안전합니다.
 
+related: [labor-contract-standard, payslip, employment-certificate]
+
 blocks:
   - type: doc_title
     text: 근로자명부

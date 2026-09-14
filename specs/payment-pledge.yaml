@@ -25,6 +25,8 @@ faq:
   - q: 지급을 못 지키면 어떻게 되나요?
     a: 미리 정한 기한이익 상실이나 지연손해금 조항에 따라 처리됩니다.
 
+related: [repayment-plan, loan-agreement, settlement-agreement, certified-notice-loan]
+
 blocks:
   - type: doc_title
     text: 지급각서

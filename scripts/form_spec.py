@@ -63,6 +63,9 @@ class FormSpec:
     # 상세 화면 본문. 화면에서 읽는 글이므로 짧게 끊어 쓴다(SPEC_GUIDE 3-2절).
     howto: list[str] = field(default_factory=list)          # 작성 단계 3~5개, 각 한 문장
     faq: list[dict[str, str]] = field(default_factory=list)  # [{q, a}] 2~4문항, 아코디언으로 표시
+    # 실제로 함께 쓰는 서식의 id 2~4개. 상세 화면 '함께 찾는 서식'의 앞자리에 놓인다.
+    # 글자가 겹치는 것과 함께 쓰는 것은 다르므로 사람(에이전트)이 판단해 적는다.
+    related: list[str] = field(default_factory=list)
     version: int = 1
     # 방문자 요청으로 만든 서식이면 True. 요청 페이지의 "요청으로 등록된 서식"에 노출된다.
     from_request: bool = False
@@ -245,6 +248,7 @@ def load_spec(path: Path) -> FormSpec:
         variant_use=str(raw.get("variant_use", "")),
         howto=_load_howto(path.name, raw.get("howto")),
         faq=_load_faq(path.name, raw.get("faq")),
+        related=[str(x).strip() for x in (raw.get("related") or []) if str(x).strip()],
         version=int(raw.get("version", 1)),
         from_request=bool(raw.get("from_request", False)),
         created_by=str(raw.get("created_by", "manual")),

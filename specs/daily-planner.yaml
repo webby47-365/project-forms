@@ -26,6 +26,8 @@ faq:
   - q: 방학과 학기 중 계획표를 같이 써도 되나요?
     a: 생활 패턴이 크게 달라지므로 방학이나 시험 기간에는 새로 작성해 쓰는 것이 좋습니다.
 
+related: [monthly-schedule, weekly-study-plan, checklist]
+
 blocks:
   - type: doc_title
     text: 생활계획표

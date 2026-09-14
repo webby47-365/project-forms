@@ -28,6 +28,8 @@ faq:
   - q: 동의를 거부하면 불이익이 있나요?
     a: 불이익 여부는 서비스마다 다르므로 안내 문구를 반드시 확인하십시오.
 
+related: [survey-consent, event-application, volunteer-application]
+
 blocks:
   - type: doc_title
     text: 개인정보 수집·이용 동의서 (간편형)

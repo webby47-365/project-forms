@@ -30,6 +30,8 @@ faq:
   - q: 평가 계획은 꼭 채점 기준까지 적어야 하나요?
     a: 협의회나 장학 자료로 쓴다면 평가 기준까지 적는 것이 좋고, 단순 수업용이면 평가 방법 정도만 적어도 됩니다.
 
+related: [class-timetable, attendance-sheet, grade-report, weekly-study-plan]
+
 blocks:
   - type: doc_title
     text: 수업 지도안

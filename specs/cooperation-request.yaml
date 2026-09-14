@@ -25,6 +25,8 @@ faq:
   - q: 회신 기한은 어떻게 정하나요?
     a: 요청 업무의 난이도를 고려해 최소 2~3일 이상 여유를 두는 것이 좋습니다.
 
+related: [proposal-draft, official-letter, document-register]
+
 blocks:
   - type: doc_title
     text: 협조전

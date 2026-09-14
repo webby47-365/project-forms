@@ -28,6 +28,8 @@ faq:
   - q: 발급까지 며칠 걸리나요?
     a: 부서 규정에 따라 처리 기간이 다르므로 담당 부서에 미리 확인하는 것이 좋습니다.
 
+related: [employment-certificate, payslip, year-end-tax-checklist]
+
 blocks:
   - type: doc_title
     text: 원천징수영수증 발급 요청서

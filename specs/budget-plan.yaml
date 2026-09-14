@@ -27,6 +27,8 @@ faq:
   - q: 집행 내역도 이 서식에 적나요?
     a: 아니요, 실제 집행 내역은 별도의 예산 집행 내역서로 관리하시는 것이 좋습니다.
 
+related: [budget-execution, expense-approval, business-plan-standard]
+
 blocks:
   - type: doc_title
     text: 예산 계획서

@@ -25,6 +25,8 @@ faq:
   - q: 준비물은 어떻게 나누면 좋나요?
     a: 여행복, 서류, 짐, 약품처럼 종류별로 나눠 적으면 빠뜨리지 않고 챙길 수 있습니다.
 
+related: [monthly-schedule, checklist, household-budget]
+
 blocks:
   - type: doc_title
     text: 여행계획표

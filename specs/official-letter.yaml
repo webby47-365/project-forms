@@ -24,6 +24,8 @@ faq:
   - q: 직인이 없으면 효력이 없나요?
     a: 대외 공문은 관례상 직인을 찍어야 공식 문서로 인정받으므로 총무팀에 요청하십시오.
 
+related: [cooperation-request, document-register, proposal-draft]
+
 blocks:
   - type: doc_title
     text: 공 문

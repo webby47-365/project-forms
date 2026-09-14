@@ -23,6 +23,8 @@ faq:
   - q: 재직기간은 어떻게 계산하나요?
     a: 입사일부터 발급일까지의 기간을 적으면 됩니다.
 
+related: [career-certificate, payslip, withholding-request]
+
 blocks:
   - type: doc_title
     text: 재직증명서

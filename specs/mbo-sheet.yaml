@@ -30,6 +30,8 @@ faq:
   - q: 중간 점검은 몇 번 해야 하나요?
     a: 정해진 횟수는 없으나 분기별 1회 정도가 일반적입니다.
 
+related: [performance-evaluation, job-description, probation-evaluation]
+
 blocks:
   - type: doc_title
     text: 목표관리(MBO) 평가표

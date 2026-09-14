@@ -28,6 +28,8 @@ faq:
   - q: 승인자 없이 사용해도 되나요?
     a: 오·남용을 막기 위해 승인자 확인을 받은 뒤 사용하는 것이 원칙입니다.
 
+related: [document-register, proposal-draft, power-of-attorney]
+
 blocks:
   - type: doc_title
     text: 법인인감 사용대장

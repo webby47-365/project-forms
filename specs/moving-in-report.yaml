@@ -27,6 +27,8 @@ faq:
   - q: 신고 기한이 있나요?
     a: 정해진 기간 내에 신고해야 하므로 관할 주민센터 안내를 확인하십시오.
 
+related: [resident-registration-request, housing-lease-contract, moving-checklist]
+
 blocks:
   - type: doc_title
     text: 전입신고서

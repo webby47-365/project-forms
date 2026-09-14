@@ -24,6 +24,8 @@ faq:
   - q: 예상 단가와 실제 구매가가 다르면 어떻게 하나요?
     a: 큰 차이가 없으면 그대로 진행하되, 차이가 크면 담당자와 다시 협의하십시오.
 
+related: [expense-approval, purchase-order, quotation-comparison, asset-ledger]
+
 blocks:
   - type: doc_title
     text: 비품구매요청서

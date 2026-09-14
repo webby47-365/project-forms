@@ -30,6 +30,8 @@ faq:
   - q: 보호자가 대신 서명해도 되나요?
     a: 미성년자는 보호자가 사전 확인과 동의란에 서명하면 됩니다.
 
+related: [guardian-consent, medical-treatment-consent, privacy-consent]
+
 blocks:
   - type: doc_title
     text: 예방접종 동의서

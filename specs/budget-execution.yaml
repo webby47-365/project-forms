@@ -28,6 +28,8 @@ faq:
   - q: 이월 예산은 어디에 적나요?
     a: 별도 행을 추가해 이월액임을 적요에 표시하고 당해 예산과 구분해 관리하십시오.
 
+related: [budget-plan, expense-approval, expense-report]
+
 blocks:
   - type: doc_title
     text: 예산 집행 내역서

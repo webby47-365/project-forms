@@ -35,6 +35,8 @@ version: 1
 created_by: manual
 status: published
 
+related: [cover-letter, job-application-form, career-description, portfolio-cover]
+
 blocks:
   - type: doc_title
     text: 이력서

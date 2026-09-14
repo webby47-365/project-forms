@@ -30,6 +30,8 @@ faq:
   - q: 부담부 증여는 무엇인가요?
     a: 대출금 등 채무를 함께 넘기는 증여를 말하며, 채무 부분은 증여세 계산에서 별도로 취급됩니다.
 
+related: [will-form, seal-certificate-poa, power-of-attorney]
+
 blocks:
   - type: doc_title
     text: 증여계약서

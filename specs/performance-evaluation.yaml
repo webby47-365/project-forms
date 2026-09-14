@@ -29,6 +29,8 @@ faq:
   - q: 1차·2차 평가자는 누가 맡나요?
     a: 보통 직속 상사가 1차, 그 상급자가 2차 평가를 맡는 방식이 일반적입니다.
 
+related: [mbo-sheet, probation-evaluation, job-description, personnel-order]
+
 blocks:
   - type: doc_title
     text: 인사고과표

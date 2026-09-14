@@ -26,6 +26,8 @@ faq:
   - q: 세액은 어떻게 계산하나요?
     a: 공급가액의 10%를 세액으로 적고, 공급가액과 세액을 더한 금액이 합계금액이 됩니다.
 
+related: [transaction-statement, invoice-request, payment-confirmation, receipt]
+
 blocks:
   - type: doc_title
     text: 세금계산서

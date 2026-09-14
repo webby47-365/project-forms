@@ -30,6 +30,8 @@ faq:
   - q: 부가세는 별도인가요 포함인가요?
     a: 서식 하단에 별도·포함 여부를 표시하는 칸이 있으니 반드시 체크해 분쟁을 막으십시오.
 
+related: [purchase-order, quotation-comparison, transaction-statement, tax-invoice]
+
 blocks:
   - type: doc_title
     text: 견적서

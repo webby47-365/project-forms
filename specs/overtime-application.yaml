@@ -30,6 +30,8 @@ faq:
   - q: 야간근로 기준 시간은 언제부터인가요?
     a: 통상 밤 10시부터 다음 날 오전 6시 이전까지를 야간근로로 봅니다.
 
+related: [payslip, leave-request, labor-contract-standard]
+
 blocks:
   - type: doc_title
     text: 연장·휴일근로 신청서

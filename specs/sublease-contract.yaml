@@ -34,6 +34,8 @@ faq:
   - q: 원 임대차계약이 끝나면 전대차는 어떻게 되나요?
     a: 원 임대차계약이 종료되면 전대차 계약도 함께 종료되는 것이 일반적입니다.
 
+related: [lease-transfer-contract, move-in-checklist, monthly-rent-receipt, lease-termination-notice]
+
 blocks:
   - type: doc_title
     text: 전대차 계약서

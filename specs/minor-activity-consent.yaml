@@ -28,6 +28,8 @@ faq:
   - q: 주민등록번호를 적어야 하나요?
     a: 아닙니다. 참가자 확인은 생년월일만으로 하고 고유식별정보는 받지 않는 것이 안전합니다.
 
+related: [event-application, field-trip-consent, event-photo-consent]
+
 blocks:
   - type: doc_title
     text: 미성년자 활동 보호자 동의서

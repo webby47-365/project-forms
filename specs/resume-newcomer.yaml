@@ -35,6 +35,8 @@ faq:
   - q: 대외활동은 몇 개까지 적어야 하나요?
     a: 지원 직무와 관련성이 높은 활동 위주로 골라서 적는 것이 좋습니다.
 
+related: [cover-letter-newcomer, job-application-form, portfolio-cover, recommendation-letter]
+
 blocks:
   - type: doc_title
     text: 이력서

@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,33 +582,20 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">민사소송법 독촉절차(제462조 이하) 규정을 참고하여 자체 제작. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>지급명령신청서</span><span>독촉절차</span><span>채권추심</span><span>대여금청구</span><span>물품대금</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%A7%80%EA%B8%89%EB%AA%85%EB%A0%B9%EC%8B%A0%EC%B2%AD%EC%84%9C">지급명령신청서</a><a href="/search/?q=%EB%8F%85%EC%B4%89%EC%A0%88%EC%B0%A8">독촉절차</a><a href="/search/?q=%EC%B1%84%EA%B6%8C%EC%B6%94%EC%8B%AC">채권추심</a><a href="/search/?q=%EB%8C%80%EC%97%AC%EA%B8%88%EC%B2%AD%EA%B5%AC">대여금청구</a><a href="/search/?q=%EB%AC%BC%ED%92%88%EB%8C%80%EA%B8%88">물품대금</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/lending/">돈 빌려주고 받을 때</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/answer-brief/" aria-label="답변서 미리보기">
-    <img src="/files/answer-brief/preview-1.webp" alt="답변서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/certified-notice-loan/" aria-label="내용증명 (대여금 반환청구) 미리보기">
+    <img src="/files/certified-notice-loan/preview-1.webp" alt="내용증명 (대여금 반환청구) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/answer-brief/">답변서</a>
+    <a class="name" href="/form/certified-notice-loan/">내용증명 (대여금 반환청구)</a>
     <div class="cat">법률 · 소송·민원</div>
-    <div class="dl">      <a href="/files/answer-brief/answer-brief.pdf" download="답변서.pdf" title="답변서 PDF 다운로드">PDF</a>
-      <a href="/files/answer-brief/answer-brief.docx" download="답변서.docx" title="답변서 Word 다운로드">Word</a>
-      <a href="/files/answer-brief/answer-brief.hwpx" download="답변서.hwpx" title="답변서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/civil-conciliation/" aria-label="민사조정 신청서 미리보기">
-    <img src="/files/civil-conciliation/preview-1.webp" alt="민사조정 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/civil-conciliation/">민사조정 신청서</a>
-    <div class="cat">법률 · 소송·민원</div>
-    <div class="dl">      <a href="/files/civil-conciliation/civil-conciliation.pdf" download="민사조정 신청서.pdf" title="민사조정 신청서 PDF 다운로드">PDF</a>
-      <a href="/files/civil-conciliation/civil-conciliation.docx" download="민사조정 신청서.docx" title="민사조정 신청서 Word 다운로드">Word</a>
-      <a href="/files/civil-conciliation/civil-conciliation.hwpx" download="민사조정 신청서.hwpx" title="민사조정 신청서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/certified-notice-loan/certified-notice-loan.pdf" download="내용증명 (대여금 반환청구).pdf" title="내용증명 (대여금 반환청구) PDF 다운로드">PDF</a>
+      <a href="/files/certified-notice-loan/certified-notice-loan.docx" download="내용증명 (대여금 반환청구).docx" title="내용증명 (대여금 반환청구) Word 다운로드">Word</a>
+      <a href="/files/certified-notice-loan/certified-notice-loan.hwpx" download="내용증명 (대여금 반환청구).hwpx" title="내용증명 (대여금 반환청구) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -594,6 +610,28 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
+  <a class="thumb" href="/form/loan-agreement/" aria-label="차용증 (금전소비대차계약서) 미리보기">
+    <img src="/files/loan-agreement/preview-1.webp" alt="차용증 (금전소비대차계약서) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/loan-agreement/">차용증 (금전소비대차계약서)</a>
+    <div class="cat">법률 · 소송·민원</div>
+    <div class="dl">      <a href="/files/loan-agreement/loan-agreement.pdf" download="차용증 (금전소비대차계약서).pdf" title="차용증 (금전소비대차계약서) PDF 다운로드">PDF</a>
+      <a href="/files/loan-agreement/loan-agreement.docx" download="차용증 (금전소비대차계약서).docx" title="차용증 (금전소비대차계약서) Word 다운로드">Word</a>
+      <a href="/files/loan-agreement/loan-agreement.hwpx" download="차용증 (금전소비대차계약서).hwpx" title="차용증 (금전소비대차계약서) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/payment-pledge/" aria-label="지급각서 미리보기">
+    <img src="/files/payment-pledge/preview-1.webp" alt="지급각서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/payment-pledge/">지급각서</a>
+    <div class="cat">법률 · 소송·민원</div>
+    <div class="dl">      <a href="/files/payment-pledge/payment-pledge.pdf" download="지급각서.pdf" title="지급각서 PDF 다운로드">PDF</a>
+      <a href="/files/payment-pledge/payment-pledge.docx" download="지급각서.docx" title="지급각서 Word 다운로드">Word</a>
+      <a href="/files/payment-pledge/payment-pledge.hwpx" download="지급각서.hwpx" title="지급각서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/complaint-goods-payment/" aria-label="소장 (물품대금 청구) 미리보기">
     <img src="/files/complaint-goods-payment/preview-1.webp" alt="소장 (물품대금 청구) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
@@ -602,6 +640,50 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/complaint-goods-payment/complaint-goods-payment.pdf" download="소장 (물품대금 청구).pdf" title="소장 (물품대금 청구) PDF 다운로드">PDF</a>
       <a href="/files/complaint-goods-payment/complaint-goods-payment.docx" download="소장 (물품대금 청구).docx" title="소장 (물품대금 청구) Word 다운로드">Word</a>
       <a href="/files/complaint-goods-payment/complaint-goods-payment.hwpx" download="소장 (물품대금 청구).hwpx" title="소장 (물품대금 청구) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/civil-conciliation/" aria-label="민사조정 신청서 미리보기">
+    <img src="/files/civil-conciliation/preview-1.webp" alt="민사조정 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/civil-conciliation/">민사조정 신청서</a>
+    <div class="cat">법률 · 소송·민원</div>
+    <div class="dl">      <a href="/files/civil-conciliation/civil-conciliation.pdf" download="민사조정 신청서.pdf" title="민사조정 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/civil-conciliation/civil-conciliation.docx" download="민사조정 신청서.docx" title="민사조정 신청서 Word 다운로드">Word</a>
+      <a href="/files/civil-conciliation/civil-conciliation.hwpx" download="민사조정 신청서.hwpx" title="민사조정 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/administrative-objection/" aria-label="이의신청서 (행정처분) 미리보기">
+    <img src="/files/administrative-objection/preview-1.webp" alt="이의신청서 (행정처분) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/administrative-objection/">이의신청서 (행정처분)</a>
+    <div class="cat">법률 · 소송·민원</div>
+    <div class="dl">      <a href="/files/administrative-objection/administrative-objection.pdf" download="이의신청서 (행정처분).pdf" title="이의신청서 (행정처분) PDF 다운로드">PDF</a>
+      <a href="/files/administrative-objection/administrative-objection.docx" download="이의신청서 (행정처분).docx" title="이의신청서 (행정처분) Word 다운로드">Word</a>
+      <a href="/files/administrative-objection/administrative-objection.hwpx" download="이의신청서 (행정처분).hwpx" title="이의신청서 (행정처분) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/answer-brief/" aria-label="답변서 미리보기">
+    <img src="/files/answer-brief/preview-1.webp" alt="답변서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/answer-brief/">답변서</a>
+    <div class="cat">법률 · 소송·민원</div>
+    <div class="dl">      <a href="/files/answer-brief/answer-brief.pdf" download="답변서.pdf" title="답변서 PDF 다운로드">PDF</a>
+      <a href="/files/answer-brief/answer-brief.docx" download="답변서.docx" title="답변서 Word 다운로드">Word</a>
+      <a href="/files/answer-brief/answer-brief.hwpx" download="답변서.hwpx" title="답변서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/preparatory-brief/" aria-label="준비서면 미리보기">
+    <img src="/files/preparatory-brief/preview-1.webp" alt="준비서면 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/preparatory-brief/">준비서면</a>
+    <div class="cat">법률 · 소송·민원</div>
+    <div class="dl">      <a href="/files/preparatory-brief/preparatory-brief.pdf" download="준비서면.pdf" title="준비서면 PDF 다운로드">PDF</a>
+      <a href="/files/preparatory-brief/preparatory-brief.docx" download="준비서면.docx" title="준비서면 Word 다운로드">Word</a>
+      <a href="/files/preparatory-brief/preparatory-brief.hwpx" download="준비서면.hwpx" title="준비서면 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">

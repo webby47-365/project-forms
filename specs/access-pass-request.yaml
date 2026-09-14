@@ -28,6 +28,8 @@ faq:
   - q: 출입증을 잃어버리면 어떻게 하나요?
     a: 재발급을 신청하면서 분실 경위를 신청서에 함께 적어야 합니다.
 
+related: [visitor-log, business-card-request, personnel-order]
+
 blocks:
   - type: doc_title
     text: 출입증 신청서

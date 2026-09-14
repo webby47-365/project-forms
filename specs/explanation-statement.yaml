@@ -29,6 +29,8 @@ faq:
   - q: 경위서와 사유서는 같은 건가요?
     a: 목적은 비슷하지만 경위서는 사건 경과를 시간순으로 상세히 기록하는 문서입니다.
 
+related: [written-apology, disciplinary-notice, fact-confirmation]
+
 blocks:
   - type: doc_title
     text: 경위서

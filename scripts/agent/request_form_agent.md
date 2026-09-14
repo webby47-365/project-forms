@@ -43,6 +43,7 @@
 4. `specs/{id}.yaml` 작성 — SPEC_GUIDE를 따른다. 빠뜨리면 안 되는 것:
    - `sample_*` 미리보기 예시값 (3-1절)
    - `howto` 3~5단계, `faq` 2~4문항 (3-2절)
+   - `related` 2~4개 — 그 다음에 필요할 서식의 id (3-3절). 같은 계열은 제외.
    - **`from_request: true`** ← 요청으로 만든 서식 표시. 요청 페이지에 노출된다.
    - `featured: false`
 5. `python scripts/check_spec.py {id}` → **[통과]** 까지 수정

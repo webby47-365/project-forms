@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,33 +582,86 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>전세보증금반환내용증명</span><span>보증금반환청구</span><span>임대차내용증명</span><span>전세금반환통지</span><span>명도통지</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%A0%84%EC%84%B8%EB%B3%B4%EC%A6%9D%EA%B8%88%EB%B0%98%ED%99%98%EB%82%B4%EC%9A%A9%EC%A6%9D%EB%AA%85">전세보증금반환내용증명</a><a href="/search/?q=%EB%B3%B4%EC%A6%9D%EA%B8%88%EB%B0%98%ED%99%98%EC%B2%AD%EA%B5%AC">보증금반환청구</a><a href="/search/?q=%EC%9E%84%EB%8C%80%EC%B0%A8%EB%82%B4%EC%9A%A9%EC%A6%9D%EB%AA%85">임대차내용증명</a><a href="/search/?q=%EC%A0%84%EC%84%B8%EA%B8%88%EB%B0%98%ED%99%98%ED%86%B5%EC%A7%80">전세금반환통지</a><a href="/search/?q=%EB%AA%85%EB%8F%84%ED%86%B5%EC%A7%80">명도통지</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/moving/">이사·임대차 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/real-estate-sale-contract/" aria-label="부동산 매매계약서 미리보기">
-    <img src="/files/real-estate-sale-contract/preview-1.webp" alt="부동산 매매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/housing-lease-contract/" aria-label="주택임대차계약서 미리보기">
+    <img src="/files/housing-lease-contract/preview-1.webp" alt="주택임대차계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/real-estate-sale-contract/">부동산 매매계약서</a>
+    <a class="name" href="/form/housing-lease-contract/">주택임대차계약서</a>
     <div class="cat">부동산 · 임대·매매</div>
-    <div class="dl">      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.pdf" download="부동산 매매계약서.pdf" title="부동산 매매계약서 PDF 다운로드">PDF</a>
-      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.docx" download="부동산 매매계약서.docx" title="부동산 매매계약서 Word 다운로드">Word</a>
-      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.hwpx" download="부동산 매매계약서.hwpx" title="부동산 매매계약서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/housing-lease-contract/housing-lease-contract.pdf" download="주택임대차계약서.pdf" title="주택임대차계약서 PDF 다운로드">PDF</a>
+      <a href="/files/housing-lease-contract/housing-lease-contract.docx" download="주택임대차계약서.docx" title="주택임대차계약서 Word 다운로드">Word</a>
+      <a href="/files/housing-lease-contract/housing-lease-contract.hwpx" download="주택임대차계약서.hwpx" title="주택임대차계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/property-viewing-log/" aria-label="부동산 임장 기록표 미리보기">
-    <img src="/files/property-viewing-log/preview-1.webp" alt="부동산 임장 기록표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/lease-termination-notice/" aria-label="임대차계약 해지통보서 미리보기">
+    <img src="/files/lease-termination-notice/preview-1.webp" alt="임대차계약 해지통보서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/property-viewing-log/">부동산 임장 기록표</a>
+    <a class="name" href="/form/lease-termination-notice/">임대차계약 해지통보서</a>
     <div class="cat">부동산 · 임대·매매</div>
-    <div class="dl">      <a href="/files/property-viewing-log/property-viewing-log.pdf" download="부동산 임장 기록표.pdf" title="부동산 임장 기록표 PDF 다운로드">PDF</a>
-      <a href="/files/property-viewing-log/property-viewing-log.docx" download="부동산 임장 기록표.docx" title="부동산 임장 기록표 Word 다운로드">Word</a>
-      <a href="/files/property-viewing-log/property-viewing-log.hwpx" download="부동산 임장 기록표.hwpx" title="부동산 임장 기록표 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/lease-termination-notice/lease-termination-notice.pdf" download="임대차계약 해지통보서.pdf" title="임대차계약 해지통보서 PDF 다운로드">PDF</a>
+      <a href="/files/lease-termination-notice/lease-termination-notice.docx" download="임대차계약 해지통보서.docx" title="임대차계약 해지통보서 Word 다운로드">Word</a>
+      <a href="/files/lease-termination-notice/lease-termination-notice.hwpx" download="임대차계약 해지통보서.hwpx" title="임대차계약 해지통보서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/certified-notice-deposit/" aria-label="내용증명 (보증금 반환청구) 미리보기">
+    <img src="/files/certified-notice-deposit/preview-1.webp" alt="내용증명 (보증금 반환청구) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/certified-notice-deposit/">내용증명 (보증금 반환청구)</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/certified-notice-deposit/certified-notice-deposit.pdf" download="내용증명 (보증금 반환청구).pdf" title="내용증명 (보증금 반환청구) PDF 다운로드">PDF</a>
+      <a href="/files/certified-notice-deposit/certified-notice-deposit.docx" download="내용증명 (보증금 반환청구).docx" title="내용증명 (보증금 반환청구) Word 다운로드">Word</a>
+      <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx" title="내용증명 (보증금 반환청구) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/payment-order-application/" aria-label="지급명령 신청서 (독촉절차) 미리보기">
+    <img src="/files/payment-order-application/preview-1.webp" alt="지급명령 신청서 (독촉절차) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/payment-order-application/">지급명령 신청서 (독촉절차)</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/payment-order-application/payment-order-application.pdf" download="지급명령 신청서 (독촉절차).pdf" title="지급명령 신청서 (독촉절차) PDF 다운로드">PDF</a>
+      <a href="/files/payment-order-application/payment-order-application.docx" download="지급명령 신청서 (독촉절차).docx" title="지급명령 신청서 (독촉절차) Word 다운로드">Word</a>
+      <a href="/files/payment-order-application/payment-order-application.hwpx" download="지급명령 신청서 (독촉절차).hwpx" title="지급명령 신청서 (독촉절차) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/lease-transfer-contract/" aria-label="임차권 양도계약서 미리보기">
+    <img src="/files/lease-transfer-contract/preview-1.webp" alt="임차권 양도계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/lease-transfer-contract/">임차권 양도계약서</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/lease-transfer-contract/lease-transfer-contract.pdf" download="임차권 양도계약서.pdf" title="임차권 양도계약서 PDF 다운로드">PDF</a>
+      <a href="/files/lease-transfer-contract/lease-transfer-contract.docx" download="임차권 양도계약서.docx" title="임차권 양도계약서 Word 다운로드">Word</a>
+      <a href="/files/lease-transfer-contract/lease-transfer-contract.hwpx" download="임차권 양도계약서.hwpx" title="임차권 양도계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/lease-renewal-contract/" aria-label="임대차 계약 갱신계약서 미리보기">
+    <img src="/files/lease-renewal-contract/preview-1.webp" alt="임대차 계약 갱신계약서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/lease-renewal-contract/">임대차 계약 갱신계약서</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/lease-renewal-contract/lease-renewal-contract.pdf" download="임대차 계약 갱신계약서.pdf" title="임대차 계약 갱신계약서 PDF 다운로드">PDF</a>
+      <a href="/files/lease-renewal-contract/lease-renewal-contract.docx" download="임대차 계약 갱신계약서.docx" title="임대차 계약 갱신계약서 Word 다운로드">Word</a>
+      <a href="/files/lease-renewal-contract/lease-renewal-contract.hwpx" download="임대차 계약 갱신계약서.hwpx" title="임대차 계약 갱신계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/certified-notice-loan/" aria-label="내용증명 (대여금 반환청구) 미리보기">
+    <img src="/files/certified-notice-loan/preview-1.webp" alt="내용증명 (대여금 반환청구) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/certified-notice-loan/">내용증명 (대여금 반환청구)</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/certified-notice-loan/certified-notice-loan.pdf" download="내용증명 (대여금 반환청구).pdf" title="내용증명 (대여금 반환청구) PDF 다운로드">PDF</a>
+      <a href="/files/certified-notice-loan/certified-notice-loan.docx" download="내용증명 (대여금 반환청구).docx" title="내용증명 (대여금 반환청구) Word 다운로드">Word</a>
+      <a href="/files/certified-notice-loan/certified-notice-loan.hwpx" download="내용증명 (대여금 반환청구).hwpx" title="내용증명 (대여금 반환청구) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -594,25 +676,25 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/monthly-rent-receipt/" aria-label="월세 영수증 미리보기">
-    <img src="/files/monthly-rent-receipt/preview-1.webp" alt="월세 영수증 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/parking-lease-contract/" aria-label="주차장 임대차계약서 미리보기">
+    <img src="/files/parking-lease-contract/preview-1.webp" alt="주차장 임대차계약서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/monthly-rent-receipt/">월세 영수증</a>
+    <a class="name" href="/form/parking-lease-contract/">주차장 임대차계약서</a>
     <div class="cat">부동산 · 임대·매매</div>
-    <div class="dl">      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.pdf" download="월세 영수증.pdf" title="월세 영수증 PDF 다운로드">PDF</a>
-      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.docx" download="월세 영수증.docx" title="월세 영수증 Word 다운로드">Word</a>
-      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.hwpx" download="월세 영수증.hwpx" title="월세 영수증 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/parking-lease-contract/parking-lease-contract.pdf" download="주차장 임대차계약서.pdf" title="주차장 임대차계약서 PDF 다운로드">PDF</a>
+      <a href="/files/parking-lease-contract/parking-lease-contract.docx" download="주차장 임대차계약서.docx" title="주차장 임대차계약서 Word 다운로드">Word</a>
+      <a href="/files/parking-lease-contract/parking-lease-contract.hwpx" download="주차장 임대차계약서.hwpx" title="주차장 임대차계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/lease-renewal-contract/" aria-label="임대차 계약 갱신계약서 미리보기">
-    <img src="/files/lease-renewal-contract/preview-1.webp" alt="임대차 계약 갱신계약서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/certified-notice/" aria-label="내용증명 미리보기">
+    <img src="/files/certified-notice/preview-1.webp" alt="내용증명 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/lease-renewal-contract/">임대차 계약 갱신계약서</a>
+    <a class="name" href="/form/certified-notice/">내용증명</a>
     <div class="cat">부동산 · 임대·매매</div>
-    <div class="dl">      <a href="/files/lease-renewal-contract/lease-renewal-contract.pdf" download="임대차 계약 갱신계약서.pdf" title="임대차 계약 갱신계약서 PDF 다운로드">PDF</a>
-      <a href="/files/lease-renewal-contract/lease-renewal-contract.docx" download="임대차 계약 갱신계약서.docx" title="임대차 계약 갱신계약서 Word 다운로드">Word</a>
-      <a href="/files/lease-renewal-contract/lease-renewal-contract.hwpx" download="임대차 계약 갱신계약서.hwpx" title="임대차 계약 갱신계약서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/certified-notice/certified-notice.pdf" download="내용증명.pdf" title="내용증명 PDF 다운로드">PDF</a>
+      <a href="/files/certified-notice/certified-notice.docx" download="내용증명.docx" title="내용증명 Word 다운로드">Word</a>
+      <a href="/files/certified-notice/certified-notice.hwpx" download="내용증명.hwpx" title="내용증명 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

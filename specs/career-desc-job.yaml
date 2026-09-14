@@ -35,6 +35,8 @@ faq:
   - q: 성과는 어떻게 적어야 좋나요?
     a: 매출 증가율이나 처리 건수 같은 수치로 적으면 채용 담당자가 이해하기 쉽습니다.
 
+related: [resume-experienced, cover-letter-experienced, job-application-form]
+
 blocks:
   - type: doc_title
     text: 경력기술서

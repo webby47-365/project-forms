@@ -25,6 +25,8 @@ faq:
   - q: 신청은 얼마나 미리 해야 하나요?
     a: 사내 유연근무 규정에서 정한 기한보다 여유 있게 미리 제출하는 것이 좋습니다.
 
+related: [work-report-weekly, leave-request, overtime-application]
+
 blocks:
   - type: doc_title
     text: 재택근무 신청서

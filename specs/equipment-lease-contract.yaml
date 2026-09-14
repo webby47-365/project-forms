@@ -30,6 +30,8 @@ faq:
   - q: 사용 중 고장이 나면 누가 수리하나요?
     a: 계약서에 정한 수리 책임 조항에 따르며 미리 정해 두지 않으면 분쟁의 원인이 됩니다.
 
+related: [quotation, delivery-confirmation, invoice-request]
+
 blocks:
   - type: doc_title
     text: 장비 임대차계약서

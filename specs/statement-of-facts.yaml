@@ -27,6 +27,8 @@ faq:
   - q: 허위로 작성하면 문제가 되나요?
     a: 네, 허위 진술은 법적 책임이 따를 수 있으므로 사실만 정확히 기재해야 합니다.
 
+related: [fact-confirmation, settlement-agreement, petition-letter, written-statement]
+
 blocks:
   - type: doc_title
     text: 진술서

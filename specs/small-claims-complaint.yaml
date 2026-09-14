@@ -33,6 +33,8 @@ faq:
   - q: 인지대는 어떻게 계산하나요?
     a: 청구금액에 따라 달라지므로 제출 직전 법원 전자소송 사이트에서 확인하는 것이 안전합니다.
 
+related: [payment-order-application, certified-notice-loan, written-statement, preparatory-brief]
+
 blocks:
   - type: doc_title
     text: 소장

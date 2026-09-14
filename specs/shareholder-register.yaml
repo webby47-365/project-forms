@@ -27,6 +27,8 @@ faq:
   - q: 주식을 양도하면 바로 반영되나요?
     a: 명의개서를 해야 회사에 주주권을 주장할 수 있으므로 변경 즉시 명부에 반영해야 합니다.
 
+related: [stock-transfer-contract, shareholder-meeting-minutes, articles-of-incorporation]
+
 blocks:
   - type: doc_title
     text: 주주명부

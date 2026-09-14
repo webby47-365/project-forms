@@ -26,6 +26,8 @@ faq:
   - q: 등기에 쓸 의사록은 문구를 조심해야 하나요?
     a: 네, 대표이사 선임 등 등기 사항은 법무사나 등기소가 요구하는 문구를 확인해 작성하십시오.
 
+related: [shareholder-meeting-minutes, director-acceptance, articles-of-incorporation]
+
 blocks:
   - type: doc_title
     text: 이사회 의사록

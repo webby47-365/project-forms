@@ -26,6 +26,8 @@ faq:
   - q: 안전보험 가입 여부도 안내해야 하나요?
     a: 가입 여부와 보장 범위를 함께 안내하면 보호자가 안심하고 동의할 수 있습니다.
 
+related: [guardian-consent, minor-activity-consent, event-photo-consent]
+
 blocks:
   - type: doc_title
     text: 현장학습 동의서

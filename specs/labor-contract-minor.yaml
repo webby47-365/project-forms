@@ -38,6 +38,8 @@ faq:
   - q: 연장근로도 가능한가요?
     a: 당사자가 합의해도 하루 1시간, 주 5시간을 넘겨 연장할 수 없습니다.
 
+related: [guardian-consent, minor-activity-consent, employee-roster, payslip]
+
 blocks:
   - type: doc_title
     text: 연소근로자 근로계약서

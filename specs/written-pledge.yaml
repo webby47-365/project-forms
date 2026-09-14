@@ -26,6 +26,8 @@ faq:
   - q: 각서만 있으면 법적으로 강제할 수 있나요?
     a: 내용에 따라 효력이 다를 수 있으므로, 중요한 약속이라면 변호사 등 전문가의 확인을 받는 것이 안전합니다.
 
+related: [settlement-agreement, payment-pledge, repayment-plan]
+
 blocks:
   - type: doc_title
     text: 각서

@@ -30,6 +30,8 @@ faq:
   - q: 분류는 어떻게 나눠야 하나요?
     a: 식비·주거·교통 등 생활 패턴에 맞게 나누면 됩니다. 항목 수가 적어도 상관없습니다.
 
+related: [monthly-schedule, daily-planner, year-end-tax-checklist]
+
 blocks:
   - type: doc_title
     text: 가계부

@@ -25,6 +25,8 @@ faq:
   - q: 동의 기간이 끝나면 어떻게 되나요?
     a: 정해진 사용 기간이 지나면 재동의를 받거나 사용을 중단해야 합니다.
 
+related: [event-photo-consent, privacy-consent, guardian-consent, minor-activity-consent]
+
 blocks:
   - type: doc_title
     text: 초상권 이용 동의서

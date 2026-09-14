@@ -26,6 +26,8 @@ faq:
   - q: 미성년자도 신청할 수 있나요?
     a: 신청할 수 있으며 보호자 동의란을 반드시 작성해야 합니다.
 
+related: [privacy-consent, minor-activity-consent, event-photo-consent]
+
 blocks:
   - type: doc_title
     text: 자원봉사 신청서

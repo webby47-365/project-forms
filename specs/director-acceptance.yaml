@@ -27,6 +27,8 @@ faq:
   - q: 이사와 감사를 같은 서식으로 써도 되나요?
     a: 직위란에 이사 또는 감사를 구분해 적으면 같은 서식을 함께 사용할 수 있습니다.
 
+related: [shareholder-meeting-minutes, board-minutes, shareholder-register]
+
 blocks:
   - type: doc_title
     text: 취임승낙서

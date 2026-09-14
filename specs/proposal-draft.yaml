@@ -24,6 +24,8 @@ faq:
   - q: 결재선은 누구까지 넣어야 하나요?
     a: 회사 결재 규정에 따라 다르며 통상 부서장부터 대표까지 단계별로 지정합니다.
 
+related: [expense-approval, cooperation-request, official-letter, budget-plan]
+
 blocks:
   - type: doc_title
     text: 기안서

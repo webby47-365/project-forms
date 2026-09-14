@@ -25,6 +25,8 @@ faq:
   - q: 회사가 연차 사용일을 임의로 정해도 되나요?
     a: 근로기준법에 정한 절차를 거치면 회사가 사용 시기를 지정할 수 있습니다.
 
+related: [leave-request, overtime-application, employee-roster]
+
 blocks:
   - type: doc_title
     text: 연차사용계획서

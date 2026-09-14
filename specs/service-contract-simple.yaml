@@ -28,6 +28,8 @@ faq:
   - q: 대금은 나눠서 지급해도 되나요?
     a: 네, 지급방법란에 분할 지급 일정과 금액을 구체적으로 적으면 됩니다.
 
+related: [nda, invoice-request, payment-confirmation]
+
 blocks:
   - type: doc_title
     text: 용역계약서

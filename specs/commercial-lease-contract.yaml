@@ -34,6 +34,8 @@ faq:
   - q: 인테리어 설치물은 누구 소유인가요?
     a: 분쟁이 잦은 부분이므로 원상복구 범위와 소유권을 특약에 구체적으로 정해 두어야 합니다.
 
+related: [monthly-rent-receipt, move-in-checklist, business-reg-checklist, lease-termination-notice]
+
 blocks:
   - type: doc_title
     text: 상가건물 임대차계약서

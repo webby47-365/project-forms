@@ -37,6 +37,8 @@ faq:
   - q: 이자는 언제부터 계산하나요?
     a: 대금 지급기일 다음 날부터 기산하는 것이 일반적이며 계약 내용에 따라 달라질 수 있습니다.
 
+related: [payment-order-application, certified-notice, transaction-statement, preparatory-brief]
+
 blocks:
   - type: doc_title
     text: 소장

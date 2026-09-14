@@ -25,6 +25,8 @@ faq:
   - q: 목격자가 없으면 어떻게 하나요?
     a: 목격자가 없다고 적고, 당사자 진술과 남아 있는 기록·자료로 경위를 최대한 구체적으로 보완하십시오.
 
+related: [written-apology, disciplinary-notice, fact-confirmation]
+
 blocks:
   - type: doc_title
     text: 경위서

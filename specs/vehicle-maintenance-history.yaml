@@ -29,6 +29,8 @@ faq:
   - q: 이 서식만으로 사고 이력이 증명되나요?
     a: 참고 자료일 뿐이며, 정확한 이력은 보험개발원 카히스토리 등에서 별도로 확인해야 합니다.
 
+related: [used-car-sale-contract, vehicle-log, power-of-attorney]
+
 blocks:
   - type: doc_title
     text: 자동차 관리이력서

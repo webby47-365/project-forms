@@ -25,6 +25,8 @@ faq:
   - q: 부가세는 별도로 적어야 하나요?
     a: 증빙서류에 표시된 금액 그대로 옮겨 적으면 되며 별도 계산은 필요하지 않습니다.
 
+related: [business-trip-request, business-trip-report, receipt, corporate-card-report]
+
 blocks:
   - type: doc_title
     text: 경비정산서

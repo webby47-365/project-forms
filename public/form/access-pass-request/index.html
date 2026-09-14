@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -556,44 +585,20 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>출입증 신청서</span><span>사원증 발급</span><span>방문증</span><span>출입카드 신청</span><span>보안 출입</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%B6%9C%EC%9E%85%EC%A6%9D%20%EC%8B%A0%EC%B2%AD%EC%84%9C">출입증 신청서</a><a href="/search/?q=%EC%82%AC%EC%9B%90%EC%A6%9D%20%EB%B0%9C%EA%B8%89">사원증 발급</a><a href="/search/?q=%EB%B0%A9%EB%AC%B8%EC%A6%9D">방문증</a><a href="/search/?q=%EC%B6%9C%EC%9E%85%EC%B9%B4%EB%93%9C%20%EC%8B%A0%EC%B2%AD">출입카드 신청</a><a href="/search/?q=%EB%B3%B4%EC%95%88%20%EC%B6%9C%EC%9E%85">보안 출입</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/office-admin/">사무실 총무 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/official-letter/" aria-label="공문 미리보기">
-    <img src="/files/official-letter/preview-1.webp" alt="공문 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/visitor-log/" aria-label="방문자 기록대장 미리보기">
+    <img src="/files/visitor-log/preview-1.webp" alt="방문자 기록대장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/official-letter/">공문</a>
+    <a class="name" href="/form/visitor-log/">방문자 기록대장</a>
     <div class="cat">기업 · 총무·행정</div>
-    <div class="dl">      <a href="/files/official-letter/official-letter.pdf" download="공문.pdf" title="공문 PDF 다운로드">PDF</a>
-      <a href="/files/official-letter/official-letter.docx" download="공문.docx" title="공문 Word 다운로드">Word</a>
-      <a href="/files/official-letter/official-letter.hwpx" download="공문.hwpx" title="공문 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/proposal-draft/" aria-label="기안서 미리보기">
-    <img src="/files/proposal-draft/preview-1.webp" alt="기안서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/proposal-draft/">기안서</a>
-    <div class="cat">기업 · 총무·행정</div>
-    <div class="dl">      <a href="/files/proposal-draft/proposal-draft.pdf" download="기안서.pdf" title="기안서 PDF 다운로드">PDF</a>
-      <a href="/files/proposal-draft/proposal-draft.docx" download="기안서.docx" title="기안서 Word 다운로드">Word</a>
-      <a href="/files/proposal-draft/proposal-draft.hwpx" download="기안서.hwpx" title="기안서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/internal-memo/" aria-label="내부 보고서 미리보기">
-    <img src="/files/internal-memo/preview-1.webp" alt="내부 보고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/internal-memo/">내부 보고서</a>
-    <div class="cat">기업 · 총무·행정</div>
-    <div class="dl">      <a href="/files/internal-memo/internal-memo.pdf" download="내부 보고서.pdf" title="내부 보고서 PDF 다운로드">PDF</a>
-      <a href="/files/internal-memo/internal-memo.docx" download="내부 보고서.docx" title="내부 보고서 Word 다운로드">Word</a>
-      <a href="/files/internal-memo/internal-memo.hwpx" download="내부 보고서.hwpx" title="내부 보고서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/visitor-log/visitor-log.pdf" download="방문자 기록대장.pdf" title="방문자 기록대장 PDF 다운로드">PDF</a>
+      <a href="/files/visitor-log/visitor-log.docx" download="방문자 기록대장.docx" title="방문자 기록대장 Word 다운로드">Word</a>
+      <a href="/files/visitor-log/visitor-log.hwpx" download="방문자 기록대장.hwpx" title="방문자 기록대장 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -608,14 +613,91 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/document-register/" aria-label="문서 수발대장 미리보기">
-    <img src="/files/document-register/preview-1.webp" alt="문서 수발대장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/personnel-order/" aria-label="인사발령통지서 미리보기">
+    <img src="/files/personnel-order/preview-1.webp" alt="인사발령통지서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/document-register/">문서 수발대장</a>
+    <a class="name" href="/form/personnel-order/">인사발령통지서</a>
     <div class="cat">기업 · 총무·행정</div>
-    <div class="dl">      <a href="/files/document-register/document-register.pdf" download="문서 수발대장.pdf" title="문서 수발대장 PDF 다운로드">PDF</a>
-      <a href="/files/document-register/document-register.docx" download="문서 수발대장.docx" title="문서 수발대장 Word 다운로드">Word</a>
-      <a href="/files/document-register/document-register.hwpx" download="문서 수발대장.hwpx" title="문서 수발대장 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/personnel-order/personnel-order.pdf" download="인사발령통지서.pdf" title="인사발령통지서 PDF 다운로드">PDF</a>
+      <a href="/files/personnel-order/personnel-order.docx" download="인사발령통지서.docx" title="인사발령통지서 Word 다운로드">Word</a>
+      <a href="/files/personnel-order/personnel-order.hwpx" download="인사발령통지서.hwpx" title="인사발령통지서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/vehicle-use-request/" aria-label="업무용 차량 사용 신청서 미리보기">
+    <img src="/files/vehicle-use-request/preview-1.webp" alt="업무용 차량 사용 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/vehicle-use-request/">업무용 차량 사용 신청서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/vehicle-use-request/vehicle-use-request.pdf" download="업무용 차량 사용 신청서.pdf" title="업무용 차량 사용 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/vehicle-use-request/vehicle-use-request.docx" download="업무용 차량 사용 신청서.docx" title="업무용 차량 사용 신청서 Word 다운로드">Word</a>
+      <a href="/files/vehicle-use-request/vehicle-use-request.hwpx" download="업무용 차량 사용 신청서.hwpx" title="업무용 차량 사용 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/remote-work-request/" aria-label="재택근무 신청서 미리보기">
+    <img src="/files/remote-work-request/preview-1.webp" alt="재택근무 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/remote-work-request/">재택근무 신청서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/remote-work-request/remote-work-request.pdf" download="재택근무 신청서.pdf" title="재택근무 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/remote-work-request/remote-work-request.docx" download="재택근무 신청서.docx" title="재택근무 신청서 Word 다운로드">Word</a>
+      <a href="/files/remote-work-request/remote-work-request.hwpx" download="재택근무 신청서.hwpx" title="재택근무 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/scholarship-application/" aria-label="장학금 신청서 미리보기">
+    <img src="/files/scholarship-application/preview-1.webp" alt="장학금 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/scholarship-application/">장학금 신청서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/scholarship-application/scholarship-application.pdf" download="장학금 신청서.pdf" title="장학금 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/scholarship-application/scholarship-application.docx" download="장학금 신청서.docx" title="장학금 신청서 Word 다운로드">Word</a>
+      <a href="/files/scholarship-application/scholarship-application.hwpx" download="장학금 신청서.hwpx" title="장학금 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/parental-leave-request/" aria-label="육아휴직 신청서 미리보기">
+    <img src="/files/parental-leave-request/preview-1.webp" alt="육아휴직 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/parental-leave-request/">육아휴직 신청서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/parental-leave-request/parental-leave-request.pdf" download="육아휴직 신청서.pdf" title="육아휴직 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/parental-leave-request/parental-leave-request.docx" download="육아휴직 신청서.docx" title="육아휴직 신청서 Word 다운로드">Word</a>
+      <a href="/files/parental-leave-request/parental-leave-request.hwpx" download="육아휴직 신청서.hwpx" title="육아휴직 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/course-registration/" aria-label="수강신청서 미리보기">
+    <img src="/files/course-registration/preview-1.webp" alt="수강신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/course-registration/">수강신청서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/course-registration/course-registration.pdf" download="수강신청서.pdf" title="수강신청서 PDF 다운로드">PDF</a>
+      <a href="/files/course-registration/course-registration.docx" download="수강신청서.docx" title="수강신청서 Word 다운로드">Word</a>
+      <a href="/files/course-registration/course-registration.hwpx" download="수강신청서.hwpx" title="수강신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/expense-approval/" aria-label="지출결의서 미리보기">
+    <img src="/files/expense-approval/preview-1.webp" alt="지출결의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/expense-approval/">지출결의서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/expense-approval/expense-approval.pdf" download="지출결의서.pdf" title="지출결의서 PDF 다운로드">PDF</a>
+      <a href="/files/expense-approval/expense-approval.docx" download="지출결의서.docx" title="지출결의서 Word 다운로드">Word</a>
+      <a href="/files/expense-approval/expense-approval.hwpx" download="지출결의서.hwpx" title="지출결의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/seal-usage-log/" aria-label="법인인감 사용대장 미리보기">
+    <img src="/files/seal-usage-log/preview-1.webp" alt="법인인감 사용대장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/seal-usage-log/">법인인감 사용대장</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/seal-usage-log/seal-usage-log.pdf" download="법인인감 사용대장.pdf" title="법인인감 사용대장 PDF 다운로드">PDF</a>
+      <a href="/files/seal-usage-log/seal-usage-log.docx" download="법인인감 사용대장.docx" title="법인인감 사용대장 Word 다운로드">Word</a>
+      <a href="/files/seal-usage-log/seal-usage-log.hwpx" download="법인인감 사용대장.hwpx" title="법인인감 사용대장 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

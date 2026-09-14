@@ -35,6 +35,8 @@ faq:
   - q: 계약서 사본이 없어도 쓸 수 있나요?
     a: 알고 있는 내용만 적어도 되지만, 사본이 있으면 계약 내용을 함께 확인하는 것이 좋습니다.
 
+related: [lease-termination-notice, delegation-revocation, settlement-agreement]
+
 blocks:
   - type: doc_title
     text: 내용증명

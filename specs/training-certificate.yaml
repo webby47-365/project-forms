@@ -26,6 +26,8 @@ faq:
   - q: 외부 교육기관 확인서로도 대체 가능한가요?
     a: 회사 양식이 필요하다면 이 확인서에 외부 발급 확인서를 첨부해 함께 제출하십시오.
 
+related: [expense-report, performance-evaluation, career-certificate]
+
 blocks:
   - type: doc_title
     text: 교육훈련 참가확인서

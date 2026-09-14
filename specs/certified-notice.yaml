@@ -30,6 +30,8 @@ faq:
   - q: 내용증명을 보내면 법적 효력이 바로 생기나요?
     a: 내용증명은 통지 사실을 증명할 뿐이며 실제 법적 효력은 문서 내용과 상황에 따라 달라집니다.
 
+related: [payment-order-application, small-claims-complaint, settlement-agreement]
+
 blocks:
   - type: doc_title
     text: 내용증명

@@ -27,6 +27,8 @@ faq:
   - q: 공동 작업물은 어떻게 표시하나요?
     a: 작품 목록에 본인이 맡은 역할과 기여 범위를 구체적으로 적어야 합니다.
 
+related: [resume-basic, cover-letter, career-description, job-application-form]
+
 blocks:
   - type: doc_title
     text: 포트폴리오

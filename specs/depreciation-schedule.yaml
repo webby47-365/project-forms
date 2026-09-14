@@ -27,6 +27,8 @@ faq:
   - q: 장부가액이 맞지 않으면 어떻게 하나요?
     a: 전년도 누계액과 당기상각비 계산을 다시 확인하고, 취득가액 오류 여부부터 점검하십시오.
 
+related: [asset-ledger, budget-execution, expense-approval]
+
 blocks:
   - type: doc_title
     text: 감가상각 내역서

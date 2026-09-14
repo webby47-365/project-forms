@@ -26,6 +26,8 @@ faq:
   - q: 밀봉해서 제출해야 하나요?
     a: 제출처마다 방식이 다르므로 밀봉 여부와 제출 방법을 미리 확인하십시오.
 
+related: [resume-basic, cover-letter, career-certificate, reference-check-consent]
+
 blocks:
   - type: doc_title
     text: 추천서

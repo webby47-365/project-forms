@@ -27,6 +27,8 @@ faq:
   - q: 부동산 매도용은 무엇이 다른가요?
     a: 용도가 특정된 경우 상대방 정보가 추가로 필요할 수 있어 미리 확인해야 합니다.
 
+related: [power-of-attorney, resident-registration-request, delegation-revocation, real-estate-sale-contract]
+
 blocks:
   - type: doc_title
     text: 위임장

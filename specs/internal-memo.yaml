@@ -26,6 +26,8 @@ faq:
   - q: 결론은 어디에 써야 하나요?
     a: 보고 요지 칸 맨 앞에 결론부터 적어야 상급자가 빠르게 판단할 수 있습니다.
 
+related: [proposal-draft, meeting-minutes, cooperation-request]
+
 blocks:
   - type: doc_title
     text: 내부 보고서

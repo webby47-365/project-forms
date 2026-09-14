@@ -29,6 +29,8 @@ faq:
   - q: 위약금 조항이 꼭 필요한가요?
     a: 필수는 아니지만, 계약 위반 시 책임 소재를 명확히 하기 위해 위약금이나 손해배상 조항을 넣는 경우가 많습니다.
 
+related: [nda, quotation, invoice-request]
+
 blocks:
   - type: doc_title
     text: 컨설팅 계약서

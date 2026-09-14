@@ -29,6 +29,8 @@ faq:
   - q: 제출 서류를 빠뜨리면 어떻게 되나요?
     a: 서류 미비로 심사에서 제외될 수 있으니 공고문의 목록과 대조해 빠짐없이 첨부하십시오.
 
+related: [grade-report, teacher-recommendation, club-activity-record]
+
 blocks:
   - type: doc_title
     text: 장학금 신청서

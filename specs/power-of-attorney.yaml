@@ -23,6 +23,8 @@ faq:
   - q: 인감증명서는 항상 첨부하나요?
     a: 제출처마다 요구하는 서류가 달라, 인감증명서나 본인서명사실확인서가 필요한지 미리 확인하십시오.
 
+related: [seal-certificate-poa, delegation-revocation, resident-registration-request]
+
 blocks:
   - type: doc_title
     text: 위임장

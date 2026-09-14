@@ -29,6 +29,8 @@ faq:
   - q: 다음 방문 전에 이 보고서를 다시 봐야 하나요?
     a: 네, 후속 조치 이행 여부를 확인하는 참고 자료로 활용하면 좋습니다.
 
+related: [sales-daily-log, customer-card, quotation, complaint-handling]
+
 blocks:
   - type: doc_title
     text: 고객 방문 보고서

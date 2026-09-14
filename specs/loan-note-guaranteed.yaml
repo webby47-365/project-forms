@@ -35,6 +35,8 @@ faq:
   - q: 연대보증인도 직접 서명해야 하나요?
     a: 네, 보증인이 내용을 직접 확인하고 서명하는 것이 원칙입니다.
 
+related: [payment-pledge, certified-notice-loan, complaint-loan-return, repayment-plan]
+
 blocks:
   - type: doc_title
     text: 차용증

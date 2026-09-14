@@ -30,6 +30,8 @@ faq:
   - q: 관리사무소로 해결이 안 되면 어떻게 하나요?
     a: 층간소음 이웃사이센터 같은 외부 중재기관에 조정을 신청할 수 있습니다.
 
+related: [civil-petition, certified-notice, settlement-agreement]
+
 blocks:
   - type: doc_title
     text: 층간소음 민원 신청서

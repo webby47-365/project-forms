@@ -28,6 +28,8 @@ faq:
   - q: 행사 중 일정이 바뀌면 어떻게 하나요?
     a: 변경된 부분만 수정해 재결재를 받거나 현장에서 별도 공지문으로 안내합니다.
 
+related: [budget-plan, expense-approval, internal-announcement, campaign-result]
+
 blocks:
   - type: doc_title
     text: 행사 기획서

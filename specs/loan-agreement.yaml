@@ -32,6 +32,8 @@ faq:
   - q: 공증은 꼭 받아야 하나요?
     a: 필수는 아니지만 금액이 크면 공증이나 내용증명으로 증거력을 보강하는 것이 안전합니다.
 
+related: [payment-pledge, repayment-plan, certified-notice-loan, payment-order-application]
+
 blocks:
   - type: doc_title
     text: 차용증

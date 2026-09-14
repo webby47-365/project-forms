@@ -26,6 +26,8 @@ faq:
   - q: 세금계산서 발행 방식도 등록 단계에서 정하나요?
     a: 네, 등록 단계에서 결제조건과 함께 확정해 두면 이후 분쟁을 줄일 수 있습니다.
 
+related: [account-ledger, purchase-order, transaction-statement]
+
 blocks:
   - type: doc_title
     text: 거래처 등록신청서

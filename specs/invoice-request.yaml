@@ -27,6 +27,8 @@ faq:
   - q: 청구금액에 부가세를 포함하나요?
     a: 공급가액과 세액을 나눠 적고 합계에 부가세 포함 총액을 표시하면 됩니다.
 
+related: [transaction-statement, tax-invoice, payment-confirmation, balance-confirmation]
+
 blocks:
   - type: doc_title
     text: 청구서

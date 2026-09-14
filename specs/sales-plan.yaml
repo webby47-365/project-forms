@@ -29,6 +29,8 @@ faq:
   - q: 월별 계획은 꼭 필요한가요?
     a: 실행 단계에서 점검 기준이 되므로 넣어 두는 것을 권장합니다.
 
+related: [marketing-plan, sales-daily-log, campaign-result, budget-plan]
+
 blocks:
   - type: doc_title
     text: 영업 계획서

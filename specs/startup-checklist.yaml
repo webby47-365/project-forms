@@ -28,6 +28,8 @@ faq:
   - q: 사업자등록은 어느 단계에서 하나요?
     a: 보통 사업성 분석과 자금 조달 이후, 인허가 전에 사업자등록을 진행합니다.
 
+related: [business-reg-checklist, business-plan-standard, articles-of-incorporation]
+
 blocks:
   - type: doc_title
     text: 창업 준비 체크리스트

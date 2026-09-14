@@ -29,6 +29,8 @@ faq:
   - q: 완료 업무가 없는 날은 어떻게 하나요?
     a: 해당 항목은 비워두고 진행 중인 업무와 예정 업무만 적어도 됩니다.
 
+related: [meeting-minutes, business-trip-report, handover-report]
+
 blocks:
   - type: doc_title
     text: 업무일지

@@ -32,6 +32,8 @@ faq:
   - q: 지원 직무와 관련 없는 경력도 적나요?
     a: 간략히 줄이고 핵심 경험 위주로 분량을 배분하는 것이 좋습니다.
 
+related: [resume-experienced, cover-letter-experienced, career-certificate, portfolio-cover]
+
 blocks:
   - type: doc_title
     text: 경력기술서

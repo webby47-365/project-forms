@@ -28,6 +28,8 @@ faq:
   - q: 상담 이력은 어떻게 관리하나요?
     a: 거래처명을 통일해 적어두면 이후 검색해 이전 상담 이력을 쉽게 찾을 수 있습니다.
 
+related: [client-visit-report, customer-card, sales-plan, work-report-weekly]
+
 blocks:
   - type: doc_title
     text: 영업일지

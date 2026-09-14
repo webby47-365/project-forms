@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,36 +582,12 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>진료동의서</span><span>수술동의서</span><span>의료동의서</span><span>설명동의서</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%A7%84%EB%A3%8C%EB%8F%99%EC%9D%98%EC%84%9C">진료동의서</a><a href="/search/?q=%EC%88%98%EC%88%A0%EB%8F%99%EC%9D%98%EC%84%9C">수술동의서</a><a href="/search/?q=%EC%9D%98%EB%A3%8C%EB%8F%99%EC%9D%98%EC%84%9C">의료동의서</a><a href="/search/?q=%EC%84%A4%EB%AA%85%EB%8F%99%EC%9D%98%EC%84%9C">설명동의서</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/medical/">병원·요양 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/caregiver-contract/" aria-label="간병인 계약서 미리보기">
-    <img src="/files/caregiver-contract/preview-1.webp" alt="간병인 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
-  <div class="body">
-    <a class="name" href="/form/caregiver-contract/">간병인 계약서</a>
-    <div class="cat">의료·복지 · 동의·신청</div>
-    <div class="dl">      <a href="/files/caregiver-contract/caregiver-contract.pdf" download="간병인 계약서.pdf" title="간병인 계약서 PDF 다운로드">PDF</a>
-      <a href="/files/caregiver-contract/caregiver-contract.docx" download="간병인 계약서.docx" title="간병인 계약서 Word 다운로드">Word</a>
-      <a href="/files/caregiver-contract/caregiver-contract.hwpx" download="간병인 계약서.hwpx" title="간병인 계약서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/welfare-facility-application/" aria-label="복지시설 이용 신청서 미리보기">
-    <img src="/files/welfare-facility-application/preview-1.webp" alt="복지시설 이용 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/welfare-facility-application/">복지시설 이용 신청서</a>
-    <div class="cat">의료·복지 · 동의·신청</div>
-    <div class="dl">      <a href="/files/welfare-facility-application/welfare-facility-application.pdf" download="복지시설 이용 신청서.pdf" title="복지시설 이용 신청서 PDF 다운로드">PDF</a>
-      <a href="/files/welfare-facility-application/welfare-facility-application.docx" download="복지시설 이용 신청서.docx" title="복지시설 이용 신청서 Word 다운로드">Word</a>
-      <a href="/files/welfare-facility-application/welfare-facility-application.hwpx" download="복지시설 이용 신청서.hwpx" title="복지시설 이용 신청서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
   <a class="thumb" href="/form/surgery-consent/" aria-label="수술·시술 동의서 미리보기">
     <img src="/files/surgery-consent/preview-1.webp" alt="수술·시술 동의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -605,6 +610,50 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
+  <a class="thumb" href="/form/guardian-consent/" aria-label="보호자 동의서 미리보기">
+    <img src="/files/guardian-consent/preview-1.webp" alt="보호자 동의서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/guardian-consent/">보호자 동의서</a>
+    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="dl">      <a href="/files/guardian-consent/guardian-consent.pdf" download="보호자 동의서.pdf" title="보호자 동의서 PDF 다운로드">PDF</a>
+      <a href="/files/guardian-consent/guardian-consent.docx" download="보호자 동의서.docx" title="보호자 동의서 Word 다운로드">Word</a>
+      <a href="/files/guardian-consent/guardian-consent.hwpx" download="보호자 동의서.hwpx" title="보호자 동의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/care-service-application/" aria-label="요양보호 서비스 신청서 미리보기">
+    <img src="/files/care-service-application/preview-1.webp" alt="요양보호 서비스 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/care-service-application/">요양보호 서비스 신청서</a>
+    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="dl">      <a href="/files/care-service-application/care-service-application.pdf" download="요양보호 서비스 신청서.pdf" title="요양보호 서비스 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/care-service-application/care-service-application.docx" download="요양보호 서비스 신청서.docx" title="요양보호 서비스 신청서 Word 다운로드">Word</a>
+      <a href="/files/care-service-application/care-service-application.hwpx" download="요양보호 서비스 신청서.hwpx" title="요양보호 서비스 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/medical-expense-support/" aria-label="의료비 지원 신청서 미리보기">
+    <img src="/files/medical-expense-support/preview-1.webp" alt="의료비 지원 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/medical-expense-support/">의료비 지원 신청서</a>
+    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="dl">      <a href="/files/medical-expense-support/medical-expense-support.pdf" download="의료비 지원 신청서.pdf" title="의료비 지원 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/medical-expense-support/medical-expense-support.docx" download="의료비 지원 신청서.docx" title="의료비 지원 신청서 Word 다운로드">Word</a>
+      <a href="/files/medical-expense-support/medical-expense-support.hwpx" download="의료비 지원 신청서.hwpx" title="의료비 지원 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/settlement-agreement/" aria-label="합의서 미리보기">
+    <img src="/files/settlement-agreement/preview-1.webp" alt="합의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/settlement-agreement/">합의서</a>
+    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="dl">      <a href="/files/settlement-agreement/settlement-agreement.pdf" download="합의서.pdf" title="합의서 PDF 다운로드">PDF</a>
+      <a href="/files/settlement-agreement/settlement-agreement.docx" download="합의서.docx" title="합의서 Word 다운로드">Word</a>
+      <a href="/files/settlement-agreement/settlement-agreement.hwpx" download="합의서.hwpx" title="합의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/vaccination-consent/" aria-label="예방접종 동의서 미리보기">
     <img src="/files/vaccination-consent/preview-1.webp" alt="예방접종 동의서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -613,6 +662,39 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/vaccination-consent/vaccination-consent.pdf" download="예방접종 동의서.pdf" title="예방접종 동의서 PDF 다운로드">PDF</a>
       <a href="/files/vaccination-consent/vaccination-consent.docx" download="예방접종 동의서.docx" title="예방접종 동의서 Word 다운로드">Word</a>
       <a href="/files/vaccination-consent/vaccination-consent.hwpx" download="예방접종 동의서.hwpx" title="예방접종 동의서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/medical-record-request/" aria-label="진료기록 사본 발급 신청서 미리보기">
+    <img src="/files/medical-record-request/preview-1.webp" alt="진료기록 사본 발급 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/medical-record-request/">진료기록 사본 발급 신청서</a>
+    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="dl">      <a href="/files/medical-record-request/medical-record-request.pdf" download="진료기록 사본 발급 신청서.pdf" title="진료기록 사본 발급 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/medical-record-request/medical-record-request.docx" download="진료기록 사본 발급 신청서.docx" title="진료기록 사본 발급 신청서 Word 다운로드">Word</a>
+      <a href="/files/medical-record-request/medical-record-request.hwpx" download="진료기록 사본 발급 신청서.hwpx" title="진료기록 사본 발급 신청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/hospital-transfer-request/" aria-label="전원(轉院) 요청서 미리보기">
+    <img src="/files/hospital-transfer-request/preview-1.webp" alt="전원(轉院) 요청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/hospital-transfer-request/">전원(轉院) 요청서</a>
+    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="dl">      <a href="/files/hospital-transfer-request/hospital-transfer-request.pdf" download="전원(轉院) 요청서.pdf" title="전원(轉院) 요청서 PDF 다운로드">PDF</a>
+      <a href="/files/hospital-transfer-request/hospital-transfer-request.docx" download="전원(轉院) 요청서.docx" title="전원(轉院) 요청서 Word 다운로드">Word</a>
+      <a href="/files/hospital-transfer-request/hospital-transfer-request.hwpx" download="전원(轉院) 요청서.hwpx" title="전원(轉院) 요청서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/long-term-care-application/" aria-label="장기요양 급여 신청서 미리보기">
+    <img src="/files/long-term-care-application/preview-1.webp" alt="장기요양 급여 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/long-term-care-application/">장기요양 급여 신청서</a>
+    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="dl">      <a href="/files/long-term-care-application/long-term-care-application.pdf" download="장기요양 급여 신청서.pdf" title="장기요양 급여 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/long-term-care-application/long-term-care-application.docx" download="장기요양 급여 신청서.docx" title="장기요양 급여 신청서 Word 다운로드">Word</a>
+      <a href="/files/long-term-care-application/long-term-care-application.hwpx" download="장기요양 급여 신청서.hwpx" title="장기요양 급여 신청서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

@@ -27,6 +27,8 @@ faq:
   - q: 여러 시설물을 한 번에 신청할 수 있나요?
     a: 가능하지만 위치와 품목이 다르면 별도로 작성하는 편이 처리에 혼선이 없습니다.
 
+related: [asset-ledger, supply-purchase-request, expense-approval]
+
 blocks:
   - type: doc_title
     text: 시설물 수리 요청서

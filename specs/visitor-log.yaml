@@ -27,6 +27,8 @@ faq:
   - q: 기록은 얼마나 보관해야 하나요?
     a: 회사가 정한 보관기간이 지나면 개인정보 보호를 위해 파기하는 것이 원칙입니다.
 
+related: [access-pass-request, privacy-consent, meeting-minutes]
+
 blocks:
   - type: doc_title
     text: 방문자 기록대장

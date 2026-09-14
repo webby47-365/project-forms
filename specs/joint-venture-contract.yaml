@@ -26,6 +26,8 @@ faq:
   - q: 동업 중 한 명이 그만두겠다고 하면 어떻게 하나요?
     a: 계약서에 정한 탈퇴와 지분 정산 절차에 따라 처리합니다. 정해 두지 않았다면 남은 당사자와 별도로 합의해야 합니다.
 
+related: [partnership-agreement, partnership-dissolution-agreement, business-reg-checklist, business-plan-standard]
+
 blocks:
   - type: doc_title
     text: 공동사업 계약서

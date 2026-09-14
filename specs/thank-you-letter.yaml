@@ -28,6 +28,8 @@ faq:
   - q: 여러 사람에게 함께 보내도 되나요?
     a: 받는 분마다 구체적인 사유가 다르다면 개별로 작성하는 편이 진심을 전달하기 좋습니다.
 
+related: [invitation-card, family-event-notice, event-plan]
+
 blocks:
   - type: doc_title
     text: 감사장

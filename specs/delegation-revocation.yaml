@@ -30,6 +30,8 @@ faq:
   - q: 꼭 등기우편으로 보내야 하나요?
     a: 도달 사실을 증명하기 위해 등기우편 등 기록이 남는 방법을 권장합니다.
 
+related: [power-of-attorney, certified-notice, handover-report]
+
 blocks:
   - type: doc_title
     text: 위임 해지 통지서

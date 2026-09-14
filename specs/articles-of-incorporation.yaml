@@ -27,6 +27,8 @@ faq:
   - q: 사업 목적은 나중에 추가할 수 있나요?
     a: 가능하지만 변경등기 비용이 들므로 처음부터 넓게 적어두는 편이 좋습니다.
 
+related: [shareholder-register, director-acceptance, shareholder-meeting-minutes, business-reg-checklist]
+
 blocks:
   - type: doc_title
     text: 정관

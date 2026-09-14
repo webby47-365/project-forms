@@ -30,6 +30,8 @@ faq:
   - q: 출석률은 상담에도 쓰이나요?
     a: 네, 보호자 상담이나 환불 처리 때 근거 자료로 활용할 수 있습니다.
 
+related: [course-registration, tuition-refund-request, counseling-log]
+
 blocks:
   - type: doc_title
     text: 학원 출결 관리표

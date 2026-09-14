@@ -34,6 +34,8 @@ faq:
   - q: 분량은 어느 정도가 적당한가요?
     a: 정해진 기준은 없지만 회사가 제시한 글자 수 제한을 우선 확인하십시오.
 
+related: [resume-basic, job-application-form, portfolio-cover]
+
 blocks:
   - type: doc_title
     text: 자기소개서

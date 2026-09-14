@@ -25,6 +25,8 @@ faq:
   - q: 나중에 내용을 수정할 수 있나요?
     a: 이미 서명한 문서는 임의로 고칠 수 없으니 새로 작성해 다시 서명받으십시오.
 
+related: [statement-of-facts, settlement-agreement, certified-notice]
+
 blocks:
   - type: doc_title
     text: 사실확인서

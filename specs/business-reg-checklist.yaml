@@ -28,6 +28,8 @@ faq:
   - q: 법인은 어떤 서류가 더 필요한가요?
     a: 법인등기부등본과 정관처럼 법인 관련 서류가 추가로 필요하니 목록에서 확인하십시오.
 
+related: [startup-checklist, business-plan-simple, articles-of-incorporation]
+
 blocks:
   - type: doc_title
     text: 사업자등록 준비 체크리스트

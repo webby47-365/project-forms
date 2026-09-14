@@ -26,6 +26,8 @@ faq:
   - q: 병원마다 서식이 달라도 되나요?
     a: 기관별로 법정 서식이 정해져 있다면 그 서식을 우선 사용하십시오.
 
+related: [surgery-consent, blood-transfusion-consent, guardian-consent]
+
 blocks:
   - type: doc_title
     text: 진료 동의서

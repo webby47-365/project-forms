@@ -27,6 +27,8 @@ faq:
   - q: 한쪽이 중간에 빠지면 어떻게 되나요?
     a: 계약서에 정한 탈퇴 절차와 지분 정산 방법에 따라 처리합니다.
 
+related: [partnership-dissolution-agreement, business-reg-checklist, joint-venture-contract, business-plan-standard]
+
 blocks:
   - type: doc_title
     text: 동업계약서

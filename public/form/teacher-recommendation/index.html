@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,44 +582,30 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>교사추천서</span><span>학생추천서</span><span>입시추천서</span><span>교사의견서</span><span>지도교사추천</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EA%B5%90%EC%82%AC%EC%B6%94%EC%B2%9C%EC%84%9C">교사추천서</a><a href="/search/?q=%ED%95%99%EC%83%9D%EC%B6%94%EC%B2%9C%EC%84%9C">학생추천서</a><a href="/search/?q=%EC%9E%85%EC%8B%9C%EC%B6%94%EC%B2%9C%EC%84%9C">입시추천서</a><a href="/search/?q=%EA%B5%90%EC%82%AC%EC%9D%98%EA%B2%AC%EC%84%9C">교사의견서</a><a href="/search/?q=%EC%A7%80%EB%8F%84%EA%B5%90%EC%82%AC%EC%B6%94%EC%B2%9C">지도교사추천</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/reading-log/" aria-label="독서기록장 미리보기">
-    <img src="/files/reading-log/preview-1.webp" alt="독서기록장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/scholarship-application/" aria-label="장학금 신청서 미리보기">
+    <img src="/files/scholarship-application/preview-1.webp" alt="장학금 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/reading-log/">독서기록장</a>
+    <a class="name" href="/form/scholarship-application/">장학금 신청서</a>
     <div class="cat">교육 · 학교·학원</div>
-    <div class="dl">      <a href="/files/reading-log/reading-log.pdf" download="독서기록장.pdf" title="독서기록장 PDF 다운로드">PDF</a>
-      <a href="/files/reading-log/reading-log.docx" download="독서기록장.docx" title="독서기록장 Word 다운로드">Word</a>
-      <a href="/files/reading-log/reading-log.hwpx" download="독서기록장.hwpx" title="독서기록장 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/scholarship-application/scholarship-application.pdf" download="장학금 신청서.pdf" title="장학금 신청서 PDF 다운로드">PDF</a>
+      <a href="/files/scholarship-application/scholarship-application.docx" download="장학금 신청서.docx" title="장학금 신청서 Word 다운로드">Word</a>
+      <a href="/files/scholarship-application/scholarship-application.hwpx" download="장학금 신청서.hwpx" title="장학금 신청서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/club-activity-record/" aria-label="동아리 활동 기록부 미리보기">
-    <img src="/files/club-activity-record/preview-1.webp" alt="동아리 활동 기록부 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/student-record-card/" aria-label="학생 생활기록 카드 미리보기">
+    <img src="/files/student-record-card/preview-1.webp" alt="학생 생활기록 카드 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/club-activity-record/">동아리 활동 기록부</a>
+    <a class="name" href="/form/student-record-card/">학생 생활기록 카드</a>
     <div class="cat">교육 · 학교·학원</div>
-    <div class="dl">      <a href="/files/club-activity-record/club-activity-record.pdf" download="동아리 활동 기록부.pdf" title="동아리 활동 기록부 PDF 다운로드">PDF</a>
-      <a href="/files/club-activity-record/club-activity-record.docx" download="동아리 활동 기록부.docx" title="동아리 활동 기록부 Word 다운로드">Word</a>
-      <a href="/files/club-activity-record/club-activity-record.hwpx" download="동아리 활동 기록부.hwpx" title="동아리 활동 기록부 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/counseling-log/" aria-label="상담일지 미리보기">
-    <img src="/files/counseling-log/preview-1.webp" alt="상담일지 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/counseling-log/">상담일지</a>
-    <div class="cat">교육 · 학교·학원</div>
-    <div class="dl">      <a href="/files/counseling-log/counseling-log.pdf" download="상담일지.pdf" title="상담일지 PDF 다운로드">PDF</a>
-      <a href="/files/counseling-log/counseling-log.docx" download="상담일지.docx" title="상담일지 Word 다운로드">Word</a>
-      <a href="/files/counseling-log/counseling-log.hwpx" download="상담일지.hwpx" title="상담일지 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/student-record-card/student-record-card.pdf" download="학생 생활기록 카드.pdf" title="학생 생활기록 카드 PDF 다운로드">PDF</a>
+      <a href="/files/student-record-card/student-record-card.docx" download="학생 생활기록 카드.docx" title="학생 생활기록 카드 Word 다운로드">Word</a>
+      <a href="/files/student-record-card/student-record-card.hwpx" download="학생 생활기록 카드.hwpx" title="학생 생활기록 카드 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -605,14 +620,80 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/tuition-refund-request/" aria-label="수강료 환불 신청서 미리보기">
-    <img src="/files/tuition-refund-request/preview-1.webp" alt="수강료 환불 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/recommendation-letter/" aria-label="추천서 미리보기">
+    <img src="/files/recommendation-letter/preview-1.webp" alt="추천서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/tuition-refund-request/">수강료 환불 신청서</a>
+    <a class="name" href="/form/recommendation-letter/">추천서</a>
     <div class="cat">교육 · 학교·학원</div>
-    <div class="dl">      <a href="/files/tuition-refund-request/tuition-refund-request.pdf" download="수강료 환불 신청서.pdf" title="수강료 환불 신청서 PDF 다운로드">PDF</a>
-      <a href="/files/tuition-refund-request/tuition-refund-request.docx" download="수강료 환불 신청서.docx" title="수강료 환불 신청서 Word 다운로드">Word</a>
-      <a href="/files/tuition-refund-request/tuition-refund-request.hwpx" download="수강료 환불 신청서.hwpx" title="수강료 환불 신청서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/recommendation-letter/recommendation-letter.pdf" download="추천서.pdf" title="추천서 PDF 다운로드">PDF</a>
+      <a href="/files/recommendation-letter/recommendation-letter.docx" download="추천서.docx" title="추천서 Word 다운로드">Word</a>
+      <a href="/files/recommendation-letter/recommendation-letter.hwpx" download="추천서.hwpx" title="추천서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/club-activity-record/" aria-label="동아리 활동 기록부 미리보기">
+    <img src="/files/club-activity-record/preview-1.webp" alt="동아리 활동 기록부 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/club-activity-record/">동아리 활동 기록부</a>
+    <div class="cat">교육 · 학교·학원</div>
+    <div class="dl">      <a href="/files/club-activity-record/club-activity-record.pdf" download="동아리 활동 기록부.pdf" title="동아리 활동 기록부 PDF 다운로드">PDF</a>
+      <a href="/files/club-activity-record/club-activity-record.docx" download="동아리 활동 기록부.docx" title="동아리 활동 기록부 Word 다운로드">Word</a>
+      <a href="/files/club-activity-record/club-activity-record.hwpx" download="동아리 활동 기록부.hwpx" title="동아리 활동 기록부 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/lesson-plan/" aria-label="수업 지도안 미리보기">
+    <img src="/files/lesson-plan/preview-1.webp" alt="수업 지도안 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/lesson-plan/">수업 지도안</a>
+    <div class="cat">교육 · 학교·학원</div>
+    <div class="dl">      <a href="/files/lesson-plan/lesson-plan.pdf" download="수업 지도안.pdf" title="수업 지도안 PDF 다운로드">PDF</a>
+      <a href="/files/lesson-plan/lesson-plan.docx" download="수업 지도안.docx" title="수업 지도안 Word 다운로드">Word</a>
+      <a href="/files/lesson-plan/lesson-plan.hwpx" download="수업 지도안.hwpx" title="수업 지도안 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/attendance-sheet/" aria-label="출석부 미리보기">
+    <img src="/files/attendance-sheet/preview-1.webp" alt="출석부 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/attendance-sheet/">출석부</a>
+    <div class="cat">교육 · 학교·학원</div>
+    <div class="dl">      <a href="/files/attendance-sheet/attendance-sheet.pdf" download="출석부.pdf" title="출석부 PDF 다운로드">PDF</a>
+      <a href="/files/attendance-sheet/attendance-sheet.docx" download="출석부.docx" title="출석부 Word 다운로드">Word</a>
+      <a href="/files/attendance-sheet/attendance-sheet.hwpx" download="출석부.hwpx" title="출석부 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/probation-evaluation/" aria-label="수습 평가서 미리보기">
+    <img src="/files/probation-evaluation/preview-1.webp" alt="수습 평가서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/probation-evaluation/">수습 평가서</a>
+    <div class="cat">교육 · 학교·학원</div>
+    <div class="dl">      <a href="/files/probation-evaluation/probation-evaluation.pdf" download="수습 평가서.pdf" title="수습 평가서 PDF 다운로드">PDF</a>
+      <a href="/files/probation-evaluation/probation-evaluation.docx" download="수습 평가서.docx" title="수습 평가서 Word 다운로드">Word</a>
+      <a href="/files/probation-evaluation/probation-evaluation.hwpx" download="수습 평가서.hwpx" title="수습 평가서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/weekly-study-plan/" aria-label="주간 학습계획표 미리보기">
+    <img src="/files/weekly-study-plan/preview-1.webp" alt="주간 학습계획표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/weekly-study-plan/">주간 학습계획표</a>
+    <div class="cat">교육 · 학교·학원</div>
+    <div class="dl">      <a href="/files/weekly-study-plan/weekly-study-plan.pdf" download="주간 학습계획표.pdf" title="주간 학습계획표 PDF 다운로드">PDF</a>
+      <a href="/files/weekly-study-plan/weekly-study-plan.docx" download="주간 학습계획표.docx" title="주간 학습계획표 Word 다운로드">Word</a>
+      <a href="/files/weekly-study-plan/weekly-study-plan.hwpx" download="주간 학습계획표.hwpx" title="주간 학습계획표 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/academy-attendance/" aria-label="학원 출결 관리표 미리보기">
+    <img src="/files/academy-attendance/preview-1.webp" alt="학원 출결 관리표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/academy-attendance/">학원 출결 관리표</a>
+    <div class="cat">교육 · 학교·학원</div>
+    <div class="dl">      <a href="/files/academy-attendance/academy-attendance.pdf" download="학원 출결 관리표.pdf" title="학원 출결 관리표 PDF 다운로드">PDF</a>
+      <a href="/files/academy-attendance/academy-attendance.docx" download="학원 출결 관리표.docx" title="학원 출결 관리표 Word 다운로드">Word</a>
+      <a href="/files/academy-attendance/academy-attendance.hwpx" download="학원 출결 관리표.hwpx" title="학원 출결 관리표 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

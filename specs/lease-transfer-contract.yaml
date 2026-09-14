@@ -29,6 +29,8 @@ faq:
   - q: 양도일 이전 연체 관리비는 누가 부담하나요?
     a: 계약서에 정한 대로 양도일 이전 채무는 양도인이, 이후 채무는 양수인이 부담하는 것이 일반적입니다.
 
+related: [commercial-lease-contract, sublease-contract, claim-assignment-notice, move-in-checklist]
+
 blocks:
   - type: doc_title
     text: 임차권 양도계약서

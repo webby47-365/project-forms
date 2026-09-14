@@ -29,6 +29,8 @@ faq:
   - q: 관리비도 꼭 확인해야 하나요?
     a: 네, 관리비와 입주가능일까지 함께 확인해야 나중에 비교가 정확해집니다.
 
+related: [housing-lease-contract, real-estate-sale-contract, move-in-checklist, moving-checklist]
+
 blocks:
   - type: doc_title
     text: 부동산 임장 기록표

@@ -25,6 +25,8 @@ faq:
   - q: 본계약 전에 먼저 체결해도 되나요?
     a: 예. 협상 단계에서 정보를 먼저 공유해야 한다면 본계약에 앞서 비밀유지계약을 체결하는 것이 일반적인 관행입니다.
 
+related: [mou-agreement, service-contract, consulting-contract]
+
 blocks:
   - type: doc_title
     text: 비밀유지계약서

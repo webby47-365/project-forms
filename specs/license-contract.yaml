@@ -29,6 +29,8 @@ faq:
   - q: 재허락(서브라이선스)은 자유롭게 가능한가요?
     a: 계약서에 별도로 허용하지 않는 한 갑의 사전 동의 없이는 제3자에게 재허락할 수 없습니다.
 
+related: [nda, mou-agreement, franchise-contract, distributor-contract]
+
 blocks:
   - type: doc_title
     text: 상표·저작물 사용허락 계약서

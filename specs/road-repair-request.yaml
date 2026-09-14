@@ -28,6 +28,8 @@ faq:
   - q: 처리 결과는 언제 알려주나요?
     a: 처리 기간은 관할 기관의 예산과 현장 여건에 따라 달라지므로, 접수 기관에 문의해 확인하는 것이 좋습니다.
 
+related: [civil-petition, info-disclosure-request, administrative-objection]
+
 blocks:
   - type: doc_title
     text: 도로·가로등 보수 요청 민원

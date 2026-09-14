@@ -29,6 +29,8 @@ faq:
   - q: 가격이 가장 낮은 곳을 선정하지 않아도 되나요?
     a: 가능합니다. 납기나 품질 등 다른 이유로 선정했다면 선정 사유란에 구체적으로 남기십시오.
 
+related: [quotation, purchase-order, supply-purchase-request, expense-approval]
+
 blocks:
   - type: doc_title
     text: 견적 비교표

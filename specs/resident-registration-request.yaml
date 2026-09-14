@@ -26,6 +26,8 @@ faq:
   - q: 과거 주소 이력도 나오게 할 수 있나요?
     a: 신청서에서 주소 변동 이력 포함 여부를 선택하면 해당 내용까지 발급받을 수 있습니다.
 
+related: [power-of-attorney, seal-certificate-poa, moving-in-report, civil-petition]
+
 blocks:
   - type: doc_title
     text: 주민등록표 등·초본 교부신청서

@@ -28,6 +28,8 @@ faq:
   - q: 잔액이 안 맞으면 어떻게 하나요?
     a: 전월 이월액을 빠뜨렸는지 먼저 확인하고, 거래 하나하나 순서대로 다시 계산해 보십시오.
 
+related: [transaction-statement, balance-confirmation, invoice-request, payment-confirmation]
+
 blocks:
   - type: doc_title
     text: 거래처 원장

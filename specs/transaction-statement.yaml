@@ -25,6 +25,8 @@ faq:
   - q: 합계금액을 한글로도 써야 하나요?
     a: 숫자만 쓰면 위조나 오기 위험이 있어, 금액 옆에 한글로 한 번 더 적어 두는 것이 안전합니다.
 
+related: [tax-invoice, delivery-confirmation, invoice-request, payment-confirmation]
+
 blocks:
   - type: doc_title
     text: 거래명세서

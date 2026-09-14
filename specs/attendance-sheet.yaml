@@ -24,6 +24,8 @@ faq:
   - q: 결석 사유는 따로 적어야 하나요?
     a: 상담이나 성적 평가에 참고하려면 비고란에 간단히 적어두는 것이 좋습니다.
 
+related: [student-record-card, grade-report, counseling-log]
+
 blocks:
   - type: doc_title
     text: 출석부

@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -558,14 +587,67 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>임대차갱신계약서</span><span>재계약서</span><span>전세갱신계약</span><span>월세갱신계약</span><span>계약갱신</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%9E%84%EB%8C%80%EC%B0%A8%EA%B0%B1%EC%8B%A0%EA%B3%84%EC%95%BD%EC%84%9C">임대차갱신계약서</a><a href="/search/?q=%EC%9E%AC%EA%B3%84%EC%95%BD%EC%84%9C">재계약서</a><a href="/search/?q=%EC%A0%84%EC%84%B8%EA%B0%B1%EC%8B%A0%EA%B3%84%EC%95%BD">전세갱신계약</a><a href="/search/?q=%EC%9B%94%EC%84%B8%EA%B0%B1%EC%8B%A0%EA%B3%84%EC%95%BD">월세갱신계약</a><a href="/search/?q=%EA%B3%84%EC%95%BD%EA%B0%B1%EC%8B%A0">계약갱신</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/moving/">이사·임대차 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
+  <a class="thumb" href="/form/monthly-rent-receipt/" aria-label="월세 영수증 미리보기">
+    <img src="/files/monthly-rent-receipt/preview-1.webp" alt="월세 영수증 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/monthly-rent-receipt/">월세 영수증</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.pdf" download="월세 영수증.pdf" title="월세 영수증 PDF 다운로드">PDF</a>
+      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.docx" download="월세 영수증.docx" title="월세 영수증 Word 다운로드">Word</a>
+      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.hwpx" download="월세 영수증.hwpx" title="월세 영수증 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/lease-termination-notice/" aria-label="임대차계약 해지통보서 미리보기">
+    <img src="/files/lease-termination-notice/preview-1.webp" alt="임대차계약 해지통보서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/lease-termination-notice/">임대차계약 해지통보서</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/lease-termination-notice/lease-termination-notice.pdf" download="임대차계약 해지통보서.pdf" title="임대차계약 해지통보서 PDF 다운로드">PDF</a>
+      <a href="/files/lease-termination-notice/lease-termination-notice.docx" download="임대차계약 해지통보서.docx" title="임대차계약 해지통보서 Word 다운로드">Word</a>
+      <a href="/files/lease-termination-notice/lease-termination-notice.hwpx" download="임대차계약 해지통보서.hwpx" title="임대차계약 해지통보서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/deposit-return-notice/" aria-label="전세보증금 반환 내용증명 미리보기">
+    <img src="/files/deposit-return-notice/preview-1.webp" alt="전세보증금 반환 내용증명 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/deposit-return-notice/">전세보증금 반환 내용증명</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/deposit-return-notice/deposit-return-notice.pdf" download="전세보증금 반환 내용증명.pdf" title="전세보증금 반환 내용증명 PDF 다운로드">PDF</a>
+      <a href="/files/deposit-return-notice/deposit-return-notice.docx" download="전세보증금 반환 내용증명.docx" title="전세보증금 반환 내용증명 Word 다운로드">Word</a>
+      <a href="/files/deposit-return-notice/deposit-return-notice.hwpx" download="전세보증금 반환 내용증명.hwpx" title="전세보증금 반환 내용증명 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/lease-transfer-contract/" aria-label="임차권 양도계약서 미리보기">
+    <img src="/files/lease-transfer-contract/preview-1.webp" alt="임차권 양도계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/lease-transfer-contract/">임차권 양도계약서</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/lease-transfer-contract/lease-transfer-contract.pdf" download="임차권 양도계약서.pdf" title="임차권 양도계약서 PDF 다운로드">PDF</a>
+      <a href="/files/lease-transfer-contract/lease-transfer-contract.docx" download="임차권 양도계약서.docx" title="임차권 양도계약서 Word 다운로드">Word</a>
+      <a href="/files/lease-transfer-contract/lease-transfer-contract.hwpx" download="임차권 양도계약서.hwpx" title="임차권 양도계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/equipment-lease-contract/" aria-label="장비 임대차계약서 미리보기">
+    <img src="/files/equipment-lease-contract/preview-1.webp" alt="장비 임대차계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/equipment-lease-contract/">장비 임대차계약서</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/equipment-lease-contract/equipment-lease-contract.pdf" download="장비 임대차계약서.pdf" title="장비 임대차계약서 PDF 다운로드">PDF</a>
+      <a href="/files/equipment-lease-contract/equipment-lease-contract.docx" download="장비 임대차계약서.docx" title="장비 임대차계약서 Word 다운로드">Word</a>
+      <a href="/files/equipment-lease-contract/equipment-lease-contract.hwpx" download="장비 임대차계약서.hwpx" title="장비 임대차계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/real-estate-sale-contract/" aria-label="부동산 매매계약서 미리보기">
     <img src="/files/real-estate-sale-contract/preview-1.webp" alt="부동산 매매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
@@ -574,6 +656,28 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.pdf" download="부동산 매매계약서.pdf" title="부동산 매매계약서 PDF 다운로드">PDF</a>
       <a href="/files/real-estate-sale-contract/real-estate-sale-contract.docx" download="부동산 매매계약서.docx" title="부동산 매매계약서 Word 다운로드">Word</a>
       <a href="/files/real-estate-sale-contract/real-estate-sale-contract.hwpx" download="부동산 매매계약서.hwpx" title="부동산 매매계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/certified-notice-deposit/" aria-label="내용증명 (보증금 반환청구) 미리보기">
+    <img src="/files/certified-notice-deposit/preview-1.webp" alt="내용증명 (보증금 반환청구) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/certified-notice-deposit/">내용증명 (보증금 반환청구)</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/certified-notice-deposit/certified-notice-deposit.pdf" download="내용증명 (보증금 반환청구).pdf" title="내용증명 (보증금 반환청구) PDF 다운로드">PDF</a>
+      <a href="/files/certified-notice-deposit/certified-notice-deposit.docx" download="내용증명 (보증금 반환청구).docx" title="내용증명 (보증금 반환청구) Word 다운로드">Word</a>
+      <a href="/files/certified-notice-deposit/certified-notice-deposit.hwpx" download="내용증명 (보증금 반환청구).hwpx" title="내용증명 (보증금 반환청구) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/move-in-checklist/" aria-label="입주 점검표 미리보기">
+    <img src="/files/move-in-checklist/preview-1.webp" alt="입주 점검표 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/move-in-checklist/">입주 점검표</a>
+    <div class="cat">부동산 · 임대·매매</div>
+    <div class="dl">      <a href="/files/move-in-checklist/move-in-checklist.pdf" download="입주 점검표.pdf" title="입주 점검표 PDF 다운로드">PDF</a>
+      <a href="/files/move-in-checklist/move-in-checklist.docx" download="입주 점검표.docx" title="입주 점검표 Word 다운로드">Word</a>
+      <a href="/files/move-in-checklist/move-in-checklist.hwpx" download="입주 점검표.hwpx" title="입주 점검표 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -588,36 +692,14 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/commercial-lease-contract/" aria-label="상가건물 임대차계약서 미리보기">
-    <img src="/files/commercial-lease-contract/preview-1.webp" alt="상가건물 임대차계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/franchise-contract/" aria-label="가맹계약서 미리보기">
+    <img src="/files/franchise-contract/preview-1.webp" alt="가맹계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/commercial-lease-contract/">상가건물 임대차계약서</a>
+    <a class="name" href="/form/franchise-contract/">가맹계약서</a>
     <div class="cat">부동산 · 임대·매매</div>
-    <div class="dl">      <a href="/files/commercial-lease-contract/commercial-lease-contract.pdf" download="상가건물 임대차계약서.pdf" title="상가건물 임대차계약서 PDF 다운로드">PDF</a>
-      <a href="/files/commercial-lease-contract/commercial-lease-contract.docx" download="상가건물 임대차계약서.docx" title="상가건물 임대차계약서 Word 다운로드">Word</a>
-      <a href="/files/commercial-lease-contract/commercial-lease-contract.hwpx" download="상가건물 임대차계약서.hwpx" title="상가건물 임대차계약서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/monthly-rent-receipt/" aria-label="월세 영수증 미리보기">
-    <img src="/files/monthly-rent-receipt/preview-1.webp" alt="월세 영수증 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/monthly-rent-receipt/">월세 영수증</a>
-    <div class="cat">부동산 · 임대·매매</div>
-    <div class="dl">      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.pdf" download="월세 영수증.pdf" title="월세 영수증 PDF 다운로드">PDF</a>
-      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.docx" download="월세 영수증.docx" title="월세 영수증 Word 다운로드">Word</a>
-      <a href="/files/monthly-rent-receipt/monthly-rent-receipt.hwpx" download="월세 영수증.hwpx" title="월세 영수증 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/lease-transfer-contract/" aria-label="임차권 양도계약서 미리보기">
-    <img src="/files/lease-transfer-contract/preview-1.webp" alt="임차권 양도계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
-  <div class="body">
-    <a class="name" href="/form/lease-transfer-contract/">임차권 양도계약서</a>
-    <div class="cat">부동산 · 임대·매매</div>
-    <div class="dl">      <a href="/files/lease-transfer-contract/lease-transfer-contract.pdf" download="임차권 양도계약서.pdf" title="임차권 양도계약서 PDF 다운로드">PDF</a>
-      <a href="/files/lease-transfer-contract/lease-transfer-contract.docx" download="임차권 양도계약서.docx" title="임차권 양도계약서 Word 다운로드">Word</a>
-      <a href="/files/lease-transfer-contract/lease-transfer-contract.hwpx" download="임차권 양도계약서.hwpx" title="임차권 양도계약서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/franchise-contract/franchise-contract.pdf" download="가맹계약서.pdf" title="가맹계약서 PDF 다운로드">PDF</a>
+      <a href="/files/franchise-contract/franchise-contract.docx" download="가맹계약서.docx" title="가맹계약서 Word 다운로드">Word</a>
+      <a href="/files/franchise-contract/franchise-contract.hwpx" download="가맹계약서.hwpx" title="가맹계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

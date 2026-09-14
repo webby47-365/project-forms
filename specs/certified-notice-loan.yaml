@@ -35,6 +35,8 @@ faq:
   - q: 이행 기한을 얼마로 정해야 하나요?
     a: 보통 7일에서 2주 정도로 정하며, 상대방이 준비할 수 있는 정도의 기간이면 충분합니다.
 
+related: [loan-agreement, payment-order-application, complaint-loan-return, repayment-plan]
+
 blocks:
   - type: doc_title
     text: 내용증명

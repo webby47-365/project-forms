@@ -28,6 +28,8 @@ faq:
   - q: 출장 중 일정이 바뀌면 어떻게 하나요?
     a: 실제로 진행된 일정과 방문처를 기준으로 사실대로 기재하면 됩니다.
 
+related: [business-trip-request, expense-report, expense-approval]
+
 blocks:
   - type: doc_title
     text: 출장 보고서

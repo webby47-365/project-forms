@@ -31,6 +31,8 @@ faq:
   - q: 인정하지 않는 부분은 어떻게 적나요?
     a: 다투는 이유와 근거를 구체적으로 적어야 주장이 설득력을 가집니다.
 
+related: [preparatory-brief, written-statement, civil-conciliation]
+
 blocks:
   - type: doc_title
     text: 답변서

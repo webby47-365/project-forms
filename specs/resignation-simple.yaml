@@ -34,6 +34,8 @@ faq:
   - q: 퇴직금 정산도 이 서식에 적나요?
     a: 아니요, 상세한 인수인계나 정산 내용이 필요하면 퇴직원 서식을 사용하십시오.
 
+related: [handover-report, severance-calculation, career-certificate]
+
 blocks:
   - type: doc_title
     text: 사직서

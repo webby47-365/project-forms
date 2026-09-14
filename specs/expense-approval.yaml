@@ -24,6 +24,8 @@ faq:
   - q: 증빙자료가 늦게 도착하면 어떻게 하나요?
     a: 우선 예정 금액으로 결의서를 작성하고, 자료가 도착하면 첨부해 정산 내역을 보완하십시오.
 
+related: [quotation, receipt, purchase-order]
+
 blocks:
   - type: doc_title
     text: 지출결의서

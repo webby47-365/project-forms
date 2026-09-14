@@ -30,6 +30,8 @@ faq:
   - q: 미납 과태료는 누가 부담하나요?
     a: 통상 인도 전에 정산하는 것으로 정하며, 계약서에 부담 주체를 명확히 적어 두어야 합니다.
 
+related: [vehicle-maintenance-history, power-of-attorney, payment-confirmation]
+
 blocks:
   - type: doc_title
     text: 중고차 매매계약서

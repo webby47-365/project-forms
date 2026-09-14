@@ -29,6 +29,8 @@ faq:
   - q: 명의개서는 누가 신청하나요?
     a: 통상 양수인이 회사에 청구하며, 계약서에 그 절차를 명시해 두면 좋습니다.
 
+related: [shareholder-register, articles-of-incorporation, board-minutes]
+
 blocks:
   - type: doc_title
     text: 주식 양도양수계약서

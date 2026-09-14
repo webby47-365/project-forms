@@ -28,6 +28,8 @@ faq:
   - q: 담당자가 바뀌면 새로 작성하나요?
     a: 새로 작성하지 말고 기존 카드를 그대로 인계해, 누적된 거래 이력이 끊기지 않도록 하십시오.
 
+related: [vendor-registration, client-visit-report, account-ledger, sales-daily-log]
+
 blocks:
   - type: doc_title
     text: 고객관리 카드

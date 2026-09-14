@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,44 +582,19 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>고객방문보고서</span><span>방문보고서</span><span>거래처방문</span><span>영업방문</span><span>visit report</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EA%B3%A0%EA%B0%9D%EB%B0%A9%EB%AC%B8%EB%B3%B4%EA%B3%A0%EC%84%9C">고객방문보고서</a><a href="/search/?q=%EB%B0%A9%EB%AC%B8%EB%B3%B4%EA%B3%A0%EC%84%9C">방문보고서</a><a href="/search/?q=%EA%B1%B0%EB%9E%98%EC%B2%98%EB%B0%A9%EB%AC%B8">거래처방문</a><a href="/search/?q=%EC%98%81%EC%97%85%EB%B0%A9%EB%AC%B8">영업방문</a><a href="/search/?q=visit%20report">visit report</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/vendor-registration/" aria-label="거래처 등록신청서 미리보기">
-    <img src="/files/vendor-registration/preview-1.webp" alt="거래처 등록신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/sales-daily-log/" aria-label="영업일지 미리보기">
+    <img src="/files/sales-daily-log/preview-1.webp" alt="영업일지 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/vendor-registration/">거래처 등록신청서</a>
+    <a class="name" href="/form/sales-daily-log/">영업일지</a>
     <div class="cat">기업 · 영업·마케팅</div>
-    <div class="dl">      <a href="/files/vendor-registration/vendor-registration.pdf" download="거래처 등록신청서.pdf" title="거래처 등록신청서 PDF 다운로드">PDF</a>
-      <a href="/files/vendor-registration/vendor-registration.docx" download="거래처 등록신청서.docx" title="거래처 등록신청서 Word 다운로드">Word</a>
-      <a href="/files/vendor-registration/vendor-registration.hwpx" download="거래처 등록신청서.hwpx" title="거래처 등록신청서 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/quotation-comparison/" aria-label="견적 비교표 미리보기">
-    <img src="/files/quotation-comparison/preview-1.webp" alt="견적 비교표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/quotation-comparison/">견적 비교표</a>
-    <div class="cat">기업 · 영업·마케팅</div>
-    <div class="dl">      <a href="/files/quotation-comparison/quotation-comparison.pdf" download="견적 비교표.pdf" title="견적 비교표 PDF 다운로드">PDF</a>
-      <a href="/files/quotation-comparison/quotation-comparison.docx" download="견적 비교표.docx" title="견적 비교표 Word 다운로드">Word</a>
-      <a href="/files/quotation-comparison/quotation-comparison.hwpx" download="견적 비교표.hwpx" title="견적 비교표 한글 다운로드">한글</a>
-    </div>
-  </div>
-</article>    <article class="card">
-  <a class="thumb" href="/form/complaint-handling/" aria-label="고객 불만 처리서 미리보기">
-    <img src="/files/complaint-handling/preview-1.webp" alt="고객 불만 처리서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
-  <div class="body">
-    <a class="name" href="/form/complaint-handling/">고객 불만 처리서</a>
-    <div class="cat">기업 · 영업·마케팅</div>
-    <div class="dl">      <a href="/files/complaint-handling/complaint-handling.pdf" download="고객 불만 처리서.pdf" title="고객 불만 처리서 PDF 다운로드">PDF</a>
-      <a href="/files/complaint-handling/complaint-handling.docx" download="고객 불만 처리서.docx" title="고객 불만 처리서 Word 다운로드">Word</a>
-      <a href="/files/complaint-handling/complaint-handling.hwpx" download="고객 불만 처리서.hwpx" title="고객 불만 처리서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/sales-daily-log/sales-daily-log.pdf" download="영업일지.pdf" title="영업일지 PDF 다운로드">PDF</a>
+      <a href="/files/sales-daily-log/sales-daily-log.docx" download="영업일지.docx" title="영업일지 Word 다운로드">Word</a>
+      <a href="/files/sales-daily-log/sales-daily-log.hwpx" download="영업일지.hwpx" title="영업일지 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -605,14 +609,91 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/delivery-confirmation/" aria-label="납품확인서 미리보기">
-    <img src="/files/delivery-confirmation/preview-1.webp" alt="납품확인서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/quotation/" aria-label="견적서 미리보기">
+    <img src="/files/quotation/preview-1.webp" alt="견적서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/delivery-confirmation/">납품확인서</a>
+    <a class="name" href="/form/quotation/">견적서</a>
     <div class="cat">기업 · 영업·마케팅</div>
-    <div class="dl">      <a href="/files/delivery-confirmation/delivery-confirmation.pdf" download="납품확인서.pdf" title="납품확인서 PDF 다운로드">PDF</a>
-      <a href="/files/delivery-confirmation/delivery-confirmation.docx" download="납품확인서.docx" title="납품확인서 Word 다운로드">Word</a>
-      <a href="/files/delivery-confirmation/delivery-confirmation.hwpx" download="납품확인서.hwpx" title="납품확인서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/quotation/quotation.pdf" download="견적서.pdf" title="견적서 PDF 다운로드">PDF</a>
+      <a href="/files/quotation/quotation.docx" download="견적서.docx" title="견적서 Word 다운로드">Word</a>
+      <a href="/files/quotation/quotation.hwpx" download="견적서.hwpx" title="견적서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/complaint-handling/" aria-label="고객 불만 처리서 미리보기">
+    <img src="/files/complaint-handling/preview-1.webp" alt="고객 불만 처리서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/complaint-handling/">고객 불만 처리서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/complaint-handling/complaint-handling.pdf" download="고객 불만 처리서.pdf" title="고객 불만 처리서 PDF 다운로드">PDF</a>
+      <a href="/files/complaint-handling/complaint-handling.docx" download="고객 불만 처리서.docx" title="고객 불만 처리서 Word 다운로드">Word</a>
+      <a href="/files/complaint-handling/complaint-handling.hwpx" download="고객 불만 처리서.hwpx" title="고객 불만 처리서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/campaign-result/" aria-label="캠페인 결과 보고서 미리보기">
+    <img src="/files/campaign-result/preview-1.webp" alt="캠페인 결과 보고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/campaign-result/">캠페인 결과 보고서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/campaign-result/campaign-result.pdf" download="캠페인 결과 보고서.pdf" title="캠페인 결과 보고서 PDF 다운로드">PDF</a>
+      <a href="/files/campaign-result/campaign-result.docx" download="캠페인 결과 보고서.docx" title="캠페인 결과 보고서 Word 다운로드">Word</a>
+      <a href="/files/campaign-result/campaign-result.hwpx" download="캠페인 결과 보고서.hwpx" title="캠페인 결과 보고서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/work-report-monthly/" aria-label="월간업무보고서 미리보기">
+    <img src="/files/work-report-monthly/preview-1.webp" alt="월간업무보고서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/work-report-monthly/">월간업무보고서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/work-report-monthly/work-report-monthly.pdf" download="월간업무보고서.pdf" title="월간업무보고서 PDF 다운로드">PDF</a>
+      <a href="/files/work-report-monthly/work-report-monthly.docx" download="월간업무보고서.docx" title="월간업무보고서 Word 다운로드">Word</a>
+      <a href="/files/work-report-monthly/work-report-monthly.hwpx" download="월간업무보고서.hwpx" title="월간업무보고서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/work-report-weekly/" aria-label="주간업무보고서 미리보기">
+    <img src="/files/work-report-weekly/preview-1.webp" alt="주간업무보고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/work-report-weekly/">주간업무보고서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/work-report-weekly/work-report-weekly.pdf" download="주간업무보고서.pdf" title="주간업무보고서 PDF 다운로드">PDF</a>
+      <a href="/files/work-report-weekly/work-report-weekly.docx" download="주간업무보고서.docx" title="주간업무보고서 Word 다운로드">Word</a>
+      <a href="/files/work-report-weekly/work-report-weekly.hwpx" download="주간업무보고서.hwpx" title="주간업무보고서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/sales-plan/" aria-label="영업 계획서 미리보기">
+    <img src="/files/sales-plan/preview-1.webp" alt="영업 계획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/sales-plan/">영업 계획서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/sales-plan/sales-plan.pdf" download="영업 계획서.pdf" title="영업 계획서 PDF 다운로드">PDF</a>
+      <a href="/files/sales-plan/sales-plan.docx" download="영업 계획서.docx" title="영업 계획서 Word 다운로드">Word</a>
+      <a href="/files/sales-plan/sales-plan.hwpx" download="영업 계획서.hwpx" title="영업 계획서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/internal-memo/" aria-label="내부 보고서 미리보기">
+    <img src="/files/internal-memo/preview-1.webp" alt="내부 보고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/internal-memo/">내부 보고서</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/internal-memo/internal-memo.pdf" download="내부 보고서.pdf" title="내부 보고서 PDF 다운로드">PDF</a>
+      <a href="/files/internal-memo/internal-memo.docx" download="내부 보고서.docx" title="내부 보고서 Word 다운로드">Word</a>
+      <a href="/files/internal-memo/internal-memo.hwpx" download="내부 보고서.hwpx" title="내부 보고서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/visitor-log/" aria-label="방문자 기록대장 미리보기">
+    <img src="/files/visitor-log/preview-1.webp" alt="방문자 기록대장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/visitor-log/">방문자 기록대장</a>
+    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="dl">      <a href="/files/visitor-log/visitor-log.pdf" download="방문자 기록대장.pdf" title="방문자 기록대장 PDF 다운로드">PDF</a>
+      <a href="/files/visitor-log/visitor-log.docx" download="방문자 기록대장.docx" title="방문자 기록대장 Word 다운로드">Word</a>
+      <a href="/files/visitor-log/visitor-log.hwpx" download="방문자 기록대장.hwpx" title="방문자 기록대장 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

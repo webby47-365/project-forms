@@ -30,6 +30,8 @@ faq:
   - q: 인사말은 어떻게 써야 하나요?
     a: 경조사 성격에 맞춰 격식을 갖추되 너무 길지 않게 짧게 쓰는 것이 좋습니다.
 
+related: [invitation-card, thank-you-letter, leave-request]
+
 blocks:
   - type: doc_title
     text: 경조사 안내문

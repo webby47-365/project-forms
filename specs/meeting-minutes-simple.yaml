@@ -33,6 +33,8 @@ faq:
   - q: 참석자가 많으면 어떻게 적나요?
     a: 이름을 쉼표로 구분해 나열하거나, 부서별 인원수로 간단히 적어도 됩니다.
 
+related: [internal-memo, cooperation-request, work-report-weekly]
+
 blocks:
   - type: doc_title
     text: 회의록

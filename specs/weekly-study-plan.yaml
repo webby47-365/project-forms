@@ -29,6 +29,8 @@ faq:
   - q: 목표를 못 지키면 어떻게 하나요?
     a: 주간 성찰란에 실제 진행 상황을 그대로 적고, 다음 주 계획에 남은 분량을 반영해 조정하십시오.
 
+related: [class-timetable, reading-log, daily-planner]
+
 blocks:
   - type: doc_title
     text: 주간 학습계획표

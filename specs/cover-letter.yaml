@@ -32,6 +32,8 @@ faq:
   - q: 어떤 순서로 쓰는 게 좋나요?
     a: 결론을 먼저 쓰는 두괄식으로 작성하면 가독성이 높아집니다.
 
+related: [resume-basic, job-application-form, career-description]
+
 blocks:
   - type: doc_title
     text: 자기소개서

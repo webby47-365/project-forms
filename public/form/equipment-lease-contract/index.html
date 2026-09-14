@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,44 +582,41 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>장비임대차계약서</span><span>기자재임대계약</span><span>렌탈계약서</span><span>장비대여계약</span><span>설비임대차</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%9E%A5%EB%B9%84%EC%9E%84%EB%8C%80%EC%B0%A8%EA%B3%84%EC%95%BD%EC%84%9C">장비임대차계약서</a><a href="/search/?q=%EA%B8%B0%EC%9E%90%EC%9E%AC%EC%9E%84%EB%8C%80%EA%B3%84%EC%95%BD">기자재임대계약</a><a href="/search/?q=%EB%A0%8C%ED%83%88%EA%B3%84%EC%95%BD%EC%84%9C">렌탈계약서</a><a href="/search/?q=%EC%9E%A5%EB%B9%84%EB%8C%80%EC%97%AC%EA%B3%84%EC%95%BD">장비대여계약</a><a href="/search/?q=%EC%84%A4%EB%B9%84%EC%9E%84%EB%8C%80%EC%B0%A8">설비임대차</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/franchise-contract/" aria-label="가맹계약서 미리보기">
-    <img src="/files/franchise-contract/preview-1.webp" alt="가맹계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/quotation/" aria-label="견적서 미리보기">
+    <img src="/files/quotation/preview-1.webp" alt="견적서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/franchise-contract/">가맹계약서</a>
+    <a class="name" href="/form/quotation/">견적서</a>
     <div class="cat">법률 · 계약</div>
-    <div class="dl">      <a href="/files/franchise-contract/franchise-contract.pdf" download="가맹계약서.pdf" title="가맹계약서 PDF 다운로드">PDF</a>
-      <a href="/files/franchise-contract/franchise-contract.docx" download="가맹계약서.docx" title="가맹계약서 Word 다운로드">Word</a>
-      <a href="/files/franchise-contract/franchise-contract.hwpx" download="가맹계약서.hwpx" title="가맹계약서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/quotation/quotation.pdf" download="견적서.pdf" title="견적서 PDF 다운로드">PDF</a>
+      <a href="/files/quotation/quotation.docx" download="견적서.docx" title="견적서 Word 다운로드">Word</a>
+      <a href="/files/quotation/quotation.hwpx" download="견적서.hwpx" title="견적서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/joint-venture-contract/" aria-label="공동사업 계약서 미리보기">
-    <img src="/files/joint-venture-contract/preview-1.webp" alt="공동사업 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/delivery-confirmation/" aria-label="납품확인서 미리보기">
+    <img src="/files/delivery-confirmation/preview-1.webp" alt="납품확인서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/joint-venture-contract/">공동사업 계약서</a>
+    <a class="name" href="/form/delivery-confirmation/">납품확인서</a>
     <div class="cat">법률 · 계약</div>
-    <div class="dl">      <a href="/files/joint-venture-contract/joint-venture-contract.pdf" download="공동사업 계약서.pdf" title="공동사업 계약서 PDF 다운로드">PDF</a>
-      <a href="/files/joint-venture-contract/joint-venture-contract.docx" download="공동사업 계약서.docx" title="공동사업 계약서 Word 다운로드">Word</a>
-      <a href="/files/joint-venture-contract/joint-venture-contract.hwpx" download="공동사업 계약서.hwpx" title="공동사업 계약서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/delivery-confirmation/delivery-confirmation.pdf" download="납품확인서.pdf" title="납품확인서 PDF 다운로드">PDF</a>
+      <a href="/files/delivery-confirmation/delivery-confirmation.docx" download="납품확인서.docx" title="납품확인서 Word 다운로드">Word</a>
+      <a href="/files/delivery-confirmation/delivery-confirmation.hwpx" download="납품확인서.hwpx" title="납품확인서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/goods-sale-contract/" aria-label="매매계약서 (동산) 미리보기">
-    <img src="/files/goods-sale-contract/preview-1.webp" alt="매매계약서 (동산) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/invoice-request/" aria-label="청구서 미리보기">
+    <img src="/files/invoice-request/preview-1.webp" alt="청구서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/goods-sale-contract/">매매계약서 (동산)</a>
+    <a class="name" href="/form/invoice-request/">청구서</a>
     <div class="cat">법률 · 계약</div>
-    <div class="dl">      <a href="/files/goods-sale-contract/goods-sale-contract.pdf" download="매매계약서 (동산).pdf" title="매매계약서 (동산) PDF 다운로드">PDF</a>
-      <a href="/files/goods-sale-contract/goods-sale-contract.docx" download="매매계약서 (동산).docx" title="매매계약서 (동산) Word 다운로드">Word</a>
-      <a href="/files/goods-sale-contract/goods-sale-contract.hwpx" download="매매계약서 (동산).hwpx" title="매매계약서 (동산) 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/invoice-request/invoice-request.pdf" download="청구서.pdf" title="청구서 PDF 다운로드">PDF</a>
+      <a href="/files/invoice-request/invoice-request.docx" download="청구서.docx" title="청구서 Word 다운로드">Word</a>
+      <a href="/files/invoice-request/invoice-request.hwpx" download="청구서.hwpx" title="청구서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -613,6 +639,61 @@ footer.site li{margin:3px 0}
     <div class="dl">      <a href="/files/license-contract/license-contract.pdf" download="상표·저작물 사용허락 계약서.pdf" title="상표·저작물 사용허락 계약서 PDF 다운로드">PDF</a>
       <a href="/files/license-contract/license-contract.docx" download="상표·저작물 사용허락 계약서.docx" title="상표·저작물 사용허락 계약서 Word 다운로드">Word</a>
       <a href="/files/license-contract/license-contract.hwpx" download="상표·저작물 사용허락 계약서.hwpx" title="상표·저작물 사용허락 계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/used-car-sale-contract/" aria-label="중고차 매매계약서 미리보기">
+    <img src="/files/used-car-sale-contract/preview-1.webp" alt="중고차 매매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/used-car-sale-contract/">중고차 매매계약서</a>
+    <div class="cat">법률 · 계약</div>
+    <div class="dl">      <a href="/files/used-car-sale-contract/used-car-sale-contract.pdf" download="중고차 매매계약서.pdf" title="중고차 매매계약서 PDF 다운로드">PDF</a>
+      <a href="/files/used-car-sale-contract/used-car-sale-contract.docx" download="중고차 매매계약서.docx" title="중고차 매매계약서 Word 다운로드">Word</a>
+      <a href="/files/used-car-sale-contract/used-car-sale-contract.hwpx" download="중고차 매매계약서.hwpx" title="중고차 매매계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/subcontract-agreement/" aria-label="하도급 계약서 미리보기">
+    <img src="/files/subcontract-agreement/preview-1.webp" alt="하도급 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/subcontract-agreement/">하도급 계약서</a>
+    <div class="cat">법률 · 계약</div>
+    <div class="dl">      <a href="/files/subcontract-agreement/subcontract-agreement.pdf" download="하도급 계약서.pdf" title="하도급 계약서 PDF 다운로드">PDF</a>
+      <a href="/files/subcontract-agreement/subcontract-agreement.docx" download="하도급 계약서.docx" title="하도급 계약서 Word 다운로드">Word</a>
+      <a href="/files/subcontract-agreement/subcontract-agreement.hwpx" download="하도급 계약서.hwpx" title="하도급 계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/consulting-contract/" aria-label="컨설팅 계약서 미리보기">
+    <img src="/files/consulting-contract/preview-1.webp" alt="컨설팅 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/consulting-contract/">컨설팅 계약서</a>
+    <div class="cat">법률 · 계약</div>
+    <div class="dl">      <a href="/files/consulting-contract/consulting-contract.pdf" download="컨설팅 계약서.pdf" title="컨설팅 계약서 PDF 다운로드">PDF</a>
+      <a href="/files/consulting-contract/consulting-contract.docx" download="컨설팅 계약서.docx" title="컨설팅 계약서 Word 다운로드">Word</a>
+      <a href="/files/consulting-contract/consulting-contract.hwpx" download="컨설팅 계약서.hwpx" title="컨설팅 계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/freelance-contract/" aria-label="프리랜서 계약서 미리보기">
+    <img src="/files/freelance-contract/preview-1.webp" alt="프리랜서 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/freelance-contract/">프리랜서 계약서</a>
+    <div class="cat">법률 · 계약</div>
+    <div class="dl">      <a href="/files/freelance-contract/freelance-contract.pdf" download="프리랜서 계약서.pdf" title="프리랜서 계약서 PDF 다운로드">PDF</a>
+      <a href="/files/freelance-contract/freelance-contract.docx" download="프리랜서 계약서.docx" title="프리랜서 계약서 Word 다운로드">Word</a>
+      <a href="/files/freelance-contract/freelance-contract.hwpx" download="프리랜서 계약서.hwpx" title="프리랜서 계약서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/franchise-contract/" aria-label="가맹계약서 미리보기">
+    <img src="/files/franchise-contract/preview-1.webp" alt="가맹계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/franchise-contract/">가맹계약서</a>
+    <div class="cat">법률 · 계약</div>
+    <div class="dl">      <a href="/files/franchise-contract/franchise-contract.pdf" download="가맹계약서.pdf" title="가맹계약서 PDF 다운로드">PDF</a>
+      <a href="/files/franchise-contract/franchise-contract.docx" download="가맹계약서.docx" title="가맹계약서 Word 다운로드">Word</a>
+      <a href="/files/franchise-contract/franchise-contract.hwpx" download="가맹계약서.hwpx" title="가맹계약서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

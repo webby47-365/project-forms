@@ -26,6 +26,8 @@ faq:
   - q: 하자가 발생하면 어떻게 되나요?
     a: 계약서에 정한 하자담보 조항에 따라 처리하며, 처리 방법을 미리 구체적으로 정해 두어야 합니다.
 
+related: [purchase-order, delivery-confirmation, transaction-statement, tax-invoice]
+
 blocks:
   - type: doc_title
     text: 판매계약서

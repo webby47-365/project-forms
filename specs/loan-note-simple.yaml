@@ -36,6 +36,8 @@ faq:
   - q: 계좌이체 기록도 함께 남겨야 하나요?
     a: 네, 차용증과 함께 이체 내역을 보관하면 분쟁을 예방하는 데 도움이 됩니다.
 
+related: [payment-pledge, certified-notice-loan, settlement-agreement]
+
 blocks:
   - type: doc_title
     text: 차용증

@@ -30,6 +30,8 @@ faq:
   - q: 병원 자체 서식이 있으면 어떻게 하나요?
     a: 기관별로 정한 법정 서식이 있으면 그 서식을 우선 사용하십시오.
 
+related: [blood-transfusion-consent, medical-treatment-consent, guardian-consent, medical-record-request]
+
 blocks:
   - type: doc_title
     text: 수술·시술 동의서

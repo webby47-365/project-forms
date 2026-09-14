@@ -30,6 +30,8 @@ faq:
   - q: 전환 여부는 이 평가서로 바로 결정되나요?
     a: 이 평가서는 참고 자료이며 최종 전환 여부는 인사위원회 심의를 거쳐 결정됩니다.
 
+related: [labor-contract-standard, personnel-order, performance-evaluation, job-description]
+
 blocks:
   - type: doc_title
     text: 수습 평가서

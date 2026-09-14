@@ -25,6 +25,8 @@ faq:
   - q: 학부모 상담도 같은 양식을 쓰나요?
     a: 대상자란에 학부모임을 표시하고 나머지 항목은 동일하게 작성하면 됩니다.
 
+related: [student-record-card, attendance-sheet, grade-report]
+
 blocks:
   - type: doc_title
     text: 상담일지

@@ -27,6 +27,8 @@ faq:
   - q: 동의를 나중에 철회할 수 있나요?
     a: 문의처로 연락하면 이후 촬영물 활용을 중단하도록 요청할 수 있습니다.
 
+related: [event-application, privacy-consent, portrait-rights-consent, minor-activity-consent]
+
 blocks:
   - type: doc_title
     text: 행사 사진·영상 활용 동의서

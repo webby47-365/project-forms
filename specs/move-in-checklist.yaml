@@ -29,6 +29,8 @@ faq:
   - q: 점검표는 계약서와 별도로 보관하나요?
     a: 네, 퇴거 시 원상복구 분쟁에 대비해 임대인과 임차인이 각각 한 부씩 보관하십시오.
 
+related: [housing-lease-contract, moving-in-report, moving-checklist]
+
 blocks:
   - type: doc_title
     text: 입주 점검표

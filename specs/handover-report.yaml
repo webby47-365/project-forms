@@ -28,6 +28,8 @@ faq:
   - q: 입회자는 꼭 필요한가요?
     a: 필수는 아니지만 부서장 등이 함께 확인하면 이후 분쟁을 예방하는 데 도움이 됩니다.
 
+related: [resignation-letter, asset-handover, personnel-order]
+
 blocks:
   - type: doc_title
     text: 업무 인수인계서

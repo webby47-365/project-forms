@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -558,22 +587,53 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>사업계획서</span><span>창업사업계획서</span><span>사업계획서양식</span><span>투자제안서</span><span>정책자금신청</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%82%AC%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C">사업계획서</a><a href="/search/?q=%EC%B0%BD%EC%97%85%EC%82%AC%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C">창업사업계획서</a><a href="/search/?q=%EC%82%AC%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C%EC%96%91%EC%8B%9D">사업계획서양식</a><a href="/search/?q=%ED%88%AC%EC%9E%90%EC%A0%9C%EC%95%88%EC%84%9C">투자제안서</a><a href="/search/?q=%EC%A0%95%EC%B1%85%EC%9E%90%EA%B8%88%EC%8B%A0%EC%B2%AD">정책자금신청</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/startup/">창업 첫 달 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
-  <a class="thumb" href="/form/partnership-dissolution-agreement/" aria-label="동업 해지 합의서 미리보기">
-    <img src="/files/partnership-dissolution-agreement/preview-1.webp" alt="동업 해지 합의서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <a class="thumb" href="/form/budget-plan/" aria-label="예산 계획서 미리보기">
+    <img src="/files/budget-plan/preview-1.webp" alt="예산 계획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/partnership-dissolution-agreement/">동업 해지 합의서</a>
+    <a class="name" href="/form/budget-plan/">예산 계획서</a>
     <div class="cat">기업 · 창업·법인</div>
-    <div class="dl">      <a href="/files/partnership-dissolution-agreement/partnership-dissolution-agreement.pdf" download="동업 해지 합의서.pdf" title="동업 해지 합의서 PDF 다운로드">PDF</a>
-      <a href="/files/partnership-dissolution-agreement/partnership-dissolution-agreement.docx" download="동업 해지 합의서.docx" title="동업 해지 합의서 Word 다운로드">Word</a>
-      <a href="/files/partnership-dissolution-agreement/partnership-dissolution-agreement.hwpx" download="동업 해지 합의서.hwpx" title="동업 해지 합의서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/budget-plan/budget-plan.pdf" download="예산 계획서.pdf" title="예산 계획서 PDF 다운로드">PDF</a>
+      <a href="/files/budget-plan/budget-plan.docx" download="예산 계획서.docx" title="예산 계획서 Word 다운로드">Word</a>
+      <a href="/files/budget-plan/budget-plan.hwpx" download="예산 계획서.hwpx" title="예산 계획서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/marketing-plan/" aria-label="마케팅 기획서 미리보기">
+    <img src="/files/marketing-plan/preview-1.webp" alt="마케팅 기획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/marketing-plan/">마케팅 기획서</a>
+    <div class="cat">기업 · 창업·법인</div>
+    <div class="dl">      <a href="/files/marketing-plan/marketing-plan.pdf" download="마케팅 기획서.pdf" title="마케팅 기획서 PDF 다운로드">PDF</a>
+      <a href="/files/marketing-plan/marketing-plan.docx" download="마케팅 기획서.docx" title="마케팅 기획서 Word 다운로드">Word</a>
+      <a href="/files/marketing-plan/marketing-plan.hwpx" download="마케팅 기획서.hwpx" title="마케팅 기획서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/sales-plan/" aria-label="영업 계획서 미리보기">
+    <img src="/files/sales-plan/preview-1.webp" alt="영업 계획서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/sales-plan/">영업 계획서</a>
+    <div class="cat">기업 · 창업·법인</div>
+    <div class="dl">      <a href="/files/sales-plan/sales-plan.pdf" download="영업 계획서.pdf" title="영업 계획서 PDF 다운로드">PDF</a>
+      <a href="/files/sales-plan/sales-plan.docx" download="영업 계획서.docx" title="영업 계획서 Word 다운로드">Word</a>
+      <a href="/files/sales-plan/sales-plan.hwpx" download="영업 계획서.hwpx" title="영업 계획서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/startup-checklist/" aria-label="창업 준비 체크리스트 미리보기">
+    <img src="/files/startup-checklist/preview-1.webp" alt="창업 준비 체크리스트 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/startup-checklist/">창업 준비 체크리스트</a>
+    <div class="cat">기업 · 창업·법인</div>
+    <div class="dl">      <a href="/files/startup-checklist/startup-checklist.pdf" download="창업 준비 체크리스트.pdf" title="창업 준비 체크리스트 PDF 다운로드">PDF</a>
+      <a href="/files/startup-checklist/startup-checklist.docx" download="창업 준비 체크리스트.docx" title="창업 준비 체크리스트 Word 다운로드">Word</a>
+      <a href="/files/startup-checklist/startup-checklist.hwpx" download="창업 준비 체크리스트.hwpx" title="창업 준비 체크리스트 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -588,14 +648,25 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/business-plan-simple/" aria-label="사업계획서 (간편형) 미리보기">
-    <img src="/files/business-plan-simple/preview-1.webp" alt="사업계획서 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/proposal-draft/" aria-label="기안서 미리보기">
+    <img src="/files/proposal-draft/preview-1.webp" alt="기안서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/business-plan-simple/">사업계획서 (간편형)</a>
+    <a class="name" href="/form/proposal-draft/">기안서</a>
     <div class="cat">기업 · 창업·법인</div>
-    <div class="dl">      <a href="/files/business-plan-simple/business-plan-simple.pdf" download="사업계획서 (간편형).pdf" title="사업계획서 (간편형) PDF 다운로드">PDF</a>
-      <a href="/files/business-plan-simple/business-plan-simple.docx" download="사업계획서 (간편형).docx" title="사업계획서 (간편형) Word 다운로드">Word</a>
-      <a href="/files/business-plan-simple/business-plan-simple.hwpx" download="사업계획서 (간편형).hwpx" title="사업계획서 (간편형) 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/proposal-draft/proposal-draft.pdf" download="기안서.pdf" title="기안서 PDF 다운로드">PDF</a>
+      <a href="/files/proposal-draft/proposal-draft.docx" download="기안서.docx" title="기안서 Word 다운로드">Word</a>
+      <a href="/files/proposal-draft/proposal-draft.hwpx" download="기안서.hwpx" title="기안서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/proposal-cover/" aria-label="제안서 표지 미리보기">
+    <img src="/files/proposal-cover/preview-1.webp" alt="제안서 표지 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/proposal-cover/">제안서 표지</a>
+    <div class="cat">기업 · 창업·법인</div>
+    <div class="dl">      <a href="/files/proposal-cover/proposal-cover.pdf" download="제안서 표지.pdf" title="제안서 표지 PDF 다운로드">PDF</a>
+      <a href="/files/proposal-cover/proposal-cover.docx" download="제안서 표지.docx" title="제안서 표지 Word 다운로드">Word</a>
+      <a href="/files/proposal-cover/proposal-cover.hwpx" download="제안서 표지.hwpx" title="제안서 표지 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -610,14 +681,25 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/board-minutes/" aria-label="이사회 의사록 미리보기">
-    <img src="/files/board-minutes/preview-1.webp" alt="이사회 의사록 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/event-plan/" aria-label="행사 기획서 미리보기">
+    <img src="/files/event-plan/preview-1.webp" alt="행사 기획서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/board-minutes/">이사회 의사록</a>
+    <a class="name" href="/form/event-plan/">행사 기획서</a>
     <div class="cat">기업 · 창업·법인</div>
-    <div class="dl">      <a href="/files/board-minutes/board-minutes.pdf" download="이사회 의사록.pdf" title="이사회 의사록 PDF 다운로드">PDF</a>
-      <a href="/files/board-minutes/board-minutes.docx" download="이사회 의사록.docx" title="이사회 의사록 Word 다운로드">Word</a>
-      <a href="/files/board-minutes/board-minutes.hwpx" download="이사회 의사록.hwpx" title="이사회 의사록 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/event-plan/event-plan.pdf" download="행사 기획서.pdf" title="행사 기획서 PDF 다운로드">PDF</a>
+      <a href="/files/event-plan/event-plan.docx" download="행사 기획서.docx" title="행사 기획서 Word 다운로드">Word</a>
+      <a href="/files/event-plan/event-plan.hwpx" download="행사 기획서.hwpx" title="행사 기획서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/articles-of-incorporation/" aria-label="정관 (주식회사 표준) 미리보기">
+    <img src="/files/articles-of-incorporation/preview-1.webp" alt="정관 (주식회사 표준) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
+  <div class="body">
+    <a class="name" href="/form/articles-of-incorporation/">정관 (주식회사 표준)</a>
+    <div class="cat">기업 · 창업·법인</div>
+    <div class="dl">      <a href="/files/articles-of-incorporation/articles-of-incorporation.pdf" download="정관 (주식회사 표준).pdf" title="정관 (주식회사 표준) PDF 다운로드">PDF</a>
+      <a href="/files/articles-of-incorporation/articles-of-incorporation.docx" download="정관 (주식회사 표준).docx" title="정관 (주식회사 표준) Word 다운로드">Word</a>
+      <a href="/files/articles-of-incorporation/articles-of-incorporation.hwpx" download="정관 (주식회사 표준).hwpx" title="정관 (주식회사 표준) 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

@@ -26,6 +26,8 @@ faq:
   - q: 실질이 근로자로 판단될 수도 있나요?
     a: 지휘·감독을 받으며 정해진 시간에 근무하면 근로자로 볼 수 있어 전문가 확인이 필요합니다.
 
+related: [nda, invoice-request, withholding-request]
+
 blocks:
   - type: doc_title
     text: 프리랜서 용역계약서

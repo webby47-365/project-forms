@@ -28,6 +28,8 @@ faq:
   - q: 기한까지 반환되지 않으면 어떻게 하나요?
     a: 이 문서는 통지용이며 이후 절차는 관련 기관이나 전문가와 상담해 진행하십시오.
 
+related: [housing-lease-contract, lease-termination-notice, certified-notice-deposit, payment-order-application]
+
 blocks:
   - type: doc_title
     text: 전세보증금 반환 내용증명

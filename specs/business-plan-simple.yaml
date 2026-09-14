@@ -33,6 +33,8 @@ faq:
   - q: 재무 계획을 자세히 안 써도 되나요?
     a: 간편형은 핵심 자금 규모와 조달 방법만 표로 보여주면 충분하며, 세부 추정은 별도 자료로 준비하십시오.
 
+related: [startup-checklist, business-reg-checklist, budget-plan]
+
 blocks:
   - type: doc_title
     text: 사업계획서

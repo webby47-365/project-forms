@@ -25,6 +25,8 @@ faq:
   - q: 실제 비용이 예산과 다르면 어떻게 하나요?
     a: 출장 후 실제 사용 내역을 정산서에 별도로 작성해 차액을 보고합니다.
 
+related: [business-trip-report, expense-report, expense-approval, vehicle-use-request]
+
 blocks:
   - type: doc_title
     text: 출장신청서

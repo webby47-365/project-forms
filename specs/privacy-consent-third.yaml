@@ -35,6 +35,8 @@ faq:
   - q: 동의를 거부하면 서비스를 못 받나요?
     a: 거부 시 불이익이 있다면 미리 안내하되, 필수 항목이 아니면 서비스 이용은 가능해야 합니다.
 
+related: [nda, service-contract, vendor-registration]
+
 blocks:
   - type: doc_title
     text: 개인정보 제3자 제공 동의서

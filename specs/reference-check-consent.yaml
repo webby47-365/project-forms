@@ -28,6 +28,8 @@ faq:
   - q: 조회 항목은 어디까지 넣을 수 있나요?
     a: 근무 기간과 담당 업무 등 채용 판단에 필요한 항목으로 한정해 구체적으로 적어야 합니다.
 
+related: [career-certificate, employment-certificate, interview-evaluation, privacy-consent]
+
 blocks:
   - type: doc_title
     text: 평판조회 동의서

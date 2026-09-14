@@ -24,6 +24,8 @@ faq:
   - q: 직급 변동 이력도 적어야 하나요?
     a: 제출 기관이 요구하면 근무 기간을 나눠 직급별로 적으십시오. 요구가 없으면 최종 직위만 적어도 됩니다.
 
+related: [employment-certificate, career-description, resume-experienced]
+
 blocks:
   - type: doc_title
     text: 경력증명서

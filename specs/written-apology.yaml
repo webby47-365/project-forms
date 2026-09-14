@@ -26,6 +26,8 @@ faq:
   - q: 손실이 발생했으면 어떻게 적나요?
     a: 손실 금액과 처리 경과를 경위와 함께 별도로 적어 두십시오.
 
+related: [explanation-statement, disciplinary-notice, written-pledge]
+
 blocks:
   - type: doc_title
     text: 시말서

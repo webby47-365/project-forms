@@ -34,6 +34,8 @@ faq:
   - q: 주차 중 사고 책임은 누가 지나요?
     a: 계약서에 관리책임 범위를 명확히 적어 두면 사고 발생 시 다툼을 줄일 수 있습니다.
 
+related: [monthly-rent-receipt, lease-termination-notice]
+
 blocks:
   - type: doc_title
     text: 주차장 임대차계약서

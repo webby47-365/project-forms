@@ -25,6 +25,8 @@ faq:
   - q: 도장 없이 수기 서명만 해도 되나요?
     a: 네, 서명만으로도 유효하지만 거래처가 도장을 요구하면 함께 날인하십시오.
 
+related: [expense-report, expense-approval, transaction-statement, tax-invoice]
+
 blocks:
   - type: doc_title
     text: 영수증

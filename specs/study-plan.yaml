@@ -25,6 +25,8 @@ faq:
   - q: 회고는 무엇을 적나요?
     a: 실제 진행 상황과 어려웠던 점, 다음 주 개선 방안을 적으면 됩니다.
 
+related: [class-timetable, daily-planner, reading-log]
+
 blocks:
   - type: doc_title
     text: 학습계획표

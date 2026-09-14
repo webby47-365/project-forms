@@ -27,6 +27,8 @@ faq:
   - q: 식대는 참석자를 다 적어야 하나요?
     a: 접대성 지출은 참석자 수와 대상을 함께 적어야 증빙으로 인정되기 쉽습니다.
 
+related: [expense-report, expense-approval, receipt]
+
 blocks:
   - type: doc_title
     text: 법인카드 사용내역서

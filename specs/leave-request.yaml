@@ -24,6 +24,8 @@ faq:
   - q: 병가는 진단서를 첨부해야 하나요?
     a: 회사 규정에 따라 3일 이상 병가는 진단서 첨부를 요구하는 경우가 많으니 확인하십시오.
 
+related: [annual-leave-plan, handover-report, parental-leave-request, remote-work-request]
+
 blocks:
   - type: doc_title
     text: 휴가신청서

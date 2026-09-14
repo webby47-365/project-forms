@@ -186,8 +186,37 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .dlbtns a:hover .fmt{color:#c7d5e8}
 .usage{margin:22px 0 0; font-size:14.5px; color:#374151; white-space:pre-line}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0}
-.tags span{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
-  padding:4px 11px; font-size:12.5px; color:#475467}
+.tags a{background:var(--bg-soft); border:1px solid var(--line-2); border-radius:999px;
+  padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
+.tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+
+/* 이 서식이 들어 있는 주제 모음 */
+.incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  font-size:13px; color:#6b7280}
+.incol a{color:var(--navy); font-weight:600; text-decoration:none;
+  border-bottom:1px solid #c5d4e8}
+.incol a:hover{border-bottom-color:var(--navy)}
+
+/* 주제 모음 허브 — 일의 순서대로 번호를 매겨 보여준다 */
+.steps{margin:22px 0 0; padding:0; list-style:none; counter-reset:st}
+.steps li{position:relative; padding:16px 16px 16px 54px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; margin:0 0 10px}
+.steps li::before{counter-increment:st; content:counter(st);
+  position:absolute; left:16px; top:16px; width:25px; height:25px; border-radius:50%;
+  background:var(--navy); color:#fff; font-size:12.5px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.steps li > a{font-size:15.5px; font-weight:700; color:var(--ink); text-decoration:none}
+.steps li > a:hover{color:var(--navy)}
+.steps .scat{margin-left:8px; font-size:12px; color:#8a94a6}
+.steps p{margin:5px 0 0; font-size:13.5px; color:#4b5563; line-height:1.65}
+.steps .sdl{display:inline-flex; gap:6px; margin:10px 0 0}
+.steps .sdl a{border:1px solid var(--line-2); border-radius:6px; padding:3px 10px;
+  font-size:12px; color:#475467; text-decoration:none; background:var(--bg-soft)}
+.steps .sdl a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
+@media (max-width:560px){
+  .steps li{padding:14px 13px 14px 46px}
+  .steps li::before{left:12px; top:14px}
+}
 .notice-box{margin:22px 0 0; padding:13px 15px; border-left:3px solid var(--navy);
   background:var(--bg-soft); font-size:13.5px; color:#475467; border-radius:0 8px 8px 0}
 
@@ -553,14 +582,34 @@ footer.site li{margin:3px 0}
         </details>      </div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
-      </div>
-
-      <div class="tags"><span>사내공지문</span><span>사내공문</span><span>공지사항</span><span>사내알림</span><span>internal notice</span>      </div>
-
+      </div>      <div class="tags"><a href="/search/?q=%EC%82%AC%EB%82%B4%EA%B3%B5%EC%A7%80%EB%AC%B8">사내공지문</a><a href="/search/?q=%EC%82%AC%EB%82%B4%EA%B3%B5%EB%AC%B8">사내공문</a><a href="/search/?q=%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD">공지사항</a><a href="/search/?q=%EC%82%AC%EB%82%B4%EC%95%8C%EB%A6%BC">사내알림</a><a href="/search/?q=internal%20notice">internal notice</a>      </div>      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span><a href="/collection/office-admin/">사무실 총무 서식</a>      </div>
       
     </div>
-  </div>  <h2 class="sec">같은 분류의 다른 서식</h2>
+  </div>  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">    <article class="card">
+  <a class="thumb" href="/form/proposal-draft/" aria-label="기안서 미리보기">
+    <img src="/files/proposal-draft/preview-1.webp" alt="기안서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/proposal-draft/">기안서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/proposal-draft/proposal-draft.pdf" download="기안서.pdf" title="기안서 PDF 다운로드">PDF</a>
+      <a href="/files/proposal-draft/proposal-draft.docx" download="기안서.docx" title="기안서 Word 다운로드">Word</a>
+      <a href="/files/proposal-draft/proposal-draft.hwpx" download="기안서.hwpx" title="기안서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/cooperation-request/" aria-label="협조전 미리보기">
+    <img src="/files/cooperation-request/preview-1.webp" alt="협조전 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/cooperation-request/">협조전</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/cooperation-request/cooperation-request.pdf" download="협조전.pdf" title="협조전 PDF 다운로드">PDF</a>
+      <a href="/files/cooperation-request/cooperation-request.docx" download="협조전.docx" title="협조전 Word 다운로드">Word</a>
+      <a href="/files/cooperation-request/cooperation-request.hwpx" download="협조전.hwpx" title="협조전 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
   <a class="thumb" href="/form/official-letter/" aria-label="공문 미리보기">
     <img src="/files/official-letter/preview-1.webp" alt="공문 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
@@ -572,14 +621,36 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/proposal-draft/" aria-label="기안서 미리보기">
-    <img src="/files/proposal-draft/preview-1.webp" alt="기안서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/document-register/" aria-label="문서 수발대장 미리보기">
+    <img src="/files/document-register/preview-1.webp" alt="문서 수발대장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/proposal-draft/">기안서</a>
+    <a class="name" href="/form/document-register/">문서 수발대장</a>
     <div class="cat">기업 · 총무·행정</div>
-    <div class="dl">      <a href="/files/proposal-draft/proposal-draft.pdf" download="기안서.pdf" title="기안서 PDF 다운로드">PDF</a>
-      <a href="/files/proposal-draft/proposal-draft.docx" download="기안서.docx" title="기안서 Word 다운로드">Word</a>
-      <a href="/files/proposal-draft/proposal-draft.hwpx" download="기안서.hwpx" title="기안서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/document-register/document-register.pdf" download="문서 수발대장.pdf" title="문서 수발대장 PDF 다운로드">PDF</a>
+      <a href="/files/document-register/document-register.docx" download="문서 수발대장.docx" title="문서 수발대장 Word 다운로드">Word</a>
+      <a href="/files/document-register/document-register.hwpx" download="문서 수발대장.hwpx" title="문서 수발대장 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/meeting-minutes-simple/" aria-label="회의록 (간편형) 미리보기">
+    <img src="/files/meeting-minutes-simple/preview-1.webp" alt="회의록 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/meeting-minutes-simple/">회의록 (간편형)</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/meeting-minutes-simple/meeting-minutes-simple.pdf" download="회의록 (간편형).pdf" title="회의록 (간편형) PDF 다운로드">PDF</a>
+      <a href="/files/meeting-minutes-simple/meeting-minutes-simple.docx" download="회의록 (간편형).docx" title="회의록 (간편형) Word 다운로드">Word</a>
+      <a href="/files/meeting-minutes-simple/meeting-minutes-simple.hwpx" download="회의록 (간편형).hwpx" title="회의록 (간편형) 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/meeting-minutes/" aria-label="회의록 미리보기">
+    <img src="/files/meeting-minutes/preview-1.webp" alt="회의록 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/meeting-minutes/">회의록</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/meeting-minutes/meeting-minutes.pdf" download="회의록.pdf" title="회의록 PDF 다운로드">PDF</a>
+      <a href="/files/meeting-minutes/meeting-minutes.docx" download="회의록.docx" title="회의록 Word 다운로드">Word</a>
+      <a href="/files/meeting-minutes/meeting-minutes.hwpx" download="회의록.hwpx" title="회의록 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
@@ -594,25 +665,36 @@ footer.site li{margin:3px 0}
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/business-card-request/" aria-label="명함신청서 미리보기">
-    <img src="/files/business-card-request/preview-1.webp" alt="명함신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/event-plan/" aria-label="행사 기획서 미리보기">
+    <img src="/files/event-plan/preview-1.webp" alt="행사 기획서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
-    <a class="name" href="/form/business-card-request/">명함신청서</a>
+    <a class="name" href="/form/event-plan/">행사 기획서</a>
     <div class="cat">기업 · 총무·행정</div>
-    <div class="dl">      <a href="/files/business-card-request/business-card-request.pdf" download="명함신청서.pdf" title="명함신청서 PDF 다운로드">PDF</a>
-      <a href="/files/business-card-request/business-card-request.docx" download="명함신청서.docx" title="명함신청서 Word 다운로드">Word</a>
-      <a href="/files/business-card-request/business-card-request.hwpx" download="명함신청서.hwpx" title="명함신청서 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/event-plan/event-plan.pdf" download="행사 기획서.pdf" title="행사 기획서 PDF 다운로드">PDF</a>
+      <a href="/files/event-plan/event-plan.docx" download="행사 기획서.docx" title="행사 기획서 Word 다운로드">Word</a>
+      <a href="/files/event-plan/event-plan.hwpx" download="행사 기획서.hwpx" title="행사 기획서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>    <article class="card">
-  <a class="thumb" href="/form/document-register/" aria-label="문서 수발대장 미리보기">
-    <img src="/files/document-register/preview-1.webp" alt="문서 수발대장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <a class="thumb" href="/form/business-trip-report/" aria-label="출장 보고서 미리보기">
+    <img src="/files/business-trip-report/preview-1.webp" alt="출장 보고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
-    <a class="name" href="/form/document-register/">문서 수발대장</a>
+    <a class="name" href="/form/business-trip-report/">출장 보고서</a>
     <div class="cat">기업 · 총무·행정</div>
-    <div class="dl">      <a href="/files/document-register/document-register.pdf" download="문서 수발대장.pdf" title="문서 수발대장 PDF 다운로드">PDF</a>
-      <a href="/files/document-register/document-register.docx" download="문서 수발대장.docx" title="문서 수발대장 Word 다운로드">Word</a>
-      <a href="/files/document-register/document-register.hwpx" download="문서 수발대장.hwpx" title="문서 수발대장 한글 다운로드">한글</a>
+    <div class="dl">      <a href="/files/business-trip-report/business-trip-report.pdf" download="출장 보고서.pdf" title="출장 보고서 PDF 다운로드">PDF</a>
+      <a href="/files/business-trip-report/business-trip-report.docx" download="출장 보고서.docx" title="출장 보고서 Word 다운로드">Word</a>
+      <a href="/files/business-trip-report/business-trip-report.hwpx" download="출장 보고서.hwpx" title="출장 보고서 한글 다운로드">한글</a>
+    </div>
+  </div>
+</article>    <article class="card">
+  <a class="thumb" href="/form/asset-handover/" aria-label="자산 인수인계서 미리보기">
+    <img src="/files/asset-handover/preview-1.webp" alt="자산 인수인계서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
+  <div class="body">
+    <a class="name" href="/form/asset-handover/">자산 인수인계서</a>
+    <div class="cat">기업 · 총무·행정</div>
+    <div class="dl">      <a href="/files/asset-handover/asset-handover.pdf" download="자산 인수인계서.pdf" title="자산 인수인계서 PDF 다운로드">PDF</a>
+      <a href="/files/asset-handover/asset-handover.docx" download="자산 인수인계서.docx" title="자산 인수인계서 Word 다운로드">Word</a>
+      <a href="/files/asset-handover/asset-handover.hwpx" download="자산 인수인계서.hwpx" title="자산 인수인계서 한글 다운로드">한글</a>
     </div>
   </div>
 </article>  </div></div>

@@ -25,6 +25,8 @@ faq:
   - q: 세금계산서가 없으면 무엇을 적어야 하나요?
     a: 계약서 번호나 주문서 번호처럼 거래를 특정할 수 있는 근거를 대신 적으면 됩니다.
 
+related: [transaction-statement, tax-invoice, invoice-request, balance-confirmation]
+
 blocks:
   - type: doc_title
     text: 입금확인서

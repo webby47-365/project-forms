@@ -29,6 +29,8 @@ faq:
   - q: 면접관이 여러 명이면 평가표도 여러 장인가요?
     a: 면접관별로 한 장씩 작성한 뒤 종합 의견은 별도로 취합하는 방식이 일반적입니다.
 
+related: [job-application-form, reference-check-consent, labor-contract-standard]
+
 blocks:
   - type: doc_title
     text: 면접 평가표

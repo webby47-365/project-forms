@@ -26,6 +26,8 @@ faq:
   - q: 질병명도 적어야 하나요?
     a: 질병명이나 진단 내용은 적지 않고 기관 상담 과정에서 별도로 확인합니다.
 
+related: [long-term-care-application, caregiver-contract, welfare-facility-application, medical-expense-support]
+
 blocks:
   - type: doc_title
     text: 요양보호 서비스 신청서

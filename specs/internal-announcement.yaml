@@ -27,6 +27,8 @@ faq:
   - q: 공지 후 정정할 내용이 생기면 어떻게 하나요?
     a: 정정 공지를 별도로 올리고 원래 공지에도 정정 사실과 안내를 추가합니다.
 
+related: [proposal-draft, cooperation-request, official-letter]
+
 blocks:
   - type: doc_title
     text: 사내 공지문

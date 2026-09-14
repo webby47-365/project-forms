@@ -35,6 +35,8 @@ faq:
   - q: 세금 처리에도 쓸 수 있나요?
     a: 개인 가계 관리용이므로 세무 처리가 필요하면 별도로 전문가와 상담하십시오.
 
+related: [year-end-tax-checklist, monthly-schedule, checklist]
+
 blocks:
   - type: doc_title
     text: 가계부 (연간)

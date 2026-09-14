@@ -25,6 +25,8 @@ faq:
   - q: 비고란은 꼭 채워야 하나요?
     a: 필수는 아니며 진행 상황이나 주의사항이 있을 때만 간단히 메모하면 됩니다.
 
+related: [monthly-schedule, moving-checklist, event-plan]
+
 blocks:
   - type: doc_title
     text: 체크리스트

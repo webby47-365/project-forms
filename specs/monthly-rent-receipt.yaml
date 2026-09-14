@@ -28,6 +28,8 @@ faq:
   - q: 관리비도 꼭 적어야 하나요?
     a: 별도로 받는다면 항목을 나눠 적어야 합계와 영수 금액이 맞습니다.
 
+related: [housing-lease-contract, lease-termination-notice, deposit-return-notice]
+
 blocks:
   - type: doc_title
     text: 월세 영수증

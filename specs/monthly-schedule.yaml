@@ -28,6 +28,8 @@ faq:
   - q: 일정이 겹치면 어떻게 표시하나요?
     a: 주요 일정 표에 시간을 함께 적어 겹치지 않는지 확인하십시오.
 
+related: [daily-planner, checklist, household-budget]
+
 blocks:
   - type: doc_title
     text: 월간 일정표

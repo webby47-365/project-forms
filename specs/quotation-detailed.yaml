@@ -34,6 +34,8 @@ faq:
   - q: 유효기간은 꼭 적어야 하나요?
     a: 가격 변동으로 인한 분쟁을 막기 위해 유효기간을 명시하는 것이 안전합니다.
 
+related: [purchase-order, transaction-statement, tax-invoice, sales-contract]
+
 blocks:
   - type: doc_title
     text: 견적서

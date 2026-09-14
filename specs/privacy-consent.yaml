@@ -30,6 +30,8 @@ faq:
   - q: 보유기간이 지나면 어떻게 하나요?
     a: 목적 달성 후 별도 규정이 없다면 지체 없이 파기하는 것이 원칙입니다.
 
+related: [event-application, survey-consent, portrait-rights-consent, guardian-consent]
+
 blocks:
   - type: doc_title
     text: 개인정보 수집·이용 동의서

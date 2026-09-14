@@ -25,6 +25,8 @@ faq:
   - q: 감정적인 내용만 적어도 되나요?
     a: 감정적 호소만 나열하기보다 구체적인 사실을 근거로 적어야 설득력이 있습니다.
 
+related: [written-statement, settlement-agreement, fact-confirmation]
+
 blocks:
   - type: doc_title
     text: 탄원서

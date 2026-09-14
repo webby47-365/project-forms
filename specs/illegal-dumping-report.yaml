@@ -30,6 +30,8 @@ faq:
   - q: 신고포상금은 항상 받을 수 있나요?
     a: 아니요, 지급 여부와 기준은 지자체 조례에 따라 다르므로 관할 부서에 확인해야 합니다.
 
+related: [civil-petition, noise-complaint, road-repair-request]
+
 blocks:
   - type: doc_title
     text: 불법투기 신고서

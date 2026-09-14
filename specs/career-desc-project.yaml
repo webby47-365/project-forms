@@ -35,6 +35,8 @@ faq:
 created_by: agent
 status: published
 
+related: [resume-experienced, portfolio-cover, cover-letter-experienced]
+
 blocks:
   - type: doc_title
     text: 경력기술서

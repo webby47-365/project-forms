@@ -29,6 +29,8 @@ faq:
   - q: 추측이나 의견을 써도 되나요?
     a: 신뢰도가 떨어지므로 추측이나 의견은 빼고 사실관계만 기재하는 것이 좋습니다.
 
+related: [fact-confirmation, petition-letter, preparatory-brief]
+
 blocks:
   - type: doc_title
     text: 진술서

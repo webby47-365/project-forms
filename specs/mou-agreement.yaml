@@ -29,6 +29,8 @@ faq:
   - q: 협력 분야는 여러 개 적어도 되나요?
     a: 네, 협력할 분야가 여러 가지라면 항목을 나누어 구체적으로 적으면 됩니다.
 
+related: [nda, joint-venture-contract, service-contract]
+
 blocks:
   - type: doc_title
     text: 업무협약서

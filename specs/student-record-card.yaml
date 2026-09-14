@@ -29,6 +29,8 @@ faq:
   - q: 종합의견은 어떻게 써야 하나요?
     a: 추측이나 평가보다 실제 관찰한 사실 위주로 간결하게 적으십시오.
 
+related: [attendance-sheet, counseling-log, grade-report]
+
 blocks:
   - type: doc_title
     text: 학생 생활기록 카드

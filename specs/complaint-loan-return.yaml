@@ -37,6 +37,8 @@ faq:
   - q: 이 서식 그대로 제출해도 되나요?
     a: 참고용이므로 제출 전 법원 전자소송 사이트의 최신 양식과 관할을 확인하십시오.
 
+related: [certified-notice-loan, payment-order-application, loan-agreement]
+
 blocks:
   - type: doc_title
     text: 소장

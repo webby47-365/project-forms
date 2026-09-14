@@ -29,6 +29,8 @@ faq:
   - q: 발급까지 얼마나 걸리나요?
     a: 병원마다 다르므로 접수 시 담당 부서에 예상 소요 기간을 확인하는 것이 좋습니다.
 
+related: [power-of-attorney, medical-expense-support, privacy-consent-third]
+
 blocks:
   - type: doc_title
     text: 진료기록 사본 발급 신청서

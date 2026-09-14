@@ -29,6 +29,8 @@ faq:
   - q: 기준일자는 언제로 정하나요?
     a: 보통 결산일이나 감사 대상 시점으로 정하며, 양측이 같은 날짜를 써야 비교가 정확합니다.
 
+related: [account-ledger, transaction-statement, invoice-request]
+
 blocks:
   - type: doc_title
     text: 채권·채무 잔액확인서

@@ -28,6 +28,8 @@ faq:
   - q: 서류는 누가 보관하나요?
     a: 작성 후 채무자와 채권자가 각각 한 부씩 보관하는 것이 좋습니다.
 
+related: [loan-agreement, payment-pledge, certified-notice-loan, settlement-agreement]
+
 blocks:
   - type: doc_title
     text: 채무 변제계획서

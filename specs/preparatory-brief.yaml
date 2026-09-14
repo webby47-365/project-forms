@@ -29,6 +29,8 @@ faq:
   - q: 부본은 몇 부 내야 하나요?
     a: 상대방 수에 맞춰 부본을 준비해야 하므로, 정확한 부수는 법원이나 송달받은 문서 안내를 따르십시오.
 
+related: [answer-brief, written-statement, small-claims-complaint, civil-conciliation]
+
 blocks:
   - type: doc_title
     text: 준비서면

@@ -28,6 +28,8 @@ faq:
   - q: 계약서만으로 법적 효력이 충분한가요?
     a: 본 서식은 참고용이므로 개별 사안에 맞는 법적 적합성은 이용자가 직접 확인해야 합니다.
 
+related: [nda, vendor-registration, license-contract, sales-contract]
+
 blocks:
   - type: doc_title
     text: 대리점 계약서

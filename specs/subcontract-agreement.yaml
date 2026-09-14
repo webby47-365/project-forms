@@ -30,6 +30,8 @@ faq:
   - q: 대금은 언제까지 지급해야 하나요?
     a: 법령에서 정한 지급기일을 확인하고 계약서에도 구체적인 날짜를 명시해야 합니다.
 
+related: [purchase-order, delivery-confirmation, invoice-request, transaction-statement]
+
 blocks:
   - type: doc_title
     text: 하도급 계약서

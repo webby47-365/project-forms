@@ -35,6 +35,8 @@ faq:
   - q: 손익 추정은 몇 년치를 적어야 하나요?
     a: 통상 3개년치를 추정해 제시하면 사업의 성장 계획을 설득력 있게 보여줄 수 있습니다.
 
+related: [budget-plan, marketing-plan, sales-plan]
+
 blocks:
   - type: doc_title
     text: 사업계획서

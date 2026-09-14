@@ -109,16 +109,25 @@
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
       </div>
 
+      {#- 태그를 검색 결과로 연결한다. 태그마다 별도 페이지를 만들면 내용이 얇은 페이지가
+          수백 개 생기므로, 이미 있는 검색 화면을 착지점으로 쓴다. #}
       <div class="tags">
-        {%- for t in f.tags %}<span>{{ t }}</span>{% endfor %}
+        {%- for t in f.tags %}<a href="/search/?q={{ t|urlencode }}">{{ t }}</a>{% endfor %}
       </div>
+
+      {%- if my_collections %}
+      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span>
+        {%- for c in my_collections %}<a href="/collection/{{ c.key }}/">{{ c.name }}</a>{% endfor %}
+      </div>
+      {%- endif %}
 
       {{ slot(ads, "detail_body") }}
     </div>
   </div>
 
   {%- if related %}
-  <h2 class="sec">같은 분류의 다른 서식</h2>
+  <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">
     {%- for r in related %}
     {{ m.card(r, cat.name ~ ' · ' ~ sub.name, dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}

@@ -27,6 +27,8 @@ faq:
   - q: 평균임금은 어떻게 계산하나요?
     a: 퇴직 전 3개월간 받은 임금총액을 그 기간의 총일수로 나누어 계산합니다.
 
+related: [retirement-application, handover-report, withholding-request, career-certificate]
+
 blocks:
   - type: doc_title
     text: 퇴직금 정산서

@@ -36,6 +36,8 @@ faq:
   - q: 결과가 수치로 안 나오면 어떻게 쓰나요?
     a: 수치가 없다면 주변의 평가나 이후 달라진 상황을 구체적으로 적어 결과를 보여주면 됩니다.
 
+related: [career-desc-project, resume-basic, job-application-form]
+
 blocks:
   - type: doc_title
     text: 자기소개서

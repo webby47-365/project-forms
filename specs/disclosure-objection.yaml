@@ -30,6 +30,8 @@ faq:
   - q: 부분공개 결정에도 이의신청할 수 있나요?
     a: 가능합니다. 비공개된 부분에 대한 이의신청 이유를 구체적으로 적으면 됩니다.
 
+related: [info-disclosure-request, administrative-objection, civil-petition]
+
 blocks:
   - type: doc_title
     text: 정보공개 이의신청서
