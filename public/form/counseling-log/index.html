@@ -22,7 +22,9 @@
 <meta name="twitter:image" content="https://freeforms.kr/files/counseling-log/preview-1.webp">
 <link rel="alternate" type="application/rss+xml" title="무료서식 다운로드 최근 추가 서식" href="/rss.xml">
 <meta name="naver-site-verification" content="84f0aadaca88d57ca53e9c0eb1b5705bb0a29425">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-912YLRDN2B"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -69,6 +71,8 @@ body{
   font-family:"Malgun Gothic","맑은 고딕",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",
     "Noto Sans KR",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size:15px; line-height:1.65;
+  /* 한글은 어절 단위로 줄을 바꾸고, 공백 없는 긴 영문·URL만 칸 안에서 끊는다 */
+  word-break:keep-all; overflow-wrap:anywhere;
 }
 a{color:inherit; text-decoration:none}
 img{max-width:100%; display:block}
@@ -101,7 +105,13 @@ nav.main > ul > li:hover .submenu{display:block}
 }
 .search-box input:focus{outline:none; border-color:var(--hdr-accent);
   box-shadow:0 0 0 3px rgba(127,176,255,.3)}
-.search-box svg{position:absolute; left:11px; top:50%; transform:translateY(-50%); color:#8a93a5}
+/* 돋보기는 검색 제출 버튼이다. 누를 자리를 넓히려고 여백(8px)을 두고 그만큼 왼쪽으로 당겨
+   아이콘 위치는 예전(헤더 11px·히어로 15px)과 같게 둔다 */
+.s-go{position:absolute; top:50%; transform:translateY(-50%); margin:0; padding:8px; border:0;
+  background:none; color:#8a93a5; line-height:0; border-radius:999px; cursor:pointer}
+.s-go svg{display:block}
+.s-go:hover{color:var(--accent)}
+.search-box .s-go{left:3px}
 .nav-toggle{display:none; background:rgba(255,255,255,.1); color:#fff;
   border:1px solid rgba(255,255,255,.35); border-radius:8px;
   padding:7px 10px; font-size:15px; cursor:pointer}
@@ -137,7 +147,7 @@ h2.sec{font-size:19px; font-weight:700; letter-spacing:-.01em; margin:38px 0 14p
   box-shadow:0 2px 10px rgba(15,36,68,.14)}
 .hero .hsearch input:focus{outline:none; border-color:var(--hdr-bg);
   box-shadow:0 0 0 3px rgba(0,32,96,.18)}
-.hero .hsearch svg{position:absolute; left:15px; top:50%; transform:translateY(-50%); color:#8a93a5}
+.hero .hsearch .s-go{left:7px}
 .chips{display:flex; flex-wrap:wrap; gap:7px; justify-content:center; margin-top:16px}
 .chips a{background:#fff; border:1px solid rgba(255,255,255,.75); border-radius:999px;
   padding:5px 13px; font-size:13px; color:var(--hdr-bg); font-weight:600}
@@ -164,7 +174,9 @@ h2.sec{font-size:19px; font-weight:700; letter-spacing:-.01em; margin:38px 0 14p
 
 /* 카테고리 레이아웃 */
 .cols{display:grid; grid-template-columns:212px 1fr; gap:30px; align-items:start}
-aside.side{border:1px solid var(--line); border-radius:var(--radius); padding:8px; position:sticky; top:78px}
+/* 분류가 화면보다 길면 아래쪽이 잘려 보이지 않았다 — 화면 높이 안에서 따로 스크롤한다 (94px = top 78 + 아래 여백 16) */
+aside.side{border:1px solid var(--line); border-radius:var(--radius); padding:8px; position:sticky; top:78px;
+  max-height:calc(100vh - 94px); overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin}
 aside.side h3{font-size:12px; font-weight:700; color:var(--muted); margin:8px 10px 6px;
   text-transform:uppercase; letter-spacing:.05em}
 aside.side ul{list-style:none; margin:0 0 6px; padding:0}
@@ -503,7 +515,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 /* 1120px 아래(태블릿·좁은 창)에서는 메뉴 8개가 한 줄에 안 들어가 글자가 세로로 쪼개졌다("기/업").
    로고·검색은 첫 줄, 메뉴는 둘째 줄 전체 폭으로 내린다 (720px 이하는 모바일 규칙이 이어받는다) */
 @media (max-width:1120px){
-  .hdr{flex-wrap:wrap; height:auto; padding:8px 0 6px; row-gap:2px}
+  .hdr{flex-wrap:wrap; height:auto; padding:8px 20px 6px; row-gap:2px}
   nav.main{order:3; flex-basis:100%; margin-left:0}
   .search-box{margin-left:auto}
   nav.main > ul > li > a{white-space:nowrap; padding:6px 10px; font-size:14px}
@@ -514,7 +526,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   .grid.g4{grid-template-columns:repeat(3,1fr)}
   .detail{grid-template-columns:1fr; gap:24px}
   .cols{grid-template-columns:1fr; gap:18px}
-  aside.side{position:static}
+  aside.side{position:static; max-height:none; overflow:visible}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
   aside.side a{border:1px solid var(--line)}
   /* 사이드 광고는 사이드바가 사라지는 폭부터 감춘다
@@ -523,14 +535,26 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 }
 
 @media (max-width:720px){
-  .hdr{height:auto; padding:10px 0; flex-wrap:wrap; gap:10px}
+  /* .hdr 의 세로 여백이 .wrap 의 좌우 여백까지 0으로 덮어 로고·검색창이 화면 끝에 붙었다 */
+  .hdr{height:auto; padding:10px 16px; flex-wrap:wrap; gap:10px}
   .logo{font-size:17px}
-  nav.main{order:3; flex-basis:100%; display:none}
+  /* 메뉴는 헤더 아래를 덮는 패널로 띄우고 패널 안에서만 스크롤한다.
+     top 은 열 때 스크립트가 헤더 아래 끝으로 맞춘다 */
+  nav.main{order:3; flex-basis:100%; display:none; margin:0;
+    position:fixed; left:0; right:0; top:112px; bottom:0; z-index:49;
+    overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch;
+    background:#fff; padding:4px 0 28px; box-shadow:inset 0 1px 0 var(--line)}
   nav.main.open{display:block}
-  nav.main > ul{flex-wrap:wrap; gap:4px}
-  .submenu{position:static; display:block; box-shadow:none; border:0; padding:0 0 6px 10px; margin:0}
-  .submenu a{padding:5px 8px; font-size:13.5px; color:var(--muted)}
-  .nav-toggle{display:block}
+  html.nav-lock, html.nav-lock body{overflow:hidden}
+  /* 하위 메뉴는 화면 폭 전체를 쓰는 한 줄 목록 — 손가락으로 누르기 쉽게 줄 높이를 넉넉히 둔다 */
+  nav.main > ul{display:block}
+  nav.main > ul > li{border-bottom:1px solid var(--line-2)}
+  nav.main > ul > li > a, nav.main > ul > li:hover > a{padding:14px 16px 6px; font-size:15px;
+    font-weight:700; color:var(--navy); background:none; border-radius:0; white-space:normal}
+  .submenu{position:static; display:block; min-width:0; box-shadow:none; border:0; border-radius:0;
+    padding:0 0 8px; margin:0}
+  .submenu a{padding:11px 16px 11px 28px; font-size:14.5px; color:#374151; border-radius:0}
+  .nav-toggle{display:block; min-width:40px; text-align:center}
   .search-box{flex:1 1 auto; min-width:0}
   .grid{grid-template-columns:repeat(2,1fr); gap:13px}
   .grid.g4{grid-template-columns:repeat(2,1fr)}
@@ -547,7 +571,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 <header class="site">
   <div class="wrap hdr">
     <a class="logo" href="/">무료서식 <span>다운로드</span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">☰</button>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mainNav">☰</button>
     <nav class="main" id="mainNav">
       <ul>        <li><a href="/category/corp/hr/">기업</a>
           <ul class="submenu">            <li><a href="/category/corp/hr/">인사·노무</a></li>            <li><a href="/category/corp/admin/">총무·행정</a></li>            <li><a href="/category/corp/finance/">회계·세무</a></li>            <li><a href="/category/corp/sales/">영업·마케팅</a></li>            <li><a href="/category/corp/startup/">창업·법인</a></li>          </ul>
@@ -568,11 +592,11 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         </li>
       </ul>
     </nav>
-    <div class="search-box">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <input type="search" id="q" placeholder="서식명으로 검색" autocomplete="off" aria-label="서식 검색">
+    <form class="search-box" action="/search/" method="get" role="search">
+      <input type="search" id="q" name="q" placeholder="서식명으로 검색" autocomplete="off" enterkeyhint="search" aria-label="서식 검색">
+      <button type="submit" class="s-go" aria-label="검색"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
       <div id="sresults" role="listbox"></div>
-    </div>
+    </form>
   </div>
 </header><div class="ticker" aria-label="최근 추가된 서식">
   <span class="ticker-label">최근 업데이트</span>
@@ -857,8 +881,29 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <script>
 (function(){
-  var t=document.getElementById('navToggle'), n=document.getElementById('mainNav');
-  if(t&&n){ t.addEventListener('click', function(){ n.classList.toggle('open'); }); }
+  var t=document.getElementById('navToggle'), n=document.getElementById('mainNav'),
+      hdr=document.querySelector('header.site'), mq=window.matchMedia('(max-width:720px)');
+  if(t&&n&&hdr){
+    // 모바일 메뉴 패널: 열리면 ✕로 바꾸고 뒤 화면 스크롤을 잠근다
+    var setNav=function(open){
+      n.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      t.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+      t.textContent = open ? '✕' : '☰';
+      document.documentElement.classList.toggle('nav-lock', open);
+      n.style.top = open ? hdr.getBoundingClientRect().bottom + 'px' : '';
+    };
+    t.addEventListener('click', function(){ setNav(!n.classList.contains('open')); });
+    document.addEventListener('keydown', function(e){
+      if(e.key==='Escape' && n.classList.contains('open')){ setNav(false); t.focus(); }
+    });
+    // 열어 둔 채 화면을 넓히면(가로 전환 등) 패널과 스크롤 잠금을 풀어 PC 메뉴로 돌려놓는다
+    window.addEventListener('resize', function(){
+      if(!n.classList.contains('open')) return;
+      if(!mq.matches) setNav(false);
+      else n.style.top = hdr.getBoundingClientRect().bottom + 'px';
+    });
+  }
 
   var q=document.getElementById('q'), box=document.getElementById('sresults'), idx=null, timer=null;
   if(!q) return;
@@ -904,14 +949,15 @@ document.addEventListener('DOMContentLoaded', function(){
   document.addEventListener('click', function(e){
     if(!box.contains(e.target) && e.target!==q) box.style.display='none';
   });
-  // 엔터는 결과 페이지로 — 드롭다운에서 고르지 않고 끝까지 훑어보려는 사람의 동선이다
   q.addEventListener('keydown', function(e){
-    if(e.key==='Escape'){ box.style.display='none'; return; }
-    if(e.key==='Enter'){
-      var term=q.value.trim();
-      if(term) location.href='/search/?q='+encodeURIComponent(term);
-    }
+    if(e.key==='Escape') box.style.display='none';
   });
+  // 엔터·돋보기는 폼 제출로 결과 페이지(/search/?q=)에 간다 — 빈 검색어만 막는다
+  if(q.form){
+    q.form.addEventListener('submit', function(e){
+      if(!q.value.trim()){ e.preventDefault(); q.focus(); }
+    });
+  }
 })();
 </script>
 </body>

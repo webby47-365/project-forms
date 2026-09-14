@@ -1396,6 +1396,15 @@ def build() -> int:
           '<path d="M26 34h14M26 40h14M26 28h8" stroke="#24384f" stroke-width="2.6" '
           'stroke-linecap="round"/></svg>\n')
 
+    # 6-1) 파비콘 비트맵 — SVG 아이콘을 읽지 못하는 브라우저·검색 결과용(ico 32px)과
+    #      iOS 홈 화면 추가용(apple-touch-icon 180px). assets/ 가 정본이다.
+    for name in ("favicon.ico", "apple-touch-icon.png"):
+        src = ROOT / "assets" / name
+        if src.exists():
+            shutil.copyfile(src, PUBLIC / name)
+        else:
+            print(f"[사이트] 알림: assets/{name} 가 없어 넣지 않았습니다.")
+
     # 7) 404
     write(PUBLIC / "404.html", env.get_template("category.html").render(
         page_title=f"페이지를 찾을 수 없습니다 — {SITE_NAME}",

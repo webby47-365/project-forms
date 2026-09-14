@@ -6,10 +6,10 @@
   <div class="wrap">
     <h1>필요한 서식을 무료로 받으세요.</h1>
     <p>회원가입도, 로그인도 없습니다. 양식을 미리 확인하고 PDF · Word · 한글 중 원하는 형식으로 내려받으세요.</p>
-    <div class="hsearch">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <input type="search" id="q2" placeholder="예: 이력서, 사직서, 위임장" autocomplete="off" aria-label="서식 검색">
-    </div>
+    <form class="hsearch" action="/search/" method="get" role="search">
+      <input type="search" id="q2" name="q" placeholder="예: 이력서, 사직서, 위임장" autocomplete="off" enterkeyhint="search" aria-label="서식 검색">
+      <button type="submit" class="s-go" aria-label="검색"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+    </form>
     <div class="chips">
       {%- for f in featured[:6] %}
       <a href="/form/{{ f.id }}/">{{ f.title.split(' (')[0] }}</a>
@@ -87,11 +87,12 @@
   if(!a) return;
   // 히어로 입력은 헤더 검색창과 값을 공유해 자동완성 목록을 그대로 쓴다
   if(b){ a.addEventListener('input',function(){ b.value=a.value; b.dispatchEvent(new Event('input')); }); }
-  a.addEventListener('keydown',function(e){
-    if(e.key!=='Enter') return;
-    var term=a.value.trim();
-    if(term) location.href='/search/?q='+encodeURIComponent(term);
-  });
+  // 엔터·돋보기는 폼 제출로 결과 페이지에 간다 — 빈 검색어만 막는다
+  if(a.form){
+    a.form.addEventListener('submit',function(e){
+      if(!a.value.trim()){ e.preventDefault(); a.focus(); }
+    });
+  }
 })();
 </script>
 {% endblock %}
