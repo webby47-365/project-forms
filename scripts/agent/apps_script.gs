@@ -61,7 +61,7 @@ function doPost(e) {
     // 같은 요청이 최근에 들어왔으면 한 건으로 합친다
     if (isDuplicate(sheet, title, now)) {
       sheet.appendRow([now, title, purpose, '중복', '', '']);
-      return json({ ok: true, immediate: true });
+      return json({ ok: true, duplicate: true });
     }
 
     var immediate = withinLimit(sheet, now);
