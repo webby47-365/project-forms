@@ -1,0 +1,358 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block head %}
+{# 도장 글꼴은 이 페이지에서만 내려받는다 (다른 페이지 속도에 영향 없음).
+   구기=전서체풍, 나눔명조=명조, 검은고딕=고딕, 나눔펜=글꼴 서명. 없으면 시스템 글꼴로 대체. #}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Myeongjo:wght@800&family=Black+Han+Sans&family=Nanum+Pen+Script&display=swap">
+<script src="/assets/stamp.js" defer></script>
+<style>
+/* ── 도장·서명 생성기 화면 ── */
+.namebar{display:flex; gap:22px; align-items:flex-end; border:1px solid var(--line); border-radius:var(--radius);
+  padding:16px 20px 18px; background:var(--bg-soft); margin-top:6px}
+.namebar .f{flex:1 1 auto; min-width:0}
+.namebar .f.small{flex:0 0 auto}
+.namebar label{display:block; font-size:13px; font-weight:700; color:var(--navy); margin:0 0 6px}
+.namebar input[type=text]{width:100%; padding:11px 13px; font-size:18px; font-weight:600; font-family:inherit;
+  border:1px solid var(--line-img); border-radius:9px; background:#fff; color:var(--ink)}
+.namebar input[type=text]:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(47,111,208,.14)}
+.chipset{display:flex; gap:7px; align-items:center; min-height:44px}
+.chipset button{padding:7px 13px; border-radius:999px; font-size:13px; border:1px solid var(--line); background:#fff;
+  color:#374151; font-weight:600; cursor:pointer; font-family:inherit}
+.chipset button.on{background:var(--navy); border-color:var(--navy); color:#fff}
+.swatches{display:flex; gap:9px; align-items:center; min-height:44px}
+.swatches button{width:28px; height:28px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1px var(--line-img);
+  cursor:pointer; padding:0}
+.swatches button.on{box-shadow:0 0 0 2px var(--navy)}
+.gallery-lead{margin:16px 0 12px; font-size:14px; color:#475467}
+.gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+.preset{position:relative; border:1px solid var(--line-img); border-radius:var(--radius); padding:14px; background:#fff;
+  text-align:center; cursor:pointer; transition:border-color .15s, box-shadow .15s}
+.preset:hover{border-color:#8fa6c2; box-shadow:var(--shadow)}
+.preset.on{border-color:var(--navy); box-shadow:0 0 0 2px var(--navy)}
+.preset .sel{display:none; position:absolute; top:10px; left:10px; background:var(--navy); color:#fff; font-size:11px;
+  font-weight:700; padding:3px 8px; border-radius:999px; z-index:1}
+.preset.on .sel{display:block}
+.pv{display:flex; align-items:center; justify-content:center; height:180px; border-radius:8px; border:1px solid var(--line-2);
+  background-color:#fff; background-image:linear-gradient(45deg,#eef1f5 25%,transparent 25%),linear-gradient(-45deg,#eef1f5 25%,transparent 25%),
+  linear-gradient(45deg,transparent 75%,#eef1f5 75%),linear-gradient(-45deg,transparent 75%,#eef1f5 75%);
+  background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0}
+.pv canvas{max-width:150px; max-height:150px; width:auto; height:auto}
+.preset .pt{margin:11px 0 10px; font-size:14px; font-weight:700; color:var(--navy)}
+.preset .pt small{display:block; font-size:12px; font-weight:500; color:var(--muted); margin-top:2px}
+.preset .pb{display:block; width:100%; padding:9px 0; border-radius:8px; border:1px solid var(--line); font-size:13.5px;
+  font-weight:700; color:#374151; background:#fff; cursor:pointer; font-family:inherit}
+.preset.on .pb{background:var(--navy); border-color:var(--navy); color:#fff}
+.preset .pb:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+
+/* 선택한 도장 다듬기 */
+.tune{display:grid; grid-template-columns:1fr 360px; gap:22px; align-items:start; margin-top:14px}
+.tune .stage{border:1px solid var(--line); border-radius:var(--radius); padding:20px; background:#fff; text-align:center}
+.tune .pv{height:320px}
+.tune .pv canvas{max-width:280px; max-height:280px}
+.tune .cap{margin:10px 0 12px; font-size:13px; color:var(--muted)}
+.dlbtns.two{grid-template-columns:1fr 1fr; max-width:420px; margin:0 auto}
+.dlbtns button{display:block; width:100%; text-align:center; padding:12px 8px; border-radius:8px; background:#fff;
+  border:1px solid var(--line); font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; color:var(--ink)}
+.dlbtns button:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.dlbtns button.pri{background:var(--navy); border-color:var(--navy); color:#fff}
+.dlbtns button .fmt{display:block; font-size:11px; font-weight:600; color:var(--muted); margin-top:2px}
+.dlbtns button.pri .fmt, .dlbtns button:hover .fmt{color:#c7d5e8}
+.panel{border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px 18px; background:#fff}
+.panel label{display:flex; justify-content:space-between; font-size:13px; font-weight:700; color:var(--navy); margin:14px 0 6px}
+.panel label:first-child{margin-top:0}
+.panel .val{font-weight:600; color:var(--muted)}
+.panel input[type=range]{width:100%; accent-color:var(--navy)}
+.panel .hint{margin:12px 0 0; font-size:12.5px; color:var(--muted); line-height:1.6}
+
+/* 손글씨 서명 */
+.signwrap{border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px 20px; background:#fff; margin-top:14px}
+.signwrap .tabs{display:flex; border-bottom:1px solid var(--line); margin:-4px 0 14px}
+.signwrap .tabs button{padding:9px 14px; font-size:14.5px; font-weight:700; color:var(--muted); background:none; border:0;
+  border-bottom:2px solid transparent; margin-bottom:-1px; cursor:pointer; font-family:inherit}
+.signwrap .tabs button.on{color:var(--navy); border-bottom-color:var(--navy)}
+.signpad{position:relative; height:220px; border:1px dashed #9db0c8; border-radius:10px; background:#fff; overflow:hidden}
+.signpad canvas{width:100%; height:100%; display:block; cursor:crosshair}
+.signpad .guide{position:absolute; left:8%; right:8%; bottom:26%; border-top:1px solid #dbe3ee; pointer-events:none}
+.signpad .ph{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#9aa4b2;
+  font-size:14px; pointer-events:none}
+.signpad.has .ph{display:none}
+.signtools{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:12px}
+.signtools .sp{flex:1 1 auto}
+.signtools button{padding:9px 14px; border-radius:8px; border:1px solid var(--line); background:#fff; font-weight:700;
+  font-size:13.5px; cursor:pointer; font-family:inherit; color:#374151}
+.signtools button.pri{background:var(--navy); border-color:var(--navy); color:#fff}
+.signtools button:hover{border-color:var(--navy)}
+.signtype{display:none; gap:14px; align-items:flex-end}
+.signtype.on{display:flex}
+.signtype .f{flex:1}
+.signtype input[type=text]{width:100%; padding:11px 13px; font-size:17px; font-family:inherit; border:1px solid var(--line-img);
+  border-radius:9px}
+.signtype .pv{height:150px; flex:0 0 300px}
+.signtype .pv canvas{max-width:280px; max-height:120px}
+.signdraw.off{display:none}
+
+@media (max-width:860px){
+  .gallery{grid-template-columns:repeat(2,1fr); gap:11px}
+  .namebar{flex-wrap:wrap; gap:12px}
+  .namebar .f{flex:1 1 100%}
+  .namebar .f.small{flex:1 1 auto}
+  .pv{height:150px}
+  .pv canvas{max-width:120px; max-height:120px}
+  .tune{grid-template-columns:1fr}
+  .signtype{flex-wrap:wrap}
+  .signtype .pv{flex:1 1 100%}
+}
+</style>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="crumb"><a href="/">홈</a> › <a href="/tools/">직장인 도구</a> › 디지털 도장·서명 만들기</div>
+
+  <h1 class="page">디지털 도장·서명 만들기</h1>
+  <p class="lead">이름만 입력하면 계약서·위임장·각서의 (인) 자리에 넣을 도장 이미지를 만듭니다.
+    회원가입 없이 바로 저장할 수 있고, 입력한 이름은 서버로 전송되지 않습니다.</p>
+
+  <div class="namebar">
+    <div class="f"><label for="st-name">이름</label>
+      <input type="text" id="st-name" maxlength="8" placeholder="예: 홍길동" autocomplete="off"></div>
+    <div class="f small"><label>도장 글자</label>
+      <div class="chipset" id="st-seal"><button type="button" class="on" data-v="1">이름+인</button><button type="button" data-v="0">이름만</button></div></div>
+    <div class="f small"><label>색상</label>
+      <div class="swatches" id="st-color">
+        <button type="button" class="on" data-v="red" style="background:#c8102e" aria-label="빨강"></button>
+        <button type="button" data-v="blue" style="background:#1d4ed8" aria-label="파랑"></button>
+        <button type="button" data-v="black" style="background:#1f2937" aria-label="검정"></button>
+        <button type="button" data-v="brown" style="background:#b45309" aria-label="갈색"></button>
+      </div></div>
+  </div>
+
+  <p class="gallery-lead">마음에 드는 모양을 고르고 <b>PNG 저장</b>을 누르세요. 여섯 가지 모두 투명 배경입니다.</p>
+  <div class="gallery" id="gallery">
+    {%- for p in presets %}
+    <div class="preset{% if loop.first %} on{% endif %}" data-i="{{ loop.index0 }}" data-shape="{{ p.shape }}" data-font="{{ p.font }}">
+      <span class="sel">선택됨</span>
+      <div class="pv"><canvas width="600" height="600" aria-label="{{ p.name }} 미리보기"></canvas></div>
+      <div class="pt">{{ p.name }}<small>{{ p.note }}</small></div>
+      <button type="button" class="pb">PNG 저장</button>
+    </div>
+    {%- endfor %}
+  </div>
+
+  <h2 class="sec" style="font-size:17px">선택한 도장 다듬기</h2>
+  <div class="tune">
+    <div class="stage">
+      <div class="pv"><canvas id="st-big" width="600" height="600" aria-label="선택한 도장 큰 미리보기"></canvas></div>
+      <p class="cap" id="st-cap">투명 배경 PNG · 600 × 600 px</p>
+      <div class="dlbtns two">
+        <button type="button" class="pri" id="st-png">PNG 저장<span class="fmt">투명 배경</span></button>
+        <button type="button" id="st-jpg">JPG 저장<span class="fmt">흰 배경</span></button>
+      </div>
+    </div>
+    <div class="panel">
+      <label>모양</label>
+      <div class="chipset" id="st-shape"><button type="button" data-v="circle">원형</button><button type="button" data-v="square">사각</button><button type="button" data-v="oval">타원</button></div>
+      <label>글꼴</label>
+      <div class="chipset" id="st-font"><button type="button" data-v="seal">전서체풍</button><button type="button" data-v="myeongjo">명조</button><button type="button" data-v="gothic">고딕</button></div>
+      <label>테두리</label>
+      <div class="chipset" id="st-border"><button type="button" data-v="thin">가늘게</button><button type="button" class="on" data-v="normal">보통</button><button type="button" data-v="bold">굵게</button></div>
+      <label for="st-size">저장 크기 <span class="val" id="st-size-val">600 px</span></label>
+      <input type="range" id="st-size" min="200" max="1200" step="100" value="600">
+      <p class="hint">Word·한글에 넣을 때는 600px면 충분합니다(인쇄 시 약 1.5cm). 큰 문서 표지용이면 1000px 이상으로 저장하세요.</p>
+    </div>
+  </div>
+
+  <h2 class="sec" style="font-size:17px" id="sign">손글씨 서명 만들기</h2>
+  <div class="signwrap">
+    <div class="tabs">
+      <button type="button" class="on" data-tab="draw">직접 그리기</button>
+      <button type="button" data-tab="type">글꼴로 쓰기</button>
+    </div>
+    <div class="signdraw" id="signdraw">
+      <div class="signpad" id="signpad">
+        <canvas id="sg-canvas" aria-label="서명 그리기 영역"></canvas>
+        <div class="guide"></div>
+        <div class="ph">마우스나 손가락으로 여기에 서명하세요</div>
+      </div>
+      <div class="signtools">
+        <div class="swatches" id="sg-color">
+          <button type="button" class="on" data-v="#1b2a44" style="background:#1b2a44" aria-label="남색"></button>
+          <button type="button" data-v="#1f2937" style="background:#1f2937" aria-label="검정"></button>
+          <button type="button" data-v="#1d4ed8" style="background:#1d4ed8" aria-label="파랑"></button>
+        </div>
+        <div class="chipset" id="sg-width"><button type="button" data-v="2.2">가는 펜</button><button type="button" class="on" data-v="3.2">보통</button><button type="button" data-v="4.6">굵은 펜</button></div>
+        <span class="sp"></span>
+        <button type="button" id="sg-undo">되돌리기</button>
+        <button type="button" id="sg-clear">지우기</button>
+        <button type="button" class="pri" id="sg-save">PNG 저장</button>
+      </div>
+    </div>
+    <div class="signtype" id="signtype">
+      <div class="f"><label for="sg-text" style="display:block; font-size:13px; font-weight:700; color:var(--navy); margin:0 0 6px">서명 문구</label>
+        <input type="text" id="sg-text" maxlength="20" placeholder="예: 홍길동" autocomplete="off">
+        <div class="signtools" style="margin-top:12px">
+          <div class="swatches" id="sg2-color">
+            <button type="button" class="on" data-v="#1b2a44" style="background:#1b2a44" aria-label="남색"></button>
+            <button type="button" data-v="#1f2937" style="background:#1f2937" aria-label="검정"></button>
+            <button type="button" data-v="#1d4ed8" style="background:#1d4ed8" aria-label="파랑"></button>
+          </div>
+          <span class="sp"></span>
+          <button type="button" class="pri" id="sg2-save">PNG 저장</button>
+        </div>
+      </div>
+      <div class="pv"><canvas id="sg2-canvas" width="900" height="360" aria-label="글꼴 서명 미리보기"></canvas></div>
+    </div>
+  </div>
+
+  <div class="notice-box" style="margin-top:18px">입력한 이름과 그린 서명은 서버로 전송되지 않고 <b>브라우저 안에서만</b> 이미지로 만들어집니다.
+    이 이미지는 인감이나 공인전자서명이 아니며 법적 효력을 보장하지 않습니다. 상대방과 합의된 문서에 참고용으로 사용하세요.</div>
+
+  {{ slot(ads, "detail_body") }}
+
+  <h2 class="sec" style="font-size:17px">서식에 넣는 방법</h2>
+  <ol class="howto">
+    <li><b>PNG 저장</b>을 눌러 투명 배경 이미지를 내려받습니다. 파일명은 <b>도장_이름.png</b>입니다.</li>
+    <li>Word·한글에서 서식을 열고 <b>삽입 → 그림</b>으로 내려받은 이미지를 넣습니다.</li>
+    <li>Word는 그림을 <b>‘텍스트 앞에’</b>, 한글은 <b>‘글자처럼 취급’ 해제</b>로 바꾼 뒤 (인) 자리에 끌어다 놓습니다.</li>
+    <li>크기는 <b>1.2~1.5cm</b>가 자연스럽습니다. PDF로 저장하면 상대방 화면에서도 같은 위치에 보입니다.</li>
+  </ol>
+
+  <h2 class="sec" style="font-size:17px">자주 묻는 질문</h2>
+  <div class="faq">
+    {%- for item in faq %}
+    <details{% if loop.first %} open{% endif %}>
+      <summary>{{ item.q }}</summary>
+      <p class="a">{{ item.a }}</p>
+    </details>
+    {%- endfor %}
+  </div>
+
+  {%- if related %}
+  <h2 class="sec">도장이 들어가는 서식</h2>
+  <div class="grid">
+    {%- for r in related %}
+    {{ m.card(r, cat_label[r.id], dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+</div>
+<script type="application/ld+json">
+{{ jsonld | safe }}
+</script>
+<script type="application/ld+json">
+{{ faq_jsonld | safe }}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  if(!window.FFStamp) return;
+  var $=function(id){ return document.getElementById(id); };
+  var qs=new URLSearchParams(location.search);
+  var state={ name: (qs.get('name')||'').slice(0,8), seal:true, color:'red', shape:'circle', font:'seal', border:'normal', size:600 };
+  var presets=[
+    {%- for p in presets %}{shape:'{{ p.shape }}', font:'{{ p.font }}'}{% if not loop.last %},{% endif %}{% endfor %}
+  ];
+  var cards=Array.prototype.slice.call(document.querySelectorAll('#gallery .preset'));
+  var cur=0;
+  var nameEl=$('st-name'); nameEl.value=state.name;
+  var initShape=qs.get('shape');
+  if(initShape){ var i=presets.findIndex(function(p){ return p.shape===initShape; }); if(i>=0) cur=i; }
+
+  function chip(id, key, cb){
+    var box=$(id); if(!box) return;
+    box.addEventListener('click', function(e){
+      var b=e.target.closest('button'); if(!b) return;
+      Array.prototype.forEach.call(box.querySelectorAll('button'), function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+      if(key) state[key]=b.getAttribute('data-v');
+      if(cb) cb(b.getAttribute('data-v'));
+    });
+  }
+  function setChip(id, v){
+    var box=$(id); if(!box) return;
+    Array.prototype.forEach.call(box.querySelectorAll('button'), function(x){ x.classList.toggle('on', x.getAttribute('data-v')===String(v)); });
+  }
+  function nameOr(){ return state.name || '이름'; }
+  function drawAll(){
+    cards.forEach(function(c, i){
+      FFStamp.draw(c.querySelector('canvas'), {name:nameOr(), shape:presets[i].shape, font:presets[i].font, color:state.color, seal:state.seal, border:'normal', size:600});
+    });
+    FFStamp.draw($('st-big'), {name:nameOr(), shape:state.shape, font:state.font, color:state.color, seal:state.seal, border:state.border, size:state.size});
+    var big=$('st-big');
+    $('st-cap').textContent='투명 배경 PNG · '+big.width+' × '+big.height+' px';
+  }
+  function select(i){
+    cur=i; cards.forEach(function(c, k){ c.classList.toggle('on', k===i); });
+    state.shape=presets[i].shape; state.font=presets[i].font;
+    setChip('st-shape', state.shape); setChip('st-font', state.font);
+    drawAll();
+  }
+  cards.forEach(function(c, i){
+    c.addEventListener('click', function(e){ if(e.target.closest('.pb')) return; select(i); });
+    c.querySelector('.pb').addEventListener('click', function(){
+      if(!state.name){ nameEl.focus(); nameEl.placeholder='이름을 먼저 입력하세요'; return; }
+      var out=document.createElement('canvas');
+      FFStamp.draw(out, {name:state.name, shape:presets[i].shape, font:presets[i].font, color:state.color, seal:state.seal, border:'normal', size:600});
+      FFStamp.download(out, '도장_'+state.name, 'png');
+    });
+  });
+  nameEl.addEventListener('input', function(){ state.name=nameEl.value.trim().slice(0,8); drawAll(); });
+  chip('st-seal', null, function(v){ state.seal = v==='1'; drawAll(); });
+  chip('st-color', 'color', drawAll);
+  chip('st-shape', 'shape', drawAll);
+  chip('st-font', 'font', drawAll);
+  chip('st-border', 'border', drawAll);
+  $('st-size').addEventListener('input', function(){ state.size=parseInt(this.value,10); $('st-size-val').textContent=state.size+' px'; drawAll(); });
+  function saveBig(kind){
+    if(!state.name){ nameEl.focus(); nameEl.placeholder='이름을 먼저 입력하세요'; window.scrollTo({top:0, behavior:'smooth'}); return; }
+    FFStamp.download($('st-big'), '도장_'+state.name, kind);
+  }
+  $('st-png').addEventListener('click', function(){ saveBig('png'); });
+  $('st-jpg').addEventListener('click', function(){ saveBig('jpg'); });
+
+  select(cur);
+  FFStamp.ready(drawAll);   // 웹폰트가 도착하면 한 번 더 그린다
+
+  /* ── 서명 ── */
+  var pad=FFSign.attach($('sg-canvas'), {color:'#1b2a44', width:3.2});
+  $('sg-canvas').addEventListener('ffsign', function(e){ $('signpad').classList.toggle('has', !e.detail.empty); });
+  chip('sg-color', null, function(v){ pad.setColor(v); });
+  chip('sg-width', null, function(v){ pad.setWidth(parseFloat(v)); });
+  $('sg-undo').addEventListener('click', function(){ pad.undo(); });
+  $('sg-clear').addEventListener('click', function(){ pad.clear(); });
+  $('sg-save').addEventListener('click', function(){
+    if(pad.isEmpty()){ $('signpad').classList.add('shake'); return; }
+    FFStamp.download(pad.exportCanvas(), '서명'+(state.name?'_'+state.name:''), 'png');
+  });
+  // 글꼴 서명
+  var sg2={color:'#1b2a44'};
+  function drawTyped(){
+    var t=$('sg-text').value.trim() || nameOr();
+    var cv=$('sg2-canvas'), ctx=cv.getContext('2d');
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ctx.fillStyle=sg2.color; ctx.textAlign='center'; ctx.textBaseline='middle';
+    var fs=Math.min(200, (cv.width-80)/Math.max(1, Array.from(t).length)*1.15);
+    ctx.font='400 '+Math.round(fs)+'px '+FFStamp.FONT.pen.css;
+    ctx.fillText(t, cv.width/2, cv.height/2+fs*0.06);
+  }
+  $('sg-text').addEventListener('input', drawTyped);
+  chip('sg2-color', null, function(v){ sg2.color=v; drawTyped(); });
+  $('sg2-save').addEventListener('click', function(){
+    var t=$('sg-text').value.trim(); if(!t){ $('sg-text').focus(); return; }
+    FFStamp.download($('sg2-canvas'), '서명_'+t, 'png');
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.signwrap .tabs button'), function(b){
+    b.addEventListener('click', function(){
+      Array.prototype.forEach.call(document.querySelectorAll('.signwrap .tabs button'), function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+      var typed = b.getAttribute('data-tab')==='type';
+      $('signtype').classList.toggle('on', typed);
+      $('signdraw').classList.toggle('off', typed);
+      if(typed){ if(!$('sg-text').value && state.name) $('sg-text').value=state.name; drawTyped(); }
+    });
+  });
+  FFStamp.ready(drawTyped);
+});
+</script>
+{% endblock %}

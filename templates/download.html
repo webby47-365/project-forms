@@ -2,7 +2,10 @@
 {% import "_card.html" as m %}
 {% from "_ad.html" import slot %}
 {% block content %}
-<div class="wrap" style="max-width:760px">
+{# 다운로드 준비 페이지. 파일이 내려가는 몇 초를 빈 화면으로 두지 않고
+   '작성 순서'와 다른 형식·연관 서식을 함께 보여 주어 그대로 되돌아가지 않게 한다.
+   검색 결과에 나올 페이지가 아니므로 색인에서 뺀다(page_robots). #}
+<div class="wrap" style="max-width:820px">
   <div class="crumb">
     <a href="/">홈</a> › <a href="/form/{{ f.id }}/">{{ f.title }}</a> › 다운로드
   </div>
@@ -11,25 +14,61 @@
     <h1 class="page">다운로드가 시작됩니다</h1>
     <p class="lead"><strong>{{ f.title }}</strong> · {{ fmt_label }} ({{ size_kb }} KB)</p>
 
-    <div class="dlnow">
+    <div class="dlnow" data-form-title="{{ f.title }}">
       <p id="dlmsg">잠시만 기다려 주세요. 파일이 자동으로 내려갑니다.</p>
       <a id="dlink" class="dlbtn" href="{{ file_url }}" download="{{ file_name }}">바로 내려받기</a>
       <p class="dlhint">자동으로 시작되지 않으면 위 버튼을 누르세요.</p>
     </div>
+
+    {%- if other_formats %}
+    <div class="dlalso">
+      <span>다른 형식도 필요하신가요?</span>
+      {%- for o in other_formats %}
+      <a href="{{ o.url }}">{{ o.label }}</a>
+      {%- endfor %}
+    </div>
+    {%- endif %}
   </div>
 
   {{ slot(ads, "download_page") }}
+
+  {%- if f.howto %}
+  {# 기다리는 동안 읽을 거리. 내려받은 뒤 바로 쓰게 되는 순서라 실제로 도움이 된다. #}
+  <h2 class="sec">받으셨으면, 이렇게 작성하세요</h2>
+  <ol class="howto">
+    {%- for step in f.howto %}<li>{{ step }}</li>{% endfor %}
+  </ol>
+  {%- endif %}
+
+  {%- if f.faq %}
+  <h2 class="sec">자주 묻는 질문</h2>
+  <div class="faq">
+    {%- for item in f.faq %}
+    <details>
+      <summary>{{ item.q }}</summary>
+      <p>{{ item.a }}</p>
+    </details>
+    {%- endfor %}
+  </div>
+  {%- endif %}
 
   <div class="dlback">
     <a href="/form/{{ f.id }}/">← {{ f.title }} 상세로 돌아가기</a>
     <a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ cat.name }} · {{ sub.name }} 서식 더 보기</a>
   </div>
 
+  {%- if my_collections %}
+  <div class="incol" style="justify-content:center">
+    <span>이 서식이 들어 있는 모음</span>
+    {%- for c in my_collections %}<a href="/collection/{{ c.key }}/">{{ c.name }}</a>{% endfor %}
+  </div>
+  {%- endif %}
+
   {%- if related %}
   <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid g4">
     {%- for r in related %}
-    {{ m.card(r, cat.name ~ ' · ' ~ sub.name, dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
+    {{ m.card(r, cat_label[r.id], dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
     {%- endfor %}
   </div>
   {%- endif %}
@@ -40,9 +79,12 @@
   var delay = {{ delay_ms }};
   var fileName = {{ file_name | tojson }};
   setTimeout(function(){
+    // 자동 다운로드. 이 클릭이 집계되므로, 이후 '바로 내려받기'는 중복 집계에서 뺀다.
     var a = document.createElement('a');
     a.href = url; a.download = fileName;
-    document.body.appendChild(a); a.click(); a.remove();
+    document.querySelector('.dlnow').appendChild(a); a.click(); a.remove();
+    var link = document.getElementById('dlink');
+    if (link) link.setAttribute('data-no-track', '1');
     var msg = document.getElementById('dlmsg');
     if (msg) msg.textContent = '다운로드를 시작했습니다. 브라우저의 다운로드 목록을 확인하세요.';
   }, delay);

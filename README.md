@@ -19,7 +19,8 @@ C:\Project_Forms\
 ├─ public\                  ★ 배포 대상 — GitHub Pages가 이 폴더를 서비스한다
 │   ├─ files\{id}\          {id}.pdf / .docx / .hwpx / preview-1.webp
 │   └─ (빌드 생성) index.html, category\, form\, sitemap.xml, search-index.json
-├─ templates\               사이트 HTML 템플릿 (Jinja2)
+├─ assets\                  ★ 정본 — 도구 스크립트(stamp.js)·공유 카드 이미지. 빌드가 public/assets/ 로 복사
+├─ templates\               사이트 HTML 템플릿 (Jinja2). tools.html·tool_stamp.html = 직장인 도구 화면
 ├─ scripts\
 │   ├─ SPEC_GUIDE.md        ★ 서식 명세 작성 규칙서 (서식 추가 시 필독)
 │   ├─ form_spec.py         명세 로더·검증
@@ -114,7 +115,11 @@ python -m pip install python-docx python-hwpx jinja2 pyyaml pillow
 | `category_side` | 카테고리 좌측 사이드바 하단 (PC 전용, 모바일에서 자동 숨김) |
 | `category_bottom` | 카테고리 카드 그리드 아래 |
 | `detail_body` | 상세 화면 태그 아래 |
-| `download_page` | 다운로드 중간 페이지 |
+| `download_page` | 다운로드 준비 페이지 |
+| `search_bottom` | 검색 결과 목록 아래 |
+| `series_bottom` | 계열 비교표 아래 |
+| `collection_bottom` | 주제 모음 목록 아래 |
+| `request_bottom` | 서식 요청 화면 아래 |
 | `footer` | 푸터 위 |
 
 **정책상 주의.** 다운로드 버튼 바로 옆·아래에는 광고를 두지 않았다(오클릭 유도 금지).
@@ -122,6 +127,42 @@ python -m pip install python-docx python-hwpx jinja2 pyyaml pillow
 강제한다. `download_interstitial`을 켜면 파일은 중간 페이지에서 **자동으로** 내려가며
 광고를 보거나 닫을 필요가 없다 — 광고를 닫아야 받을 수 있는 구조는 정책 위반이다.
 광고 자리는 최소 높이를 예약해 두어 광고가 뜰 때 화면이 밀리지 않는다(CLS 방지).
+
+### 승인 전에 광고 배치를 눈으로 확인하려면
+
+```bash
+FORMS_PREVIEW_ADS=1 python scripts/build_site.py    # (PowerShell) $env:FORMS_PREVIEW_ADS=1
+```
+
+광고 자리를 실제 크기의 회색 상자로 그리고 다운로드 준비 페이지도 함께 만든다.
+**애드센스 코드는 나가지 않지만 배포하면 안 된다** — 확인이 끝나면 환경변수 없이
+다시 빌드해 배포본을 되돌린다(`deploy_forms.ps1`은 항상 일반 빌드를 한다).
+
+### 다운로드 준비 페이지
+
+`download_interstitial: true`이면 다운로드 링크가 `/download/<id>/<형식>/`을 거친다.
+파일은 2초 뒤 자동으로 내려가고, 기다리는 동안 **작성 순서·자주 묻는 질문·다른 형식·
+함께 찾는 서식**을 함께 보여 준다. 방문당 페이지뷰가 1 늘고 광고 노출 자리가 하나 는다.
+
+- 검색 결과에 나올 성격이 아니므로 `noindex, follow`이고 사이트맵에서도 뺀다.
+- 다운로드 집계는 자동 다운로드 시점에 한 번만 잡는다. 그 뒤 '바로 내려받기'를 눌러도
+  `data-no-track`으로 중복 집계되지 않는다.
+- **광고가 꺼져 있으면 이 페이지는 아예 만들어지지 않는다.** 광고 없이 켜면 방문자에게
+  기다림만 생기고 얻는 것이 없기 때문이다.
+
+## 직장인 도구 (/tools/)
+
+서식과 함께 쓰는 브라우저 전용 도구. 서버가 없으므로 계산·그리기는 전부 `assets/stamp.js`처럼
+방문자 브라우저에서 돌고, 입력값은 어디에도 전송되지 않는다(처리방침 수정 불필요).
+
+| 경로 | 내용 | 정의 위치 |
+|---|---|---|
+| `/tools/` | 허브. 도구 카드 + '준비 중' 목록 | `build_site.py` `TOOLS`·`TOOLS_SOON`, `templates/tools.html` |
+| `/tools/stamp/` | 디지털 도장(원형·사각·타원 × 전서체풍·명조·고딕) + 손글씨·글꼴 서명 → 투명 PNG | `templates/tool_stamp.html`, `assets/stamp.js` |
+| 서식 상세 위젯 | 서명·날인 칸이 있는 서식(카탈로그 `seal: true`)에만 "이 서식에 찍을 도장 만들기" | `templates/form.html`, `form_spec.seal_of` |
+
+새 도구를 추가하려면 ① `TOOLS`에 한 줄 ② `templates/tool_<key>.html` ③ `build()`에 렌더링 한 블록.
+상단 메뉴·허브·사이트맵·llms.txt는 `TOOLS` 목록을 그대로 따라간다. 도구를 고친 날은 `TOOLS_UPDATED`에 적는다.
 
 ## 설계 원칙
 

@@ -17,6 +17,10 @@
 - [서식 요청](https://freeforms.kr/request/): 필요한 서식을 요청하면 무료로 제작
 - [개인정보처리방침](https://freeforms.kr/privacy/)
 
+## 직장인 도구 (브라우저 안에서만 동작, 입력값 서버 전송 없음)
+
+- [디지털 도장·서명 만들기](https://freeforms.kr/tools/stamp/): 이름만 넣으면 계약서·위임장의 (인) 자리에 넣을 도장 이미지를 만듭니다. 손글씨 서명도 그려서 PNG로 저장합니다.
+
 ## 분야별 서식
 
 - [기업 · 인사·노무](https://freeforms.kr/category/corp/hr/): 30종

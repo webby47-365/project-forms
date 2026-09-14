@@ -36,6 +36,9 @@ gtag('config', 'G-912YLRDN2B', { anonymize_ip: true });
 document.addEventListener('click', function (ev) {
   var a = ev.target && ev.target.closest ? ev.target.closest('a[href*="/files/"]') : null;
   if (!a) return;
+  // 다운로드 준비 페이지에서 자동 다운로드가 이미 집계된 뒤라면 '바로 내려받기'는 세지 않는다.
+  // (같은 파일 한 번을 두 번 세면 다운로드 수가 부풀려진다)
+  if (a.getAttribute('data-no-track') === '1') return;
   var m = a.getAttribute('href').match(/\/files\/([^\/]+)\/[^\/]+\.(pdf|docx|hwpx)(?:$|[?#])/);
   if (!m) return;
   var card = a.closest('[data-form-title]');
@@ -293,8 +296,10 @@ aside.side .n{font-size:12px; color:var(--muted)}
 .series-box h3{margin:0 0 3px; font-size:14.5px; font-weight:700; color:var(--navy)}
 .series-box p{margin:0 0 11px; font-size:12.5px; color:var(--muted)}
 .series-list{display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none}
-.series-list a{display:inline-block; padding:7px 13px; border-radius:999px; font-size:13px;
-  border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
+/* 현재 서식(span.cur)도 링크와 같은 알약 모양을 유지하고 바탕색·글자색만 바뀐다
+   (예전에는 a 에만 모양이 있어 선택된 칩이 네모난 글자 덩어리로 보였다) */
+.series-list a, .series-list .cur{display:inline-block; padding:7px 13px; border-radius:999px;
+  font-size:13px; border:1px solid var(--line); background:var(--bg-soft); color:#374151; font-weight:600}
 .series-list a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
 .series-list .cur{background:var(--navy); border-color:var(--navy); color:#fff; cursor:default}
 
@@ -320,6 +325,12 @@ footer.site li{margin:3px 0}
 .dlback{display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin:24px 0 0; font-size:14px}
 .dlback a{color:var(--accent)}
 .dlback a:hover{text-decoration:underline}
+/* 같은 서식의 다른 형식 — PDF를 받았는데 한글본도 필요한 경우가 잦다 */
+.dlalso{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px;
+  margin:16px 0 0; font-size:13.5px; color:var(--muted)}
+.dlalso a{border:1px solid var(--line-2); border-radius:7px; padding:5px 13px;
+  font-size:13px; font-weight:600; color:#475467; background:#fff}
+.dlalso a:hover{background:var(--bg-soft); border-color:#b9cae0; color:var(--navy)}
 
 /* 광고 슬롯 — 높이를 미리 예약해 광고 로드 시 레이아웃이 밀리지 않게 한다 */
 .adbox{position:relative; margin:26px 0; padding:0; background:var(--bg-soft);
@@ -329,6 +340,11 @@ footer.site li{margin:3px 0}
 .adbox ins{display:block; width:100%}
 .ad-wide{min-height:110px}
 .ad-side{min-height:600px; margin:12px 0 4px}
+/* 확인용 미리보기 상자 (FORMS_PREVIEW_ADS=1 빌드에서만 나온다) */
+.adprev-in{display:flex; align-items:center; justify-content:center; min-height:inherit;
+  height:100%; padding:34px 12px; font-size:12.5px; color:#9aa4b2; letter-spacing:.02em;
+  background:repeating-linear-gradient(135deg,#f1f4f9 0 10px,#e9eef6 10px 20px)}
+.ad-side .adprev-in{padding:0; min-height:600px}
 /* 다운로드 버튼과 광고 사이에는 넉넉한 간격을 두어 오클릭을 막는다 */
 .dlbox + .adbox, .dlbtns + .adbox{margin-top:38px}
 
@@ -448,6 +464,42 @@ footer.site li{margin:3px 0}
   padding:24px 20px; margin:6px 0 26px; font-size:14.5px; color:#475467; line-height:1.8}
 .snone b{color:var(--navy)}
 
+/* 상단 메뉴 '직장인 도구' — 서식이 아닌 도구 묶음이라 NEW 표시로 구분한다 */
+nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:var(--hdr-bg);
+  background:var(--hdr-accent); border-radius:3px; padding:1px 4px; margin-left:5px; vertical-align:2px}
+
+/* 서식 상세 — '이 서식에 찍을 도장 만들기' 위젯. 이름만 넣으면 캔버스로 바로 그린다.
+   입력값은 서버로 보내지 않는다 (assets/stamp.js) */
+.stampbox{margin:16px 0 0; border:1px solid #b9cae0; border-radius:var(--radius);
+  padding:15px 16px 14px; background:#f3f7fc}
+.stampbox .sb-head{display:flex; align-items:center; gap:8px}
+.stampbox h3{margin:0; font-size:14.5px; font-weight:700; color:var(--navy)}
+.stampbox .new{font-size:10px; font-weight:800; color:#fff; background:var(--accent);
+  border-radius:3px; padding:2px 5px; line-height:1}
+.stampbox p{margin:4px 0 11px; font-size:12.5px; color:var(--muted)}
+.sb-row{display:flex; gap:10px; align-items:center}
+.sb-row input[type=text]{flex:1 1 auto; min-width:0; padding:11px 13px; font-size:16px; font-weight:600;
+  font-family:inherit; border:1px solid var(--line-img); border-radius:9px; background:#fff; color:var(--ink)}
+.sb-row input[type=text]:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(47,111,208,.14)}
+.sb-pv{flex:0 0 auto; width:62px; height:62px; display:flex; align-items:center; justify-content:center;
+  background:#fff; border:1px solid var(--line-img); border-radius:8px}
+.sb-pv canvas{max-width:52px; max-height:52px; width:auto; height:auto; display:block}
+.sb-btn{flex:0 0 auto; padding:12px 16px; border-radius:8px; background:var(--navy); color:#fff;
+  font-weight:700; font-size:14px; border:0; cursor:pointer; font-family:inherit}
+.sb-btn:hover{background:var(--navy-700)}
+.sb-opts{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-top:10px}
+.sb-shapes{display:inline-flex; gap:5px}
+.sb-shapes button{padding:4px 11px; font-size:12px; border-radius:999px; border:1px solid var(--line);
+  background:var(--bg-soft); color:#475467; font-weight:600; cursor:pointer; font-family:inherit}
+.sb-shapes button.on{border-color:var(--navy); background:#eaf1fa; color:var(--navy);
+  box-shadow:inset 0 0 0 1px var(--navy)}
+.sb-opts .hub-link{margin:0}
+@media (max-width:560px){
+  .sb-row{flex-wrap:wrap}
+  .sb-row input[type=text]{flex-basis:100%}
+  .sb-btn{flex:1 1 auto; text-align:center}
+}
+
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
@@ -502,7 +554,10 @@ footer.site li{margin:3px 0}
           <ul class="submenu">            <li><a href="/category/edu/school/">학교·학원</a></li>          </ul>
         </li>        <li><a href="/category/welfare/consent/">의료·복지</a>
           <ul class="submenu">            <li><a href="/category/welfare/consent/">동의·신청</a></li>          </ul>
-        </li>      </ul>
+        </li>        <li><a href="/tools/">직장인 도구<span class="nav-new">NEW</span></a>
+          <ul class="submenu">            <li><a href="/tools/stamp/">디지털 도장·서명 만들기</a></li>          </ul>
+        </li>
+      </ul>
     </nav>
     <div class="search-box">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
@@ -573,8 +628,23 @@ footer.site li{margin:3px 0}
           <a href="/files/monthly-rent-receipt/monthly-rent-receipt.docx" download="월세 영수증.docx">Word<span class="fmt">37 KB</span></a>
           <a href="/files/monthly-rent-receipt/monthly-rent-receipt.hwpx" download="월세 영수증.hwpx">한글<span class="fmt">9 KB</span></a>
         </div>
+      </div>      <div class="stampbox" id="stampbox">
+        <div class="sb-head"><h3>이 서식에 찍을 도장 만들기</h3><span class="new">NEW</span></div>
+        <p>이름을 입력하면 (인) 자리에 넣을 도장 이미지를 바로 만듭니다. 입력한 이름은 서버로 보내지 않습니다.</p>
+        <div class="sb-row">
+          <input type="text" id="sb-name" maxlength="8" placeholder="이름 (예: 홍길동)" autocomplete="off" aria-label="도장에 새길 이름">
+          <div class="sb-pv"><canvas id="sb-canvas" width="300" height="300" aria-label="도장 미리보기"></canvas></div>
+          <button type="button" class="sb-btn" id="sb-save">PNG 저장</button>
+        </div>
+        <div class="sb-opts">
+          <span class="sb-shapes" role="group" aria-label="도장 모양">
+            <button type="button" class="on" data-shape="circle">원형</button>
+            <button type="button" data-shape="square">사각</button>
+            <button type="button" data-shape="oval">타원</button>
+          </span>
+          <a class="hub-link" id="sb-more" href="/tools/stamp/">글꼴·색상 바꾸기 →</a>
+        </div>
       </div>
-
       <dl>
         <dt>분류</dt><dd><a href="/category/estate/lease/">부동산 · 임대·매매</a></dd>
         <dt>페이지</dt><dd>1페이지 (A4)</dd>
@@ -716,6 +786,34 @@ footer.site li{margin:3px 0}
 {"@context": "https://schema.org", "@type": "DigitalDocument", "@id": "https://freeforms.kr/form/monthly-rent-receipt/#doc", "name": "월세 영수증", "headline": "월세 영수증 양식 무료 다운로드", "description": "해당 월의 차임과 관리비 납부 내역을 정리하고 임대인이 수령을 확인하는 반 페이지 영수증입니다.", "inLanguage": "ko", "isAccessibleForFree": true, "isFamilyFriendly": true, "genre": "부동산 · 임대·매매", "keywords": "월세영수증, 차임영수증, 임대료영수증, 월세수령확인서, 관리비영수증", "about": {"@type": "Thing", "name": "부동산 임대·매매 서식"}, "encodingFormat": ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/hwp+zip"], "associatedMedia": [{"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/monthly-rent-receipt/monthly-rent-receipt.pdf", "encodingFormat": "application/pdf", "contentSize": "38KB", "name": "월세 영수증 (PDF)"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/monthly-rent-receipt/monthly-rent-receipt.docx", "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "contentSize": "37KB", "name": "월세 영수증 (Word (DOCX))"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/monthly-rent-receipt/monthly-rent-receipt.hwpx", "encodingFormat": "application/hwp+zip", "contentSize": "9KB", "name": "월세 영수증 (한글 (HWPX))"}], "thumbnailUrl": "https://freeforms.kr/files/monthly-rent-receipt/preview-1.webp", "url": "https://freeforms.kr/form/monthly-rent-receipt/", "mainEntityOfPage": "https://freeforms.kr/form/monthly-rent-receipt/", "datePublished": "2026-09-14", "dateModified": "2026-09-14", "isPartOf": {"@type": "WebSite", "@id": "https://freeforms.kr/#website", "name": "무료서식 다운로드"}, "publisher": {"@type": "Organization", "@id": "https://freeforms.kr/#org", "name": "무료서식 다운로드"}}
 </script><script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "소득공제 자료로 쓸 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 임차인이 납부 증거로 보관하면 월세 소득공제 신청 시 참고 자료로 쓸 수 있습니다."}}, {"@type": "Question", "name": "관리비도 꼭 적어야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "별도로 받는다면 항목을 나눠 적어야 합계와 영수 금액이 맞습니다."}}]}
+</script><script src="/assets/stamp.js" defer></script>
+<script>
+// stamp.js 가 defer 로 오므로 DOMContentLoaded 뒤에 시작한다 (defer 스크립트는 그 전에 실행된다)
+document.addEventListener('DOMContentLoaded', function(){
+  // 도장 위젯. 글꼴은 도구 페이지와 달리 웹폰트를 내려받지 않고 시스템 글꼴로 그린다
+  // (상세 페이지 속도 우선). 같은 이름을 들고 도구 페이지로 넘어가면 웹폰트 도장을 볼 수 있다.
+  var name=document.getElementById('sb-name'), cv=document.getElementById('sb-canvas'),
+      save=document.getElementById('sb-save'), more=document.getElementById('sb-more'),
+      shapes=document.querySelectorAll('.sb-shapes button');
+  if(!name||!cv||!window.FFStamp) return;
+  var shape='circle';
+  function opt(){ return {name:name.value.trim()||'이름', shape:shape, font:'myeongjo', color:'red', seal:true, size:300}; }
+  function draw(){ FFStamp.draw(cv, opt()); }
+  function link(){ more.href='/tools/stamp/?name='+encodeURIComponent(name.value.trim())+'&shape='+shape; }
+  name.addEventListener('input', function(){ draw(); link(); });
+  shapes.forEach(function(b){ b.addEventListener('click', function(){
+    shapes.forEach(function(x){ x.classList.remove('on'); }); b.classList.add('on');
+    shape=b.getAttribute('data-shape'); draw(); link();
+  }); });
+  save.addEventListener('click', function(){
+    var n=name.value.trim();
+    if(!n){ name.focus(); name.placeholder='이름을 먼저 입력하세요'; return; }
+    var out=document.createElement('canvas');
+    FFStamp.draw(out, Object.assign(opt(), {size:600}));
+    FFStamp.download(out, '도장_'+n, 'png');
+  });
+  draw(); link();
+});
 </script></main>
 
 <div class="wrap"></div>
@@ -727,6 +825,7 @@ footer.site li{margin:3px 0}
         <strong>무료서식 다운로드</strong>
         <p style="margin:8px 0 0">회원가입 없이 업무·법률·공공·생활 서식을<br>PDF · Word · 한글 형식으로 무료 다운로드.</p>
         <p style="margin:10px 0 0"><a href="/request/"><strong>찾는 서식이 없나요? 요청하기 →</strong></a></p>
+        <p style="margin:6px 0 0"><a href="/tools/stamp/"><strong>디지털 도장·서명 만들기</strong></a> · <a href="/tools/">직장인 도구</a></p>
         <p style="margin:6px 0 0"><a href="/about/">사이트 소개</a> · <a href="/rss.xml">RSS 구독</a></p>
       </div>
       <div style="flex:1 1 420px">

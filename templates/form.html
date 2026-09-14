@@ -55,6 +55,28 @@
         </div>
       </div>
 
+      {%- if f.seal %}
+      {#- 서명·날인 칸이 있는 서식에만 붙는다(카탈로그 seal 플래그, form_spec.seal_of).
+          이름은 캔버스에서만 처리되고 서버로 가지 않는다. 글꼴·색상 조정은 /tools/stamp/ 로. #}
+      <div class="stampbox" id="stampbox">
+        <div class="sb-head"><h3>이 서식에 찍을 도장 만들기</h3><span class="new">NEW</span></div>
+        <p>이름을 입력하면 (인) 자리에 넣을 도장 이미지를 바로 만듭니다. 입력한 이름은 서버로 보내지 않습니다.</p>
+        <div class="sb-row">
+          <input type="text" id="sb-name" maxlength="8" placeholder="이름 (예: 홍길동)" autocomplete="off" aria-label="도장에 새길 이름">
+          <div class="sb-pv"><canvas id="sb-canvas" width="300" height="300" aria-label="도장 미리보기"></canvas></div>
+          <button type="button" class="sb-btn" id="sb-save">PNG 저장</button>
+        </div>
+        <div class="sb-opts">
+          <span class="sb-shapes" role="group" aria-label="도장 모양">
+            <button type="button" class="on" data-shape="circle">원형</button>
+            <button type="button" data-shape="square">사각</button>
+            <button type="button" data-shape="oval">타원</button>
+          </span>
+          <a class="hub-link" id="sb-more" href="/tools/stamp/">글꼴·색상 바꾸기 →</a>
+        </div>
+      </div>
+      {%- endif %}
+
       <dl>
         <dt>분류</dt><dd><a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ cat.name }} · {{ sub.name }}</a></dd>
         <dt>페이지</dt><dd>{{ f.pages }}페이지 (A4)</dd>
@@ -146,6 +168,37 @@
 {%- if faq_jsonld %}
 <script type="application/ld+json">
 {{ faq_jsonld | safe }}
+</script>
+{%- endif %}
+{%- if f.seal %}
+<script src="/assets/stamp.js" defer></script>
+<script>
+// stamp.js 가 defer 로 오므로 DOMContentLoaded 뒤에 시작한다 (defer 스크립트는 그 전에 실행된다)
+document.addEventListener('DOMContentLoaded', function(){
+  // 도장 위젯. 글꼴은 도구 페이지와 달리 웹폰트를 내려받지 않고 시스템 글꼴로 그린다
+  // (상세 페이지 속도 우선). 같은 이름을 들고 도구 페이지로 넘어가면 웹폰트 도장을 볼 수 있다.
+  var name=document.getElementById('sb-name'), cv=document.getElementById('sb-canvas'),
+      save=document.getElementById('sb-save'), more=document.getElementById('sb-more'),
+      shapes=document.querySelectorAll('.sb-shapes button');
+  if(!name||!cv||!window.FFStamp) return;
+  var shape='circle';
+  function opt(){ return {name:name.value.trim()||'이름', shape:shape, font:'myeongjo', color:'red', seal:true, size:300}; }
+  function draw(){ FFStamp.draw(cv, opt()); }
+  function link(){ more.href='/tools/stamp/?name='+encodeURIComponent(name.value.trim())+'&shape='+shape; }
+  name.addEventListener('input', function(){ draw(); link(); });
+  shapes.forEach(function(b){ b.addEventListener('click', function(){
+    shapes.forEach(function(x){ x.classList.remove('on'); }); b.classList.add('on');
+    shape=b.getAttribute('data-shape'); draw(); link();
+  }); });
+  save.addEventListener('click', function(){
+    var n=name.value.trim();
+    if(!n){ name.focus(); name.placeholder='이름을 먼저 입력하세요'; return; }
+    var out=document.createElement('canvas');
+    FFStamp.draw(out, Object.assign(opt(), {size:600}));
+    FFStamp.download(out, '도장_'+n, 'png');
+  });
+  draw(); link();
+});
 </script>
 {%- endif %}
 {% endblock %}

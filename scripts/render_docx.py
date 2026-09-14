@@ -202,6 +202,32 @@ def _sample_cell(blk: dict[str, Any], r: int, c: int) -> str:
     return str(row[c] or "")
 
 
+PHOTO_PAD_H_MM = 2.0   # 사진 위아래로 남길 여유 (셀 안여백 + 선 두께)
+PHOTO_PAD_W_MM = 3.0   # 사진 좌우로 남길 여유
+
+
+def _fit_photo(w_mm: float, h_mm: float, blk: dict[str, Any], pr: int, pc: int,
+               widths_mm: list[float], n_rows: int, n_cols: int) -> tuple[float, float]:
+    """사진 크기를 사진 칸(병합 범위) 안에 들어가도록 비율을 유지하며 줄인다.
+
+    Returns:
+        (폭 mm, 높이 mm). 칸에 여유가 있으면 명세 값을 그대로 돌려준다.
+    """
+    span_rows, span_cols = 1, 1
+    for merge in blk.get("merges", []):
+        r1, c1, r2, c2 = merge
+        if r1 == pr and c1 == pc and 0 <= r2 < n_rows and 0 <= c2 < n_cols:
+            span_rows, span_cols = r2 - r1 + 1, c2 - c1 + 1
+            break
+    row_h = float(blk.get("row_height_mm", 7.5)) * _SCALE
+    avail_h = span_rows * row_h - PHOTO_PAD_H_MM
+    avail_w = sum(widths_mm[pc:pc + span_cols]) - PHOTO_PAD_W_MM
+    ratio = min(1.0, avail_h / h_mm if h_mm > 0 else 1.0, avail_w / w_mm if w_mm > 0 else 1.0)
+    if ratio < 1.0:
+        return round(w_mm * ratio, 1), round(h_mm * ratio, 1)
+    return w_mm, h_mm
+
+
 def _insert_photo(cell: Any, width_mm: float, height_mm: float) -> bool:
     """셀에 증명사진 실루엣을 넣는다. 이미지 파일이 없으면 False."""
     if not PHOTO_SAMPLE.exists():
@@ -322,7 +348,13 @@ def _render_block(doc: Any, blk: dict[str, Any]) -> None:
             pr, pc = int(photo_cell[0]), int(photo_cell[1])
             if 0 <= pr < n_rows and 0 <= pc < n_cols:
                 w_mm, h_mm = blk.get("photo_mm", PHOTO_DEFAULT_MM)
-                _insert_photo(table.cell(pr, pc), float(w_mm), float(h_mm))
+                # 사진이 칸보다 크면 LibreOffice가 셀 밖으로 밀어내 미리보기에서 잘려 보인다
+                # (이력서 경력용: 4행×7.5mm=30mm 칸에 32mm 사진). 병합 행 높이·열 폭 안에
+                # 들어가도록 비율을 유지한 채 줄인다. 1페이지 자동 맞춤 배율(_SCALE)로
+                # 행이 낮아진 경우까지 함께 반영된다.
+                w_mm, h_mm = _fit_photo(
+                    float(w_mm), float(h_mm), blk, pr, pc, widths, n_rows, n_cols)
+                _insert_photo(table.cell(pr, pc), w_mm, h_mm)
         _para(doc, "", size=2, space_after=blk.get("space_after", 2))
 
     elif btype == "table":

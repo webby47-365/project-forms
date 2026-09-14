@@ -86,6 +86,15 @@ class FormSpec:
         return outline_of(self.blocks)
 
     @property
+    def seal(self) -> bool:
+        """서명·날인 칸이 있는 서식인지 여부.
+
+        True면 상세 화면에 '이 서식에 찍을 도장 만들기' 위젯이 붙는다(/tools/stamp/ 연결).
+        sign_line 블록이 있거나, 표·문단 어디든 '(인)'·'서명' 글자가 들어 있으면 참이다.
+        """
+        return seal_of(self.blocks)
+
+    @property
     def has_sample(self) -> bool:
         """미리보기용 '작성 예시' 데이터가 하나라도 들어 있는지 여부.
 
@@ -109,6 +118,30 @@ _OUTLINE_MAX_ITEMS_TOTAL = 48
 _OUTLINE_ITEM_MAX_CHARS = 24
 # 표의 일련번호 칸처럼 항목으로서 의미가 없는 머리글은 뺀다.
 _OUTLINE_SKIP = {"no", "번호", "연번", "순번", "구분", "비고", "계", "합계", "-", "※"}
+
+
+_SEAL_WORDS = ("(인)", "(서명", "서명 또는", "날인", "서명:", "서명 :", "(印)", "(직인)", "직인", "인감")
+
+
+def seal_of(blocks: list[dict[str, Any]]) -> bool:
+    """blocks 안에 서명·날인 자리가 있는지 찾는다 (FormSpec.seal 의 구현)."""
+
+    def walk(node: Any) -> bool:
+        if isinstance(node, str):
+            return any(w in node for w in _SEAL_WORDS)
+        if isinstance(node, dict):
+            return any(walk(v) for k, v in node.items()
+                       if not str(k).startswith("sample_"))
+        if isinstance(node, list):
+            return any(walk(v) for v in node)
+        return False
+
+    for blk in blocks:
+        if blk.get("type") == "sign_line":
+            return True
+        if walk(blk):
+            return True
+    return False
 
 
 def outline_of(blocks: list[dict[str, Any]]) -> list[dict[str, Any]]:

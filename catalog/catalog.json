@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T15:32:34+09:00",
+  "generated_at": "2026-09-14T17:30:15+09:00",
   "count": 239,
   "forms": [
     {
@@ -103,7 +103,8 @@
         "course-registration",
         "tuition-refund-request",
         "counseling-log"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "access-pass-request",
@@ -220,7 +221,8 @@
         "visitor-log",
         "business-card-request",
         "personnel-order"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "account-ledger",
@@ -316,7 +318,8 @@
         "balance-confirmation",
         "invoice-request",
         "payment-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "administrative-objection",
@@ -426,7 +429,8 @@
         "info-disclosure-request",
         "parking-fine-objection",
         "civil-petition"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "annual-leave-plan",
@@ -541,7 +545,8 @@
         "leave-request",
         "overtime-application",
         "employee-roster"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "answer-brief",
@@ -640,7 +645,8 @@
         "preparatory-brief",
         "written-statement",
         "civil-conciliation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "articles-of-incorporation",
@@ -733,7 +739,8 @@
         "director-acceptance",
         "shareholder-meeting-minutes",
         "business-reg-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "asset-handover",
@@ -838,7 +845,8 @@
         "handover-report",
         "resignation-letter",
         "asset-ledger"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "asset-ledger",
@@ -929,7 +937,8 @@
         "supply-purchase-request",
         "asset-handover",
         "depreciation-schedule"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "attendance-sheet",
@@ -1008,7 +1017,8 @@
         "student-record-card",
         "grade-report",
         "counseling-log"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "balance-confirmation",
@@ -1101,7 +1111,8 @@
         "account-ledger",
         "transaction-statement",
         "invoice-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "blood-transfusion-consent",
@@ -1212,7 +1223,8 @@
         "surgery-consent",
         "medical-treatment-consent",
         "guardian-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "board-minutes",
@@ -1315,7 +1327,8 @@
         "shareholder-meeting-minutes",
         "director-acceptance",
         "articles-of-incorporation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "budget-execution",
@@ -1425,7 +1438,8 @@
         "budget-plan",
         "expense-approval",
         "expense-report"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "budget-plan",
@@ -1537,7 +1551,8 @@
         "budget-execution",
         "expense-approval",
         "business-plan-standard"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "business-card-request",
@@ -1664,7 +1679,8 @@
         "access-pass-request",
         "supply-purchase-request",
         "personnel-order"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "business-plan-simple",
@@ -1777,7 +1793,8 @@
         "startup-checklist",
         "business-reg-checklist",
         "budget-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "business-plan-standard",
@@ -1910,7 +1927,8 @@
         "budget-plan",
         "marketing-plan",
         "sales-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "business-reg-checklist",
@@ -1998,7 +2016,8 @@
         "startup-checklist",
         "business-plan-simple",
         "articles-of-incorporation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "business-trip-report",
@@ -2113,7 +2132,8 @@
         "business-trip-request",
         "expense-report",
         "expense-approval"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "business-trip-request",
@@ -2235,7 +2255,8 @@
         "expense-report",
         "expense-approval",
         "vehicle-use-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "campaign-result",
@@ -2347,7 +2368,8 @@
         "marketing-plan",
         "sales-plan",
         "budget-execution"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "car-accident-settlement",
@@ -2456,7 +2478,8 @@
         "settlement-agreement",
         "payment-pledge",
         "fact-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "care-service-application",
@@ -2578,7 +2601,8 @@
         "caregiver-contract",
         "welfare-facility-application",
         "medical-expense-support"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "career-certificate",
@@ -2674,7 +2698,8 @@
         "employment-certificate",
         "career-description",
         "resume-experienced"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "career-desc-job",
@@ -2782,7 +2807,8 @@
         "resume-experienced",
         "cover-letter-experienced",
         "job-application-form"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "career-desc-project",
@@ -2880,7 +2906,8 @@
         "resume-experienced",
         "portfolio-cover",
         "cover-letter-experienced"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "career-description",
@@ -3000,7 +3027,8 @@
         "cover-letter-experienced",
         "career-certificate",
         "portfolio-cover"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "caregiver-contract",
@@ -3120,7 +3148,8 @@
         "care-service-application",
         "long-term-care-application",
         "medical-expense-support"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "certified-notice",
@@ -3213,7 +3242,8 @@
         "payment-order-application",
         "small-claims-complaint",
         "settlement-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "certified-notice-deposit",
@@ -3315,7 +3345,8 @@
         "deposit-return-notice",
         "lease-termination-notice",
         "payment-order-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "certified-notice-loan",
@@ -3417,7 +3448,8 @@
         "payment-order-application",
         "complaint-loan-return",
         "repayment-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "certified-notice-terminate",
@@ -3524,7 +3556,8 @@
         "lease-termination-notice",
         "delegation-revocation",
         "settlement-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "certified-notice-wage",
@@ -3632,7 +3665,8 @@
         "payslip",
         "severance-calculation",
         "small-claims-complaint"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "checklist",
@@ -3713,7 +3747,8 @@
         "monthly-schedule",
         "moving-checklist",
         "event-plan"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "civil-conciliation",
@@ -3816,7 +3851,8 @@
         "payment-order-application",
         "certified-notice",
         "settlement-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "civil-petition",
@@ -3928,7 +3964,8 @@
         "info-disclosure-request",
         "administrative-objection",
         "power-of-attorney"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "claim-assignment-notice",
@@ -4035,7 +4072,8 @@
         "balance-confirmation",
         "loan-agreement",
         "repayment-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "class-timetable",
@@ -4149,7 +4187,8 @@
         "weekly-study-plan",
         "academy-attendance",
         "daily-planner"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "client-visit-report",
@@ -4265,7 +4304,8 @@
         "customer-card",
         "quotation",
         "complaint-handling"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "club-activity-record",
@@ -4375,7 +4415,8 @@
         "student-record-card",
         "attendance-sheet",
         "field-trip-consent"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "commercial-lease-contract",
@@ -4504,7 +4545,8 @@
         "move-in-checklist",
         "business-reg-checklist",
         "lease-termination-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "complaint-goods-payment",
@@ -4619,7 +4661,8 @@
         "certified-notice",
         "transaction-statement",
         "preparatory-brief"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "complaint-handling",
@@ -4743,7 +4786,8 @@
         "return-exchange-request",
         "customer-card",
         "client-visit-report"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "complaint-loan-return",
@@ -4856,7 +4900,8 @@
         "certified-notice-loan",
         "payment-order-application",
         "loan-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "consulting-contract",
@@ -4955,7 +5000,8 @@
         "nda",
         "quotation",
         "invoice-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "cooperation-request",
@@ -5069,7 +5115,8 @@
         "proposal-draft",
         "official-letter",
         "document-register"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "corporate-card-report",
@@ -5180,7 +5227,8 @@
         "expense-report",
         "expense-approval",
         "receipt"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "counseling-log",
@@ -5275,7 +5323,8 @@
         "student-record-card",
         "attendance-sheet",
         "grade-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "course-registration",
@@ -5393,7 +5442,8 @@
         "academy-attendance",
         "privacy-consent",
         "guardian-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "cover-letter",
@@ -5499,7 +5549,8 @@
         "resume-basic",
         "job-application-form",
         "career-description"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "cover-letter-experienced",
@@ -5609,7 +5660,8 @@
         "career-description",
         "career-certificate",
         "portfolio-cover"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "cover-letter-free",
@@ -5690,7 +5742,8 @@
         "resume-basic",
         "job-application-form",
         "portfolio-cover"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "cover-letter-newcomer",
@@ -5790,7 +5843,8 @@
         "resume-newcomer",
         "job-application-form",
         "portfolio-cover"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "cover-letter-star",
@@ -5881,7 +5935,8 @@
         "career-desc-project",
         "resume-basic",
         "job-application-form"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "customer-card",
@@ -5997,7 +6052,8 @@
         "client-visit-report",
         "account-ledger",
         "sales-daily-log"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "daily-cash-report",
@@ -6121,7 +6177,8 @@
         "petty-cash-ledger",
         "budget-execution",
         "payment-confirmation"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "daily-planner",
@@ -6235,7 +6292,8 @@
         "monthly-schedule",
         "weekly-study-plan",
         "checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "delegation-revocation",
@@ -6346,7 +6404,8 @@
         "power-of-attorney",
         "certified-notice",
         "handover-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "delivery-confirmation",
@@ -6451,7 +6510,8 @@
         "transaction-statement",
         "tax-invoice",
         "invoice-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "deposit-return-notice",
@@ -6553,7 +6613,8 @@
         "lease-termination-notice",
         "certified-notice-deposit",
         "payment-order-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "depreciation-schedule",
@@ -6651,7 +6712,8 @@
         "asset-ledger",
         "budget-execution",
         "expense-approval"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "director-acceptance",
@@ -6740,7 +6802,8 @@
         "shareholder-meeting-minutes",
         "board-minutes",
         "shareholder-register"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "disciplinary-notice",
@@ -6838,7 +6901,8 @@
         "explanation-statement",
         "written-apology",
         "personnel-order"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "disclosure-objection",
@@ -6948,7 +7012,8 @@
         "info-disclosure-request",
         "administrative-objection",
         "civil-petition"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "distributor-contract",
@@ -7045,7 +7110,8 @@
         "vendor-registration",
         "license-contract",
         "sales-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "document-register",
@@ -7136,7 +7202,8 @@
         "official-letter",
         "cooperation-request",
         "proposal-draft"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "employee-roster",
@@ -7231,7 +7298,8 @@
         "labor-contract-standard",
         "payslip",
         "employment-certificate"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "employment-certificate",
@@ -7324,7 +7392,8 @@
         "career-certificate",
         "payslip",
         "withholding-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "english-cover-letter",
@@ -7421,7 +7490,8 @@
         "resume-english",
         "portfolio-cover",
         "recommendation-letter"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "equipment-lease-contract",
@@ -7530,7 +7600,8 @@
         "quotation",
         "delivery-confirmation",
         "invoice-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "event-application",
@@ -7638,7 +7709,8 @@
         "privacy-consent",
         "guardian-consent",
         "event-photo-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "event-photo-consent",
@@ -7745,7 +7817,8 @@
         "privacy-consent",
         "portrait-rights-consent",
         "minor-activity-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "event-plan",
@@ -7870,7 +7943,8 @@
         "expense-approval",
         "internal-announcement",
         "campaign-result"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "expense-approval",
@@ -7983,7 +8057,8 @@
         "quotation",
         "receipt",
         "purchase-order"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "expense-report",
@@ -8103,7 +8178,8 @@
         "business-trip-report",
         "receipt",
         "corporate-card-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "explanation-statement",
@@ -8201,7 +8277,8 @@
         "written-apology",
         "disciplinary-notice",
         "fact-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "facility-repair-request",
@@ -8320,7 +8397,8 @@
         "asset-ledger",
         "supply-purchase-request",
         "expense-approval"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "fact-confirmation",
@@ -8406,7 +8484,8 @@
         "statement-of-facts",
         "settlement-agreement",
         "certified-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "family-event-notice",
@@ -8514,7 +8593,8 @@
         "invitation-card",
         "thank-you-letter",
         "leave-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "field-trip-consent",
@@ -8632,7 +8712,8 @@
         "guardian-consent",
         "minor-activity-consent",
         "event-photo-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "fixed-term-labor-contract",
@@ -8766,7 +8847,8 @@
         "employee-roster",
         "payslip",
         "job-description"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "franchise-contract",
@@ -8876,7 +8958,8 @@
         "nda",
         "license-contract",
         "distributor-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "freelance-contract",
@@ -8983,7 +9066,8 @@
         "nda",
         "invoice-request",
         "withholding-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "gift-contract",
@@ -9080,7 +9164,8 @@
         "will-form",
         "seal-certificate-poa",
         "power-of-attorney"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "goods-sale-contract",
@@ -9193,7 +9278,8 @@
         "used-car-sale-contract",
         "delivery-confirmation",
         "receipt"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "grade-report",
@@ -9311,7 +9397,8 @@
         "attendance-sheet",
         "student-record-card",
         "counseling-log"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "guardian-consent",
@@ -9427,7 +9514,8 @@
         "minor-activity-consent",
         "field-trip-consent",
         "event-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "handover-report",
@@ -9538,7 +9626,8 @@
         "resignation-letter",
         "asset-handover",
         "personnel-order"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "hospital-transfer-request",
@@ -9651,7 +9740,8 @@
         "medical-record-request",
         "medical-treatment-consent",
         "medical-expense-support"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "household-budget",
@@ -9757,7 +9847,8 @@
         "monthly-schedule",
         "daily-planner",
         "year-end-tax-checklist"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "household-budget-weekly",
@@ -9867,7 +9958,8 @@
         "daily-planner",
         "monthly-schedule",
         "checklist"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "household-budget-yearly",
@@ -9993,7 +10085,8 @@
         "year-end-tax-checklist",
         "monthly-schedule",
         "checklist"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "housing-lease-contract",
@@ -10118,7 +10211,8 @@
         "move-in-checklist",
         "monthly-rent-receipt",
         "deposit-return-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "illegal-dumping-report",
@@ -10224,7 +10318,8 @@
         "civil-petition",
         "noise-complaint",
         "road-repair-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "incident-report",
@@ -10326,7 +10421,8 @@
         "written-apology",
         "disciplinary-notice",
         "fact-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "info-disclosure-request",
@@ -10447,7 +10543,8 @@
         "disclosure-objection",
         "civil-petition",
         "administrative-objection"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "internal-announcement",
@@ -10548,7 +10645,8 @@
         "proposal-draft",
         "cooperation-request",
         "official-letter"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "internal-memo",
@@ -10663,7 +10761,8 @@
         "proposal-draft",
         "meeting-minutes",
         "cooperation-request"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "interview-evaluation",
@@ -10767,7 +10866,8 @@
         "job-application-form",
         "reference-check-consent",
         "labor-contract-standard"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "invitation-card",
@@ -10877,7 +10977,8 @@
         "event-application",
         "family-event-notice",
         "thank-you-letter"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "invoice-request",
@@ -10984,7 +11085,8 @@
         "tax-invoice",
         "payment-confirmation",
         "balance-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "job-application-form",
@@ -11009,7 +11111,7 @@
       "file_sizes": {
         "pdf": 66157,
         "docx": 39440,
-        "hwpx": 11168
+        "hwpx": 11163
       },
       "pages": 1,
       "previews": [
@@ -11020,17 +11122,6 @@
       "series_name": "",
       "variant": "",
       "variant_rank": 99,
-      "featured": false,
-      "featured_rank": 99,
-      "version": 1,
-      "source": "original",
-      "source_note": "",
-      "created_by": "agent",
-      "status": "published",
-      "warnings": [],
-      "created_at": "2026-09-14T06:39:04+09:00",
-      "updated_at": "2026-09-14T06:39:04+09:00",
-      "downloads": 0,
       "variant_use": "",
       "howto": [
         "지원구분과 지원부문, 지원경로를 적습니다.",
@@ -11114,7 +11205,19 @@
         "cover-letter",
         "career-description",
         "privacy-consent"
-      ]
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "agent",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-14T06:39:04+09:00",
+      "updated_at": "2026-09-14T17:30:15+09:00",
+      "downloads": 0,
+      "seal": true
     },
     {
       "id": "job-description",
@@ -11225,7 +11328,8 @@
         "performance-evaluation",
         "mbo-sheet",
         "labor-contract-standard"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "joint-venture-contract",
@@ -11338,7 +11442,8 @@
         "partnership-dissolution-agreement",
         "business-reg-checklist",
         "business-plan-standard"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "labor-contract-daily",
@@ -11443,7 +11548,8 @@
         "employee-roster",
         "payslip",
         "privacy-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "labor-contract-minor",
@@ -11561,7 +11667,8 @@
         "minor-activity-consent",
         "employee-roster",
         "payslip"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "labor-contract-parttime",
@@ -11680,7 +11787,8 @@
         "employee-roster",
         "payslip",
         "overtime-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "labor-contract-standard",
@@ -11792,7 +11900,8 @@
         "payslip",
         "job-description",
         "employment-certificate"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "lease-renewal-contract",
@@ -11907,7 +12016,8 @@
         "monthly-rent-receipt",
         "lease-termination-notice",
         "deposit-return-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "lease-termination-notice",
@@ -12018,7 +12128,8 @@
         "deposit-return-notice",
         "certified-notice-deposit",
         "move-in-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "lease-transfer-contract",
@@ -12134,7 +12245,8 @@
         "sublease-contract",
         "claim-assignment-notice",
         "move-in-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "leave-request",
@@ -12244,7 +12356,8 @@
         "handover-report",
         "parental-leave-request",
         "remote-work-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "lesson-plan",
@@ -12355,7 +12468,8 @@
         "attendance-sheet",
         "grade-report",
         "weekly-study-plan"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "license-contract",
@@ -12463,7 +12577,8 @@
         "mou-agreement",
         "franchise-contract",
         "distributor-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "loan-agreement",
@@ -12563,7 +12678,8 @@
         "repayment-plan",
         "certified-notice-loan",
         "payment-order-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "loan-note-guaranteed",
@@ -12671,7 +12787,8 @@
         "certified-notice-loan",
         "complaint-loan-return",
         "repayment-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "loan-note-simple",
@@ -12766,7 +12883,8 @@
         "payment-pledge",
         "certified-notice-loan",
         "settlement-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "long-term-care-application",
@@ -12878,7 +12996,8 @@
         "welfare-facility-application",
         "caregiver-contract",
         "power-of-attorney"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "marketing-plan",
@@ -12999,7 +13118,8 @@
         "budget-plan",
         "sales-plan",
         "proposal-draft"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "mbo-sheet",
@@ -13117,7 +13237,8 @@
         "performance-evaluation",
         "job-description",
         "probation-evaluation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "medical-expense-support",
@@ -13225,7 +13346,8 @@
         "medical-record-request",
         "welfare-facility-application",
         "long-term-care-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "medical-record-request",
@@ -13323,7 +13445,8 @@
         "power-of-attorney",
         "medical-expense-support",
         "privacy-consent-third"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "medical-treatment-consent",
@@ -13434,7 +13557,8 @@
         "surgery-consent",
         "blood-transfusion-consent",
         "guardian-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "meeting-minutes",
@@ -13533,7 +13657,8 @@
         "proposal-draft",
         "cooperation-request",
         "internal-announcement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "meeting-minutes-simple",
@@ -13630,7 +13755,8 @@
         "internal-memo",
         "cooperation-request",
         "work-report-weekly"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "minor-activity-consent",
@@ -13734,7 +13860,8 @@
         "event-application",
         "field-trip-consent",
         "event-photo-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "monthly-rent-receipt",
@@ -13831,7 +13958,8 @@
         "housing-lease-contract",
         "lease-termination-notice",
         "deposit-return-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "monthly-schedule",
@@ -13937,7 +14065,8 @@
         "daily-planner",
         "checklist",
         "household-budget"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "mou-agreement",
@@ -14022,7 +14151,8 @@
         "nda",
         "joint-venture-contract",
         "service-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "move-in-checklist",
@@ -14134,7 +14264,8 @@
         "housing-lease-contract",
         "moving-in-report",
         "moving-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "moving-checklist",
@@ -14243,7 +14374,8 @@
         "moving-in-report",
         "move-in-checklist",
         "housing-lease-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "moving-in-report",
@@ -14352,7 +14484,8 @@
         "resident-registration-request",
         "housing-lease-contract",
         "moving-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "nda",
@@ -14448,7 +14581,8 @@
         "mou-agreement",
         "service-contract",
         "consulting-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "noise-complaint",
@@ -14556,7 +14690,8 @@
         "civil-petition",
         "certified-notice",
         "settlement-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "official-letter",
@@ -14648,7 +14783,8 @@
         "cooperation-request",
         "document-register",
         "proposal-draft"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "overtime-application",
@@ -14745,7 +14881,8 @@
         "payslip",
         "leave-request",
         "labor-contract-standard"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "parental-leave-request",
@@ -14856,7 +14993,8 @@
         "leave-request",
         "personnel-order",
         "employment-certificate"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "parking-fine-objection",
@@ -14962,7 +15100,8 @@
         "administrative-objection",
         "civil-petition",
         "fact-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "parking-lease-contract",
@@ -15075,7 +15214,8 @@
       "related": [
         "monthly-rent-receipt",
         "lease-termination-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "partnership-agreement",
@@ -15175,7 +15315,8 @@
         "business-reg-checklist",
         "joint-venture-contract",
         "business-plan-standard"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "partnership-dissolution-agreement",
@@ -15281,7 +15422,8 @@
         "settlement-agreement",
         "balance-confirmation",
         "payment-pledge"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "payment-confirmation",
@@ -15387,7 +15529,8 @@
         "tax-invoice",
         "invoice-request",
         "balance-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "payment-order-application",
@@ -15496,7 +15639,8 @@
         "complaint-loan-return",
         "loan-agreement",
         "payment-pledge"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "payment-pledge",
@@ -15605,7 +15749,8 @@
         "loan-agreement",
         "settlement-agreement",
         "certified-notice-loan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "payslip",
@@ -15716,7 +15861,8 @@
         "year-end-tax-checklist",
         "severance-calculation",
         "employee-roster"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "performance-evaluation",
@@ -15822,7 +15968,8 @@
         "probation-evaluation",
         "job-description",
         "personnel-order"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "personnel-order",
@@ -15929,7 +16076,8 @@
         "employee-roster",
         "job-description",
         "performance-evaluation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "pet-adoption-contract",
@@ -16049,7 +16197,8 @@
         "receipt",
         "gift-contract",
         "written-pledge"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "petition-letter",
@@ -16145,7 +16294,8 @@
         "written-statement",
         "settlement-agreement",
         "fact-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "petty-cash-ledger",
@@ -16242,7 +16392,8 @@
         "receipt",
         "expense-report",
         "daily-cash-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "portfolio-cover",
@@ -16346,7 +16497,8 @@
         "cover-letter",
         "career-description",
         "job-application-form"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "portrait-rights-consent",
@@ -16466,7 +16618,8 @@
         "privacy-consent",
         "guardian-consent",
         "minor-activity-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "power-of-attorney",
@@ -16562,7 +16715,8 @@
         "seal-certificate-poa",
         "delegation-revocation",
         "resident-registration-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "preparatory-brief",
@@ -16667,7 +16821,8 @@
         "written-statement",
         "small-claims-complaint",
         "civil-conciliation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "privacy-consent",
@@ -16774,7 +16929,8 @@
         "survey-consent",
         "portrait-rights-consent",
         "guardian-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "privacy-consent-marketing",
@@ -16871,7 +17027,8 @@
         "customer-card",
         "campaign-result",
         "survey-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "privacy-consent-simple",
@@ -16962,7 +17119,8 @@
         "survey-consent",
         "event-application",
         "volunteer-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "privacy-consent-third",
@@ -17059,7 +17217,8 @@
         "nda",
         "service-contract",
         "vendor-registration"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "probation-evaluation",
@@ -17160,7 +17319,8 @@
         "personnel-order",
         "performance-evaluation",
         "job-description"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "property-viewing-log",
@@ -17270,7 +17430,8 @@
         "real-estate-sale-contract",
         "move-in-checklist",
         "moving-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "proposal-cover",
@@ -17366,7 +17527,8 @@
         "nda",
         "sales-contract",
         "business-plan-standard"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "proposal-draft",
@@ -17476,7 +17638,8 @@
         "cooperation-request",
         "official-letter",
         "budget-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "purchase-order",
@@ -17606,7 +17769,8 @@
         "delivery-confirmation",
         "transaction-statement",
         "tax-invoice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "quitclaim-letter",
@@ -17697,7 +17861,8 @@
         "written-pledge",
         "payment-pledge",
         "fact-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "quotation",
@@ -17819,7 +17984,8 @@
         "quotation-comparison",
         "transaction-statement",
         "tax-invoice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "quotation-comparison",
@@ -17924,7 +18090,8 @@
         "purchase-order",
         "supply-purchase-request",
         "expense-approval"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "quotation-detailed",
@@ -18048,7 +18215,8 @@
         "transaction-statement",
         "tax-invoice",
         "sales-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "quotation-simple",
@@ -18142,7 +18310,8 @@
         "transaction-statement",
         "receipt",
         "invoice-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "reading-log",
@@ -18247,7 +18416,8 @@
         "weekly-study-plan",
         "study-plan",
         "club-activity-record"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "real-estate-sale-contract",
@@ -18372,7 +18542,8 @@
         "moving-in-report",
         "moving-checklist",
         "power-of-attorney"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "receipt",
@@ -18484,7 +18655,8 @@
         "expense-approval",
         "transaction-statement",
         "tax-invoice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "recommendation-letter",
@@ -18596,7 +18768,8 @@
         "cover-letter",
         "career-certificate",
         "reference-check-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "reference-check-consent",
@@ -18696,7 +18869,8 @@
         "employment-certificate",
         "interview-evaluation",
         "privacy-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "remote-work-request",
@@ -18817,7 +18991,8 @@
         "work-report-weekly",
         "leave-request",
         "overtime-application"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "repayment-plan",
@@ -18919,7 +19094,8 @@
         "payment-pledge",
         "certified-notice-loan",
         "settlement-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "resident-registration-request",
@@ -19029,7 +19205,8 @@
         "seal-certificate-poa",
         "moving-in-report",
         "civil-petition"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "resignation-letter",
@@ -19128,7 +19305,8 @@
         "severance-calculation",
         "career-certificate",
         "asset-handover"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "resignation-simple",
@@ -19210,7 +19388,8 @@
         "handover-report",
         "severance-calculation",
         "career-certificate"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "resume-basic",
@@ -19347,7 +19526,8 @@
         "job-application-form",
         "career-description",
         "portfolio-cover"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "resume-english",
@@ -19467,7 +19647,8 @@
         "career-description",
         "portfolio-cover",
         "reference-check-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "resume-experienced",
@@ -19492,7 +19673,7 @@
       "file_sizes": {
         "pdf": 73504,
         "docx": 39419,
-        "hwpx": 11358
+        "hwpx": 11356
       },
       "pages": 1,
       "previews": [
@@ -19503,17 +19684,6 @@
       "series_name": "이력서",
       "variant": "경력용",
       "variant_rank": 3,
-      "featured": false,
-      "featured_rank": 99,
-      "version": 1,
-      "source": "original",
-      "source_note": "",
-      "created_by": "agent",
-      "status": "published",
-      "warnings": [],
-      "created_at": "2026-09-14T06:42:43+09:00",
-      "updated_at": "2026-09-14T06:42:43+09:00",
-      "downloads": 0,
       "variant_use": "경력직 이직이나 전직 지원용으로 씁니다.",
       "howto": [
         "인적사항과 연락처를 적습니다.",
@@ -19596,7 +19766,19 @@
         "cover-letter-experienced",
         "job-application-form",
         "career-certificate"
-      ]
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "agent",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-14T06:42:43+09:00",
+      "updated_at": "2026-09-14T17:29:58+09:00",
+      "downloads": 0,
+      "seal": true
     },
     {
       "id": "resume-narrative",
@@ -19620,7 +19802,7 @@
       "file_sizes": {
         "pdf": 47969,
         "docx": 38846,
-        "hwpx": 10042
+        "hwpx": 10046
       },
       "pages": 1,
       "previews": [
@@ -19631,17 +19813,6 @@
       "series_name": "이력서",
       "variant": "서술형",
       "variant_rank": 4,
-      "featured": false,
-      "featured_rank": 99,
-      "version": 1,
-      "source": "original",
-      "source_note": "",
-      "created_by": "agent",
-      "status": "published",
-      "warnings": [],
-      "created_at": "2026-09-14T06:43:57+09:00",
-      "updated_at": "2026-09-14T06:43:57+09:00",
-      "downloads": 0,
       "variant_use": "표 대신 문장으로 경험을 풀어 쓰고 싶을 때 씁니다.",
       "howto": [
         "인적사항을 표에 적습니다.",
@@ -19701,7 +19872,19 @@
         "cover-letter-free",
         "career-description",
         "job-application-form"
-      ]
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "agent",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-14T06:43:57+09:00",
+      "updated_at": "2026-09-14T17:30:03+09:00",
+      "downloads": 0,
+      "seal": true
     },
     {
       "id": "resume-newcomer",
@@ -19726,7 +19909,7 @@
       "file_sizes": {
         "pdf": 74040,
         "docx": 39448,
-        "hwpx": 11337
+        "hwpx": 11338
       },
       "pages": 1,
       "previews": [
@@ -19737,17 +19920,6 @@
       "series_name": "이력서",
       "variant": "신입용",
       "variant_rank": 2,
-      "featured": false,
-      "featured_rank": 99,
-      "version": 1,
-      "source": "original",
-      "source_note": "",
-      "created_by": "agent",
-      "status": "published",
-      "warnings": [],
-      "created_at": "2026-09-14T06:43:46+09:00",
-      "updated_at": "2026-09-14T06:43:46+09:00",
-      "downloads": 0,
       "variant_use": "경력이 없는 신입 구직자가 공채에 지원할 때 씁니다.",
       "howto": [
         "인적사항과 연락처를 적습니다.",
@@ -19839,7 +20011,19 @@
         "job-application-form",
         "portfolio-cover",
         "recommendation-letter"
-      ]
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "agent",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-14T06:43:46+09:00",
+      "updated_at": "2026-09-14T17:30:11+09:00",
+      "downloads": 0,
+      "seal": true
     },
     {
       "id": "resume-parttime",
@@ -19950,7 +20134,8 @@
         "labor-contract-parttime",
         "job-application-form",
         "privacy-consent-simple"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "resume-simple",
@@ -20060,7 +20245,8 @@
         "cover-letter",
         "career-description",
         "job-application-form"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "retirement-application",
@@ -20165,7 +20351,8 @@
         "handover-report",
         "career-certificate",
         "asset-handover"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "return-exchange-request",
@@ -20276,7 +20463,8 @@
         "complaint-handling",
         "transaction-statement",
         "payment-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "road-repair-request",
@@ -20380,7 +20568,8 @@
         "civil-petition",
         "info-disclosure-request",
         "administrative-objection"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "sales-contract",
@@ -20488,7 +20677,8 @@
         "delivery-confirmation",
         "transaction-statement",
         "tax-invoice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "sales-daily-log",
@@ -20599,7 +20789,8 @@
         "customer-card",
         "sales-plan",
         "work-report-weekly"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "sales-plan",
@@ -20712,7 +20903,8 @@
         "sales-daily-log",
         "campaign-result",
         "budget-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "scholarship-application",
@@ -20826,7 +21018,8 @@
         "grade-report",
         "teacher-recommendation",
         "club-activity-record"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "seal-certificate-poa",
@@ -20928,7 +21121,8 @@
         "resident-registration-request",
         "delegation-revocation",
         "real-estate-sale-contract"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "seal-usage-log",
@@ -21019,7 +21213,8 @@
         "document-register",
         "proposal-draft",
         "power-of-attorney"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "service-contract",
@@ -21120,7 +21315,8 @@
         "invoice-request",
         "tax-invoice",
         "subcontract-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "service-contract-simple",
@@ -21214,7 +21410,8 @@
         "nda",
         "invoice-request",
         "payment-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "settlement-agreement",
@@ -21302,7 +21499,8 @@
         "repayment-plan",
         "quitclaim-letter",
         "written-pledge"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "severance-calculation",
@@ -21423,7 +21621,8 @@
         "handover-report",
         "withholding-request",
         "career-certificate"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "shareholder-meeting-minutes",
@@ -21527,7 +21726,8 @@
         "board-minutes",
         "articles-of-incorporation",
         "director-acceptance"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "shareholder-register",
@@ -21621,7 +21821,8 @@
         "stock-transfer-contract",
         "shareholder-meeting-minutes",
         "articles-of-incorporation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "small-claims-complaint",
@@ -21720,7 +21921,8 @@
         "certified-notice-loan",
         "written-statement",
         "preparatory-brief"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "sponsorship-application",
@@ -21836,7 +22038,8 @@
         "privacy-consent",
         "privacy-consent-marketing",
         "year-end-tax-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "startup-checklist",
@@ -21919,7 +22122,8 @@
         "business-reg-checklist",
         "business-plan-standard",
         "articles-of-incorporation"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "statement-of-facts",
@@ -22027,7 +22231,8 @@
         "settlement-agreement",
         "petition-letter",
         "written-statement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "stock-transfer-contract",
@@ -22125,7 +22330,8 @@
         "shareholder-register",
         "articles-of-incorporation",
         "board-minutes"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "student-record-card",
@@ -22251,7 +22457,8 @@
         "attendance-sheet",
         "counseling-log",
         "grade-report"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "study-plan",
@@ -22352,7 +22559,8 @@
         "class-timetable",
         "daily-planner",
         "reading-log"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "subcontract-agreement",
@@ -22452,7 +22660,8 @@
         "delivery-confirmation",
         "invoice-request",
         "transaction-statement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "sublease-contract",
@@ -22563,7 +22772,8 @@
         "move-in-checklist",
         "monthly-rent-receipt",
         "lease-termination-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "supply-purchase-request",
@@ -22677,7 +22887,8 @@
         "purchase-order",
         "quotation-comparison",
         "asset-ledger"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "surgery-consent",
@@ -22790,7 +23001,8 @@
         "medical-treatment-consent",
         "guardian-consent",
         "medical-record-request"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "survey-consent",
@@ -22913,7 +23125,8 @@
         "privacy-consent",
         "privacy-consent-third",
         "minor-activity-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "tax-invoice",
@@ -23019,7 +23232,8 @@
         "invoice-request",
         "payment-confirmation",
         "receipt"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "teacher-recommendation",
@@ -23123,7 +23337,8 @@
         "scholarship-application",
         "student-record-card",
         "grade-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "thank-you-letter",
@@ -23209,7 +23424,8 @@
         "invitation-card",
         "family-event-notice",
         "event-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "training-certificate",
@@ -23311,7 +23527,8 @@
         "expense-report",
         "performance-evaluation",
         "career-certificate"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "transaction-statement",
@@ -23424,7 +23641,8 @@
         "delivery-confirmation",
         "invoice-request",
         "payment-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "travel-plan",
@@ -23529,7 +23747,8 @@
         "monthly-schedule",
         "checklist",
         "household-budget"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "tuition-refund-request",
@@ -23646,7 +23865,8 @@
         "course-registration",
         "academy-attendance",
         "certified-notice"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "used-car-sale-contract",
@@ -23758,7 +23978,8 @@
         "vehicle-maintenance-history",
         "power-of-attorney",
         "payment-confirmation"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "vaccination-consent",
@@ -23859,7 +24080,8 @@
         "guardian-consent",
         "medical-treatment-consent",
         "privacy-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "vehicle-log",
@@ -23953,7 +24175,8 @@
         "vehicle-use-request",
         "expense-report",
         "corporate-card-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "vehicle-maintenance-history",
@@ -24061,7 +24284,8 @@
         "used-car-sale-contract",
         "vehicle-log",
         "power-of-attorney"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "vehicle-use-request",
@@ -24180,7 +24404,8 @@
         "vehicle-log",
         "business-trip-request",
         "expense-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "vendor-registration",
@@ -24313,7 +24538,8 @@
         "account-ledger",
         "purchase-order",
         "transaction-statement"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "visitor-log",
@@ -24405,7 +24631,8 @@
         "access-pass-request",
         "privacy-consent",
         "meeting-minutes"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "volunteer-application",
@@ -24535,7 +24762,8 @@
         "privacy-consent",
         "minor-activity-consent",
         "event-photo-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "weekly-study-plan",
@@ -24639,7 +24867,8 @@
         "class-timetable",
         "reading-log",
         "daily-planner"
-      ]
+      ],
+      "seal": false
     },
     {
       "id": "welfare-facility-application",
@@ -24747,7 +24976,8 @@
         "long-term-care-application",
         "care-service-application",
         "privacy-consent"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "will-form",
@@ -24831,7 +25061,8 @@
         "gift-contract",
         "power-of-attorney",
         "settlement-agreement"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "withholding-request",
@@ -24923,7 +25154,8 @@
         "employment-certificate",
         "payslip",
         "year-end-tax-checklist"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "work-journal",
@@ -25023,7 +25255,8 @@
         "meeting-minutes",
         "business-trip-report",
         "handover-report"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "work-report-monthly",
@@ -25142,7 +25375,8 @@
         "budget-execution",
         "mbo-sheet",
         "internal-memo"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "work-report-weekly",
@@ -25251,7 +25485,8 @@
         "meeting-minutes",
         "internal-memo",
         "proposal-draft"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "written-apology",
@@ -25352,7 +25587,8 @@
         "explanation-statement",
         "disciplinary-notice",
         "written-pledge"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "written-pledge",
@@ -25439,7 +25675,8 @@
         "settlement-agreement",
         "payment-pledge",
         "repayment-plan"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "written-statement",
@@ -25534,7 +25771,8 @@
         "fact-confirmation",
         "petition-letter",
         "preparatory-brief"
-      ]
+      ],
+      "seal": true
     },
     {
       "id": "year-end-tax-checklist",
@@ -25623,7 +25861,8 @@
         "withholding-request",
         "payslip",
         "employment-certificate"
-      ]
+      ],
+      "seal": true
     }
   ]
 }

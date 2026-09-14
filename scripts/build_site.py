@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import re
 import shutil
 import sys
@@ -74,6 +75,63 @@ KR_CRAWLERS = [("Yeti", "네이버"), ("Daumoa", "다음")]
 
 FMT_LABEL = {"pdf": "PDF", "docx": "Word (DOCX)", "hwpx": "한글 (HWPX)"}
 
+# ── 직장인 도구 (/tools/) ──
+# 서식과 함께 쓰는 브라우저 전용 도구. 상단 메뉴·허브·사이트맵·llms.txt 가 이 목록을 공유한다.
+# 새 도구를 만들면 여기에 한 줄 추가하고 templates/tool_<key>.html 을 만든 뒤 build()에 렌더링을 잇는다.
+_ICON_STAMP = ('<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+               'stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/>'
+               '<path d="M8.5 9.5h7M8.5 14.5h7M12 9.5v5"/></svg>')
+_ICON_CALC = ('<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+              'stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/>'
+              '<path d="M8 7h8M8 12h3M13 12h3M8 16h3M13 16h3"/></svg>')
+_ICON_TEXT = ('<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+              'stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg>')
+TOOLS: list[dict[str, str]] = [
+    {
+        "key": "stamp",
+        "path": "/tools/stamp/",
+        "name": "디지털 도장·서명 만들기",
+        "desc": "이름만 넣으면 계약서·위임장의 (인) 자리에 넣을 도장 이미지를 만듭니다. 손글씨 서명도 그려서 PNG로 저장합니다.",
+        "icon": _ICON_STAMP,
+    },
+]
+# 아직 만들지 않은 도구. 허브에 '준비 중'으로만 보이고 페이지·링크는 없다.
+TOOLS_SOON: list[dict[str, str]] = [
+    {"name": "퇴직금·연차·실수령액 계산기", "desc": "사직서·근로계약서와 함께 쓰는 직장인 계산기.", "icon": _ICON_CALC},
+    {"name": "금액 한글 표기·글자수 세기", "desc": "차용증의 '일금 삼백만원정', 자기소개서 글자수·바이트 확인.", "icon": _ICON_TEXT},
+]
+
+# 도장 생성기 프리셋. 화면 순서대로 보이며 첫 항목이 기본 선택이다.
+STAMP_PRESETS: list[dict[str, str]] = [
+    {"shape": "circle", "font": "seal", "name": "원형 · 전서체풍", "note": "가장 많이 쓰는 기본형"},
+    {"shape": "square", "font": "seal", "name": "사각 · 전서체풍", "note": "법인 인감 느낌"},
+    {"shape": "circle", "font": "myeongjo", "name": "원형 · 명조", "note": "차분하고 단정한 인상"},
+    {"shape": "oval", "font": "gothic", "name": "타원 · 이름 가로쓰기", "note": "회사 결재란·확인용"},
+    {"shape": "square", "font": "gothic", "name": "사각 · 고딕", "note": "또렷하고 현대적"},
+    {"shape": "circle", "font": "gothic", "name": "원형 · 고딕", "note": "화면·모바일에서 잘 보임"},
+]
+STAMP_FAQ: list[dict[str, str]] = [
+    {"q": "이렇게 만든 도장에 법적 효력이 있나요?",
+     "a": "인감이나 공인전자서명은 아닙니다. 다만 우리 민법은 계약 방식이 자유로워, 당사자끼리 합의한 문서에 "
+          "이 이미지를 찍어도 계약 자체는 성립합니다. 인감증명이 필요한 부동산 등기·자동차 이전 같은 일에는 "
+          "관공서에 등록한 인감을 쓰십시오."},
+    {"q": "입력한 이름이 어디에 저장되나요?",
+     "a": "어디에도 저장되지 않습니다. 이름과 서명은 방문자의 브라우저 안에서만 이미지로 그려지고, "
+          "서버로 전송하는 코드가 없습니다."},
+    {"q": "한글 파일(HWPX)에는 어떻게 넣나요?",
+     "a": "입력 → 그림 → 그림 넣기로 PNG를 불러온 뒤, 그림 속성에서 '글자처럼 취급'을 끄고 '글 앞으로'를 "
+          "선택하면 (인) 자리 위로 끌어다 놓을 수 있습니다."},
+    {"q": "글자가 4자보다 길면 어떻게 되나요?",
+     "a": "3자까지는 '인(印)'을 붙여 2×2로 배열하고, 4자 이상이면 印 없이 이름만 배열합니다. "
+          "회사명처럼 긴 글자는 타원(가로쓰기) 모양이 읽기 좋습니다."},
+]
+# 도구 페이지 하단 '도장이 들어가는 서식'. 카탈로그에 없는 id는 건너뛴다.
+# 도구 페이지의 sitemap lastmod. 도구를 고친 날로 갱신한다(서식처럼 자동 산출할 근거가 없다).
+TOOLS_UPDATED = "2026-09-14"
+STAMP_RELATED_IDS = ["loan-agreement", "power-of-attorney", "written-pledge", "labor-contract-standard",
+                     "housing-lease-contract", "settlement-agreement", "nda", "quotation-simple",
+                     "service-contract", "resignation-letter"]
+
 # 파일명에 쓸 수 없는 문자 (Windows 기준)
 _BAD_FILENAME_CHARS = '\\/:*?"<>|'
 
@@ -97,6 +155,8 @@ ADS_DEFAULT: dict[str, Any] = {
     "download_interstitial": False,
     "download_delay_sec": 2,
     "slots": {},
+    # 확인용 미리보기(FORMS_PREVIEW_ADS=1). 배포본에서는 항상 False다.
+    "preview": False,
 }
 
 
@@ -112,10 +172,16 @@ def load_ads() -> dict[str, Any]:
             if key in raw:
                 cfg[key] = raw[key]
     cfg["slots"] = {k: v for k, v in (cfg.get("slots") or {}).items() if v}
-    # 광고를 켜지 않았거나 클라이언트 ID가 없으면 중간 페이지도 만들지 않는다
+    # 광고를 켜지 않았거나 클라이언트 ID가 없으면 중간 페이지도 만들지 않는다.
+    # 광고 없이 중간 페이지만 켜면 방문자에게 기다림만 생기고 얻는 것이 없다.
     if not (cfg["enabled"] and cfg["client"]):
         cfg["enabled"] = False
         cfg["download_interstitial"] = False
+    # 확인용: FORMS_PREVIEW_ADS=1 로 빌드하면 광고 자리를 회색 상자로 채우고
+    # 다운로드 준비 페이지도 만든다. 광고 코드는 나가지 않으므로 배포하면 안 된다.
+    if os.environ.get("FORMS_PREVIEW_ADS") == "1":
+        cfg["preview"] = True
+        cfg["download_interstitial"] = True
     return cfg
 
 
@@ -478,6 +544,7 @@ def build() -> int:
         "collection_hubs": collection_hubs,
         "ads": ads,
         "reqs": reqs,
+        "tools": TOOLS,
         "biz_name": BIZ_NAME,
         "biz_number": BIZ_NUMBER,
         "contact_email": CONTACT_EMAIL,
@@ -663,18 +730,34 @@ def build() -> int:
               ))
         pages += 1
 
-    # 3-1) 다운로드 중간 페이지 (광고 노출용). 광고를 켜지 않으면 만들지 않는다.
+    # 3-1) 다운로드 준비 페이지 (광고 노출용). 광고를 켜지 않으면 만들지 않는다.
+    #      껐을 때 예전 빌드가 남긴 폴더를 지운다 — 안 지우면 링크가 끊긴 페이지 700여 개가
+    #      그대로 배포된다(확인용 미리보기 빌드 뒤에 특히 그렇다).
+    dl_dir = PUBLIC / "download"
+    if not interstitial and dl_dir.exists():
+        shutil.rmtree(dl_dir)
+        print("[사이트] 다운로드 준비 페이지가 꺼져 있어 public/download/ 를 정리했습니다.")
     if interstitial:
         delay_ms = max(0, int(float(ads["download_delay_sec"]) * 1000))
         for f in forms:
-            key = f"{f['category']}/{f['subcategory']}"
-            related = [r for r in grouped[key] if r["id"] != f["id"]][:4]
+            # 상세 화면과 같은 기준(명세의 related + 유사도)으로 고른다.
+            related = related_forms(f, forms, by_id, tokens, idf, 4)
             for ext in ("pdf", "docx", "hwpx"):
+                # 같은 서식의 다른 형식. PDF를 받았는데 한글본도 필요한 경우가 잦다.
+                others = [
+                    {"label": FMT_LABEL[o], "url": dl_map[f["id"]][o]}
+                    for o in ("pdf", "docx", "hwpx") if o != ext
+                ]
                 write(PUBLIC / "download" / f["id"] / ext / "index.html",
                       env.get_template("download.html").render(
                           page_title=f"{f['title']} {FMT_LABEL[ext]} 다운로드 — {SITE_NAME}",
                           page_desc=f["summary"],
                           canonical=f"/download/{f['id']}/{ext}/",
+                          # 검색 결과에 나올 성격의 페이지가 아니다. 색인에서 빼되
+                          # 링크는 따라가게 해서 연관 서식으로 크롤러가 흐르도록 둔다.
+                          page_robots="noindex, follow",
+                          other_formats=others,
+                          my_collections=in_collections.get(f["id"], []),
                           f=f,
                           cat=cat_obj[f["category"]],
                           sub=next(s for s in cat_obj[f["category"]]["subcategories"]
@@ -801,6 +884,59 @@ def build() -> int:
     ))
     pages += 1
 
+    # 3-7) 직장인 도구 — 허브(/tools/)와 도장·서명 생성기(/tools/stamp/).
+    #      정적 호스팅이므로 계산·그리기는 전부 브라우저(assets/stamp.js)에서 한다.
+    write(PUBLIC / "tools" / "index.html", env.get_template("tools.html").render(
+        page_title=f"직장인 도구 — 디지털 도장·서명 만들기 | {SITE_NAME}",
+        page_desc="서식과 함께 쓰는 무료 브라우저 도구. 디지털 도장·손글씨 서명 이미지를 회원가입 없이 만들어 "
+                  "PNG로 저장합니다. 입력값은 서버로 보내지 않습니다.",
+        canonical="/tools/",
+        breadcrumb_jsonld=breadcrumb_ld([("홈", "/"), ("직장인 도구", "/tools/")]),
+        tools_soon=TOOLS_SOON,
+        featured=featured, dl_map=dl_map, name_map=name_map, **common,
+    ))
+    pages += 1
+
+    stamp_related = [by_id[i] for i in STAMP_RELATED_IDS if i in by_id][:10]
+    write(PUBLIC / "tools" / "stamp" / "index.html", env.get_template("tool_stamp.html").render(
+        page_title=f"디지털 도장 만들기 · 손글씨 서명 생성 (무료, 투명 PNG) — {SITE_NAME}",
+        page_desc="이름을 입력하면 원형·사각·타원 도장 이미지를 투명 배경 PNG로 만듭니다. 손글씨 서명도 그려서 "
+                  "저장. 회원가입 없이 무료이며 입력한 이름은 서버로 전송되지 않습니다.",
+        canonical="/tools/stamp/",
+        breadcrumb_jsonld=breadcrumb_ld([
+            ("홈", "/"), ("직장인 도구", "/tools/"), ("디지털 도장·서명 만들기", "/tools/stamp/")]),
+        jsonld=jd({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "디지털 도장·서명 만들기",
+            "url": f"{SITE_URL}/tools/stamp/",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Web",
+            "browserRequirements": "HTML5 Canvas",
+            "inLanguage": "ko",
+            "isAccessibleForFree": True,
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
+            "description": "이름으로 도장 이미지를 만들고 손글씨 서명을 그려 투명 PNG로 저장하는 무료 도구. "
+                           "입력값은 브라우저 안에서만 처리된다.",
+            "featureList": ["원형·사각·타원 도장", "전서체풍·명조·고딕 글꼴", "투명 배경 PNG / 흰 배경 JPG",
+                            "손글씨 서명 그리기", "글꼴 서명"],
+            "publisher": {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": SITE_NAME},
+            "isPartOf": {"@type": "WebSite", "@id": f"{SITE_URL}/#website", "name": SITE_NAME},
+        }),
+        faq_jsonld=jd({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": item["q"],
+                 "acceptedAnswer": {"@type": "Answer", "text": item["a"]}}
+                for item in STAMP_FAQ
+            ],
+        }),
+        presets=STAMP_PRESETS, faq=STAMP_FAQ, related=stamp_related,
+        dl_map=dl_map, name_map=name_map, **common,
+    ))
+    pages += 1
+
     # 3-2) 정책 페이지 — 애드센스 심사는 쿠키 사용 고지를 요구한다
     write(PUBLIC / "privacy" / "index.html", env.get_template("privacy.html").render(
         page_title=f"개인정보처리방침 — {SITE_NAME}",
@@ -855,7 +991,9 @@ def build() -> int:
         urls.append((f"/form/{f['id']}/", form_date(f) or today, "0.8"))
     urls += [("/about/", site_newest, "0.6"),
              ("/privacy/", today, "0.3"),
-             ("/request/", today, "0.5")]
+             ("/request/", today, "0.5"),
+             ("/tools/", TOOLS_UPDATED, "0.7")]
+    urls += [(t["path"], TOOLS_UPDATED, "0.8") for t in TOOLS]
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -917,6 +1055,8 @@ def build() -> int:
           f"- [사이트 소개]({SITE_URL}/about/): 사이트 정의·이용 조건·제작 방식",
           f"- [서식 요청]({SITE_URL}/request/): 필요한 서식을 요청하면 무료로 제작",
           f"- [개인정보처리방침]({SITE_URL}/privacy/)", "",
+          "## 직장인 도구 (브라우저 안에서만 동작, 입력값 서버 전송 없음)", "",
+          *[f"- [{t['name']}]({SITE_URL}{t['path']}): {t['desc']}" for t in TOOLS], "",
           "## 분야별 서식", ""]
     for c in categories:
         for s in c["subcategories"]:
@@ -960,6 +1100,14 @@ def build() -> int:
                     lf.append(f"- Q. {item['q']} A. {item['a']}")
                 lf.append("")
     write(PUBLIC / "llms-full.txt", "\n".join(lf))
+
+    # 5-4-1) 도구 스크립트 — assets/ 가 정본이고 public/assets/ 는 빌드 산출물이다
+    for name in ("stamp.js",):
+        src = ROOT / "assets" / name
+        if not src.exists():
+            raise SiteBuildError(f"assets/{name} 가 없습니다 — 도구 페이지가 동작하지 않습니다.")
+        (PUBLIC / "assets").mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, PUBLIC / "assets" / name)
 
     # 5-4) 공유 카드 기본 이미지
     if not make_og_default(PUBLIC / "og-default.png"):
