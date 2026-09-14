@@ -68,6 +68,11 @@
   font-size:13.5px; font-weight:700; color:#374151; cursor:pointer; font-family:inherit}
 .calc-actions button.pri{background:var(--navy); border-color:var(--navy); color:#fff}
 .calc-actions button:hover{border-color:var(--navy)}
+.nextcalc{display:block; margin:10px 0 0; padding:11px 14px; border-radius:8px; border:1px solid #b9cae0;
+  background:#e8eff8; color:var(--navy); font-size:13.5px; font-weight:700; text-align:center; text-decoration:none}
+.nextcalc:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+/* display:block 이 브라우저 기본 [hidden] 을 이기므로 명시적으로 다시 숨긴다 */
+.nextcalc[hidden]{display:none}
 
 @media (max-width:900px){ .calc-2col{grid-template-columns:1fr} .calc-2col .sticky{position:static} }
 @media (max-width:640px){ .fld2{grid-template-columns:1fr} .res-hero .v{font-size:27px}
@@ -123,6 +128,21 @@
             <div class="money"><input type="text" id="c-leavepay" inputmode="numeric" value="0"><span class="unit">원</span></div></div>
         </div>
         <p class="hint" style="margin:-8px 0 0">퇴직 전 1년간 받은 금액을 넣으면 3/12만 평균임금에 들어갑니다(법정 산입 방식).</p>
+      {%- elif calc.key == 'retirement-tax' %}
+        <h2>퇴직금과 근속 기간을 입력하세요</h2>
+        <div class="fld"><label for="c-payout">퇴직급여액 <i style="font-style:normal;font-weight:500;color:var(--muted)">(세전)</i></label>
+          <div class="money"><input type="text" id="c-payout" inputmode="numeric" value="50,000,000"><span class="unit">원</span></div>
+          <p class="hint">퇴직금에 명예퇴직금·퇴직위로금을 함께 받았다면 <b>모두 더한 금액</b>을 넣으세요.</p></div>
+        <div class="fld"><label>근속 기간 입력 방법</label>
+          <div class="seg" id="c-mode"><button type="button" class="on" data-v="date">날짜로</button><button type="button" data-v="years">근속연수 직접</button></div></div>
+        <div class="fld fld2" id="c-datebox">
+          <div><label for="c-join">입사일</label><input type="date" id="c-join"></div>
+          <div><label for="c-leave">퇴직일</label><input type="date" id="c-leave"></div>
+        </div>
+        <div class="fld" id="c-yearsbox" style="display:none"><label for="c-years">근속연수</label>
+          <input type="number" id="c-years" min="1" max="60" step="1" value="10"></div>
+        <p class="hint" style="margin:-8px 0 0">퇴직일은 <b>마지막 근무일의 다음 날</b>입니다.
+          세법상 근속연수는 1년 미만이 남으면 <b>1년으로 올려</b> 셉니다.</p>
       {%- else %}
         <h2>입사일과 기준일을 입력하세요</h2>
         <div class="fld fld2">
@@ -155,6 +175,7 @@
           <button type="button" class="pri" id="r-img">결과 이미지 저장</button>
           <button type="button" id="r-copy">계산 결과 복사</button>
         </div>
+        <a class="nextcalc" id="r-next" href="#" hidden></a>
       </div>
     </div>
   </div>
@@ -322,8 +343,62 @@ document.addEventListener('DOMContentLoaded', function () {
       ['재직일수 ÷ 365', (r.serviceDays / 365).toFixed(3)],
       ['세전 퇴직금', C.fmt(r.amount) + '원', true]
     ]);
+    // 다음 단계 — 이 금액 그대로 퇴직소득세 계산기로 넘긴다
+    var nx = $('r-next');
+    if (nx && r.amount > 0) {
+      nx.href = '/tools/retirement-tax/?payout=' + r.amount +
+        '&join=' + encodeURIComponent($('c-join').value) + '&leave=' + encodeURIComponent($('c-leave').value);
+      nx.textContent = '이 퇴직금의 퇴직소득세 계산하기 →';
+      nx.hidden = false;
+    }
   }
   rebuild();
+
+{% elif calc.key == 'retirement-tax' %}
+  /* ── 퇴직소득세 ── */
+  var mode = 'date';
+  var qs = new URLSearchParams(location.search);
+  $('c-join').value = qs.get('join') || '{{ default_join }}';
+  $('c-leave').value = qs.get('leave') || today();
+  if (qs.get('payout')) $('c-payout').value = C.fmt(C.num(qs.get('payout')));
+  C.bindMoney($('c-payout'), calc);
+  ['c-join', 'c-leave', 'c-years'].forEach(function (id) {
+    $(id).addEventListener('change', calc); $(id).addEventListener('input', calc);
+  });
+  seg('c-mode', function (v) {
+    mode = v;
+    $('c-datebox').style.display = v === 'date' ? '' : 'none';
+    $('c-yearsbox').style.display = v === 'years' ? '' : 'none';
+    calc();
+  });
+  function calc() {
+    var opt = { payout: C.num($('c-payout').value) };
+    if (mode === 'years') opt.years = C.num($('c-years').value);
+    else { opt.join = $('c-join').value; opt.leave = $('c-leave').value; }
+    var r = C.retirementTax(opt, R);
+    if (r.error) {
+      heroEl.textContent = '0'; lastHero = '0원'; subEl.textContent = r.error; lastSub = r.error; put([]); return;
+    }
+    heroEl.textContent = C.fmt(r.net); lastHero = C.fmt(r.net) + '원';
+    lastSub = '근속 ' + r.years + '년' + (r.serviceLabel ? ' (' + r.serviceLabel + ')' : '') +
+      ' · 세금 ' + C.fmt(r.total) + '원 · 실효세율 ' + r.rate.toFixed(2) + '%';
+    subEl.textContent = lastSub;
+    put([
+      ['퇴직급여액 <i>세전</i>', C.fmt(r.payout) + '원'],
+      ['근속연수 <i>1년 미만은 올림</i>', r.years + '년'],
+      ['근속연수공제', '−' + C.fmt(r.svcDeduct) + '원'],
+      ['퇴직소득금액', C.fmt(r.afterSvc) + '원'],
+      ['환산급여 <i>÷ 근속연수 × 12</i>', C.fmt(r.converted) + '원'],
+      ['환산급여공제', '−' + C.fmt(r.convDeduct) + '원'],
+      ['과세표준', C.fmt(r.base) + '원'],
+      ['환산산출세액 <i>기본세율</i>', C.fmt(r.convTax) + '원'],
+      ['퇴직소득세 <i>÷ 12 × 근속연수</i>', C.fmt(r.tax) + '원', true],
+      ['지방소득세 <i>소득세의 10%</i>', C.fmt(r.local) + '원'],
+      ['세금 합계', C.fmt(r.total) + '원', true],
+      ['실수령 퇴직금', C.fmt(r.net) + '원', true]
+    ]);
+  }
+  calc();
 
 {% else %}
   /* ── 연차 ── */

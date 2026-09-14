@@ -88,6 +88,11 @@ def collect_urls(forms: list[dict[str, Any]], site_url: str,
             urls += [f"{site_url}/collection/{c['key']}/"
                      for c in json.loads(cpath.read_text(encoding="utf-8"))["collections"]]
         urls += [f"{site_url}/", f"{site_url}/about/", f"{site_url}/request/"]
+        # 직장인 도구(허브 + 개별 도구). build_site 의 TOOLS 목록을 그대로 따라가므로
+        # 도구를 추가해도 여기는 손댈 필요가 없다.
+        import build_site  # noqa: PLC0415 — 도구 목록을 한 곳(TOOLS)에서만 관리한다
+        urls.append(f"{site_url}/tools/")
+        urls += [f"{site_url}{t['path']}" for t in getattr(build_site, "TOOLS", [])]
     else:
         # 새 서식이 걸린 분류 페이지와 메인도 함께 (목록에 새 항목이 추가되므로)
         subs = {f"{f['category']}/{f['subcategory']}" for f in targets}

@@ -67,7 +67,10 @@
         <div class="sb-head"><h3>이 서식에 찍을 도장 만들기</h3><span class="new">NEW</span></div>
         <p>이름을 입력하면 (인) 자리에 넣을 도장 이미지를 바로 만듭니다. 입력한 이름은 서버로 보내지 않습니다.</p>
         <div class="sb-row">
-          <input type="text" id="sb-name" maxlength="8" placeholder="이름 (예: 홍길동)" autocomplete="off" aria-label="도장에 새길 이름">
+          <div class="sb-f">
+            <input type="text" id="sb-name" maxlength="8" placeholder="이름 (예: 홍길동)" autocomplete="off" aria-label="도장에 새길 이름" aria-describedby="sb-cnt">
+            <div class="sb-meta"><span id="sb-long" hidden>긴 이름은 서명형이 보기 좋습니다 → <a href="/tools/stamp/#sign" id="sb-sign">서명 만들기</a></span><span class="sb-cnt" id="sb-cnt">0 / 8</span></div>
+          </div>
           <div class="sb-pv"><canvas id="sb-canvas" width="300" height="300" aria-label="도장 미리보기"></canvas></div>
           <button type="button" class="sb-btn" id="sb-save">PNG 저장</button>
         </div>
@@ -234,7 +237,14 @@ document.addEventListener('DOMContentLoaded', function(){
   function opt(){ return {name:name.value.trim()||'이름', shape:shape, font:'myeongjo', color:'red', seal:true, size:300}; }
   function draw(){ FFStamp.draw(cv, opt()); }
   function link(){ more.href='/tools/stamp/?name='+encodeURIComponent(name.value.trim())+'&shape='+shape; }
-  name.addEventListener('input', function(){ draw(); link(); });
+  // 글자수 안내 — 8자가 한도이고, 5자 이상은 도장 안 글자가 작아져 서명형을 권한다
+  var cnt=document.getElementById('sb-cnt'), longTip=document.getElementById('sb-long'), sign=document.getElementById('sb-sign');
+  function count(){
+    var n=Array.from(name.value).length;
+    cnt.textContent=n+' / 8'; cnt.classList.toggle('max', n>=8); longTip.hidden=n<5;
+    sign.href='/tools/stamp/?name='+encodeURIComponent(name.value.trim())+'#sign';
+  }
+  name.addEventListener('input', function(){ draw(); link(); count(); });
   shapes.forEach(function(b){ b.addEventListener('click', function(){
     shapes.forEach(function(x){ x.classList.remove('on'); }); b.classList.add('on');
     shape=b.getAttribute('data-shape'); draw(); link();
@@ -246,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function(){
     FFStamp.draw(out, Object.assign(opt(), {size:600}));
     FFStamp.download(out, '도장_'+n, 'png');
   });
-  draw(); link();
+  draw(); link(); count();
 });
 </script>
 {%- endif %}

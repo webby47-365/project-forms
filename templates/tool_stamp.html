@@ -18,6 +18,15 @@
 .namebar input[type=text]{width:100%; padding:11px 13px; font-size:18px; font-weight:600; font-family:inherit;
   border:1px solid var(--line-img); border-radius:9px; background:#fff; color:var(--ink)}
 .namebar input[type=text]:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(47,111,208,.14)}
+/* 이름 글자수(n / 8)와 서명 권유 — 입력칸 오른쪽 아래. PC는 칸 높이를 바꾸지 않게 띄워 두고
+   (막대 아래 여백을 늘려 자리를 만든다) 좁은 화면에서는 흐름 안에 둔다 */
+.namebar{padding-bottom:30px}
+.namebar .f.nm{position:relative}
+.nm-meta{position:absolute; right:0; top:100%; margin-top:4px; display:flex; gap:8px; align-items:baseline;
+  font-size:12px; line-height:1.4; color:var(--muted); white-space:nowrap}
+.nm-meta a{color:var(--accent); font-weight:600}
+.nm-cnt{font-variant-numeric:tabular-nums}
+.nm-cnt.max{color:#c0392b; font-weight:700}
 .chipset{display:flex; gap:7px; align-items:center; min-height:44px}
 .chipset button{padding:7px 13px; border-radius:999px; font-size:13px; border:1px solid var(--line); background:#fff;
   color:#374151; font-weight:600; cursor:pointer; font-family:inherit}
@@ -96,7 +105,8 @@
 
 @media (max-width:860px){
   .gallery{grid-template-columns:repeat(2,1fr); gap:11px}
-  .namebar{flex-wrap:wrap; gap:12px}
+  .namebar{flex-wrap:wrap; gap:12px; padding-bottom:18px}
+  .nm-meta{position:static; justify-content:flex-end; flex-wrap:wrap; white-space:normal; margin-top:5px}
   .namebar .f{flex:1 1 100%}
   .namebar .f.small{flex:1 1 auto}
   .pv{height:150px}
@@ -116,8 +126,9 @@
     회원가입 없이 바로 저장할 수 있고, 입력한 이름은 서버로 전송되지 않습니다.</p>
 
   <div class="namebar">
-    <div class="f"><label for="st-name">이름</label>
-      <input type="text" id="st-name" maxlength="8" placeholder="예: 홍길동" autocomplete="off"></div>
+    <div class="f nm"><label for="st-name">이름</label>
+      <input type="text" id="st-name" maxlength="8" placeholder="예: 홍길동" autocomplete="off" aria-describedby="st-cnt">
+      <div class="nm-meta"><span id="st-long" hidden>긴 이름은 서명형이 보기 좋습니다 → <a href="#sign" id="st-sign">서명 만들기</a></span><span class="nm-cnt" id="st-cnt">0 / 8</span></div></div>
     <div class="f small"><label>도장 글자</label>
       <div class="chipset" id="st-seal"><button type="button" class="on" data-v="1">이름+인</button><button type="button" data-v="0">이름만</button></div></div>
     <div class="f small"><label>색상</label>
@@ -297,7 +308,13 @@ document.addEventListener('DOMContentLoaded', function(){
       FFStamp.download(out, '도장_'+state.name, 'png');
     });
   });
-  nameEl.addEventListener('input', function(){ state.name=nameEl.value.trim().slice(0,8); drawAll(); });
+  // 글자수 안내 — 8자가 한도이고, 5자 이상은 도장 안 글자가 작아져 아래 서명(글꼴로 쓰기)을 권한다
+  function count(){
+    var n=Array.from(nameEl.value).length;
+    $('st-cnt').textContent=n+' / 8'; $('st-cnt').classList.toggle('max', n>=8); $('st-long').hidden=n<5;
+  }
+  nameEl.addEventListener('input', function(){ state.name=nameEl.value.trim().slice(0,8); drawAll(); count(); });
+  count();
   chip('st-seal', null, function(v){ state.seal = v==='1'; drawAll(); });
   chip('st-color', 'color', drawAll);
   chip('st-shape', 'shape', drawAll);
@@ -353,6 +370,11 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
   FFStamp.ready(drawTyped);
+
+  // '서명 만들기' 권유 링크(이 페이지 #sign, 서식 상세 위젯에서 넘어온 경우 포함)는 글꼴 서명 탭을 연다
+  function openTyped(){ var tb=document.querySelector('.signwrap .tabs button[data-tab="type"]'); if(tb) tb.click(); }
+  $('st-sign').addEventListener('click', openTyped);
+  if(location.hash==='#sign') openTyped();
 });
 </script>
 {% endblock %}

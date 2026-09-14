@@ -327,6 +327,76 @@
     return out.join(' ') || '0일';
   }
 
+  /* ────────────────────────── 퇴직소득세 ────────────────────────── */
+
+  /** 근속연수공제 (소득세법 제48조 제1항) */
+  function serviceDeduction(years) {
+    if (years <= 5) return 1000000 * years;
+    if (years <= 10) return 5000000 + 2000000 * (years - 5);
+    if (years <= 20) return 15000000 + 2500000 * (years - 10);
+    return 40000000 + 3000000 * (years - 20);
+  }
+
+  /** 환산급여공제 (소득세법 제48조 제3항) */
+  function convertedDeduction(converted) {
+    if (converted <= 8000000) return converted;
+    if (converted <= 70000000) return 8000000 + (converted - 8000000) * 0.6;
+    if (converted <= 100000000) return 45200000 + (converted - 70000000) * 0.55;
+    if (converted <= 300000000) return 61700000 + (converted - 100000000) * 0.45;
+    return 151700000 + (converted - 300000000) * 0.35;
+  }
+
+  /**
+   * 세법상 근속연수. 1년 미만의 기간이 있으면 1년으로 올린다(소득세법 제48조 제1항).
+   * 기간은 근로를 시작한 날부터 퇴직한 날까지다(시행령 제105조).
+   * leave 는 퇴직금 계산기와 같은 규약 — 마지막 근무일의 다음 날.
+   */
+  function serviceYears(joinISO, leaveISO) {
+    var join = toDate(joinISO), leave = toDate(leaveISO);
+    if (!join || !leave || diffDays(join, leave) <= 0) return 0;
+    var y = 0;
+    while (diffDays(addMonths(join, 12 * (y + 1)), leave) >= 0) y++;   // 꽉 찬 해
+    var rest = diffDays(addMonths(join, 12 * y), leave);               // 남는 기간
+    return rest > 0 ? y + 1 : y;
+  }
+
+  /**
+   * 퇴직소득세 (연분연승법).
+   * 퇴직급여 → 근속연수공제 → 환산급여(×12÷근속연수) → 환산급여공제 → 과세표준
+   * → 기본세율 → 환산산출세액 → ÷12×근속연수 = 산출세액. 지방소득세는 그 10%.
+   *
+   * @param opt.payout 퇴직급여액(세전), opt.join·opt.leave 또는 opt.years(직접 입력)
+   */
+  function retirementTax(opt, R) {
+    var payout = Math.max(0, num(opt.payout));
+    var years = opt.years ? Math.max(1, Math.round(num(opt.years)))
+                          : serviceYears(opt.join, opt.leave);
+    if (!years) {
+      return { error: '입사일과 퇴직일을 확인해 주세요. 퇴직일은 마지막 근무일의 다음 날입니다.' };
+    }
+
+    var svcDeduct = serviceDeduction(years);
+    var afterSvc = Math.max(0, payout - svcDeduct);
+    var converted = afterSvc * 12 / years;                 // 환산급여
+    var convDeduct = convertedDeduction(converted);
+    var base = Math.max(0, converted - convDeduct);        // 과세표준
+    var convTax = progressiveTax(base);                    // 환산산출세액
+    var tax = Math.floor(convTax * years / 12);            // 산출세액 (원 단위 절사)
+    if (payout <= svcDeduct) tax = 0;
+    var local = Math.floor(tax * R.income_tax.local_rate);
+    var total = tax + local;
+
+    return {
+      payout: payout, years: years,
+      serviceLabel: (opt.join && opt.leave) ? serviceLabel(toDate(opt.join), toDate(opt.leave)) : '',
+      svcDeduct: svcDeduct, afterSvc: afterSvc,
+      converted: converted, convDeduct: convDeduct, base: base, convTax: convTax,
+      tax: tax, local: local, total: total,
+      net: payout - total,
+      rate: payout > 0 ? total / payout * 100 : 0
+    };
+  }
+
   /* ────────────────────────── 연차 ────────────────────────── */
 
   /** 근속연수 n년차에 발생하는 연차일수 (근로기준법 60조: 15일 + 2년마다 1일, 한도 25일) */
@@ -521,6 +591,8 @@
     diffDays: diffDays, addDays: addDays, addMonths: addMonths, ymd: ymd,
     insurance: insurance, incomeTax: incomeTax, salary: salary,
     avgPeriods: avgPeriods, severance: severance,
+    retirementTax: retirementTax, serviceYears: serviceYears,
+    serviceDeduction: serviceDeduction, convertedDeduction: convertedDeduction,
     annualLeave: annualLeave, leaveDaysFor: leaveDaysFor,
     copyText: copyText, resultImage: resultImage, download: download,
     track: track, bindMoney: bindMoney, loadTaxTable: loadTaxTable
