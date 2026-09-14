@@ -41,6 +41,7 @@
           {%- endif %}
           {%- endfor %}
         </ul>
+        <a class="hub-link" href="/series/{{ f.series }}/">{{ f.series_name }} {{ series_forms|length }}종 한눈에 비교하기 →</a>
       </div>
       {%- endif %}
 
@@ -62,8 +63,29 @@
         <dt>등록일</dt><dd>{{ f.created_at[:10] }}</dd>
       </dl>
 
+      {%- if f.howto %}
+      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 순서</h2>
+      <ol class="howto">
+        {%- for step in f.howto %}
+        <li>{{ step }}</li>
+        {%- endfor %}
+      </ol>
+      {%- endif %}
+
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">{{ f.usage }}</div>
+
+      {%- if f.faq %}
+      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+      <div class="faq">
+        {%- for item in f.faq %}
+        <details{% if loop.first %} open{% endif %}>
+          <summary>{{ item.q }}</summary>
+          <p class="a">{{ item.a }}</p>
+        </details>
+        {%- endfor %}
+      </div>
+      {%- endif %}
 
       {%- if f.source == 'law-standard' and f.source_note %}
       <div class="notice-box">{{ f.source_note }}. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>
@@ -93,4 +115,9 @@
 <script type="application/ld+json">
 {{ jsonld }}
 </script>
+{%- if faq_jsonld %}
+<script type="application/ld+json">
+{{ faq_jsonld }}
+</script>
+{%- endif %}
 {% endblock %}

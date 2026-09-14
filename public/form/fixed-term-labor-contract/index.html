@@ -289,6 +289,60 @@ footer.site li{margin:3px 0}
 /* 다운로드 버튼과 광고 사이에는 넉넉한 간격을 두어 오클릭을 막는다 */
 .dlbox + .adbox, .dlbtns + .adbox{margin-top:38px}
 
+/* 작성 순서 — 한 단계 한 줄. 번호를 동그라미로 세워 훑어 읽게 한다 */
+.howto{list-style:none; counter-reset:ht; margin:12px 0 0; padding:0}
+.howto li{counter-increment:ht; position:relative; padding:0 0 0 34px; margin:0 0 11px;
+  font-size:14.5px; line-height:1.7; color:#374151}
+.howto li::before{content:counter(ht); position:absolute; left:0; top:1px;
+  width:23px; height:23px; border-radius:50%; background:var(--navy); color:#fff;
+  font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
+.howto li:last-child{margin-bottom:0}
+
+/* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
+.faq{margin:12px 0 0; border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none; cursor:pointer; padding:13px 30px 13px 0; position:relative;
+  font-size:14.5px; font-weight:600; color:var(--navy); line-height:1.55}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:''; position:absolute; right:8px; top:19px; width:8px; height:8px;
+  border-right:2px solid #8a93a5; border-bottom:2px solid #8a93a5;
+  transform:rotate(45deg); transition:transform .15s}
+.faq details[open] summary::after{transform:rotate(-135deg); top:22px}
+.faq summary:hover{color:var(--accent)}
+.faq .a{padding:0 4px 15px; margin:0; font-size:14px; line-height:1.8; color:#475467}
+
+/* 계열 허브 — 어떤 버전을 쓸지 한 표에서 고르게 한다 */
+.cmp{width:100%; border-collapse:collapse; margin:6px 0 0; font-size:14px}
+.cmp th, .cmp td{border:1px solid var(--line); padding:11px 13px; text-align:left;
+  vertical-align:middle; line-height:1.65}
+.cmp thead th{background:var(--navy); color:#fff; font-weight:700; font-size:13.5px;
+  white-space:nowrap}
+.cmp tbody tr:nth-child(even){background:var(--bg-soft)}
+.cmp .vname{font-weight:700; color:var(--navy); white-space:nowrap}
+.cmp .vname a:hover{color:var(--accent); text-decoration:underline}
+.cmp .vuse{color:#475467}
+.cmp .vdl{white-space:nowrap; font-size:13px}
+.cmp .vdl a{display:inline-block; padding:5px 10px; margin:2px 3px 2px 0; border-radius:6px;
+  border:1px solid var(--line); background:#fff; font-weight:600; color:#374151}
+.cmp .vdl a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.cmp-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.hub-link{display:inline-block; margin:10px 0 0; font-size:13px; font-weight:600; color:var(--accent)}
+.hub-link:hover{text-decoration:underline}
+
+/* 검색 결과 페이지 */
+.sform{display:flex; gap:8px; margin:0 0 6px; max-width:560px}
+.sform input{flex:1 1 auto; min-width:0; padding:12px 14px; font-size:15px;
+  border:1px solid var(--line); border-radius:9px; background:#fff}
+.sform input:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.sform button{flex:0 0 auto; padding:12px 22px; font-size:14.5px; font-weight:700; color:#fff;
+  background:var(--navy); border:0; border-radius:9px; cursor:pointer}
+.sform button:hover{background:var(--navy-700)}
+.scount{font-size:14px; color:var(--muted); margin:14px 0 18px}
+.scount b{color:var(--navy)}
+.snone{border:1px solid var(--line); border-radius:var(--radius); background:var(--bg-soft);
+  padding:24px 20px; margin:6px 0 26px; font-size:14.5px; color:#475467; line-height:1.8}
+.snone b{color:var(--navy)}
+
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
@@ -297,8 +351,10 @@ footer.site li{margin:3px 0}
   aside.side{position:static}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
   aside.side a{border:1px solid var(--line)}
-}
+  /* 사이드 광고는 사이드바가 사라지는 폭부터 감춘다
+     (예전에는 이 중괄호 밖에 있어 어느 화면에서도 보이지 않았다) */
   .ad-side{display:none}
+}
 
 @media (max-width:720px){
   .hdr{height:auto; padding:10px 0; flex-wrap:wrap; gap:10px}
@@ -405,6 +461,7 @@ footer.site li{margin:3px 0}
         <h3>근로계약서 5종</h3>
         <p>상황에 맞는 양식을 고르세요. 항목 구성이 서로 다릅니다.</p>
         <ul class="series-list">          <li><a href="/form/labor-contract-standard/" title="표준근로계약서 (기간의 정함이 없는 경우)">표준</a></li>          <li><span class="cur">기간제</span></li>          <li><a href="/form/labor-contract-parttime/" title="단시간 근로계약서">단시간</a></li>          <li><a href="/form/labor-contract-daily/" title="일용직 근로계약서">일용직</a></li>          <li><a href="/form/labor-contract-minor/" title="연소근로자 근로계약서">연소근로자</a></li>        </ul>
+        <a class="hub-link" href="/series/labor-contract/">근로계약서 5종 한눈에 비교하기 →</a>
       </div>
       <div class="dlbox">
         <h3>양식 다운로드</h3>
@@ -422,11 +479,18 @@ footer.site li{margin:3px 0}
         <dt>제공 형식</dt><dd>PDF · Word(DOCX) · 한글(HWPX)</dd>
         <dt>저장 파일명</dt><dd>근로계약서 (기간제).pdf</dd>
         <dt>등록일</dt><dd>2026-09-13</dd>
-      </dl>
-
+      </dl>      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 순서</h2>
+      <ol class="howto">        <li>사용자와 근로자의 인적사항을 적습니다.</li>        <li>계약기간과 근무장소, 업무내용을 기재합니다.</li>        <li>근로일과 근로시간, 휴게시간을 적습니다.</li>        <li>임금 구성항목과 계산방법, 지급방법을 나누어 적습니다.</li>        <li>서명 후 2부를 작성해 각각 1부씩 보관합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">계약기간을 정해 채용하는 계약직·단기 근로자와 체결하는 근로계약서입니다. 기간제 근로자에게는 근로계약기간과 근로일별 근로시간을 서면으로 명시하고 교부해야 하므로 해당 칸을 반드시 채우십시오. 임금은 구성항목·계산방법·지급방법을 나누어 적고, 수습기간을 두는 경우 기간과 수습 중 임금 비율을 함께 기재합니다. 작성 후 2부를 만들어 사용자와 근로자가 각각 1부씩 보관하십시오. 세부 적용 기준은 사업장 취업규칙과 관할 고용노동청 안내를 확인하십시오.
-</div>      <div class="notice-box">근로기준법 제17조 및 기간제 및 단시간근로자 보호 등에 관한 법률 제17조의 서면 명시사항을 반영했습니다.. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+      <div class="faq">        <details open>
+          <summary>수습기간을 두면 임금을 줄여도 되나요?</summary>
+          <p class="a">수습기간과 그 기간의 임금 비율을 계약서에 명시하면 정할 수 있습니다.</p>
+        </details>        <details>
+          <summary>계약기간이 끝나면 자동으로 계약이 끝나나요?</summary>
+          <p class="a">네, 정해진 기간이 끝나면 별도 통지 없이 종료되는 것이 원칙입니다.</p>
+        </details>      </div>      <div class="notice-box">근로기준법 제17조 및 기간제 및 단시간근로자 보호 등에 관한 법률 제17조의 서면 명시사항을 반영했습니다.. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
       </div>
@@ -494,8 +558,9 @@ footer.site li{margin:3px 0}
 </article>  </div></div>
 <script type="application/ld+json">
 {&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;근로계약서 (기간제)&#34;, &#34;description&#34;: &#34;계약기간·근무장소·업무내용·근로시간·임금 등 기간제 근로자의 필수 기재사항을 담은 근로계약서입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/fixed-term-labor-contract/&#34;, &#34;datePublished&#34;: &#34;2026-09-13&#34;, &#34;dateModified&#34;: &#34;2026-09-14&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
-</script>
-</main>
+</script><script type="application/ld+json">
+{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;FAQPage&#34;, &#34;mainEntity&#34;: [{&#34;@type&#34;: &#34;Question&#34;, &#34;name&#34;: &#34;수습기간을 두면 임금을 줄여도 되나요?&#34;, &#34;acceptedAnswer&#34;: {&#34;@type&#34;: &#34;Answer&#34;, &#34;text&#34;: &#34;수습기간과 그 기간의 임금 비율을 계약서에 명시하면 정할 수 있습니다.&#34;}}, {&#34;@type&#34;: &#34;Question&#34;, &#34;name&#34;: &#34;계약기간이 끝나면 자동으로 계약이 끝나나요?&#34;, &#34;acceptedAnswer&#34;: {&#34;@type&#34;: &#34;Answer&#34;, &#34;text&#34;: &#34;네, 정해진 기간이 끝나면 별도 통지 없이 종료되는 것이 원칙입니다.&#34;}}]}
+</script></main>
 
 <div class="wrap"></div>
 
@@ -537,11 +602,20 @@ footer.site li{margin:3px 0}
     return fetch('/search-index.json').then(function(r){return r.json();}).then(function(d){ idx=d; return d; });
   }
   function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  function render(list){
-    if(!list.length){ box.innerHTML='<div class="none">검색 결과가 없습니다.</div>'; box.style.display='block'; return; }
-    box.innerHTML=list.slice(0,10).map(function(f){
+  function render(list, term){
+    if(!list.length){
+      box.innerHTML='<div class="none">검색 결과가 없습니다.</div>';
+      box.style.display='block'; return;
+    }
+    var html=list.slice(0,8).map(function(f){
       return '<a href="/form/'+f.id+'/"><div class="t">'+esc(f.title)+'</div><div class="c">'+esc(f.cat)+'</div></a>';
     }).join('');
+    // 목록이 8종을 넘으면 결과 페이지로 보낸다 (드롭다운에서 끊기지 않게)
+    if(list.length>8){
+      html+='<a href="/search/?q='+encodeURIComponent(term)+'"><div class="t">'+
+            '전체 결과 '+list.length+'종 보기 →</div></a>';
+    }
+    box.innerHTML=html;
     box.style.display='block';
   }
   function search(term){
@@ -557,7 +631,7 @@ footer.site li{margin:3px 0}
         else if(hay.indexOf(term)>=0) scored.push([2,f]);
       });
       scored.sort(function(a,b){ return a[0]-b[0]; });
-      render(scored.map(function(s){return s[1];}));
+      render(scored.map(function(s){return s[1];}), q.value.trim());
     }).catch(function(){ box.style.display='none'; });
   }
   q.addEventListener('input', function(){ clearTimeout(timer); timer=setTimeout(function(){ search(q.value); },110); });
@@ -565,7 +639,14 @@ footer.site li{margin:3px 0}
   document.addEventListener('click', function(e){
     if(!box.contains(e.target) && e.target!==q) box.style.display='none';
   });
-  q.addEventListener('keydown', function(e){ if(e.key==='Escape') box.style.display='none'; });
+  // 엔터는 결과 페이지로 — 드롭다운에서 고르지 않고 끝까지 훑어보려는 사람의 동선이다
+  q.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){ box.style.display='none'; return; }
+    if(e.key==='Enter'){
+      var term=q.value.trim();
+      if(term) location.href='/search/?q='+encodeURIComponent(term);
+    }
+  });
 })();
 </script>
 </body>

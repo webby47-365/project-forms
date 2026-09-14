@@ -85,6 +85,10 @@ pip install python-docx python-hwpx jinja2 pyyaml pillow --break-system-packages
 
 1. `specs/{id}.yaml` 작성 — `SPEC_GUIDE.md`의 블록 문법을 정확히 따른다.
    `id`는 영문 소문자·하이픈, 파일명과 일치. `featured: false`.
+   - **미리보기 예시값(sample)** 은 3-1절 규칙대로 반드시 넣는다.
+   - **상세 화면 본문 `howto`·`faq`** 도 3-2절 규칙대로 반드시 넣는다
+     (howto 3~5단계·각 60자 이내, faq 2~4문항·질문 34자 이내). 계열 서식이면 `variant_use`까지.
+     이 세 가지가 체류시간과 검색 유입을 만드는 부분이라 빠뜨리면 페이지가 비어 보인다.
 2. `python scripts/check_spec.py {id}` — **[통과]** 가 나올 때까지 수정한다.
 3. `python scripts/build_form.py {id}` — 다음을 확인한다.
    - `[완료] 1p` (목표 페이지 이내)

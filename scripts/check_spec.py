@@ -29,6 +29,60 @@ def _valid_keys() -> dict[str, set[str]]:
     }
 
 
+# 상세 화면 본문의 가독성 상한. 화면에서 훑어 읽는 글이므로 길어지면 아무도 안 읽는다.
+HOWTO_MIN_STEPS, HOWTO_MAX_STEPS = 3, 5
+HOWTO_MAX_CHARS = 60      # 한 단계 = 한 문장
+FAQ_MIN, FAQ_MAX = 2, 4
+FAQ_Q_MAX, FAQ_A_MAX = 34, 140
+VARIANT_USE_MAX = 40
+
+
+def _check_readable(spec) -> list[str]:  # noqa: ANN001 (FormSpec)
+    """howto·faq·variant_use의 분량 규칙 검사.
+
+    값이 없으면 검사하지 않는다(아직 안 채운 명세는 문제로 잡지 않는다).
+    값이 있으면 화면에서 읽기 좋은 길이인지 확인한다 — SPEC_GUIDE 3-2절 규칙.
+    """
+    out: list[str] = []
+    if spec.howto:
+        if not HOWTO_MIN_STEPS <= len(spec.howto) <= HOWTO_MAX_STEPS:
+            out.append(
+                f"howto는 {HOWTO_MIN_STEPS}~{HOWTO_MAX_STEPS}단계로 (현재 {len(spec.howto)}단계).")
+        for i, step in enumerate(spec.howto):
+            if len(step) > HOWTO_MAX_CHARS:
+                out.append(f"howto[{i}]가 {len(step)}자입니다 — {HOWTO_MAX_CHARS}자 이내 한 문장으로.")
+            # 마침표 개수로만 문장 수를 센다. '~마다', '~한다 '처럼 문장 중간에 오는 '다 '를
+            # 문장 경계로 보면 멀쩡한 우리말을 억지로 고치게 되므로 세지 않는다.
+            if step.count(".") > 1:
+                out.append(f"howto[{i}]에 문장이 둘 이상으로 보입니다 — 단계를 나누십시오.")
+    if spec.faq:
+        if not FAQ_MIN <= len(spec.faq) <= FAQ_MAX:
+            out.append(f"faq는 {FAQ_MIN}~{FAQ_MAX}문항으로 (현재 {len(spec.faq)}문항).")
+        for i, item in enumerate(spec.faq):
+            if len(item["q"]) > FAQ_Q_MAX:
+                out.append(f"faq[{i}].q가 {len(item['q'])}자입니다 — {FAQ_Q_MAX}자 이내로.")
+            if not item["q"].endswith("?"):
+                out.append(f"faq[{i}].q는 물음표로 끝나야 합니다.")
+            if len(item["a"]) > FAQ_A_MAX:
+                out.append(f"faq[{i}].a가 {len(item['a'])}자입니다 — {FAQ_A_MAX}자 이내로.")
+    if spec.variant_use and len(spec.variant_use) > VARIANT_USE_MAX:
+        out.append(
+            f"variant_use가 {len(spec.variant_use)}자입니다 — {VARIANT_USE_MAX}자 이내 한 줄로.")
+    return out
+
+
+def content_todo(spec) -> list[str]:  # noqa: ANN001 (FormSpec)
+    """아직 채우지 않은 본문 항목을 권고로 알린다 (문제 아님, 종료코드에 반영하지 않음)."""
+    todo: list[str] = []
+    if not spec.howto:
+        todo.append("howto 미작성 — 상세 화면 '작성 순서'가 비어 있습니다.")
+    if not spec.faq:
+        todo.append("faq 미작성 — 상세 화면 '자주 묻는 질문'이 비어 있습니다.")
+    if spec.series and not spec.variant_use:
+        todo.append("variant_use 미작성 — 계열 비교표의 '이럴 때 쓰세요'가 비어 있습니다.")
+    return todo
+
+
 def check_one(path: Path, keys: dict[str, set[str]]) -> list[str]:
     """명세 1개를 검사하고 문제 목록을 반환한다 (빈 목록이면 통과)."""
     problems: list[str] = []
@@ -51,6 +105,8 @@ def check_one(path: Path, keys: dict[str, set[str]]) -> list[str]:
         problems.append("summary가 너무 짧습니다 (20자 이상).")
     if len(spec.usage) < 60:
         problems.append("usage가 너무 짧습니다 (60자 이상, 실제 사용 상황과 주의사항 포함).")
+
+    problems.extend(_check_readable(spec))
 
     has_title = any(b["type"] == "doc_title" for b in spec.blocks)
     if not has_title:
@@ -155,6 +211,8 @@ def main() -> int:
         if len(sys.argv) > 1 else sorted(SPECS.glob("*.yaml"))
     )
     bad = 0
+    todo_count = 0
+    show_todo = len(targets) <= 20  # 전체 검사에서는 권고를 건별로 찍지 않고 건수만 센다
     for path in targets:
         if not path.exists():
             print(f"[없음] {path.name}")
@@ -168,7 +226,17 @@ def main() -> int:
                 print(f"   - {p}")
         else:
             print(f"[통과] {path.name}")
-    print(f"\n검사 {len(targets)}건 / 문제 {bad}건")
+        try:
+            todo = content_todo(load_spec(path))
+        except SpecError:
+            todo = []
+        if todo:
+            todo_count += 1
+            if show_todo:
+                for t in todo:
+                    print(f"   · (권고) {t}")
+    tail = f" / 본문 미작성 {todo_count}건" if todo_count else ""
+    print(f"\n검사 {len(targets)}건 / 문제 {bad}건{tail}")
     return 0 if bad == 0 else 1
 
 

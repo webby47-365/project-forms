@@ -289,6 +289,60 @@ footer.site li{margin:3px 0}
 /* 다운로드 버튼과 광고 사이에는 넉넉한 간격을 두어 오클릭을 막는다 */
 .dlbox + .adbox, .dlbtns + .adbox{margin-top:38px}
 
+/* 작성 순서 — 한 단계 한 줄. 번호를 동그라미로 세워 훑어 읽게 한다 */
+.howto{list-style:none; counter-reset:ht; margin:12px 0 0; padding:0}
+.howto li{counter-increment:ht; position:relative; padding:0 0 0 34px; margin:0 0 11px;
+  font-size:14.5px; line-height:1.7; color:#374151}
+.howto li::before{content:counter(ht); position:absolute; left:0; top:1px;
+  width:23px; height:23px; border-radius:50%; background:var(--navy); color:#fff;
+  font-size:12.5px; font-weight:700; display:flex; align-items:center; justify-content:center}
+.howto li:last-child{margin-bottom:0}
+
+/* 자주 묻는 질문 — 접어 두어 첫 화면이 길어 보이지 않게 한다 */
+.faq{margin:12px 0 0; border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none; cursor:pointer; padding:13px 30px 13px 0; position:relative;
+  font-size:14.5px; font-weight:600; color:var(--navy); line-height:1.55}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:''; position:absolute; right:8px; top:19px; width:8px; height:8px;
+  border-right:2px solid #8a93a5; border-bottom:2px solid #8a93a5;
+  transform:rotate(45deg); transition:transform .15s}
+.faq details[open] summary::after{transform:rotate(-135deg); top:22px}
+.faq summary:hover{color:var(--accent)}
+.faq .a{padding:0 4px 15px; margin:0; font-size:14px; line-height:1.8; color:#475467}
+
+/* 계열 허브 — 어떤 버전을 쓸지 한 표에서 고르게 한다 */
+.cmp{width:100%; border-collapse:collapse; margin:6px 0 0; font-size:14px}
+.cmp th, .cmp td{border:1px solid var(--line); padding:11px 13px; text-align:left;
+  vertical-align:middle; line-height:1.65}
+.cmp thead th{background:var(--navy); color:#fff; font-weight:700; font-size:13.5px;
+  white-space:nowrap}
+.cmp tbody tr:nth-child(even){background:var(--bg-soft)}
+.cmp .vname{font-weight:700; color:var(--navy); white-space:nowrap}
+.cmp .vname a:hover{color:var(--accent); text-decoration:underline}
+.cmp .vuse{color:#475467}
+.cmp .vdl{white-space:nowrap; font-size:13px}
+.cmp .vdl a{display:inline-block; padding:5px 10px; margin:2px 3px 2px 0; border-radius:6px;
+  border:1px solid var(--line); background:#fff; font-weight:600; color:#374151}
+.cmp .vdl a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.cmp-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.hub-link{display:inline-block; margin:10px 0 0; font-size:13px; font-weight:600; color:var(--accent)}
+.hub-link:hover{text-decoration:underline}
+
+/* 검색 결과 페이지 */
+.sform{display:flex; gap:8px; margin:0 0 6px; max-width:560px}
+.sform input{flex:1 1 auto; min-width:0; padding:12px 14px; font-size:15px;
+  border:1px solid var(--line); border-radius:9px; background:#fff}
+.sform input:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.sform button{flex:0 0 auto; padding:12px 22px; font-size:14.5px; font-weight:700; color:#fff;
+  background:var(--navy); border:0; border-radius:9px; cursor:pointer}
+.sform button:hover{background:var(--navy-700)}
+.scount{font-size:14px; color:var(--muted); margin:14px 0 18px}
+.scount b{color:var(--navy)}
+.snone{border:1px solid var(--line); border-radius:var(--radius); background:var(--bg-soft);
+  padding:24px 20px; margin:6px 0 26px; font-size:14.5px; color:#475467; line-height:1.8}
+.snone b{color:var(--navy)}
+
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid.g4{grid-template-columns:repeat(3,1fr)}
@@ -297,8 +351,10 @@ footer.site li{margin:3px 0}
   aside.side{position:static}
   aside.side ul{display:flex; flex-wrap:wrap; gap:4px}
   aside.side a{border:1px solid var(--line)}
-}
+  /* 사이드 광고는 사이드바가 사라지는 폭부터 감춘다
+     (예전에는 이 중괄호 밖에 있어 어느 화면에서도 보이지 않았다) */
   .ad-side{display:none}
+}
 
 @media (max-width:720px){
   .hdr{height:auto; padding:10px 0; flex-wrap:wrap; gap:10px}
@@ -418,11 +474,18 @@ footer.site li{margin:3px 0}
         <dt>제공 형식</dt><dd>PDF · Word(DOCX) · 한글(HWPX)</dd>
         <dt>저장 파일명</dt><dd>진료기록 사본 발급 신청서.pdf</dd>
         <dt>등록일</dt><dd>2026-09-14</dd>
-      </dl>
-
+      </dl>      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 순서</h2>
+      <ol class="howto">        <li>신청인 정보와 환자와의 관계를 적습니다.</li>        <li>신청 목적과 필요한 기록 종류·기간을 씁니다.</li>        <li>대리인 신청이면 관계 증명서류를 확인합니다.</li>        <li>신청서를 제출하고 발급 수수료를 확인합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">의료법 제21조에 따라 환자 또는 그 대리인이 진료기록의 열람이나 사본 발급을 요청할 때 작성합니다. 대리인이 신청하는 경우 가족관계증명서 등 관계를 증명하는 서류를 함께 제출해야 하며, 신청 목적과 필요한 기록 종류·기간을 구체적으로 적어야 처리 기간이 단축됩니다. 발급 수수료는 기관마다 다르므로 담당 부서에 문의하십시오.
-</div>      <div class="notice-box">의료법 제21조에 따른 기록 열람·사본 발급 요건 반영. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
+</div>      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+      <div class="faq">        <details open>
+          <summary>가족이 대신 신청할 수 있나요?</summary>
+          <p class="a">가능하지만 가족관계증명서 등 관계를 증명하는 서류를 함께 제출해야 합니다.</p>
+        </details>        <details>
+          <summary>발급까지 얼마나 걸리나요?</summary>
+          <p class="a">병원마다 다르므로 접수 시 담당 부서에 예상 소요 기간을 확인하는 것이 좋습니다.</p>
+        </details>      </div>      <div class="notice-box">의료법 제21조에 따른 기록 열람·사본 발급 요건 반영. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
       </div>
@@ -490,8 +553,9 @@ footer.site li{margin:3px 0}
 </article>  </div></div>
 <script type="application/ld+json">
 {&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;DigitalDocument&#34;, &#34;name&#34;: &#34;진료기록 사본 발급 신청서&#34;, &#34;description&#34;: &#34;환자 본인 또는 대리인이 진료기록 사본 발급이나 열람을 신청할 때 사용하는 서식입니다.&#34;, &#34;inLanguage&#34;: &#34;ko&#34;, &#34;isAccessibleForFree&#34;: true, &#34;encodingFormat&#34;: [&#34;application/pdf&#34;, &#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;, &#34;application/hwp+zip&#34;], &#34;url&#34;: &#34;https://freeforms.kr/form/medical-record-request/&#34;, &#34;datePublished&#34;: &#34;2026-09-14&#34;, &#34;dateModified&#34;: &#34;2026-09-14&#34;, &#34;publisher&#34;: {&#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;무료서식 다운로드&#34;}}
-</script>
-</main>
+</script><script type="application/ld+json">
+{&#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;FAQPage&#34;, &#34;mainEntity&#34;: [{&#34;@type&#34;: &#34;Question&#34;, &#34;name&#34;: &#34;가족이 대신 신청할 수 있나요?&#34;, &#34;acceptedAnswer&#34;: {&#34;@type&#34;: &#34;Answer&#34;, &#34;text&#34;: &#34;가능하지만 가족관계증명서 등 관계를 증명하는 서류를 함께 제출해야 합니다.&#34;}}, {&#34;@type&#34;: &#34;Question&#34;, &#34;name&#34;: &#34;발급까지 얼마나 걸리나요?&#34;, &#34;acceptedAnswer&#34;: {&#34;@type&#34;: &#34;Answer&#34;, &#34;text&#34;: &#34;병원마다 다르므로 접수 시 담당 부서에 예상 소요 기간을 확인하는 것이 좋습니다.&#34;}}]}
+</script></main>
 
 <div class="wrap"></div>
 
@@ -533,11 +597,20 @@ footer.site li{margin:3px 0}
     return fetch('/search-index.json').then(function(r){return r.json();}).then(function(d){ idx=d; return d; });
   }
   function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  function render(list){
-    if(!list.length){ box.innerHTML='<div class="none">검색 결과가 없습니다.</div>'; box.style.display='block'; return; }
-    box.innerHTML=list.slice(0,10).map(function(f){
+  function render(list, term){
+    if(!list.length){
+      box.innerHTML='<div class="none">검색 결과가 없습니다.</div>';
+      box.style.display='block'; return;
+    }
+    var html=list.slice(0,8).map(function(f){
       return '<a href="/form/'+f.id+'/"><div class="t">'+esc(f.title)+'</div><div class="c">'+esc(f.cat)+'</div></a>';
     }).join('');
+    // 목록이 8종을 넘으면 결과 페이지로 보낸다 (드롭다운에서 끊기지 않게)
+    if(list.length>8){
+      html+='<a href="/search/?q='+encodeURIComponent(term)+'"><div class="t">'+
+            '전체 결과 '+list.length+'종 보기 →</div></a>';
+    }
+    box.innerHTML=html;
     box.style.display='block';
   }
   function search(term){
@@ -553,7 +626,7 @@ footer.site li{margin:3px 0}
         else if(hay.indexOf(term)>=0) scored.push([2,f]);
       });
       scored.sort(function(a,b){ return a[0]-b[0]; });
-      render(scored.map(function(s){return s[1];}));
+      render(scored.map(function(s){return s[1];}), q.value.trim());
     }).catch(function(){ box.style.display='none'; });
   }
   q.addEventListener('input', function(){ clearTimeout(timer); timer=setTimeout(function(){ search(q.value); },110); });
@@ -561,7 +634,14 @@ footer.site li{margin:3px 0}
   document.addEventListener('click', function(e){
     if(!box.contains(e.target) && e.target!==q) box.style.display='none';
   });
-  q.addEventListener('keydown', function(e){ if(e.key==='Escape') box.style.display='none'; });
+  // 엔터는 결과 페이지로 — 드롭다운에서 고르지 않고 끝까지 훑어보려는 사람의 동선이다
+  q.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){ box.style.display='none'; return; }
+    if(e.key==='Enter'){
+      var term=q.value.trim();
+      if(term) location.href='/search/?q='+encodeURIComponent(term);
+    }
+  });
 })();
 </script>
 </body>

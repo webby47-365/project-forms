@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+{# 계열 허브: 같은 서식의 실무 변형을 한 화면에서 비교해 고르게 한다.
+   상세 화면을 여러 번 오가지 않아도 되고, '이력서 종류' 같은 검색어의 착지 페이지가 된다. #}
+<div class="wrap">
+  <div class="crumb"><a href="/">홈</a> › {{ s_name }} 비교</div>
+  <h1 class="page">{{ s_name }} 양식 {{ forms|length }}종 — 어떤 버전을 고를까</h1>
+  <p class="lead">
+    같은 {{ s_name }}라도 쓰는 상황에 따라 항목 구성이 다릅니다.
+    아래 표에서 내 상황에 맞는 버전을 고른 뒤 바로 내려받으세요. 모두 무료이고 회원가입이 없습니다.</p>
+
+  <div class="cmp-wrap">
+    <table class="cmp">
+      <thead>
+        <tr><th>버전</th><th>이럴 때 쓰세요</th><th>분량</th><th>받기</th></tr>
+      </thead>
+      <tbody>
+        {%- for f in forms %}
+        <tr>
+          <td class="vname"><a href="/form/{{ f.id }}/">{{ f.variant or f.title }}</a></td>
+          <td class="vuse">{{ f.variant_use or f.summary }}</td>
+          <td>{{ f.pages }}쪽</td>
+          <td class="vdl" data-form-title="{{ f.title }}">
+            <a href="{{ dl_map[f.id].pdf }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].pdf }}"{% endif %}>PDF</a>
+            <a href="{{ dl_map[f.id].docx }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].docx }}"{% endif %}>Word</a>
+            <a href="{{ dl_map[f.id].hwpx }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].hwpx }}"{% endif %}>한글</a>
+          </td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {{ slot(ads, "series_bottom") }}
+
+  <h2 class="sec">양식 미리보기</h2>
+  <div class="grid g4">
+    {%- for f in forms %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+
+  {%- if other_hubs %}
+  <h2 class="sec">다른 서식도 버전이 있습니다</h2>
+  <div class="grid g4">
+    {%- for h in other_hubs %}
+    <a href="/series/{{ h.key }}/" class="card" style="padding:15px 16px">
+      <div class="name">{{ h.name }}</div>
+      <div class="cat" style="margin-top:6px">{{ h.count }}종 비교</div>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+</div>
+<script type="application/ld+json">
+{{ jsonld }}
+</script>
+{% endblock %}

@@ -165,6 +165,13 @@ def build() -> int:
     # 변형이 하나뿐인 계열은 보여줄 것이 없으므로 묶음에서 뺀다
     series = {k: v for k, v in series.items() if len(v) > 1}
 
+    # 계열 허브 목록 (메인·허브 상호 링크용). 종수가 많은 계열을 앞에 둔다.
+    series_hubs = sorted(
+        ({"key": k, "name": v[0].get("series_name") or k, "count": len(v)}
+         for k, v in series.items()),
+        key=lambda h: (-h["count"], h["name"]),
+    )
+
     # 메인 노출 순서: 명세의 featured_rank → 다운로드 수 → 제목
     featured = sorted(
         (f for f in forms if f.get("featured")),
@@ -201,6 +208,7 @@ def build() -> int:
         "total_forms": len(forms),
         "updated": now.strftime("%Y-%m-%d"),
         "ticker": ticker,
+        "series_hubs": series_hubs,
         "ads": ads,
         "biz_name": BIZ_NAME,
         "biz_number": BIZ_NUMBER,
@@ -264,6 +272,21 @@ def build() -> int:
             "dateModified": f.get("updated_at", "")[:10],
             "publisher": {"@type": "Organization", "name": SITE_NAME},
         }, ensure_ascii=False, indent=None)
+        # FAQ 구조화 데이터 — 검색결과에 질문이 함께 노출될 수 있다(노출 여부는 구글이 정한다).
+        faq_jsonld = ""
+        if f.get("faq"):
+            faq_jsonld = json.dumps({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": item["q"],
+                        "acceptedAnswer": {"@type": "Answer", "text": item["a"]},
+                    }
+                    for item in f["faq"]
+                ],
+            }, ensure_ascii=False, indent=None)
         write(PUBLIC / "form" / f["id"] / "index.html",
               env.get_template("form.html").render(
                   page_title=f"{f['title']} 양식 무료 다운로드 (PDF·Word·한글) — {SITE_NAME}",
@@ -273,7 +296,7 @@ def build() -> int:
                   cat=cat_obj[f["category"]],
                   sub=next(s for s in cat_obj[f["category"]]["subcategories"]
                            if s["key"] == f["subcategory"]),
-                  related=related, kb=kb, jsonld=jsonld,
+                  related=related, kb=kb, jsonld=jsonld, faq_jsonld=faq_jsonld,
                   series_forms=series.get(f.get("series", ""), []),
                   dl=dl_map[f["id"]], dl_map=dl_map, names=name_map[f["id"]], name_map=name_map, **common,
               ))
@@ -303,6 +326,48 @@ def build() -> int:
                       ))
                 pages += 1
 
+    # 3-3) 계열 허브 — 같은 서식의 변형을 비교표로 모아 한 화면에서 고르게 한다.
+    #      상세 화면을 여러 번 오가지 않아도 되고 '이력서 종류' 류의 검색어 착지 페이지가 된다.
+    for hub in series_hubs:
+        members = series[hub["key"]]
+        hub_jsonld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": f"{hub['name']} 양식 {len(members)}종",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": i,
+                    "name": m.get("variant") or m["title"],
+                    "url": f"{SITE_URL}/form/{m['id']}/",
+                }
+                for i, m in enumerate(members, start=1)
+            ],
+        }, ensure_ascii=False, indent=None)
+        others = [h for h in series_hubs if h["key"] != hub["key"]][:8]
+        write(PUBLIC / "series" / hub["key"] / "index.html",
+              env.get_template("series.html").render(
+                  page_title=f"{hub['name']} 양식 {len(members)}종 비교 — 무료 다운로드",
+                  page_desc=f"{hub['name']} 양식 {len(members)}종을 상황별로 비교하고 "
+                            f"PDF·Word·한글로 무료 다운로드. 어떤 버전을 써야 하는지 표로 정리했습니다.",
+                  canonical=f"/series/{hub['key']}/",
+                  s_key=hub["key"], s_name=hub["name"], forms=members,
+                  other_hubs=others, jsonld=hub_jsonld,
+                  dl_map=dl_map, name_map=name_map, **common,
+              ))
+        pages += 1
+
+    # 3-4) 검색 결과 페이지 — 검색어는 ?q=로 받아 브라우저에서 추린다(정적 호스팅이라 서버 검색이 없다).
+    #      결과 목록은 매번 달라지므로 색인에서 제외하고, 대신 내부 이동 통로로만 쓴다.
+    write(PUBLIC / "search" / "index.html", env.get_template("search.html").render(
+        page_title=f"서식 검색 — {SITE_NAME}",
+        page_desc=f"무료 서식 {len(forms)}종에서 원하는 양식을 찾아보세요.",
+        canonical="/search/",
+        page_robots="noindex, follow",
+        featured=featured, dl_map=dl_map, name_map=name_map, **common,
+    ))
+    pages += 1
+
     # 3-2) 정책 페이지 — 애드센스 심사는 쿠키 사용 고지를 요구한다
     write(PUBLIC / "privacy" / "index.html", env.get_template("privacy.html").render(
         page_title=f"개인정보처리방침 — {SITE_NAME}",
@@ -323,6 +388,7 @@ def build() -> int:
                 "cat": cat_label[f["id"]],
                 "tags": " ".join(f.get("tags", [])),
                 "summary": f["summary"],
+                "pages": f.get("pages", 1),
             }
             for f in sorted(forms, key=lambda x: x["title"])
         ],
@@ -330,13 +396,20 @@ def build() -> int:
     write(PUBLIC / "search-index.json", json.dumps(index, ensure_ascii=False))
 
     # 5) sitemap.xml / robots.txt
-    urls = ["/"] + [f"/category/{c['key']}/{s['key']}/" for c in categories
-                    for s in c["subcategories"]] + [f"/form/{f['id']}/" for f in forms] + ["/privacy/"]
+    # /search/는 결과가 검색어마다 달라 색인 대상이 아니므로 사이트맵에 넣지 않는다.
+    urls = (["/"]
+            + [f"/category/{c['key']}/{s['key']}/" for c in categories for s in c["subcategories"]]
+            + [f"/series/{h['key']}/" for h in series_hubs]
+            + [f"/form/{f['id']}/" for f in forms]
+            + ["/privacy/"])
     today = now.strftime("%Y-%m-%d")
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
-        priority = "1.0" if u == "/" else ("0.8" if u.startswith("/form/") else "0.6")
+        priority = ("1.0" if u == "/"
+                    else "0.8" if u.startswith("/form/")
+                    else "0.7" if u.startswith("/series/")
+                    else "0.6")
         sitemap.append(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{today}</lastmod>"
                        f"<priority>{priority}</priority></url>")
     sitemap.append("</urlset>")

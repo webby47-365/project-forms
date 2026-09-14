@@ -59,6 +59,10 @@ class FormSpec:
     series_name: str = ""   # 계열 표시명 (예: "이력서")
     variant: str = ""       # 이 서식의 변형 이름 (예: "신입용", "경력용")
     variant_rank: int = 99  # 계열 안에서의 나열 순서
+    variant_use: str = ""   # 계열 비교표의 "이럴 때 쓰세요" 한 줄 (40자 이내)
+    # 상세 화면 본문. 화면에서 읽는 글이므로 짧게 끊어 쓴다(SPEC_GUIDE 3-2절).
+    howto: list[str] = field(default_factory=list)          # 작성 단계 3~5개, 각 한 문장
+    faq: list[dict[str, str]] = field(default_factory=list)  # [{q, a}] 2~4문항, 아코디언으로 표시
     version: int = 1
     created_by: str = "manual"
     status: str = "published"
@@ -148,11 +152,53 @@ def load_spec(path: Path) -> FormSpec:
         series_name=str(raw.get("series_name", "")),
         variant=str(raw.get("variant", "")),
         variant_rank=int(raw.get("variant_rank", 99)),
+        variant_use=str(raw.get("variant_use", "")),
+        howto=_load_howto(path.name, raw.get("howto")),
+        faq=_load_faq(path.name, raw.get("faq")),
         version=int(raw.get("version", 1)),
         created_by=str(raw.get("created_by", "manual")),
         status=str(raw.get("status", "published")),
         target_pages=int(raw.get("target_pages", 0)),
     )
+
+
+def _load_howto(fname: str, raw: Any) -> list[str]:
+    """작성 단계(howto)를 문자열 목록으로 읽는다. 없으면 빈 목록.
+
+    Raises:
+        SpecError: 목록이 아니거나 항목이 문자열이 아닌 경우.
+    """
+    if raw is None:
+        return []
+    if not isinstance(raw, list):
+        raise SpecError(f"{fname}: howto는 목록이어야 합니다.")
+    steps: list[str] = []
+    for i, step in enumerate(raw):
+        if not isinstance(step, str) or not step.strip():
+            raise SpecError(f"{fname}: howto[{i}]가 빈 값이거나 문자열이 아닙니다.")
+        steps.append(" ".join(step.split()))
+    return steps
+
+
+def _load_faq(fname: str, raw: Any) -> list[dict[str, str]]:
+    """자주 묻는 질문(faq)을 [{q, a}] 목록으로 읽는다. 없으면 빈 목록.
+
+    Raises:
+        SpecError: 목록이 아니거나 q·a 키가 빠진 경우.
+    """
+    if raw is None:
+        return []
+    if not isinstance(raw, list):
+        raise SpecError(f"{fname}: faq는 목록이어야 합니다.")
+    items: list[dict[str, str]] = []
+    for i, item in enumerate(raw):
+        if not isinstance(item, dict) or "q" not in item or "a" not in item:
+            raise SpecError(f"{fname}: faq[{i}]에 q 또는 a가 없습니다.")
+        q, a = str(item["q"]).strip(), str(item["a"]).strip()
+        if not q or not a:
+            raise SpecError(f"{fname}: faq[{i}]의 q 또는 a가 비어 있습니다.")
+        items.append({"q": " ".join(q.split()), "a": " ".join(a.split())})
+    return items
 
 
 def _check_yaml_bool_trap(fname: str, idx: int, blk: dict[str, Any]) -> None:
