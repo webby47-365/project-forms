@@ -8,10 +8,23 @@
 <link rel="canonical" href="{{ site_url }}{{ canonical }}">
 {% if page_robots is defined %}<meta name="robots" content="{{ page_robots }}">
 {% endif %}
-<meta property="og:type" content="website">
+{# 공유 카드(카카오톡·슬랙·X·페이스북)와 검색엔진이 함께 읽는 메타. og_image 를
+   넘기지 않는 페이지는 사이트 기본 이미지(/og-default.png, 1200x630)를 쓴다. #}
+<meta property="og:type" content="{{ og_type | default('website') }}">
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:description" content="{{ page_desc }}">
 <meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:url" content="{{ site_url }}{{ canonical }}">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="{{ site_url }}{{ og_image | default('/og-default.png') }}">
+<meta property="og:image:width" content="{{ og_w | default(1200) }}">
+<meta property="og:image:height" content="{{ og_h | default(630) }}">
+<meta property="og:image:alt" content="{{ page_title }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_desc }}">
+<meta name="twitter:image" content="{{ site_url }}{{ og_image | default('/og-default.png') }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site_name }} 최근 추가 서식" href="/rss.xml">
 <meta name="naver-site-verification" content="84f0aadaca88d57ca53e9c0eb1b5705bb0a29425">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {% if ga4_id %}
@@ -529,6 +542,13 @@ footer.site li{margin:3px 0}
 </div>
 {%- endif %}
 
+{% if breadcrumb_jsonld is defined and breadcrumb_jsonld %}
+<script type="application/ld+json">{{ breadcrumb_jsonld | safe }}</script>
+{% endif %}
+{% if site_jsonld is defined and site_jsonld %}
+<script type="application/ld+json">{{ site_jsonld | safe }}</script>
+{% endif %}
+
 <main>{% block content %}{% endblock %}</main>
 
 {% from "_ad.html" import slot %}
@@ -541,6 +561,7 @@ footer.site li{margin:3px 0}
         <strong>{{ site_name }}</strong>
         <p style="margin:8px 0 0">회원가입 없이 업무·법률·공공·생활 서식을<br>PDF · Word · 한글 형식으로 무료 다운로드.</p>
         <p style="margin:10px 0 0"><a href="/request/"><strong>찾는 서식이 없나요? 요청하기 →</strong></a></p>
+        <p style="margin:6px 0 0"><a href="/about/">사이트 소개</a> · <a href="/rss.xml">RSS 구독</a></p>
       </div>
       <div style="flex:1 1 420px">
         <strong>카테고리</strong>

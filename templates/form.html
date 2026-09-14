@@ -61,6 +61,9 @@
         <dt>제공 형식</dt><dd>PDF · Word(DOCX) · 한글(HWPX)</dd>
         <dt>저장 파일명</dt><dd>{{ names.pdf }}</dd>
         <dt>등록일</dt><dd>{{ f.created_at[:10] }}</dd>
+        {%- if f.updated_at[:10] and f.updated_at[:10] != f.created_at[:10] %}
+        <dt>최종 수정</dt><dd>{{ f.updated_at[:10] }}</dd>
+        {%- endif %}
       </dl>
 
       {%- if f.howto %}
@@ -138,11 +141,11 @@
   {%- endif %}
 </div>
 <script type="application/ld+json">
-{{ jsonld }}
+{{ jsonld | safe }}
 </script>
 {%- if faq_jsonld %}
 <script type="application/ld+json">
-{{ faq_jsonld }}
+{{ faq_jsonld | safe }}
 </script>
 {%- endif %}
 {% endblock %}

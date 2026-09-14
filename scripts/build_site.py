@@ -45,6 +45,28 @@ RECENT_COUNT = 10
 RELATED_COUNT = 10       # 상세 화면 '함께 찾는 서식' 개수
 TAG_MIN_FORMS = 3        # 태그 허브를 만들 최소 서식 수 (이보다 적으면 얇은 페이지가 된다)
 TICKER_COUNT = 5  # 상단 롤링바에 띄울 최근 추가 서식 수
+RSS_COUNT = 30    # RSS 피드에 담을 최근 서식 수 (네이버 서치어드바이저 RSS 제출용)
+
+# robots.txt에 이름을 적어 둘 크롤러. 기본값이 이미 전체 허용이지만, AI 검색 크롤러는
+# 자기 이름이 적힌 규칙을 우선해서 보는 경우가 있어 명시해 둔다.
+# Google-Extended / Applebot-Extended 는 '검색 노출'이 아니라 '학습 사용' 동의 스위치다.
+AI_CRAWLERS = [
+    ("GPTBot", "OpenAI 학습"),
+    ("OAI-SearchBot", "ChatGPT 검색"),
+    ("ChatGPT-User", "ChatGPT 사용자 열람"),
+    ("ClaudeBot", "Anthropic 학습"),
+    ("Claude-SearchBot", "Claude 검색"),
+    ("Claude-User", "Claude 사용자 열람"),
+    ("PerplexityBot", "Perplexity 색인"),
+    ("Perplexity-User", "Perplexity 사용자 열람"),
+    ("Google-Extended", "Gemini·AI 개요"),
+    ("Applebot-Extended", "Apple Intelligence"),
+    ("Amazonbot", "Alexa"),
+    ("meta-externalagent", "Meta AI"),
+    ("CCBot", "Common Crawl"),
+]
+# 국내 검색엔진 크롤러. 네이버 Yeti / 다음 Daumoa
+KR_CRAWLERS = [("Yeti", "네이버"), ("Daumoa", "다음")]
 
 FMT_LABEL = {"pdf": "PDF", "docx": "Word (DOCX)", "hwpx": "한글 (HWPX)"}
 
@@ -250,6 +272,68 @@ def write(path: Path, html: str) -> None:
     path.write_text(html, encoding="utf-8", newline="\n")
 
 
+
+def jd(obj: Any) -> str:
+    """구조화 데이터를 한 줄 JSON 문자열로 만든다.
+
+    템플릿에서는 반드시 `| safe` 로 출력해야 한다. 자동 이스케이프가 걸리면
+    큰따옴표가 `&#34;` 로 바뀌는데, <script> 안에서는 문자참조가 되돌아가지 않아
+    검색엔진이 JSON을 아예 파싱하지 못한다(실제로 그 상태로 배포돼 있었다).
+    """
+    return json.dumps(obj, ensure_ascii=False, indent=None)
+
+
+def breadcrumb_ld(trail: list[tuple[str, str]]) -> str:
+    """빵부스러기 구조화 데이터. trail은 (이름, 경로) 순서쌍이며 마지막이 현재 위치다.
+
+    검색결과에 `홈 > 기업 > 인사·노무 > 사직서` 형태의 경로가 표시된다.
+    화면에는 이미 있었지만 구조화 데이터가 없어 검색엔진이 읽지 못했다.
+    """
+    return jd({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": name,
+             "item": f"{SITE_URL}{path}"}
+            for i, (name, path) in enumerate(trail, start=1)
+        ],
+    })
+
+
+def form_date(f: dict[str, Any], field: str = "updated_at") -> str:
+    """서식의 날짜를 YYYY-MM-DD로 돌려준다. 비어 있으면 등록일, 그것도 없으면 빈 문자열."""
+    return (f.get(field) or f.get("created_at") or "")[:10]
+
+
+def rfc822(day: str) -> str:
+    """YYYY-MM-DD → RSS가 요구하는 RFC822 날짜 문자열(KST 기준)."""
+    if not day:
+        day = datetime.now(KST).strftime("%Y-%m-%d")
+    try:
+        dt = datetime.strptime(day, "%Y-%m-%d").replace(tzinfo=KST)
+    except ValueError:
+        dt = datetime.now(KST)
+    return dt.strftime("%a, %d %b %Y 00:00:00 +0900")
+
+
+def xml_text(s: str) -> str:
+    """XML 본문에 안전하게 넣을 수 있게 &, <, > 를 바꾼다."""
+    return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+
+
+def make_og_default(dest: Path) -> bool:
+    """공유 카드 기본 이미지를 assets/에서 public/으로 복사한다.
+
+    파일이 없어도 빌드를 멈추지 않는다(그 경우 공유 카드에 이미지가 빠질 뿐이다).
+    """
+    src = ROOT / "assets" / "og-default.png"
+    if not src.exists():
+        return False
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(src, dest)
+    return True
+
+
 def build() -> int:
     """사이트 전체를 생성하고 만들어진 페이지 수를 반환한다."""
     catalog = load_json(CATALOG)
@@ -398,11 +482,49 @@ def build() -> int:
     pages = 0
 
     # 1) 메인
+    # 사이트 자체를 설명하는 구조화 데이터. 검색엔진이 '이 사이트가 무엇인지'를
+    # 판단하는 근거이자, 사이트링크 검색창(Sitelinks Searchbox)의 전제 조건이다.
+    site_jsonld = jd({
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": f"{SITE_URL}/#website",
+                "url": f"{SITE_URL}/",
+                "name": SITE_NAME,
+                "alternateName": ["무료서식", "freeforms.kr"],
+                "description": f"회원가입 없이 업무·법률·공공·생활 문서 양식 {len(forms)}종을 "
+                               f"PDF·Word·한글(HWPX) 형식으로 무료 제공하는 서식 다운로드 사이트",
+                "inLanguage": "ko",
+                "publisher": {"@id": f"{SITE_URL}/#org"},
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": f"{SITE_URL}/search/?q={{search_term_string}}",
+                    },
+                    "query-input": "required name=search_term_string",
+                },
+            },
+            {
+                "@type": "Organization",
+                "@id": f"{SITE_URL}/#org",
+                "name": SITE_NAME,
+                "legalName": BIZ_NAME,
+                "url": f"{SITE_URL}/",
+                "email": CONTACT_EMAIL,
+                "logo": f"{SITE_URL}/og-default.png",
+                "taxID": BIZ_NUMBER,
+            },
+        ],
+    })
+
     write(PUBLIC / "index.html", env.get_template("index.html").render(
-        page_title=f"{SITE_NAME} — 이력서·사직서·계약서 등 무료 문서 양식",
+        page_title=f"{SITE_NAME} — 이력서·사직서·계약서 등 무료 문서 양식 {len(forms)}종",
         page_desc=f"회원가입 없이 업무·법률·공공·생활 서식 {len(forms)}종을 PDF·Word·한글(HWPX) "
                   f"형식으로 무료 다운로드. 양식을 미리 보고 바로 받으세요.",
         canonical="/",
+        site_jsonld=site_jsonld,
         featured=featured,
         recent=recent,
         dl_map=dl_map,
@@ -421,6 +543,21 @@ def build() -> int:
                       page_desc=f"{c['name']} {s['name']} 분야 무료 서식 {counts[key]}종. "
                                 f"양식 미리보기 후 PDF·Word·한글로 다운로드하세요.",
                       canonical=f"/category/{c['key']}/{s['key']}/",
+                      breadcrumb_jsonld=breadcrumb_ld([
+                          ("홈", "/"),
+                          (f"{c['name']} · {s['name']}", f"/category/{c['key']}/{s['key']}/"),
+                      ]),
+                      site_jsonld=jd({
+                          "@context": "https://schema.org",
+                          "@type": "ItemList",
+                          "name": f"{c['name']} {s['name']} 서식 {counts[key]}종",
+                          "numberOfItems": counts[key],
+                          "itemListElement": [
+                              {"@type": "ListItem", "position": i, "name": m["title"],
+                               "url": f"{SITE_URL}/form/{m['id']}/"}
+                              for i, m in enumerate(grouped[key], start=1)
+                          ],
+                      }),
                       cat=c, sub=s, forms=grouped[key], dl_map=dl_map, name_map=name_map, **common,
                   ))
             pages += 1
@@ -430,25 +567,57 @@ def build() -> int:
         key = f"{f['category']}/{f['subcategory']}"
         related = related_forms(f, forms, by_id, tokens, idf, RELATED_COUNT)
         kb = {k: max(1, v // 1024) for k, v in f["file_sizes"].items()}
-        jsonld = json.dumps({
+        cat_o = cat_obj[f["category"]]
+        sub_o = next(s for s in cat_o["subcategories"] if s["key"] == f["subcategory"])
+        preview = (f.get("previews") or [None])[0]
+        og_image = f"/files/{f['id']}/{preview}" if preview else "/og-default.png"
+        # 실제 내려받는 파일 3종을 MediaObject로 적어 둔다. 파일 크기·형식이 명시되면
+        # 검색엔진과 AI가 "PDF·Word·한글 세 형식 제공"을 사실로 인용할 수 있다.
+        media = [
+            {
+                "@type": "MediaObject",
+                "contentUrl": f"{SITE_URL}/files/{f['id']}/{f['id']}.{ext}",
+                "encodingFormat": mime,
+                "contentSize": f"{max(1, f['file_sizes'][ext] // 1024)}KB",
+                "name": f"{f['title']} ({FMT_LABEL[ext]})",
+            }
+            for ext, mime in (
+                ("pdf", "application/pdf"),
+                ("docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
+                ("hwpx", "application/hwp+zip"),
+            )
+            if ext in f.get("file_sizes", {})
+        ]
+        jsonld = jd({
             "@context": "https://schema.org",
             "@type": "DigitalDocument",
+            "@id": f"{SITE_URL}/form/{f['id']}/#doc",
             "name": f["title"],
+            "headline": f"{f['title']} 양식 무료 다운로드",
             "description": f["summary"],
             "inLanguage": "ko",
             "isAccessibleForFree": True,
+            "isFamilyFriendly": True,
+            "genre": f"{cat_o['name']} · {sub_o['name']}",
+            "keywords": ", ".join(f.get("tags", [])),
+            "about": {"@type": "Thing", "name": f"{cat_o['name']} {sub_o['name']} 서식"},
             "encodingFormat": ["application/pdf",
                               "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                               "application/hwp+zip"],
+            "associatedMedia": media,
+            "thumbnailUrl": f"{SITE_URL}{og_image}",
+            "numberOfPages": f.get("pages", 1),
             "url": f"{SITE_URL}/form/{f['id']}/",
-            "datePublished": f.get("created_at", "")[:10],
-            "dateModified": f.get("updated_at", "")[:10],
-            "publisher": {"@type": "Organization", "name": SITE_NAME},
-        }, ensure_ascii=False, indent=None)
+            "mainEntityOfPage": f"{SITE_URL}/form/{f['id']}/",
+            "datePublished": form_date(f, "created_at"),
+            "dateModified": form_date(f, "updated_at"),
+            "isPartOf": {"@type": "WebSite", "@id": f"{SITE_URL}/#website", "name": SITE_NAME},
+            "publisher": {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": SITE_NAME},
+        })
         # FAQ 구조화 데이터 — 검색결과에 질문이 함께 노출될 수 있다(노출 여부는 구글이 정한다).
         faq_jsonld = ""
         if f.get("faq"):
-            faq_jsonld = json.dumps({
+            faq_jsonld = jd({
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
                 "mainEntity": [
@@ -459,12 +628,20 @@ def build() -> int:
                     }
                     for item in f["faq"]
                 ],
-            }, ensure_ascii=False, indent=None)
+            })
         write(PUBLIC / "form" / f["id"] / "index.html",
               env.get_template("form.html").render(
                   page_title=f"{f['title']} 양식 무료 다운로드 (PDF·Word·한글) — {SITE_NAME}",
                   page_desc=f["summary"],
                   canonical=f"/form/{f['id']}/",
+                  og_type="article",
+                  og_image=og_image, og_w=800, og_h=1131,
+                  breadcrumb_jsonld=breadcrumb_ld([
+                      ("홈", "/"),
+                      (f"{cat_o['name']} · {sub_o['name']}",
+                       f"/category/{f['category']}/{f['subcategory']}/"),
+                      (f["title"], f"/form/{f['id']}/"),
+                  ]),
                   f=f,
                   cat=cat_obj[f["category"]],
                   sub=next(s for s in cat_obj[f["category"]]["subcategories"]
@@ -504,7 +681,7 @@ def build() -> int:
     #      상세 화면을 여러 번 오가지 않아도 되고 '이력서 종류' 류의 검색어 착지 페이지가 된다.
     for hub in series_hubs:
         members = series[hub["key"]]
-        hub_jsonld = json.dumps({
+        hub_jsonld = jd({
             "@context": "https://schema.org",
             "@type": "ItemList",
             "name": f"{hub['name']} 양식 {len(members)}종",
@@ -517,7 +694,7 @@ def build() -> int:
                 }
                 for i, m in enumerate(members, start=1)
             ],
-        }, ensure_ascii=False, indent=None)
+        })
         others = [h for h in series_hubs if h["key"] != hub["key"]][:8]
         write(PUBLIC / "series" / hub["key"] / "index.html",
               env.get_template("series.html").render(
@@ -525,6 +702,10 @@ def build() -> int:
                   page_desc=f"{hub['name']} 양식 {len(members)}종을 상황별로 비교하고 "
                             f"PDF·Word·한글로 무료 다운로드. 어떤 버전을 써야 하는지 표로 정리했습니다.",
                   canonical=f"/series/{hub['key']}/",
+                  breadcrumb_jsonld=breadcrumb_ld([
+                      ("홈", "/"),
+                      (f"{hub['name']} {len(members)}종", f"/series/{hub['key']}/"),
+                  ]),
                   s_key=hub["key"], s_name=hub["name"], forms=members,
                   other_hubs=others, jsonld=hub_jsonld,
                   dl_map=dl_map, name_map=name_map, **common,
@@ -534,7 +715,7 @@ def build() -> int:
     # 3-3-1) 주제 모음 허브 — '퇴사할 때', '이사할 때'처럼 일 단위로 서식을 묶는다.
     #        계열 허브가 세로(같은 서식의 변형)라면 이쪽은 가로(일의 흐름)다.
     for c in collections:
-        c_jsonld = json.dumps({
+        c_jsonld = jd({
             "@context": "https://schema.org",
             "@type": "ItemList",
             "name": f"{c['name']} {c['count']}종",
@@ -547,13 +728,17 @@ def build() -> int:
                 }
                 for i, m in enumerate(c["forms"], start=1)
             ],
-        }, ensure_ascii=False, indent=None)
+        })
         others = [h for h in collection_hubs if h["key"] != c["key"]][:8]
         write(PUBLIC / "collection" / c["key"] / "index.html",
               env.get_template("collection.html").render(
                   page_title=f"{c['name']} {c['count']}종 — 무료 다운로드",
                   page_desc=f"{c['lead'][:90]} PDF·Word·한글 무료 다운로드.",
                   canonical=f"/collection/{c['key']}/",
+                  breadcrumb_jsonld=breadcrumb_ld([
+                      ("홈", "/"),
+                      (f"{c['name']} {c['count']}종", f"/collection/{c['key']}/"),
+                  ]),
                   c=c, forms=c["forms"], others=others, jsonld=c_jsonld,
                   dl_map=dl_map, name_map=name_map, **common,
               ))
@@ -582,6 +767,27 @@ def build() -> int:
         canonical="/request/",
         from_request=from_request,
         dl_map=dl_map, name_map=name_map, **common,
+    ))
+    pages += 1
+
+    # 3-6) 사이트 소개 — '이 사이트가 무엇인가'를 한 문장으로 정의해 두는 페이지.
+    #      AI 검색(챗GPT·퍼플렉시티 등)이 사이트를 인용할 때 근거로 삼는 착지점이고,
+    #      검색엔진에는 신뢰도(E-E-A-T) 신호가 된다.
+    write(PUBLIC / "about" / "index.html", env.get_template("about.html").render(
+        page_title=f"사이트 소개 — {SITE_NAME}",
+        page_desc=f"{SITE_NAME}는 회원가입 없이 문서 양식 {len(forms)}종을 PDF·Word·한글(HWPX) "
+                  f"세 형식으로 무료 제공하는 한국어 서식 사이트입니다.",
+        canonical="/about/",
+        breadcrumb_jsonld=breadcrumb_ld([("홈", "/"), ("사이트 소개", "/about/")]),
+        site_jsonld=jd({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": f"사이트 소개 — {SITE_NAME}",
+            "url": f"{SITE_URL}/about/",
+            "inLanguage": "ko",
+            "mainEntity": {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": SITE_NAME},
+        }),
+        **common,
     ))
     pages += 1
 
@@ -614,26 +820,140 @@ def build() -> int:
 
     # 5) sitemap.xml / robots.txt
     # /search/는 결과가 검색어마다 달라 색인 대상이 아니므로 사이트맵에 넣지 않는다.
-    urls = (["/"]
-            + [f"/category/{c['key']}/{s['key']}/" for c in categories for s in c["subcategories"]]
-            + [f"/collection/{h['key']}/" for h in collection_hubs]
-            + [f"/series/{h['key']}/" for h in series_hubs]
-            + [f"/form/{f['id']}/" for f in forms]
-            + ["/privacy/", "/request/"])
     today = now.strftime("%Y-%m-%d")
+
+    def newest(items: list[dict[str, Any]]) -> str:
+        """묶음 안에서 가장 최근에 고친 서식의 날짜. 목록 페이지의 lastmod로 쓴다."""
+        days = [d for d in (form_date(m) for m in items) if d]
+        return max(days) if days else today
+
+    # lastmod는 '그 페이지가 실제로 바뀐 날'이어야 한다. 전 URL에 오늘 날짜를 찍으면
+    # 크롤러가 값을 신뢰하지 않게 되어(매일 274페이지가 전부 바뀐 것으로 보인다)
+    # 새 서식이 늘어도 우선 수집되지 않는다.
+    site_newest = newest(forms)
+    urls: list[tuple[str, str, str]] = [("/", site_newest, "1.0")]
+    for c in categories:
+        for s in c["subcategories"]:
+            k = f"{c['key']}/{s['key']}"
+            urls.append((f"/category/{k}/", newest(grouped[k]), "0.6"))
+    for h in collection_hubs:
+        members = next(x["forms"] for x in collections if x["key"] == h["key"])
+        urls.append((f"/collection/{h['key']}/", newest(members), "0.7"))
+    for h in series_hubs:
+        urls.append((f"/series/{h['key']}/", newest(series[h["key"]]), "0.7"))
+    for f in forms:
+        urls.append((f"/form/{f['id']}/", form_date(f) or today, "0.8"))
+    urls += [("/about/", site_newest, "0.6"),
+             ("/privacy/", today, "0.3"),
+             ("/request/", today, "0.5")]
+
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for u in urls:
-        priority = ("1.0" if u == "/"
-                    else "0.8" if u.startswith("/form/")
-                    else "0.7" if u.startswith(("/series/", "/collection/"))
-                    else "0.6")
-        sitemap.append(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{today}</lastmod>"
+    for u, mod, priority in urls:
+        sitemap.append(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{mod}</lastmod>"
                        f"<priority>{priority}</priority></url>")
     sitemap.append("</urlset>")
     write(PUBLIC / "sitemap.xml", "\n".join(sitemap) + "\n")
-    write(PUBLIC / "robots.txt",
-          f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+
+    # robots.txt — 기본은 전체 허용이고, AI 검색·국내 검색 크롤러는 이름을 적어 둔다.
+    # /search/ 는 Disallow 하지 않는다. 크롤링을 막으면 그 안의 noindex 태그도 못 읽는다.
+    lines = ["# 무료서식 다운로드 — 전체 공개. 모든 서식은 무료이며 로그인이 필요 없습니다.",
+             "User-agent: *", "Allow: /", ""]
+    for bot, why in KR_CRAWLERS + AI_CRAWLERS:
+        lines += [f"# {why}", f"User-agent: {bot}", "Allow: /", ""]
+    lines += [f"Sitemap: {SITE_URL}/sitemap.xml", f"Sitemap: {SITE_URL}/rss.xml", ""]
+    write(PUBLIC / "robots.txt", "\n".join(lines))
+
+    # 5-2) rss.xml — 네이버 서치어드바이저는 사이트맵과 **별도로** RSS를 받는다.
+    #      새 서식이 올라온 것을 국내 검색에 빨리 알리는 통로다.
+    feed = sorted(forms, key=lambda x: x.get("created_at", ""), reverse=True)[:RSS_COUNT]
+    rss = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">', "<channel>",
+           f"<title>{xml_text(SITE_NAME)} — 최근 추가 서식</title>",
+           f"<link>{SITE_URL}/</link>",
+           f"<description>{xml_text(f'회원가입 없이 내려받는 무료 문서 양식 {len(forms)}종. 새로 추가된 서식을 알려드립니다.')}</description>",
+           "<language>ko</language>",
+           f'<atom:link href="{SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />',
+           f"<lastBuildDate>{rfc822(site_newest)}</lastBuildDate>"]
+    for f in feed:
+        url = f"{SITE_URL}/form/{f['id']}/"
+        rss += ["<item>",
+                f"<title>{xml_text(f['title'])}</title>",
+                f"<link>{url}</link>",
+                f'<guid isPermaLink="true">{url}</guid>',
+                f"<category>{xml_text(cat_label[f['id']])}</category>",
+                f"<pubDate>{rfc822(form_date(f, 'created_at'))}</pubDate>",
+                f"<description>{xml_text(f['summary'])}</description>",
+                "</item>"]
+    rss += ["</channel>", "</rss>", ""]
+    write(PUBLIC / "rss.xml", "\n".join(rss))
+
+    # 5-3) llms.txt / llms-full.txt — 생성형 AI(챗GPT·퍼플렉시티·클로드 등)가
+    #      274페이지 HTML을 헤매지 않고 사이트 구조와 서식 목록을 바로 읽도록 둔 요약본이다.
+    #      llms.txt 는 지도, llms-full.txt 는 전 서식 목록이다.
+    top = sorted(forms, key=lambda x: (x.get("featured_rank", 99), x["title"]))[:20]
+    lt = [f"# {SITE_NAME} (freeforms.kr)", "",
+          f"> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 "
+          f"{len(forms)}종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 "
+          f"다운로드 사이트입니다. ({today} 기준, 매일 새 서식 추가)", "",
+          "## 이 사이트의 특징", "",
+          "- 서식 1종마다 PDF·Word·한글(HWPX) 세 형식을 모두 제공합니다.",
+          "- 모든 서식에 예시가 기입된 미리보기 이미지, 작성 순서, 포함 항목, 자주 묻는 질문이 있습니다.",
+          "- 내려받는 파일은 예시가 없는 빈 양식입니다.",
+          "- 수집한 오래된 파일이 아니라 현재 실무 기준으로 새로 제작한 양식입니다.",
+          "- 무료이며 회원가입·결제가 없고 이름·연락처를 입력받지 않습니다.",
+          "- 법정 신고서식(정해진 원본을 써야 효력이 있는 문서)은 제공하지 않습니다.", "",
+          "## 주요 문서", "",
+          f"- [사이트 소개]({SITE_URL}/about/): 사이트 정의·이용 조건·제작 방식",
+          f"- [서식 요청]({SITE_URL}/request/): 필요한 서식을 요청하면 무료로 제작",
+          f"- [개인정보처리방침]({SITE_URL}/privacy/)", "",
+          "## 분야별 서식", ""]
+    for c in categories:
+        for s in c["subcategories"]:
+            k = f"{c['key']}/{s['key']}"
+            lt.append(f"- [{c['name']} · {s['name']}]({SITE_URL}/category/{k}/): {counts[k]}종")
+    lt += ["", "## 버전별 비교 (같은 서식의 상황별 변형)", ""]
+    for h in series_hubs:
+        lt.append(f"- [{h['name']} {h['count']}종]({SITE_URL}/series/{h['key']}/)")
+    if collection_hubs:
+        lt += ["", "## 주제 모음 (한 가지 일에 연달아 쓰는 서식)", ""]
+        for h in collection_hubs:
+            lt.append(f"- [{h['name']} {h['count']}종]({SITE_URL}/collection/{h['key']}/)")
+    lt += ["", "## 많이 찾는 서식", ""]
+    for f in top:
+        lt.append(f"- [{f['title']}]({SITE_URL}/form/{f['id']}/): {f['summary']}")
+    lt += ["", "## Optional", "",
+           f"- [전체 서식 목록 {len(forms)}종]({SITE_URL}/llms-full.txt)",
+           f"- [사이트맵]({SITE_URL}/sitemap.xml)",
+           f"- [RSS]({SITE_URL}/rss.xml)", ""]
+    write(PUBLIC / "llms.txt", "\n".join(lt))
+
+    lf = [f"# {SITE_NAME} — 전체 서식 목록 {len(forms)}종", "",
+          f"{today} 기준. 모든 서식은 무료이며 PDF·Word(DOCX)·한글(HWPX) 세 형식으로 제공됩니다.",
+          f"출처: {SITE_URL}/", ""]
+    for c in categories:
+        for s in c["subcategories"]:
+            k = f"{c['key']}/{s['key']}"
+            if not grouped[k]:
+                continue
+            lf += [f"## {c['name']} · {s['name']} ({counts[k]}종)", ""]
+            for f in sorted(grouped[k], key=lambda x: x["title"]):
+                lf.append(f"### {f['title']}")
+                lf.append(f"- URL: {SITE_URL}/form/{f['id']}/")
+                lf.append(f"- 설명: {f['summary']}")
+                if f.get("tags"):
+                    lf.append(f"- 검색어: {', '.join(f['tags'])}")
+                lf.append(f"- 분량: {f.get('pages', 1)}페이지(A4) · 형식: PDF·Word·한글 · 수정일: {form_date(f)}")
+                if f.get("howto"):
+                    lf.append(f"- 작성 순서: {' / '.join(f['howto'])}")
+                for item in (f.get("faq") or []):
+                    lf.append(f"- Q. {item['q']} A. {item['a']}")
+                lf.append("")
+    write(PUBLIC / "llms-full.txt", "\n".join(lf))
+
+    # 5-4) 공유 카드 기본 이미지
+    if not make_og_default(PUBLIC / "og-default.png"):
+        print("[사이트] 알림: assets/og-default.png 가 없어 공유 카드 기본 이미지를 넣지 않았습니다.")
 
     # 5-1) ads.txt — 애드센스 게시자 확인용. 클라이언트 ID가 있을 때만 생성한다.
     if ads["client"]:

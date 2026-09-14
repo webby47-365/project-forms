@@ -46,6 +46,6 @@
   {%- endif %}
 </div>
 <script type="application/ld+json">
-{{ jsonld }}
+{{ jsonld | safe }}
 </script>
 {% endblock %}

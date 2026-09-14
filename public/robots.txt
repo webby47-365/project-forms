@@ -1,3 +1,66 @@
+# 무료서식 다운로드 — 전체 공개. 모든 서식은 무료이며 로그인이 필요 없습니다.
 User-agent: *
 Allow: /
+
+# 네이버
+User-agent: Yeti
+Allow: /
+
+# 다음
+User-agent: Daumoa
+Allow: /
+
+# OpenAI 학습
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT 검색
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT 사용자 열람
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic 학습
+User-agent: ClaudeBot
+Allow: /
+
+# Claude 검색
+User-agent: Claude-SearchBot
+Allow: /
+
+# Claude 사용자 열람
+User-agent: Claude-User
+Allow: /
+
+# Perplexity 색인
+User-agent: PerplexityBot
+Allow: /
+
+# Perplexity 사용자 열람
+User-agent: Perplexity-User
+Allow: /
+
+# Gemini·AI 개요
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://freeforms.kr/sitemap.xml
+Sitemap: https://freeforms.kr/rss.xml
