@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -597,7 +599,7 @@ footer.site li{margin:3px 0}
     <img src="/files/payment-order-application/preview-1.webp" alt="지급명령 신청서 (독촉절차) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/payment-order-application/">지급명령 신청서 (독촉절차)</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">법률 · 소송·민원</div>
     <div class="dl">      <a href="/files/payment-order-application/payment-order-application.pdf" download="지급명령 신청서 (독촉절차).pdf" title="지급명령 신청서 (독촉절차) PDF 다운로드">PDF</a>
       <a href="/files/payment-order-application/payment-order-application.docx" download="지급명령 신청서 (독촉절차).docx" title="지급명령 신청서 (독촉절차) Word 다운로드">Word</a>
       <a href="/files/payment-order-application/payment-order-application.hwpx" download="지급명령 신청서 (독촉절차).hwpx" title="지급명령 신청서 (독촉절차) 한글 다운로드">한글</a>
@@ -608,7 +610,7 @@ footer.site li{margin:3px 0}
     <img src="/files/small-claims-complaint/preview-1.webp" alt="소장 (소액사건) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/small-claims-complaint/">소장 (소액사건)</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">법률 · 소송·민원</div>
     <div class="dl">      <a href="/files/small-claims-complaint/small-claims-complaint.pdf" download="소장 (소액사건).pdf" title="소장 (소액사건) PDF 다운로드">PDF</a>
       <a href="/files/small-claims-complaint/small-claims-complaint.docx" download="소장 (소액사건).docx" title="소장 (소액사건) Word 다운로드">Word</a>
       <a href="/files/small-claims-complaint/small-claims-complaint.hwpx" download="소장 (소액사건).hwpx" title="소장 (소액사건) 한글 다운로드">한글</a>
@@ -696,7 +698,7 @@ footer.site li{margin:3px 0}
     <img src="/files/deposit-return-notice/preview-1.webp" alt="전세보증금 반환 내용증명 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/deposit-return-notice/">전세보증금 반환 내용증명</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/deposit-return-notice/deposit-return-notice.pdf" download="전세보증금 반환 내용증명.pdf" title="전세보증금 반환 내용증명 PDF 다운로드">PDF</a>
       <a href="/files/deposit-return-notice/deposit-return-notice.docx" download="전세보증금 반환 내용증명.docx" title="전세보증금 반환 내용증명 Word 다운로드">Word</a>
       <a href="/files/deposit-return-notice/deposit-return-notice.hwpx" download="전세보증금 반환 내용증명.hwpx" title="전세보증금 반환 내용증명 한글 다운로드">한글</a>

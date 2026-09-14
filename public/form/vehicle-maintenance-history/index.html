@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -594,7 +596,7 @@ footer.site li{margin:3px 0}
     <img src="/files/used-car-sale-contract/preview-1.webp" alt="중고차 매매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/used-car-sale-contract/">중고차 매매계약서</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/used-car-sale-contract/used-car-sale-contract.pdf" download="중고차 매매계약서.pdf" title="중고차 매매계약서 PDF 다운로드">PDF</a>
       <a href="/files/used-car-sale-contract/used-car-sale-contract.docx" download="중고차 매매계약서.docx" title="중고차 매매계약서 Word 다운로드">Word</a>
       <a href="/files/used-car-sale-contract/used-car-sale-contract.hwpx" download="중고차 매매계약서.hwpx" title="중고차 매매계약서 한글 다운로드">한글</a>
@@ -605,7 +607,7 @@ footer.site li{margin:3px 0}
     <img src="/files/vehicle-log/preview-1.webp" alt="차량운행일지 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/vehicle-log/">차량운행일지</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 총무·행정</div>
     <div class="dl">      <a href="/files/vehicle-log/vehicle-log.pdf" download="차량운행일지.pdf" title="차량운행일지 PDF 다운로드">PDF</a>
       <a href="/files/vehicle-log/vehicle-log.docx" download="차량운행일지.docx" title="차량운행일지 Word 다운로드">Word</a>
       <a href="/files/vehicle-log/vehicle-log.hwpx" download="차량운행일지.hwpx" title="차량운행일지 한글 다운로드">한글</a>
@@ -627,7 +629,7 @@ footer.site li{margin:3px 0}
     <img src="/files/customer-card/preview-1.webp" alt="고객관리 카드 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/customer-card/">고객관리 카드</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 영업·마케팅</div>
     <div class="dl">      <a href="/files/customer-card/customer-card.pdf" download="고객관리 카드.pdf" title="고객관리 카드 PDF 다운로드">PDF</a>
       <a href="/files/customer-card/customer-card.docx" download="고객관리 카드.docx" title="고객관리 카드 Word 다운로드">Word</a>
       <a href="/files/customer-card/customer-card.hwpx" download="고객관리 카드.hwpx" title="고객관리 카드 한글 다운로드">한글</a>
@@ -638,7 +640,7 @@ footer.site li{margin:3px 0}
     <img src="/files/vehicle-use-request/preview-1.webp" alt="업무용 차량 사용 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/vehicle-use-request/">업무용 차량 사용 신청서</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 총무·행정</div>
     <div class="dl">      <a href="/files/vehicle-use-request/vehicle-use-request.pdf" download="업무용 차량 사용 신청서.pdf" title="업무용 차량 사용 신청서 PDF 다운로드">PDF</a>
       <a href="/files/vehicle-use-request/vehicle-use-request.docx" download="업무용 차량 사용 신청서.docx" title="업무용 차량 사용 신청서 Word 다운로드">Word</a>
       <a href="/files/vehicle-use-request/vehicle-use-request.hwpx" download="업무용 차량 사용 신청서.hwpx" title="업무용 차량 사용 신청서 한글 다운로드">한글</a>
@@ -671,7 +673,7 @@ footer.site li{margin:3px 0}
     <img src="/files/career-certificate/preview-1.webp" alt="경력증명서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/career-certificate/">경력증명서</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/career-certificate/career-certificate.pdf" download="경력증명서.pdf" title="경력증명서 PDF 다운로드">PDF</a>
       <a href="/files/career-certificate/career-certificate.docx" download="경력증명서.docx" title="경력증명서 Word 다운로드">Word</a>
       <a href="/files/career-certificate/career-certificate.hwpx" download="경력증명서.hwpx" title="경력증명서 한글 다운로드">한글</a>

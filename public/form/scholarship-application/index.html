@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -636,7 +638,7 @@ footer.site li{margin:3px 0}
     <img src="/files/volunteer-application/preview-1.webp" alt="자원봉사 신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/volunteer-application/">자원봉사 신청서</a>
-    <div class="cat">교육 · 학교·학원</div>
+    <div class="cat">공공 · 신청·동의</div>
     <div class="dl">      <a href="/files/volunteer-application/volunteer-application.pdf" download="자원봉사 신청서.pdf" title="자원봉사 신청서 PDF 다운로드">PDF</a>
       <a href="/files/volunteer-application/volunteer-application.docx" download="자원봉사 신청서.docx" title="자원봉사 신청서 Word 다운로드">Word</a>
       <a href="/files/volunteer-application/volunteer-application.hwpx" download="자원봉사 신청서.hwpx" title="자원봉사 신청서 한글 다운로드">한글</a>
@@ -647,7 +649,7 @@ footer.site li{margin:3px 0}
     <img src="/files/access-pass-request/preview-1.webp" alt="출입증 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/access-pass-request/">출입증 신청서</a>
-    <div class="cat">교육 · 학교·학원</div>
+    <div class="cat">기업 · 총무·행정</div>
     <div class="dl">      <a href="/files/access-pass-request/access-pass-request.pdf" download="출입증 신청서.pdf" title="출입증 신청서 PDF 다운로드">PDF</a>
       <a href="/files/access-pass-request/access-pass-request.docx" download="출입증 신청서.docx" title="출입증 신청서 Word 다운로드">Word</a>
       <a href="/files/access-pass-request/access-pass-request.hwpx" download="출입증 신청서.hwpx" title="출입증 신청서 한글 다운로드">한글</a>
@@ -669,7 +671,7 @@ footer.site li{margin:3px 0}
     <img src="/files/business-card-request/preview-1.webp" alt="명함신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/business-card-request/">명함신청서</a>
-    <div class="cat">교육 · 학교·학원</div>
+    <div class="cat">기업 · 총무·행정</div>
     <div class="dl">      <a href="/files/business-card-request/business-card-request.pdf" download="명함신청서.pdf" title="명함신청서 PDF 다운로드">PDF</a>
       <a href="/files/business-card-request/business-card-request.docx" download="명함신청서.docx" title="명함신청서 Word 다운로드">Word</a>
       <a href="/files/business-card-request/business-card-request.hwpx" download="명함신청서.hwpx" title="명함신청서 한글 다운로드">한글</a>
@@ -691,7 +693,7 @@ footer.site li{margin:3px 0}
     <img src="/files/resident-registration-request/preview-1.webp" alt="주민등록등본 교부신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/resident-registration-request/">주민등록등본 교부신청서</a>
-    <div class="cat">교육 · 학교·학원</div>
+    <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/resident-registration-request/resident-registration-request.pdf" download="주민등록등본 교부신청서.pdf" title="주민등록등본 교부신청서 PDF 다운로드">PDF</a>
       <a href="/files/resident-registration-request/resident-registration-request.docx" download="주민등록등본 교부신청서.docx" title="주민등록등본 교부신청서 Word 다운로드">Word</a>
       <a href="/files/resident-registration-request/resident-registration-request.hwpx" download="주민등록등본 교부신청서.hwpx" title="주민등록등본 교부신청서 한글 다운로드">한글</a>

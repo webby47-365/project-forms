@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -596,7 +598,7 @@ footer.site li{margin:3px 0}
     <img src="/files/labor-contract-standard/preview-1.webp" alt="표준근로계약서 (기간의 정함이 없는 경우) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/labor-contract-standard/">표준근로계약서 (기간의 정함이 없는 경우)</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/labor-contract-standard/labor-contract-standard.pdf" download="표준근로계약서 (기간의 정함이 없는 경우).pdf" title="표준근로계약서 (기간의 정함이 없는 경우) PDF 다운로드">PDF</a>
       <a href="/files/labor-contract-standard/labor-contract-standard.docx" download="표준근로계약서 (기간의 정함이 없는 경우).docx" title="표준근로계약서 (기간의 정함이 없는 경우) Word 다운로드">Word</a>
       <a href="/files/labor-contract-standard/labor-contract-standard.hwpx" download="표준근로계약서 (기간의 정함이 없는 경우).hwpx" title="표준근로계약서 (기간의 정함이 없는 경우) 한글 다운로드">한글</a>
@@ -607,7 +609,7 @@ footer.site li{margin:3px 0}
     <img src="/files/payslip/preview-1.webp" alt="급여명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/payslip/">급여명세서</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/payslip/payslip.pdf" download="급여명세서.pdf" title="급여명세서 PDF 다운로드">PDF</a>
       <a href="/files/payslip/payslip.docx" download="급여명세서.docx" title="급여명세서 Word 다운로드">Word</a>
       <a href="/files/payslip/payslip.hwpx" download="급여명세서.hwpx" title="급여명세서 한글 다운로드">한글</a>
@@ -618,7 +620,7 @@ footer.site li{margin:3px 0}
     <img src="/files/severance-calculation/preview-1.webp" alt="퇴직금 정산서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/severance-calculation/">퇴직금 정산서</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/severance-calculation/severance-calculation.pdf" download="퇴직금 정산서.pdf" title="퇴직금 정산서 PDF 다운로드">PDF</a>
       <a href="/files/severance-calculation/severance-calculation.docx" download="퇴직금 정산서.docx" title="퇴직금 정산서 Word 다운로드">Word</a>
       <a href="/files/severance-calculation/severance-calculation.hwpx" download="퇴직금 정산서.hwpx" title="퇴직금 정산서 한글 다운로드">한글</a>
@@ -629,7 +631,7 @@ footer.site li{margin:3px 0}
     <img src="/files/small-claims-complaint/preview-1.webp" alt="소장 (소액사건) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/small-claims-complaint/">소장 (소액사건)</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">법률 · 소송·민원</div>
     <div class="dl">      <a href="/files/small-claims-complaint/small-claims-complaint.pdf" download="소장 (소액사건).pdf" title="소장 (소액사건) PDF 다운로드">PDF</a>
       <a href="/files/small-claims-complaint/small-claims-complaint.docx" download="소장 (소액사건).docx" title="소장 (소액사건) Word 다운로드">Word</a>
       <a href="/files/small-claims-complaint/small-claims-complaint.hwpx" download="소장 (소액사건).hwpx" title="소장 (소액사건) 한글 다운로드">한글</a>
@@ -651,7 +653,7 @@ footer.site li{margin:3px 0}
     <img src="/files/complaint-goods-payment/preview-1.webp" alt="소장 (물품대금 청구) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/complaint-goods-payment/">소장 (물품대금 청구)</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">법률 · 소송·민원</div>
     <div class="dl">      <a href="/files/complaint-goods-payment/complaint-goods-payment.pdf" download="소장 (물품대금 청구).pdf" title="소장 (물품대금 청구) PDF 다운로드">PDF</a>
       <a href="/files/complaint-goods-payment/complaint-goods-payment.docx" download="소장 (물품대금 청구).docx" title="소장 (물품대금 청구) Word 다운로드">Word</a>
       <a href="/files/complaint-goods-payment/complaint-goods-payment.hwpx" download="소장 (물품대금 청구).hwpx" title="소장 (물품대금 청구) 한글 다운로드">한글</a>

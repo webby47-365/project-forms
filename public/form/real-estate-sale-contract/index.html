@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -602,7 +604,7 @@ footer.site li{margin:3px 0}
     <img src="/files/moving-in-report/preview-1.webp" alt="전입신고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/moving-in-report/">전입신고서</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/moving-in-report/moving-in-report.pdf" download="전입신고서.pdf" title="전입신고서 PDF 다운로드">PDF</a>
       <a href="/files/moving-in-report/moving-in-report.docx" download="전입신고서.docx" title="전입신고서 Word 다운로드">Word</a>
       <a href="/files/moving-in-report/moving-in-report.hwpx" download="전입신고서.hwpx" title="전입신고서 한글 다운로드">한글</a>
@@ -613,7 +615,7 @@ footer.site li{margin:3px 0}
     <img src="/files/moving-checklist/preview-1.webp" alt="이사 체크리스트 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/moving-checklist/">이사 체크리스트</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">개인 · 생활·가정</div>
     <div class="dl">      <a href="/files/moving-checklist/moving-checklist.pdf" download="이사 체크리스트.pdf" title="이사 체크리스트 PDF 다운로드">PDF</a>
       <a href="/files/moving-checklist/moving-checklist.docx" download="이사 체크리스트.docx" title="이사 체크리스트 Word 다운로드">Word</a>
       <a href="/files/moving-checklist/moving-checklist.hwpx" download="이사 체크리스트.hwpx" title="이사 체크리스트 한글 다운로드">한글</a>
@@ -624,7 +626,7 @@ footer.site li{margin:3px 0}
     <img src="/files/power-of-attorney/preview-1.webp" alt="위임장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/power-of-attorney/">위임장</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/power-of-attorney/power-of-attorney.pdf" download="위임장.pdf" title="위임장 PDF 다운로드">PDF</a>
       <a href="/files/power-of-attorney/power-of-attorney.docx" download="위임장.docx" title="위임장 Word 다운로드">Word</a>
       <a href="/files/power-of-attorney/power-of-attorney.hwpx" download="위임장.hwpx" title="위임장 한글 다운로드">한글</a>
@@ -635,7 +637,7 @@ footer.site li{margin:3px 0}
     <img src="/files/used-car-sale-contract/preview-1.webp" alt="중고차 매매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/used-car-sale-contract/">중고차 매매계약서</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/used-car-sale-contract/used-car-sale-contract.pdf" download="중고차 매매계약서.pdf" title="중고차 매매계약서 PDF 다운로드">PDF</a>
       <a href="/files/used-car-sale-contract/used-car-sale-contract.docx" download="중고차 매매계약서.docx" title="중고차 매매계약서 Word 다운로드">Word</a>
       <a href="/files/used-car-sale-contract/used-car-sale-contract.hwpx" download="중고차 매매계약서.hwpx" title="중고차 매매계약서 한글 다운로드">한글</a>
@@ -646,7 +648,7 @@ footer.site li{margin:3px 0}
     <img src="/files/goods-sale-contract/preview-1.webp" alt="매매계약서 (동산) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/goods-sale-contract/">매매계약서 (동산)</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/goods-sale-contract/goods-sale-contract.pdf" download="매매계약서 (동산).pdf" title="매매계약서 (동산) PDF 다운로드">PDF</a>
       <a href="/files/goods-sale-contract/goods-sale-contract.docx" download="매매계약서 (동산).docx" title="매매계약서 (동산) Word 다운로드">Word</a>
       <a href="/files/goods-sale-contract/goods-sale-contract.hwpx" download="매매계약서 (동산).hwpx" title="매매계약서 (동산) 한글 다운로드">한글</a>
@@ -679,7 +681,7 @@ footer.site li{margin:3px 0}
     <img src="/files/sales-contract/preview-1.webp" alt="판매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/sales-contract/">판매계약서</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">기업 · 영업·마케팅</div>
     <div class="dl">      <a href="/files/sales-contract/sales-contract.pdf" download="판매계약서.pdf" title="판매계약서 PDF 다운로드">PDF</a>
       <a href="/files/sales-contract/sales-contract.docx" download="판매계약서.docx" title="판매계약서 Word 다운로드">Word</a>
       <a href="/files/sales-contract/sales-contract.hwpx" download="판매계약서.hwpx" title="판매계약서 한글 다운로드">한글</a>

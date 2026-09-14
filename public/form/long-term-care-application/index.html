@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -625,7 +627,7 @@ footer.site li{margin:3px 0}
     <img src="/files/power-of-attorney/preview-1.webp" alt="위임장 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/power-of-attorney/">위임장</a>
-    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/power-of-attorney/power-of-attorney.pdf" download="위임장.pdf" title="위임장 PDF 다운로드">PDF</a>
       <a href="/files/power-of-attorney/power-of-attorney.docx" download="위임장.docx" title="위임장 Word 다운로드">Word</a>
       <a href="/files/power-of-attorney/power-of-attorney.hwpx" download="위임장.hwpx" title="위임장 한글 다운로드">한글</a>
@@ -647,7 +649,7 @@ footer.site li{margin:3px 0}
     <img src="/files/event-application/preview-1.webp" alt="참가신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/event-application/">참가신청서</a>
-    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="cat">공공 · 신청·동의</div>
     <div class="dl">      <a href="/files/event-application/event-application.pdf" download="참가신청서.pdf" title="참가신청서 PDF 다운로드">PDF</a>
       <a href="/files/event-application/event-application.docx" download="참가신청서.docx" title="참가신청서 Word 다운로드">Word</a>
       <a href="/files/event-application/event-application.hwpx" download="참가신청서.hwpx" title="참가신청서 한글 다운로드">한글</a>
@@ -680,7 +682,7 @@ footer.site li{margin:3px 0}
     <img src="/files/civil-petition/preview-1.webp" alt="민원신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/civil-petition/">민원신청서</a>
-    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/civil-petition/civil-petition.pdf" download="민원신청서.pdf" title="민원신청서 PDF 다운로드">PDF</a>
       <a href="/files/civil-petition/civil-petition.docx" download="민원신청서.docx" title="민원신청서 Word 다운로드">Word</a>
       <a href="/files/civil-petition/civil-petition.hwpx" download="민원신청서.hwpx" title="민원신청서 한글 다운로드">한글</a>
@@ -691,7 +693,7 @@ footer.site li{margin:3px 0}
     <img src="/files/overtime-application/preview-1.webp" alt="연장·휴일근로 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/overtime-application/">연장·휴일근로 신청서</a>
-    <div class="cat">의료·복지 · 동의·신청</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/overtime-application/overtime-application.pdf" download="연장·휴일근로 신청서.pdf" title="연장·휴일근로 신청서 PDF 다운로드">PDF</a>
       <a href="/files/overtime-application/overtime-application.docx" download="연장·휴일근로 신청서.docx" title="연장·휴일근로 신청서 Word 다운로드">Word</a>
       <a href="/files/overtime-application/overtime-application.hwpx" download="연장·휴일근로 신청서.hwpx" title="연장·휴일근로 신청서 한글 다운로드">한글</a>

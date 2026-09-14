@@ -130,7 +130,9 @@
   <h2 class="sec">함께 찾는 서식</h2>
   <div class="grid">
     {%- for r in related %}
-    {{ m.card(r, cat.name ~ ' · ' ~ sub.name, dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
+    {#- 연관 서식은 분류를 넘나들므로 각 서식이 가진 제 분류를 붙인다
+        (현재 서식의 분류를 그대로 쓰면 다른 분류 서식에 틀린 라벨이 붙는다) #}
+    {{ m.card(r, cat_label[r.id], dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
     {%- endfor %}
   </div>
   {%- endif %}

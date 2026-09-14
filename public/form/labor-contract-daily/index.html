@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -607,7 +609,7 @@ footer.site li{margin:3px 0}
     <img src="/files/payslip/preview-1.webp" alt="급여명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/payslip/">급여명세서</a>
-    <div class="cat">기업 · 인사·노무</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/payslip/payslip.pdf" download="급여명세서.pdf" title="급여명세서 PDF 다운로드">PDF</a>
       <a href="/files/payslip/payslip.docx" download="급여명세서.docx" title="급여명세서 Word 다운로드">Word</a>
       <a href="/files/payslip/payslip.hwpx" download="급여명세서.hwpx" title="급여명세서 한글 다운로드">한글</a>
@@ -618,7 +620,7 @@ footer.site li{margin:3px 0}
     <img src="/files/privacy-consent/preview-1.webp" alt="개인정보 수집·이용 동의서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/privacy-consent/">개인정보 수집·이용 동의서</a>
-    <div class="cat">기업 · 인사·노무</div>
+    <div class="cat">공공 · 신청·동의</div>
     <div class="dl">      <a href="/files/privacy-consent/privacy-consent.pdf" download="개인정보 수집·이용 동의서.pdf" title="개인정보 수집·이용 동의서 PDF 다운로드">PDF</a>
       <a href="/files/privacy-consent/privacy-consent.docx" download="개인정보 수집·이용 동의서.docx" title="개인정보 수집·이용 동의서 Word 다운로드">Word</a>
       <a href="/files/privacy-consent/privacy-consent.hwpx" download="개인정보 수집·이용 동의서.hwpx" title="개인정보 수집·이용 동의서 한글 다운로드">한글</a>
@@ -673,7 +675,7 @@ footer.site li{margin:3px 0}
     <img src="/files/distributor-contract/preview-1.webp" alt="대리점 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/distributor-contract/">대리점 계약서</a>
-    <div class="cat">기업 · 인사·노무</div>
+    <div class="cat">기업 · 영업·마케팅</div>
     <div class="dl">      <a href="/files/distributor-contract/distributor-contract.pdf" download="대리점 계약서.pdf" title="대리점 계약서 PDF 다운로드">PDF</a>
       <a href="/files/distributor-contract/distributor-contract.docx" download="대리점 계약서.docx" title="대리점 계약서 Word 다운로드">Word</a>
       <a href="/files/distributor-contract/distributor-contract.hwpx" download="대리점 계약서.hwpx" title="대리점 계약서 한글 다운로드">한글</a>

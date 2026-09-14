@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -624,7 +626,7 @@ footer.site li{margin:3px 0}
     <img src="/files/moving-checklist/preview-1.webp" alt="이사 체크리스트 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/moving-checklist/">이사 체크리스트</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">개인 · 생활·가정</div>
     <div class="dl">      <a href="/files/moving-checklist/moving-checklist.pdf" download="이사 체크리스트.pdf" title="이사 체크리스트 PDF 다운로드">PDF</a>
       <a href="/files/moving-checklist/moving-checklist.docx" download="이사 체크리스트.docx" title="이사 체크리스트 Word 다운로드">Word</a>
       <a href="/files/moving-checklist/moving-checklist.hwpx" download="이사 체크리스트.hwpx" title="이사 체크리스트 한글 다운로드">한글</a>
@@ -635,7 +637,7 @@ footer.site li{margin:3px 0}
     <img src="/files/year-end-tax-checklist/preview-1.webp" alt="연말정산 서류 점검표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/year-end-tax-checklist/">연말정산 서류 점검표</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/year-end-tax-checklist/year-end-tax-checklist.pdf" download="연말정산 서류 점검표.pdf" title="연말정산 서류 점검표 PDF 다운로드">PDF</a>
       <a href="/files/year-end-tax-checklist/year-end-tax-checklist.docx" download="연말정산 서류 점검표.docx" title="연말정산 서류 점검표 Word 다운로드">Word</a>
       <a href="/files/year-end-tax-checklist/year-end-tax-checklist.hwpx" download="연말정산 서류 점검표.hwpx" title="연말정산 서류 점검표 한글 다운로드">한글</a>
@@ -646,7 +648,7 @@ footer.site li{margin:3px 0}
     <img src="/files/checklist/preview-1.webp" alt="체크리스트 (범용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/checklist/">체크리스트 (범용)</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">개인 · 생활·가정</div>
     <div class="dl">      <a href="/files/checklist/checklist.pdf" download="체크리스트 (범용).pdf" title="체크리스트 (범용) PDF 다운로드">PDF</a>
       <a href="/files/checklist/checklist.docx" download="체크리스트 (범용).docx" title="체크리스트 (범용) Word 다운로드">Word</a>
       <a href="/files/checklist/checklist.hwpx" download="체크리스트 (범용).hwpx" title="체크리스트 (범용) 한글 다운로드">한글</a>
@@ -657,7 +659,7 @@ footer.site li{margin:3px 0}
     <img src="/files/interview-evaluation/preview-1.webp" alt="면접 평가표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/interview-evaluation/">면접 평가표</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/interview-evaluation/interview-evaluation.pdf" download="면접 평가표.pdf" title="면접 평가표 PDF 다운로드">PDF</a>
       <a href="/files/interview-evaluation/interview-evaluation.docx" download="면접 평가표.docx" title="면접 평가표 Word 다운로드">Word</a>
       <a href="/files/interview-evaluation/interview-evaluation.hwpx" download="면접 평가표.hwpx" title="면접 평가표 한글 다운로드">한글</a>
@@ -690,7 +692,7 @@ footer.site li{margin:3px 0}
     <img src="/files/probation-evaluation/preview-1.webp" alt="수습 평가서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/probation-evaluation/">수습 평가서</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/probation-evaluation/probation-evaluation.pdf" download="수습 평가서.pdf" title="수습 평가서 PDF 다운로드">PDF</a>
       <a href="/files/probation-evaluation/probation-evaluation.docx" download="수습 평가서.docx" title="수습 평가서 Word 다운로드">Word</a>
       <a href="/files/probation-evaluation/probation-evaluation.hwpx" download="수습 평가서.hwpx" title="수습 평가서 한글 다운로드">한글</a>

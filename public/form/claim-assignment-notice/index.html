@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -602,7 +604,7 @@ footer.site li{margin:3px 0}
     <img src="/files/balance-confirmation/preview-1.webp" alt="채권·채무 잔액확인서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/balance-confirmation/">채권·채무 잔액확인서</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/balance-confirmation/balance-confirmation.pdf" download="채권·채무 잔액확인서.pdf" title="채권·채무 잔액확인서 PDF 다운로드">PDF</a>
       <a href="/files/balance-confirmation/balance-confirmation.docx" download="채권·채무 잔액확인서.docx" title="채권·채무 잔액확인서 Word 다운로드">Word</a>
       <a href="/files/balance-confirmation/balance-confirmation.hwpx" download="채권·채무 잔액확인서.hwpx" title="채권·채무 잔액확인서 한글 다운로드">한글</a>
@@ -613,7 +615,7 @@ footer.site li{margin:3px 0}
     <img src="/files/loan-agreement/preview-1.webp" alt="차용증 (금전소비대차계약서) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/loan-agreement/">차용증 (금전소비대차계약서)</a>
-    <div class="cat">법률 · 통지·증명</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/loan-agreement/loan-agreement.pdf" download="차용증 (금전소비대차계약서).pdf" title="차용증 (금전소비대차계약서) PDF 다운로드">PDF</a>
       <a href="/files/loan-agreement/loan-agreement.docx" download="차용증 (금전소비대차계약서).docx" title="차용증 (금전소비대차계약서) Word 다운로드">Word</a>
       <a href="/files/loan-agreement/loan-agreement.hwpx" download="차용증 (금전소비대차계약서).hwpx" title="차용증 (금전소비대차계약서) 한글 다운로드">한글</a>

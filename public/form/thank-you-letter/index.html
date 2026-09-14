@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -613,7 +615,7 @@ footer.site li{margin:3px 0}
     <img src="/files/event-plan/preview-1.webp" alt="행사 기획서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/event-plan/">행사 기획서</a>
-    <div class="cat">개인 · 생활·가정</div>
+    <div class="cat">기업 · 총무·행정</div>
     <div class="dl">      <a href="/files/event-plan/event-plan.pdf" download="행사 기획서.pdf" title="행사 기획서 PDF 다운로드">PDF</a>
       <a href="/files/event-plan/event-plan.docx" download="행사 기획서.docx" title="행사 기획서 Word 다운로드">Word</a>
       <a href="/files/event-plan/event-plan.hwpx" download="행사 기획서.hwpx" title="행사 기획서 한글 다운로드">한글</a>
@@ -624,7 +626,7 @@ footer.site li{margin:3px 0}
     <img src="/files/english-cover-letter/preview-1.webp" alt="영문 커버레터 (Cover Letter) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/english-cover-letter/">영문 커버레터 (Cover Letter)</a>
-    <div class="cat">개인 · 생활·가정</div>
+    <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/english-cover-letter/english-cover-letter.pdf" download="영문 커버레터 (Cover Letter).pdf" title="영문 커버레터 (Cover Letter) PDF 다운로드">PDF</a>
       <a href="/files/english-cover-letter/english-cover-letter.docx" download="영문 커버레터 (Cover Letter).docx" title="영문 커버레터 (Cover Letter) Word 다운로드">Word</a>
       <a href="/files/english-cover-letter/english-cover-letter.hwpx" download="영문 커버레터 (Cover Letter).hwpx" title="영문 커버레터 (Cover Letter) 한글 다운로드">한글</a>
@@ -635,7 +637,7 @@ footer.site li{margin:3px 0}
     <img src="/files/cover-letter/preview-1.webp" alt="자기소개서 (기본형) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/cover-letter/">자기소개서 (기본형)</a>
-    <div class="cat">개인 · 생활·가정</div>
+    <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter/cover-letter.pdf" download="자기소개서 (기본형).pdf" title="자기소개서 (기본형) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter/cover-letter.docx" download="자기소개서 (기본형).docx" title="자기소개서 (기본형) Word 다운로드">Word</a>
       <a href="/files/cover-letter/cover-letter.hwpx" download="자기소개서 (기본형).hwpx" title="자기소개서 (기본형) 한글 다운로드">한글</a>
@@ -646,7 +648,7 @@ footer.site li{margin:3px 0}
     <img src="/files/cover-letter-experienced/preview-1.webp" alt="자기소개서 (경력용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/cover-letter-experienced/">자기소개서 (경력용)</a>
-    <div class="cat">개인 · 생활·가정</div>
+    <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-experienced/cover-letter-experienced.pdf" download="자기소개서 (경력용).pdf" title="자기소개서 (경력용) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-experienced/cover-letter-experienced.docx" download="자기소개서 (경력용).docx" title="자기소개서 (경력용) Word 다운로드">Word</a>
       <a href="/files/cover-letter-experienced/cover-letter-experienced.hwpx" download="자기소개서 (경력용).hwpx" title="자기소개서 (경력용) 한글 다운로드">한글</a>
@@ -657,7 +659,7 @@ footer.site li{margin:3px 0}
     <img src="/files/cover-letter-star/preview-1.webp" alt="자기소개서 (항목형·STAR) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/cover-letter-star/">자기소개서 (항목형·STAR)</a>
-    <div class="cat">개인 · 생활·가정</div>
+    <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-star/cover-letter-star.pdf" download="자기소개서 (항목형·STAR).pdf" title="자기소개서 (항목형·STAR) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-star/cover-letter-star.docx" download="자기소개서 (항목형·STAR).docx" title="자기소개서 (항목형·STAR) Word 다운로드">Word</a>
       <a href="/files/cover-letter-star/cover-letter-star.hwpx" download="자기소개서 (항목형·STAR).hwpx" title="자기소개서 (항목형·STAR) 한글 다운로드">한글</a>
@@ -668,7 +670,7 @@ footer.site li{margin:3px 0}
     <img src="/files/cover-letter-newcomer/preview-1.webp" alt="자기소개서 (신입용) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/cover-letter-newcomer/">자기소개서 (신입용)</a>
-    <div class="cat">개인 · 생활·가정</div>
+    <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-newcomer/cover-letter-newcomer.pdf" download="자기소개서 (신입용).pdf" title="자기소개서 (신입용) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-newcomer/cover-letter-newcomer.docx" download="자기소개서 (신입용).docx" title="자기소개서 (신입용) Word 다운로드">Word</a>
       <a href="/files/cover-letter-newcomer/cover-letter-newcomer.hwpx" download="자기소개서 (신입용).hwpx" title="자기소개서 (신입용) 한글 다운로드">한글</a>
@@ -679,7 +681,7 @@ footer.site li{margin:3px 0}
     <img src="/files/cover-letter-free/preview-1.webp" alt="자기소개서 (자유양식) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/cover-letter-free/">자기소개서 (자유양식)</a>
-    <div class="cat">개인 · 생활·가정</div>
+    <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-free/cover-letter-free.pdf" download="자기소개서 (자유양식).pdf" title="자기소개서 (자유양식) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-free/cover-letter-free.docx" download="자기소개서 (자유양식).docx" title="자기소개서 (자유양식) Word 다운로드">Word</a>
       <a href="/files/cover-letter-free/cover-letter-free.hwpx" download="자기소개서 (자유양식).hwpx" title="자기소개서 (자유양식) 한글 다운로드">한글</a>

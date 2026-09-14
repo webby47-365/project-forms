@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -602,7 +604,7 @@ footer.site li{margin:3px 0}
     <img src="/files/business-trip-request/preview-1.webp" alt="출장신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/business-trip-request/">출장신청서</a>
-    <div class="cat">기업 · 총무·행정</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/business-trip-request/business-trip-request.pdf" download="출장신청서.pdf" title="출장신청서 PDF 다운로드">PDF</a>
       <a href="/files/business-trip-request/business-trip-request.docx" download="출장신청서.docx" title="출장신청서 Word 다운로드">Word</a>
       <a href="/files/business-trip-request/business-trip-request.hwpx" download="출장신청서.hwpx" title="출장신청서 한글 다운로드">한글</a>
@@ -613,7 +615,7 @@ footer.site li{margin:3px 0}
     <img src="/files/expense-report/preview-1.webp" alt="경비정산서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/expense-report/">경비정산서</a>
-    <div class="cat">기업 · 총무·행정</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/expense-report/expense-report.pdf" download="경비정산서.pdf" title="경비정산서 PDF 다운로드">PDF</a>
       <a href="/files/expense-report/expense-report.docx" download="경비정산서.docx" title="경비정산서 Word 다운로드">Word</a>
       <a href="/files/expense-report/expense-report.hwpx" download="경비정산서.hwpx" title="경비정산서 한글 다운로드">한글</a>
@@ -679,7 +681,7 @@ footer.site li{margin:3px 0}
     <img src="/files/vehicle-maintenance-history/preview-1.webp" alt="자동차 관리이력서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/vehicle-maintenance-history/">자동차 관리이력서</a>
-    <div class="cat">기업 · 총무·행정</div>
+    <div class="cat">법률 · 통지·증명</div>
     <div class="dl">      <a href="/files/vehicle-maintenance-history/vehicle-maintenance-history.pdf" download="자동차 관리이력서.pdf" title="자동차 관리이력서 PDF 다운로드">PDF</a>
       <a href="/files/vehicle-maintenance-history/vehicle-maintenance-history.docx" download="자동차 관리이력서.docx" title="자동차 관리이력서 Word 다운로드">Word</a>
       <a href="/files/vehicle-maintenance-history/vehicle-maintenance-history.hwpx" download="자동차 관리이력서.hwpx" title="자동차 관리이력서 한글 다운로드">한글</a>

@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -625,7 +627,7 @@ footer.site li{margin:3px 0}
     <img src="/files/civil-petition/preview-1.webp" alt="민원신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/civil-petition/">민원신청서</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/civil-petition/civil-petition.pdf" download="민원신청서.pdf" title="민원신청서 PDF 다운로드">PDF</a>
       <a href="/files/civil-petition/civil-petition.docx" download="민원신청서.docx" title="민원신청서 Word 다운로드">Word</a>
       <a href="/files/civil-petition/civil-petition.hwpx" download="민원신청서.hwpx" title="민원신청서 한글 다운로드">한글</a>
@@ -636,7 +638,7 @@ footer.site li{margin:3px 0}
     <img src="/files/long-term-care-application/preview-1.webp" alt="장기요양 급여 신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/long-term-care-application/">장기요양 급여 신청서</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">의료·복지 · 동의·신청</div>
     <div class="dl">      <a href="/files/long-term-care-application/long-term-care-application.pdf" download="장기요양 급여 신청서.pdf" title="장기요양 급여 신청서 PDF 다운로드">PDF</a>
       <a href="/files/long-term-care-application/long-term-care-application.docx" download="장기요양 급여 신청서.docx" title="장기요양 급여 신청서 Word 다운로드">Word</a>
       <a href="/files/long-term-care-application/long-term-care-application.hwpx" download="장기요양 급여 신청서.hwpx" title="장기요양 급여 신청서 한글 다운로드">한글</a>
@@ -647,7 +649,7 @@ footer.site li{margin:3px 0}
     <img src="/files/event-plan/preview-1.webp" alt="행사 기획서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/event-plan/">행사 기획서</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">기업 · 총무·행정</div>
     <div class="dl">      <a href="/files/event-plan/event-plan.pdf" download="행사 기획서.pdf" title="행사 기획서 PDF 다운로드">PDF</a>
       <a href="/files/event-plan/event-plan.docx" download="행사 기획서.docx" title="행사 기획서 Word 다운로드">Word</a>
       <a href="/files/event-plan/event-plan.hwpx" download="행사 기획서.hwpx" title="행사 기획서 한글 다운로드">한글</a>
@@ -680,7 +682,7 @@ footer.site li{margin:3px 0}
     <img src="/files/cover-letter-star/preview-1.webp" alt="자기소개서 (항목형·STAR) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/cover-letter-star/">자기소개서 (항목형·STAR)</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">개인 · 취업·경력</div>
     <div class="dl">      <a href="/files/cover-letter-star/cover-letter-star.pdf" download="자기소개서 (항목형·STAR).pdf" title="자기소개서 (항목형·STAR) PDF 다운로드">PDF</a>
       <a href="/files/cover-letter-star/cover-letter-star.docx" download="자기소개서 (항목형·STAR).docx" title="자기소개서 (항목형·STAR) Word 다운로드">Word</a>
       <a href="/files/cover-letter-star/cover-letter-star.hwpx" download="자기소개서 (항목형·STAR).hwpx" title="자기소개서 (항목형·STAR) 한글 다운로드">한글</a>
@@ -691,7 +693,7 @@ footer.site li{margin:3px 0}
     <img src="/files/leave-request/preview-1.webp" alt="휴가신청서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/leave-request/">휴가신청서</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/leave-request/leave-request.pdf" download="휴가신청서.pdf" title="휴가신청서 PDF 다운로드">PDF</a>
       <a href="/files/leave-request/leave-request.docx" download="휴가신청서.docx" title="휴가신청서 Word 다운로드">Word</a>
       <a href="/files/leave-request/leave-request.hwpx" download="휴가신청서.hwpx" title="휴가신청서 한글 다운로드">한글</a>

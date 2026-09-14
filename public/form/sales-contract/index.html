@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -591,7 +593,7 @@ footer.site li{margin:3px 0}
     <img src="/files/purchase-order/preview-1.webp" alt="발주서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/purchase-order/">발주서</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/purchase-order/purchase-order.pdf" download="발주서.pdf" title="발주서 PDF 다운로드">PDF</a>
       <a href="/files/purchase-order/purchase-order.docx" download="발주서.docx" title="발주서 Word 다운로드">Word</a>
       <a href="/files/purchase-order/purchase-order.hwpx" download="발주서.hwpx" title="발주서 한글 다운로드">한글</a>
@@ -613,7 +615,7 @@ footer.site li{margin:3px 0}
     <img src="/files/transaction-statement/preview-1.webp" alt="거래명세서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/transaction-statement/">거래명세서</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/transaction-statement/transaction-statement.pdf" download="거래명세서.pdf" title="거래명세서 PDF 다운로드">PDF</a>
       <a href="/files/transaction-statement/transaction-statement.docx" download="거래명세서.docx" title="거래명세서 Word 다운로드">Word</a>
       <a href="/files/transaction-statement/transaction-statement.hwpx" download="거래명세서.hwpx" title="거래명세서 한글 다운로드">한글</a>
@@ -624,7 +626,7 @@ footer.site li{margin:3px 0}
     <img src="/files/tax-invoice/preview-1.webp" alt="세금계산서 (수기) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/tax-invoice/">세금계산서 (수기)</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/tax-invoice/tax-invoice.pdf" download="세금계산서 (수기).pdf" title="세금계산서 (수기) PDF 다운로드">PDF</a>
       <a href="/files/tax-invoice/tax-invoice.docx" download="세금계산서 (수기).docx" title="세금계산서 (수기) Word 다운로드">Word</a>
       <a href="/files/tax-invoice/tax-invoice.hwpx" download="세금계산서 (수기).hwpx" title="세금계산서 (수기) 한글 다운로드">한글</a>
@@ -646,7 +648,7 @@ footer.site li{margin:3px 0}
     <img src="/files/goods-sale-contract/preview-1.webp" alt="매매계약서 (동산) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/goods-sale-contract/">매매계약서 (동산)</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/goods-sale-contract/goods-sale-contract.pdf" download="매매계약서 (동산).pdf" title="매매계약서 (동산) PDF 다운로드">PDF</a>
       <a href="/files/goods-sale-contract/goods-sale-contract.docx" download="매매계약서 (동산).docx" title="매매계약서 (동산) Word 다운로드">Word</a>
       <a href="/files/goods-sale-contract/goods-sale-contract.hwpx" download="매매계약서 (동산).hwpx" title="매매계약서 (동산) 한글 다운로드">한글</a>
@@ -657,7 +659,7 @@ footer.site li{margin:3px 0}
     <img src="/files/housing-lease-contract/preview-1.webp" alt="주택임대차계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/housing-lease-contract/">주택임대차계약서</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/housing-lease-contract/housing-lease-contract.pdf" download="주택임대차계약서.pdf" title="주택임대차계약서 PDF 다운로드">PDF</a>
       <a href="/files/housing-lease-contract/housing-lease-contract.docx" download="주택임대차계약서.docx" title="주택임대차계약서 Word 다운로드">Word</a>
       <a href="/files/housing-lease-contract/housing-lease-contract.hwpx" download="주택임대차계약서.hwpx" title="주택임대차계약서 한글 다운로드">한글</a>
@@ -668,7 +670,7 @@ footer.site li{margin:3px 0}
     <img src="/files/real-estate-sale-contract/preview-1.webp" alt="부동산 매매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/real-estate-sale-contract/">부동산 매매계약서</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">부동산 · 임대·매매</div>
     <div class="dl">      <a href="/files/real-estate-sale-contract/real-estate-sale-contract.pdf" download="부동산 매매계약서.pdf" title="부동산 매매계약서 PDF 다운로드">PDF</a>
       <a href="/files/real-estate-sale-contract/real-estate-sale-contract.docx" download="부동산 매매계약서.docx" title="부동산 매매계약서 Word 다운로드">Word</a>
       <a href="/files/real-estate-sale-contract/real-estate-sale-contract.hwpx" download="부동산 매매계약서.hwpx" title="부동산 매매계약서 한글 다운로드">한글</a>
@@ -679,7 +681,7 @@ footer.site li{margin:3px 0}
     <img src="/files/subcontract-agreement/preview-1.webp" alt="하도급 계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/subcontract-agreement/">하도급 계약서</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/subcontract-agreement/subcontract-agreement.pdf" download="하도급 계약서.pdf" title="하도급 계약서 PDF 다운로드">PDF</a>
       <a href="/files/subcontract-agreement/subcontract-agreement.docx" download="하도급 계약서.docx" title="하도급 계약서 Word 다운로드">Word</a>
       <a href="/files/subcontract-agreement/subcontract-agreement.hwpx" download="하도급 계약서.hwpx" title="하도급 계약서 한글 다운로드">한글</a>
@@ -690,7 +692,7 @@ footer.site li{margin:3px 0}
     <img src="/files/used-car-sale-contract/preview-1.webp" alt="중고차 매매계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/used-car-sale-contract/">중고차 매매계약서</a>
-    <div class="cat">기업 · 영업·마케팅</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/used-car-sale-contract/used-car-sale-contract.pdf" download="중고차 매매계약서.pdf" title="중고차 매매계약서 PDF 다운로드">PDF</a>
       <a href="/files/used-car-sale-contract/used-car-sale-contract.docx" download="중고차 매매계약서.docx" title="중고차 매매계약서 Word 다운로드">Word</a>
       <a href="/files/used-car-sale-contract/used-car-sale-contract.hwpx" download="중고차 매매계약서.hwpx" title="중고차 매매계약서 한글 다운로드">한글</a>

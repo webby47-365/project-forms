@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -658,7 +660,7 @@ footer.site li{margin:3px 0}
     <img src="/files/household-budget-weekly/preview-1.webp" alt="가계부 (주간) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/household-budget-weekly/">가계부 (주간)</a>
-    <div class="cat">교육 · 학교·학원</div>
+    <div class="cat">개인 · 생활·가정</div>
     <div class="dl">      <a href="/files/household-budget-weekly/household-budget-weekly.pdf" download="가계부 (주간).pdf" title="가계부 (주간) PDF 다운로드">PDF</a>
       <a href="/files/household-budget-weekly/household-budget-weekly.docx" download="가계부 (주간).docx" title="가계부 (주간) Word 다운로드">Word</a>
       <a href="/files/household-budget-weekly/household-budget-weekly.hwpx" download="가계부 (주간).hwpx" title="가계부 (주간) 한글 다운로드">한글</a>
@@ -680,7 +682,7 @@ footer.site li{margin:3px 0}
     <img src="/files/work-journal/preview-1.webp" alt="업무일지 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/work-journal/">업무일지</a>
-    <div class="cat">교육 · 학교·학원</div>
+    <div class="cat">기업 · 총무·행정</div>
     <div class="dl">      <a href="/files/work-journal/work-journal.pdf" download="업무일지.pdf" title="업무일지 PDF 다운로드">PDF</a>
       <a href="/files/work-journal/work-journal.docx" download="업무일지.docx" title="업무일지 Word 다운로드">Word</a>
       <a href="/files/work-journal/work-journal.hwpx" download="업무일지.hwpx" title="업무일지 한글 다운로드">한글</a>

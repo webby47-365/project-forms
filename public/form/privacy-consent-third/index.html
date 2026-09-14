@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -597,7 +599,7 @@ footer.site li{margin:3px 0}
     <img src="/files/nda/preview-1.webp" alt="비밀유지계약서 (NDA) 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/nda/">비밀유지계약서 (NDA)</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/nda/nda.pdf" download="비밀유지계약서 (NDA).pdf" title="비밀유지계약서 (NDA) PDF 다운로드">PDF</a>
       <a href="/files/nda/nda.docx" download="비밀유지계약서 (NDA).docx" title="비밀유지계약서 (NDA) Word 다운로드">Word</a>
       <a href="/files/nda/nda.hwpx" download="비밀유지계약서 (NDA).hwpx" title="비밀유지계약서 (NDA) 한글 다운로드">한글</a>
@@ -608,7 +610,7 @@ footer.site li{margin:3px 0}
     <img src="/files/service-contract/preview-1.webp" alt="용역계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/service-contract/">용역계약서</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">법률 · 계약</div>
     <div class="dl">      <a href="/files/service-contract/service-contract.pdf" download="용역계약서.pdf" title="용역계약서 PDF 다운로드">PDF</a>
       <a href="/files/service-contract/service-contract.docx" download="용역계약서.docx" title="용역계약서 Word 다운로드">Word</a>
       <a href="/files/service-contract/service-contract.hwpx" download="용역계약서.hwpx" title="용역계약서 한글 다운로드">한글</a>
@@ -619,7 +621,7 @@ footer.site li{margin:3px 0}
     <img src="/files/vendor-registration/preview-1.webp" alt="거래처 등록신청서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/vendor-registration/">거래처 등록신청서</a>
-    <div class="cat">공공 · 신청·동의</div>
+    <div class="cat">기업 · 영업·마케팅</div>
     <div class="dl">      <a href="/files/vendor-registration/vendor-registration.pdf" download="거래처 등록신청서.pdf" title="거래처 등록신청서 PDF 다운로드">PDF</a>
       <a href="/files/vendor-registration/vendor-registration.docx" download="거래처 등록신청서.docx" title="거래처 등록신청서 Word 다운로드">Word</a>
       <a href="/files/vendor-registration/vendor-registration.hwpx" download="거래처 등록신청서.hwpx" title="거래처 등록신청서 한글 다운로드">한글</a>

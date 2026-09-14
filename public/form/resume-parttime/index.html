@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -596,7 +598,7 @@ footer.site li{margin:3px 0}
     <img src="/files/labor-contract-parttime/preview-1.webp" alt="단시간 근로계약서 양식 미리보기" loading="lazy" width="800" height="1131"><span class="badge">2페이지</span>  </a>
   <div class="body">
     <a class="name" href="/form/labor-contract-parttime/">단시간 근로계약서</a>
-    <div class="cat">개인 · 취업·경력</div>
+    <div class="cat">기업 · 인사·노무</div>
     <div class="dl">      <a href="/files/labor-contract-parttime/labor-contract-parttime.pdf" download="단시간 근로계약서.pdf" title="단시간 근로계약서 PDF 다운로드">PDF</a>
       <a href="/files/labor-contract-parttime/labor-contract-parttime.docx" download="단시간 근로계약서.docx" title="단시간 근로계약서 Word 다운로드">Word</a>
       <a href="/files/labor-contract-parttime/labor-contract-parttime.hwpx" download="단시간 근로계약서.hwpx" title="단시간 근로계약서 한글 다운로드">한글</a>
@@ -618,7 +620,7 @@ footer.site li{margin:3px 0}
     <img src="/files/privacy-consent-simple/preview-1.webp" alt="개인정보 수집·이용 동의서 (간편형) 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/privacy-consent-simple/">개인정보 수집·이용 동의서 (간편형)</a>
-    <div class="cat">개인 · 취업·경력</div>
+    <div class="cat">공공 · 신청·동의</div>
     <div class="dl">      <a href="/files/privacy-consent-simple/privacy-consent-simple.pdf" download="개인정보 수집·이용 동의서 (간편형).pdf" title="개인정보 수집·이용 동의서 (간편형) PDF 다운로드">PDF</a>
       <a href="/files/privacy-consent-simple/privacy-consent-simple.docx" download="개인정보 수집·이용 동의서 (간편형).docx" title="개인정보 수집·이용 동의서 (간편형) Word 다운로드">Word</a>
       <a href="/files/privacy-consent-simple/privacy-consent-simple.hwpx" download="개인정보 수집·이용 동의서 (간편형).hwpx" title="개인정보 수집·이용 동의서 (간편형) 한글 다운로드">한글</a>

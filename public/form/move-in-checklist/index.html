@@ -411,8 +411,10 @@ footer.site li{margin:3px 0}
   letter-spacing:-.01em; padding:4px 11px; border-radius:999px}
 
 /* 메인·검색 화면에서 요청 페이지로 보내는 띠 */
+/* 아래 여백을 반드시 둔다. 메인에서는 뒤에 제목(h2.sec)이 와서 여백이 생기지만
+   검색 화면에서는 분류 카드가 바로 뒤에 오므로 여백이 없으면 테두리가 맞붙는다. */
 .reqbanner{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px;
-  margin:38px 0 0; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
+  margin:38px 0 26px; padding:20px 22px; border:1px solid var(--line-img); border-radius:var(--radius);
   background:var(--bg-soft); text-align:center}
 .reqbanner p{margin:0; font-size:15px; color:#374151}
 .reqbanner b{color:var(--navy)}
@@ -603,7 +605,7 @@ footer.site li{margin:3px 0}
     <img src="/files/moving-in-report/preview-1.webp" alt="전입신고서 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/moving-in-report/">전입신고서</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">공공 · 민원·신고</div>
     <div class="dl">      <a href="/files/moving-in-report/moving-in-report.pdf" download="전입신고서.pdf" title="전입신고서 PDF 다운로드">PDF</a>
       <a href="/files/moving-in-report/moving-in-report.docx" download="전입신고서.docx" title="전입신고서 Word 다운로드">Word</a>
       <a href="/files/moving-in-report/moving-in-report.hwpx" download="전입신고서.hwpx" title="전입신고서 한글 다운로드">한글</a>
@@ -614,7 +616,7 @@ footer.site li{margin:3px 0}
     <img src="/files/moving-checklist/preview-1.webp" alt="이사 체크리스트 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/moving-checklist/">이사 체크리스트</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">개인 · 생활·가정</div>
     <div class="dl">      <a href="/files/moving-checklist/moving-checklist.pdf" download="이사 체크리스트.pdf" title="이사 체크리스트 PDF 다운로드">PDF</a>
       <a href="/files/moving-checklist/moving-checklist.docx" download="이사 체크리스트.docx" title="이사 체크리스트 Word 다운로드">Word</a>
       <a href="/files/moving-checklist/moving-checklist.hwpx" download="이사 체크리스트.hwpx" title="이사 체크리스트 한글 다운로드">한글</a>
@@ -625,7 +627,7 @@ footer.site li{margin:3px 0}
     <img src="/files/year-end-tax-checklist/preview-1.webp" alt="연말정산 서류 점검표 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/year-end-tax-checklist/">연말정산 서류 점검표</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">기업 · 회계·세무</div>
     <div class="dl">      <a href="/files/year-end-tax-checklist/year-end-tax-checklist.pdf" download="연말정산 서류 점검표.pdf" title="연말정산 서류 점검표 PDF 다운로드">PDF</a>
       <a href="/files/year-end-tax-checklist/year-end-tax-checklist.docx" download="연말정산 서류 점검표.docx" title="연말정산 서류 점검표 Word 다운로드">Word</a>
       <a href="/files/year-end-tax-checklist/year-end-tax-checklist.hwpx" download="연말정산 서류 점검표.hwpx" title="연말정산 서류 점검표 한글 다운로드">한글</a>
@@ -691,7 +693,7 @@ footer.site li{margin:3px 0}
     <img src="/files/startup-checklist/preview-1.webp" alt="창업 준비 체크리스트 양식 미리보기" loading="lazy" width="800" height="1131">  </a>
   <div class="body">
     <a class="name" href="/form/startup-checklist/">창업 준비 체크리스트</a>
-    <div class="cat">부동산 · 임대·매매</div>
+    <div class="cat">기업 · 창업·법인</div>
     <div class="dl">      <a href="/files/startup-checklist/startup-checklist.pdf" download="창업 준비 체크리스트.pdf" title="창업 준비 체크리스트 PDF 다운로드">PDF</a>
       <a href="/files/startup-checklist/startup-checklist.docx" download="창업 준비 체크리스트.docx" title="창업 준비 체크리스트 Word 다운로드">Word</a>
       <a href="/files/startup-checklist/startup-checklist.hwpx" download="창업 준비 체크리스트.hwpx" title="창업 준비 체크리스트 한글 다운로드">한글</a>

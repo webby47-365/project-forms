@@ -11,6 +11,8 @@ site.url
 # 이관용 임시 압축본 (조각으로 나뉜 것까지 모두 제외)
 update_forms*.zip
 Project_Forms_bundle.zip
+transfer_*.tar.gz
+transfer_*.zip
 
 # Claude 데스크톱 앱이 저장한 파일 사본 — 정본이 아니므로 형상관리 대상이 아니다
 Claude outputs/
