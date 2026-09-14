@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% block head %}
+<style>
+.toolgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:6px}
+.toolcard{display:block; border:1px solid var(--line-img); border-radius:var(--radius); padding:20px 20px 18px; background:#fff;
+  transition:border-color .15s, box-shadow .15s, transform .15s}
+.toolcard:hover{border-color:#8fa6c2; box-shadow:var(--shadow); transform:translateY(-2px)}
+.toolcard .ic{width:44px; height:44px; border-radius:10px; background:#eaf1fa; display:flex; align-items:center;
+  justify-content:center; color:var(--navy); margin-bottom:12px}
+.toolcard h3{margin:0 0 5px; font-size:16px; font-weight:700; color:var(--navy)}
+.toolcard p{margin:0; font-size:13.5px; color:#475467; line-height:1.65}
+.toolcard .go{display:inline-block; margin-top:12px; font-size:13px; font-weight:700; color:var(--accent)}
+.toolcard.soon{background:var(--bg-soft); color:var(--muted); cursor:default}
+.toolcard.soon:hover{transform:none; box-shadow:none; border-color:var(--line-img)}
+.toolcard.soon h3{color:#6b7280}
+.toolcard .tag{display:inline-block; font-size:10.5px; font-weight:800; color:#fff; background:var(--accent); border-radius:3px;
+  padding:2px 5px; margin-left:6px; vertical-align:2px}
+.toolcard.soon .tag{background:#9aa4b2}
+@media (max-width:860px){ .toolgrid{grid-template-columns:1fr 1fr} }
+@media (max-width:560px){ .toolgrid{grid-template-columns:1fr} }
+</style>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="crumb"><a href="/">홈</a> › 직장인 도구</div>
+  <h1 class="page">직장인 도구</h1>
+  <p class="lead">서식을 채우다 보면 함께 필요한 작은 도구들입니다. 모두 브라우저 안에서만 동작하며
+    입력한 내용은 서버로 보내지 않습니다. 회원가입도 없습니다.</p>
+
+  <div class="toolgrid">
+    {%- for t in tools %}
+    <a class="toolcard" href="{{ t.path }}">
+      <div class="ic" aria-hidden="true">{{ t.icon | safe }}</div>
+      <h3>{{ t.name }}<span class="tag">NEW</span></h3>
+      <p>{{ t.desc }}</p>
+      <span class="go">바로 만들기 →</span>
+    </a>
+    {%- endfor %}
+    {%- for t in tools_soon %}
+    <div class="toolcard soon">
+      <div class="ic" aria-hidden="true">{{ t.icon | safe }}</div>
+      <h3>{{ t.name }}<span class="tag">준비 중</span></h3>
+      <p>{{ t.desc }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+
+  <h2 class="sec" style="font-size:17px">도구를 만드는 기준</h2>
+  <ul class="outline">
+    <li><b>서식과 함께 쓰는 것만</b><span>도장·서명처럼 서식을 완성하는 데 바로 필요한 기능부터 만듭니다. 서식과 무관한 범용 도구는 넣지 않습니다.</span></li>
+    <li><b>브라우저 안에서 끝</b><span>이름·금액·날짜 같은 입력값은 화면에서만 계산하고 어디에도 저장하지 않습니다.</span></li>
+    <li><b>무료·회원가입 없음</b><span>서식과 같은 원칙입니다. 광고 외의 비용은 없습니다.</span></li>
+  </ul>
+
+  {%- if featured %}
+  <h2 class="sec">많이 찾는 서식</h2>
+  <div class="grid">
+    {%- for f in featured[:5] %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+{# 검색 결과 페이지. 정적 호스팅이라 서버 검색이 없으므로 /search-index.json을 내려받아
+   브라우저에서 추린다. 카드 마크업은 _card.html과 같은 모양을 JS로 만든다. #}
+<div class="wrap">
+  <div class="crumb"><a href="/">홈</a> › 검색</div>
+  <h1 class="page" id="stitle">서식 검색</h1>
+
+  <form class="sform" action="/search/" method="get" role="search">
+    <input type="search" name="q" id="sq" placeholder="예: 이력서, 사직서, 위임장" aria-label="서식 검색어">
+    <button type="submit">검색</button>
+  </form>
+
+  <p class="scount" id="scount">찾으시는 서식 이름을 입력하세요. 전체 {{ total_forms }}종에서 찾습니다.</p>
+
+  <div class="grid g4" id="sgrid"></div>
+
+  <div id="snone" hidden>
+    <div class="snone">
+      <b>찾으시는 서식이 없습니다.</b><br>
+      한 단어로 줄여서 다시 찾아보세요. 예를 들어 <b>근로계약서(정규직)</b> 대신 <b>근로계약</b>으로 찾으면 관련 서식이 모두 나옵니다.<br>
+      아래 분류에서 직접 골라볼 수도 있습니다.
+    </div>
+    {%- if reqs.enabled %}
+    <div class="reqbanner">
+      <p><b>그래도 없으면 요청하세요.</b> 보통 5분 안에 만들어 올려 드립니다.</p>
+      <a href="/request/" id="snone-req">이 서식 요청하기</a>
+    </div>
+    {%- endif %}
+    <div class="grid g4">
+      {%- for c in categories %}{%- for s in c.subcategories %}
+      <a href="/category/{{ c.key }}/{{ s.key }}/" class="card" style="padding:15px 16px">
+        <div class="cat" style="margin-bottom:3px">{{ c.name }}</div>
+        <div class="name">{{ s.name }}</div>
+        <div class="cat" style="margin-top:6px">{{ counts[c.key ~ '/' ~ s.key] }}종</div>
+      </a>
+      {%- endfor %}{%- endfor %}
+    </div>
+  </div>
+
+  {{ slot(ads, "search_bottom") }}
+
+  <h2 class="sec">많이 찾는 서식</h2>
+  <div class="grid">
+    {%- for f in featured %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+</div>
+<script>
+(function(){
+  var INTERSTITIAL = {{ 'true' if ads.download_interstitial else 'false' }};
+  var BAD = /[\\\/:*?"<>|]/g;
+  var grid = document.getElementById('sgrid');
+  var countEl = document.getElementById('scount');
+  var noneEl = document.getElementById('snone');
+  var input = document.getElementById('sq');
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function fileName(title, ext){ return title.replace(BAD, '_').trim() + '.' + ext; }
+
+  function dlHref(id, ext){
+    return INTERSTITIAL ? '/download/' + id + '/' + ext + '/'
+                        : '/files/' + id + '/' + id + '.' + ext;
+  }
+
+  function cardHtml(f){
+    var fmts = [['pdf','PDF',''], ['docx','Word',''], ['hwpx','한글',' — HWPX (한글 2010 이상)']];
+    var links = fmts.map(function(x){
+      var dl = INTERSTITIAL ? '' : ' download="' + esc(fileName(f.title, x[0])) + '"';
+      return '<a href="' + dlHref(f.id, x[0]) + '"' + dl + ' title="' + esc(f.title) + ' ' + x[1] + ' 다운로드' + x[2] + '">' + x[1] + '</a>';
+    }).join('');
+    var badge = f.pages > 1 ? '<span class="badge">' + f.pages + '페이지</span>' : '';
+    return '<article class="card" data-form-title="' + esc(f.title) + '">' +
+      '<a class="thumb" href="/form/' + f.id + '/" aria-label="' + esc(f.title) + ' 미리보기">' +
+      '<img src="/files/' + f.id + '/preview-1.webp" alt="' + esc(f.title) + ' 양식 미리보기" ' +
+      'loading="lazy" width="800" height="1131">' + badge + '</a>' +
+      '<div class="body"><a class="name" href="/form/' + f.id + '/">' + esc(f.title) + '</a>' +
+      '<div class="cat">' + esc(f.cat) + '</div>' +
+      '<div class="dl">' + links + '</div></div></article>';
+  }
+
+  function norm(s){ return String(s).toLowerCase().replace(/\s+/g, ''); }
+
+  function rank(f, term){
+    var ti = norm(f.title).indexOf(term);
+    if (ti === 0) return 0;
+    if (ti > 0) return 1;
+    if (norm(f.tags).indexOf(term) >= 0) return 2;
+    if (norm(f.summary).indexOf(term) >= 0) return 3;
+    return -1;
+  }
+
+  function show(term, list){
+    if (!list.length){
+      grid.innerHTML = '';
+      noneEl.hidden = false;
+      // 못 찾은 검색어를 요청 폼에 그대로 넘겨 준다
+      var reqLink = document.getElementById('snone-req');
+      if (reqLink) reqLink.href = '/request/?q=' + encodeURIComponent(term);
+      countEl.innerHTML = '<b>' + esc(term) + '</b> 검색 결과가 없습니다.';
+      return;
+    }
+    noneEl.hidden = true;
+    grid.innerHTML = list.map(cardHtml).join('');
+    countEl.innerHTML = '<b>' + esc(term) + '</b> 검색 결과 <b>' + list.length + '종</b>';
+  }
+
+  var params = new URLSearchParams(location.search);
+  var term = (params.get('q') || '').trim();
+  input.value = term;
+  if (!term){ input.focus(); return; }
+
+  document.getElementById('stitle').textContent = term + ' 서식 검색 결과';
+  document.title = term + ' 서식 검색 결과 — {{ site_name }}';
+
+  fetch('/search-index.json').then(function(r){ return r.json(); }).then(function(d){
+    var key = norm(term);
+    var scored = [];
+    d.forms.forEach(function(f){
+      var r = rank(f, key);
+      if (r >= 0) scored.push([r, f]);
+    });
+    scored.sort(function(a, b){ return a[0] - b[0]; });
+    var list = scored.map(function(s){ return s[1]; });
+    show(term, list);
+    // 검색어와 결과 수를 GA4로 보낸다. '결과 0건' 검색어가 다음에 만들 서식의 후보가 된다.
+    if (window.gtag) {
+      gtag('event', 'view_search_results', { search_term: term, result_count: list.length });
+    }
+  }).catch(function(){
+    countEl.textContent = '검색 자료를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.';
+  });
+})();
+</script>
+{% endblock %}

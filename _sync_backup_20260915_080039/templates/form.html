@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+<div class="wrap">
+  <div class="crumb">
+    <a href="/">홈</a> › <a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ cat.name }}</a> ›
+    <a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ sub.name }}</a> › {{ f.title }}
+  </div>
+
+  <div class="detail">
+    <div class="pv-col">
+      <div class="preview{% if f.previews|length > 1 %} pv-fold{% endif %}" id="pv">
+        {%- for p in f.previews %}
+        <button type="button" class="pv-zoom" aria-label="{{ loop.index }}페이지 크게 보기"><img src="/files/{{ f.id }}/{{ p }}" alt="{{ f.title }} {{ loop.index }}페이지 작성 예시 미리보기" width="800" height="1131"{% if loop.index > 1 %} loading="lazy"{% endif %}></button>
+        {%- endfor %}
+      </div>
+      <p class="pv-hint">탭하면 크게 보기</p>
+      {%- if f.previews|length > 1 %}
+      <button type="button" class="pv-more" id="pvMore">나머지 {{ f.previews|length - 1 }}페이지 더 보기</button>
+      {%- endif %}
+      {%- if f.sample_preview %}
+      <p class="preview-note">
+        <span aria-hidden="true">✎</span>
+        <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
+        내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
+      </p>
+      {%- endif %}
+    </div>
+
+    <div class="meta">
+      <h1 class="page">{{ f.title }}</h1>
+      <p class="lead" style="margin-bottom:0">{{ f.summary }}</p>
+
+      {%- if series_forms %}
+      <div class="series-box">
+        <h3>{{ f.series_name }} {{ series_forms|length }}종</h3>
+        <p>상황에 맞는 양식을 고르세요. 항목 구성이 서로 다릅니다.</p>
+        <ul class="series-list">
+          {%- for s in series_forms %}
+          {%- if s.id == f.id %}
+          <li><span class="cur">{{ s.variant or s.title }}</span></li>
+          {%- else %}
+          <li><a href="/form/{{ s.id }}/" title="{{ s.title }}">{{ s.variant or s.title }}</a></li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+        <a class="hub-link" href="/series/{{ f.series }}/">{{ f.series_name }} {{ series_forms|length }}종 한눈에 비교하기 →</a>
+      </div>
+      {%- endif %}
+
+      <div class="dlbox">
+        <h3>양식 다운로드</h3>
+        <p>원하는 형식을 선택하세요. 회원가입 없이 바로 내려받습니다.</p>
+        <div class="dlbtns">
+          <a href="{{ dl.pdf }}"{% if not ads.download_interstitial %} download="{{ names.pdf }}"{% endif %}>PDF<span class="fmt">{{ kb.pdf }} KB</span></a>
+          <a href="{{ dl.docx }}"{% if not ads.download_interstitial %} download="{{ names.docx }}"{% endif %}>Word<span class="fmt">{{ kb.docx }} KB</span></a>
+          <a href="{{ dl.hwpx }}"{% if not ads.download_interstitial %} download="{{ names.hwpx }}"{% endif %} title="HWPX (한글 2010 이상)">한글<span class="fmt">{{ kb.hwpx }} KB</span></a>
+        </div>
+        <p class="dl-hwpx">한글 파일은 HWPX 형식입니다 — 한글 2010 이상에서 열립니다.</p>
+      </div>
+
+      {%- if f.seal %}
+      {#- 서명·날인 칸이 있는 서식에만 붙는다(카탈로그 seal 플래그, form_spec.seal_of).
+          이름은 캔버스에서만 처리되고 서버로 가지 않는다. 글꼴·색상 조정은 /tools/stamp/ 로. #}
+      <div class="stampbox" id="stampbox">
+        <div class="sb-head"><h3>이 서식에 찍을 도장 만들기</h3><span class="new">NEW</span></div>
+        <p>이름을 입력하면 (인) 자리에 넣을 도장 이미지를 바로 만듭니다. 입력한 이름은 서버로 보내지 않습니다.</p>
+        <div class="sb-row">
+          <div class="sb-f">
+            <input type="text" id="sb-name" maxlength="8" placeholder="이름 (예: 홍길동)" autocomplete="off" aria-label="도장에 새길 이름" aria-describedby="sb-cnt">
+            <div class="sb-meta"><span id="sb-long" hidden>긴 이름은 서명형이 보기 좋습니다 → <a href="/tools/stamp/#sign" id="sb-sign">서명 만들기</a></span><span class="sb-cnt" id="sb-cnt">0 / 8</span></div>
+          </div>
+          <div class="sb-pv"><canvas id="sb-canvas" width="300" height="300" aria-label="도장 미리보기"></canvas></div>
+          <button type="button" class="sb-btn" id="sb-save">PNG 저장</button>
+        </div>
+        <div class="sb-opts">
+          <span class="sb-shapes" role="group" aria-label="도장 모양">
+            <button type="button" class="on" data-shape="circle">원형</button>
+            <button type="button" data-shape="square">사각</button>
+            <button type="button" data-shape="oval">타원</button>
+          </span>
+          <a class="hub-link" id="sb-more" href="/tools/stamp/">글꼴·색상 바꾸기 →</a>
+        </div>
+      </div>
+      {%- endif %}
+
+      <dl>
+        <dt>분류</dt><dd><a href="/category/{{ cat.key }}/{{ sub.key }}/">{{ cat.name }} · {{ sub.name }}</a></dd>
+        <dt>페이지</dt><dd>{{ f.pages }}페이지 (A4)</dd>
+        <dt>제공 형식</dt><dd>PDF · Word(DOCX) · 한글(HWPX)</dd>
+        <dt>저장 파일명</dt><dd>{{ names.pdf }}</dd>
+        <dt>등록일</dt><dd>{{ f.created_at[:10] }}</dd>
+        {%- if f.updated_at[:10] and f.updated_at[:10] != f.created_at[:10] %}
+        <dt>최종 수정</dt><dd>{{ f.updated_at[:10] }}</dd>
+        {%- endif %}
+      </dl>
+
+      {%- if f.howto %}
+      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 순서</h2>
+      <ol class="howto">
+        {%- for step in f.howto %}
+        <li>{{ step }}</li>
+        {%- endfor %}
+      </ol>
+      {%- endif %}
+
+      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
+      <div class="usage">{{ f.usage }}</div>
+
+      {%- if f.outline %}
+      <h2 class="sec" style="margin-top:26px; font-size:16px">이 서식에 들어 있는 항목</h2>
+      <p class="outline-lead">내려받기 전에 어떤 칸을 채우게 되는지 미리 확인하세요.</p>
+      <ul class="outline">
+        {%- for sec in f.outline %}
+        <li>
+          {%- if sec.title %}<b>{{ sec.title }}</b>{% endif %}
+          {%- if sec['items'] %}<span>{{ sec['items'] | join(' · ') }}</span>{% endif %}
+          {%- if sec.note %}<span class="note">{{ sec.note }}</span>{% endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+
+      {%- if f.faq %}
+      <h2 class="sec" style="margin-top:26px; font-size:16px">자주 묻는 질문</h2>
+      <div class="faq">
+        {%- for item in f.faq %}
+        <details{% if loop.first %} open{% endif %}>
+          <summary>{{ item.q }}</summary>
+          <p class="a">{{ item.a }}</p>
+        </details>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+
+      {%- if f.source == 'law-standard' and f.source_note %}
+      <div class="notice-box">{{ f.source_note }}. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>
+      {%- endif %}
+      <div class="notice-box">
+        한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
+        본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
+      </div>
+
+      {#- 태그를 검색 결과로 연결한다. 태그마다 별도 페이지를 만들면 내용이 얇은 페이지가
+          수백 개 생기므로, 이미 있는 검색 화면을 착지점으로 쓴다. #}
+      <div class="tags">
+        {%- for t in f.tags %}<a href="/search/?q={{ t|urlencode }}">{{ t }}</a>{% endfor %}
+      </div>
+
+      {%- if my_collections %}
+      <div class="incol">
+        <span>이 서식이 들어 있는 모음</span>
+        {%- for c in my_collections %}<a href="/collection/{{ c.key }}/">{{ c.name }}</a>{% endfor %}
+      </div>
+      {%- endif %}
+
+      {{ slot(ads, "detail_body") }}
+    </div>
+  </div>
+
+  {%- if related %}
+  <h2 class="sec">함께 찾는 서식</h2>
+  <div class="grid">
+    {%- for r in related %}
+    {#- 연관 서식은 분류를 넘나들므로 각 서식이 가진 제 분류를 붙인다
+        (현재 서식의 분류를 그대로 쓰면 다른 분류 서식에 틀린 라벨이 붙는다) #}
+    {{ m.card(r, cat_label[r.id], dl_map[r.id], ads.download_interstitial, name_map[r.id]) }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+</div>
+<script>
+(function(){
+  var pv=document.getElementById('pv'); if(!pv) return;
+  // 미리보기 확대 — 원본 이미지를 어두운 배경 위에 띄운다. ✕·배경·Esc 로 닫고, 핀치 줌은 허용한다
+  var lb=null, img=null, xb=null, back=null;
+  function close(){
+    if(!lb || lb.hidden) return;
+    lb.hidden=true; document.documentElement.classList.remove('lb-lock');
+    if(back) back.focus();
+  }
+  function open(src, alt, from){
+    if(!lb){
+      lb=document.createElement('div'); lb.className='lb'; lb.hidden=true;
+      lb.setAttribute('role','dialog'); lb.setAttribute('aria-modal','true'); lb.setAttribute('aria-label','미리보기 크게 보기');
+      lb.innerHTML='<button type="button" class="lb-x" aria-label="닫기">✕</button><img alt="">';
+      document.body.appendChild(lb); xb=lb.firstChild; img=lb.lastChild;
+      lb.addEventListener('click', function(e){ if(e.target!==img) close(); });
+    }
+    img.src=src; img.alt=alt; back=from;
+    lb.hidden=false; lb.scrollTop=0; document.documentElement.classList.add('lb-lock'); xb.focus();
+  }
+  pv.addEventListener('click', function(e){
+    var b=e.target.closest('.pv-zoom'); if(!b) return;
+    var i=b.querySelector('img'); open(i.currentSrc || i.src, i.alt, b);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+
+  // 모바일: 2페이지 이상이면 첫 페이지만 보이고 버튼으로 나머지를 펼친다 (PC는 버튼이 보이지 않는다)
+  var more=document.getElementById('pvMore');
+  if(more) more.addEventListener('click', function(){
+    pv.classList.add('open'); more.remove();
+    var next=pv.querySelectorAll('.pv-zoom')[1]; if(next) next.focus({preventScroll:true});
+  });
+
+  // PC: 미리보기 열이 오른쪽 열보다 길 때만 오른쪽 열을 화면에 고정한다
+  var col=pv.parentNode, meta=document.querySelector('.detail .meta'), wide=window.matchMedia('(min-width:1001px)');
+  function fit(){
+    if(!meta) return;
+    meta.classList.remove('stick');
+    if(wide.matches && meta.offsetHeight < col.offsetHeight) meta.classList.add('stick');
+  }
+  fit(); window.addEventListener('load', fit); window.addEventListener('resize', fit);
+})();
+</script>
+<script type="application/ld+json">
+{{ jsonld | safe }}
+</script>
+{%- if faq_jsonld %}
+<script type="application/ld+json">
+{{ faq_jsonld | safe }}
+</script>
+{%- endif %}
+{%- if f.seal %}
+<script src="/assets/stamp.js?v={{ asset_ver }}" defer></script>
+<script>
+// stamp.js 가 defer 로 오므로 DOMContentLoaded 뒤에 시작한다 (defer 스크립트는 그 전에 실행된다)
+document.addEventListener('DOMContentLoaded', function(){
+  // 도장 위젯. 글꼴은 도구 페이지와 달리 웹폰트를 내려받지 않고 시스템 글꼴로 그린다
+  // (상세 페이지 속도 우선). 같은 이름을 들고 도구 페이지로 넘어가면 웹폰트 도장을 볼 수 있다.
+  var name=document.getElementById('sb-name'), cv=document.getElementById('sb-canvas'),
+      save=document.getElementById('sb-save'), more=document.getElementById('sb-more'),
+      shapes=document.querySelectorAll('.sb-shapes button');
+  if(!name||!cv||!window.FFStamp) return;
+  var shape='circle';
+  function opt(){ return {name:name.value.trim()||'이름', shape:shape, font:'myeongjo', color:'red', seal:true, size:300}; }
+  function draw(){ FFStamp.draw(cv, opt()); }
+  function link(){ more.href='/tools/stamp/?name='+encodeURIComponent(name.value.trim())+'&shape='+shape; }
+  // 글자수 안내 — 8자가 한도이고, 5자 이상은 도장 안 글자가 작아져 서명형을 권한다
+  var cnt=document.getElementById('sb-cnt'), longTip=document.getElementById('sb-long'), sign=document.getElementById('sb-sign');
+  function count(){
+    var n=Array.from(name.value).length;
+    cnt.textContent=n+' / 8'; cnt.classList.toggle('max', n>=8); longTip.hidden=n<5;
+    sign.href='/tools/stamp/?name='+encodeURIComponent(name.value.trim())+'#sign';
+  }
+  name.addEventListener('input', function(){ draw(); link(); count(); });
+  shapes.forEach(function(b){ b.addEventListener('click', function(){
+    shapes.forEach(function(x){ x.classList.remove('on'); }); b.classList.add('on');
+    shape=b.getAttribute('data-shape'); draw(); link();
+  }); });
+  save.addEventListener('click', function(){
+    var n=name.value.trim();
+    if(!n){ name.focus(); name.placeholder='이름을 먼저 입력하세요'; return; }
+    var out=document.createElement('canvas');
+    FFStamp.draw(out, Object.assign(opt(), {size:600}));
+    FFStamp.download(out, '도장_'+n, 'png');
+  });
+  draw(); link(); count();
+});
+</script>
+{%- endif %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{# 광고 슬롯 매크로. ads.enabled가 false이거나 슬롯 ID가 비어 있으면 아무것도 출력하지 않는다.
+   레이아웃이 흔들리지 않도록 컨테이너에 최소 높이를 예약해 둔다(CLS 방지). #}
+{% macro slot(ads, name, variant="wide") -%}
+{%- if ads.preview %}
+{# 확인용 미리보기. 광고 코드는 나가지 않고 실제 광고 크기의 회색 상자만 그린다. #}
+<div class="adbox ad-{{ variant }} adprev" data-slot="{{ name }}">
+  <span class="adlabel">광고</span>
+  <div class="adprev-in">광고 자리 · {{ name }}</div>
+</div>
+{%- elif ads.enabled and ads.client and ads.slots.get(name) %}
+<div class="adbox ad-{{ variant }}" data-slot="{{ name }}">
+  <span class="adlabel">광고</span>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ ads.client }}"
+       data-ad-slot="{{ ads.slots[name] }}"
+       {% if variant == 'side' %}data-ad-format="vertical"{% else %}data-ad-format="auto"{% endif %}
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+{%- endif %}
+{%- endmacro %}

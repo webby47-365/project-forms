@@ -1,0 +1,137 @@
+{
+  "_comment": "주제 모음 허브. 한 가지 일을 처리할 때 연달아 필요한 서식을 상황별로 묶는다. 계열(series) 허브가 '같은 서식의 변형'을 묶는 것과 달리, 여기는 '분류가 달라도 같은 일에 함께 쓰는 것'을 묶는다. ids는 catalog.json에 있는 서식 id여야 하며, 없는 id가 있으면 빌드가 멈춘다. 화면에는 ids에 적은 순서대로 나온다.",
+  "collections": [
+    {
+      "key": "resignation",
+      "name": "퇴사할 때 필요한 서식",
+      "lead": "사직 의사를 밝히는 순간부터 마지막 정산까지, 순서대로 필요한 서식을 모았습니다.",
+      "ids": [
+        "resignation-letter", "resignation-simple", "retirement-application",
+        "handover-report", "asset-handover", "severance-calculation",
+        "career-certificate", "employment-certificate", "annual-leave-plan",
+        "career-description"
+      ]
+    },
+    {
+      "key": "job-hunting",
+      "name": "취업 준비 서식",
+      "lead": "지원 서류부터 입사 후 첫 서류까지. 이력서·자기소개서는 계열별 변형도 함께 제공합니다.",
+      "ids": [
+        "job-application-form", "resume-basic", "cover-letter",
+        "career-description", "portfolio-cover", "recommendation-letter",
+        "reference-check-consent", "interview-evaluation",
+        "labor-contract-standard", "probation-evaluation"
+      ]
+    },
+    {
+      "key": "moving",
+      "name": "이사·임대차 서식",
+      "lead": "집을 구할 때부터 보증금을 돌려받을 때까지 필요한 계약·확인·통지 서식입니다.",
+      "ids": [
+        "housing-lease-contract", "commercial-lease-contract",
+        "lease-renewal-contract", "move-in-checklist", "monthly-rent-receipt",
+        "moving-in-report", "moving-checklist", "lease-termination-notice",
+        "deposit-return-notice", "resident-registration-request"
+      ]
+    },
+    {
+      "key": "lending",
+      "name": "돈 빌려주고 받을 때",
+      "lead": "차용증을 쓰는 단계부터 못 받았을 때의 독촉·소송까지 단계별로 정리했습니다.",
+      "ids": [
+        "loan-agreement", "loan-note-simple", "loan-note-guaranteed",
+        "payment-pledge", "written-pledge", "repayment-plan",
+        "certified-notice-loan", "payment-order-application",
+        "complaint-loan-return", "balance-confirmation"
+      ]
+    },
+    {
+      "key": "trading",
+      "name": "거래·정산 서식",
+      "lead": "견적을 내고 주문을 받아 대금을 청구하기까지, 거래 한 건에 필요한 서식 묶음입니다.",
+      "ids": [
+        "quotation", "quotation-detailed", "quotation-comparison",
+        "purchase-order", "delivery-confirmation", "transaction-statement",
+        "tax-invoice", "invoice-request", "payment-confirmation", "receipt"
+      ]
+    },
+    {
+      "key": "startup",
+      "name": "창업 첫 달 서식",
+      "lead": "사업자등록 준비부터 법인 설립 서류, 초기 자금 계획까지 모았습니다.",
+      "ids": [
+        "startup-checklist", "business-reg-checklist", "business-plan-simple",
+        "business-plan-standard", "partnership-agreement",
+        "articles-of-incorporation", "shareholder-register",
+        "director-acceptance", "budget-plan", "nda"
+      ]
+    },
+    {
+      "key": "consent",
+      "name": "동의서 모음",
+      "lead": "행사·모집·서비스 운영에 필요한 개인정보·초상권·보호자 동의서를 한곳에 모았습니다.",
+      "ids": [
+        "privacy-consent", "privacy-consent-simple", "privacy-consent-third",
+        "privacy-consent-marketing", "portrait-rights-consent",
+        "event-photo-consent", "survey-consent", "guardian-consent",
+        "minor-activity-consent", "event-application"
+      ]
+    },
+    {
+      "key": "medical",
+      "name": "병원·요양 서식",
+      "lead": "진료·수술 동의부터 요양 급여 신청, 의료비 지원까지 필요한 서식입니다.",
+      "ids": [
+        "medical-treatment-consent", "surgery-consent",
+        "blood-transfusion-consent", "vaccination-consent",
+        "medical-record-request", "hospital-transfer-request",
+        "medical-expense-support", "long-term-care-application",
+        "care-service-application", "caregiver-contract"
+      ]
+    },
+    {
+      "key": "dispute",
+      "name": "분쟁 해결 서식",
+      "lead": "내용증명으로 먼저 알리고, 합의가 안 되면 소송으로. 단계별로 필요한 서식입니다.",
+      "ids": [
+        "certified-notice", "fact-confirmation", "settlement-agreement",
+        "statement-of-facts", "civil-conciliation", "small-claims-complaint",
+        "complaint-goods-payment", "answer-brief", "preparatory-brief",
+        "petition-letter"
+      ]
+    },
+    {
+      "key": "civil-affairs",
+      "name": "관공서 민원 서식",
+      "lead": "동네 민원부터 행정처분 이의신청까지, 관공서에 내는 서식을 모았습니다.",
+      "ids": [
+        "civil-petition", "info-disclosure-request", "disclosure-objection",
+        "parking-fine-objection", "administrative-objection",
+        "noise-complaint", "illegal-dumping-report", "road-repair-request",
+        "moving-in-report", "seal-certificate-poa"
+      ]
+    },
+    {
+      "key": "office-admin",
+      "name": "사무실 총무 서식",
+      "lead": "결재·공지·대장 관리 등 총무 업무에서 반복해 쓰는 서식입니다.",
+      "ids": [
+        "proposal-draft", "official-letter", "cooperation-request",
+        "internal-announcement", "document-register", "asset-ledger",
+        "supply-purchase-request", "seal-usage-log", "access-pass-request",
+        "facility-repair-request"
+      ]
+    },
+    {
+      "key": "school",
+      "name": "학교·학원 서식",
+      "lead": "학습 계획과 출결 관리, 학부모 제출 서류까지 학교·학원에서 쓰는 서식입니다.",
+      "ids": [
+        "class-timetable", "study-plan", "weekly-study-plan", "reading-log",
+        "attendance-sheet", "academy-attendance", "course-registration",
+        "tuition-refund-request", "field-trip-consent",
+        "scholarship-application"
+      ]
+    }
+  ]
+}

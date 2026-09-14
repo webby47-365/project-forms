@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+{# 서식 요청 접수. 접수 주소(catalog/requests.json)가 없으면 폼 없이 안내만 나간다. #}
+<div class="wrap">
+  <div class="crumb"><a href="/">홈</a> › 서식 요청</div>
+  <h1 class="page">찾으시는 서식이 없나요?</h1>
+  {%- if reqs.enabled %}
+  <p class="lead reqlead">
+    <span class="reqbadge">즉시 제작</span>
+    요청하시면 <b>보통 5분 안에</b> 서식을 만들어 이 사이트에 올려 드립니다.
+    회원가입도, 연락처도 필요 없습니다.</p>
+  {%- else %}
+  <p class="lead">필요한 서식을 알려주시면 검토해서 만들어 올립니다.
+    회원가입도, 연락처도 필요 없습니다.</p>
+  {%- endif %}
+
+  {%- if reqs.enabled %}
+  <div class="reqbox">
+    <form class="reqform" id="reqform" autocomplete="off">
+      <label for="rq-title">어떤 서식이 필요하세요? <b>*</b></label>
+      <input type="text" id="rq-title" name="title" placeholder="예: 반려견 분양 계약서"
+             maxlength="{{ reqs.max_title }}" required>
+      <div class="cnt"><span id="rq-title-n">0</span> / {{ reqs.max_title }}</div>
+
+      <label for="rq-purpose">어디에 쓰실 건가요?</label>
+      <textarea id="rq-purpose" name="purpose" rows="3"
+                placeholder="예: 개인 간 반려견 분양 시 인수인계 내용을 적으려고 합니다"
+                maxlength="{{ reqs.max_purpose }}"></textarea>
+      <div class="cnt"><span id="rq-purpose-n">0</span> / {{ reqs.max_purpose }}</div>
+
+      {# 봇 차단용 숨김 칸. 사람에게는 보이지 않으므로 값이 채워져 있으면 자동 제출이다. #}
+      <div class="rq-hp" aria-hidden="true">
+        <label for="rq-hp">이 칸은 비워 두세요</label>
+        <input type="text" id="rq-hp" name="hp" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" id="rq-send">요청 보내기</button>
+      <div class="rq-msg" id="rq-msg" hidden></div>
+    </form>
+
+    <ul class="reqnote">
+      <li><b>개인정보는 받지 않습니다.</b> 이름·연락처·이메일은 적지 마세요.</li>
+      <li>요청하신 서식은 <b>보통 5분 안에</b> 올라옵니다. 요청이 몰리는 시간대에는 다음 날 아침에 처리됩니다.</li>
+      <li>관공서 제출용 <b>법정 신고서식</b>은 원본이어야 효력이 있어 만들지 않습니다.
+        정부24·홈택스에서 받으세요.</li>
+      <li>특정 회사의 실제 양식은 저작권 문제로 만들지 않습니다.</li>
+    </ul>
+  </div>
+  {%- else %}
+  <div class="snone">
+    <b>지금은 요청을 받고 있지 않습니다.</b><br>
+    아래 분류에서 찾아보시거나, 상단 검색창에 서식 이름을 넣어 보세요.
+  </div>
+  {%- endif %}
+
+  {%- if from_request %}
+  <h2 class="sec">요청으로 등록된 서식</h2>
+  <p class="lead" style="margin:-10px 0 18px">요청해 주신 덕분에 올라온 서식입니다.</p>
+  <div class="grid g4">
+    {%- for f in from_request %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {{ slot(ads, "request_bottom") }}
+
+  <h2 class="sec">카테고리로 찾기</h2>
+  <div class="grid g4">
+    {%- for c in categories %}{%- for s in c.subcategories %}
+    <a href="/category/{{ c.key }}/{{ s.key }}/" class="card" style="padding:15px 16px">
+      <div class="cat" style="margin-bottom:3px">{{ c.name }}</div>
+      <div class="name">{{ s.name }}</div>
+      <div class="cat" style="margin-top:6px">{{ counts[c.key ~ '/' ~ s.key] }}종</div>
+    </a>
+    {%- endfor %}{%- endfor %}
+  </div>
+</div>
+{%- if reqs.enabled %}
+<script>
+(function(){
+  var ENDPOINT = {{ reqs.endpoint | tojson }};
+  var form = document.getElementById('reqform');
+  var btn = document.getElementById('rq-send');
+  var msg = document.getElementById('rq-msg');
+  var title = document.getElementById('rq-title');
+  var purpose = document.getElementById('rq-purpose');
+
+  // 글자 수 표시 — 길게 쓰려다 막히는 것보다 미리 보이는 편이 낫다
+  function counter(el, out){
+    var n = document.getElementById(out);
+    function upd(){ n.textContent = el.value.length; }
+    el.addEventListener('input', upd); upd();
+  }
+  counter(title, 'rq-title-n');
+  counter(purpose, 'rq-purpose-n');
+
+  // 새로고침하면 브라우저가 지난 입력값을 되살린다. 그대로 두면 이미 보낸 요청을
+  // 다시 보내게 되므로, 화면을 열 때마다 비우고 시작한다.
+  function clearForm(){
+    title.value = '';
+    purpose.value = '';
+    title.dispatchEvent(new Event('input'));
+    purpose.dispatchEvent(new Event('input'));
+  }
+  clearForm();
+  window.addEventListener('pageshow', function(ev){ if (ev.persisted) clearForm(); });
+
+  // 검색 결과 화면에서 넘어온 검색어는 미리 채워 준다 (/request/?q=...)
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) { title.value = q.slice(0, {{ reqs.max_title }}); title.dispatchEvent(new Event('input')); }
+
+  function show(kind, html){
+    msg.className = 'rq-msg ' + kind;
+    msg.innerHTML = html;
+    msg.hidden = false;
+  }
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var t = title.value.trim();
+    if (t.length < 2) { show('bad', '서식 이름을 두 글자 이상 적어 주세요.'); title.focus(); return; }
+
+    btn.disabled = true;
+    btn.textContent = '보내는 중...';
+    msg.hidden = true;
+
+    // Content-Type을 text/plain으로 보내야 사전 요청(preflight) 없이 그대로 전달된다
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: {'Content-Type': 'text/plain;charset=utf-8'},
+      body: JSON.stringify({
+        title: t,
+        purpose: purpose.value.trim(),
+        hp: document.getElementById('rq-hp').value,
+        ref: location.pathname + location.search
+      })
+    }).then(function(r){ return r.json(); }).then(function(d){
+      if (d && d.ok) {
+        if (d.existing) {
+          done('<b>이미 있는 서식입니다.</b> <a href="/form/' + d.existing + '/">바로 받으러 가기 →</a>');
+        } else if (d.duplicate) {
+          done('<b>이미 접수하신 요청입니다.</b> 같은 서식을 두 번 만들지 않습니다 — 먼저 보내신 요청이 처리 중입니다.');
+        } else if (d.immediate) {
+          done('<b>접수했습니다. 지금 만들고 있습니다.</b> 보통 5분 안에 올라옵니다 — 잠시 뒤 아래 버튼으로 확인해 보세요.');
+        } else {
+          done('<b>접수했습니다.</b> 지금은 처리 분량이 차서, 내일 아침에 만들어 올립니다.');
+        }
+        if (window.gtag) { gtag('event', 'form_request', { search_term: t }); }
+      } else {
+        btn.textContent = '요청 보내기';
+        btn.disabled = false;
+        show('bad', (d && d.message) ? d.message : '접수에 실패했습니다. 잠시 뒤 다시 시도해 주세요.');
+      }
+    }).catch(function(){
+      btn.textContent = '요청 보내기';
+      btn.disabled = false;
+      show('bad', '접수에 실패했습니다. 인터넷 연결을 확인하고 다시 시도해 주세요.');
+    });
+  });
+
+  // 접수가 끝나면 입력칸을 잠근다. 새로고침이나 재클릭으로 같은 요청이 또 나가지 않게 한다.
+  function done(html){
+    title.disabled = true;
+    purpose.disabled = true;
+    btn.disabled = true;
+    btn.textContent = '접수 완료';
+    show('ok', html +
+      '<div class="rq-again">' +
+      '<a href="/request/">다른 서식 요청하기</a>' +
+      '<a href="/">사이트에서 서식 찾아보기</a>' +
+      '</div>');
+  }
+})();
+</script>
+{%- endif %}
+{% endblock %}

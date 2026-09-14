@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{% block content %}
+<section class="hero">
+  <div class="wrap">
+    <h1>필요한 서식을 무료로 받으세요.</h1>
+    <p>회원가입도, 로그인도 없습니다. 양식을 미리 확인하고 PDF · Word · 한글 중 원하는 형식으로 내려받으세요.</p>
+    <form class="hsearch" action="/search/" method="get" role="search">
+      <input type="search" id="q2" name="q" placeholder="예: 이력서, 사직서, 위임장" autocomplete="off" enterkeyhint="search" aria-label="서식 검색">
+      <button type="submit" class="s-go" aria-label="검색"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+    </form>
+    <div class="chips">
+      {%- for f in featured[:6] %}
+      <a href="/form/{{ f.id }}/">{{ f.title.split(' (')[0] }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  {{ slot(ads, "main_top") }}
+
+  <h2 class="sec">많이 찾는 서식 10</h2>
+  <div class="grid">
+    {%- for f in featured %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+
+  {{ slot(ads, "main_mid") }}
+
+  <h2 class="sec">최근 추가된 서식</h2>
+  <div class="grid">
+    {%- for f in recent %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+
+  {%- if collection_hubs %}
+  <h2 class="sec">상황별 서식 모음</h2>
+  <p class="lead" style="margin:-12px 0 18px">
+    한 가지 일을 처리하려면 서식 여러 장이 필요합니다. 순서대로 묶어 두었습니다.</p>
+  <div class="grid g4">
+    {%- for c in collection_hubs %}
+    <a href="/collection/{{ c.key }}/" class="card" style="padding:15px 16px">
+      <div class="name">{{ c.name }}</div>
+      <div class="cat" style="margin-top:6px">{{ c.count }}종</div>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  <h2 class="sec">버전별로 고르는 서식</h2>
+  <p class="lead" style="margin:-12px 0 18px">
+    같은 서식이라도 상황에 따라 항목 구성이 다릅니다. 표에서 비교하고 맞는 버전을 받으세요.</p>
+  <div class="grid g4">
+    {%- for s in series_hubs %}
+    <a href="/series/{{ s.key }}/" class="card" style="padding:15px 16px">
+      <div class="name">{{ s.name }}</div>
+      <div class="cat" style="margin-top:6px">{{ s.count }}종 비교</div>
+    </a>
+    {%- endfor %}
+  </div>
+
+  {%- if reqs.enabled %}
+  <div class="reqbanner">
+    <p><b>찾으시는 서식이 없나요?</b> 요청하시면 보통 5분 안에 만들어 올려 드립니다.</p>
+    <a href="/request/">서식 요청하기</a>
+  </div>
+  {%- endif %}
+
+  <h2 class="sec">카테고리로 찾기</h2>
+  <div class="grid g4">
+    {%- for c in categories %}{%- for s in c.subcategories %}
+    <a href="/category/{{ c.key }}/{{ s.key }}/" class="card" style="padding:15px 16px">
+      <div class="cat" style="margin-bottom:3px">{{ c.name }}</div>
+      <div class="name">{{ s.name }}</div>
+      <div class="cat" style="margin-top:6px">{{ counts[c.key ~ '/' ~ s.key] }}종</div>
+    </a>
+    {%- endfor %}{%- endfor %}
+  </div>
+</div>
+<script>
+(function(){
+  var a=document.getElementById('q2'), b=document.getElementById('q');
+  if(!a) return;
+  // 히어로 입력은 헤더 검색창과 값을 공유해 자동완성 목록을 그대로 쓴다
+  if(b){ a.addEventListener('input',function(){ b.value=a.value; b.dispatchEvent(new Event('input')); }); }
+  // 엔터·돋보기는 폼 제출로 결과 페이지에 간다 — 빈 검색어만 막는다
+  if(a.form){
+    a.form.addEventListener('submit',function(e){
+      if(!a.value.trim()){ e.preventDefault(); a.focus(); }
+    });
+  }
+})();
+</script>
+{% endblock %}
