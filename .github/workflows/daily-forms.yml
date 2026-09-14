@@ -93,3 +93,47 @@ jobs:
           claude_args: |
             --max-turns 120
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+
+  # 워크플로 안에서 만든 푸시로는 GitHub가 다른 워크플로(deploy-pages)를 깨우지 않는다.
+  # 그래서 배포를 여기서 직접 끝낸다. deploy-pages.yml과 같은 내용이며,
+  # 사람이 푸시했을 때는 지금처럼 deploy-pages.yml이 맡는다.
+  deploy:
+    needs: add-forms
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    # Pages 배포는 저장소 전체에서 한 번에 하나만 돈다 — deploy-pages.yml과 같은 그룹을 쓴다
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # add-forms가 방금 푸시한 커밋을 받아야 하므로 SHA가 아닌 main을 지정한다
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: 사이트 생성
+        run: python scripts/build_site.py
+
+      - name: 커스텀 도메인 지정 (CNAME)
+        run: if [ -f CNAME ]; then cp CNAME public/CNAME; fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
