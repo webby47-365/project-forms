@@ -1,0 +1,92 @@
+# =====================================================================
+#  [서버 작업 - GitHub Actions]  무료서식 다운로드 — 일일 서식 자동 추가
+#
+#  매일 08:00(KST)에 GitHub가 이 작업을 깨운다. 컴퓨터가 꺼져 있어도 동작한다.
+#  Claude가 저장소 안에서 실행되므로 생성 → 검수 → 빌드 → 커밋 → 푸시가 한 번에 끝나고,
+#  푸시가 deploy-pages 워크플로를 깨워 사이트에 반영된다.
+#
+#  절차의 정본은 scripts/agent/daily_forms_agent.md 이다. 내용을 바꿀 때는 그 문서를 고친다.
+# =====================================================================
+name: 일일 서식 추가
+
+on:
+  schedule:
+    # cron은 UTC 기준이다. 08:00 KST = 전날 23:00 UTC.
+    - cron: "0 23 * * *"
+  # 시험 실행용. Actions 탭에서 [Run workflow] 로 즉시 돌려볼 수 있다.
+  workflow_dispatch:
+
+# 앞 실행이 남아 있으면 기다린다. 같은 서식을 두 번 만들지 않기 위함이다.
+concurrency:
+  group: daily-forms
+  cancel-in-progress: false
+
+jobs:
+  add-forms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write   # Claude가 커밋·푸시한다
+      id-token: write   # claude-code-action의 GitHub App 인증에 필요
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 서식 생성 도구 설치
+        run: |
+          sudo apt-get update -qq
+          # LibreOffice = DOCX→PDF 변환, poppler = 미리보기 이미지·본문 추출,
+          # fonts-noto-cjk = 한글 글꼴 (없으면 PDF에서 한글이 네모로 깨진다)
+          sudo apt-get install -y -qq libreoffice-writer poppler-utils fonts-noto-cjk
+          pip install --quiet python-docx python-hwpx jinja2 pyyaml pillow
+
+      - name: 한글 글꼴 대체 설정
+        # 명세는 맑은 고딕(Windows 기본)을 지정한다. 리눅스에는 없으므로
+        # Noto Sans CJK KR로 대체하도록 fontconfig에 알려준다.
+        run: |
+          mkdir -p ~/.config/fontconfig
+          cat > ~/.config/fontconfig/fonts.conf <<'EOF'
+          <?xml version="1.0"?>
+          <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+          <fontconfig>
+            <match target="pattern">
+              <test name="family"><string>Malgun Gothic</string></test>
+              <edit name="family" mode="assign" binding="strong">
+                <string>Noto Sans CJK KR</string>
+              </edit>
+            </match>
+            <match target="pattern">
+              <test name="family"><string>맑은 고딕</string></test>
+              <edit name="family" mode="assign" binding="strong">
+                <string>Noto Sans CJK KR</string>
+              </edit>
+            </match>
+          </fontconfig>
+          EOF
+          fc-cache -f
+
+      - name: 설치 확인
+        run: |
+          soffice --version
+          pdftoppm -v
+          fc-list :lang=ko family | head -3
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          # 구독 토큰으로 인증한다 (API 별도 과금 없음).
+          # github_token을 넘기지 않아야 Claude GitHub App으로 푸시되고,
+          # 그래야 deploy-pages 워크플로가 이어서 깨어난다.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            저장소의 scripts/agent/daily_forms_agent.md 를 먼저 읽고, 그 절차를 그대로 수행하라.
+            오늘 날짜(KST) 기준으로 신규 서식을 추가하고, 검증까지 통과시킨 뒤 커밋·푸시로 마무리한다.
+            작업 요약은 한국어로 남긴다.
+          claude_args: |
+            --max-turns 120
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
