@@ -1029,7 +1029,9 @@ document.addEventListener('DOMContentLoaded', function () {
       heroEl.textContent = '0'; lastHero = '0원'; subEl.textContent = r.error; lastSub = r.error; put([]); return;
     }
     heroEl.textContent = C.fmt(r.net); lastHero = C.fmt(r.net) + '원';
-    lastSub = '근속 ' + r.years + '년' + (r.serviceLabel ? ' (' + r.serviceLabel + ')' : '') +
+    // 근속연수는 1년 미만을 올린 값이라 실제 재직기간과 다를 수 있다. 다를 때만 괄호로 덧붙인다.
+    var svc = (r.serviceLabel && r.serviceLabel !== r.years + '년') ? ' (실제 ' + r.serviceLabel + ')' : '';
+    lastSub = '근속 ' + r.years + '년' + svc +
       ' · 세금 ' + C.fmt(r.total) + '원 · 실효세율 ' + r.rate.toFixed(2) + '%';
     subEl.textContent = lastSub;
     put([
