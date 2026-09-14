@@ -606,7 +606,6 @@ def build() -> int:
                               "application/hwp+zip"],
             "associatedMedia": media,
             "thumbnailUrl": f"{SITE_URL}{og_image}",
-            "numberOfPages": f.get("pages", 1),
             "url": f"{SITE_URL}/form/{f['id']}/",
             "mainEntityOfPage": f"{SITE_URL}/form/{f['id']}/",
             "datePublished": form_date(f, "created_at"),
