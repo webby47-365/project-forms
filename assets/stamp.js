@@ -15,12 +15,32 @@
 (function (root) {
   'use strict';
 
+  /* hanja: 印 처럼 한글 웹폰트에 없는 글자를 그릴 시스템 글꼴. 웹폰트와 굵기가 맞도록
+     fill 위에 stroke 를 한 번 더 그려 두껍게 만든다(strokeW = 글자 크기 대비 비율). */
   var FONT = {
-    seal:     { css: '"Gugi","Batang","바탕","Malgun Gothic",serif',          weight: '400', load: '"Gugi"' },
-    myeongjo: { css: '"Nanum Myeongjo","Batang","바탕",serif',                 weight: '800', load: '"Nanum Myeongjo"' },
-    gothic:   { css: '"Black Han Sans","Malgun Gothic","맑은 고딕",sans-serif', weight: '400', load: '"Black Han Sans"' },
-    pen:      { css: '"Nanum Pen Script","Malgun Gothic",cursive',             weight: '400', load: '"Nanum Pen Script"' }
+    seal:     { css: '"Gugi","Malgun Gothic","맑은 고딕","Apple SD Gothic Neo",sans-serif', weight: '400', load: '"Gugi"',
+                hanja: '"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans CJK KR",sans-serif', hanjaWeight: '700', strokeW: 0.045 },
+    myeongjo: { css: '"Nanum Myeongjo","Batang","바탕",serif', weight: '800', load: '"Nanum Myeongjo"',
+                hanja: '"Batang","바탕","Apple Myungjo","Noto Serif CJK KR",serif', hanjaWeight: '700', strokeW: 0.06 },
+    gothic:   { css: '"Black Han Sans","Malgun Gothic","맑은 고딕",sans-serif', weight: '400', load: '"Black Han Sans"',
+                hanja: '"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans CJK KR",sans-serif', hanjaWeight: '900', strokeW: 0.07 },
+    pen:      { css: '"Nanum Pen Script","Malgun Gothic",cursive', weight: '400', load: '"Nanum Pen Script"' }
   };
+  var HANJA_RE = /[\u4e00-\u9fff]/;
+
+  /* 글자 하나를 그린다. 한자면 시스템 글꼴 + 외곽선으로 웹폰트 굵기에 맞춘다. */
+  function glyph(ctx, ch, x, y, fs, f) {
+    if (HANJA_RE.test(ch) && f.hanja) {
+      ctx.font = f.hanjaWeight + ' ' + Math.round(fs) + 'px ' + f.hanja;
+      ctx.lineWidth = fs * f.strokeW;
+      ctx.lineJoin = 'round';
+      ctx.strokeText(ch, x, y);
+      ctx.fillText(ch, x, y);
+      ctx.font = f.weight + ' ' + Math.round(fs) + 'px ' + f.css;
+    } else {
+      ctx.fillText(ch, x, y);
+    }
+  }
   var COLOR = { red: '#c8102e', blue: '#1d4ed8', black: '#1f2937', brown: '#b45309' };
   var DEFAULT = {
     name: '',            // 도장에 새길 이름 (1~4자 권장)
@@ -98,7 +118,15 @@
       if (o.seal && Array.from(text).length <= 3) text += '印';
       var maxW = W - (bw + S * 0.06) * 2, fs = Math.min(H * 0.5, maxW / Math.max(1, Array.from(text).length) * 1.05);
       ctx.font = f.weight + ' ' + Math.round(fs) + 'px ' + f.css;
-      ctx.fillText(text, W / 2, H / 2 + fs * 0.04);
+      // 글자마다 폭을 재서 이어 붙인다 (印 은 다른 글꼴이라 통째로 그리면 굵기가 어긋난다)
+      var tchars = Array.from(text), widths = tchars.map(function (c) { return ctx.measureText(c).width; });
+      var total = widths.reduce(function (a, b) { return a + b; }, 0), cx0 = W / 2 - total / 2;
+      ctx.textAlign = 'left';
+      for (var k = 0; k < tchars.length; k++) {
+        glyph(ctx, tchars[k], cx0, H / 2 + fs * 0.04, fs, f);
+        cx0 += widths[k];
+      }
+      ctx.textAlign = 'center';
     } else {
       chars = sealChars(o.name, o.seal);
       var g = gridOf(chars.length);
@@ -114,7 +142,7 @@
         // 3자(예: 홍길동 印 없음)는 아래 줄이 한 칸 비므로 가운데로 모은다
         if (chars.length === 3 && i === 2 && g.cols === 2) cx = W / 2;
         if (chars.length === 3 && i < 2 && g.cols === 2) { /* 윗줄 두 글자는 그대로 */ }
-        ctx.fillText(chars[i], cx, cy + fsz * 0.05);
+        glyph(ctx, chars[i], cx, cy + fsz * 0.05, fsz, f);
       }
     }
     return canvas;
