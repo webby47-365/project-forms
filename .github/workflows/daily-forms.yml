@@ -103,7 +103,7 @@ jobs:
           show_full_output: true
           prompt: |
             저장소의 scripts/agent/daily_forms_agent.md 를 먼저 읽고, 그 절차를 그대로 수행하라.
-            오늘 날짜(KST) 기준으로 신규 서식과 정보형 가이드 1편을 추가하고, 검증까지 통과시킨 뒤 커밋·푸시로 마무리한다.
+            오늘 날짜(KST) 기준으로 신규 서식과 정보형 가이드 초안(status: draft) 1편을 추가하고, 검증까지 통과시킨 뒤 커밋·푸시로 마무리한다.
             작업 요약은 한국어로 남긴다. 리포트 끝에는 logs/_metrics_today.md 내용을 그대로 붙인다(7-1절, 이 파일은 커밋하지 않는다).
           claude_args: |
             --max-turns 160
