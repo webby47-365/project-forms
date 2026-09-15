@@ -1,0 +1,83 @@
+# =====================================================================
+#  [서버 작업 - GitHub Actions]  무료서식 다운로드 — 가이드 초안 검수·공개 (주 2회)
+#
+#  매주 월·목 09:00(KST)에 GitHub가 깨운다. 컴퓨터가 꺼져 있어도 동작한다.
+#  일일 에이전트가 쌓은 가이드 초안(status: draft)을 검수해 통과분만 공개(published)로 바꾸고 배포한다.
+#  절차의 정본은 scripts/agent/guide_review_agent.md 이다. 내용을 바꿀 때는 그 문서를 고친다.
+# =====================================================================
+name: 가이드 초안 검수
+
+on:
+  schedule:
+    # cron은 UTC 기준. 월·목 09:00 KST = 월·목 00:00 UTC
+    - cron: "0 0 * * 1,4"
+  workflow_dispatch:
+
+# 일일 서식 추가·요청 제작과 같은 그룹 — main 에 동시에 밀어넣지 않는다
+concurrency:
+  group: forms-pipeline
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 사이트 빌드 도구 설치
+        run: pip install --quiet -r requirements.txt
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          show_full_output: true
+          prompt: |
+            저장소의 scripts/agent/guide_review_agent.md 와 scripts/agent/GUIDE_SPEC.md 를 먼저 읽고, 검수 절차를 그대로 수행하라.
+            오늘 날짜(KST) 기준으로 status: draft 가이드를 검수해 한도 안에서만 공개하고, 검증 통과 후 커밋·푸시로 마무리한다.
+            숫자·기한·조문은 반드시 sources 의 기관 페이지에서 확인하고, 확인하지 못한 문장은 삭제한다. 리포트는 한국어로 남긴다.
+          claude_args: |
+            --max-turns 120
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+
+  # 워크플로 안에서 만든 푸시는 deploy-pages 를 깨우지 않으므로 여기서 배포까지 끝낸다 (daily-forms.yml 과 동일)
+  deploy:
+    needs: review
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 사이트 생성
+        run: python scripts/build_site.py
+      - name: 커스텀 도메인 지정 (CNAME)
+        run: if [ -f CNAME ]; then cp CNAME public/CNAME; fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4
