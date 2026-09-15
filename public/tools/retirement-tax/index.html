@@ -190,6 +190,23 @@ h2.sec{font-size:19px; font-weight:700; letter-spacing:-.01em; margin:38px 0 14p
 .chips a{background:#fff; border:1px solid rgba(255,255,255,.75); border-radius:999px;
   padding:5px 13px; font-size:13px; color:var(--hdr-bg); font-weight:600}
 .chips a:hover{background:var(--hdr-bg); border-color:var(--hdr-bg); color:#fff}
+/* 메인 도구 줄 — 서식 칩(흰색)과 구분되도록 남색 채움. 모바일은 한 줄 가로 넘김 */
+.htools{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:center; margin-top:14px}
+.htools-lb{font-size:12.5px; font-weight:700; color:var(--hero-title); margin-right:2px}
+.htools a{display:inline-flex; align-items:center; gap:6px; background:var(--hdr-bg); color:#fff;
+  border:1px solid var(--hdr-bg); border-radius:999px; padding:6px 15px 6px 12px; font-size:13.5px; font-weight:700;
+  white-space:nowrap; transition:background .15s}
+.htools a svg{width:16px; height:16px; flex:0 0 auto}
+.htools a:hover{background:#0b3a8c; border-color:#0b3a8c}
+.htools a.htools-all{background:transparent; color:var(--hdr-bg); padding:6px 14px}
+.htools a.htools-all:hover{background:var(--hdr-bg); color:#fff}
+@media (max-width:720px){
+  .htools{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start; margin:14px -20px 0; padding:0 20px 2px;
+    scrollbar-width:none; -webkit-overflow-scrolling:touch}
+  .htools::-webkit-scrollbar{display:none}
+  .htools a{flex:0 0 auto}
+  .htools-lb{display:none}
+}
 
 /* 카드 그리드 */
 .grid{display:grid; gap:18px; grid-template-columns:repeat(5,1fr)}
@@ -561,6 +578,17 @@ footer.site p a{white-space:nowrap}
 /* 상단 메뉴 '직장인 도구' — 서식이 아닌 도구 묶음이라 NEW 표시로 구분한다 */
 nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:var(--hdr-bg);
   background:var(--hdr-accent); border-radius:3px; padding:1px 4px; margin-left:5px; vertical-align:2px}
+/* 서식 분류 메뉴와 다른 묶음이라 주황 글자 + 왼쪽 간격으로 떼어 놓는다 (2026-09-15 사용자 지정) */
+nav.main > ul > li.nav-tools{margin-left:26px}
+nav.main > ul > li.nav-tools > a, nav.main > ul > li.nav-tools:hover > a,
+nav.main > ul > li.nav-tools:focus-within > a{color:#ffa24a}
+@media (max-width:1120px){ nav.main > ul > li.nav-tools{margin-left:14px} }
+@media (max-width:720px){
+  nav.main > ul > li.nav-tools{margin-left:0}
+  /* 모바일 메뉴 패널은 흰 바탕 — 같은 주황은 글자가 흐려 한 단계 진하게 */
+  nav.main > ul > li.nav-tools > a, nav.main > ul > li.nav-tools:hover > a,
+  nav.main > ul > li.nav-tools:focus-within > a{color:#d9480f}
+}
 
 /* 서식 상세 — '이 서식에 찍을 도장 만들기' 위젯. 이름만 넣으면 캔버스로 바로 그린다.
    입력값은 서버로 보내지 않는다 (assets/stamp.js) */
@@ -791,7 +819,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
           <ul class="submenu">            <li><a href="/category/edu/school/">학교·학원</a></li>          </ul>
         </li>        <li><a href="/category/welfare/consent/">의료·복지</a>
           <ul class="submenu">            <li><a href="/category/welfare/consent/">동의·신청</a></li>          </ul>
-        </li>        <li><a href="/tools/">직장인 도구<span class="nav-new">NEW</span></a>
+        </li>        <li class="nav-tools"><a href="/tools/">직장인 도구<span class="nav-new">NEW</span></a>
           <ul class="submenu">            <li><a href="/tools/stamp/">디지털 도장·서명 만들기</a></li>            <li><a href="/tools/salary/">연봉 실수령액 계산기</a></li>            <li><a href="/tools/severance/">퇴직금 계산기</a></li>            <li><a href="/tools/annual-leave/">연차 계산기</a></li>            <li><a href="/tools/retirement-tax/">퇴직소득세 계산기</a></li>          </ul>
         </li>
       </ul>

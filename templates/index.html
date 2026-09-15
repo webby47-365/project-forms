@@ -15,6 +15,18 @@
       <a href="/form/{{ f.id }}/">{{ f.title.split(' (')[0] }}</a>
       {%- endfor %}
     </div>
+    {#- 메인 도구 줄 (A안, 2026-09-15 사용자 확정) — 순서·표시 이름은 여기서만 정한다.
+        링크·아이콘은 build_site.TOOLS 를 따르므로 도구 경로가 바뀌어도 이 줄은 고칠 필요 없다.
+        아직 켜지지 않은 도구(tools 에 없음)는 자동으로 빠진다 #}
+    {%- set home_tools = [("stamp", "도장·서명 만들기"), ("salary", "급여 실수령액 계산"), ("severance", "퇴직금 계산")] %}
+    {%- set tool_map = {} %}{%- for t in tools %}{%- set _ = tool_map.update({t.key: t}) %}{%- endfor %}
+    <div class="htools">
+      <span class="htools-lb">직장인 도구</span>
+      {%- for key, label in home_tools if key in tool_map %}
+      <a href="{{ tool_map[key].path }}" data-home-tool="{{ key }}">{{ tool_map[key].icon | safe }}{{ label }}</a>
+      {%- endfor %}
+      <a href="/tools/" class="htools-all" data-home-tool="all">전체 도구 →</a>
+    </div>
   </div>
 </section>
 
@@ -88,6 +100,12 @@
   // 히어로 입력은 헤더 검색창과 값을 공유해 자동완성 목록을 그대로 쓴다
   if(b){ a.addEventListener('input',function(){ b.value=a.value; b.dispatchEvent(new Event('input')); }); }
   // 엔터·돋보기는 폼 제출로 결과 페이지에 간다 — 빈 검색어만 막는다
+  // 메인 도구 줄 클릭 집계 (main_tool_click) — 2주 뒤 클릭이 거의 없으면 줄을 뺀다
+  document.querySelectorAll('[data-home-tool]').forEach(function(el){
+    el.addEventListener('click',function(){
+      if(typeof gtag==='function') gtag('event','main_tool_click',{tool:el.getAttribute('data-home-tool')});
+    });
+  });
   if(a.form){
     a.form.addEventListener('submit',function(e){
       if(!a.value.trim()){ e.preventDefault(); a.focus(); }
