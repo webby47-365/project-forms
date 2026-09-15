@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T07:54:48+09:00",
+  "generated_at": "2026-09-15T14:52:28+09:00",
   "count": 240,
   "forms": [
     {
@@ -19523,9 +19523,9 @@
         "hwpx"
       ],
       "file_sizes": {
-        "pdf": 73720,
-        "docx": 39463,
-        "hwpx": 11385
+        "pdf": 617907,
+        "docx": 38172,
+        "hwpx": 11370
       },
       "pages": 1,
       "previews": [
@@ -19536,17 +19536,6 @@
       "series_name": "이력서",
       "variant": "기본형",
       "variant_rank": 1,
-      "featured": true,
-      "featured_rank": 1,
-      "version": 1,
-      "source": "original",
-      "source_note": "",
-      "created_by": "manual",
-      "status": "published",
-      "warnings": [],
-      "created_at": "2026-09-13T21:04:43+09:00",
-      "updated_at": "2026-09-14T06:43:23+09:00",
-      "downloads": 0,
       "variant_use": "항목이 표준형이라 대부분의 채용에 무난합니다.",
       "howto": [
         "사진은 3개월 이내에 찍은 것을 붙입니다.",
@@ -19632,6 +19621,7 @@
           "note": ""
         }
       ],
+      "seal": true,
       "from_request": false,
       "related": [
         "cover-letter",
@@ -19639,7 +19629,17 @@
         "career-description",
         "portfolio-cover"
       ],
-      "seal": true
+      "featured": true,
+      "featured_rank": 1,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-13T21:04:43+09:00",
+      "updated_at": "2026-09-15T14:51:50+09:00",
+      "downloads": 0
     },
     {
       "id": "resume-english",
@@ -19783,9 +19783,9 @@
         "hwpx"
       ],
       "file_sizes": {
-        "pdf": 73504,
-        "docx": 39419,
-        "hwpx": 11356
+        "pdf": 579585,
+        "docx": 38110,
+        "hwpx": 11344
       },
       "pages": 1,
       "previews": [
@@ -19872,6 +19872,7 @@
           "note": ""
         }
       ],
+      "seal": true,
       "from_request": false,
       "related": [
         "career-desc-job",
@@ -19888,9 +19889,8 @@
       "status": "published",
       "warnings": [],
       "created_at": "2026-09-14T06:42:43+09:00",
-      "updated_at": "2026-09-14T17:29:58+09:00",
-      "downloads": 0,
-      "seal": true
+      "updated_at": "2026-09-15T14:52:18+09:00",
+      "downloads": 0
     },
     {
       "id": "resume-narrative",
@@ -19912,9 +19912,9 @@
         "hwpx"
       ],
       "file_sizes": {
-        "pdf": 47969,
-        "docx": 38846,
-        "hwpx": 10046
+        "pdf": 557461,
+        "docx": 37561,
+        "hwpx": 10116
       },
       "pages": 1,
       "previews": [
@@ -19979,6 +19979,7 @@
           "note": "해당 회사·직무에 관심을 갖게 된 계기와 기여하고 싶은 부분을 서술하십시오."
         }
       ],
+      "seal": true,
       "from_request": false,
       "related": [
         "cover-letter-free",
@@ -19994,9 +19995,8 @@
       "status": "published",
       "warnings": [],
       "created_at": "2026-09-14T06:43:57+09:00",
-      "updated_at": "2026-09-14T17:30:03+09:00",
-      "downloads": 0,
-      "seal": true
+      "updated_at": "2026-09-15T14:52:28+09:00",
+      "downloads": 0
     },
     {
       "id": "resume-newcomer",
@@ -20019,9 +20019,9 @@
         "hwpx"
       ],
       "file_sizes": {
-        "pdf": 74040,
-        "docx": 39448,
-        "hwpx": 11338
+        "pdf": 585847,
+        "docx": 38145,
+        "hwpx": 11324
       },
       "pages": 1,
       "previews": [
@@ -20117,6 +20117,7 @@
           "note": ""
         }
       ],
+      "seal": true,
       "from_request": false,
       "related": [
         "cover-letter-newcomer",
@@ -20133,9 +20134,8 @@
       "status": "published",
       "warnings": [],
       "created_at": "2026-09-14T06:43:46+09:00",
-      "updated_at": "2026-09-14T17:30:11+09:00",
-      "downloads": 0,
-      "seal": true
+      "updated_at": "2026-09-15T14:52:08+09:00",
+      "downloads": 0
     },
     {
       "id": "resume-parttime",
