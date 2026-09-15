@@ -274,6 +274,18 @@ html.lb-lock, html.lb-lock body{overflow:hidden}
   padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
 .tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
 
+/* 가이드 카드 상자(C안) — 서식 상세 FAQ 뒤·계산기 결과 아래 */
+.rd-in{margin:22px 0 0; padding:14px 16px 6px; border:1px solid #cfdcec; border-radius:var(--radius); background:#f3f7fc}
+.rd-in .k{margin:0 0 4px; font-size:13px; font-weight:800; color:var(--navy)}
+.rd-item{display:grid; grid-template-columns:auto minmax(0,1fr); gap:10px; padding:11px 0;
+  border-top:1px solid #dde6f1; text-decoration:none; color:inherit}
+.rd-item:first-of-type{border-top:0}
+.rd-item .g{font-size:12px; font-weight:700; color:var(--accent); white-space:nowrap; padding-top:2px}
+.rd-item b{display:block; font-size:15px; font-weight:800; color:var(--ink); line-height:1.5; word-break:keep-all}
+.rd-item .d{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  margin-top:3px; font-size:13px; color:#475467; line-height:1.6}
+.rd-item:hover b{color:var(--accent)}
+
 /* 이 서식이 들어 있는 주제 모음 */
 .incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
   font-size:13px; color:#6b7280}
@@ -810,10 +822,11 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         </details>        <details>
           <summary>사용 도중 목적지가 바뀌면 어떻게 하나요?</summary>
           <p class="a">변경 사유를 차량관리자에게 알리고, 가능하면 신청서 비고란에 실제 이동 경로를 남겨 두십시오.</p>
-        </details>      </div>      <div class="notice-box">
+        </details>      </div>            <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
       </div>      <div class="tags"><a href="/search/?q=%EC%B0%A8%EB%9F%89%EC%82%AC%EC%9A%A9%EC%8B%A0%EC%B2%AD%EC%84%9C">차량사용신청서</a><a href="/search/?q=%EC%97%85%EB%AC%B4%EC%9A%A9%EC%B0%A8%EB%9F%89%EC%8B%A0%EC%B2%AD">업무용차량신청</a><a href="/search/?q=%EC%B0%A8%EB%9F%89%EC%9A%B4%ED%96%89%EC%8B%A0%EC%B2%AD">차량운행신청</a><a href="/search/?q=%EB%B2%95%EC%9D%B8%EC%B0%A8%EB%9F%89%EC%82%AC%EC%9A%A9">법인차량사용</a><a href="/search/?q=vehicle%20request">vehicle request</a>      </div>
+
       
     </div>
   </div>  <h2 class="sec">함께 찾는 서식</h2>

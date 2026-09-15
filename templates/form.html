@@ -134,6 +134,9 @@
       </div>
       {%- endif %}
 
+      {#- C안: FAQ 를 읽은 직후 '답을 더 읽자' 흐름. 다운로드 버튼과 떨어져 오클릭이 없다. 내용은 _card.html 매크로 #}
+      {{ m.guide_box(guide_cards) }}
+
       {%- if f.source == 'law-standard' and f.source_note %}
       <div class="notice-box">{{ f.source_note }}. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>
       {%- endif %}
@@ -155,13 +158,6 @@
       </div>
       {%- endif %}
 
-      {#- 이 서식을 연결한 가이드. 모음 줄과 같은 모양이라 화면 구성은 바뀌지 않는다. #}
-      {%- if form_guides %}
-      <div class="incol">
-        <span>쓰기 전에 읽어 보세요</span>
-        {%- for gd in form_guides %}<a href="{{ gd.path }}">{{ gd.title }}</a>{% endfor %}
-      </div>
-      {%- endif %}
 
       {{ slot(ads, "detail_body") }}
     </div>

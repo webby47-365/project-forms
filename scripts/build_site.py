@@ -171,6 +171,9 @@ STAMP_RELATED_IDS = ["loan-agreement", "power-of-attorney", "written-pledge", "l
 
 # 직장인 계산기 3종의 본문. 계산 로직은 assets/calc.js, 요율은 catalog/rates_2026.json 이 정본이고
 # 여기에는 화면 글(제목·사용법·FAQ)과 관련 서식만 둔다. 셋 다 templates/tool_calc.html 을 쓴다.
+# 서식 상세·계산기에 붙는 가이드 카드 수 (C안 — FAQ 뒤 목록형 상자). 2편을 넘기면 모바일에서 공지·태그가 밀린다
+GUIDE_CARDS_MAX = 2
+
 CALCULATORS: list[dict[str, Any]] = [
     {
         "key": "salary",
@@ -819,10 +822,17 @@ def build() -> int:
         set(by_id), {t["path"] for t in tools_active} | {"/tools/"})
     for msg in guide_errors:
         print(f"[사이트] 알림: {msg} — 이 가이드는 건너뜁니다")
-    guides_by_form: dict[str, list[dict[str, Any]]] = {}
-    for g in guides:
-        for fid in g["forms"]:
-            guides_by_form.setdefault(fid, []).append(g)
+    # 서식 상세·계산기의 '쓰기 전에 읽어 보세요' 카드(C안). 키는 서식 id 또는 도구 경로.
+    #  show_on 에 직접 지정한 글이 먼저, 그다음 최신 글. 한 곳에 GUIDE_CARDS_MAX 편까지.
+    guides_by_target: dict[str, list[tuple[int, dict[str, Any]]]] = {}
+    for g in guides:   # load_guides 가 최신순으로 정렬해 둔다
+        explicit = bool(g.get("show_on"))
+        for key in guide_mod.targets_of(g):
+            guides_by_target.setdefault(key, []).append((0 if explicit else 1, g))
+
+    def guide_cards(key: str) -> list[dict[str, Any]]:
+        items = sorted(guides_by_target.get(key, []), key=lambda x: x[0])   # 안정 정렬 — 같은 순위는 최신순 유지
+        return [g for _, g in items][:GUIDE_CARDS_MAX]
     common["guides_count"] = len(guides)   # 푸터 '가이드' 링크 노출 여부
 
     interstitial = bool(ads["download_interstitial"])
@@ -1001,7 +1011,7 @@ def build() -> int:
                   related=related, kb=kb, jsonld=jsonld, faq_jsonld=faq_jsonld,
                   series_forms=series.get(f.get("series", ""), []),
                   my_collections=in_collections.get(f["id"], []),
-                  form_guides=guides_by_form.get(f["id"], [])[:3],
+                  guide_cards=guide_cards(f["id"]),
                   dl=dl_map[f["id"]], dl_map=dl_map, names=name_map[f["id"]], name_map=name_map, **common,
               ))
         pages += 1
@@ -1231,6 +1241,7 @@ def build() -> int:
                       "/tools/salary/ 는 만들지 않았습니다 (간이세액표 필요).")
                 continue
             calc_related = [by_id[i] for i in calc["related"] if i in by_id][:10]
+            calc_guides = guide_cards(calc["path"])
             write(PUBLIC / "tools" / calc["key"] / "index.html",
                   env.get_template("tool_calc.html").render(
                       page_title=f"{calc['page_title']} — {SITE_NAME}",
@@ -1264,7 +1275,7 @@ def build() -> int:
                           ],
                       }),
                       calc=calc, rates=rates, rates_json=rates_json,
-                      default_join=default_join, related=calc_related,
+                      default_join=default_join, related=calc_related, guide_cards=calc_guides,
                       salary_table=salary_table,
                       severance_years=(salary_pages.SEVERANCE_PAGE_YEARS if tax_table else []),
                       dl_map=dl_map, name_map=name_map, **common,

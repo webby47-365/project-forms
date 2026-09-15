@@ -274,6 +274,18 @@ html.lb-lock, html.lb-lock body{overflow:hidden}
   padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
 .tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
 
+/* 가이드 카드 상자(C안) — 서식 상세 FAQ 뒤·계산기 결과 아래 */
+.rd-in{margin:22px 0 0; padding:14px 16px 6px; border:1px solid #cfdcec; border-radius:var(--radius); background:#f3f7fc}
+.rd-in .k{margin:0 0 4px; font-size:13px; font-weight:800; color:var(--navy)}
+.rd-item{display:grid; grid-template-columns:auto minmax(0,1fr); gap:10px; padding:11px 0;
+  border-top:1px solid #dde6f1; text-decoration:none; color:inherit}
+.rd-item:first-of-type{border-top:0}
+.rd-item .g{font-size:12px; font-weight:700; color:var(--accent); white-space:nowrap; padding-top:2px}
+.rd-item b{display:block; font-size:15px; font-weight:800; color:var(--ink); line-height:1.5; word-break:keep-all}
+.rd-item .d{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  margin-top:3px; font-size:13px; color:#475467; line-height:1.6}
+.rd-item:hover b{color:var(--accent)}
+
 /* 이 서식이 들어 있는 주제 모음 */
 .incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
   font-size:13px; color:#6b7280}
@@ -875,6 +887,15 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 
   <div class="notice-box" style="margin-top:18px">입력한 값은 <b>브라우저 안에서만</b> 계산되고 서버로 전송되지 않습니다.
     계산 결과는 참고용이며 실제 급여명세서와 원 단위 차이가 날 수 있습니다.</div>
+
+  <aside class="rd-in" aria-label="함께 읽으면 좋은 가이드">
+  <p class="k">쓰기 전에 읽어 보세요</p>  <a class="rd-item" href="/guide/salary-net-pay/">
+    <span class="g">급여·근로</span>
+    <span class="t"><b>급여명세서 공제 항목 읽는 법과 실수령액 계산</b><span class="d">월급에서 빠지는 국민연금·건강보험·장기요양·고용보험과 소득세·지방소득세가 각각 어떻게 계산되는지, 비과세 식대와 간이세액표 80·120% 선택이 실수령액에 주는 영향을 정리했습니다.</span></span>
+  </a>  <a class="rd-item" href="/guide/labor-contract-checklist/">
+    <span class="g">급여·근로</span>
+    <span class="t"><b>근로계약서 필수 기재사항과 작성 체크리스트</b><span class="d">근로기준법이 서면으로 반드시 적도록 한 임금·근로시간·휴일·연차 항목, 계약직·아르바이트에 추가로 필요한 기재사항, 서명 전에 확인할 조항과 교부 의무를 정리했습니다.</span></span>
+  </a></aside>
 
   
 

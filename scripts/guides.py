@@ -26,6 +26,8 @@ GUIDE_GROUPS: list[dict[str, str]] = [
     {"key": "contract", "name": "계약·돈거래"},
     {"key": "housing", "name": "부동산·이사"},
     {"key": "life", "name": "생활·민원"},
+    {"key": "career", "name": "커리어"},
+    {"key": "money", "name": "세금·재테크"},
 ]
 GROUP_KEYS = {g["key"] for g in GUIDE_GROUPS}
 
@@ -37,9 +39,15 @@ TITLE_MAX = 40
 DESC_MIN, DESC_MAX = 70, 160
 SUMMARY_MIN, SUMMARY_MAX = 80, 260
 SECTIONS_MIN, SECTIONS_MAX = 4, 9
-BODY_MIN_TOTAL = 1200          # 섹션 본문(문단+목록+표) 합계 최소 글자 수(공백 제외, A4 약 1.5장) — 얇은 페이지 방지
+BODY_MIN_TOTAL = 1500          # 섹션 본문(문단+목록+표) 합계 최소 글자 수(공백 제외, A4 약 2장) — 얇은 페이지 방지
 FORMS_MIN, FORMS_MAX = 2, 4
 FAQ_MIN, FAQ_MAX = 2, 5
+SHOW_ON_MAX = 8
+# 돈·노동법 글(YMYL)은 기관 출처가 최소 1건 있어야 한다. 도메인 끝이 아래 중 하나면 기관으로 본다
+INSTITUTION_GROUPS = {"pay", "money"}
+INSTITUTION_SUFFIXES = (".go.kr", ".or.kr")
+# 일일 에이전트는 status: draft 로만 쓴다. 사람이 검수한 뒤 published 로 바꿔야 사이트에 나온다
+STATUSES = {"published", "draft", "retired"}
 
 
 class GuideError(Exception):
@@ -115,9 +123,9 @@ def check_guide(g: dict[str, Any], slug: str, form_ids: set[str], tool_paths: se
         errs.append(f"summary {len(plain(summary))}자 — {SUMMARY_MIN}~{SUMMARY_MAX}자")
     if g.get("group") not in GROUP_KEYS:
         errs.append(f"group 은 {sorted(GROUP_KEYS)} 중 하나")
-    for key in ("created_at", "updated_at"):
+    for key in ("created_at", "updated_at", "basis_date"):
         if not DATE_RE.match(str(g.get(key, ""))):
-            errs.append(f"{key} 는 YYYY-MM-DD")
+            errs.append(f"{key} 는 YYYY-MM-DD" + (" (법령·요율 기준일, 필수)" if key == "basis_date" else ""))
     if not isinstance(g.get("keywords"), list) or not 3 <= len(g["keywords"]) <= 10:
         errs.append("keywords 3~10개")
 
@@ -157,6 +165,18 @@ def check_guide(g: dict[str, Any], slug: str, form_ids: set[str], tool_paths: se
         if t not in tool_paths:
             errs.append(f"tools 의 '{t}' 는 없는 도구 경로입니다")
 
+    show_on = g.get("show_on")
+    if show_on is not None:
+        if not isinstance(show_on, list) or not 1 <= len(show_on) <= SHOW_ON_MAX:
+            errs.append(f"show_on 은 1~{SHOW_ON_MAX}개 목록 (비우려면 줄을 지운다)")
+        else:
+            for t in show_on:
+                if str(t).startswith("/"):
+                    if t not in tool_paths:
+                        errs.append(f"show_on 의 '{t}' 는 없는 도구 경로입니다")
+                elif t not in form_ids:
+                    errs.append(f"show_on 의 '{t}' 가 카탈로그에 없습니다")
+
     faq = g.get("faq") or []
     if not FAQ_MIN <= len(faq) <= FAQ_MAX:
         errs.append(f"faq {len(faq)}개 — {FAQ_MIN}~{FAQ_MAX}개")
@@ -170,7 +190,29 @@ def check_guide(g: dict[str, Any], slug: str, form_ids: set[str], tool_paths: se
     for i, s in enumerate(sources, 1):
         if not isinstance(s, dict) or not s.get("name") or not str(s.get("url", "")).startswith("https://"):
             errs.append(f"sources[{i}] 에 name 과 https URL 이 필요합니다")
+    if g.get("group") in INSTITUTION_GROUPS and not any(
+            is_institution(str(s.get("url", ""))) for s in sources if isinstance(s, dict)):
+        errs.append("급여·근로·세금 글은 sources 에 기관 출처(go.kr·or.kr) 1건 이상이 필요합니다")
+    if g.get("status", "published") not in STATUSES:
+        errs.append(f"status 는 {sorted(STATUSES)} 중 하나")
     return errs
+
+
+def is_institution(url: str) -> bool:
+    """https://www.law.go.kr/... → True. 호스트 끝이 go.kr·or.kr 인지 본다."""
+    from urllib.parse import urlparse  # noqa: PLC0415
+    try:
+        host = (urlparse(url).hostname or "").lower()
+    except ValueError:
+        return False
+    return host.endswith(INSTITUTION_SUFFIXES)
+
+
+def targets_of(g: dict[str, Any]) -> list[str]:
+    """이 가이드를 카드로 보여줄 곳 — show_on 이 있으면 그것, 없으면 forms + tools."""
+    if g.get("show_on"):
+        return [str(x) for x in g["show_on"]]
+    return [str(x) for x in (g.get("forms") or [])] + [str(x) for x in (g.get("tools") or [])]
 
 
 def load_guides(form_ids: set[str], tool_paths: set[str], strict: bool = False) -> tuple[list[dict[str, Any]], list[str]]:
@@ -197,16 +239,21 @@ def load_guides(form_ids: set[str], tool_paths: set[str], strict: bool = False) 
         if not isinstance(g, dict):
             errors.append(f"[가이드] {slug}: 최상위가 매핑이 아닙니다")
             continue
-        if g.get("status", "published") != "published":
+        status = g.get("status", "published")
+        if status == "retired":
             continue
         errs = check_guide(g, slug, form_ids, tool_paths)
         if errs:
             errors += [f"[가이드] {slug}: {e}" for e in errs]
             continue
+        if status != "published":
+            # draft 는 검사만 하고 싣지 않는다 — 에이전트 초안이 규칙은 지키되 사람 검수 전엔 비공개
+            continue
         g["path"] = f"/guide/{slug}/"
         g["group_name"] = next(x["name"] for x in GUIDE_GROUPS if x["key"] == g["group"])
         g["created_at"] = str(g["created_at"])
         g["updated_at"] = str(g["updated_at"])
+        g["basis_date"] = str(g["basis_date"])
         # 템플릿용 변환 (본문 HTML은 여기서만 만든다 — 템플릿에서는 |safe 로 출력)
         for sec in g["sections"]:
             sec["id"] = f"s{g['sections'].index(sec) + 1}"

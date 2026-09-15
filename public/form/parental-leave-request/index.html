@@ -274,6 +274,18 @@ html.lb-lock, html.lb-lock body{overflow:hidden}
   padding:4px 11px; font-size:12.5px; color:#475467; text-decoration:none}
 .tags a:hover{background:#e8eff8; border-color:#b9cae0; color:var(--navy)}
 
+/* 가이드 카드 상자(C안) — 서식 상세 FAQ 뒤·계산기 결과 아래 */
+.rd-in{margin:22px 0 0; padding:14px 16px 6px; border:1px solid #cfdcec; border-radius:var(--radius); background:#f3f7fc}
+.rd-in .k{margin:0 0 4px; font-size:13px; font-weight:800; color:var(--navy)}
+.rd-item{display:grid; grid-template-columns:auto minmax(0,1fr); gap:10px; padding:11px 0;
+  border-top:1px solid #dde6f1; text-decoration:none; color:inherit}
+.rd-item:first-of-type{border-top:0}
+.rd-item .g{font-size:12px; font-weight:700; color:var(--accent); white-space:nowrap; padding-top:2px}
+.rd-item b{display:block; font-size:15px; font-weight:800; color:var(--ink); line-height:1.5; word-break:keep-all}
+.rd-item .d{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  margin-top:3px; font-size:13px; color:#475467; line-height:1.6}
+.rd-item:hover b{color:var(--accent)}
+
 /* 이 서식이 들어 있는 주제 모음 */
 .incol{margin:14px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:8px;
   font-size:13px; color:#6b7280}
@@ -810,10 +822,11 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         </details>        <details>
           <summary>회사가 육아휴직을 거부할 수 있나요?</summary>
           <p class="a">법령상 정당한 사유가 없으면 거부할 수 없습니다.</p>
-        </details>      </div>      <div class="notice-box">남녀고용평등과 일·가정 양립 지원에 관한 법률 제19조 반영. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
+        </details>      </div>            <div class="notice-box">남녀고용평등과 일·가정 양립 지원에 관한 법률 제19조 반영. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>      <div class="notice-box">
         한글 파일은 개방형 표준인 HWPX 형식으로 제공되며 한글 2010 이상에서 열립니다.
         본 서식은 참고용이며 개별 사안에 대한 법적 효력과 적합성은 이용자가 확인해야 합니다.
       </div>      <div class="tags"><a href="/search/?q=%EC%9C%A1%EC%95%84%ED%9C%B4%EC%A7%81%20%EC%8B%A0%EC%B2%AD%EC%84%9C">육아휴직 신청서</a><a href="/search/?q=%EC%9C%A1%EC%95%84%ED%9C%B4%EC%A7%81%EC%9B%90">육아휴직원</a><a href="/search/?q=%EC%B6%9C%EC%82%B0%ED%9C%B4%EA%B0%80">출산휴가</a><a href="/search/?q=%EC%96%91%EC%9C%A1%ED%9C%B4%EC%A7%81">양육휴직</a><a href="/search/?q=%EB%AA%A8%EC%84%B1%EB%B3%B4%ED%98%B8">모성보호</a>      </div>
+
       
     </div>
   </div>  <h2 class="sec">함께 찾는 서식</h2>

@@ -17,3 +17,20 @@
   </div>
 </article>
 {%- endmacro %}
+
+
+{#- 가이드 카드 상자(C안). 서식 상세는 FAQ 뒤, 계산기는 결과 안내 아래.
+    카드 전체가 링크 — base.html 의 article_card_click 이벤트가 /guide/ 주소로 집계한다. #}
+{% macro guide_box(items) -%}
+{%- if items %}
+<aside class="rd-in" aria-label="함께 읽으면 좋은 가이드">
+  <p class="k">쓰기 전에 읽어 보세요</p>
+  {%- for gd in items %}
+  <a class="rd-item" href="{{ gd.path }}">
+    <span class="g">{{ gd.group_name }}</span>
+    <span class="t"><b>{{ gd.title }}</b><span class="d">{{ gd.description }}</span></span>
+  </a>
+  {%- endfor %}
+</aside>
+{%- endif %}
+{%- endmacro %}

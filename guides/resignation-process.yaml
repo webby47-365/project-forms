@@ -7,6 +7,8 @@ summary: 퇴사는 **사직 의사 전달 → 퇴사일 합의 → 인수인계 
 keywords: [사직서 제출, 퇴사 절차, 퇴사 통보 기간, 사직서 수리 거부, 퇴사 전 준비, 퇴직금 지급 기한]
 created_at: 2026-09-15
 updated_at: 2026-09-15
+basis_date: 2026-09-15
+show_on: [resignation-letter, resignation-simple, retirement-application, handover-report, asset-handover, /tools/severance/, /tools/retirement-tax/]
 sections:
   - h: 1. 퇴사 의사는 언제, 어떻게 알려야 하나
     body: |
