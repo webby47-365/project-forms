@@ -36,7 +36,7 @@
   {{ slot(ads, "series_bottom") }}
 
   <h2 class="sec">양식 미리보기</h2>
-  <div class="grid g4">
+  <div class="grid">
     {%- for f in forms %}
     {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
     {%- endfor %}

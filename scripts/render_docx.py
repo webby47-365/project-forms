@@ -5,6 +5,7 @@ DOCX가 편집용 원본이며, 여기서 PDF를 파생한다.
 
 from __future__ import annotations
 
+import math
 from pathlib import Path
 from typing import Any
 
@@ -163,13 +164,18 @@ def _cell_text(
     cell._tc.get_or_add_tcPr().append(v)
 
 
-def _row_height(table: Any, row_idx: int, min_height_mm: float) -> None:
-    """행 최소 높이를 1회만 설정한다 (셀마다 설정하면 trHeight가 중복되어 높이가 틀어짐)."""
+def _row_height(table: Any, row_idx: int, min_height_mm: float, *, absolute: bool = False) -> None:
+    """행 최소 높이를 1회만 설정한다 (셀마다 설정하면 trHeight가 중복되어 높이가 틀어짐).
+
+    Args:
+        absolute: True면 자동 맞춤 배율(_SCALE)을 곱하지 않은 실제 mm로 설정한다(사진칸 보정용).
+    """
     tr_pr = table.rows[row_idx]._tr.get_or_add_trPr()
     for existing in tr_pr.findall(qn("w:trHeight")):
         tr_pr.remove(existing)
     h = OxmlElement("w:trHeight")
-    h.set(qn("w:val"), str(int(min_height_mm * _SCALE * 56.7)))  # mm → twip
+    mm = min_height_mm if absolute else min_height_mm * _SCALE
+    h.set(qn("w:val"), str(math.ceil(mm * 56.7) if absolute else int(mm * 56.7)))  # mm → twip
     h.set(qn("w:hRule"), "atLeast")
     tr_pr.append(h)
 
@@ -203,33 +209,76 @@ def _sample_cell(blk: dict[str, Any], r: int, c: int) -> str:
 
 
 PHOTO_PAD_H_MM = 2.0   # 사진 위아래로 남길 여유 (셀 안여백 + 선 두께)
-PHOTO_PAD_W_MM = 3.0   # 사진 좌우로 남길 여유
+# 사진 좌우로 남길 여유(격자 열 폭 기준). LibreOffice는 안여백을 0으로 둔 셀(_center_cell)에서도
+# 내용을 왼쪽 선에서 약 2.9mm 띄워 그린다. 사진이 그 안쪽 폭보다 넓으면 가운데로 오지 않고 왼쪽에 붙어
+# 오른쪽이 칸 밖으로 잘린다. 24.85mm 격자 칸에서 폭별로 재어 보니 18.9mm(여유 6mm)부터 가운데에 놓였다.
+PHOTO_PAD_W_MM = 6.0
 
 
-def _fit_photo(w_mm: float, h_mm: float, blk: dict[str, Any], pr: int, pc: int,
-               widths_mm: list[float], n_rows: int, n_cols: int) -> tuple[float, float]:
-    """사진 크기를 사진 칸(병합 범위) 안에 들어가도록 비율을 유지하며 줄인다.
-
-    Returns:
-        (폭 mm, 높이 mm). 칸에 여유가 있으면 명세 값을 그대로 돌려준다.
-    """
-    span_rows, span_cols = 1, 1
+def _photo_span(blk: dict[str, Any], pr: int, pc: int, n_rows: int, n_cols: int) -> tuple[int, int]:
+    """사진칸이 병합된 (행 수, 열 수). 병합이 없으면 (1, 1)."""
     for merge in blk.get("merges", []):
         r1, c1, r2, c2 = merge
         if r1 == pr and c1 == pc and 0 <= r2 < n_rows and 0 <= c2 < n_cols:
-            span_rows, span_cols = r2 - r1 + 1, c2 - c1 + 1
-            break
-    row_h = float(blk.get("row_height_mm", 7.5)) * _SCALE
-    avail_h = span_rows * row_h - PHOTO_PAD_H_MM
-    avail_w = sum(widths_mm[pc:pc + span_cols]) - PHOTO_PAD_W_MM
-    ratio = min(1.0, avail_h / h_mm if h_mm > 0 else 1.0, avail_w / w_mm if w_mm > 0 else 1.0)
-    if ratio < 1.0:
+            return r2 - r1 + 1, c2 - c1 + 1
+    return 1, 1
+
+
+def _photo_size(w_mm: float, h_mm: float, pc: int, span_cols: int,
+                widths_mm: list[float], n_cols: int) -> tuple[float, float]:
+    """사진 크기(mm). 명세의 photo_mm를 1페이지 자동 맞춤 배율과 무관하게 그대로 쓴다.
+
+    예전에는 칸 높이·배율에 맞춰 사진을 줄여 이력서마다 실루엣 크기와 위치가 제각각이었다.
+    이제 높이가 모자라면 사진이 아니라 행을 늘리고(_photo_rows), 열 폭이 모자랄 때만
+    폭에 맞춰 비율을 유지한 채 줄인다.
+
+    열 폭은 명세 widths 와 실제 표 격자 중 좁은 쪽을 쓴다. python-docx 는 표 격자(w:tblGrid)를
+    본문 폭 ÷ 열 수로 똑같이 나눠 만들고, 고정 레이아웃에서 LibreOffice 는 이 격자로 그린다
+    (이력서: 명세 31.3mm, 실제 약 24.9mm). 명세 폭만 보면 사진이 칸을 넘어 오른쪽이 잘린다.
+    """
+    grid_w = USABLE_WIDTH_MM * span_cols / n_cols
+    avail_w = min(sum(widths_mm[pc:pc + span_cols]), grid_w) - PHOTO_PAD_W_MM
+    if w_mm > 0 and avail_w < w_mm:
+        ratio = avail_w / w_mm
         return round(w_mm * ratio, 1), round(h_mm * ratio, 1)
     return w_mm, h_mm
 
 
+def _photo_rows(table: Any, blk: dict[str, Any], pr: int, span_rows: int, photo_h_mm: float) -> None:
+    """사진칸 병합 행들의 높이 합이 (사진 높이 + 여유)보다 작으면 행 최소 높이를 균등하게 올린다.
+
+    빈 양식에도 적용해 3×4cm 사진을 붙일 자리를 확보한다. 배율로 행이 충분히 크면 그대로 둔다.
+    """
+    row_h = float(blk.get("row_height_mm", 7.5)) * _SCALE
+    need = photo_h_mm + PHOTO_PAD_H_MM
+    if row_h * span_rows >= need:
+        return
+    for r in range(pr, pr + span_rows):
+        _row_height(table, r, need / span_rows, absolute=True)
+
+
+def _center_cell(cell: Any) -> None:
+    """사진칸 셀: 좌우 안여백 0 + 세로 가운데 정렬 (tcMar·vAlign 을 하나씩만 남긴다).
+
+    tcPr 자식 순서는 스키마로 정해져 있어 tcMar 를 vAlign 앞에 둔다.
+    """
+    tc_pr = cell._tc.get_or_add_tcPr()
+    for old in tc_pr.findall(qn("w:tcMar")) + tc_pr.findall(qn("w:vAlign")):
+        tc_pr.remove(old)
+    mar = OxmlElement("w:tcMar")
+    for side in ("left", "right"):
+        m = OxmlElement(f"w:{side}")
+        m.set(qn("w:w"), "0")
+        m.set(qn("w:type"), "dxa")
+        mar.append(m)
+    tc_pr.append(mar)
+    v = OxmlElement("w:vAlign")
+    v.set(qn("w:val"), "center")
+    tc_pr.append(v)
+
+
 def _insert_photo(cell: Any, width_mm: float, height_mm: float) -> bool:
-    """셀에 증명사진 실루엣을 넣는다. 이미지 파일이 없으면 False."""
+    """셀에 증명사진 실루엣을 가로·세로 가운데로 넣는다. 이미지 파일이 없으면 False."""
     if not PHOTO_SAMPLE.exists():
         return False
     cell.text = ""
@@ -237,7 +286,10 @@ def _insert_photo(cell: Any, width_mm: float, height_mm: float) -> bool:
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_after = Pt(0)
     p.paragraph_format.space_before = Pt(0)
+    # 줄 간격 배수(1.3)가 그림 높이에도 곱해지면 사진이 칸보다 커져 밀려나므로 한 줄 간격으로 둔다
+    p.paragraph_format.line_spacing = 1.0
     p.add_run().add_picture(str(PHOTO_SAMPLE), width=Mm(width_mm), height=Mm(height_mm))
+    _center_cell(cell)
     return True
 
 
@@ -343,18 +395,20 @@ def _render_block(doc: Any, blk: dict[str, Any]) -> None:
                 extra._element.getparent().remove(extra._element)
             if not keep.runs:
                 _set_font(keep.add_run(""), 10.0)
-        # 증명사진 칸: 예시 모드에서만 실루엣 이미지를 넣는다(빈 양식은 글자만 남는다)
-        if _SAMPLE and photo_cell:
+        # 증명사진 칸: 사진은 명세 크기(photo_mm) 그대로. 칸 높이가 모자라면 행을 늘린다.
+        # 행 높이 보정은 빈 양식에도 적용해 사진 붙일 자리를 확보하고,
+        # 실루엣 이미지는 예시 모드(미리보기)에서만 넣는다.
+        if photo_cell:
             pr, pc = int(photo_cell[0]), int(photo_cell[1])
             if 0 <= pr < n_rows and 0 <= pc < n_cols:
+                span_rows, span_cols = _photo_span(blk, pr, pc, n_rows, n_cols)
                 w_mm, h_mm = blk.get("photo_mm", PHOTO_DEFAULT_MM)
-                # 사진이 칸보다 크면 LibreOffice가 셀 밖으로 밀어내 미리보기에서 잘려 보인다
-                # (이력서 경력용: 4행×7.5mm=30mm 칸에 32mm 사진). 병합 행 높이·열 폭 안에
-                # 들어가도록 비율을 유지한 채 줄인다. 1페이지 자동 맞춤 배율(_SCALE)로
-                # 행이 낮아진 경우까지 함께 반영된다.
-                w_mm, h_mm = _fit_photo(
-                    float(w_mm), float(h_mm), blk, pr, pc, widths, n_rows, n_cols)
-                _insert_photo(table.cell(pr, pc), w_mm, h_mm)
+                w_mm, h_mm = _photo_size(float(w_mm), float(h_mm), pc, span_cols, widths, n_cols)
+                _photo_rows(table, blk, pr, span_rows, h_mm)
+                cell = table.cell(pr, pc)
+                _center_cell(cell)
+                if _SAMPLE:
+                    _insert_photo(cell, w_mm, h_mm)
         _para(doc, "", size=2, space_after=blk.get("space_after", 2))
 
     elif btype == "table":

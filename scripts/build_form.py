@@ -55,9 +55,12 @@ def _now_kst() -> str:
 def _run(cmd: list[str], *, cwd: Path | None = None, timeout: int = 180) -> str:
     """외부 명령 실행 후 표준출력을 반환한다."""
     try:
+        # Windows의 pdfinfo는 날짜를 시스템 로캘(CP949)로, 본문·메타데이터는 UTF-8로 섞어 내보낸다.
+        # UTF-8로 읽되 깨진 바이트만 대체 문자로 바꿔 쓰레드 디코딩 오류로 출력이 사라지지 않게 한다
+        # (Linux CI는 출력이 모두 UTF-8이라 결과가 같다).
         proc = subprocess.run(
             cmd, cwd=str(cwd) if cwd else None, capture_output=True,
-            text=True, timeout=timeout, check=True,
+            text=True, encoding="utf-8", errors="replace", timeout=timeout, check=True,
         )
     except FileNotFoundError as exc:
         raise BuildError(f"명령을 찾을 수 없습니다: {cmd[0]} — {exc}") from exc
@@ -81,7 +84,9 @@ def docx_to_pdf(docx_path: Path, out_dir: Path) -> Path:
     """DOCX → PDF 변환 (LibreOffice 헤드리스)."""
     out_dir.mkdir(parents=True, exist_ok=True)
     profile = Path(tempfile.gettempdir()) / f"lo_profile_{os.getpid()}"
-    _run([_soffice(), f"-env:UserInstallation=file://{profile}",
+    # as_uri(): Windows에서 file://C:\... 로 만들면 LibreOffice가 프로필을 못 열고 변환 없이 끝난다
+    # (Linux CI는 file:///tmp/... 로 기존과 같은 문자열)
+    _run([_soffice(), f"-env:UserInstallation={profile.as_uri()}",
           "--headless", "--norestore", "--convert-to", "pdf",
           "--outdir", str(out_dir), str(docx_path)], timeout=240)
     pdf = out_dir / f"{docx_path.stem}.pdf"

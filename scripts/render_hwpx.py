@@ -11,7 +11,9 @@ from typing import Any
 
 from hwpx import HwpxDocument
 
-from form_spec import FormSpec
+from form_spec import FormSpec, pct_to_mm
+# 사진칸 규칙은 DOCX와 한 곳에서 관리한다 (사진 크기·여유값·병합 범위 계산)
+from render_docx import PHOTO_DEFAULT_MM, PHOTO_PAD_H_MM, _photo_size, _photo_span
 
 FONT_HWP = "맑은 고딕"  # 한글(HWPX)에서 쓰는 글꼴명. DOCX의 "Malgun Gothic"과 같은 글꼴
 
@@ -162,13 +164,16 @@ def _fill_cell(
         table.set_cell_shading(r, c, fill)
 
 
-def _row_height(table: Any, row_idx: int, height_mm: float) -> None:
+def _row_height(table: Any, row_idx: int, height_mm: float, *, absolute: bool = False) -> None:
     """행의 모든 셀에 높이를 지정하고 표 전체 높이를 다시 합산한다.
 
     HWPX는 행이 아니라 셀이 높이를 가지며, 표의 hp:sz height가 셀 합계와 어긋나면
     한글에서 레이아웃이 틀어질 수 있어 함께 갱신한다.
+
+    Args:
+        absolute: True면 자동 맞춤 배율(_SCALE)을 곱하지 않은 실제 mm로 설정한다(사진칸 보정용).
     """
-    h = int(height_mm * MM * _SCALE)
+    h = int(height_mm * MM) + 1 if absolute else int(height_mm * MM * _SCALE)
     for cell in table.rows[row_idx].cells:
         try:
             cell.set_size(height=h)
@@ -230,6 +235,19 @@ def _render_block(doc: HwpxDocument, st: _Styles, blk: dict[str, Any]) -> None:
                            fill=LABEL_FILL if is_label else None,
                            color=LABEL_TEXT if is_label else None)
             _row_height(table, r, blk.get("row_height_mm", 7.5))
+        # 증명사진 칸: DOCX와 같은 규칙으로 병합 행 높이 합이 (사진 높이 + 여유)보다 작으면
+        # 행을 균등하게 늘린다. 병합하면 셀 높이가 행 높이 합으로 잡히므로 병합 전에 맞춘다.
+        photo_cell = blk.get("photo_cell")
+        if photo_cell:
+            pr, pc = int(photo_cell[0]), int(photo_cell[1])
+            if 0 <= pr < len(rows) and 0 <= pc < n_cols:
+                span_rows, span_cols = _photo_span(blk, pr, pc, len(rows), n_cols)
+                w_mm, h_mm = blk.get("photo_mm", PHOTO_DEFAULT_MM)
+                _, h_mm = _photo_size(float(w_mm), float(h_mm), pc, span_cols, pct_to_mm(widths), n_cols)
+                need = h_mm + PHOTO_PAD_H_MM
+                if float(blk.get("row_height_mm", 7.5)) * _SCALE * span_rows < need:
+                    for r in range(pr, pr + span_rows):
+                        _row_height(table, r, need / span_rows, absolute=True)
         for merge in blk.get("merges", []):
             r1, c1, r2, c2 = merge
             try:
