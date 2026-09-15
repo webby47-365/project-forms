@@ -716,8 +716,8 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 
   <div class="detail">
     <div class="pv-col">
-      <div class="preview" id="pv">        <button type="button" class="pv-zoom" aria-label="1페이지 크게 보기"><img src="/files/resume-narrative/preview-1.webp" alt="이력서 (서술형) 1페이지 작성 예시 미리보기" width="800" height="1131"></button>      </div>
-      <p class="pv-hint">탭하면 크게 보기</p>      <p class="preview-note">
+      <div class="preview pv-fold" id="pv">        <button type="button" class="pv-zoom" aria-label="1페이지 크게 보기"><img src="/files/resume-narrative/preview-1.webp" alt="이력서 (서술형) 1페이지 작성 예시 미리보기" width="800" height="1131"></button>        <button type="button" class="pv-zoom" aria-label="2페이지 크게 보기"><img src="/files/resume-narrative/preview-2.webp" alt="이력서 (서술형) 2페이지 작성 예시 미리보기" width="800" height="1131" loading="lazy"></button>      </div>
+      <p class="pv-hint">탭하면 크게 보기</p>      <button type="button" class="pv-more" id="pvMore">나머지 1페이지 더 보기</button>      <p class="preview-note">
         <span aria-hidden="true">✎</span>
         <span>화면의 파란 글씨는 <b>이해를 돕기 위한 작성 예시</b>입니다.
         내려받는 PDF·Word·한글 파일에는 예시가 들어 있지 않은 <b>빈 양식</b>이 담겨 있습니다.</span>
@@ -735,8 +735,8 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         <h3>양식 다운로드</h3>
         <p>원하는 형식을 선택하세요. 회원가입 없이 바로 내려받습니다.</p>
         <div class="dlbtns">
-          <a href="/files/resume-narrative/resume-narrative.pdf" download="이력서 (서술형).pdf">PDF<span class="fmt">46 KB</span></a>
-          <a href="/files/resume-narrative/resume-narrative.docx" download="이력서 (서술형).docx">Word<span class="fmt">37 KB</span></a>
+          <a href="/files/resume-narrative/resume-narrative.pdf" download="이력서 (서술형).pdf">PDF<span class="fmt">140 KB</span></a>
+          <a href="/files/resume-narrative/resume-narrative.docx" download="이력서 (서술형).docx">Word<span class="fmt">36 KB</span></a>
           <a href="/files/resume-narrative/resume-narrative.hwpx" download="이력서 (서술형).hwpx" title="HWPX (한글 2010 이상)">한글<span class="fmt">9 KB</span></a>
         </div>
         <p class="dl-hwpx">한글 파일은 HWPX 형식입니다 — 한글 2010 이상에서 열립니다.</p>
@@ -762,10 +762,10 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
       </div>
       <dl>
         <dt>분류</dt><dd><a href="/category/personal/career/">개인 · 취업·경력</a></dd>
-        <dt>페이지</dt><dd>1페이지 (A4)</dd>
+        <dt>페이지</dt><dd>2페이지 (A4)</dd>
         <dt>제공 형식</dt><dd>PDF · Word(DOCX) · 한글(HWPX)</dd>
         <dt>저장 파일명</dt><dd>이력서 (서술형).pdf</dd>
-        <dt>등록일</dt><dd>2026-09-14</dd>      </dl>      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 순서</h2>
+        <dt>등록일</dt><dd>2026-09-14</dd>        <dt>최종 수정</dt><dd>2026-09-15</dd>      </dl>      <h2 class="sec" style="margin-top:26px; font-size:16px">작성 순서</h2>
       <ol class="howto">        <li>인적사항을 표에 적습니다.</li>        <li>학력 및 전공을 문단으로 서술합니다.</li>        <li>주요 경력을 사실과 숫자 중심으로 작성합니다.</li>        <li>핵심 역량을 구체적으로 적습니다.</li>        <li>지원 동기를 지원 회사·직무와 연결해 작성합니다.</li>      </ol>
       <h2 class="sec" style="margin-top:26px; font-size:16px">작성 요령</h2>
       <div class="usage">항목을 표로 잘라 적기보다 문장으로 풀어 자신의 역량과 경험을 보여주고 싶을 때 쓰는 이력서입니다. 인적사항만 표로 정리하고 나머지는 학력 및 전공, 주요 경력, 핵심 역량, 지원 동기 순서로 문단을 채웁니다. 각 항목은 사실과 숫자를 근거로 구체적으로 쓰고, 지원 동기는 해당 회사·직무와 연결되도록 작성해야 설득력이 높아집니다.
@@ -941,7 +941,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 })();
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "DigitalDocument", "@id": "https://freeforms.kr/form/resume-narrative/#doc", "name": "이력서 (서술형)", "headline": "이력서 (서술형) 양식 무료 다운로드", "description": "표 대신 문장으로 학력·경력·역량·지원동기를 서술하는 자유기술형 이력서입니다.", "inLanguage": "ko", "isAccessibleForFree": true, "isFamilyFriendly": true, "genre": "개인 · 취업·경력", "keywords": "이력서, 서술형이력서, 자유기술이력서, 에세이형이력서, resume", "about": {"@type": "Thing", "name": "개인 취업·경력 서식"}, "encodingFormat": ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/hwp+zip"], "associatedMedia": [{"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/resume-narrative/resume-narrative.pdf", "encodingFormat": "application/pdf", "contentSize": "46KB", "name": "이력서 (서술형) (PDF)"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/resume-narrative/resume-narrative.docx", "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "contentSize": "37KB", "name": "이력서 (서술형) (Word (DOCX))"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/resume-narrative/resume-narrative.hwpx", "encodingFormat": "application/hwp+zip", "contentSize": "9KB", "name": "이력서 (서술형) (한글 (HWPX))"}], "thumbnailUrl": "https://freeforms.kr/files/resume-narrative/preview-1.webp", "url": "https://freeforms.kr/form/resume-narrative/", "mainEntityOfPage": "https://freeforms.kr/form/resume-narrative/", "datePublished": "2026-09-14", "dateModified": "2026-09-14", "isPartOf": {"@type": "WebSite", "@id": "https://freeforms.kr/#website", "name": "무료서식 다운로드"}, "publisher": {"@type": "Organization", "@id": "https://freeforms.kr/#org", "name": "무료서식 다운로드"}}
+{"@context": "https://schema.org", "@type": "DigitalDocument", "@id": "https://freeforms.kr/form/resume-narrative/#doc", "name": "이력서 (서술형)", "headline": "이력서 (서술형) 양식 무료 다운로드", "description": "표 대신 문장으로 학력·경력·역량·지원동기를 서술하는 자유기술형 이력서입니다.", "inLanguage": "ko", "isAccessibleForFree": true, "isFamilyFriendly": true, "genre": "개인 · 취업·경력", "keywords": "이력서, 서술형이력서, 자유기술이력서, 에세이형이력서, resume", "about": {"@type": "Thing", "name": "개인 취업·경력 서식"}, "encodingFormat": ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/hwp+zip"], "associatedMedia": [{"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/resume-narrative/resume-narrative.pdf", "encodingFormat": "application/pdf", "contentSize": "140KB", "name": "이력서 (서술형) (PDF)"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/resume-narrative/resume-narrative.docx", "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "contentSize": "36KB", "name": "이력서 (서술형) (Word (DOCX))"}, {"@type": "MediaObject", "contentUrl": "https://freeforms.kr/files/resume-narrative/resume-narrative.hwpx", "encodingFormat": "application/hwp+zip", "contentSize": "9KB", "name": "이력서 (서술형) (한글 (HWPX))"}], "thumbnailUrl": "https://freeforms.kr/files/resume-narrative/preview-1.webp", "url": "https://freeforms.kr/form/resume-narrative/", "mainEntityOfPage": "https://freeforms.kr/form/resume-narrative/", "datePublished": "2026-09-14", "dateModified": "2026-09-15", "isPartOf": {"@type": "WebSite", "@id": "https://freeforms.kr/#website", "name": "무료서식 다운로드"}, "publisher": {"@type": "Organization", "@id": "https://freeforms.kr/#org", "name": "무료서식 다운로드"}}
 </script><script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "표 형식 이력서와 함께 써도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 필요에 따라 표 형식 이력서 대신 또는 함께 제출할 수 있습니다."}}, {"@type": "Question", "name": "숫자를 꼭 넣어야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "성과를 숫자로 제시하면 설득력이 높아지므로 가능하면 넣는 것이 좋습니다."}}]}
 </script><script src="/assets/stamp.js?v=ead9a526" defer></script>
