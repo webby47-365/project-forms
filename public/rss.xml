@@ -3,10 +3,34 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 240종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 243종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>차량 이전등록 위임장</title>
+<link>https://freeforms.kr/form/vehicle-registration-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-registration-poa/</guid>
+<category>공공 · 민원·신고</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>차량 소유권 이전등록·명의변경 절차를 대리인에게 맡길 때 차량 정보와 위임 범위를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>지급명령 이의신청서</title>
+<link>https://freeforms.kr/form/payment-order-objection/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/payment-order-objection/</guid>
+<category>법률 · 소송·민원</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>법원의 지급명령을 송달받은 채무자가 정해진 기간 내에 이의를 제기해 통상 소송절차로 넘기는 이의신청서입니다.</description>
+</item>
+<item>
+<title>퇴거 점검표</title>
+<link>https://freeforms.kr/form/move-out-checklist/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/move-out-checklist/</guid>
+<category>부동산 · 임대·매매</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>임차인이 이사 나갈 때 시설물 상태와 공과금·관리비 정산 항목을 임대인과 함께 확인하는 퇴거 점검표입니다.</description>
+</item>
 <item>
 <title>통원확인서</title>
 <link>https://freeforms.kr/form/outpatient-visit-certificate/</link>
@@ -222,30 +246,6 @@
 <category>교육 · 학교·학원</category>
 <pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
 <description>지도교사가 대상 학생의 역량을 항목별로 평가하고 구체적 사례와 추천 사유를 적는 추천서입니다.</description>
-</item>
-<item>
-<title>장학금 신청서</title>
-<link>https://freeforms.kr/form/scholarship-application/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/scholarship-application/</guid>
-<category>교육 · 학교·학원</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>장학 구분과 학업 현황, 활동·수상 실적을 기재해 장학금을 신청하는 서식입니다.</description>
-</item>
-<item>
-<title>주식 양도양수 계약서</title>
-<link>https://freeforms.kr/form/stock-transfer-contract/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/stock-transfer-contract/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>비상장 주식의 양도대금·지급방법·명의개서 절차를 정한 주식 양도양수 계약서입니다.</description>
-</item>
-<item>
-<title>퇴직원</title>
-<link>https://freeforms.kr/form/retirement-application/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/retirement-application/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>퇴직 사유와 퇴직일, 퇴직금·연차 정산 및 인수인계 확인란을 갖춘 퇴직원 양식입니다.</description>
 </item>
 </channel>
 </rss>

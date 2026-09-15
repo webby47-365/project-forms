@@ -31,7 +31,8 @@
         "housing-lease-contract", "commercial-lease-contract",
         "lease-renewal-contract", "move-in-checklist", "monthly-rent-receipt",
         "moving-in-report", "moving-checklist", "lease-termination-notice",
-        "deposit-return-notice", "resident-registration-request"
+        "move-out-checklist", "deposit-return-notice",
+        "resident-registration-request"
       ]
     },
     {
@@ -42,7 +43,8 @@
         "loan-agreement", "loan-note-simple", "loan-note-guaranteed",
         "payment-pledge", "written-pledge", "repayment-plan",
         "certified-notice-loan", "payment-order-application",
-        "complaint-loan-return", "balance-confirmation"
+        "payment-order-objection", "complaint-loan-return",
+        "balance-confirmation"
       ]
     },
     {
@@ -108,7 +110,7 @@
         "civil-petition", "info-disclosure-request", "disclosure-objection",
         "parking-fine-objection", "administrative-objection",
         "noise-complaint", "illegal-dumping-report", "road-repair-request",
-        "moving-in-report", "seal-certificate-poa"
+        "moving-in-report", "seal-certificate-poa", "vehicle-registration-poa"
       ]
     },
     {

@@ -1,0 +1,75 @@
+id: payment-order-objection
+title: 지급명령 이의신청서
+category: legal
+subcategory: litigation
+tags: [지급명령이의신청서, 지급명령이의신청, 독촉절차이의, 지급명령불복, 이의신청서]
+summary: 법원의 지급명령을 송달받은 채무자가 정해진 기간 내에 이의를 제기해 통상 소송절차로 넘기는 이의신청서입니다.
+usage: >
+  지급명령 정본을 송달받은 채무자가 청구금액에 다툼이 있을 때 쓰는 서류입니다. 송달받은
+  날부터 2주 이내에 법원에 제출해야 하며, 이의신청 사유를 자세히 적지 않아도 이의신청
+  자체만으로 사건은 통상의 소송절차로 넘어갑니다. 기간을 넘기면 지급명령이 확정되어
+  강제집행을 당할 수 있으므로 송달일자를 반드시 확인하십시오. 본 서식은 참고용이며 제출
+  전 사건번호와 관할 법원, 최신 양식을 대한민국 법원 전자소송 사이트에서 확인하십시오.
+source: law-standard
+source_note: 민사소송법 제469조·제470조(지급명령에 대한 이의신청) 규정을 참고하여 자체 제작
+featured: false
+target_pages: 1
+
+howto:
+  - 사건번호와 채권자·채무자 인적사항을 적습니다.
+  - 지급명령 정본을 송달받은 날짜를 정확히 적습니다.
+  - 이의신청 취지를 적고 이유는 간단히 적습니다.
+  - 송달받은 날부터 2주 이내에 관할 법원에 제출합니다.
+
+faq:
+  - q: 이의신청 이유를 자세히 써야 하나요?
+    a: 이의신청 자체만으로 통상 소송절차로 넘어가므로 이유는 간단히 적어도 됩니다.
+  - q: 기간을 넘기면 어떻게 되나요?
+    a: 송달일부터 2주가 지나면 지급명령이 확정되어 강제집행을 당할 수 있습니다.
+
+related: [payment-order-application, answer-brief, preparatory-brief]
+
+blocks:
+  - type: doc_title
+    text: 지급명령 이의신청서
+    spaced: false
+  - type: subtitle
+    text: 사건 표시
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["사건번호", "", "재판부", ""]
+      - ["채권자", "", "채무자", ""]
+      - ["송달받은 날", "", "", ""]
+    sample_rows:
+      - ["", "2026차전12345", "", "제3민사단독"]
+      - ["", "홍길동", "", "박민준"]
+      - ["", "2026-09-01", "", ""]
+  - type: para
+    text: 채무자는 위 사건에 관하여 귀원으로부터 송달받은 지급명령에 대하여 이의를 신청합니다.
+    align: both
+    size: 11
+  - type: subtitle
+    text: 이의신청 이유
+  - type: textbox
+    hint: "간단히 적어도 됩니다. (예: 청구금액에 다툼이 있어 이의를 신청합니다.)"
+    height_mm: 30
+    sample_text: 청구금액 중 일부는 이미 변제하였고 나머지 금액의 산정 근거에도 다툼이 있어 이의를 신청합니다.
+  - type: date_line
+    sample_text: 2026 년    9 월   12 일
+  - type: sign_line
+    label: 채무자
+    sample_names: [박민준]
+  - type: spacer
+    height_pt: 6
+  - type: para
+    text: "                        법원  귀중"
+    align: center
+    size: 12
+    bold: true
+  - type: notice
+    text: 송달받은 날부터 2주 이내에 제출하지 않으면 지급명령이 확정되어 강제집행을 당할 수 있습니다. 제출 전 대한민국 법원 전자소송 사이트에서 최신 양식과 관할을 확인하십시오. 본 서식은 참고용입니다.

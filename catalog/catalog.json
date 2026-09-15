@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T14:52:28+09:00",
-  "count": 240,
+  "generated_at": "2026-09-16T08:19:36+09:00",
+  "count": 243,
   "forms": [
     {
       "id": "academy-attendance",
@@ -14268,6 +14268,116 @@
       "seal": true
     },
     {
+      "id": "move-out-checklist",
+      "title": "퇴거 점검표",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "퇴거점검표",
+        "이사퇴거체크리스트",
+        "원상복구확인서",
+        "퇴거확인서",
+        "이사정산표"
+      ],
+      "summary": "임차인이 이사 나갈 때 시설물 상태와 공과금·관리비 정산 항목을 임대인과 함께 확인하는 퇴거 점검표입니다.",
+      "usage": "임대차 계약이 끝나 이사를 나갈 때 입주 당시와 비교해 시설물 파손·오염 여부를 확인하고, 관리비·공과금 정산 내역과 보증금에서 공제할 항목을 미리 정리해 두는 서식입니다. 입주 점검표가 있다면 함께 대조하면 원상복구 범위를 놓고 다투는 일을 줄일 수 있습니다. 정산 결과와 열쇠·카드키 반납 여부를 확인한 뒤 임대인과 임차인이 함께 서명해 각자 보관하십시오. 정산액은 보증금 반환 시 근거 자료로 활용할 수 있습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 67308,
+        "docx": 39057,
+        "hwpx": 10751
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "주소와 퇴거일 등 기본 정보를 적습니다.",
+        "공간별 시설물 상태를 입주 당시와 비교해 확인합니다.",
+        "관리비·공과금 정산 내역을 적습니다.",
+        "보증금 공제 항목과 반환 예정액을 계산합니다.",
+        "열쇠·카드키 반납을 확인하고 임대인·임차인이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "입주 점검표가 없으면 못 쓰나요?",
+          "a": "없어도 현재 상태를 있는 그대로 적고 사진을 남겨 두면 됩니다."
+        },
+        {
+          "q": "공제 항목에 다툼이 있으면 어떻게 하나요?",
+          "a": "우선 사실관계를 기록해 두고, 반환이 지연되면 보증금 반환 내용증명 등으로 대응하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 기본 정보",
+          "items": [
+            "주소",
+            "퇴거일",
+            "임대인",
+            "연락처",
+            "임차인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 시설물 상태 확인",
+          "items": [
+            "공간",
+            "점검항목",
+            "상태(양호/파손)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 공과금·관리비 정산",
+          "items": [
+            "항목",
+            "금액"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 보증금 정산 및 반환",
+          "items": [
+            "보증금",
+            "공제 합계",
+            "반환 예정액",
+            "반환 예정일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "move-in-checklist",
+        "deposit-return-notice",
+        "monthly-rent-receipt"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T08:19:22+09:00",
+      "updated_at": "2026-09-16T08:19:22+09:00",
+      "downloads": 0
+    },
+    {
       "id": "moving-checklist",
       "title": "이사 체크리스트",
       "category": "personal",
@@ -15753,6 +15863,93 @@
         "payment-pledge"
       ],
       "seal": true
+    },
+    {
+      "id": "payment-order-objection",
+      "title": "지급명령 이의신청서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "지급명령이의신청서",
+        "지급명령이의신청",
+        "독촉절차이의",
+        "지급명령불복",
+        "이의신청서"
+      ],
+      "summary": "법원의 지급명령을 송달받은 채무자가 정해진 기간 내에 이의를 제기해 통상 소송절차로 넘기는 이의신청서입니다.",
+      "usage": "지급명령 정본을 송달받은 채무자가 청구금액에 다툼이 있을 때 쓰는 서류입니다. 송달받은 날부터 2주 이내에 법원에 제출해야 하며, 이의신청 사유를 자세히 적지 않아도 이의신청 자체만으로 사건은 통상의 소송절차로 넘어갑니다. 기간을 넘기면 지급명령이 확정되어 강제집행을 당할 수 있으므로 송달일자를 반드시 확인하십시오. 본 서식은 참고용이며 제출 전 사건번호와 관할 법원, 최신 양식을 대한민국 법원 전자소송 사이트에서 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45822,
+        "docx": 38559,
+        "hwpx": 9604
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사건번호와 채권자·채무자 인적사항을 적습니다.",
+        "지급명령 정본을 송달받은 날짜를 정확히 적습니다.",
+        "이의신청 취지를 적고 이유는 간단히 적습니다.",
+        "송달받은 날부터 2주 이내에 관할 법원에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "이의신청 이유를 자세히 써야 하나요?",
+          "a": "이의신청 자체만으로 통상 소송절차로 넘어가므로 이유는 간단히 적어도 됩니다."
+        },
+        {
+          "q": "기간을 넘기면 어떻게 되나요?",
+          "a": "송달일부터 2주가 지나면 지급명령이 확정되어 강제집행을 당할 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "사건 표시",
+          "items": [
+            "사건번호",
+            "재판부",
+            "채권자",
+            "채무자",
+            "송달받은 날"
+          ],
+          "note": ""
+        },
+        {
+          "title": "이의신청 이유",
+          "items": [],
+          "note": "간단히 적어도 됩니다. (예: 청구금액에 다툼이 있어 이의를 신청합니다.)"
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "payment-order-application",
+        "answer-brief",
+        "preparatory-brief"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "민사소송법 제469조·제470조(지급명령에 대한 이의신청) 규정을 참고하여 자체 제작",
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T08:19:32+09:00",
+      "updated_at": "2026-09-16T08:19:32+09:00",
+      "downloads": 0
     },
     {
       "id": "payment-pledge",
@@ -24398,6 +24595,116 @@
         "power-of-attorney"
       ],
       "seal": true
+    },
+    {
+      "id": "vehicle-registration-poa",
+      "title": "차량 이전등록 위임장",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "차량이전등록위임장",
+        "자동차명의이전위임장",
+        "차량등록사업소위임장",
+        "자동차이전등록",
+        "차량위임장"
+      ],
+      "summary": "차량 소유권 이전등록·명의변경 절차를 대리인에게 맡길 때 차량 정보와 위임 범위를 적는 위임장입니다.",
+      "usage": "중고차 매매나 증여 등으로 차량 소유자가 바뀔 때, 본인이 직접 차량등록사업소(구청)를 방문하기 어려우면 대리인에게 이전등록 신청을 맡기는 서류입니다. 차량번호·차대번호 등 차량 정보를 정확히 적고, 위임 범위(이전등록 신청 및 서류 수령 등)를 구체적으로 한정하는 것이 안전합니다. 양수인 정보도 함께 적어 두면 접수 담당자가 대조하기 쉽습니다. 필요 서류와 수수료는 관할 차량등록사업소 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 62966,
+        "docx": 38982,
+        "hwpx": 10389
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인(양도인)의 인적사항을 적습니다.",
+        "대리인의 인적사항을 정확히 적습니다.",
+        "차량번호·차대번호 등 차량 정보를 적습니다.",
+        "위임 범위와 양수인 정보를 적습니다.",
+        "대리인이 위임장을 지참해 차량등록사업소를 방문합니다."
+      ],
+      "faq": [
+        {
+          "q": "인감증명서도 같이 내야 하나요?",
+          "a": "이전등록 신청 시 인감증명서나 본인서명사실확인서를 요구할 수 있어 관할 등록사업소에 미리 확인하십시오."
+        },
+        {
+          "q": "저당권이 설정된 차량도 위임할 수 있나요?",
+          "a": "저당권 말소 절차가 먼저 필요할 수 있으므로 등록사업소에 처리 순서를 확인하는 것이 안전합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인 (양도인)",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "연락처",
+            "인감 날인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대리인",
+          "items": [
+            "위임인과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 차량 정보",
+          "items": [
+            "차량번호",
+            "차종",
+            "차대번호",
+            "등록일자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 위임 내용",
+          "items": [
+            "위임 범위",
+            "양수인 성명",
+            "양수인 연락처",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "used-car-sale-contract",
+        "power-of-attorney",
+        "vehicle-maintenance-history"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T08:19:36+09:00",
+      "updated_at": "2026-09-16T08:19:36+09:00",
+      "downloads": 0
     },
     {
       "id": "vehicle-use-request",
