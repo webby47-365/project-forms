@@ -97,9 +97,16 @@ def main() -> int:
             spec = load_spec(SPECS / f"{form_id}.yaml")
         except SpecError:
             continue  # 위에서 이미 보고됨
+        # 목표보다 페이지가 늘어난 것은 배포를 막는다. 방문자가 받는 파일이 2장짜리가 되고
+        # 미리보기도 함께 달라지므로 경고로 흘려보내면 안 된다.
+        # (2026-09-15: 로컬 LibreOffice가 24.2→26.8로 올라가 이력서 4종이 2페이지가 된 채 배포됐다)
         if item.get("pages", 1) > spec.pages_hint:
+            errors.append(f"{form_id}: 목표 {spec.pages_hint}페이지인데 {item['pages']}페이지입니다 "
+                          f"— fit_one_page.py로 보정하거나 target_pages를 조정하십시오. "
+                          f"빌드 환경(LibreOffice 버전)이 바뀌지 않았는지도 확인하십시오.")
+        elif item.get("pages", 1) < spec.pages_hint:
             warns.append(f"{form_id}: 목표 {spec.pages_hint}페이지인데 {item['pages']}페이지입니다 "
-                         f"— fit_one_page.py로 보정하거나 target_pages를 조정하십시오.")
+                         f"— 내용이 줄지 않았는지 확인하십시오.")
 
     # 6) 대표 서식
     featured = [f for f in items.values() if f.get("featured")]
