@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{# 연봉별 실수령액 정적 페이지. mode="detail"(/tools/salary/<만원>/) | "severance"(/tools/severance/<근속>/).
+   숫자는 빌드 때 scripts/pay_calc.py 가 계산해 넣는다 — 브라우저 계산기(calc.js)와 원 단위 일치. #}
+{% block head %}
+<style>
+.sal-hero{border-radius:var(--radius); background:var(--navy); color:#fff; padding:22px 24px; margin:16px 0 0}
+.sal-hero .k{font-size:13px; font-weight:600; color:#c7d5e8; margin:0 0 4px}
+.sal-hero .v{font-size:34px; font-weight:800; letter-spacing:-.02em; line-height:1.15; font-variant-numeric:tabular-nums}
+.sal-hero .sub{margin:8px 0 0; font-size:13px; color:#b9cae0; line-height:1.6}
+.sal-hero .go{display:inline-block; margin-top:14px; padding:9px 16px; border-radius:8px; background:#fff;
+  color:var(--navy); font-size:13.5px; font-weight:700; text-decoration:none}
+.sal-hero .go:hover{background:#e8eff8}
+.sal-sum{margin:16px 0 0; font-size:15px; line-height:1.85; color:#374151}
+.tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:12px 0 0}
+.stbl{width:100%; border-collapse:collapse; font-size:14px; min-width:420px}
+.stbl th, .stbl td{padding:10px 12px; border-bottom:1px solid var(--line); text-align:right;
+  font-variant-numeric:tabular-nums; white-space:nowrap}
+.stbl th:first-child, .stbl td:first-child{text-align:left}
+.stbl thead th{background:var(--bg-soft); color:var(--navy); font-weight:700; font-size:13px; border-bottom:2px solid var(--navy)}
+.stbl tbody th{font-weight:600; color:#475467}
+.stbl tbody th i{font-style:normal; color:#9aa4b2; font-weight:500; margin-left:4px}
+.stbl td{font-weight:600; color:var(--ink)}
+.stbl tr.sum th, .stbl tr.sum td{border-top:2px solid var(--navy); color:var(--navy); font-weight:800}
+.stbl tr.cur th, .stbl tr.cur td{background:#eaf1fa; color:var(--navy); font-weight:800}
+.stbl a{color:var(--accent); font-weight:700; text-decoration:none}
+.stbl a:hover{text-decoration:underline}
+.stbl .up{color:#1a7f4b}
+.stbl .dn{color:#b42318}
+.sal-notes{margin:14px 0 0; padding:0 0 0 18px; font-size:13.5px; color:#475467; line-height:1.75}
+.sal-notes li{margin:4px 0}
+.sal-nav{display:flex; justify-content:space-between; gap:10px; margin:26px 0 0}
+.sal-nav a{flex:1; padding:12px 14px; border:1px solid var(--line); border-radius:9px; background:#fff;
+  font-size:13.5px; font-weight:700; color:var(--navy); text-decoration:none}
+.sal-nav a:hover{border-color:var(--navy)}
+.sal-nav a.nx{text-align:right}
+.sal-nav span{display:block; font-size:12px; color:var(--muted); font-weight:500; margin-bottom:2px}
+.jump{display:flex; flex-wrap:wrap; gap:6px; margin:14px 0 0}
+.jump a{padding:6px 11px; border:1px solid var(--line); border-radius:999px; font-size:13px; font-weight:600;
+  color:#475467; text-decoration:none; background:#fff}
+.jump a:hover{border-color:var(--navy); color:var(--navy)}
+@media (max-width:560px){
+  .jump{flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:4px}
+  .jump a{flex:0 0 auto}
+  .sal-hero .v{font-size:28px}
+  .stbl{font-size:13px}
+  .stbl th, .stbl td{padding:9px 8px}
+}
+</style>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+{%- if mode == "severance" %}
+  <div class="crumb"><a href="/">홈</a> › <a href="/tools/">직장인 도구</a> › <a href="/tools/severance/">퇴직금 계산기</a> › 근속 {{ y }}년</div>
+  <h1 class="page">근속 {{ y }}년 퇴직금 ({{ year }}년)</h1>
+  <div class="jump" aria-label="근속연수 바로가기">
+    {%- for n in years_all %}
+    <a href="/tools/severance/{{ n }}/"{% if n == y %} style="background:var(--navy);border-color:var(--navy);color:#fff"{% endif %}>{{ n }}년</a>
+    {%- endfor %}
+  </div>
+  <p class="sal-sum">{{ summary }}</p>
+
+  <h2 class="sec" style="font-size:17px">월급별 근속 {{ y }}년 퇴직금</h2>
+  <p class="sal-sum" style="margin-top:0;font-size:14px">상여금·연장수당 없이 월급을 고르게 받았다고 본 <b>추정치</b>입니다(30일분 평균임금 ≈ 월급).
+    세금은 소득세법 제48조 계산 구조 그대로이며 원 단위까지 계산기와 같습니다.</p>
+  <div class="tbl-wrap">
+    <table class="stbl">
+      <thead><tr><th>월급(세전)</th><th>퇴직금</th><th>퇴직소득세</th><th>지방소득세</th><th>실수령</th><th>실효세율</th></tr></thead>
+      <tbody>
+      {%- for w in wage_rows %}
+        <tr{% if w.wage == 3000000 %} class="cur"{% endif %}>
+          <th>{% if w.salary_path %}<a href="{{ w.salary_path }}" title="연봉 {{ '{:,}'.format(w.annual_man) }}만원 실수령액">{{ man(w.wage) }}</a>{% else %}{{ man(w.wage) }}{% endif %}</th>
+          <td>{{ won(w.pay) }}원</td><td>{{ won(w.tax) }}원</td><td>{{ won(w.local) }}원</td><td>{{ won(w.net) }}원</td>
+          <td>{{ '%.2f' % w.rate }}%</td></tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {{ slot(ads, "detail_body") }}
+
+  <h2 class="sec" style="font-size:17px">세금은 이렇게 계산됩니다 (월급 300만원 · {{ y }}년)</h2>
+  <div class="tbl-wrap">
+    <table class="stbl">
+      <tbody>
+      {%- for label, v in steps %}
+        <tr{% if loop.index >= 6 %} class="{{ 'sum' if loop.index == 6 else '' }}"{% endif %}><th>{{ label }}</th>
+          <td>{{ ('−' if v < 0 else '') ~ won(v|abs) }}원</td></tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  <ul class="sal-notes">
+    <li>근속연수공제: 5년 이하 연 100만원, 10년 이하 500만원+연 200만원, 20년 이하 1,500만원+연 250만원, 20년 초과 4,000만원+연 300만원.</li>
+    <li>세법상 근속연수는 1년 미만이 남으면 1년으로 올려 셉니다. 3년 2개월 근무는 4년으로 계산합니다.</li>
+    <li>법정 퇴직금은 계속근로 1년 이상, 4주 평균 주 15시간 이상 일한 근로자에게 생깁니다.</li>
+  </ul>
+  <p class="sal-sum" style="font-size:14px">내 날짜와 임금으로 정확히 계산하려면 <a href="/tools/severance/">퇴직금 계산기</a> →
+    <a href="/tools/retirement-tax/">퇴직소득세 계산기</a> 순서로 넣어 보세요.</p>
+
+  <h2 class="sec" style="font-size:17px">자주 묻는 질문</h2>
+  <div class="faq">
+    {%- for item in faq %}
+    <details{% if loop.first %} open{% endif %}>
+      <summary>{{ item.q }}</summary>
+      <p class="a">{{ item.a }}</p>
+    </details>
+    {%- endfor %}
+  </div>
+  <nav class="sal-nav" aria-label="이전·다음 근속연수">
+    {%- if prev_y %}<a href="/tools/severance/{{ prev_y }}/"><span>← 이전</span>근속 {{ prev_y }}년 퇴직금</a>{% else %}<span></span>{% endif %}
+    {%- if next_y %}<a class="nx" href="/tools/severance/{{ next_y }}/"><span>다음 →</span>근속 {{ next_y }}년 퇴직금</a>{% endif %}
+  </nav>
+  <div class="notice-box" style="margin-top:18px">추정치이며 참고용입니다. 퇴직연금(DB·DC) 가입, 중간정산, 회사 규정에 따라 실제 금액이 달라집니다.</div>
+  <script type="application/ld+json">
+{{ faq_jsonld | safe }}
+  </script>
+{%- else %}
+  <div class="crumb"><a href="/">홈</a> › <a href="/tools/">직장인 도구</a> › <a href="/tools/salary/">실수령액 계산기</a> › 연봉 {{ label }}</div>
+  <h1 class="page">연봉 {{ label }} 실수령액 ({{ year }}년)</h1>
+
+  <div class="sal-hero">
+    <p class="k">월 실수령액</p>
+    <div class="v">{{ won(r.net) }}<small style="font-size:17px;margin-left:2px">원</small></div>
+    <p class="sub">연 실수령액 {{ won(r.net_year) }}원 · 월 공제 합계 {{ won(r.deduct) }}원 ({{ '%.1f' % rate }}%)<br>
+      비과세 식대 월 20만원 · 부양가족 1명(본인) · 8~20세 자녀 없음 기준</p>
+    <a class="go" href="{{ calc_link }}">내 조건으로 다시 계산하기 →</a>
+  </div>
+
+  <p class="sal-sum">{{ summary }}</p>
+
+  <h2 class="sec" style="font-size:17px">월 공제 내역</h2>
+  <div class="tbl-wrap">
+    <table class="stbl">
+      <tbody>
+        <tr><th>월 급여 <i>세전, 연봉 ÷ 12</i></th><td>{{ won(r.gross) }}원</td></tr>
+        <tr><th>비과세 <i>식대</i></th><td>{{ won(r.tax_free) }}원</td></tr>
+        <tr><th>국민연금 <i>{{ '상한 적용' if r.pension_capped else ('%.2f' % (rates.national_pension.rate_employee * 100)) ~ ('' if r.pension_capped else '%') }}</i></th><td>−{{ won(r.pension) }}원</td></tr>
+        <tr><th>건강보험 <i>{{ '%.3f' % (rates.health.rate_employee * 100) }}%</i></th><td>−{{ won(r.health) }}원</td></tr>
+        <tr><th>장기요양보험 <i>건보료의 {{ '%.2f' % (rates.long_term_care.rate_of_health * 100) }}%</i></th><td>−{{ won(r.care) }}원</td></tr>
+        <tr><th>고용보험 <i>{{ '%.1f' % (rates.employment.rate_employee * 100) }}%</i></th><td>−{{ won(r.employment) }}원</td></tr>
+        <tr><th>소득세 <i>간이세액표</i></th><td>−{{ won(r.tax) }}원</td></tr>
+        <tr><th>지방소득세 <i>소득세의 10%</i></th><td>−{{ won(r.local) }}원</td></tr>
+        <tr class="sum"><th>월 실수령액</th><td>{{ won(r.net) }}원</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="sal-notes">
+    {%- for n in notes %}<li>{{ n }}</li>{% endfor %}
+    <li>식대 비과세가 없으면 월 실수령액은 {{ won(no_free.net) }}원입니다.</li>
+  </ul>
+
+  {{ slot(ads, "detail_body") }}
+
+  <h2 class="sec" style="font-size:17px">부양가족 수에 따른 실수령액</h2>
+  <p class="sal-sum" style="margin-top:0;font-size:14px">가족 수는 본인을 포함해 셉니다. 4대보험료는 같고 매월 떼는 소득세만 달라집니다.</p>
+  <div class="tbl-wrap">
+    <table class="stbl">
+      <thead><tr><th>부양가족</th><th>소득세+지방세</th><th>월 실수령액</th><th>1명 기준 대비</th></tr></thead>
+      <tbody>
+      {%- for f in family_rows %}
+        <tr{% if loop.first %} class="cur"{% endif %}><th>{{ f.label }}</th><td>{{ won(f.tax) }}원</td><td>{{ won(f.net) }}원</td>
+          <td class="{{ 'up' if f.diff > 0 else '' }}">{{ ('+' ~ won(f.diff) ~ '원') if f.diff > 0 else '—' }}</td></tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="sec" style="font-size:17px">주변 연봉과 비교</h2>
+  {%- if raise_note %}<p class="sal-sum" style="margin-top:0;font-size:14px">{{ raise_note }}</p>{% endif %}
+  <div class="tbl-wrap">
+    <table class="stbl">
+      <thead><tr><th>연봉</th><th>월 실수령액</th><th>차이</th><th>공제율</th></tr></thead>
+      <tbody>
+      {%- for x in neighbors %}
+        <tr{% if x.cur %} class="cur"{% endif %}>
+          <th>{% if x.cur %}{{ x.label }}{% else %}<a href="{{ x.path }}">{{ x.label }}</a>{% endif %}</th>
+          <td>{{ won(x.net) }}원</td>
+          <td class="{{ 'up' if x.diff > 0 else ('dn' if x.diff < 0 else '') }}">{{ '—' if x.cur else (('+' if x.diff > 0 else '−') ~ won(x.diff|abs) ~ '원') }}</td>
+          <td>{{ '%.1f' % x.rate }}%</td></tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="sec" style="font-size:17px">이 연봉으로 퇴사하면 퇴직금은?</h2>
+  <p class="sal-sum" style="margin-top:0;font-size:14px">연봉을 12개월 고르게 받고 상여금·연장수당이 없다고 본 <b>추정치</b>입니다
+    (30일분 평균임금 ≈ 월급 × 근속연수). 퇴직소득세는 소득세법 제48조 계산 구조 그대로입니다.</p>
+  <div class="tbl-wrap">
+    <table class="stbl">
+      <thead><tr><th>근속</th><th>퇴직금(세전)</th><th>퇴직소득세+지방세</th><th>실수령 퇴직금</th><th></th></tr></thead>
+      <tbody>
+      {%- for s in sev_rows %}
+        <tr><th>{{ s.years }}년</th><td>{{ won(s.pay) }}원</td><td>{{ won(s.tax) }}원</td><td>{{ won(s.net) }}원</td>
+          <td><a href="{{ s.link }}">근속 {{ s.years }}년 표</a></td></tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="sal-sum" style="font-size:13.5px;color:var(--muted)">정확한 퇴직금은 퇴직 전 3개월 임금을 일수로 나눠 계산합니다 —
+    <a href="/tools/severance/">퇴직금 계산기</a>에서 날짜와 임금을 넣어 확인하세요.</p>
+
+  <h2 class="sec" style="font-size:17px">자주 묻는 질문</h2>
+  <div class="faq">
+    {%- for item in faq %}
+    <details{% if loop.first %} open{% endif %}>
+      <summary>{{ item.q }}</summary>
+      <p class="a">{{ item.a }}</p>
+    </details>
+    {%- endfor %}
+  </div>
+
+  <nav class="sal-nav" aria-label="이전·다음 연봉">
+    {%- if prev_row %}<a href="{{ prev_row.path }}"><span>← 이전</span>연봉 {{ prev_row.label }} · 월 {{ won(prev_row.net) }}원</a>{% else %}<span></span>{% endif %}
+    {%- if next_row %}<a class="nx" href="{{ next_row.path }}"><span>다음 →</span>연봉 {{ next_row.label }} · 월 {{ won(next_row.net) }}원</a>{% endif %}
+  </nav>
+  <p style="margin:14px 0 0;font-size:13.5px"><a href="/tools/salary/#salary-table">연봉 2,000만~1억 5,000만원 실수령액 표 전체 보기 →</a></p>
+
+  <div class="notice-box" style="margin-top:18px">계산 결과는 참고용입니다. 회사의 비과세 항목·중도 입사·상여 지급 방식에 따라
+    실제 급여명세서와 차이가 날 수 있습니다. 요율 {{ rates.year }}년 · 최종 확인 {{ rates.updated }}.</div>
+  <script type="application/ld+json">
+{{ faq_jsonld | safe }}
+  </script>
+{%- endif %}
+
+  {%- if related %}
+  <h2 class="sec">급여·퇴사 관련 서식</h2>
+  <div class="grid">
+    {%- for f in related %}
+    {{ m.card(f, cat_label[f.id], dl_map[f.id], ads.download_interstitial, name_map[f.id]) }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+</div>
+{% endblock %}

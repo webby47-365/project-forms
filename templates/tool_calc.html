@@ -73,6 +73,16 @@
 .nextcalc:hover{background:var(--navy); border-color:var(--navy); color:#fff}
 /* display:block 이 브라우저 기본 [hidden] 을 이기므로 명시적으로 다시 숨긴다 */
 .nextcalc[hidden]{display:none}
+/* 연봉별 표·근속연수 링크 (정적 페이지 허브) */
+.saltable details{border:1px solid var(--line); border-radius:9px; margin:0 0 8px; background:#fff}
+.saltable summary{cursor:pointer; padding:11px 14px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.saltable .res-table{margin:0}
+.saltable .res-table thead th, .saltable .res-table thead td{background:var(--bg-soft); font-size:12.5px; color:var(--navy)}
+.saltable .res-table a{color:var(--accent); text-decoration:none}
+.yearlinks{display:flex; flex-wrap:wrap; gap:6px}
+.yearlinks a{padding:6px 11px; border:1px solid var(--line); border-radius:999px; font-size:13px; font-weight:600;
+  color:#475467; text-decoration:none; background:#fff}
+.yearlinks a:hover{border-color:var(--navy); color:var(--navy)}
 
 @media (max-width:900px){ .calc-2col{grid-template-columns:1fr} .calc-2col .sticky{position:static} }
 @media (max-width:640px){ .fld2{grid-template-columns:1fr} .res-hero .v{font-size:27px}
@@ -192,6 +202,31 @@
     {%- endfor %}
   </ol>
 
+  {%- if calc.key == 'salary' and salary_table %}
+  {#- 연봉별 정적 페이지(/tools/salary/<만원>/) 131개로 가는 허브. 천만원 단위로 접어 둔다. #}
+  <h2 class="sec" style="font-size:17px" id="salary-table">연봉별 실수령액 표 ({{ rates.year }}년)</h2>
+  <p class="lead" style="margin:0 0 10px;font-size:14px">비과세 식대 월 20만원·부양가족 1명 기준입니다. 금액을 누르면 공제 내역·가족 수별 실수령액·퇴직금이 나옵니다.</p>
+  <div class="saltable">
+    {%- for band in salary_table | groupby('band') %}
+    <details{% if band.grouper == 4000 %} open{% endif %}>
+      <summary>{% if band.grouper >= 10000 %}연봉 {{ '1억' if band.grouper == 10000 else '1억 2,500만' }}원대{% else %}연봉 {{ '{:,}'.format(band.grouper) }}만원대{% endif %}</summary>
+      <table class="res-table"><thead><tr><th>연봉</th><td>월 실수령액</td><td>연 실수령액</td></tr></thead><tbody>
+      {%- for x in band.list %}
+        <tr><th><a href="{{ x.path }}">{{ x.label }}</a></th><td>{{ '{:,}'.format(x.net) }}원</td><td>{{ '{:,}'.format(x.net_year) }}원</td></tr>
+      {%- endfor %}
+      </tbody></table>
+    </details>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  {%- if calc.key in ('severance', 'retirement-tax') and severance_years %}
+  <h2 class="sec" style="font-size:17px">근속연수별 퇴직금 표</h2>
+  <p class="lead" style="margin:0 0 10px;font-size:14px">월급 구간별 퇴직금·퇴직소득세·실수령액을 근속연수마다 정리했습니다.</p>
+  <div class="yearlinks">
+    {%- for y in severance_years %}<a href="/tools/severance/{{ y }}/">{{ y }}년</a>{% endfor %}
+  </div>
+  {%- endif %}
+
   <h2 class="sec" style="font-size:17px">자주 묻는 질문</h2>
   <div class="faq">
     {%- for item in calc.faq %}
@@ -260,6 +295,17 @@ document.addEventListener('DOMContentLoaded', function () {
 {% if calc.key == 'salary' %}
   /* ── 실수령액 ── */
   var mode = 'year';
+  // 연봉별 실수령액 페이지(/salary/<만원>/)에서 넘어오면 같은 조건으로 채운다
+  var sq = new URLSearchParams(location.search);
+  if (sq.get('amount')) $('c-amount').value = C.fmt(C.num(sq.get('amount')));
+  if (sq.get('free') !== null) $('c-free').value = C.fmt(C.num(sq.get('free')));
+  if (sq.get('family')) {
+    counts.family = Math.min(11, Math.max(1, Math.round(C.num(sq.get('family'))) || 1));
+    counts.children = Math.min(counts.family - 1, Math.max(0, Math.round(C.num(sq.get('children'))) || 0));
+    document.querySelectorAll('.stepper').forEach(function (x) {
+      x.querySelector('.n').textContent = counts[x.getAttribute('data-step')] + '명';
+    });
+  }
   C.bindMoney($('c-amount'), calc); C.bindMoney($('c-free'), calc);
   seg('c-mode', function (v) {
     mode = v;

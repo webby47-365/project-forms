@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% import "_card.html" as m %}
+{% from "_ad.html" import slot %}
+{# 정보형 가이드. mode="hub"(/guide/) | "detail"(/guide/<slug>/).
+   본문 HTML 은 scripts/guides.py 가 이스케이프 후 굵게·내부 링크만 되살려 만든다 → 여기서는 |safe. #}
+{% block head %}
+<style>
+.gd{max-width:820px}
+.gd-meta{display:flex; flex-wrap:wrap; gap:6px 14px; margin:8px 0 0; font-size:13px; color:var(--muted)}
+.gd-meta b{color:var(--navy); font-weight:700}
+.gd-sum{margin:18px 0 0; padding:16px 18px; border-radius:var(--radius); background:#eef4fb; border:1px solid #cfdcec}
+.gd-sum .k{font-size:12.5px; font-weight:800; color:var(--navy); margin:0 0 6px; letter-spacing:.02em}
+.gd-sum p{margin:0; font-size:15px; line-height:1.85; color:#1f2937}
+.gd-toc{margin:18px 0 0; padding:14px 18px; border:1px solid var(--line); border-radius:var(--radius); background:#fff}
+.gd-toc .k{font-size:13px; font-weight:700; color:var(--navy); margin:0 0 6px}
+.gd-toc ol{margin:0; padding-left:0; list-style:none; font-size:14px; line-height:1.9}
+.gd-toc a{color:#374151; text-decoration:none}
+.gd-toc a:hover{color:var(--accent)}
+.gd-sec h2{font-size:19px; font-weight:800; color:var(--navy); margin:38px 0 12px; letter-spacing:-.01em; scroll-margin-top:80px}
+.gd-sec p{margin:0 0 13px; font-size:15.5px; line-height:1.9; color:#1f2937}
+.gd-sec p a, .gd-sec li a{color:var(--accent); font-weight:600}
+.gd-sec ul{margin:0 0 14px; padding-left:20px; font-size:15px; line-height:1.85; color:#1f2937}
+.gd-sec li{margin:5px 0}
+.gd-sec .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:4px 0 16px}
+.gd-sec table{width:100%; border-collapse:collapse; font-size:14px; min-width:460px}
+.gd-sec th, .gd-sec td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top; line-height:1.65}
+.gd-sec thead th{background:var(--navy); color:#fff; font-weight:700; font-size:13.5px}
+.gd-forms{display:grid; gap:12px; margin:12px 0 0}
+.gd-form{border:1px solid var(--line-img); border-radius:var(--radius); padding:14px 16px; background:#fff;
+  display:grid; grid-template-columns:84px minmax(0,1fr); gap:14px; align-items:start}
+.gd-form img{width:84px; height:auto; border:1px solid var(--line-img); border-radius:4px; display:block}
+.gd-form h3{margin:0 0 3px; font-size:15.5px; font-weight:800}
+.gd-form h3 a{color:var(--navy); text-decoration:none}
+.gd-form h3 a:hover{color:var(--accent)}
+.gd-form p{margin:0; font-size:13.5px; color:#475467; line-height:1.65}
+.gd-form ol{margin:6px 0 0; padding-left:18px; font-size:13px; color:#475467; line-height:1.6}
+.gd-form .gdl{display:flex; gap:6px; margin:9px 0 0}
+.gd-form .gdl a{padding:5px 11px; border:1px solid var(--line); border-radius:6px; font-size:12.5px; font-weight:700;
+  color:#374151; text-decoration:none; background:#fff}
+.gd-form .gdl a:hover{background:var(--navy); border-color:var(--navy); color:#fff}
+.gd-tools{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0}
+.gd-tools a{padding:9px 14px; border-radius:9px; border:1px solid #b9cae0; background:#eef4fb; font-size:13.5px;
+  font-weight:700; color:var(--navy); text-decoration:none}
+.gd-tools a:hover{background:var(--navy); color:#fff; border-color:var(--navy)}
+.gd-src{margin:10px 0 0; padding-left:18px; font-size:13px; color:var(--muted); line-height:1.8}
+.gd-sec .gd-src a{color:var(--muted); font-weight:500}
+.gd-hub{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:12px 0 0}
+.gd-card{display:block; border:1px solid var(--line-img); border-radius:var(--radius); padding:15px 17px; background:#fff;
+  text-decoration:none; transition:border-color .15s, box-shadow .15s}
+.gd-card:hover{border-color:#8fa6c2; box-shadow:var(--shadow)}
+.gd-card h3{margin:0 0 5px; font-size:15.5px; font-weight:800; color:var(--navy); line-height:1.45}
+.gd-card p{margin:0; font-size:13.5px; color:#475467; line-height:1.65}
+.gd-card .g{display:inline-block; margin:0 0 6px; font-size:11.5px; font-weight:800; color:var(--accent)}
+@media (max-width:640px){
+  .gd-hub{grid-template-columns:1fr}
+  .gd-form{grid-template-columns:64px minmax(0,1fr)}
+  .gd-form img{width:64px}
+  .gd-sec p{font-size:15px}
+}
+</style>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+{%- if mode == "hub" %}
+  <div class="crumb"><a href="/">홈</a> › 가이드</div>
+  <h1 class="page">서식·직장생활 가이드</h1>
+  <p class="lead">서식을 쓰기 전에 알아야 할 절차와 기준을 정리했습니다. 글마다 바로 쓸 수 있는 서식과 계산기를 연결해 두었습니다.</p>
+  {%- for grp in groups %}
+  {%- if grp['items'] %}
+  <h2 class="sec" style="font-size:18px">{{ grp.name }}</h2>
+  <div class="gd-hub">
+    {%- for g in grp['items'] %}
+    <a class="gd-card" href="{{ g.path }}">
+      <h3>{{ g.title }}</h3>
+      <p>{{ g.description }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  {%- endfor %}
+  {{ slot(ads, "series_bottom") }}
+{%- else %}
+  <article class="gd">
+  <div class="crumb"><a href="/">홈</a> › <a href="/guide/">가이드</a> › {{ g.group_name }}</div>
+  <h1 class="page">{{ g.title }}</h1>
+  <div class="gd-meta">
+    <span><b>{{ g.group_name }}</b></span>
+    <span>작성 {{ g.created_at }}</span>
+    {%- if g.updated_at != g.created_at %}<span>최종 수정 {{ g.updated_at }}</span>{% endif %}
+    <span>읽는 시간 약 {{ g.reading_min }}분</span>
+  </div>
+
+  <div class="gd-sum">
+    <p class="k">핵심 요약</p>
+    <p>{{ g.html_summary | safe }}</p>
+  </div>
+
+  <nav class="gd-toc" aria-label="목차">
+    <p class="k">목차</p>
+    <ol>
+      {%- for sec in g.sections %}<li><a href="#{{ sec.id }}">{{ sec.h }}</a></li>{% endfor %}
+      <li><a href="#forms">함께 쓰는 서식</a></li>
+      <li><a href="#faq">자주 묻는 질문</a></li>
+    </ol>
+  </nav>
+
+  {%- for sec in g.sections %}
+  <section class="gd-sec">
+    <h2 id="{{ sec.id }}">{{ sec.h }}</h2>
+    {%- for p in sec.html_paras %}<p>{{ p | safe }}</p>{% endfor %}
+    {%- if sec.html_list %}<ul>{% for li in sec.html_list %}<li>{{ li | safe }}</li>{% endfor %}</ul>{% endif %}
+    {%- if sec.html_table %}
+    <div class="tbl-wrap"><table>
+      <thead><tr>{% for h in sec.html_table.head %}<th>{{ h | safe }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for row in sec.html_table.rows %}<tr>{% for c in row %}<td>{{ c | safe }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table></div>
+    {%- endif %}
+  </section>
+  {%- if loop.index == 2 %}{{ slot(ads, "detail_body") }}{% endif %}
+  {%- endfor %}
+
+  <section class="gd-sec">
+    <h2 id="forms">함께 쓰는 서식</h2>
+    <div class="gd-forms">
+      {%- for f in forms %}
+      <div class="gd-form">
+        <a href="/form/{{ f.id }}/"><img src="/files/{{ f.id }}/{{ f.previews[0] }}" alt="{{ f.title }} 양식 미리보기" loading="lazy" width="800" height="1131"></a>
+        <div>
+          <h3><a href="/form/{{ f.id }}/">{{ f.title }}</a></h3>
+          <p>{{ f.summary }}</p>
+          {%- if f.howto %}<ol>{% for s in f.howto[:3] %}<li>{{ s }}</li>{% endfor %}</ol>{% endif %}
+          <div class="gdl">
+            <a href="{{ dl_map[f.id].pdf }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].pdf }}"{% endif %}>PDF</a>
+            <a href="{{ dl_map[f.id].docx }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].docx }}"{% endif %}>Word</a>
+            <a href="{{ dl_map[f.id].hwpx }}"{% if not ads.download_interstitial %} download="{{ name_map[f.id].hwpx }}"{% endif %} title="HWPX (한글 2010 이상)">한글</a>
+          </div>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- if tools_linked %}
+    <div class="gd-tools">
+      {%- for t in tools_linked %}<a href="{{ t.path }}">{{ t.name }} →</a>{% endfor %}
+    </div>
+    {%- endif %}
+  </section>
+
+  <section class="gd-sec">
+    <h2 id="faq">자주 묻는 질문</h2>
+    <div class="faq">
+      {%- for item in g.faq %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ item.q }}</summary>
+        <p class="a">{{ item.a }}</p>
+      </details>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="gd-sec">
+    <h2 style="font-size:15px;margin-top:30px">참고한 자료</h2>
+    <ul class="gd-src">
+      {%- for s in g.sources %}<li><a href="{{ s.url }}" rel="nofollow noopener" target="_blank">{{ s.name }}</a></li>{% endfor %}
+    </ul>
+  </section>
+
+  <div class="notice-box">이 글은 일반적인 안내이며 개별 사안에 대한 법률·세무 자문이 아닙니다.
+    법령은 바뀔 수 있으니 중요한 결정 전에는 위 출처나 전문가에게 확인하십시오.</div>
+  </article>
+
+  {%- if siblings %}
+  <h2 class="sec" style="font-size:17px">같은 주제의 다른 가이드</h2>
+  <div class="gd-hub">
+    {%- for s in siblings %}
+    <a class="gd-card" href="{{ s.path }}"><span class="g">{{ s.group_name }}</span><h3>{{ s.title }}</h3><p>{{ s.description }}</p></a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  <script type="application/ld+json">{{ jsonld | safe }}</script>
+  <script type="application/ld+json">{{ faq_jsonld | safe }}</script>
+{%- endif %}
+</div>
+{% endblock %}

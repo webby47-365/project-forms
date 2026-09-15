@@ -706,6 +706,16 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 .nextcalc:hover{background:var(--navy); border-color:var(--navy); color:#fff}
 /* display:block 이 브라우저 기본 [hidden] 을 이기므로 명시적으로 다시 숨긴다 */
 .nextcalc[hidden]{display:none}
+/* 연봉별 표·근속연수 링크 (정적 페이지 허브) */
+.saltable details{border:1px solid var(--line); border-radius:9px; margin:0 0 8px; background:#fff}
+.saltable summary{cursor:pointer; padding:11px 14px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.saltable .res-table{margin:0}
+.saltable .res-table thead th, .saltable .res-table thead td{background:var(--bg-soft); font-size:12.5px; color:var(--navy)}
+.saltable .res-table a{color:var(--accent); text-decoration:none}
+.yearlinks{display:flex; flex-wrap:wrap; gap:6px}
+.yearlinks a{padding:6px 11px; border:1px solid var(--line); border-radius:999px; font-size:13px; font-weight:600;
+  color:#475467; text-decoration:none; background:#fff}
+.yearlinks a:hover{border-color:var(--navy); color:var(--navy)}
 
 @media (max-width:900px){ .calc-2col{grid-template-columns:1fr} .calc-2col .sticky{position:static} }
 @media (max-width:640px){ .fld2{grid-template-columns:1fr} .res-hero .v{font-size:27px}
@@ -832,7 +842,6 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 
   <h2 class="sec" style="font-size:17px">이렇게 계산합니다</h2>
   <ol class="howto">    <li>입사 1년 미만일 때는 <b>1개월 개근마다 1일</b>씩, 최대 11일이 생깁니다.</li>    <li>입사 1년이 되는 날 <b>15일</b>이 한꺼번에 생깁니다(출근율 80% 이상).</li>    <li>근속 3년째부터 <b>2년마다 1일</b>씩 늘어나고, 최대 25일에서 멈춥니다.</li>    <li>회사가 회계연도 기준을 쓰면 입사 다음 해 1월 1일에 <b>첫 해 재직일수에 비례</b>해 먼저 주고, 그 뒤로는 매년 1월 1일에 발생합니다.</li>    <li>연차는 <b>발생일로부터 1년</b> 안에 써야 합니다. 기간이 지난 연차는 소멸하므로 큰 숫자에는 <b>지금 쓸 수 있는 연차</b>만 넣고, 지나간 발생분은 아래 표에 회색으로 표시합니다.</li>    <li>남은 연차에 <b>1일 통상임금</b>(월 통상임금 ÷ 209 × 8)을 곱하면 미사용 연차수당입니다.</li>  </ol>
-
   <h2 class="sec" style="font-size:17px">자주 묻는 질문</h2>
   <div class="faq">    <details open>
       <summary>입사일 기준과 회계연도 기준 중 어느 쪽이 맞나요?</summary>
@@ -1076,7 +1085,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <p style="margin:8px 0 0">회원가입 없이 업무·법률·공공·생활 서식을<br>PDF · Word · 한글 형식으로 무료 다운로드.</p>
         <p style="margin:10px 0 0"><a href="/request/"><strong>찾는 서식이 없나요? 요청하기 →</strong></a></p>
         <p style="margin:6px 0 0"><a href="/tools/"><strong>직장인 도구</strong></a><span class="fsep" aria-hidden="true">|</span><a href="/tools/stamp/">도장·서명 만들기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/salary/">실수령액 계산기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/severance/">퇴직금 계산기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/annual-leave/">연차 계산기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/retirement-tax/">퇴직소득세 계산기</a></p>
-        <p style="margin:6px 0 0"><a href="/about/">사이트 소개</a><span class="fsep" aria-hidden="true">|</span><a href="/rss.xml">RSS 구독</a></p>
+        <p style="margin:6px 0 0"><a href="/guide/"><strong>가이드</strong></a><span class="fsep" aria-hidden="true">|</span><a href="/about/">사이트 소개</a><span class="fsep" aria-hidden="true">|</span><a href="/rss.xml">RSS 구독</a></p>
       </div>
       <div style="flex:1 1 420px">
         <strong>카테고리</strong>

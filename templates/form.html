@@ -155,6 +155,14 @@
       </div>
       {%- endif %}
 
+      {#- 이 서식을 연결한 가이드. 모음 줄과 같은 모양이라 화면 구성은 바뀌지 않는다. #}
+      {%- if form_guides %}
+      <div class="incol">
+        <span>쓰기 전에 읽어 보세요</span>
+        {%- for gd in form_guides %}<a href="{{ gd.path }}">{{ gd.title }}</a>{% endfor %}
+      </div>
+      {%- endif %}
+
       {{ slot(ads, "detail_body") }}
     </div>
   </div>

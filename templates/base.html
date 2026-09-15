@@ -728,7 +728,7 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
         <p style="margin:10px 0 0"><a href="/request/"><strong>찾는 서식이 없나요? 요청하기 →</strong></a></p>
         <p style="margin:6px 0 0"><a href="/tools/"><strong>직장인 도구</strong></a>
           {%- for t in tools %}<span class="fsep" aria-hidden="true">|</span><a href="{{ t.path }}">{{ t.short }}</a>{% endfor %}</p>
-        <p style="margin:6px 0 0"><a href="/about/">사이트 소개</a><span class="fsep" aria-hidden="true">|</span><a href="/rss.xml">RSS 구독</a></p>
+        <p style="margin:6px 0 0">{% if guides_count %}<a href="/guide/"><strong>가이드</strong></a><span class="fsep" aria-hidden="true">|</span>{% endif %}<a href="/about/">사이트 소개</a><span class="fsep" aria-hidden="true">|</span><a href="/rss.xml">RSS 구독</a></p>
       </div>
       <div style="flex:1 1 420px">
         <strong>카테고리</strong>

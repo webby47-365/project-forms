@@ -93,6 +93,16 @@ def collect_urls(forms: list[dict[str, Any]], site_url: str,
         import build_site  # noqa: PLC0415 — 도구 목록을 한 곳(TOOLS)에서만 관리한다
         urls.append(f"{site_url}/tools/")
         urls += [f"{site_url}{t['path']}" for t in getattr(build_site, "TOOLS", [])]
+        # 연봉별(131)·근속별(30) 정적 페이지와 가이드. 목록 정의를 그대로 따라간다.
+        import build_salary_pages as sp  # noqa: PLC0415
+        urls += [f"{site_url}/tools/salary/{m}/" for m in sp.SALARY_STEPS_MAN]
+        urls += [f"{site_url}/tools/severance/{y}/" for y in sp.SEVERANCE_PAGE_YEARS]
+        gdir = ROOT / "guides"
+        if gdir.exists():
+            slugs = sorted(p.stem for p in gdir.glob("*.yaml"))
+            if slugs:
+                urls.append(f"{site_url}/guide/")
+                urls += [f"{site_url}/guide/{x}/" for x in slugs]
     else:
         # 새 서식이 걸린 분류 페이지와 메인도 함께 (목록에 새 항목이 추가되므로)
         subs = {f"{f['category']}/{f['subcategory']}" for f in targets}
@@ -139,11 +149,27 @@ def main() -> int:
     g.add_argument("--recent", type=int, metavar="N", help="최근 등록·수정된 N종")
     g.add_argument("--ids", help="쉼표로 구분한 서식 id")
     g.add_argument("--all", action="store_true", help="전 페이지 (처음 한 번만)")
+    g.add_argument("--paths", help="쉼표로 구분한 사이트 경로 (예: /guide/resignation-process/,/guide/)")
     ap.add_argument("--dry-run", action="store_true", help="보내지 않고 목록만 출력")
     args = ap.parse_args()
 
     site_url, key = load_settings()
     forms = load_catalog()
+
+    if args.paths:
+        # 서식이 아닌 페이지(가이드 등)를 따로 통보할 때. 경로만 받아 사이트 주소를 붙인다.
+        urls = [f"{site_url}{x.strip() if x.strip().startswith('/') else '/' + x.strip()}"
+                for x in args.paths.split(",") if x.strip()]
+        urls = list(dict.fromkeys(urls))[:MAX_URLS]
+        print(f"[IndexNow] 대상 {len(urls)}건")
+        for u in urls:
+            print("   ", u)
+        if args.dry_run or not urls:
+            return 0
+        if not key_file_ok(site_url, key):
+            print("        배포가 끝난 뒤에 실행해야 합니다(키 파일이 사이트에 있어야 함).")
+            return 1
+        return submit(site_url, key, urls)
 
     if args.all:
         mode, recent, ids = "all", 0, []

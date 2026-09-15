@@ -1,5 +1,7 @@
 # 사이트 생성(Cloudflare Pages 빌드)에 필요한 패키지
 jinja2>=3.1
+# 정보형 가이드(guides/*.yaml) 읽기. 없으면 가이드만 건너뛴다
+pyyaml>=6.0
 
 # 서식 생성에 추가로 필요한 패키지 (로컬·에이전트 환경에서만 사용)
 # python-docx>=1.1

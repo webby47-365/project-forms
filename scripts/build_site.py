@@ -22,6 +22,10 @@ from typing import Any
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import build_salary_pages as salary_pages  # noqa: E402 — 연봉별·근속별 정적 페이지
+import guides as guide_mod  # noqa: E402 — 정보형 가이드(/guide/)
+
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = ROOT / "templates"
 PUBLIC = ROOT / "public"
@@ -809,6 +813,18 @@ def build() -> int:
         "contact_email": CONTACT_EMAIL,
         "privacy_effective": PRIVACY_EFFECTIVE,
     }
+    # 정보형 가이드 — 서식 상세의 '쓰기 전에 읽어 보세요' 줄에도 쓰므로 서식보다 먼저 읽는다.
+    #  오류가 난 가이드만 빼고 계속한다(무인 배포 보호). 배포 게이트는 validate_catalog.py 가 맡는다.
+    guides, guide_errors = guide_mod.load_guides(
+        set(by_id), {t["path"] for t in tools_active} | {"/tools/"})
+    for msg in guide_errors:
+        print(f"[사이트] 알림: {msg} — 이 가이드는 건너뜁니다")
+    guides_by_form: dict[str, list[dict[str, Any]]] = {}
+    for g in guides:
+        for fid in g["forms"]:
+            guides_by_form.setdefault(fid, []).append(g)
+    common["guides_count"] = len(guides)   # 푸터 '가이드' 링크 노출 여부
+
     interstitial = bool(ads["download_interstitial"])
     dl_map = {f["id"]: download_urls(f["id"], interstitial) for f in forms}
     name_map = {
@@ -985,6 +1001,7 @@ def build() -> int:
                   related=related, kb=kb, jsonld=jsonld, faq_jsonld=faq_jsonld,
                   series_forms=series.get(f.get("series", ""), []),
                   my_collections=in_collections.get(f["id"], []),
+                  form_guides=guides_by_form.get(f["id"], [])[:3],
                   dl=dl_map[f["id"]], dl_map=dl_map, names=name_map[f["id"]], name_map=name_map, **common,
               ))
         pages += 1
@@ -1201,6 +1218,8 @@ def build() -> int:
     #        실수령액은 간이세액표(catalog/tax_table_2026.json)가 있어야 정확하므로,
     #        표가 없으면 그 페이지만 건너뛴다(퇴직금·연차는 표와 무관하다).
     rates = load_rates()
+    tax_table = salary_pages.load_table(rates, TAX_TABLE)
+    salary_table = salary_pages.salary_rows(rates, tax_table) if tax_table else []
     if not rates:
         print("[사이트] 알림: catalog/rates_2026.json 이 없어 계산기 페이지를 만들지 않았습니다.")
     else:
@@ -1246,9 +1265,88 @@ def build() -> int:
                       }),
                       calc=calc, rates=rates, rates_json=rates_json,
                       default_join=default_join, related=calc_related,
+                      salary_table=salary_table,
+                      severance_years=(salary_pages.SEVERANCE_PAGE_YEARS if tax_table else []),
                       dl_map=dl_map, name_map=name_map, **common,
                   ))
             pages += 1
+
+    # 3-7-2) 연봉별 실수령액(/tools/salary/<만원>/)·근속별 퇴직금(/tools/severance/<년>/) 정적 페이지.
+    #        검색어가 금액·연수마다 갈리므로 빌드 때 계산해 숫자가 박힌 HTML 로 낸다.
+    extra_urls: list[tuple[str, str, str]] = []
+    if rates and tax_table:
+        n, u = salary_pages.build_salary_pages(
+            public=PUBLIC, env=env, common=common, rates=rates, table=tax_table, by_id=by_id,
+            dl_map=dl_map, name_map=name_map, write=write, jd=jd, breadcrumb_ld=breadcrumb_ld,
+            site_name=SITE_NAME)
+        pages += n
+        extra_urls += u
+    else:
+        print("[사이트] 알림: 요율·간이세액표가 없어 연봉별·근속별 페이지를 만들지 않았습니다.")
+
+    # 3-8) 정보형 가이드 — 허브(/guide/)와 가이드별 페이지. 가이드가 0편이면 허브도 만들지 않는다.
+    guide_dir = PUBLIC / "guide"
+    if guide_dir.exists():
+        shutil.rmtree(guide_dir)   # 내린(retired)·이름 바뀐 가이드의 옛 페이지가 남지 않게
+    if guides:
+        tool_by_path = {t["path"]: t for t in tools_active}
+        gtpl = env.get_template("guide.html")
+        for g in guides:
+            same = [x for x in guides if x["slug"] != g["slug"] and x["group"] == g["group"]]
+            other = [x for x in guides if x["slug"] != g["slug"] and x["group"] != g["group"]]
+            write(guide_dir / g["slug"] / "index.html", gtpl.render(
+                mode="detail",
+                page_title=f"{g['title']} — {SITE_NAME}",
+                page_desc=g["description"],
+                canonical=g["path"],
+                og_type="article",
+                breadcrumb_jsonld=breadcrumb_ld([("홈", "/"), ("가이드", "/guide/"), (g["title"], g["path"])]),
+                jsonld=jd({
+                    "@context": "https://schema.org",
+                    "@type": "Article",
+                    "headline": g["title"],
+                    "description": g["description"],
+                    "abstract": guide_mod.plain(g["summary"]),
+                    "keywords": ", ".join(g["keywords"]),
+                    "inLanguage": "ko",
+                    "datePublished": g["created_at"],
+                    "dateModified": g["updated_at"],
+                    "url": f"{SITE_URL}{g['path']}",
+                    "mainEntityOfPage": f"{SITE_URL}{g['path']}",
+                    "image": f"{SITE_URL}/og-default.png",
+                    "author": {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": SITE_NAME},
+                    "publisher": {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": SITE_NAME},
+                    "isPartOf": {"@type": "WebSite", "@id": f"{SITE_URL}/#website", "name": SITE_NAME},
+                    "citation": [x["url"] for x in g["sources"]],
+                    "mentions": [{"@type": "DigitalDocument", "name": by_id[i]["title"],
+                                  "url": f"{SITE_URL}/form/{i}/"} for i in g["forms"]],
+                }),
+                faq_jsonld=jd({
+                    "@context": "https://schema.org", "@type": "FAQPage",
+                    "mainEntity": [{"@type": "Question", "name": x["q"],
+                                    "acceptedAnswer": {"@type": "Answer", "text": x["a"]}}
+                                   for x in g["faq_plain"]],
+                }),
+                g=g, forms=[by_id[i] for i in g["forms"]],
+                tools_linked=[tool_by_path[t] for t in (g.get("tools") or []) if t in tool_by_path],
+                siblings=(same + other)[:4],
+                dl_map=dl_map, name_map=name_map, **common,
+            ))
+            pages += 1
+            extra_urls.append((g["path"], g["updated_at"], "0.7"))
+        groups = [{**grp, "items": [g for g in guides if g["group"] == grp["key"]]}
+                  for grp in guide_mod.GUIDE_GROUPS]
+        write(guide_dir / "index.html", gtpl.render(
+            mode="hub",
+            page_title=f"서식·직장생활 가이드 — 퇴사 절차·연차수당·계약 체크리스트 | {SITE_NAME}",
+            page_desc=(f"퇴사 절차, 연차수당 계산, 근로계약서·차용증 작성법, 전월세 계약 전 확인사항 등 "
+                       f"서식을 쓰기 전에 알아야 할 기준 {len(guides)}편. 글마다 바로 쓰는 무료 서식을 연결했습니다."),
+            canonical="/guide/",
+            breadcrumb_jsonld=breadcrumb_ld([("홈", "/"), ("가이드", "/guide/")]),
+            groups=groups, dl_map=dl_map, name_map=name_map, **common,
+        ))
+        pages += 1
+        extra_urls.insert(0, ("/guide/", max(g["updated_at"] for g in guides), "0.7"))
 
     # 3-2) 정책 페이지 — 애드센스 심사는 쿠키 사용 고지를 요구한다
     write(PUBLIC / "privacy" / "index.html", env.get_template("privacy.html").render(
@@ -1307,6 +1405,7 @@ def build() -> int:
              ("/request/", today, "0.5"),
              ("/tools/", TOOLS_UPDATED, "0.7")]
     urls += [(t["path"], TOOLS_UPDATED, "0.8") for t in tools_active]
+    urls += extra_urls
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -1370,6 +1469,13 @@ def build() -> int:
           f"- [개인정보처리방침]({SITE_URL}/privacy/)", "",
           "## 직장인 도구 (브라우저 안에서만 동작, 입력값 서버 전송 없음)", "",
           *[f"- [{t['name']}]({SITE_URL}{t['path']}): {t['desc']}" for t in tools_active], "",
+          *([f"- [연봉별 실수령액 표]({SITE_URL}/tools/salary/#salary-table): 연봉 2,000만~1억 5,000만원 "
+              f"100만원 단위 페이지 (예: {SITE_URL}/tools/salary/4000/)",
+              f"- [근속연수별 퇴직금]({SITE_URL}/tools/severance/10/): 근속 1~30년 월급 구간별 퇴직금·퇴직소득세", ""]
+            if rates and tax_table else []),
+          *((["## 가이드 (서식을 쓰기 전에 알아야 할 절차와 기준)", ""]
+             + [f"- [{g['title']}]({SITE_URL}{g['path']}): {guide_mod.plain(g['summary'])}" for g in guides]
+             + [""]) if guides else []),
           "## 분야별 서식", ""]
     for c in categories:
         for s in c["subcategories"]:

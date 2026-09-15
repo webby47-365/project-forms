@@ -16,6 +16,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -124,12 +125,49 @@ def main() -> int:
         warns.append(f"public 폴더 파일 수 {total_files}개 — Cloudflare 한도의 80%를 넘었습니다. "
                      f"파일을 R2로 이관할 시점입니다.")
 
+    # 8) 정보형 가이드(guides/*.yaml) — 규칙 위반은 배포 중단. 빌드는 해당 가이드만 빼고 지나가므로
+    #    여기서 막지 않으면 "글을 썼는데 사이트에 안 나오는" 상태로 조용히 배포된다.
+    import guides as guide_mod  # noqa: PLC0415
+    try:
+        import build_site  # noqa: PLC0415
+        tool_paths = {t["path"] for t in build_site.TOOLS} | {"/tools/"}
+    except ImportError as exc:
+        tool_paths = set()
+        warns.append(f"도구 목록을 읽지 못해 가이드의 tools 검사를 건너뜁니다 — {exc}")
+    guide_list, guide_errors = guide_mod.load_guides(set(items), tool_paths, strict=True)
+    if not tool_paths:
+        guide_errors = [e for e in guide_errors if "도구 경로" not in e]
+    errors += guide_errors
+    for g in guide_list:
+        if not (PUBLIC / "guide" / g["slug"] / "index.html").exists():
+            errors.append(f"[가이드] {g['slug']}: public/guide/{g['slug']}/ 가 없습니다 — build_site.py 를 먼저 실행하십시오.")
+
+    # 9) 구조화 데이터(JSON-LD) 파싱 — 2026-09-14 이스케이프 사고(전 페이지 JSON-LD 무효) 재발 방지.
+    #    사람 눈에는 멀쩡해 보이므로 반드시 파서로 확인한다.
+    ld_re = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+    ld_blocks = 0
+    for html_path in PUBLIC.rglob("*.html"):
+        if "download" in html_path.parts:
+            continue
+        text = html_path.read_text(encoding="utf-8", errors="replace")
+        for m in ld_re.finditer(text):
+            body = m.group(1).strip()
+            if not body:
+                continue
+            ld_blocks += 1
+            try:
+                json.loads(body)
+            except json.JSONDecodeError as exc:
+                errors.append(f"JSON-LD 파싱 실패: {html_path.relative_to(PUBLIC)} — {exc}")
+                break
+
     # 결과 출력
     for w in warns:
         print(f"[경고] {w}")
     for e in errors:
         print(f"[오류] {e}")
-    print(f"\n서식 {len(items)}종 · 배포 파일 {total_files}개 · 경고 {len(warns)}건 · 오류 {len(errors)}건")
+    print(f"\n서식 {len(items)}종 · 가이드 {len(guide_list)}편 · JSON-LD {ld_blocks}블록 · 배포 파일 {total_files}개 · "
+          f"경고 {len(warns)}건 · 오류 {len(errors)}건")
     if errors:
         print("→ 오류를 해결해야 배포할 수 있습니다.")
         return 1

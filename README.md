@@ -192,6 +192,31 @@ python scripts\build_tax_table.py
 요율을 고칠 때는 `rates_2026.json` 의 `sources` 에 적힌 출처(복지부 보도자료·공단 안내)를 확인하고
 `updated` 날짜를 함께 고친다. 일일 에이전트에게 맡기지 않는다 — 틀리면 방문자가 바로 알아본다.
 
+### 연봉별·근속별 정적 페이지 (2026-09-15)
+
+"연봉 4000 실수령액", "10년 퇴직금" 같은 금액·연수별 검색어를 받기 위해 빌드할 때 숫자가 박힌 HTML을 만든다.
+
+| 경로 | 개수 | 내용 |
+|---|---|---|
+| `/tools/salary/<만원>/` | 131 (2,000만~1억 5,000만, 100만 단위) | 월 공제 내역 · 부양가족 수별 · 주변 연봉 비교 · 근속 6구간 퇴직금 · FAQ |
+| `/tools/severance/<년>/` | 30 (1~30년) | 월급 구간별 퇴직금·퇴직소득세·실수령 · 세금 계산 단계 · FAQ |
+| `/tools/salary/#salary-table` | 허브 | 계산기 하단 전체 표(천만원 단위 접기) |
+
+- 계산: `scripts/pay_calc.py` (calc.js 를 그대로 옮긴 파이썬 판). 요율·간이세액표가 바뀌면 다음 빌드에서 전부 자동 갱신
+- **calc.js 나 pay_calc.py 를 고치면 반드시** `python scripts\check_pay_calc.py` (Node 필요, 3,679건 원 단위 대조)
+- 금액 목록·근속 목록: `scripts/build_salary_pages.py` 상단 상수. 요율·표가 없으면 이 페이지들만 건너뛴다
+
+## 정보형 가이드 (/guide/) (2026-09-15)
+
+서식 상세(다운로드 의도)의 앞 단계인 "퇴사 절차", "연차수당 계산법" 같은 정보형 검색을 받는다.
+
+- 원고: `guides/<slug>.yaml` 1편 = 1페이지. 작성 규칙 정본 `scripts/agent/GUIDE_SPEC.md`
+- 검사: `scripts/guides.py` — 빌드는 위반 가이드만 빼고 계속, `validate_catalog.py` 는 **배포 중단 오류**
+- 연결: 가이드의 `forms` 로 지정한 서식 상세에 '쓰기 전에 읽어 보세요' 줄이 자동으로 붙는다
+- 일일 에이전트가 **서식 5종 + 가이드 1편**을 쓴다 (`daily_forms_agent.md` 5-1절)
+- 내리기: `status: retired` → 다음 빌드에서 페이지·사이트맵·서식 상세 링크가 함께 빠진다
+- 통보: `python scripts\ping_indexnow.py --paths /guide/<slug>/,/guide/`
+
 ## 설계 원칙
 
 - **정본은 로컬.** GitHub는 배포 엔진 겸 형상관리 저장소다. 에이전트가 클라우드에서

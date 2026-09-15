@@ -706,6 +706,16 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
 .nextcalc:hover{background:var(--navy); border-color:var(--navy); color:#fff}
 /* display:block 이 브라우저 기본 [hidden] 을 이기므로 명시적으로 다시 숨긴다 */
 .nextcalc[hidden]{display:none}
+/* 연봉별 표·근속연수 링크 (정적 페이지 허브) */
+.saltable details{border:1px solid var(--line); border-radius:9px; margin:0 0 8px; background:#fff}
+.saltable summary{cursor:pointer; padding:11px 14px; font-size:14.5px; font-weight:700; color:var(--navy)}
+.saltable .res-table{margin:0}
+.saltable .res-table thead th, .saltable .res-table thead td{background:var(--bg-soft); font-size:12.5px; color:var(--navy)}
+.saltable .res-table a{color:var(--accent); text-decoration:none}
+.yearlinks{display:flex; flex-wrap:wrap; gap:6px}
+.yearlinks a{padding:6px 11px; border:1px solid var(--line); border-radius:999px; font-size:13px; font-weight:600;
+  color:#475467; text-decoration:none; background:#fff}
+.yearlinks a:hover{border-color:var(--navy); color:var(--navy)}
 
 @media (max-width:900px){ .calc-2col{grid-template-columns:1fr} .calc-2col .sticky{position:static} }
 @media (max-width:640px){ .fld2{grid-template-columns:1fr} .res-hero .v{font-size:27px}
@@ -831,8 +841,9 @@ nav.main .nav-new{font-size:9.5px; font-weight:800; letter-spacing:.03em; color:
   
 
   <h2 class="sec" style="font-size:17px">이렇게 계산합니다</h2>
-  <ol class="howto">    <li>퇴직금에서 <b>근속연수공제</b>를 뺍니다. 오래 다닐수록 많이 빼 줍니다 — 5년까지는 1년에 100만원, 10년까지 200만원, 20년까지 250만원, 그 뒤로는 300만원씩입니다.</li>    <li>남은 금액을 근속연수로 나누고 12를 곱해 <b>환산급여</b>를 구합니다. 여러 해에 걸쳐 쌓인 돈을 1년치 수준으로 낮춰 세율을 매기려는 장치입니다.</li>    <li>환산급여에서 <b>환산급여공제</b>를 또 뺍니다(800만원까지는 전액, 그 위로는 60%·55%·45%·35%). 남은 금액이 과세표준입니다.</li>    <li>과세표준에 <b>기본세율</b>(6~45%)을 곱해 환산산출세액을 구하고, 다시 <b>÷12 × 근속연수</b>를 하면 퇴직소득세입니다. 여기에 그 10%가 지방소득세로 붙습니다.</li>    <li>근속연수는 <b>1년 미만이면 1년으로 올려</b> 셉니다(소득세법 제48조). 3년 2개월이면 4년입니다.</li>  </ol>
-
+  <ol class="howto">    <li>퇴직금에서 <b>근속연수공제</b>를 뺍니다. 오래 다닐수록 많이 빼 줍니다 — 5년까지는 1년에 100만원, 10년까지 200만원, 20년까지 250만원, 그 뒤로는 300만원씩입니다.</li>    <li>남은 금액을 근속연수로 나누고 12를 곱해 <b>환산급여</b>를 구합니다. 여러 해에 걸쳐 쌓인 돈을 1년치 수준으로 낮춰 세율을 매기려는 장치입니다.</li>    <li>환산급여에서 <b>환산급여공제</b>를 또 뺍니다(800만원까지는 전액, 그 위로는 60%·55%·45%·35%). 남은 금액이 과세표준입니다.</li>    <li>과세표준에 <b>기본세율</b>(6~45%)을 곱해 환산산출세액을 구하고, 다시 <b>÷12 × 근속연수</b>를 하면 퇴직소득세입니다. 여기에 그 10%가 지방소득세로 붙습니다.</li>    <li>근속연수는 <b>1년 미만이면 1년으로 올려</b> 셉니다(소득세법 제48조). 3년 2개월이면 4년입니다.</li>  </ol>  <h2 class="sec" style="font-size:17px">근속연수별 퇴직금 표</h2>
+  <p class="lead" style="margin:0 0 10px;font-size:14px">월급 구간별 퇴직금·퇴직소득세·실수령액을 근속연수마다 정리했습니다.</p>
+  <div class="yearlinks"><a href="/tools/severance/1/">1년</a><a href="/tools/severance/2/">2년</a><a href="/tools/severance/3/">3년</a><a href="/tools/severance/4/">4년</a><a href="/tools/severance/5/">5년</a><a href="/tools/severance/6/">6년</a><a href="/tools/severance/7/">7년</a><a href="/tools/severance/8/">8년</a><a href="/tools/severance/9/">9년</a><a href="/tools/severance/10/">10년</a><a href="/tools/severance/11/">11년</a><a href="/tools/severance/12/">12년</a><a href="/tools/severance/13/">13년</a><a href="/tools/severance/14/">14년</a><a href="/tools/severance/15/">15년</a><a href="/tools/severance/16/">16년</a><a href="/tools/severance/17/">17년</a><a href="/tools/severance/18/">18년</a><a href="/tools/severance/19/">19년</a><a href="/tools/severance/20/">20년</a><a href="/tools/severance/21/">21년</a><a href="/tools/severance/22/">22년</a><a href="/tools/severance/23/">23년</a><a href="/tools/severance/24/">24년</a><a href="/tools/severance/25/">25년</a><a href="/tools/severance/26/">26년</a><a href="/tools/severance/27/">27년</a><a href="/tools/severance/28/">28년</a><a href="/tools/severance/29/">29년</a><a href="/tools/severance/30/">30년</a>  </div>
   <h2 class="sec" style="font-size:17px">자주 묻는 질문</h2>
   <div class="faq">    <details open>
       <summary>퇴직소득세는 왜 이렇게 적게 나오나요?</summary>
@@ -1086,7 +1097,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <p style="margin:8px 0 0">회원가입 없이 업무·법률·공공·생활 서식을<br>PDF · Word · 한글 형식으로 무료 다운로드.</p>
         <p style="margin:10px 0 0"><a href="/request/"><strong>찾는 서식이 없나요? 요청하기 →</strong></a></p>
         <p style="margin:6px 0 0"><a href="/tools/"><strong>직장인 도구</strong></a><span class="fsep" aria-hidden="true">|</span><a href="/tools/stamp/">도장·서명 만들기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/salary/">실수령액 계산기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/severance/">퇴직금 계산기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/annual-leave/">연차 계산기</a><span class="fsep" aria-hidden="true">|</span><a href="/tools/retirement-tax/">퇴직소득세 계산기</a></p>
-        <p style="margin:6px 0 0"><a href="/about/">사이트 소개</a><span class="fsep" aria-hidden="true">|</span><a href="/rss.xml">RSS 구독</a></p>
+        <p style="margin:6px 0 0"><a href="/guide/"><strong>가이드</strong></a><span class="fsep" aria-hidden="true">|</span><a href="/about/">사이트 소개</a><span class="fsep" aria-hidden="true">|</span><a href="/rss.xml">RSS 구독</a></p>
       </div>
       <div style="flex:1 1 420px">
         <strong>카테고리</strong>

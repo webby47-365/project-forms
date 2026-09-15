@@ -89,10 +89,10 @@ jobs:
           show_full_output: true
           prompt: |
             저장소의 scripts/agent/daily_forms_agent.md 를 먼저 읽고, 그 절차를 그대로 수행하라.
-            오늘 날짜(KST) 기준으로 신규 서식을 추가하고, 검증까지 통과시킨 뒤 커밋·푸시로 마무리한다.
+            오늘 날짜(KST) 기준으로 신규 서식과 정보형 가이드 1편을 추가하고, 검증까지 통과시킨 뒤 커밋·푸시로 마무리한다.
             작업 요약은 한국어로 남긴다.
           claude_args: |
-            --max-turns 120
+            --max-turns 160
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
 
   # 워크플로 안에서 만든 푸시로는 GitHub가 다른 워크플로(deploy-pages)를 깨우지 않는다.
