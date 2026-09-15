@@ -49,6 +49,43 @@ document.addEventListener('click', function (ev) {
     form_title: card ? card.getAttribute('data-form-title') : (a.getAttribute('download') || m[1])
   });
 }, true);
+
+// 가이드 측정 3종 — 템플릿마다 속성을 달지 않고 주소(path)로 판단한다.
+// 상세의 가이드 연결 모양(A안 텍스트 줄 → C안 카드)이 바뀌어도 이 코드는 고칠 필요가 없다.
+//  guide_view         가이드 글 조회 (허브 /guide/ 는 제외)
+//  guide_to_form      가이드 글 안에서 서식 상세·파일·계산기로 이동
+//  article_card_click 서식 상세·계산기·다운로드 준비 페이지에서 가이드 글로 이동
+(function () {
+  var guideRe = /^\/guide\/([^\/]+)\/?$/;
+  var here = location.pathname;
+  var gm = here.match(guideRe);
+  if (gm) gtag('event', 'guide_view', { guide_slug: gm[1] });
+
+  document.addEventListener('click', function (ev) {
+    var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+    if (!a) return;
+    var url;
+    try { url = new URL(a.getAttribute('href'), location.href); } catch (e) { return; }
+    if (url.origin !== location.origin) return;
+    var to = url.pathname;
+    if (gm) {
+      var fm = to.match(/^\/(?:form|files)\/([^\/]+)\//);
+      var tm = to.match(/^\/tools\/([^\/]+)\//);
+      if (fm || tm) {
+        gtag('event', 'guide_to_form', {
+          guide_slug: gm[1],
+          target_type: fm ? 'form' : 'tool',
+          target_id: fm ? fm[1] : tm[1]
+        });
+      }
+      return;
+    }
+    var tg = to.match(guideRe);
+    if (tg && /^\/(?:form|tools|download)\//.test(here)) {
+      gtag('event', 'article_card_click', { guide_slug: tg[1], from_path: here });
+    }
+  }, true);
+})();
 </script>
 <style>
 :root{

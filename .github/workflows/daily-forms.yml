@@ -78,6 +78,20 @@ jobs:
           pdftoppm -v
           fc-list :lang=ko family | head -3
 
+      - name: 지표 수집 (GA4·서치콘솔)
+        # 에이전트 리포트에 붙일 지표를 먼저 뽑는다. Secrets 가 없거나 API 가 실패해도
+        # report_metrics.py 는 '지표 미연결' 한 줄만 남기고 0으로 끝난다 — 서식 생성은 계속된다.
+        # 월요일(KST)이면 주간 지표표를 함께 만든다. cron 23:00 UTC 는 KST 다음 날 08:00 이다.
+        env:
+          GA4_SA_JSON: ${{ secrets.GA4_SA_JSON }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+        run: |
+          pip install --quiet google-auth requests
+          WEEKLY=""
+          if [ "$(TZ=Asia/Seoul date +%u)" = "1" ]; then WEEKLY="--weekly"; fi
+          python scripts/report_metrics.py --out logs/_metrics_today.md $WEEKLY || echo "[지표] 수집 스크립트 오류 — 리포트는 계속"
+          if [ -f logs/_metrics_today.md ]; then cat logs/_metrics_today.md >> "$GITHUB_STEP_SUMMARY"; fi
+
       - uses: anthropics/claude-code-action@v1
         with:
           # 구독 토큰으로 인증한다 (API 별도 과금 없음).
@@ -90,7 +104,7 @@ jobs:
           prompt: |
             저장소의 scripts/agent/daily_forms_agent.md 를 먼저 읽고, 그 절차를 그대로 수행하라.
             오늘 날짜(KST) 기준으로 신규 서식과 정보형 가이드 1편을 추가하고, 검증까지 통과시킨 뒤 커밋·푸시로 마무리한다.
-            작업 요약은 한국어로 남긴다.
+            작업 요약은 한국어로 남긴다. 리포트 끝에는 logs/_metrics_today.md 내용을 그대로 붙인다(7-1절, 이 파일은 커밋하지 않는다).
           claude_args: |
             --max-turns 160
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
