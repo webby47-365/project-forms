@@ -10,6 +10,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Literal
 
+import re
+
 import yaml
 
 # 지원 블록 타입
@@ -52,6 +54,9 @@ class FormSpec:
     blocks: list[dict[str, Any]]
     source: str = "original"
     source_note: str = ""
+    # 법정·공공 서식 재현본의 원문 근거. {law, form_no, amended, url, agency, checked}
+    # 있으면 상세 화면에 근거·원문 링크·최신 확인 고지가 붙고 분기 점검의 기준값이 된다.
+    law_ref: dict[str, str] = field(default_factory=dict)
     featured: bool = False
     featured_rank: int = 99  # 메인 노출 순서 (작을수록 먼저)
     # 같은 서식의 실무 변형끼리 묶는 계열 키. 예: resume → 신입/경력/서술형 이력서
@@ -104,6 +109,9 @@ class FormSpec:
         return any(
             blk.get(k) for blk in self.blocks
             for k in ("sample_rows", "sample_text", "sample_names", "photo_cell")
+        ) or any(
+            cell.get("sample") for blk in self.blocks if blk.get("type") == "gov_table"
+            for cell in blk.get("cells") or []
         )
 
 
@@ -205,6 +213,14 @@ def outline_of(blocks: list[dict[str, Any]]) -> list[dict[str, Any]]:
         elif kind == "table":
             for cell in blk.get("header") or []:
                 add(cur, cell)
+        elif kind == "gov_table":
+            # 음영 칸(원문 라벨)의 글자를 항목으로 모은다. 음영이 없는 서식은 짧은 칸 글자를 쓴다.
+            cells = blk.get("cells") or []
+            labels = [c for c in cells if c.get("fill")] or cells
+            for cell in labels:
+                text = " ".join(str(t) for _, t in (cell.get("lines") or [])[:1])
+                if "[" not in text and "□" not in text:
+                    add(cur, text)
         elif kind == "article":
             add(cur, blk.get("heading"))
         elif kind == "textbox" and not cur["note"]:
@@ -222,6 +238,7 @@ _REQUIRED = ("id", "title", "category", "subcategory", "tags", "summary", "usage
 _VALID_TYPES = {
     "doc_title", "subtitle", "para", "grid", "table", "textbox", "kv_list",
     "article", "date_line", "sign_line", "notice", "spacer", "page_break",
+    "gov_table",  # 법정서식 재현 표 (SPEC_GUIDE 3-5절)
 }
 
 
@@ -272,6 +289,7 @@ def load_spec(path: Path) -> FormSpec:
         blocks=blocks,
         source=str(raw.get("source", "original")),
         source_note=str(raw.get("source_note", "")),
+        law_ref=_load_law_ref(path.name, raw.get("law_ref")),
         featured=bool(raw.get("featured", False)),
         featured_rank=int(raw.get("featured_rank", 99)),
         series=str(raw.get("series", "")),
@@ -288,6 +306,30 @@ def load_spec(path: Path) -> FormSpec:
         status=str(raw.get("status", "published")),
         target_pages=int(raw.get("target_pages", 0)),
     )
+
+
+LAW_REF_REQUIRED = ("law", "form_no", "amended", "url")
+
+
+def _load_law_ref(fname: str, raw: Any) -> dict[str, str]:
+    """법정서식 원문 근거(law_ref)를 읽는다. 없으면 빈 dict.
+
+    Raises:
+        SpecError: 매핑이 아니거나 필수 키(law·form_no·amended·url)가 빠진 경우.
+    """
+    if raw is None:
+        return {}
+    if not isinstance(raw, dict):
+        raise SpecError(f"{fname}: law_ref는 매핑이어야 합니다.")
+    ref = {str(k): str(v).strip() for k, v in raw.items() if v is not None}
+    missing = [k for k in LAW_REF_REQUIRED if not ref.get(k)]
+    if missing:
+        raise SpecError(f"{fname}: law_ref 필수 키 누락 — {', '.join(missing)}")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", ref["amended"]):
+        raise SpecError(f"{fname}: law_ref.amended는 YYYY-MM-DD 형식 (현재: {ref['amended']})")
+    if not ref["url"].startswith("https://"):
+        raise SpecError(f"{fname}: law_ref.url은 https:// 로 시작해야 합니다.")
+    return ref
 
 
 def _load_howto(fname: str, raw: Any) -> list[str]:

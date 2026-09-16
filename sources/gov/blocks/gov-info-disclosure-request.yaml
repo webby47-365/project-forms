@@ -1,0 +1,164 @@
+blocks:
+- {type: para, text: '■ 공공기관의 정보공개에 관한 법률 시행규칙 [별지 제1호의2서식] <개정 2024. 9. 13.>', align: left, size: 7.2, space_after: 0, line_spacing: 1.0}
+- {type: doc_title, text: 정보공개 청구서, spaced: false}
+- {type: spacer, exact: true, height_pt: 14.2}
+- {type: para, text: ※ 정보공개시스템(www.open.go.kr)에서도 청구할 수 있습니다., align: left, size: 7.2, space_after: 0, line_spacing: 1.0}
+- {type: spacer, exact: true, height_pt: 5.2}
+- {type: para, text: ※ 색상이 어두운 칸은 신청인(대리인)이 작성하지 않습니다., align: left, size: 7.2, space_after: 0, line_spacing: 1.0}
+- type: gov_table
+  widths: [30.89, 25.954, 43.156]
+  heights_mm: [5.29]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [l, 접수번호]
+    size: 8.1
+    fill: true
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 접수일]
+    size: 8.1
+    fill: true
+  - at: [0, 2, 1, 1]
+    lines:
+    - [l, 처리기간]
+    size: 8.1
+    fill: true
+- {type: spacer, exact: true, height_pt: 4.9}
+- type: gov_table
+  widths: [11.992, 47.794, 40.214]
+  heights_mm: [10.1, 10.06, 10.1, 10.06]
+  cells:
+  - at: [0, 0, 4, 1]
+    lines:
+    - [c, 청구인]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 성명(법인ㆍ단체명 및 대표자 성명)]
+    size: 8.1
+  - at: [0, 2, 1, 1]
+    lines:
+    - [l, 생년월일(성별)]
+    - [l, ( )]
+    size: 8.7
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, 여권ㆍ외국인등록번호(외국인의 경우 작성)]
+    size: 8.5
+  - at: [1, 2, 1, 1]
+    lines:
+    - [l, 사업자(법인ㆍ단체)등록번호]
+    size: 8.5
+  - at: [2, 1, 1, 1]
+    lines:
+    - [l, 주소(소재지)]
+    size: 8.1
+  - at: [2, 2, 1, 1]
+    lines:
+    - [l, 전화번호(또는 휴대전화번호)]
+    size: 8.1
+  - at: [3, 1, 1, 1]
+    lines:
+    - [l, 전자우편주소]
+    size: 9.0
+  - at: [3, 2, 1, 1]
+    lines:
+    - [l, 팩스번호]
+    size: 9.0
+- type: gov_table
+  widths: [11.992, 88.008]
+  heights_mm: [12.31]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 청구 내용]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+- type: gov_table
+  widths: [11.992, 88.008]
+  heights_mm: [7.02]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 공개 방법]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, '[ ]열람ㆍ시청 [ ]사본ㆍ출력물 [ ]전자파일 [ ]복제ㆍ인화물  [ ]기타(    )']
+    size: 9.0
+- type: gov_table
+  widths: [11.992, 88.008]
+  heights_mm: [7.02]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 수령 방법]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, '[ ]직접 방문 [ ]우편    [ ]팩스 전송 [ ]정보통신망   [ ]전자우편 등(    )']
+    size: 9.0
+- type: gov_table
+  widths: [11.992, 88.008]
+  heights_mm: [6.68, 18.86, 30.26]
+  cells:
+  - at: [0, 0, 2, 1]
+    lines:
+    - [c, 수수료]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, '[ ]감면 대상임        [ ]감면 대상 아님']
+    size: 9.0
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, 감면 사유]
+    - [l, '※ 「공공기관의 정보공개에 관한 법률 시행령」 제17조제3항에 따라 수수료 감면 대상에 해당하는 경우에만 적으며, 감면 사유를 증명할 수 있는 서류를 첨부하시기 바랍니다.']
+    size: 7.2
+  - at: [2, 0, 1, 2]
+    lines:
+    - [l, 「공공기관의 정보공개에 관한 법률」 제10조제1항 및 같은 법 시행령 제6조제1항에 따라 위와 같이 정 보의 공개를 청구합니다.]
+    - [r, 년   월   일]
+    - [r, 청구인            (서명 또는 인)]
+    - [l, (접수 기관의 장) 귀하]
+    size: 9.0
+- {type: para, text: 접 수 증, align: center, size: 11.7, space_after: 0, line_spacing: 1.0}
+- type: gov_table
+  widths: [42.184, 57.816]
+  heights_mm: [4.99, 4.99, 31.61, 5.98, 48.0]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [l, 접수번호]
+    size: 9.0
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 청구인 성명]
+    size: 9.0
+  - at: [1, 0, 1, 1]
+    lines:
+    - [l, 접수부서]
+    size: 9.0
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, 접수자 성명            (서명 또는 인)]
+    size: 7.2
+  - at: [2, 0, 1, 2]
+    lines:
+    - [l, 귀하의 청구서는 위와 같이 접수되었습니다.]
+    - [r, 년   월   일]
+    - [c, 접 수 기 관 장 직인]
+    size: 9.0
+  - at: [3, 0, 1, 2]
+    lines:
+    - [c, 유 의 사 항]
+    size: 9.9
+    fill: true
+  - at: [4, 0, 1, 2]
+    lines:
+    - [l, 1. 공개 청구된 공개 대상 정보의 전부 또는 일부가 제3자와 관련이 있다고 인정되는 경우에는 「공공기관의 정보공개 에 관한 법률」 제11조제3항에 따라 청구사실이 제3자에게 통지됩니다.]
+    - [l, '2. 정보공개를 청구한 날로부터 20일이 경과하도록 정보공개 결정이 없는 경우에는 「공공기관의 정보공개에 관한 법률」 제18조부터 제20조까지의 규정에 따라 해당 공공기관에 이의신청을 하거나, 행정심판(서면 또는 온라인 : www.simpan.go.kr) 또는 행정소송을 제기할 수 있습니다.']
+    - [l, 3. 청구인은 정보공개시스템 및 다른 시스템과의 연계를 통해 통지된 문서를 대외적으로 활용하기 위해 필요한 경우 직인날인의 보완을 요구할 수 있습니다.]
+    - [l, 4. 본인확인이 필요한 정보를 청구하는 경우「공공기관의 정보공개에 관한 법률」 제10조제1항제2호에 따라 공공기 관에서 청구인의 주민등록번호를 추가로 요구할 수 있습니다.]
+    size: 9.0

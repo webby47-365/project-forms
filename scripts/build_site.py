@@ -975,6 +975,9 @@ def build() -> int:
             "dateModified": form_date(f, "updated_at"),
             "isPartOf": {"@type": "WebSite", "@id": f"{SITE_URL}/#website", "name": SITE_NAME},
             "publisher": {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": SITE_NAME},
+            # 법정서식 재현본은 원문 서식을 근거로 밝힌다(생성형 검색이 출처를 인용할 수 있게)
+            **({"isBasedOn": {"@type": "Legislation", "name": f["law_ref"]["law"],
+                              "url": f["law_ref"]["url"]}} if f.get("law_ref") else {}),
         })
         # FAQ 구조화 데이터 — 검색결과에 질문이 함께 노출될 수 있다(노출 여부는 구글이 정한다).
         faq_jsonld = ""

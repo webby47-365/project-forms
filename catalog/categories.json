@@ -32,7 +32,13 @@
       "order": 3,
       "subcategories": [
         { "key": "civil", "name": "민원·신고", "folder": "민원·신고" },
-        { "key": "consent", "name": "신청·동의", "folder": "신청·동의" }
+        { "key": "consent", "name": "신청·동의", "folder": "신청·동의" },
+        { "key": "family", "name": "가족·주민등록", "folder": "가족·주민등록" },
+        { "key": "tax", "name": "세금·사업자", "folder": "세금·사업자" },
+        { "key": "insurance", "name": "4대보험·고용", "folder": "4대보험·고용" },
+        { "key": "procure", "name": "조달·입찰", "folder": "조달·입찰" },
+        { "key": "vehicle", "name": "자동차·교통", "folder": "자동차·교통" },
+        { "key": "permit", "name": "인허가·영업신고", "folder": "인허가·영업신고" }
       ]
     },
     {

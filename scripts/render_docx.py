@@ -69,6 +69,7 @@ def _para(
     prefix: tuple[str, str] | None = None,
     rule: str | None = None,
     rule_size: int = 12,
+    line_spacing: float = 1.3,
 ) -> Any:
     """문단 추가.
 
@@ -86,7 +87,7 @@ def _para(
     pf = p.paragraph_format
     pf.space_after = Pt(space_after * _SCALE)
     pf.space_before = Pt(space_before * _SCALE)
-    pf.line_spacing = 1.3
+    pf.line_spacing = line_spacing
     if indent_mm:
         pf.left_indent = Mm(indent_mm)
     if prefix is not None:
@@ -333,6 +334,148 @@ def render_docx(spec: FormSpec, out_path: Path, *, scale: float = 1.0,
     return out_path
 
 
+
+# ── 법정서식 재현 표(gov_table) ─────────────────────────────────────────────
+# 원문 PDF의 선 격자를 그대로 옮긴 표. 셀마다 위치·병합·줄별 정렬을 가진다(SPEC_GUIDE 3-5절).
+GOV_PAD_MM = 0.8  # 셀 좌우 안쪽 여백 — 원문 칸이 좁아 기본 여백(1.9mm)이면 글자가 줄바꿈된다
+
+
+def _gov_font_scale() -> float:
+    """법정서식 재현본은 원문 쪽수를 지키는 것이 우선이라, 간격 축소가 모자라면 글자도 조금 줄인다.
+
+    일반 서식의 '글자 크기는 건드리지 않는다' 원칙의 예외다. 배율 0.8 → 글자 90%.
+    """
+    return min(1.0, 0.5 + 0.5 * _SCALE)
+
+
+def _gov_grid(table: Any, widths_mm: list[float]) -> None:
+    """tblGrid 의 gridCol 폭을 실제 폭으로 고친다.
+
+    LibreOffice 는 고정 레이아웃에서 셀 폭(tcW)보다 격자(tblGrid)를 먼저 보므로,
+    이것을 고치지 않으면 열 폭이 모두 같게 그려진다(2026-09-15 식별 결함).
+    """
+    grid = table._tbl.tblGrid
+    for col, w in zip(grid.findall(qn("w:gridCol")), widths_mm):
+        col.set(qn("w:w"), str(int(w * 56.7)))
+    tbl_pr = table._tbl.tblPr
+    mar = OxmlElement("w:tblCellMar")
+    for side, val in (("left", GOV_PAD_MM), ("right", GOV_PAD_MM), ("top", 0), ("bottom", 0)):
+        el = OxmlElement(f"w:{side}")
+        el.set(qn("w:w"), str(int(val * 56.7)))
+        el.set(qn("w:type"), "dxa")
+        mar.append(el)
+    tbl_pr.append(mar)
+
+
+def _gov_no_border(cell: Any) -> None:
+    """원문에서 선이 없는 자리(표 밖 여백 칸)의 테두리를 지운다."""
+    tc_pr = cell._tc.get_or_add_tcPr()
+    borders = OxmlElement("w:tcBorders")
+    for edge in ("top", "left", "bottom", "right"):
+        el = OxmlElement(f"w:{edge}")
+        el.set(qn("w:val"), "nil")
+        borders.append(el)
+    tc_pr.append(borders)
+
+
+def _gov_tiny_mark(cell: Any) -> None:
+    """빈 칸의 문단이 기본 글자 크기(10.5pt) 높이를 먹어 행이 부푸는 것을 막는다."""
+    p = cell.paragraphs[0]
+    p_pr = p._p.get_or_add_pPr()
+    spacing = OxmlElement("w:spacing")
+    spacing.set(qn("w:before"), "0")
+    spacing.set(qn("w:after"), "0")
+    spacing.set(qn("w:line"), "20")
+    spacing.set(qn("w:lineRule"), "exact")
+    p_pr.append(spacing)
+    r_pr = OxmlElement("w:rPr")
+    sz = OxmlElement("w:sz")
+    sz.set(qn("w:val"), "2")
+    r_pr.append(sz)
+    p_pr.append(r_pr)
+
+
+def _gov_cell(cell: Any, spec: dict[str, Any]) -> None:
+    """gov_table 셀 1개를 채운다. lines = [[정렬(l|c|r), 글자], ...]."""
+    size = float(spec.get("size", 9.0)) * _gov_font_scale()
+    bold = bool(spec.get("bold", False))
+    lines = [list(x) for x in (spec.get("lines") or [])]
+    sample = spec.get("sample") if _SAMPLE else None
+    if sample:
+        lines.append(["l", str(sample)])
+    if not lines:
+        lines = [["l", ""]]
+    for p in cell.paragraphs[1:]:
+        p._element.getparent().remove(p._element)
+    align_map = {"l": WD_ALIGN_PARAGRAPH.LEFT, "c": WD_ALIGN_PARAGRAPH.CENTER,
+                 "r": WD_ALIGN_PARAGRAPH.RIGHT}
+    for i, (al, text) in enumerate(lines):
+        p = cell.paragraphs[0] if i == 0 else cell.add_paragraph()
+        p.alignment = align_map.get(al, WD_ALIGN_PARAGRAPH.LEFT)
+        pf = p.paragraph_format
+        pf.space_after = Pt(0)
+        pf.space_before = Pt(0)
+        pf.line_spacing = 1.0
+        is_sample = bool(sample) and i == len(lines) - 1
+        run = p.add_run(str(text))
+        _set_font(run, size, bold=bold and not is_sample,
+                  color=SAMPLE_TEXT if is_sample else (LABEL_TEXT if spec.get("fill") else None))
+    _cell_borders(cell)
+    if spec.get("fill"):
+        _shade_cell(cell, LABEL_FILL)
+    v = OxmlElement("w:vAlign")
+    v.set(qn("w:val"), {"t": "top", "b": "bottom"}.get(spec.get("valign", "m"), "center"))
+    cell._tc.get_or_add_tcPr().append(v)
+
+
+def _render_gov_table(doc: Any, blk: dict[str, Any]) -> None:
+    """gov_table 블록을 그린다."""
+    widths = pct_to_mm(blk["widths"])
+    heights = [float(h) for h in blk["heights_mm"]]
+    n_rows, n_cols = len(heights), len(widths)
+    table = _new_table(doc, n_rows, n_cols, widths)
+    _gov_grid(table, widths)
+    covered = [[False] * n_cols for _ in range(n_rows)]
+    cells = blk.get("cells") or []
+    for spec in cells:
+        r, c, rs, cs = (int(v) for v in spec["at"])
+        for rr in range(r, min(r + rs, n_rows)):
+            for cc in range(c, min(c + cs, n_cols)):
+                covered[rr][cc] = True
+    for r in range(n_rows):
+        for c in range(n_cols):
+            if not covered[r][c]:
+                _gov_no_border(table.cell(r, c))
+                _gov_tiny_mark(table.cell(r, c))
+        _row_height(table, r, heights[r])
+    for spec in cells:
+        r, c, rs, cs = (int(v) for v in spec["at"])
+        r2, c2 = min(r + rs, n_rows) - 1, min(c + cs, n_cols) - 1
+        cell = table.cell(r, c) if (r2, c2) == (r, c) else table.cell(r, c).merge(table.cell(r2, c2))
+        _gov_cell(cell, spec)
+    # 표 뒤 문단이 기본 간격을 먹지 않도록 아주 작은 문단으로 닫는다
+    _tiny_para(doc, 0)
+
+
+def _tiny_para(doc: Any, space_after_pt: float) -> None:
+    """높이가 거의 없는 빈 문단(문단 기호 글자 1pt, 줄간격 고정 1pt) + 아래 간격."""
+    p = doc.add_paragraph()
+    pf = p.paragraph_format
+    pf.space_before = Pt(0)
+    pf.space_after = Pt(max(0.0, space_after_pt))
+    p_pr = p._p.get_or_add_pPr()
+    spacing = p_pr.find(qn("w:spacing"))
+    if spacing is None:
+        spacing = OxmlElement("w:spacing")
+        p_pr.append(spacing)
+    spacing.set(qn("w:line"), "20")
+    spacing.set(qn("w:lineRule"), "exact")
+    r_pr = OxmlElement("w:rPr")
+    sz = OxmlElement("w:sz")
+    sz.set(qn("w:val"), "2")
+    r_pr.append(sz)
+    p_pr.append(r_pr)
+
 def _render_block(doc: Any, blk: dict[str, Any]) -> None:
     """블록 1개를 렌더링한다."""
     btype = blk["type"]
@@ -355,9 +498,10 @@ def _render_block(doc: Any, blk: dict[str, Any]) -> None:
         text = str(blk.get("text", ""))
         if _SAMPLE and blk.get("sample_text"):
             text = str(blk["sample_text"])
-        _para(doc, text, size=blk.get("size", 10.5),
+        _para(doc, text, size=blk.get("size", 10.5) * (_gov_font_scale() if "line_spacing" in blk else 1.0),
               align=blk.get("align", "left"), bold=blk.get("bold", False),
               space_after=blk.get("space_after", 4), indent_mm=blk.get("indent_mm", 0),
+              line_spacing=float(blk.get("line_spacing", 1.3)),
               color=SAMPLE_TEXT if (_SAMPLE and blk.get("sample_text")) else None)
 
     elif btype == "grid":
@@ -499,7 +643,13 @@ def _render_block(doc: Any, blk: dict[str, Any]) -> None:
               space_before=3, space_after=0, color=MUTED)
 
     elif btype == "spacer":
-        _para(doc, "", size=blk.get("size", 10), space_after=blk.get("height_pt", 8))
+        if blk.get("exact"):
+            _tiny_para(doc, float(blk.get("height_pt", 4)) * _SCALE)
+        else:
+            _para(doc, "", size=blk.get("size", 10), space_after=blk.get("height_pt", 8))
 
     elif btype == "page_break":
         doc.add_page_break()
+
+    elif btype == "gov_table":
+        _render_gov_table(doc, blk)

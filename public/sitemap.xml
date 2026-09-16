@@ -11,6 +11,12 @@
   <url><loc>https://freeforms.kr/category/legal/litigation/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/public/civil/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/public/consent/</loc><lastmod>2026-09-14</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/family/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/tax/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/insurance/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/procure/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/vehicle/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/permit/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/estate/lease/</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/personal/career/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/personal/life/</loc><lastmod>2026-09-14</lastmod><priority>0.6</priority></url>
@@ -43,6 +49,10 @@
   <url><loc>https://freeforms.kr/series/loan-note/</loc><lastmod>2026-09-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://freeforms.kr/series/meeting-minutes/</loc><lastmod>2026-09-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://freeforms.kr/series/business-plan/</loc><lastmod>2026-09-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://freeforms.kr/series/seal-certificate-poa/</loc><lastmod>2026-09-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://freeforms.kr/series/moving-in-report/</loc><lastmod>2026-09-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://freeforms.kr/series/info-disclosure-request/</loc><lastmod>2026-09-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://freeforms.kr/series/resident-registration-request/</loc><lastmod>2026-09-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://freeforms.kr/form/academy-attendance/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/access-pass-request/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/account-ledger/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
@@ -129,6 +139,33 @@
   <url><loc>https://freeforms.kr/form/freelance-contract/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/gift-contract/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/goods-sale-contract/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-admin-appeal/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-bid-form/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-bid-participation/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-business-closure-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-business-registration-individual/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-donation-receipt/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-food-business-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-health-voluntary-continuation/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-household-check-request/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-housing-lease-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-id-card-loss-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-info-disclosure-request/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-lease-info-request/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-mail-order-change-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-mail-order-closure-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-mail-order-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-maternity-leave-benefit/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-move-in-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-parental-leave-benefit/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-pension-exemption/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-resident-register-copy/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-seal-certificate-poa/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-seal-report/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-separation-confirmation/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-simple-substitute-payment/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-vehicle-transfer-cert/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/gov-vehicle-transfer-registration/</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/grade-report/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/guardian-consent/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/handover-report/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>

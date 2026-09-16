@@ -156,7 +156,7 @@ def _fill_cell(
     lines = text.split("\n") if text else [""]
     para.add_run(lines[0], bold=bold, size=size, font=FONT_HWP, color=color)
     for extra in lines[1:]:
-        nxt = cell.add_paragraph("", include_run=False)
+        nxt = cell.add_paragraph("")
         nxt.para_pr_id_ref = para.para_pr_id_ref
         nxt.add_run(extra, bold=bold, size=size, font=FONT_HWP, color=color)
     table.set_cell_borders(r, c, color=BORDER_COLOR)
@@ -198,6 +198,65 @@ def _sync_table_height(table: Any) -> None:
         sz.set("height", str(total))
 
 
+
+# ── 법정서식 재현 표(gov_table) — render_docx._render_gov_table 과 같은 규칙 ──
+_GOV_ALIGN = {"l": "left", "c": "center", "r": "right"}
+
+
+def _render_gov_table(doc: HwpxDocument, st: _Styles, blk: dict[str, Any]) -> None:
+    """gov_table 블록을 그린다."""
+    widths = [float(w) for w in blk["widths"]]
+    heights = [float(h) for h in blk["heights_mm"]]
+    n_rows, n_cols = len(heights), len(widths)
+    table = doc.add_table(n_rows, n_cols, width=USABLE_W)
+    table.set_column_widths(widths)
+    cells = blk.get("cells") or []
+    covered = [[False] * n_cols for _ in range(n_rows)]
+    for spec in cells:
+        r, c, rs, cs = (int(v) for v in spec["at"])
+        for rr in range(r, min(r + rs, n_rows)):
+            for cc in range(c, min(c + cs, n_cols)):
+                covered[rr][cc] = True
+    for r in range(n_rows):
+        for c in range(n_cols):
+            if covered[r][c]:
+                table.set_cell_borders(r, c, color=BORDER_COLOR)
+            else:
+                try:
+                    table.set_cell_borders(r, c, color="#FFFFFF", line_type="NONE")
+                except (ValueError, KeyError):
+                    table.set_cell_borders(r, c, color="#FFFFFF")
+                # 빈 칸의 기본 글자(10pt) 높이가 행을 부풀리지 않도록 1pt 문단으로 둔다
+                blank = table.cell(r, c).paragraphs[0]
+                blank.clear_text()
+                blank.para_pr_id_ref = st.para_pr("left", 100)
+                blank.add_run("", size=1, font=FONT_HWP)
+        _row_height(table, r, heights[r])
+    for spec in cells:
+        r, c, rs, cs = (int(v) for v in spec["at"])
+        size = float(spec.get("size", 9.0)) * min(1.0, 0.5 + 0.5 * _SCALE)
+        bold = bool(spec.get("bold", False))
+        lines = [list(x) for x in (spec.get("lines") or [])] or [["l", ""]]
+        cell = table.cell(r, c)
+        cell.set_text("")
+        para = cell.paragraphs[0]
+        para.clear_text()
+        for i, (al, text) in enumerate(lines):
+            target = para if i == 0 else cell.add_paragraph("")
+            target.para_pr_id_ref = st.para_pr(_GOV_ALIGN.get(al, "left"), 100)
+            target.add_run(str(text), bold=bold, size=size, font=FONT_HWP,
+                           color=LABEL_TEXT if spec.get("fill") else None)
+        if spec.get("fill"):
+            table.set_cell_shading(r, c, LABEL_FILL)
+    for spec in cells:
+        r, c, rs, cs = (int(v) for v in spec["at"])
+        if rs > 1 or cs > 1:
+            try:
+                table.merge_cells(r, c, min(r + rs, n_rows) - 1, min(c + cs, n_cols) - 1)
+            except (ValueError, KeyError, TypeError):
+                pass  # 병합 실패 시 개별 셀로 유지 (레이아웃만 소폭 달라짐)
+    _add(doc, st, "", size=1, line_spacing=100)
+
 def _render_block(doc: HwpxDocument, st: _Styles, blk: dict[str, Any]) -> None:
     """블록 1개를 렌더링한다 (render_docx._render_block과 동일 규칙)."""
     btype = blk["type"]
@@ -218,7 +277,8 @@ def _render_block(doc: HwpxDocument, st: _Styles, blk: dict[str, Any]) -> None:
 
     elif btype == "para":
         _add(doc, st, str(blk.get("text", "")), size=blk.get("size", 10.5),
-             align=blk.get("align", "left"), bold=blk.get("bold", False))
+             align=blk.get("align", "left"), bold=blk.get("bold", False),
+             line_spacing=int(float(blk.get("line_spacing", 1.4)) * 100))
 
     elif btype == "grid":
         rows: list[list[str]] = blk["rows"]
@@ -314,9 +374,15 @@ def _render_block(doc: HwpxDocument, st: _Styles, blk: dict[str, Any]) -> None:
         _add(doc, st, "※ " + str(blk["text"]), size=8.5, color=MUTED)
 
     elif btype == "spacer":
-        _add(doc, st, "", size=blk.get("size", 10))
+        if blk.get("exact"):
+            _add(doc, st, "", size=max(1.0, float(blk.get("height_pt", 4)) * _SCALE), line_spacing=100)
+        else:
+            _add(doc, st, "", size=blk.get("size", 10))
 
     elif btype == "page_break":
         p = doc.add_paragraph("", include_run=False)
         doc.set_paragraph_format(paragraph_index=len(doc.paragraphs) - 1,
                                  page_break_before=True)
+
+    elif btype == "gov_table":
+        _render_gov_table(doc, st, blk)

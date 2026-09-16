@@ -1,0 +1,976 @@
+id: gov-resident-register-copy
+title: 주민등록표 열람·등초본 교부 신청서 (법정서식)
+category: public
+subcategory: family
+tags:
+- 주민등록
+- 등본
+- 초본
+- 교부신청
+- 개인정보보호
+summary: 본인이나 다른 사람의 주민등록표 등본 또는 초본을 열람하거나 교부받기 위한 법정 신청서입니다.
+usage: '읍면동 주민센터나 정부24에 제출하여 주민등록표를 발급받습니다. 신청인의 신분증을 제시하고, 필요한 항목(과거 주소 변동·세대원·병역사항 등)을 선택하여 신청합니다. 개인정보보호를 위해 필요한 정보만 선택하면 그 부분만 기재되어 발급됩니다. 본인이 신청하는 경우와 다른 사람이 신청하는 경우 용도 및 목적 작성 여부가 다릅니다.
+
+  '
+source: law-standard
+source_note: 주민등록법 시행규칙 별지 제7호서식
+law_ref:
+  law: 주민등록법 시행규칙
+  form_no: 별지 제7호서식
+  amended: '2024-12-20'
+  url: https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A3%BC%EB%AF%BC%EB%93%B1%EB%A1%9D%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0007&bylBrNo=00&bylCls=BF&bylEfYdYn=Y
+  agency: 행정안전부·읍면동
+  checked: '2026-09-16'
+featured: false
+target_pages: 3
+created_by: gov-batch
+series: resident-registration-request
+series_name: 주민등록등본 교부신청서
+variant: 법정서식
+variant_rank: 2
+variant_use: 주민등록표 열람·교부신청용 법정 양식입니다.
+howto:
+- 신청인 정보(성명·주민등록번호·주소)를 적습니다.
+- 등본 또는 초본을 선택하고, 포함할 정보를 체크합니다.
+- 용도 및 목적을 기입합니다(다른 사람 신청 시 필수).
+- 신청인이 서명 또는 인감을 합니다.
+faq:
+- q: 등본과 초본은 어떻게 다른가요?
+  a: 등본은 세대주와 세대원이 함께 나오는 세대 단위 기록이고, 초본은 한 사람의 주소 변동 이력 등 개인 기록입니다. 제출처가 요구하는 쪽을 고르십시오.
+- q: 다른 사람 주민등록표도 신청할 수 있나요?
+  a: 법정 상속, 채무청구 등 정당한 사유가 있어야 하며, 용도와 증명 자료를 제시해야 합니다.
+related:
+- moving-in-report
+- gov-household-check-request
+blocks:
+- type: para
+  text: ■ 주민등록법 시행규칙 [별지 제7호서식] <개정 2024. 12. 20.>
+  align: left
+  size: 8.1
+  space_after: 0
+  line_spacing: 1.0
+- type: para
+  text: 본인인 경우 정부24(www.gov.kr) 에서도 신청할 수 있습니다.
+  align: right
+  size: 8.1
+  space_after: 0
+  line_spacing: 1.0
+- type: doc_title
+  text: 주민등록표 열람 또는 등ㆍ초본 교부 신청서
+  spaced: false
+- type: spacer
+  exact: true
+  height_pt: 9.8
+- type: para
+  text: ※ 3쪽의 유의 사항을 읽고 작성하시기 바라며, 해당하는 내용 앞의 [ ]에 √표를 합니다.
+  align: left
+  size: 9.9
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.3
+- type: gov_table
+  widths:
+  - 12.397
+  - 24.56
+  - 18.502
+  - 10.542
+  - 32.519
+  - 1.479
+  heights_mm:
+  - 16.5
+  - 29.36
+  - 16.5
+  - 15.97
+  - 14.78
+  - 16.7
+  - 16.66
+  - 16.66
+  - 14.78
+  - 15.88
+  - 17.8
+  - 11.23
+  cells:
+  - at:
+    - 0
+    - 0
+    - 4
+    - 1
+    lines:
+    - - c
+      - 신청인
+    - - c
+      - (개인)
+    size: 11.0
+  - at:
+    - 0
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - 성명
+    - - r
+      - (서명 또는 인)
+    size: 10.8
+    sample: 홍길동
+  - at:
+    - 0
+    - 3
+    - 1
+    - 2
+    lines:
+    - - l
+      - 주민등록번호
+    size: 10.8
+    valign: t
+    sample: 000000-0000000
+  - at:
+    - 1
+    - 1
+    - 1
+    - 4
+    lines:
+    - - l
+      - 주소         (시ㆍ도)         (시ㆍ군ㆍ구)
+    - - l
+      - ※ 시ㆍ도, 시ㆍ군ㆍ구까지만 작성 (상세 주소는 작성하지 않아도 됩니다)
+    size: 9.9
+  - at:
+    - 2
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - 대상자와의 관계
+    size: 11.0
+    valign: t
+    sample: 본인
+  - at:
+    - 2
+    - 3
+    - 1
+    - 2
+    lines:
+    - - l
+      - 연락처
+    size: 10.8
+    valign: t
+    sample: 010-1234-5678
+  - at:
+    - 3
+    - 1
+    - 1
+    - 4
+    lines:
+    - - l
+      - '[ ] 수수료 면제를 신청함'
+    - - l
+      - ※수수료 면제 대상에 대해서는 3쪽 유의사항 3번을 참고하시기 바랍니다.
+    size: 10.8
+  - at:
+    - 4
+    - 0
+    - 4
+    - 1
+    lines:
+    - - c
+      - 신청인
+    - - c
+      - (법인)
+    size: 11.0
+  - at:
+    - 4
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - 기관명
+    size: 11.0
+  - at:
+    - 4
+    - 3
+    - 1
+    - 2
+    lines:
+    - - l
+      - 사업자등록번호
+    size: 10.8
+    valign: t
+  - at:
+    - 5
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - 대표자
+    - - r
+      - (서명 또는 인)
+    size: 10.8
+  - at:
+    - 5
+    - 3
+    - 1
+    - 2
+    lines:
+    - - l
+      - 연락처
+    size: 10.8
+    valign: t
+  - at:
+    - 6
+    - 1
+    - 1
+    - 4
+    lines:
+    - - l
+      - 소재지
+    size: 11.0
+    valign: t
+  - at:
+    - 7
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 방문자 성명
+    size: 11.0
+    valign: t
+  - at:
+    - 7
+    - 2
+    - 1
+    - 2
+    lines:
+    - - l
+      - 주민등록번호
+    size: 10.8
+    valign: t
+  - at:
+    - 7
+    - 4
+    - 1
+    - 1
+    lines:
+    - - l
+      - 연락처
+    size: 10.8
+    valign: t
+  - at:
+    - 8
+    - 0
+    - 3
+    - 1
+    lines:
+    - - l
+      - 열람 또는 등ㆍ초본 교부대상자
+    size: 11.0
+  - at:
+    - 8
+    - 1
+    - 1
+    - 4
+    lines:
+    - - l
+      - ※ 신청인이 본인의 주민등록표를 열람하거나 등ㆍ초본 교부를 신청하는 경우에는 작 성하지 않습니다.
+    size: 9.9
+  - at:
+    - 9
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - 성명
+    size: 11.0
+  - at:
+    - 9
+    - 3
+    - 1
+    - 2
+    lines:
+    - - l
+      - 주민등록번호
+    size: 10.8
+    valign: t
+  - at:
+    - 10
+    - 1
+    - 1
+    - 4
+    lines:
+    - - l
+      - 주소
+    size: 11.0
+    valign: t
+    sample: 서울특별시 마포구
+  - at:
+    - 11
+    - 0
+    - 1
+    - 5
+    lines:
+    - - r
+      - ☞ 뒤쪽에 작성란 있습니다.
+    size: 11.0
+- type: spacer
+  exact: true
+  height_pt: 12.7
+- type: para
+  text: 210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]
+  align: right
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: page_break
+- type: gov_table
+  widths:
+  - 13.67
+  - 9.318
+  - 77.012
+  heights_mm:
+  - 5.39
+  - 12.17
+  - 6.9
+  - 7.64
+  - 7.39
+  - 7.43
+  - 7.76
+  - 7.43
+  - 7.43
+  - 7.43
+  - 7.43
+  - 7.43
+  - 6.86
+  - 7.64
+  - 4.7
+  - 4.37
+  - 4.7
+  - 4.7
+  - 4.7
+  - 7.43
+  - 5.72
+  - 5.76
+  - 16.95
+  - 27.51
+  - 4.7
+  - 11.84
+  - 5.54
+  - 7.98
+  - 24.01
+  cells:
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 열람
+    size: 11.0
+  - at:
+    - 0
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - '[ ]등본 사항         [ ]초본 사항'
+    size: 10.8
+  - at:
+    - 1
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - ※ 개인정보보호를위해아래의등ㆍ초본사항중필요한사항만선택하여신청할수있습니다. 포함여부 를선택하지않을경우신청인또는교부대상자의성명, 생년월일, 주소등기본적인사항만제공됩니다.
+    - - c
+      - '[ ]등본 사항 전부 포함         [ ]초본 사항 전부 포함'
+    size: 9.9
+    fill: true
+  - at:
+    - 2
+    - 1
+    - 9
+    - 1
+    lines:
+    - - c
+      - 등본
+    - - c
+      - 교부
+    - - c
+      - '[ ]통'
+    size: 9.9
+  - at:
+    - 2
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 1. 과거의 주소 변동 사항
+    - - r
+      - '[ ]전체 포함 [ ]직접 입력: 최근 년 포함'
+    size: 9.0
+  - at:
+    - 3
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 2. 세대 구성 사유
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 4
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 3. 세대 구성 일자
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 5
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 4. 발생일 / 신고일
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 6
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 5. 변동 사유
+    - - r
+      - '[ ]포함( □세대, □세대원)'
+    size: 9.0
+  - at:
+    - 7
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 6. 교부 대상자 외 세대주ㆍ세대원ㆍ외국인등의 이름
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 8
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 7. 주민등록번호 뒷자리
+    - - r
+      - '[ ]포함( □본인, □세대원)'
+    size: 9.0
+  - at:
+    - 9
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 8. 세대원의 세대주와의 관계
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 10
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 9. 동거인
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 11
+    - 1
+    - 9
+    - 1
+    lines:
+    - - c
+      - 초본
+    - - c
+      - 교부
+    - - c
+      - '[ ]통'
+    size: 9.9
+  - at:
+    - 11
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 1. 개인 인적 사항 변경 내용
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 12
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 2. 과거의 주소 변동 사항
+    - - r
+      - '[ ]전체 포함 [ ]직접 입력: 최근 년 포함'
+    size: 9.0
+  - at:
+    - 13
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 3. 과거의 주소 변동 사항 중 세대주의 성명과 세대주와의 관계
+    - - r
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 14
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 4. 주민등록번호 뒷자리            [ ]포함
+    size: 9.0
+  - at:
+    - 15
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 5. 세대주의 성명과 세대주와의 관계            [ ]포함
+    size: 9.0
+  - at:
+    - 16
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 6. 발생일 / 신고일            [ ]포함
+    size: 9.0
+  - at:
+    - 17
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 7. 변동 사유            [ ]포함
+    size: 9.0
+  - at:
+    - 18
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 8. 병역 사항        [ ]포함( □기본(입영/전역일자), □전체)
+    size: 9.0
+  - at:
+    - 19
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 9. 국내거소신고번호 / 외국인등록번호
+    - - l
+      - '[ ]포함'
+    size: 9.0
+  - at:
+    - 20
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 용도및목적
+    size: 11.0
+  - at:
+    - 20
+    - 1
+    - 1
+    - 2
+    sample: 금융기관 제출용
+  - at:
+    - 21
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 증명자료
+    size: 11.0
+  - at:
+    - 21
+    - 1
+    - 1
+    - 2
+  - at:
+    - 22
+    - 0
+    - 1
+    - 3
+    lines:
+    - - l
+      - 「주민등록법시행령」 제47조및제48조에따라주민등록표의열람또는등ㆍ초본교부를 신청합니다. 년   월   일
+    - - l
+      - 시장ㆍ군수ㆍ구청장 또는 읍ㆍ면ㆍ동장 및 출장소장 귀하
+    size: 11.0
+  - at:
+    - 23
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 담당 공무원 확인사항
+    size: 10.8
+  - at:
+    - 23
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - ※ 담당 공무원이 행정정보의 공동이용을 통해 확인하는 것에 동의하는 서류 앞의 [ ]에 √표를 합니다.
+    - - l
+      - '[ ] 1. 신청인이 주민등록표의 열람 또는 등·초본을 신청하기 위해 필요한 신분증명서 및 「주민등록법 시행규칙」 별표 1에 따른 증명서류'
+    - - l
+      - '[ ] 2. 신청인의 수급자 정보, 독립유공자 정보, 국가유공자 정보, 고엽제후유의증환자 정보, 참전군인 정보, 5ㆍ18민주유공자정보, 특수임무수행자 정보, 한부모가족 지원대상자 정보를 확인할 수 있는 자료'
+    - - l
+      - ※ 담당 공무원이 본인정보 제공 요구 및 공동이용 또는 행정정보 공동이용을 통해 확인하는 것에 동의하는 서류 앞의
+    - - l
+      - '[ ]에 √표를 합니다.'
+    - - l
+      - '[ ] 3. 신청인의 가족관계증명서(상세)'
+    size: 8.1
+  - at:
+    - 24
+    - 0
+    - 1
+    - 3
+    lines:
+    - - c
+      - 본인정보 제공 요구서
+    size: 9.9
+    fill: true
+  - at:
+    - 25
+    - 0
+    - 1
+    - 3
+    lines:
+    - - l
+      - 「민원 처리에 관한 법률」 제10조의2, 「민원 처리에 관한 법률 시행령」 제7조의3 및 제7조의4에 따라 공동이용을 위한 본인정 보를 위와 같이 신청합니다.
+    - - r
+      - 신청인            (서명 또는 인)
+    size: 8.1
+  - at:
+    - 26
+    - 0
+    - 1
+    - 3
+    lines:
+    - - l
+      - 법원행정처장 귀하
+    size: 11.0
+    bold: true
+  - at:
+    - 27
+    - 0
+    - 1
+    - 3
+    lines:
+    - - r
+      - 본인정보 공동이용 및 행정정보 공동이용 동의서   ※ 해당란에 √
+    - - c
+      - 표시합니다.
+    size: 9.0
+    fill: true
+  - at:
+    - 28
+    - 0
+    - 1
+    - 3
+    lines:
+    - - l
+      - '[ ] 1. 본인은 이 건 업무 처리와 관련하여 「민원 처리에 관한 법률」 제10조의2에 따른 본인정보 제공 요구를 통해 민원처리 기관의 담당자가 전자적으로 본인에 관한 행정정보를 확인하는 것에 동의합니다.'
+    - - l
+      - '[ ] 2. 본인은 이 건 업무 처리와 관련하여 담당 공무원이 「전자정부법」 제36조제1항에 따른 행정정보의 공동이용을 통하여 위의 담당 공무원 확인사항을 확인하는 것에 동의합니다.'
+    - - l
+      - ※ 신청인이 본인정보 공동이용 또는 행정정보의 공동이용에 동의하지 않거나 본인정보 공동이용 또는 행정정보의 공동이용을 통해 확 인할 수 있는 서류가 아닌 경우에는 신청인이 직접 해당 서류를 제출해야 합니다.
+    - - r
+      - 신청인            (서명 또는 인)
+    size: 8.1
+- type: para
+  text: 신청내용
+  align: left
+  size: 12.0
+  space_after: 0
+  line_spacing: 1.0
+- type: page_break
+- type: para
+  text: 유의 사항
+  align: center
+  size: 11.7
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.8
+- type: para
+  text: 1. 주민등록표 열람 또는 등ㆍ초본 교부 신청인은 주민등록증(모바일 주민등록증을 포함합니다) 등 신분증명서 를 제시하여야 하며, 신청인이 「출입국관리법」 제31조에 따라 등록한 외국인 또는 「재외동포의 출입국 과 법적 지위에 관한 법률」 제6조에 따라 국내거소신고를 한 외국국적동포인 경우에는 외국인등록증 또 는 국내거소신고증을 제시하여야 합니다.
+    또한 법인 방문자인 경우에는 방문자의 신분증명서와 사원증 또 는 재직증명서를 제시하여야 합니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.8
+- type: para
+  text: 2. 본인ㆍ세대원이 본인ㆍ세대원의 주민등록표 열람 또는 등ㆍ초본 교부를 주민등록증(모바일 주민등록증을 포함합니다) 등 신분증명서만을 제시하여 신청하는 경우에는 “전자 이미지 서명 입력기”에 자필 한글 성 명으로 서명하여야 열람 또는 교부받을 수 있습니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.4
+- type: para
+  text: 3. ｢주민등록법 시행규칙｣ 제18조제1항에 따른 주민등록표 열람 또는 등ㆍ초본 교부 신청 수수료 면제 대 상은 다음과 같습니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 가. 법 제29조제2항제1호에 따라 국가나 지방자치단체가 공무상 필요하여 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 나. 「국민기초생활 보장법」 제2조제2호에 따른 수급자가 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 다. 재해의 발생 등 행정안전부장관, 시ㆍ도지사 또는 시장ㆍ군수ㆍ구청장이 필요하다고 인정하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 라. 관계 법령에서 주민등록자료 제공에 대한 수수료를 면제하도록 한 규정이 있는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 마. 「독립유공자예우에 관한 법률」 제6조에 따라 등록된 독립유공자와 그 유족(선순위자만 해당됩니다)이 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 바. 「국가유공자 등 예우 및 지원에 관한 법률」 제6조에 따라 등록된 국가유공자 등과 그 유족(선순위자만 해당하되, 선순위자가 부 또는 모인 경우에는 선순위자가 아닌 모 또는 부를 포함합니다)이 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 사. 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제4조에 따라 등록된 고엽제후유의증환자 등이 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 아. 「참전유공자 예우 및 단체설립에 관한 법률」 제5조에 따라 등록된 참전유공자 등이 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 자. 「5ㆍ18민주유공자 예우에 관한 법률」 제7조에 따라 등록 결정된 5ㆍ18민주유공자와 그 유족(선순위자만 해당하되, 선순위자가 부 또는 모인 경우에는 선순위자가 아닌 모 또는 부를 포함합니다)이 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 차. 「특수임무유공자 예우 및 단체설립에 관한 법률」 제6조에 따라 등록된 특수임무유공자와 그 유족(선순위자만 해당하되, 선순위자가 부 또는 모인 경우에는 선순위자가 아닌 모 또는 부를 포함합니다)이 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 카. 「한부모가족지원법」 제5조 또는 제5조의2에 따른 지원대상자가 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 타. 미성년자인 자녀(가족관계등록부 기록을 기준으로 하고, 조부모와 손자녀로만 구성된 가족의 경우에 는 손자녀를 말합니다) 2명 이상을 양육하는 사람이 신청하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 파. 출생신고된 사람의 초본을 최초 1통 발급하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.9
+- type: para
+  text: 하. 지방자치단체가 조례로 정하는 경우
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.8
+- type: para
+  text: 4. 신청인은 “신청 내용”란의 각 항목에서 “포함”여부를 선택하여 신청할 수 있습니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.8
+- type: para
+  text: 5. 상속 등기 대위 신청을 위하여 채무자의 주민등록초본 교부를 신청하는 경우에는 과거의 주소 변동 사 항을 포함하여 열람하게 하거나 발급할 수 있습니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.7
+- type: para
+  text: 6. “과거의 주소 변동 사항”을 “직접 입력”으로 선택하는 경우, 그 기간은 1년 단위로 해야 합니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.8
+- type: para
+  text: 7. 초본 교부를 신청할 때 “3. 과거의 주소 변동 사항 중 세대주의 성명과 세대주와의 관계” 항목은 대상자가 성 년인 경우에는 본인 또는 본인의 위임을 받은 사람, 대상자가 미성년자인 경우에는 세대주 또는 직계존 속, 국가나 지방자치단체가 공무상 필요한 경우에만 “포함”을 선택할 수 있고, “8. 병역사항” 항목은 본인 이나 세대원(그 위임을
+    받은 사람 포함), 「주민등록법」 제29조제2항제5호에 따른 가족, 국가나 지방자치 단체가 공무상 필요한 경우에만 “포함”을 선택할 수 있습니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.8
+- type: para
+  text: 8. 본인이나 세대원이 아닌 사람이 교부받는 등ㆍ초본에는 작성하신 용도 및 목적이 표시되니 반드시 “용도 및 목적”칸을 작성하여야 하며, 등본을 신청하는 경우에는 별도의 증명 자료를 제출하여야 합니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.7
+- type: para
+  text: 9. 「주민등록법」 제37조제5호에 따라 거짓이나 그 밖의 부정한 방법으로 다른 사람의 주민등록표를 열람하 거나 등ㆍ초본을 교부받은 경우에는 3년 이하의 징역형이나 3천만원 이하의 벌금형을 받게 됩니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.8
+- type: para
+  text: 10. 한 신청자가 하나의 증명 자료를 가지고 같은 목적으로 여러 사람의 주민등록표를 열람하거나 등ㆍ초본 교 부를 신청하는 경우에는 별지 제7호서식과 별지 제8호서식을 함께 사용하여 일괄적으로 신청할 수 있으며, 이 경우 별지 제7호서식과 별지 제8호서식 사이에는 신청인의 간인(서명 포함)이 있어야 합니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.8
+- type: para
+  text: 11. 신청인이 「출입국관리법」 제31조에 따라 등록한 외국인 또는 「재외동포의 출입국과 법적 지위에 관한 법 률」 제6조에 따라 국내거소신고를 한 외국국적동포인 경우에는 주민등록번호칸에 외국인등록번호 또는 국내거소신고번호를 작성하시기 바랍니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0

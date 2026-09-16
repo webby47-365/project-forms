@@ -140,7 +140,8 @@ def check_one(path: Path, keys: dict[str, set[str]]) -> list[str]:
     problems.extend(_check_readable(spec))
 
     has_title = any(b["type"] == "doc_title" for b in spec.blocks)
-    if not has_title:
+    # 법정서식 재현본은 원문처럼 제목이 표 안에 있을 수 있다(입찰서 등 옛 서식)
+    if not has_title and not spec.law_ref:
         problems.append("doc_title 블록이 없습니다.")
 
     for idx, blk in enumerate(spec.blocks):

@@ -11,6 +11,11 @@ usage: >
   세대주 변경을 함께 신청하려면 해당 칸에 표시하십시오. 전입신고는 정해진 기간 내에 해야 하며,
   임차인은 확정일자와 함께 처리하는 경우가 많으니 필요 서류를 미리 확인하십시오. 신고 요건과
   기한은 관할 주민센터 안내를 확인하십시오.
+series: moving-in-report
+series_name: 전입신고서
+variant: 간편형
+variant_rank: 1
+variant_use: 신고 내용을 미리 정리해 둘 때 씁니다.
 source: original
 featured: false
 target_pages: 1

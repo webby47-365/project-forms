@@ -1,6 +1,6 @@
 # 무료서식 다운로드 (freeforms.kr)
 
-> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 243종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-09-16 기준, 매일 새 서식 추가)
+> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 270종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-09-16 기준, 매일 새 서식 추가)
 
 ## 이 사이트의 특징
 
@@ -52,9 +52,15 @@
 - [법률 · 계약](https://freeforms.kr/category/legal/contract/): 17종
 - [법률 · 통지·증명](https://freeforms.kr/category/legal/notice/): 16종
 - [법률 · 소송·민원](https://freeforms.kr/category/legal/litigation/): 11종
-- [공공 · 민원·신고](https://freeforms.kr/category/public/civil/): 11종
+- [공공 · 민원·신고](https://freeforms.kr/category/public/civil/): 13종
 - [공공 · 신청·동의](https://freeforms.kr/category/public/consent/): 12종
-- [부동산 · 임대·매매](https://freeforms.kr/category/estate/lease/): 12종
+- [공공 · 가족·주민등록](https://freeforms.kr/category/public/family/): 6종
+- [공공 · 세금·사업자](https://freeforms.kr/category/public/tax/): 3종
+- [공공 · 4대보험·고용](https://freeforms.kr/category/public/insurance/): 6종
+- [공공 · 조달·입찰](https://freeforms.kr/category/public/procure/): 2종
+- [공공 · 자동차·교통](https://freeforms.kr/category/public/vehicle/): 2종
+- [공공 · 인허가·영업신고](https://freeforms.kr/category/public/permit/): 4종
+- [부동산 · 임대·매매](https://freeforms.kr/category/estate/lease/): 14종
 - [개인 · 취업·경력](https://freeforms.kr/category/personal/career/): 20종
 - [개인 · 생활·가정](https://freeforms.kr/category/personal/life/): 15종
 - [교육 · 학교·학원](https://freeforms.kr/category/edu/school/): 16종
@@ -77,6 +83,10 @@
 - [차용증 3종](https://freeforms.kr/series/loan-note/)
 - [회의록 3종](https://freeforms.kr/series/meeting-minutes/)
 - [사업계획서 2종](https://freeforms.kr/series/business-plan/)
+- [인감증명 발급 위임장 2종](https://freeforms.kr/series/seal-certificate-poa/)
+- [전입신고서 2종](https://freeforms.kr/series/moving-in-report/)
+- [정보공개청구서 2종](https://freeforms.kr/series/info-disclosure-request/)
+- [주민등록등본 교부신청서 2종](https://freeforms.kr/series/resident-registration-request/)
 
 ## 주제 모음 (한 가지 일에 연달아 쓰는 서식)
 
@@ -111,13 +121,13 @@
 - [가맹계약서](https://freeforms.kr/form/franchise-contract/): 영업표지 사용·영업지역·가맹금·교육지원과 계약기간·해지를 정하는 가맹계약서입니다.
 - [각서](https://freeforms.kr/form/written-pledge/): 일방이 상대방에게 특정 사항을 약속하고 확인하는 각서 양식입니다.
 - [간병인 계약서](https://freeforms.kr/form/caregiver-contract/): 환자 보호자와 간병인 사이의 간병 기간·업무 범위·간병비 지급 조건을 정하는 계약서입니다.
+- [간이대지급금 지급청구서](https://freeforms.kr/form/gov-simple-substitute-payment/): 회사에서 받지 못한 임금을 근로복지공단으로부터 받는 대지급금 지급을 신청하는 양식입니다.
 - [감가상각 내역서](https://freeforms.kr/form/depreciation-schedule/): 고정자산별 취득가액과 당기상각비·누계액·장부가액을 정리하는 감가상각 내역서입니다.
 - [감사장](https://freeforms.kr/form/thank-you-letter/): 도움을 준 분께 구체적인 사유와 감사의 마음을 편지 형식으로 전하는 감사장 양식입니다.
 - [개인정보 수집·이용 동의서](https://freeforms.kr/form/privacy-consent/): 개인정보 보호법에 따라 고객 개인정보 수집·이용 목적과 항목, 보유기간, 거부권 등을 명시하는 동의서입니다.
-- [개인정보 수집·이용 동의서 (간편형)](https://freeforms.kr/form/privacy-consent-simple/): 수집 항목과 목적, 보유기간을 한눈에 정리하고 동의 여부만 표시하면 되는 반 페이지 간편 동의서입니다.
 
 ## Optional
 
-- [전체 서식 목록 243종](https://freeforms.kr/llms-full.txt)
+- [전체 서식 목록 270종](https://freeforms.kr/llms-full.txt)
 - [사이트맵](https://freeforms.kr/sitemap.xml)
 - [RSS](https://freeforms.kr/rss.xml)

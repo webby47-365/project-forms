@@ -1,0 +1,28 @@
+id	title	category	subcategory	agency	series_with
+gov-admin-appeal	행정심판 청구서	public	civil	국민권익위원회(중앙행정심판위원회)	
+gov-bid-form	입찰서 (국가계약)	public	procure	기획재정부·조달청	
+gov-bid-participation	입찰참가신청서 (국가계약)	public	procure	기획재정부·조달청	
+gov-business-closure-report	휴업·폐업 신고서 (사업자)	public	tax	국세청	
+gov-business-registration-individual	사업자등록 신청서 (개인사업자용)	public	tax	국세청	
+gov-donation-receipt	기부금 영수증 (법정서식)	public	tax	국세청	
+gov-food-business-report	식품 영업 신고서	public	permit	식품의약품안전처·시군구	
+gov-health-voluntary-continuation	건강보험 임의계속 가입·탈퇴 신청서	public	insurance	국민건강보험공단	
+gov-household-check-request	전입세대확인서 열람·교부 신청서	public	family	행정안전부·읍면동	
+gov-housing-lease-report	주택 임대차 계약 신고서 (전월세 신고)	estate	lease	국토교통부·읍면동	
+gov-id-card-loss-report	주민등록증 분실신고서	public	family	행정안전부·읍면동	
+gov-info-disclosure-request	정보공개 청구서 (법정서식)	public	civil	행정안전부	info-disclosure-request
+gov-lease-info-request	임대차 정보제공 요청서	estate	lease	법무부·읍면동	
+gov-mail-order-change-report	통신판매업 변경신고서	public	permit	공정거래위원회·시군구	
+gov-mail-order-closure-report	통신판매업 휴업·폐업·영업재개 신고서	public	permit	공정거래위원회·시군구	
+gov-mail-order-report	통신판매업 신고서	public	permit	공정거래위원회·시군구	
+gov-maternity-leave-benefit	출산전후휴가 급여 등 신청서	public	insurance	고용노동부	
+gov-move-in-report	전입신고서 (법정서식)	public	family	행정안전부·읍면동	moving-in-report
+gov-parental-leave-benefit	육아휴직 급여·육아기 근로시간 단축 급여 신청서	public	insurance	고용노동부	
+gov-pension-exemption	국민연금 납부예외·납부재개 신청서	public	insurance	국민연금공단	
+gov-resident-register-copy	주민등록표 열람·등초본 교부 신청서 (법정서식)	public	family	행정안전부·읍면동	resident-registration-request
+gov-seal-certificate-poa	인감증명서 발급 위임장 (법정서식)	public	family	행정안전부·읍면동	seal-certificate-poa
+gov-seal-report	인감(변경)신고서 (서면신고용)	public	family	행정안전부·읍면동	
+gov-separation-confirmation	피보험자 이직확인서	public	insurance	고용노동부·근로복지공단	
+gov-simple-substitute-payment	간이대지급금 지급청구서	public	insurance	고용노동부·근로복지공단	
+gov-vehicle-transfer-cert	자동차양도증명서 (직접 거래용)	public	vehicle	국토교통부	
+gov-vehicle-transfer-registration	자동차 이전등록 신청서	public	vehicle	국토교통부	

@@ -1,0 +1,186 @@
+blocks:
+- {type: para, text: '[별지 제4호서식] <개정 2025. 2. 11.>', align: left, size: 9.0, space_after: 0, line_spacing: 1.0}
+- {type: doc_title, text: 통신판매업 변경신고서, spaced: false}
+- {type: spacer, exact: true, height_pt: 12.4}
+- type: gov_table
+  widths: [16.014, 56.858, 27.128]
+  heights_mm: [9.09]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [l, 접수번호]
+    size: 8.1
+    fill: true
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 접수일]
+    size: 8.1
+    fill: true
+  - at: [0, 2, 1, 1]
+    lines:
+    - [l, 처리기간 3일]
+    size: 8.1
+    fill: true
+- type: gov_table
+  widths: [9.775, 59.99, 30.235]
+  heights_mm: [7.29, 7.34, 10.76, 7.34, 7.34, 7.38]
+  cells:
+  - at: [0, 0, 6, 1]
+    lines:
+    - [c, 신고인]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 법인명(상호)]
+    size: 9.0
+  - at: [0, 2, 1, 1]
+    lines:
+    - [l, 신고번호]
+    size: 9.0
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, 소재지]
+    size: 9.0
+  - at: [1, 2, 1, 1]
+    lines:
+    - [l, 전화번호]
+    size: 9.0
+  - at: [2, 1, 1, 1]
+    lines:
+    - [l, 대표자의 성명]
+    - [r, (서명 또는 인)]
+    size: 8.1
+  - at: [2, 2, 1, 1]
+    lines:
+    - [l, 생년월일]
+    size: 9.0
+  - at: [3, 1, 1, 1]
+    lines:
+    - [l, 주소]
+    size: 9.0
+  - at: [3, 2, 1, 1]
+    lines:
+    - [l, 전화번호]
+    size: 9.0
+  - at: [4, 1, 1, 1]
+    lines:
+    - [l, 전자우편주소]
+    size: 9.0
+  - at: [4, 2, 1, 1]
+    lines:
+    - [l, 사업자등록번호]
+    size: 9.0
+  - at: [5, 1, 1, 1]
+    lines:
+    - [l, 인터넷도메인 이름]
+    size: 9.0
+  - at: [5, 2, 1, 1]
+    lines:
+    - [l, 호스트서버 소재지]
+    size: 9.0
+- {type: spacer, exact: true, height_pt: 5.5}
+- type: gov_table
+  widths: [9.775, 90.225]
+  heights_mm: [10.85, 10.81]
+  cells:
+  - at: [0, 0, 2, 1]
+    lines:
+    - [c, 신고]
+    - [c, 사항]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 변경 전]
+    size: 9.0
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, 변경 후]
+    size: 9.0
+- {type: spacer, exact: true, height_pt: 5.6}
+- type: gov_table
+  widths: [9.775, 90.225]
+  heights_mm: [14.67, 50.6]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 변경]
+    - [c, 사유]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+  - at: [1, 0, 1, 2]
+    lines:
+    - [l, '「전자상거래 등에서의 소비자보호에 관한 법률」 제12조제2항, 같은 법 시행령 제16조제1항 및 같은 법 시행규칙 제9조에 따라 위와 같이 신고합니다.']
+    - [r, 년  월  일]
+    - [r, 신고인            (서명 또는 인)]
+    - [r, ※ 위 신고인 대표자와 동일인이 아닌 경우에만 적습니다.]
+    - [l, 공정거래위원회]
+    - [l, 귀하]
+    - [l, 특별자치시장ㆍ특별자치도지사ㆍ시장ㆍ군수ㆍ구청장]
+    size: 9.0
+- {type: spacer, exact: true, height_pt: 6.8}
+- type: gov_table
+  widths: [14.322, 74.362, 11.316]
+  heights_mm: [17.13, 8.35, 11.11]
+  cells:
+  - at: [0, 0, 2, 1]
+    lines:
+    - [l, 신고인(대표자) 첨부서류]
+    size: 7.2
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 1. 변경사항을 증명하는 서류]
+    - [l, 2. 통신판매업 신고증(신고증 기재사항이 변경된 경우에만 첨부합니다)]
+    - [l, ※ 신고증을 분실ㆍ훼손한 경우에는 아래 하단에 그 사유를 기재하고 신고증을 첨부하지 않 을 수 있습니다.]
+    size: 7.2
+  - at: [0, 2, 3, 1]
+    lines:
+    - [c, 수수료]
+    - [c, 없음]
+    size: 7.2
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, '[신고증 분실ㆍ훼손 사유]']
+    size: 7.2
+  - at: [2, 0, 1, 1]
+    lines:
+    - [c, 담당 공무원]
+    - [c, 확인사항]
+    size: 7.2
+  - at: [2, 1, 1, 1]
+    lines:
+    - [l, 1. 법인 등기사항 증명서(법인인 경우만 해당합니다)]
+    - [l, 2. 사업자등록증명(주민등록번호가 제외된 사업자등록증명을 말합니다)]
+    size: 7.2
+- {type: spacer, exact: true, height_pt: 9.7}
+- type: gov_table
+  widths: [100.0]
+  heights_mm: [7.51, 25.17]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 행정정보 공동이용 동의서]
+    size: 9.0
+    fill: true
+  - at: [1, 0, 1, 1]
+    lines:
+    - [l, 본인은 이 건 업무처리와 관련하여 「전자정부법」 제36조제1항에 따른 행정정보 공동이용을 통하여 담당 공무원이 위의 담 당 공무원 확인사항 중 제2호를 확인하는 것에 동의합니다.]
+    - [l, '* 확인에 동의하지 않는 경우에는 신고인이 직접 해당 서류를 제출해야 합니다.']
+    - [l, 신고인(대표자)]
+    - [r, (서명 또는 인)]
+    size: 7.2
+- {type: spacer, exact: true, height_pt: 9.7}
+- type: gov_table
+  widths: [100.0]
+  heights_mm: [6.28, 17.75]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 처리절차]
+    size: 9.0
+    fill: true
+  - at: [1, 0, 1, 1]
+    lines:
+    - [l, 신고증]
+    - [l, 신고서 작성 →  접수 → 검토 → 신고 수리 →          → 신고증 재교부 변경사항 기재]
+    - [l, '신고인            처리기관: 공정거래위원회 또는 특별자치시ㆍ특별자치도ㆍ시ㆍ군ㆍ구']
+    size: 7.2

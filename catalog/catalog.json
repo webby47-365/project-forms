@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T08:19:36+09:00",
-  "count": 243,
+  "generated_at": "2026-09-16T15:20:37+09:00",
+  "count": 270,
   "forms": [
     {
       "id": "academy-attendance",
@@ -9282,6 +9282,2761 @@
       "seal": true
     },
     {
+      "id": "gov-admin-appeal",
+      "title": "행정심판 청구서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "행정심판",
+        "행정심판 청구",
+        "행정처분",
+        "불복절차",
+        "행정소송"
+      ],
+      "summary": "행정청의 처분이나 부작위에 불복할 때 행정심판위원회에 제출하는 법정 청구서입니다.",
+      "usage": "행정청의 처분이나 부작위에 이의가 있을 때 행정심판을 청구하는 서류입니다. 청구인의 인적사항, 피청구인, 처분 내용과 청구 취지를 기입합니다. 처분 내용을 증명하는 증거서류를 함께 제출해야 합니다. 처분이 있음을 안 날부터 제출 기한 등 자세한 사항은 해당 행정심판위원회에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 98370,
+        "docx": 40122,
+        "hwpx": 11976
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "청구인 정보(성명, 주소, 주민등록번호, 전화번호)를 적습니다.",
+        "대리인이 있으면 대리인 정보를 적습니다.",
+        "피청구인과 소관 행정심판위원회를 선택하여 적습니다.",
+        "처분 내용과 처분을 안 날을 기입합니다.",
+        "청구 취지 및 이유를 작성하고 증거 서류를 기재합니다."
+      ],
+      "faq": [
+        {
+          "q": "대리인 없이 혼자 청구할 수 있나요?",
+          "a": "네, 대리인이 없어도 청구할 수 있습니다. 대리인을 선임하면 위임장과 대리인의 자격 증명 서류가 필요합니다."
+        },
+        {
+          "q": "처분을 안 날부터 얼마 내에 청구해야 하나요?",
+          "a": "처분을 안 날부터 제출 기한이 정해져 있습니다. 해당 행정심판위원회 규정을 확인하십시오."
+        },
+        {
+          "q": "구술심리를 신청하려면 어떻게 하나요?",
+          "a": "구술심리를 원하면 해당 란에 \"여\"를 체크하고 별도 신청서를 첨부합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "청구인",
+            "성명",
+            "주소",
+            "주민등록번호(외국인등록번호)",
+            "전화번호",
+            "피청구인",
+            "소관",
+            "처분 내용 또는 부작위 내용",
+            "처분이 있음을 안 날",
+            "청구 취지 및",
+            "별지로 작성",
+            "처분청의"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "administrative-objection",
+        "certified-notice",
+        "civil-petition"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "행정심판법 시행규칙 별지 제30호서식",
+      "law_ref": {
+        "law": "행정심판법 시행규칙",
+        "form_no": "별지 제30호서식",
+        "amended": "2025-09-24",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%ED%96%89%EC%A0%95%EC%8B%AC%ED%8C%90%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0030&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국민권익위원회(중앙행정심판위원회)",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:26:44+09:00",
+      "updated_at": "2026-09-16T15:12:51+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-bid-form",
+      "title": "입찰서 (국가계약)",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "입찰",
+        "국가계약",
+        "입찰서",
+        "공사입찰",
+        "용역입찰"
+      ],
+      "summary": "국가·지방자치단체의 공사·물품·용역 입찰에 참가할 때 제출하는 법정 입찰서입니다.",
+      "usage": "정부나 지자체의 공사, 물품구매, 용역 발주에 입찰할 때 작성하는 서류입니다. 입찰 공고번호, 건명, 입찰금액, 준공 예정일, 입찰자 정보를 기입합니다. 입찰금액이 100억원 이상인 경우 산출내역서를 별도로 첨부합니다. 구체적 입찰 유의사항과 계약조건은 발주기관의 입찰공고를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50037,
+        "docx": 38778,
+        "hwpx": 9688
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "입찰 공고번호, 입찰 일자, 공사/물품/용역 구분을 적습니다.",
+        "공사명(건명)과 입찰 금액을 기재합니다.",
+        "준공(납품) 예정 연월일을 적습니다.",
+        "입찰자 정보(상호, 법인등록번호, 주소, 전화번호, 대표자명)를 적습니다.",
+        "서명 또는 인을 하고 발주기관에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "입찰금액을 어떻게 계산하나요?",
+          "a": "발주기관의 설계서·규격서를 검토하여 자신의 비용을 근거로 입찰금액을 결정합니다."
+        },
+        {
+          "q": "입찰보증금이 따로 필요한가요?",
+          "a": "입찰공고에 명시된 보증금이 있으면 별도로 납부해야 합니다."
+        },
+        {
+          "q": "100억 이상 공사는 어떻게 다른가요?",
+          "a": "100억원 이상 공사는 산출내역서를 작성하여 입찰서와 함께 제출합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "입 찰 서",
+            "입찰내용",
+            "공고번호",
+            "제 호",
+            "입 찰 일 자",
+            ". . .",
+            "건 명",
+            "금 액",
+            "금 원정(￦ )",
+            "준공(납품)연월일",
+            "입찰자",
+            "상호 또는 법인명칭",
+            "법인등록번호",
+            "주 소"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-bid-participation",
+        "business-plan-standard",
+        "quotation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "국가를 당사자로 하는 계약에 관한 법률 시행규칙 별지 제5호서식",
+      "law_ref": {
+        "law": "국가를 당사자로 하는 계약에 관한 법률 시행규칙",
+        "form_no": "별지 제5호서식",
+        "amended": "2016-09-23",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B5%AD%EA%B0%80%EB%A5%BC+%EB%8B%B9%EC%82%AC%EC%9E%90%EB%A1%9C+%ED%95%98%EB%8A%94+%EA%B3%84%EC%95%BD%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0005&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "기획재정부·조달청",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:07+09:00",
+      "updated_at": "2026-09-16T15:12:51+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-bid-participation",
+      "title": "입찰참가신청서 (국가계약)",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "입찰",
+        "입찰참가신청",
+        "국가계약",
+        "조달",
+        "낙찰보증금"
+      ],
+      "summary": "국가·지방자치단체의 공사·물품·용역 입찰에 참가하기 전에 제출하는 법정 신청서입니다.",
+      "usage": "정부나 지자체의 공사, 물품, 용역 입찰에 참가하려면 먼저 입찰참가신청을 합니다. 신청인(회사) 정보, 입찰 공고번호, 입찰보증금, 대리인 정보를 작성합니다. 입찰참가자격을 증명하는 서류와 인감증명서를 함께 제출합니다. 자세한 참가 자격 요건과 제출 기한은 발주기관의 입찰공고를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 63469,
+        "docx": 39293,
+        "hwpx": 10348
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인(회사)의 상호, 법인등록번호, 주소, 전화번호를 적습니다.",
+        "입찰 공고번호와 입찰 건명, 일자를 적습니다.",
+        "입찰보증금 규모와 납부 방법을 기재합니다.",
+        "대리인이 있으면 대리인 정보를 적습니다.",
+        "필요한 서류를 첨부하여 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "입찰보증금은 얼마를 내야 하나요?",
+          "a": "입찰공고에 명시된 보증금율 또는 보증액을 확인하여 납부합니다."
+        },
+        {
+          "q": "대리인이 신청할 수 있나요?",
+          "a": "대리인이 신청하는 경우 신청인의 위임을 받아야 하며, 대리인의 권한 증명 서류가 필요합니다."
+        },
+        {
+          "q": "어떤 자격 증명 서류가 필요한가요?",
+          "a": "입찰참가자격을 증명하는 서류와 인감증명서(또는 본인서명사실확인서) 등 입찰공고에서 정한 서류를 제출합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "입찰참가신청서",
+            "처리기간",
+            "즉 시",
+            "신청인",
+            "상호또는법인명칭",
+            "법인등록번호",
+            "주 소",
+            "전 화 번 호",
+            "대 표 자",
+            "주민등록번호",
+            "입찰 개요",
+            "입찰공고(지명)번호",
+            "제 호",
+            "입 찰 일 자"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-bid-form",
+        "gov-business-registration-individual",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "국가를 당사자로 하는 계약에 관한 법률 시행규칙 별지 제3호서식",
+      "law_ref": {
+        "law": "국가를 당사자로 하는 계약에 관한 법률 시행규칙",
+        "form_no": "별지 제3호서식",
+        "amended": "2016-09-23",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B5%AD%EA%B0%80%EB%A5%BC+%EB%8B%B9%EC%82%AC%EC%9E%90%EB%A1%9C+%ED%95%98%EB%8A%94+%EA%B3%84%EC%95%BD%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0003&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "기획재정부·조달청",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:27:22+09:00",
+      "updated_at": "2026-09-16T15:12:49+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-business-closure-report",
+      "title": "휴업·폐업 신고서 (사업자)",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "폐업신고",
+        "휴업신고",
+        "사업자",
+        "폐업",
+        "영업중단"
+      ],
+      "summary": "사업을 휴업하거나 폐업할 때 세무서에 제출하는 법정 신고서입니다.",
+      "usage": "사업을 일시 중단하거나 완전히 폐지할 때 세무서(홈택스)에 신고하는 서류입니다. 휴업 또는 폐업을 선택하고, 해당하는 사유를 체크합니다. 휴업이면 휴업 기간을, 폐업이면 폐업일을 기입합니다. 홈택스(www.hometax.go.kr)에서도 온라인 신고가 가능합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 111407,
+        "docx": 41129,
+        "hwpx": 13122
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "상호(법인명), 사업자등록번호를 적습니다.",
+        "성명(대표자), 전화번호, 사업장 소재지를 기재합니다.",
+        "휴업 또는 폐업을 선택하고 해당 날짜를 적습니다.",
+        "휴업/폐업 사유에 해당하는 번호를 체크합니다.",
+        "대리인이 신고하면 위임장과 함께 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "휴업과 폐업의 차이가 뭔가요?",
+          "a": "휴업은 일정 기간 사업을 중단했다가 재개할 수 있고, 폐업은 사업을 완전히 끝내는 것입니다."
+        },
+        {
+          "q": "폐업한 뒤 부가가치세 신고는 언제 하나요?",
+          "a": "원문 유의사항에 따르면 폐업일이 속한 달의 말일부터 25일 이내에 부가가치세 확정신고·납부를 해야 합니다."
+        },
+        {
+          "q": "폐업할 때 사업자등록증이 필요한가요?",
+          "a": "폐업신고를 할 때는 사업자등록증 원본을 함께 제출해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간 즉시",
+            "인적사항",
+            "상호(법인명)",
+            "사업자등록번호",
+            "성명(대표자)",
+            "전화번호",
+            "사업장 소재지",
+            "신고내용",
+            "휴업기간",
+            "년 월 일부터 년 월 일까지( 일간)",
+            "폐 업 일",
+            "년 월 일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-business-registration-individual",
+        "business-plan-simple",
+        "retirement-application"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "부가가치세법 시행규칙 별지 제9호서식",
+      "law_ref": {
+        "law": "부가가치세법 시행규칙",
+        "form_no": "별지 제9호서식",
+        "amended": "2026-03-20",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EB%B6%80%EA%B0%80%EA%B0%80%EC%B9%98%EC%84%B8%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0009&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국세청",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:24:07+09:00",
+      "updated_at": "2026-09-16T15:13:09+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-business-registration-individual",
+      "title": "사업자등록 신청서 (개인사업자용)",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "사업자등록",
+        "개인사업자",
+        "개업",
+        "신청서",
+        "부가가치세"
+      ],
+      "summary": "개인이 사업을 시작할 때 세무서에 제출하는 법정 사업자등록 신청서입니다.",
+      "usage": "개인사업을 시작하려면 개업일부터 20일 이내에 세무서에 등록 신청해야 합니다. 상호, 성명, 사업장 소재지, 주업태, 주종목 등 사업장 현황을 작성합니다. 사업 허가증, 임대차계약서 등 필요 서류를 함께 제출합니다. 처리기간은 2일이며 홈택스(www.hometax.go.kr)에서도 온라인 신청 가능합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 504982,
+        "docx": 58423,
+        "hwpx": 33720
+      },
+      "pages": 6,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "상호(단체명), 성명, 주민등록번호, 사업장 소재지를 적습니다.",
+        "주업태, 주종목, 개업일, 종업원 수를 입력합니다.",
+        "자가 또는 임차사업장 여부를 선택하고 임대인 정보를 기재합니다.",
+        "사업자금 명세와 과세 방식을 선택합니다.",
+        "대리인이 신청하면 위임장을 첨부합니다."
+      ],
+      "faq": [
+        {
+          "q": "개업일부터 몇 일 내에 신청해야 하나요?",
+          "a": "사업 개시일부터 20일 이내에 신청해야 합니다. 늦으면 가산세가 붙을 수 있습니다."
+        },
+        {
+          "q": "임차사업장이면 어떤 서류가 필요한가요?",
+          "a": "임대차계약서 사본을 냅니다. 전차(다시 빌린) 사업장이면 임대인의 전차동의서도 함께 제출합니다."
+        },
+        {
+          "q": "사업 허가가 필요한 업종도 있나요?",
+          "a": "네, 일부 업종(음식점, 미용실 등)은 관계기관의 허가증을 함께 제출해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "처리기간 2일(보정 기간은 불산입)",
+            "1. 인적사항",
+            "상호(단체명)",
+            "연락처",
+            "(사업장 전화번호)",
+            "성명(대표자)",
+            "(주소지 전화번호)",
+            "주민등록번호",
+            "(휴대전화번호)",
+            "(단체)부동산등기용등록번호",
+            "(팩스 번호)",
+            "사업장(단체) 소재지 층 호",
+            "2. 사업장 현황"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "startup-checklist",
+        "business-plan-simple",
+        "employment-certificate"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "부가가치세법 시행규칙 별지 제4호서식",
+      "law_ref": {
+        "law": "부가가치세법 시행규칙",
+        "form_no": "별지 제4호서식",
+        "amended": "2026-03-20",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EB%B6%80%EA%B0%80%EA%B0%80%EC%B9%98%EC%84%B8%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0004&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국세청",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:29:12+09:00",
+      "updated_at": "2026-09-16T15:14:08+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-donation-receipt",
+      "title": "기부금 영수증 (법정서식)",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "기부금영수증",
+        "기부금",
+        "세액공제",
+        "기부",
+        "영수증"
+      ],
+      "summary": "기부금을 받은 단체가 기부자에게 발급하는 법정 기부금 영수증입니다.",
+      "usage": "기부금을 받은 단체가 기부자에게 발급하는 영수증으로, 기부자의 세액공제 증거서류로 사용됩니다. 기부자와 기부금 단체의 정보, 기부 내용(금액, 날짜), 기부금 구분 코드를 기재합니다. 현물기부 시에는 품명, 수량, 단가를 함께 기록합니다. 기부금공제대상 기부금단체로 규정하는 법령을 명시해야 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 181588,
+        "docx": 43082,
+        "hwpx": 17728
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "기부자의 성명(법인명), 주민등록번호(사업자등록번호), 주소를 적습니다.",
+        "기부금 단체명, 사업자등록번호, 소재지를 기재합니다.",
+        "기부 구분(금전 또는 현물)과 기부일, 금액을 입력합니다.",
+        "현물기부면 품명, 수량, 단가를 작성합니다.",
+        "기부자와 수령인이 각각 서명 또는 인을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "금전기부와 현물기부는 어떻게 다르게 적나요?",
+          "a": "금전기부는 구분란에 \"금전\"만 적고, 현물기부는 \"현물\"과 함께 품명·수량·단가를 기재합니다."
+        },
+        {
+          "q": "기부금공제 근거법령을 모르면 어떻게 하나요?",
+          "a": "소득세법, 법인세법, 조세특례제한법 등에 따라 정해지며, 해당 법령 조항과 코드번호를 확인하여 적습니다."
+        },
+        {
+          "q": "언론기관을 통해 기부했을 때도 영수증을 받나요?",
+          "a": "네, 언론기관이 기부금을 중개한 경우 ❸ 기부금 모집처(언론기관)에 매체명과 사업자등록번호를 적습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "일련번호",
+            "❶ 기부자",
+            "성명(법인명)",
+            "주민등록번호",
+            "주소(소재지)",
+            "❷ 기부금 단체",
+            "단 체 명",
+            "사업자등록번호(고유번호)",
+            "소 재 지",
+            "기부금공제대상",
+            "❸ 기부금 모집처(언론기관 등)",
+            "사업자등록번호",
+            "❹ 기부내용",
+            "코 드"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "power-of-attorney",
+        "gov-business-registration-individual",
+        "tax-invoice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "소득세법 시행규칙 별지 제45호의2서식",
+      "law_ref": {
+        "law": "소득세법 시행규칙",
+        "form_no": "별지 제45호의2서식",
+        "amended": "2026-01-02",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%86%8C%EB%93%9D%EC%84%B8%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0045&bylBrNo=02&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국세청",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:27:33+09:00",
+      "updated_at": "2026-09-16T15:13:06+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-food-business-report",
+      "title": "식품 영업 신고서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "식품영업신고",
+        "음식점신고",
+        "식품위생",
+        "급식소",
+        "카페",
+        "편의점신고"
+      ],
+      "summary": "음식점·카페·편의점 등 식품을 취급하는 영업장을 운영할 때 시·군·구청에 내는 법정 신고서입니다.",
+      "usage": "식품을 취급하는 영업장을 운영하려는 사람이 해당 시·군·구청에 신고하는 서류입니다. 신고인의 인적사항, 영업장의 명칭·주소·전화번호, 영업 종류, 영업장 면적, 식품용수 종류, 공동조리장 이용 여부를 작성합니다. 신고 처리 기간은 15일 이내이며, 필요시 시설조사를 실시합니다. 처리수수료는 전자민원 신고 시 8,300원(한시적 영업신고), 일반영업신고 25,200원이고, 방문·우편 신청 시는 9,300원·28,000원입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 164143,
+        "docx": 42921,
+        "hwpx": 15471
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고인의 성명, 주민등록번호(법인의 경우 법인명칭 및 대표자명), 주소를 적습니다.",
+        "신고장소의 명칭, 전화번호, 소재지, 영업 종류를 선택해 기입합니다.",
+        "영업장 면적, 식품용수 종류, 공동조리장·공유주방 이용 여부 등을 표시합니다.",
+        "법정 신고임을 확인하고 서명 또는 인장을 합니다.",
+        "행정정보 공동이용 동의서에 동의 여부를 표시하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "영업신고 전에 무엇을 준비하나요?",
+          "a": "원문 첨부서류 목록(교육이수증, 건강진단 결과서 등)을 확인해 준비하고, 제출 기관에 필요 서류를 확인하십시오."
+        },
+        {
+          "q": "폐업할 때도 신고하나요?",
+          "a": "예, 식품위생법에 따라 신고한 영업을 폐업하는 때에도 신고해야 합니다."
+        },
+        {
+          "q": "처리 기간은 얼마나 되나요?",
+          "a": "신고서 접수 후 검토·결재를 거쳐 15일 이내에 신고증을 발급합니다. 필요시 시설조사를 실시합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "발급일",
+            "처리기간 즉시",
+            "신고인",
+            "성명(법인은 법인 명칭 및 대표자의 성명)",
+            "주민(법인)등록번호",
+            "주소(법인은 주된 사무소의 소재지)",
+            "전화번호",
+            "신고사항",
+            "명칭(상호)",
+            "행정정보 공동이용 동의서",
+            "신 고 안 내",
+            "유 의 사 항"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-business-registration-individual",
+        "gov-business-closure-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "식품위생법 시행규칙 별지 제37호서식",
+      "law_ref": {
+        "law": "식품위생법 시행규칙",
+        "form_no": "별지 제37호서식",
+        "amended": "2026-09-01",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%8B%9D%ED%92%88%EC%9C%84%EC%83%9D%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0037&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "식품의약품안전처·시군구",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:27:18+09:00",
+      "updated_at": "2026-09-16T15:13:20+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-health-voluntary-continuation",
+      "title": "건강보험 임의계속 가입·탈퇴 신청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "건강보험임의계속",
+        "건강보험가입",
+        "퇴직자보험",
+        "직장가입자",
+        "자영업자보험"
+      ],
+      "summary": "직장을 그만둔 후 건강보험 자격을 유지하고 싶을 때 국민건강보험공단에 제출하는 법정 신청서입니다.",
+      "usage": "직장을 그만두어 직장가입자에서 지역가입자로 자격이 변동된 사람이 건강보험 임의계속 가입을 신청하는 서류입니다. 임의계속가입은 사직 후 지역가입자가 된 다음 최초 보험료 납부기한부터 2개월 이내에 신청해야 합니다. 신청인의 인적사항, 퇴직한 사업장 정보, 피부양자가 있으면 피부양자 정보, 보험료 자동이체와 전자고지 신청을 작성합니다. 임의계속 기간은 최장 36개월이며, 첫 보험료를 2개월 내에 납부하지 않으면 자격이 소급하여 상실됩니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 155272,
+        "docx": 42927,
+        "hwpx": 15583
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "가입 또는 탈퇴 선택 항목에 √ 표시를 합니다.",
+        "신청인(가입자)의 성명, 주민등록번호, 주소, 전화번호를 적습니다.",
+        "퇴직한 사업장의 명칭과 재직기간을 월 단위로 기입합니다.",
+        "피부양자가 있는 경우 관계, 성명, 주민등록번호, 장애인·국가유공자 여부를 적습니다.",
+        "보험료 자동이체와 전자고지 신청 사항을 선택하고 서명 또는 인장합니다."
+      ],
+      "faq": [
+        {
+          "q": "임의계속가입 신청 기한은 정해져 있나요?",
+          "a": "예, 지역가입자 보험료 납부기한부터 2개월 이내에 신청해야 합니다. 기한을 지나면 신청이 불가능합니다."
+        },
+        {
+          "q": "얼마나 오래 임의계속가입을 유지할 수 있나요?",
+          "a": "최장 36개월입니다. 그 이후는 지역가입자로 자동 전환됩니다. 재취업하면 직장가입자로 변경됩니다."
+        },
+        {
+          "q": "재취업하면 어떻게 되나요?",
+          "a": "재취업한 직장에서 직장가입자 자격을 취득하면 임의계속가입은 자동으로 상실되고 직장가입자로 전환됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간 즉시",
+            "가입자",
+            "① 성명",
+            "③ 주소",
+            "④ 전화번호",
+            "휴대전화",
+            "FAX번호",
+            "퇴직",
+            "⑤ 명칭",
+            "⑥ 재직기간",
+            ". . . ~ . . .",
+            "( 개월)"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-pension-exemption",
+        "gov-separation-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "국민건강보험법 시행규칙 별지 제39호서식",
+      "law_ref": {
+        "law": "국민건강보험법 시행규칙",
+        "form_no": "별지 제39호서식",
+        "amended": "2023-11-14",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EB%B3%B4%ED%97%98%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0039&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국민건강보험공단",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:08+09:00",
+      "updated_at": "2026-09-16T15:18:01+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-household-check-request",
+      "title": "전입세대확인서 열람·교부 신청서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "전입세대확인서",
+        "세대확인서",
+        "주민등록열람",
+        "전입신고",
+        "세대주확인"
+      ],
+      "summary": "집을 옮기거나 세대 구성을 확인해야 할 때 읍면동에 신청하는 전입세대확인서 열람·교부 신청서입니다.",
+      "usage": "임대차계약, 금융거래, 공공지원 신청 등 특정 목적으로 전입세대확인서가 필요할 때 해당 시·군·구 또는 읍면동에 신청하는 서류입니다. 개인이 신청하거나 법인·단체가 신청할 수 있으며, 다른 사람에게 신청을 위임할 수도 있습니다. 신청 내용(열람 또는 교부), 신청인 인적사항, 위임 여부, 용도 및 목적을 작성합니다. 처리 기간은 즉시이며, 열람은 1건 1회 300원, 교부는 1통 400원입니다. 일부 대상은 수수료가 면제됩니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 135758,
+        "docx": 42084,
+        "hwpx": 14076
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청 내용에서 열람 또는 교부를 선택해 √ 표시합니다.",
+        "신청인의 성명, 주민등록번호, 주소, 연락처를 적습니다.",
+        "열람 또는 교부 대상이 되는 건물·시설의 정확한 주소를 기입합니다.",
+        "신청 용도 및 목적을 구체적으로 작성합니다.",
+        "위임받아 신청하는 경우 위임장을 작성하고 위임인의 서명 또는 인장을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "열람과 교부의 차이는 뭔가요?",
+          "a": "열람은 신청처에서 서류를 확인하는 것이고, 교부는 사본을 받아가는 것입니다."
+        },
+        {
+          "q": "수수료를 면제받을 수 있나요?",
+          "a": "수급자, 독립유공자, 국가유공자 등 일부 대상은 수수료가 면제됩니다. 해당 사항이 있으면 증명서류를 제출하십시오."
+        },
+        {
+          "q": "다른 사람이 신청해줄 수 있나요?",
+          "a": "예, 신청을 위임할 수 있습니다. 위임장과 본인 및 위임인의 신분증명서를 함께 제출해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일자",
+            "처리기간 즉시",
+            "신청 내용",
+            "개인 신청인",
+            "성명",
+            "주민등록번호",
+            "주소 (시ㆍ도) (시ㆍ군ㆍ구)",
+            "연락처",
+            "법인ㆍ단체 신청인",
+            "명칭",
+            "사업자등록번호",
+            "대표자",
+            "소재지"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-resident-register-copy",
+        "gov-move-in-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "주민등록법 시행규칙 별지 제15호서식",
+      "law_ref": {
+        "law": "주민등록법 시행규칙",
+        "form_no": "별지 제15호서식",
+        "amended": "2024-12-20",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A3%BC%EB%AF%BC%EB%93%B1%EB%A1%9D%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0015&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "행정안전부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T13:36:17+09:00",
+      "updated_at": "2026-09-16T15:13:20+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-housing-lease-report",
+      "title": "주택 임대차 계약 신고서 (전월세 신고)",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "전월세신고",
+        "임대차신고",
+        "주택임차",
+        "월세신고",
+        "보증금신고"
+      ],
+      "summary": "주택을 월세나 전세로 빌리거나 빌려줄 때 시·군·구청에 신고하는 임대차 계약 신고서입니다.",
+      "usage": "주택 임대차 계약을 체결하거나 갱신했을 때 계약 내용을 시·군·구 또는 읍면동에 신고하는 서류입니다. 임대인과 임차인의 인적사항, 주택의 종류·위치·면적, 임대료(보증금·월차임), 계약 기간, 계약갱신요구권 행사 여부를 기입합니다. 신고는 계약 체결일부터 30일 이내에 해야 하며, 부동산거래관리시스템(rtms.molit.go.kr)에서도 온라인 신청이 가능합니다. 신고하지 않거나 거짓으로 신고하면 100만원 이하의 과태료가 부과될 수 있습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 155723,
+        "docx": 42201,
+        "hwpx": 14635
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "임대인의 성명(법인명), 주민등록번호, 주소, 전화번호를 적습니다.",
+        "임차인의 성명(법인명), 주민등록번호, 주소, 전화번호를 적습니다.",
+        "주택의 종류를 선택하고 소재지, 건물명, 동·층·호를 정확히 기입합니다.",
+        "신규 또는 갱신 계약을 선택해 보증금, 월차임, 계약 기간, 체결일을 적습니다.",
+        "계약갱신요구권 행사 여부를 표시하고 임대인·임차인이 함께 서명 또는 인장합니다."
+      ],
+      "faq": [
+        {
+          "q": "온라인으로도 신고할 수 있나요?",
+          "a": "예, 부동산거래관리시스템(rtms.molit.go.kr)에서 온라인으로 신고할 수 있습니다."
+        },
+        {
+          "q": "신고 기한을 놓치면 어떻게 되나요?",
+          "a": "계약 체결일부터 30일 이내 미신고 또는 거짓 신고 시 100만원 이하의 과태료가 부과됩니다."
+        },
+        {
+          "q": "보증금이나 월세가 변경되면 다시 신고해야 하나요?",
+          "a": "예, 변경·해제 사항이 확정되면 30일 이내에 변경 신고를 해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일시",
+            "처리기간 지체 없이",
+            "①임대인",
+            "성명(법인ㆍ단체명)",
+            "주민등록번호(법인ㆍ외국인등록ㆍ고유번호)",
+            "주소(법인ㆍ단체 소재지)",
+            "전화번호",
+            "휴대전화번호",
+            "②임차인",
+            "③임대",
+            "종류",
+            "④소재지(주소)",
+            "건물명( ) 동 층 호"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "housing-lease-contract",
+        "lease-renewal-contract",
+        "move-in-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "부동산 거래신고 등에 관한 법률 시행규칙 별지 제5호의2서식",
+      "law_ref": {
+        "law": "부동산 거래신고 등에 관한 법률 시행규칙",
+        "form_no": "별지 제5호의2서식",
+        "amended": "2023-12-29",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EB%B6%80%EB%8F%99%EC%82%B0+%EA%B1%B0%EB%9E%98%EC%8B%A0%EA%B3%A0+%EB%93%B1%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0005&bylBrNo=02&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국토교통부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:29:40+09:00",
+      "updated_at": "2026-09-16T15:13:35+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-id-card-loss-report",
+      "title": "주민등록증 분실신고서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "주민등록증분실",
+        "신분증분실",
+        "분실신고",
+        "모바일신분증",
+        "신분증재발급"
+      ],
+      "summary": "주민등록증이나 모바일 주민등록증을 잃어버렸을 때 읍면동에 제출하는 분실신고서입니다.",
+      "usage": "주민등록증이나 모바일 주민등록증을 잃어버렸을 때 해당 읍면동 주민센터에 신고하는 서류입니다. 분실자의 성명, 주민등록번호, 주소, 연락처와 분실 일시, 분실 사유를 기입합니다. 신고서는 분실신고만 하는 용도이며, 재발급을 받으려면 별도의 재발급 신청서를 작성해야 합니다. 분실신고가 접수되면 주민등록증과 모바일 주민등록증의 효력이 모두 정지됩니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 67976,
+        "docx": 39316,
+        "hwpx": 10635
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "주민등록증 분실, 모바일 주민등록증 분실, 분실신고 또는 철회 중 해당 항목에 √ 표시합니다.",
+        "분실자의 성명(한글), 주민등록번호, 주소, 연락처를 적습니다.",
+        "분실한 날짜와 분실 사유를 구체적으로 기입합니다.",
+        "분실자가 직접 신고하는 경우 '신고(철회)인' 칸에 서명 또는 인장합니다.",
+        "다른 사람이 대리 신고하는 경우 신고인의 성명, 주민등록번호, 분실자와의 관계를 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "분실신고 후 신분증을 찾았으면 어떻게 하나요?",
+          "a": "읍·면사무소 또는 동 주민센터에 철회 신청을 하면 됩니다. 이 신청서의 철회 항목을 선택해 제출합니다."
+        },
+        {
+          "q": "분실신고만으로 새 신분증을 받을 수 있나요?",
+          "a": "아니요, 분실신고는 효력 정지만 합니다. 새 신분증이 필요하면 별도의 재발급 신청서를 제출해야 합니다."
+        },
+        {
+          "q": "대리인이 신고할 수 있나요?",
+          "a": "예, 신고인이 직접 신고할 수 없을 때 대리인이 신고할 수 있습니다. 신고인의 성명과 분실자와의 관계를 적으세요."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "분실자",
+            "성명(한글)",
+            "주민등록번호",
+            "주소",
+            "연락처",
+            "신고(철회) 내용",
+            "분실일",
+            "분실(철회) 사유",
+            "주민등록증의 습득(담당 공무원 작성 칸)",
+            "첨부 서류",
+            "없음",
+            "수수료"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-seal-report",
+        "gov-seal-certificate-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "주민등록법 시행령 별지 제34호서식",
+      "law_ref": {
+        "law": "주민등록법 시행령",
+        "form_no": "별지 제34호서식",
+        "amended": "2024-12-03",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A3%BC%EB%AF%BC%EB%93%B1%EB%A1%9D%EB%B2%95+%EC%8B%9C%ED%96%89%EB%A0%B9&bylNo=0034&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "행정안전부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:14+09:00",
+      "updated_at": "2026-09-16T15:14:36+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-info-disclosure-request",
+      "title": "정보공개 청구서 (법정서식)",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "정보공개청구",
+        "공공정보공개",
+        "정보공개",
+        "공공기관정보",
+        "투명성"
+      ],
+      "summary": "정부기관이나 공공기관에 보유한 정보를 공개해달라고 청구하는 법정 신청서입니다.",
+      "usage": "정부 부처·지방자치단체·공공기관이 가지고 있는 정보를 공개해 달라고 청구하는 서류입니다. 청구인의 인적사항, 청구 내용, 공개 방법(열람·사본·전자파일 등)과 수령 방법을 적습니다. 수수료 감면 대상이면 사유를 적고 증명서류를 붙입니다. 정보공개포털(www.open.go.kr)에서도 청구할 수 있습니다.",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 82683,
+        "docx": 39817,
+        "hwpx": 11279
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "info-disclosure-request",
+      "series_name": "정보공개청구서",
+      "variant": "법정서식",
+      "variant_rank": 2,
+      "variant_use": "관공서에 그대로 제출할 법정 양식이 필요할 때 씁니다.",
+      "howto": [
+        "청구인의 성명(법인명·대표자명), 생년월일, 주소, 전화번호를 적습니다.",
+        "공개를 받으려는 정보를 구체적으로 '청구 내용'에 기입합니다.",
+        "공개 방법(열람, 사본, 전자파일 등)과 수령 방법(방문, 우편, 팩스 등)을 선택합니다.",
+        "수수료 감면 대상이면 해당 사유를 적고 증명서류를 첨부합니다.",
+        "서명 또는 인장을 하고 접수 기관장에게 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "정보공개 청구가 거절될 수도 있나요?",
+          "a": "예, 국가안보·개인정보 침해·법인 영업 비밀 등의 이유로 공개가 거절될 수 있습니다. 거절된 경우 이의신청이 가능합니다."
+        },
+        {
+          "q": "정보공개를 받으면 수수료를 내야 하나요?",
+          "a": "기본적으로 무료이나, 사본이나 전자파일 등을 받을 때는 실비 범위의 수수료가 청구될 수 있습니다."
+        },
+        {
+          "q": "오랫동안 결정이 없으면 어떻게 하나요?",
+          "a": "원문 안내에 따르면 청구한 날부터 20일이 지나도록 공개 여부 결정이 없으면 이의신청이나 행정심판 등을 청구할 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간",
+            "청구인",
+            "성명(법인ㆍ단체명 및 대표자 성명)",
+            "생년월일(성별)",
+            "여권ㆍ외국인등록번호(외국인의 경우 작성)",
+            "사업자(법인ㆍ단체)등록번호",
+            "주소(소재지)",
+            "전화번호(또는 휴대전화번호)",
+            "전자우편주소",
+            "팩스번호",
+            "청구 내용",
+            "공개 방법"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "disclosure-objection",
+        "gov-admin-appeal"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "공공기관의 정보공개에 관한 법률 시행규칙 별지 제1호의2서식",
+      "law_ref": {
+        "law": "공공기관의 정보공개에 관한 법률 시행규칙",
+        "form_no": "별지 제1호의2서식",
+        "amended": "2024-09-13",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98+%EC%A0%95%EB%B3%B4%EA%B3%B5%EA%B0%9C%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0001&bylBrNo=02&bylCls=BF&bylEfYdYn=Y",
+        "agency": "행정안전부",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:27:35+09:00",
+      "updated_at": "2026-09-16T15:13:32+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-lease-info-request",
+      "title": "임대차 정보제공 요청서",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "임대차계약",
+        "확정일자",
+        "주택임차인",
+        "전세금",
+        "주택계약"
+      ],
+      "summary": "임대차계약서상 확정일자 부여 현황과 임차인 정보를 요청하는 법정 신청서입니다.",
+      "usage": "이 서식은 주택을 임차하려거나 현재 임차인이 임대차 정보를 필요할 때 읍·면·동사무소에 제출합니다. 요청인의 신분과 요청 이유를 확인하는 항목들을 정확히 기재해야 하며, 이해관계인으로서 요청하는 경우 그 사유를 명시해야 합니다. 대리인이 신청하는 경우 대리인의 신분증 사본을 첨부합니다. 요청 대상 주택의 정확한 소재지(건물명, 동, 층, 호수까지 구체적 기재)를 기재하고, 확정일자 부여현황의 종류(일반, 임차인 특정, 임대인·임차인용, 계약 갱신 거절 임차인용)를 선택해야 합니다. 수수료 600원과 신분증이 필요합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 100049,
+        "docx": 40515,
+        "hwpx": 12125
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청인 신분(이해관계인 또는 계약자)과 연락처를 적습니다.",
+        "요청할 주택의 위치를 동·호수까지 구체적으로 기재합니다.",
+        "확정일자 부여현황의 종류를 선택하고 필요시 임차인 성명을 적습니다.",
+        "요청 정보의 형태(열람 또는 출력물 교부)를 선택합니다.",
+        "신청인이 서명하고 해당 읍면동사무소 또는 공증인에게 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "이해관계인으로 요청할 수 있는 자격이 무엇인가요?",
+          "a": "임대인·임차인, 주택 소유자, 등기기록상 권리자, 우선변제권 승계 금융기관, 계약 갱신 거절로 피해를 입은 전 임차인 등이 해당합니다."
+        },
+        {
+          "q": "대리인이 신청하려면 어떻게 해야 하나요?",
+          "a": "신청인의 인감증명서, 본인서명사실 확인서 또는 신분증명서 사본을 첨부하고, 대리인의 신분증을 제시합니다."
+        },
+        {
+          "q": "처리기간은 얼마나 걸리나요?",
+          "a": "확정일자 정보제공은 즉시 처리됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일자",
+            "발급일",
+            "처리기간 즉시",
+            "요청인",
+            "성명(법인명)",
+            "주민등록번호(법인등록번호)",
+            "주소(본점 소재지)",
+            "휴대전화번호",
+            "요청내용",
+            "요청기간",
+            "요청정보",
+            "첨부서류",
+            "유의사항"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "housing-lease-contract",
+        "gov-housing-lease-report",
+        "lease-renewal-contract",
+        "property-viewing-log"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "주택임대차계약증서상의 확정일자 부여 및 임대차 정보제공에 관한 규칙 별지 제3호서식",
+      "law_ref": {
+        "law": "주택임대차계약증서상의 확정일자 부여 및 임대차 정보제공에 관한 규칙",
+        "form_no": "별지 제3호서식",
+        "amended": "2020-09-29",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A3%BC%ED%83%9D%EC%9E%84%EB%8C%80%EC%B0%A8%EA%B3%84%EC%95%BD%EC%A6%9D%EC%84%9C%EC%83%81%EC%9D%98+%ED%99%95%EC%A0%95%EC%9D%BC%EC%9E%90+%EB%B6%80%EC%97%AC+%EB%B0%8F+%EC%9E%84%EB%8C%80%EC%B0%A8+%EC%A0%95%EB%B3%B4%EC%A0%9C%EA%B3%B5%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B7%9C%EC%B9%99&bylNo=0003&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "법무부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:29:46+09:00",
+      "updated_at": "2026-09-16T15:13:46+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-mail-order-change-report",
+      "title": "통신판매업 변경신고서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "통신판매업",
+        "변경신고",
+        "사업변경",
+        "온라인쇼핑",
+        "통신판매"
+      ],
+      "summary": "통신판매업 신고 후 사업 내용이 변경될 때 공정거래위원회에 제출하는 법정 신고서입니다.",
+      "usage": "통신판매업자가 신고한 상호·소재지·대표자·인터넷도메인·호스트서버 소재지 등이 바뀌었을 때 공정거래위원회 또는 시·군·구청에 내는 신고서입니다. 변경 전과 변경 후 내용을 나란히 적고 변경 사유를 씁니다. 신고증 원본을 붙이되, 잃어버렸거나 훼손했으면 그 사유를 적습니다. 수수료는 없고 처리기간은 3일입니다. 신고 기한은 제출 기관에 확인하십시오.",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 76416,
+        "docx": 39729,
+        "hwpx": 11279
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고인(법인)의 현재 상호, 신고번호, 소재지, 대표자 정보를 기입합니다.",
+        "변경 사항 항목에서 변경 전 내용과 변경 후 내용을 각각 기입합니다.",
+        "변경 사유를 적절히 설명합니다.",
+        "신고증이 있으면 원본을 첨부하거나, 분실·훼손 사유를 기입합니다.",
+        "신고인이 서명하고 관할 기관에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "모든 변경 사항을 신고해야 하나요?",
+          "a": "신고증에 기재된 사항이 변경되면 신고해야 합니다. 신고증 재교부가 필요한 경우도 있습니다."
+        },
+        {
+          "q": "신고증을 분실했는데 신고할 수 있나요?",
+          "a": "신고증 분실 사유를 명시하면 신고증 없이도 신고할 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간 3일",
+            "신고인",
+            "법인명(상호)",
+            "신고번호",
+            "소재지",
+            "전화번호",
+            "대표자의 성명",
+            "생년월일",
+            "주소",
+            "전자우편주소",
+            "사업자등록번호",
+            "인터넷도메인 이름"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-mail-order-report",
+        "gov-mail-order-closure-report",
+        "gov-business-registration-individual"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "전자상거래 등에서의 소비자보호에 관한 법률 시행규칙 별지 제4호서식",
+      "law_ref": {
+        "law": "전자상거래 등에서의 소비자보호에 관한 법률 시행규칙",
+        "form_no": "별지 제4호서식",
+        "amended": "2025-02-11",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A0%84%EC%9E%90%EC%83%81%EA%B1%B0%EB%9E%98+%EB%93%B1%EC%97%90%EC%84%9C%EC%9D%98+%EC%86%8C%EB%B9%84%EC%9E%90%EB%B3%B4%ED%98%B8%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0004&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "공정거래위원회·시군구",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:22+09:00",
+      "updated_at": "2026-09-16T15:14:47+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-mail-order-closure-report",
+      "title": "통신판매업 휴업·폐업·영업재개 신고서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "통신판매업",
+        "휴업신고",
+        "폐업신고",
+        "영업재개",
+        "사업중단"
+      ],
+      "summary": "통신판매업을 일시 중단하거나 폐업, 다시 재개할 때 공정거래위원회에 제출하는 법정 신고서입니다.",
+      "usage": "통신판매업자가 휴업(일시 중단)하거나 폐업할 때, 또는 휴업했던 사업을 다시 시작할 때 공정거래위원회 또는 시·군·구청에 신고합니다. 신고인의 상호, 신고번호, 소재지, 대표자 정보를 기입하고, 해당하는 사항(휴업, 폐업, 영업재개) 중 하나를 선택합니다. 각 항목별로 신고 기간(시작일과 종료일)을 적거나, 단일 항목인 경우 해당 날짜만 기입합니다. 폐업 신고 시 통신판매업 신고증 원본을 첨부하거나, 분실·훼손한 경우 그 사유를 기입합니다. 처리기간은 3일이고 수수료는 없습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 68751,
+        "docx": 39350,
+        "hwpx": 10751
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고인(상호), 신고번호, 소재지, 대표자 성명과 생년월일을 기입합니다.",
+        "해당하는 신고 사항(휴업, 폐업, 영업재개)에 표시하고, 신고 기간을 년·월·일로 기입합니다.",
+        "신고 사유를 설명합니다.",
+        "폐업을 신고하는 경우 신고증 원본을 첨부하거나, 분실·훼손 사유를 기입합니다.",
+        "신고인이 서명하고 관할 기관에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "휴업과 폐업의 차이는 무엇인가요?",
+          "a": "휴업은 일시적으로 사업을 중단했다가 재개하는 경우이고, 폐업은 사업을 완전히 종료하는 경우입니다."
+        },
+        {
+          "q": "부가가치세 폐업신고도 함께 해야 하나요?",
+          "a": "폐업신고 시 부가가치세법에 따른 폐업신고도 필요하면 함께 제출해야 합니다."
+        },
+        {
+          "q": "폐업 신고증이 없으면 어떻게 하나요?",
+          "a": "신고증 분실·훼손 사유를 명시하면 신고증 없이도 신고할 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간 3일",
+            "신고인",
+            "상호",
+            "신고번호",
+            "소재지",
+            "전화번호",
+            "대표자의 성명",
+            "생년월일",
+            "신고",
+            "기간",
+            "년 월 일부터",
+            "년 월 일까지"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-mail-order-report",
+        "gov-mail-order-change-report",
+        "gov-business-closure-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "전자상거래 등에서의 소비자보호에 관한 법률 시행규칙 별지 제5호서식",
+      "law_ref": {
+        "law": "전자상거래 등에서의 소비자보호에 관한 법률 시행규칙",
+        "form_no": "별지 제5호서식",
+        "amended": "2026-07-20",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A0%84%EC%9E%90%EC%83%81%EA%B1%B0%EB%9E%98+%EB%93%B1%EC%97%90%EC%84%9C%EC%9D%98+%EC%86%8C%EB%B9%84%EC%9E%90%EB%B3%B4%ED%98%B8%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0005&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "공정거래위원회·시군구",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:27:41+09:00",
+      "updated_at": "2026-09-16T15:13:42+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-mail-order-report",
+      "title": "통신판매업 신고서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "통신판매업",
+        "온라인쇼핑몰",
+        "전자상거래",
+        "통신판매신고",
+        "인터넷쇼핑"
+      ],
+      "summary": "온라인 쇼핑몰이나 인터넷 판매를 시작할 때 공정거래위원회에 제출하는 법정 신고서입니다.",
+      "usage": "사업자가 텔레비전 홈쇼핑, 인터넷, 카탈로그 등 통신판매업을 시작할 때 공정거래위원회 또는 시·군·구청에 신고합니다. 신고인(법인) 정보, 대표자 정보, 전자우편 주소, 사업자등록번호, 인터넷도메인명과 호스트서버 소재지를 기입합니다. 판매 방식(TV홈쇼핑, 인터넷, 카탈로그, 신문·잡지, 기타) 중 하나를 선택하고, 취급 품목을 해당하는 것 모두에 표시합니다. 선지급식 통신판매를 하려면 구매안전서비스 이용 확인증을 첨부해야 하며, 수수료는 없습니다. 처리기간은 3일입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 95849,
+        "docx": 40155,
+        "hwpx": 12092
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고인(법인)의 상호, 법인등록번호, 소재지를 적습니다.",
+        "대표자의 성명, 주민등록번호, 주소, 연락처를 기입합니다.",
+        "전자우편주소, 사업자등록번호를 적습니다.",
+        "인터넷도메인 이름과 호스트서버 소재지를 기재합니다.",
+        "판매 방식과 취급 품목에 모두 표시하고, 신고인이 서명해 관할 기관에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "선지급식 통신판매는 무엇인가요?",
+          "a": "소비자가 상품을 받기 전에 대금을 먼저 내는 판매 방식입니다. 이 경우 구매안전서비스 이용 확인증 등을 첨부합니다."
+        },
+        {
+          "q": "신고인과 대표자가 다르면 어떻게 하나요?",
+          "a": "원문 안내대로 신고인이 대표자와 동일인이 아닐 때만 신고인 칸을 따로 적고 서명합니다."
+        },
+        {
+          "q": "호스트서버 소재지는 어떻게 확인하나요?",
+          "a": "웹호스팅업체에 확인하여 기입합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간 3일",
+            "신고인",
+            "법인명(상호)",
+            "법인등록번호",
+            "소재지",
+            "전화번호",
+            "대표자의 성명",
+            "주민등록번호",
+            "주소",
+            "전자우편주소",
+            "사업자등록번호",
+            "인터넷도메인 이름"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-business-registration-individual",
+        "business-plan-simple",
+        "gov-mail-order-change-report",
+        "gov-mail-order-closure-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "전자상거래 등에서의 소비자보호에 관한 법률 시행규칙 별지 제1호서식",
+      "law_ref": {
+        "law": "전자상거래 등에서의 소비자보호에 관한 법률 시행규칙",
+        "form_no": "별지 제1호서식",
+        "amended": "2025-02-11",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A0%84%EC%9E%90%EC%83%81%EA%B1%B0%EB%9E%98+%EB%93%B1%EC%97%90%EC%84%9C%EC%9D%98+%EC%86%8C%EB%B9%84%EC%9E%90%EB%B3%B4%ED%98%B8%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0001&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "공정거래위원회·시군구",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T13:38:17+09:00",
+      "updated_at": "2026-09-16T15:13:59+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-maternity-leave-benefit",
+      "title": "출산전후휴가 급여 등 신청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "출산휴가",
+        "유산휴가",
+        "모성보호",
+        "고용보험급여",
+        "배우자출산휴가"
+      ],
+      "summary": "출산 전후휴가나 유산·사산휴가, 배우자 출산휴가 급여를 신청하는 고용보험 법정 신청서입니다.",
+      "usage": "근로자가 출산 전후휴가, 유산·사산휴가, 배우자 출산휴가, 난임치료휴가를 받은 후 고용보험 급여를 신청할 때 지방고용노동관서에 제출합니다. 휴가 종료 또는 유산·사산일부터 12개월 이내에 신청해야 하며, 여러 회차에 나누어 신청하는 경우 회차별로 작성합니다. 신청인의 성명, 주민등록번호, 주소, 출산(예정)일 또는 유산·사산일을 기입하고, 신청 기간과 급여를 받을 계좌번호를 명기합니다. 휴가 기간 중 사업주로부터 받은 임금, 조기 복직·퇴사 여부, 다른 일자리에서의 소득 등을 확인하는 항목들을 정확히 응답합니다. 첨부서류는 출산 확인서, 통상임금 확인 자료, 미숙아 또는 난임치료 진단서 등입니다. 처리기간은 14일입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 146216,
+        "docx": 41953,
+        "hwpx": 14168
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인의 성명, 주민등록번호, 주소, 연락처와 출산일을 적습니다.",
+        "신청 기간과 급여를 받을 계좌 정보를 명기합니다.",
+        "휴가 기간 중 임금 수령, 조기 복직·퇴사, 다른 소득 활동 여부를 확인 항목에 응답합니다.",
+        "신청인이 서명하고 출산 확인서 등 필요한 서류를 첨부하여 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "휴가를 모두 받은 후 급여를 신청해야 하나요?",
+          "a": "회차별(1~4회차)로 나누어 신청할 수 있습니다. 회차마다 신청 기간을 구분해 적습니다."
+        },
+        {
+          "q": "미숙아를 출산했으면 무엇을 더 내나요?",
+          "a": "미숙아 여부에 \"예\"로 표시하고, 미숙아 출산 사실을 증명하는 의료기관 진단서 1부를 첨부합니다."
+        },
+        {
+          "q": "휴가 기간 중 월급을 받았는데 신청할 수 있나요?",
+          "a": "예. 신청이 가능하지만 사업주로부터 받은 금액과 기간을 정확히 기입해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간: 14일",
+            "첨부서류",
+            "수수료 없음",
+            "담당 공무원 확인사항",
+            "주민등록표 등본 또는 가족관계등록전산정보",
+            "행정정보 공동이용 동의서",
+            "개인정보 수집 및 이용 동의서(선택)",
+            "작성방법",
+            "신청인",
+            "출산전후휴가 급여등 제출"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "parental-leave-request",
+        "gov-health-voluntary-continuation",
+        "labor-contract-standard"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "고용보험법 시행규칙 별지 제105호서식",
+      "law_ref": {
+        "law": "고용보험법 시행규칙",
+        "form_no": "별지 제105호서식",
+        "amended": "2025-02-21",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B3%A0%EC%9A%A9%EB%B3%B4%ED%97%98%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0105&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "고용노동부",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:35+09:00",
+      "updated_at": "2026-09-16T15:15:01+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-move-in-report",
+      "title": "전입신고서 (법정서식)",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "전입신고",
+        "주민등록",
+        "이사",
+        "주소변경",
+        "전거"
+      ],
+      "summary": "새로운 주소로 이사할 때 읍·면·동사무소에 제출하는 법정 전입신고서입니다.",
+      "usage": "세대 전체가 이사해 세대주 변경이 없을 때 이사한 날부터 14일 이내에 새 주소지 읍·면·동 주민센터에 내는 신고서입니다. 신고인의 성명·주민등록번호·연락처, 전에 살던 곳과 현재 사는 곳, 전입 사유를 적습니다. 정당한 사유 없이 기간을 넘기면 과태료가 부과될 수 있습니다. 우편물 전입지 전송 서비스를 원하면 아래 동의서 부분을 함께 작성합니다.",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 97611,
+        "docx": 40537,
+        "hwpx": 11827
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "moving-in-report",
+      "series_name": "전입신고서",
+      "variant": "법정서식",
+      "variant_rank": 2,
+      "variant_use": "세대 전체가 이사할 때 읍면동사무소에 신고하는 법정 양식입니다.",
+      "howto": [
+        "신고인(세대주)의 성명, 주민등록번호, 연락처를 적습니다.",
+        "이전에 살던 시·도와 시·군·구(상세 주소는 생략 가능)를 기입합니다.",
+        "현재 사는 곳(이사한 곳)의 주소를 건물명, 동, 호수까지 정확히 기입합니다.",
+        "전입 사유를 해당하는 것 하나 선택하고, 필요하면 '그 밖의 사유'에 구체적으로 기입합니다.",
+        "신고인이 서명하고 읍·면·동사무소에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "세대 일부만 이사하면 어떻게 하나요?",
+          "a": "이 서식은 세대 전체가 이사하는 경우입니다. 세대원 중 일부만 이동하는 경우 별도 서식을 사용합니다."
+        },
+        {
+          "q": "14일을 지나서 신고하면 어떻게 되나요?",
+          "a": "정당한 사유 없이 14일을 넘기면 5만 원 이하의 과태료를 받습니다."
+        },
+        {
+          "q": "우편물 전입지 전송 서비스는 무엇인가요?",
+          "a": "이전 주소로 배달되던 우편물을 새로운 주소로 3개월간 자동으로 받을 수 있는 서비스입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수 번호",
+            "신고일",
+            "유의사항",
+            "작성방법"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "resident-registration-request",
+        "gov-resident-register-copy",
+        "moving-checklist",
+        "housing-lease-contract"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "주민등록법 시행령 별지 제15호서식",
+      "law_ref": {
+        "law": "주민등록법 시행령",
+        "form_no": "별지 제15호서식",
+        "amended": "2024-12-03",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A3%BC%EB%AF%BC%EB%93%B1%EB%A1%9D%EB%B2%95+%EC%8B%9C%ED%96%89%EB%A0%B9&bylNo=0015&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "행정안전부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:27:48+09:00",
+      "updated_at": "2026-09-16T15:13:52+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-parental-leave-benefit",
+      "title": "육아휴직 급여·육아기 근로시간 단축 급여 신청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "육아휴직",
+        "육아기근로시간단축",
+        "고용보험급여",
+        "선대금",
+        "근로시간단축"
+      ],
+      "summary": "8세 이하(또는 초등 2학년 이하) 자녀 양육을 위한 육아휴직 또는 근로시간 단축 급여를 신청하는 법정 신청서입니다.",
+      "usage": "근로자가 자녀 양육을 위해 육아휴직 또는 근로시간 단축을 했을 때 고용센터에 제출합니다. 신청 기간은 휴직 또는 단축 시작 1개월부터 종료 후 12개월 이내입니다. 신청인 정보·대상 자녀·신청 기간·받을 계좌번호·신청 기간 중 다른 소득 활동 여부를 기입합니다. 법정양식이므로 정확하게 작성해야 하며, 거짓 기입 시 부정수급으로 결정되어 반환 및 추징이 발생합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 188261,
+        "docx": 44036,
+        "hwpx": 16150
+      },
+      "pages": 3,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인과 대상 자녀의 정보를 적습니다.",
+        "급여를 받을 계좌번호를 적습니다.",
+        "신청 기간 중 다른 소득 활동 여부를 확인하여 적습니다.",
+        "신청인이 서명 또는 인감을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "육아휴직과 근로시간 단축은 어떻게 다른가요?",
+          "a": "육아휴직은 8세 이하(초등 2학년 이하) 자녀용이고, 근로시간 단축은 12세 이하(초등 6학년 이하) 자녀용입니다. 신청인이 상황에 맞게 선택하면 됩니다."
+        },
+        {
+          "q": "신청 기간은 정해져 있나요?",
+          "a": "휴직 또는 단축 시작일 이후 1개월부터 종료일 이후 12개월 이내에 신청해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일 처리기간 : 14일",
+            "공지사항",
+            "작성방법",
+            "행정정보 공동이용 동의서",
+            "개인정보 수집 및 이용 동의서(선택)",
+            "처리절차",
+            "사업주",
+            "신청인",
+            "처리기관",
+            "지방고용노동관서",
+            "육아휴직",
+            "육아휴직 제출",
+            "▶ 접수"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "parental-leave-request",
+        "gov-maternity-leave-benefit"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "고용보험법 시행규칙 별지 제100호서식",
+      "law_ref": {
+        "law": "고용보험법 시행규칙",
+        "form_no": "별지 제100호서식",
+        "amended": "2026-08-19",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B3%A0%EC%9A%A9%EB%B3%B4%ED%97%98%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0100&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "고용노동부",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:30:16+09:00",
+      "updated_at": "2026-09-16T15:14:20+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-pension-exemption",
+      "title": "국민연금 납부예외·납부재개 신청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "국민연금",
+        "납부예외",
+        "납부재개",
+        "지역가입자",
+        "사업장가입자"
+      ],
+      "summary": "질병·실직·휴직 등으로 국민연금 보험료 납부가 어려울 때 납부를 예외로 신청하고, 예외 사유가 종료될 때 납부를 재개하는 법정 신청서입니다.",
+      "usage": "지역가입자나 사업장에서 월 보험료를 낼 수 없는 사람이 국민연금공단에 제출합니다. 납부 예외를 신청할 때는 예외 사유 코드와 예외 예정일을 적습니다. 납부를 재개할 때는 재개일과 이후 소득을 적습니다. 신청서 뒷면의 예외 사유 부호표를 참고하여 정확한 코드를 기입해야 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 146654,
+        "docx": 42592,
+        "hwpx": 15611
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "납부 예외신청서 또는 납부 재개신고서 중 해당 항목을 선택합니다.",
+        "개인정보와 예외 사유 코드를 적습니다.",
+        "예외 기간 또는 재개 기간을 적습니다.",
+        "신청인이 서명 또는 인감을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "예외 사유 코드는 어디서 확인하나요?",
+          "a": "신청서에 지역가입자, 사업장가입자별 예외 사유 부호표가 있습니다. 자신의 상황과 맞는 번호를 선택하면 됩니다."
+        },
+        {
+          "q": "자동이체는 언제 신청하나요?",
+          "a": "납부를 재개 신고할 때만 자동이체를 신청할 수 있습니다. 은행명과 계좌번호를 적으면 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일시",
+            "처리기간 3일",
+            "성명",
+            "주민등록번호(외국인등록번호ㆍ국내거소신고번호)",
+            "전화번호(자택)",
+            "(회사)",
+            "휴대전화",
+            "전자우편주소(e-mail)",
+            "*납부 예외 신청 시 작성",
+            "*납부 재개 신고 시 작성",
+            "예외사유 부호",
+            "납부 예외일",
+            "납부 재개 예정일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-health-voluntary-continuation",
+        "gov-maternity-leave-benefit"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "국민연금법 시행규칙 별지 제28호서식",
+      "law_ref": {
+        "law": "국민연금법 시행규칙",
+        "form_no": "별지 제28호서식",
+        "amended": "2025-06-26",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B5%AD%EB%AF%BC%EC%97%B0%EA%B8%88%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0028&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국민연금공단",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:44+09:00",
+      "updated_at": "2026-09-16T15:15:09+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-resident-register-copy",
+      "title": "주민등록표 열람·등초본 교부 신청서 (법정서식)",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "주민등록",
+        "등본",
+        "초본",
+        "교부신청",
+        "개인정보보호"
+      ],
+      "summary": "본인이나 다른 사람의 주민등록표 등본 또는 초본을 열람하거나 교부받기 위한 법정 신청서입니다.",
+      "usage": "읍면동 주민센터나 정부24에 제출하여 주민등록표를 발급받습니다. 신청인의 신분증을 제시하고, 필요한 항목(과거 주소 변동·세대원·병역사항 등)을 선택하여 신청합니다. 개인정보보호를 위해 필요한 정보만 선택하면 그 부분만 기재되어 발급됩니다. 본인이 신청하는 경우와 다른 사람이 신청하는 경우 용도 및 목적 작성 여부가 다릅니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 169610,
+        "docx": 43121,
+        "hwpx": 16227
+      },
+      "pages": 3,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "resident-registration-request",
+      "series_name": "주민등록등본 교부신청서",
+      "variant": "법정서식",
+      "variant_rank": 2,
+      "variant_use": "주민등록표 열람·교부신청용 법정 양식입니다.",
+      "howto": [
+        "신청인 정보(성명·주민등록번호·주소)를 적습니다.",
+        "등본 또는 초본을 선택하고, 포함할 정보를 체크합니다.",
+        "용도 및 목적을 기입합니다(다른 사람 신청 시 필수).",
+        "신청인이 서명 또는 인감을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "등본과 초본은 어떻게 다른가요?",
+          "a": "등본은 세대주와 세대원이 함께 나오는 세대 단위 기록이고, 초본은 한 사람의 주소 변동 이력 등 개인 기록입니다. 제출처가 요구하는 쪽을 고르십시오."
+        },
+        {
+          "q": "다른 사람 주민등록표도 신청할 수 있나요?",
+          "a": "법정 상속, 채무청구 등 정당한 사유가 있어야 하며, 용도와 증명 자료를 제시해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "신청인",
+            "성명",
+            "주민등록번호",
+            "주소 (시ㆍ도) (시ㆍ군ㆍ구)",
+            "대상자와의 관계",
+            "연락처",
+            "기관명",
+            "사업자등록번호",
+            "대표자",
+            "소재지",
+            "방문자 성명",
+            "열람 또는 등ㆍ초본 교부대상자",
+            "주소",
+            "☞ 뒤쪽에 작성란 있습니다."
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "moving-in-report",
+        "gov-household-check-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "주민등록법 시행규칙 별지 제7호서식",
+      "law_ref": {
+        "law": "주민등록법 시행규칙",
+        "form_no": "별지 제7호서식",
+        "amended": "2024-12-20",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%A3%BC%EB%AF%BC%EB%93%B1%EB%A1%9D%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0007&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "행정안전부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:10+09:00",
+      "updated_at": "2026-09-16T15:14:14+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-seal-certificate-poa",
+      "title": "인감증명서 발급 위임장 (법정서식)",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "인감증명",
+        "위임장",
+        "부동산",
+        "계약",
+        "권리이전"
+      ],
+      "summary": "인감증명서 발급을 받기 위해 다른 사람에게 권한을 위임하는 법정 위임장입니다.",
+      "usage": "본인이 직접 주민센터를 방문하기 어려울 때 대리인에게 인감증명서 발급을 맡기며 쓰는 위임장입니다. 위임자의 인적사항, 용도, 발급 통수와 대리인의 인적사항·관계를 적고 위임자가 서명 또는 인감을 찍습니다. 원문에 따르면 위임(동의) 효력은 위임일부터 6개월입니다. 대리인은 신분증을 지참합니다.",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 105292,
+        "docx": 41029,
+        "hwpx": 12570
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "seal-certificate-poa",
+      "series_name": "인감증명 발급 위임장",
+      "variant": "법정서식",
+      "variant_rank": 2,
+      "variant_use": "인감증명서 발급 위임용 법정 양식입니다.",
+      "howto": [
+        "위임자의 성명·주민등록번호·주소·신분증 종류를 적습니다.",
+        "용도와 발급 통수를 기입합니다.",
+        "대리인의 성명·주민등록번호·주소와 위임자와의 관계를 적습니다.",
+        "위임자가 자필로 서명하거나 인감으로 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "용도는 구체적으로 뭐라고 적나요?",
+          "a": "부동산 매매용, 근저당 설정용 같이 구체적으로 적습니다. 포괄적 표현은 피해야 합니다."
+        },
+        {
+          "q": "유효기간이 있나요?",
+          "a": "위임 또는 동의일부터 6개월까지 유효합니다. 기간 내에 인감증명서를 받아야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "위임자",
+            "성 명",
+            "(서명 또는 날인)",
+            "주민등록번호",
+            "국 적",
+            "주 소",
+            "신분증",
+            "용 도",
+            "발급통수",
+            "대리인",
+            "관 계",
+            "위임 사유",
+            "인감㊞또는서명",
+            "위의 위임(동의) 사실을 확인합니다."
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "power-of-attorney",
+        "gov-seal-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "인감증명법 시행령 별지 제13호서식",
+      "law_ref": {
+        "law": "인감증명법 시행령",
+        "form_no": "별지 제13호서식",
+        "amended": "2020-02-18",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%9D%B8%EA%B0%90%EC%A6%9D%EB%AA%85%EB%B2%95+%EC%8B%9C%ED%96%89%EB%A0%B9&bylNo=0013&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "행정안전부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:30:29+09:00",
+      "updated_at": "2026-09-16T15:14:33+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-seal-report",
+      "title": "인감(변경)신고서 (서면신고용)",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "인감신고",
+        "인감변경",
+        "서면신고",
+        "보증인",
+        "증명청"
+      ],
+      "summary": "인감을 처음 신고하거나 기존 인감을 새로운 인감으로 변경할 때 증명청에 제출하는 법정 신고서입니다.",
+      "usage": "직접 증명청을 방문할 수 없을 때 서면으로 신고합니다. 신고인과 보증인이 함께 작성하고, 신고할 인감의 인장이나 인감지를 첨부합니다. 보증인은 인감이 이미 신고된 성년자여야 하며 신고인의 진의를 확인해야 합니다. 신고는 무료이나 변경은 600원의 수수료가 발생합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 105822,
+        "docx": 40857,
+        "hwpx": 12784
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고인의 성명·주민등록번호·주소를 적습니다.",
+        "신고할 인감을 보존용 칸에 찍고 인감지를 첨부합니다.",
+        "서면신고 사유와 이를 증명하는 서류를 준비합니다.",
+        "보증인이 인감을 날인하거나 서명하고, 신고인이 서명 또는 인감을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "보증인은 누구나 되나요?",
+          "a": "인감이 신고된 성년자만 보증인이 될 수 있으며, 신고인의 진의를 확인하고 보증해야 합니다. 보증인의 인감은 반드시 신고된 것이어야 합니다."
+        },
+        {
+          "q": "서면신고 사유로 뭘 적나요?",
+          "a": "직접 방문할 수 없는 사유(해외 거주, 수감, 질병 등)와 이를 증명하는 서류(3개월 이내)를 제출합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간 즉시",
+            "인감",
+            "성명",
+            "주민등록번호",
+            "국적(등록기준지)",
+            "주소",
+            "신고 인감",
+            "서면신고 사유",
+            "보존용",
+            "인감지",
+            "증명자료(첨부)",
+            "보증인"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "power-of-attorney",
+        "gov-seal-certificate-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "인감증명법 시행령 별지 제9호서식",
+      "law_ref": {
+        "law": "인감증명법 시행령",
+        "form_no": "별지 제9호서식",
+        "amended": "2020-02-18",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%9D%B8%EA%B0%90%EC%A6%9D%EB%AA%85%EB%B2%95+%EC%8B%9C%ED%96%89%EB%A0%B9&bylNo=0009&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "행정안전부·읍면동",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:54+09:00",
+      "updated_at": "2026-09-16T15:15:19+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-separation-confirmation",
+      "title": "피보험자 이직확인서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "피보험자",
+        "이직확인서",
+        "실업급여",
+        "근로자",
+        "평균임금"
+      ],
+      "summary": "회사를 그만둘 때 고용보험 실업급여 신청을 위해 사업주가 발급하는 법정 이직확인서입니다.",
+      "usage": "근로자가 퇴직 후 고용센터에 실업급여를 신청할 때 사업주가 작성하여 발급합니다. 근로자의 입사일·이직일·이직 사유·보수 내역·근로 기간 등을 기입합니다. 이직 사유는 코드와 함께 10자 이상 구체적으로 기입해야 합니다. 거짓 기입 시 과태료가 부과되거나 연대 책임이 발생할 수 있습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 205638,
+        "docx": 44047,
+        "hwpx": 19030
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사업장과 근로자(이직자)의 기본정보를 적습니다.",
+        "이직 코드와 구체적인 이직 사유를 10자 이상 기입합니다.",
+        "피보험 기간·보수 지급 기초일수·임금 내역을 기입합니다.",
+        "사업장 명의자 또는 보험사무대행기관이 서명 또는 인감을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "이직 사유 코드는 뭔가요?",
+          "a": "자진퇴사, 폐업, 정년 등 이직 원인에 따른 코드입니다. 신청서 뒷면의 상실(이직)사유 구분코드표에서 확인하면 됩니다."
+        },
+        {
+          "q": "평균임금은 어떻게 계산하나요?",
+          "a": "이직 3개월 전의 임금 내역으로 계산합니다. 기본급·수당·상여금·연차수당을 모두 포함해야 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일자",
+            "처리기간:10일",
+            "*사업장",
+            "사업장관리번호",
+            "명 칭",
+            "전화번호",
+            "소재지",
+            "*피보험자 (이직자)",
+            "성 명",
+            "(휴대)전화번호",
+            "주민등록번호",
+            "주 소",
+            "입사일(피보험자격 취득일)"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "resignation-letter",
+        "severance-calculation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "고용보험법 시행규칙 별지 제75호의4서식",
+      "law_ref": {
+        "law": "고용보험법 시행규칙",
+        "form_no": "별지 제75호의4서식",
+        "amended": "2025-07-01",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B3%A0%EC%9A%A9%EB%B3%B4%ED%97%98%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0075&bylBrNo=04&bylCls=BF&bylEfYdYn=Y",
+        "agency": "고용노동부·근로복지공단",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:28:29+09:00",
+      "updated_at": "2026-09-16T15:14:40+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-simple-substitute-payment",
+      "title": "간이대지급금 지급청구서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "대지급금",
+        "임금체불",
+        "근로자",
+        "손실보상",
+        "소득보전"
+      ],
+      "summary": "회사에서 받지 못한 임금을 근로복지공단으로부터 받는 대지급금 지급을 신청하는 양식입니다.",
+      "usage": "퇴직자나 재직 중인 근로자가 회사에서 체불된 임금의 대지급금을 신청할 때 근로복지공단 관할 지역본부 또는 지사에 제출합니다. 청구인 정보, 근무기간, 청구 구분(퇴직자/재직자), 체불 임금 구분(판결/확인서), 미수금액, 대상 사업주 정보를 작성합니다. 판결에 따른 신청은 판결일부터 1년 이내, 확인서에 따른 신청은 발급일부터 6개월 이내에 제출해야 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 149038,
+        "docx": 42575,
+        "hwpx": 14489
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "청구인(본인)의 성명, 주민등록번호, 주소, 휴대전화번호를 적습니다.",
+        "체불 임금의 대상이 된 회사에서의 근무 기간을 적습니다.",
+        "청구 구분(퇴직자/재직자)과 청구 방식(판결/확인서)을 선택합니다.",
+        "지급받지 못한 임금의 총 확정금액과 이미 받은 금액을 기입합니다.",
+        "입금받을 본인 계좌 정보를 기입하고 서명 또는 인을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "판결 없이도 신청할 수 있나요?",
+          "a": "체불임금등·사업주 확인서로도 신청 가능합니다. 근로복지공단에서 확인서 발급 기준과 절차를 문의하십시오."
+        },
+        {
+          "q": "처리 기간은 얼마나 되나요?",
+          "a": "법정 처리 기간은 14일입니다. 더 자세한 일정은 신청한 지역본부 또는 지사에 문의하십시오."
+        },
+        {
+          "q": "대지급금 지급 대상이 되는 임금은 무엇인가요?",
+          "a": "최종 3개월분 임금·휴업수당·출산전후휴가 급여와 최종 3년간의 퇴직급여(퇴직자의 경우)가 대상입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일",
+            "처리기간 14일",
+            "청구인",
+            "성명",
+            "주민등록번호",
+            "주소",
+            "①근무기간",
+            "②청구 구분",
+            "③지급받지 못한 임금등의 총 확정금액",
+            "⑥지급받아야 할 대지급금",
+            "⑧입금",
+            "입금은행",
+            "예금주"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "employment-certificate",
+        "resignation-letter",
+        "handover-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "임금채권보장법 시행규칙 별지 제3호의2서식",
+      "law_ref": {
+        "law": "임금채권보장법 시행규칙",
+        "form_no": "별지 제3호의2서식",
+        "amended": "2021-10-14",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%9E%84%EA%B8%88%EC%B1%84%EA%B6%8C%EB%B3%B4%EC%9E%A5%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0003&bylBrNo=02&bylCls=BF&bylEfYdYn=Y",
+        "agency": "고용노동부·근로복지공단",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:30:35+09:00",
+      "updated_at": "2026-09-16T15:14:44+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-vehicle-transfer-cert",
+      "title": "자동차양도증명서 (직접 거래용)",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차",
+        "중고차",
+        "직접거래",
+        "양도",
+        "소유권이전"
+      ],
+      "summary": "개인 간에 중고차를 직거래할 때 양도인과 양수인이 함께 서명하는 양도증명서입니다.",
+      "usage": "개인 간 중고차 직거래 시 양도인(판매자)과 양수인(구매자)가 함께 작성하여 서명합니다. 양도인과 양수인의 인적사항, 차량 정보(등록번호·차대번호·차종), 거래 내용(매매일·금액·인도일)을 기록하고 계약 조항에 동의합니다. 양수인이 이 증명서를 지참하여 15일 이내에 자동차 이전등록을 신청해야 하며, 인지세 납부 후 수입인지를 붙여야 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 112308,
+        "docx": 40876,
+        "hwpx": 12302
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "양도인(판매자)과 양수인(구매자)의 성명과 주민(법인)등록번호를 적습니다.",
+        "차종, 차대번호, 자동차등록번호 등 차량 정보를 기입합니다.",
+        "매매일, 매매금액, 잔금지급일, 자동차 인도일을 적습니다.",
+        "양도인과 양수인이 함께 계약 조항을 확인하고 서명 또는 인을 합니다.",
+        "인지세 납부 후 수입인지를 붙이고 양수인이 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "양도증명서는 몇 장을 만드나요?",
+          "a": "2통을 작성합니다. 양도인과 양수인이 각각 1통씩 가집니다."
+        },
+        {
+          "q": "공동명의인 경우는 어떻게 하나요?",
+          "a": "공동명의인 경우 각 소유자의 정보를 모두 기입하고, 대표자를 정한 후 모두가 서명합니다."
+        },
+        {
+          "q": "인지세는 누가 내나요?",
+          "a": "인지세법에 따라 납부하며, 수입인지를 양도증명서 뒷면 여백에 붙입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수번호",
+            "접수일자",
+            "유의사항",
+            "수입인지",
+            "「인지세법」에 따름 (뒷면 여백에 붙임)"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-vehicle-transfer-registration",
+        "used-car-sale-contract",
+        "vehicle-maintenance-history"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "자동차등록규칙 별지 제15호서식",
+      "law_ref": {
+        "law": "자동차등록규칙",
+        "form_no": "별지 제15호서식",
+        "amended": "2022-12-01",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%9E%90%EB%8F%99%EC%B0%A8%EB%93%B1%EB%A1%9D%EA%B7%9C%EC%B9%99&bylNo=0015&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국토교통부",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:30:45+09:00",
+      "updated_at": "2026-09-16T15:15:32+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "gov-vehicle-transfer-registration",
+      "title": "자동차 이전등록 신청서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차",
+        "이전등록",
+        "명의변경",
+        "소유자변경",
+        "자동차365"
+      ],
+      "summary": "자동차를 사거나 받은 후 새로운 소유자로 등록을 변경하는 신청서입니다.",
+      "usage": "자동차를 사거나 증여·상속 등으로 받은 새 소유자가 자동차등록관청에 소유권 이전을 신청하는 서류입니다. 신청인·양도인 정보, 자동차등록번호, 주행거리, 등록 원인을 적습니다. 원문에 따르면 매매는 매수한 날부터 15일 이내 등 원인별 기간 안에 신청해야 하며, 넘기면 범칙금 대상이 됩니다. 자동차365(www.car365.go.kr)에서도 신청할 수 있습니다.",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 134424,
+        "docx": 41934,
+        "hwpx": 13693
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인(신 소유자)의 성명, 주민등록번호, 사용 본거지를 적습니다.",
+        "구 소유자(양도인)의 성명, 주민등록번호, 주소를 기입합니다.",
+        "자동차등록번호, 주행거리, 등록 원인을 선택합니다.",
+        "등록 원인에 따라 필요한 서류(양도증명서, 인감증명서 등)를 준비합니다.",
+        "신청인이 서명 또는 인을 하고 해당 자동차등록사무소에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "매매 후 언제까지 신청해야 하나요?",
+          "a": "매매일부터 15일 이내 신청합니다. 기한 내 미신청 시 관련 규정에 따라 범칙금이 부과됩니다."
+        },
+        {
+          "q": "자동차365에서도 신청이 가능한가요?",
+          "a": "네, 자동차365(www.car365.go.kr)에서 온라인으로도 신청할 수 있습니다."
+        },
+        {
+          "q": "대리인이 신청할 수 있나요?",
+          "a": "네, 대리인 신청 시 위임장과 위임인의 신분증명서 사본이 필요합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "접수 번호",
+            "접수 일시",
+            "발급 일시",
+            "처리 기간 즉시",
+            "신자동차등록번호",
+            "행정정보 공동이용 동의서",
+            "신청인(대",
+            "유의 사항"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-vehicle-transfer-cert",
+        "vehicle-maintenance-history"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "자동차등록규칙 별지 제14호서식",
+      "law_ref": {
+        "law": "자동차등록규칙",
+        "form_no": "별지 제14호서식",
+        "amended": "2026-04-28",
+        "url": "https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EC%9E%90%EB%8F%99%EC%B0%A8%EB%93%B1%EB%A1%9D%EA%B7%9C%EC%B9%99&bylNo=0014&bylBrNo=00&bylCls=BF&bylEfYdYn=Y",
+        "agency": "국토교통부",
+        "checked": "2026-09-16"
+      },
+      "created_by": "gov-batch",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-16T14:30:31+09:00",
+      "updated_at": "2026-09-16T15:14:53+09:00",
+      "downloads": 0
+    },
+    {
       "id": "grade-report",
       "title": "성적 통지표",
       "category": "edu",
@@ -10454,10 +13209,10 @@
         "preview-2.webp"
       ],
       "sample_preview": true,
-      "series": "",
-      "series_name": "",
-      "variant": "",
-      "variant_rank": 99,
+      "series": "info-disclosure-request",
+      "series_name": "정보공개청구서",
+      "variant": "간편형",
+      "variant_rank": 1,
       "featured": false,
       "featured_rank": 99,
       "version": 1,
@@ -10469,7 +13224,7 @@
       "created_at": "2026-09-13T21:03:57+09:00",
       "updated_at": "2026-09-14T06:38:25+09:00",
       "downloads": 0,
-      "variant_use": "",
+      "variant_use": "청구 내용을 자유롭게 정리해 낼 때 씁니다.",
       "howto": [
         "청구인의 성명과 연락처를 적습니다.",
         "공개를 원하는 정보의 내용을 구체적으로 씁니다.",
@@ -14516,10 +17271,10 @@
         "preview-1.webp"
       ],
       "sample_preview": true,
-      "series": "",
-      "series_name": "",
-      "variant": "",
-      "variant_rank": 99,
+      "series": "moving-in-report",
+      "series_name": "전입신고서",
+      "variant": "간편형",
+      "variant_rank": 1,
       "featured": false,
       "featured_rank": 99,
       "version": 1,
@@ -14531,7 +17286,7 @@
       "created_at": "2026-09-13T22:13:34+09:00",
       "updated_at": "2026-09-14T06:40:11+09:00",
       "downloads": 0,
-      "variant_use": "",
+      "variant_use": "신고 내용을 미리 정리해 둘 때 씁니다.",
       "howto": [
         "신고인의 성명과 생년월일을 적습니다.",
         "전입일과 새 주소를 정확히 기재합니다.",
@@ -19435,10 +22190,10 @@
         "preview-1.webp"
       ],
       "sample_preview": true,
-      "series": "",
-      "series_name": "",
-      "variant": "",
-      "variant_rank": 99,
+      "series": "resident-registration-request",
+      "series_name": "주민등록등본 교부신청서",
+      "variant": "간편형",
+      "variant_rank": 1,
       "featured": false,
       "featured_rank": 99,
       "version": 1,
@@ -19450,7 +22205,7 @@
       "created_at": "2026-09-13T21:57:07+09:00",
       "updated_at": "2026-09-14T06:42:51+09:00",
       "downloads": 0,
-      "variant_use": "",
+      "variant_use": "발급 신청 내용을 간단히 적을 때 씁니다.",
       "howto": [
         "신청인의 성명과 생년월일, 주소를 적습니다.",
         "발급받을 서류 종류와 통수를 적습니다.",
@@ -21359,10 +24114,10 @@
         "preview-1.webp"
       ],
       "sample_preview": true,
-      "series": "",
-      "series_name": "",
-      "variant": "",
-      "variant_rank": 99,
+      "series": "seal-certificate-poa",
+      "series_name": "인감증명 발급 위임장",
+      "variant": "간편형",
+      "variant_rank": 1,
       "featured": false,
       "featured_rank": 99,
       "version": 1,
@@ -21374,7 +24129,7 @@
       "created_at": "2026-09-13T21:57:16+09:00",
       "updated_at": "2026-09-14T06:43:44+09:00",
       "downloads": 0,
-      "variant_use": "",
+      "variant_use": "위임 내용을 간단히 정리할 때 씁니다.",
       "howto": [
         "위임인의 인적사항을 적고 인감을 날인합니다.",
         "대리인의 인적사항을 정확히 적습니다.",

@@ -1,0 +1,1532 @@
+id: gov-separation-confirmation
+title: 피보험자 이직확인서
+category: public
+subcategory: insurance
+tags:
+- 피보험자
+- 이직확인서
+- 실업급여
+- 근로자
+- 평균임금
+summary: 회사를 그만둘 때 고용보험 실업급여 신청을 위해 사업주가 발급하는 법정 이직확인서입니다.
+usage: '근로자가 퇴직 후 고용센터에 실업급여를 신청할 때 사업주가 작성하여 발급합니다. 근로자의 입사일·이직일·이직 사유·보수 내역·근로 기간 등을 기입합니다. 이직 사유는 코드와 함께 10자 이상 구체적으로 기입해야 합니다. 거짓 기입 시 과태료가 부과되거나 연대 책임이 발생할 수 있습니다.
+
+  '
+source: law-standard
+source_note: 고용보험법 시행규칙 별지 제75호의4서식
+law_ref:
+  law: 고용보험법 시행규칙
+  form_no: 별지 제75호의4서식
+  amended: '2025-07-01'
+  url: https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%EA%B3%A0%EC%9A%A9%EB%B3%B4%ED%97%98%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0075&bylBrNo=04&bylCls=BF&bylEfYdYn=Y
+  agency: 고용노동부·근로복지공단
+  checked: '2026-09-16'
+featured: false
+target_pages: 2
+created_by: gov-batch
+howto:
+- 사업장과 근로자(이직자)의 기본정보를 적습니다.
+- 이직 코드와 구체적인 이직 사유를 10자 이상 기입합니다.
+- 피보험 기간·보수 지급 기초일수·임금 내역을 기입합니다.
+- 사업장 명의자 또는 보험사무대행기관이 서명 또는 인감을 합니다.
+faq:
+- q: 이직 사유 코드는 뭔가요?
+  a: 자진퇴사, 폐업, 정년 등 이직 원인에 따른 코드입니다. 신청서 뒷면의 상실(이직)사유 구분코드표에서 확인하면 됩니다.
+- q: 평균임금은 어떻게 계산하나요?
+  a: 이직 3개월 전의 임금 내역으로 계산합니다. 기본급·수당·상여금·연차수당을 모두 포함해야 합니다.
+related:
+- resignation-letter
+- severance-calculation
+blocks:
+- type: para
+  text: ■ 고용보험법 시행규칙 [별지 제75호의4서식] <개정 2025. 7. 1.>
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: doc_title
+  text: 피보험자 이직확인서
+  spaced: false
+- type: para
+  text: ※ 뒤쪽의 작성요령을 읽고 작성하기 바랍니다. 별표(*) 표시가 되어 있는 항목은 필수 기재항목입니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 10.6
+- type: gov_table
+  widths:
+  - 42.452
+  - 30.217
+  - 26.246
+  - 1.085
+  heights_mm:
+  - 4.8
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 접수번호
+    size: 8.1
+    fill: true
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 접수일자
+    size: 8.1
+    fill: true
+  - at:
+    - 0
+    - 2
+    - 1
+    - 1
+    lines:
+    - - l
+      - 처리기간:10일
+    size: 8.1
+    fill: true
+- type: gov_table
+  widths:
+  - 12.259
+  - 20.474
+  - 22.422
+  - 17.514
+  - 26.246
+  - 1.085
+  heights_mm:
+  - 6.56
+  - 6.56
+  - 6.56
+  - 9.52
+  cells:
+  - at:
+    - 0
+    - 0
+    - 4
+    - 1
+    lines:
+    - - c
+      - '*사업장'
+    size: 9.0
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 사업장관리번호
+    size: 9.0
+  - at:
+    - 0
+    - 2
+    - 1
+    - 3
+    sample: 000-00-00000
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 명 칭
+    size: 9.0
+  - at:
+    - 1
+    - 2
+    - 1
+    - 1
+    sample: (주)한빛커머스
+  - at:
+    - 1
+    - 3
+    - 1
+    - 1
+    lines:
+    - - c
+      - 전화번호
+    size: 9.0
+  - at:
+    - 1
+    - 4
+    - 1
+    - 1
+  - at:
+    - 2
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 소재지
+    size: 9.0
+  - at:
+    - 2
+    - 2
+    - 1
+    - 3
+  - at:
+    - 3
+    - 1
+    - 1
+    - 3
+    lines:
+    - - l
+      - 하수급인관리번호(건설공사 등의 미승인 하수급인인 경우에만 작성)
+    size: 8.1
+  - at:
+    - 3
+    - 4
+    - 1
+    - 1
+- type: gov_table
+  widths:
+  - 12.259
+  - 16.551
+  - 13.641
+  - 12.704
+  - 0.888
+  - 16.625
+  - 10.459
+  - 15.787
+  - 1.085
+  heights_mm:
+  - 9.87
+  - 6.61
+  - 6.56
+  - 9.87
+  cells:
+  - at:
+    - 0
+    - 0
+    - 4
+    - 1
+    lines:
+    - - l
+      - '*피보험자 (이직자)'
+    size: 9.0
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 성 명
+    size: 9.0
+  - at:
+    - 0
+    - 2
+    - 1
+    - 2
+    sample: 홍길동
+  - at:
+    - 0
+    - 4
+    - 1
+    - 2
+    lines:
+    - - c
+      - (휴대)전화번호
+    size: 9.0
+  - at:
+    - 0
+    - 6
+    - 1
+    - 2
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 주민등록번호
+    size: 9.0
+    sample: 000000-0000000
+  - at:
+    - 1
+    - 2
+    - 1
+    - 6
+    lines:
+    - - c
+      - '-'
+    size: 9.0
+  - at:
+    - 2
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 주 소
+    size: 9.0
+  - at:
+    - 2
+    - 2
+    - 1
+    - 6
+  - at:
+    - 3
+    - 1
+    - 1
+    - 2
+    lines:
+    - - l
+      - 입사일(피보험자격 취득일)
+    size: 9.0
+  - at:
+    - 3
+    - 3
+    - 1
+    - 2
+    sample: '2024-01-15'
+  - at:
+    - 3
+    - 5
+    - 1
+    - 2
+    lines:
+    - - l
+      - 이직일(근로제공 마지막
+    - - l
+      - 날)
+    size: 9.0
+  - at:
+    - 3
+    - 7
+    - 1
+    - 1
+    sample: '2026-09-10'
+- type: gov_table
+  widths:
+  - 28.811
+  - 13.641
+  - 56.463
+  - 1.085
+  heights_mm:
+  - 5.15
+  - 5.15
+  cells:
+  - at:
+    - 0
+    - 0
+    - 2
+    - 1
+    lines:
+    - - l
+      - ①*이직코드 및 이직사유 (이직사유 구분코드 뒤쪽 참조)
+    size: 8.1
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 구분코드
+    size: 9.0
+    sample: '23'
+  - at:
+    - 0
+    - 2
+    - 2
+    - 1
+    lines:
+    - - l
+      - (구체적 사유, 10자 이상 기재)
+    size: 7.2
+    sample: 경영상 필요에 따른 인원감축
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+- type: gov_table
+  widths:
+  - 25.333
+  - 12.629
+  - 0.617
+  - 3.873
+  - 12.704
+  - 7.301
+  - 8.991
+  - 8.572
+  - 8.781
+  - 10.114
+  - 1.085
+  heights_mm:
+  - 8.49
+  - 5.71
+  - 5.68
+  - 6.58
+  - 4.29
+  - 1.59
+  - 5.71
+  - 1.37
+  - 4.33
+  - 4.38
+  - 1.37
+  - 5.71
+  - 1.59
+  - 4.12
+  - 4.59
+  - 1.03
+  - 5.62
+  - 5.58
+  - 5.62
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - ②*피보험단위기간
+    - - l
+      - 산정대상기간
+    size: 9.0
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - ③*보수지급 기초일수
+    size: 9.0
+  - at:
+    - 0
+    - 3
+    - 1
+    - 7
+    lines:
+    - - c
+      - 평균임금 산정명세
+    size: 9.0
+  - at:
+    - 1
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+  - at:
+    - 1
+    - 3
+    - 2
+    - 2
+    lines:
+    - - l
+      - ⑤*임금계산기간
+    size: 9.0
+  - at:
+    - 1
+    - 5
+    - 2
+    - 1
+    lines:
+    - - r
+      - 부터
+    - - r
+      - 까지
+    size: 7.2
+  - at:
+    - 1
+    - 6
+    - 2
+    - 1
+    lines:
+    - - r
+      - 부터
+    - - r
+      - 까지
+    size: 7.2
+  - at:
+    - 1
+    - 7
+    - 2
+    - 1
+    lines:
+    - - r
+      - 부터
+    - - r
+      - 까지
+    size: 7.2
+  - at:
+    - 1
+    - 8
+    - 2
+    - 1
+    lines:
+    - - r
+      - 부터
+    - - r
+      - 까지
+    size: 7.2
+  - at:
+    - 1
+    - 9
+    - 2
+    - 1
+    lines:
+    - - c
+      - 총 합
+    size: 7.2
+  - at:
+    - 2
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 2
+    - 1
+    - 1
+    - 1
+  - at:
+    - 3
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 3
+    - 1
+    - 1
+    - 1
+  - at:
+    - 3
+    - 3
+    - 2
+    - 2
+    lines:
+    - - l
+      - ⑥*임금계산기간 총 일수
+    size: 9.0
+  - at:
+    - 3
+    - 5
+    - 2
+    - 1
+    lines:
+    - - r
+      - 일
+    size: 7.2
+  - at:
+    - 3
+    - 6
+    - 2
+    - 1
+    lines:
+    - - r
+      - 일
+    size: 7.2
+  - at:
+    - 3
+    - 7
+    - 2
+    - 1
+    lines:
+    - - r
+      - 일
+    size: 7.2
+  - at:
+    - 3
+    - 8
+    - 2
+    - 1
+    lines:
+    - - r
+      - 일
+    size: 7.2
+  - at:
+    - 3
+    - 9
+    - 2
+    - 1
+    lines:
+    - - r
+      - 일
+    size: 7.2
+  - at:
+    - 4
+    - 0
+    - 2
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 4
+    - 1
+    - 2
+    - 1
+  - at:
+    - 5
+    - 3
+    - 10
+    - 1
+    lines:
+    - - c
+      - ⑦*임금내역
+    size: 9.0
+  - at:
+    - 5
+    - 4
+    - 3
+    - 1
+    lines:
+    - - l
+      - 기본급
+    size: 9.0
+    sample: 2,000,000
+  - at:
+    - 5
+    - 5
+    - 3
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 5
+    - 6
+    - 3
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 5
+    - 7
+    - 3
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 5
+    - 8
+    - 3
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 5
+    - 9
+    - 3
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 6
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 6
+    - 1
+    - 1
+    - 1
+  - at:
+    - 7
+    - 0
+    - 2
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 7
+    - 1
+    - 2
+    - 1
+  - at:
+    - 8
+    - 4
+    - 2
+    - 1
+    lines:
+    - - l
+      - 기타 수당
+    size: 9.0
+  - at:
+    - 8
+    - 5
+    - 2
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 8
+    - 6
+    - 2
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 8
+    - 7
+    - 2
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 8
+    - 8
+    - 2
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 8
+    - 9
+    - 2
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 9
+    - 0
+    - 2
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 9
+    - 1
+    - 2
+    - 1
+  - at:
+    - 10
+    - 4
+    - 3
+    - 5
+    lines:
+    - - l
+      - 상여금(이직 전 12개월간 지급된 상여금 총액 × 3/12)
+    size: 7.2
+  - at:
+    - 10
+    - 9
+    - 3
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 11
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 11
+    - 1
+    - 1
+    - 1
+  - at:
+    - 12
+    - 0
+    - 2
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 12
+    - 1
+    - 2
+    - 1
+  - at:
+    - 13
+    - 4
+    - 2
+    - 5
+    lines:
+    - - l
+      - 연차수당(이직 전 12개월간 지급된 연차수당 총액× 3/12)
+    size: 7.2
+  - at:
+    - 13
+    - 9
+    - 2
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 14
+    - 0
+    - 2
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 14
+    - 1
+    - 2
+    - 1
+  - at:
+    - 16
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 16
+    - 1
+    - 1
+    - 1
+  - at:
+    - 17
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - '~'
+    size: 9.0
+  - at:
+    - 17
+    - 1
+    - 1
+    - 1
+  - at:
+    - 18
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - ④*통산피보험단위기간
+    size: 9.0
+  - at:
+    - 18
+    - 1
+    - 1
+    - 1
+    lines:
+    - - r
+      - 일
+    size: 9.0
+- type: gov_table
+  widths:
+  - 38.579
+  - 34.682
+  - 25.654
+  - 1.085
+  heights_mm:
+  - 8.67
+  - 8.15
+  cells:
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑧ 1일 통상임금(필요한 경우에만 작성)
+    size: 7.2
+  - at:
+    - 0
+    - 2
+    - 1
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑨ 1일 기준보수(해당되는 사람만 작성)
+    size: 7.2
+  - at:
+    - 1
+    - 2
+    - 1
+    - 1
+    lines:
+    - - r
+      - 원
+    size: 7.2
+- type: gov_table
+  widths:
+  - 37.963
+  - 60.952
+  - 1.085
+  heights_mm:
+  - 11.32
+  - 9.87
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑩* 1일 소정 근로시간
+    size: 9.0
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - □ 1시간 이하, □ 2시간, □ 3시간, □ 4시간,
+    - - l
+      - □ 5시간, □ 6시간, □ 7시간, □ 8시간 이상
+    size: 9.0
+  - at:
+    - 1
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑪ 초단시간 근로일수(해당자만 작성)
+    size: 9.0
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 이직 전 24개월 동안 1주 소정근로시간이 15시간 미만이고, 1주 소정근로일수는 2일 이하인 날의 총 일수 (    일)
+    size: 9.0
+- type: gov_table
+  widths:
+  - 37.963
+  - 9.62
+  - 12.037
+  - 11.828
+  - 12.889
+  - 14.578
+  - 1.085
+  heights_mm:
+  - 7.12
+  - 7.12
+  cells:
+  - at:
+    - 0
+    - 0
+    - 2
+    - 1
+    lines:
+    - - l
+      - '⑫ 기준기간 연장(해당자만 작성) 사유코드: 1. 질병ㆍ부상 2. 사업장 휴업'
+    - - r
+      - 3. 임신ㆍ출산ㆍ육아 4. 기타 사유
+    size: 7.2
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 사유코드
+    size: 9.0
+  - at:
+    - 0
+    - 2
+    - 1
+    - 1
+  - at:
+    - 0
+    - 3
+    - 1
+    - 1
+  - at:
+    - 0
+    - 4
+    - 1
+    - 1
+  - at:
+    - 0
+    - 5
+    - 1
+    - 1
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 연장기간
+    size: 9.0
+  - at:
+    - 1
+    - 2
+    - 1
+    - 1
+  - at:
+    - 1
+    - 3
+    - 1
+    - 1
+  - at:
+    - 1
+    - 4
+    - 1
+    - 1
+  - at:
+    - 1
+    - 5
+    - 1
+    - 1
+- type: spacer
+  exact: true
+  height_pt: 5.8
+- type: para
+  text: 「고용보험법」 제42조제3항(제43조제4항) 및 같은 법 시행규칙 제82조의2제1항ㆍ제2항(제82조의2제4항ㆍ제5 항)에 따라 위와 같이 발급(제출)합니다.
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 11.8
+- type: para
+  text: 제출일    년  월  일
+  align: right
+  size: 8.1
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.0
+- type: para
+  text: 발급자(제출자)   □ 사업장명
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.6
+- type: para
+  text: □ 보험사무대행기관         (서명 또는 인)
+  align: right
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: page_break
+- type: para
+  text: 작성요령
+  align: center
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: para
+  text: '■ ①란 작성법: 해당 이직자의 별지 제6호서식의 고용보험 근로자 피보험자격상실 신고서에 적힌 상실 사유의 구분코드를 적고, 보다 구체적인 이직사유는 반드시 10자 이상 작성합니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 11.4
+- type: para
+  text: <상실(이직)사유 구분코드>
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 5.5
+- type: para
+  text: '◈ 자진퇴사: 11. 개인사정으로 인한 자진퇴사 12. 사업장 이전, 근로조건 변동, 임금체불 등으로 자진퇴사 ◈ 회사사정과 근로자 귀책사유에 의한 이직: 22. 폐업ㆍ도산(예정 포함), 공사 중단'
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 5.4
+- type: para
+  text: 23. 경영상 필요 또는 회사불황으로 인한 인원감축 등에 의한 퇴사(해고ㆍ권고사직 포함)
+  align: center
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 5.5
+- type: para
+  text: 26. 근로자의 귀책사유에 의한 징계해고ㆍ권고사직
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 5.5
+- type: para
+  text: '◈ 정년 등 기간만료에 의한 이직: 31. 정년 32. 계약기간 만료, 공사 종료'
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 5.4
+- type: para
+  text: '◈ 기타: 41. 고용보험 비적용 42. 이중고용'
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 16.6
+- type: para
+  text: ■ ② ~ ④란 작성법
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.8
+- type: para
+  text: '- ②란의 가장 위 칸에는 이직자의 이직일이 포함된 월의 1일부터 이직일까지를 적습니다. 그 아래 칸에는 1개월씩 지난 기간을 각각 적습니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.7
+- type: para
+  text: ※ 예) 12. 24. 이직자의 경우 가장 위 칸에는 12. 1. ~ 12. 24.를 적고 그 아래 칸에는 11. 1. ~ 11. 30., 10. 1.~ 10. 31.을 적되, 통산 피보험단위기간(④)이 180일이 되는 날까지만 적습니다(통상 7 ~ 8개월 작성하면 됩니다).
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 7.8
+- type: para
+  text: '- ③란에는 ②란에 작성된 기간 중 실제로 보수지급의 기초가 된 날을 모두 합산하여 작성합니다. 따라서 무급휴일, 보수가 지급되지 않은 결근일 등은 제외되고, 유급휴가, 유급휴일 등은 포함됩니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.6
+- type: para
+  text: '- ④란에는 ③란에 작성된 보수지급 기초 일수를 모두 합산하여 적습니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 13.8
+- type: para
+  text: ■ ⑤ ~ ⑨란 작성법
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.8
+- type: para
+  text: '- ⑤란은 이직자의 이직일을 포함하여 3개월 이전까지의 기간을 적습니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.6
+- type: para
+  text: '- ⑥란의 첫 번째 칸에는 이직일이 포함된 월의 1일부터 이직일까지를 적고, 차례로 1개월씩 지난 기간을 적되, 마지 막 칸에는 이직자의 이직 월에서는 3개월을 빼고, 이직일에는 1일을 더한 날부터 해당월의 말일까지 적습니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.4
+- type: para
+  text: <예> 12. 24. 이직자            <예> 1. 31. 이직자
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: gov_table
+  widths:
+  - 6.265
+  - 14.628
+  - 7.745
+  - 7.721
+  - 7.745
+  - 7.721
+  - 1.159
+  - 14.479
+  - 7.77
+  - 7.77
+  - 7.77
+  - 7.77
+  - 1.456
+  heights_mm:
+  - 7.55
+  - 9.05
+  cells:
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑤ 임금계산기간
+    size: 7.2
+  - at:
+    - 0
+    - 2
+    - 1
+    - 1
+    lines:
+    - - c
+      - 12.1. ~
+    - - c
+      - 12.24.
+    size: 7.2
+  - at:
+    - 0
+    - 3
+    - 1
+    - 1
+    lines:
+    - - c
+      - 11.1. ~
+    - - c
+      - 11.30.
+    size: 7.2
+  - at:
+    - 0
+    - 4
+    - 1
+    - 1
+    lines:
+    - - c
+      - 10.1. ~
+    - - c
+      - 10.31.
+    size: 7.2
+  - at:
+    - 0
+    - 5
+    - 1
+    - 1
+    lines:
+    - - c
+      - 9.25 ~
+    - - c
+      - '9.30'
+    size: 7.2
+  - at:
+    - 0
+    - 7
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑤ 임금계산기간
+    size: 7.2
+  - at:
+    - 0
+    - 8
+    - 1
+    - 1
+    lines:
+    - - c
+      - 1.1. ~
+    - - c
+      - 1.31.
+    size: 7.2
+  - at:
+    - 0
+    - 9
+    - 1
+    - 1
+    lines:
+    - - c
+      - 12.1. ~
+    - - c
+      - 12.31.
+    size: 7.2
+  - at:
+    - 0
+    - 10
+    - 1
+    - 1
+    lines:
+    - - c
+      - 11.1. ~
+    - - c
+      - 11.30.
+    size: 7.2
+  - at:
+    - 0
+    - 11
+    - 1
+    - 1
+    lines:
+    - - c
+      - X
+    size: 7.2
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑥ 임금계산기간 총 일수
+    size: 7.2
+  - at:
+    - 1
+    - 2
+    - 1
+    - 1
+    lines:
+    - - c
+      - 24일
+    size: 7.2
+  - at:
+    - 1
+    - 3
+    - 1
+    - 1
+    lines:
+    - - c
+      - 30일
+    size: 7.2
+  - at:
+    - 1
+    - 4
+    - 1
+    - 1
+    lines:
+    - - c
+      - 31일
+    size: 7.2
+  - at:
+    - 1
+    - 5
+    - 1
+    - 1
+    lines:
+    - - c
+      - 6일
+    size: 7.2
+  - at:
+    - 1
+    - 7
+    - 1
+    - 1
+    lines:
+    - - l
+      - ⑥ 임금계산기간 총 일수
+    size: 7.2
+  - at:
+    - 1
+    - 8
+    - 1
+    - 1
+    lines:
+    - - c
+      - 31일
+    size: 7.2
+  - at:
+    - 1
+    - 9
+    - 1
+    - 1
+    lines:
+    - - c
+      - 31일
+    size: 7.2
+  - at:
+    - 1
+    - 10
+    - 1
+    - 1
+    lines:
+    - - c
+      - 30일
+    size: 7.2
+  - at:
+    - 1
+    - 11
+    - 1
+    - 1
+    lines:
+    - - c
+      - X
+    size: 7.2
+- type: spacer
+  exact: true
+  height_pt: 9.8
+- type: para
+  text: '- ⑦란에는 ⑤란에 적은 기간에 지급된 기본급과 기본급 외의 기타수당을 적습니다. 상여금과 연차수당은 12개월 동안 지급된 총액의 3개월분만 작성합니다. 다만, 12개월 미만으로 근로했던 이직자에 대해서 는 그 근로한 개월에 지급된 상여금에 3을 곱하고 근로한 개월을 나눈 금액을 적습니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.7
+- type: para
+  text: '※ 예) 근로한 개월이 6개월인 경우: 상여금 × 3/6'
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 7.8
+- type: para
+  text: '- ⑧란은 필요한 경우에만 적되,「근로기준법 시행령」 제6조에 따른 통상임금을 적습니다. 다만, 이직일을 기준으로 근무한 기간이 3개월 미만 경우에는 통상임금을 반드시 적습니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 8.6
+- type: para
+  text: '- ⑨란은 ⑤번란에 작성한 임금계산기간 동안 고용보험료를 모두 기준보수로 낸 경우에만 작성하되, 이직 연도의 시간단위 기준 보수에 ⑩란의 1일 소정 근로시간수를 곱한 임금을 적습니다'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 13.8
+- type: para
+  text: '■ ⑪란 작성법: 이직자가 이직 당시에 1주 소정 근로시간이 15시간 미만이고, 1주 소정 근로일수가 2일 이하인 근로자였던 경우에만 적습니다. 실제 근로시간 및 근로일수가 아닌 근로계약서 등 으로 정한 소정 근로시간 및 근로일수를 기준으로 작성합니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 13.8
+- type: para
+  text: '■ ⑫란 작성법: 기준기간 연장사유가 있는 경우에만 기재합니다. “사유코드”란에는 이직일 이전 18개월(다만, ⑪번에 해당하는 이직자는 24개월)간 30일 이상 보수 지급을 받을 수 없었던 사유의 코드번호를 적고, “연 장기간”란에 보수의 지급을 받을 수 없었던 기간을 적습니다. 이 경우 휴업 또는 휴직기 간에 보수를 지급 받을 수 없었다는 것을
+    증명할 수 있는 서류를 첨부해야 합니다.'
+  align: left
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 4.7
+- type: gov_table
+  widths:
+  - 100.0
+  heights_mm:
+  - 4.59
+  - 16.6
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 유의사항
+    size: 9.0
+    fill: true
+  - at:
+    - 1
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 근로자 또는 직업안정기관의 장이 사업주에게 이직확인서 발급을 요청한 경우 사업주 등이 이직확인서를 발급해주지 않거나 거짓으로 발급해 준 경우에는 300만원 이하의 과태료가 부과될 수 있으며(「고용보 험법」 제118조제1항제2호 및 제3호), 본 이직확인서를 거짓으로 작성하여 줌으로써 이직자가 실업급여를 부정하게 받은 경우에는 해당 사업주도 연대하여
+        책임을 질 수 있습니다.
+    size: 9.0

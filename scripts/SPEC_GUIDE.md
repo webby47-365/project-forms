@@ -58,7 +58,7 @@ blocks:
 |---|---|---|
 | 기업 | `corp` | `hr`(인사·노무) `admin`(총무·행정) `finance`(회계·세무) `sales`(영업·마케팅) `startup`(창업·법인) |
 | 법률 | `legal` | `contract`(계약) `notice`(통지·증명) `litigation`(소송·민원) |
-| 공공 | `public` | `civil`(민원·신고) `consent`(신청·동의) |
+| 공공 | `public` | `civil`(민원·신고) `consent`(신청·동의) `family`(가족·주민등록) `tax`(세금·사업자) `insurance`(4대보험·고용) `procure`(조달·입찰) `vehicle`(자동차·교통) `permit`(인허가·영업신고) |
 | 부동산 | `estate` | `lease`(임대·매매) |
 | 개인 | `personal` | `career`(취업·경력) `life`(생활·가정) |
 | 교육 | `edu` | `school`(학교·학원) |
@@ -365,11 +365,78 @@ python scripts/build_site.py           # 사이트 재생성
 
 `blocks:`(레이아웃)를 고쳤다면 `sync_meta.py`로는 반영되지 않는다 — `build_form.py`를 써야 한다.
 
+## 3-5. 법정·공공 서식 재현본 (`law_ref` · `gov_table`) — 2026-09-16 신설
+
+정부 법령(시행규칙 별지 서식)에 정해진 서식은 **기재사항이 곧 효력**이다. 그래서 사람이 표를 다시 짜지 않고,
+**원문 PDF의 선 격자를 프로그램으로 그대로 옮긴다.** 디자인은 사이트 톤(선 색·음영·글꼴)만 입힌다.
+(2026-09-15 파일럿: 에이전트가 원문 글자만 보고 표를 다시 짜니 1쪽 서식이 3쪽이 되고 원문에 없는 제목이 끼어들었다.)
+
+### 절차 (도구 3개)
+
+| 단계 | 도구 | 산출 |
+|---|---|---|
+| ① 원문 확보 | 국가법령정보센터(law.go.kr) 별표·서식 PDF | `sources/gov/pdf/<id>.pdf` |
+| ② 격자 변환 | `python scripts/pdf_to_gov_spec.py <원문.pdf> <blocks.yaml>` | 표(`gov_table`)·문단·제목 blocks |
+| ③ 메타 작성 | 에이전트 — tags·summary·usage·howto·faq·related·samples | `meta/<id>.yaml` |
+| ④ 조립 | `python scripts/assemble_gov_spec.py <id> --work <작업폴더>` | `specs/<id>.yaml` (law_ref 자동) |
+| ⑤ 빌드·대조 | `build_form.py` → `python scripts/qa_gov_compare.py <원문.pdf> <생성.pdf>` | 원문 글자 일치 **97% 이상**, 쪽수 = 원문 쪽수, 경고 0 |
+
+작업폴더에는 `blocks/` `meta/` `law_sources.tsv`(id·법령명·bylNo·bylBrNo) `roster_batch1.tsv`(id·title·category·subcategory·agency·series_with)를 둔다.
+
+### 원문 주소
+
+`https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=<법령명(공백은 +)>&bylNo=<4자리>&bylBrNo=<2자리>&bylCls=BF&bylEfYdYn=Y`
+(별지 제15호의2서식 → bylNo=0015, bylBrNo=02). PDF는 페이지의 `pdfFlSeq` 값으로 `/LSW/flDownload.do?flSeq=` 에서 받는다.
+직접 접속이 막힌 환경에서는 내장 브라우저로 페이지를 열어 받는다(2026-09-16 인수인계서 참조).
+
+### law_ref (조립기가 채운다)
+
+```yaml
+source: law-standard
+source_note: 주민등록법 시행령 별지 제15호서식
+law_ref:
+  law: 주민등록법 시행령        # 출처표의 법령명
+  form_no: 별지 제15호서식      # 원문 머리 줄에서 자동 추출
+  amended: 2024-12-03          # 원문 머리 줄 <개정 …> 에서 자동 추출
+  url: https://www.law.go.kr/…  # 최신 시행본으로 열리는 고정 주소
+  agency: 행정안전부·읍면동
+  checked: 2026-09-16          # 원문을 마지막으로 대조한 날 (분기 점검 기준)
+```
+
+### gov_table 블록 (변환기가 만든다 — 손으로 고치지 않는다)
+
+```yaml
+- type: gov_table
+  widths: [12.5, 12.7, 74.8]      # 원문 열 폭 비율
+  heights_mm: [5.6, 5.8]          # 원문 행 높이(사이트 폭 174mm 기준 환산)
+  cells:
+    - at: [행, 열, 행병합수, 열병합수]
+      lines: [[l|c|r, "글자"], …]  # 원문 줄별 정렬
+      size: 8.1                   # 원문 글자 크기 × 0.9
+      fill: true                  # 원문 음영 칸
+      valign: t                   # 칸 이름이 왼쪽 위에 있는 기입란
+      sample: 홍길동               # (조립기가 넣음) 미리보기 전용 예시
+```
+
+- 칸에 속하지 않은 자리는 선 없이 비워 둔다. 자동 맞춤이 간격만으로 모자라면 **글자도 최대 83%까지 줄인다**(원문 쪽수 우선 — 일반 서식 원칙의 예외).
+- 원문 주민등록번호 칸은 그대로 둔다(4절 2항의 예외). 예시값은 `000000-0000000`.
+- 원문 머리 줄은 `■ 법령명 [별지 제N호서식] <개정 YYYY. M. D.>` 한 줄로 정리되고, 옆의 온라인 신청 안내문은 오른쪽 정렬 문단으로 남는다.
+- 기존 자체제작 서식과 같은 서식이면 조립표의 `series_with` 로 기존 계열에 `variant: 법정서식` 으로 합류한다(기존 서식은 `variant: 간편형`).
+
+### 지금 변환기가 못 하는 것 (만들지 말고 보류)
+
+| 유형 | 예 | 이유 |
+|---|---|---|
+| 가로(landscape) 원문 | 4대보험 자격취득·상실 신고서, 피부양자 신고서 | 사이트 파이프라인이 A4 세로 전용 |
+| 표 안에 표가 겹겹이 든 원문 | 세금계산서 | 바깥 칸과 안쪽 칸이 겹쳐 병합이 깨진다 |
+| 여러 서식을 한 PDF에 묶은 별지 | 경정청구서(1)(2)… , 원천징수영수증 묶음 | 필요한 쪽만 골라내는 기능이 없다 |
+| 스캔 이미지 PDF | 일부 옛 서식 | 선·글자 좌표가 없다 |
+
 ## 4. 서식 설계 원칙 (반드시 지킬 것)
 
 1. **표준 구성을 지킨다.** 실무에서 쓰이는 항목을 빠뜨리지 않는다. 법정서식이 있는 경우
    해당 법령의 필수 기재사항을 모두 넣는다.
-2. **주민등록번호를 넣지 않는다.** `생년월일`로 대체한다. 빌드 시 자동 검수에서 차단된다.
+2. **주민등록번호를 넣지 않는다.** `생년월일`로 대체한다. 빌드 시 자동 검수에서 차단된다. (예외: `law_ref` 가 있는 법정서식 재현본 — 3-5절)
 3. **1페이지 원칙.** 계약서·증명서가 아닌 일반 서식은 `target_pages: 1`을 목표로 한다.
    넘치면 `empty_rows`를 줄인다. 자동 축소는 간격만 줄이므로 내용이 너무 많으면 실패한다.
 4. **자유기술란은 `textbox`, 목록은 `table`, 기본정보는 `grid`** 로 명확히 구분한다.

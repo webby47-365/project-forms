@@ -179,6 +179,9 @@ def inspect_form(spec: FormSpec, pdf_path: Path, out_dir: Path) -> list[str]:
             required.extend([str(h) for h in blk["header"]])
         elif blk["type"] == "doc_title":
             required.append(str(blk["text"]))
+        elif blk["type"] == "gov_table":
+            for cell in blk.get("cells") or []:
+                required.extend(str(t) for _, t in (cell.get("lines") or []) if str(t).strip())
     flat = "".join(text.split())
     for token in required:
         norm = "".join(token.split())
@@ -189,7 +192,8 @@ def inspect_form(spec: FormSpec, pdf_path: Path, out_dir: Path) -> list[str]:
             warnings.append(f"출력물에서 '{token.strip()}' 항목을 찾을 수 없습니다.")
 
     # 2) 개인정보 과다수집 항목 차단
-    for banned in ("주민등록번호", "주민번호"):
+    # 법정서식 재현본(law_ref)은 원문 항목을 그대로 옮기므로 예외 — 사이트는 입력값을 받지 않는다
+    for banned in (() if spec.law_ref else ("주민등록번호", "주민번호")):
         if banned in flat:
             warnings.append(f"개인정보 과다수집 항목 '{banned}' 포함 — '생년월일' 등으로 대체 필요.")
 
@@ -329,6 +333,7 @@ def build_one(spec: FormSpec) -> dict[str, Any]:
         "version": spec.version,
         "source": spec.source,
         "source_note": spec.source_note,
+        "law_ref": spec.law_ref,
         "created_by": spec.created_by,
         "status": spec.status,
         "warnings": warnings,

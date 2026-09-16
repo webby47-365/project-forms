@@ -137,7 +137,13 @@
       {#- C안: FAQ 를 읽은 직후 '답을 더 읽자' 흐름. 다운로드 버튼과 떨어져 오클릭이 없다. 내용은 _card.html 매크로 #}
       {{ m.guide_box(guide_cards) }}
 
-      {%- if f.source == 'law-standard' and f.source_note %}
+      {%- if f.get('law_ref') %}
+      <div class="notice-box law-ref">
+        <strong>법정서식 재현본</strong> · 근거: {{ f.law_ref.law }} {{ f.law_ref.form_no }} (개정 {{ f.law_ref.amended|replace('-', '.') }}){% if f.law_ref.agency %} · 소관 {{ f.law_ref.agency }}{% endif %}<br>
+        원문의 항목과 순서를 그대로 옮기고 보기 좋게 정돈했습니다. 서식은 수시로 개정되므로
+        <a href="{{ f.law_ref.url }}" target="_blank" rel="noopener nofollow">원문 서식</a>에서 최신 개정일을 확인한 뒤 제출하십시오.
+      </div>
+      {%- elif f.source == 'law-standard' and f.source_note %}
       <div class="notice-box">{{ f.source_note }}. 법령 개정 여부를 확인한 뒤 사용하십시오.</div>
       {%- endif %}
       <div class="notice-box">

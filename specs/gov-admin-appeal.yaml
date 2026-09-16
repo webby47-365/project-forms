@@ -1,0 +1,636 @@
+id: gov-admin-appeal
+title: 행정심판 청구서
+category: public
+subcategory: civil
+tags:
+- 행정심판
+- 행정심판 청구
+- 행정처분
+- 불복절차
+- 행정소송
+summary: 행정청의 처분이나 부작위에 불복할 때 행정심판위원회에 제출하는 법정 청구서입니다.
+usage: '행정청의 처분이나 부작위에 이의가 있을 때 행정심판을 청구하는 서류입니다. 청구인의 인적사항, 피청구인, 처분 내용과 청구 취지를 기입합니다. 처분 내용을 증명하는 증거서류를 함께 제출해야 합니다. 처분이 있음을 안 날부터 제출 기한 등 자세한 사항은 해당 행정심판위원회에 확인하십시오.
+
+  '
+source: law-standard
+source_note: 행정심판법 시행규칙 별지 제30호서식
+law_ref:
+  law: 행정심판법 시행규칙
+  form_no: 별지 제30호서식
+  amended: '2025-09-24'
+  url: https://www.law.go.kr/LSW/lsBylInfoPLinkR.do?lsNm=%ED%96%89%EC%A0%95%EC%8B%AC%ED%8C%90%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99&bylNo=0030&bylBrNo=00&bylCls=BF&bylEfYdYn=Y
+  agency: 국민권익위원회(중앙행정심판위원회)
+  checked: '2026-09-16'
+featured: false
+target_pages: 2
+created_by: gov-batch
+howto:
+- 청구인 정보(성명, 주소, 주민등록번호, 전화번호)를 적습니다.
+- 대리인이 있으면 대리인 정보를 적습니다.
+- 피청구인과 소관 행정심판위원회를 선택하여 적습니다.
+- 처분 내용과 처분을 안 날을 기입합니다.
+- 청구 취지 및 이유를 작성하고 증거 서류를 기재합니다.
+faq:
+- q: 대리인 없이 혼자 청구할 수 있나요?
+  a: 네, 대리인이 없어도 청구할 수 있습니다. 대리인을 선임하면 위임장과 대리인의 자격 증명 서류가 필요합니다.
+- q: 처분을 안 날부터 얼마 내에 청구해야 하나요?
+  a: 처분을 안 날부터 제출 기한이 정해져 있습니다. 해당 행정심판위원회 규정을 확인하십시오.
+- q: 구술심리를 신청하려면 어떻게 하나요?
+  a: 구술심리를 원하면 해당 란에 "여"를 체크하고 별도 신청서를 첨부합니다.
+related:
+- administrative-objection
+- certified-notice
+- civil-petition
+blocks:
+- type: para
+  text: ■ 행정심판법 시행규칙 [별지 제30호서식] <개정 2025. 9. 24.>
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: doc_title
+  text: 행정심판 청구서
+  spaced: false
+- type: spacer
+  exact: true
+  height_pt: 11.7
+- type: gov_table
+  widths:
+  - 26.751
+  - 49.514
+  - 23.735
+  heights_mm:
+  - 7.36
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 접수번호
+    size: 8.1
+    fill: true
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 접수일
+    size: 8.1
+    fill: true
+  - at:
+    - 0
+    - 2
+    - 1
+    - 1
+    fill: true
+- type: gov_table
+  widths:
+  - 17.876
+  - 82.124
+  heights_mm:
+  - 7.58
+  - 7.58
+  - 7.58
+  - 7.58
+  - 10.05
+  - 10.0
+  - 10.0
+  - 10.0
+  - 8.75
+  - 11.39
+  cells:
+  - at:
+    - 0
+    - 0
+    - 4
+    - 1
+    lines:
+    - - c
+      - 청구인
+    size: 9.9
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 성명
+    size: 9.0
+    sample: 홍길동
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 주소
+    size: 9.0
+    sample: 서울시 마포구 월드컵로 100
+  - at:
+    - 2
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 주민등록번호(외국인등록번호)
+    size: 9.0
+    sample: 000000-0000000
+  - at:
+    - 3
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 전화번호
+    size: 9.0
+    sample: 02-1234-5678
+  - at:
+    - 4
+    - 0
+    - 4
+    - 1
+    lines:
+    - - l
+      - '[ ] 대표자'
+    - - l
+      - '[ ] 관리인'
+    - - l
+      - '[ ] 선정대표자'
+    - - l
+      - '[ ] 대리인'
+    - - l
+      - ※ 해당사항이 있는 경우 하나의 [ ]만 작성합니다.
+    size: 9.9
+  - at:
+    - 4
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 성명
+    size: 9.0
+  - at:
+    - 5
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 주소
+    size: 9.0
+  - at:
+    - 6
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 주민등록번호(외국인등록번호)
+    size: 9.0
+  - at:
+    - 7
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 전화번호
+    size: 9.0
+  - at:
+    - 8
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 피청구인
+    size: 9.9
+  - at:
+    - 8
+    - 1
+    - 1
+    - 1
+    sample: 서울시장
+  - at:
+    - 9
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 소관
+    - - l
+      - 행정심판위원회
+    size: 9.9
+  - at:
+    - 9
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - '[ ] 중앙행정심판위원회 [ ] ○○시ㆍ도행정심판위원회 [ ] 기타'
+    size: 9.0
+- type: gov_table
+  widths:
+  - 17.876
+  - 82.124
+  heights_mm:
+  - 11.39
+  - 11.35
+  - 11.39
+  - 11.39
+  - 11.39
+  - 6.97
+  - 16.8
+  - 16.8
+  - 29.71
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 처분 내용 또는 부작위 내용
+    size: 9.9
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    sample: 영업허가 거부
+  - at:
+    - 1
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 처분이 있음을 안 날
+    size: 9.9
+  - at:
+    - 1
+    - 1
+    - 1
+    - 1
+    sample: '2026-09-15'
+  - at:
+    - 2
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 청구 취지 및
+    - - c
+      - 청구 이유
+    size: 9.9
+  - at:
+    - 2
+    - 1
+    - 1
+    - 1
+    lines:
+    - - c
+      - 별지로 작성
+    size: 9.0
+  - at:
+    - 3
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 처분청의
+    - - l
+      - 불복절차고지유무
+    size: 9.9
+  - at:
+    - 3
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - '[ ] 유   [ ] 무'
+    size: 9.0
+  - at:
+    - 4
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 처분청의
+    - - l
+      - 불복절차고지내용
+    size: 9.9
+  - at:
+    - 4
+    - 1
+    - 1
+    - 1
+  - at:
+    - 5
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 증거 서류
+    size: 9.9
+  - at:
+    - 5
+    - 1
+    - 1
+    - 1
+    sample: 원본 처분문 1부
+  - at:
+    - 6
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 국선대리인
+    - - l
+      - 선임 신청 여부
+    size: 9.9
+  - at:
+    - 6
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - '[ ] 여   [ ] 부'
+    - - l
+      - ※ 국선대리인 선임을 신청하는 경우에는 「행정심판법 시행규칙」 별지 제27호의2서식에 따른 국선대리인 선임 신청서를 별도로 첨부하시기 바랍니다.
+    size: 8.1
+  - at:
+    - 7
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 구술심리 신청 여부
+    size: 9.9
+  - at:
+    - 7
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - '[ ] 여   [ ] 부'
+    - - l
+      - ※ 구술심리를 신청하는 경우에는 「행정심판법 시행규칙」 별지 제39호서식에 따른 구술심리 신청서를 별도로 첨부하시기 바랍니다.
+    size: 8.1
+  - at:
+    - 8
+    - 0
+    - 1
+    - 2
+    lines:
+    - - l
+      - 「행정심판법」 제28조 및 같은 법 시행령 제20조에 따라 위와 같이 행정심판을 청구합니다. 년  월  일
+    - - r
+      - 청구인          (서명 또는 인)
+    - - l
+      - ○○행정심판위원회 귀중
+    size: 8.5
+- type: spacer
+  exact: true
+  height_pt: 13.1
+- type: gov_table
+  widths:
+  - 17.876
+  - 67.115
+  - 15.009
+  heights_mm:
+  - 17.28
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 첨부서류
+    size: 7.2
+  - at:
+    - 0
+    - 1
+    - 1
+    - 1
+    lines:
+    - - l
+      - 1. 대표자, 관리인, 선정대표자 또는 대리인의 자격을 소명하는 서류(대표자, 관리인, 선정대표자 또는 대리인을 선임하는 경우에만 제출합니다)
+    - - l
+      - 2. 주장을 뒷받침하는 증거서류나 증거물
+    size: 7.2
+  - at:
+    - 0
+    - 2
+    - 1
+    - 1
+    lines:
+    - - c
+      - 수수료
+    - - c
+      - 없음
+    size: 7.2
+- type: page_break
+- type: para
+  text: 국선대리인 제도 안내
+  align: center
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 15.5
+- type: para
+  text: 1. 제도개요
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 청구인이 경제적 능력으로 인해 대리인을 선임할 수 없는 경우에는 행정심판위원회에 국선대리인을 선임해 줄 것을 신청할 수 있습니다.
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 21.3
+- type: para
+  text: 2. 신청자격
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 가. 「국민기초생활 보장법」 제2조제2호에 따른 수급자
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 나. 「한부모가족지원법」 제5조 및 제5조의2에 따른 지원대상자
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 다. 「기초연금법」 제2조제3호에 따른 기초연금 수급자
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 라. 「장애인연금법」 제2조제4호에 따른 수급자
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 마. 「북한이탈주민의 보호 및 정착지원에 관한 법률」 제2조제2호에 따른 보호대상자
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 바. 그 밖에 행정심판위원회의 위원장이 경제적 능력으로 인해 대리인을 선임할 수 없다고 인정하는 사람
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 21.3
+- type: para
+  text: 3. 신청절차
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 국선대리인의 선임을 신청하려는 청구인은 「행정심판법 시행규칙」 별지 제27호의2서식에 따른 국선대리인 선임 신청서를 제 출해야 하며, 신청자격에 해당하는 사람이라는 사실을 소명하는 서류를 함께 제출해야 합니다.
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 23.3
+- type: para
+  text: 구술심리 제도 안내
+  align: center
+  size: 9.0
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 16.1
+- type: para
+  text: 1. 제도개요
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 행정심판의 심리는 구술심리나 서면심리로 합니다. 다만, 당사자가 구술심리를 신청한 경우에는 서면심리만으로 결정할 수 있 다고 인정되는 경우 외에는 구술심리로 진행합니다.
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 21.3
+- type: para
+  text: 2. 신청절차
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 6.5
+- type: para
+  text: 당사자가 구술심리를 신청하려면 행정심판위원회에「행정심판법 시행규칙」 별지 제39호서식의 구술심리 신청서를 제출하거나 구술로 신청해야 합니다.
+  align: left
+  size: 7.2
+  space_after: 0
+  line_spacing: 1.0
+- type: spacer
+  exact: true
+  height_pt: 9.0
+- type: gov_table
+  widths:
+  - 100.0
+  heights_mm:
+  - 7.4
+  - 17.71
+  cells:
+  - at:
+    - 0
+    - 0
+    - 1
+    - 1
+    lines:
+    - - c
+      - 처리 절차
+    size: 9.0
+    fill: true
+  - at:
+    - 1
+    - 0
+    - 1
+    - 1
+    lines:
+    - - l
+      - 청구서 작성   ➜     접수     ➜     재결     ➜    송달 청구인        ○○행정심판위원회    ○○행정심판위원회
+    size: 8.1

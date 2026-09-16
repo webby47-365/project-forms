@@ -33,7 +33,7 @@ CATALOG = ROOT / "catalog" / "catalog.json"
 META_FIELDS = (
     "title", "category", "subcategory", "tags", "summary", "usage",
     "series", "series_name", "variant", "variant_rank", "variant_use",
-    "howto", "faq", "outline", "seal", "related", "from_request", "featured", "featured_rank", "source", "source_note", "status",
+    "howto", "faq", "outline", "seal", "related", "from_request", "featured", "featured_rank", "source", "source_note", "law_ref", "status",
 )
 
 

@@ -3,10 +3,226 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 243종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 270종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
 <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>자동차양도증명서 (직접 거래용)</title>
+<link>https://freeforms.kr/form/gov-vehicle-transfer-cert/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-vehicle-transfer-cert/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>개인 간에 중고차를 직거래할 때 양도인과 양수인이 함께 서명하는 양도증명서입니다.</description>
+</item>
+<item>
+<title>간이대지급금 지급청구서</title>
+<link>https://freeforms.kr/form/gov-simple-substitute-payment/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-simple-substitute-payment/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>회사에서 받지 못한 임금을 근로복지공단으로부터 받는 대지급금 지급을 신청하는 양식입니다.</description>
+</item>
+<item>
+<title>자동차 이전등록 신청서</title>
+<link>https://freeforms.kr/form/gov-vehicle-transfer-registration/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-vehicle-transfer-registration/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>자동차를 사거나 받은 후 새로운 소유자로 등록을 변경하는 신청서입니다.</description>
+</item>
+<item>
+<title>인감증명서 발급 위임장 (법정서식)</title>
+<link>https://freeforms.kr/form/gov-seal-certificate-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-seal-certificate-poa/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>인감증명서 발급을 받기 위해 다른 사람에게 권한을 위임하는 법정 위임장입니다.</description>
+</item>
+<item>
+<title>육아휴직 급여·육아기 근로시간 단축 급여 신청서</title>
+<link>https://freeforms.kr/form/gov-parental-leave-benefit/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-parental-leave-benefit/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>8세 이하(또는 초등 2학년 이하) 자녀 양육을 위한 육아휴직 또는 근로시간 단축 급여를 신청하는 법정 신청서입니다.</description>
+</item>
+<item>
+<title>임대차 정보제공 요청서</title>
+<link>https://freeforms.kr/form/gov-lease-info-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-lease-info-request/</guid>
+<category>부동산 · 임대·매매</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>임대차계약서상 확정일자 부여 현황과 임차인 정보를 요청하는 법정 신청서입니다.</description>
+</item>
+<item>
+<title>주택 임대차 계약 신고서 (전월세 신고)</title>
+<link>https://freeforms.kr/form/gov-housing-lease-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-housing-lease-report/</guid>
+<category>부동산 · 임대·매매</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>주택을 월세나 전세로 빌리거나 빌려줄 때 시·군·구청에 신고하는 임대차 계약 신고서입니다.</description>
+</item>
+<item>
+<title>사업자등록 신청서 (개인사업자용)</title>
+<link>https://freeforms.kr/form/gov-business-registration-individual/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-business-registration-individual/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>개인이 사업을 시작할 때 세무서에 제출하는 법정 사업자등록 신청서입니다.</description>
+</item>
+<item>
+<title>인감(변경)신고서 (서면신고용)</title>
+<link>https://freeforms.kr/form/gov-seal-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-seal-report/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>인감을 처음 신고하거나 기존 인감을 새로운 인감으로 변경할 때 증명청에 제출하는 법정 신고서입니다.</description>
+</item>
+<item>
+<title>국민연금 납부예외·납부재개 신청서</title>
+<link>https://freeforms.kr/form/gov-pension-exemption/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-pension-exemption/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>질병·실직·휴직 등으로 국민연금 보험료 납부가 어려울 때 납부를 예외로 신청하고, 예외 사유가 종료될 때 납부를 재개하는 법정 신청서입니다.</description>
+</item>
+<item>
+<title>출산전후휴가 급여 등 신청서</title>
+<link>https://freeforms.kr/form/gov-maternity-leave-benefit/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-maternity-leave-benefit/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>출산 전후휴가나 유산·사산휴가, 배우자 출산휴가 급여를 신청하는 고용보험 법정 신청서입니다.</description>
+</item>
+<item>
+<title>피보험자 이직확인서</title>
+<link>https://freeforms.kr/form/gov-separation-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-separation-confirmation/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>회사를 그만둘 때 고용보험 실업급여 신청을 위해 사업주가 발급하는 법정 이직확인서입니다.</description>
+</item>
+<item>
+<title>통신판매업 변경신고서</title>
+<link>https://freeforms.kr/form/gov-mail-order-change-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-mail-order-change-report/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>통신판매업 신고 후 사업 내용이 변경될 때 공정거래위원회에 제출하는 법정 신고서입니다.</description>
+</item>
+<item>
+<title>주민등록증 분실신고서</title>
+<link>https://freeforms.kr/form/gov-id-card-loss-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-id-card-loss-report/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>주민등록증이나 모바일 주민등록증을 잃어버렸을 때 읍면동에 제출하는 분실신고서입니다.</description>
+</item>
+<item>
+<title>주민등록표 열람·등초본 교부 신청서 (법정서식)</title>
+<link>https://freeforms.kr/form/gov-resident-register-copy/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-resident-register-copy/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>본인이나 다른 사람의 주민등록표 등본 또는 초본을 열람하거나 교부받기 위한 법정 신청서입니다.</description>
+</item>
+<item>
+<title>건강보험 임의계속 가입·탈퇴 신청서</title>
+<link>https://freeforms.kr/form/gov-health-voluntary-continuation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-health-voluntary-continuation/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>직장을 그만둔 후 건강보험 자격을 유지하고 싶을 때 국민건강보험공단에 제출하는 법정 신청서입니다.</description>
+</item>
+<item>
+<title>입찰서 (국가계약)</title>
+<link>https://freeforms.kr/form/gov-bid-form/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-bid-form/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>국가·지방자치단체의 공사·물품·용역 입찰에 참가할 때 제출하는 법정 입찰서입니다.</description>
+</item>
+<item>
+<title>전입신고서 (법정서식)</title>
+<link>https://freeforms.kr/form/gov-move-in-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-move-in-report/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>새로운 주소로 이사할 때 읍·면·동사무소에 제출하는 법정 전입신고서입니다.</description>
+</item>
+<item>
+<title>통신판매업 휴업·폐업·영업재개 신고서</title>
+<link>https://freeforms.kr/form/gov-mail-order-closure-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-mail-order-closure-report/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>통신판매업을 일시 중단하거나 폐업, 다시 재개할 때 공정거래위원회에 제출하는 법정 신고서입니다.</description>
+</item>
+<item>
+<title>정보공개 청구서 (법정서식)</title>
+<link>https://freeforms.kr/form/gov-info-disclosure-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-info-disclosure-request/</guid>
+<category>공공 · 민원·신고</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>정부기관이나 공공기관에 보유한 정보를 공개해달라고 청구하는 법정 신청서입니다.</description>
+</item>
+<item>
+<title>기부금 영수증 (법정서식)</title>
+<link>https://freeforms.kr/form/gov-donation-receipt/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-donation-receipt/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>기부금을 받은 단체가 기부자에게 발급하는 법정 기부금 영수증입니다.</description>
+</item>
+<item>
+<title>입찰참가신청서 (국가계약)</title>
+<link>https://freeforms.kr/form/gov-bid-participation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-bid-participation/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>국가·지방자치단체의 공사·물품·용역 입찰에 참가하기 전에 제출하는 법정 신청서입니다.</description>
+</item>
+<item>
+<title>식품 영업 신고서</title>
+<link>https://freeforms.kr/form/gov-food-business-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-food-business-report/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>음식점·카페·편의점 등 식품을 취급하는 영업장을 운영할 때 시·군·구청에 내는 법정 신고서입니다.</description>
+</item>
+<item>
+<title>행정심판 청구서</title>
+<link>https://freeforms.kr/form/gov-admin-appeal/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-admin-appeal/</guid>
+<category>공공 · 민원·신고</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>행정청의 처분이나 부작위에 불복할 때 행정심판위원회에 제출하는 법정 청구서입니다.</description>
+</item>
+<item>
+<title>휴업·폐업 신고서 (사업자)</title>
+<link>https://freeforms.kr/form/gov-business-closure-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-business-closure-report/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>사업을 휴업하거나 폐업할 때 세무서에 제출하는 법정 신고서입니다.</description>
+</item>
+<item>
+<title>통신판매업 신고서</title>
+<link>https://freeforms.kr/form/gov-mail-order-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-mail-order-report/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>온라인 쇼핑몰이나 인터넷 판매를 시작할 때 공정거래위원회에 제출하는 법정 신고서입니다.</description>
+</item>
+<item>
+<title>전입세대확인서 열람·교부 신청서</title>
+<link>https://freeforms.kr/form/gov-household-check-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gov-household-check-request/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
+<description>집을 옮기거나 세대 구성을 확인해야 할 때 읍면동에 신청하는 전입세대확인서 열람·교부 신청서입니다.</description>
+</item>
 <item>
 <title>차량 이전등록 위임장</title>
 <link>https://freeforms.kr/form/vehicle-registration-poa/</link>
@@ -30,222 +246,6 @@
 <category>부동산 · 임대·매매</category>
 <pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
 <description>임차인이 이사 나갈 때 시설물 상태와 공과금·관리비 정산 항목을 임대인과 함께 확인하는 퇴거 점검표입니다.</description>
-</item>
-<item>
-<title>통원확인서</title>
-<link>https://freeforms.kr/form/outpatient-visit-certificate/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/outpatient-visit-certificate/</guid>
-<category>의료·복지 · 동의·신청</category>
-<pubDate>Tue, 15 Sep 2026 00:00:00 +0900</pubDate>
-<description>환자가 특정 일시에 병원에 통원해 진료를 받았음을 의료기관이 확인해 주는 서식으로, 지각·조퇴 사유를 회사에 소명할 때 제출합니다.</description>
-</item>
-<item>
-<title>자동차 관리이력서</title>
-<link>https://freeforms.kr/form/vehicle-maintenance-history/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vehicle-maintenance-history/</guid>
-<category>법률 · 통지·증명</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>차량 기본정보와 정비·소모품 교체·사고 이력을 정리해 중고차 매매 시 관리 상태를 증명하는 자동차 관리이력서입니다.</description>
-</item>
-<item>
-<title>반품·교환 신청서</title>
-<link>https://freeforms.kr/form/return-exchange-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/return-exchange-request/</guid>
-<category>기업 · 영업·마케팅</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>고객이 구매한 물품의 반품·교환 사유와 처리 방법을 기록하는 신청서 양식입니다.</description>
-</item>
-<item>
-<title>동업 해지 합의서</title>
-<link>https://freeforms.kr/form/partnership-dissolution-agreement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/partnership-dissolution-agreement/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>동업관계를 끝내며 지분 정산 방법과 잔여 채무·자산 처리를 정하는 합의서입니다.</description>
-</item>
-<item>
-<title>수혈 동의서</title>
-<link>https://freeforms.kr/form/blood-transfusion-consent/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/blood-transfusion-consent/</guid>
-<category>의료·복지 · 동의·신청</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>수혈 전 환자에게 설명한 사항과 동의 여부를 기록하는 수혈 동의서 양식입니다.</description>
-</item>
-<item>
-<title>진술서</title>
-<link>https://freeforms.kr/form/written-statement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/written-statement/</guid>
-<category>법률 · 소송·민원</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>사건과 관련하여 본인이 직접 경험하거나 목격한 사실을 시간순으로 정리하여 제출하는 진술서 양식입니다.</description>
-</item>
-<item>
-<title>주간 학습계획표</title>
-<link>https://freeforms.kr/form/weekly-study-plan/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/weekly-study-plan/</guid>
-<category>교육 · 학교·학원</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>주차별 목표와 시간대별 학습 일정, 과목별 분량을 계획하고 주간 성찰을 기록하는 학습계획표입니다.</description>
-</item>
-<item>
-<title>월간업무보고서</title>
-<link>https://freeforms.kr/form/work-report-monthly/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/work-report-monthly/</guid>
-<category>기업 · 총무·행정</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>한 달간의 주요 성과와 부문별 실적, 익월 계획을 종합 정리해 보고하는 월간업무보고서입니다.</description>
-</item>
-<item>
-<title>업무용 차량 사용 신청서</title>
-<link>https://freeforms.kr/form/vehicle-use-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vehicle-use-request/</guid>
-<category>기업 · 총무·행정</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>업무용 차량의 사용일시·목적지·동승자를 적어 사전 승인을 받고 운행 기록을 남기는 신청서입니다.</description>
-</item>
-<item>
-<title>복지시설 이용 신청서</title>
-<link>https://freeforms.kr/form/welfare-facility-application/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/welfare-facility-application/</guid>
-<category>의료·복지 · 동의·신청</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>복지시설의 이용 대상자 정보와 희망 서비스를 기재하여 이용을 신청하는 서식입니다.</description>
-</item>
-<item>
-<title>연말정산 서류 점검표</title>
-<link>https://freeforms.kr/form/year-end-tax-checklist/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-tax-checklist/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>연말정산 제출 서류를 항목별로 점검하고 제출 여부를 확인하는 점검표입니다.</description>
-</item>
-<item>
-<title>수강료 환불 신청서</title>
-<link>https://freeforms.kr/form/tuition-refund-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/tuition-refund-request/</guid>
-<category>교육 · 학교·학원</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>수강 과정과 결제 정보, 환불 사유와 환불 예정액을 기재해 수강료 환불을 요청하는 신청서입니다.</description>
-</item>
-<item>
-<title>주간업무보고서</title>
-<link>https://freeforms.kr/form/work-report-weekly/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/work-report-weekly/</guid>
-<category>기업 · 총무·행정</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>한 주간의 업무 실적과 차주 계획, 이슈 사항을 정리해 상급자에게 보고하는 주간업무보고서입니다.</description>
-</item>
-<item>
-<title>중고차 매매계약서</title>
-<link>https://freeforms.kr/form/used-car-sale-contract/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/used-car-sale-contract/</guid>
-<category>법률 · 계약</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>차량 표시·매매대금 지급일정과 소유권 이전·하자담보책임을 정하는 중고차 매매계약서입니다.</description>
-</item>
-<item>
-<title>자필유언장 양식</title>
-<link>https://freeforms.kr/form/will-form/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/will-form/</guid>
-<category>개인 · 생활·가정</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>민법상 자필증서 유언의 법정 요건을 안내하고 유언 내용을 정리해 보는 초안 작성용 양식입니다.</description>
-</item>
-<item>
-<title>감사장</title>
-<link>https://freeforms.kr/form/thank-you-letter/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/thank-you-letter/</guid>
-<category>개인 · 생활·가정</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>도움을 준 분께 구체적인 사유와 감사의 마음을 편지 형식으로 전하는 감사장 양식입니다.</description>
-</item>
-<item>
-<title>수술·시술 동의서</title>
-<link>https://freeforms.kr/form/surgery-consent/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/surgery-consent/</guid>
-<category>의료·복지 · 동의·신청</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>수술·시술 전 환자에게 설명한 사항과 동의 여부를 기록하는 수술 동의서 양식입니다.</description>
-</item>
-<item>
-<title>방문자 기록대장</title>
-<link>https://freeforms.kr/form/visitor-log/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/visitor-log/</guid>
-<category>기업 · 총무·행정</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>외부 방문자의 방문일자·소속·연락처와 방문목적, 입실·퇴실 시각을 기록하는 방문자 기록대장입니다.</description>
-</item>
-<item>
-<title>하도급 계약서</title>
-<link>https://freeforms.kr/form/subcontract-agreement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/subcontract-agreement/</guid>
-<category>법률 · 계약</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>도급금액·대금 지급과 선급금·설계변경·하자담보책임을 정하는 하도급 계약서입니다.</description>
-</item>
-<item>
-<title>예방접종 동의서</title>
-<link>https://freeforms.kr/form/vaccination-consent/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vaccination-consent/</guid>
-<category>의료·복지 · 동의·신청</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>예방접종 전 대상자 정보와 사전 확인 사항을 점검하고 본인 또는 보호자 동의를 받는 서식입니다.</description>
-</item>
-<item>
-<title>원천징수영수증 발급 요청서</title>
-<link>https://freeforms.kr/form/withholding-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/withholding-request/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>원천징수영수증 발급을 위해 신청자 정보와 귀속연도·사용 용도를 기재하는 요청서입니다.</description>
-</item>
-<item>
-<title>창업 준비 체크리스트</title>
-<link>https://freeforms.kr/form/startup-checklist/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/startup-checklist/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>아이템 검증부터 사업자등록·인허가·자금조달까지 창업 준비 단계를 점검하는 체크리스트입니다.</description>
-</item>
-<item>
-<title>주주총회 의사록</title>
-<link>https://freeforms.kr/form/shareholder-meeting-minutes/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/shareholder-meeting-minutes/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>주주총회의 일시·장소·출석 현황과 의안별 결의 결과를 기록하는 주주총회 의사록입니다.</description>
-</item>
-<item>
-<title>용역계약서 (간편형)</title>
-<link>https://freeforms.kr/form/service-contract-simple/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/service-contract-simple/</guid>
-<category>법률 · 계약</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>목적·용역 내용과 기간·대금·비밀유지 등 핵심 조항만 담은 1페이지 간편 용역계약서입니다.</description>
-</item>
-<item>
-<title>전대차 계약서</title>
-<link>https://freeforms.kr/form/sublease-contract/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/sublease-contract/</guid>
-<category>부동산 · 임대·매매</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>임차인이 임대인의 동의를 받아 임차물을 다시 임대할 때 전대인과 전차인 간에 작성하는 계약서입니다.</description>
-</item>
-<item>
-<title>영업 계획서</title>
-<link>https://freeforms.kr/form/sales-plan/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/sales-plan/</guid>
-<category>기업 · 영업·마케팅</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>전년 실적 대비 당해 목표와 고객·채널별 세부 목표, 월별 추진 계획을 담는 영업 계획서입니다.</description>
-</item>
-<item>
-<title>교사 추천서</title>
-<link>https://freeforms.kr/form/teacher-recommendation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/teacher-recommendation/</guid>
-<category>교육 · 학교·학원</category>
-<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
-<description>지도교사가 대상 학생의 역량을 항목별로 평가하고 구체적 사례와 추천 사유를 적는 추천서입니다.</description>
 </item>
 </channel>
 </rss>

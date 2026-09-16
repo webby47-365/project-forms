@@ -1,0 +1,133 @@
+blocks:
+- {type: para, text: '■ 주민등록법 시행령 [별지 제34호서식] <개정 2024. 12. 3.>       정부24(www.gov.kr)에서도 신고 또는 신청할 수 있습니다.', align: left, size: 7.2, space_after: 0, line_spacing: 1.0}
+- {type: doc_title, text: '[ ] 주 민 등 록 증 [ ] 모바일 주민등록증 [ ] 분실신고서 [ ] 분실신고 철회 신청서', spaced: false}
+- {type: spacer, exact: true, height_pt: 8.5}
+- type: gov_table
+  widths: [50.463, 49.537]
+  heights_mm: [10.81]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [l, 접수번호]
+    size: 8.1
+    fill: true
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 접수일]
+    size: 8.1
+    fill: true
+- {type: spacer, exact: true, height_pt: 5.8}
+- type: gov_table
+  widths: [12.679, 57.655, 29.667]
+  heights_mm: [10.59, 10.54]
+  cells:
+  - at: [0, 0, 2, 1]
+    lines:
+    - [c, 분실자]
+    size: 9.9
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 성명(한글)]
+    size: 8.1
+  - at: [0, 2, 1, 1]
+    lines:
+    - [l, 주민등록번호]
+    size: 9.0
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, 주소]
+    size: 9.0
+  - at: [1, 2, 1, 1]
+    lines:
+    - [l, 연락처]
+    size: 9.0
+- {type: spacer, exact: true, height_pt: 5.8}
+- type: gov_table
+  widths: [12.679, 87.321]
+  heights_mm: [9.76, 9.8]
+  cells:
+  - at: [0, 0, 2, 1]
+    lines:
+    - [l, 신고(철회) 내용]
+    size: 9.5
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 분실일]
+    size: 9.0
+  - at: [1, 1, 1, 1]
+    lines:
+    - [l, 분실(철회) 사유]
+    size: 8.5
+- {type: spacer, exact: true, height_pt: 5.8}
+- type: gov_table
+  widths: [14.182, 43.548, 42.27]
+  heights_mm: [11.81, 27.28, 11.24, 12.29]
+  cells:
+  - at: [0, 0, 1, 3]
+    lines:
+    - [l, 주민등록증의 습득(담당 공무원 작성 칸)]
+    - [l, 년    월    일]
+    size: 9.0
+    fill: true
+  - at: [1, 0, 1, 3]
+    lines:
+    - [l, 「주민등록법 시행령」 제42조제1항에 따라 위와 같이 주민등록증(모바일 주민등록증)의 분실신고 (철회)를 신청합니다.]
+    - [r, 년   월   일]
+    - [l, ※ 분실자가 직접 신고하는 경우 ‘신고(철회)인’ 칸은 성명과 확인(서명 또는 인)만 작성하시면 됩니다.]
+    size: 8.5
+  - at: [2, 0, 2, 1]
+    lines:
+    - [l, 신고(철회)인]
+    size: 9.0
+  - at: [2, 1, 1, 1]
+    lines:
+    - [l, 성명]
+    - [r, (서명 또는 인)]
+    size: 8.1
+  - at: [2, 2, 1, 1]
+    lines:
+    - [l, 주민등록번호]
+    size: 9.0
+  - at: [3, 1, 1, 1]
+    lines:
+    - [l, 연락처]
+    size: 9.0
+  - at: [3, 2, 1, 1]
+    lines:
+    - [l, 분실자와의 관계]
+    size: 9.0
+- {type: spacer, exact: true, height_pt: 61.8}
+- type: gov_table
+  widths: [12.679, 74.392, 12.929]
+  heights_mm: [12.38]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 첨부 서류]
+    size: 7.2
+  - at: [0, 1, 1, 1]
+    lines:
+    - [l, 없음]
+    size: 7.2
+  - at: [0, 2, 1, 1]
+    lines:
+    - [c, 수수료]
+    - [c, 없음]
+    size: 7.2
+- {type: spacer, exact: true, height_pt: 7.9}
+- type: gov_table
+  widths: [100.0]
+  heights_mm: [8.71, 36.08]
+  cells:
+  - at: [0, 0, 1, 1]
+    lines:
+    - [c, 유의사항]
+    size: 9.0
+    fill: true
+  - at: [1, 0, 1, 1]
+    lines:
+    - [l, '1. 이 신고서는 주민등록증 또는 모바일 주민등록증 분실신고를 하려고 할 때만 사용하시고, 주민등록증 또는 모바일 주민등록증을 재발급 받으려면 별지 제32호서식의 주민등록증 재발급 신청서 또는 별지 제31호의2서식의 모바일 주민등록증 재발급 신청서를 작성하시기 바랍니다.']
+    - [l, 2. 주민등록증의 분실신고를 하신 분은 주민등록증 진위 확인 자동응답시스템(ARS 국번 없이 ‘1382’)을 이용하여 신고 사항의 처리 여부를 확인하실 수 있습니다.]
+    - [l, 3. 분실된 주민등록증 또는 모바일 주민등록증을 되찾았을 때에는 읍ㆍ면사무소 또는 동 주민센터에 철회 신청을 하기 바랍니다.]
+    - [l, 4. 주민등록증의 분실신고가 접수되면 주민등록증 및 모바일 주민등록증의 효력이 모두 정지됩니다.]
+    size: 7.2
