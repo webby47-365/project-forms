@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T15:20:37+09:00",
-  "count": 270,
+  "generated_at": "2026-09-17T08:21:38+09:00",
+  "count": 275,
   "forms": [
     {
       "id": "academy-attendance",
@@ -1113,6 +1113,115 @@
         "invoice-request"
       ],
       "seal": true
+    },
+    {
+      "id": "bid-performance-certificate",
+      "title": "실적증명서 (입찰용)",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "실적증명서",
+        "계약이행실적",
+        "입찰참가서류",
+        "수행실적증명",
+        "조달실적증명"
+      ],
+      "summary": "공공입찰 참가 시 과거 계약을 정상적으로 이행했음을 발주기관이 확인해 주는 실적증명서입니다.",
+      "usage": "공공기관·공기업 입찰에 참가할 때 최근 몇 년간 유사한 계약을 이행한 실적이 있는지 증명하기 위해 제출하는 서류입니다. 계약을 발주했던 기관(수요기관)이 신청을 받아 발급하는 방식이 일반적이므로, 입찰 공고를 확인하는 즉시 발주기관 담당 부서에 미리 신청해 두는 것이 좋습니다. 공고문에서 요구하는 실적 인정 기간(통상 최근 3~5년)과 실적 인정 금액 기준을 먼저 확인한 뒤 그 범위 안의 계약만 적으십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59816,
+        "docx": 38913,
+        "hwpx": 10556
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "증명서를 신청하는 회사와 발급기관 정보를 적습니다.",
+        "증명 대상 계약명과 계약기간, 계약금액을 적습니다.",
+        "이행 상태와 준공(완료) 여부를 적습니다.",
+        "발급기관 담당자가 확인 후 서명하거나 직인을 찍습니다."
+      ],
+      "faq": [
+        {
+          "q": "실적증명서는 누가 발급하나요?",
+          "a": "계약을 발주했던 기관(발주처)의 계약·사업 담당 부서가 신청을 받아 발급합니다."
+        },
+        {
+          "q": "실적 인정 기간은 어떻게 확인하나요?",
+          "a": "입찰 공고문의 참가자격 항목에 적힌 실적 인정 기간과 금액 기준을 먼저 확인해야 합니다."
+        },
+        {
+          "q": "여러 건의 계약을 한 장에 적어도 되나요?",
+          "a": "공고문에서 별도 서식을 지정하지 않았다면 표에 행을 추가해 여러 건을 함께 적어도 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "신청 회사",
+          "items": [
+            "상호(법인명)",
+            "대표자",
+            "사업자등록번호",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "계약 이행 실적 내역",
+          "items": [
+            "계약명",
+            "발주기관",
+            "계약기간",
+            "계약금액",
+            "이행상태"
+          ],
+          "note": ""
+        },
+        {
+          "title": "발급기관 확인",
+          "items": [
+            "발급기관명",
+            "부서·담당자",
+            "발급번호",
+            "발급일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-bid-participation",
+        "gov-bid-form",
+        "business-reg-checklist",
+        "quotation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-17T08:21:15+09:00",
+      "updated_at": "2026-09-17T08:21:15+09:00",
+      "downloads": 0
     },
     {
       "id": "blood-transfusion-consent",
@@ -13302,6 +13411,92 @@
       "seal": true
     },
     {
+      "id": "integrity-pledge-bidding",
+      "title": "청렴계약 이행서약서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "청렴서약서",
+        "청렴계약이행서약서",
+        "입찰청렴서약",
+        "부정청탁금지서약",
+        "계약청렴서약"
+      ],
+      "summary": "입찰·계약 과정에서 금품·향응을 주고받거나 부당한 청탁을 하지 않겠다고 다짐하는 청렴계약 이행서약서입니다.",
+      "usage": "공공기관 입찰이나 수의계약을 체결할 때 입찰 참가자(계약상대자)가 계약 담당자에게 부정한 청탁이나 금품·향응을 제공하지 않고, 담합·특혜를 요구하지 않겠다고 약속하는 서약서입니다. 발주기관 담당자와 참가업체 대표자가 각각 서명하며, 서약 위반이 확인되면 입찰 참가 제한 등 불이익을 받을 수 있음을 함께 명시합니다. 발주기관마다 세부 문구가 정해져 있는 경우가 많으므로 입찰 공고문에 지정 서식이 있으면 그것을 우선 따르십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46140,
+        "docx": 38526,
+        "hwpx": 9471
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "입찰(계약) 건명과 입찰번호, 발주기관을 적습니다.",
+        "서약 내용을 확인합니다.",
+        "참가업체 대표자가 서명하거나 직인을 찍습니다.",
+        "발주기관 담당자가 서명하고 1부씩 나눠 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "서약서 문구를 발주기관이 지정하기도 하나요?",
+          "a": "네. 입찰 공고문에 지정 서식이 있으면 그 서식을 우선 사용해야 합니다."
+        },
+        {
+          "q": "서약을 어기면 어떻게 되나요?",
+          "a": "위반 사실이 확인되면 입찰 참가 제한이나 계약 해지 등 불이익을 받을 수 있습니다."
+        },
+        {
+          "q": "공동수급체로 참가할 때는 누가 서명하나요?",
+          "a": "공동수급체 구성원 각자의 대표자가 모두 서명하는 것이 일반적입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "대상 계약",
+          "items": [
+            "입찰(계약)건명",
+            "입찰번호",
+            "발주기관",
+            "참가업체"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-bid-participation",
+        "gov-bid-form",
+        "bid-performance-certificate"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-17T08:21:19+09:00",
+      "updated_at": "2026-09-17T08:21:19+09:00",
+      "downloads": 0
+    },
+    {
       "id": "internal-announcement",
       "title": "사내 공지문",
       "category": "corp",
@@ -16822,6 +17017,114 @@
         "household-budget"
       ],
       "seal": false
+    },
+    {
+      "id": "motorcycle-sale-contract",
+      "title": "이륜차(오토바이) 매매계약서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "이륜차매매계약서",
+        "오토바이매매계약서",
+        "중고오토바이거래",
+        "이륜차양도계약",
+        "스쿠터매매계약"
+      ],
+      "summary": "중고 오토바이·스쿠터 등 이륜차를 개인 간에 사고팔 때 차량 정보와 대금 지급 조건을 정하는 매매계약서입니다.",
+      "usage": "중고 이륜차를 개인 간에 거래할 때 차량번호와 차대번호, 배기량 같은 차량 정보를 명확히 적고 매매대금과 지급 방법, 하자 책임을 정하는 계약서입니다. 계약 체결 후에는 관할 구청·시청에 이륜차 사용신고(명의이전)를 별도로 신청해야 합니다. 인수 전 시동·제동장치 등 성능과 상태를 직접 확인하고, 자동차책임보험 승계 여부도 매도인·매수인이 함께 협의해 두십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 56558,
+        "docx": 38920,
+        "hwpx": 10312
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "매도인과 매수인의 인적사항을 적습니다.",
+        "이륜차의 차량번호와 차대번호, 배기량을 적습니다.",
+        "매매대금과 계약금·잔금 지급일을 적습니다.",
+        "특약사항을 적고 양측이 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "계약 후 명의이전은 어떻게 하나요?",
+          "a": "계약서와 필요 서류를 갖춰 관할 구청·시청에 이륜차 사용신고(명의이전)를 신청합니다."
+        },
+        {
+          "q": "보험은 자동으로 승계되나요?",
+          "a": "자동으로 승계되지 않으므로 매도인·매수인이 보험 해지 또는 재가입 여부를 협의해야 합니다."
+        },
+        {
+          "q": "차대번호는 어디서 확인하나요?",
+          "a": "통상 차체 프레임이나 등록증에 표기되어 있으며, 등록증 원본과 대조해 확인합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "매도인 / 매수인",
+          "items": [
+            "매도인",
+            "생년월일",
+            "연락처",
+            "매수인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "이륜차 정보",
+          "items": [
+            "차종(모델명)",
+            "차량번호",
+            "차대번호",
+            "배기량",
+            "연식",
+            "주행거리",
+            "색상"
+          ],
+          "note": ""
+        },
+        {
+          "title": "거래 조건",
+          "items": [
+            "매매대금",
+            "계약금",
+            "지급일",
+            "잔금"
+          ],
+          "note": "인도 시점, 성능 하자 책임 기간, 보험 승계 여부 등 특약사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-maintenance-history",
+        "receipt"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-17T08:21:24+09:00",
+      "updated_at": "2026-09-17T08:21:24+09:00",
+      "downloads": 0
     },
     {
       "id": "mou-agreement",
@@ -26492,6 +26795,115 @@
       "seal": true
     },
     {
+      "id": "traffic-accident-confirmation",
+      "title": "교통사고 현장확인서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "교통사고현장확인서",
+        "사고확인서",
+        "교통사고접수서류",
+        "사고사실확인서",
+        "자동차사고확인서"
+      ],
+      "summary": "교통사고 직후 현장에서 양측 차량·보험 정보와 사고 경위를 함께 기록해 보험사 접수 등에 쓰는 확인서입니다.",
+      "usage": "교통사고가 났을 때 사고 직후 현장에서 상대방과 함께 차량번호·보험 정보와 사고 발생 경위, 피해 상황을 기록해 두는 문서입니다. 보험사 접수나 이후 절차의 기초 자료로 쓰이며, 과실 비율이나 책임 소재를 이 서식에서 단정하지 않습니다. 목격자가 있으면 연락처를 받아 두고, 사고 현장 사진과 블랙박스 영상도 함께 보관해 두면 이후 확인이 훨씬 수월합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49974,
+        "docx": 38719,
+        "hwpx": 10095
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사고 일시와 장소를 적습니다.",
+        "양측 차량번호와 보험 정보를 적습니다.",
+        "사고 경위와 피해 상황을 적습니다.",
+        "목격자가 있으면 연락처를 받아 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "과실 비율도 이 서식에 적어야 하나요?",
+          "a": "과실 비율은 보험사·경찰의 조사로 정해지므로 이 서식에서 단정해 적지 않습니다."
+        },
+        {
+          "q": "사진이나 블랙박스 영상도 남겨야 하나요?",
+          "a": "네. 이 확인서와 함께 현장 사진, 블랙박스 영상을 보관하면 이후 확인에 도움이 됩니다."
+        },
+        {
+          "q": "인적 피해가 있는 사고도 이 서식을 쓸 수 있나요?",
+          "a": "우선 이 서식으로 사실관계를 기록하되, 인적 피해가 있으면 즉시 경찰과 보험사에 신고하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "사고일시",
+            "사고장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "차량 A",
+          "items": [
+            "운전자",
+            "연락처",
+            "차량번호",
+            "보험사",
+            "증권번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "사고 경위",
+          "items": [],
+          "note": "누가 어느 방향에서 어떻게 진행하다 사고가 났는지 시간순으로 적으십시오."
+        },
+        {
+          "title": "피해 상황 / 목격자",
+          "items": [
+            "대물 피해",
+            "대인 피해",
+            "목격자 성명",
+            "목격자 연락처"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "car-accident-settlement",
+        "quotation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-17T08:21:31+09:00",
+      "updated_at": "2026-09-17T08:21:31+09:00",
+      "downloads": 0
+    },
+    {
       "id": "training-certificate",
       "title": "교육훈련 참가확인서",
       "category": "corp",
@@ -27146,6 +27558,103 @@
         "privacy-consent"
       ],
       "seal": true
+    },
+    {
+      "id": "vat-filing-document-confirmation",
+      "title": "부가가치세 신고자료 제출확인서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "부가세신고자료제출확인서",
+        "세무대리인제출확인",
+        "부가세신고서류목록",
+        "매입매출자료제출",
+        "세무사자료전달"
+      ],
+      "summary": "사업자가 부가가치세 신고를 위해 세무대리인에게 넘긴 증빙자료의 종류와 매수를 확인하는 제출확인서입니다.",
+      "usage": "개인·법인 사업자가 부가가치세 신고를 앞두고 세금계산서·영수증 같은 증빙자료를 세무대리인(세무사)에게 넘길 때, 넘긴 자료의 종류와 매수를 함께 확인해 분실이나 누락을 방지하는 문서입니다. 신고 기한 전에 자료를 빠짐없이 전달했는지 서로 확인하는 용도이며, 세액 계산이나 신고 내용의 적정성을 이 문서가 보장하지는 않습니다. 신고를 마친 뒤에는 신고서 접수증 사본도 함께 보관해 두십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54464,
+        "docx": 38802,
+        "hwpx": 10291
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사업자 정보와 신고 대상 기간을 적습니다.",
+        "세무대리인(사무소) 정보를 적습니다.",
+        "전달한 자료의 종류와 매수를 표에 적습니다.",
+        "사업자와 세무대리인이 함께 확인하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 확인서로 세액까지 확인해 주나요?",
+          "a": "아닙니다. 자료 전달 여부만 확인하는 문서이며 세액 계산은 세무대리인의 검토에 따릅니다."
+        },
+        {
+          "q": "전자 파일로 전달한 자료도 적나요?",
+          "a": "네. 이메일·홈택스 전자자료처럼 실물이 아닌 자료도 종류와 건수를 함께 적습니다."
+        },
+        {
+          "q": "자료가 누락된 채 신고 기한이 지나면 어떻게 하나요?",
+          "a": "수정신고나 경정청구가 가능한 경우가 있으니 세무대리인과 먼저 상담하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "사업자 / 신고 기간",
+          "items": [
+            "상호(성명)",
+            "사업자등록번호",
+            "신고 기간",
+            "신고 구분",
+            "세무대리인(사무소)",
+            "담당자 연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "제출 자료 내역",
+          "items": [
+            "자료구분",
+            "매수/건수",
+            "제출일"
+          ],
+          "note": "누락 가능성이 있는 자료나 추가로 확인이 필요한 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "tax-invoice",
+        "account-ledger",
+        "withholding-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-17T08:21:38+09:00",
+      "updated_at": "2026-09-17T08:21:38+09:00",
+      "downloads": 0
     },
     {
       "id": "vehicle-log",
