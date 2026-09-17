@@ -3,10 +3,18 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 275종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 276종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Fri, 18 Sep 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>물품구매계약서</title>
+<link>https://freeforms.kr/form/goods-purchase-contract/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/goods-purchase-contract/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Fri, 18 Sep 2026 00:00:00 +0900</pubDate>
+<description>발주자가 공급자로부터 물품을 구매할 때 품목·수량·단가와 납품·검수, 계약보증금·지체상금을 정하는 물품구매계약서입니다.</description>
+</item>
 <item>
 <title>부가가치세 신고자료 제출확인서</title>
 <link>https://freeforms.kr/form/vat-filing-document-confirmation/</link>
@@ -238,14 +246,6 @@
 <category>공공 · 민원·신고</category>
 <pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
 <description>행정청의 처분이나 부작위에 불복할 때 행정심판위원회에 제출하는 법정 청구서입니다.</description>
-</item>
-<item>
-<title>휴업·폐업 신고서 (사업자)</title>
-<link>https://freeforms.kr/form/gov-business-closure-report/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-business-closure-report/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>사업을 휴업하거나 폐업할 때 세무서에 제출하는 법정 신고서입니다.</description>
 </item>
 </channel>
 </rss>
