@@ -1,5 +1,5 @@
 slug: moving-out-deposit-return
-status: draft
+status: published
 group: housing
 title: 이사 나갈 때 보증금 반환 절차와 확인사항
 description: 임대차가 끝나 이사할 때 계약 해지 통보 시점, 원상복구 점검, 보증금 반환이 늦어질 때 임차권등기명령까지 순서대로 정리한 안내입니다.
@@ -9,8 +9,8 @@ summary: >-
   **임차권등기명령**을 먼저 신청해야 대항력·우선변제권을 지킬 수 있습니다.
 keywords: [보증금 반환, 이사 보증금, 임차권등기명령, 전세보증금 반환, 계약 해지 통보, 원상복구, 묵시적 갱신]
 created_at: 2026-09-16
-updated_at: 2026-09-16
-basis_date: 2026-09-16
+updated_at: 2026-09-17
+basis_date: 2026-09-17
 show_on: [move-out-checklist, deposit-return-notice]
 
 sections:
