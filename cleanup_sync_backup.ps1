@@ -5,7 +5,7 @@
 # 확인 후 폴더를 지운다. public/ 은 건드리지 않으므로 사이트는 그대로다.
 
 $ErrorActionPreference = 'Stop'
-Set-Location 'C:\Project_Forms'
+Set-Location 'C:\New_Business\01.FreeForms'
 
 function Line($t) { Write-Host ("`n== " + $t + " " + ("=" * [Math]::Max(0, 58 - $t.Length))) -ForegroundColor Cyan }
 

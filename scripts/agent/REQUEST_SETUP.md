@@ -67,7 +67,7 @@ Apps Script 편집기 우상단 **배포 → 새 배포** → 톱니바퀴에서
 
 ## 6단계 — 사이트에 주소 넣고 배포
 
-로컬 `C:\Project_Forms\catalog\requests.json` 을 메모장으로 열어 두 줄을 고친다.
+로컬 `C:\New_Business\01.FreeForms\catalog\requests.json` 을 메모장으로 열어 두 줄을 고친다.
 
 ```json
   "enabled": true,
@@ -77,7 +77,7 @@ Apps Script 편집기 우상단 **배포 → 새 배포** → 톱니바퀴에서
 저장한 뒤 PowerShell에서:
 
 ```powershell
-cd C:\Project_Forms
+cd C:\New_Business\01.FreeForms
 .\deploy_forms.ps1 -SkipBuild
 ```
 

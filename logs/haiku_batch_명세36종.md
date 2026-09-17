@@ -1,7 +1,7 @@
 # 서식 명세 36종 작성 보고서
 
 - 작업일자: 2026-09-13
-- 작업 범위: `C:\Project_Forms\specs\` 신규 명세 36종 작성
+- 작업 범위: `C:\New_Business\01.FreeForms\specs\` 신규 명세 36종 작성
 - 작업 제외: 빌드·최종검증 (build_form.py / build_site.py / fit_one_page.py / validate_catalog.py 미실행, catalog.json 미수정)
 
 ## 1. 작성 완료 id 목록 (36/36)

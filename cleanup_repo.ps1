@@ -1,6 +1,6 @@
 ﻿# =====================================================================
 #  [로컬 작업] 무료서식 다운로드 — 저장소 정리
-#  사용법 : C:\Project_Forms 에서  .\cleanup_repo.ps1
+#  사용법 : C:\New_Business\01.FreeForms 에서  .\cleanup_repo.ps1
 #
 #  하는 일
 #    1) 'Claude outputs' 폴더와 이관용 압축본을 git 추적에서 제외 (파일은 그대로 둔다)
@@ -30,7 +30,7 @@ function Write-Skip([string]$t) { Write-Host "  [건너뜀] $t" -ForegroundColor
 function Write-Fail([string]$t) { Write-Host "  [실패] $t" -ForegroundColor Red }
 
 if (-not (Test-Path (Join-Path $root ".git"))) {
-    Write-Fail "여기는 git 저장소가 아닙니다. C:\Project_Forms 에서 실행하십시오."
+    Write-Fail "여기는 git 저장소가 아닙니다. C:\New_Business\01.FreeForms 에서 실행하십시오."
     exit 1
 }
 

@@ -1,6 +1,6 @@
 ﻿# =====================================================================
 #  [로컬 작업] 무료서식 다운로드 — 연관 서식(related) + 주제 모음(collection) 적용
-#  사용법 : C:\Project_Forms 에서  .\apply_v3.ps1
+#  사용법 : C:\New_Business\01.FreeForms 에서  .\apply_v3.ps1
 #  하는 일: 1) 원격(에이전트) 커밋 먼저 받기
 #           2) 전송본 압축 풀기 (specs 239종 + 템플릿 + 스크립트)
 #           3) ads.json에 collection_bottom 슬롯 추가 (기존 설정은 보존)

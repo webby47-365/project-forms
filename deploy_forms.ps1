@@ -1,6 +1,6 @@
 ﻿# =====================================================================
 #  [로컬 작업] 무료서식 다운로드 — 검증 → 커밋 → 푸시 → 배포 확인
-#  사용법 : C:\Project_Forms 에서  .\deploy_forms.ps1
+#  사용법 : C:\New_Business\01.FreeForms 에서  .\deploy_forms.ps1
 #  옵션   : .\deploy_forms.ps1 -Message "서식 3종 추가"
 #           .\deploy_forms.ps1 -SkipBuild      (빌드 없이 검증·배포만)
 #           .\deploy_forms.ps1 -Pull           (서버/에이전트 커밋을 로컬로 먼저 받기)

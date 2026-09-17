@@ -1,6 +1,6 @@
 """생성된 서식을 한글 카테고리 폴더로 내보낸다 (사람이 찾아보기 쉽게).
 
-  C:\\Project_Forms\\기업\\인사·노무\\사직서.pdf / .docx / .hwpx
+  C:\\New_Business\\01.FreeForms\\기업\\인사·노무\\사직서.pdf / .docx / .hwpx
 
 주의: 이 폴더는 **내보내기 결과**이며 정본이 아니다.
 정본은 `specs/*.yaml`(설계)과 `public/files/`(배포본)이다.

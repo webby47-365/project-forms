@@ -1,6 +1,6 @@
 # 네이버 블로그 초안 에이전트 지침 (정본) — "각종서식 작성하기"
 
-서식 1종 = **네이버 블로그 초안 1편**을 `C:\Project_Forms\Claude outputs\blog\YYYY-MM-DD_<서식id>\` 에 넣는다 (날짜 = 발행 예정일).
+서식 1종 = **네이버 블로그 초안 1편**을 `C:\New_Business\01.FreeForms\Claude outputs\blog\YYYY-MM-DD_<서식id>\` 에 넣는다 (날짜 = 발행 예정일).
 
 ## 0-0. 실행 방식 — "켜져 있으면 3일치 유지"
 
@@ -90,7 +90,7 @@
 
 작업은 클라우드 작업공간에서 하고, 결과만 컴퓨터 폴더로 보낸다.
 
-1. **확인** — `device_list_dir C:\Project_Forms\Claude outputs\blog` → 오늘~모레(KST) 3개 날짜 폴더에 `post.html` 이 다 있으면 즉시 종료
+1. **확인** — `device_list_dir C:\New_Business\01.FreeForms\Claude outputs\blog` → 오늘~모레(KST) 3개 날짜 폴더에 `post.html` 이 다 있으면 즉시 종료
 2. **가져오기** — `device_stage_files` 로 `Claude outputs\blog\_queue.json`, `catalog\catalog.json`,
    `scripts\blog\blog_images.py`, `scripts\blog\build_blog_post.py`, `scripts\agent\blog_draft_agent.md`(이 문서), 필요 시 `scripts\season.py`·`catalog\season_calendar.json` 을 가져온다
 3. **빈 날짜마다** (가까운 날부터)

@@ -9,7 +9,7 @@
 ## 폴더 구조
 
 ```
-C:\Project_Forms\
+C:\New_Business\01.FreeForms\
 ├─ specs\                   ★ 정본 — 서식 설계(YAML). 서식을 고치려면 여기를 고친다
 │   └─ resume-basic.yaml
 ├─ catalog\
