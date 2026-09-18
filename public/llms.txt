@@ -1,6 +1,6 @@
 # 무료서식 다운로드 (freeforms.kr)
 
-> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 276종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-09-18 기준, 매일 새 서식 추가)
+> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 281종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-09-19 기준, 매일 새 서식 추가)
 
 ## 이 사이트의 특징
 
@@ -47,7 +47,7 @@
 ## 분야별 서식
 
 - [기업 · 인사·노무](https://freeforms.kr/category/corp/hr/): 30종
-- [기업 · 총무·행정](https://freeforms.kr/category/corp/admin/): 23종
+- [기업 · 총무·행정](https://freeforms.kr/category/corp/admin/): 24종
 - [기업 · 회계·세무](https://freeforms.kr/category/corp/finance/): 22종
 - [기업 · 영업·마케팅](https://freeforms.kr/category/corp/sales/): 14종
 - [기업 · 창업·법인](https://freeforms.kr/category/corp/startup/): 12종
@@ -57,15 +57,15 @@
 - [공공 · 민원·신고](https://freeforms.kr/category/public/civil/): 13종
 - [공공 · 신청·동의](https://freeforms.kr/category/public/consent/): 12종
 - [공공 · 가족·주민등록](https://freeforms.kr/category/public/family/): 6종
-- [공공 · 세금·사업자](https://freeforms.kr/category/public/tax/): 4종
+- [공공 · 세금·사업자](https://freeforms.kr/category/public/tax/): 5종
 - [공공 · 4대보험·고용](https://freeforms.kr/category/public/insurance/): 6종
 - [공공 · 조달·입찰](https://freeforms.kr/category/public/procure/): 5종
-- [공공 · 자동차·교통](https://freeforms.kr/category/public/vehicle/): 4종
-- [공공 · 인허가·영업신고](https://freeforms.kr/category/public/permit/): 4종
+- [공공 · 자동차·교통](https://freeforms.kr/category/public/vehicle/): 5종
+- [공공 · 인허가·영업신고](https://freeforms.kr/category/public/permit/): 5종
 - [부동산 · 임대·매매](https://freeforms.kr/category/estate/lease/): 14종
 - [개인 · 취업·경력](https://freeforms.kr/category/personal/career/): 20종
 - [개인 · 생활·가정](https://freeforms.kr/category/personal/life/): 15종
-- [교육 · 학교·학원](https://freeforms.kr/category/edu/school/): 16종
+- [교육 · 학교·학원](https://freeforms.kr/category/edu/school/): 17종
 - [의료·복지 · 동의·신청](https://freeforms.kr/category/welfare/consent/): 12종
 
 ## 버전별 비교 (같은 서식의 상황별 변형)
@@ -103,7 +103,7 @@
 - [분쟁 해결 서식 10종](https://freeforms.kr/collection/dispute/)
 - [관공서 민원 서식 11종](https://freeforms.kr/collection/civil-affairs/)
 - [사무실 총무 서식 10종](https://freeforms.kr/collection/office-admin/)
-- [학교·학원 서식 10종](https://freeforms.kr/collection/school/)
+- [학교·학원 서식 11종](https://freeforms.kr/collection/school/)
 
 ## 많이 찾는 서식
 
@@ -130,6 +130,6 @@
 
 ## Optional
 
-- [전체 서식 목록 276종](https://freeforms.kr/llms-full.txt)
+- [전체 서식 목록 281종](https://freeforms.kr/llms-full.txt)
 - [사이트맵](https://freeforms.kr/sitemap.xml)
 - [RSS](https://freeforms.kr/rss.xml)

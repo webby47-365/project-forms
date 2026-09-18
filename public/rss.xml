@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 276종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 281종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Fri, 18 Sep 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>금품 등 수령신고서</title>
+<link>https://freeforms.kr/form/gift-receipt-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/gift-receipt-report/</guid>
+<category>기업 · 총무·행정</category>
+<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+<description>업무 관련자로부터 금품·선물을 받았을 때 수령 경위와 처리 방법을 신고하는 사내 서식입니다.</description>
+</item>
+<item>
+<title>자동차 임대차계약서</title>
+<link>https://freeforms.kr/form/vehicle-lease-contract/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-lease-contract/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+<description>개인 간에 자동차를 일정 기간 빌려주고 빌릴 때 임대료·보증금과 사고 책임을 정하는 계약서입니다.</description>
+</item>
+<item>
+<title>교외체험학습 신청서</title>
+<link>https://freeforms.kr/form/field-trip-application/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/field-trip-application/</guid>
+<category>교육 · 학교·학원</category>
+<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+<description>가족여행·친인척 방문 등으로 학교 밖에서 체험학습을 하는 동안 출석 인정을 신청하는 서식입니다.</description>
+</item>
+<item>
+<title>종합소득세 신고 위임장</title>
+<link>https://freeforms.kr/form/income-tax-filing-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/income-tax-filing-poa/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+<description>종합소득세 신고를 세무대리인에게 맡길 때 납세자 정보와 위임 범위를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>영업양도양수계약서</title>
+<link>https://freeforms.kr/form/business-transfer-contract/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-transfer-contract/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+<description>상가·점포의 영업권과 시설·집기를 양도인에서 양수인에게 넘기는 조건을 정하는 영업양도양수계약서입니다.</description>
+</item>
 <item>
 <title>물품구매계약서</title>
 <link>https://freeforms.kr/form/goods-purchase-contract/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 인허가·영업신고</category>
 <pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
 <description>통신판매업을 일시 중단하거나 폐업, 다시 재개할 때 공정거래위원회에 제출하는 법정 신고서입니다.</description>
-</item>
-<item>
-<title>정보공개 청구서 (법정서식)</title>
-<link>https://freeforms.kr/form/gov-info-disclosure-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-info-disclosure-request/</guid>
-<category>공공 · 민원·신고</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>정부기관이나 공공기관에 보유한 정보를 공개해달라고 청구하는 법정 신청서입니다.</description>
-</item>
-<item>
-<title>기부금 영수증 (법정서식)</title>
-<link>https://freeforms.kr/form/gov-donation-receipt/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-donation-receipt/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>기부금을 받은 단체가 기부자에게 발급하는 법정 기부금 영수증입니다.</description>
-</item>
-<item>
-<title>입찰참가신청서 (국가계약)</title>
-<link>https://freeforms.kr/form/gov-bid-participation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-bid-participation/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>국가·지방자치단체의 공사·물품·용역 입찰에 참가하기 전에 제출하는 법정 신청서입니다.</description>
-</item>
-<item>
-<title>식품 영업 신고서</title>
-<link>https://freeforms.kr/form/gov-food-business-report/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-food-business-report/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>음식점·카페·편의점 등 식품을 취급하는 영업장을 운영할 때 시·군·구청에 내는 법정 신고서입니다.</description>
-</item>
-<item>
-<title>행정심판 청구서</title>
-<link>https://freeforms.kr/form/gov-admin-appeal/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-admin-appeal/</guid>
-<category>공공 · 민원·신고</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>행정청의 처분이나 부작위에 불복할 때 행정심판위원회에 제출하는 법정 청구서입니다.</description>
 </item>
 </channel>
 </rss>

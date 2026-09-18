@@ -131,7 +131,7 @@
       "ids": [
         "class-timetable", "study-plan", "weekly-study-plan", "reading-log",
         "attendance-sheet", "academy-attendance", "course-registration",
-        "tuition-refund-request", "field-trip-consent",
+        "tuition-refund-request", "field-trip-consent", "field-trip-application",
         "scholarship-application"
       ]
     }
