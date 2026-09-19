@@ -212,6 +212,9 @@ def build_salary_pages(
             page_desc=(f"연봉 {label} 월 실수령액 {man(r['net'])}, 연 {man(r['net_year'])}. 국민연금·건강보험·"
                        f"고용보험·소득세 공제 내역과 부양가족 수별 실수령액, 근속연수별 퇴직금까지 {year}년 "
                        f"요율과 국세청 간이세액표로 계산했습니다."),
+            # 연봉 금액만 다른 조합 생성 페이지(131개) — 색인에서 빼되 링크는 따라가게 둔다.
+            # (2026-09-19 작업지시서: 구글 색인 정체 해소 — 허브 /tools/salary/ 는 이 템플릿을 쓰지 않으므로 영향 없음)
+            page_robots="noindex, follow",
             canonical=path,
             breadcrumb_jsonld=breadcrumb_ld([("홈", "/"), ("직장인 도구", "/tools/"),
                                              ("실수령액 계산기", "/tools/salary/"), (f"연봉 {label}", path)]),
@@ -273,6 +276,9 @@ def build_salary_pages(
             page_desc=(f"{y}년 일하고 퇴사할 때 받는 퇴직금을 월급 200만~1,500만원 구간별로 정리했습니다. "
                        f"근속연수공제 {man(svc)}을 반영한 퇴직소득세·지방소득세와 실수령 퇴직금까지 {year}년 "
                        f"세법 기준으로 계산했습니다."),
+            # 근속연수만 다른 조합 생성 페이지(30개) — 색인에서 빼되 링크는 따라가게 둔다.
+            # (2026-09-19 작업지시서: 구글 색인 정체 해소 — 허브 /tools/severance/ 는 이 템플릿을 쓰지 않으므로 영향 없음)
+            page_robots="noindex, follow",
             canonical=path,
             breadcrumb_jsonld=breadcrumb_ld([("홈", "/"), ("직장인 도구", "/tools/"),
                                              ("퇴직금 계산기", "/tools/severance/"), (f"근속 {y}년 퇴직금", path)]),
