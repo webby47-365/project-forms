@@ -883,8 +883,11 @@ def build() -> int:
     })
 
     write(PUBLIC / "index.html", env.get_template("index.html").render(
-        page_title=f"{SITE_NAME} — 이력서·사직서·계약서 등 무료 문서 양식 {len(forms)}종",
-        page_desc=f"회원가입 없이 업무·법률·공공·생활 서식 {len(forms)}종을 PDF·Word·한글(HWPX) "
+        # 타이틀·description 에서 서식 수(종) 를 뺐다 — 서식이 느는 대로 숫자가 매일 바뀌면
+        # 구글이 홈을 사실상 새 페이지로 보아 색인 안정성에 불리하다. (2026-09-19 작업지시서)
+        # 서식 수 표기 자체는 본문(h1 하단 등, index.html 템플릿)에 남겨도 무방 — 타이틀·description만 고정.
+        page_title=f"{SITE_NAME} — 이력서·사직서·계약서 등 무료 문서 양식",
+        page_desc=f"회원가입 없이 업무·법률·공공·생활 서식을 PDF·Word·한글(HWPX) "
                   f"형식으로 무료 다운로드. 양식을 미리 보고 바로 받으세요.",
         canonical="/",
         site_jsonld=site_jsonld,
@@ -1287,14 +1290,18 @@ def build() -> int:
 
     # 3-7-2) 연봉별 실수령액(/tools/salary/<만원>/)·근속별 퇴직금(/tools/severance/<년>/) 정적 페이지.
     #        검색어가 금액·연수마다 갈리므로 빌드 때 계산해 숫자가 박힌 HTML 로 낸다.
+    # combo_urls는 build_salary_pages()가 돌려주는 161개 URL — 사이트맵에는 넣지 않는다
+    # (2026-09-19 작업지시서: 구글 색인 정체 해소). extra_urls(가이드 등, 아래에서 계속 채움)와는
+    # 별도 리스트로 둬서, 가이드 URL까지 실수로 사이트맵에서 빠지는 일이 없게 한다.
     extra_urls: list[tuple[str, str, str]] = []
+    combo_urls: list[tuple[str, str, str]] = []
     if rates and tax_table:
         n, u = salary_pages.build_salary_pages(
             public=PUBLIC, env=env, common=common, rates=rates, table=tax_table, by_id=by_id,
             dl_map=dl_map, name_map=name_map, write=write, jd=jd, breadcrumb_ld=breadcrumb_ld,
             site_name=SITE_NAME)
         pages += n
-        extra_urls += u
+        combo_urls += u
     else:
         print("[사이트] 알림: 요율·간이세액표가 없어 연봉별·근속별 페이지를 만들지 않았습니다.")
 
@@ -1420,6 +1427,9 @@ def build() -> int:
              ("/tools/", TOOLS_UPDATED, "0.7")]
     urls += [(t["path"], TOOLS_UPDATED, "0.8") for t in tools_active]
     urls += extra_urls
+    # combo_urls(연봉별 131개+근속별 30개 조합 페이지)는 사이트맵에 일부러 넣지 않는다.
+    # (2026-09-19 작업지시서: 구글 색인 정체 해소 — scaled content abuse 패턴으로 판단돼 noindex 처리,
+    #  사이트맵도 함께 빼서 크롤 예산이 정상 서식 페이지로 가게 한다. 페이지 자체는 삭제하지 않는다.)
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
