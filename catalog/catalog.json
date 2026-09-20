@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T08:25:13+09:00",
-  "count": 281,
+  "generated_at": "2026-09-21T08:18:56+09:00",
+  "count": 282,
   "forms": [
     {
       "id": "academy-attendance",
@@ -25842,6 +25842,108 @@
         "preparatory-brief"
       ],
       "seal": true
+    },
+    {
+      "id": "sole-source-contract-report",
+      "title": "수의계약 사유서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "수의계약사유서",
+        "수의계약품의서",
+        "수의계약체결서",
+        "계약방법결정서",
+        "소액수의계약"
+      ],
+      "summary": "경쟁입찰 없이 수의계약으로 계약을 진행하려는 사유와 계약 개요를 정리해 결재를 받는 수의계약 사유서입니다.",
+      "usage": "공공기관·학교·공기업 등에서 경쟁입찰 대신 수의계약으로 계약을 체결하려 할 때 그 사유와 계약 개요를 내부 결재선에 보고하기 위해 작성하는 문서입니다. 수의계약 사유는 소액계약· 특정 자격자와의 계약·긴급한 필요 등 해당하는 항목을 구체적으로 적어야 하며, 통상 2인 이상의 견적서를 함께 받아 가격의 적정성을 소명합니다. 수의계약이 허용되는 금액 기준과 절차는 소속 기관의 계약 사무 규정과 관련 법령을 먼저 확인한 뒤 적용하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 61964,
+        "docx": 38999,
+        "hwpx": 10352
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "계약명과 계약상대자, 계약금액·계약기간을 적습니다.",
+        "수의계약으로 진행하는 사유를 해당 항목에서 확인합니다.",
+        "확보한 견적서 현황을 표에 정리합니다.",
+        "기안자·검토자·결재권자가 순서대로 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "수의계약도 견적서가 필요한가요?",
+          "a": "대부분 2인 이상의 견적서를 받아 비교한 자료를 첨부합니다. 소속 기관의 계약 규정을 확인하십시오."
+        },
+        {
+          "q": "사유가 여러 개 해당하면 어떻게 적나요?",
+          "a": "가장 핵심적인 사유 하나를 주된 근거로 적고 나머지는 비고에 보충해서 적습니다."
+        },
+        {
+          "q": "결재 순서는 정해져 있나요?",
+          "a": "기관마다 다르므로 내부 위임전결규정에 정한 결재 순서를 따르면 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "계약 개요",
+          "items": [
+            "계약명",
+            "계약금액",
+            "계약상대자",
+            "계약기간",
+            "계약방법",
+            "작성부서"
+          ],
+          "note": ""
+        },
+        {
+          "title": "수의계약 사유 (해당 항목 표시)",
+          "items": [],
+          "note": "위 사유 중 해당 항목과 구체적인 사정을 적으십시오."
+        },
+        {
+          "title": "견적서 확보 현황",
+          "items": [
+            "업체명",
+            "사업자번호",
+            "견적금액"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "quotation-comparison",
+        "goods-purchase-contract",
+        "integrity-pledge-bidding"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-21T08:18:56+09:00",
+      "updated_at": "2026-09-21T08:18:56+09:00",
+      "downloads": 0
     },
     {
       "id": "sponsorship-application",
