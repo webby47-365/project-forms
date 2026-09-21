@@ -1,5 +1,5 @@
 slug: holiday-work-pay
-status: draft
+status: published
 group: pay
 title: 명절 연휴 근무 시 휴일근로수당 계산법과 대체휴무
 description: 설날·추석 당일 출근하면 얼마를 더 받는지, 우리 회사에도 적용되는지, 대신 쉬기로 하는 휴일대체는 어떻게 하는지 근로기준법 기준으로 정리했습니다.
@@ -10,8 +10,8 @@ summary: >-
   적용되지 않습니다.
 keywords: [휴일근로수당, 명절 연휴 근무, 공휴일 가산수당, 대체휴무, 휴일대체, 관공서의 공휴일에 관한 규정, 추석 근무수당]
 created_at: 2026-09-17
-updated_at: 2026-09-17
-basis_date: 2026-09-17
+updated_at: 2026-09-21
+basis_date: 2026-09-21
 show_on: [overtime-application, leave-request]
 
 sections:

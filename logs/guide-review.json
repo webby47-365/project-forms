@@ -1,8 +1,10 @@
 {
   "published": [
     {"slug": "moving-out-deposit-return", "date": "2026-09-17"},
-    {"slug": "traffic-accident-first-steps", "date": "2026-09-17"}
+    {"slug": "traffic-accident-first-steps", "date": "2026-09-17"},
+    {"slug": "holiday-work-pay", "date": "2026-09-21"},
+    {"slug": "business-transfer-checklist", "date": "2026-09-21"}
   ],
   "retired": [],
-  "passed_waiting": []
+  "passed_waiting": ["sole-source-contract-guide"]
 }
