@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T08:18:56+09:00",
-  "count": 282,
+  "generated_at": "2026-09-23T08:24:15+09:00",
+  "count": 283,
   "forms": [
     {
       "id": "academy-attendance",
@@ -7821,6 +7821,110 @@
         "invoice-request"
       ],
       "seal": true
+    },
+    {
+      "id": "equipment-loan-request",
+      "title": "비품 대여신청서",
+      "category": "corp",
+      "subcategory": "admin",
+      "tags": [
+        "비품대여신청서",
+        "물품대여신청서",
+        "사무용품대여",
+        "회사비품대여",
+        "대여물품신청서"
+      ],
+      "summary": "직원이 사내 공용 비품을 빌릴 때 대여 품목과 기간, 반납 조건을 적어 총무 담당자의 승인을 받는 비품 대여신청서입니다.",
+      "usage": "노트북·빔프로젝터·카메라 등 회사 공용 비품을 일정 기간 빌려 쓸 때 신청하는 서식입니다. 대여 품목과 용도, 대여 시작일과 반납 예정일을 적어 총무 담당자의 승인을 받습니다. 파손이나 분실 시 변상 책임과 반납 기한을 미리 확인해 두면 분쟁을 줄일 수 있고, 반납할 때는 상태를 확인받아 대여 기록을 마무리합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 56988,
+        "docx": 38885,
+        "hwpx": 10346
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청자의 부서·성명·연락처와 신청일자를 적습니다.",
+        "대여할 품목과 수량, 용도를 적습니다.",
+        "대여 시작일과 반납 예정일을 적습니다.",
+        "대여 조건을 확인하고 총무 담당자·부서장의 승인을 받습니다.",
+        "반납할 때 상태를 확인받고 반납일을 기재합니다."
+      ],
+      "faq": [
+        {
+          "q": "여러 품목을 한 번에 신청할 수 있나요?",
+          "a": "네, 대여 내역 표에 품목을 나누어 적으면 됩니다."
+        },
+        {
+          "q": "반납이 늦어지면 어떻게 하나요?",
+          "a": "반납 예정일 전에 담당자에게 미리 알려 기간 연장 여부를 협의하는 것이 좋습니다."
+        },
+        {
+          "q": "파손되면 어떻게 되나요?",
+          "a": "사내 규정에 따라 변상 책임이 있을 수 있으므로 사용 전 상태를 함께 확인해 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청자 정보",
+          "items": [
+            "부서",
+            "성명",
+            "신청일자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대여 내역",
+          "items": [
+            "품목명",
+            "규격/모델",
+            "수량",
+            "용도",
+            "대여시작일",
+            "반납예정일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 대여 조건 확인",
+          "items": [
+            "신청자"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": false,
+      "from_request": false,
+      "related": [
+        "asset-ledger",
+        "facility-repair-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-23T08:24:15+09:00",
+      "updated_at": "2026-09-23T08:24:15+09:00",
+      "downloads": 0
     },
     {
       "id": "event-application",

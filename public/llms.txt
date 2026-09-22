@@ -1,6 +1,6 @@
 # 무료서식 다운로드 (freeforms.kr)
 
-> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 282종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-09-21 기준, 매일 새 서식 추가)
+> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 283종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-09-23 기준, 매일 새 서식 추가)
 
 ## 이 사이트의 특징
 
@@ -49,7 +49,7 @@
 ## 분야별 서식
 
 - [기업 · 인사·노무](https://freeforms.kr/category/corp/hr/): 30종
-- [기업 · 총무·행정](https://freeforms.kr/category/corp/admin/): 24종
+- [기업 · 총무·행정](https://freeforms.kr/category/corp/admin/): 25종
 - [기업 · 회계·세무](https://freeforms.kr/category/corp/finance/): 22종
 - [기업 · 영업·마케팅](https://freeforms.kr/category/corp/sales/): 14종
 - [기업 · 창업·법인](https://freeforms.kr/category/corp/startup/): 12종
@@ -132,6 +132,6 @@
 
 ## Optional
 
-- [전체 서식 목록 282종](https://freeforms.kr/llms-full.txt)
+- [전체 서식 목록 283종](https://freeforms.kr/llms-full.txt)
 - [사이트맵](https://freeforms.kr/sitemap.xml)
 - [RSS](https://freeforms.kr/rss.xml)
