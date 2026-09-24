@@ -31,8 +31,8 @@
         "housing-lease-contract", "commercial-lease-contract",
         "lease-renewal-contract", "move-in-checklist", "monthly-rent-receipt",
         "moving-in-report", "moving-checklist", "lease-termination-notice",
-        "move-out-checklist", "deposit-return-notice",
-        "resident-registration-request"
+        "move-out-checklist", "management-fee-settlement-confirmation",
+        "deposit-return-notice", "resident-registration-request"
       ]
     },
     {
@@ -54,7 +54,8 @@
       "ids": [
         "quotation", "quotation-detailed", "quotation-comparison",
         "purchase-order", "delivery-confirmation", "transaction-statement",
-        "tax-invoice", "invoice-request", "payment-confirmation", "receipt"
+        "tax-invoice", "tax-invoice-correction-request", "invoice-request",
+        "payment-confirmation", "receipt"
       ]
     },
     {
@@ -110,7 +111,9 @@
         "civil-petition", "info-disclosure-request", "disclosure-objection",
         "parking-fine-objection", "administrative-objection",
         "noise-complaint", "illegal-dumping-report", "road-repair-request",
-        "moving-in-report", "seal-certificate-poa", "vehicle-registration-poa"
+        "moving-in-report", "seal-certificate-poa",
+        "family-certificate-issuance-poa", "vehicle-registration-poa",
+        "parking-space-consent-vehicle-registration"
       ]
     },
     {
