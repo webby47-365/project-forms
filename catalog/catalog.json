@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T08:21:28+09:00",
-  "count": 288,
+  "generated_at": "2026-09-26T08:35:03+09:00",
+  "count": 293,
   "forms": [
     {
       "id": "academy-attendance",
@@ -1115,6 +1115,108 @@
       "seal": true
     },
     {
+      "id": "bank-account-poa",
+      "title": "금융거래(계좌) 위임장",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "금융거래위임장",
+        "계좌위임장",
+        "통장위임장",
+        "은행업무위임장",
+        "예금위임장"
+      ],
+      "summary": "본인이 은행을 직접 방문하기 어려울 때 계좌 관련 업무를 대리인에게 맡기는 금융거래 위임장입니다.",
+      "usage": "입원·거동 불편·원거리 거주 등의 사유로 본인이 은행 창구를 직접 방문할 수 없을 때, 예금 인출·계좌 조회·통장(카드) 재발급 등의 업무를 가족 등 대리인에게 맡기기 위해 쓰는 서류입니다. 위임 범위를 구체적으로 적을수록 은행 창구에서 처리가 수월하며, 은행에 따라 본인 확인을 위해 위임인의 신분증 사본이나 인감증명서를 추가로 요구할 수 있습니다. 방문 전에 해당 은행 지점에 필요한 서류를 미리 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55590,
+        "docx": 38765,
+        "hwpx": 9933
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인(계좌 명의인)의 인적사항을 적습니다.",
+        "대리인의 인적사항을 정확히 적습니다.",
+        "거래 은행과 계좌번호, 위임 범위를 표시합니다.",
+        "위임인이 서명 또는 날인하고 신분증 사본을 함께 준비합니다."
+      ],
+      "faq": [
+        {
+          "q": "인감증명서도 같이 가져가야 하나요?",
+          "a": "은행과 거래 종류(고액 인출 등)에 따라 요구할 수 있어 방문 전 해당 지점에 확인하십시오."
+        },
+        {
+          "q": "위임장 하나로 여러 계좌를 위임할 수 있나요?",
+          "a": "계좌마다 위임 범위가 다를 수 있어, 계좌별로 위임장을 작성하는 편이 안전합니다."
+        },
+        {
+          "q": "고액 인출도 대리인이 할 수 있나요?",
+          "a": "은행이 고액 거래에 대해 본인 확인을 강화할 수 있어 사전에 가능 여부와 한도를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인 (계좌 명의인)",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대리인",
+          "items": [
+            "위임인과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "거래 은행",
+            "계좌번호",
+            "위임 범위"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "power-of-attorney",
+        "seal-certificate-poa",
+        "family-certificate-issuance-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-26T08:33:49+09:00",
+      "updated_at": "2026-09-26T08:35:03+09:00",
+      "downloads": 0
+    },
+    {
       "id": "bid-performance-certificate",
       "title": "실적증명서 (입찰용)",
       "category": "public",
@@ -1790,6 +1892,102 @@
         "personnel-order"
       ],
       "seal": true
+    },
+    {
+      "id": "business-facility-use-consent",
+      "title": "영업시설 사용동의서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "영업시설사용동의서",
+        "건물주동의서",
+        "영업신고동의서",
+        "시설사용동의",
+        "임대인동의서"
+      ],
+      "summary": "임차인이 건물의 일부 또는 전부를 특정 업종의 영업장으로 사용하는 데 건물주(임대인)가 동의함을 확인하는 동의서입니다.",
+      "usage": "식당·미용실 등 인허가·신고가 필요한 업종을 새로 시작할 때, 임대차계약서만으로 영업 용도 사용이 불분명하면 관할 관청이 건물주의 사용동의를 별도로 요구하는 경우가 있습니다. 건물 소재지와 사용 목적(업종)을 구체적으로 적어 임대차계약의 용도와 실제 신고할 업종이 일치하는지 담당 부서가 확인할 수 있도록 합니다. 공동소유 건물은 소유자 전원의 동의가 필요할 수 있으니 미리 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 52299,
+        "docx": 38720,
+        "hwpx": 9864
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "건물주(소유자)와 사용자(임차인)의 인적사항을 적습니다.",
+        "건물 소재지와 사용 부분(층·호수 등)을 적습니다.",
+        "사용 목적(업종)과 동의 기간을 적습니다.",
+        "건물주가 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "임대차계약서가 있으면 이 동의서는 필요 없나요?",
+          "a": "계약서의 용도 항목이 신고 업종과 다르거나 명확하지 않으면 관할 관청이 별도 동의서를 요구할 수 있습니다."
+        },
+        {
+          "q": "건물주가 여러 명이면 어떻게 하나요?",
+          "a": "공동소유인 경우 소유자 전원의 동의가 필요할 수 있어 인적사항과 서명란을 나누어 작성하십시오."
+        },
+        {
+          "q": "동의 기간은 임대차 기간과 같아야 하나요?",
+          "a": "대부분 임대차 기간과 맞추지만, 다르게 정할 사정이 있으면 그 기간을 별도로 적으면 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 건물주 / 사용자",
+          "items": [
+            "건물주",
+            "생년월일",
+            "연락처",
+            "사용자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 건물·사용 정보",
+          "items": [
+            "건물 소재지",
+            "사용 부분",
+            "사용 목적(업종)",
+            "동의 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "commercial-lease-contract",
+        "gov-food-business-report",
+        "business-transfer-contract"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-26T08:33:41+09:00",
+      "updated_at": "2026-09-26T08:34:17+09:00",
+      "downloads": 0
     },
     {
       "id": "business-permit-name-change-consent",
@@ -23443,6 +23641,118 @@
       "seal": true
     },
     {
+      "id": "rental-car-return-confirmation",
+      "title": "렌터카 반납확인서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "렌터카반납확인서",
+        "렌트카반납체크리스트",
+        "차량반납확인서",
+        "렌터카연료확인",
+        "렌터카파손확인"
+      ],
+      "summary": "렌터카를 반납할 때 주행거리·연료량·파손 여부를 임대인(렌터카 업체)과 이용자가 함께 확인하는 반납확인서입니다.",
+      "usage": "렌터카 이용이 끝나고 차량을 반납할 때, 대여 당시와 비교해 주행거리·연료 잔량·외관 파손 여부·부속품(하이패스 단말기·내비게이션 등) 상태를 함께 확인해 두는 서류입니다. 추가 요금(연료 부족·파손 수수료 등)이 발생할 수 있는 항목을 반납 시점에 사진과 함께 기록해 두면 나중에 청구 내용에 다툼이 생겼을 때 근거로 쓸 수 있습니다. 업체 담당자와 이용자가 함께 확인하고 서명한 뒤 각자 보관하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 63877,
+        "docx": 38941,
+        "hwpx": 10496
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "대여 기간과 차량 정보를 적습니다.",
+        "반납 시 주행거리와 연료 잔량을 확인해 적습니다.",
+        "외관·내부·부속품 상태를 점검해 이상 여부를 표시합니다.",
+        "추가 요금 발생 항목을 확인하고 이용자·담당자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "파손이 있으면 그 자리에서 배상해야 하나요?",
+          "a": "대여 계약의 보험·배상 조건에 따라 다르므로, 확인서에 상태를 기록해 두고 업체 안내를 따르십시오."
+        },
+        {
+          "q": "연료를 가득 채우지 않고 반납하면 어떻게 되나요?",
+          "a": "대부분 업체가 부족한 만큼 연료비와 추가 수수료를 청구하므로 반납 전 주유 여부를 미리 확인하십시오."
+        },
+        {
+          "q": "하이패스 이용 요금은 어떻게 정산하나요?",
+          "a": "반납 후 후불로 청구되는 경우가 많아 통행 내역을 미리 확인해 두는 것이 안전합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 대여·반납 정보",
+          "items": [
+            "대여업체",
+            "이용자",
+            "차량번호",
+            "차종",
+            "대여일시",
+            "반납일시"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 주행거리·연료",
+          "items": [
+            "대여 시 주행거리",
+            "반납 시 주행거리",
+            "대여 시 연료 게이지",
+            "반납 시 연료 게이지"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 상태·부속품 점검",
+          "items": [
+            "점검 항목",
+            "확인 내용",
+            "이상 여부"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 추가 요금 확인",
+          "items": [],
+          "note": "연료 부족·파손·초과 주행거리 등 추가 요금이 예상되는 항목과 사유를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-lease-contract",
+        "traffic-accident-confirmation",
+        "car-accident-settlement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-26T08:33:35+09:00",
+      "updated_at": "2026-09-26T08:33:35+09:00",
+      "downloads": 0
+    },
+    {
       "id": "repayment-plan",
       "title": "채무 변제계획서",
       "category": "legal",
@@ -26373,6 +26683,114 @@
       "seal": true
     },
     {
+      "id": "social-insurance-filing-poa",
+      "title": "4대보험 신고 업무 위임장",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "4대보험신고위임장",
+        "사회보험위임장",
+        "노무사위임장",
+        "취득상실신고위임",
+        "사업장위임장"
+      ],
+      "summary": "4대 사회보험(국민연금·건강보험·고용보험·산재보험) 신고 업무를 노무사·세무대리인에게 맡길 때 쓰는 위임장입니다.",
+      "usage": "사업장이 직원의 4대보험 자격취득·상실 신고나 사업장 성립·변경 신고를 노무사·세무대리인에게 맡길 때 쓰는 서류입니다. 건강보험은 입사일 기준 14일 이내, 국민연금·고용보험·산재보험은 입사일이 속한 달의 다음 달 15일까지 신고해야 하므로 위임 범위와 위임 기간을 명확히 적어 신고가 늦어지지 않도록 합니다. 위임 범위에 어느 보험까지 포함할지 구체적으로 적으십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59841,
+        "docx": 38950,
+        "hwpx": 10326
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인(사업장)의 정보와 사업자등록번호를 적습니다.",
+        "수임인(노무사·세무대리인)의 사무소 정보를 적습니다.",
+        "위임 대상 보험 종류와 위임 범위를 표시합니다.",
+        "위임 기간을 정하고 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "네 가지 보험을 모두 위임해야 하나요?",
+          "a": "아닙니다. 위임 범위에서 필요한 보험만 표시해 일부만 위임할 수 있습니다."
+        },
+        {
+          "q": "직원이 바뀔 때마다 새로 작성해야 하나요?",
+          "a": "위임 기간을 사업장 단위로 정해 두면 그 기간 안의 취득·상실 신고는 따로 작성하지 않아도 됩니다."
+        },
+        {
+          "q": "EDI 업무대행 신청과 같은 문서인가요?",
+          "a": "아닙니다. 공단 EDI 신청은 기관에 내는 별도 절차이며, 이 위임장은 사업주와 대리인 사이의 확인용 문서입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인 (사업장)",
+          "items": [
+            "사업장명",
+            "대표자",
+            "사업장 주소",
+            "연락처",
+            "사업자등록번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 수임인 (노무사·세무대리인)",
+          "items": [
+            "사무소명",
+            "담당자 성명",
+            "등록번호",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 범위",
+          "items": [
+            "국민연금",
+            "건강보험",
+            "고용보험",
+            "산재보험",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "income-tax-filing-poa",
+        "employment-certificate",
+        "gov-separation-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-26T08:33:31+09:00",
+      "updated_at": "2026-09-26T08:33:31+09:00",
+      "downloads": 0
+    },
+    {
       "id": "sole-source-contract-report",
       "title": "수의계약 사유서",
       "category": "public",
@@ -28944,6 +29362,113 @@
       "warnings": [],
       "created_at": "2026-09-17T08:21:38+09:00",
       "updated_at": "2026-09-17T08:21:38+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "vat-filing-poa",
+      "title": "부가가치세 신고 위임장",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "부가가치세신고위임장",
+        "부가세신고위임장",
+        "세무대리위임장",
+        "부가세위임장",
+        "세무사위임장"
+      ],
+      "summary": "부가가치세 신고를 세무대리인에게 맡길 때 사업자 정보와 위임 범위·과세기간을 적는 위임장입니다.",
+      "usage": "사업자가 부가가치세 신고서 작성과 홈택스 전자신고를 세무대리인(세무사)에게 맡길 때 쓰는 서류입니다. 부가가치세는 과세기간(1·2기)마다 신고해야 하므로, 위임장에 신고 대상 과세기간을 명확히 적어야 세무대리인이 해당 기간의 신고만 대리하는지 계속 대리하는지 구분할 수 있습니다. 위임 기간을 정해 두면 신고가 끝난 뒤 불필요하게 권한이 남는 것을 막을 수 있습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55369,
+        "docx": 38851,
+        "hwpx": 10119
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인(사업자)의 인적사항과 사업자등록번호를 적습니다.",
+        "세무대리인의 사무소명과 세무사등록번호를 적습니다.",
+        "신고 대상 과세기간과 위임 범위를 적습니다.",
+        "위임 기간을 정하고 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "홈택스 전자신고 권한도 위임할 수 있나요?",
+          "a": "위임 범위에 홈택스 전자신고와 세금계산서 자료 열람을 함께 적으면 위임할 수 있습니다."
+        },
+        {
+          "q": "매 과세기간마다 새로 작성해야 하나요?",
+          "a": "위임 기간을 특정 기간으로 한정했다면 다음 과세기간부터는 다시 작성하는 것이 안전합니다."
+        },
+        {
+          "q": "종합소득세 위임장과 같이 써도 되나요?",
+          "a": "세목이 달라 별도 문서로 작성하는 것이 원칙이나, 같은 세무대리인이면 함께 전달해도 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인 (사업자)",
+          "items": [
+            "상호(성명)",
+            "대표자",
+            "사업장 주소",
+            "연락처",
+            "사업자등록번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 수임인 (세무대리인)",
+          "items": [
+            "사무소명",
+            "세무사 성명",
+            "세무사등록번호",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "신고 대상 과세기간",
+            "귀속 연도",
+            "위임 범위",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "income-tax-filing-poa",
+        "vat-filing-document-confirmation",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-26T08:33:27+09:00",
+      "updated_at": "2026-09-26T08:33:27+09:00",
       "downloads": 0
     },
     {

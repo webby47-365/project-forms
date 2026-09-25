@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 288종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 293종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 26 Sep 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>금융거래(계좌) 위임장</title>
+<link>https://freeforms.kr/form/bank-account-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/bank-account-poa/</guid>
+<category>개인 · 생활·가정</category>
+<pubDate>Sat, 26 Sep 2026 00:00:00 +0900</pubDate>
+<description>본인이 은행을 직접 방문하기 어려울 때 계좌 관련 업무를 대리인에게 맡기는 금융거래 위임장입니다.</description>
+</item>
+<item>
+<title>영업시설 사용동의서</title>
+<link>https://freeforms.kr/form/business-facility-use-consent/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-facility-use-consent/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Sat, 26 Sep 2026 00:00:00 +0900</pubDate>
+<description>임차인이 건물의 일부 또는 전부를 특정 업종의 영업장으로 사용하는 데 건물주(임대인)가 동의함을 확인하는 동의서입니다.</description>
+</item>
+<item>
+<title>렌터카 반납확인서</title>
+<link>https://freeforms.kr/form/rental-car-return-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/rental-car-return-confirmation/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Sat, 26 Sep 2026 00:00:00 +0900</pubDate>
+<description>렌터카를 반납할 때 주행거리·연료량·파손 여부를 임대인(렌터카 업체)과 이용자가 함께 확인하는 반납확인서입니다.</description>
+</item>
+<item>
+<title>4대보험 신고 업무 위임장</title>
+<link>https://freeforms.kr/form/social-insurance-filing-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/social-insurance-filing-poa/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Sat, 26 Sep 2026 00:00:00 +0900</pubDate>
+<description>4대 사회보험(국민연금·건강보험·고용보험·산재보험) 신고 업무를 노무사·세무대리인에게 맡길 때 쓰는 위임장입니다.</description>
+</item>
+<item>
+<title>부가가치세 신고 위임장</title>
+<link>https://freeforms.kr/form/vat-filing-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vat-filing-poa/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Sat, 26 Sep 2026 00:00:00 +0900</pubDate>
+<description>부가가치세 신고를 세무대리인에게 맡길 때 사업자 정보와 위임 범위·과세기간을 적는 위임장입니다.</description>
+</item>
 <item>
 <title>가족관계증명서 발급 위임장</title>
 <link>https://freeforms.kr/form/family-certificate-issuance-poa/</link>
@@ -206,46 +246,6 @@
 <category>부동산 · 임대·매매</category>
 <pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
 <description>주택을 월세나 전세로 빌리거나 빌려줄 때 시·군·구청에 신고하는 임대차 계약 신고서입니다.</description>
-</item>
-<item>
-<title>사업자등록 신청서 (개인사업자용)</title>
-<link>https://freeforms.kr/form/gov-business-registration-individual/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-business-registration-individual/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>개인이 사업을 시작할 때 세무서에 제출하는 법정 사업자등록 신청서입니다.</description>
-</item>
-<item>
-<title>인감(변경)신고서 (서면신고용)</title>
-<link>https://freeforms.kr/form/gov-seal-report/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-seal-report/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>인감을 처음 신고하거나 기존 인감을 새로운 인감으로 변경할 때 증명청에 제출하는 법정 신고서입니다.</description>
-</item>
-<item>
-<title>국민연금 납부예외·납부재개 신청서</title>
-<link>https://freeforms.kr/form/gov-pension-exemption/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-pension-exemption/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>질병·실직·휴직 등으로 국민연금 보험료 납부가 어려울 때 납부를 예외로 신청하고, 예외 사유가 종료될 때 납부를 재개하는 법정 신청서입니다.</description>
-</item>
-<item>
-<title>출산전후휴가 급여 등 신청서</title>
-<link>https://freeforms.kr/form/gov-maternity-leave-benefit/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-maternity-leave-benefit/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>출산 전후휴가나 유산·사산휴가, 배우자 출산휴가 급여를 신청하는 고용보험 법정 신청서입니다.</description>
-</item>
-<item>
-<title>피보험자 이직확인서</title>
-<link>https://freeforms.kr/form/gov-separation-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-separation-confirmation/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>회사를 그만둘 때 고용보험 실업급여 신청을 위해 사업주가 발급하는 법정 이직확인서입니다.</description>
 </item>
 </channel>
 </rss>

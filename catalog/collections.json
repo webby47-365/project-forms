@@ -66,7 +66,8 @@
         "startup-checklist", "business-reg-checklist", "business-plan-simple",
         "business-plan-standard", "partnership-agreement",
         "articles-of-incorporation", "shareholder-register",
-        "director-acceptance", "budget-plan", "nda"
+        "director-acceptance", "budget-plan", "vat-filing-poa",
+        "social-insurance-filing-poa", "nda"
       ]
     },
     {
@@ -113,7 +114,7 @@
         "noise-complaint", "illegal-dumping-report", "road-repair-request",
         "moving-in-report", "seal-certificate-poa",
         "family-certificate-issuance-poa", "vehicle-registration-poa",
-        "parking-space-consent-vehicle-registration"
+        "parking-space-consent-vehicle-registration", "bank-account-poa"
       ]
     },
     {
