@@ -1,0 +1,97 @@
+id: business-report-agent-poa
+title: 영업 신고 대행 위임장
+category: public
+subcategory: permit
+tags: [영업신고대행위임장, 영업신고위임장, 행정사위임장, 인허가대행, 영업신고대리]
+summary: 영업 신고·변경신고를 행정사나 직원에게 맡길 때 영업소 정보와 신고 종류·위임 범위를 적는 위임장입니다.
+usage: >
+  식품·공중위생 등 영업 신고나 변경신고를 영업자가 직접 하지 못해 행정사 또는 직원에게
+  맡길 때 쓰는 서류입니다. 어떤 종류의 신고(신규·변경·폐업)를 어느 관청에 하는지와
+  대행인이 서류를 대신 제출·수령할 수 있는지를 함께 적어야 합니다. 관청에 따라 위임장에
+  인감 날인이나 신분증 사본을 요구할 수 있으니 접수처 안내를 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 영업자(위임인)의 정보를 적습니다.
+  - 대행인의 성명·소속·연락처를 적습니다.
+  - 영업소 정보와 신고 종류, 제출 관청을 적습니다.
+  - 위임 범위에 표시하고 날인합니다.
+faq:
+  - q: 신고 종류를 여러 개 한 번에 적어도 되나요?
+    a: 같은 영업소의 신고라면 함께 적을 수 있습니다. 관청이 다르면 위임장을 나누는 편이 안전합니다.
+  - q: 신분증 사본도 붙여야 하나요?
+    a: 접수 관청마다 요구가 다릅니다. 접수처에 문의해 위임인 신분증 사본이 필요한지 확인하십시오.
+related: [gov-food-business-report, business-facility-use-consent, business-permit-name-change-consent, power-of-attorney]
+blocks:
+  - type: doc_title
+    text: 영업 신고 대행 위임장
+    spaced: false
+  - type: para
+    text: 본인은 아래 대행인에게 영업 신고에 관한 권한을 위임합니다.
+    align: center
+  - type: subtitle
+    text: 1. 위임인 (영업자)
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-01-01"]
+      - ["", "서울시 마포구", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 대행인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["생년월일", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "새길행정사사무소"]
+      - ["", "1988-01-01", "", "010-9876-5432"]
+  - type: subtitle
+    text: 3. 신고 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["영업소 명칭", "", "", ""]
+      - ["영업소 소재지", "", "", ""]
+      - ["영업 종류", "", "신고 종류", ""]
+      - ["제출 관청", "", "", ""]
+    merges:
+      - [0, 1, 0, 3]
+      - [1, 1, 1, 3]
+      - [3, 1, 3, 3]
+    sample_rows:
+      - ["", "한빛분식", "", ""]
+      - ["", "서울특별시 마포구 월드컵북로 100 1층", "", ""]
+      - ["", "일반음식점", "", "영업자 지위 변경"]
+      - ["", "마포구청 위생과", "", ""]
+  - type: subtitle
+    text: 4. 위임 범위
+  - type: table
+    widths: [70, 30]
+    header: [위임 사항, 표시(○)]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["신고서 작성 및 제출", "○"]
+      - ["접수증·수리 통지서 수령", "○"]
+      - ["수수료 납부", ""]
+  - type: para
+    text: 위 위임 내용은 본인의 의사에 따른 것임을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년    9 월   28 일
+  - type: sign_line
+    labels: ["위임인", "대행인"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 신고 요건과 제출 서류는 관할 관청 안내를 확인하십시오.

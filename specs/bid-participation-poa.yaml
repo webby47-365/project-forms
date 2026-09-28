@@ -1,0 +1,98 @@
+id: bid-participation-poa
+title: 입찰 참가 대리 위임장
+category: public
+subcategory: procure
+tags: [입찰위임장, 입찰대리위임장, 입찰참가위임장, 입찰대리인, 입찰참가대리]
+summary: 입찰에 대표자 대신 대리인이 참가해 입찰서 제출·개찰 참석을 하도록 권한과 입찰 건명을 적는 위임장입니다.
+usage: >
+  입찰 참가업체의 대표자가 직접 가지 못해 직원이나 제3자를 대리인으로 보낼 때 쓰는 서류입니다.
+  어떤 입찰(공고번호·건명)에 대해 무엇을 맡기는지 적어야 하고, 입찰서 제출·개찰 참석·
+  계약 체결까지 맡길지 범위를 정확히 구분해야 합니다. 대리인의 사용인감을 쓰는 입찰이면 인감도
+  함께 준비해야 하므로 공고문의 제출 서류와 대리 참가 조건을 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 위임하는 업체와 대표자 정보를 적습니다.
+  - 대리인의 성명·소속·연락처를 적습니다.
+  - 입찰 공고번호와 건명, 입찰 일시를 적습니다.
+  - 위임할 범위에 표시하고 날인합니다.
+faq:
+  - q: 계약 체결까지 위임해도 되나요?
+    a: 위임 범위에 계약 체결을 따로 표시하면 됩니다. 다만 공고문에서 대리 계약을 허용하는지 확인하십시오.
+  - q: 직원이 아니어도 대리인이 될 수 있나요?
+    a: 위임장이 있으면 가능한 경우가 많지만 입찰 종류에 따라 제한이 있으니 공고문을 확인하십시오.
+related: [gov-bid-participation, gov-bid-form, integrity-pledge-bidding, power-of-attorney]
+blocks:
+  - type: doc_title
+    text: 입찰 참가 대리 위임장
+    spaced: false
+  - type: para
+    text: 본 업체는 아래 대리인에게 입찰 참가에 관한 권한을 위임합니다.
+    align: center
+  - type: subtitle
+    text: 1. 위임업체
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["업체명", "", "대표자", ""]
+      - ["사업장 주소", "", "", ""]
+      - ["사업자등록번호", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)한빛물산", "", "홍길동"]
+      - ["", "서울특별시 구로구 디지털로 200", "", ""]
+      - ["", "000-00-00000", "", "02-123-4567"]
+  - type: subtitle
+    text: 2. 대리인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속·직위", ""]
+      - ["생년월일", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "영업팀 과장"]
+      - ["", "1990-01-01", "", "010-1234-5678"]
+  - type: subtitle
+    text: 3. 입찰 건
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+      - [1, 1, 1, 3]
+    rows:
+      - ["입찰 건명", "", "", ""]
+      - ["공고번호", "", "", ""]
+      - ["입찰 일시", "", "입찰 장소", ""]
+    sample_rows:
+      - ["", "사무용품 연간 단가계약", "", ""]
+      - ["", "제2026-0000호", "", ""]
+      - ["", "2026-10-08 14:00", "", "발주처 입찰실"]
+  - type: subtitle
+    text: 4. 위임 범위
+  - type: table
+    widths: [70, 30]
+    header: [위임 사항, 표시(○)]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["입찰서 작성·제출", "○"]
+      - ["개찰 참석 및 결과 확인", "○"]
+      - ["계약 체결", ""]
+  - type: para
+    text: 위 사항을 위임하며, 대리인의 행위에 대한 책임은 위임업체에 있습니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년    9 월   28 일
+  - type: sign_line
+    labels: ["위임업체 대표자", "대리인"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 대리 참가 가능 여부와 제출 서류는 입찰 공고문을 확인하십시오.

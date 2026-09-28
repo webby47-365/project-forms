@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 293종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 298종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Sat, 26 Sep 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>이직확인서 발급 요청서</title>
+<link>https://freeforms.kr/form/separation-certificate-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/separation-certificate-request/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Tue, 29 Sep 2026 00:00:00 +0900</pubDate>
+<description>퇴사 후 회사에 고용보험 이직확인서의 처리를 요청할 때 퇴사자 정보와 요청 사항을 적는 요청서입니다.</description>
+</item>
+<item>
+<title>전입신고 대리 위임장</title>
+<link>https://freeforms.kr/form/move-in-report-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/move-in-report-poa/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Tue, 29 Sep 2026 00:00:00 +0900</pubDate>
+<description>이사 후 전입신고를 가족이나 다른 사람이 대신 할 때 위임인·대리인과 전입 주소를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>영업 신고 대행 위임장</title>
+<link>https://freeforms.kr/form/business-report-agent-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-report-agent-poa/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Tue, 29 Sep 2026 00:00:00 +0900</pubDate>
+<description>영업 신고·변경신고를 행정사나 직원에게 맡길 때 영업소 정보와 신고 종류·위임 범위를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>입찰보증금 반환 청구서</title>
+<link>https://freeforms.kr/form/bid-deposit-refund-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/bid-deposit-refund-request/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Tue, 29 Sep 2026 00:00:00 +0900</pubDate>
+<description>입찰에서 탈락했거나 계약이 끝난 뒤 납부한 입찰보증금을 돌려받기 위해 입찰 건과 반환 계좌를 적는 청구서입니다.</description>
+</item>
+<item>
+<title>입찰 참가 대리 위임장</title>
+<link>https://freeforms.kr/form/bid-participation-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/bid-participation-poa/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Tue, 29 Sep 2026 00:00:00 +0900</pubDate>
+<description>입찰에 대표자 대신 대리인이 참가해 입찰서 제출·개찰 참석을 하도록 권한과 입찰 건명을 적는 위임장입니다.</description>
+</item>
 <item>
 <title>금융거래(계좌) 위임장</title>
 <link>https://freeforms.kr/form/bank-account-poa/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 4대보험·고용</category>
 <pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
 <description>회사에서 받지 못한 임금을 근로복지공단으로부터 받는 대지급금 지급을 신청하는 양식입니다.</description>
-</item>
-<item>
-<title>자동차 이전등록 신청서</title>
-<link>https://freeforms.kr/form/gov-vehicle-transfer-registration/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-vehicle-transfer-registration/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>자동차를 사거나 받은 후 새로운 소유자로 등록을 변경하는 신청서입니다.</description>
-</item>
-<item>
-<title>인감증명서 발급 위임장 (법정서식)</title>
-<link>https://freeforms.kr/form/gov-seal-certificate-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-seal-certificate-poa/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>인감증명서 발급을 받기 위해 다른 사람에게 권한을 위임하는 법정 위임장입니다.</description>
-</item>
-<item>
-<title>육아휴직 급여·육아기 근로시간 단축 급여 신청서</title>
-<link>https://freeforms.kr/form/gov-parental-leave-benefit/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-parental-leave-benefit/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>8세 이하(또는 초등 2학년 이하) 자녀 양육을 위한 육아휴직 또는 근로시간 단축 급여를 신청하는 법정 신청서입니다.</description>
-</item>
-<item>
-<title>임대차 정보제공 요청서</title>
-<link>https://freeforms.kr/form/gov-lease-info-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-lease-info-request/</guid>
-<category>부동산 · 임대·매매</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>임대차계약서상 확정일자 부여 현황과 임차인 정보를 요청하는 법정 신청서입니다.</description>
-</item>
-<item>
-<title>주택 임대차 계약 신고서 (전월세 신고)</title>
-<link>https://freeforms.kr/form/gov-housing-lease-report/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-housing-lease-report/</guid>
-<category>부동산 · 임대·매매</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>주택을 월세나 전세로 빌리거나 빌려줄 때 시·군·구청에 신고하는 임대차 계약 신고서입니다.</description>
 </item>
 </channel>
 </rss>

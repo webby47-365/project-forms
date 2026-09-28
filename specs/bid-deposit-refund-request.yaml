@@ -1,0 +1,91 @@
+id: bid-deposit-refund-request
+title: 입찰보증금 반환 청구서
+category: public
+subcategory: procure
+tags: [입찰보증금반환청구서, 입찰보증금반환, 보증금환급, 입찰보증금, 낙찰탈락반환]
+summary: 입찰에서 탈락했거나 계약이 끝난 뒤 납부한 입찰보증금을 돌려받기 위해 입찰 건과 반환 계좌를 적는 청구서입니다.
+usage: >
+  입찰에 참가하며 현금 등으로 낸 입찰보증금은 낙찰자가 아니거나 계약 절차가 끝나면 돌려받습니다.
+  이 서식은 발주처에 반환을 청구할 때 입찰 건명과 납부 내역, 받을 계좌를 정리해 제출하는 용도입니다.
+  납부 영수증 사본이 있으면 함께 내면 처리가 빨라집니다. 이미 계좌로 자동 반환되는 방식인지는
+  발주처마다 다르므로 공고문과 담당부서 안내를 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 청구인(업체) 정보와 담당자 연락처를 적습니다.
+  - 입찰 건명과 공고번호, 개찰일을 적습니다.
+  - 납부한 보증금 금액과 납부일, 납부 방법을 적습니다.
+  - 반환받을 계좌를 적고 날인해 제출합니다.
+faq:
+  - q: 납부 영수증을 잃어버렸으면 어떻게 하나요?
+    a: 입금 내역이 확인되는 통장 사본이나 이체 확인증으로 대신할 수 있는지 발주처에 문의하십시오.
+  - q: 반환 계좌는 어느 명의여야 하나요?
+    a: 보통 청구업체 명의 계좌로 받습니다. 다른 명의는 가능 여부를 발주처에 먼저 확인하십시오.
+related: [gov-bid-participation, integrity-pledge-bidding, bid-performance-certificate, power-of-attorney]
+blocks:
+  - type: doc_title
+    text: 입찰보증금 반환 청구서
+    spaced: false
+  - type: subtitle
+    text: 1. 청구인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["업체명", "", "대표자", ""]
+      - ["주소", "", "", ""]
+      - ["담당자", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "박민준"]
+      - ["", "서울특별시 금천구 가산디지털1로 100", "", ""]
+      - ["", "이수현", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 입찰 및 보증금 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["입찰 건명", "", "", ""]
+      - ["공고번호", "", "개찰일", ""]
+      - ["보증금액", "", "납부일", ""]
+      - ["납부 방법", "", "반환 사유", ""]
+    sample_rows:
+      - ["", "청사 정보화장비 구매", "", ""]
+      - ["", "제2026-0000호", "", "2026-09-15"]
+      - ["", "1,500,000원", "", "2026-09-14"]
+      - ["", "계좌이체", "", "미낙찰"]
+  - type: subtitle
+    text: 3. 반환 계좌
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["은행명", "", "계좌번호", ""]
+      - ["예금주", "", "첨부", "납부 영수증 사본"]
+    sample_rows:
+      - ["", "한빛은행", "", "000-000-000000"]
+      - ["", "(주)새길데이터", "", ""]
+  - type: subtitle
+    text: 4. 청구 내용
+  - type: textbox
+    hint: "필요한 경우 반환을 청구하는 사유나 요청 사항을 적으십시오."
+    height_mm: 24
+    sample_text: 위 입찰에서 낙찰자가 아니므로 납부한 입찰보증금의 반환을 청구합니다.
+  - type: para
+    text: 위와 같이 입찰보증금의 반환을 청구합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년    9 월   28 일
+  - type: sign_line
+    label: 청구인 (대표자)
+    sample_names: [박민준]
+  - type: notice
+    text: 반환 방식과 제출처는 입찰 공고문과 발주처 안내를 확인하십시오.

@@ -1,0 +1,80 @@
+id: separation-certificate-request
+title: 이직확인서 발급 요청서
+category: public
+subcategory: insurance
+tags: [이직확인서요청서, 이직확인서발급요청, 이직확인서, 퇴사자요청서, 실업급여서류]
+summary: 퇴사 후 회사에 고용보험 이직확인서의 처리를 요청할 때 퇴사자 정보와 요청 사항을 적는 요청서입니다.
+usage: >
+  퇴사 후 실업급여 등을 신청하려면 회사가 고용보험 이직확인서를 처리해야 합니다. 이 서식은
+  퇴사한 사람이 회사 담당자에게 처리를 요청할 때 입사일·퇴사일·퇴사 사유 등 요청 내용을 정리해
+  전달하는 용도입니다. 퇴사 사유는 이후 수급 자격 판단에 영향을 줄 수 있으니 사실대로 적고
+  회사가 적은 내용과 다르면 고용센터에 문의하십시오. 처리 기한과 방법은 고용센터 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 퇴사자 성명과 연락처를 적습니다.
+  - 입사일과 퇴사일, 직위를 적습니다.
+  - 퇴사 사유와 요청 사항을 적습니다.
+  - 회신받을 방법을 정하고 서명해 회사 담당자에게 전달합니다.
+faq:
+  - q: 퇴사 사유는 제가 정해서 적나요?
+    a: 사실대로 적으시면 됩니다. 회사가 적은 사유와 다르면 고용센터에 확인을 요청하십시오.
+  - q: 회사가 처리해 주지 않으면 어떻게 하나요?
+    a: 관할 고용센터에 문의하면 안내를 받을 수 있습니다. 요청한 날짜를 기록해 두십시오.
+related: [gov-separation-confirmation, employment-certificate, career-certificate, severance-calculation]
+blocks:
+  - type: doc_title
+    text: 이직확인서 발급 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청인 (퇴사자)
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "이수현", "", "1994-01-01"]
+      - ["", "010-1234-5678", "", "user@example.com"]
+  - type: subtitle
+    text: 2. 근무 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "부서·직위", ""]
+      - ["입사일", "", "퇴사일", ""]
+      - ["고용 형태", "", "퇴사 사유", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "마케팅팀 사원"]
+      - ["", "2023-03-02", "", "2026-09-30"]
+      - ["", "정규직", "", "계약 만료"]
+  - type: subtitle
+    text: 3. 요청 사항
+  - type: table
+    widths: [70, 30]
+    header: [요청 내용, 표시(○)]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["고용보험 이직확인서 처리", "○"]
+      - ["처리 완료 시 알림", "○"]
+      - ["퇴직 관련 증명서 발급", ""]
+  - type: textbox
+    hint: "회사에 전달할 내용이 있으면 적으십시오."
+    height_mm: 24
+    sample_text: 실업급여 신청을 위해 퇴사일 이후 가능한 빨리 처리해 주시기 바랍니다.
+  - type: para
+    text: 위와 같이 이직확인서의 처리를 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년    9 월   28 일
+  - type: sign_line
+    label: 요청인
+    sample_names: [이수현]
+  - type: notice
+    text: 처리 기한과 방법은 관할 고용센터 안내를 확인하십시오.

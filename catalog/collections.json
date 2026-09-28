@@ -8,7 +8,7 @@
       "ids": [
         "resignation-letter", "resignation-simple", "retirement-application",
         "handover-report", "asset-handover", "severance-calculation",
-        "career-certificate", "employment-certificate", "annual-leave-plan",
+        "separation-certificate-request", "career-certificate", "employment-certificate", "annual-leave-plan",
         "career-description"
       ]
     },
@@ -30,7 +30,7 @@
       "ids": [
         "housing-lease-contract", "commercial-lease-contract",
         "lease-renewal-contract", "move-in-checklist", "monthly-rent-receipt",
-        "moving-in-report", "moving-checklist", "lease-termination-notice",
+        "moving-in-report", "move-in-report-poa", "moving-checklist", "lease-termination-notice",
         "move-out-checklist", "management-fee-settlement-confirmation",
         "deposit-return-notice", "resident-registration-request"
       ]
