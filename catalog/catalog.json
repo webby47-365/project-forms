@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T08:17:26+09:00",
-  "count": 298,
+  "generated_at": "2026-09-30T08:18:07+09:00",
+  "count": 303,
   "forms": [
     {
       "id": "academy-attendance",
@@ -2652,6 +2652,112 @@
       "seal": true
     },
     {
+      "id": "business-registration-poa",
+      "title": "사업자등록 신청 대리 위임장",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "사업자등록위임장",
+        "사업자등록대리신청",
+        "사업자등록신청위임장",
+        "개업신고위임장",
+        "세무서위임장"
+      ],
+      "summary": "사업자등록 신청을 대리인이 세무서에서 접수할 때 신청인과 대리인 정보·위임 범위를 적는 위임장입니다.",
+      "usage": "개업하는 사람이 직접 세무서에 갈 수 없어 가족·직원·세무대리인이 대신 사업자등록을 신청할 때 쓰는 서류입니다. 신청인과 대리인의 인적사항, 사업장 소재지, 업종을 적고 위임 범위를 어디까지로 하는지 분명히 해야 합니다. 등록증 수령까지 맡길지, 신청서 접수만 맡길지 구분해 적으면 대리인이 받아 가는 서류의 범위가 정해집니다. 접수 시 대리인의 신분증과 신청인의 신분증 사본 등 필요한 서류는 관할 세무서 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 58097,
+        "docx": 38826,
+        "hwpx": 10050
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인의 성명·연락처와 사업장 정보를 적습니다.",
+        "대리인의 성명·연락처와 신청인과의 관계를 적습니다.",
+        "위임 범위에서 접수와 등록증 수령 여부를 표시합니다.",
+        "신청인이 서명 또는 날인하고 대리인에게 전달합니다."
+      ],
+      "faq": [
+        {
+          "q": "등록증 수령까지 맡길 수 있나요?",
+          "a": "위임 범위에 등록증 수령을 표시하면 맡길 수 있습니다. 세무서에서 요구하는 확인 서류는 미리 확인하십시오."
+        },
+        {
+          "q": "대리인은 꼭 가족이어야 하나요?",
+          "a": "관계에 제한을 두지 않지만, 세무서가 대리인 신분 확인을 요구할 수 있으니 신분증을 준비합니다."
+        },
+        {
+          "q": "위임장 유효기간이 있나요?",
+          "a": "정해진 기간은 없어 위임 기간을 직접 적어 두는 것이 좋습니다. 접수 후에는 효력이 끝나는 것으로 적습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인 (위임인)",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "상호(예정)",
+            "연락처",
+            "업종(예정)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대리인 (수임인)",
+          "items": [
+            "신청인과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "사업장 소재지",
+            "위임 범위",
+            "제출 세무서",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-reg-checklist",
+        "gov-business-registration-individual",
+        "vat-filing-poa",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-30T08:17:16+09:00",
+      "updated_at": "2026-09-30T08:18:07+09:00",
+      "downloads": 0
+    },
+    {
       "id": "business-report-agent-poa",
       "title": "영업 신고 대행 위임장",
       "category": "public",
@@ -3551,6 +3657,114 @@
         "resume-experienced"
       ],
       "seal": true
+    },
+    {
+      "id": "career-certificate-request",
+      "title": "경력증명서 발급 요청서",
+      "category": "personal",
+      "subcategory": "career",
+      "tags": [
+        "경력증명서발급요청서",
+        "경력증명서신청서",
+        "경력증명서요청",
+        "재직경력증명요청",
+        "이직서류요청"
+      ],
+      "summary": "이직·입사 서류 제출을 위해 전 직장에 경력증명서 발급을 요청할 때 근무 기간·발급 부수·수령 방법을 적는 요청서입니다.",
+      "usage": "새 직장 입사나 이직 절차에서 경력증명서를 내야 할 때, 이전 직장 인사 담당자에게 발급을 요청하는 서류입니다. 재직했던 기간과 부서·직위, 필요한 부수, 제출처와 수령 방법을 적어 두면 담당자가 빠르게 처리할 수 있습니다. 퇴사 후에는 회사의 발급 절차와 소요 기간이 달라질 수 있으므로 제출 기한에 여유를 두고 요청하십시오. 경력증명서에 넣을 담당 업무 내용도 미리 정해 전달하면 좋습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49485,
+        "docx": 38633,
+        "hwpx": 9800
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청자 성명·연락처와 재직했던 기간을 적습니다.",
+        "근무했던 부서와 직위, 담당 업무를 적습니다.",
+        "필요한 부수와 제출처, 수령 방법을 적습니다.",
+        "서명해 인사 담당자에게 보냅니다."
+      ],
+      "faq": [
+        {
+          "q": "퇴사한 뒤에도 요청할 수 있나요?",
+          "a": "회사마다 발급 절차가 달라 인사 담당 부서에 요청 방법을 먼저 확인하는 것이 좋습니다."
+        },
+        {
+          "q": "담당 업무를 요청서에 적어도 되나요?",
+          "a": "적어 두면 증명서에 넣을 내용을 맞추기 쉽습니다. 다만 최종 내용은 회사가 확인해 작성합니다."
+        },
+        {
+          "q": "제출 기한이 촉박하면 어떻게 하나요?",
+          "a": "요청서에 희망 수령일을 적고 담당자에게 따로 연락해 처리 가능한 일정을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청자 정보",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처",
+            "이메일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 재직 정보",
+          "items": [
+            "재직 기간",
+            "부서",
+            "직위",
+            "담당 업무"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 발급 요청 내용",
+          "items": [
+            "필요 부수",
+            "희망 수령일",
+            "제출처",
+            "용도",
+            "수령 방법"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "career-certificate",
+        "employment-certificate",
+        "resume-experienced",
+        "reference-check-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-30T08:17:35+09:00",
+      "updated_at": "2026-09-30T08:18:00+09:00",
+      "downloads": 0
     },
     {
       "id": "career-desc-job",
@@ -27845,6 +28059,117 @@
       "seal": true
     },
     {
+      "id": "student-absence-notice",
+      "title": "결석계 (학부모 확인서)",
+      "category": "edu",
+      "subcategory": "school",
+      "tags": [
+        "결석계",
+        "결석신고서",
+        "학생결석계",
+        "결석사유서",
+        "학부모확인서",
+        "지각결과계"
+      ],
+      "summary": "질병·경조사 등으로 결석한 학생의 결석 기간과 사유를 보호자가 확인해 학교에 내는 결석계 양식입니다.",
+      "usage": "학생이 질병이나 가정 사정, 경조사 등으로 학교에 나오지 못했을 때 담임교사에게 제출하는 결석계입니다. 결석한 기간과 사유를 구체적으로 적고 보호자가 확인 서명을 하면 됩니다. 결석 사유에 따라 결석이 출석으로 인정되는지, 진단서나 증빙 서류가 필요한지는 학교 규정마다 달라 학사 안내를 확인해야 합니다. 증빙 서류를 첨부할 때는 사본을 붙이고 원본은 보호자가 보관합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50433,
+        "docx": 38712,
+        "hwpx": 9878
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "학년·반·번호와 학생 성명을 적습니다.",
+        "결석한 기간과 결석 일수를 적습니다.",
+        "결석 사유를 고르고 구체적인 내용을 적습니다.",
+        "보호자가 서명하고 증빙 서류가 있으면 붙여 담임에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "진단서나 증빙 서류는 꼭 붙여야 하나요?",
+          "a": "학교마다 기준이 달라 결석 사유와 일수에 따라 요구될 수 있으니 담임교사에게 확인하십시오."
+        },
+        {
+          "q": "결석하기 전에 미리 낼 수 있나요?",
+          "a": "미리 알 수 있는 사유라면 사전에 담임에게 알리고, 결석 후 결석계로 확인받는 경우가 많습니다."
+        },
+        {
+          "q": "교외체험학습 신청서와 무엇이 다른가요?",
+          "a": "체험학습은 사전에 신청해 출석을 인정받는 절차이고, 결석계는 결석 사실과 사유를 확인하는 서류입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 학생 정보",
+          "items": [
+            "학교",
+            "학년-반-번호",
+            "학생 성명",
+            "보호자 연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 결석 내용",
+          "items": [
+            "결석 기간",
+            "결석 사유",
+            "결석 일수",
+            "증빙 서류"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 결석 사유 상세",
+          "items": [],
+          "note": "결석하게 된 경위와 사유를 구체적으로 적으십시오. 증빙 서류가 있으면 종류를 함께 적습니다."
+        },
+        {
+          "title": "4. 학교 확인",
+          "items": [
+            "담임 확인",
+            "결석 처리"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "field-trip-application",
+        "guardian-consent",
+        "attendance-sheet",
+        "student-record-card"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-30T08:17:27+09:00",
+      "updated_at": "2026-09-30T08:17:27+09:00",
+      "downloads": 0
+    },
+    {
       "id": "student-record-card",
       "title": "학생 생활기록 카드",
       "category": "edu",
@@ -30015,6 +30340,120 @@
       "downloads": 0
     },
     {
+      "id": "vehicle-deregistration-poa",
+      "title": "자동차 말소등록 위임장",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차말소등록위임장",
+        "폐차위임장",
+        "말소등록대행위임장",
+        "차량말소위임장",
+        "폐차대행위임장"
+      ],
+      "summary": "폐차 등으로 자동차 말소등록을 대리인이나 폐차업체에 맡길 때 차량 정보와 말소 사유·위임 범위를 적는 위임장입니다.",
+      "usage": "차를 폐차하거나 수출·도난 등의 사유로 자동차 등록을 지워야 할 때, 소유자가 직접 처리하지 못하고 폐차업체나 대리인에게 말소등록 절차를 맡길 때 쓰는 서류입니다. 차량번호와 차대번호, 말소 사유를 정확히 적어야 대리인이 어느 차량의 어떤 절차를 처리하는지 구분됩니다. 말소등록에 필요한 서류와 자동차 관련 세금·과태료 정산 등은 관할 지자체와 폐차업체 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 62518,
+        "docx": 38896,
+        "hwpx": 10138
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "소유자의 성명·연락처를 적습니다.",
+        "차량번호·차종·차대번호를 등록증과 맞춰 적습니다.",
+        "말소 사유와 위임 범위를 표시합니다.",
+        "대리인 정보를 적고 소유자가 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "폐차업체에 맡기면 위임장이 꼭 필요한가요?",
+          "a": "업체가 대행하는 경우 위임장을 요구하는 것이 일반적이니 업체 안내를 먼저 확인하십시오."
+        },
+        {
+          "q": "차대번호는 어디서 확인하나요?",
+          "a": "자동차등록증에 적혀 있으니 등록증과 똑같이 옮겨 적습니다."
+        },
+        {
+          "q": "저당이나 압류가 걸려 있어도 말소할 수 있나요?",
+          "a": "제한이 걸려 있으면 절차가 달라질 수 있으니 관할 지자체나 폐차업체에 미리 문의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 소유자 (위임인)",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 차량 정보",
+          "items": [
+            "차량번호",
+            "차종",
+            "차대번호",
+            "최초등록일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 대리인 (수임인)",
+          "items": [
+            "성명(상호)",
+            "신청인과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 위임 내용",
+          "items": [
+            "말소 사유",
+            "위임 범위",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-registration-poa",
+        "gov-vehicle-transfer-registration",
+        "used-car-sale-contract",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-30T08:17:21+09:00",
+      "updated_at": "2026-09-30T08:17:52+09:00",
+      "downloads": 0
+    },
+    {
       "id": "vehicle-lease-contract",
       "title": "자동차 임대차계약서",
       "category": "public",
@@ -31308,6 +31747,115 @@
         "year-end-tax-checklist"
       ],
       "seal": true
+    },
+    {
+      "id": "withholding-tax-filing-poa",
+      "title": "원천세 신고 위임장",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "원천세신고위임장",
+        "원천징수신고위임장",
+        "원천세위임장",
+        "세무대리위임장",
+        "지급명세서위임장"
+      ],
+      "summary": "원천징수 이행상황신고와 지급명세서 제출을 세무대리인에게 맡길 때 지급 월·신고 범위를 적는 위임장입니다.",
+      "usage": "급여나 용역대가를 지급하는 사업자가 매월 하는 원천징수 이행상황신고와 지급명세서 제출을 세무대리인에게 맡길 때 쓰는 서류입니다. 원천세는 지급 월마다 신고 대상이 생기므로 어느 월분부터 어느 월분까지 맡기는지 적어 두어야 대리 범위가 분명해집니다. 신고 대상 소득의 종류(근로·사업·기타 등)와 자료 수령 방법을 함께 적으면 세무대리인과 주고받는 자료가 줄어듭니다. 위임 기간이 끝나면 효력이 소멸하도록 기간을 정해 두는 것이 안전합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59389,
+        "docx": 38916,
+        "hwpx": 10156
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인(원천징수의무자)의 상호와 사업자등록번호를 적습니다.",
+        "세무대리인의 사무소명과 세무사등록번호를 적습니다.",
+        "신고할 소득 종류와 지급 월 범위를 적습니다.",
+        "위임 기간을 정하고 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "매달 새로 작성해야 하나요?",
+          "a": "지급 월 범위를 여러 달로 적으면 한 장으로 여러 달을 맡길 수 있습니다. 기간이 끝나면 다시 작성합니다."
+        },
+        {
+          "q": "부가가치세 위임장과 따로 써야 하나요?",
+          "a": "세목이 달라 별도 문서로 작성하는 것이 원칙입니다. 같은 세무대리인이면 함께 전달해도 됩니다."
+        },
+        {
+          "q": "지급명세서 제출도 함께 맡길 수 있나요?",
+          "a": "위임 범위에 지급명세서 작성·제출을 함께 적으면 맡길 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인 (원천징수의무자)",
+          "items": [
+            "상호(성명)",
+            "대표자",
+            "사업장 주소",
+            "연락처",
+            "사업자등록번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 수임인 (세무대리인)",
+          "items": [
+            "사무소명",
+            "세무사 성명",
+            "세무사등록번호",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "신고 대상 소득",
+            "지급 월",
+            "위임 범위",
+            "지급명세서",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vat-filing-poa",
+        "withholding-request",
+        "income-tax-filing-poa",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-09-30T08:17:10+09:00",
+      "updated_at": "2026-09-30T08:17:10+09:00",
+      "downloads": 0
     },
     {
       "id": "work-journal",

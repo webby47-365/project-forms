@@ -8,7 +8,7 @@
       "ids": [
         "resignation-letter", "resignation-simple", "retirement-application",
         "handover-report", "asset-handover", "severance-calculation",
-        "separation-certificate-request", "career-certificate", "employment-certificate", "annual-leave-plan",
+        "separation-certificate-request", "career-certificate-request", "career-certificate", "employment-certificate", "annual-leave-plan",
         "career-description"
       ]
     },
@@ -63,7 +63,7 @@
       "name": "창업 첫 달 서식",
       "lead": "사업자등록 준비부터 법인 설립 서류, 초기 자금 계획까지 모았습니다.",
       "ids": [
-        "startup-checklist", "business-reg-checklist", "business-plan-simple",
+        "startup-checklist", "business-reg-checklist", "business-registration-poa", "business-plan-simple",
         "business-plan-standard", "partnership-agreement",
         "articles-of-incorporation", "shareholder-register",
         "director-acceptance", "budget-plan", "vat-filing-poa",
@@ -113,7 +113,7 @@
         "parking-fine-objection", "administrative-objection",
         "noise-complaint", "illegal-dumping-report", "road-repair-request",
         "moving-in-report", "seal-certificate-poa",
-        "family-certificate-issuance-poa", "vehicle-registration-poa",
+        "family-certificate-issuance-poa", "vehicle-registration-poa", "vehicle-deregistration-poa",
         "parking-space-consent-vehicle-registration", "bank-account-poa"
       ]
     },
@@ -134,7 +134,7 @@
       "lead": "학습 계획과 출결 관리, 학부모 제출 서류까지 학교·학원에서 쓰는 서식입니다.",
       "ids": [
         "class-timetable", "study-plan", "weekly-study-plan", "reading-log",
-        "attendance-sheet", "academy-attendance", "course-registration",
+        "attendance-sheet", "student-absence-notice", "academy-attendance", "course-registration",
         "tuition-refund-request", "field-trip-consent", "field-trip-application",
         "scholarship-application"
       ]

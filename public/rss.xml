@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 298종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 303종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>경력증명서 발급 요청서</title>
+<link>https://freeforms.kr/form/career-certificate-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/career-certificate-request/</guid>
+<category>개인 · 취업·경력</category>
+<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
+<description>이직·입사 서류 제출을 위해 전 직장에 경력증명서 발급을 요청할 때 근무 기간·발급 부수·수령 방법을 적는 요청서입니다.</description>
+</item>
+<item>
+<title>결석계 (학부모 확인서)</title>
+<link>https://freeforms.kr/form/student-absence-notice/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/student-absence-notice/</guid>
+<category>교육 · 학교·학원</category>
+<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
+<description>질병·경조사 등으로 결석한 학생의 결석 기간과 사유를 보호자가 확인해 학교에 내는 결석계 양식입니다.</description>
+</item>
+<item>
+<title>자동차 말소등록 위임장</title>
+<link>https://freeforms.kr/form/vehicle-deregistration-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-deregistration-poa/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
+<description>폐차 등으로 자동차 말소등록을 대리인이나 폐차업체에 맡길 때 차량 정보와 말소 사유·위임 범위를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>사업자등록 신청 대리 위임장</title>
+<link>https://freeforms.kr/form/business-registration-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-registration-poa/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
+<description>사업자등록 신청을 대리인이 세무서에서 접수할 때 신청인과 대리인 정보·위임 범위를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>원천세 신고 위임장</title>
+<link>https://freeforms.kr/form/withholding-tax-filing-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/withholding-tax-filing-poa/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
+<description>원천징수 이행상황신고와 지급명세서 제출을 세무대리인에게 맡길 때 지급 월·신고 범위를 적는 위임장입니다.</description>
+</item>
 <item>
 <title>이직확인서 발급 요청서</title>
 <link>https://freeforms.kr/form/separation-certificate-request/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 자동차·교통</category>
 <pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
 <description>교통사고 직후 현장에서 양측 차량·보험 정보와 사고 경위를 함께 기록해 보험사 접수 등에 쓰는 확인서입니다.</description>
-</item>
-<item>
-<title>이륜차(오토바이) 매매계약서</title>
-<link>https://freeforms.kr/form/motorcycle-sale-contract/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/motorcycle-sale-contract/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
-<description>중고 오토바이·스쿠터 등 이륜차를 개인 간에 사고팔 때 차량 정보와 대금 지급 조건을 정하는 매매계약서입니다.</description>
-</item>
-<item>
-<title>청렴계약 이행서약서</title>
-<link>https://freeforms.kr/form/integrity-pledge-bidding/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/integrity-pledge-bidding/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
-<description>입찰·계약 과정에서 금품·향응을 주고받거나 부당한 청탁을 하지 않겠다고 다짐하는 청렴계약 이행서약서입니다.</description>
-</item>
-<item>
-<title>실적증명서 (입찰용)</title>
-<link>https://freeforms.kr/form/bid-performance-certificate/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/bid-performance-certificate/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
-<description>공공입찰 참가 시 과거 계약을 정상적으로 이행했음을 발주기관이 확인해 주는 실적증명서입니다.</description>
-</item>
-<item>
-<title>자동차양도증명서 (직접 거래용)</title>
-<link>https://freeforms.kr/form/gov-vehicle-transfer-cert/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-vehicle-transfer-cert/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>개인 간에 중고차를 직거래할 때 양도인과 양수인이 함께 서명하는 양도증명서입니다.</description>
-</item>
-<item>
-<title>간이대지급금 지급청구서</title>
-<link>https://freeforms.kr/form/gov-simple-substitute-payment/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/gov-simple-substitute-payment/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Wed, 16 Sep 2026 00:00:00 +0900</pubDate>
-<description>회사에서 받지 못한 임금을 근로복지공단으로부터 받는 대지급금 지급을 신청하는 양식입니다.</description>
 </item>
 </channel>
 </rss>
