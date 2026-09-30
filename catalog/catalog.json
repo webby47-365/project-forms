@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T08:18:07+09:00",
-  "count": 303,
+  "generated_at": "2026-10-01T08:17:51+09:00",
+  "count": 308,
   "forms": [
     {
       "id": "academy-attendance",
@@ -1546,6 +1546,112 @@
       "warnings": [],
       "created_at": "2026-09-17T08:21:15+09:00",
       "updated_at": "2026-09-17T08:21:15+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "bid-withdrawal-request",
+      "title": "입찰 참가 철회서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "입찰참가철회서",
+        "입찰포기서",
+        "입찰철회요청서",
+        "입찰참가포기",
+        "입찰취소요청서"
+      ],
+      "summary": "입찰 참가 신청 후 사정이 생겨 참가를 철회하거나 포기할 때 공고 정보와 철회 사유를 적어 발주처에 내는 철회서입니다.",
+      "usage": "입찰 공고에 참가 신청이나 서류 제출을 마친 뒤 인력·자금·일정 사정으로 참가를 이어가기 어려울 때 발주처에 철회 의사를 문서로 남기는 서류입니다. 공고번호와 공고명, 철회 사유를 적고 대표자가 서명 또는 날인합니다. 철회 가능 시점과 입찰보증금 처리, 참가 제한 여부는 공고문과 발주처 규정에 따르므로 제출 전에 반드시 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48897,
+        "docx": 38683,
+        "hwpx": 9790
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "공고번호와 공고명, 발주처를 공고문과 똑같이 적습니다.",
+        "입찰 참가 업체의 상호와 대표자 정보를 적습니다.",
+        "철회 사유를 표시하고 필요하면 한 줄로 덧붙입니다.",
+        "대표자가 서명 또는 날인한 뒤 발주처 담당자에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "입찰 마감 뒤에도 철회할 수 있나요?",
+          "a": "마감 뒤 철회는 제한될 수 있습니다. 공고문과 발주처 규정에서 철회 가능 시점을 확인하십시오."
+        },
+        {
+          "q": "철회하면 입찰보증금은 돌려받나요?",
+          "a": "보증금 처리는 공고 조건에 따라 다릅니다. 발주처에 문의하고 반환 절차는 보증금 반환 청구서로 진행합니다."
+        },
+        {
+          "q": "철회 사유를 자세히 써야 하나요?",
+          "a": "해당 항목에 표시하고 짧게 적으면 충분합니다. 사실과 다른 사유는 적지 않습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 입찰 공고 정보",
+          "items": [
+            "공고명",
+            "발주처",
+            "공고번호",
+            "입찰 마감일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 입찰 참가자",
+          "items": [
+            "상호",
+            "대표자",
+            "사업장 주소",
+            "사업자등록번호",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 철회 사유",
+          "items": [
+            "사유 구분",
+            "상세 내용"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "bid-deposit-refund-request",
+        "bid-participation-poa",
+        "integrity-pledge-bidding",
+        "gov-bid-form"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-01T08:17:10+09:00",
+      "updated_at": "2026-10-01T08:17:10+09:00",
       "downloads": 0
     },
     {
@@ -21272,6 +21378,118 @@
       "seal": true
     },
     {
+      "id": "permit-application-poa",
+      "title": "인허가 신청 위임장",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "인허가위임장",
+        "영업신고위임장",
+        "인허가대행위임장",
+        "허가신청위임장",
+        "영업허가위임장"
+      ],
+      "summary": "영업 신고나 인허가 신청을 대리인(행정사 등)에게 맡길 때 신청 종류·사업장·위임 범위를 적는 위임장입니다.",
+      "usage": "식품·공중위생·통신판매 등 영업 신고나 인허가를 직접 처리하기 어려워 행정사나 직원에게 맡길 때 쓰는 위임장입니다. 신청 종류와 사업장 정보, 위임 범위와 기간을 적고 위임인이 서명 또는 날인합니다. 업종에 따라 위임장 서식과 첨부 서류(신분증 사본 등)가 정해져 있을 수 있으니 접수처 안내를 확인한 뒤 제출하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54567,
+        "docx": 38759,
+        "hwpx": 9975
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인(신청인)의 성명과 연락처를 적습니다.",
+        "신청 종류와 사업장 이름·주소를 적습니다.",
+        "대리인 정보를 적고 위임할 범위를 표시합니다.",
+        "위임 기간을 정하고 위임인이 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "행정사에게 맡길 때도 위임장이 필요한가요?",
+          "a": "대리 접수 시 위임장을 요구하는 경우가 일반적입니다. 접수처와 대행인에게 먼저 확인하십시오."
+        },
+        {
+          "q": "위임 범위는 어떻게 정하나요?",
+          "a": "서류 작성·제출·수령 등 맡길 일만 표시합니다. 범위를 넓게 잡지 말고 필요한 것만 적습니다."
+        },
+        {
+          "q": "신분증 사본도 함께 내야 하나요?",
+          "a": "접수처마다 요구가 다릅니다. 위임인 신분증 사본 등 첨부 서류는 접수처 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인 (신청인)",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신청 내용",
+          "items": [
+            "신청 종류",
+            "사업장 명칭",
+            "사업장 주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 대리인 (수임인)",
+          "items": [
+            "소속",
+            "관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 위임 범위",
+          "items": [
+            "위임 사항",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-registration-poa",
+        "gov-food-business-report",
+        "business-facility-use-consent",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-01T08:17:25+09:00",
+      "updated_at": "2026-10-01T08:17:51+09:00",
+      "downloads": 0
+    },
+    {
       "id": "personnel-order",
       "title": "인사발령통지서",
       "category": "corp",
@@ -24508,6 +24726,110 @@
         "settlement-agreement"
       ],
       "seal": true
+    },
+    {
+      "id": "residence-fact-confirmation",
+      "title": "거주사실 확인서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "거주사실확인서",
+        "거주확인서",
+        "거주사실확인",
+        "실거주확인서",
+        "동거확인서"
+      ],
+      "summary": "특정 기간 동안 그 주소에서 실제로 거주했음을 본인과 확인인이 함께 적어 제출하는 거주사실 확인서입니다.",
+      "usage": "전입신고 전후로 실제 거주 기간을 소명해야 하거나 주소지 사실 확인이 필요할 때 제출처에 내는 확인 문서입니다. 거주자의 인적사항과 거주 주소, 거주 기간을 적고 같은 집에 살았거나 사정을 아는 확인인이 서명합니다. 제출처마다 요구하는 첨부 서류와 확인인의 자격이 다르므로 제출처 안내를 먼저 확인하십시오. 사실과 다른 내용을 적지 않도록 주의합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 39764,
+        "docx": 38505,
+        "hwpx": 9615
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "거주자의 성명·생년월일·연락처를 적습니다.",
+        "거주한 주소와 거주 기간을 정확히 적습니다.",
+        "확인을 받는 용도와 제출처를 적습니다.",
+        "확인인의 정보를 적고 거주자와 확인인이 각각 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "확인인은 누가 해야 하나요?",
+          "a": "제출처 기준에 따라 다릅니다. 집주인이나 같은 세대 구성원이 하는 경우가 많으니 제출처에 확인하십시오."
+        },
+        {
+          "q": "거주 기간은 어떻게 적나요?",
+          "a": "실제로 살았던 첫날부터 마지막 날까지 연월일로 적습니다. 지금도 거주 중이면 종료일을 비우고 \"현재까지\"라고 씁니다."
+        },
+        {
+          "q": "이 확인서만으로 충분한가요?",
+          "a": "제출처에 따라 공과금 영수증이나 계약서 등 다른 서류를 함께 요구할 수 있으니 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 거주자",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처",
+            "확인서 용도"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 거주 내용",
+          "items": [
+            "거주 주소",
+            "거주 기간",
+            "제출처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 확인인",
+          "items": [
+            "거주자와의 관계",
+            "주소"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "moving-in-report",
+        "lease-termination-notice",
+        "resident-registration-request",
+        "privacy-consent-simple"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-01T08:17:22+09:00",
+      "updated_at": "2026-10-01T08:17:48+09:00",
+      "downloads": 0
     },
     {
       "id": "resident-registration-request",
@@ -29480,6 +29802,112 @@
       "downloads": 0
     },
     {
+      "id": "traffic-violation-driver-confirmation",
+      "title": "교통법규 위반 운전자 확인서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "운전자확인서",
+        "위반운전자확인서",
+        "과태료운전자확인",
+        "교통위반운전자",
+        "운전자지정서"
+      ],
+      "summary": "차량 소유자와 실제 운전자가 다를 때 위반 일시·장소와 실제 운전자 정보를 적어 제출하는 운전자 확인서입니다.",
+      "usage": "단속 카메라 등으로 교통법규 위반 통지를 받았는데 소유자가 아닌 가족·직원 등이 운전했을 때, 실제 운전자를 밝히는 용도로 쓰는 서류입니다. 통지서의 차량번호와 위반 일시·장소·위반 내용을 그대로 옮겨 적고 실제 운전자가 확인 서명을 합니다. 제출 방법과 기한, 필요 서류는 통지서에 적힌 부과 기관의 안내를 따르므로 제출 전에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 47365,
+        "docx": 38561,
+        "hwpx": 9757
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "통지서를 보고 차량번호와 위반 일시·장소를 똑같이 옮겨 적습니다.",
+        "차량 소유자의 성명과 연락처를 적습니다.",
+        "실제 운전자의 성명·연락처와 소유자와의 관계를 적습니다.",
+        "소유자와 운전자가 각각 서명하고 통지서의 제출처에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "운전자가 누구인지 기억나지 않으면 어떻게 하나요?",
+          "a": "임의로 적지 말고 통지서에 적힌 부과 기관에 안내를 문의하십시오."
+        },
+        {
+          "q": "운전자의 서명이 꼭 필요한가요?",
+          "a": "제출처에 따라 요구가 다릅니다. 통지서의 안내를 확인하고 요구하면 운전자 서명을 받습니다."
+        },
+        {
+          "q": "제출 기한이 있나요?",
+          "a": "통지서에 기한이 적혀 있는 경우가 많으니 기한 안에 제출처 안내에 따라 냅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위반 내용",
+          "items": [
+            "차량번호",
+            "통지서 번호",
+            "위반 장소",
+            "위반 내용",
+            "위반 일시",
+            "부과 기관"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 차량 소유자",
+          "items": [
+            "성명",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 실제 운전자",
+          "items": [
+            "소유자와의 관계",
+            "생년월일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "parking-fine-objection",
+        "administrative-objection",
+        "traffic-accident-confirmation",
+        "vehicle-use-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-01T08:17:16+09:00",
+      "updated_at": "2026-10-01T08:17:16+09:00",
+      "downloads": 0
+    },
+    {
       "id": "training-certificate",
       "title": "교육훈련 참가확인서",
       "category": "corp",
@@ -32187,6 +32615,111 @@
         "proposal-draft"
       ],
       "seal": true
+    },
+    {
+      "id": "workers-comp-claim-poa",
+      "title": "산재보험 급여 청구 위임장",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "산재보험위임장",
+        "산재신청위임장",
+        "산재급여청구위임장",
+        "산재대리신청",
+        "근로복지공단위임장"
+      ],
+      "summary": "산재보험 급여 청구나 요양 신청 절차를 공인노무사 등 대리인에게 맡길 때 위임 범위를 적는 위임장입니다.",
+      "usage": "업무상 사고나 질병으로 산재보험 급여를 청구할 때 본인이 직접 처리하기 어려워 대리인(공인노무사· 가족 등)에게 맡기는 경우에 쓰는 위임장입니다. 위임인·대리인 정보와 청구 종류, 위임 범위와 기간을 적고 위임인이 서명 또는 날인합니다. 재해 경위와 상병 내용은 이 서식에 적지 않으며 신청서류에 별도로 작성합니다. 접수 기관의 양식과 첨부 서류는 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54845,
+        "docx": 38774,
+        "hwpx": 9912
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인과 사업장(소속 회사) 정보를 적습니다.",
+        "대리인의 성명·소속·연락처를 적습니다.",
+        "청구 종류와 위임할 범위를 표시합니다.",
+        "위임 기간을 정하고 위임인이 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "재해 내용은 위임장에 적어야 하나요?",
+          "a": "적지 않습니다. 재해 경위와 상병 내용은 산재 신청서류에 따로 작성하고, 위임장에는 위임 범위만 적습니다."
+        },
+        {
+          "q": "가족이 대신 신청할 때도 위임장이 필요한가요?",
+          "a": "대리 신청 시 위임장을 요구할 수 있습니다. 접수 기관의 안내와 필요 서류를 먼저 확인하십시오."
+        },
+        {
+          "q": "위임 범위는 어디까지 적나요?",
+          "a": "신청서 작성·제출·보완 서류 제출·결과 수령 등 맡길 일만 표시하고 나머지는 비워 둡니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "소속 사업장",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대리인",
+          "items": [
+            "소속",
+            "위임인과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "청구 종류",
+            "위임 사항",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "power-of-attorney",
+        "social-insurance-filing-poa",
+        "gov-separation-confirmation",
+        "withholding-tax-filing-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-01T08:17:31+09:00",
+      "updated_at": "2026-10-01T08:17:31+09:00",
+      "downloads": 0
     },
     {
       "id": "written-apology",

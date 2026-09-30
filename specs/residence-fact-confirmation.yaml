@@ -1,0 +1,99 @@
+id: residence-fact-confirmation
+title: 거주사실 확인서
+category: public
+subcategory: family
+tags: [거주사실확인서, 거주확인서, 거주사실확인, 실거주확인서, 동거확인서]
+summary: 특정 기간 동안 그 주소에서 실제로 거주했음을 본인과 확인인이 함께 적어 제출하는 거주사실 확인서입니다.
+usage: >
+  전입신고 전후로 실제 거주 기간을 소명해야 하거나 주소지 사실 확인이 필요할 때 제출처에 내는
+  확인 문서입니다. 거주자의 인적사항과 거주 주소, 거주 기간을 적고 같은 집에 살았거나 사정을
+  아는 확인인이 서명합니다. 제출처마다 요구하는 첨부 서류와 확인인의 자격이 다르므로 제출처 안내를
+  먼저 확인하십시오. 사실과 다른 내용을 적지 않도록 주의합니다.
+source: original
+featured: false
+target_pages: 1
+
+howto:
+  - 거주자의 성명·생년월일·연락처를 적습니다.
+  - 거주한 주소와 거주 기간을 정확히 적습니다.
+  - 확인을 받는 용도와 제출처를 적습니다.
+  - 확인인의 정보를 적고 거주자와 확인인이 각각 서명합니다.
+
+faq:
+  - q: 확인인은 누가 해야 하나요?
+    a: 제출처 기준에 따라 다릅니다. 집주인이나 같은 세대 구성원이 하는 경우가 많으니 제출처에 확인하십시오.
+  - q: 거주 기간은 어떻게 적나요?
+    a: 실제로 살았던 첫날부터 마지막 날까지 연월일로 적습니다. 지금도 거주 중이면 종료일을 비우고 "현재까지"라고 씁니다.
+  - q: 이 확인서만으로 충분한가요?
+    a: 제출처에 따라 공과금 영수증이나 계약서 등 다른 서류를 함께 요구할 수 있으니 안내를 확인하십시오.
+
+related: [moving-in-report, lease-termination-notice, resident-registration-request, privacy-consent-simple]
+
+blocks:
+  - type: doc_title
+    text: 거주사실 확인서
+    spaced: true
+
+  - type: subtitle
+    text: 1. 거주자
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "확인서 용도", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-11-02"]
+      - ["", "010-1234-5678", "", "주소지 사실 소명"]
+
+  - type: subtitle
+    text: 2. 거주 내용
+
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["거주 주소", ""]
+      - ["거주 기간", "20   년  월  일 ~ 20   년  월  일"]
+      - ["제출처", ""]
+    sample_rows:
+      - ["", "서울특별시 마포구 월드컵북로 50 101동 502호"]
+      - ["", "2025-03-01 ~ 2026-09-30"]
+      - ["", "마포구청 민원여권과"]
+
+  - type: subtitle
+    text: 3. 확인인
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "거주자와의 관계", ""]
+      - ["주소", "", "", ""]
+      - ["연락처", "", "", ""]
+    sample_rows:
+      - ["", "이수현", "", "집주인"]
+      - ["", "서울특별시 마포구 월드컵북로 52", "", ""]
+      - ["", "010-3456-7890", "", ""]
+
+  - type: para
+    text: 위 사람이 위 기간 동안 위 주소에서 실제로 거주하였음을 확인합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년    9 월   30 일
+
+  - type: sign_line
+    labels: ["거주자", "확인인"]
+    sample_names: [홍길동, 이수현]
+
+  - type: notice
+    text: 제출처별 첨부 서류와 확인인 자격은 제출처 안내를 확인하십시오.

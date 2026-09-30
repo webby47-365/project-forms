@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 303종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 308종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>산재보험 급여 청구 위임장</title>
+<link>https://freeforms.kr/form/workers-comp-claim-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/workers-comp-claim-poa/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Thu, 01 Oct 2026 00:00:00 +0900</pubDate>
+<description>산재보험 급여 청구나 요양 신청 절차를 공인노무사 등 대리인에게 맡길 때 위임 범위를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>인허가 신청 위임장</title>
+<link>https://freeforms.kr/form/permit-application-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/permit-application-poa/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Thu, 01 Oct 2026 00:00:00 +0900</pubDate>
+<description>영업 신고나 인허가 신청을 대리인(행정사 등)에게 맡길 때 신청 종류·사업장·위임 범위를 적는 위임장입니다.</description>
+</item>
+<item>
+<title>거주사실 확인서</title>
+<link>https://freeforms.kr/form/residence-fact-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/residence-fact-confirmation/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Thu, 01 Oct 2026 00:00:00 +0900</pubDate>
+<description>특정 기간 동안 그 주소에서 실제로 거주했음을 본인과 확인인이 함께 적어 제출하는 거주사실 확인서입니다.</description>
+</item>
+<item>
+<title>교통법규 위반 운전자 확인서</title>
+<link>https://freeforms.kr/form/traffic-violation-driver-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/traffic-violation-driver-confirmation/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Thu, 01 Oct 2026 00:00:00 +0900</pubDate>
+<description>차량 소유자와 실제 운전자가 다를 때 위반 일시·장소와 실제 운전자 정보를 적어 제출하는 운전자 확인서입니다.</description>
+</item>
+<item>
+<title>입찰 참가 철회서</title>
+<link>https://freeforms.kr/form/bid-withdrawal-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/bid-withdrawal-request/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Thu, 01 Oct 2026 00:00:00 +0900</pubDate>
+<description>입찰 참가 신청 후 사정이 생겨 참가를 철회하거나 포기할 때 공고 정보와 철회 사유를 적어 발주처에 내는 철회서입니다.</description>
+</item>
 <item>
 <title>경력증명서 발급 요청서</title>
 <link>https://freeforms.kr/form/career-certificate-request/</link>
@@ -206,46 +246,6 @@
 <category>교육 · 학교·학원</category>
 <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
 <description>가족여행·친인척 방문 등으로 학교 밖에서 체험학습을 하는 동안 출석 인정을 신청하는 서식입니다.</description>
-</item>
-<item>
-<title>종합소득세 신고 위임장</title>
-<link>https://freeforms.kr/form/income-tax-filing-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/income-tax-filing-poa/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
-<description>종합소득세 신고를 세무대리인에게 맡길 때 납세자 정보와 위임 범위를 적는 위임장입니다.</description>
-</item>
-<item>
-<title>영업양도양수계약서</title>
-<link>https://freeforms.kr/form/business-transfer-contract/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-transfer-contract/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
-<description>상가·점포의 영업권과 시설·집기를 양도인에서 양수인에게 넘기는 조건을 정하는 영업양도양수계약서입니다.</description>
-</item>
-<item>
-<title>물품구매계약서</title>
-<link>https://freeforms.kr/form/goods-purchase-contract/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/goods-purchase-contract/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Fri, 18 Sep 2026 00:00:00 +0900</pubDate>
-<description>발주자가 공급자로부터 물품을 구매할 때 품목·수량·단가와 납품·검수, 계약보증금·지체상금을 정하는 물품구매계약서입니다.</description>
-</item>
-<item>
-<title>부가가치세 신고자료 제출확인서</title>
-<link>https://freeforms.kr/form/vat-filing-document-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vat-filing-document-confirmation/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
-<description>사업자가 부가가치세 신고를 위해 세무대리인에게 넘긴 증빙자료의 종류와 매수를 확인하는 제출확인서입니다.</description>
-</item>
-<item>
-<title>교통사고 현장확인서</title>
-<link>https://freeforms.kr/form/traffic-accident-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/traffic-accident-confirmation/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
-<description>교통사고 직후 현장에서 양측 차량·보험 정보와 사고 경위를 함께 기록해 보험사 접수 등에 쓰는 확인서입니다.</description>
 </item>
 </channel>
 </rss>

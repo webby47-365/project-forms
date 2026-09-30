@@ -110,10 +110,10 @@
       "lead": "동네 민원부터 행정처분 이의신청까지, 관공서에 내는 서식을 모았습니다.",
       "ids": [
         "civil-petition", "info-disclosure-request", "disclosure-objection",
-        "parking-fine-objection", "administrative-objection",
+        "parking-fine-objection", "traffic-violation-driver-confirmation", "administrative-objection",
         "noise-complaint", "illegal-dumping-report", "road-repair-request",
         "moving-in-report", "seal-certificate-poa",
-        "family-certificate-issuance-poa", "vehicle-registration-poa", "vehicle-deregistration-poa",
+        "family-certificate-issuance-poa", "vehicle-registration-poa", "vehicle-deregistration-poa", "permit-application-poa",
         "parking-space-consent-vehicle-registration", "bank-account-poa"
       ]
     },
