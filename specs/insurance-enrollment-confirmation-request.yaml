@@ -1,0 +1,75 @@
+id: insurance-enrollment-confirmation-request
+title: 4대보험 가입 확인 요청서
+category: public
+subcategory: insurance
+tags: [4대보험가입확인요청서, 사대보험가입확인, 보험가입내역요청, 4대보험가입증명요청, 근로자보험가입확인]
+summary: 근로자가 회사에 4대보험 가입 여부와 가입일 확인을 요청할 때 쓰는 요청서로, 확인받을 보험과 용도를 적습니다.
+usage: >
+  입사 후 4대보험이 제대로 가입되어 있는지 확인하거나 대출·계약 서류 제출용으로 가입 내역이
+  필요할 때, 근로자가 회사 담당자에게 확인을 요청하는 서식입니다. 요청인 정보와 확인받을 보험
+  종류, 필요한 이유와 회신 기한을 적습니다. 회사의 회신 방식은 자유이며, 공식 증명이 필요하면
+  각 보험 기관에서 발급하는 서류를 이용하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청인의 성명과 소속 부서, 입사일을 적습니다.
+  - 확인받고 싶은 보험 종류를 표시합니다.
+  - 확인이 필요한 이유와 회신 받을 방법을 적습니다.
+  - 회신 희망일을 적고 서명합니다.
+faq:
+  - q: 이 요청서로 공식 증명서가 나오나요?
+    a: 아닙니다. 회사에 확인을 부탁하는 요청서입니다. 공식 서류는 각 보험 기관에서 발급받아야 합니다.
+  - q: 어떤 보험을 표시하나요?
+    a: 국민연금·건강보험·고용보험·산재보험 중 확인이 필요한 것만 표시하면 됩니다.
+  - q: 회사가 답하지 않으면 어떻게 하나요?
+    a: 기관 사이트에서 본인 가입 내역을 직접 조회할 수 있는지 확인하고, 필요하면 기관에 문의하십시오.
+related: [gov-separation-confirmation, employment-certificate, social-insurance-filing-poa, career-certificate-request]
+blocks:
+  - type: doc_title
+    text: 4대보험 가입 확인 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속 부서", ""]
+      - ["입사일", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "경영지원팀"]
+      - ["", "2026-09-01", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 확인 요청 내용
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["보험 종류", "(   ) 국민연금   (   ) 건강보험   (   ) 고용보험   (   ) 산재보험"]
+      - ["확인 사항", "(   ) 가입 여부   (   ) 가입일(취득일)   (   ) 기타"]
+      - ["회신 방법", "(   ) 서면   (   ) 이메일   (   ) 구두"]
+      - ["회신 희망일", "20   년  월  일"]
+    sample_rows:
+      - ["", "( ✓ ) 국민연금   ( ✓ ) 건강보험   ( ✓ ) 고용보험   ( ✓ ) 산재보험"]
+      - ["", "( ✓ ) 가입 여부   ( ✓ ) 가입일(취득일)   (   ) 기타"]
+      - ["", "(   ) 서면   ( ✓ ) 이메일   (   ) 구두"]
+      - ["", "2026-10-08"]
+  - type: subtitle
+    text: 3. 요청 사유
+  - type: textbox
+    hint: "확인이 필요한 이유(예: 입사 후 가입 내역 확인, 서류 제출용)를 간단히 적으십시오."
+    height_mm: 28
+    sample_text: "입사 후 4대보험 가입이 정상적으로 이루어졌는지 확인하고 싶어 요청합니다."
+  - type: para
+    text: 위와 같이 4대보험 가입 내역의 확인을 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월    1 일
+  - type: sign_line
+    label: 요청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 공식 증명이 필요하면 각 보험 기관에서 발급하는 서류를 이용하십시오.
