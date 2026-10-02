@@ -1,0 +1,96 @@
+id: employment-insurance-history-request
+title: 고용보험 가입이력 확인 요청서
+category: public
+subcategory: insurance
+tags: [고용보험가입이력, 가입이력확인요청, 피보험자격이력, 고용보험이력확인서, 4대보험이력확인]
+summary: 사업장에 고용보험 가입 여부와 가입 기간을 확인해 달라고 요청하는 근로자용 확인 요청서입니다.
+usage: >
+  입사 후 고용보험에 제대로 가입됐는지, 가입 기간이 실제 근무 기간과 맞는지 사업장에 확인을 요청할 때 쓰는 문서입니다.
+  근로자의 정보와 근무 기간, 확인을 요청하는 내용을 적어 사업장 담당자에게 전달합니다. 가입 이력은 관련 기관의
+  안내에 따라 별도로 조회할 수도 있으므로 요청서와 함께 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+
+howto:
+  - 근로자의 성명·연락처와 입사일을 적습니다.
+  - 사업장 이름과 담당자를 적습니다.
+  - 확인을 요청할 항목에 표시합니다.
+  - 요청일을 적고 근로자가 서명합니다.
+
+faq:
+  - q: 사업장이 확인해 주지 않으면 어떻게 하나요?
+    a: 가입 이력은 관련 기관에 문의해 확인할 수 있으니 기관 안내를 확인하십시오.
+  - q: 가입 기간이 근무 기간과 다르면요?
+    a: 먼저 사업장에 정정 가능 여부를 문의하고, 해결되지 않으면 관련 기관에 상담하십시오.
+  - q: 생년월일을 적어야 하나요?
+    a: 본인 확인용으로 생년월일만 적습니다. 주민등록번호는 적지 않습니다.
+
+related: [insurance-enrollment-confirmation-request, social-insurance-filing-poa, separation-certificate-request, employment-certificate]
+
+blocks:
+  - type: doc_title
+    text: 고용보험 가입이력 확인 요청서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 요청인 (근로자)
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "입사일", ""]
+    sample_rows:
+      - ["", "이수현", "", "1994-04-12"]
+      - ["", "010-3456-7890", "", "2025-03-03"]
+
+  - type: subtitle
+    text: 2. 사업장
+
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["사업장명", "", "담당 부서", ""]
+      - ["담당자", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "인사팀"]
+      - ["", "김서연", "", "02-123-4567"]
+
+  - type: subtitle
+    text: 3. 확인 요청 내용
+
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["확인 항목", "(   ) 가입 여부   (   ) 취득일(가입 시작일)   (   ) 상실일   (   ) 기타"]
+      - ["회신 방법", "(   ) 서면   (   ) 이메일   (   ) 기타"]
+    sample_rows:
+      - ["", "( ✓ ) 가입 여부   ( ✓ ) 취득일(가입 시작일)   (   ) 상실일   (   ) 기타"]
+      - ["", "(   ) 서면   ( ✓ ) 이메일   (   ) 기타"]
+
+  - type: textbox
+    hint: "요청 사유와 추가로 확인이 필요한 내용을 적으십시오."
+    height_mm: 24
+    sample_text: 입사일과 고용보험 가입 시작일이 일치하는지 확인하고 싶습니다.
+
+  - type: para
+    text: 위와 같이 고용보험 가입 이력의 확인을 요청합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년   10 월    2 일
+
+  - type: sign_line
+    label: 요청인
+    sample_names: [이수현]
+
+  - type: notice
+    text: 가입 이력은 관련 기관 안내에 따라 별도로 조회할 수 있습니다.
