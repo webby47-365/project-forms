@@ -1,0 +1,88 @@
+id: annual-leave-timing-designation-notice
+title: 연차 사용 시기 지정 통보서 (2차)
+category: corp
+subcategory: hr
+tags: [연차시기지정, 연차촉진2차, 연차사용시기지정통보, 연차지정통보서, 미사용연차]
+summary: 1차 촉구 뒤에도 사용 시기가 정해지지 않은 연차에 대해 회사가 사용 일자를 지정해 알리는 2차 통보서입니다.
+usage: >
+  1차 촉구 뒤 근로자가 사용 시기를 알려 오지 않았을 때 회사가 남은 연차의 사용 날짜를 직접
+  정해 서면으로 알리는 통보서입니다. 근로자별로 남은 일수와 지정한 날짜를 적고, 1차 통지를
+  한 날짜를 함께 남겨 둡니다. 날짜는 업무 사정을 살펴 현실적으로 정하고 교부 사실을 서명이나
+  전달 기록으로 보관하십시오. 통보 시기는 근로기준법과 고용노동부 안내를 확인하십시오.
+source: law-standard
+source_note: 근로기준법 제61조(연차 유급휴가의 사용 촉진)
+featured: false
+target_pages: 1
+series: annual-leave-promotion
+series_name: 연차 사용 촉진 통지서
+variant: 2차 시기 지정
+variant_rank: 2
+variant_use: 회신이 없을 때 회사가 사용 날짜를 지정해 통보할 때 씁니다.
+
+howto:
+  - 근로자의 부서·직위·성명을 적습니다.
+  - 1차 통지를 한 날짜와 남은 연차 일수를 적습니다.
+  - 회사가 지정한 연차 사용 날짜를 표에 적습니다.
+  - 통보일을 적고 대표 이름을 쓴 뒤 근로자에게 교부합니다.
+
+faq:
+  - q: 지정한 날짜를 나중에 바꿀 수 있나요?
+    a: 근로자와 협의해 바꿀 수 있습니다. 바꾼 내용은 문서로 다시 남겨 두십시오.
+  - q: 1차 통지를 하지 않고 바로 2차를 해도 되나요?
+    a: 단계별 절차가 정해져 있으므로 근로기준법과 고용노동부 안내를 먼저 확인하십시오.
+
+related: [annual-leave-plan, leave-request, employee-roster, severance-calculation]
+
+blocks:
+  - type: doc_title
+    text: 연차 사용 시기 지정 통보서 (2차)
+    spaced: false
+
+  - type: subtitle
+    text: 1. 대상 근로자
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["부서(팀)", "", "직위", ""]
+      - ["성명", "", "1차 통지일", ""]
+      - ["남은 연차", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "영업지원팀", "", "대리"]
+      - ["", "홍길동", "", "2026-10-16"]
+      - ["", "11일", "", ""]
+
+  - type: subtitle
+    text: 2. 회사가 지정한 사용 일자
+
+  - type: table
+    widths: [10, 50, 15, 25]
+    header: ["No", 사용 일자, 일수, 비고]
+    empty_rows: 5
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "2026-12-21 ~ 2026-12-23", "3일", ""]
+      - ["2", "2027-01-04 ~ 2027-01-08", "5일", ""]
+      - ["3", "2027-02-15 ~ 2027-02-17", "3일", ""]
+
+  - type: subtitle
+    text: 3. 통보 내용
+
+  - type: textbox
+    hint: "지정한 날짜에 연차를 사용하도록 알리는 문구를 적으십시오."
+    height_mm: 22
+    sample_text: "1차 통지 후 사용 시기를 알려 오지 않아 위와 같이 남은 연차의 사용 일자를 지정하여 통보합니다."
+
+  - type: date_line
+    sample_text: 2026 년   12 월    1 일
+
+  - type: sign_line
+    labels: ["회사 대표", "수령 근로자"]
+    sample_names: [김서연, 홍길동]
+
+  - type: notice
+    text: 통보 시기와 방식은 근로기준법과 고용노동부 안내를 확인하십시오. 교부 기록을 보관하십시오.

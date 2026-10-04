@@ -1,0 +1,88 @@
+id: business-premises-restoration-confirmation
+title: 영업장 원상복구 확인서
+category: public
+subcategory: permit
+tags: [원상복구확인서, 영업장원상복구, 폐업원상복구, 철거확인서, 점포반환확인]
+summary: 폐업이나 이전 뒤 영업장을 원래 상태로 돌려놓았음을 임차인과 임대인이 함께 확인하는 확인서입니다.
+usage: >
+  가게를 닫거나 옮기면서 시설을 철거하고 원래 상태로 돌려놓은 뒤, 그 사실을 임대인과 함께
+  확인해 남기는 서식입니다. 영업장 주소와 업종, 철거한 시설, 복구 완료일을 적고 임차인과
+  임대인이 서명합니다. 보증금 정산이나 폐업 신고 서류로 요구받는 경우가 있으니 제출처 요구를
+  확인하십시오. 복구 범위에 이견이 있으면 사진을 함께 보관하는 것이 좋습니다.
+source: original
+featured: false
+target_pages: 1
+
+howto:
+  - 영업장 주소와 업종, 영업자 이름을 적습니다.
+  - 철거하거나 복구한 시설 항목을 표에 적습니다.
+  - 복구를 마친 날짜를 적고 임대인이 현장을 확인합니다.
+  - 임차인과 임대인이 서명하고 각자 한 부씩 보관합니다.
+
+faq:
+  - q: 사진도 같이 보관하나요?
+    a: 복구 전후 사진을 날짜와 함께 보관하면 나중에 범위 다툼이 있을 때 도움이 됩니다.
+  - q: 보증금 정산에 쓸 수 있나요?
+    a: 복구 완료를 확인하는 자료로 쓸 수 있으나 정산 방식은 임대차 계약 내용을 따릅니다.
+
+related: [move-out-checklist, business-closure-poa, deposit-return-notice, commercial-lease-contract]
+
+blocks:
+  - type: doc_title
+    text: 영업장 원상복구 확인서
+    spaced: false
+
+  - type: subtitle
+    text: 1. 영업장 정보
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["상호", "", "업종", ""]
+      - ["소재지", "", "", ""]
+      - ["임차인", "", "임대인", ""]
+    sample_rows:
+      - ["", "한빛식당", "", "일반음식점"]
+      - ["", "서울특별시 마포구 월드컵북로 50 1층", "", ""]
+      - ["", "홍길동", "", "이수현"]
+
+  - type: subtitle
+    text: 2. 철거·복구 내역
+
+  - type: table
+    widths: [10, 30, 40, 20]
+    header: ["No", 항목, 복구 내용, 확인]
+    empty_rows: 6
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "간판", "철거 후 외벽 보수", "완료"]
+      - ["2", "주방 설비", "철거 및 바닥 정리", "완료"]
+      - ["3", "내부 칸막이", "철거 및 도장", "완료"]
+
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["복구 완료일", ""]
+    sample_rows:
+      - ["", "2026-09-28"]
+
+  - type: para
+    text: 위 영업장이 위 내역대로 원상복구되었음을 확인합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년    9 월   28 일
+
+  - type: sign_line
+    labels: ["임차인", "임대인"]
+    sample_names: [홍길동, 이수현]
+
+  - type: notice
+    text: 복구 범위는 임대차 계약서 내용을 따르며, 제출처 요구 서류는 제출처에 확인하십시오.

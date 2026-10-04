@@ -1,0 +1,86 @@
+id: household-head-change-consent
+title: 세대주 변경 동의서
+category: public
+subcategory: family
+tags: [세대주변경동의서, 세대주변경, 세대주동의, 세대원동의서, 세대주 변경 확인]
+summary: 세대주를 바꾸는 것에 세대원이 동의한다는 내용을 적는 동의서입니다.
+usage: >
+  같은 세대에 사는 사람들이 세대주를 새로 정하거나 바꿀 때 세대원의 동의를 문서로 남기는 서식입니다.
+  현재 세대주와 변경 후 세대주, 변경 사유와 세대원 명단을 적고 동의하는 사람이 각자 서명합니다.
+  세대주 변경 신고 절차와 필요 서류는 주민센터마다 안내가 다를 수 있으므로 신고 전에 확인하십시오.
+  이 동의서는 동의 사실을 정리하는 용도이며 신고 자체를 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+
+howto:
+  - 현재 세대주와 변경 후 세대주의 이름을 적습니다.
+  - 변경하려는 이유를 간단히 적습니다.
+  - 세대원 명단을 적고 각자 서명합니다.
+  - 날짜를 적은 뒤 신고 때 필요한 서류와 함께 보관합니다.
+
+faq:
+  - q: 이 동의서만 내면 세대주가 바뀌나요?
+    a: 아닙니다. 세대주 변경은 별도의 신고 절차가 필요하므로 주민센터 안내를 확인하십시오.
+  - q: 미성년 세대원도 서명해야 하나요?
+    a: 제출처 기준에 따라 다르므로 보호자 서명 여부를 주민센터에 확인하십시오.
+
+related: [moving-in-report, move-in-report-poa, gov-resident-register-copy]
+
+blocks:
+  - type: doc_title
+    text: 세대주 변경 동의서
+    spaced: true
+
+  - type: subtitle
+    text: 1. 세대 현황
+
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["현 세대주", "", "변경 후 세대주", ""]
+      - ["관계", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "김서연"]
+      - ["", "배우자", "", "010-2345-6789"]
+      - ["", "서울특별시 마포구 월드컵북로 50 101동 502호", "", ""]
+
+  - type: subtitle
+    text: 2. 변경 사유
+
+  - type: textbox
+    hint: "세대주를 바꾸려는 이유를 간단히 적으십시오."
+    height_mm: 20
+    sample_text: "현 세대주의 해외 근무로 변경 후 세대주가 세대를 관리하기 위함입니다."
+
+  - type: subtitle
+    text: 3. 동의하는 세대원
+
+  - type: table
+    widths: [10, 25, 20, 25, 20]
+    header: ["No", 성명, 관계, 생년월일, 서명]
+    empty_rows: 5
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "홍길동", "본인", "1985-11-02", ""]
+      - ["2", "박민준", "자녀", "2012-05-20", ""]
+
+  - type: para
+    text: 위 세대원은 세대주를 위와 같이 변경하는 데 동의합니다.
+    align: center
+    size: 11
+
+  - type: date_line
+    sample_text: 2026 년   10 월    4 일
+
+  - type: sign_line
+    labels: ["현 세대주", "변경 후 세대주"]
+    sample_names: [홍길동, 김서연]
+
+  - type: notice
+    text: 세대주 변경 신고 방법과 필요 서류는 주민센터 안내를 확인하십시오.

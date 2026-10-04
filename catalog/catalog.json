@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T08:15:42+09:00",
-  "count": 318,
+  "generated_at": "2026-10-04T12:03:01+09:00",
+  "count": 323,
   "forms": [
     {
       "id": "academy-attendance",
@@ -547,6 +547,207 @@
         "employee-roster"
       ],
       "seal": true
+    },
+    {
+      "id": "annual-leave-promotion-notice",
+      "title": "연차 사용 촉진 통지서 (1차)",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차촉진통지서",
+        "연차사용촉진",
+        "미사용연차",
+        "연차수당",
+        "연차소멸",
+        "1차촉진"
+      ],
+      "summary": "근로자별 미사용 연차 일수를 알리고 사용 시기를 정해 알려 달라고 서면으로 촉구하는 1차 통지서입니다.",
+      "usage": "연차휴가 사용 기간이 끝나기 전에 회사가 근로자에게 남은 연차 일수를 알리고 사용 시기를 정해 회신해 달라고 요청할 때 쓰는 통지서입니다. 근로자별로 발생 일수, 사용 일수, 미사용 일수를 적고 회신 기한을 정해 한 장씩 교부합니다. 통지 날짜와 받은 사람의 서명을 남겨 두어야 나중에 통지 사실을 보여 줄 수 있습니다. 통지 시기와 방식은 근로기준법과 고용노동부 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 43579,
+        "docx": 38540,
+        "hwpx": 9654
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "annual-leave-promotion",
+      "series_name": "연차 사용 촉진 통지서",
+      "variant": "1차 촉구",
+      "variant_rank": 1,
+      "variant_use": "미사용 연차를 알리고 사용 시기를 회신받을 때 씁니다.",
+      "howto": [
+        "근로자의 부서·직위·성명과 연차 발생 기간을 적습니다.",
+        "발생·사용·미사용 연차 일수를 적습니다.",
+        "근로자가 사용 시기를 회신할 기한을 적습니다.",
+        "통지일과 회사 대표 이름을 적고 근로자에게 교부해 수령 서명을 받습니다."
+      ],
+      "faq": [
+        {
+          "q": "모든 근로자에게 같은 통지서를 돌려도 되나요?",
+          "a": "일수가 근로자마다 다르므로 근로자별로 따로 작성해 교부하는 것이 안전합니다."
+        },
+        {
+          "q": "근로자가 서명을 거부하면 어떻게 하나요?",
+          "a": "교부한 날짜와 방법을 기록하고, 이메일 등 전달 기록을 함께 보관하십시오."
+        },
+        {
+          "q": "통지 시기는 언제인가요?",
+          "a": "사용 기간 만료 전의 법정 시기가 정해져 있으므로 근로기준법과 고용노동부 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 대상 근로자",
+          "items": [
+            "부서(팀)",
+            "직위",
+            "성명",
+            "입사일",
+            "연차 사용기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연차휴가 현황",
+          "items": [
+            "발생 일수",
+            "사용 일수",
+            "미사용 일수",
+            "회신 기한"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 통지 내용",
+          "items": [],
+          "note": "남은 연차의 사용 시기를 정해 회신 기한까지 회사에 알려 주십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-plan",
+        "leave-request",
+        "employee-roster",
+        "severance-calculation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "근로기준법 제61조(연차 유급휴가의 사용 촉진)",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-04T12:02:21+09:00",
+      "updated_at": "2026-10-04T12:02:21+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-timing-designation-notice",
+      "title": "연차 사용 시기 지정 통보서 (2차)",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차시기지정",
+        "연차촉진2차",
+        "연차사용시기지정통보",
+        "연차지정통보서",
+        "미사용연차"
+      ],
+      "summary": "1차 촉구 뒤에도 사용 시기가 정해지지 않은 연차에 대해 회사가 사용 일자를 지정해 알리는 2차 통보서입니다.",
+      "usage": "1차 촉구 뒤 근로자가 사용 시기를 알려 오지 않았을 때 회사가 남은 연차의 사용 날짜를 직접 정해 서면으로 알리는 통보서입니다. 근로자별로 남은 일수와 지정한 날짜를 적고, 1차 통지를 한 날짜를 함께 남겨 둡니다. 날짜는 업무 사정을 살펴 현실적으로 정하고 교부 사실을 서명이나 전달 기록으로 보관하십시오. 통보 시기는 근로기준법과 고용노동부 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48237,
+        "docx": 38671,
+        "hwpx": 9941
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "annual-leave-promotion",
+      "series_name": "연차 사용 촉진 통지서",
+      "variant": "2차 시기 지정",
+      "variant_rank": 2,
+      "variant_use": "회신이 없을 때 회사가 사용 날짜를 지정해 통보할 때 씁니다.",
+      "howto": [
+        "근로자의 부서·직위·성명을 적습니다.",
+        "1차 통지를 한 날짜와 남은 연차 일수를 적습니다.",
+        "회사가 지정한 연차 사용 날짜를 표에 적습니다.",
+        "통보일을 적고 대표 이름을 쓴 뒤 근로자에게 교부합니다."
+      ],
+      "faq": [
+        {
+          "q": "지정한 날짜를 나중에 바꿀 수 있나요?",
+          "a": "근로자와 협의해 바꿀 수 있습니다. 바꾼 내용은 문서로 다시 남겨 두십시오."
+        },
+        {
+          "q": "1차 통지를 하지 않고 바로 2차를 해도 되나요?",
+          "a": "단계별 절차가 정해져 있으므로 근로기준법과 고용노동부 안내를 먼저 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 대상 근로자",
+          "items": [
+            "부서(팀)",
+            "직위",
+            "성명",
+            "1차 통지일",
+            "남은 연차"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 회사가 지정한 사용 일자",
+          "items": [
+            "사용 일자",
+            "일수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 통보 내용",
+          "items": [],
+          "note": "지정한 날짜에 연차를 사용하도록 알리는 문구를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-plan",
+        "leave-request",
+        "employee-roster",
+        "severance-calculation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "근로기준법 제61조(연차 유급휴가의 사용 촉진)",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-04T12:02:27+09:00",
+      "updated_at": "2026-10-04T12:03:01+09:00",
+      "downloads": 0
     },
     {
       "id": "answer-brief",
@@ -2637,6 +2838,102 @@
       "downloads": 0
     },
     {
+      "id": "business-license-reissue-request",
+      "title": "영업신고증 재발급 신청서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "영업신고증재발급",
+        "영업허가증재발급",
+        "신고필증분실",
+        "영업신고증분실",
+        "재교부신청"
+      ],
+      "summary": "분실하거나 훼손한 영업신고증(허가증)의 재발급을 관할 기관에 요청하는 신청서입니다.",
+      "usage": "영업신고증이나 허가증을 잃어버렸거나 찢어져 못 쓰게 되었을 때 관할 기관에 재발급을 요청하는 신청서입니다. 영업자 정보와 영업장 주소, 기존 신고번호, 재발급 사유를 적고 신분증 등 제출처가 요구하는 서류를 함께 냅니다. 업종과 지자체마다 접수 방식과 수수료가 다르므로 접수 전에 관할 기관의 안내를 확인하십시오. 분실한 경우 재발급 뒤 예전 증서를 다시 찾아도 사용하지 않도록 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 41970,
+        "docx": 38506,
+        "hwpx": 9528
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "영업자의 성명과 연락처, 상호를 적습니다.",
+        "영업장 소재지와 기존 신고번호를 적습니다.",
+        "재발급 사유를 분실·훼손 중에서 고릅니다.",
+        "날짜와 신청인 서명을 하고 관할 기관에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "신고번호를 모르면 어떻게 하나요?",
+          "a": "비워 두고 상호와 영업장 주소를 정확히 적으면 관할 기관에서 확인해 줄 수 있습니다."
+        },
+        {
+          "q": "수수료가 있나요?",
+          "a": "업종과 지자체에 따라 다르므로 접수 전에 관할 기관에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인(영업자)",
+          "items": [
+            "성명",
+            "생년월일",
+            "상호",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 영업 내용",
+          "items": [
+            "업종",
+            "영업장 소재지",
+            "기존 신고번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 재발급 사유",
+          "items": [],
+          "note": "분실·훼손 경위와 시기를 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-report-agent-poa",
+        "permit-application-poa",
+        "business-registration-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-04T12:02:35+09:00",
+      "updated_at": "2026-10-04T12:02:35+09:00",
+      "downloads": 0
+    },
+    {
       "id": "business-permit-name-change-consent",
       "title": "영업허가(신고) 명의변경 동의서",
       "category": "public",
@@ -2985,6 +3282,100 @@
         "sales-plan"
       ],
       "seal": true
+    },
+    {
+      "id": "business-premises-restoration-confirmation",
+      "title": "영업장 원상복구 확인서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "원상복구확인서",
+        "영업장원상복구",
+        "폐업원상복구",
+        "철거확인서",
+        "점포반환확인"
+      ],
+      "summary": "폐업이나 이전 뒤 영업장을 원래 상태로 돌려놓았음을 임차인과 임대인이 함께 확인하는 확인서입니다.",
+      "usage": "가게를 닫거나 옮기면서 시설을 철거하고 원래 상태로 돌려놓은 뒤, 그 사실을 임대인과 함께 확인해 남기는 서식입니다. 영업장 주소와 업종, 철거한 시설, 복구 완료일을 적고 임차인과 임대인이 서명합니다. 보증금 정산이나 폐업 신고 서류로 요구받는 경우가 있으니 제출처 요구를 확인하십시오. 복구 범위에 이견이 있으면 사진을 함께 보관하는 것이 좋습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48443,
+        "docx": 38633,
+        "hwpx": 9977
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "영업장 주소와 업종, 영업자 이름을 적습니다.",
+        "철거하거나 복구한 시설 항목을 표에 적습니다.",
+        "복구를 마친 날짜를 적고 임대인이 현장을 확인합니다.",
+        "임차인과 임대인이 서명하고 각자 한 부씩 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "사진도 같이 보관하나요?",
+          "a": "복구 전후 사진을 날짜와 함께 보관하면 나중에 범위 다툼이 있을 때 도움이 됩니다."
+        },
+        {
+          "q": "보증금 정산에 쓸 수 있나요?",
+          "a": "복구 완료를 확인하는 자료로 쓸 수 있으나 정산 방식은 임대차 계약 내용을 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 영업장 정보",
+          "items": [
+            "상호",
+            "업종",
+            "소재지",
+            "임차인",
+            "임대인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 철거·복구 내역",
+          "items": [
+            "항목",
+            "복구 내용",
+            "확인",
+            "복구 완료일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "move-out-checklist",
+        "business-closure-poa",
+        "deposit-return-notice",
+        "commercial-lease-contract"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-04T12:02:49+09:00",
+      "updated_at": "2026-10-04T12:02:49+09:00",
+      "downloads": 0
     },
     {
       "id": "business-reg-checklist",
@@ -15093,6 +15484,103 @@
         "checklist"
       ],
       "seal": false
+    },
+    {
+      "id": "household-head-change-consent",
+      "title": "세대주 변경 동의서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "세대주변경동의서",
+        "세대주변경",
+        "세대주동의",
+        "세대원동의서",
+        "세대주 변경 확인"
+      ],
+      "summary": "세대주를 바꾸는 것에 세대원이 동의한다는 내용을 적는 동의서입니다.",
+      "usage": "같은 세대에 사는 사람들이 세대주를 새로 정하거나 바꿀 때 세대원의 동의를 문서로 남기는 서식입니다. 현재 세대주와 변경 후 세대주, 변경 사유와 세대원 명단을 적고 동의하는 사람이 각자 서명합니다. 세대주 변경 신고 절차와 필요 서류는 주민센터마다 안내가 다를 수 있으므로 신고 전에 확인하십시오. 이 동의서는 동의 사실을 정리하는 용도이며 신고 자체를 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50110,
+        "docx": 38670,
+        "hwpx": 10034
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "현재 세대주와 변경 후 세대주의 이름을 적습니다.",
+        "변경하려는 이유를 간단히 적습니다.",
+        "세대원 명단을 적고 각자 서명합니다.",
+        "날짜를 적은 뒤 신고 때 필요한 서류와 함께 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 동의서만 내면 세대주가 바뀌나요?",
+          "a": "아닙니다. 세대주 변경은 별도의 신고 절차가 필요하므로 주민센터 안내를 확인하십시오."
+        },
+        {
+          "q": "미성년 세대원도 서명해야 하나요?",
+          "a": "제출처 기준에 따라 다르므로 보호자 서명 여부를 주민센터에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 세대 현황",
+          "items": [
+            "현 세대주",
+            "변경 후 세대주",
+            "관계",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 변경 사유",
+          "items": [],
+          "note": "세대주를 바꾸려는 이유를 간단히 적으십시오."
+        },
+        {
+          "title": "3. 동의하는 세대원",
+          "items": [
+            "성명",
+            "생년월일",
+            "서명"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "moving-in-report",
+        "move-in-report-poa",
+        "gov-resident-register-copy"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-04T12:02:41+09:00",
+      "updated_at": "2026-10-04T12:02:41+09:00",
+      "downloads": 0
     },
     {
       "id": "housing-lease-contract",
