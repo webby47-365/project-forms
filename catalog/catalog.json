@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T12:03:01+09:00",
-  "count": 323,
+  "generated_at": "2026-10-06T08:18:04+09:00",
+  "count": 328,
   "forms": [
     {
       "id": "academy-attendance",
@@ -650,6 +650,111 @@
       "warnings": [],
       "created_at": "2026-10-04T12:02:21+09:00",
       "updated_at": "2026-10-04T12:02:21+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-reply",
+      "title": "연차 사용 시기 회신서 (근로자용)",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차사용시기회신서",
+        "연차촉진회신",
+        "연차사용계획회신",
+        "연차사용시기",
+        "연차휴가회신"
+      ],
+      "summary": "회사의 연차 사용 촉진 통지를 받은 근로자가 남은 연차를 언제 쓸지 정해 회사에 알리는 회신서입니다.",
+      "usage": "회사로부터 미사용 연차 일수와 사용 시기를 정해 알려 달라는 통지를 받았을 때, 근로자가 남은 연차를 쓸 날짜를 적어 회사에 돌려주는 서식입니다. 통지서에 적힌 미사용 일수를 먼저 옮겨 적고, 사용할 날짜를 날짜별로 나누어 적습니다. 회신 기한 안에 제출하고, 접수 확인을 받거나 이메일 등 제출 기록을 남겨 두면 좋습니다. 회신 방식과 기한은 회사 안내와 고용노동부 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54304,
+        "docx": 38759,
+        "hwpx": 10145
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "소속과 성명, 받은 통지서의 통지일을 적습니다.",
+        "통지서에 적힌 미사용 연차 일수를 옮겨 적습니다.",
+        "연차를 쓸 날짜를 날짜별로 나누어 적습니다.",
+        "회신 기한 안에 서명하여 회사 담당자에게 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "사용 날짜를 다 정하지 못했으면 어떻게 하나요?",
+          "a": "정한 날짜만 먼저 적어 기한 안에 내고, 나머지는 담당자와 협의해 추가로 알리면 됩니다."
+        },
+        {
+          "q": "회신서를 이메일로 보내도 되나요?",
+          "a": "회사가 허용하는 방식이면 가능합니다. 보낸 기록은 따로 보관해 두십시오."
+        },
+        {
+          "q": "업무 때문에 정한 날짜에 못 쓰면 어떻게 하나요?",
+          "a": "담당자와 협의해 날짜를 바꾸고, 바뀐 내용을 서면으로 남기는 것이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 회신인",
+          "items": [
+            "부서(팀)",
+            "직위",
+            "성명",
+            "통지서 수령일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연차휴가 현황",
+          "items": [
+            "발생 일수",
+            "사용 일수",
+            "미사용 일수",
+            "회신 기한"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 연차 사용 예정일",
+          "items": [
+            "사용 기간",
+            "일수"
+          ],
+          "note": "회사에 전달할 사항(업무 조정, 협의 요청 등)이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-promotion-notice",
+        "annual-leave-plan",
+        "leave-request",
+        "annual-leave-timing-designation-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-06T08:16:50+09:00",
+      "updated_at": "2026-10-06T08:17:57+09:00",
       "downloads": 0
     },
     {
@@ -17692,6 +17797,102 @@
       "seal": true
     },
     {
+      "id": "lawsuit-withdrawal",
+      "title": "소취하서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "소취하서",
+        "소송취하",
+        "소취하",
+        "소송취하서",
+        "민사소송취하"
+      ],
+      "summary": "이미 제기한 민사소송을 원고가 스스로 거두어들일 때 법원에 내는 소취하서 양식입니다.",
+      "usage": "합의가 이루어졌거나 소송을 계속할 이유가 없어져 제기한 소를 거두려 할 때 법원에 제출하는 서류입니다. 사건번호와 사건명, 당사자를 정확히 적고 취하하는 범위와 사유를 짧게 씁니다. 상대방이 이미 답변서를 낸 경우에는 취하에 상대방 동의가 필요할 수 있으므로 담당 재판부의 안내를 확인하십시오. 본 서식은 참고용이며 제출 전 최신 양식과 방식을 법원 안내에서 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 36879,
+        "docx": 38464,
+        "hwpx": 9504
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "법원 이름과 사건번호, 사건명을 소장 기록대로 적습니다.",
+        "원고와 피고의 이름을 적습니다.",
+        "취하할 범위(전부 또는 일부)와 취하 사유를 적습니다.",
+        "날짜를 적고 원고가 서명 또는 날인하여 재판부에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "취하하면 소송비용은 어떻게 되나요?",
+          "a": "비용 부담은 별도로 정해질 수 있습니다. 합의서가 있다면 비용 부담 내용도 함께 확인하십시오."
+        },
+        {
+          "q": "상대방 동의가 꼭 필요한가요?",
+          "a": "상대방이 답변서 등을 낸 뒤라면 동의가 필요할 수 있습니다. 재판부 안내를 확인하십시오."
+        },
+        {
+          "q": "취하서 제출 후 같은 소를 다시 낼 수 있나요?",
+          "a": "상황에 따라 제한이 있을 수 있으므로 제출 전에 법원이나 전문가에게 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사건 표시",
+          "items": [
+            "법원",
+            "사건번호",
+            "사건명",
+            "원고",
+            "피고"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 취하 내용",
+          "items": [
+            "취하 범위",
+            "취하 사유"
+          ],
+          "note": "필요하면 취하하게 된 경위를 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "small-claims-complaint",
+        "payment-order-application",
+        "preparatory-brief",
+        "settlement-agreement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "law-standard",
+      "source_note": "민사소송법 제266조(소의 취하) 규정을 참고하여 자체 제작",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-06T08:16:56+09:00",
+      "updated_at": "2026-10-06T08:16:56+09:00",
+      "downloads": 0
+    },
+    {
       "id": "lease-renewal-contract",
       "title": "임대차 계약 갱신계약서",
       "category": "estate",
@@ -20715,6 +20916,110 @@
         "moving-checklist"
       ],
       "seal": true
+    },
+    {
+      "id": "national-pension-history-poa",
+      "title": "국민연금 가입내역 확인서 발급 위임장",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "국민연금가입내역위임장",
+        "연금가입내역확인서",
+        "국민연금대리발급",
+        "가입증명위임장",
+        "국민연금위임장"
+      ],
+      "summary": "국민연금 가입내역 확인서 발급을 가족이나 대리인에게 맡길 때 위임 범위와 제출 용도를 적는 위임장입니다.",
+      "usage": "이직·대출·공공기관 제출 등으로 국민연금 가입내역 확인서가 필요한데 직접 방문이 어려울 때 대리인에게 발급을 맡기는 위임장입니다. 위임인과 대리인 정보, 필요한 서류의 용도와 통수, 위임 기간을 적고 위임인이 서명 또는 날인합니다. 대리 발급 시 요구되는 신분증과 서류는 기관별로 다를 수 있으므로 발급 기관 안내를 먼저 확인하십시오. 이 서식에는 주민등록번호를 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50777,
+        "docx": 38696,
+        "hwpx": 9824
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인의 성명과 생년월일, 연락처를 적습니다.",
+        "대리인의 성명과 위임인과의 관계를 적습니다.",
+        "필요한 서류의 용도와 통수, 제출처를 적습니다.",
+        "위임 기간을 적고 위임인이 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "주민등록번호를 적어야 하나요?",
+          "a": "이 서식에는 적는 칸이 없습니다. 기관이 본인 확인을 요구하면 창구에서 별도로 확인합니다."
+        },
+        {
+          "q": "위임장이 있으면 신분증 없이 가능한가요?",
+          "a": "대개 신분증 확인이 필요합니다. 방문 전에 필요한 서류를 기관에 문의하십시오."
+        },
+        {
+          "q": "발급 용도는 무엇을 적나요?",
+          "a": "제출처가 요구한 목적을 그대로 적습니다. 예를 들어 이직 서류나 대출 심사 제출용입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대리인",
+          "items": [
+            "위임인과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "서류 종류",
+            "발급 용도",
+            "제출처",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-pension-exemption",
+        "social-insurance-filing-poa",
+        "employment-insurance-history-request",
+        "insurance-enrollment-confirmation-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-06T08:17:10+09:00",
+      "updated_at": "2026-10-06T08:17:46+09:00",
+      "downloads": 0
     },
     {
       "id": "nda",
@@ -30622,6 +30927,113 @@
       "seal": true
     },
     {
+      "id": "tax-clearance-certificate-poa",
+      "title": "납세증명서 발급 위임장",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "납세증명서위임장",
+        "납세증명서대리발급",
+        "국세완납증명위임장",
+        "완납증명서위임장",
+        "납세증명위임"
+      ],
+      "summary": "납세증명서 발급을 대리인에게 맡길 때 위임 범위와 제출 용도를 적는 위임장입니다.",
+      "usage": "계약 체결이나 입찰, 대출 심사 등에 납세증명서가 필요한데 직접 세무서에 가기 어려울 때 대리인에게 발급을 맡기는 위임장입니다. 위임인과 대리인 정보, 납세증명서의 용도와 통수, 위임 기간을 적고 위임인이 서명 또는 날인합니다. 대리 발급에 필요한 신분증·사본 등은 기관마다 다를 수 있으므로 발급 기관 안내를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51890,
+        "docx": 38733,
+        "hwpx": 9897
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인의 성명과 사업자(또는 법인) 정보를 적습니다.",
+        "대리인의 성명과 위임인과의 관계를 적습니다.",
+        "납세증명서의 용도와 통수, 제출처를 적습니다.",
+        "위임 기간을 적고 위임인이 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "용도는 꼭 적어야 하나요?",
+          "a": "발급 신청 때 용도를 묻는 경우가 많으므로 제출처와 함께 적어 두는 것이 좋습니다."
+        },
+        {
+          "q": "법인도 이 위임장을 쓸 수 있나요?",
+          "a": "법인명과 대표자 이름을 적고 법인 도장을 찍어 쓰면 됩니다. 기관 요구 서류를 확인하십시오."
+        },
+        {
+          "q": "대리인 신분증이 필요한가요?",
+          "a": "기관에서 대리인 신분증을 요구할 수 있으니 방문 전에 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인",
+          "items": [
+            "성명(상호)",
+            "대표자",
+            "주소",
+            "사업자등록번호",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대리인",
+          "items": [
+            "성명",
+            "생년월일",
+            "위임인과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "서류 종류",
+            "용도",
+            "제출처",
+            "위임 기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vat-filing-poa",
+        "withholding-tax-filing-poa",
+        "business-registration-poa",
+        "gov-bid-participation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-06T08:17:03+09:00",
+      "updated_at": "2026-10-06T08:17:03+09:00",
+      "downloads": 0
+    },
+    {
       "id": "tax-invoice",
       "title": "세금계산서 (수기)",
       "category": "corp",
@@ -32857,6 +33269,111 @@
       "warnings": [],
       "created_at": "2026-09-16T08:19:36+09:00",
       "updated_at": "2026-09-16T08:19:36+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "vehicle-use-consent",
+      "title": "자동차 사용 승낙서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차사용승낙서",
+        "차량사용승낙서",
+        "차량운행동의서",
+        "차량빌려쓰기",
+        "자동차대여동의"
+      ],
+      "summary": "차량 소유자가 다른 사람에게 일정 기간 차량 사용을 허락할 때 기간·범위·책임 사항을 적는 승낙서입니다.",
+      "usage": "가족이나 지인, 직원에게 차량을 빌려주거나 업무용으로 쓰게 할 때 사용 허락의 범위를 남기는 서식입니다. 소유자와 사용자 정보, 차량번호와 차종, 사용 기간과 목적을 적고 사고·과태료 처리 기준을 미리 정해 적어 둡니다. 보험 적용 범위(운전자 한정 등)는 보험사 약관에 따라 달라지므로 사용 전에 보험사에 확인하십시오. 본 서식은 합의 내용을 기록하는 틀이며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45446,
+        "docx": 38601,
+        "hwpx": 9753
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "차량 소유자와 사용자의 성명과 연락처를 적습니다.",
+        "차량번호와 차종, 사용 목적을 적습니다.",
+        "사용 기간과 반납 시기를 적습니다.",
+        "사고·과태료 처리 방법을 정해 적고 두 사람이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "보험이 알아서 적용되나요?",
+          "a": "운전자 연령·범위 한정 여부에 따라 다릅니다. 사용 전에 보험사에 확인하십시오."
+        },
+        {
+          "q": "과태료는 누가 내나요?",
+          "a": "서로 합의한 내용을 특약란에 적어 두면 분쟁을 줄일 수 있습니다. 기준은 당사자가 정합니다."
+        },
+        {
+          "q": "사용 기간이 끝나기 전에 돌려받을 수 있나요?",
+          "a": "반환 조건을 특약란에 적어 두면 좋습니다. 조건이 없으면 사용자와 먼저 협의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "소유자",
+            "연락처",
+            "사용자",
+            "관계",
+            "운전면허 종류"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 차량 및 사용 내용",
+          "items": [
+            "차량번호",
+            "차종",
+            "사용 기간",
+            "반납 시기",
+            "사용 목적",
+            "사고·과태료"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 특약",
+          "items": [],
+          "note": "보험 적용 범위, 주행 한도, 금지 사항 등 합의한 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-delivery-confirmation",
+        "rental-car-return-confirmation",
+        "traffic-violation-driver-confirmation",
+        "vehicle-lease-contract"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-06T08:17:18+09:00",
+      "updated_at": "2026-10-06T08:18:04+09:00",
       "downloads": 0
     },
     {

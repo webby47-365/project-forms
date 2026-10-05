@@ -1,0 +1,74 @@
+id: lawsuit-withdrawal
+title: 소취하서
+category: legal
+subcategory: litigation
+tags: [소취하서, 소송취하, 소취하, 소송취하서, 민사소송취하]
+summary: 이미 제기한 민사소송을 원고가 스스로 거두어들일 때 법원에 내는 소취하서 양식입니다.
+usage: >
+  합의가 이루어졌거나 소송을 계속할 이유가 없어져 제기한 소를 거두려 할 때 법원에 제출하는
+  서류입니다. 사건번호와 사건명, 당사자를 정확히 적고 취하하는 범위와 사유를 짧게 씁니다.
+  상대방이 이미 답변서를 낸 경우에는 취하에 상대방 동의가 필요할 수 있으므로 담당 재판부의
+  안내를 확인하십시오. 본 서식은 참고용이며 제출 전 최신 양식과 방식을 법원 안내에서 확인하십시오.
+source: law-standard
+source_note: 민사소송법 제266조(소의 취하) 규정을 참고하여 자체 제작
+featured: false
+target_pages: 1
+howto:
+  - 법원 이름과 사건번호, 사건명을 소장 기록대로 적습니다.
+  - 원고와 피고의 이름을 적습니다.
+  - 취하할 범위(전부 또는 일부)와 취하 사유를 적습니다.
+  - 날짜를 적고 원고가 서명 또는 날인하여 재판부에 제출합니다.
+faq:
+  - q: 취하하면 소송비용은 어떻게 되나요?
+    a: 비용 부담은 별도로 정해질 수 있습니다. 합의서가 있다면 비용 부담 내용도 함께 확인하십시오.
+  - q: 상대방 동의가 꼭 필요한가요?
+    a: 상대방이 답변서 등을 낸 뒤라면 동의가 필요할 수 있습니다. 재판부 안내를 확인하십시오.
+  - q: 취하서 제출 후 같은 소를 다시 낼 수 있나요?
+    a: 상황에 따라 제한이 있을 수 있으므로 제출 전에 법원이나 전문가에게 확인하십시오.
+related: [small-claims-complaint, payment-order-application, preparatory-brief, settlement-agreement]
+blocks:
+  - type: doc_title
+    text: 소 취 하 서
+    spaced: true
+  - type: subtitle
+    text: 1. 사건 표시
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["법원", "", "", ""]
+      - ["사건번호", "", "사건명", ""]
+      - ["원고", "", "피고", ""]
+    sample_rows:
+      - ["", "서울중앙지방법원 제12민사부", "", ""]
+      - ["", "2026가소123456", "", "대여금"]
+      - ["", "홍길동", "", "박민준"]
+  - type: subtitle
+    text: 2. 취하 내용
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["취하 범위", "(   ) 소 전부 취하   (   ) 일부 취하 (범위:                    )"]
+      - ["취하 사유", ""]
+    sample_rows:
+      - ["", "( ✓ ) 소 전부 취하   (   ) 일부 취하 (범위:                    )"]
+      - ["", "당사자 간 합의 성립"]
+  - type: textbox
+    hint: "필요하면 취하하게 된 경위를 간단히 적으십시오."
+    height_mm: 24
+    sample_text: "원고는 피고와 합의가 이루어져 위 사건의 소를 전부 취하합니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    5 일
+  - type: sign_line
+    label: 원고
+    sample_names: [홍길동]
+  - type: para
+    text: 위 법원 귀중
+    align: center
+  - type: notice
+    text: 상대방 동의 필요 여부와 제출 방법은 담당 재판부·법원 안내를 확인하십시오.

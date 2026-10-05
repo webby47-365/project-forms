@@ -1,0 +1,74 @@
+id: annual-leave-reply
+title: 연차 사용 시기 회신서 (근로자용)
+category: corp
+subcategory: hr
+tags: [연차사용시기회신서, 연차촉진회신, 연차사용계획회신, 연차사용시기, 연차휴가회신]
+summary: 회사의 연차 사용 촉진 통지를 받은 근로자가 남은 연차를 언제 쓸지 정해 회사에 알리는 회신서입니다.
+usage: >
+  회사로부터 미사용 연차 일수와 사용 시기를 정해 알려 달라는 통지를 받았을 때, 근로자가
+  남은 연차를 쓸 날짜를 적어 회사에 돌려주는 서식입니다. 통지서에 적힌 미사용 일수를 먼저
+  옮겨 적고, 사용할 날짜를 날짜별로 나누어 적습니다. 회신 기한 안에 제출하고, 접수 확인을 받거나
+  이메일 등 제출 기록을 남겨 두면 좋습니다. 회신 방식과 기한은 회사 안내와 고용노동부 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 소속과 성명, 받은 통지서의 통지일을 적습니다.
+  - 통지서에 적힌 미사용 연차 일수를 옮겨 적습니다.
+  - 연차를 쓸 날짜를 날짜별로 나누어 적습니다.
+  - 회신 기한 안에 서명하여 회사 담당자에게 제출합니다.
+faq:
+  - q: 사용 날짜를 다 정하지 못했으면 어떻게 하나요?
+    a: 정한 날짜만 먼저 적어 기한 안에 내고, 나머지는 담당자와 협의해 추가로 알리면 됩니다.
+  - q: 회신서를 이메일로 보내도 되나요?
+    a: 회사가 허용하는 방식이면 가능합니다. 보낸 기록은 따로 보관해 두십시오.
+  - q: 업무 때문에 정한 날짜에 못 쓰면 어떻게 하나요?
+    a: 담당자와 협의해 날짜를 바꾸고, 바뀐 내용을 서면으로 남기는 것이 좋습니다.
+related: [annual-leave-promotion-notice, annual-leave-plan, leave-request, annual-leave-timing-designation-notice]
+blocks:
+  - type: doc_title
+    text: 연차 사용 시기 회신서
+    spaced: false
+  - type: subtitle
+    text: 1. 회신인
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["부서(팀)", "", "직위", ""]
+      - ["성명", "", "통지서 수령일", ""]
+    sample_rows:
+      - ["", "영업지원팀", "", "대리"]
+      - ["", "홍길동", "", "2026-10-16"]
+  - type: subtitle
+    text: 2. 연차휴가 현황
+  - type: table
+    widths: [25, 25, 25, 25]
+    header: [발생 일수, 사용 일수, 미사용 일수, 회신 기한]
+    empty_rows: 1
+    row_height_mm: 10
+    sample_rows:
+      - ["15일", "4일", "11일", "2026-10-30"]
+  - type: subtitle
+    text: 3. 연차 사용 예정일
+  - type: table
+    widths: [8, 52, 12, 28]
+    header: ["No", 사용 기간, 일수, 비고]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "11-09 ~ 11-11", "3일", "가족 여행"]
+      - ["2", "11-23 ~ 11-27", "5일", ""]
+      - ["3", "12-14 ~ 12-16", "3일", "인수인계 후 사용"]
+  - type: textbox
+    hint: "회사에 전달할 사항(업무 조정, 협의 요청 등)이 있으면 적으십시오."
+    height_mm: 20
+    sample_text: "위 날짜에 연차를 사용하겠습니다. 업무는 사전에 팀원과 공유해 공백이 없도록 하겠습니다."
+  - type: date_line
+    sample_text: 2026 년   10 월   20 일
+  - type: sign_line
+    labels: ["회신인", "접수 담당자"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 회신 방식과 기한은 회사 안내와 고용노동부 안내를 확인하십시오. 제출 기록을 보관하십시오.
