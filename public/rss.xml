@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 328종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 333종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>증거 목록 (증거설명서)</title>
+<link>https://freeforms.kr/form/evidence-submission-list/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/evidence-submission-list/</guid>
+<category>법률 · 소송·민원</category>
+<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
+<description>소송에서 낼 증거를 번호별로 정리하고 무엇을 입증하려는지 적는 증거 목록·증거설명서 양식입니다.</description>
+</item>
+<item>
+<title>가족관계 사실 확인서</title>
+<link>https://freeforms.kr/form/family-relationship-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/family-relationship-confirmation/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
+<description>확인인과 상대방의 가족관계를 사실대로 적어 제출처에 알리는 일반 용도의 가족관계 사실 확인서입니다.</description>
+</item>
+<item>
+<title>입찰 제출서류 목록표</title>
+<link>https://freeforms.kr/form/bid-document-submission-list/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/bid-document-submission-list/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
+<description>입찰 참가 때 내야 하는 서류의 제출 여부와 쪽수를 표로 정리해 빠뜨림을 막는 입찰용 제출서류 목록표입니다.</description>
+</item>
+<item>
+<title>미사용 연차수당 지급 요청서</title>
+<link>https://freeforms.kr/form/unused-annual-leave-pay-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/unused-annual-leave-pay-request/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
+<description>쓰지 못한 연차의 일수와 지급 요청 금액을 적어 회사에 연차수당 지급을 요청하는 서식입니다.</description>
+</item>
+<item>
+<title>연차 사용 일정 변경 신청서</title>
+<link>https://freeforms.kr/form/annual-leave-schedule-change-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-schedule-change-request/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
+<description>이미 정한 연차 사용 날짜를 바꾸거나 취소해야 할 때 변경 전후 일정과 사유를 적어 회사에 내는 신청서입니다.</description>
+</item>
 <item>
 <title>자동차 사용 승낙서</title>
 <link>https://freeforms.kr/form/vehicle-use-consent/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 조달·입찰</category>
 <pubDate>Thu, 01 Oct 2026 00:00:00 +0900</pubDate>
 <description>입찰 참가 신청 후 사정이 생겨 참가를 철회하거나 포기할 때 공고 정보와 철회 사유를 적어 발주처에 내는 철회서입니다.</description>
-</item>
-<item>
-<title>경력증명서 발급 요청서</title>
-<link>https://freeforms.kr/form/career-certificate-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/career-certificate-request/</guid>
-<category>개인 · 취업·경력</category>
-<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
-<description>이직·입사 서류 제출을 위해 전 직장에 경력증명서 발급을 요청할 때 근무 기간·발급 부수·수령 방법을 적는 요청서입니다.</description>
-</item>
-<item>
-<title>결석계 (학부모 확인서)</title>
-<link>https://freeforms.kr/form/student-absence-notice/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/student-absence-notice/</guid>
-<category>교육 · 학교·학원</category>
-<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
-<description>질병·경조사 등으로 결석한 학생의 결석 기간과 사유를 보호자가 확인해 학교에 내는 결석계 양식입니다.</description>
-</item>
-<item>
-<title>자동차 말소등록 위임장</title>
-<link>https://freeforms.kr/form/vehicle-deregistration-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vehicle-deregistration-poa/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
-<description>폐차 등으로 자동차 말소등록을 대리인이나 폐차업체에 맡길 때 차량 정보와 말소 사유·위임 범위를 적는 위임장입니다.</description>
-</item>
-<item>
-<title>사업자등록 신청 대리 위임장</title>
-<link>https://freeforms.kr/form/business-registration-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-registration-poa/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
-<description>사업자등록 신청을 대리인이 세무서에서 접수할 때 신청인과 대리인 정보·위임 범위를 적는 위임장입니다.</description>
-</item>
-<item>
-<title>원천세 신고 위임장</title>
-<link>https://freeforms.kr/form/withholding-tax-filing-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/withholding-tax-filing-poa/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
-<description>원천징수 이행상황신고와 지급명세서 제출을 세무대리인에게 맡길 때 지급 월·신고 범위를 적는 위임장입니다.</description>
 </item>
 </channel>
 </rss>

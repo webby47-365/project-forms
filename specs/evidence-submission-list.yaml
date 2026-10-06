@@ -1,0 +1,62 @@
+id: evidence-submission-list
+title: 증거 목록 (증거설명서)
+category: legal
+subcategory: litigation
+tags: [증거목록, 증거설명서, 증거제출목록, 갑호증, 소송증거]
+summary: 소송에서 낼 증거를 번호별로 정리하고 무엇을 입증하려는지 적는 증거 목록·증거설명서 양식입니다.
+usage: >
+  소장이나 준비서면과 함께 증거를 낼 때, 증거에 번호를 붙이고 문서 이름·작성일·입증 취지를
+  표로 정리해 첨부하는 서식입니다. 원고 측은 갑, 피고 측은 을 번호를 쓰는 것이 일반적입니다.
+  사건번호와 당사자를 적고, 증거마다 무엇을 입증하려는지 한 줄로 씁니다. 제출 방식과 부수는
+  법원 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 사건번호와 사건명, 제출인을 적습니다.
+  - 증거 번호를 붙이고 문서 이름과 작성일을 적습니다.
+  - 증거마다 입증하려는 내용을 한 줄로 적습니다.
+  - 증거 사본과 함께 제출하고 한 부는 보관합니다.
+faq:
+  - q: 증거 번호는 어떻게 붙이나요?
+    a: 원고는 갑 제1호증, 피고는 을 제1호증처럼 순서대로 붙이는 것이 일반적입니다.
+  - q: 입증 취지는 길게 써야 하나요?
+    a: 한두 줄이면 충분합니다. 증거가 어떤 사실을 보여 주는지만 적습니다.
+  - q: 원본을 내야 하나요?
+    a: 보통 사본을 내고 원본은 가지고 있다가 요구가 있으면 냅니다. 법원 안내를 확인하십시오.
+related: [small-claims-complaint, preparatory-brief, written-statement, answer-brief]
+blocks:
+  - type: doc_title
+    text: 증 거 목 록
+    spaced: true
+  - type: subtitle
+    text: 1. 사건 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["사건번호", "", "사건명", ""]
+      - ["제출인", "", "구분", ""]
+    sample_rows:
+      - ["", "2026가소00000", "", "물품대금"]
+      - ["", "홍길동", "", "원고(갑)"]
+  - type: subtitle
+    text: 2. 증거 목록
+  - type: table
+    widths: [14, 28, 16, 42]
+    header: [증거 번호, 문서 이름, 작성일, 입증 취지]
+    empty_rows: 8
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["갑 제1호증", "물품 공급계약서", "2026-03-02", "계약 내용과 대금 약정"]
+      - ["갑 제2호증", "거래명세서", "2026-04-10", "물품 인도 사실"]
+      - ["갑 제3호증", "문자메시지 캡처", "2026-06-15", "대금 지급 독촉 경위"]
+  - type: date_line
+    sample_text: 2026 년   10 월   19 일
+  - type: sign_line
+    label: 제출인
+    sample_names: [홍길동]
+  - type: notice
+    text: 제출 방식과 부수는 해당 법원 안내를 확인하십시오.

@@ -1,0 +1,66 @@
+id: annual-leave-schedule-change-request
+title: 연차 사용 일정 변경 신청서
+category: corp
+subcategory: hr
+tags: [연차일정변경, 연차변경신청서, 연차사용일변경, 휴가일정변경, 연차취소]
+summary: 이미 정한 연차 사용 날짜를 바꾸거나 취소해야 할 때 변경 전후 일정과 사유를 적어 회사에 내는 신청서입니다.
+usage: >
+  연차 사용 계획서나 회신서에 적은 날짜를 업무 사정이나 개인 사정으로 바꿔야 할 때 씁니다.
+  원래 일정과 바꾸려는 일정을 나란히 적고 변경 사유를 간단히 씁니다. 날짜를 바꾸는 경우와
+  취소하는 경우를 구분해 표시하고, 승인 여부와 회사 의견은 담당자가 적는 칸에 남깁니다.
+  변경 방식과 기한은 회사 규정을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 소속과 성명, 변경 구분(날짜 변경·취소)을 적습니다.
+  - 변경 전 연차 일정과 일수를 적습니다.
+  - 변경 후 일정을 적고 사유를 한두 줄로 씁니다.
+  - 서명 후 담당자에게 제출하고 승인 결과를 받아 둡니다.
+faq:
+  - q: 이미 승인받은 연차도 바꿀 수 있나요?
+    a: 회사 규정과 담당자 협의에 따라 달라집니다. 가능한 한 빨리 신청하고 승인 결과를 서면으로 남기십시오.
+  - q: 취소한 연차는 다시 쓸 수 있나요?
+    a: 취소하면 해당 일수는 미사용 상태로 돌아갑니다. 다시 쓸 날짜는 따로 정해 신청해야 합니다.
+  - q: 변경 사유를 자세히 써야 하나요?
+    a: 사유는 간단히 적으면 충분합니다. 회사가 따로 요구하는 내용은 규정을 확인하십시오.
+related: [annual-leave-reply, annual-leave-plan, leave-request, annual-leave-timing-designation-notice]
+blocks:
+  - type: doc_title
+    text: 연차 사용 일정 변경 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["부서(팀)", "", "직위", ""]
+      - ["성명", "", "변경 구분", ""]
+    sample_rows:
+      - ["", "영업지원팀", "", "대리"]
+      - ["", "홍길동", "", "날짜 변경"]
+  - type: subtitle
+    text: 2. 변경 전·후 일정
+  - type: table
+    widths: [16, 34, 34, 16]
+    header: [구분, 변경 전 일정, 변경 후 일정, 일수]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "2026-11-09 ~ 11-11", "2026-11-16 ~ 11-18", "3일"]
+      - ["2", "2026-12-14", "2026-12-21", "1일"]
+  - type: subtitle
+    text: 3. 변경 사유
+  - type: textbox
+    hint: "일정을 바꾸거나 취소하려는 사유를 간단히 적으십시오."
+    height_mm: 24
+    sample_text: "프로젝트 마감 일정이 조정되어 기존 연차 날짜를 한 주 뒤로 옮기려 합니다. 업무 공백이 없도록 사전에 인수인계하겠습니다."
+  - type: date_line
+    sample_text: 2026 년   10 월   21 일
+  - type: sign_line
+    labels: ["신청인", "승인자"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 변경 방식과 기한은 회사 규정을 확인하십시오. 승인 결과는 서면으로 보관하십시오.

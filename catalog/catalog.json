@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T08:18:04+09:00",
-  "count": 328,
+  "generated_at": "2026-10-07T08:17:27+09:00",
+  "count": 333,
   "forms": [
     {
       "id": "academy-attendance",
@@ -755,6 +755,107 @@
       "warnings": [],
       "created_at": "2026-10-06T08:16:50+09:00",
       "updated_at": "2026-10-06T08:17:57+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-schedule-change-request",
+      "title": "연차 사용 일정 변경 신청서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차일정변경",
+        "연차변경신청서",
+        "연차사용일변경",
+        "휴가일정변경",
+        "연차취소"
+      ],
+      "summary": "이미 정한 연차 사용 날짜를 바꾸거나 취소해야 할 때 변경 전후 일정과 사유를 적어 회사에 내는 신청서입니다.",
+      "usage": "연차 사용 계획서나 회신서에 적은 날짜를 업무 사정이나 개인 사정으로 바꿔야 할 때 씁니다. 원래 일정과 바꾸려는 일정을 나란히 적고 변경 사유를 간단히 씁니다. 날짜를 바꾸는 경우와 취소하는 경우를 구분해 표시하고, 승인 여부와 회사 의견은 담당자가 적는 칸에 남깁니다. 변경 방식과 기한은 회사 규정을 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 42310,
+        "docx": 38540,
+        "hwpx": 9737
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "소속과 성명, 변경 구분(날짜 변경·취소)을 적습니다.",
+        "변경 전 연차 일정과 일수를 적습니다.",
+        "변경 후 일정을 적고 사유를 한두 줄로 씁니다.",
+        "서명 후 담당자에게 제출하고 승인 결과를 받아 둡니다."
+      ],
+      "faq": [
+        {
+          "q": "이미 승인받은 연차도 바꿀 수 있나요?",
+          "a": "회사 규정과 담당자 협의에 따라 달라집니다. 가능한 한 빨리 신청하고 승인 결과를 서면으로 남기십시오."
+        },
+        {
+          "q": "취소한 연차는 다시 쓸 수 있나요?",
+          "a": "취소하면 해당 일수는 미사용 상태로 돌아갑니다. 다시 쓸 날짜는 따로 정해 신청해야 합니다."
+        },
+        {
+          "q": "변경 사유를 자세히 써야 하나요?",
+          "a": "사유는 간단히 적으면 충분합니다. 회사가 따로 요구하는 내용은 규정을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인",
+          "items": [
+            "부서(팀)",
+            "직위",
+            "성명",
+            "변경 구분"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 변경 전·후 일정",
+          "items": [
+            "변경 전 일정",
+            "변경 후 일정",
+            "일수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 변경 사유",
+          "items": [],
+          "note": "일정을 바꾸거나 취소하려는 사유를 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-reply",
+        "annual-leave-plan",
+        "leave-request",
+        "annual-leave-timing-designation-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-07T08:16:57+09:00",
+      "updated_at": "2026-10-07T08:16:57+09:00",
       "downloads": 0
     },
     {
@@ -1632,6 +1733,103 @@
       "warnings": [],
       "created_at": "2026-09-29T08:17:12+09:00",
       "updated_at": "2026-09-29T08:17:12+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "bid-document-submission-list",
+      "title": "입찰 제출서류 목록표",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "입찰제출서류",
+        "입찰서류목록",
+        "제출서류목록표",
+        "입찰서류확인",
+        "입찰서류체크"
+      ],
+      "summary": "입찰 참가 때 내야 하는 서류의 제출 여부와 쪽수를 표로 정리해 빠뜨림을 막는 입찰용 제출서류 목록표입니다.",
+      "usage": "입찰서류는 종류가 많아 한 가지만 빠져도 접수가 안 될 수 있습니다. 공고문에 적힌 제출서류를 서류명별로 옮겨 적고, 준비 여부와 쪽수를 확인한 뒤 봉투에 함께 넣어 제출합니다. 공고번호와 입찰 건 이름을 맞춰 적고 필요한 서류의 범위는 공고문을 따르십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49522,
+        "docx": 38690,
+        "hwpx": 10167
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "공고번호와 입찰 건 이름을 적습니다.",
+        "공고문의 제출서류를 서류명 칸에 옮겨 적습니다.",
+        "서류별로 준비 여부와 쪽수를 확인해 표시합니다.",
+        "목록표를 맨 앞에 두고 서류와 함께 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "서류 종류는 어디서 확인하나요?",
+          "a": "입찰 공고문의 제출서류 항목을 확인하십시오. 발주처마다 요구 서류가 다릅니다."
+        },
+        {
+          "q": "원본과 사본 중 무엇을 내나요?",
+          "a": "공고문에서 원본 요구 여부를 확인하십시오. 비고란에 원본·사본을 구분해 적어 두면 편합니다."
+        },
+        {
+          "q": "목록표를 꼭 같이 내야 하나요?",
+          "a": "제출 의무 서류가 아니라면 내부 점검용으로 쓰고 사본을 보관해도 됩니다. 공고문 안내를 따르십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 입찰 건 정보",
+          "items": [
+            "입찰 건명",
+            "공고번호",
+            "제출일",
+            "업체명",
+            "대표자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 제출서류 확인",
+          "items": [
+            "서류명",
+            "준비 여부",
+            "쪽수"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-bid-form",
+        "bid-participation-poa",
+        "bid-seal-usage-notice",
+        "integrity-pledge-bidding"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-07T08:17:12+09:00",
+      "updated_at": "2026-10-07T08:17:12+09:00",
       "downloads": 0
     },
     {
@@ -10254,6 +10452,102 @@
       "seal": true
     },
     {
+      "id": "evidence-submission-list",
+      "title": "증거 목록 (증거설명서)",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "증거목록",
+        "증거설명서",
+        "증거제출목록",
+        "갑호증",
+        "소송증거"
+      ],
+      "summary": "소송에서 낼 증거를 번호별로 정리하고 무엇을 입증하려는지 적는 증거 목록·증거설명서 양식입니다.",
+      "usage": "소장이나 준비서면과 함께 증거를 낼 때, 증거에 번호를 붙이고 문서 이름·작성일·입증 취지를 표로 정리해 첨부하는 서식입니다. 원고 측은 갑, 피고 측은 을 번호를 쓰는 것이 일반적입니다. 사건번호와 당사자를 적고, 증거마다 무엇을 입증하려는지 한 줄로 씁니다. 제출 방식과 부수는 법원 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 41316,
+        "docx": 38514,
+        "hwpx": 9803
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사건번호와 사건명, 제출인을 적습니다.",
+        "증거 번호를 붙이고 문서 이름과 작성일을 적습니다.",
+        "증거마다 입증하려는 내용을 한 줄로 적습니다.",
+        "증거 사본과 함께 제출하고 한 부는 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "증거 번호는 어떻게 붙이나요?",
+          "a": "원고는 갑 제1호증, 피고는 을 제1호증처럼 순서대로 붙이는 것이 일반적입니다."
+        },
+        {
+          "q": "입증 취지는 길게 써야 하나요?",
+          "a": "한두 줄이면 충분합니다. 증거가 어떤 사실을 보여 주는지만 적습니다."
+        },
+        {
+          "q": "원본을 내야 하나요?",
+          "a": "보통 사본을 내고 원본은 가지고 있다가 요구가 있으면 냅니다. 법원 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사건 정보",
+          "items": [
+            "사건번호",
+            "사건명",
+            "제출인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 증거 목록",
+          "items": [
+            "증거 번호",
+            "문서 이름",
+            "작성일",
+            "입증 취지"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "small-claims-complaint",
+        "preparatory-brief",
+        "written-statement",
+        "answer-brief"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-07T08:17:26+09:00",
+      "updated_at": "2026-10-07T08:17:26+09:00",
+      "downloads": 0
+    },
+    {
       "id": "expense-approval",
       "title": "지출결의서",
       "category": "corp",
@@ -11006,6 +11300,108 @@
         "leave-request"
       ],
       "seal": true
+    },
+    {
+      "id": "family-relationship-confirmation",
+      "title": "가족관계 사실 확인서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "가족관계확인서",
+        "가족관계사실확인서",
+        "가족사항확인서",
+        "친족관계확인",
+        "가족확인서"
+      ],
+      "summary": "확인인과 상대방의 가족관계를 사실대로 적어 제출처에 알리는 일반 용도의 가족관계 사실 확인서입니다.",
+      "usage": "학교·직장·기관 등에서 가족관계를 간단히 확인해 달라고 할 때, 확인인이 가족관계를 사실대로 적어 내는 서식입니다. 관계를 확인하는 대상자의 이름·생년월일과 관계, 제출처와 용도를 적습니다. 공적인 증명이 필요한 경우에는 증명서 발급이 따로 필요하므로 제출처 요구를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46475,
+        "docx": 38598,
+        "hwpx": 9905
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "확인인의 성명과 생년월일, 연락처를 적습니다.",
+        "확인 대상자의 성명, 생년월일, 관계를 적습니다.",
+        "제출처와 사용 용도를 적습니다.",
+        "사실과 다름이 없음을 확인하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "가족관계증명서를 대신할 수 있나요?",
+          "a": "제출처가 허용하는 경우에만 가능합니다. 공적 증명이 필요하면 증명서를 따로 발급받아야 합니다."
+        },
+        {
+          "q": "주민등록번호를 적어야 하나요?",
+          "a": "이 서식은 생년월일만 적습니다. 번호가 꼭 필요한 곳은 제출처 안내를 확인하십시오."
+        },
+        {
+          "q": "대상자가 여러 명이면 어떻게 하나요?",
+          "a": "확인 대상자 표에 한 줄씩 이어서 적습니다. 칸이 모자라면 서식을 한 장 더 쓰십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 확인인",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 확인 대상자",
+          "items": [
+            "관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 제출처와 용도",
+          "items": [
+            "제출처",
+            "용도"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "family-certificate-issuance-poa",
+        "residence-fact-confirmation",
+        "gov-resident-register-copy",
+        "resident-register-copy-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-07T08:17:19+09:00",
+      "updated_at": "2026-10-07T08:17:19+09:00",
+      "downloads": 0
     },
     {
       "id": "field-trip-application",
@@ -32094,6 +32490,112 @@
         "certified-notice"
       ],
       "seal": true
+    },
+    {
+      "id": "unused-annual-leave-pay-request",
+      "title": "미사용 연차수당 지급 요청서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "미사용연차수당",
+        "연차수당청구",
+        "연차수당요청서",
+        "연차수당지급",
+        "연차보상"
+      ],
+      "summary": "쓰지 못한 연차의 일수와 지급 요청 금액을 적어 회사에 연차수당 지급을 요청하는 서식입니다.",
+      "usage": "연차휴가를 쓰지 못한 채 연도가 끝나거나 퇴사할 때, 남은 연차에 대한 수당을 회사에 요청하는 서식입니다. 연차 발생·사용·미사용 일수와 산정 기준이 되는 일급을 적고, 요청 금액은 담당자와 확인한 값으로 적습니다. 산정 방식과 지급 시기는 회사 규정과 고용노동부 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46041,
+        "docx": 38626,
+        "hwpx": 9854
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "소속, 성명, 입사일을 적습니다.",
+        "연차 발생 일수, 사용 일수, 미사용 일수를 적습니다.",
+        "확인한 일급과 요청 금액, 지급 희망일을 적습니다.",
+        "서명 후 급여 담당자에게 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "요청 금액은 어떻게 정하나요?",
+          "a": "미사용 일수에 일급을 곱해 계산하는 것이 일반적입니다. 정확한 산정은 급여 담당자와 확인하십시오."
+        },
+        {
+          "q": "퇴사할 때도 쓸 수 있나요?",
+          "a": "쓸 수 있습니다. 퇴사일을 비고에 적고 마지막 급여 정산 전에 제출하십시오."
+        },
+        {
+          "q": "회사가 거절하면 어떻게 하나요?",
+          "a": "사유를 서면으로 받아 두고 고용노동부 상담 등 공식 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청인",
+          "items": [
+            "부서(팀)",
+            "직위",
+            "성명",
+            "입사일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연차 현황",
+          "items": [
+            "기준 기간",
+            "발생 일수",
+            "사용 일수",
+            "미사용 일수",
+            "일급"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 지급 요청",
+          "items": [
+            "요청 금액",
+            "지급 희망일"
+          ],
+          "note": "요청 사유나 회사에 전달할 사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-reply",
+        "annual-leave-plan",
+        "severance-calculation",
+        "leave-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-07T08:17:04+09:00",
+      "updated_at": "2026-10-07T08:17:04+09:00",
+      "downloads": 0
     },
     {
       "id": "used-car-sale-contract",

@@ -1,0 +1,67 @@
+id: bid-document-submission-list
+title: 입찰 제출서류 목록표
+category: public
+subcategory: procure
+tags: [입찰제출서류, 입찰서류목록, 제출서류목록표, 입찰서류확인, 입찰서류체크]
+summary: 입찰 참가 때 내야 하는 서류의 제출 여부와 쪽수를 표로 정리해 빠뜨림을 막는 입찰용 제출서류 목록표입니다.
+usage: >
+  입찰서류는 종류가 많아 한 가지만 빠져도 접수가 안 될 수 있습니다. 공고문에 적힌 제출서류를
+  서류명별로 옮겨 적고, 준비 여부와 쪽수를 확인한 뒤 봉투에 함께 넣어 제출합니다. 공고번호와
+  입찰 건 이름을 맞춰 적고 필요한 서류의 범위는 공고문을 따르십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 공고번호와 입찰 건 이름을 적습니다.
+  - 공고문의 제출서류를 서류명 칸에 옮겨 적습니다.
+  - 서류별로 준비 여부와 쪽수를 확인해 표시합니다.
+  - 목록표를 맨 앞에 두고 서류와 함께 제출합니다.
+faq:
+  - q: 서류 종류는 어디서 확인하나요?
+    a: 입찰 공고문의 제출서류 항목을 확인하십시오. 발주처마다 요구 서류가 다릅니다.
+  - q: 원본과 사본 중 무엇을 내나요?
+    a: 공고문에서 원본 요구 여부를 확인하십시오. 비고란에 원본·사본을 구분해 적어 두면 편합니다.
+  - q: 목록표를 꼭 같이 내야 하나요?
+    a: 제출 의무 서류가 아니라면 내부 점검용으로 쓰고 사본을 보관해도 됩니다. 공고문 안내를 따르십시오.
+related: [gov-bid-form, bid-participation-poa, bid-seal-usage-notice, integrity-pledge-bidding]
+blocks:
+  - type: doc_title
+    text: 입찰 제출서류 목록표
+    spaced: false
+  - type: subtitle
+    text: 1. 입찰 건 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["입찰 건명", "", "", ""]
+      - ["공고번호", "", "제출일", ""]
+      - ["업체명", "", "대표자", ""]
+    merges:
+      - [0, 1, 0, 3]
+    sample_rows:
+      - ["", "2026년 사무용품 구매 입찰", "", ""]
+      - ["", "2026-0000", "", "2026-10-20"]
+      - ["", "(주)한빛물산", "", "홍길동"]
+  - type: subtitle
+    text: 2. 제출서류 확인
+  - type: table
+    widths: [8, 38, 14, 12, 28]
+    header: ["No", 서류명, 준비 여부, 쪽수, 비고]
+    empty_rows: 9
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "입찰서", "○", "1", "원본"]
+      - ["2", "사업자등록증 사본", "○", "1", "사본"]
+      - ["3", "사용인감계", "○", "1", "원본"]
+      - ["4", "청렴서약서", "○", "1", "원본"]
+      - ["5", "법인 등기사항증명서", "", "", "발급 예정"]
+  - type: date_line
+    sample_text: 2026 년   10 월   19 일
+  - type: sign_line
+    label: 확인자
+    sample_names: [홍길동]
+  - type: notice
+    text: 제출서류의 종류와 원본·사본 요구는 입찰 공고문을 확인하십시오.
