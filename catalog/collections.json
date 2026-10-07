@@ -66,7 +66,7 @@
         "startup-checklist", "business-reg-checklist", "business-registration-poa", "business-plan-simple",
         "business-plan-standard", "partnership-agreement",
         "articles-of-incorporation", "shareholder-register",
-        "director-acceptance", "budget-plan", "vat-filing-poa",
+        "director-acceptance", "director-resignation-letter", "budget-plan", "vat-filing-poa",
         "social-insurance-filing-poa", "nda"
       ]
     },
@@ -90,7 +90,7 @@
         "blood-transfusion-consent", "vaccination-consent",
         "medical-record-request", "hospital-transfer-request",
         "medical-expense-support", "long-term-care-application",
-        "care-service-application", "caregiver-contract"
+        "care-service-application", "welfare-facility-withdrawal-request", "caregiver-contract"
       ]
     },
     {

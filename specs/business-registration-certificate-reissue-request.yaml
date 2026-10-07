@@ -1,0 +1,74 @@
+id: business-registration-certificate-reissue-request
+title: 사업자등록증 재발급 신청서
+category: public
+subcategory: tax
+tags: [사업자등록증재발급, 사업자등록증분실, 사업자등록증훼손, 재발급신청서, 세무서재발급]
+summary: 사업자등록증을 분실하거나 훼손했을 때 관할 세무서에 재발급을 신청하는 서식입니다.
+usage: >
+  사업자등록증을 잃어버렸거나 찢어져 쓸 수 없을 때 세무서에 다시 발급해 달라고 신청하는 서식입니다.
+  상호와 사업자등록번호, 대표자, 재발급 사유와 사업장 정보를 적고 신청일과 서명을 남깁니다. 대리인이
+  제출하면 위임 관계를 확인할 서류가 따로 필요할 수 있으므로 제출 전 관할 세무서나 홈택스 안내를 확인하십시오.
+  이 서식은 신청 내용을 정리하는 틀이며, 제출 방식은 세무서 안내를 따릅니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 상호, 사업자등록번호, 대표자 성명을 적습니다.
+  - 사업장 소재지와 연락처를 적습니다.
+  - 재발급 사유를 고르고 필요하면 경위를 적습니다.
+  - 신청일을 적고 서명한 뒤 세무서에 제출합니다.
+faq:
+  - q: 사업자등록증은 어디에 재발급을 신청하나요?
+    a: 관할 세무서 민원실이나 홈택스에서 신청할 수 있습니다. 방식은 세무서 안내를 확인하십시오.
+  - q: 대리인이 신청해도 되나요?
+    a: 가능한 경우가 있으나 위임장과 신분 확인 서류를 요구할 수 있습니다. 사전에 세무서에 문의하십시오.
+  - q: 재발급 사유는 어떻게 쓰나요?
+    a: 분실, 훼손, 정정 후 재발급 등 해당하는 사유를 표시하고, 경위는 한두 문장으로 적습니다.
+related: [business-registration-change-poa, business-closure-poa, tax-clearance-certificate-poa, vat-filing-poa]
+blocks:
+  - type: doc_title
+    text: 사업자등록증 재발급 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 사업자 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["상호", "", "대표자", ""]
+      - ["사업자등록번호", "", "연락처", ""]
+      - ["사업장 소재지", "", "", ""]
+    sample_rows:
+      - ["", "한빛물산", "", "박민준"]
+      - ["", "000-00-00000", "", "010-1234-5678"]
+      - ["", "서울특별시 중구 세종대로 000", "", ""]
+  - type: subtitle
+    text: 2. 재발급 사유
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["사유 구분", "", "발급 부수", ""]
+    sample_rows:
+      - ["", "분실", "", "1부"]
+  - type: textbox
+    hint: "분실·훼손 경위나 재발급이 필요한 이유를 간단히 적으십시오."
+    height_mm: 26
+    sample_text: "사무실 이전 중 원본을 분실하여 재발급을 신청합니다."
+  - type: para
+    text: 위와 같이 사업자등록증의 재발급을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   20 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [박민준]
+  - type: para
+    text: 세무서장 귀하
+    align: left
+  - type: notice
+    text: 제출 방식과 필요 서류는 관할 세무서와 홈택스 안내를 확인하십시오.

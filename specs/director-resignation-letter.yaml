@@ -1,0 +1,78 @@
+id: director-resignation-letter
+title: 임원 사임서 (이사·감사)
+category: corp
+subcategory: startup
+tags: [임원사임서, 이사사임서, 감사사임서, 대표이사사임, 사임신고서]
+summary: 주식회사의 이사나 감사가 임기 중 스스로 직을 그만두겠다는 뜻을 회사에 알리는 사임서입니다.
+usage: >
+  주식회사의 이사·감사·대표이사가 임기 도중 직에서 물러나려 할 때 회사에 제출하는 서식입니다.
+  사임하는 직책과 취임일, 사임 사유, 사임 효력일을 적고 본인이 서명합니다. 사임 후 등기 변경이 필요한
+  경우가 많으므로 이사회·주주총회 의사록과 함께 보관하면 좋습니다. 효력 발생 시점과 등기 절차는 회사
+  정관과 관할 등기소 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사 이름과 사임하는 사람의 성명, 직책을 적습니다.
+  - 취임일과 사임 효력일을 적습니다.
+  - 사임 사유를 짧게 적습니다.
+  - 날짜를 적고 서명한 뒤 회사 대표에게 제출합니다.
+faq:
+  - q: 사임서를 내면 바로 효력이 생기나요?
+    a: 효력 시점은 사임서에 적은 효력일과 회사 정관에 따라 달라질 수 있습니다. 정관을 먼저 확인하십시오.
+  - q: 사임 후 등기를 따로 해야 하나요?
+    a: 이사·감사의 변경은 등기 사항이라 변경 등기가 필요한 경우가 많습니다. 관할 등기소 안내를 확인하십시오.
+  - q: 사임 사유를 자세히 써야 하나요?
+    a: 한두 문장으로 충분합니다. 일신상의 사유처럼 간단히 적어도 됩니다.
+related: [director-acceptance, board-minutes, shareholder-meeting-minutes, shareholder-register]
+blocks:
+  - type: doc_title
+    text: 임원 사임서
+    spaced: true
+  - type: subtitle
+    text: 1. 회사 및 사임자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["회사명", "", "", ""]
+      - ["성명", "", "생년월일", ""]
+      - ["직책", "", "취임일", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", ""]
+      - ["", "박민준", "", "1985-04-12"]
+      - ["", "사내이사", "", "2023-03-28"]
+  - type: subtitle
+    text: 2. 사임 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["사임 효력일", "", "임기 만료일", ""]
+      - ["사임 사유", "", "", ""]
+    sample_rows:
+      - ["", "2026-11-30", "", "2027-03-27"]
+      - ["", "일신상의 사유", "", ""]
+  - type: textbox
+    hint: "필요하면 사임 경위나 인수인계 계획을 적으십시오."
+    height_mm: 26
+    sample_text: "맡고 있던 업무는 효력일 전까지 후임자에게 인수인계하겠습니다."
+  - type: para
+    text: 위와 같이 사임하고자 하오니 수리하여 주시기 바랍니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   20 일
+  - type: sign_line
+    label: 사임자
+    sample_names: [박민준]
+  - type: para
+    text: 주식회사 귀중
+    align: left
+  - type: notice
+    text: 효력 발생 시점과 변경 등기 절차는 회사 정관과 관할 등기소 안내를 확인하십시오.
