@@ -1,0 +1,72 @@
+id: child-rearing-fact-confirmation
+title: 자녀 양육 사실 확인서
+category: public
+subcategory: family
+tags: [양육사실확인서, 자녀양육확인서, 양육확인서, 아이돌봄확인, 양육사실]
+summary: 자녀를 실제로 키우고 있는 사람이 양육 기간·함께 거주한 사실을 적어 학교나 기관에 내는 확인서입니다.
+usage: >
+  학교, 어린이집, 복지 신청처 등에서 자녀를 실제로 양육하고 있다는 사실을 서면으로 요구할 때 쓰는 서식입니다.
+  양육자와 자녀의 정보, 양육 시작 시기, 함께 거주한 주소와 기간을 적고 제출 목적을 밝힙니다.
+  제출처가 정한 서식이 따로 있으면 그것을 우선하고, 이 서식은 사실관계를 정리하는 용도로 쓰십시오.
+  자녀의 주민등록번호는 받지 않으며 생년월일만 적습니다. 본 서식은 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 양육자의 성명과 연락처, 자녀와의 관계를 적습니다.
+  - 자녀의 성명과 생년월일을 적습니다.
+  - 양육 시작일과 함께 거주한 주소를 적습니다.
+  - 제출처와 목적을 적고 서명합니다.
+faq:
+  - q: 자녀의 주민등록번호를 적어야 하나요?
+    a: 이 서식은 생년월일만 받습니다. 제출처가 따로 요구하면 그곳의 안내를 따르십시오.
+  - q: 이 확인서만으로 제출이 끝나나요?
+    a: 제출처에 따라 주민등록등본 등 증빙을 함께 요구할 수 있으니 미리 확인하십시오.
+  - q: 친권자가 아니어도 쓸 수 있나요?
+    a: 실제 양육 사실을 적는 서식이지만 인정 여부는 제출처가 판단합니다. 제출처에 먼저 확인하십시오.
+related: [family-relationship-confirmation, residence-fact-confirmation, guardian-consent, resident-register-copy-poa]
+blocks:
+  - type: doc_title
+    text: 자녀 양육 사실 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 양육자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["자녀와의 관계", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-3456-7890"]
+      - ["", "어머니", "", "1988-05-10"]
+      - ["", "서울시 예시구 예시로 34", "", ""]
+  - type: subtitle
+    text: 2. 자녀
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["양육 시작일", "", "함께 거주 기간", ""]
+    sample_rows:
+      - ["", "박하준", "", "2016-03-15"]
+      - ["", "2016-03-15", "", "출생일부터 현재까지"]
+  - type: subtitle
+    text: 3. 제출 목적 및 양육 사실
+  - type: textbox
+    hint: "제출처, 제출 목적, 양육 사실을 간단히 적으십시오."
+    height_mm: 30
+    sample_text: "초등학교 제출용입니다. 위 자녀를 출생일부터 현재까지 같은 주소에서 함께 거주하며 직접 양육하고 있음을 확인합니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    8 일
+  - type: sign_line
+    label: 양육자
+    sample_names: [김서연]
+  - type: notice
+    text: 제출처가 정한 서식과 추가 증빙 서류를 먼저 확인하십시오.

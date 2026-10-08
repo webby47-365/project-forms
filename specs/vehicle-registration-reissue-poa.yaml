@@ -1,0 +1,70 @@
+id: vehicle-registration-reissue-poa
+title: 자동차등록증 재발급 신청 위임장
+category: public
+subcategory: vehicle
+tags: [자동차등록증재발급위임장, 자동차등록증재발급, 차량등록증분실, 등록증재발급대리, 차량위임장]
+summary: 자동차등록증을 분실하거나 훼손했을 때 다른 사람에게 재발급 신청을 맡기는 위임장입니다.
+usage: >
+  자동차등록증을 잃어버렸거나 못 쓰게 되어 재발급을 받아야 하는데 직접 방문이 어려울 때, 가족이나 지인
+  또는 대행업체에 신청을 맡기는 서식입니다. 차량 소유자와 대리인의 정보, 차량번호와 차대번호, 재발급 사유를 적고
+  소유자가 서명합니다. 재발급 시 필요한 신분증과 수수료는 관할 기관 안내를 확인하십시오.
+  본 서식은 위임 내용을 기록하는 틀이며 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 소유자와 대리인의 성명과 연락처를 적습니다.
+  - 차량번호와 차종, 차대번호를 적습니다.
+  - 재발급 사유(분실·훼손 등)를 적습니다.
+  - 날짜를 적고 소유자가 서명합니다.
+faq:
+  - q: 대리인은 어떤 서류를 가져가야 하나요?
+    a: 대리인 신분증과 위임장이 필요한 경우가 많습니다. 관할 기관 안내를 먼저 확인하십시오.
+  - q: 차대번호는 어디서 확인하나요?
+    a: 자동차보험 증권이나 자동차 검사 서류, 차량 앞유리 하단 등에서 확인할 수 있습니다.
+  - q: 재발급 수수료는 누가 내나요?
+    a: 위임 당사자가 정하는 사항입니다. 특약란에 적어 두면 좋습니다.
+related: [vehicle-deregistration-poa, vehicle-inspection-poa, vehicle-use-consent, gov-vehicle-transfer-registration]
+blocks:
+  - type: doc_title
+    text: 자동차등록증 재발급 신청 위임장
+    spaced: false
+  - type: subtitle
+    text: 1. 위임인과 대리인
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["위임인(소유자)", "", "연락처", ""]
+      - ["대리인", "", "연락처", ""]
+      - ["관계", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "김서연", "", "010-3456-7890"]
+      - ["", "배우자", "", ""]
+  - type: subtitle
+    text: 2. 차량 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["차량번호", "", "차종", ""]
+      - ["차대번호", "", "재발급 사유", ""]
+    sample_rows:
+      - ["", "12가 3456", "", "소형 승용차"]
+      - ["", "KMH00000000000000", "", "분실"]
+  - type: subtitle
+    text: 3. 위임 내용
+  - type: textbox
+    hint: "위임하는 업무 범위와 특약(수수료 부담 등)을 적으십시오."
+    height_mm: 24
+    sample_text: "위 차량의 자동차등록증 재발급 신청 및 수령 일체를 위임합니다. 수수료는 위임인이 부담합니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    8 일
+  - type: sign_line
+    labels: ["위임인", "대리인"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 필요한 신분증과 수수료는 관할 기관 안내를 확인하십시오.

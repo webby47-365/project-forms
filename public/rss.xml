@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 338종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 343종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>건강보험 자격득실확인서 발급 위임장</title>
+<link>https://freeforms.kr/form/health-insurance-eligibility-history-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/health-insurance-eligibility-history-poa/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
+<description>건강보험 자격득실확인서 발급 신청을 가족이나 대리인에게 맡길 때 쓰는 위임장입니다.</description>
+</item>
+<item>
+<title>자동차등록증 재발급 신청 위임장</title>
+<link>https://freeforms.kr/form/vehicle-registration-reissue-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-registration-reissue-poa/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
+<description>자동차등록증을 분실하거나 훼손했을 때 다른 사람에게 재발급 신청을 맡기는 위임장입니다.</description>
+</item>
+<item>
+<title>자녀 양육 사실 확인서</title>
+<link>https://freeforms.kr/form/child-rearing-fact-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/child-rearing-fact-confirmation/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
+<description>자녀를 실제로 키우고 있는 사람이 양육 기간·함께 거주한 사실을 적어 학교나 기관에 내는 확인서입니다.</description>
+</item>
+<item>
+<title>영업 폐업 사실 확인서</title>
+<link>https://freeforms.kr/form/business-closure-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-closure-confirmation/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
+<description>사업장을 폐업했다는 사실과 폐업일·사유·정리 내용을 적어 거래처나 기관에 내는 확인서입니다.</description>
+</item>
+<item>
+<title>연차 이월 합의서</title>
+<link>https://freeforms.kr/form/annual-leave-carryover-agreement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-carryover-agreement/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
+<description>남은 연차를 다음 해로 넘겨 쓰기로 회사와 근로자가 합의할 때 일수·사용 기한·조건을 적는 합의서입니다.</description>
+</item>
 <item>
 <title>계약이행보증금 반환 청구서</title>
 <link>https://freeforms.kr/form/contract-performance-deposit-refund-request/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 자동차·교통</category>
 <pubDate>Sat, 03 Oct 2026 00:00:00 +0900</pubDate>
 <description>자동차 정기검사·종합검사를 가족이나 정비업체에 맡길 때 차량 정보와 검사 종류·위임 범위를 적는 위임장입니다.</description>
-</item>
-<item>
-<title>4대보험 가입 확인 요청서</title>
-<link>https://freeforms.kr/form/insurance-enrollment-confirmation-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/insurance-enrollment-confirmation-request/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0900</pubDate>
-<description>근로자가 회사에 4대보험 가입 여부와 가입일 확인을 요청할 때 쓰는 요청서로, 확인받을 보험과 용도를 적습니다.</description>
-</item>
-<item>
-<title>주민등록 등·초본 발급 위임장</title>
-<link>https://freeforms.kr/form/resident-register-copy-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/resident-register-copy-poa/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0900</pubDate>
-<description>주민등록 등본·초본 발급을 가족이나 대리인에게 맡길 때 발급 목적과 위임 범위를 적는 위임장입니다.</description>
-</item>
-<item>
-<title>폐업 신고 대리 위임장</title>
-<link>https://freeforms.kr/form/business-closure-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-closure-poa/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0900</pubDate>
-<description>사업자 폐업 신고를 세무사·가족 등 대리인에게 맡길 때 위임 범위와 기간을 적는 위임장입니다.</description>
-</item>
-<item>
-<title>간판 설치 동의서</title>
-<link>https://freeforms.kr/form/signboard-installation-consent/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/signboard-installation-consent/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0900</pubDate>
-<description>건물 소유자나 임대인이 임차인의 간판·옥외광고물 설치에 동의함을 적는 서식으로, 설치 위치와 크기, 원상복구 조건을 담습니다.</description>
-</item>
-<item>
-<title>입찰보증금 지급각서</title>
-<link>https://freeforms.kr/form/bid-guarantee-pledge/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/bid-guarantee-pledge/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0900</pubDate>
-<description>입찰 참가 시 현금 대신 입찰보증금을 낙찰 후 지급하겠다고 약속하는 지급각서 양식으로, 입찰 건명과 보증금액을 적습니다.</description>
 </item>
 </channel>
 </rss>

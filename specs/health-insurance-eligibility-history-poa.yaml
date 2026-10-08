@@ -1,0 +1,70 @@
+id: health-insurance-eligibility-history-poa
+title: 건강보험 자격득실확인서 발급 위임장
+category: public
+subcategory: insurance
+tags: [건강보험자격득실확인서, 자격득실확인서위임장, 건강보험가입이력, 건보자격득실, 보험이력위임장]
+summary: 건강보험 자격득실확인서 발급 신청을 가족이나 대리인에게 맡길 때 쓰는 위임장입니다.
+usage: >
+  이직, 대출, 각종 심사 때 건강보험 가입 이력을 보여 달라는 요청을 받았는데 직접 발급받기 어려울 때,
+  대리인에게 발급을 맡기는 서식입니다. 위임인과 대리인의 정보, 필요한 기간, 제출처를 적고 위임인이 서명합니다.
+  대리 발급에 필요한 신분증과 서류는 건강보험공단 안내를 확인하십시오. 주민등록번호는 적지 않고
+  생년월일만 적습니다. 본 서식은 위임 내용을 기록하는 틀이며 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 위임인과 대리인의 성명, 연락처, 관계를 적습니다.
+  - 위임인의 생년월일과 필요한 조회 기간을 적습니다.
+  - 제출처와 발급 목적을 적습니다.
+  - 날짜를 적고 위임인과 대리인이 서명합니다.
+faq:
+  - q: 대리인이 가져가야 할 서류는 무엇인가요?
+    a: 대리인 신분증, 위임장 등이 필요한 경우가 많습니다. 건강보험공단 안내를 확인하십시오.
+  - q: 주민등록번호는 적지 않나요?
+    a: 이 서식은 생년월일만 받습니다. 기관 창구에서 별도로 요구하면 그 절차에 따르십시오.
+  - q: 이 위임장으로 다른 서류도 뗄 수 있나요?
+    a: 위임 범위에 적은 서류만 해당합니다. 다른 서류는 위임 내용에 따로 적으십시오.
+related: [national-pension-history-poa, employment-insurance-history-request, insurance-enrollment-confirmation-request, social-insurance-filing-poa]
+blocks:
+  - type: doc_title
+    text: 건강보험 자격득실확인서 발급 위임장
+    spaced: false
+  - type: subtitle
+    text: 1. 위임인과 대리인
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["위임인", "", "생년월일", ""]
+      - ["연락처", "", "대리인 관계", ""]
+      - ["대리인", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-07-21"]
+      - ["", "010-1234-5678", "", "배우자"]
+      - ["", "김서연", "", "010-3456-7890"]
+  - type: subtitle
+    text: 2. 발급 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["조회 기간", "", "제출처", ""]
+      - ["발급 목적", "", "발급 부수", ""]
+    sample_rows:
+      - ["", "2020-01 ~ 2026-09", "", "(주)새길데이터"]
+      - ["", "입사 서류 제출", "", "1부"]
+  - type: subtitle
+    text: 3. 위임 내용
+  - type: textbox
+    hint: "위임하는 업무 범위를 적으십시오."
+    height_mm: 24
+    sample_text: "위 기간의 건강보험 자격득실확인서 발급 신청과 수령을 위임합니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    8 일
+  - type: sign_line
+    labels: ["위임인", "대리인"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 대리 발급에 필요한 서류는 건강보험공단 안내를 확인하십시오.

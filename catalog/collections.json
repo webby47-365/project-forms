@@ -113,7 +113,8 @@
         "parking-fine-objection", "traffic-violation-driver-confirmation", "administrative-objection",
         "noise-complaint", "illegal-dumping-report", "road-repair-request",
         "moving-in-report", "seal-certificate-poa",
-        "family-certificate-issuance-poa", "vehicle-registration-poa", "vehicle-deregistration-poa", "permit-application-poa",
+        "family-certificate-issuance-poa", "vehicle-registration-poa",
+        "vehicle-registration-reissue-poa", "vehicle-deregistration-poa", "permit-application-poa",
         "parking-space-consent-vehicle-registration", "bank-account-poa"
       ]
     },
