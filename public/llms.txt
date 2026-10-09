@@ -1,6 +1,6 @@
 # 무료서식 다운로드 (freeforms.kr)
 
-> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 343종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-10-09 기준, 매일 새 서식 추가)
+> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 348종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-10-10 기준, 매일 새 서식 추가)
 
 ## 이 사이트의 특징
 
@@ -48,7 +48,7 @@
 
 ## 분야별 서식
 
-- [기업 · 인사·노무](https://freeforms.kr/category/corp/hr/): 37종
+- [기업 · 인사·노무](https://freeforms.kr/category/corp/hr/): 38종
 - [기업 · 총무·행정](https://freeforms.kr/category/corp/admin/): 25종
 - [기업 · 회계·세무](https://freeforms.kr/category/corp/finance/): 22종
 - [기업 · 영업·마케팅](https://freeforms.kr/category/corp/sales/): 14종
@@ -56,8 +56,8 @@
 - [법률 · 계약](https://freeforms.kr/category/legal/contract/): 17종
 - [법률 · 통지·증명](https://freeforms.kr/category/legal/notice/): 16종
 - [법률 · 소송·민원](https://freeforms.kr/category/legal/litigation/): 13종
-- [공공 · 민원·신고](https://freeforms.kr/category/public/civil/): 13종
-- [공공 · 신청·동의](https://freeforms.kr/category/public/consent/): 12종
+- [공공 · 민원·신고](https://freeforms.kr/category/public/civil/): 14종
+- [공공 · 신청·동의](https://freeforms.kr/category/public/consent/): 14종
 - [공공 · 가족·주민등록](https://freeforms.kr/category/public/family/): 13종
 - [공공 · 세금·사업자](https://freeforms.kr/category/public/tax/): 13종
 - [공공 · 4대보험·고용](https://freeforms.kr/category/public/insurance/): 13종
@@ -68,7 +68,7 @@
 - [개인 · 취업·경력](https://freeforms.kr/category/personal/career/): 21종
 - [개인 · 생활·가정](https://freeforms.kr/category/personal/life/): 16종
 - [교육 · 학교·학원](https://freeforms.kr/category/edu/school/): 18종
-- [의료·복지 · 동의·신청](https://freeforms.kr/category/welfare/consent/): 13종
+- [의료·복지 · 동의·신청](https://freeforms.kr/category/welfare/consent/): 14종
 
 ## 버전별 비교 (같은 서식의 상황별 변형)
 
@@ -133,6 +133,6 @@
 
 ## Optional
 
-- [전체 서식 목록 343종](https://freeforms.kr/llms-full.txt)
+- [전체 서식 목록 348종](https://freeforms.kr/llms-full.txt)
 - [사이트맵](https://freeforms.kr/sitemap.xml)
 - [RSS](https://freeforms.kr/rss.xml)

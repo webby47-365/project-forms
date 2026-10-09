@@ -1,0 +1,75 @@
+id: civil-petition-reply-request
+title: 민원 처리결과 회신 요청서
+category: public
+subcategory: civil
+tags: [민원회신요청서, 민원처리결과, 민원답변요청, 처리결과통지요청, 민원독촉]
+summary: 접수한 민원의 처리 상황과 결과를 문서로 알려 달라고 담당 기관에 요청하는 회신 요청서입니다.
+usage: >
+  민원을 냈는데 처리 기한이 지나도록 답이 없거나, 처리 결과를 문서로 받아야 할 때 쓰는 서식입니다.
+  최초 접수일과 접수번호, 민원 제목을 적어 담당 기관이 건을 바로 찾도록 하고, 회신받을 방법(우편·
+  전자우편·문자)을 고릅니다. 접수번호를 모르면 접수 영수증이나 접수 확인 문자를 참고하십시오.
+  처리 기한과 절차는 민원 종류에 따라 다르므로 해당 기관에 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인 이름과 연락처를 적습니다.
+  - 접수일, 접수번호, 민원 제목을 적습니다.
+  - 요청하는 회신 내용과 받을 방법을 고릅니다.
+  - 날짜를 적고 서명해 담당 기관에 제출합니다.
+faq:
+  - q: 접수번호를 모르면 어떻게 하나요?
+    a: 접수 확인 문자나 영수증을 찾아보십시오. 없으면 접수일과 제목을 자세히 적으면 담당자가 확인합니다.
+  - q: 회신을 요청하면 처리 기한이 늘어나나요?
+    a: 기한은 민원 종류에 따라 정해집니다. 연장 여부는 담당 기관에 문의하십시오.
+related: [civil-petition, info-disclosure-request, gov-admin-appeal, noise-complaint]
+blocks:
+  - type: doc_title
+    text: 민원 처리결과 회신 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["이메일", "", "회신 방법", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "hong@example.com", "", "우편"]
+      - ["", "서울시 한빛구 한빛로 1", "", ""]
+  - type: subtitle
+    text: 2. 접수한 민원
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["접수일", "", "접수번호", ""]
+      - ["민원 제목", "", "", ""]
+      - ["담당 기관", "", "", ""]
+    sample_rows:
+      - ["", "2026-09-10", "", "2026-0000"]
+      - ["", "도로 가로등 보수 요청", "", ""]
+      - ["", "한빛구청 도로관리과", "", ""]
+  - type: subtitle
+    text: 3. 요청 내용
+  - type: textbox
+    hint: "알고 싶은 처리 상황과 결과(처리 여부, 조치 내용, 지연 사유 등)를 적으십시오."
+    height_mm: 30
+    sample_text: "접수 후 한 달이 지났으나 안내를 받지 못했습니다. 처리 여부와 조치 내용, 지연 사유를 문서로 회신해 주시기 바랍니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    9 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 처리 기한과 절차는 민원 종류에 따라 다르니 담당 기관에 확인하십시오.

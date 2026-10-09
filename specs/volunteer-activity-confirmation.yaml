@@ -1,0 +1,88 @@
+id: volunteer-activity-confirmation
+title: 자원봉사 활동 확인서
+category: public
+subcategory: consent
+tags: [자원봉사확인서, 봉사활동확인서, 봉사시간확인, 봉사활동증명, 봉사실적]
+summary: 자원봉사자의 활동 기간·장소·내용·시간을 기관이 확인해 주는 봉사활동 확인서 양식입니다.
+usage: >
+  학교 제출, 동아리 활동 기록, 지원서 첨부용으로 봉사 실적을 확인받을 때 쓰는 서식입니다. 봉사자 정보와
+  활동 기간, 활동 장소, 활동 내용을 적고 일자별 시간을 표에 기록한 뒤 기관 담당자의 확인을 받습니다.
+  합계 시간은 일자별 시간을 더해 적습니다. 공식 봉사시간 인정 방식은 제출처마다 다르므로 제출 전에
+  인정 기준을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 봉사자 이름과 연락처, 활동 기관을 적습니다.
+  - 활동 기간과 활동 내용을 적습니다.
+  - 일자별 활동 시간을 표에 적고 합계를 계산합니다.
+  - 기관 담당자의 확인과 서명을 받습니다.
+faq:
+  - q: 합계 시간은 어떻게 계산하나요?
+    a: 일자별 활동 시간을 모두 더해 적습니다. 점심 등 쉬는 시간은 제출처 기준에 맞춰 뺍니다.
+  - q: 기관 담당자 서명이 꼭 필요한가요?
+    a: 확인서의 신뢰는 기관 확인에서 나옵니다. 제출처가 요구하는 확인 방식을 먼저 확인하십시오.
+related: [volunteer-application, recommendation-letter, club-activity-record]
+blocks:
+  - type: doc_title
+    text: 자원봉사 활동 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 봉사자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "소속", ""]
+    sample_rows:
+      - ["", "김서연", "", "2008-05-14"]
+      - ["", "010-3456-7890", "", "한빛고등학교"]
+  - type: subtitle
+    text: 2. 활동 기관과 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["활동 기관", "", "담당자", ""]
+      - ["활동 장소", "", "", ""]
+      - ["활동 내용", "", "", ""]
+    sample_rows:
+      - ["", "한빛복지관", "", "이수현"]
+      - ["", "서울시 한빛구 한빛로 1", "", ""]
+      - ["", "어르신 식사 배식 및 정리", "", ""]
+  - type: subtitle
+    text: 3. 일자별 활동 시간
+  - type: table
+    widths: [20, 25, 25, 15, 15]
+    header: ["활동일", "시작", "종료", "시간", "확인"]
+    empty_rows: 6
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["2026-09-06", "10:00", "13:00", "3", ""]
+      - ["2026-09-13", "10:00", "13:00", "3", ""]
+      - ["2026-09-20", "10:00", "14:00", "4", ""]
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["합계 시간", "", "활동 기간", ""]
+    sample_rows:
+      - ["", "10시간", "", "2026-09-06 ~ 09-20"]
+  - type: para
+    text: 위 사람이 위와 같이 봉사활동을 하였음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년    9 월    21 일
+  - type: sign_line
+    labels: ["기관 담당자(직인)"]
+    sample_names: [이수현]
+  - type: notice
+    text: 봉사시간 인정 기준은 제출처 규정을 확인하십시오.
