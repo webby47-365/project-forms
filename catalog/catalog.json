@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T08:17:44+09:00",
-  "count": 348,
+  "generated_at": "2026-10-11T08:17:34+09:00",
+  "count": 353,
   "forms": [
     {
       "id": "academy-attendance",
@@ -1161,6 +1161,114 @@
       "downloads": 0
     },
     {
+      "id": "annual-leave-usage-status-confirmation",
+      "title": "연차 사용 현황 확인서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차사용현황확인서",
+        "연차사용현황",
+        "연차잔여일수",
+        "연차확인서",
+        "연차정산"
+      ],
+      "summary": "발생한 연차와 사용·잔여 일수를 월별로 정리해 회사와 근로자가 함께 확인하는 연차 사용 현황 확인서입니다.",
+      "usage": "연차 사용 촉진 통지를 보내기 전이나 연말 정산, 퇴직 정산 전에 근로자별 연차 발생·사용·잔여 일수를 맞춰 볼 때 쓰는 서식입니다. 기준 기간과 발생 일수를 먼저 적고, 사용한 연차를 날짜별로 기록한 뒤 잔여 일수를 계산해 적습니다. 회사 기록과 근로자 기록이 다르면 비고란에 이유를 남기고 함께 확인해 서명합니다. 연차 발생 기준과 정산 방식은 근로계약·취업규칙과 고용노동부 안내에 따라 다르므로 제출 전 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 57365,
+        "docx": 38791,
+        "hwpx": 10257
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "회사와 근로자 정보, 연차 기준 기간을 적습니다.",
+        "발생 연차 일수를 적습니다.",
+        "사용한 연차를 날짜순으로 한 줄씩 적습니다.",
+        "잔여 일수를 계산해 적고 양측이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "잔여 일수는 어떻게 계산하나요?",
+          "a": "발생 일수에서 사용 일수를 빼서 적습니다. 반차는 0.5일 단위로 더하면 됩니다."
+        },
+        {
+          "q": "회사 기록과 근로자 기록이 다르면 어떻게 하나요?",
+          "a": "비고란에 차이와 이유를 적고 근태 기록을 함께 확인한 뒤 서명합니다."
+        },
+        {
+          "q": "이 확인서가 연차 사용 촉진 통지를 대신하나요?",
+          "a": "아닙니다. 현황을 확인하는 서류이며 촉진 절차는 고용노동부 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 확인 대상",
+          "items": [
+            "회사명",
+            "부서(팀)",
+            "근로자 성명",
+            "입사일",
+            "기준 기간",
+            "발생 연차"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 사용 내역",
+          "items": [
+            "사용일",
+            "일수",
+            "사유(비고)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 정리",
+          "items": [
+            "사용 합계",
+            "잔여 일수",
+            "확인일",
+            "특이사항"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-promotion-notice",
+        "unused-annual-leave-pay-request",
+        "annual-leave-carryover-agreement",
+        "annual-leave-plan"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-11T08:16:32+09:00",
+      "updated_at": "2026-10-11T08:17:13+09:00",
+      "downloads": 0
+    },
+    {
       "id": "answer-brief",
       "title": "답변서",
       "category": "legal",
@@ -2133,6 +2241,113 @@
       "warnings": [],
       "created_at": "2026-10-02T08:15:36+09:00",
       "updated_at": "2026-10-02T08:15:36+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "bid-inquiry-form",
+      "title": "입찰 질의서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "입찰질의서",
+        "입찰문의",
+        "공고질의",
+        "입찰공고질의",
+        "제안요청서질의"
+      ],
+      "summary": "입찰공고나 과업 내용 중 불분명한 부분을 발주기관에 문의할 때 쓰는 입찰 질의서 양식입니다.",
+      "usage": "입찰 공고문, 규격서, 과업지시서를 읽다가 해석이 애매한 부분을 발주기관에 서면으로 묻는 서식입니다. 공고 번호와 공고명, 질의하는 항목의 쪽수와 조항을 적고 질문을 한 건씩 구체적으로 씁니다. 질의 접수 기한과 방법(전자조달·이메일·팩스)은 공고마다 다르므로 공고문을 먼저 확인하십시오. 회신 내용은 입찰서 작성의 근거가 되므로 받은 답변은 보관해 두는 것이 좋습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48985,
+        "docx": 38636,
+        "hwpx": 10005
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "공고번호와 공고명, 발주기관을 공고문대로 적습니다.",
+        "질의하는 업체 정보와 담당자 연락처를 적습니다.",
+        "질의 항목마다 해당 쪽수와 조항, 질문 내용을 적습니다.",
+        "날짜를 적고 접수 방법에 맞춰 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "질의는 언제까지 보내야 하나요?",
+          "a": "공고마다 접수 기한이 다릅니다. 입찰공고문의 질의 안내를 먼저 확인하십시오."
+        },
+        {
+          "q": "질문이 여러 개면 어떻게 적나요?",
+          "a": "한 줄에 한 건씩 나누어 적으면 회신을 받기 쉽습니다."
+        },
+        {
+          "q": "회신은 어디에서 확인하나요?",
+          "a": "공고마다 다릅니다. 이메일 회신이나 공고 게시판 등 안내된 방법을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 공고 정보",
+          "items": [
+            "공고번호",
+            "발주기관",
+            "공고명"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 질의 업체",
+          "items": [
+            "업체명",
+            "대표자",
+            "담당자",
+            "연락처",
+            "이메일",
+            "질의일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 질의 내용",
+          "items": [
+            "쪽수·조항",
+            "질의 내용",
+            "회신(발주기관 기재)"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "bid-document-submission-list",
+        "gov-bid-participation",
+        "bid-participation-poa",
+        "integrity-pledge-bidding"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-11T08:16:48+09:00",
+      "updated_at": "2026-10-11T08:17:19+09:00",
       "downloads": 0
     },
     {
@@ -4845,6 +5060,108 @@
         "vehicle-use-request"
       ],
       "seal": true
+    },
+    {
+      "id": "business-vehicle-logbook",
+      "title": "업무용 차량 운행일지",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "업무용차량운행일지",
+        "차량운행일지",
+        "운행기록부",
+        "차량일지",
+        "업무용승용차운행기록"
+      ],
+      "summary": "업무용 차량의 운행일·목적지·주행거리·운행 목적을 날짜별로 기록하는 차량 운행일지 양식입니다.",
+      "usage": "회사나 사업장의 업무용 차량을 누가, 언제, 어디로, 무슨 목적으로 운행했는지 남기는 서식입니다. 차량번호와 기록 월을 먼저 적고, 운행할 때마다 출발 전·도착 후 계기판 거리를 기록해 주행거리를 계산합니다. 업무용 승용차의 비용 처리와 관련한 기록 의무는 세법과 국세청 안내에 따라 달라지므로 신고 전에 확인하십시오. 본 서식은 기록용 틀이며 세무 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 63422,
+        "docx": 39099,
+        "hwpx": 11011
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "차량 종류와 차량번호, 기록 월을 적습니다.",
+        "운행할 때마다 날짜와 운전자를 적습니다.",
+        "출발 전과 도착 후 계기판 거리를 적고 주행거리를 계산합니다.",
+        "목적지와 운행 목적을 적고 월말에 합계를 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "주행거리는 어떻게 계산하나요?",
+          "a": "도착 후 계기판 거리에서 출발 전 계기판 거리를 빼서 적습니다."
+        },
+        {
+          "q": "운행이 없는 날도 적어야 하나요?",
+          "a": "운행한 날만 적으면 됩니다. 기록 방식은 회사 내부 규정을 따르십시오."
+        },
+        {
+          "q": "세무 신고용 기록으로 그대로 쓸 수 있나요?",
+          "a": "신고 기준은 세법과 국세청 안내에 따라 다릅니다. 신고 전에 요건을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 차량 정보",
+          "items": [
+            "회사명",
+            "차종",
+            "차량번호",
+            "기록 월"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 운행 기록",
+          "items": [
+            "날짜",
+            "운전자",
+            "출발 전(km)",
+            "도착 후(km)",
+            "거리",
+            "목적지",
+            "운행 목적",
+            "월 총 거리",
+            "관리 책임자"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-use-consent",
+        "vehicle-delivery-confirmation",
+        "vehicle-inspection-poa",
+        "traffic-violation-driver-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-11T08:16:54+09:00",
+      "updated_at": "2026-10-11T08:17:34+09:00",
+      "downloads": 0
     },
     {
       "id": "campaign-result",
@@ -30096,6 +30413,105 @@
       "downloads": 0
     },
     {
+      "id": "service-address-change-report",
+      "title": "송달장소 변경 신고서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "송달장소변경신고서",
+        "송달주소변경",
+        "주소변경신고서",
+        "소송서류송달",
+        "송달장소신고"
+      ],
+      "summary": "진행 중인 소송에서 이사 등으로 소송서류를 받을 주소가 바뀌었을 때 법원에 내는 송달장소 변경 신고서 양식입니다.",
+      "usage": "소송 중 이사나 사무실 이전으로 서류를 받을 곳이 바뀌었을 때 재판부에 알리는 서류입니다. 사건번호와 사건명, 당사자를 정확히 적고 변경 전·후 주소와 변경 사유를 함께 적습니다. 신고하지 않으면 법원 서류가 이전 주소로 발송될 수 있으므로 바뀐 즉시 내는 것이 좋습니다. 제출 방식과 필요한 첨부는 담당 재판부의 안내를 확인하십시오. 본 서식은 참고용이며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 41417,
+        "docx": 38503,
+        "hwpx": 9607
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "법원 이름과 사건번호, 사건명을 기록대로 적습니다.",
+        "신고하는 당사자의 이름과 지위(원고·피고)를 적습니다.",
+        "변경 전 주소와 변경 후 주소, 변경일을 적습니다.",
+        "날짜를 적고 신고인이 서명하여 재판부에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "신고하지 않으면 어떻게 되나요?",
+          "a": "이전 주소로 서류가 발송될 수 있습니다. 불이익 여부는 사안마다 다르니 재판부 안내를 확인하십시오."
+        },
+        {
+          "q": "전화번호도 함께 바꿔 적나요?",
+          "a": "연락처가 바뀌었다면 함께 적어 두면 연락이 수월합니다."
+        },
+        {
+          "q": "변경 사실을 증명하는 서류가 필요한가요?",
+          "a": "재판부에 따라 다릅니다. 제출 전에 담당 재판부나 법원 민원실에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사건 표시",
+          "items": [
+            "법원",
+            "사건번호",
+            "사건명",
+            "원고",
+            "피고"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신고인과 변경 내용",
+          "items": [
+            "신고인",
+            "변경 전 주소",
+            "변경 후 주소",
+            "변경일",
+            "연락처"
+          ],
+          "note": "변경 사유와 참고할 내용을 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "preparatory-brief",
+        "answer-brief",
+        "written-statement",
+        "lawsuit-withdrawal"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-11T08:16:38+09:00",
+      "updated_at": "2026-10-11T08:16:38+09:00",
+      "downloads": 0
+    },
+    {
       "id": "service-contract",
       "title": "용역계약서",
       "category": "legal",
@@ -30607,6 +31023,106 @@
         "director-acceptance"
       ],
       "seal": true
+    },
+    {
+      "id": "shareholder-meeting-notice",
+      "title": "주주총회 소집통지서",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "주주총회소집통지서",
+        "주주총회소집",
+        "총회소집통지",
+        "정기주주총회",
+        "소집통지서"
+      ],
+      "summary": "주주총회의 일시·장소·회의 목적 사항을 주주에게 알리는 주주총회 소집통지서 양식입니다.",
+      "usage": "주식회사가 정기·임시 주주총회를 열기 전에 주주에게 보내는 소집 통지서입니다. 회의 일시와 장소, 회의 목적 사항(안건)을 빠짐없이 적고 대표이사 명의로 발송합니다. 통지 기간과 방법은 상법과 회사 정관에 따라 정해지므로 발송 전에 정관을 확인하십시오. 참석이 어려운 주주를 위해 위임장 제출 방법을 함께 안내하면 좋습니다. 본 서식은 틀만 제공하며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45343,
+        "docx": 38638,
+        "hwpx": 9818
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "회사명과 총회 종류(정기·임시)를 적습니다.",
+        "총회 일시와 장소를 적습니다.",
+        "회의 목적 사항을 안건 순서대로 적습니다.",
+        "발송일과 대표이사 이름을 적고 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "소집통지는 며칠 전에 보내야 하나요?",
+          "a": "기간과 방법은 상법과 정관에 따라 다릅니다. 발송 전에 회사 정관을 확인하십시오."
+        },
+        {
+          "q": "안건은 어느 정도로 자세히 적나요?",
+          "a": "주주가 무엇을 결정하는 자리인지 알 수 있게 안건별로 한 줄씩 적습니다."
+        },
+        {
+          "q": "참석하지 못하는 주주는 어떻게 하나요?",
+          "a": "위임장을 내면 대리인이 참석할 수 있습니다. 제출 방법을 통지서에 함께 적어 두세요."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 총회 개요",
+          "items": [
+            "회사명",
+            "총회 종류",
+            "일시",
+            "장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 회의 목적 사항",
+          "items": [
+            "안건",
+            "내용"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 안내 사항",
+          "items": [],
+          "note": "대리 참석 방법, 지참 서류 등 주주에게 알릴 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "shareholder-meeting-minutes",
+        "board-minutes",
+        "shareholder-register",
+        "articles-of-incorporation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-11T08:16:43+09:00",
+      "updated_at": "2026-10-11T08:17:29+09:00",
+      "downloads": 0
     },
     {
       "id": "shareholder-register",

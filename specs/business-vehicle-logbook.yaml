@@ -1,0 +1,70 @@
+id: business-vehicle-logbook
+title: 업무용 차량 운행일지
+category: public
+subcategory: vehicle
+tags: [업무용차량운행일지, 차량운행일지, 운행기록부, 차량일지, 업무용승용차운행기록]
+summary: 업무용 차량의 운행일·목적지·주행거리·운행 목적을 날짜별로 기록하는 차량 운행일지 양식입니다.
+usage: >
+  회사나 사업장의 업무용 차량을 누가, 언제, 어디로, 무슨 목적으로 운행했는지 남기는 서식입니다.
+  차량번호와 기록 월을 먼저 적고, 운행할 때마다 출발 전·도착 후 계기판 거리를 기록해 주행거리를
+  계산합니다. 업무용 승용차의 비용 처리와 관련한 기록 의무는 세법과 국세청 안내에 따라 달라지므로
+  신고 전에 확인하십시오. 본 서식은 기록용 틀이며 세무 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 차량 종류와 차량번호, 기록 월을 적습니다.
+  - 운행할 때마다 날짜와 운전자를 적습니다.
+  - 출발 전과 도착 후 계기판 거리를 적고 주행거리를 계산합니다.
+  - 목적지와 운행 목적을 적고 월말에 합계를 냅니다.
+faq:
+  - q: 주행거리는 어떻게 계산하나요?
+    a: 도착 후 계기판 거리에서 출발 전 계기판 거리를 빼서 적습니다.
+  - q: 운행이 없는 날도 적어야 하나요?
+    a: 운행한 날만 적으면 됩니다. 기록 방식은 회사 내부 규정을 따르십시오.
+  - q: 세무 신고용 기록으로 그대로 쓸 수 있나요?
+    a: 신고 기준은 세법과 국세청 안내에 따라 다릅니다. 신고 전에 요건을 확인하십시오.
+related: [vehicle-use-consent, vehicle-delivery-confirmation, vehicle-inspection-poa, traffic-violation-driver-confirmation]
+blocks:
+  - type: doc_title
+    text: 업무용 차량 운행일지
+    spaced: false
+  - type: subtitle
+    text: 1. 차량 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "차종", ""]
+      - ["차량번호", "", "기록 월", ""]
+    sample_rows:
+      - ["", "(주)한빛물산", "", "승용 소형"]
+      - ["", "00가 0000", "", "2026년 9월"]
+  - type: subtitle
+    text: 2. 운행 기록
+  - type: table
+    widths: [12, 12, 14, 14, 10, 18, 20]
+    header: [날짜, 운전자, 출발 전(km), 도착 후(km), 거리, 목적지, 운행 목적]
+    empty_rows: 10
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["09-07", "박민준", "12,300", "12,345", "45", "고객사 방문", "계약 협의"]
+      - ["09-14", "김서연", "12,345", "12,372", "27", "관공서", "서류 제출"]
+      - ["09-21", "박민준", "12,372", "12,420", "48", "거래처", "납품 확인"]
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["월 총 거리", "", "관리 책임자", ""]
+    sample_rows:
+      - ["", "120km", "", "이수현"]
+  - type: date_line
+    sample_text: 2026 년    9 월   30 일
+  - type: sign_line
+    label: 관리 책임자
+    sample_names: [이수현]
+  - type: notice
+    text: 업무용 승용차 기록 요건은 세법과 국세청 안내를 확인하십시오.

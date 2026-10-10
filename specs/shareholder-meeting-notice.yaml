@@ -1,0 +1,77 @@
+id: shareholder-meeting-notice
+title: 주주총회 소집통지서
+category: corp
+subcategory: startup
+tags: [주주총회소집통지서, 주주총회소집, 총회소집통지, 정기주주총회, 소집통지서]
+summary: 주주총회의 일시·장소·회의 목적 사항을 주주에게 알리는 주주총회 소집통지서 양식입니다.
+usage: >
+  주식회사가 정기·임시 주주총회를 열기 전에 주주에게 보내는 소집 통지서입니다. 회의 일시와 장소,
+  회의 목적 사항(안건)을 빠짐없이 적고 대표이사 명의로 발송합니다. 통지 기간과 방법은 상법과 회사
+  정관에 따라 정해지므로 발송 전에 정관을 확인하십시오. 참석이 어려운 주주를 위해 위임장 제출 방법을
+  함께 안내하면 좋습니다. 본 서식은 틀만 제공하며 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사명과 총회 종류(정기·임시)를 적습니다.
+  - 총회 일시와 장소를 적습니다.
+  - 회의 목적 사항을 안건 순서대로 적습니다.
+  - 발송일과 대표이사 이름을 적고 날인합니다.
+faq:
+  - q: 소집통지는 며칠 전에 보내야 하나요?
+    a: 기간과 방법은 상법과 정관에 따라 다릅니다. 발송 전에 회사 정관을 확인하십시오.
+  - q: 안건은 어느 정도로 자세히 적나요?
+    a: 주주가 무엇을 결정하는 자리인지 알 수 있게 안건별로 한 줄씩 적습니다.
+  - q: 참석하지 못하는 주주는 어떻게 하나요?
+    a: 위임장을 내면 대리인이 참석할 수 있습니다. 제출 방법을 통지서에 함께 적어 두세요.
+related: [shareholder-meeting-minutes, board-minutes, shareholder-register, articles-of-incorporation]
+blocks:
+  - type: doc_title
+    text: 주주총회 소집통지서
+    spaced: false
+  - type: para
+    text: 주주 각위
+    align: left
+  - type: para
+    text: 아래와 같이 주주총회를 개최하오니 참석하여 주시기 바랍니다.
+    align: left
+  - type: subtitle
+    text: 1. 총회 개요
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["회사명", ""]
+      - ["총회 종류", "(   ) 정기주주총회   (   ) 임시주주총회"]
+      - ["일시", ""]
+      - ["장소", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스"]
+      - ["", "( ✓ ) 정기주주총회   (   ) 임시주주총회"]
+      - ["", "2026-09-18 10:00"]
+      - ["", "서울특별시 마포구 월드컵북로 396 본사 3층 회의실"]
+  - type: subtitle
+    text: 2. 회의 목적 사항
+  - type: table
+    widths: [10, 40, 50]
+    header: ["No", 안건, 내용]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "재무제표 승인", "제10기 재무제표 승인의 건"]
+      - ["2", "이사 선임", "이사 1인 선임의 건"]
+  - type: subtitle
+    text: 3. 안내 사항
+  - type: textbox
+    hint: "대리 참석 방법, 지참 서류 등 주주에게 알릴 내용을 적으십시오."
+    height_mm: 22
+    sample_text: "참석이 어려운 주주께서는 위임장을 총회 전일까지 회사로 보내 주시기 바랍니다."
+  - type: date_line
+    sample_text: 2026 년    9 월    3 일
+  - type: sign_line
+    label: 대표이사
+    sample_names: [박민준]
+  - type: notice
+    text: 통지 기간과 방법은 상법과 회사 정관을 확인하십시오.

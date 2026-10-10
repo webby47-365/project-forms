@@ -1,0 +1,79 @@
+id: annual-leave-usage-status-confirmation
+title: 연차 사용 현황 확인서
+category: corp
+subcategory: hr
+tags: [연차사용현황확인서, 연차사용현황, 연차잔여일수, 연차확인서, 연차정산]
+summary: 발생한 연차와 사용·잔여 일수를 월별로 정리해 회사와 근로자가 함께 확인하는 연차 사용 현황 확인서입니다.
+usage: >
+  연차 사용 촉진 통지를 보내기 전이나 연말 정산, 퇴직 정산 전에 근로자별 연차 발생·사용·잔여 일수를
+  맞춰 볼 때 쓰는 서식입니다. 기준 기간과 발생 일수를 먼저 적고, 사용한 연차를 날짜별로 기록한 뒤 잔여 일수를
+  계산해 적습니다. 회사 기록과 근로자 기록이 다르면 비고란에 이유를 남기고 함께 확인해 서명합니다.
+  연차 발생 기준과 정산 방식은 근로계약·취업규칙과 고용노동부 안내에 따라 다르므로 제출 전 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사와 근로자 정보, 연차 기준 기간을 적습니다.
+  - 발생 연차 일수를 적습니다.
+  - 사용한 연차를 날짜순으로 한 줄씩 적습니다.
+  - 잔여 일수를 계산해 적고 양측이 서명합니다.
+faq:
+  - q: 잔여 일수는 어떻게 계산하나요?
+    a: 발생 일수에서 사용 일수를 빼서 적습니다. 반차는 0.5일 단위로 더하면 됩니다.
+  - q: 회사 기록과 근로자 기록이 다르면 어떻게 하나요?
+    a: 비고란에 차이와 이유를 적고 근태 기록을 함께 확인한 뒤 서명합니다.
+  - q: 이 확인서가 연차 사용 촉진 통지를 대신하나요?
+    a: 아닙니다. 현황을 확인하는 서류이며 촉진 절차는 고용노동부 안내를 확인하십시오.
+related: [annual-leave-promotion-notice, unused-annual-leave-pay-request, annual-leave-carryover-agreement, annual-leave-plan]
+blocks:
+  - type: doc_title
+    text: 연차 사용 현황 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 확인 대상
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "부서(팀)", ""]
+      - ["근로자 성명", "", "입사일", ""]
+      - ["기준 기간", "", "발생 연차", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "영업지원팀"]
+      - ["", "김서연", "", "2022-03-02"]
+      - ["", "2026.3.2~2027.3.1", "", "17일"]
+  - type: subtitle
+    text: 2. 사용 내역
+  - type: table
+    widths: [10, 30, 15, 45]
+    header: ["No", 사용일, 일수, 사유(비고)]
+    empty_rows: 7
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "2026-05-04", "1", "개인 사유"]
+      - ["2", "2026-07-27 ~ 07-29", "3", "여름 휴가"]
+      - ["3", "2026-09-14", "0.5", "오후 반차"]
+  - type: subtitle
+    text: 3. 정리
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["사용 합계", "", "잔여 일수", ""]
+      - ["확인일", "", "특이사항", ""]
+    sample_rows:
+      - ["", "4.5일", "", "12.5일"]
+      - ["", "2026-10-11", "", "없음"]
+  - type: para
+    text: 위 연차 사용 현황을 회사와 근로자가 함께 확인하였습니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   11 일
+  - type: sign_line
+    labels: ["회사", "근로자"]
+    sample_names: [박민준, 김서연]
+  - type: notice
+    text: 연차 발생·정산 기준은 근로계약과 취업규칙, 고용노동부 안내를 확인하십시오.
