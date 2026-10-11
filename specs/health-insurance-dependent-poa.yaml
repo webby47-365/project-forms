@@ -1,0 +1,83 @@
+id: health-insurance-dependent-poa
+title: 건강보험 피부양자 신고 위임장
+category: public
+subcategory: insurance
+tags: [피부양자위임장, 건강보험피부양자, 피부양자신고대리, 직장가입자위임, 건강보험위임]
+summary: 건강보험 피부양자 자격 취득·상실 신고를 가족이나 담당자가 대신하도록 맡기는 위임장 양식입니다.
+usage: >
+  직장가입자가 가족을 피부양자로 올리거나 내릴 때 직접 방문이 어려워 대리인에게 맡기는 서식입니다.
+  위임인(가입자)과 대상 피부양자, 위임 업무(취득·상실·변경)와 위임 기간을 적고 위임인이 서명합니다.
+  신고 자체와 자격 요건은 국민건강보험공단 기준에 따르므로 필요한 증빙서류와 대리 신고 가능 여부는
+  공단에 먼저 확인하십시오. 대리인 신분 확인 방식도 접수처 안내를 따릅니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 위임인(직장가입자)의 이름과 연락처를 적습니다.
+  - 대리인의 이름과 위임인과의 관계를 적습니다.
+  - 대상 피부양자와 신고 종류(취득·상실)를 표시합니다.
+  - 위임 기간을 적고 위임인이 서명합니다.
+faq:
+  - q: 대리인이 신분증을 꼭 가져가야 하나요?
+    a: 접수처가 대리인 신분 확인을 요구할 수 있으니 신분증을 준비하는 편이 안전합니다.
+  - q: 피부양자 요건은 이 서식에서 확인되나요?
+    a: 아닙니다. 소득·재산 등 요건은 공단 기준이므로 신고 전에 공단에 문의하십시오.
+  - q: 위임 기간은 어떻게 적나요?
+    a: "신고 접수까지 필요한 짧은 기간(예: 한 달)으로 적습니다."
+related: [social-insurance-filing-poa, health-insurance-eligibility-history-poa, family-relationship-confirmation, insurance-enrollment-confirmation-request]
+blocks:
+  - type: doc_title
+    text: 건강보험 피부양자 신고 위임장
+    spaced: false
+  - type: subtitle
+    text: 1. 위임인 (직장가입자)
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "근무처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-03-02"]
+      - ["", "010-1234-5678", "", "(주)한빛커머스"]
+  - type: subtitle
+    text: 2. 대리인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "위임인과의 관계", ""]
+    sample_rows:
+      - ["", "김서연", "", "1987-09-14"]
+      - ["", "010-9876-5432", "", "배우자"]
+  - type: subtitle
+    text: 3. 위임 내용
+  - type: table
+    widths: [26, 18, 20, 36]
+    header: [피부양자 성명, 관계, 신고 종류, 비고]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["홍민준", "자녀", "취득", "2026-09 출생"]
+      - ["김서연", "배우자", "상실", "직장가입 전환"]
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["위임 기간", "", "제출처", ""]
+    sample_rows:
+      - ["", "2026.10.12~11.12", "", "국민건강보험공단"]
+  - type: para
+    text: 위 대리인에게 위 건강보험 피부양자 신고 업무를 위임합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   12 일
+  - type: sign_line
+    labels: ["위임인", "대리인"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 필요 증빙서류와 대리 신고 가능 여부는 국민건강보험공단에 확인하십시오.

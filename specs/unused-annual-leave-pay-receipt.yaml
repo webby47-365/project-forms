@@ -1,0 +1,71 @@
+id: unused-annual-leave-pay-receipt
+title: 미사용 연차수당 수령 확인서
+category: corp
+subcategory: hr
+tags: [연차수당수령확인서, 미사용연차수당, 연차수당지급확인, 연차보상, 수당수령]
+summary: 쓰지 못한 연차를 수당으로 받았음을 지급액·지급일과 함께 근로자가 확인하는 수령 확인서 양식입니다.
+usage: >
+  연말이나 퇴사 때 사용하지 못한 연차를 수당으로 정산해 받은 뒤, 지급 내역을 서로 확인해 두는
+  서식입니다. 근로자 정보, 대상 연차 일수, 일 통상임금, 지급액과 지급일을 적고 근로자가 서명합니다.
+  지급액 산정 방식은 회사 규정과 법령 기준에 따르며 이 서식은 계산을 대신하지 않습니다.
+  분쟁에 대비해 회사와 근로자가 각각 한 부씩 보관하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 근로자 이름과 소속, 입사일을 적습니다.
+  - 정산 대상 기간과 미사용 연차 일수를 적습니다.
+  - 일 통상임금과 지급액, 지급일을 적습니다.
+  - 근로자가 확인 서명하고 회사가 날인합니다.
+faq:
+  - q: 이 서식으로 수당이 계산되나요?
+    a: 아닙니다. 지급액은 회사가 정한 기준으로 산정해 적고 이 서식은 수령 사실만 확인합니다.
+  - q: 수령 확인서에 서명하면 이의를 못 하나요?
+    a: 서명은 받은 사실의 확인입니다. 금액에 이의가 있으면 서명 전에 사유란에 적어 두십시오.
+  - q: 분할 지급이면 어떻게 적나요?
+    a: 비고란에 회차별 지급일과 금액을 나누어 적습니다.
+related: [unused-annual-leave-pay-request, annual-leave-notice-receipt, annual-leave-usage-status-confirmation, severance-calculation]
+blocks:
+  - type: doc_title
+    text: 미사용 연차수당 수령 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 근로자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속·직위", ""]
+      - ["입사일", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "경영지원팀 대리"]
+      - ["", "2021-03-02", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 정산 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["정산 기간", "", "미사용 연차", ""]
+      - ["일 통상임금", "", "지급액", ""]
+      - ["지급일", "", "지급 방법", ""]
+    sample_rows:
+      - ["", "2025.3.2~2026.3.1", "", "3일"]
+      - ["", "100,000원", "", "300,000원"]
+      - ["", "2026-10-10", "", "급여 계좌 입금"]
+  - type: textbox
+    hint: "분할 지급이나 금액 이견 등 남길 내용을 적으십시오."
+    height_mm: 24
+    sample_text: "위 금액은 2026년 10월 급여와 함께 지급되었으며 별도 이견은 없습니다."
+  - type: para
+    text: 위 미사용 연차수당을 틀림없이 수령하였음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   12 일
+  - type: sign_line
+    labels: ["근로자", "회사 확인"]
+    sample_names: [홍길동, 박민준]
+  - type: notice
+    text: 산정 기준은 회사 규정과 관련 법령을 확인하십시오. 확인서는 각 한 부씩 보관합니다.

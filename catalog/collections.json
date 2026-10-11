@@ -7,7 +7,7 @@
       "lead": "사직 의사를 밝히는 순간부터 마지막 정산까지, 순서대로 필요한 서식을 모았습니다.",
       "ids": [
         "resignation-letter", "resignation-simple", "retirement-application",
-        "handover-report", "asset-handover", "severance-calculation",
+        "handover-report", "asset-handover", "severance-calculation", "unused-annual-leave-pay-receipt",
         "separation-certificate-request", "career-certificate-request", "career-certificate", "employment-certificate", "annual-leave-plan",
         "career-description"
       ]
