@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T08:18:28+09:00",
-  "count": 358,
+  "generated_at": "2026-10-13T08:20:03+09:00",
+  "count": 363,
   "forms": [
     {
       "id": "academy-attendance",
@@ -855,6 +855,104 @@
       "warnings": [],
       "created_at": "2026-10-04T12:02:21+09:00",
       "updated_at": "2026-10-04T12:02:21+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-promotion-record",
+      "title": "연차 사용 촉진 이행 기록표",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차촉진기록",
+        "연차사용촉진이행",
+        "촉진통지대장",
+        "연차관리",
+        "연차촉진증빙"
+      ],
+      "summary": "근로자별 연차 사용 촉진 1차 통지·회신·2차 지정 통보 날짜를 한 장에 모아 두는 사업주 보관용 이행 기록표 양식입니다.",
+      "usage": "연차 사용 촉진을 진행한 회사가 근로자별로 언제 무엇을 보냈는지 한눈에 정리해 두는 내부 기록표입니다. 근로자 이름, 남은 연차 일수, 1차 통지일, 근로자 회신일, 2차 지정 통보일을 한 줄씩 적고 담당자가 확인합니다. 통지서와 회신서 원본은 따로 보관하고 이 표는 목록 관리용으로 씁니다. 촉진 방식과 기한은 회사 규정과 관련 법령을 확인한 뒤 적용하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 63796,
+        "docx": 38987,
+        "hwpx": 10880
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "촉진 대상 연도와 부서를 적습니다.",
+        "근로자별 남은 연차 일수를 적습니다.",
+        "1차 통지일과 근로자 회신일을 적습니다.",
+        "2차 지정 통보일을 적고 담당자가 확인 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "통지서 원본도 이 표에 붙이나요?",
+          "a": "아닙니다. 원본은 따로 보관하고 이 표에는 날짜만 적어 목록으로 씁니다."
+        },
+        {
+          "q": "회신이 없으면 어떻게 적나요?",
+          "a": "회신일란에 \"미회신\"이라고 적고 비고란에 확인한 방법을 남겨 둡니다."
+        },
+        {
+          "q": "근로자가 많으면 어떻게 하나요?",
+          "a": "같은 서식을 여러 장 출력해 부서별로 나누어 쓰면 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 기본 정보",
+          "items": [
+            "대상 연도",
+            "부서",
+            "작성일",
+            "담당자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 근로자별 이행 내역",
+          "items": [
+            "성명",
+            "남은 연차",
+            "1차 통지일",
+            "근로자 회신일",
+            "2차 통보일"
+          ],
+          "note": "진행 중 특이사항(휴직자, 퇴사 예정자 등)을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-promotion-notice",
+        "annual-leave-timing-designation-notice",
+        "annual-leave-notice-receipt",
+        "annual-leave-usage-status-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-13T08:19:22+09:00",
+      "updated_at": "2026-10-13T08:19:22+09:00",
       "downloads": 0
     },
     {
@@ -8741,6 +8839,108 @@
         "receipt"
       ],
       "seal": true
+    },
+    {
+      "id": "corporate-seal-report-poa",
+      "title": "법인인감 신고 위임장",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "법인인감신고위임장",
+        "법인인감신고",
+        "인감신고대리",
+        "등기소위임",
+        "대표이사위임장"
+      ],
+      "summary": "법인 대표이사가 법인인감 신고 절차를 직원이나 대리인에게 맡길 때 쓰는 위임장 양식입니다.",
+      "usage": "법인인감을 새로 신고하거나 바꿀 때 대표이사가 직접 등기소에 가기 어려운 경우 대리인에게 절차를 맡기는 서식입니다. 법인 정보와 대리인 정보, 위임하는 내용과 신고할 인감의 종류를 적고 대표이사가 서명 또는 날인합니다. 필요한 첨부서류와 본인 확인 방식은 관할 등기소 안내에 따라 달라질 수 있으므로 방문 전에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 43100,
+        "docx": 38535,
+        "hwpx": 9620
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "법인명과 본점 주소, 대표이사 이름을 적습니다.",
+        "대리인의 성명과 연락처를 적습니다.",
+        "위임할 내용과 신고 사유를 적습니다.",
+        "대표이사가 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "직원이 대신 신고할 수 있나요?",
+          "a": "위임장이 있으면 대리가 가능한 경우가 많습니다. 필요 서류는 관할 등기소 안내를 확인하십시오."
+        },
+        {
+          "q": "위임장에 어떤 도장을 찍나요?",
+          "a": "신고하려는 인감과 같은 도장을 쓰는지 등 방식은 등기소 안내를 확인하십시오."
+        },
+        {
+          "q": "위임 기간을 적어야 하나요?",
+          "a": "위임 범위를 분명히 하려면 기간을 적어 두는 편이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임하는 법인",
+          "items": [
+            "법인명",
+            "대표이사",
+            "본점 주소",
+            "법인등록번호",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대리인",
+          "items": [
+            "성명",
+            "직위",
+            "생년월일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [],
+          "note": "위임할 업무와 신고 사유, 위임 기간을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "seal-usage-log",
+        "power-of-attorney",
+        "business-registration-poa",
+        "shareholder-meeting-minutes"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-13T08:19:42+09:00",
+      "updated_at": "2026-10-13T08:19:42+09:00",
+      "downloads": 0
     },
     {
       "id": "counseling-log",
@@ -17259,6 +17459,110 @@
       "downloads": 0
     },
     {
+      "id": "hearing-date-change-request",
+      "title": "변론기일 변경 신청서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "기일변경신청서",
+        "변론기일변경",
+        "재판기일연기",
+        "기일연기신청",
+        "기일변경"
+      ],
+      "summary": "지정된 재판 기일에 출석하기 어려운 당사자가 사유를 적어 법원에 기일 변경을 요청하는 신청서 양식입니다.",
+      "usage": "재판 기일에 부득이한 사정이 생겼을 때 법원에 기일을 바꿔 달라고 요청하는 서식입니다. 사건번호와 사건명, 지정된 기일, 변경을 원하는 사유와 희망 일정을 적고 서명합니다. 사유를 뒷받침하는 자료가 있으면 함께 내는 것이 좋습니다. 변경 여부는 법원이 판단하므로 신청했다고 해서 반드시 받아들여지는 것은 아닙니다. 제출 방식과 기한은 담당 재판부에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46566,
+        "docx": 38617,
+        "hwpx": 9730
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사건번호와 사건명, 법원·재판부를 적습니다.",
+        "지정된 기일의 날짜와 시각을 적습니다.",
+        "변경이 필요한 사유와 희망 일정을 적습니다.",
+        "증빙 자료를 붙이고 서명해 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "신청하면 기일이 꼭 바뀌나요?",
+          "a": "아닙니다. 변경 여부는 재판부가 판단하므로 신청 후에도 기일이 유지될 수 있습니다."
+        },
+        {
+          "q": "언제까지 내야 하나요?",
+          "a": "사유가 생기면 가능한 한 빨리 냅니다. 구체적인 방식은 담당 재판부에 확인하십시오."
+        },
+        {
+          "q": "증빙 자료가 꼭 필요한가요?",
+          "a": "사유를 뒷받침하는 자료가 있으면 설득력이 높아집니다. 사유에 맞는 자료를 붙이십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사건 표시",
+          "items": [
+            "사건번호",
+            "사건명",
+            "법원·재판부",
+            "지정 기일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신청인",
+          "items": [
+            "성명",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 신청 취지",
+          "items": [
+            "희망 일정",
+            "첨부 자료"
+          ],
+          "note": "변경이 필요한 사유를 구체적으로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "preparatory-brief",
+        "answer-brief",
+        "power-of-attorney",
+        "evidence-submission-list"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-13T08:19:28+09:00",
+      "updated_at": "2026-10-13T08:20:03+09:00",
+      "downloads": 0
+    },
+    {
       "id": "hospital-transfer-request",
       "title": "전원(轉院) 요청서",
       "category": "welfare",
@@ -17371,6 +17675,113 @@
         "medical-expense-support"
       ],
       "seal": true
+    },
+    {
+      "id": "hospitalization-confirmation-request",
+      "title": "입퇴원확인서 발급 신청서",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "입퇴원확인서",
+        "입원확인서발급",
+        "퇴원확인서",
+        "입원기간확인",
+        "병원서류신청"
+      ],
+      "summary": "병원에 입원했던 기간을 확인받기 위해 의료기관에 입퇴원확인서 발급을 요청하는 신청서 양식입니다.",
+      "usage": "보험 청구나 회사 제출 등으로 입원 기간을 증명해야 할 때 의료기관에 입퇴원확인서를 요청하는 서식입니다. 환자 정보와 입원·퇴원 예정 기간, 제출처와 수령 방법을 적습니다. 병명이나 치료 내용은 제출처가 꼭 요구할 때만 의료기관과 상의해 정하고, 이 서식에는 적지 않습니다. 대리인이 신청하면 위임 관계 확인이 필요할 수 있으니 병원 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48074,
+        "docx": 38590,
+        "hwpx": 9732
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "환자의 성명과 생년월일, 연락처를 적습니다.",
+        "입원일과 퇴원일을 적습니다.",
+        "제출처와 필요한 부수를 적습니다.",
+        "수령 방법을 고르고 신청인이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "병명도 적어야 하나요?",
+          "a": "이 서식에는 병명란이 없습니다. 제출처가 요구하면 의료기관과 상의해 정하십시오."
+        },
+        {
+          "q": "가족이 대신 신청할 수 있나요?",
+          "a": "병원마다 확인 절차가 다릅니다. 대리 신청 시 필요한 서류는 병원 원무과에 확인하십시오."
+        },
+        {
+          "q": "발급 비용이 드나요?",
+          "a": "비용과 소요 시간은 의료기관마다 다릅니다. 신청할 때 원무과에 문의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 환자 정보",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처",
+            "병원 등록번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 입원 기간",
+          "items": [
+            "입원일",
+            "퇴원일",
+            "진료과",
+            "병동·병실"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 발급 요청 내용",
+          "items": [
+            "제출처",
+            "필요 부수",
+            "수령 방법",
+            "신청인 구분"
+          ],
+          "note": "추가로 요청할 사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "medical-record-request",
+        "outpatient-visit-certificate",
+        "medical-expense-support",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-13T08:19:35+09:00",
+      "updated_at": "2026-10-13T08:19:35+09:00",
+      "downloads": 0
     },
     {
       "id": "household-budget",
@@ -34731,6 +35142,113 @@
       "warnings": [],
       "created_at": "2026-10-07T08:17:04+09:00",
       "updated_at": "2026-10-07T08:17:04+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "used-car-payment-receipt",
+      "title": "자동차 매매대금 영수확인서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차매매대금영수",
+        "중고차대금확인",
+        "차량대금영수증",
+        "계약금잔금확인",
+        "차량매매영수"
+      ],
+      "summary": "중고차를 사고팔 때 계약금·중도금·잔금을 주고받은 날짜와 금액을 판매자가 확인하는 영수확인서 양식입니다.",
+      "usage": "개인 간 중고차 거래에서 대금을 나누어 주고받을 때 회차별 금액과 지급일을 남겨 두는 서식입니다. 차량 정보와 매도인·매수인 정보, 총 매매대금과 지급 내역을 적고 판매자가 받은 사실을 확인해 서명합니다. 소유권 이전 절차와 서류는 별도로 확인해야 하며, 이 서식은 대금을 받았다는 사실만 기록합니다. 계좌이체 영수증이 있으면 함께 보관하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49466,
+        "docx": 38671,
+        "hwpx": 9968
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "차량번호와 차종, 연식을 적습니다.",
+        "매도인과 매수인의 이름·연락처를 적습니다.",
+        "총 매매대금과 회차별 지급일·금액을 적습니다.",
+        "매도인이 받은 사실을 확인하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "계약서가 있는데도 필요한가요?",
+          "a": "대금을 나누어 줄 때 회차별 수령 사실을 따로 남겨 두면 나중에 확인하기 쉽습니다."
+        },
+        {
+          "q": "이 서식으로 소유권이 넘어가나요?",
+          "a": "아닙니다. 소유권 이전은 별도 절차이므로 이전등록 서식과 제출처 안내를 확인하십시오."
+        },
+        {
+          "q": "현금으로 줘도 되나요?",
+          "a": "증빙을 남기기 위해 계좌이체를 권하며, 현금이면 수령 확인 서명을 꼭 받아 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 차량 정보",
+          "items": [
+            "차량번호",
+            "차종",
+            "연식",
+            "주행거리"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 거래 당사자",
+          "items": [
+            "매도인",
+            "연락처",
+            "매수인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 대금 지급 내역",
+          "items": [
+            "총 매매대금",
+            "계약일",
+            "지급일",
+            "금액",
+            "지급 방법"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "used-car-sale-contract",
+        "gov-vehicle-transfer-registration",
+        "vehicle-delivery-confirmation",
+        "receipt"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-13T08:19:49+09:00",
+      "updated_at": "2026-10-13T08:19:49+09:00",
       "downloads": 0
     },
     {

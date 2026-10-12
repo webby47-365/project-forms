@@ -1,0 +1,84 @@
+id: used-car-payment-receipt
+title: 자동차 매매대금 영수확인서
+category: public
+subcategory: vehicle
+tags: [자동차매매대금영수, 중고차대금확인, 차량대금영수증, 계약금잔금확인, 차량매매영수]
+summary: 중고차를 사고팔 때 계약금·중도금·잔금을 주고받은 날짜와 금액을 판매자가 확인하는 영수확인서 양식입니다.
+usage: >
+  개인 간 중고차 거래에서 대금을 나누어 주고받을 때 회차별 금액과 지급일을 남겨 두는 서식입니다.
+  차량 정보와 매도인·매수인 정보, 총 매매대금과 지급 내역을 적고 판매자가 받은 사실을 확인해
+  서명합니다. 소유권 이전 절차와 서류는 별도로 확인해야 하며, 이 서식은 대금을 받았다는 사실만
+  기록합니다. 계좌이체 영수증이 있으면 함께 보관하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 차량번호와 차종, 연식을 적습니다.
+  - 매도인과 매수인의 이름·연락처를 적습니다.
+  - 총 매매대금과 회차별 지급일·금액을 적습니다.
+  - 매도인이 받은 사실을 확인하고 서명합니다.
+faq:
+  - q: 계약서가 있는데도 필요한가요?
+    a: 대금을 나누어 줄 때 회차별 수령 사실을 따로 남겨 두면 나중에 확인하기 쉽습니다.
+  - q: 이 서식으로 소유권이 넘어가나요?
+    a: 아닙니다. 소유권 이전은 별도 절차이므로 이전등록 서식과 제출처 안내를 확인하십시오.
+  - q: 현금으로 줘도 되나요?
+    a: 증빙을 남기기 위해 계좌이체를 권하며, 현금이면 수령 확인 서명을 꼭 받아 두십시오.
+related: [used-car-sale-contract, gov-vehicle-transfer-registration, vehicle-delivery-confirmation, receipt]
+blocks:
+  - type: doc_title
+    text: 자동차 매매대금 영수확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 차량 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["차량번호", "", "차종", ""]
+      - ["연식", "", "주행거리", ""]
+    sample_rows:
+      - ["", "00가 0000", "", "소형 승용차"]
+      - ["", "2019년식", "", "68,000km"]
+  - type: subtitle
+    text: 2. 거래 당사자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["매도인", "", "연락처", ""]
+      - ["매수인", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "김서연", "", "010-8765-4321"]
+  - type: subtitle
+    text: 3. 대금 지급 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["총 매매대금", "", "계약일", ""]
+    sample_rows:
+      - ["", "9,800,000원", "", "2026-10-01"]
+  - type: table
+    widths: [14, 22, 28, 36]
+    header: [구분, 지급일, 금액, 지급 방법]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["계약금", "2026-10-01", "980,000원", "계좌이체"]
+      - ["잔금", "2026-10-13", "8,820,000원", "계좌이체"]
+  - type: para
+    text: 매도인은 위 매매대금을 틀림없이 수령하였음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   13 일
+  - type: sign_line
+    labels: ["매도인", "매수인"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 소유권 이전 절차와 제출 서류는 별도로 확인하십시오. 이체 영수증은 함께 보관합니다.

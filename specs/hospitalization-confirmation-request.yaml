@@ -1,0 +1,81 @@
+id: hospitalization-confirmation-request
+title: 입퇴원확인서 발급 신청서
+category: welfare
+subcategory: consent
+tags: [입퇴원확인서, 입원확인서발급, 퇴원확인서, 입원기간확인, 병원서류신청]
+summary: 병원에 입원했던 기간을 확인받기 위해 의료기관에 입퇴원확인서 발급을 요청하는 신청서 양식입니다.
+usage: >
+  보험 청구나 회사 제출 등으로 입원 기간을 증명해야 할 때 의료기관에 입퇴원확인서를 요청하는
+  서식입니다. 환자 정보와 입원·퇴원 예정 기간, 제출처와 수령 방법을 적습니다. 병명이나 치료 내용은
+  제출처가 꼭 요구할 때만 의료기관과 상의해 정하고, 이 서식에는 적지 않습니다. 대리인이 신청하면
+  위임 관계 확인이 필요할 수 있으니 병원 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 환자의 성명과 생년월일, 연락처를 적습니다.
+  - 입원일과 퇴원일을 적습니다.
+  - 제출처와 필요한 부수를 적습니다.
+  - 수령 방법을 고르고 신청인이 서명합니다.
+faq:
+  - q: 병명도 적어야 하나요?
+    a: 이 서식에는 병명란이 없습니다. 제출처가 요구하면 의료기관과 상의해 정하십시오.
+  - q: 가족이 대신 신청할 수 있나요?
+    a: 병원마다 확인 절차가 다릅니다. 대리 신청 시 필요한 서류는 병원 원무과에 확인하십시오.
+  - q: 발급 비용이 드나요?
+    a: 비용과 소요 시간은 의료기관마다 다릅니다. 신청할 때 원무과에 문의하십시오.
+related: [medical-record-request, outpatient-visit-certificate, medical-expense-support, power-of-attorney]
+blocks:
+  - type: doc_title
+    text: 입퇴원확인서 발급 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 환자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "병원 등록번호", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-03-15"]
+      - ["", "010-1234-5678", "", "00000"]
+  - type: subtitle
+    text: 2. 입원 기간
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["입원일", "", "퇴원일", ""]
+      - ["진료과", "", "병동·병실", ""]
+    sample_rows:
+      - ["", "2026-09-20", "", "2026-09-25"]
+      - ["", "정형외과", "", "본관 5층"]
+  - type: subtitle
+    text: 3. 발급 요청 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["제출처", "", "필요 부수", ""]
+      - ["수령 방법", "", "신청인 구분", "본인 / 대리인"]
+    sample_rows:
+      - ["", "OO보험사", "", "2부"]
+      - ["", "방문 수령", "", ""]
+  - type: textbox
+    hint: "추가로 요청할 사항이 있으면 적으십시오."
+    height_mm: 20
+    sample_text: "원본 1부와 사본 1부를 함께 발급해 주시기 바랍니다."
+  - type: para
+    text: 위와 같이 입퇴원확인서 발급을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   13 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 발급 비용과 대리 신청 서류는 의료기관 안내를 확인하십시오.

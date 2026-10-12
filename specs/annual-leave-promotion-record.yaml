@@ -1,0 +1,64 @@
+id: annual-leave-promotion-record
+title: 연차 사용 촉진 이행 기록표
+category: corp
+subcategory: hr
+tags: [연차촉진기록, 연차사용촉진이행, 촉진통지대장, 연차관리, 연차촉진증빙]
+summary: 근로자별 연차 사용 촉진 1차 통지·회신·2차 지정 통보 날짜를 한 장에 모아 두는 사업주 보관용 이행 기록표 양식입니다.
+usage: >
+  연차 사용 촉진을 진행한 회사가 근로자별로 언제 무엇을 보냈는지 한눈에 정리해 두는 내부 기록표입니다.
+  근로자 이름, 남은 연차 일수, 1차 통지일, 근로자 회신일, 2차 지정 통보일을 한 줄씩 적고
+  담당자가 확인합니다. 통지서와 회신서 원본은 따로 보관하고 이 표는 목록 관리용으로 씁니다.
+  촉진 방식과 기한은 회사 규정과 관련 법령을 확인한 뒤 적용하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 촉진 대상 연도와 부서를 적습니다.
+  - 근로자별 남은 연차 일수를 적습니다.
+  - 1차 통지일과 근로자 회신일을 적습니다.
+  - 2차 지정 통보일을 적고 담당자가 확인 서명합니다.
+faq:
+  - q: 통지서 원본도 이 표에 붙이나요?
+    a: 아닙니다. 원본은 따로 보관하고 이 표에는 날짜만 적어 목록으로 씁니다.
+  - q: 회신이 없으면 어떻게 적나요?
+    a: 회신일란에 "미회신"이라고 적고 비고란에 확인한 방법을 남겨 둡니다.
+  - q: 근로자가 많으면 어떻게 하나요?
+    a: 같은 서식을 여러 장 출력해 부서별로 나누어 쓰면 됩니다.
+related: [annual-leave-promotion-notice, annual-leave-timing-designation-notice, annual-leave-notice-receipt, annual-leave-usage-status-confirmation]
+blocks:
+  - type: doc_title
+    text: 연차 사용 촉진 이행 기록표
+    spaced: false
+  - type: subtitle
+    text: 1. 기본 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["대상 연도", "", "부서", ""]
+      - ["작성일", "", "담당자", ""]
+    sample_rows:
+      - ["", "2026년", "", "경영지원팀"]
+      - ["", "2026-10-13", "", "박민준"]
+  - type: subtitle
+    text: 2. 근로자별 이행 내역
+  - type: table
+    widths: [6, 14, 12, 17, 17, 17, 17]
+    header: ["No", 성명, 남은 연차, 1차 통지일, 근로자 회신일, 2차 통보일, 비고]
+    empty_rows: 9
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "홍길동", "7일", "2026-10-30", "2026-11-05", "2026-12-20", ""]
+      - ["2", "김서연", "5일", "2026-10-30", "2026-11-03", "-", "계획대로 사용"]
+      - ["3", "이수현", "9일", "2026-10-30", "미회신", "2026-12-20", ""]
+  - type: textbox
+    hint: "진행 중 특이사항(휴직자, 퇴사 예정자 등)을 적으십시오."
+    height_mm: 18
+    sample_text: "퇴사 예정자 1명은 정산으로 처리하기로 하고 별도 기록을 남겼습니다."
+  - type: sign_line
+    labels: ["담당자", "승인자"]
+    sample_names: [박민준, 김서연]
+  - type: notice
+    text: 통지서·회신서 원본은 별도로 보관하십시오. 기한과 방식은 회사 규정과 관련 법령을 확인하십시오.

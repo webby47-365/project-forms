@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 358종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 363종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>자동차 매매대금 영수확인서</title>
+<link>https://freeforms.kr/form/used-car-payment-receipt/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/used-car-payment-receipt/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Tue, 13 Oct 2026 00:00:00 +0900</pubDate>
+<description>중고차를 사고팔 때 계약금·중도금·잔금을 주고받은 날짜와 금액을 판매자가 확인하는 영수확인서 양식입니다.</description>
+</item>
+<item>
+<title>법인인감 신고 위임장</title>
+<link>https://freeforms.kr/form/corporate-seal-report-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/corporate-seal-report-poa/</guid>
+<category>기업 · 창업·법인</category>
+<pubDate>Tue, 13 Oct 2026 00:00:00 +0900</pubDate>
+<description>법인 대표이사가 법인인감 신고 절차를 직원이나 대리인에게 맡길 때 쓰는 위임장 양식입니다.</description>
+</item>
+<item>
+<title>입퇴원확인서 발급 신청서</title>
+<link>https://freeforms.kr/form/hospitalization-confirmation-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/hospitalization-confirmation-request/</guid>
+<category>의료·복지 · 동의·신청</category>
+<pubDate>Tue, 13 Oct 2026 00:00:00 +0900</pubDate>
+<description>병원에 입원했던 기간을 확인받기 위해 의료기관에 입퇴원확인서 발급을 요청하는 신청서 양식입니다.</description>
+</item>
+<item>
+<title>변론기일 변경 신청서</title>
+<link>https://freeforms.kr/form/hearing-date-change-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/hearing-date-change-request/</guid>
+<category>법률 · 소송·민원</category>
+<pubDate>Tue, 13 Oct 2026 00:00:00 +0900</pubDate>
+<description>지정된 재판 기일에 출석하기 어려운 당사자가 사유를 적어 법원에 기일 변경을 요청하는 신청서 양식입니다.</description>
+</item>
+<item>
+<title>연차 사용 촉진 이행 기록표</title>
+<link>https://freeforms.kr/form/annual-leave-promotion-record/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-promotion-record/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Tue, 13 Oct 2026 00:00:00 +0900</pubDate>
+<description>근로자별 연차 사용 촉진 1차 통지·회신·2차 지정 통보 날짜를 한 장에 모아 두는 사업주 보관용 이행 기록표 양식입니다.</description>
+</item>
 <item>
 <title>미사용 연차수당 수령 확인서</title>
 <link>https://freeforms.kr/form/unused-annual-leave-pay-receipt/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 인사·노무</category>
 <pubDate>Thu, 08 Oct 2026 00:00:00 +0900</pubDate>
 <description>회사가 연차 사용 촉진 통지서를 근로자에게 전달했다는 사실과 받은 날짜를 서명으로 남기는 수령 확인서입니다.</description>
-</item>
-<item>
-<title>증거 목록 (증거설명서)</title>
-<link>https://freeforms.kr/form/evidence-submission-list/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/evidence-submission-list/</guid>
-<category>법률 · 소송·민원</category>
-<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
-<description>소송에서 낼 증거를 번호별로 정리하고 무엇을 입증하려는지 적는 증거 목록·증거설명서 양식입니다.</description>
-</item>
-<item>
-<title>가족관계 사실 확인서</title>
-<link>https://freeforms.kr/form/family-relationship-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/family-relationship-confirmation/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
-<description>확인인과 상대방의 가족관계를 사실대로 적어 제출처에 알리는 일반 용도의 가족관계 사실 확인서입니다.</description>
-</item>
-<item>
-<title>입찰 제출서류 목록표</title>
-<link>https://freeforms.kr/form/bid-document-submission-list/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/bid-document-submission-list/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
-<description>입찰 참가 때 내야 하는 서류의 제출 여부와 쪽수를 표로 정리해 빠뜨림을 막는 입찰용 제출서류 목록표입니다.</description>
-</item>
-<item>
-<title>미사용 연차수당 지급 요청서</title>
-<link>https://freeforms.kr/form/unused-annual-leave-pay-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/unused-annual-leave-pay-request/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
-<description>쓰지 못한 연차의 일수와 지급 요청 금액을 적어 회사에 연차수당 지급을 요청하는 서식입니다.</description>
-</item>
-<item>
-<title>연차 사용 일정 변경 신청서</title>
-<link>https://freeforms.kr/form/annual-leave-schedule-change-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-schedule-change-request/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
-<description>이미 정한 연차 사용 날짜를 바꾸거나 취소해야 할 때 변경 전후 일정과 사유를 적어 회사에 내는 신청서입니다.</description>
 </item>
 </channel>
 </rss>
