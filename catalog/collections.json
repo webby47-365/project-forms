@@ -53,7 +53,7 @@
       "lead": "견적을 내고 주문을 받아 대금을 청구하기까지, 거래 한 건에 필요한 서식 묶음입니다.",
       "ids": [
         "quotation", "quotation-detailed", "quotation-comparison",
-        "purchase-order", "delivery-confirmation", "transaction-statement",
+        "purchase-order", "delivery-confirmation", "goods-inspection-report", "transaction-statement",
         "tax-invoice", "tax-invoice-correction-request", "invoice-request",
         "payment-confirmation", "receipt"
       ]

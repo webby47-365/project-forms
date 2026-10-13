@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 363종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 368종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>세대 합가 사실 확인서</title>
+<link>https://freeforms.kr/form/household-merger-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/household-merger-confirmation/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
+<description>따로 살던 가족이 한집에 합쳐 살게 된 사실과 일자, 관계를 확인해 적는 세대 합가 사실 확인서 양식입니다.</description>
+</item>
+<item>
+<title>경비 증빙 소명서</title>
+<link>https://freeforms.kr/form/expense-evidence-explanation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/expense-evidence-explanation/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
+<description>영수증이나 세금계산서 같은 증빙이 없거나 부족한 지출 내역의 사유와 사용처를 설명해 두는 경비 증빙 소명서 양식입니다.</description>
+</item>
+<item>
+<title>임시 점포 설치 신청서</title>
+<link>https://freeforms.kr/form/temporary-store-application/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/temporary-store-application/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
+<description>행사장이나 공간 관리자에게 일정 기간 임시 점포(부스·판매대) 설치를 신청할 때 쓰는 임시 점포 설치 신청서 양식입니다.</description>
+</item>
+<item>
+<title>물품 검수조서</title>
+<link>https://freeforms.kr/form/goods-inspection-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/goods-inspection-report/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
+<description>납품된 물품의 수량·규격·상태를 확인하고 합격 여부를 기록하는 물품 검수조서 양식입니다.</description>
+</item>
+<item>
+<title>지각·결근 사유서</title>
+<link>https://freeforms.kr/form/absence-reason-statement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/absence-reason-statement/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
+<description>지각·조퇴·결근이 생겼을 때 일시와 사유, 사후 조치를 적어 상급자에게 내는 지각·결근 사유서 양식입니다.</description>
+</item>
 <item>
 <title>자동차 매매대금 영수확인서</title>
 <link>https://freeforms.kr/form/used-car-payment-receipt/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 인사·노무</category>
 <pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
 <description>남은 연차를 다음 해로 넘겨 쓰기로 회사와 근로자가 합의할 때 일수·사용 기한·조건을 적는 합의서입니다.</description>
-</item>
-<item>
-<title>계약이행보증금 반환 청구서</title>
-<link>https://freeforms.kr/form/contract-performance-deposit-refund-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/contract-performance-deposit-refund-request/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Thu, 08 Oct 2026 00:00:00 +0900</pubDate>
-<description>계약을 모두 이행한 업체가 발주기관에 맡긴 계약이행보증금의 반환을 청구하는 서식입니다.</description>
-</item>
-<item>
-<title>복지시설 퇴소 신청서</title>
-<link>https://freeforms.kr/form/welfare-facility-withdrawal-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/welfare-facility-withdrawal-request/</guid>
-<category>의료·복지 · 동의·신청</category>
-<pubDate>Thu, 08 Oct 2026 00:00:00 +0900</pubDate>
-<description>복지시설 이용자나 보호자가 이용을 마치고 퇴소하겠다는 뜻을 시설에 알리는 신청서입니다.</description>
-</item>
-<item>
-<title>사업자등록증 재발급 신청서</title>
-<link>https://freeforms.kr/form/business-registration-certificate-reissue-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-registration-certificate-reissue-request/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Thu, 08 Oct 2026 00:00:00 +0900</pubDate>
-<description>사업자등록증을 분실하거나 훼손했을 때 관할 세무서에 재발급을 신청하는 서식입니다.</description>
-</item>
-<item>
-<title>임원 사임서 (이사·감사)</title>
-<link>https://freeforms.kr/form/director-resignation-letter/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/director-resignation-letter/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Thu, 08 Oct 2026 00:00:00 +0900</pubDate>
-<description>주식회사의 이사나 감사가 임기 중 스스로 직을 그만두겠다는 뜻을 회사에 알리는 사임서입니다.</description>
-</item>
-<item>
-<title>연차 사용 촉진 통지 수령 확인서</title>
-<link>https://freeforms.kr/form/annual-leave-notice-receipt/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-notice-receipt/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Thu, 08 Oct 2026 00:00:00 +0900</pubDate>
-<description>회사가 연차 사용 촉진 통지서를 근로자에게 전달했다는 사실과 받은 날짜를 서명으로 남기는 수령 확인서입니다.</description>
 </item>
 </channel>
 </rss>

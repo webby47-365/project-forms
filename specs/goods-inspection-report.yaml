@@ -1,0 +1,72 @@
+id: goods-inspection-report
+title: 물품 검수조서
+category: public
+subcategory: procure
+tags: [검수조서, 납품검사, 물품검수, 검사조서, 납품검수확인]
+summary: 납품된 물품의 수량·규격·상태를 확인하고 합격 여부를 기록하는 물품 검수조서 양식입니다.
+usage: >
+  계약에 따라 물품이 납품되면 발주 측 담당자가 계약 내용과 맞는지 확인하고 그 결과를 남기는 문서입니다.
+  계약명과 납품 일자를 적고, 품목별로 계약 수량과 실제 수량, 규격 일치 여부, 판정을 기록합니다.
+  불합격 품목은 사유와 조치 기한을 적어 납품업체에 알립니다. 대금 지급의 근거 서류로 쓰이는 경우가 많으므로
+  검수자와 입회자가 함께 서명하고, 세부 기준은 계약서와 발주처 규정을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 계약명과 납품업체, 납품 일자를 적습니다.
+  - 품목별로 계약 수량과 실제 수량, 규격 일치 여부를 적습니다.
+  - 합격·불합격을 판정하고 불합격 사유를 적습니다.
+  - 검수자와 입회자가 함께 서명합니다.
+faq:
+  - q: 일부만 합격이면 어떻게 적나요?
+    a: 품목마다 판정란을 따로 적고, 불합격 품목은 사유와 재납품 기한을 비고란에 남깁니다.
+  - q: 납품업체 서명도 받아야 하나요?
+    a: 입회 확인을 받아 두면 분쟁을 줄일 수 있으며, 필수 여부는 계약서와 발주처 규정에 따릅니다.
+  - q: 납품확인서와 무엇이 다른가요?
+    a: 납품확인서는 받았다는 사실을, 검수조서는 수량·규격·상태를 확인한 결과를 기록합니다.
+related: [delivery-confirmation, transaction-statement, payment-confirmation, contract-performance-deposit-refund-request]
+blocks:
+  - type: doc_title
+    text: 물품 검수조서
+    spaced: false
+  - type: subtitle
+    text: 1. 계약 및 납품 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["계약명", "", "", ""]
+      - ["납품업체", "", "납품 일자", ""]
+      - ["검수 장소", "", "검수 일자", ""]
+    sample_rows:
+      - ["", "사무용 의자 구매", "", ""]
+      - ["", "(주)한빛물산", "", "2026-10-12"]
+      - ["", "본관 3층 창고", "", "2026-10-13"]
+  - type: subtitle
+    text: 2. 품목별 검수 결과
+  - type: table
+    widths: [6, 22, 14, 14, 14, 14, 16]
+    header: ["No", 품목, 계약 수량, 납품 수량, 규격 일치, 판정, 비고]
+    empty_rows: 8
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "사무용 의자", "20", "20", "일치", "합격", ""]
+      - ["2", "의자 커버", "20", "18", "일치", "불합격", "2개 추가 납품"]
+      - ["3", "발받침대", "10", "10", "일치", "합격", ""]
+  - type: subtitle
+    text: 3. 종합 의견
+  - type: textbox
+    hint: "불합격 사유와 조치 기한 등 검수 전반에 대한 의견을 적으십시오."
+    height_mm: 24
+    sample_text: "의자 커버 2개가 부족하여 10월 20일까지 추가 납품을 요청했습니다. 나머지 품목은 계약 내용과 일치합니다."
+  - type: date_line
+    sample_text: 2026 년    10 월    13 일
+  - type: sign_line
+    labels: ["검수자", "입회자"]
+    sample_names: [박민준, 이수현]
+  - type: notice
+    text: 검수 기준과 기한은 계약서와 발주처 규정을 확인하십시오.
