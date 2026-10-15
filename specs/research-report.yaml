@@ -1,0 +1,112 @@
+id: research-report
+title: 탐구보고서
+category: edu
+subcategory: school
+tags: [탐구보고서, 탐구활동, 연구보고서, 실험보고서, 수행평가]
+summary: 탐구 주제와 동기, 가설, 방법, 결과, 결론을 순서대로 정리해 학교에 제출하는 탐구보고서 양식입니다.
+usage: >
+  학교 수행평가나 교과 탐구활동 결과를 정리해 제출할 때 쓰는 보고서 양식입니다.
+  먼저 탐구 주제와 동기, 궁금한 점을 적고 이를 바탕으로 가설을 세웁니다.
+  탐구 방법과 과정은 다른 사람이 따라 할 수 있을 만큼 구체적으로 적고, 결과는 표나
+  관찰 내용으로 정리한 뒤 결론과 느낀 점을 씁니다. 참고한 자료는 마지막에 빠짐없이
+  남기십시오. 제출 형식과 분량은 담당 교사의 안내를 먼저 확인하는 것이 좋습니다.
+source: original
+featured: false
+target_pages: 1
+from_request: true
+created_by: agent
+status: published
+version: 1
+
+howto:
+  - 학년·반·이름과 교과, 탐구 주제를 적습니다.
+  - 탐구 동기와 가설을 한두 문장으로 적습니다.
+  - 탐구 방법과 과정을 순서대로 적습니다.
+  - 결과를 표에 정리하고 결론과 느낀 점을 씁니다.
+  - 참고 자료를 출처와 함께 적습니다.
+
+faq:
+  - q: 가설은 꼭 맞아야 하나요?
+    a: 아닙니다. 가설과 다른 결과가 나와도 왜 그런지 분석해 적으면 좋은 탐구가 됩니다.
+  - q: 참고 자료는 어떻게 적나요?
+    a: 책은 제목·저자·출판 연도, 웹사이트는 주소와 확인한 날짜를 적습니다. 형식은 담당 교사의 안내를 따르십시오.
+  - q: 분량은 얼마나 써야 하나요?
+    a: 학교와 교과마다 다르므로 담당 교사의 안내를 확인하십시오. 칸이 부족하면 별지를 붙입니다.
+
+related: [reading-log, study-plan, club-activity-record]
+
+blocks:
+  - type: doc_title
+    text: 탐구보고서
+
+  - type: grid
+    widths: [14, 36, 14, 36]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["학년·반·번호", "", "이름", ""]
+      - ["교과", "", "탐구 기간", ""]
+      - ["탐구 주제", "", "", ""]
+    sample_rows:
+      - ["", "2학년 3반 12번", "", "홍길동"]
+      - ["", "과학", "", "2026.09.01 ~ 09.14"]
+      - ["", "식물 종류에 따른 수분 증발량 비교", "", ""]
+
+  - type: subtitle
+    text: 1. 탐구 동기
+
+  - type: textbox
+    hint: "이 주제를 선택한 이유와 궁금했던 점을 적으십시오."
+    height_mm: 11
+    sample_text: 수업 시간에 식물의 증산 작용을 배우면서 식물마다 물을 내보내는 양이 다른지 궁금해 직접 확인해 보기로 했다.
+
+  - type: subtitle
+    text: 2. 가설
+
+  - type: textbox
+    hint: "탐구를 통해 확인하려는 예상을 한두 문장으로 적으십시오."
+    height_mm: 11
+    sample_text: 잎이 넓은 식물일수록 같은 시간 동안 수분 증발량이 많을 것이다.
+
+  - type: subtitle
+    text: 3. 탐구 방법 및 과정
+
+  - type: textbox
+    hint: "준비물과 진행 순서, 조건을 다른 사람이 따라 할 수 있게 적으십시오."
+    height_mm: 18
+    sample_text: 잎 크기가 다른 식물 3종을 같은 양의 물이 든 삼각플라스크에 꽂고 윗부분을 랩으로 막은 뒤, 같은 장소에서 24시간 동안 두고 물의 줄어든 양을 측정했다.
+
+  - type: subtitle
+    text: 4. 탐구 결과
+
+  - type: table
+    widths: [30, 25, 25, 20]
+    header: [구분, 처음 양(mL), 나중 양(mL), 감소량(mL)]
+    empty_rows: 3
+    row_height_mm: 7
+    body_align: center
+    sample_rows:
+      - ["식물 A (잎 큼)", "100", "91", "9"]
+      - ["식물 B (잎 보통)", "100", "94", "6"]
+      - ["식물 C (잎 작음)", "100", "97", "3"]
+
+  - type: subtitle
+    text: 5. 결론 및 느낀 점
+
+  - type: textbox
+    hint: "결과를 바탕으로 가설이 맞았는지 판단하고, 느낀 점과 아쉬운 점을 적으십시오."
+    height_mm: 11
+    sample_text: 잎이 넓을수록 물이 더 많이 줄어 가설이 맞았다. 다만 식물이 3종뿐이라 더 많은 종류로 반복 실험하지 못한 점이 아쉬웠다.
+
+  - type: subtitle
+    text: 6. 참고 자료
+
+  - type: textbox
+    hint: "참고한 책·논문·웹사이트의 이름과 주소, 확인한 날짜를 적으십시오."
+    height_mm: 10
+    sample_text: 중학교 과학 교과서 (한빛교육, 2026)
+
+  - type: notice
+    text: 제출 형식과 분량은 담당 교사의 안내를 확인하십시오.

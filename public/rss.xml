@@ -3,10 +3,18 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 373종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 374종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
 <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>탐구보고서</title>
+<link>https://freeforms.kr/form/research-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/research-report/</guid>
+<category>교육 · 학교·학원</category>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+<description>탐구 주제와 동기, 가설, 방법, 결과, 결론을 순서대로 정리해 학교에 제출하는 탐구보고서 양식입니다.</description>
+</item>
 <item>
 <title>개인정보 수집·이용 동의 철회서</title>
 <link>https://freeforms.kr/form/privacy-consent-withdrawal/</link>
@@ -238,14 +246,6 @@
 <category>공공 · 신청·동의</category>
 <pubDate>Sat, 10 Oct 2026 00:00:00 +0900</pubDate>
 <description>자원봉사자의 활동 기간·장소·내용·시간을 기관이 확인해 주는 봉사활동 확인서 양식입니다.</description>
-</item>
-<item>
-<title>반차·시간단위 연차 신청서</title>
-<link>https://freeforms.kr/form/half-day-leave-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/half-day-leave-request/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Sat, 10 Oct 2026 00:00:00 +0900</pubDate>
-<description>오전·오후 반차나 시간 단위로 연차를 나눠 쓸 때 일시·사용 시간·업무 대행자를 적는 신청서입니다.</description>
 </item>
 </channel>
 </rss>
