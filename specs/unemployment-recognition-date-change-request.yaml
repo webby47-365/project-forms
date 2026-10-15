@@ -1,0 +1,73 @@
+id: unemployment-recognition-date-change-request
+title: 실업인정일 변경 신청서
+category: public
+subcategory: insurance
+tags: [실업인정일변경, 실업인정, 실업급여, 구직급여, 실업인정일연기]
+summary: 면접·교육 등 불가피한 사유로 정해진 실업인정일에 출석하기 어려울 때 일정 변경을 요청하는 신청서입니다.
+usage: >
+  구직급여를 받는 중에 지정된 실업인정일에 면접, 직업훈련, 경조사 등으로 참석하기 어려울 때 관할 고용센터에
+  제출하는 서식입니다. 원래 지정일과 희망 변경일, 변경 사유를 적고 사유를 증명할 자료(면접 안내문, 교육 확인서
+  등)를 함께 준비합니다. 변경 가능 여부와 인정 사유는 고용센터가 판단하므로 사전에 담당자에게 연락하고, 결정에
+  따라 급여 지급에 영향이 있을 수 있어 안내를 반드시 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인 이름과 연락처를 적습니다.
+  - 원래 실업인정일과 희망하는 변경일을 적습니다.
+  - 변경이 필요한 사유를 구체적으로 적고 증빙을 준비합니다.
+  - 날짜를 적고 서명해 고용센터에 제출합니다.
+faq:
+  - q: 어떤 사유가 인정되나요?
+    a: 사유별 인정 여부는 고용센터가 판단합니다. 면접이나 교육처럼 증빙이 가능한 사유가 일반적이니 담당자에게 먼저 문의하십시오.
+  - q: 증빙 자료는 꼭 내야 하나요?
+    a: 대부분 사유를 확인할 자료를 요구합니다. 면접 안내 메일, 교육 수강 확인서 등을 미리 준비하는 것이 안전합니다.
+  - q: 변경하면 급여가 늦게 나오나요?
+    a: 지급 시기는 인정 처리 일정에 따라 달라질 수 있습니다. 자세한 내용은 관할 고용센터에 확인하십시오.
+related: [employment-insurance-history-request, separation-certificate-request, gov-separation-confirmation, social-insurance-filing-poa]
+blocks:
+  - type: doc_title
+    text: 실업인정일 변경 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "관할 고용센터", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1995-05-20"]
+      - ["", "010-1234-5678", "", "○○고용센터"]
+  - type: subtitle
+    text: 2. 변경 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["기존 인정일", "", "희망 변경일", ""]
+      - ["변경 사유", "", "", ""]
+      - ["증빙 자료", "", "제출 예정일", ""]
+    sample_rows:
+      - ["", "2026-10-21", "", "2026-10-23"]
+      - ["", "기존 인정일에 타 지역 기업 면접 일정이 잡힘", "", ""]
+      - ["", "면접 안내 메일 출력본", "", "2026-10-23"]
+  - type: textbox
+    hint: "변경이 필요한 사정과 구직활동 내용을 구체적으로 적으십시오."
+    height_mm: 30
+    sample_text: "10월 21일 오전 10시에 면접 일정이 확정되어 해당일 출석이 어렵습니다. 면접 안내 메일을 증빙으로 제출하겠습니다."
+  - type: para
+    text: 위와 같이 실업인정일의 변경을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   15 일
+  - type: sign_line
+    labels: ["신청인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 변경 가능 여부는 관할 고용센터가 결정합니다. 제출 전 담당자에게 확인하십시오.

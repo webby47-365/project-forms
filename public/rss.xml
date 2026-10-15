@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 368종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 373종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>개인정보 수집·이용 동의 철회서</title>
+<link>https://freeforms.kr/form/privacy-consent-withdrawal/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/privacy-consent-withdrawal/</guid>
+<category>공공 · 신청·동의</category>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+<description>이미 낸 개인정보 수집·이용 동의를 거두고 삭제·이용 중지를 요청하는 개인정보 동의 철회서입니다.</description>
+</item>
+<item>
+<title>실업인정일 변경 신청서</title>
+<link>https://freeforms.kr/form/unemployment-recognition-date-change-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/unemployment-recognition-date-change-request/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+<description>면접·교육 등 불가피한 사유로 정해진 실업인정일에 출석하기 어려울 때 일정 변경을 요청하는 신청서입니다.</description>
+</item>
+<item>
+<title>불법 광고물 신고서</title>
+<link>https://freeforms.kr/form/illegal-advertisement-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/illegal-advertisement-report/</guid>
+<category>공공 · 민원·신고</category>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+<description>허가 없이 붙은 현수막·전단·벽보 등 불법 광고물의 위치와 내용을 적어 관할 구청에 신고하는 신고서입니다.</description>
+</item>
+<item>
+<title>견적 요청서</title>
+<link>https://freeforms.kr/form/quotation-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/quotation-request/</guid>
+<category>기업 · 영업·마케팅</category>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+<description>구매·발주 전에 거래처에 품목·수량·납기·조건을 알리고 견적서를 받기 위해 보내는 견적 요청서입니다.</description>
+</item>
+<item>
+<title>연차 잔여일수 조회 요청서</title>
+<link>https://freeforms.kr/form/annual-leave-balance-inquiry/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-balance-inquiry/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+<description>내 연차가 몇 일 발생했고 몇 일 남았는지 회사에 서면으로 확인 요청하는 연차 잔여일수 조회 요청서입니다.</description>
+</item>
 <item>
 <title>세대 합가 사실 확인서</title>
 <link>https://freeforms.kr/form/household-merger-confirmation/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 인사·노무</category>
 <pubDate>Sat, 10 Oct 2026 00:00:00 +0900</pubDate>
 <description>오전·오후 반차나 시간 단위로 연차를 나눠 쓸 때 일시·사용 시간·업무 대행자를 적는 신청서입니다.</description>
-</item>
-<item>
-<title>건강보험 자격득실확인서 발급 위임장</title>
-<link>https://freeforms.kr/form/health-insurance-eligibility-history-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/health-insurance-eligibility-history-poa/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
-<description>건강보험 자격득실확인서 발급 신청을 가족이나 대리인에게 맡길 때 쓰는 위임장입니다.</description>
-</item>
-<item>
-<title>자동차등록증 재발급 신청 위임장</title>
-<link>https://freeforms.kr/form/vehicle-registration-reissue-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vehicle-registration-reissue-poa/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
-<description>자동차등록증을 분실하거나 훼손했을 때 다른 사람에게 재발급 신청을 맡기는 위임장입니다.</description>
-</item>
-<item>
-<title>자녀 양육 사실 확인서</title>
-<link>https://freeforms.kr/form/child-rearing-fact-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/child-rearing-fact-confirmation/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
-<description>자녀를 실제로 키우고 있는 사람이 양육 기간·함께 거주한 사실을 적어 학교나 기관에 내는 확인서입니다.</description>
-</item>
-<item>
-<title>영업 폐업 사실 확인서</title>
-<link>https://freeforms.kr/form/business-closure-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-closure-confirmation/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
-<description>사업장을 폐업했다는 사실과 폐업일·사유·정리 내용을 적어 거래처나 기관에 내는 확인서입니다.</description>
-</item>
-<item>
-<title>연차 이월 합의서</title>
-<link>https://freeforms.kr/form/annual-leave-carryover-agreement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-carryover-agreement/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
-<description>남은 연차를 다음 해로 넘겨 쓰기로 회사와 근로자가 합의할 때 일수·사용 기한·조건을 적는 합의서입니다.</description>
 </item>
 </channel>
 </rss>

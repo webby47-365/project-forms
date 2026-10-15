@@ -1,0 +1,83 @@
+id: quotation-request
+title: 견적 요청서
+category: corp
+subcategory: sales
+tags: [견적요청서, 견적의뢰서, 견적문의, 발주전견적, 업체견적]
+summary: 구매·발주 전에 거래처에 품목·수량·납기·조건을 알리고 견적서를 받기 위해 보내는 견적 요청서입니다.
+usage: >
+  물품 구매나 용역 의뢰를 하기 전에 여러 업체에 같은 조건으로 견적을 받을 때 쓰는 요청 문서입니다. 요청 품목과
+  규격, 수량, 희망 납기, 납품 장소를 적고, 견적서에 꼭 포함해 달라는 조건(부가세 포함 여부, 결제 조건 등)을
+  함께 밝힙니다. 업체마다 같은 요청서를 보내야 가격 비교가 쉬워집니다. 제출 기한을 분명히 적고 요청 내용은
+  계약 체결을 약속하는 것이 아님을 안내문으로 남겨 두면 좋습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청 회사와 담당자, 견적 제출 기한을 적습니다.
+  - 품목, 규격, 수량, 희망 단가 범위를 표에 적습니다.
+  - 납기, 납품 장소, 결제 조건을 적습니다.
+  - 견적에 포함할 조건을 체크하고 담당자가 서명합니다.
+faq:
+  - q: 견적 요청서를 보내면 계약이 되나요?
+    a: 아닙니다. 가격과 조건을 알아보는 문서이며, 계약은 별도로 합의하고 계약서나 발주서를 주고받아야 성립합니다.
+  - q: 여러 업체에 같은 요청서를 보내도 되나요?
+    a: 됩니다. 조건을 똑같이 적어 보내야 업체별 견적을 공정하게 비교할 수 있습니다.
+  - q: 희망 단가를 꼭 적어야 하나요?
+    a: 필수는 아닙니다. 예산 범위가 있다면 적어 두면 업체가 맞춰 제안하기 쉽습니다.
+related: [quotation, sales-contract, vendor-registration, delivery-confirmation]
+blocks:
+  - type: doc_title
+    text: 견적 요청서
+    spaced: true
+  - type: subtitle
+    text: 1. 요청 회사
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "담당자", ""]
+      - ["연락처", "", "이메일", ""]
+      - ["수신 업체", "", "제출 기한", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "김서연 과장"]
+      - ["", "02-123-4567", "", "buy@example.com"]
+      - ["", "(주)새길데이터", "", "2026-10-22"]
+  - type: subtitle
+    text: 2. 요청 품목
+  - type: table
+    widths: [8, 28, 24, 12, 12, 16]
+    header: ["No", 품목명, 규격, 수량, 단위, 희망 단가]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "A4 복사용지", "80g 500매", "100", "박스", "-"]
+      - ["2", "라벨 스티커", "38x21mm", "50", "팩", "-"]
+  - type: subtitle
+    text: 3. 납품 조건
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["희망 납기", "", "결제 조건", ""]
+      - ["납품 장소", "", "", ""]
+    sample_rows:
+      - ["", "2026-11-05", "", "납품 후 30일"]
+      - ["", "서울 본사 1층 물류실", "", ""]
+  - type: textbox
+    hint: "견적서에 포함해 주실 사항(부가세 포함 여부, 운송비, 보증 조건 등)을 적으십시오."
+    height_mm: 24
+    sample_text: "단가는 부가세 별도로 표시하고, 운송비 포함 여부와 납품 후 불량품 교환 조건을 함께 기재해 주십시오."
+  - type: para
+    text: 위와 같이 견적을 요청하오니 기한 내 회신하여 주시기 바랍니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   15 일
+  - type: sign_line
+    labels: ["요청자"]
+    sample_names: [김서연]
+  - type: notice
+    text: 본 요청서는 계약 체결을 약속하는 문서가 아닙니다.
