@@ -1,0 +1,73 @@
+id: annual-leave-substitution-agreement
+title: 연차 대체 합의서
+category: corp
+subcategory: hr
+tags: [연차대체합의서, 연차대체, 공휴일대체, 연차휴가대체, 근로자대표서면합의]
+summary: 특정 근로일을 연차휴가로 대체해 쉬기로 회사와 근로자가 합의할 때 대체 일자와 차감 일수를 적는 합의서입니다.
+usage: >
+  회사가 정한 특정 근로일(예: 징검다리 연휴)에 쉬면서 그날을 연차휴가를 쓴 것으로 처리하기로
+  합의할 때 사용하는 서식입니다. 대체할 날짜와 차감할 연차 일수, 합의 당사자를 분명히 적어
+  두면 나중에 연차 잔여 일수를 두고 생기는 다툼을 줄일 수 있습니다. 대체 방식과 합의 주체는
+  취업규칙과 고용노동부 안내에 따라 달라질 수 있으므로 시행 전에 확인하십시오. 본 서식은
+  합의 내용을 기록하는 틀이며 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사와 합의 당사자 정보를 적습니다.
+  - 연차로 대체할 날짜와 차감할 일수를 적습니다.
+  - 대상 근로자의 범위와 특약을 적습니다.
+  - 합의일을 적고 양쪽이 서명합니다.
+faq:
+  - q: 대체한 날은 연차에서 얼마나 빠지나요?
+    a: 합의서에 적은 일수만큼 차감하는 것이 일반적입니다. 차감 일수는 합의 내용으로 정합니다.
+  - q: 근로자 전원에게 한꺼번에 받아도 되나요?
+    a: 합의 주체와 방식은 취업규칙과 고용노동부 안내를 확인하십시오.
+  - q: 이미 쓴 연차가 부족하면 어떻게 하나요?
+    a: 잔여 연차가 모자란 경우의 처리를 특약란에 미리 적어 두면 분쟁을 줄일 수 있습니다.
+related: [annual-leave-plan, annual-leave-usage-status-confirmation, leave-request, annual-leave-carryover-agreement]
+blocks:
+  - type: doc_title
+    text: 연차 대체 합의서
+    spaced: false
+  - type: subtitle
+    text: 1. 합의 당사자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "대표자", ""]
+      - ["부서(팀)", "", "직위", ""]
+      - ["근로자 성명", "", "입사일", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "박민준"]
+      - ["", "영업지원팀", "", "대리"]
+      - ["", "김서연", "", "2022-03-02"]
+  - type: subtitle
+    text: 2. 대체 내용
+  - type: table
+    widths: [10, 30, 20, 20, 20]
+    header: ["No", 대체할 날짜, 요일, 차감 일수, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "2026-10-02", "금", "1일", "추석 연휴 사이"]
+      - ["2", "2026-12-24", "목", "1일", ""]
+  - type: subtitle
+    text: 3. 특약
+  - type: textbox
+    hint: "잔여 연차가 부족한 경우의 처리 등 합의한 내용을 적으십시오."
+    height_mm: 28
+    sample_text: "대체일에는 근로하지 아니하며, 잔여 연차가 부족한 경우의 처리는 회사 취업규칙에 따른다."
+  - type: para
+    text: 위 내용으로 연차휴가를 대체하기로 회사와 근로자가 합의하였음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   16 일
+  - type: sign_line
+    labels: ["회사", "근로자"]
+    sample_names: [박민준, 김서연]
+  - type: notice
+    text: 대체 방식과 합의 주체는 취업규칙과 고용노동부 안내를 확인하십시오.

@@ -65,7 +65,7 @@
       "ids": [
         "startup-checklist", "business-reg-checklist", "business-registration-poa", "business-plan-simple",
         "business-plan-standard", "partnership-agreement",
-        "articles-of-incorporation", "shareholder-register",
+        "articles-of-incorporation", "shareholder-register", "stock-subscription-form",
         "director-acceptance", "corporate-seal-report-poa", "director-resignation-letter", "budget-plan", "vat-filing-poa",
         "social-insurance-filing-poa", "nda"
       ]
@@ -100,7 +100,7 @@
       "ids": [
         "certified-notice", "fact-confirmation", "settlement-agreement",
         "statement-of-facts", "civil-conciliation", "small-claims-complaint",
-        "complaint-goods-payment", "answer-brief", "preparatory-brief", "hearing-date-change-request",
+        "complaint-goods-payment", "answer-brief", "preparatory-brief", "witness-application", "hearing-date-change-request",
         "petition-letter"
       ]
     },
