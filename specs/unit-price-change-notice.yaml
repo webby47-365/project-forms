@@ -1,0 +1,75 @@
+id: unit-price-change-notice
+title: 단가 변경 통지서
+category: corp
+subcategory: sales
+tags: [단가변경, 가격인상통지, 납품단가, 거래단가, 단가조정]
+summary: 거래처에 납품 단가를 바꾸겠다고 알리는 단가 변경 통지서로, 품목별 기존가와 변경가, 적용일을 적습니다.
+usage: >
+  원자재 가격이나 비용이 바뀌어 거래처에 공급하는 품목의 단가를 올리거나 내릴 때 미리 알리는 서식입니다.
+  품목별로 기존 단가와 변경 단가를 나란히 적고 새 단가를 적용하는 날짜를 분명히 표시합니다. 변경 사유는 짧게
+  적어 거래처가 이해할 수 있게 합니다. 기존 계약에 단가 조정 조건이 있으면 그 절차를 먼저 확인하고, 거래처의
+  회신이나 확인 서명을 받아 두면 이후 분쟁을 줄일 수 있습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 받는 거래처와 보내는 회사 정보를 적습니다.
+  - 품목별로 기존 단가와 변경 단가를 적습니다.
+  - 새 단가를 적용하는 날짜와 변경 사유를 적습니다.
+  - 서명해 보내고 거래처 확인란에 회신을 받습니다.
+faq:
+  - q: 얼마나 앞서 알려야 하나요?
+    a: 법으로 정해진 기간이 일률적으로 있지는 않습니다. 계약서의 단가 조정 조항과 거래 관행을 확인하고 여유 있게 보내십시오.
+  - q: 거래처가 동의하지 않으면 어떻게 되나요?
+    a: 계약 조건에 따라 달라집니다. 이 통지서는 변경 의사를 알리는 서식이며 동의를 대신하지 않습니다.
+  - q: 부가세는 단가에 포함해 적나요?
+    a: 표에 공급가 기준인지 부가세 포함인지 명시해 두면 오해가 없습니다. 기존 거래 방식과 맞추십시오.
+related: [quotation-request, quotation-comparison, sales-contract, tax-invoice-correction-request]
+blocks:
+  - type: doc_title
+    text: 단가 변경 통지서
+    spaced: false
+  - type: subtitle
+    text: 1. 거래 당사자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["수신(거래처)", "", "담당자", ""]
+      - ["발신(회사)", "", "담당자", ""]
+    sample_rows:
+      - ["", "한빛물산", "", "박민준"]
+      - ["", "(주)새길데이터", "", "김서연"]
+  - type: subtitle
+    text: 2. 품목별 단가 변경
+  - type: table
+    widths: [8, 28, 12, 18, 18, 16]
+    header: ["No", 품목, 단위, 기존 단가, 변경 단가, 비고]
+    empty_rows: 7
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "포장 박스 A형", "개", "850", "920", "공급가"]
+      - ["2", "완충재 롤", "롤", "12,000", "12,800", "공급가"]
+  - type: subtitle
+    text: 3. 적용일 및 사유
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["적용일", ""]
+      - ["변경 사유", ""]
+    sample_rows:
+      - ["", "2026-11-01 납품분부터"]
+      - ["", "원자재 가격 상승으로 인한 조정"]
+  - type: para
+    text: 위와 같이 단가 변경을 알려 드리오니 업무에 참고하시기 바랍니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   18 일
+  - type: sign_line
+    labels: ["발신인", "거래처 확인"]
+    sample_names: [김서연, 박민준]
+  - type: notice
+    text: 기존 계약서의 단가 조정 조항이 있으면 그 절차를 먼저 확인하십시오.

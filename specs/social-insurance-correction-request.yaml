@@ -1,0 +1,83 @@
+id: social-insurance-correction-request
+title: 사회보험 가입내역 정정 요청서
+category: public
+subcategory: insurance
+tags: [4대보험정정, 가입내역정정, 취득일정정, 보험정정요청, 사회보험]
+summary: 4대보험 취득일·상실일·직종 등 가입내역이 사실과 다를 때 정정을 요청하는 사회보험 가입내역 정정 요청서입니다.
+usage: >
+  근로자가 본인의 가입 기록에서 취득일이나 상실일, 근무처가 실제와 다른 것을 발견했을 때, 또는 사업장이
+  신고 내용을 바로잡으려 할 때 씁니다. 어느 보험의 어떤 항목이 현재 어떻게 되어 있고 어떻게 바로잡아야
+  하는지를 비교해 적고, 근거 자료의 종류를 함께 표시합니다. 보험마다 처리 기관과 절차가 다르므로 해당
+  공단에 먼저 문의한 뒤 제출하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청인과 사업장 정보를 적습니다.
+  - 정정이 필요한 보험 종류에 표시합니다.
+  - 현재 기록과 바로잡을 내용을 나란히 적습니다.
+  - 첨부할 근거 자료를 표시하고 서명해 냅니다.
+faq:
+  - q: 어느 기관에 내야 하나요?
+    a: 보험마다 담당 공단이 다릅니다. 해당 보험의 공단 지사나 사업장 담당자에게 먼저 확인하십시오.
+  - q: 근거 자료로 무엇을 붙이나요?
+    a: 근로계약서, 급여명세서, 출퇴근 기록 등 실제 근무 시작일과 종료일을 보여 주는 자료가 쓰입니다.
+  - q: 사업장 동의가 꼭 필요한가요?
+    a: 정정 방식에 따라 다릅니다. 근로자가 직접 확인 요청하는 경우와 사업장이 정정 신고하는 경우를 공단에 확인하십시오.
+related: [insurance-enrollment-confirmation-request, employment-insurance-history-request, social-insurance-filing-poa, separation-certificate-request]
+blocks:
+  - type: doc_title
+    text: 사회보험 가입내역 정정 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청인 및 사업장
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["사업장명", "", "근무기간", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "(주)한빛커머스", "", "2025-03-04 ~ 현재"]
+  - type: subtitle
+    text: 2. 정정 대상 보험
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["보험 종류", "□ 국민연금   □ 건강보험   □ 고용보험   □ 산재보험"]
+    sample_rows:
+      - ["", "□ 국민연금   □ 건강보험   ■ 고용보험   □ 산재보험"]
+  - type: subtitle
+    text: 3. 정정 내용
+  - type: table
+    widths: [8, 20, 36, 36]
+    header: ["No", 정정 항목, 현재 기록, 바로잡을 내용]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "취득일", "2025-04-01", "2025-03-04"]
+      - ["2", "직종", "사무직", "영업지원"]
+  - type: subtitle
+    text: 4. 첨부 근거 자료
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["첨부", "□ 근로계약서   □ 급여명세서   □ 출퇴근 기록   □ 기타"]
+    sample_rows:
+      - ["", "■ 근로계약서   ■ 급여명세서   □ 출퇴근 기록   □ 기타"]
+  - type: para
+    text: 위와 같이 가입내역의 정정을 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   18 일
+  - type: sign_line
+    labels: ["요청인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 보험별 정정 절차와 제출처는 다를 수 있습니다. 해당 공단의 안내를 확인하십시오.

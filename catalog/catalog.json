@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T10:08:09+09:00",
-  "count": 378,
+  "generated_at": "2026-10-18T09:49:41+09:00",
+  "count": 383,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -1481,6 +1481,108 @@
       "warnings": [],
       "created_at": "2026-10-16T10:07:45+09:00",
       "updated_at": "2026-10-16T10:07:45+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-team-schedule",
+      "title": "부서 연차 사용 일정 취합표",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차일정",
+        "연차취합",
+        "부서연차계획",
+        "연차사용일정",
+        "연차촉진"
+      ],
+      "summary": "부서원별 연차 잔여일수와 사용 예정일을 한 장에 모아 업무 공백을 조정하는 부서 연차 사용 일정 취합표입니다.",
+      "usage": "연차 사용 촉진 시기에 팀장이나 인사 담당자가 부서원의 연차 사용 계획을 한자리에 모아 확인할 때 씁니다. 부서원마다 잔여일수와 사용 예정일을 받아 적고, 같은 날 몰리는 일정이 있으면 비고란에 조정 내용을 남깁니다. 이 표는 내부 취합용이며 개인별 사용 시기 지정 통보와는 별개입니다. 잔여일수는 회사 기록을 기준으로 적고, 최종 승인은 회사의 연차 신청 절차에 따릅니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59563,
+        "docx": 39048,
+        "hwpx": 10791
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "부서명과 취합 기간, 작성자를 적습니다.",
+        "부서원별 잔여 연차 일수를 회사 기록대로 옮겨 적습니다.",
+        "사용 예정일과 일수를 받아 적습니다.",
+        "일정이 겹치는 날은 비고란에 조정 내용을 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "이 표로 연차 사용 촉진 통지를 대신할 수 있나요?",
+          "a": "아닙니다. 이 표는 내부 일정 취합용입니다. 촉진 통지는 별도 서면 절차이므로 회사 기준과 고용노동부 안내를 확인하십시오."
+        },
+        {
+          "q": "사용 예정일은 확정된 날짜인가요?",
+          "a": "취합 시점의 희망 일정입니다. 확정은 회사의 연차 신청·승인 절차를 거쳐야 합니다."
+        },
+        {
+          "q": "반차는 어떻게 적나요?",
+          "a": "일수란에 0.5를 적고 비고란에 오전 또는 오후를 적어 두면 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 취합 개요",
+          "items": [
+            "부서명",
+            "작성자",
+            "취합 기간",
+            "작성일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 부서원별 연차 사용 예정",
+          "items": [
+            "성명",
+            "잔여일수",
+            "사용 예정일",
+            "일수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 조정 사항",
+          "items": [],
+          "note": "같은 날 몰린 일정이나 업무 공백 대책을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-plan",
+        "annual-leave-usage-status-confirmation",
+        "attendance-sheet",
+        "annual-leave-promotion-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-18T09:49:19+09:00",
+      "updated_at": "2026-10-18T09:49:19+09:00",
       "downloads": 0
     },
     {
@@ -7697,6 +7799,108 @@
       "warnings": [],
       "created_at": "2026-10-10T08:17:27+09:00",
       "updated_at": "2026-10-10T08:17:27+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "civil-petition-withdrawal",
+      "title": "민원 취하서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "민원취하",
+        "민원철회",
+        "민원취소",
+        "신고취하",
+        "민원취하서"
+      ],
+      "summary": "이미 접수한 민원의 처리를 더 이상 원하지 않을 때 접수번호와 취하 사유를 적어 내는 민원 취하서 양식입니다.",
+      "usage": "관공서나 공공기관에 접수한 민원·신고를 문제가 해결되었거나 사정이 바뀌어 거두고 싶을 때 씁니다. 접수일과 접수번호, 민원 제목을 정확히 적어야 담당 부서가 해당 건을 찾을 수 있습니다. 취하 사유는 짧게 적어도 됩니다. 이미 처분이 끝난 건이나 법령상 취하가 제한되는 건은 받아들여지지 않을 수 있으므로 담당 부서에 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 38753,
+        "docx": 38470,
+        "hwpx": 9501
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "민원을 낸 기관명과 접수일, 접수번호를 적습니다.",
+        "민원 제목과 처리 상태를 적습니다.",
+        "취하하는 이유를 한두 줄로 적습니다.",
+        "날짜를 쓰고 서명해 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "접수번호를 모르면 취하할 수 없나요?",
+          "a": "접수일과 민원 제목, 담당 부서만 알아도 찾을 수 있는 경우가 많습니다. 기관 민원실에 문의해 번호를 확인하십시오."
+        },
+        {
+          "q": "취하하면 이미 낸 처리 결과도 사라지나요?",
+          "a": "이미 끝난 처분은 취하로 되돌아가지 않을 수 있습니다. 처리 상태를 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "대리인이 취하서를 내도 되나요?",
+          "a": "대리인이 낼 때는 보통 위임장과 신분 확인이 필요합니다. 제출 기관의 요구를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 민원인",
+          "items": [
+            "성명",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 취하할 민원",
+          "items": [
+            "접수 기관",
+            "접수일",
+            "접수번호",
+            "담당 부서",
+            "민원 제목"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 취하 사유",
+          "items": [],
+          "note": "취하하는 이유를 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "civil-petition-reply-request",
+        "gov-info-disclosure-request",
+        "civil-petition",
+        "gov-admin-appeal"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-18T09:49:24+09:00",
+      "updated_at": "2026-10-18T09:49:24+09:00",
       "downloads": 0
     },
     {
@@ -33300,6 +33504,116 @@
       "seal": true
     },
     {
+      "id": "social-insurance-correction-request",
+      "title": "사회보험 가입내역 정정 요청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "4대보험정정",
+        "가입내역정정",
+        "취득일정정",
+        "보험정정요청",
+        "사회보험"
+      ],
+      "summary": "4대보험 취득일·상실일·직종 등 가입내역이 사실과 다를 때 정정을 요청하는 사회보험 가입내역 정정 요청서입니다.",
+      "usage": "근로자가 본인의 가입 기록에서 취득일이나 상실일, 근무처가 실제와 다른 것을 발견했을 때, 또는 사업장이 신고 내용을 바로잡으려 할 때 씁니다. 어느 보험의 어떤 항목이 현재 어떻게 되어 있고 어떻게 바로잡아야 하는지를 비교해 적고, 근거 자료의 종류를 함께 표시합니다. 보험마다 처리 기관과 절차가 다르므로 해당 공단에 먼저 문의한 뒤 제출하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53232,
+        "docx": 38728,
+        "hwpx": 9976
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청인과 사업장 정보를 적습니다.",
+        "정정이 필요한 보험 종류에 표시합니다.",
+        "현재 기록과 바로잡을 내용을 나란히 적습니다.",
+        "첨부할 근거 자료를 표시하고 서명해 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "어느 기관에 내야 하나요?",
+          "a": "보험마다 담당 공단이 다릅니다. 해당 보험의 공단 지사나 사업장 담당자에게 먼저 확인하십시오."
+        },
+        {
+          "q": "근거 자료로 무엇을 붙이나요?",
+          "a": "근로계약서, 급여명세서, 출퇴근 기록 등 실제 근무 시작일과 종료일을 보여 주는 자료가 쓰입니다."
+        },
+        {
+          "q": "사업장 동의가 꼭 필요한가요?",
+          "a": "정정 방식에 따라 다릅니다. 근로자가 직접 확인 요청하는 경우와 사업장이 정정 신고하는 경우를 공단에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청인 및 사업장",
+          "items": [
+            "성명",
+            "연락처",
+            "사업장명",
+            "근무기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 정정 대상 보험",
+          "items": [
+            "보험 종류"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 정정 내용",
+          "items": [
+            "정정 항목",
+            "현재 기록",
+            "바로잡을 내용"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 첨부 근거 자료",
+          "items": [
+            "첨부"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "insurance-enrollment-confirmation-request",
+        "employment-insurance-history-request",
+        "social-insurance-filing-poa",
+        "separation-certificate-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-18T09:49:30+09:00",
+      "updated_at": "2026-10-18T09:49:30+09:00",
+      "downloads": 0
+    },
+    {
       "id": "social-insurance-filing-poa",
       "title": "4대보험 신고 업무 위임장",
       "category": "public",
@@ -36413,6 +36727,110 @@
       "downloads": 0
     },
     {
+      "id": "unit-price-change-notice",
+      "title": "단가 변경 통지서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "단가변경",
+        "가격인상통지",
+        "납품단가",
+        "거래단가",
+        "단가조정"
+      ],
+      "summary": "거래처에 납품 단가를 바꾸겠다고 알리는 단가 변경 통지서로, 품목별 기존가와 변경가, 적용일을 적습니다.",
+      "usage": "원자재 가격이나 비용이 바뀌어 거래처에 공급하는 품목의 단가를 올리거나 내릴 때 미리 알리는 서식입니다. 품목별로 기존 단가와 변경 단가를 나란히 적고 새 단가를 적용하는 날짜를 분명히 표시합니다. 변경 사유는 짧게 적어 거래처가 이해할 수 있게 합니다. 기존 계약에 단가 조정 조건이 있으면 그 절차를 먼저 확인하고, 거래처의 회신이나 확인 서명을 받아 두면 이후 분쟁을 줄일 수 있습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 56087,
+        "docx": 39029,
+        "hwpx": 10360
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "받는 거래처와 보내는 회사 정보를 적습니다.",
+        "품목별로 기존 단가와 변경 단가를 적습니다.",
+        "새 단가를 적용하는 날짜와 변경 사유를 적습니다.",
+        "서명해 보내고 거래처 확인란에 회신을 받습니다."
+      ],
+      "faq": [
+        {
+          "q": "얼마나 앞서 알려야 하나요?",
+          "a": "법으로 정해진 기간이 일률적으로 있지는 않습니다. 계약서의 단가 조정 조항과 거래 관행을 확인하고 여유 있게 보내십시오."
+        },
+        {
+          "q": "거래처가 동의하지 않으면 어떻게 되나요?",
+          "a": "계약 조건에 따라 달라집니다. 이 통지서는 변경 의사를 알리는 서식이며 동의를 대신하지 않습니다."
+        },
+        {
+          "q": "부가세는 단가에 포함해 적나요?",
+          "a": "표에 공급가 기준인지 부가세 포함인지 명시해 두면 오해가 없습니다. 기존 거래 방식과 맞추십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 거래 당사자",
+          "items": [
+            "수신(거래처)",
+            "담당자",
+            "발신(회사)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 품목별 단가 변경",
+          "items": [
+            "품목",
+            "단위",
+            "기존 단가",
+            "변경 단가"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 적용일 및 사유",
+          "items": [
+            "적용일",
+            "변경 사유"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "quotation-request",
+        "quotation-comparison",
+        "sales-contract",
+        "tax-invoice-correction-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-18T09:49:41+09:00",
+      "updated_at": "2026-10-18T09:49:41+09:00",
+      "downloads": 0
+    },
+    {
       "id": "unused-annual-leave-pay-receipt",
       "title": "미사용 연차수당 수령 확인서",
       "category": "corp",
@@ -38903,6 +39321,110 @@
         "privacy-consent"
       ],
       "seal": true
+    },
+    {
+      "id": "welfare-facility-outing-request",
+      "title": "시설 외출·외박 신청서",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "외출신청",
+        "외박신청",
+        "시설외출",
+        "요양시설외출",
+        "복지시설"
+      ],
+      "summary": "복지·요양시설 이용자가 외출이나 외박을 하기 전에 일시와 목적, 동행인, 복귀 예정을 적어 내는 외출·외박 신청서입니다.",
+      "usage": "요양원·복지시설에서 이용자가 가족과 외출하거나 외박할 때 시설에 미리 제출하는 서식입니다. 나가는 일시와 복귀 예정 일시, 행선지, 동행인과 연락처를 적어 시설이 이용자 소재를 파악할 수 있게 합니다. 복용 약이나 건강 상태 같은 세부 사항은 적지 않고, 필요한 내용은 시설 담당자와 따로 상의하십시오. 시설마다 외출 가능 시간과 절차가 다르므로 운영 규정을 먼저 확인합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46904,
+        "docx": 38565,
+        "hwpx": 9678
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "이용자 이름과 호실, 신청자 관계를 적습니다.",
+        "외출 또는 외박 일시와 복귀 예정 일시를 적습니다.",
+        "행선지와 동행인, 비상 연락처를 적습니다.",
+        "신청자가 서명해 시설 담당자에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "당일 외출도 신청서가 필요한가요?",
+          "a": "시설 운영 규정에 따릅니다. 대부분 사전에 기록을 남기므로 시설 담당자에게 확인하십시오."
+        },
+        {
+          "q": "신청자는 누구여야 하나요?",
+          "a": "보통 이용자 본인이나 보호자입니다. 시설이 요구하는 보호자 기준을 확인하십시오."
+        },
+        {
+          "q": "복귀 시간이 늦어지면 어떻게 하나요?",
+          "a": "미리 시설에 연락해 변경을 알리는 것이 좋습니다. 연락처를 서식에 꼭 적어 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 이용자 및 신청자",
+          "items": [
+            "이용자 성명",
+            "호실",
+            "신청자 성명",
+            "이용자와의 관계",
+            "신청자 연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 외출·외박 내용",
+          "items": [
+            "행선지",
+            "나가는 일시",
+            "복귀 예정",
+            "동행인",
+            "비상 연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 전달 사항",
+          "items": [],
+          "note": "시설에 알릴 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "welfare-facility-application",
+        "welfare-facility-withdrawal-request",
+        "welfare-service-change-request",
+        "long-term-care-application"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-18T09:49:36+09:00",
+      "updated_at": "2026-10-18T09:49:36+09:00",
+      "downloads": 0
     },
     {
       "id": "welfare-facility-withdrawal-request",

@@ -1,0 +1,77 @@
+id: civil-petition-withdrawal
+title: 민원 취하서
+category: public
+subcategory: civil
+tags: [민원취하, 민원철회, 민원취소, 신고취하, 민원취하서]
+summary: 이미 접수한 민원의 처리를 더 이상 원하지 않을 때 접수번호와 취하 사유를 적어 내는 민원 취하서 양식입니다.
+usage: >
+  관공서나 공공기관에 접수한 민원·신고를 문제가 해결되었거나 사정이 바뀌어 거두고 싶을 때 씁니다.
+  접수일과 접수번호, 민원 제목을 정확히 적어야 담당 부서가 해당 건을 찾을 수 있습니다. 취하 사유는 짧게
+  적어도 됩니다. 이미 처분이 끝난 건이나 법령상 취하가 제한되는 건은 받아들여지지 않을 수 있으므로
+  담당 부서에 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 민원을 낸 기관명과 접수일, 접수번호를 적습니다.
+  - 민원 제목과 처리 상태를 적습니다.
+  - 취하하는 이유를 한두 줄로 적습니다.
+  - 날짜를 쓰고 서명해 담당 부서에 냅니다.
+faq:
+  - q: 접수번호를 모르면 취하할 수 없나요?
+    a: 접수일과 민원 제목, 담당 부서만 알아도 찾을 수 있는 경우가 많습니다. 기관 민원실에 문의해 번호를 확인하십시오.
+  - q: 취하하면 이미 낸 처리 결과도 사라지나요?
+    a: 이미 끝난 처분은 취하로 되돌아가지 않을 수 있습니다. 처리 상태를 담당 부서에 확인하십시오.
+  - q: 대리인이 취하서를 내도 되나요?
+    a: 대리인이 낼 때는 보통 위임장과 신분 확인이 필요합니다. 제출 기관의 요구를 확인하십시오.
+related: [civil-petition-reply-request, gov-info-disclosure-request, civil-petition, gov-admin-appeal]
+blocks:
+  - type: doc_title
+    text: 민원 취하서
+    spaced: true
+  - type: subtitle
+    text: 1. 민원인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울특별시 중구 세종대로 110", "", ""]
+  - type: subtitle
+    text: 2. 취하할 민원
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["접수 기관", "", "접수일", ""]
+      - ["접수번호", "", "담당 부서", ""]
+      - ["민원 제목", "", "", ""]
+    sample_rows:
+      - ["", "○○구청 민원실", "", "2026-09-28"]
+      - ["", "2026-000123", "", "도로관리과"]
+      - ["", "도로 포장 파손 보수 요청", "", ""]
+  - type: subtitle
+    text: 3. 취하 사유
+  - type: textbox
+    hint: "취하하는 이유를 간단히 적으십시오."
+    height_mm: 28
+    sample_text: 해당 도로가 보수 완료되어 민원 해결을 확인하였으므로 처리 절차를 중단해 주시기 바랍니다.
+  - type: para
+    text: 위 민원을 취하하오니 처리해 주시기 바랍니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   18 일
+  - type: sign_line
+    labels: ["민원인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 이미 처분이 끝난 건은 취하가 제한될 수 있습니다. 제출 기관의 안내를 확인하십시오.

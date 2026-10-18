@@ -1,0 +1,82 @@
+id: welfare-facility-outing-request
+title: 시설 외출·외박 신청서
+category: welfare
+subcategory: consent
+tags: [외출신청, 외박신청, 시설외출, 요양시설외출, 복지시설]
+summary: 복지·요양시설 이용자가 외출이나 외박을 하기 전에 일시와 목적, 동행인, 복귀 예정을 적어 내는 외출·외박 신청서입니다.
+usage: >
+  요양원·복지시설에서 이용자가 가족과 외출하거나 외박할 때 시설에 미리 제출하는 서식입니다. 나가는 일시와
+  복귀 예정 일시, 행선지, 동행인과 연락처를 적어 시설이 이용자 소재를 파악할 수 있게 합니다. 복용 약이나
+  건강 상태 같은 세부 사항은 적지 않고, 필요한 내용은 시설 담당자와 따로 상의하십시오. 시설마다 외출 가능
+  시간과 절차가 다르므로 운영 규정을 먼저 확인합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 이용자 이름과 호실, 신청자 관계를 적습니다.
+  - 외출 또는 외박 일시와 복귀 예정 일시를 적습니다.
+  - 행선지와 동행인, 비상 연락처를 적습니다.
+  - 신청자가 서명해 시설 담당자에게 냅니다.
+faq:
+  - q: 당일 외출도 신청서가 필요한가요?
+    a: 시설 운영 규정에 따릅니다. 대부분 사전에 기록을 남기므로 시설 담당자에게 확인하십시오.
+  - q: 신청자는 누구여야 하나요?
+    a: 보통 이용자 본인이나 보호자입니다. 시설이 요구하는 보호자 기준을 확인하십시오.
+  - q: 복귀 시간이 늦어지면 어떻게 하나요?
+    a: 미리 시설에 연락해 변경을 알리는 것이 좋습니다. 연락처를 서식에 꼭 적어 두십시오.
+related: [welfare-facility-application, welfare-facility-withdrawal-request, welfare-service-change-request, long-term-care-application]
+blocks:
+  - type: doc_title
+    text: 시설 외출·외박 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 이용자 및 신청자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["이용자 성명", "", "호실", ""]
+      - ["신청자 성명", "", "이용자와의 관계", ""]
+      - ["신청자 연락처", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "박순자", "", "302호"]
+      - ["", "김서연", "", "자녀"]
+      - ["", "010-1234-5678", "", ""]
+  - type: subtitle
+    text: 2. 외출·외박 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["구분", "", "행선지", ""]
+      - ["나가는 일시", "", "", ""]
+      - ["복귀 예정", "", "", ""]
+      - ["동행인", "", "비상 연락처", ""]
+    sample_rows:
+      - ["", "□ 외출   ■ 외박", "", "서울시 ○○구 자택"]
+      - ["", "2026-10-24 10:00", "", ""]
+      - ["", "2026-10-25 17:00", "", ""]
+      - ["", "김서연(자녀)", "", "010-1234-5678"]
+  - type: subtitle
+    text: 3. 전달 사항
+  - type: textbox
+    hint: "시설에 알릴 내용이 있으면 적으십시오."
+    height_mm: 22
+    sample_text: 주말 가족 모임으로 외박하며 일요일 저녁 식사 전까지 복귀하겠습니다.
+  - type: para
+    text: 위와 같이 외출·외박을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   18 일
+  - type: sign_line
+    labels: ["신청자"]
+    sample_names: [김서연]
+  - type: notice
+    text: 외출 가능 시간과 절차는 시설 운영 규정에 따릅니다. 건강 관련 사항은 담당자와 따로 상의하십시오.

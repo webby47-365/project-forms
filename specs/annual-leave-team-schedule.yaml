@@ -1,0 +1,67 @@
+id: annual-leave-team-schedule
+title: 부서 연차 사용 일정 취합표
+category: corp
+subcategory: hr
+tags: [연차일정, 연차취합, 부서연차계획, 연차사용일정, 연차촉진]
+summary: 부서원별 연차 잔여일수와 사용 예정일을 한 장에 모아 업무 공백을 조정하는 부서 연차 사용 일정 취합표입니다.
+usage: >
+  연차 사용 촉진 시기에 팀장이나 인사 담당자가 부서원의 연차 사용 계획을 한자리에 모아 확인할 때 씁니다.
+  부서원마다 잔여일수와 사용 예정일을 받아 적고, 같은 날 몰리는 일정이 있으면 비고란에 조정 내용을 남깁니다.
+  이 표는 내부 취합용이며 개인별 사용 시기 지정 통보와는 별개입니다. 잔여일수는 회사 기록을 기준으로 적고,
+  최종 승인은 회사의 연차 신청 절차에 따릅니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 부서명과 취합 기간, 작성자를 적습니다.
+  - 부서원별 잔여 연차 일수를 회사 기록대로 옮겨 적습니다.
+  - 사용 예정일과 일수를 받아 적습니다.
+  - 일정이 겹치는 날은 비고란에 조정 내용을 적습니다.
+faq:
+  - q: 이 표로 연차 사용 촉진 통지를 대신할 수 있나요?
+    a: 아닙니다. 이 표는 내부 일정 취합용입니다. 촉진 통지는 별도 서면 절차이므로 회사 기준과 고용노동부 안내를 확인하십시오.
+  - q: 사용 예정일은 확정된 날짜인가요?
+    a: 취합 시점의 희망 일정입니다. 확정은 회사의 연차 신청·승인 절차를 거쳐야 합니다.
+  - q: 반차는 어떻게 적나요?
+    a: 일수란에 0.5를 적고 비고란에 오전 또는 오후를 적어 두면 됩니다.
+related: [annual-leave-plan, annual-leave-usage-status-confirmation, attendance-sheet, annual-leave-promotion-notice]
+blocks:
+  - type: doc_title
+    text: 부서 연차 사용 일정 취합표
+    spaced: false
+  - type: subtitle
+    text: 1. 취합 개요
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["부서명", "", "작성자", ""]
+      - ["취합 기간", "", "작성일", ""]
+    sample_rows:
+      - ["", "영업지원팀", "", "김서연"]
+      - ["", "2026-11-01 ~ 2026-12-31", "", "2026-10-18"]
+  - type: subtitle
+    text: 2. 부서원별 연차 사용 예정
+  - type: table
+    widths: [8, 16, 14, 26, 12, 24]
+    header: ["No", 성명, 잔여일수, 사용 예정일, 일수, 비고]
+    empty_rows: 9
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "홍길동", "6", "2026-11-16 ~ 11-17", "2", ""]
+      - ["2", "박민준", "4", "2026-11-23", "1", "오전 반차 포함"]
+      - ["3", "이수현", "8", "2026-12-21 ~ 12-24", "4", "연말 조정"]
+  - type: subtitle
+    text: 3. 조정 사항
+  - type: textbox
+    hint: "같은 날 몰린 일정이나 업무 공백 대책을 적으십시오."
+    height_mm: 24
+    sample_text: 12월 21일~24일은 두 명이 겹쳐 한 명은 12월 28일로 옮기기로 협의함.
+  - type: date_line
+    sample_text: 2026 년   10 월   18 일
+  - type: sign_line
+    labels: ["작성자", "부서장"]
+    sample_names: [김서연, 박민준]
+  - type: notice
+    text: 개인별 연차 사용 촉진 통지는 별도 서면 절차로 진행하며, 회사 취업규칙을 확인하십시오.
