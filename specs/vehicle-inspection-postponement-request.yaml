@@ -1,0 +1,71 @@
+id: vehicle-inspection-postponement-request
+title: 자동차 정기검사 연기 신청서
+category: public
+subcategory: vehicle
+tags: [정기검사연기, 자동차검사유예, 검사기간연장, 검사연기신청, 자동차정기검사]
+summary: 사정이 있어 자동차 정기검사를 정해진 기간에 받기 어려울 때 연기를 신청하며 사유와 희망 기간을 적는 신청서입니다.
+usage: >
+  입원, 출장, 차량 수리 등으로 정기검사를 정해진 기간에 받기 어려울 때 연기를 신청하는 서식입니다.
+  차량 정보와 검사 만료일을 적고 연기를 원하는 사유와 희망 기간을 사실대로 씁니다. 연기가 인정되는
+  사유와 기간, 필요한 증빙은 기관 규정에 따르므로 신청 전에 검사 담당 기관의 안내를 확인하십시오.
+  신청서는 연기를 요청하는 문서이며, 승인 여부는 기관이 결정합니다. 접수 기록을 보관합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인과 차량번호, 차종을 적습니다.
+  - 검사 만료일과 연기를 원하는 기간을 적습니다.
+  - 연기를 신청하는 사유를 사실대로 적습니다.
+  - 신청일을 적고 서명한 뒤 증빙을 첨부합니다.
+faq:
+  - q: 신청하면 바로 연기되나요?
+    a: 아닙니다. 승인은 기관이 결정하며 인정되는 사유와 기간이 정해져 있습니다.
+  - q: 증빙은 무엇을 붙이나요?
+    a: 입원확인서, 출장명령서, 수리 내역서 등 사유를 보여 주는 자료입니다. 기관 안내를 확인하십시오.
+  - q: 대리인이 신청해도 되나요?
+    a: 가능한 경우가 많습니다. 위임장이 필요한지 기관에 먼저 확인하십시오.
+related: [vehicle-inspection-poa, vehicle-registration-reissue-poa, vehicle-use-consent, vehicle-deregistration-poa]
+blocks:
+  - type: doc_title
+    text: 자동차 정기검사 연기 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인 및 차량
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["신청인", "", "연락처", ""]
+      - ["차량번호", "", "차종", ""]
+      - ["검사 만료일", "", "연기 희망 기간", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "00가 0000", "", "승용차"]
+      - ["", "2026-11-15", "", "2026-12-31까지"]
+  - type: subtitle
+    text: 2. 연기 사유
+  - type: textbox
+    hint: "검사를 받지 못하는 사유를 날짜와 함께 사실대로 적으십시오."
+    height_mm: 34
+    sample_text: "2026년 11월 초부터 해외 출장이 예정되어 있어 만료일 안에 검사를 받기 어렵습니다. 귀국 후 바로 검사를 받겠습니다."
+  - type: subtitle
+    text: 3. 첨부 서류
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["첨부", ""]
+    sample_rows:
+      - ["", "출장명령서 사본 1부"]
+  - type: para
+    text: 위와 같은 사유로 자동차 정기검사 연기를 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   25 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 연기 가능한 사유와 기간은 검사 담당 기관의 안내를 확인하십시오.

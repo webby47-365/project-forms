@@ -1,0 +1,84 @@
+id: defect-warranty-deposit-refund-request
+title: 하자보수보증금 반환 청구서
+category: public
+subcategory: procure
+tags: [하자보수보증금, 보증금반환청구, 하자담보기간, 계약보증, 하자보수]
+summary: 하자담보책임기간이 끝난 뒤 계약 상대방에게 하자보수보증금의 반환을 청구할 때 쓰는 청구서입니다.
+usage: >
+  공사나 용역 계약에서 하자담보책임기간이 끝나 하자보수보증금을 돌려받으려 할 때 쓰는 서식입니다.
+  계약명과 계약일, 보증금액과 보증 형태, 하자담보책임기간 만료일을 정확히 적고 반환받을 계좌를 적습니다.
+  보증서로 낸 경우에는 보증서 반환을 요청하는 방식으로 씁니다. 하자 보수가 끝났는지와 반환 시기는
+  계약서 조건에 따르므로 제출처의 규정을 먼저 확인하십시오. 청구서 사본과 접수 기록을 보관합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 청구인과 계약 상대방, 계약명과 계약일을 적습니다.
+  - 보증금액과 보증 형태, 하자담보책임기간 만료일을 적습니다.
+  - 반환받을 방법과 계좌를 적습니다.
+  - 청구일을 적고 서명한 뒤 접수 기록을 보관합니다.
+faq:
+  - q: 보증서로 냈다면 어떻게 적나요?
+    a: 반환 방법에서 보증서 반환을 고르고 보증서 번호를 비고에 적습니다.
+  - q: 첨부서류는 무엇이 필요한가요?
+    a: 계약서 사본과 보증서(또는 납부 영수증) 사본이 일반적입니다. 제출처 안내를 확인하십시오.
+  - q: 하자담보책임기간은 어디서 확인하나요?
+    a: 계약서의 하자담보 조항에 적혀 있습니다. 준공일 기준인지 함께 확인하십시오.
+related: [contract-performance-deposit-refund-request, bid-deposit-refund-request, goods-inspection-report, bid-performance-certificate]
+blocks:
+  - type: doc_title
+    text: 하자보수보증금 반환 청구서
+    spaced: false
+  - type: subtitle
+    text: 1. 청구인 및 계약 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["청구인(상호)", "", "대표자", ""]
+      - ["주소", "", "", ""]
+      - ["계약명", "", "", ""]
+      - ["계약 상대방", "", "계약일", ""]
+    sample_rows:
+      - ["", "(주)한빛물산", "", "홍길동"]
+      - ["", "서울시 ○○구 ○○로 12", "", ""]
+      - ["", "사무실 시설 보수 공사", "", ""]
+      - ["", "○○시청", "", "2025-06-10"]
+  - type: subtitle
+    text: 2. 보증금 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["보증금액", "", "보증 형태", ""]
+      - ["준공일", "", "책임기간 만료일", ""]
+    sample_rows:
+      - ["", "5,000,000원", "", "현금 납부"]
+      - ["", "2025-10-31", "", "2026-10-31"]
+  - type: subtitle
+    text: 3. 반환 방법
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["은행명", "", "예금주", ""]
+      - ["계좌번호", "", "비고", ""]
+    sample_rows:
+      - ["", "○○은행", "", "(주)한빛물산"]
+      - ["", "000-00-00000", "", ""]
+  - type: para
+    text: 위 계약의 하자담보책임기간이 만료되었으므로 하자보수보증금의 반환을 청구합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   2 일
+  - type: sign_line
+    label: 청구인
+    sample_names: [홍길동]
+  - type: notice
+    text: 반환 시기와 필요 서류는 계약서와 제출처 규정을 확인하십시오.

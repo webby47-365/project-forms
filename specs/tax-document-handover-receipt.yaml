@@ -1,0 +1,73 @@
+id: tax-document-handover-receipt
+title: 세무자료 인계 확인서
+category: public
+subcategory: tax
+tags: [세무자료인계, 세무대리인변경, 장부인계, 기장자료인수, 증빙자료인계]
+summary: 세무대리인을 바꾸거나 자료를 넘길 때 인계한 장부·증빙 목록과 수량을 적어 양쪽이 확인하는 확인서입니다.
+usage: >
+  세무대리인 변경이나 자료 전달 과정에서 어떤 장부와 증빙을 언제 넘겼는지 기록으로 남기는 서식입니다.
+  넘기는 사람과 받는 사람, 인계일을 적고 자료 이름, 대상 기간, 수량을 표에 하나씩 적습니다. 원본인지
+  사본인지도 구분해 적어 두면 나중에 확인하기 쉽습니다. 서명은 양쪽 모두 하고 한 부씩 보관하십시오.
+  이 서식은 자료 전달의 확인 기록이며 세무 처리 책임을 정하는 문서가 아닙니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 자료를 넘기는 사람과 받는 사람, 인계일을 적습니다.
+  - 표에 자료 이름, 대상 기간, 수량, 원본·사본을 적습니다.
+  - 특이사항이 있으면 비고에 적습니다.
+  - 양쪽이 서명하고 한 부씩 보관합니다.
+faq:
+  - q: 원본과 사본은 어떻게 구분하나요?
+    a: 표의 구분 칸에 원본 또는 사본이라고 적으면 됩니다. 원본은 돌려받을 시기를 비고에 적어 두세요.
+  - q: 전자 자료도 적나요?
+    a: 파일 이름과 개수, 전달 방법을 적으면 됩니다. 비밀번호는 적지 않는 것이 좋습니다.
+  - q: 이 서식으로 책임이 정해지나요?
+    a: 아닙니다. 전달 사실을 확인하는 문서입니다. 책임 범위는 계약서와 전문가 상담으로 확인하십시오.
+related: [tax-data-inquiry-consent, vat-filing-document-confirmation, expense-evidence-explanation, handover-report]
+blocks:
+  - type: doc_title
+    text: 세무자료 인계 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 인계 당사자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["인계자", "", "연락처", ""]
+      - ["인수자", "", "연락처", ""]
+      - ["인계일", "", "인계 장소", ""]
+    sample_rows:
+      - ["", "(주)한빛물산", "", "010-1234-5678"]
+      - ["", "새길세무회계", "", "010-9876-5432"]
+      - ["", "2026-10-30", "", "인수자 사무실"]
+  - type: subtitle
+    text: 2. 인계 자료 목록
+  - type: table
+    widths: [8, 34, 24, 10, 12, 12]
+    header: ["No", 자료명, 대상 기간, 수량, 구분, 비고]
+    empty_rows: 6
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "매입 세금계산서 철", "2026.1~2026.9", "1권", "원본", ""]
+      - ["2", "카드 사용 내역", "2026.1~2026.9", "1부", "사본", ""]
+      - ["3", "급여대장", "2026.1~2026.9", "1부", "사본", ""]
+  - type: subtitle
+    text: 3. 특이사항
+  - type: textbox
+    hint: "누락 자료나 반환 시기 등 특이사항을 적으십시오."
+    height_mm: 20
+    sample_text: "원본 세금계산서 철은 신고 종료 후 반환 요청 예정입니다."
+  - type: para
+    text: 위와 같이 세무 관련 자료를 인계·인수하였음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   30 일
+  - type: sign_line
+    labels: ["인계자", "인수자"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 이 확인서는 자료 전달 사실을 기록하는 문서입니다. 세무 처리는 전문가와 확인하십시오.

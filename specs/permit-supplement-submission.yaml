@@ -1,0 +1,76 @@
+id: permit-supplement-submission
+title: 인허가 보완서류 제출서
+category: public
+subcategory: permit
+tags: [보완서류제출, 인허가보완, 보완요구, 신청서보완, 영업신고보완]
+summary: 인허가·영업신고 접수 뒤 보완 요구를 받았을 때 보완 내용과 제출 서류를 정리해 내는 제출서입니다.
+usage: >
+  영업신고나 인허가 신청 뒤 담당 기관에서 서류 보완을 요구받았을 때 보완한 내용을 한 장으로 정리해
+  제출하는 서식입니다. 처음 접수한 날짜와 접수번호, 보완 요구를 받은 날, 요구받은 사항과 보완한 내용을
+  항목별로 적습니다. 제출하는 서류는 이름과 부수를 적어 누락을 막습니다. 보완 기한은 기관의 통지서에
+  적혀 있으므로 먼저 확인하고, 접수 확인 도장이나 기록을 받아 보관하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인과 처음 접수한 기관, 접수일과 접수번호를 적습니다.
+  - 보완 요구를 받은 날과 보완 기한을 적습니다.
+  - 요구받은 사항과 보완한 내용을 항목별로 적습니다.
+  - 제출 서류를 적고 서명한 뒤 접수 기록을 받아 둡니다.
+faq:
+  - q: 접수번호를 모르면 어떻게 하나요?
+    a: 접수증이나 보완 요구 통지서에 적혀 있습니다. 없으면 담당 부서에 문의해 확인하십시오.
+  - q: 보완 기한을 넘기면 어떻게 되나요?
+    a: 기관 규정에 따릅니다. 기한 연장이 가능한지 담당 부서에 먼저 문의하는 것이 좋습니다.
+  - q: 제출 방법은 어떻게 하나요?
+    a: 통지서에 안내된 방법을 따릅니다. 방문과 온라인 접수 모두 가능한 경우가 많습니다.
+related: [permit-application-poa, business-license-reissue-request, business-facility-use-consent, administrative-objection]
+blocks:
+  - type: doc_title
+    text: 인허가 보완서류 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["신청인", "", "연락처", ""]
+      - ["접수 기관", "", "접수번호", ""]
+      - ["신청 내용", "", "", ""]
+      - ["접수일", "", "보완 기한", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "○○구청 위생과", "", "2026-0000"]
+      - ["", "일반음식점 영업신고", "", ""]
+      - ["", "2026-10-20", "", "2026-11-05"]
+  - type: subtitle
+    text: 2. 보완 사항
+  - type: table
+    widths: [8, 32, 40, 20]
+    header: ["No", 요구받은 사항, 보완한 내용, 첨부]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "임대차계약서 사본", "계약서 사본 첨부", "1부"]
+      - ["2", "시설 배치도", "수정한 배치도 첨부", "1부"]
+  - type: subtitle
+    text: 3. 기타 전달 사항
+  - type: textbox
+    hint: "담당자에게 알릴 내용이 있으면 적으십시오."
+    height_mm: 22
+    sample_text: "요구하신 서류를 모두 보완하여 제출합니다. 추가로 필요한 서류가 있으면 연락 바랍니다."
+  - type: para
+    text: 위와 같이 보완서류를 제출합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   28 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 보완 기한과 제출 방법은 기관의 통지서 내용을 확인하십시오.

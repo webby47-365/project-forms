@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-18T09:49:41+09:00",
-  "count": 383,
+  "generated_at": "2026-10-19T10:03:18+09:00",
+  "count": 388,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -854,6 +854,115 @@
       "warnings": [],
       "created_at": "2026-10-08T08:16:09+09:00",
       "updated_at": "2026-10-08T08:16:09+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-pay-settlement-statement",
+      "title": "연차수당 정산 내역서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차수당정산",
+        "미사용연차",
+        "연차수당계산",
+        "연차정산내역",
+        "연차보상"
+      ],
+      "summary": "연차 발생일수·사용일수·미사용일수와 일급 기준 지급액을 한 장에 정리해 근로자에게 확인받는 정산 내역서입니다.",
+      "usage": "연차 사용 기간이 끝나거나 퇴직할 때 미사용 연차에 대한 수당을 정산하고 그 내역을 남기는 서식입니다. 연차 발생일수와 사용일수, 남은 일수를 먼저 적고 일급 산정 기준과 지급액을 숫자로 분명히 씁니다. 일급 산정 방식은 회사 규정과 근로계약에 따르므로 적용한 기준을 비고에 함께 적어 두면 분쟁을 줄입니다. 작성 후 근로자가 확인 서명을 하고 양쪽이 한 부씩 보관합니다. 지급 의무나 금액에 대한 판단은 관련 규정과 전문가 확인이 필요합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49074,
+        "docx": 38708,
+        "hwpx": 10045
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "근로자 이름과 소속, 정산 기준 기간을 적습니다.",
+        "연차 발생일수, 사용일수, 미사용일수를 차례로 적습니다.",
+        "일급과 지급액, 지급 예정일을 적고 산정 기준을 비고에 남깁니다.",
+        "근로자 확인 서명을 받고 한 부씩 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "일급은 어떻게 정하나요?",
+          "a": "회사 규정과 근로계약에 따릅니다. 적용한 방식을 비고에 적어 두면 나중에 확인하기 쉽습니다."
+        },
+        {
+          "q": "정산 내역서가 지급 확인서도 되나요?",
+          "a": "아닙니다. 계산 내역을 확인하는 문서이며, 실제 지급 사실은 수령 확인서로 따로 남기는 편이 좋습니다."
+        },
+        {
+          "q": "근로자 서명이 꼭 필요한가요?",
+          "a": "법정 요건은 아니지만 내용을 확인받았다는 기록이 되므로 받아 두는 것이 안전합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 근로자 및 정산 기간",
+          "items": [
+            "성명",
+            "소속·직위",
+            "입사일",
+            "정산 기준일",
+            "정산 기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연차 현황",
+          "items": [
+            "발생 일수",
+            "이월 일수",
+            "사용 일수",
+            "미사용 일수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 수당 산정",
+          "items": [
+            "일수",
+            "일급",
+            "지급액",
+            "지급 합계",
+            "지급 예정일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "unused-annual-leave-pay-receipt",
+        "unused-annual-leave-pay-request",
+        "annual-leave-usage-status-confirmation",
+        "payslip"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-19T10:02:53+09:00",
+      "updated_at": "2026-10-19T10:02:53+09:00",
       "downloads": 0
     },
     {
@@ -10532,6 +10641,114 @@
         "checklist"
       ],
       "seal": true
+    },
+    {
+      "id": "defect-warranty-deposit-refund-request",
+      "title": "하자보수보증금 반환 청구서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "하자보수보증금",
+        "보증금반환청구",
+        "하자담보기간",
+        "계약보증",
+        "하자보수"
+      ],
+      "summary": "하자담보책임기간이 끝난 뒤 계약 상대방에게 하자보수보증금의 반환을 청구할 때 쓰는 청구서입니다.",
+      "usage": "공사나 용역 계약에서 하자담보책임기간이 끝나 하자보수보증금을 돌려받으려 할 때 쓰는 서식입니다. 계약명과 계약일, 보증금액과 보증 형태, 하자담보책임기간 만료일을 정확히 적고 반환받을 계좌를 적습니다. 보증서로 낸 경우에는 보증서 반환을 요청하는 방식으로 씁니다. 하자 보수가 끝났는지와 반환 시기는 계약서 조건에 따르므로 제출처의 규정을 먼저 확인하십시오. 청구서 사본과 접수 기록을 보관합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46180,
+        "docx": 38568,
+        "hwpx": 9736
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "청구인과 계약 상대방, 계약명과 계약일을 적습니다.",
+        "보증금액과 보증 형태, 하자담보책임기간 만료일을 적습니다.",
+        "반환받을 방법과 계좌를 적습니다.",
+        "청구일을 적고 서명한 뒤 접수 기록을 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "보증서로 냈다면 어떻게 적나요?",
+          "a": "반환 방법에서 보증서 반환을 고르고 보증서 번호를 비고에 적습니다."
+        },
+        {
+          "q": "첨부서류는 무엇이 필요한가요?",
+          "a": "계약서 사본과 보증서(또는 납부 영수증) 사본이 일반적입니다. 제출처 안내를 확인하십시오."
+        },
+        {
+          "q": "하자담보책임기간은 어디서 확인하나요?",
+          "a": "계약서의 하자담보 조항에 적혀 있습니다. 준공일 기준인지 함께 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 청구인 및 계약 내용",
+          "items": [
+            "청구인(상호)",
+            "대표자",
+            "주소",
+            "계약명",
+            "계약 상대방",
+            "계약일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 보증금 내용",
+          "items": [
+            "보증금액",
+            "보증 형태",
+            "준공일",
+            "책임기간 만료일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 반환 방법",
+          "items": [
+            "은행명",
+            "예금주",
+            "계좌번호"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "contract-performance-deposit-refund-request",
+        "bid-deposit-refund-request",
+        "goods-inspection-report",
+        "bid-performance-certificate"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-19T10:02:59+09:00",
+      "updated_at": "2026-10-19T10:02:59+09:00",
+      "downloads": 0
     },
     {
       "id": "delegation-revocation",
@@ -26391,6 +26608,110 @@
       "downloads": 0
     },
     {
+      "id": "permit-supplement-submission",
+      "title": "인허가 보완서류 제출서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "보완서류제출",
+        "인허가보완",
+        "보완요구",
+        "신청서보완",
+        "영업신고보완"
+      ],
+      "summary": "인허가·영업신고 접수 뒤 보완 요구를 받았을 때 보완 내용과 제출 서류를 정리해 내는 제출서입니다.",
+      "usage": "영업신고나 인허가 신청 뒤 담당 기관에서 서류 보완을 요구받았을 때 보완한 내용을 한 장으로 정리해 제출하는 서식입니다. 처음 접수한 날짜와 접수번호, 보완 요구를 받은 날, 요구받은 사항과 보완한 내용을 항목별로 적습니다. 제출하는 서류는 이름과 부수를 적어 누락을 막습니다. 보완 기한은 기관의 통지서에 적혀 있으므로 먼저 확인하고, 접수 확인 도장이나 기록을 받아 보관하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 47878,
+        "docx": 38636,
+        "hwpx": 9904
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인과 처음 접수한 기관, 접수일과 접수번호를 적습니다.",
+        "보완 요구를 받은 날과 보완 기한을 적습니다.",
+        "요구받은 사항과 보완한 내용을 항목별로 적습니다.",
+        "제출 서류를 적고 서명한 뒤 접수 기록을 받아 둡니다."
+      ],
+      "faq": [
+        {
+          "q": "접수번호를 모르면 어떻게 하나요?",
+          "a": "접수증이나 보완 요구 통지서에 적혀 있습니다. 없으면 담당 부서에 문의해 확인하십시오."
+        },
+        {
+          "q": "보완 기한을 넘기면 어떻게 되나요?",
+          "a": "기관 규정에 따릅니다. 기한 연장이 가능한지 담당 부서에 먼저 문의하는 것이 좋습니다."
+        },
+        {
+          "q": "제출 방법은 어떻게 하나요?",
+          "a": "통지서에 안내된 방법을 따릅니다. 방문과 온라인 접수 모두 가능한 경우가 많습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청 내용",
+          "items": [
+            "신청인",
+            "연락처",
+            "접수 기관",
+            "접수번호",
+            "신청 내용",
+            "접수일",
+            "보완 기한"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 보완 사항",
+          "items": [
+            "요구받은 사항",
+            "보완한 내용",
+            "첨부"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 기타 전달 사항",
+          "items": [],
+          "note": "담당자에게 알릴 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "permit-application-poa",
+        "business-license-reissue-request",
+        "business-facility-use-consent",
+        "administrative-objection"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-19T10:03:05+09:00",
+      "updated_at": "2026-10-19T10:03:05+09:00",
+      "downloads": 0
+    },
+    {
       "id": "personnel-order",
       "title": "인사발령통지서",
       "category": "corp",
@@ -35462,6 +35783,108 @@
       "downloads": 0
     },
     {
+      "id": "tax-document-handover-receipt",
+      "title": "세무자료 인계 확인서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "세무자료인계",
+        "세무대리인변경",
+        "장부인계",
+        "기장자료인수",
+        "증빙자료인계"
+      ],
+      "summary": "세무대리인을 바꾸거나 자료를 넘길 때 인계한 장부·증빙 목록과 수량을 적어 양쪽이 확인하는 확인서입니다.",
+      "usage": "세무대리인 변경이나 자료 전달 과정에서 어떤 장부와 증빙을 언제 넘겼는지 기록으로 남기는 서식입니다. 넘기는 사람과 받는 사람, 인계일을 적고 자료 이름, 대상 기간, 수량을 표에 하나씩 적습니다. 원본인지 사본인지도 구분해 적어 두면 나중에 확인하기 쉽습니다. 서명은 양쪽 모두 하고 한 부씩 보관하십시오. 이 서식은 자료 전달의 확인 기록이며 세무 처리 책임을 정하는 문서가 아닙니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53584,
+        "docx": 38828,
+        "hwpx": 10338
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "자료를 넘기는 사람과 받는 사람, 인계일을 적습니다.",
+        "표에 자료 이름, 대상 기간, 수량, 원본·사본을 적습니다.",
+        "특이사항이 있으면 비고에 적습니다.",
+        "양쪽이 서명하고 한 부씩 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "원본과 사본은 어떻게 구분하나요?",
+          "a": "표의 구분 칸에 원본 또는 사본이라고 적으면 됩니다. 원본은 돌려받을 시기를 비고에 적어 두세요."
+        },
+        {
+          "q": "전자 자료도 적나요?",
+          "a": "파일 이름과 개수, 전달 방법을 적으면 됩니다. 비밀번호는 적지 않는 것이 좋습니다."
+        },
+        {
+          "q": "이 서식으로 책임이 정해지나요?",
+          "a": "아닙니다. 전달 사실을 확인하는 문서입니다. 책임 범위는 계약서와 전문가 상담으로 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 인계 당사자",
+          "items": [
+            "인계자",
+            "연락처",
+            "인수자",
+            "인계일",
+            "인계 장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 인계 자료 목록",
+          "items": [
+            "자료명",
+            "대상 기간",
+            "수량"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 특이사항",
+          "items": [],
+          "note": "누락 자료나 반환 시기 등 특이사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "tax-data-inquiry-consent",
+        "vat-filing-document-confirmation",
+        "expense-evidence-explanation",
+        "handover-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-19T10:03:18+09:00",
+      "updated_at": "2026-10-19T10:03:18+09:00",
+      "downloads": 0
+    },
+    {
       "id": "tax-invoice",
       "title": "세금계산서 (수기)",
       "category": "corp",
@@ -37891,6 +38314,107 @@
       "warnings": [],
       "created_at": "2026-10-03T08:15:17+09:00",
       "updated_at": "2026-10-03T08:15:17+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "vehicle-inspection-postponement-request",
+      "title": "자동차 정기검사 연기 신청서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "정기검사연기",
+        "자동차검사유예",
+        "검사기간연장",
+        "검사연기신청",
+        "자동차정기검사"
+      ],
+      "summary": "사정이 있어 자동차 정기검사를 정해진 기간에 받기 어려울 때 연기를 신청하며 사유와 희망 기간을 적는 신청서입니다.",
+      "usage": "입원, 출장, 차량 수리 등으로 정기검사를 정해진 기간에 받기 어려울 때 연기를 신청하는 서식입니다. 차량 정보와 검사 만료일을 적고 연기를 원하는 사유와 희망 기간을 사실대로 씁니다. 연기가 인정되는 사유와 기간, 필요한 증빙은 기관 규정에 따르므로 신청 전에 검사 담당 기관의 안내를 확인하십시오. 신청서는 연기를 요청하는 문서이며, 승인 여부는 기관이 결정합니다. 접수 기록을 보관합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 38190,
+        "docx": 38458,
+        "hwpx": 9474
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인과 차량번호, 차종을 적습니다.",
+        "검사 만료일과 연기를 원하는 기간을 적습니다.",
+        "연기를 신청하는 사유를 사실대로 적습니다.",
+        "신청일을 적고 서명한 뒤 증빙을 첨부합니다."
+      ],
+      "faq": [
+        {
+          "q": "신청하면 바로 연기되나요?",
+          "a": "아닙니다. 승인은 기관이 결정하며 인정되는 사유와 기간이 정해져 있습니다."
+        },
+        {
+          "q": "증빙은 무엇을 붙이나요?",
+          "a": "입원확인서, 출장명령서, 수리 내역서 등 사유를 보여 주는 자료입니다. 기관 안내를 확인하십시오."
+        },
+        {
+          "q": "대리인이 신청해도 되나요?",
+          "a": "가능한 경우가 많습니다. 위임장이 필요한지 기관에 먼저 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인 및 차량",
+          "items": [
+            "신청인",
+            "연락처",
+            "차량번호",
+            "차종",
+            "검사 만료일",
+            "연기 희망 기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연기 사유",
+          "items": [],
+          "note": "검사를 받지 못하는 사유를 날짜와 함께 사실대로 적으십시오."
+        },
+        {
+          "title": "3. 첨부 서류",
+          "items": [
+            "첨부"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-inspection-poa",
+        "vehicle-registration-reissue-poa",
+        "vehicle-use-consent",
+        "vehicle-deregistration-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-19T10:03:12+09:00",
+      "updated_at": "2026-10-19T10:03:12+09:00",
       "downloads": 0
     },
     {

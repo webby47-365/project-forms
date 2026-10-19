@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 383종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 388종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>세무자료 인계 확인서</title>
+<link>https://freeforms.kr/form/tax-document-handover-receipt/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/tax-document-handover-receipt/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0900</pubDate>
+<description>세무대리인을 바꾸거나 자료를 넘길 때 인계한 장부·증빙 목록과 수량을 적어 양쪽이 확인하는 확인서입니다.</description>
+</item>
+<item>
+<title>자동차 정기검사 연기 신청서</title>
+<link>https://freeforms.kr/form/vehicle-inspection-postponement-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-inspection-postponement-request/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0900</pubDate>
+<description>사정이 있어 자동차 정기검사를 정해진 기간에 받기 어려울 때 연기를 신청하며 사유와 희망 기간을 적는 신청서입니다.</description>
+</item>
+<item>
+<title>인허가 보완서류 제출서</title>
+<link>https://freeforms.kr/form/permit-supplement-submission/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/permit-supplement-submission/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0900</pubDate>
+<description>인허가·영업신고 접수 뒤 보완 요구를 받았을 때 보완 내용과 제출 서류를 정리해 내는 제출서입니다.</description>
+</item>
+<item>
+<title>하자보수보증금 반환 청구서</title>
+<link>https://freeforms.kr/form/defect-warranty-deposit-refund-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/defect-warranty-deposit-refund-request/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0900</pubDate>
+<description>하자담보책임기간이 끝난 뒤 계약 상대방에게 하자보수보증금의 반환을 청구할 때 쓰는 청구서입니다.</description>
+</item>
+<item>
+<title>연차수당 정산 내역서</title>
+<link>https://freeforms.kr/form/annual-leave-pay-settlement-statement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-pay-settlement-statement/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0900</pubDate>
+<description>연차 발생일수·사용일수·미사용일수와 일급 기준 지급액을 한 장에 정리해 근로자에게 확인받는 정산 내역서입니다.</description>
+</item>
 <item>
 <title>단가 변경 통지서</title>
 <link>https://freeforms.kr/form/unit-price-change-notice/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 인사·노무</category>
 <pubDate>Tue, 13 Oct 2026 00:00:00 +0900</pubDate>
 <description>근로자별 연차 사용 촉진 1차 통지·회신·2차 지정 통보 날짜를 한 장에 모아 두는 사업주 보관용 이행 기록표 양식입니다.</description>
-</item>
-<item>
-<title>미사용 연차수당 수령 확인서</title>
-<link>https://freeforms.kr/form/unused-annual-leave-pay-receipt/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/unused-annual-leave-pay-receipt/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0900</pubDate>
-<description>쓰지 못한 연차를 수당으로 받았음을 지급액·지급일과 함께 근로자가 확인하는 수령 확인서 양식입니다.</description>
-</item>
-<item>
-<title>영업 휴업 사실 확인서</title>
-<link>https://freeforms.kr/form/business-suspension-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-suspension-confirmation/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0900</pubDate>
-<description>영업을 일정 기간 쉬고 있다는 사실과 휴업 기간·사유를 밝혀 제출처에 확인해 주는 양식입니다.</description>
-</item>
-<item>
-<title>건강보험 피부양자 신고 위임장</title>
-<link>https://freeforms.kr/form/health-insurance-dependent-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/health-insurance-dependent-poa/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0900</pubDate>
-<description>건강보험 피부양자 자격 취득·상실 신고를 가족이나 담당자가 대신하도록 맡기는 위임장 양식입니다.</description>
-</item>
-<item>
-<title>동거 사실 확인서</title>
-<link>https://freeforms.kr/form/cohabitant-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/cohabitant-confirmation/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0900</pubDate>
-<description>함께 살고 있는 사람과 동거 기간·거주 주소를 적어 제출처에 사실을 확인해 주는 동거 사실 확인서 양식입니다.</description>
-</item>
-<item>
-<title>세무 자료 조회 동의서</title>
-<link>https://freeforms.kr/form/tax-data-inquiry-consent/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/tax-data-inquiry-consent/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Mon, 12 Oct 2026 00:00:00 +0900</pubDate>
-<description>세무대리인이나 가족이 신고·상담에 필요한 세무 자료를 대신 조회·수집하도록 허락하는 동의서 양식입니다.</description>
 </item>
 </channel>
 </rss>
