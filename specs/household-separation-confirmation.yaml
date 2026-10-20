@@ -1,0 +1,75 @@
+id: household-separation-confirmation
+title: 세대 분리 사실 확인서
+category: public
+subcategory: family
+tags: [세대분리, 세대분리확인서, 독립세대, 별거사실확인, 세대분리사유]
+summary: 한집에 살던 가족 중 일부가 따로 세대를 꾸리게 된 사실과 일자, 분리 후 주소를 확인해 적는 세대 분리 사실 확인서 양식입니다.
+usage: >
+  자녀가 독립하거나 가족 일부가 다른 주소로 옮겨 세대를 따로 꾸리게 되었을 때 그 사실을 문서로 남기는 확인서입니다.
+  분리 일자와 분리 전후 주소, 분리하는 사람의 이름과 관계, 분리 사유를 적고 세대주와 분리하는 사람이 함께 서명합니다.
+  주민등록 정리는 전입신고 등 별도 절차로 해야 하며 이 문서가 그 절차를 대신하지 않습니다. 제출처가 요구하는
+  양식이 따로 있으면 그 기준을 먼저 확인하십시오. 주민등록번호는 적지 않고 생년월일로 구분합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 분리 일자와 분리 전 주소를 적습니다.
+  - 분리 후 주소를 적습니다.
+  - 분리하는 사람의 이름, 생년월일, 세대주와의 관계를 적습니다.
+  - 분리 사유를 간단히 적고 세대주와 함께 서명합니다.
+faq:
+  - q: 이 확인서로 세대 분리가 처리되나요?
+    a: 아닙니다. 주민등록 정리는 전입신고 등으로 따로 해야 하며, 이 문서는 분리 사실을 남기는 용도입니다.
+  - q: 주민등록번호를 적어야 하나요?
+    a: 이 서식은 생년월일로 구분합니다. 제출처가 요구하면 그 기관의 안내를 따르십시오.
+  - q: 분리하는 사람이 여러 명이면 어떻게 하나요?
+    a: 표에 한 줄씩 적고, 칸이 모자라면 같은 서식을 한 장 더 사용합니다.
+related: [moving-in-report, household-head-change-consent, residence-fact-confirmation, household-merger-confirmation]
+blocks:
+  - type: doc_title
+    text: 세대 분리 사실 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 분리 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["분리 일자", "", "작성일", ""]
+      - ["분리 전 주소", "", "", ""]
+      - ["분리 후 주소", "", "", ""]
+    sample_rows:
+      - ["", "2026-10-01", "", "2026-10-14"]
+      - ["", "서울시 ○○구 ○○로 10, 101동 202호", "", ""]
+      - ["", "서울시 ○○구 ○○길 5, 303호", "", ""]
+  - type: subtitle
+    text: 2. 분리하는 사람
+  - type: table
+    widths: [8, 22, 24, 22, 24]
+    header: ["No", 성명, 생년월일, 세대주와 관계, 비고]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "박민준", "1998-07-21", "자녀", "독립"]
+      - ["2", "이수현", "2000-02-09", "자녀", ""]
+  - type: subtitle
+    text: 3. 분리 사유
+  - type: textbox
+    hint: "세대를 따로 꾸리게 된 사유를 간단히 적으십시오."
+    height_mm: 24
+    sample_text: 직장 근무지 이전으로 별도 주소에서 독립해 생활하게 되었음을 확인합니다.
+  - type: para
+    text: 위 내용이 사실임을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   14 일
+  - type: sign_line
+    labels: ["세대주", "분리하는 사람"]
+    sample_names: [홍길동, 박민준]
+  - type: notice
+    text: 주민등록 정리는 전입신고 등 별도 절차로 해야 하며, 제출처 기준을 확인하십시오.

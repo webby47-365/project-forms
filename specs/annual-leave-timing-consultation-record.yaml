@@ -1,0 +1,68 @@
+id: annual-leave-timing-consultation-record
+title: 연차 사용 시기 협의 기록서
+category: corp
+subcategory: hr
+tags: [연차협의, 연차시기협의, 연차협의기록, 연차사용촉진, 휴가시기조율]
+summary: 근로자와 회사가 연차 사용 시기를 협의한 날짜와 내용, 합의 결과를 남기는 연차 사용 시기 협의 기록서 양식입니다.
+usage: >
+  연차 사용 촉진 시기에 근로자와 담당자가 연차를 언제 쓸지 이야기한 내용을 서면으로 남길 때 씁니다.
+  협의 일시와 참석자, 근로자의 잔여 연차, 희망 시기와 회사 사정, 합의된 사용 시기를 적고 양쪽이 서명합니다.
+  이 기록서는 협의 내용을 남기는 문서이며 연차 사용 촉진 통지나 시기 지정 통보를 대신하지 않습니다.
+  촉진 절차의 요건과 기한은 고용노동부 안내와 회사 취업규칙을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 협의 일시와 참석자를 적습니다.
+  - 근로자의 잔여 연차 일수를 회사 기록대로 적습니다.
+  - 근로자의 희망 시기와 회사 사정을 각각 적습니다.
+  - 합의한 사용 시기를 적고 양쪽이 서명합니다.
+faq:
+  - q: 이 기록서로 연차 사용 촉진을 한 것이 되나요?
+    a: 아닙니다. 촉진은 별도 서면 통지 절차입니다. 요건과 기한은 고용노동부 안내를 확인하십시오.
+  - q: 협의가 안 되면 어떻게 적나요?
+    a: 합의 결과란에 미합의라고 적고 쟁점을 남겨 둡니다. 이후 절차는 회사 기준을 따릅니다.
+  - q: 근로자가 서명을 거부하면 어떻게 하나요?
+    a: 서명란에 거부 사실과 일시를 적어 두고, 이후 처리는 회사 담당 부서와 상의하십시오.
+related: [annual-leave-plan, annual-leave-timing-designation-notice, annual-leave-promotion-record, annual-leave-schedule-change-request]
+blocks:
+  - type: doc_title
+    text: 연차 사용 시기 협의 기록서
+    spaced: false
+  - type: subtitle
+    text: 1. 협의 개요
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["협의 일시", "", "협의 장소", ""]
+      - ["근로자", "", "소속·직위", ""]
+      - ["회사 측 담당", "", "잔여 연차", ""]
+    sample_rows:
+      - ["", "2026-11-03 10:00", "", "회의실 B"]
+      - ["", "홍길동", "", "영업지원팀 대리"]
+      - ["", "김서연", "", "6일"]
+  - type: subtitle
+    text: 2. 협의 내용
+  - type: table
+    widths: [24, 38, 38]
+    header: [구분, 근로자 의견, 회사 의견]
+    empty_rows: 3
+    row_height_mm: 10
+    sample_rows:
+      - ["희망 시기", "12월 둘째 주", "연말 마감 전이면 가능"]
+      - ["업무 사정", "인수인계 가능", "12월 셋째 주는 불가"]
+  - type: subtitle
+    text: 3. 합의 결과
+  - type: textbox
+    hint: "합의한 연차 사용 시기와 일수를 적으십시오. 합의가 안 되면 미합의로 적습니다."
+    height_mm: 22
+    sample_text: 2026-12-07부터 12-09까지 3일을 사용하기로 합의함.
+  - type: date_line
+    sample_text: 2026 년   11 월   3 일
+  - type: sign_line
+    labels: ["근로자", "회사 담당자"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 연차 사용 촉진 통지는 별도 서면 절차입니다. 회사 취업규칙을 확인하십시오.

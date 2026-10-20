@@ -1,0 +1,78 @@
+id: event-cancellation-refund-request
+title: 행사 참가 취소·환불 신청서
+category: public
+subcategory: consent
+tags: [행사취소, 참가취소, 환불신청서, 참가비환불, 행사환불]
+summary: 신청한 행사 참가를 취소하고 낸 참가비의 환불을 요청할 때 쓰는 행사 참가 취소·환불 신청서 양식입니다.
+usage: >
+  세미나·체험행사·대회 등에 신청하고 참가비를 낸 뒤 사정이 생겨 참가를 취소하려 할 때 주최 측에 내는 신청서입니다.
+  행사명과 신청 내역, 취소 사유, 환불받을 계좌를 적어 제출합니다. 환불 가능 여부와 금액은 주최 측의 환불 규정에
+  따라 정해지므로 신청 전에 규정을 확인하십시오. 계좌번호는 환불에 필요한 범위에서만 적고 주민등록번호는 적지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 행사명과 신청자 정보를 적습니다.
+  - 낸 참가비와 결제일, 결제 방법을 적습니다.
+  - 취소 사유를 간단히 적습니다.
+  - 환불받을 계좌를 적고 서명합니다.
+faq:
+  - q: 참가비를 전부 돌려받을 수 있나요?
+    a: 주최 측 환불 규정에 따라 다릅니다. 신청 전에 규정과 취소 기한을 확인하십시오.
+  - q: 카드로 낸 경우에도 계좌를 적나요?
+    a: 카드 결제는 보통 결제 취소로 처리됩니다. 계좌는 현금 결제를 한 경우에 적습니다.
+  - q: 다른 사람이 대신 신청해도 되나요?
+    a: 주최 측이 인정하는 경우에 한합니다. 대리 신청 가능 여부를 먼저 문의하십시오.
+related: [event-application, tuition-refund-request, facility-use-application, sponsorship-application]
+blocks:
+  - type: doc_title
+    text: 행사 참가 취소·환불 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청자 및 행사 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["신청자", "", "연락처", ""]
+      - ["행사명", "", "", ""]
+      - ["행사 일시", "", "신청일", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-1234-5678"]
+      - ["", "2026 지역 청년 취업 박람회", "", ""]
+      - ["", "2026-11-14", "", "2026-10-02"]
+  - type: subtitle
+    text: 2. 결제 및 환불 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["참가비", "", "결제일", ""]
+      - ["결제 방법", "", "환불 요청액", ""]
+      - ["은행", "", "계좌번호", ""]
+      - ["예금주", "", "", ""]
+    sample_rows:
+      - ["", "30,000원", "", "2026-10-02"]
+      - ["", "계좌이체", "", "30,000원"]
+      - ["", "○○은행", "", "000-000-000000"]
+      - ["", "김서연", "", ""]
+  - type: subtitle
+    text: 3. 취소 사유
+  - type: textbox
+    hint: "참가를 취소하는 사유를 간단히 적으십시오."
+    height_mm: 24
+    sample_text: 개인 사정으로 행사 당일 참석이 어려워 참가를 취소하고 환불을 요청합니다.
+  - type: para
+    text: 위와 같이 참가 취소 및 환불을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   20 일
+  - type: sign_line
+    labels: ["신청자"]
+    sample_names: [김서연]
+  - type: notice
+    text: 환불 가능 여부와 금액은 주최 측 환불 규정에 따릅니다. 규정을 확인하십시오.
