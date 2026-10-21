@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T10:42:20+09:00",
-  "count": 393,
+  "generated_at": "2026-10-21T10:27:56+09:00",
+  "count": 398,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -1386,6 +1386,108 @@
       "warnings": [],
       "created_at": "2026-10-06T08:16:50+09:00",
       "updated_at": "2026-10-06T08:17:57+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-request-cancellation",
+      "title": "연차 휴가 신청 취소서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차취소",
+        "연차신청취소",
+        "휴가취소서",
+        "연차철회",
+        "휴가신청철회"
+      ],
+      "summary": "이미 신청하거나 승인받은 연차 휴가를 쓰지 않기로 했을 때 취소 사유와 잔여 연차 복원을 요청하는 연차 휴가 신청 취소서 양식입니다.",
+      "usage": "연차 휴가를 신청하거나 승인받은 뒤 업무 사정이나 개인 사정으로 쓰지 않게 되었을 때 취소를 요청하는 문서입니다. 원래 신청한 휴가 기간과 일수, 취소 사유를 적고 부서장 확인을 받습니다. 취소한 일수는 담당 부서가 잔여 연차에 반영하며, 이미 시작된 휴가나 결재 후 취소 가능 시한은 회사 취업규칙에 따르므로 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 42560,
+        "docx": 38513,
+        "hwpx": 9589
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청자 정보와 원래 신청한 휴가 기간을 적습니다.",
+        "취소할 일수를 전부인지 일부인지 표시합니다.",
+        "취소 사유를 한두 줄로 적습니다.",
+        "서명한 뒤 부서장 확인을 받아 인사 담당에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "취소하면 연차 일수가 바로 돌아오나요?",
+          "a": "인사 담당이 확인해 잔여 연차에 반영합니다. 반영 시점은 회사 기준을 확인하십시오."
+        },
+        {
+          "q": "휴가가 이미 시작됐는데 취소할 수 있나요?",
+          "a": "시작된 휴가는 남은 날만 취소할 수 있는지 회사 규정에 따릅니다. 담당 부서에 먼저 문의하십시오."
+        },
+        {
+          "q": "일부 날짜만 취소해도 되나요?",
+          "a": "됩니다. 취소 구분란에 일부 취소를 표시하고 취소할 날짜를 적습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청자",
+          "items": [
+            "성명",
+            "소속·직위",
+            "신청일",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 취소 내용",
+          "items": [
+            "원래 휴가 기간",
+            "원래 일수",
+            "취소 일수",
+            "취소 구분"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 취소 사유",
+          "items": [],
+          "note": "취소하는 이유를 간단히 적으십시오. 일부 취소라면 취소할 날짜도 함께 적습니다."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-schedule-change-request",
+        "annual-leave-plan",
+        "annual-leave-balance-inquiry",
+        "leave-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-21T10:27:35+09:00",
+      "updated_at": "2026-10-21T10:27:35+09:00",
       "downloads": 0
     },
     {
@@ -7694,6 +7796,109 @@
       "warnings": [],
       "created_at": "2026-10-09T08:18:28+09:00",
       "updated_at": "2026-10-09T08:18:28+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "civil-appeal-notice",
+      "title": "항소장 (민사)",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "항소장",
+        "민사항소",
+        "항소제기",
+        "1심판결불복",
+        "항소장양식"
+      ],
+      "summary": "민사 1심 판결에 불복해 항소심 법원에 항소를 제기할 때 사건 표시와 불복 범위, 항소 취지를 적는 항소장 양식입니다.",
+      "usage": "1심 판결에 불복해 항소할 때 1심 법원에 내는 서류의 틀입니다. 1심 사건번호와 당사자, 판결 선고일, 불복 범위를 적고 항소의 취지를 씁니다. 항소 기간은 판결서를 송달받은 날부터 정해져 있고 놓치면 판결이 확정될 수 있으므로, 기간과 인지·송달료 등 제출 요건은 반드시 법원 안내를 확인하십시오. 항소 이유는 따로 준비서면으로 낼 수 있습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 44429,
+        "docx": 38565,
+        "hwpx": 9695
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "1심 법원과 사건번호, 사건명을 판결문대로 적습니다.",
+        "항소인과 피항소인의 이름과 주소를 적습니다.",
+        "판결 선고일과 판결서를 받은 날을 적습니다.",
+        "1심 판결 중 불복하는 범위와 항소 취지를 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "항소 이유도 항소장에 꼭 써야 하나요?",
+          "a": "항소장에는 항소 취지를 적고, 이유는 따로 준비서면으로 낼 수 있습니다. 법원 안내를 확인하십시오."
+        },
+        {
+          "q": "항소장은 어디에 내나요?",
+          "a": "일반적으로 1심 판결을 한 법원에 냅니다. 접수 방법은 해당 법원 안내를 확인하십시오."
+        },
+        {
+          "q": "항소 기간은 언제까지인가요?",
+          "a": "기간은 판결서를 송달받은 날을 기준으로 정해집니다. 놓치지 않도록 법원이나 법률구조기관에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사건의 표시",
+          "items": [
+            "1심 법원",
+            "사건번호",
+            "사건명",
+            "판결 선고일",
+            "판결서 송달일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 당사자",
+          "items": [
+            "항소인",
+            "연락처",
+            "주소",
+            "피항소인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 불복 범위와 항소 취지",
+          "items": [],
+          "note": "1심 판결 중 불복하는 부분과 항소로 구하는 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "preparatory-brief",
+        "evidence-submission-list",
+        "service-address-change-report",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-21T10:27:40+09:00",
+      "updated_at": "2026-10-21T10:27:40+09:00",
       "downloads": 0
     },
     {
@@ -22667,6 +22872,112 @@
       "seal": true
     },
     {
+      "id": "liquidated-damages-exemption-request",
+      "title": "지체상금 면제 신청서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "지체상금면제",
+        "지체상금감면",
+        "납기지연사유서",
+        "계약이행지연",
+        "지체일수제외"
+      ],
+      "summary": "계약 납기나 준공이 늦어진 사유가 계약상대자 책임이 아님을 밝혀 지체상금 면제 또는 지체일수 제외를 신청하는 신청서 양식입니다.",
+      "usage": "공사·물품·용역 계약에서 납기나 준공이 늦어졌을 때, 지연 사유가 천재지변이나 발주처 사정 등 계약상대자 책임이 아니라고 판단되면 발주처에 지체일수 제외나 지체상금 면제를 신청하는 서류입니다. 계약 정보와 지연 기간, 지연 사유를 적고 증빙을 붙입니다. 인정 여부와 범위는 계약서와 발주처 판단에 따르므로 지연 사유가 생긴 즉시 관련 자료를 모아 두십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46520,
+        "docx": 38633,
+        "hwpx": 9872
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "계약명과 계약번호, 발주처를 계약서대로 적습니다.",
+        "약정한 납기와 실제 이행일, 지연 일수를 적습니다.",
+        "지연 사유가 생긴 기간과 사유를 구체적으로 적습니다.",
+        "붙임 증빙 목록을 적고 대표자가 서명 또는 날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "지연 사유가 인정되면 지체상금이 없어지나요?",
+          "a": "인정된 기간은 지체일수에서 빠질 수 있습니다. 인정 범위는 발주처 판단과 계약서를 확인하십시오."
+        },
+        {
+          "q": "언제까지 내야 하나요?",
+          "a": "제출 시한은 계약서와 발주처 안내에 따릅니다. 사유가 생기면 가능한 한 빨리 냅니다."
+        },
+        {
+          "q": "어떤 증빙을 붙이나요?",
+          "a": "공문, 날씨 기록, 자재 수급 확인서처럼 지연 사유를 보여 주는 자료를 붙입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 계약 정보",
+          "items": [
+            "계약명",
+            "계약번호",
+            "발주처",
+            "계약상대자",
+            "대표자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 지연 내용",
+          "items": [
+            "약정 납기",
+            "실제 이행일",
+            "지연 일수",
+            "제외 요청 일수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 지연 사유와 증빙",
+          "items": [
+            "붙임 증빙",
+            "쪽수"
+          ],
+          "note": "지연이 생긴 기간과 사유, 계약상대자 책임이 아니라고 보는 이유를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "defect-warranty-deposit-refund-request",
+        "contract-performance-deposit-refund-request",
+        "goods-inspection-report",
+        "delivery-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-21T10:27:56+09:00",
+      "updated_at": "2026-10-21T10:27:56+09:00",
+      "downloads": 0
+    },
+    {
       "id": "loan-agreement",
       "title": "차용증 (금전소비대차계약서)",
       "category": "legal",
@@ -33221,6 +33532,110 @@
       "seal": true
     },
     {
+      "id": "secondhand-trade-confirmation",
+      "title": "중고거래 확인서",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "중고거래확인서",
+        "중고매매확인서",
+        "개인간거래",
+        "물품인수증",
+        "중고거래영수증"
+      ],
+      "summary": "개인끼리 중고 물품을 사고팔 때 물품 상태와 대금, 인도 일자를 적어 서로 확인하는 중고거래 확인서 양식입니다.",
+      "usage": "중고 물품을 직거래할 때 나중에 상태나 대금을 두고 다투지 않도록 거래 내용을 남기는 서류입니다. 물품명과 상태, 거래 금액, 인도 일시와 장소를 적고 판매자와 구매자가 서명합니다. 물품의 하자나 환불 여부는 거래 당사자가 정한 조건에 따르므로 합의한 내용을 특이사항란에 함께 적어 두십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 42142,
+        "docx": 38533,
+        "hwpx": 9610
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "판매자와 구매자의 이름과 연락처를 적습니다.",
+        "물품명과 모델, 현재 상태를 구체적으로 적습니다.",
+        "거래 금액과 지급 방식, 인도 일시를 적습니다.",
+        "하자와 환불 조건 등 합의한 내용을 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "거래 후 하자가 나오면 환불받을 수 있나요?",
+          "a": "거래 때 합의한 조건에 따릅니다. 특이사항란에 환불 조건을 적어 두면 분쟁을 줄입니다."
+        },
+        {
+          "q": "신분증을 복사해 붙여야 하나요?",
+          "a": "필요하지 않습니다. 이름과 연락처만 적고, 신분증 사본은 주고받지 않는 편이 안전합니다."
+        },
+        {
+          "q": "영수증 대신 쓸 수 있나요?",
+          "a": "대금을 받은 사실을 적는 칸이 있어 간단한 영수 확인용으로 쓸 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 거래 당사자",
+          "items": [
+            "판매자",
+            "연락처",
+            "구매자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 물품과 거래 조건",
+          "items": [
+            "물품명",
+            "모델·규격",
+            "물품 상태",
+            "거래 금액",
+            "지급 방식",
+            "인도 일시",
+            "인도 장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 특이사항",
+          "items": [],
+          "note": "알려진 하자, 구성품, 환불·교환 조건 등 합의한 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "used-car-payment-receipt",
+        "written-pledge",
+        "monthly-rent-receipt",
+        "settlement-agreement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-21T10:27:52+09:00",
+      "updated_at": "2026-10-21T10:27:52+09:00",
+      "downloads": 0
+    },
+    {
       "id": "separation-certificate-request",
       "title": "이직확인서 발급 요청서",
       "category": "public",
@@ -33829,6 +34244,111 @@
         "career-certificate"
       ],
       "seal": true
+    },
+    {
+      "id": "share-transfer-approval-request",
+      "title": "주식 양도 승인 청구서",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "주식양도승인",
+        "양도승인청구",
+        "주식양도제한",
+        "이사회승인청구",
+        "양도상대방지정"
+      ],
+      "summary": "정관으로 양도가 제한된 주식을 넘기려는 주주가 회사에 양도 승인을 청구할 때 쓰는 주식 양도 승인 청구서 양식입니다.",
+      "usage": "정관에 이사회 승인 없이는 주식을 양도할 수 없도록 정해 둔 회사에서, 주주가 주식을 넘기기 전에 회사에 승인을 청구하는 서류입니다. 양도하려는 주식의 종류와 수, 양도 상대방, 양도 예정 가액을 적고 서명합니다. 승인 기관과 절차, 회신 기한은 회사 정관과 상법에 따르므로 제출 전에 정관을 확인하고, 승인 결과는 이사회 의사록으로 남기십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 41149,
+        "docx": 38518,
+        "hwpx": 9605
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "회사 이름과 청구하는 주주의 정보를 적습니다.",
+        "양도할 주식의 종류와 수를 주주명부대로 적습니다.",
+        "양도 상대방과 양도 예정 가액을 적습니다.",
+        "양도 사유를 적고 주주가 서명해 회사에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "정관에 양도 제한이 없으면 이 청구서가 필요한가요?",
+          "a": "제한이 없으면 승인 청구가 필요 없을 수 있습니다. 먼저 회사 정관을 확인하십시오."
+        },
+        {
+          "q": "승인은 누가 하나요?",
+          "a": "정관이 정한 기관이 합니다. 대개 이사회지만 회사마다 다르니 정관을 확인하십시오."
+        },
+        {
+          "q": "승인이 나면 다음에 무엇을 하나요?",
+          "a": "양도 계약서를 쓰고 주주명부를 바꿉니다. 필요한 서류는 회사 담당자와 상의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 청구인(양도인)",
+          "items": [
+            "성명",
+            "연락처",
+            "주소",
+            "회사명",
+            "대표이사"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 양도 내용",
+          "items": [
+            "주식 종류",
+            "양도 주식 수",
+            "양도 상대방",
+            "상대방 연락처",
+            "양도 예정 가액",
+            "양도 예정일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 양도 사유",
+          "items": [],
+          "note": "주식을 넘기려는 사정을 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "stock-transfer-contract",
+        "board-minutes",
+        "shareholder-register",
+        "articles-of-incorporation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-21T10:27:46+09:00",
+      "updated_at": "2026-10-21T10:27:46+09:00",
+      "downloads": 0
     },
     {
       "id": "shareholder-meeting-minutes",

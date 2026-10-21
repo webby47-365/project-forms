@@ -1,0 +1,76 @@
+id: share-transfer-approval-request
+title: 주식 양도 승인 청구서
+category: corp
+subcategory: startup
+tags: [주식양도승인, 양도승인청구, 주식양도제한, 이사회승인청구, 양도상대방지정]
+summary: 정관으로 양도가 제한된 주식을 넘기려는 주주가 회사에 양도 승인을 청구할 때 쓰는 주식 양도 승인 청구서 양식입니다.
+usage: >
+  정관에 이사회 승인 없이는 주식을 양도할 수 없도록 정해 둔 회사에서, 주주가 주식을 넘기기 전에 회사에 승인을 청구하는 서류입니다.
+  양도하려는 주식의 종류와 수, 양도 상대방, 양도 예정 가액을 적고 서명합니다. 승인 기관과 절차, 회신 기한은
+  회사 정관과 상법에 따르므로 제출 전에 정관을 확인하고, 승인 결과는 이사회 의사록으로 남기십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사 이름과 청구하는 주주의 정보를 적습니다.
+  - 양도할 주식의 종류와 수를 주주명부대로 적습니다.
+  - 양도 상대방과 양도 예정 가액을 적습니다.
+  - 양도 사유를 적고 주주가 서명해 회사에 냅니다.
+faq:
+  - q: 정관에 양도 제한이 없으면 이 청구서가 필요한가요?
+    a: 제한이 없으면 승인 청구가 필요 없을 수 있습니다. 먼저 회사 정관을 확인하십시오.
+  - q: 승인은 누가 하나요?
+    a: 정관이 정한 기관이 합니다. 대개 이사회지만 회사마다 다르니 정관을 확인하십시오.
+  - q: 승인이 나면 다음에 무엇을 하나요?
+    a: 양도 계약서를 쓰고 주주명부를 바꿉니다. 필요한 서류는 회사 담당자와 상의하십시오.
+related: [stock-transfer-contract, board-minutes, shareholder-register, articles-of-incorporation]
+blocks:
+  - type: doc_title
+    text: 주식 양도 승인 청구서
+    spaced: false
+  - type: subtitle
+    text: 1. 청구인(양도인)
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+      - ["회사명", "", "대표이사", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울시 중구 예시로 1", "", ""]
+      - ["", "(주)한빛커머스", "", "김서연"]
+  - type: subtitle
+    text: 2. 양도 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["주식 종류", "", "양도 주식 수", ""]
+      - ["양도 상대방", "", "상대방 연락처", ""]
+      - ["양도 예정 가액", "", "양도 예정일", ""]
+    sample_rows:
+      - ["", "보통주", "", "1,000주"]
+      - ["", "박민준", "", "010-9876-5432"]
+      - ["", "10,000,000원", "", "2026-11-15"]
+  - type: subtitle
+    text: 3. 양도 사유
+  - type: textbox
+    hint: "주식을 넘기려는 사정을 간단히 적으십시오."
+    height_mm: 26
+    sample_text: 개인 사정으로 보유 주식 일부를 기존 사업 동료에게 양도하려 하므로 승인을 청구합니다.
+  - type: para
+    text: 위와 같이 주식 양도에 대한 승인을 청구합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   21 일
+  - type: sign_line
+    label: 청구인
+    sample_names: [홍길동]
+  - type: notice
+    text: 승인 기관과 회신 기한은 회사 정관과 상법을 확인하십시오.

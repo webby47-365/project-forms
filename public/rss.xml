@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 393종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 398종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>지체상금 면제 신청서</title>
+<link>https://freeforms.kr/form/liquidated-damages-exemption-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/liquidated-damages-exemption-request/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
+<description>계약 납기나 준공이 늦어진 사유가 계약상대자 책임이 아님을 밝혀 지체상금 면제 또는 지체일수 제외를 신청하는 신청서 양식입니다.</description>
+</item>
+<item>
+<title>중고거래 확인서</title>
+<link>https://freeforms.kr/form/secondhand-trade-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/secondhand-trade-confirmation/</guid>
+<category>개인 · 생활·가정</category>
+<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
+<description>개인끼리 중고 물품을 사고팔 때 물품 상태와 대금, 인도 일자를 적어 서로 확인하는 중고거래 확인서 양식입니다.</description>
+</item>
+<item>
+<title>주식 양도 승인 청구서</title>
+<link>https://freeforms.kr/form/share-transfer-approval-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/share-transfer-approval-request/</guid>
+<category>기업 · 창업·법인</category>
+<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
+<description>정관으로 양도가 제한된 주식을 넘기려는 주주가 회사에 양도 승인을 청구할 때 쓰는 주식 양도 승인 청구서 양식입니다.</description>
+</item>
+<item>
+<title>항소장 (민사)</title>
+<link>https://freeforms.kr/form/civil-appeal-notice/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/civil-appeal-notice/</guid>
+<category>법률 · 소송·민원</category>
+<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
+<description>민사 1심 판결에 불복해 항소심 법원에 항소를 제기할 때 사건 표시와 불복 범위, 항소 취지를 적는 항소장 양식입니다.</description>
+</item>
+<item>
+<title>연차 휴가 신청 취소서</title>
+<link>https://freeforms.kr/form/annual-leave-request-cancellation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-request-cancellation/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
+<description>이미 신청하거나 승인받은 연차 휴가를 쓰지 않기로 했을 때 취소 사유와 잔여 연차 복원을 요청하는 연차 휴가 신청 취소서 양식입니다.</description>
+</item>
 <item>
 <title>연차 사용 시기 협의 기록서</title>
 <link>https://freeforms.kr/form/annual-leave-timing-consultation-record/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 인사·노무</category>
 <pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
 <description>내 연차가 몇 일 발생했고 몇 일 남았는지 회사에 서면으로 확인 요청하는 연차 잔여일수 조회 요청서입니다.</description>
-</item>
-<item>
-<title>세대 합가 사실 확인서</title>
-<link>https://freeforms.kr/form/household-merger-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/household-merger-confirmation/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
-<description>따로 살던 가족이 한집에 합쳐 살게 된 사실과 일자, 관계를 확인해 적는 세대 합가 사실 확인서 양식입니다.</description>
-</item>
-<item>
-<title>경비 증빙 소명서</title>
-<link>https://freeforms.kr/form/expense-evidence-explanation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/expense-evidence-explanation/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
-<description>영수증이나 세금계산서 같은 증빙이 없거나 부족한 지출 내역의 사유와 사용처를 설명해 두는 경비 증빙 소명서 양식입니다.</description>
-</item>
-<item>
-<title>임시 점포 설치 신청서</title>
-<link>https://freeforms.kr/form/temporary-store-application/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/temporary-store-application/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
-<description>행사장이나 공간 관리자에게 일정 기간 임시 점포(부스·판매대) 설치를 신청할 때 쓰는 임시 점포 설치 신청서 양식입니다.</description>
-</item>
-<item>
-<title>물품 검수조서</title>
-<link>https://freeforms.kr/form/goods-inspection-report/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/goods-inspection-report/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
-<description>납품된 물품의 수량·규격·상태를 확인하고 합격 여부를 기록하는 물품 검수조서 양식입니다.</description>
-</item>
-<item>
-<title>지각·결근 사유서</title>
-<link>https://freeforms.kr/form/absence-reason-statement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/absence-reason-statement/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0900</pubDate>
-<description>지각·조퇴·결근이 생겼을 때 일시와 사유, 사후 조치를 적어 상급자에게 내는 지각·결근 사유서 양식입니다.</description>
 </item>
 </channel>
 </rss>
