@@ -1,0 +1,67 @@
+id: home-care-visit-record
+title: 방문요양 서비스 제공 기록지
+category: welfare
+subcategory: consent
+tags: [방문요양기록지, 요양서비스기록, 요양보호사 일지, 돌봄기록지, 서비스제공기록]
+summary: 방문요양 요양보호사가 방문 시간과 제공한 서비스, 어르신 상태 변화를 날짜별로 남기고 보호자가 확인하는 서비스 제공 기록지 양식입니다.
+usage: >
+  요양보호사가 가정을 방문해 돌봄을 제공한 뒤 그날의 서비스 내용과 특이사항을 남기는 기록지입니다.
+  방문 일시와 제공한 서비스(식사·청결·이동 보조 등)를 표시하고, 상태 변화는 사실 위주로 짧게 적은 뒤 보호자 확인을 받습니다.
+  진단명이나 병력 같은 의료 정보는 적지 않고, 이상이 보이면 기관과 보호자에게 별도로 알리십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 이용자 이름과 담당 요양보호사, 방문 날짜를 적습니다.
+  - 방문 시작·종료 시간을 적습니다.
+  - 제공한 서비스를 항목별로 적습니다.
+  - 상태 변화를 사실 위주로 적고 보호자 확인을 받습니다.
+faq:
+  - q: 상태 변화는 어떻게 적나요?
+    a: "\"식사량이 평소보다 적었음\"처럼 본 것만 짧게 적습니다. 진단이나 추측은 적지 않습니다."
+  - q: 보호자가 없을 때는 어떻게 하나요?
+    a: 확인란에 부재 사유를 적고, 다음 방문이나 연락 때 기록 내용을 전달합니다.
+  - q: 기록지는 얼마나 보관하나요?
+    a: 보관 기간은 기관 규정에 따릅니다. 담당 기관에 확인하십시오.
+related: [care-service-application, long-term-care-application, welfare-service-change-request]
+blocks:
+  - type: doc_title
+    text: 방문요양 서비스 제공 기록지
+    spaced: false
+  - type: subtitle
+    text: 1. 기본 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["이용자", "", "요양보호사", ""]
+      - ["기록 기간", "", "소속 기관", ""]
+    sample_rows:
+      - ["", "김영숙", "", "이수현"]
+      - ["", "2026-10-19 ~ 10-21", "", "행복돌봄센터"]
+  - type: subtitle
+    text: 2. 방문 및 제공 서비스
+  - type: table
+    widths: [16, 22, 40, 22]
+    header: [날짜, 방문 시간, 제공 서비스, 보호자 확인]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["10-19", "09:00~12:00", "식사 준비, 청소, 산책 보조", "서명"]
+      - ["10-20", "09:00~12:00", "목욕 보조, 세탁", "서명"]
+      - ["10-21", "09:00~12:00", "식사 준비, 말벗", "서명"]
+  - type: subtitle
+    text: 3. 특이사항
+  - type: textbox
+    hint: "이용자의 상태 변화나 전달할 내용을 본 것 위주로 적으십시오. 진단명이나 병력은 적지 않습니다."
+    height_mm: 24
+    sample_text: 10월 20일 점심 식사량이 평소보다 적었으며 오후에 피곤하다고 말씀하셨습니다. 보호자에게 전달했습니다.
+  - type: date_line
+    sample_text: 2026 년   10 월   22 일
+  - type: sign_line
+    labels: ["요양보호사", "보호자"]
+    sample_names: [이수현, 김민수]
+  - type: notice
+    text: 의료적 판단이 필요한 내용은 기관과 보호자에게 별도로 알리십시오.

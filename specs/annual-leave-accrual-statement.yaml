@@ -1,0 +1,78 @@
+id: annual-leave-accrual-statement
+title: 연차 발생 내역 확인서
+category: corp
+subcategory: hr
+tags: [연차발생, 연차발생내역, 연차일수확인, 연차산정표, 연차 부여 확인]
+summary: 입사일 기준으로 연차가 몇 일 발생했고 얼마나 썼는지 항목별로 정리해 근로자와 회사가 함께 확인하는 연차 발생 내역 확인서 양식입니다.
+usage: >
+  연차 사용 촉진을 앞두고 근로자별 연차 발생 일수와 사용 일수를 맞춰 볼 때 쓰는 문서입니다.
+  입사일과 산정 기준 기간을 적고, 기본 발생분과 근속에 따른 가산분, 이미 사용한 일수를 항목별로 적으면 남은 일수가 정리됩니다.
+  계산 결과는 회사 취업규칙과 근로계약 기준에 따르므로 서로 다르면 인사 담당과 먼저 맞춰 보십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 근로자 정보와 입사일, 산정 기준 기간을 적습니다.
+  - 기간별 발생 일수를 항목별로 나눠 적습니다.
+  - 이미 사용한 일수를 날짜와 함께 적습니다.
+  - 남은 일수를 계산해 적고 양쪽이 서명합니다.
+faq:
+  - q: 입사 1년 미만이어도 연차가 생기나요?
+    a: 1년 미만 기간에는 개근한 달마다 발생하는 연차가 있을 수 있습니다. 구체적인 일수는 회사 기준을 확인하십시오.
+  - q: 근속 가산분은 어떻게 적나요?
+    a: 근속 연수에 따라 더해지는 일수가 있으면 가산분 칸에 따로 적습니다. 기준은 취업규칙으로 확인하십시오.
+  - q: 회사 계산과 다르면 어떻게 하나요?
+    a: 비고란에 차이가 나는 부분을 적고 인사 담당과 기준일부터 다시 맞춰 봅니다.
+related: [annual-leave-balance-inquiry, annual-leave-plan, annual-leave-promotion-record]
+blocks:
+  - type: doc_title
+    text: 연차 발생 내역 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 근로자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["성명", "", "소속·직위", ""]
+      - ["입사일", "", "산정 기준일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "영업지원팀 대리"]
+      - ["", "2022-03-02", "", "2026-01-01"]
+  - type: subtitle
+    text: 2. 연차 발생 내역
+  - type: table
+    widths: [26, 26, 16, 16, 16]
+    header: [구분, 대상 기간, 발생 일수, 사용 일수, 잔여 일수]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["기본 발생분", "2026-01-01~12-31", "15일", "10일", "5일"]
+      - ["근속 가산분", "2026-01-01~12-31", "1일", "0일", "1일"]
+      - ["이월분", "2025년 잔여", "2일", "2일", "0일"]
+  - type: subtitle
+    text: 3. 합계 및 비고
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["총 발생 일수", "", "총 잔여 일수", ""]
+      - ["비고", "", "", ""]
+    sample_rows:
+      - ["", "18일", "", "6일"]
+      - ["", "이월분 2일은 올해 1월 중 사용 완료", "", ""]
+  - type: para
+    text: 위 연차 발생 내역을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   22 일
+  - type: sign_line
+    labels: ["근로자", "인사 담당"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 발생 일수 산정 기준은 근로계약과 취업규칙을 확인하십시오.

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-21T10:27:56+09:00",
-  "count": 398,
+  "generated_at": "2026-10-22T10:26:11+09:00",
+  "count": 403,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -537,6 +537,110 @@
         "civil-petition"
       ],
       "seal": true
+    },
+    {
+      "id": "annual-leave-accrual-statement",
+      "title": "연차 발생 내역 확인서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차발생",
+        "연차발생내역",
+        "연차일수확인",
+        "연차산정표",
+        "연차 부여 확인"
+      ],
+      "summary": "입사일 기준으로 연차가 몇 일 발생했고 얼마나 썼는지 항목별로 정리해 근로자와 회사가 함께 확인하는 연차 발생 내역 확인서 양식입니다.",
+      "usage": "연차 사용 촉진을 앞두고 근로자별 연차 발생 일수와 사용 일수를 맞춰 볼 때 쓰는 문서입니다. 입사일과 산정 기준 기간을 적고, 기본 발생분과 근속에 따른 가산분, 이미 사용한 일수를 항목별로 적으면 남은 일수가 정리됩니다. 계산 결과는 회사 취업규칙과 근로계약 기준에 따르므로 서로 다르면 인사 담당과 먼저 맞춰 보십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48035,
+        "docx": 38595,
+        "hwpx": 9921
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "근로자 정보와 입사일, 산정 기준 기간을 적습니다.",
+        "기간별 발생 일수를 항목별로 나눠 적습니다.",
+        "이미 사용한 일수를 날짜와 함께 적습니다.",
+        "남은 일수를 계산해 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "입사 1년 미만이어도 연차가 생기나요?",
+          "a": "1년 미만 기간에는 개근한 달마다 발생하는 연차가 있을 수 있습니다. 구체적인 일수는 회사 기준을 확인하십시오."
+        },
+        {
+          "q": "근속 가산분은 어떻게 적나요?",
+          "a": "근속 연수에 따라 더해지는 일수가 있으면 가산분 칸에 따로 적습니다. 기준은 취업규칙으로 확인하십시오."
+        },
+        {
+          "q": "회사 계산과 다르면 어떻게 하나요?",
+          "a": "비고란에 차이가 나는 부분을 적고 인사 담당과 기준일부터 다시 맞춰 봅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 근로자 정보",
+          "items": [
+            "성명",
+            "소속·직위",
+            "입사일",
+            "산정 기준일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연차 발생 내역",
+          "items": [
+            "대상 기간",
+            "발생 일수",
+            "사용 일수",
+            "잔여 일수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 합계 및 비고",
+          "items": [
+            "총 발생 일수",
+            "총 잔여 일수"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-balance-inquiry",
+        "annual-leave-plan",
+        "annual-leave-promotion-record"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-22T10:25:27+09:00",
+      "updated_at": "2026-10-22T10:25:27+09:00",
+      "downloads": 0
     },
     {
       "id": "annual-leave-balance-inquiry",
@@ -18926,6 +19030,107 @@
       "downloads": 0
     },
     {
+      "id": "home-care-visit-record",
+      "title": "방문요양 서비스 제공 기록지",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "방문요양기록지",
+        "요양서비스기록",
+        "요양보호사 일지",
+        "돌봄기록지",
+        "서비스제공기록"
+      ],
+      "summary": "방문요양 요양보호사가 방문 시간과 제공한 서비스, 어르신 상태 변화를 날짜별로 남기고 보호자가 확인하는 서비스 제공 기록지 양식입니다.",
+      "usage": "요양보호사가 가정을 방문해 돌봄을 제공한 뒤 그날의 서비스 내용과 특이사항을 남기는 기록지입니다. 방문 일시와 제공한 서비스(식사·청결·이동 보조 등)를 표시하고, 상태 변화는 사실 위주로 짧게 적은 뒤 보호자 확인을 받습니다. 진단명이나 병력 같은 의료 정보는 적지 않고, 이상이 보이면 기관과 보호자에게 별도로 알리십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 47577,
+        "docx": 38624,
+        "hwpx": 9863
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "이용자 이름과 담당 요양보호사, 방문 날짜를 적습니다.",
+        "방문 시작·종료 시간을 적습니다.",
+        "제공한 서비스를 항목별로 적습니다.",
+        "상태 변화를 사실 위주로 적고 보호자 확인을 받습니다."
+      ],
+      "faq": [
+        {
+          "q": "상태 변화는 어떻게 적나요?",
+          "a": "\"식사량이 평소보다 적었음\"처럼 본 것만 짧게 적습니다. 진단이나 추측은 적지 않습니다."
+        },
+        {
+          "q": "보호자가 없을 때는 어떻게 하나요?",
+          "a": "확인란에 부재 사유를 적고, 다음 방문이나 연락 때 기록 내용을 전달합니다."
+        },
+        {
+          "q": "기록지는 얼마나 보관하나요?",
+          "a": "보관 기간은 기관 규정에 따릅니다. 담당 기관에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 기본 정보",
+          "items": [
+            "이용자",
+            "요양보호사",
+            "기록 기간",
+            "소속 기관"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 방문 및 제공 서비스",
+          "items": [
+            "날짜",
+            "방문 시간",
+            "제공 서비스",
+            "보호자 확인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 특이사항",
+          "items": [],
+          "note": "이용자의 상태 변화나 전달할 내용을 본 것 위주로 적으십시오. 진단명이나 병력은 적지 않습니다."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "care-service-application",
+        "long-term-care-application",
+        "welfare-service-change-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-22T10:25:44+09:00",
+      "updated_at": "2026-10-22T10:26:01+09:00",
+      "downloads": 0
+    },
+    {
       "id": "hospital-transfer-request",
       "title": "전원(轉院) 요청서",
       "category": "welfare",
@@ -22195,6 +22400,112 @@
       "downloads": 0
     },
     {
+      "id": "lease-deposit-return-schedule-agreement",
+      "title": "임대차 보증금 반환 일정 합의서",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "보증금반환합의서",
+        "보증금 분할반환",
+        "보증금 반환일정",
+        "임대차종료합의",
+        "보증금 지급 약정"
+      ],
+      "summary": "임대차 계약이 끝난 뒤 보증금을 언제 얼마씩 돌려줄지 임대인과 임차인이 일정과 방법을 정해 남기는 보증금 반환 일정 합의서 양식입니다.",
+      "usage": "계약 기간이 끝났지만 임대인이 보증금을 한 번에 돌려주기 어려워 일정을 나눠 정할 때 쓰는 문서입니다. 계약 정보와 반환할 보증금 총액을 적고, 회차별 지급일과 금액, 계좌를 표에 적어 양쪽이 서명합니다. 이 합의서가 퇴거 시점이나 확정일자·임차권 관련 권리에 어떤 영향을 주는지는 사안마다 다르므로 서명 전에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49867,
+        "docx": 38686,
+        "hwpx": 9999
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "임대인·임차인 정보와 계약 대상 주소를 적습니다.",
+        "계약 종료일과 반환할 보증금 총액을 적습니다.",
+        "회차별 지급일과 금액을 표에 나눠 적습니다.",
+        "지급 계좌를 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "합의서를 쓰면 바로 이사해야 하나요?",
+          "a": "퇴거 시점은 합의서에 따로 적어야 합니다. 보증금을 받기 전 이사할지는 신중히 정하십시오."
+        },
+        {
+          "q": "합의한 날짜에 안 주면 어떻게 되나요?",
+          "a": "지연 시 조치는 특약란에 미리 적어 두면 좋습니다. 구체적 대응은 전문가 상담을 권합니다."
+        },
+        {
+          "q": "회차 금액의 합은 어떻게 맞추나요?",
+          "a": "표의 금액을 모두 더해 보증금 총액과 같아지는지 확인합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자 및 계약 정보",
+          "items": [
+            "임대인",
+            "연락처",
+            "임차인",
+            "목적물 주소",
+            "계약 종료일",
+            "보증금 총액"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 반환 일정",
+          "items": [
+            "회차",
+            "지급 예정일",
+            "지급 금액",
+            "지급 방법"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 지급 계좌 및 특약",
+          "items": [
+            "지급 계좌",
+            "특약"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "deposit-return-notice",
+        "move-out-checklist",
+        "management-fee-settlement-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-22T10:25:38+09:00",
+      "updated_at": "2026-10-22T10:25:38+09:00",
+      "downloads": 0
+    },
+    {
       "id": "lease-renewal-contract",
       "title": "임대차 계약 갱신계약서",
       "category": "estate",
@@ -22309,6 +22620,110 @@
         "deposit-return-notice"
       ],
       "seal": true
+    },
+    {
+      "id": "lease-repair-request",
+      "title": "임대차 목적물 수리 요청서",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "수리요청서",
+        "임대차수리",
+        "집 수리 요청",
+        "하자수리요청",
+        "임대인 수리 요청"
+      ],
+      "summary": "세 들어 사는 집이나 상가에 고장·누수 같은 문제가 생겼을 때 임대인에게 수리를 요청하고 처리 기한을 남기는 수리 요청서 양식입니다.",
+      "usage": "보일러·누수·도배 등 임차 중인 건물에 문제가 생겨 임대인에게 수리를 요청할 때 쓰는 문서입니다. 문제가 생긴 위치와 발견 날짜, 현재 상태, 희망하는 처리 기한을 적고 사진 등 첨부 자료를 표시합니다. 누가 수리 비용을 부담할지는 계약 내용과 파손 원인에 따라 달라지므로, 요청서는 사실과 요청 내용만 담고 다툼은 따로 협의하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51768,
+        "docx": 38762,
+        "hwpx": 10096
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "임대인과 임차인 정보, 대상 주소를 적습니다.",
+        "문제가 생긴 위치와 발견한 날짜를 적습니다.",
+        "현재 상태와 불편한 점을 사실 위주로 적습니다.",
+        "희망 처리 기한을 적고 사진 등 첨부를 표시합니다."
+      ],
+      "faq": [
+        {
+          "q": "문자로 요청해도 되나요?",
+          "a": "문자도 기록은 되지만 이 요청서를 함께 보내면 날짜와 내용이 더 분명하게 남습니다."
+        },
+        {
+          "q": "수리 비용은 누가 내나요?",
+          "a": "계약 내용과 파손 원인에 따라 다릅니다. 이 서식에는 요청 내용만 적고 부담은 따로 협의하십시오."
+        },
+        {
+          "q": "사진은 꼭 붙여야 하나요?",
+          "a": "필수는 아니지만 문제 상태가 보이는 사진이 있으면 처리 속도와 확인에 도움이 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자 및 목적물",
+          "items": [
+            "임대인",
+            "연락처",
+            "임차인",
+            "목적물 주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 수리가 필요한 내용",
+          "items": [
+            "위치",
+            "발견일",
+            "상태",
+            "긴급도"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 요청 사항",
+          "items": [
+            "희망 기한",
+            "첨부 자료"
+          ],
+          "note": "불편한 점과 요청하는 조치를 적으십시오. 마지막에 희망하는 처리 기한도 적습니다."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "rent-reduction-request",
+        "certified-notice",
+        "move-out-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-22T10:25:32+09:00",
+      "updated_at": "2026-10-22T10:26:11+09:00",
+      "downloads": 0
     },
     {
       "id": "lease-termination-notice",
@@ -30081,6 +30496,112 @@
         "invoice-request"
       ],
       "seal": true
+    },
+    {
+      "id": "quotation-validity-extension-request",
+      "title": "견적 유효기간 연장 요청서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "견적유효기간",
+        "견적 연장",
+        "견적서 연장요청",
+        "견적 기간 연장",
+        "견적 재확인"
+      ],
+      "summary": "받아 둔 견적서의 유효기간이 지나기 전에 같은 조건으로 기간을 늘려 달라고 거래처에 요청하는 견적 유효기간 연장 요청서 양식입니다.",
+      "usage": "내부 결재나 예산 확정이 늦어져 받아 둔 견적서의 유효기간이 지날 것 같을 때 쓰는 문서입니다. 원래 견적 번호와 금액, 유효기간 만료일을 적고 연장을 원하는 기간과 사유를 적어 거래처에 보냅니다. 연장 여부와 금액 조정은 거래처가 정하므로, 회신 내용을 반드시 받아 두십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 42562,
+        "docx": 38536,
+        "hwpx": 9652
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청자와 거래처 정보를 적습니다.",
+        "원래 견적 번호와 금액, 만료일을 적습니다.",
+        "연장을 원하는 날짜와 사유를 적습니다.",
+        "회신 방법을 적어 거래처에 보냅니다."
+      ],
+      "faq": [
+        {
+          "q": "연장되면 금액도 그대로인가요?",
+          "a": "거래처가 정합니다. 회신란에 금액 유지 여부를 반드시 확인해 두십시오."
+        },
+        {
+          "q": "견적서 자체를 다시 받아야 하나요?",
+          "a": "연장 회신을 서면으로 받으면 충분한 경우가 많습니다. 내부 결재 기준을 확인하십시오."
+        },
+        {
+          "q": "사유는 꼭 적어야 하나요?",
+          "a": "짧게라도 적는 편이 좋습니다. 사유가 분명하면 거래처가 연장을 검토하기 쉽습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청자 및 거래처",
+          "items": [
+            "요청 회사",
+            "담당자",
+            "거래처",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 원래 견적 내용",
+          "items": [
+            "견적 번호",
+            "견적 일자",
+            "견적 금액",
+            "유효기간 만료일",
+            "품목"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 연장 요청",
+          "items": [
+            "연장 희망일",
+            "회신 요청일"
+          ],
+          "note": "연장이 필요한 사유와 거래처에 확인하고 싶은 사항(금액 유지 여부 등)을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "quotation",
+        "quotation-comparison",
+        "sales-contract",
+        "unit-price-change-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-22T10:25:49+09:00",
+      "updated_at": "2026-10-22T10:25:49+09:00",
+      "downloads": 0
     },
     {
       "id": "reading-log",

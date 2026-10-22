@@ -8,7 +8,7 @@
       "ids": [
         "resignation-letter", "resignation-simple", "retirement-application",
         "handover-report", "asset-handover", "severance-calculation", "unused-annual-leave-pay-receipt",
-        "separation-certificate-request", "career-certificate-request", "career-certificate", "employment-certificate", "annual-leave-plan",
+        "separation-certificate-request", "career-certificate-request", "career-certificate", "employment-certificate", "annual-leave-plan", "annual-leave-accrual-statement",
         "career-description"
       ]
     },
@@ -30,9 +30,9 @@
       "ids": [
         "housing-lease-contract", "commercial-lease-contract",
         "lease-renewal-contract", "move-in-checklist", "monthly-rent-receipt",
-        "moving-in-report", "move-in-report-poa", "moving-checklist", "lease-termination-notice",
+        "moving-in-report", "move-in-report-poa", "moving-checklist", "lease-termination-notice", "lease-repair-request",
         "move-out-checklist", "management-fee-settlement-confirmation",
-        "deposit-return-notice", "resident-registration-request"
+        "lease-deposit-return-schedule-agreement", "deposit-return-notice", "resident-registration-request"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "name": "거래·정산 서식",
       "lead": "견적을 내고 주문을 받아 대금을 청구하기까지, 거래 한 건에 필요한 서식 묶음입니다.",
       "ids": [
-        "quotation", "quotation-detailed", "quotation-comparison",
+        "quotation", "quotation-detailed", "quotation-comparison", "quotation-validity-extension-request",
         "purchase-order", "delivery-confirmation", "goods-inspection-report", "transaction-statement",
         "tax-invoice", "tax-invoice-correction-request", "invoice-request",
         "payment-confirmation", "receipt"
@@ -90,7 +90,7 @@
         "blood-transfusion-consent", "vaccination-consent",
         "medical-record-request", "hospitalization-confirmation-request", "hospital-transfer-request",
         "medical-expense-support", "long-term-care-application",
-        "care-service-application", "welfare-facility-withdrawal-request", "caregiver-contract"
+        "care-service-application", "home-care-visit-record", "welfare-facility-withdrawal-request", "caregiver-contract"
       ]
     },
     {

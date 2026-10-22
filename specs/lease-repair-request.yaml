@@ -1,0 +1,78 @@
+id: lease-repair-request
+title: 임대차 목적물 수리 요청서
+category: estate
+subcategory: lease
+tags: [수리요청서, 임대차수리, 집 수리 요청, 하자수리요청, 임대인 수리 요청]
+summary: 세 들어 사는 집이나 상가에 고장·누수 같은 문제가 생겼을 때 임대인에게 수리를 요청하고 처리 기한을 남기는 수리 요청서 양식입니다.
+usage: >
+  보일러·누수·도배 등 임차 중인 건물에 문제가 생겨 임대인에게 수리를 요청할 때 쓰는 문서입니다.
+  문제가 생긴 위치와 발견 날짜, 현재 상태, 희망하는 처리 기한을 적고 사진 등 첨부 자료를 표시합니다.
+  누가 수리 비용을 부담할지는 계약 내용과 파손 원인에 따라 달라지므로, 요청서는 사실과 요청 내용만 담고 다툼은 따로 협의하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 임대인과 임차인 정보, 대상 주소를 적습니다.
+  - 문제가 생긴 위치와 발견한 날짜를 적습니다.
+  - 현재 상태와 불편한 점을 사실 위주로 적습니다.
+  - 희망 처리 기한을 적고 사진 등 첨부를 표시합니다.
+faq:
+  - q: 문자로 요청해도 되나요?
+    a: 문자도 기록은 되지만 이 요청서를 함께 보내면 날짜와 내용이 더 분명하게 남습니다.
+  - q: 수리 비용은 누가 내나요?
+    a: 계약 내용과 파손 원인에 따라 다릅니다. 이 서식에는 요청 내용만 적고 부담은 따로 협의하십시오.
+  - q: 사진은 꼭 붙여야 하나요?
+    a: 필수는 아니지만 문제 상태가 보이는 사진이 있으면 처리 속도와 확인에 도움이 됩니다.
+related: [rent-reduction-request, certified-notice, move-out-checklist]
+blocks:
+  - type: doc_title
+    text: 임대차 목적물 수리 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자 및 목적물
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["임대인", "", "연락처", ""]
+      - ["임차인", "", "연락처", ""]
+      - ["목적물 주소", "", "", ""]
+    sample_rows:
+      - ["", "박민준", "", "010-1111-2222"]
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울시 ○○구 ○○로 12, 301호", "", ""]
+  - type: subtitle
+    text: 2. 수리가 필요한 내용
+  - type: table
+    widths: [8, 22, 18, 36, 16]
+    header: ["No", 위치, 발견일, 상태, 긴급도]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "욕실 천장", "2026-10-05", "물이 스며 얼룩 발생", "높음"]
+      - ["2", "보일러", "2026-10-15", "온수 간헐적 끊김", "보통"]
+  - type: subtitle
+    text: 3. 요청 사항
+  - type: textbox
+    hint: "불편한 점과 요청하는 조치를 적으십시오. 마지막에 희망하는 처리 기한도 적습니다."
+    height_mm: 24
+    sample_text: 위 두 곳의 점검과 수리를 요청드립니다. 가능하면 2026-10-31까지 방문 점검 일정을 알려 주십시오.
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["희망 기한", "", "첨부 자료", ""]
+    sample_rows:
+      - ["", "2026-10-31", "", "사진 3장"]
+  - type: date_line
+    sample_text: 2026 년   10 월   22 일
+  - type: sign_line
+    labels: ["임차인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 수리 비용 부담은 계약 내용과 원인에 따라 다르므로 별도로 협의하십시오.
