@@ -1,0 +1,82 @@
+id: business-resumption-confirmation
+title: 영업 재개 사실 확인서
+category: public
+subcategory: permit
+tags: [영업재개확인서, 재개업 확인서, 휴업 후 영업재개, 영업 재개 사실, 가게 재개업]
+summary: 휴업했던 사업장이 다시 영업을 시작했다는 사실과 재개일을 확인해 제출처에 보여 주는 영업 재개 사실 확인서 양식입니다.
+usage: >
+  휴업 중이던 가게나 사업장이 영업을 다시 시작했을 때, 재개일과 영업 장소·업종을 정리해 제출하는 확인서입니다.
+  기존 휴업 기간과 재개 사유를 적고, 확인하는 사람이 서명합니다.
+  관공서에 낼 때는 별도 신고 서식이 정해져 있을 수 있으므로 제출처의 요구 서식을 먼저 확인하고, 이 문서는 사실 확인용으로 쓰십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 사업자 정보와 영업 장소를 적습니다.
+  - 휴업 기간과 영업을 다시 시작한 날을 적습니다.
+  - 재개 사유와 현재 영업 상태를 사실대로 적습니다.
+  - 날짜를 쓰고 확인자가 서명합니다.
+faq:
+  - q: 이 확인서로 재개 신고가 되나요?
+    a: 신고 서식이 따로 정해진 경우에는 그 서식을 써야 합니다. 이 문서는 사실을 확인해 두는 용도입니다.
+  - q: 재개일은 어떻게 정하나요?
+    a: 실제로 손님을 받거나 영업을 다시 시작한 날을 적습니다. 증빙이 있으면 함께 첨부하십시오.
+  - q: 휴업 기간을 모르면 어떻게 하나요?
+    a: 휴업 확인서나 신고 기록의 날짜를 옮겨 적고, 기록이 없으면 대략의 시작일을 적고 비고에 표시합니다.
+related: [business-suspension-confirmation, business-license-reissue-request, business-registration-certificate-reissue-request]
+blocks:
+  - type: doc_title
+    text: 영업 재개 사실 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 사업자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["상호", "", "대표자", ""]
+      - ["업종", "", "연락처", ""]
+      - ["영업 장소", "", "", ""]
+    sample_rows:
+      - ["", "한빛식당", "", "홍길동"]
+      - ["", "일반음식점", "", "010-1234-5678"]
+      - ["", "서울시 ○○구 ○○로 12, 1층", "", ""]
+  - type: subtitle
+    text: 2. 휴업 및 재개 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["휴업 시작일", "", "휴업 종료일", ""]
+      - ["영업 재개일", "", "휴업 일수", ""]
+    sample_rows:
+      - ["", "2026-08-01", "", "2026-09-30"]
+      - ["", "2026-10-01", "", "61일"]
+  - type: table
+    widths: [8, 30, 46, 16]
+    header: ["No", 확인 항목, 현재 상태, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "영업 장소", "기존 장소에서 재개", ""]
+      - ["2", "영업 시간", "11:00 ~ 21:00", ""]
+  - type: subtitle
+    text: 3. 재개 사유
+  - type: textbox
+    hint: "휴업 사유가 해소된 경위와 재개 후 영업 상황을 사실대로 적으십시오."
+    height_mm: 26
+    sample_text: 내부 수리를 마치고 2026-10-01부터 영업을 다시 시작했으며 현재 정상 영업 중입니다.
+  - type: para
+    text: 위 내용이 사실임을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   23 일
+  - type: sign_line
+    labels: ["확인자(대표자)"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 관공서 제출용은 별도 신고 서식이 있을 수 있으니 제출처 기준을 확인하십시오.

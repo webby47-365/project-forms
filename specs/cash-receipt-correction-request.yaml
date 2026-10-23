@@ -1,0 +1,75 @@
+id: cash-receipt-correction-request
+title: 현금영수증 정정 요청서
+category: public
+subcategory: tax
+tags: [현금영수증정정, 현금영수증 번호 오류, 현금영수증 재발급, 지출증빙 정정, 현금영수증 요청서]
+summary: 잘못 발급되었거나 번호가 틀린 현금영수증을 가맹점에 정정해 달라고 요청하는 현금영수증 정정 요청서 양식입니다.
+usage: >
+  결제할 때 소득공제용과 지출증빙용이 바뀌었거나 번호가 틀려 현금영수증이 잘못 발급되었을 때 가맹점에 정정을 요청하는 문서입니다.
+  거래 일시와 금액, 승인번호, 잘못된 내용과 바른 내용을 나란히 적습니다.
+  정정 가능 기간과 방법은 상황마다 다르므로 먼저 가맹점과 국세청 안내를 확인하고, 요청 내용은 서면으로 남기십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 가맹점과 요청인 정보를 적습니다.
+  - 거래 일시, 금액, 승인번호를 영수증대로 옮겨 적습니다.
+  - 잘못 발급된 내용과 바르게 고칠 내용을 나란히 적습니다.
+  - 날짜를 쓰고 서명하여 가맹점에 전달합니다.
+faq:
+  - q: 정정은 언제까지 가능한가요?
+    a: 기간과 방법이 경우마다 달라질 수 있습니다. 가맹점과 국세청 안내를 먼저 확인하십시오.
+  - q: 승인번호는 어디서 확인하나요?
+    a: 받은 영수증이나 결제 문자, 카드 앱 내역에서 확인할 수 있습니다.
+  - q: 요청서 없이 말로만 요청해도 되나요?
+    a: 가능한 경우도 있지만 서면으로 남기면 정정 내용과 요청 날짜가 분명해집니다.
+related: [tax-invoice-correction-request, expense-evidence-explanation, vat-filing-document-confirmation]
+blocks:
+  - type: doc_title
+    text: 현금영수증 정정 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 가맹점 및 요청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["가맹점명", "", "대표자", ""]
+      - ["요청인", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "박민준"]
+      - ["", "홍길동", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 거래 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["거래 일시", "", "거래 금액", ""]
+      - ["승인번호", "", "결제 수단", ""]
+    sample_rows:
+      - ["", "2026-10-15 14:20", "", "55,000원"]
+      - ["", "00000000", "", "현금"]
+  - type: subtitle
+    text: 3. 정정 내용
+  - type: table
+    widths: [8, 22, 35, 35]
+    header: ["No", 정정 항목, 현재 발급 내용, 바르게 고칠 내용]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "발급 구분", "소득공제용", "지출증빙용"]
+      - ["2", "발급 번호", "010-0000-0000", "000-00-00000"]
+  - type: textbox
+    hint: "정정이 필요한 경위를 간단히 적고, 처리 결과를 받을 방법을 적으십시오."
+    height_mm: 20
+    sample_text: 결제 때 발급 구분을 잘못 선택해 정정을 요청합니다. 처리 후 문자로 알려 주십시오.
+  - type: date_line
+    sample_text: 2026 년   10 월   23 일
+  - type: sign_line
+    labels: ["요청인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 정정 가능 여부와 기간은 가맹점과 국세청 안내를 확인하십시오.

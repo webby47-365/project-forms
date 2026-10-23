@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T10:26:11+09:00",
-  "count": 403,
+  "generated_at": "2026-10-23T10:57:25+09:00",
+  "count": 408,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -2205,6 +2205,109 @@
       "warnings": [],
       "created_at": "2026-10-11T08:16:32+09:00",
       "updated_at": "2026-10-11T08:17:13+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-work-coverage-designation",
+      "title": "연차 휴가 업무 대행자 지정서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "업무대행자지정서",
+        "휴가 업무대행",
+        "연차 업무 인계",
+        "부재중 업무대행",
+        "휴가 대직자"
+      ],
+      "summary": "연차 휴가 기간 동안 맡은 업무를 누가 대신 처리할지 정하고 급한 연락 방법까지 남기는 업무 대행자 지정서 양식입니다.",
+      "usage": "연차를 쓰는 동안 자리를 비우는 사람이 업무를 대신 맡을 사람을 정해 두는 문서입니다. 휴가 기간과 대행자를 적고, 맡길 업무를 항목별로 나누어 처리 범위와 주의할 점을 함께 적습니다. 대행자와 부서장이 확인 서명을 하면 휴가 중 업무 공백과 책임 다툼을 줄일 수 있습니다. 결재 권한이 필요한 업무는 회사의 위임 규정을 따르십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51341,
+        "docx": 38723,
+        "hwpx": 10028
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "휴가자와 대행자의 부서·성명, 휴가 기간을 적습니다.",
+        "맡길 업무를 항목별로 나누어 처리 범위를 적습니다.",
+        "급한 연락이 필요한 경우의 방법과 주의사항을 적습니다.",
+        "휴가자·대행자·부서장이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "대행자 동의가 꼭 필요한가요?",
+          "a": "업무를 실제로 맡는 사람이 내용을 알아야 하므로 서명이나 확인을 받아 두는 편이 안전합니다."
+        },
+        {
+          "q": "휴가 중 연락해도 되나요?",
+          "a": "급한 일의 연락 여부와 방법은 휴가자와 합의해 적어 두십시오. 회사 규정도 함께 확인합니다."
+        },
+        {
+          "q": "결재 업무도 맡길 수 있나요?",
+          "a": "결재 권한은 회사의 위임 규정에 따라 달라집니다. 필요하면 부서장 확인을 받으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 휴가자 및 대행자",
+          "items": [
+            "휴가자",
+            "부서(직위)",
+            "대행자",
+            "휴가 기간",
+            "휴가 일수",
+            "급한 연락"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대행 업무",
+          "items": [
+            "업무",
+            "처리 범위",
+            "관련 자료 위치"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 전달 사항",
+          "items": [],
+          "note": "대행자가 알아야 할 주의사항과 판단이 어려울 때 확인할 사람을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "leave-request",
+        "handover-report",
+        "annual-leave-plan",
+        "half-day-leave-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-23T10:56:43+09:00",
+      "updated_at": "2026-10-23T10:57:25+09:00",
       "downloads": 0
     },
     {
@@ -5652,6 +5755,110 @@
       "downloads": 0
     },
     {
+      "id": "business-resumption-confirmation",
+      "title": "영업 재개 사실 확인서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "영업재개확인서",
+        "재개업 확인서",
+        "휴업 후 영업재개",
+        "영업 재개 사실",
+        "가게 재개업"
+      ],
+      "summary": "휴업했던 사업장이 다시 영업을 시작했다는 사실과 재개일을 확인해 제출처에 보여 주는 영업 재개 사실 확인서 양식입니다.",
+      "usage": "휴업 중이던 가게나 사업장이 영업을 다시 시작했을 때, 재개일과 영업 장소·업종을 정리해 제출하는 확인서입니다. 기존 휴업 기간과 재개 사유를 적고, 확인하는 사람이 서명합니다. 관공서에 낼 때는 별도 신고 서식이 정해져 있을 수 있으므로 제출처의 요구 서식을 먼저 확인하고, 이 문서는 사실 확인용으로 쓰십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51483,
+        "docx": 38742,
+        "hwpx": 10092
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사업자 정보와 영업 장소를 적습니다.",
+        "휴업 기간과 영업을 다시 시작한 날을 적습니다.",
+        "재개 사유와 현재 영업 상태를 사실대로 적습니다.",
+        "날짜를 쓰고 확인자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 확인서로 재개 신고가 되나요?",
+          "a": "신고 서식이 따로 정해진 경우에는 그 서식을 써야 합니다. 이 문서는 사실을 확인해 두는 용도입니다."
+        },
+        {
+          "q": "재개일은 어떻게 정하나요?",
+          "a": "실제로 손님을 받거나 영업을 다시 시작한 날을 적습니다. 증빙이 있으면 함께 첨부하십시오."
+        },
+        {
+          "q": "휴업 기간을 모르면 어떻게 하나요?",
+          "a": "휴업 확인서나 신고 기록의 날짜를 옮겨 적고, 기록이 없으면 대략의 시작일을 적고 비고에 표시합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사업자 정보",
+          "items": [
+            "상호",
+            "대표자",
+            "업종",
+            "연락처",
+            "영업 장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 휴업 및 재개 내용",
+          "items": [
+            "휴업 시작일",
+            "휴업 종료일",
+            "영업 재개일",
+            "휴업 일수",
+            "확인 항목",
+            "현재 상태"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 재개 사유",
+          "items": [],
+          "note": "휴업 사유가 해소된 경위와 재개 후 영업 상황을 사실대로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-suspension-confirmation",
+        "business-license-reissue-request",
+        "business-registration-certificate-reissue-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-23T10:56:49+09:00",
+      "updated_at": "2026-10-23T10:56:49+09:00",
+      "downloads": 0
+    },
+    {
       "id": "business-suspension-confirmation",
       "title": "영업 휴업 사실 확인서",
       "category": "public",
@@ -7201,6 +7408,111 @@
         "medical-expense-support"
       ],
       "seal": true
+    },
+    {
+      "id": "cash-receipt-correction-request",
+      "title": "현금영수증 정정 요청서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "현금영수증정정",
+        "현금영수증 번호 오류",
+        "현금영수증 재발급",
+        "지출증빙 정정",
+        "현금영수증 요청서"
+      ],
+      "summary": "잘못 발급되었거나 번호가 틀린 현금영수증을 가맹점에 정정해 달라고 요청하는 현금영수증 정정 요청서 양식입니다.",
+      "usage": "결제할 때 소득공제용과 지출증빙용이 바뀌었거나 번호가 틀려 현금영수증이 잘못 발급되었을 때 가맹점에 정정을 요청하는 문서입니다. 거래 일시와 금액, 승인번호, 잘못된 내용과 바른 내용을 나란히 적습니다. 정정 가능 기간과 방법은 상황마다 다르므로 먼저 가맹점과 국세청 안내를 확인하고, 요청 내용은 서면으로 남기십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48913,
+        "docx": 38662,
+        "hwpx": 9909
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "가맹점과 요청인 정보를 적습니다.",
+        "거래 일시, 금액, 승인번호를 영수증대로 옮겨 적습니다.",
+        "잘못 발급된 내용과 바르게 고칠 내용을 나란히 적습니다.",
+        "날짜를 쓰고 서명하여 가맹점에 전달합니다."
+      ],
+      "faq": [
+        {
+          "q": "정정은 언제까지 가능한가요?",
+          "a": "기간과 방법이 경우마다 달라질 수 있습니다. 가맹점과 국세청 안내를 먼저 확인하십시오."
+        },
+        {
+          "q": "승인번호는 어디서 확인하나요?",
+          "a": "받은 영수증이나 결제 문자, 카드 앱 내역에서 확인할 수 있습니다."
+        },
+        {
+          "q": "요청서 없이 말로만 요청해도 되나요?",
+          "a": "가능한 경우도 있지만 서면으로 남기면 정정 내용과 요청 날짜가 분명해집니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 가맹점 및 요청인",
+          "items": [
+            "가맹점명",
+            "대표자",
+            "요청인",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 거래 내용",
+          "items": [
+            "거래 일시",
+            "거래 금액",
+            "승인번호",
+            "결제 수단"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 정정 내용",
+          "items": [
+            "정정 항목",
+            "현재 발급 내용",
+            "바르게 고칠 내용"
+          ],
+          "note": "정정이 필요한 경위를 간단히 적고, 처리 결과를 받을 방법을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "tax-invoice-correction-request",
+        "expense-evidence-explanation",
+        "vat-filing-document-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-23T10:56:56+09:00",
+      "updated_at": "2026-10-23T10:56:56+09:00",
+      "downloads": 0
     },
     {
       "id": "certified-notice",
@@ -9557,6 +9869,110 @@
         "invoice-request"
       ],
       "seal": true
+    },
+    {
+      "id": "contract-performance-demand-notice",
+      "title": "계약 이행 최고서",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "이행최고서",
+        "계약이행 촉구",
+        "이행 최고",
+        "채무불이행 최고",
+        "계약 이행 요청"
+      ],
+      "summary": "계약상 의무를 이행하지 않는 상대방에게 기한을 정해 이행을 요구하고 그 기록을 남기는 계약 이행 최고서 양식입니다.",
+      "usage": "대금을 주지 않거나 납품·공사를 미루는 상대방에게 정해진 기한까지 약속을 지키라고 서면으로 요구할 때 쓰는 문서입니다. 계약 내용과 이행하지 않은 사항, 요구하는 이행 내용과 기한을 사실 위주로 적습니다. 기한이 지난 뒤의 조치는 계약서와 상황에 따라 달라지므로 단정하지 말고, 중요한 사안은 내용증명으로 보내거나 전문가와 상담하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48768,
+        "docx": 38655,
+        "hwpx": 9813
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "보내는 사람과 받는 사람, 계약 이름과 날짜를 적습니다.",
+        "상대방이 이행하지 않은 내용을 사실대로 적습니다.",
+        "요구하는 이행 내용과 이행 기한을 날짜로 적습니다.",
+        "날짜를 쓰고 서명한 뒤 보낸 기록을 남깁니다."
+      ],
+      "faq": [
+        {
+          "q": "이행 기한은 며칠로 정하나요?",
+          "a": "정해진 일수는 없으며 상대방이 이행할 수 있는 현실적인 기간을 계약 내용에 맞게 정하십시오."
+        },
+        {
+          "q": "꼭 내용증명으로 보내야 하나요?",
+          "a": "필수는 아닙니다. 다만 보낸 날짜와 내용을 증명하려면 내용증명이나 이메일 기록이 도움이 됩니다."
+        },
+        {
+          "q": "기한이 지나면 바로 계약이 해제되나요?",
+          "a": "단정할 수 없습니다. 계약서 조항과 상황에 따라 달라지므로 필요하면 전문가와 상담하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "보내는 사람",
+            "연락처",
+            "주소",
+            "받는 사람"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 계약 및 미이행 내용",
+          "items": [
+            "계약명",
+            "계약일"
+          ],
+          "note": "계약에서 정한 의무와 아직 이행되지 않은 내용을 날짜와 함께 사실 위주로 적으십시오."
+        },
+        {
+          "title": "3. 요구 내용",
+          "items": [
+            "요구 내용",
+            "이행 기한",
+            "회신 방법"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "certified-notice",
+        "certified-notice-terminate",
+        "settlement-agreement",
+        "payment-pledge"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-23T10:57:11+09:00",
+      "updated_at": "2026-10-23T10:57:11+09:00",
+      "downloads": 0
     },
     {
       "id": "contract-performance-deposit-refund-request",
@@ -38054,6 +38470,113 @@
       "warnings": [],
       "created_at": "2026-09-17T08:21:31+09:00",
       "updated_at": "2026-09-17T08:21:31+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "traffic-fine-payment-proxy-confirmation",
+      "title": "교통 과태료 대납 확인서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "과태료대납확인서",
+        "교통과태료 대납",
+        "과태료 납부 확인",
+        "주정차 과태료",
+        "과태료 정산"
+      ],
+      "summary": "다른 사람의 교통 과태료를 대신 납부했을 때 납부 내역과 상환 약속을 서로 확인해 두는 대납 확인서 양식입니다.",
+      "usage": "차량을 빌려 쓰다 생긴 주정차·속도위반 과태료를 차량 소유자나 운전자가 대신 낸 경우, 누가 어떤 건을 얼마에 냈는지 남기는 문서입니다. 부과 일자와 고지서 번호, 납부액, 납부일을 적고 상환 방법을 합의해 둡니다. 과태료의 부과 대상과 이의 절차는 고지서 안내를 따르며, 이 문서는 당사자 사이의 정산 확인용입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48625,
+        "docx": 38695,
+        "hwpx": 10110
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "차량번호와 대납한 사람, 상환할 사람의 정보를 적습니다.",
+        "고지서의 부과일, 위반 내용, 납부액을 옮겨 적습니다.",
+        "상환 금액과 기한, 방법을 합의해 적습니다.",
+        "날짜를 쓰고 두 사람이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "대납하면 과태료 부과 대상이 바뀌나요?",
+          "a": "아닙니다. 부과 대상은 고지서 기준이며 이 문서는 당사자 사이의 정산을 확인하는 용도입니다."
+        },
+        {
+          "q": "납부 영수증도 함께 보관해야 하나요?",
+          "a": "납부 영수증이나 이체 내역을 첨부해 두면 금액과 날짜를 다시 확인하기 쉽습니다."
+        },
+        {
+          "q": "이의가 있는 과태료도 대납해도 되나요?",
+          "a": "이의 절차는 고지서 안내를 따르십시오. 이의 중인 건은 납부 전에 당사자끼리 먼저 협의하는 편이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자 및 차량",
+          "items": [
+            "대납인",
+            "연락처",
+            "상환인",
+            "차량번호",
+            "차종"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대납한 과태료",
+          "items": [
+            "부과일",
+            "위반 내용",
+            "납부액",
+            "납부일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 상환 내용",
+          "items": [
+            "상환 금액",
+            "상환 기한",
+            "상환 방법"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "parking-fine-objection",
+        "traffic-violation-driver-confirmation",
+        "vehicle-use-consent",
+        "payment-pledge"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-23T10:57:04+09:00",
+      "updated_at": "2026-10-23T10:57:04+09:00",
       "downloads": 0
     },
     {
