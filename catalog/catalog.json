@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T10:57:25+09:00",
-  "count": 408,
+  "generated_at": "2026-10-24T10:30:03+09:00",
+  "count": 413,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -859,6 +859,109 @@
       "warnings": [],
       "created_at": "2026-10-09T08:18:15+09:00",
       "updated_at": "2026-10-09T08:18:15+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-notice-dispatch-ledger",
+      "title": "연차 사용 촉진 통지 발송 대장",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차촉진 발송대장",
+        "통지서 발송",
+        "연차 촉진 증빙",
+        "발송 기록",
+        "수신 확인"
+      ],
+      "summary": "연차 사용 촉진 통지서를 누구에게 언제 어떤 방법으로 보냈고 받았는지 한 장에 모아 기록하는 발송 대장 양식입니다.",
+      "usage": "연차 사용 촉진 통지서를 여러 명에게 보낼 때 발송일, 발송 방법, 수신 확인 방법과 재발송 여부를 대장으로 남기는 문서입니다. 나중에 통지 사실을 확인해야 할 때 근거 자료로 쓰기 좋습니다. 통지 종류(1차·2차)를 칸마다 구분해 적고, 반송되거나 수신이 확인되지 않은 건은 비고에 조치를 적어 두십시오. 촉진 절차의 적법 여부는 사업장 사정에 따라 달라지므로 노무 담당자와 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 69188,
+        "docx": 39178,
+        "hwpx": 11235
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "대상 연도와 부서, 담당자를 적습니다.",
+        "통지 종류와 수신자, 발송일, 발송 방법을 줄마다 적습니다.",
+        "수신 확인 방법과 확인일을 적습니다.",
+        "반송이나 재발송이 있으면 비고에 적고 담당자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "1차와 2차를 한 장에 함께 적어도 되나요?",
+          "a": "됩니다. 통지 종류 칸에 1차 또는 2차를 구분해 적으면 한 장으로 관리할 수 있습니다."
+        },
+        {
+          "q": "이메일로 보내면 어떻게 기록하나요?",
+          "a": "발송 방법에 이메일이라고 적고, 수신 확인 방법에 회신 메일이나 열람 기록 등을 적습니다."
+        },
+        {
+          "q": "수신 확인이 안 되는 직원은 어떻게 적나요?",
+          "a": "수신 확인일은 비우고 비고에 재발송 일정과 다른 전달 방법을 적어 둡니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 기본 정보",
+          "items": [
+            "대상 연도",
+            "부서",
+            "작성 기간",
+            "담당자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 발송 내역",
+          "items": [
+            "수신자",
+            "발송일",
+            "발송 방법",
+            "수신 확인 방법",
+            "확인일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 확인",
+          "items": [],
+          "note": "반송, 재발송, 특이사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-notice-receipt",
+        "annual-leave-timing-designation-notice",
+        "annual-leave-usage-status-confirmation",
+        "unused-annual-leave-pay-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-24T10:29:33+09:00",
+      "updated_at": "2026-10-24T10:29:57+09:00",
       "downloads": 0
     },
     {
@@ -8535,6 +8638,118 @@
       "seal": true
     },
     {
+      "id": "civil-petition-delay-reminder",
+      "title": "민원 처리 지연 독촉서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "민원독촉",
+        "민원처리지연",
+        "처리기한 문의",
+        "민원 재촉",
+        "민원처리 요청"
+      ],
+      "summary": "접수한 민원의 처리기한이 지나도 답이 없을 때 접수번호와 경과 일수를 적어 처리 상황을 묻는 민원 처리 지연 독촉서 양식입니다.",
+      "usage": "관공서에 낸 민원의 회신 예정일이 지났는데 아무 연락이 없을 때 처리 상황과 앞으로의 일정을 알려 달라고 요청하는 문서입니다. 접수 기관, 접수일, 접수번호, 회신 예정일을 정확히 적어야 담당 부서가 건을 바로 찾을 수 있습니다. 감정적인 표현은 빼고 확인하고 싶은 내용만 적는 편이 좋습니다. 처리기간은 민원 종류마다 달라 연장 통지가 이미 와 있을 수도 있으니 보내기 전에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51953,
+        "docx": 38746,
+        "hwpx": 9996
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "접수 기관과 접수일, 접수번호를 적습니다.",
+        "안내받은 회신 예정일과 지난 일수를 적습니다.",
+        "알고 싶은 내용을 체크하고 요청 사항을 적습니다.",
+        "날짜를 쓰고 서명해 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "접수번호를 잃어버렸어요. 어떻게 하나요?",
+          "a": "접수일과 민원 제목만 적어도 담당 부서가 찾을 수 있는 경우가 많습니다. 접수 확인 문자나 메일이 있으면 번호를 확인하십시오."
+        },
+        {
+          "q": "처리기간이 연장 통지된 경우에도 내나요?",
+          "a": "연장 통지서의 기한이 지났는지 먼저 보십시오. 연장된 기한 안이면 기다려야 할 수 있습니다."
+        },
+        {
+          "q": "독촉서를 내면 처리가 빨라지나요?",
+          "a": "단정할 수 없습니다. 다만 진행 상황을 서면으로 확인하는 기록이 되므로 이후 절차에 도움이 될 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 민원인",
+          "items": [
+            "성명",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 접수한 민원",
+          "items": [
+            "접수 기관",
+            "접수일",
+            "접수번호",
+            "담당 부서",
+            "회신 예정일",
+            "지난 일수",
+            "민원 제목"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 알려 주실 내용",
+          "items": [
+            "선택",
+            "요청 내용"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 요청 사항",
+          "items": [],
+          "note": "기한까지 회신을 받지 못한 경위와 바라는 점을 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "civil-petition-reply-request",
+        "gov-admin-appeal",
+        "info-disclosure-request",
+        "civil-petition"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-24T10:29:25+09:00",
+      "updated_at": "2026-10-24T10:29:25+09:00",
+      "downloads": 0
+    },
+    {
       "id": "civil-petition-reply-request",
       "title": "민원 처리결과 회신 요청서",
       "category": "public",
@@ -10073,6 +10288,109 @@
       "warnings": [],
       "created_at": "2026-10-08T08:16:33+09:00",
       "updated_at": "2026-10-08T08:16:33+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "contract-renewal-refusal-notice",
+      "title": "계약 갱신 거절 통지서",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "계약갱신 거절",
+        "갱신 거절 통지",
+        "계약 만료 통보",
+        "재계약 불가",
+        "갱신 거절"
+      ],
+      "summary": "기간이 끝나는 계약을 다시 맺지 않겠다는 뜻을 기한 안에 알리고 기록으로 남기는 계약 갱신 거절 통지서 양식입니다.",
+      "usage": "용역·임대·공급 등 기간이 정해진 계약을 만료일에 끝내고 다시 맺지 않겠다는 뜻을 상대방에게 알리는 문서입니다. 계약 이름, 계약 기간, 만료일과 거절 사유를 사실 위주로 적습니다. 통지 기한과 갱신 거절이 허용되는 사유는 계약서와 법령에 따라 다르므로 보내기 전에 계약서의 갱신 조항을 확인하고, 중요한 계약은 내용증명으로 보내거나 전문가와 상담하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46708,
+        "docx": 38613,
+        "hwpx": 9738
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "보내는 사람과 받는 사람을 적습니다.",
+        "계약 이름과 계약 기간, 만료일을 적습니다.",
+        "갱신하지 않겠다는 뜻과 사유를 적습니다.",
+        "날짜를 쓰고 서명한 뒤 보낸 기록을 남깁니다."
+      ],
+      "faq": [
+        {
+          "q": "통지는 만료 며칠 전까지 해야 하나요?",
+          "a": "계약서와 법령에 따라 다릅니다. 계약서의 갱신 조항을 확인하고 필요하면 전문가와 상담하십시오."
+        },
+        {
+          "q": "거절 사유는 꼭 적어야 하나요?",
+          "a": "사유가 필요한지는 계약 종류에 따라 다릅니다. 사실 위주로 짧게 적어 두는 편이 나중에 확인하기 좋습니다."
+        },
+        {
+          "q": "이메일로 보내도 되나요?",
+          "a": "계약서에 정한 통지 방법이 있으면 따르십시오. 보낸 날짜와 내용을 증명하려면 내용증명이 도움이 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "보내는 사람",
+            "연락처",
+            "주소",
+            "받는 사람"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 계약 내용",
+          "items": [
+            "계약 이름",
+            "계약 체결일",
+            "계약 기간",
+            "만료일",
+            "갱신 조항"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 통지 내용",
+          "items": [],
+          "note": "갱신하지 않는 사유를 사실 위주로 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "certified-notice",
+        "certified-notice-terminate",
+        "settlement-agreement",
+        "delegation-revocation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-24T10:29:45+09:00",
+      "updated_at": "2026-10-24T10:30:03+09:00",
       "downloads": 0
     },
     {
@@ -19342,6 +19660,118 @@
       "downloads": 0
     },
     {
+      "id": "health-insurance-premium-installment-request",
+      "title": "건강보험료 분할납부 신청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "건강보험료 분할납부",
+        "보험료 체납",
+        "분납 신청",
+        "건보료 납부유예",
+        "보험료 분납"
+      ],
+      "summary": "한꺼번에 내기 어려운 건강보험료를 나누어 내겠다고 요청할 때 체납 내역과 분할 계획을 적는 건강보험료 분할납부 신청서 양식입니다.",
+      "usage": "밀린 건강보험료를 한 번에 내기 어려울 때 월별 납부 계획을 적어 공단에 분할 납부를 요청하는 문서입니다. 가입자 구분, 체납 기간과 금액, 희망하는 분할 횟수와 납부일, 어려운 사정을 적습니다. 승인 여부와 분할 횟수는 공단이 사정을 살펴 정하므로 이 서식은 요청 내용을 정리하는 용도입니다. 제출 방법과 필요한 증빙은 공단 지사에 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59898,
+        "docx": 38839,
+        "hwpx": 10294
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인과 가입자 구분, 연락처를 적습니다.",
+        "밀린 보험료의 기간과 금액을 적습니다.",
+        "나누어 낼 횟수와 월별 납부 계획을 적습니다.",
+        "어려운 사정을 적고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "신청하면 반드시 분할납부가 되나요?",
+          "a": "아닙니다. 사정과 체납 내역을 보고 공단이 결정합니다. 결정 전에는 안내에 따라 납부 일정을 확인하십시오."
+        },
+        {
+          "q": "분할 횟수는 몇 회까지 쓸 수 있나요?",
+          "a": "정해진 횟수는 기관 기준에 따릅니다. 희망 횟수를 적고 공단 지사와 상담해 조정하십시오."
+        },
+        {
+          "q": "어려운 사정에 증빙이 필요한가요?",
+          "a": "필요한 서류는 상황마다 다릅니다. 제출 전에 공단 지사에 필요한 증빙을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인",
+          "items": [
+            "성명",
+            "생년월일",
+            "가입자 구분",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 체납 내역",
+          "items": [
+            "체납 기간",
+            "체납 총액",
+            "고지서 번호",
+            "관할 지사"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 분할 납부 계획",
+          "items": [
+            "회차",
+            "납부 예정일",
+            "납부 예정액"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 분할 납부를 요청하는 사정",
+          "items": [],
+          "note": "한꺼번에 내기 어려운 사정을 사실대로 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "insurance-enrollment-confirmation-request",
+        "social-insurance-correction-request",
+        "national-pension-history-poa",
+        "health-insurance-eligibility-history-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-24T10:29:28+09:00",
+      "updated_at": "2026-10-24T10:29:28+09:00",
+      "downloads": 0
+    },
+    {
       "id": "hearing-date-change-request",
       "title": "변론기일 변경 신청서",
       "category": "legal",
@@ -21274,6 +21704,116 @@
       "warnings": [],
       "created_at": "2026-10-02T08:15:57+09:00",
       "updated_at": "2026-10-02T08:15:57+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "insurance-office-manager-change-request",
+      "title": "사회보험 사업장 담당자 변경 신청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "4대보험 담당자 변경",
+        "사업장 담당자",
+        "보험 업무 담당자",
+        "담당자 교체",
+        "사회보험 사업장"
+      ],
+      "summary": "4대보험 업무를 맡는 사업장 담당자가 바뀔 때 기존·신규 담당자와 연락처, 변경일을 적어 알리는 신청서 양식입니다.",
+      "usage": "인사 이동이나 퇴사로 4대보험 업무 담당자가 바뀌었을 때 각 기관에 새 담당자를 알리는 문서입니다. 사업장 정보, 기존 담당자와 새 담당자, 변경 사유와 적용일을 적고 대표자가 서명합니다. 기관마다 접수 방식과 필요한 서류가 다를 수 있으므로 해당 기관의 안내를 먼저 확인하십시오. 담당자 개인정보는 연락에 필요한 항목만 적습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50935,
+        "docx": 38699,
+        "hwpx": 10040
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사업장 이름과 소재지, 관리번호를 적습니다.",
+        "기존 담당자와 새 담당자의 이름과 연락처를 적습니다.",
+        "변경을 알리는 기관을 고르고 변경일을 적습니다.",
+        "대표자가 날짜를 쓰고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "4대보험 기관마다 따로 내야 하나요?",
+          "a": "기관마다 접수 방식이 다를 수 있습니다. 알릴 기관을 체크하고 각 기관의 안내를 확인하십시오."
+        },
+        {
+          "q": "새 담당자의 개인정보를 모두 적어야 하나요?",
+          "a": "연락에 필요한 이름과 부서, 전화, 이메일만 적으면 됩니다. 그 밖의 개인정보는 적지 않습니다."
+        },
+        {
+          "q": "변경일은 신청일과 달라도 되나요?",
+          "a": "다를 수 있습니다. 새 담당자가 업무를 시작한 날을 변경일에 적으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사업장",
+          "items": [
+            "사업장명",
+            "관리번호",
+            "소재지",
+            "대표자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 담당자 변경 내용",
+          "items": [
+            "기존 담당자",
+            "기존 부서",
+            "새 담당자",
+            "새 부서",
+            "새 연락처",
+            "새 이메일",
+            "변경일",
+            "변경 사유"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 알릴 기관",
+          "items": [
+            "선택",
+            "기관"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "social-insurance-filing-poa",
+        "insurance-enrollment-confirmation-request",
+        "social-insurance-correction-request",
+        "workers-comp-claim-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-24T10:29:39+09:00",
+      "updated_at": "2026-10-24T10:29:39+09:00",
       "downloads": 0
     },
     {

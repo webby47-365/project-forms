@@ -1,0 +1,86 @@
+id: health-insurance-premium-installment-request
+title: 건강보험료 분할납부 신청서
+category: public
+subcategory: insurance
+tags: [건강보험료 분할납부, 보험료 체납, 분납 신청, 건보료 납부유예, 보험료 분납]
+summary: 한꺼번에 내기 어려운 건강보험료를 나누어 내겠다고 요청할 때 체납 내역과 분할 계획을 적는 건강보험료 분할납부 신청서 양식입니다.
+usage: >
+  밀린 건강보험료를 한 번에 내기 어려울 때 월별 납부 계획을 적어 공단에 분할 납부를 요청하는 문서입니다.
+  가입자 구분, 체납 기간과 금액, 희망하는 분할 횟수와 납부일, 어려운 사정을 적습니다.
+  승인 여부와 분할 횟수는 공단이 사정을 살펴 정하므로 이 서식은 요청 내용을 정리하는 용도입니다.
+  제출 방법과 필요한 증빙은 공단 지사에 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인과 가입자 구분, 연락처를 적습니다.
+  - 밀린 보험료의 기간과 금액을 적습니다.
+  - 나누어 낼 횟수와 월별 납부 계획을 적습니다.
+  - 어려운 사정을 적고 날짜와 서명을 합니다.
+faq:
+  - q: 신청하면 반드시 분할납부가 되나요?
+    a: 아닙니다. 사정과 체납 내역을 보고 공단이 결정합니다. 결정 전에는 안내에 따라 납부 일정을 확인하십시오.
+  - q: 분할 횟수는 몇 회까지 쓸 수 있나요?
+    a: 정해진 횟수는 기관 기준에 따릅니다. 희망 횟수를 적고 공단 지사와 상담해 조정하십시오.
+  - q: 어려운 사정에 증빙이 필요한가요?
+    a: 필요한 서류는 상황마다 다릅니다. 제출 전에 공단 지사에 필요한 증빙을 확인하십시오.
+related: [insurance-enrollment-confirmation-request, social-insurance-correction-request, national-pension-history-poa, health-insurance-eligibility-history-poa]
+blocks:
+  - type: doc_title
+    text: 건강보험료 분할납부 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["가입자 구분", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-03-02"]
+      - ["", "지역가입자", "", "010-1234-5678"]
+      - ["", "서울특별시 중구 세종대로 110", "", ""]
+  - type: subtitle
+    text: 2. 체납 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["체납 기간", "", "체납 총액", ""]
+      - ["고지서 번호", "", "관할 지사", ""]
+    sample_rows:
+      - ["", "2026-04 ~ 2026-09", "", "840,000원"]
+      - ["", "0000-000000", "", "○○지사"]
+  - type: subtitle
+    text: 3. 분할 납부 계획
+  - type: table
+    widths: [14, 30, 30, 26]
+    header: ["회차", 납부 예정일, 납부 예정액, 비고]
+    empty_rows: 6
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "2026-11-10", "140,000원", ""]
+      - ["2", "2026-12-10", "140,000원", ""]
+      - ["3", "2027-01-10", "140,000원", ""]
+  - type: subtitle
+    text: 4. 분할 납부를 요청하는 사정
+  - type: textbox
+    hint: "한꺼번에 내기 어려운 사정을 사실대로 간단히 적으십시오."
+    height_mm: 24
+    sample_text: 수입이 줄어 밀린 보험료를 한 번에 내기 어렵습니다. 6회로 나누어 매월 납부하겠으니 검토해 주시기 바랍니다.
+  - type: para
+    text: 위와 같이 건강보험료의 분할 납부를 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   24 일
+  - type: sign_line
+    labels: ["신청인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 승인 여부와 분할 횟수는 공단이 정합니다. 제출 방법과 증빙은 관할 지사에 확인하십시오.

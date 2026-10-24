@@ -1,0 +1,67 @@
+id: annual-leave-notice-dispatch-ledger
+title: 연차 사용 촉진 통지 발송 대장
+category: corp
+subcategory: hr
+tags: [연차촉진 발송대장, 통지서 발송, 연차 촉진 증빙, 발송 기록, 수신 확인]
+summary: 연차 사용 촉진 통지서를 누구에게 언제 어떤 방법으로 보냈고 받았는지 한 장에 모아 기록하는 발송 대장 양식입니다.
+usage: >
+  연차 사용 촉진 통지서를 여러 명에게 보낼 때 발송일, 발송 방법, 수신 확인 방법과 재발송 여부를 대장으로 남기는 문서입니다.
+  나중에 통지 사실을 확인해야 할 때 근거 자료로 쓰기 좋습니다.
+  통지 종류(1차·2차)를 칸마다 구분해 적고, 반송되거나 수신이 확인되지 않은 건은 비고에 조치를 적어 두십시오.
+  촉진 절차의 적법 여부는 사업장 사정에 따라 달라지므로 노무 담당자와 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 대상 연도와 부서, 담당자를 적습니다.
+  - 통지 종류와 수신자, 발송일, 발송 방법을 줄마다 적습니다.
+  - 수신 확인 방법과 확인일을 적습니다.
+  - 반송이나 재발송이 있으면 비고에 적고 담당자가 서명합니다.
+faq:
+  - q: 1차와 2차를 한 장에 함께 적어도 되나요?
+    a: 됩니다. 통지 종류 칸에 1차 또는 2차를 구분해 적으면 한 장으로 관리할 수 있습니다.
+  - q: 이메일로 보내면 어떻게 기록하나요?
+    a: 발송 방법에 이메일이라고 적고, 수신 확인 방법에 회신 메일이나 열람 기록 등을 적습니다.
+  - q: 수신 확인이 안 되는 직원은 어떻게 적나요?
+    a: 수신 확인일은 비우고 비고에 재발송 일정과 다른 전달 방법을 적어 둡니다.
+related: [annual-leave-notice-receipt, annual-leave-timing-designation-notice, annual-leave-usage-status-confirmation, unused-annual-leave-pay-request]
+blocks:
+  - type: doc_title
+    text: 연차 사용 촉진 통지 발송 대장
+    spaced: false
+  - type: subtitle
+    text: 1. 기본 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["대상 연도", "", "부서", ""]
+      - ["작성 기간", "", "담당자", ""]
+    sample_rows:
+      - ["", "2026년", "", "경영지원팀"]
+      - ["", "10-26 ~ 11-06", "", "박민준"]
+  - type: subtitle
+    text: 2. 발송 내역
+  - type: table
+    widths: [6, 9, 12, 12, 13, 15, 12, 21]
+    header: ["No", 구분, 수신자, 발송일, 발송 방법, 수신 확인 방법, 확인일, 비고]
+    empty_rows: 10
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "1차", "김서연", "11-03", "이메일", "회신 메일", "11-03", ""]
+      - ["2", "1차", "이수현", "11-03", "이메일", "서명 수령", "11-04", ""]
+      - ["3", "1차", "최지우", "11-03", "우편", "반송 확인", "", "재발송 예정"]
+  - type: subtitle
+    text: 3. 확인
+  - type: textbox
+    hint: "반송, 재발송, 특이사항을 적으십시오."
+    height_mm: 18
+    sample_text: 최지우 님 우편 건은 반송되어 이메일과 직접 전달로 재발송 예정입니다.
+  - type: date_line
+    sample_text: 2026 년   11 월   6 일
+  - type: sign_line
+    labels: ["담당자", "확인자"]
+    sample_names: [박민준, 이수현]
+  - type: notice
+    text: 촉진 절차의 적법 여부는 사업장 사정에 따라 다릅니다. 노무 담당자와 확인하십시오.
