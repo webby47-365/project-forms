@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T10:30:03+09:00",
-  "count": 413,
+  "generated_at": "2026-10-26T10:06:52+09:00",
+  "count": 418,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -1287,6 +1287,100 @@
         "employee-roster"
       ],
       "seal": true
+    },
+    {
+      "id": "annual-leave-plan-submission-request",
+      "title": "연차 사용계획 제출 요청서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차 사용계획 제출",
+        "연차 계획 요청",
+        "연차 사용 촉진",
+        "연차계획서 제출 요청",
+        "연차 안내"
+      ],
+      "summary": "남은 연차의 사용 시기를 정해 제출하도록 근로자에게 기한을 정해 요청하는 연차 사용계획 제출 요청서 양식입니다.",
+      "usage": "연차 사용 촉진 시기에 근로자별 남은 연차 일수를 알리고 사용계획 제출을 요청하는 회사용 문서입니다. 대상자, 남은 연차 일수, 제출 기한, 제출 방법을 적고 근로자가 확인해 서명하도록 합니다. 법에 따른 연차 사용 촉진의 방식과 기한은 정해진 절차를 따라야 하므로 이 요청서는 안내용으로 쓰고, 실제 촉진 통지는 연차 사용 촉진 통지서 등으로 별도로 진행하며 고용노동부 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46029,
+        "docx": 38548,
+        "hwpx": 9614
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청 대상자와 남은 연차 일수를 적습니다.",
+        "제출 기한과 제출 방법을 적습니다.",
+        "요청 날짜와 담당자를 적습니다.",
+        "근로자가 수령을 확인하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 요청서만으로 연차 사용 촉진이 되나요?",
+          "a": "이 문서는 제출을 안내하는 용도입니다. 법에 따른 촉진은 정해진 통지 절차와 기한을 따라야 하므로 별도로 확인하십시오."
+        },
+        {
+          "q": "제출 기한은 어떻게 정하나요?",
+          "a": "근로자가 계획을 세울 시간을 줄 수 있도록 여유 있게 정하고, 회사의 촉진 일정에 맞추십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청 대상",
+          "items": [
+            "성명",
+            "부서·직위",
+            "입사일",
+            "발생 연차",
+            "사용 연차",
+            "남은 연차"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 제출 안내",
+          "items": [
+            "제출 기한",
+            "제출 방법",
+            "제출처"
+          ],
+          "note": "추가 안내 사항이 있으면 적으십시오 (사용 가능 기간, 부서 일정 조율 등)."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-promotion-notice",
+        "annual-leave-plan",
+        "annual-leave-reply",
+        "annual-leave-team-schedule"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-26T10:06:40+09:00",
+      "updated_at": "2026-10-26T10:06:40+09:00",
+      "downloads": 0
     },
     {
       "id": "annual-leave-promotion-notice",
@@ -8523,6 +8617,113 @@
         "settlement-agreement"
       ],
       "seal": true
+    },
+    {
+      "id": "civil-officer-meeting-request",
+      "title": "민원 담당자 면담 신청서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "민원 면담",
+        "담당자 면담",
+        "면담 신청",
+        "민원 상담 신청",
+        "방문 면담"
+      ],
+      "summary": "접수한 민원의 처리 상황이나 보완 사항을 담당자와 직접 이야기하기 위해 면담 일시를 요청하는 민원 담당자 면담 신청서 양식입니다.",
+      "usage": "이미 접수한 민원의 진행 상황을 확인하거나 설명이 필요할 때 담당 공무원과의 면담을 요청하는 문서입니다. 민원 접수번호와 제목, 면담에서 다루고 싶은 내용, 희망 일시를 적습니다. 면담 가능 여부와 방식(방문·전화)은 기관 사정에 따라 다르므로 신청 후 회신을 확인하고, 기관별 별도 양식이나 온라인 예약이 있으면 그 절차를 따르십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49578,
+        "docx": 38677,
+        "hwpx": 9946
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인 정보와 연락처를 적습니다.",
+        "민원 접수번호와 제목을 적습니다.",
+        "면담에서 확인하고 싶은 내용을 적습니다.",
+        "희망 일시를 두세 개 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "접수번호를 모르면 신청할 수 있나요?",
+          "a": "접수 일자와 민원 제목을 적으면 담당자가 찾는 데 도움이 됩니다. 접수 안내 문자나 영수증을 확인해 보십시오."
+        },
+        {
+          "q": "면담은 반드시 해 주나요?",
+          "a": "기관 사정에 따라 일정이나 방식이 달라질 수 있습니다. 신청 후 회신을 확인하고 필요하면 전화 상담을 함께 요청하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인",
+          "items": [
+            "성명",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 면담 대상 민원",
+          "items": [
+            "접수번호",
+            "접수일",
+            "민원 제목",
+            "제출 기관"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 면담 요청 내용",
+          "items": [],
+          "note": "면담에서 확인하거나 설명하고 싶은 내용을 간단히 적으십시오."
+        },
+        {
+          "title": "4. 희망 일시",
+          "items": [
+            "순위",
+            "희망 날짜",
+            "희망 시간",
+            "방식"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "civil-petition-delay-reminder",
+        "civil-petition",
+        "info-disclosure-request",
+        "privacy-access-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-26T10:06:30+09:00",
+      "updated_at": "2026-10-26T10:06:30+09:00",
+      "downloads": 0
     },
     {
       "id": "civil-petition",
@@ -19772,6 +19973,108 @@
       "downloads": 0
     },
     {
+      "id": "health-insurance-premium-refund-request",
+      "title": "건강보험료 환급 신청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "건강보험료 환급",
+        "보험료 과오납",
+        "환급금 신청",
+        "건보료 환급",
+        "환급 계좌"
+      ],
+      "summary": "건강보험료를 더 낸 경우 환급금을 받을 계좌와 사유를 적어 신청하는 건강보험료 환급 신청서 양식입니다.",
+      "usage": "보험료를 잘못 냈거나 자격 변동·소득 정산으로 더 낸 금액이 생겼을 때 환급을 요청하는 문서입니다. 가입자 정보, 환급을 요청하는 기간과 금액, 받을 계좌를 적습니다. 환급 대상 여부와 금액은 공단의 산정에 따라 정해지므로 신청서는 요청의 틀로만 쓰고, 제출 방법과 필요 서류는 국민건강보험공단 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48555,
+        "docx": 38605,
+        "hwpx": 9741
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "가입자 성명과 연락처를 적습니다.",
+        "환급을 요청하는 기간과 사유를 적습니다.",
+        "환급받을 금액과 계좌를 적습니다.",
+        "날짜를 쓰고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "환급 금액을 정확히 몰라도 되나요?",
+          "a": "고지서나 납부 내역에서 확인한 금액을 적고, 모르면 비워 두고 사유만 적어도 됩니다. 최종 금액은 공단이 산정합니다."
+        },
+        {
+          "q": "다른 사람 계좌로 받을 수 있나요?",
+          "a": "가입자 본인 명의 계좌가 원칙입니다. 예외 여부는 공단 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 가입자 정보",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소",
+            "연락처",
+            "가입자 구분"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 환급 요청 내용",
+          "items": [
+            "대상 기간",
+            "환급 요청액",
+            "환급 사유"
+          ],
+          "note": "환급을 요청하게 된 경위를 사실 위주로 적으십시오."
+        },
+        {
+          "title": "3. 환급금 수령 계좌",
+          "items": [
+            "은행명",
+            "예금주",
+            "계좌번호"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "health-insurance-premium-installment-request",
+        "health-insurance-eligibility-history-poa",
+        "health-insurance-dependent-poa",
+        "privacy-access-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-26T10:06:33+09:00",
+      "updated_at": "2026-10-26T10:06:33+09:00",
+      "downloads": 0
+    },
+    {
       "id": "hearing-date-change-request",
       "title": "변론기일 변경 신청서",
       "category": "legal",
@@ -23576,6 +23879,109 @@
         "deposit-return-notice"
       ],
       "seal": true
+    },
+    {
+      "id": "lease-renewal-refusal-notice",
+      "title": "임대차 갱신 거절 통지서",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "임대차 갱신 거절",
+        "계약갱신 거절",
+        "임대차 만료 통지",
+        "갱신 불가 통보",
+        "재계약 거절"
+      ],
+      "summary": "임대차 계약을 만료일에 끝내고 갱신하지 않겠다는 뜻을 임대인 또는 임차인이 상대방에게 알리는 임대차 갱신 거절 통지서 양식입니다.",
+      "usage": "주택이나 상가 임대차의 기간이 끝나기 전에 계약을 다시 맺지 않겠다는 뜻을 알리는 문서입니다. 임대 목적물, 보증금과 월 차임, 계약 기간과 만료일, 거절 사유를 사실 위주로 적습니다. 통지 기한과 갱신 거절이 허용되는 사유는 법령과 계약 내용에 따라 달라지므로 보내기 전에 계약서와 관련 법령을 확인하고, 분쟁 가능성이 있으면 내용증명 발송과 전문가 상담을 고려하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 44464,
+        "docx": 38576,
+        "hwpx": 9684
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "보내는 사람과 받는 사람을 적습니다.",
+        "임대 목적물과 보증금, 계약 기간을 적습니다.",
+        "갱신하지 않겠다는 뜻과 사유를 적습니다.",
+        "날짜를 쓰고 서명한 뒤 보낸 기록을 남깁니다."
+      ],
+      "faq": [
+        {
+          "q": "통지는 언제까지 해야 하나요?",
+          "a": "법령과 계약 내용에 따라 다릅니다. 만료일 전 정해진 기간이 있는지 계약서와 관련 법령을 확인하십시오."
+        },
+        {
+          "q": "사유를 꼭 적어야 하나요?",
+          "a": "거절이 허용되는 사유가 정해진 경우가 있습니다. 사실 위주로 구체적으로 적어 두고 필요하면 전문가와 상담하십시오."
+        },
+        {
+          "q": "어떻게 보내야 증거가 남나요?",
+          "a": "내용증명이나 문자·이메일 등 보낸 날짜가 남는 방법을 쓰고, 보낸 사본을 보관하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "보내는 사람",
+            "연락처",
+            "주소",
+            "받는 사람"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 임대차 내용",
+          "items": [
+            "목적물 소재지",
+            "보증금",
+            "월 차임",
+            "계약 기간",
+            "만료일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 통지 내용",
+          "items": [],
+          "note": "갱신하지 않는 사유를 사실 위주로 구체적으로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "certified-notice",
+        "lease-termination-notice",
+        "deposit-return-notice",
+        "lease-deposit-return-schedule-agreement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-26T10:06:36+09:00",
+      "updated_at": "2026-10-26T10:06:52+09:00",
+      "downloads": 0
     },
     {
       "id": "lease-repair-request",
@@ -36126,6 +36532,111 @@
         "articles-of-incorporation"
       ],
       "seal": true
+    },
+    {
+      "id": "shareholder-register-inspection-request",
+      "title": "주주명부 열람 등사 청구서",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "주주명부 열람",
+        "주주명부 등사",
+        "열람 청구",
+        "주주 권리",
+        "명부 사본 청구"
+      ],
+      "summary": "주주가 회사에 주주명부의 열람이나 복사를 청구하면서 목적과 범위를 적어 보내는 주주명부 열람 등사 청구서 양식입니다.",
+      "usage": "주주가 회사에 주주명부를 보거나 복사해 달라고 요청할 때 쓰는 문서입니다. 청구인의 주주 지위(보유 주식 수), 열람 또는 등사의 범위, 청구 목적을 구체적으로 적습니다. 청구가 받아들여지는 요건과 범위는 법령과 정관에 따라 다르고 개인정보 보호도 함께 고려되므로, 보내기 전에 관련 규정을 확인하고 분쟁 소지가 있으면 전문가와 상담하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 42730,
+        "docx": 38544,
+        "hwpx": 9664
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "청구인과 회사 정보를 적습니다.",
+        "보유 주식 수와 주주 지위를 적습니다.",
+        "열람 또는 등사할 범위와 청구 목적을 적습니다.",
+        "날짜를 쓰고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "청구 목적은 꼭 적어야 하나요?",
+          "a": "목적이 구체적일수록 회사가 판단하기 쉽습니다. 청구 요건은 법령과 정관에 따라 다르므로 확인하십시오."
+        },
+        {
+          "q": "열람과 등사는 무엇이 다른가요?",
+          "a": "열람은 눈으로 보는 것이고 등사는 복사해 가져가는 것입니다. 필요한 방식에 표시하십시오."
+        },
+        {
+          "q": "어떻게 보내야 하나요?",
+          "a": "보낸 날짜가 남는 방법으로 보내고 사본을 보관하십시오. 필요하면 내용증명을 쓰십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 청구인",
+          "items": [
+            "성명",
+            "연락처",
+            "주소",
+            "보유 주식 수",
+            "주식 종류"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 청구 대상 회사",
+          "items": [
+            "회사명",
+            "대표자",
+            "본점 주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 청구 내용",
+          "items": [
+            "청구 방식",
+            "희망 기한"
+          ],
+          "note": "열람 또는 등사할 범위와 청구 목적을 구체적으로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "shareholder-register",
+        "shareholder-meeting-notice",
+        "shareholder-meeting-minutes",
+        "certified-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-26T10:06:43+09:00",
+      "updated_at": "2026-10-26T10:06:43+09:00",
+      "downloads": 0
     },
     {
       "id": "signboard-installation-consent",

@@ -1,0 +1,86 @@
+id: health-insurance-premium-refund-request
+title: 건강보험료 환급 신청서
+category: public
+subcategory: insurance
+tags: [건강보험료 환급, 보험료 과오납, 환급금 신청, 건보료 환급, 환급 계좌]
+summary: 건강보험료를 더 낸 경우 환급금을 받을 계좌와 사유를 적어 신청하는 건강보험료 환급 신청서 양식입니다.
+usage: >
+  보험료를 잘못 냈거나 자격 변동·소득 정산으로 더 낸 금액이 생겼을 때 환급을 요청하는 문서입니다.
+  가입자 정보, 환급을 요청하는 기간과 금액, 받을 계좌를 적습니다.
+  환급 대상 여부와 금액은 공단의 산정에 따라 정해지므로 신청서는 요청의 틀로만 쓰고,
+  제출 방법과 필요 서류는 국민건강보험공단 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 가입자 성명과 연락처를 적습니다.
+  - 환급을 요청하는 기간과 사유를 적습니다.
+  - 환급받을 금액과 계좌를 적습니다.
+  - 날짜를 쓰고 서명합니다.
+faq:
+  - q: 환급 금액을 정확히 몰라도 되나요?
+    a: 고지서나 납부 내역에서 확인한 금액을 적고, 모르면 비워 두고 사유만 적어도 됩니다. 최종 금액은 공단이 산정합니다.
+  - q: 다른 사람 계좌로 받을 수 있나요?
+    a: 가입자 본인 명의 계좌가 원칙입니다. 예외 여부는 공단 안내를 확인하십시오.
+related: [health-insurance-premium-installment-request, health-insurance-eligibility-history-poa, health-insurance-dependent-poa, privacy-access-request]
+blocks:
+  - type: doc_title
+    text: 건강보험료 환급 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 가입자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["주소", "", "", ""]
+      - ["연락처", "", "가입자 구분", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-03-02"]
+      - ["", "서울특별시 강동구 천호대로 1000", "", ""]
+      - ["", "010-1234-5678", "", "지역가입자"]
+  - type: subtitle
+    text: 2. 환급 요청 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["대상 기간", "", "환급 요청액", ""]
+      - ["환급 사유", "", "", ""]
+    sample_rows:
+      - ["", "2026-01 ~ 2026-06", "", "약 120,000원"]
+      - ["", "자격 변동 후 보험료 중복 납부", "", ""]
+  - type: textbox
+    hint: "환급을 요청하게 된 경위를 사실 위주로 적으십시오."
+    height_mm: 26
+    sample_text: 직장가입자로 자격이 바뀐 뒤에도 지역가입자 보험료가 계속 납부되어 중복 납부 내역을 확인했습니다. 확인 후 환급을 요청합니다.
+  - type: subtitle
+    text: 3. 환급금 수령 계좌
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["은행명", "", "예금주", ""]
+      - ["계좌번호", "", "", ""]
+    merges:
+      - [1, 1, 1, 3]
+    sample_rows:
+      - ["", "OO은행", "", "홍길동"]
+      - ["", "000-00-000000", "", ""]
+  - type: para
+    text: 위와 같이 건강보험료 환급을 신청합니다.
+  - type: date_line
+    sample_text: 2026 년   10 월   26 일
+  - type: sign_line
+    labels: ["신청인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 환급 여부와 금액은 공단의 산정에 따릅니다. 제출 방법과 필요 서류는 국민건강보험공단 안내를 확인하십시오.

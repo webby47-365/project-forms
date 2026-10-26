@@ -1,0 +1,84 @@
+id: shareholder-register-inspection-request
+title: 주주명부 열람 등사 청구서
+category: corp
+subcategory: startup
+tags: [주주명부 열람, 주주명부 등사, 열람 청구, 주주 권리, 명부 사본 청구]
+summary: 주주가 회사에 주주명부의 열람이나 복사를 청구하면서 목적과 범위를 적어 보내는 주주명부 열람 등사 청구서 양식입니다.
+usage: >
+  주주가 회사에 주주명부를 보거나 복사해 달라고 요청할 때 쓰는 문서입니다.
+  청구인의 주주 지위(보유 주식 수), 열람 또는 등사의 범위, 청구 목적을 구체적으로 적습니다.
+  청구가 받아들여지는 요건과 범위는 법령과 정관에 따라 다르고 개인정보 보호도 함께 고려되므로,
+  보내기 전에 관련 규정을 확인하고 분쟁 소지가 있으면 전문가와 상담하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 청구인과 회사 정보를 적습니다.
+  - 보유 주식 수와 주주 지위를 적습니다.
+  - 열람 또는 등사할 범위와 청구 목적을 적습니다.
+  - 날짜를 쓰고 서명합니다.
+faq:
+  - q: 청구 목적은 꼭 적어야 하나요?
+    a: 목적이 구체적일수록 회사가 판단하기 쉽습니다. 청구 요건은 법령과 정관에 따라 다르므로 확인하십시오.
+  - q: 열람과 등사는 무엇이 다른가요?
+    a: 열람은 눈으로 보는 것이고 등사는 복사해 가져가는 것입니다. 필요한 방식에 표시하십시오.
+  - q: 어떻게 보내야 하나요?
+    a: 보낸 날짜가 남는 방법으로 보내고 사본을 보관하십시오. 필요하면 내용증명을 쓰십시오.
+related: [shareholder-register, shareholder-meeting-notice, shareholder-meeting-minutes, certified-notice]
+blocks:
+  - type: doc_title
+    text: 주주명부 열람 등사 청구서
+    spaced: false
+  - type: subtitle
+    text: 1. 청구인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+      - ["보유 주식 수", "", "주식 종류", ""]
+    sample_rows:
+      - ["", "이수현", "", "010-1234-5678"]
+      - ["", "서울특별시 성동구 왕십리로 50", "", ""]
+      - ["", "1,000주", "", "보통주"]
+  - type: subtitle
+    text: 2. 청구 대상 회사
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["회사명", "", "대표자", ""]
+      - ["본점 주소", "", "", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "박민준"]
+      - ["", "서울특별시 마포구 월드컵북로 400", "", ""]
+  - type: subtitle
+    text: 3. 청구 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["청구 방식", "", "희망 기한", ""]
+    sample_rows:
+      - ["", "열람 및 등사", "", "2026-11-09"]
+  - type: textbox
+    hint: "열람 또는 등사할 범위와 청구 목적을 구체적으로 적으십시오."
+    height_mm: 30
+    sample_text: 최근 주주명부의 주주 구성과 보유 주식 수를 확인하기 위해 주주명부 전체의 열람과 사본 교부를 청구합니다. 확인한 내용은 청구 목적 외에 사용하지 않겠습니다.
+  - type: para
+    text: 위와 같이 주주명부의 열람 및 등사를 청구합니다.
+  - type: date_line
+    sample_text: 2026 년   10 월   26 일
+  - type: sign_line
+    labels: ["청구인"]
+    sample_names: [이수현]
+  - type: notice
+    text: 청구 요건과 범위는 법령과 정관에 따라 다릅니다. 보내기 전에 관련 규정을 확인하십시오.

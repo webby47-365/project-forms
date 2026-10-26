@@ -1,0 +1,86 @@
+id: civil-officer-meeting-request
+title: 민원 담당자 면담 신청서
+category: public
+subcategory: civil
+tags: [민원 면담, 담당자 면담, 면담 신청, 민원 상담 신청, 방문 면담]
+summary: 접수한 민원의 처리 상황이나 보완 사항을 담당자와 직접 이야기하기 위해 면담 일시를 요청하는 민원 담당자 면담 신청서 양식입니다.
+usage: >
+  이미 접수한 민원의 진행 상황을 확인하거나 설명이 필요할 때 담당 공무원과의 면담을 요청하는 문서입니다.
+  민원 접수번호와 제목, 면담에서 다루고 싶은 내용, 희망 일시를 적습니다.
+  면담 가능 여부와 방식(방문·전화)은 기관 사정에 따라 다르므로 신청 후 회신을 확인하고,
+  기관별 별도 양식이나 온라인 예약이 있으면 그 절차를 따르십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인 정보와 연락처를 적습니다.
+  - 민원 접수번호와 제목을 적습니다.
+  - 면담에서 확인하고 싶은 내용을 적습니다.
+  - 희망 일시를 두세 개 적고 서명합니다.
+faq:
+  - q: 접수번호를 모르면 신청할 수 있나요?
+    a: 접수 일자와 민원 제목을 적으면 담당자가 찾는 데 도움이 됩니다. 접수 안내 문자나 영수증을 확인해 보십시오.
+  - q: 면담은 반드시 해 주나요?
+    a: 기관 사정에 따라 일정이나 방식이 달라질 수 있습니다. 신청 후 회신을 확인하고 필요하면 전화 상담을 함께 요청하십시오.
+related: [civil-petition-delay-reminder, civil-petition, info-disclosure-request, privacy-access-request]
+blocks:
+  - type: doc_title
+    text: 민원 담당자 면담 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울특별시 강동구 천호대로 1000", "", ""]
+  - type: subtitle
+    text: 2. 면담 대상 민원
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [1, 1, 1, 3]
+      - [2, 1, 2, 3]
+    rows:
+      - ["접수번호", "", "접수일", ""]
+      - ["민원 제목", "", "", ""]
+      - ["제출 기관", "", "", ""]
+    sample_rows:
+      - ["", "2026-000000", "", "2026-10-12"]
+      - ["", "도로 파손 보수 요청", "", ""]
+      - ["", "OO구청 도로과", "", ""]
+  - type: subtitle
+    text: 3. 면담 요청 내용
+  - type: textbox
+    hint: "면담에서 확인하거나 설명하고 싶은 내용을 간단히 적으십시오."
+    height_mm: 30
+    sample_text: 접수한 민원의 처리 진행 상황과 현장 확인 일정을 직접 확인하고 싶습니다. 추가로 필요한 자료가 있으면 면담 때 가져가겠습니다.
+  - type: subtitle
+    text: 4. 희망 일시
+  - type: table
+    widths: [12, 30, 30, 28]
+    header: ["순위", 희망 날짜, 희망 시간, 방식]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "2026-11-02", "14:00", "방문"]
+      - ["2", "2026-11-03", "10:00", "전화"]
+  - type: para
+    text: 위와 같이 담당자 면담을 신청합니다.
+  - type: date_line
+    sample_text: 2026 년   10 월   26 일
+  - type: sign_line
+    labels: ["신청인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 면담 가능 여부와 방식은 기관 사정에 따라 다릅니다. 해당 기관의 안내를 확인하십시오.

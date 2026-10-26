@@ -29,7 +29,7 @@
       "lead": "집을 구할 때부터 보증금을 돌려받을 때까지 필요한 계약·확인·통지 서식입니다.",
       "ids": [
         "housing-lease-contract", "commercial-lease-contract",
-        "lease-renewal-contract", "move-in-checklist", "monthly-rent-receipt",
+        "lease-renewal-contract", "lease-renewal-refusal-notice", "move-in-checklist", "monthly-rent-receipt",
         "moving-in-report", "move-in-report-poa", "moving-checklist", "lease-termination-notice", "lease-repair-request",
         "move-out-checklist", "management-fee-settlement-confirmation",
         "lease-deposit-return-schedule-agreement", "deposit-return-notice", "resident-registration-request"
