@@ -1,0 +1,75 @@
+id: care-service-termination-request
+title: 돌봄서비스 이용 종료 신청서
+category: welfare
+subcategory: consent
+tags: [돌봄서비스종료, 서비스이용중단, 요양서비스해지, 이용종료신청, 복지서비스종료]
+summary: 이용 중인 돌봄·요양 서비스를 그만둘 때 이용자, 종료 희망일과 사유를 적어 기관에 제출하는 신청서입니다.
+usage: >
+  이용 중인 돌봄이나 방문요양 같은 서비스를 더 이용하지 않기로 했을 때 기관에 제출하는 서식입니다.
+  이용자와 신청인, 이용 기관과 서비스 종류를 적고 종료를 원하는 날짜와 사유를 씁니다. 남은 이용료
+  정산과 제공 물품 반납은 기관 규정에 따르므로 신청 전에 기관에 확인하십시오. 접수 사실이 남도록
+  사본을 보관하고, 신청서는 종료를 요청하는 문서이며 처리는 기관이 합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 이용자와 신청인, 이용자와의 관계를 적습니다.
+  - 이용 기관과 서비스 종류를 적습니다.
+  - 종료 희망일과 종료 사유를 적습니다.
+  - 신청일을 적고 서명한 뒤 기관에 제출하고 사본을 보관합니다.
+faq:
+  - q: 이용료는 어떻게 정산하나요?
+    a: 기관 규정에 따라 정해집니다. 종료 전에 정산 방법을 기관에 확인하십시오.
+  - q: 가족이 대신 신청해도 되나요?
+    a: 가능한 경우가 많지만 관계 확인 서류가 필요할 수 있습니다. 기관에 문의하십시오.
+  - q: 종료 사유를 꼭 자세히 써야 하나요?
+    a: 간단히 적어도 됩니다. 개인 건강 정보는 적지 않아도 됩니다.
+related: [welfare-service-change-request, welfare-facility-withdrawal-request, care-service-application, home-care-visit-record]
+blocks:
+  - type: doc_title
+    text: 돌봄서비스 이용 종료 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 이용자와 신청인
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["이용자", "", "생년월일", ""]
+      - ["신청인", "", "이용자와 관계", ""]
+      - ["연락처", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "박민준", "", "1950-01-01"]
+      - ["", "박수현", "", "자녀"]
+      - ["", "010-1234-5678", "", ""]
+  - type: subtitle
+    text: 2. 이용 서비스
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["이용 기관", "", "서비스 종류", ""]
+      - ["이용 시작일", "", "종료 희망일", ""]
+    sample_rows:
+      - ["", "○○돌봄센터", "", "방문 돌봄"]
+      - ["", "2026-03-02", "", "2026-11-30"]
+  - type: subtitle
+    text: 3. 종료 사유
+  - type: textbox
+    hint: "이용을 종료하려는 이유와 기관에 요청할 사항을 적으십시오."
+    height_mm: 34
+    sample_text: "가족이 직접 돌볼 수 있게 되어 이번 달 말까지만 이용하려 합니다. 남은 이용료 정산 방법을 안내해 주시기 바랍니다."
+  - type: para
+    text: 위와 같이 돌봄서비스 이용의 종료를 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   27 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [박수현]
+  - type: notice
+    text: 정산 방법과 필요 서류는 이용 기관의 규정을 확인하십시오.

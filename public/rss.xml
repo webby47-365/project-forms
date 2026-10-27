@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 418종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 423종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>돌봄서비스 이용 종료 신청서</title>
+<link>https://freeforms.kr/form/care-service-termination-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/care-service-termination-request/</guid>
+<category>의료·복지 · 동의·신청</category>
+<pubDate>Tue, 27 Oct 2026 00:00:00 +0900</pubDate>
+<description>이용 중인 돌봄·요양 서비스를 그만둘 때 이용자, 종료 희망일과 사유를 적어 기관에 제출하는 신청서입니다.</description>
+</item>
+<item>
+<title>물품 대여 확인서</title>
+<link>https://freeforms.kr/form/item-loan-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/item-loan-confirmation/</guid>
+<category>개인 · 생활·가정</category>
+<pubDate>Tue, 27 Oct 2026 00:00:00 +0900</pubDate>
+<description>지인이나 이웃에게 물건을 빌려줄 때 품목·상태·반납 기한을 적어 서로 확인하는 개인 간 대여 확인서입니다.</description>
+</item>
+<item>
+<title>계약기간 연장 요청서</title>
+<link>https://freeforms.kr/form/contract-period-extension-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/contract-period-extension-request/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Tue, 27 Oct 2026 00:00:00 +0900</pubDate>
+<description>계약 이행이 늦어질 때 연장이 필요한 사유와 희망 기한을 적어 발주처에 연장을 요청하는 요청서입니다.</description>
+</item>
+<item>
+<title>송달료 환급 신청서</title>
+<link>https://freeforms.kr/form/service-fee-refund-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/service-fee-refund-request/</guid>
+<category>법률 · 소송·민원</category>
+<pubDate>Tue, 27 Oct 2026 00:00:00 +0900</pubDate>
+<description>소송이 끝난 뒤 쓰고 남은 송달료를 돌려받기 위해 사건 정보와 환급 계좌를 적어 제출하는 신청서입니다.</description>
+</item>
+<item>
+<title>연차휴가 일괄 사용 합의서</title>
+<link>https://freeforms.kr/form/annual-leave-collective-use-agreement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-collective-use-agreement/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Tue, 27 Oct 2026 00:00:00 +0900</pubDate>
+<description>연말연시나 하계 휴가처럼 회사가 정한 특정일에 전 직원이 연차를 함께 쓰기로 근로자대표와 합의하는 서면 합의서입니다.</description>
+</item>
 <item>
 <title>주주명부 열람 등사 청구서</title>
 <link>https://freeforms.kr/form/shareholder-register-inspection-request/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 인사·노무</category>
 <pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
 <description>이미 신청하거나 승인받은 연차 휴가를 쓰지 않기로 했을 때 취소 사유와 잔여 연차 복원을 요청하는 연차 휴가 신청 취소서 양식입니다.</description>
-</item>
-<item>
-<title>연차 사용 시기 협의 기록서</title>
-<link>https://freeforms.kr/form/annual-leave-timing-consultation-record/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-timing-consultation-record/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Tue, 20 Oct 2026 00:00:00 +0900</pubDate>
-<description>근로자와 회사가 연차 사용 시기를 협의한 날짜와 내용, 합의 결과를 남기는 연차 사용 시기 협의 기록서 양식입니다.</description>
-</item>
-<item>
-<title>개인정보 열람 요구서</title>
-<link>https://freeforms.kr/form/privacy-access-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/privacy-access-request/</guid>
-<category>공공 · 신청·동의</category>
-<pubDate>Tue, 20 Oct 2026 00:00:00 +0900</pubDate>
-<description>기관이나 업체가 보유한 내 개인정보의 열람을 요구할 때 쓰는 개인정보 열람 요구서 양식입니다.</description>
-</item>
-<item>
-<title>행사 참가 취소·환불 신청서</title>
-<link>https://freeforms.kr/form/event-cancellation-refund-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/event-cancellation-refund-request/</guid>
-<category>공공 · 신청·동의</category>
-<pubDate>Tue, 20 Oct 2026 00:00:00 +0900</pubDate>
-<description>신청한 행사 참가를 취소하고 낸 참가비의 환불을 요청할 때 쓰는 행사 참가 취소·환불 신청서 양식입니다.</description>
-</item>
-<item>
-<title>동거인 전입 동의서</title>
-<link>https://freeforms.kr/form/household-member-move-in-consent/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/household-member-move-in-consent/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Tue, 20 Oct 2026 00:00:00 +0900</pubDate>
-<description>세대주가 다른 사람이 자기 주소로 들어와 살며 전입하는 데 동의함을 적는 동거인 전입 동의서 양식입니다.</description>
-</item>
-<item>
-<title>세대 분리 사실 확인서</title>
-<link>https://freeforms.kr/form/household-separation-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/household-separation-confirmation/</guid>
-<category>공공 · 가족·주민등록</category>
-<pubDate>Tue, 20 Oct 2026 00:00:00 +0900</pubDate>
-<description>한집에 살던 가족 중 일부가 따로 세대를 꾸리게 된 사실과 일자, 분리 후 주소를 확인해 적는 세대 분리 사실 확인서 양식입니다.</description>
 </item>
 </channel>
 </rss>

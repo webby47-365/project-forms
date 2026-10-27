@@ -1,0 +1,71 @@
+id: contract-period-extension-request
+title: 계약기간 연장 요청서
+category: public
+subcategory: procure
+tags: [계약기간연장, 납품기한연장, 이행기간연장, 공기연장요청, 계약이행연장]
+summary: 계약 이행이 늦어질 때 연장이 필요한 사유와 희망 기한을 적어 발주처에 연장을 요청하는 요청서입니다.
+usage: >
+  납품이나 용역을 계약 기간 안에 마치기 어려워졌을 때 발주처에 연장을 요청하는 서식입니다.
+  계약명과 계약번호, 현재 기간을 적고 연장이 필요한 사유와 희망하는 새 기한을 구체적으로 씁니다.
+  자재 수급 지연, 발주처 요청에 따른 변경 등 사유를 뒷받침하는 자료가 있으면 함께 첨부하십시오.
+  연장 인정 여부와 지체상금 면제는 계약 조건과 발주처가 판단하므로 요청 전에 계약서를 확인합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 계약명과 계약번호, 발주처를 적습니다.
+  - 현재 계약 기간과 희망하는 연장 기한을 적습니다.
+  - 연장이 필요한 사유를 날짜와 함께 적습니다.
+  - 요청일을 적고 기명 날인한 뒤 증빙을 첨부합니다.
+faq:
+  - q: 요청하면 연장이 확정되나요?
+    a: 아닙니다. 인정 여부는 계약 조건에 따라 발주처가 결정합니다.
+  - q: 언제까지 요청해야 하나요?
+    a: 계약 기간이 끝나기 전에 하는 편이 안전합니다. 계약서의 기한 규정을 확인하십시오.
+  - q: 증빙은 무엇을 붙이나요?
+    a: 자재 납기 확인서, 변경 지시 공문 등 사유를 보여 주는 자료입니다.
+related: [liquidated-damages-exemption-request, goods-inspection-report, contract-performance-deposit-refund-request, quotation-validity-extension-request]
+blocks:
+  - type: doc_title
+    text: 계약기간 연장 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 계약 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["계약명", "", "계약번호", ""]
+      - ["발주처", "", "계약상대자", ""]
+      - ["현재 계약기간", "", "희망 연장기한", ""]
+    sample_rows:
+      - ["", "사무용 비품 납품", "", "2026-계약-0000"]
+      - ["", "○○시청 총무과", "", "(주)새길데이터"]
+      - ["", "2026-10-31까지", "", "2026-11-20까지"]
+  - type: subtitle
+    text: 2. 연장 사유
+  - type: textbox
+    hint: "기간 안에 이행하지 못하는 사유를 날짜와 함께 사실대로 적으십시오."
+    height_mm: 38
+    sample_text: "제조사의 부품 공급이 2026년 10월 중순부터 지연되어 예정된 납품일을 지키기 어렵습니다. 부품 입고 예정일을 확인하여 새 기한을 요청합니다."
+  - type: subtitle
+    text: 3. 첨부 서류
+  - type: grid
+    widths: [18, 82]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["첨부", ""]
+    sample_rows:
+      - ["", "제조사 납기 지연 확인서 1부"]
+  - type: para
+    text: 위 사유로 계약기간의 연장을 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   27 일
+  - type: sign_line
+    label: 계약상대자
+    sample_names: [박민준]
+  - type: notice
+    text: 연장 인정 여부는 계약 조건과 발주처 판단에 따릅니다. 계약서를 확인하십시오.

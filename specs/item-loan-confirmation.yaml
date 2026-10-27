@@ -1,0 +1,72 @@
+id: item-loan-confirmation
+title: 물품 대여 확인서
+category: personal
+subcategory: life
+tags: [물품대여, 물건빌려주기, 대여확인서, 대여증, 반납약속]
+summary: 지인이나 이웃에게 물건을 빌려줄 때 품목·상태·반납 기한을 적어 서로 확인하는 개인 간 대여 확인서입니다.
+usage: >
+  카메라, 공구, 캠핑용품처럼 값이 나가는 물건을 개인 간에 빌려줄 때 쓰는 서식입니다.
+  빌려주는 사람과 빌리는 사람, 품목과 대여 당시 상태, 반납 기한을 적어 둡니다. 흠집이나 부품 누락처럼
+  눈에 띄는 상태는 대여 전에 함께 확인하고 적으면 반납 때 다툼이 줄어듭니다. 파손이나 분실 때의
+  처리 방법은 특약란에 합의한 대로 적고, 양쪽이 한 부씩 보관합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 빌려주는 사람과 빌리는 사람을 적습니다.
+  - 품목과 수량, 대여 당시 상태를 함께 확인해 적습니다.
+  - 대여일과 반납 기한을 적습니다.
+  - 파손·분실 때 처리 방법을 적고 양쪽이 서명합니다.
+faq:
+  - q: 보증금을 받아도 되나요?
+    a: 합의하면 가능합니다. 금액과 돌려주는 시점을 특약란에 적어 두십시오.
+  - q: 반납이 늦어지면 어떻게 하나요?
+    a: 미리 연락해 새 기한을 합의하고 확인서 아래에 날짜를 고쳐 적고 서명합니다.
+related: [secondhand-trade-confirmation, gift-contract, checklist, car-accident-settlement]
+blocks:
+  - type: doc_title
+    text: 물품 대여 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["빌려주는 사람", "", "연락처", ""]
+      - ["빌리는 사람", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "김서연", "", "010-0000-0000"]
+  - type: subtitle
+    text: 2. 대여 물품
+  - type: table
+    widths: [32, 12, 56]
+    header: [품목, 수량, 대여 당시 상태]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["캠핑 텐트", "1", "찢김 없음, 폴 4개 모두 있음"]
+      - ["전동 드릴", "1", "배터리 2개, 손잡이에 작은 흠집"]
+  - type: subtitle
+    text: 3. 기간 및 특약
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["대여일", "", "반납 기한", ""]
+    sample_rows:
+      - ["", "2026-10-27", "", "2026-11-03"]
+  - type: textbox
+    hint: "파손·분실 때 처리 방법, 보증금 등 합의한 내용을 적으십시오."
+    height_mm: 28
+    sample_text: "사용 중 생긴 파손은 빌린 사람이 수리 비용을 부담합니다. 보증금은 반납 시 상태를 확인한 뒤 돌려줍니다."
+  - type: date_line
+    sample_text: 2026 년   10 월   27 일
+  - type: sign_line
+    labels: ["빌려주는 사람", "빌리는 사람"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 고가의 물품은 대여 전에 사진을 찍어 상태를 함께 보관하십시오.

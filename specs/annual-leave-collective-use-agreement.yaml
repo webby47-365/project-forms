@@ -1,0 +1,72 @@
+id: annual-leave-collective-use-agreement
+title: 연차휴가 일괄 사용 합의서
+category: corp
+subcategory: hr
+tags: [연차일괄사용, 연차집단사용, 근로자대표합의, 연차휴가합의, 연말연차]
+summary: 연말연시나 하계 휴가처럼 회사가 정한 특정일에 전 직원이 연차를 함께 쓰기로 근로자대표와 합의하는 서면 합의서입니다.
+usage: >
+  회사가 정한 특정일에 전 직원이 연차휴가를 함께 쓰도록 근로자대표와 서면으로 합의할 때 쓰는 서식입니다.
+  회사와 근로자대표를 적고 일괄 사용일, 대상 범위, 차감 일수를 정리합니다. 연차가 모자란 직원이나
+  입사 1년 미만 직원의 처리 방법은 특약란에 분명히 적어 두어야 나중에 다툼이 생기지 않습니다.
+  합의의 효력과 대상 범위는 회사 규정과 노동관계 법령에 따르므로 시행 전에 확인하십시오.
+  서명한 합의서는 사본을 만들어 회사와 근로자대표가 각각 보관합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사명과 대표자, 근로자대표를 적습니다.
+  - 일괄 사용일과 대상 범위, 차감 일수를 적습니다.
+  - 연차가 모자란 직원의 처리 방법을 특약란에 적습니다.
+  - 합의일을 적고 양쪽이 서명한 뒤 사본을 나눠 보관합니다.
+faq:
+  - q: 모든 직원이 반드시 따라야 하나요?
+    a: 합의 내용과 대상 범위에 따릅니다. 연차가 없는 직원 처리를 특약란에 적어 두십시오.
+  - q: 근로자대표는 누가 되나요?
+    a: 직원 과반수를 대표하는 사람입니다. 선출 방식은 회사 규정과 법령을 확인하십시오.
+  - q: 합의서가 없으면 어떻게 되나요?
+    a: 합의 없이 일괄 지정하면 분쟁이 생길 수 있습니다. 서면으로 남겨 두는 편이 안전합니다.
+related: [annual-leave-plan, annual-leave-usage-status-confirmation, unused-annual-leave-pay-request, annual-leave-carryover-agreement]
+blocks:
+  - type: doc_title
+    text: 연차휴가 일괄 사용 합의서
+    spaced: false
+  - type: subtitle
+    text: 1. 합의 당사자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "대표자", ""]
+      - ["근로자대표", "", "부서·직위", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "박민준"]
+      - ["", "김서연", "", "관리팀 과장"]
+  - type: subtitle
+    text: 2. 일괄 사용 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["일괄 사용일", "", "대상 범위", ""]
+      - ["차감 일수", "", "시행 부서", ""]
+    sample_rows:
+      - ["", "2026-12-28~12-31", "", "전 직원"]
+      - ["", "연차 4일", "", "전 부서"]
+  - type: subtitle
+    text: 3. 특약
+  - type: textbox
+    hint: "연차가 모자란 직원, 입사 1년 미만 직원의 처리 방법 등 합의한 내용을 적으십시오."
+    height_mm: 36
+    sample_text: "잔여 연차가 부족한 직원은 부족한 일수만큼 무급 휴가로 처리하지 않고 별도 협의하여 정합니다. 입사 1년 미만 직원은 사전에 개별 동의를 받아 참여합니다."
+  - type: para
+    text: 위 내용으로 연차휴가를 일괄 사용하기로 회사와 근로자대표가 서면으로 합의합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월   27 일
+  - type: sign_line
+    labels: ["회사 대표자", "근로자대표"]
+    sample_names: [박민준, 김서연]
+  - type: notice
+    text: 합의의 효력과 대상 범위는 회사 규정과 관련 법령을 확인하십시오.

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T10:06:52+09:00",
-  "count": 418,
+  "generated_at": "2026-10-27T10:59:18+09:00",
+  "count": 423,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -859,6 +859,108 @@
       "warnings": [],
       "created_at": "2026-10-09T08:18:15+09:00",
       "updated_at": "2026-10-09T08:18:15+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-collective-use-agreement",
+      "title": "연차휴가 일괄 사용 합의서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차일괄사용",
+        "연차집단사용",
+        "근로자대표합의",
+        "연차휴가합의",
+        "연말연차"
+      ],
+      "summary": "연말연시나 하계 휴가처럼 회사가 정한 특정일에 전 직원이 연차를 함께 쓰기로 근로자대표와 합의하는 서면 합의서입니다.",
+      "usage": "회사가 정한 특정일에 전 직원이 연차휴가를 함께 쓰도록 근로자대표와 서면으로 합의할 때 쓰는 서식입니다. 회사와 근로자대표를 적고 일괄 사용일, 대상 범위, 차감 일수를 정리합니다. 연차가 모자란 직원이나 입사 1년 미만 직원의 처리 방법은 특약란에 분명히 적어 두어야 나중에 다툼이 생기지 않습니다. 합의의 효력과 대상 범위는 회사 규정과 노동관계 법령에 따르므로 시행 전에 확인하십시오. 서명한 합의서는 사본을 만들어 회사와 근로자대표가 각각 보관합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 43243,
+        "docx": 38521,
+        "hwpx": 9558
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "회사명과 대표자, 근로자대표를 적습니다.",
+        "일괄 사용일과 대상 범위, 차감 일수를 적습니다.",
+        "연차가 모자란 직원의 처리 방법을 특약란에 적습니다.",
+        "합의일을 적고 양쪽이 서명한 뒤 사본을 나눠 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "모든 직원이 반드시 따라야 하나요?",
+          "a": "합의 내용과 대상 범위에 따릅니다. 연차가 없는 직원 처리를 특약란에 적어 두십시오."
+        },
+        {
+          "q": "근로자대표는 누가 되나요?",
+          "a": "직원 과반수를 대표하는 사람입니다. 선출 방식은 회사 규정과 법령을 확인하십시오."
+        },
+        {
+          "q": "합의서가 없으면 어떻게 되나요?",
+          "a": "합의 없이 일괄 지정하면 분쟁이 생길 수 있습니다. 서면으로 남겨 두는 편이 안전합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 합의 당사자",
+          "items": [
+            "회사명",
+            "대표자",
+            "근로자대표",
+            "부서·직위"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 일괄 사용 내용",
+          "items": [
+            "일괄 사용일",
+            "대상 범위",
+            "차감 일수",
+            "시행 부서"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 특약",
+          "items": [],
+          "note": "연차가 모자란 직원, 입사 1년 미만 직원의 처리 방법 등 합의한 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-plan",
+        "annual-leave-usage-status-confirmation",
+        "unused-annual-leave-pay-request",
+        "annual-leave-carryover-agreement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-27T10:59:01+09:00",
+      "updated_at": "2026-10-27T10:59:01+09:00",
       "downloads": 0
     },
     {
@@ -6952,6 +7054,109 @@
       "seal": true
     },
     {
+      "id": "care-service-termination-request",
+      "title": "돌봄서비스 이용 종료 신청서",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "돌봄서비스종료",
+        "서비스이용중단",
+        "요양서비스해지",
+        "이용종료신청",
+        "복지서비스종료"
+      ],
+      "summary": "이용 중인 돌봄·요양 서비스를 그만둘 때 이용자, 종료 희망일과 사유를 적어 기관에 제출하는 신청서입니다.",
+      "usage": "이용 중인 돌봄이나 방문요양 같은 서비스를 더 이용하지 않기로 했을 때 기관에 제출하는 서식입니다. 이용자와 신청인, 이용 기관과 서비스 종류를 적고 종료를 원하는 날짜와 사유를 씁니다. 남은 이용료 정산과 제공 물품 반납은 기관 규정에 따르므로 신청 전에 기관에 확인하십시오. 접수 사실이 남도록 사본을 보관하고, 신청서는 종료를 요청하는 문서이며 처리는 기관이 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 39528,
+        "docx": 38477,
+        "hwpx": 9538
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "이용자와 신청인, 이용자와의 관계를 적습니다.",
+        "이용 기관과 서비스 종류를 적습니다.",
+        "종료 희망일과 종료 사유를 적습니다.",
+        "신청일을 적고 서명한 뒤 기관에 제출하고 사본을 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "이용료는 어떻게 정산하나요?",
+          "a": "기관 규정에 따라 정해집니다. 종료 전에 정산 방법을 기관에 확인하십시오."
+        },
+        {
+          "q": "가족이 대신 신청해도 되나요?",
+          "a": "가능한 경우가 많지만 관계 확인 서류가 필요할 수 있습니다. 기관에 문의하십시오."
+        },
+        {
+          "q": "종료 사유를 꼭 자세히 써야 하나요?",
+          "a": "간단히 적어도 됩니다. 개인 건강 정보는 적지 않아도 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 이용자와 신청인",
+          "items": [
+            "이용자",
+            "생년월일",
+            "신청인",
+            "이용자와 관계",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 이용 서비스",
+          "items": [
+            "이용 기관",
+            "서비스 종류",
+            "이용 시작일",
+            "종료 희망일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 종료 사유",
+          "items": [],
+          "note": "이용을 종료하려는 이유와 기관에 요청할 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "welfare-service-change-request",
+        "welfare-facility-withdrawal-request",
+        "care-service-application",
+        "home-care-visit-record"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-27T10:59:18+09:00",
+      "updated_at": "2026-10-27T10:59:18+09:00",
+      "downloads": 0
+    },
+    {
       "id": "career-certificate",
       "title": "경력증명서",
       "category": "corp",
@@ -10489,6 +10694,107 @@
       "warnings": [],
       "created_at": "2026-10-08T08:16:33+09:00",
       "updated_at": "2026-10-08T08:16:33+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "contract-period-extension-request",
+      "title": "계약기간 연장 요청서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "계약기간연장",
+        "납품기한연장",
+        "이행기간연장",
+        "공기연장요청",
+        "계약이행연장"
+      ],
+      "summary": "계약 이행이 늦어질 때 연장이 필요한 사유와 희망 기한을 적어 발주처에 연장을 요청하는 요청서입니다.",
+      "usage": "납품이나 용역을 계약 기간 안에 마치기 어려워졌을 때 발주처에 연장을 요청하는 서식입니다. 계약명과 계약번호, 현재 기간을 적고 연장이 필요한 사유와 희망하는 새 기한을 구체적으로 씁니다. 자재 수급 지연, 발주처 요청에 따른 변경 등 사유를 뒷받침하는 자료가 있으면 함께 첨부하십시오. 연장 인정 여부와 지체상금 면제는 계약 조건과 발주처가 판단하므로 요청 전에 계약서를 확인합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 39989,
+        "docx": 38473,
+        "hwpx": 9481
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "계약명과 계약번호, 발주처를 적습니다.",
+        "현재 계약 기간과 희망하는 연장 기한을 적습니다.",
+        "연장이 필요한 사유를 날짜와 함께 적습니다.",
+        "요청일을 적고 기명 날인한 뒤 증빙을 첨부합니다."
+      ],
+      "faq": [
+        {
+          "q": "요청하면 연장이 확정되나요?",
+          "a": "아닙니다. 인정 여부는 계약 조건에 따라 발주처가 결정합니다."
+        },
+        {
+          "q": "언제까지 요청해야 하나요?",
+          "a": "계약 기간이 끝나기 전에 하는 편이 안전합니다. 계약서의 기한 규정을 확인하십시오."
+        },
+        {
+          "q": "증빙은 무엇을 붙이나요?",
+          "a": "자재 납기 확인서, 변경 지시 공문 등 사유를 보여 주는 자료입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 계약 정보",
+          "items": [
+            "계약명",
+            "계약번호",
+            "발주처",
+            "계약상대자",
+            "현재 계약기간",
+            "희망 연장기한"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연장 사유",
+          "items": [],
+          "note": "기간 안에 이행하지 못하는 사유를 날짜와 함께 사실대로 적으십시오."
+        },
+        {
+          "title": "3. 첨부 서류",
+          "items": [
+            "첨부"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "liquidated-damages-exemption-request",
+        "goods-inspection-report",
+        "contract-performance-deposit-refund-request",
+        "quotation-validity-extension-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-27T10:59:09+09:00",
+      "updated_at": "2026-10-27T10:59:09+09:00",
       "downloads": 0
     },
     {
@@ -22746,6 +23052,105 @@
         "balance-confirmation"
       ],
       "seal": true
+    },
+    {
+      "id": "item-loan-confirmation",
+      "title": "물품 대여 확인서",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "물품대여",
+        "물건빌려주기",
+        "대여확인서",
+        "대여증",
+        "반납약속"
+      ],
+      "summary": "지인이나 이웃에게 물건을 빌려줄 때 품목·상태·반납 기한을 적어 서로 확인하는 개인 간 대여 확인서입니다.",
+      "usage": "카메라, 공구, 캠핑용품처럼 값이 나가는 물건을 개인 간에 빌려줄 때 쓰는 서식입니다. 빌려주는 사람과 빌리는 사람, 품목과 대여 당시 상태, 반납 기한을 적어 둡니다. 흠집이나 부품 누락처럼 눈에 띄는 상태는 대여 전에 함께 확인하고 적으면 반납 때 다툼이 줄어듭니다. 파손이나 분실 때의 처리 방법은 특약란에 합의한 대로 적고, 양쪽이 한 부씩 보관합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46139,
+        "docx": 38592,
+        "hwpx": 9792
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "빌려주는 사람과 빌리는 사람을 적습니다.",
+        "품목과 수량, 대여 당시 상태를 함께 확인해 적습니다.",
+        "대여일과 반납 기한을 적습니다.",
+        "파손·분실 때 처리 방법을 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "보증금을 받아도 되나요?",
+          "a": "합의하면 가능합니다. 금액과 돌려주는 시점을 특약란에 적어 두십시오."
+        },
+        {
+          "q": "반납이 늦어지면 어떻게 하나요?",
+          "a": "미리 연락해 새 기한을 합의하고 확인서 아래에 날짜를 고쳐 적고 서명합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "빌려주는 사람",
+            "연락처",
+            "빌리는 사람"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대여 물품",
+          "items": [
+            "품목",
+            "수량",
+            "대여 당시 상태"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 기간 및 특약",
+          "items": [
+            "대여일",
+            "반납 기한"
+          ],
+          "note": "파손·분실 때 처리 방법, 보증금 등 합의한 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "secondhand-trade-confirmation",
+        "gift-contract",
+        "checklist",
+        "car-accident-settlement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-27T10:59:13+09:00",
+      "updated_at": "2026-10-27T10:59:13+09:00",
+      "downloads": 0
     },
     {
       "id": "job-application-form",
@@ -35916,6 +36321,111 @@
         "payment-confirmation"
       ],
       "seal": true
+    },
+    {
+      "id": "service-fee-refund-request",
+      "title": "송달료 환급 신청서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "송달료환급",
+        "송달료잔액",
+        "송달료반환",
+        "소송비용환급",
+        "송달료신청"
+      ],
+      "summary": "소송이 끝난 뒤 쓰고 남은 송달료를 돌려받기 위해 사건 정보와 환급 계좌를 적어 제출하는 신청서입니다.",
+      "usage": "소송을 진행하며 미리 낸 송달료가 쓰고 남았을 때 잔액을 돌려받으려고 제출하는 서식입니다. 사건번호와 사건명, 당사자를 적고 환급받을 계좌를 정확히 씁니다. 환급 대상 여부와 금액, 필요한 서류는 법원 안내에 따르므로 접수 전에 해당 법원에 확인하십시오. 계좌번호는 자리만 확인하여 적고 신청서 사본을 보관합니다. 신청서는 환급을 요청하는 문서이며 처리는 법원이 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 39560,
+        "docx": 38420,
+        "hwpx": 9464
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인과 연락처를 적습니다.",
+        "사건번호와 사건명, 법원을 적습니다.",
+        "환급받을 은행과 계좌번호, 예금주를 적습니다.",
+        "신청일을 적고 서명한 뒤 접수합니다."
+      ],
+      "faq": [
+        {
+          "q": "송달료는 언제 돌려받나요?",
+          "a": "사건이 끝나고 남은 금액이 정해진 뒤입니다. 시기는 법원 안내를 확인하십시오."
+        },
+        {
+          "q": "계좌는 본인 명의여야 하나요?",
+          "a": "대체로 신청인 명의 계좌를 씁니다. 다른 명의가 가능한지는 법원에 확인하십시오."
+        },
+        {
+          "q": "대리인이 신청해도 되나요?",
+          "a": "위임장이 필요한 경우가 있습니다. 접수 법원의 안내를 먼저 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인",
+          "items": [
+            "신청인",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 사건 표시",
+          "items": [
+            "법원",
+            "사건번호",
+            "사건명",
+            "상대방"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 환급 계좌",
+          "items": [
+            "은행",
+            "예금주",
+            "계좌번호"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "lawsuit-withdrawal",
+        "service-address-change-report",
+        "evidence-submission-list",
+        "hearing-date-change-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-27T10:59:05+09:00",
+      "updated_at": "2026-10-27T10:59:05+09:00",
+      "downloads": 0
     },
     {
       "id": "settlement-agreement",
