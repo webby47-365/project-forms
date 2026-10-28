@@ -1,0 +1,69 @@
+id: annual-leave-promotion-exclusion-confirmation
+title: 연차 사용 촉진 제외 대상자 확인서
+category: corp
+subcategory: hr
+tags: [연차촉진제외, 연차사용촉진, 휴직자연차, 퇴사예정자연차, 촉진대상자확인]
+summary: 휴직·퇴사 예정 등으로 연차 사용 촉진 통지를 따로 처리해야 하는 근로자를 사유와 함께 정리하는 확인서입니다.
+usage: >
+  연차 사용 촉진 통지를 보내기 전에 전체 근로자 가운데 통지 방식을 따로 정해야 하는 사람을
+  가려 두는 서식입니다. 대상자 성명과 부서, 해당 사유(휴직·퇴사 예정·입사 1년 미만 등)와
+  기간, 남은 연차를 적고 담당자와 대표자가 확인합니다. 제외 여부와 처리 방법은 근로계약과
+  취업규칙, 노동관서 안내에 따라 달라지므로 본 서식은 확인 내용을 기록하는 틀로만 쓰고,
+  판단이 어려우면 노무 전문가나 고용노동부에 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 대상 연도와 부서, 작성 기준일을 적습니다.
+  - 휴직·퇴사 예정 등 따로 처리할 근로자를 표에 적습니다.
+  - 사유와 해당 기간, 남은 연차일수를 적습니다.
+  - 처리 방법을 적고 담당자와 대표자가 서명합니다.
+faq:
+  - q: 이 서식을 쓰면 촉진 의무가 없어지나요?
+    a: 아닙니다. 대상자를 정리해 두는 기록입니다. 실제 처리는 취업규칙과 노동관서 안내를 확인하십시오.
+  - q: 퇴사 예정자도 적어야 하나요?
+    a: 통지 시기가 퇴사일과 겹치면 처리 방법이 달라질 수 있으니 적어 두는 편이 좋습니다.
+  - q: 언제 작성하나요?
+    a: 1차 통지를 보내기 전에 작성하면 누락을 줄일 수 있습니다.
+related: [annual-leave-promotion-notice, annual-leave-promotion-record, annual-leave-notice-dispatch-ledger, unused-annual-leave-pay-request]
+blocks:
+  - type: doc_title
+    text: 연차 사용 촉진 제외 대상자 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 기본 정보
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["대상 연도", "", "부서", ""]
+      - ["작성 기준일", "", "담당자", ""]
+    sample_rows:
+      - ["", "2026년", "", "경영지원팀"]
+      - ["", "2026-10-28", "", "김서연"]
+  - type: subtitle
+    text: 2. 대상자 내역
+  - type: table
+    widths: [14, 14, 22, 20, 14, 16]
+    header: ["성명", "부서", "사유", "해당 기간", "남은 연차", "처리 방법"]
+    empty_rows: 8
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["박민준", "영업팀", "육아휴직", "2026-07~12", "8일", "복직 후 협의"]
+      - ["이수현", "개발팀", "퇴사 예정", "~2026-11-30", "5일", "정산 검토"]
+      - ["최지우", "총무팀", "입사 1년 미만", "2026-03~", "6일", "별도 통지"]
+  - type: subtitle
+    text: 3. 특이사항
+  - type: textbox
+    hint: "근거로 삼은 규정이나 근로자와 협의한 내용이 있으면 적으십시오."
+    height_mm: 22
+    sample_text: "휴직자는 복직일 이후 연차 사용 시기를 협의하기로 하고, 퇴사 예정자는 최종 근무일 기준으로 별도 정산 여부를 확인함."
+  - type: date_line
+    sample_text: 2026 년   10 월    28 일
+  - type: sign_line
+    labels: ["담당자", "대표자"]
+    sample_names: [김서연, 홍길동]
+  - type: notice
+    text: 제외 여부와 처리 방법은 취업규칙과 노동관서 안내를 확인하십시오.

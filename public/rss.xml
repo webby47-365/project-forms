@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 423종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 428종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>부양 사실 확인서</title>
+<link>https://freeforms.kr/form/dependent-support-fact-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/dependent-support-fact-confirmation/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0900</pubDate>
+<description>가족을 실제로 부양하고 있는 사실을 부양 기간과 방식, 확인인 서명과 함께 정리하는 확인서입니다.</description>
+</item>
+<item>
+<title>세금 납부기한 연장 사유서</title>
+<link>https://freeforms.kr/form/tax-payment-extension-reason-statement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/tax-payment-extension-reason-statement/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0900</pubDate>
+<description>세금 납부기한 연장을 요청할 때 세목·금액과 연장이 필요한 사유, 납부 계획을 정리하는 사유서입니다.</description>
+</item>
+<item>
+<title>영업장 면적 변경 사실 확인서</title>
+<link>https://freeforms.kr/form/business-premises-area-change-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-premises-area-change-confirmation/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0900</pubDate>
+<description>증축·축소 등으로 영업장 면적이 바뀐 사실을 변경 전후 수치와 사유로 정리해 제출용으로 남기는 확인서입니다.</description>
+</item>
+<item>
+<title>자동차 매매 계약 해제 합의서</title>
+<link>https://freeforms.kr/form/vehicle-sale-cancellation-agreement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-sale-cancellation-agreement/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0900</pubDate>
+<description>이미 맺은 자동차 매매계약을 매도인과 매수인이 합의해 해제하고 대금 반환 방법을 적는 합의서입니다.</description>
+</item>
+<item>
+<title>연차 사용 촉진 제외 대상자 확인서</title>
+<link>https://freeforms.kr/form/annual-leave-promotion-exclusion-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-promotion-exclusion-confirmation/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0900</pubDate>
+<description>휴직·퇴사 예정 등으로 연차 사용 촉진 통지를 따로 처리해야 하는 근로자를 사유와 함께 정리하는 확인서입니다.</description>
+</item>
 <item>
 <title>돌봄서비스 이용 종료 신청서</title>
 <link>https://freeforms.kr/form/care-service-termination-request/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 인사·노무</category>
 <pubDate>Thu, 22 Oct 2026 00:00:00 +0900</pubDate>
 <description>입사일 기준으로 연차가 몇 일 발생했고 얼마나 썼는지 항목별로 정리해 근로자와 회사가 함께 확인하는 연차 발생 내역 확인서 양식입니다.</description>
-</item>
-<item>
-<title>지체상금 면제 신청서</title>
-<link>https://freeforms.kr/form/liquidated-damages-exemption-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/liquidated-damages-exemption-request/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
-<description>계약 납기나 준공이 늦어진 사유가 계약상대자 책임이 아님을 밝혀 지체상금 면제 또는 지체일수 제외를 신청하는 신청서 양식입니다.</description>
-</item>
-<item>
-<title>중고거래 확인서</title>
-<link>https://freeforms.kr/form/secondhand-trade-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/secondhand-trade-confirmation/</guid>
-<category>개인 · 생활·가정</category>
-<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
-<description>개인끼리 중고 물품을 사고팔 때 물품 상태와 대금, 인도 일자를 적어 서로 확인하는 중고거래 확인서 양식입니다.</description>
-</item>
-<item>
-<title>주식 양도 승인 청구서</title>
-<link>https://freeforms.kr/form/share-transfer-approval-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/share-transfer-approval-request/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
-<description>정관으로 양도가 제한된 주식을 넘기려는 주주가 회사에 양도 승인을 청구할 때 쓰는 주식 양도 승인 청구서 양식입니다.</description>
-</item>
-<item>
-<title>항소장 (민사)</title>
-<link>https://freeforms.kr/form/civil-appeal-notice/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/civil-appeal-notice/</guid>
-<category>법률 · 소송·민원</category>
-<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
-<description>민사 1심 판결에 불복해 항소심 법원에 항소를 제기할 때 사건 표시와 불복 범위, 항소 취지를 적는 항소장 양식입니다.</description>
-</item>
-<item>
-<title>연차 휴가 신청 취소서</title>
-<link>https://freeforms.kr/form/annual-leave-request-cancellation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-request-cancellation/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
-<description>이미 신청하거나 승인받은 연차 휴가를 쓰지 않기로 했을 때 취소 사유와 잔여 연차 복원을 요청하는 연차 휴가 신청 취소서 양식입니다.</description>
 </item>
 </channel>
 </rss>
