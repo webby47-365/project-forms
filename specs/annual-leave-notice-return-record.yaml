@@ -1,0 +1,81 @@
+id: annual-leave-notice-return-record
+title: 연차 사용 촉진 통지 반송 확인서
+category: corp
+subcategory: hr
+tags: [연차촉진반송, 통지반송, 연차사용촉진, 우편반송확인, 연차통지재발송]
+summary: 연차 사용 촉진 통지를 우편이나 메일로 보냈다가 반송됐을 때 반송 사실과 재발송 내역을 남기는 확인서입니다.
+usage: >
+  연차 사용 촉진 통지를 우편·메일·메신저 등으로 보냈는데 반송되거나 수신 확인이 되지 않을 때
+  그 사실과 이후 조치를 기록해 두는 서식입니다. 통지 차수와 발송일·방법, 반송 사유, 재발송 일시와
+  방법을 적고 담당자가 서명합니다. 촉진 절차의 기한과 방식은 근로기준법과 회사 규정에 따라
+  달라지므로 노무 담당자나 전문가에게 확인하십시오. 이 서식은 경과를 기록하는 틀이며 법률
+  판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 대상 근로자의 성명과 소속을 적습니다.
+  - 통지 차수와 발송일, 발송 방법을 적습니다.
+  - 반송된 날짜와 사유를 적습니다.
+  - 재발송 일시·방법과 전달 결과를 적고 담당자가 서명합니다.
+faq:
+  - q: 반송되면 통지한 것으로 보나요?
+    a: 단정할 수 없습니다. 전달 여부는 방법과 사정에 따라 달라지므로 노무 전문가에게 확인하십시오.
+  - q: 재발송은 어떤 방법으로 하나요?
+    a: 전달 사실이 남는 방법이 낫습니다. 회사 규정과 근로자 동의 범위를 확인해 고르십시오.
+  - q: 개인 연락처를 적어야 하나요?
+    a: 필요한 만큼만 적고, 주소 등은 발송 대장 번호로 대신해도 됩니다.
+related: [annual-leave-notice-dispatch-ledger, annual-leave-notice-receipt, annual-leave-promotion-record, annual-leave-promotion-notice]
+blocks:
+  - type: doc_title
+    text: 연차 사용 촉진 통지 반송 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 대상 근로자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "발송 대장 번호", ""]
+    sample_rows:
+      - ["", "김서연", "", "영업지원팀"]
+      - ["", "대리", "", "2026-연차-014"]
+  - type: subtitle
+    text: 2. 최초 통지 및 반송
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["통지 차수", "", "발송일", ""]
+      - ["발송 방법", "", "반송일", ""]
+      - ["반송 사유", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "1차 (사용 시기 지정 요구)", "", "2026-10-20"]
+      - ["", "등기 우편", "", "2026-10-26"]
+      - ["", "수취인 부재", "", ""]
+  - type: subtitle
+    text: 3. 재발송 내역
+  - type: table
+    widths: [10, 22, 26, 42]
+    header: ["회차", 재발송일, 방법, 전달 결과]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "2026-10-27", "이메일", "수신 확인 회신"]
+  - type: textbox
+    hint: "반송 경위와 그 밖의 조치 사항을 적으십시오."
+    height_mm: 24
+    sample_text: "주소지 부재로 우편이 반송되어 회사 이메일로 재발송했고, 당일 수신 확인 회신을 받았습니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    28 일
+  - type: sign_line
+    labels: ["담당자", "확인자"]
+    sample_names: [박민준, 이수현]
+  - type: notice
+    text: 촉진 절차의 기한과 방식은 법령과 회사 규정을 확인하십시오.

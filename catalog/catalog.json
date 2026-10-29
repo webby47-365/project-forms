@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T11:08:06+09:00",
-  "count": 428,
+  "generated_at": "2026-10-29T11:20:08+09:00",
+  "count": 433,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -1163,6 +1163,114 @@
       "warnings": [],
       "created_at": "2026-10-08T08:16:09+09:00",
       "updated_at": "2026-10-08T08:16:09+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-notice-return-record",
+      "title": "연차 사용 촉진 통지 반송 확인서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차촉진반송",
+        "통지반송",
+        "연차사용촉진",
+        "우편반송확인",
+        "연차통지재발송"
+      ],
+      "summary": "연차 사용 촉진 통지를 우편이나 메일로 보냈다가 반송됐을 때 반송 사실과 재발송 내역을 남기는 확인서입니다.",
+      "usage": "연차 사용 촉진 통지를 우편·메일·메신저 등으로 보냈는데 반송되거나 수신 확인이 되지 않을 때 그 사실과 이후 조치를 기록해 두는 서식입니다. 통지 차수와 발송일·방법, 반송 사유, 재발송 일시와 방법을 적고 담당자가 서명합니다. 촉진 절차의 기한과 방식은 근로기준법과 회사 규정에 따라 달라지므로 노무 담당자나 전문가에게 확인하십시오. 이 서식은 경과를 기록하는 틀이며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48944,
+        "docx": 38675,
+        "hwpx": 9955
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "대상 근로자의 성명과 소속을 적습니다.",
+        "통지 차수와 발송일, 발송 방법을 적습니다.",
+        "반송된 날짜와 사유를 적습니다.",
+        "재발송 일시·방법과 전달 결과를 적고 담당자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "반송되면 통지한 것으로 보나요?",
+          "a": "단정할 수 없습니다. 전달 여부는 방법과 사정에 따라 달라지므로 노무 전문가에게 확인하십시오."
+        },
+        {
+          "q": "재발송은 어떤 방법으로 하나요?",
+          "a": "전달 사실이 남는 방법이 낫습니다. 회사 규정과 근로자 동의 범위를 확인해 고르십시오."
+        },
+        {
+          "q": "개인 연락처를 적어야 하나요?",
+          "a": "필요한 만큼만 적고, 주소 등은 발송 대장 번호로 대신해도 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 대상 근로자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "발송 대장 번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 최초 통지 및 반송",
+          "items": [
+            "통지 차수",
+            "발송일",
+            "발송 방법",
+            "반송일",
+            "반송 사유"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 재발송 내역",
+          "items": [
+            "회차",
+            "재발송일",
+            "방법",
+            "전달 결과"
+          ],
+          "note": "반송 경위와 그 밖의 조치 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-notice-dispatch-ledger",
+        "annual-leave-notice-receipt",
+        "annual-leave-promotion-record",
+        "annual-leave-promotion-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-29T11:19:48+09:00",
+      "updated_at": "2026-10-29T11:20:08+09:00",
       "downloads": 0
     },
     {
@@ -10698,6 +10806,108 @@
       "seal": true
     },
     {
+      "id": "contract-assignment-consent",
+      "title": "계약상 지위 양도 승낙서",
+      "category": "legal",
+      "subcategory": "contract",
+      "tags": [
+        "계약양도",
+        "계약상지위양도",
+        "양도승낙",
+        "계약인수",
+        "승계동의"
+      ],
+      "summary": "계약의 한쪽 당사자가 자리를 제3자에게 넘기는 것에 상대방이 동의한다는 내용을 남기는 승낙서입니다.",
+      "usage": "사업 양도나 담당자 교체 등으로 계약 당사자의 지위를 다른 사람이나 회사가 넘겨받을 때 계약 상대방에게 받아 두는 서식입니다. 원래 계약의 이름과 날짜, 넘기는 사람(양도인)과 넘겨받는 사람 (양수인), 양도 기준일, 이미 발생한 권리·의무를 누가 맡는지를 적습니다. 계약서에 양도 제한 조항이 있는지 먼저 확인하십시오. 이 서식은 승낙 내용을 기록하는 틀이며 법률 판단을 대신하지 않습니다. 중요한 계약은 전문가 검토를 권합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45415,
+        "docx": 38606,
+        "hwpx": 9667
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "원래 계약의 이름과 체결일, 계약 당사자를 적습니다.",
+        "넘기는 사람과 넘겨받는 사람의 상호·대표자를 적습니다.",
+        "양도 기준일과 기존 권리·의무를 누가 맡는지 적습니다.",
+        "승낙하는 상대방과 양도·양수인이 모두 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "승낙서 없이 양도하면 어떻게 되나요?",
+          "a": "계약에 양도 제한이 있거나 상대방이 반대하면 문제가 될 수 있습니다. 계약서를 먼저 확인하십시오."
+        },
+        {
+          "q": "이미 낸 대금과 밀린 대금은 누가 맡나요?",
+          "a": "합의로 정합니다. 기준일 전 권리·의무의 귀속을 특약란에 구체적으로 적어 두십시오."
+        },
+        {
+          "q": "상대방 서명만 있으면 되나요?",
+          "a": "양도인과 양수인의 서명도 함께 받아 두는 편이 분명합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 원래 계약",
+          "items": [
+            "계약 명칭",
+            "체결일",
+            "승낙인(상대방)",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 양도인과 양수인",
+          "items": [
+            "양도인",
+            "대표자",
+            "양수인",
+            "양도 기준일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 승낙 내용",
+          "items": [],
+          "note": "기준일 전 이미 발생한 대금·권리·의무를 누가 맡는지, 그 밖의 조건을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "claim-assignment-notice",
+        "mou-agreement",
+        "settlement-agreement",
+        "contract-performance-demand-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-29T11:19:34+09:00",
+      "updated_at": "2026-10-29T11:19:34+09:00",
+      "downloads": 0
+    },
+    {
       "id": "contract-performance-demand-notice",
       "title": "계약 이행 최고서",
       "category": "legal",
@@ -12825,6 +13035,113 @@
         "invoice-request"
       ],
       "seal": true
+    },
+    {
+      "id": "delivery-delay-explanation",
+      "title": "납품 지연 사유서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "납품지연",
+        "납기지연사유서",
+        "납기연장",
+        "지연사유",
+        "공급지연"
+      ],
+      "summary": "약속한 납기에 맞추지 못할 때 지연 사유와 새 납품 일정을 거래처에 알리는 사유서입니다.",
+      "usage": "주문받은 물품을 약속한 납기까지 내지 못하게 됐을 때 거래처에 보내는 서식입니다. 주문 내역과 원래 납기, 지연되는 수량, 지연 사유와 새 납품 예정일을 적고, 일부를 먼저 납품할 수 있으면 분할 일정도 적습니다. 사유는 가능한 한 사실대로 간단히 쓰고 변명보다 대책을 앞세우면 협의가 수월합니다. 지연에 따른 책임과 보상은 거래 계약을 따르며, 이 서식은 사실을 알리는 틀로서 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46303,
+        "docx": 38637,
+        "hwpx": 9888
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "받는 거래처와 보내는 업체, 담당자를 적습니다.",
+        "주문 번호·품목·수량과 원래 납기를 적습니다.",
+        "지연 사유와 새 납품 예정일을 적습니다.",
+        "일부 먼저 납품할 수 있으면 분할 일정을 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "사유서를 내면 지연 책임이 없어지나요?",
+          "a": "아닙니다. 책임은 거래 계약에 따릅니다. 사유서는 지연 사실과 일정을 알리는 서류입니다."
+        },
+        {
+          "q": "사유는 얼마나 자세히 쓰나요?",
+          "a": "사실을 간단히 쓰고, 새 납품 일정과 대책을 구체적으로 적는 편이 협의에 도움이 됩니다."
+        },
+        {
+          "q": "일부만 먼저 납품해도 되나요?",
+          "a": "거래처가 받아들이면 가능합니다. 분할 일정표에 수량과 날짜를 적어 합의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "받는 거래처",
+            "담당자",
+            "보내는 업체"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 주문 및 지연 내역",
+          "items": [
+            "주문 번호",
+            "주문일",
+            "품목",
+            "지연 수량",
+            "원래 납기",
+            "새 납품 예정일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 분할 납품 일정 (해당 시 작성)",
+          "items": [
+            "회차",
+            "납품 예정일",
+            "수량"
+          ],
+          "note": "지연 사유와 재발 방지 또는 만회 대책을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "purchase-order",
+        "delivery-confirmation",
+        "unit-price-change-notice",
+        "transaction-statement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-29T11:19:55+09:00",
+      "updated_at": "2026-10-29T11:19:55+09:00",
+      "downloads": 0
     },
     {
       "id": "dependent-support-fact-confirmation",
@@ -29182,6 +29499,122 @@
       "seal": true
     },
     {
+      "id": "payment-due-extension-request",
+      "title": "대금 지급기일 연장 요청서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "대금지급연장",
+        "결제기일연장",
+        "지급기한연장요청",
+        "외상대금",
+        "거래대금"
+      ],
+      "summary": "거래 대금을 정해진 날까지 지급하기 어려울 때 새 지급일과 분할 계획을 적어 상대방에게 양해를 구하는 요청서입니다.",
+      "usage": "납품받은 물품이나 용역의 대금을 약속한 날 안에 주기 어려울 때 상대 거래처에 보내는 서식입니다. 거래 내역과 원래 지급기일, 미지급 금액, 희망하는 새 지급일을 적고 사정을 간단히 밝힙니다. 나누어 지급하려면 회차별 금액과 날짜를 함께 적으면 상대방이 판단하기 쉽습니다. 요청서를 보냈다고 기일이 자동으로 늦춰지는 것은 아니며 상대방이 승낙해야 효력이 있으므로, 회신란을 받아 보관하십시오. 이 서식은 요청 내용을 기록하는 틀이며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54642,
+        "docx": 38817,
+        "hwpx": 10158
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "받는 거래처와 보내는 사람의 상호·담당자를 적습니다.",
+        "거래 내역과 원래 지급기일, 미지급 금액을 적습니다.",
+        "희망하는 새 지급일이나 분할 지급 계획을 적습니다.",
+        "사유를 짧게 적고 서명한 뒤 상대방의 승낙 회신을 받습니다."
+      ],
+      "faq": [
+        {
+          "q": "보내기만 하면 지급기일이 늦춰지나요?",
+          "a": "아닙니다. 상대방이 승낙해야 합니다. 승낙 여부를 회신란에 받아 보관하십시오."
+        },
+        {
+          "q": "분할해서 갚겠다고 적어도 되나요?",
+          "a": "됩니다. 회차별 금액과 날짜를 표에 적으면 상대방이 검토하기 쉽습니다."
+        },
+        {
+          "q": "지연 이자는 어떻게 되나요?",
+          "a": "거래 계약에 정한 내용을 따릅니다. 이 서식에 정함이 없으면 특약란에 합의 내용을 적으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "받는 상호",
+            "담당자",
+            "보내는 상호",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 거래 및 미지급 내역",
+          "items": [
+            "거래 내역",
+            "거래일",
+            "미지급 금액",
+            "원래 지급기일",
+            "희망 지급일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 분할 지급 계획 (분할 시 작성)",
+          "items": [
+            "회차",
+            "지급 예정일",
+            "지급 금액"
+          ],
+          "note": "지급이 늦어지는 사유를 간단히 적으십시오."
+        },
+        {
+          "title": "4. 상대방 회신",
+          "items": [
+            "승낙 여부",
+            "회신일",
+            "확인자"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "payment-confirmation",
+        "transaction-statement",
+        "settlement-agreement",
+        "contract-period-extension-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-29T11:19:27+09:00",
+      "updated_at": "2026-10-29T11:19:27+09:00",
+      "downloads": 0
+    },
+    {
       "id": "payment-order-application",
       "title": "지급명령 신청서 (독촉절차)",
       "category": "legal",
@@ -31369,6 +31802,107 @@
       "warnings": [],
       "created_at": "2026-10-15T10:23:07+09:00",
       "updated_at": "2026-10-15T10:23:20+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "privacy-processing-suspension-request",
+      "title": "개인정보 처리정지 요구서",
+      "category": "public",
+      "subcategory": "consent",
+      "tags": [
+        "개인정보처리정지",
+        "처리정지요구",
+        "개인정보이용중지",
+        "정보주체권리",
+        "마케팅수신중지"
+      ],
+      "summary": "업체나 기관이 보유한 내 개인정보의 이용·제공을 멈춰 달라고 요구할 때 쓰는 요구서입니다.",
+      "usage": "내 개인정보를 가진 회사나 기관에 이용·제공 등 처리를 멈춰 달라고 요청하는 서식입니다. 요구하는 사람의 정보와 상대 업체, 처리를 멈추기를 원하는 정보의 범위와 사유를 적습니다. 열람 요구나 동의 철회와는 목적이 다르므로 원하는 것이 처리 중지인지 먼저 정하십시오. 본인 확인에 필요한 자료를 요구받을 수 있으며, 법령상 보관 의무가 있는 정보는 계속 보유될 수 있습니다. 이 서식은 요구 내용을 기록하는 틀입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 44314,
+        "docx": 38552,
+        "hwpx": 9542
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요구하는 사람의 성명·생년월일·연락처를 적습니다.",
+        "요구를 받을 업체나 기관의 이름과 담당 부서를 적습니다.",
+        "처리를 멈추기를 원하는 정보의 범위를 체크하고 사유를 적습니다.",
+        "날짜와 서명을 하고 업체의 개인정보 담당 창구에 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "열람 요구나 동의 철회와 무엇이 다른가요?",
+          "a": "열람은 내 정보를 보는 것이고, 철회는 동의를 거두는 것입니다. 이 서식은 이용을 멈추도록 요구합니다."
+        },
+        {
+          "q": "요구하면 모든 정보가 바로 삭제되나요?",
+          "a": "아닙니다. 처리가 멈출 뿐이며, 법령상 보관해야 하는 정보는 계속 보유될 수 있습니다."
+        },
+        {
+          "q": "대리인이 낼 수 있나요?",
+          "a": "위임장 등 대리 자격을 확인하는 서류가 필요할 수 있으므로 업체에 먼저 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요구인",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처",
+            "이메일",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 요구 대상",
+          "items": [
+            "업체·기관명",
+            "담당 부서"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 처리정지를 요구하는 내용",
+          "items": [],
+          "note": "멈추기를 원하는 정보의 범위와 요구 사유를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "privacy-access-request",
+        "privacy-consent-withdrawal",
+        "privacy-consent",
+        "portrait-rights-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-29T11:19:42+09:00",
+      "updated_at": "2026-10-29T11:19:42+09:00",
       "downloads": 0
     },
     {

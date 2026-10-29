@@ -1,0 +1,76 @@
+id: privacy-processing-suspension-request
+title: 개인정보 처리정지 요구서
+category: public
+subcategory: consent
+tags: [개인정보처리정지, 처리정지요구, 개인정보이용중지, 정보주체권리, 마케팅수신중지]
+summary: 업체나 기관이 보유한 내 개인정보의 이용·제공을 멈춰 달라고 요구할 때 쓰는 요구서입니다.
+usage: >
+  내 개인정보를 가진 회사나 기관에 이용·제공 등 처리를 멈춰 달라고 요청하는 서식입니다. 요구하는
+  사람의 정보와 상대 업체, 처리를 멈추기를 원하는 정보의 범위와 사유를 적습니다. 열람 요구나
+  동의 철회와는 목적이 다르므로 원하는 것이 처리 중지인지 먼저 정하십시오. 본인 확인에 필요한
+  자료를 요구받을 수 있으며, 법령상 보관 의무가 있는 정보는 계속 보유될 수 있습니다. 이 서식은
+  요구 내용을 기록하는 틀입니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요구하는 사람의 성명·생년월일·연락처를 적습니다.
+  - 요구를 받을 업체나 기관의 이름과 담당 부서를 적습니다.
+  - 처리를 멈추기를 원하는 정보의 범위를 체크하고 사유를 적습니다.
+  - 날짜와 서명을 하고 업체의 개인정보 담당 창구에 제출합니다.
+faq:
+  - q: 열람 요구나 동의 철회와 무엇이 다른가요?
+    a: 열람은 내 정보를 보는 것이고, 철회는 동의를 거두는 것입니다. 이 서식은 이용을 멈추도록 요구합니다.
+  - q: 요구하면 모든 정보가 바로 삭제되나요?
+    a: 아닙니다. 처리가 멈출 뿐이며, 법령상 보관해야 하는 정보는 계속 보유될 수 있습니다.
+  - q: 대리인이 낼 수 있나요?
+    a: 위임장 등 대리 자격을 확인하는 서류가 필요할 수 있으므로 업체에 먼저 확인하십시오.
+related: [privacy-access-request, privacy-consent-withdrawal, privacy-consent, portrait-rights-consent]
+blocks:
+  - type: doc_title
+    text: 개인정보 처리정지 요구서
+    spaced: false
+  - type: subtitle
+    text: 1. 요구인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "이메일", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-01-01"]
+      - ["", "010-1234-5678", "", "hong@example.com"]
+      - ["", "서울특별시 중구 예시로 1", "", ""]
+  - type: subtitle
+    text: 2. 요구 대상
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["업체·기관명", "", "담당 부서", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "개인정보 보호팀"]
+  - type: subtitle
+    text: 3. 처리정지를 요구하는 내용
+  - type: kv_list
+    items:
+      - "(  ) 마케팅·광고 목적의 이용"
+      - "(  ) 제3자에게 제공"
+      - "(  ) 그 밖의 이용 (아래에 적음)"
+  - type: textbox
+    hint: "멈추기를 원하는 정보의 범위와 요구 사유를 적으십시오."
+    height_mm: 28
+    sample_text: "회원 탈퇴 후에도 광고 문자가 계속 발송되고 있어 마케팅 목적의 이용을 중지해 주시기 바랍니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    29 일
+  - type: sign_line
+    label: 요구인
+    sample_names: [홍길동]
+  - type: notice
+    text: 법령상 보관 의무가 있는 정보는 계속 보유될 수 있습니다. 업체의 접수 방법을 확인하십시오.

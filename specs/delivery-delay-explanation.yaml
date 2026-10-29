@@ -1,0 +1,79 @@
+id: delivery-delay-explanation
+title: 납품 지연 사유서
+category: corp
+subcategory: sales
+tags: [납품지연, 납기지연사유서, 납기연장, 지연사유, 공급지연]
+summary: 약속한 납기에 맞추지 못할 때 지연 사유와 새 납품 일정을 거래처에 알리는 사유서입니다.
+usage: >
+  주문받은 물품을 약속한 납기까지 내지 못하게 됐을 때 거래처에 보내는 서식입니다. 주문 내역과
+  원래 납기, 지연되는 수량, 지연 사유와 새 납품 예정일을 적고, 일부를 먼저 납품할 수 있으면 분할
+  일정도 적습니다. 사유는 가능한 한 사실대로 간단히 쓰고 변명보다 대책을 앞세우면 협의가
+  수월합니다. 지연에 따른 책임과 보상은 거래 계약을 따르며, 이 서식은 사실을 알리는 틀로서
+  법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 받는 거래처와 보내는 업체, 담당자를 적습니다.
+  - 주문 번호·품목·수량과 원래 납기를 적습니다.
+  - 지연 사유와 새 납품 예정일을 적습니다.
+  - 일부 먼저 납품할 수 있으면 분할 일정을 적고 서명합니다.
+faq:
+  - q: 사유서를 내면 지연 책임이 없어지나요?
+    a: 아닙니다. 책임은 거래 계약에 따릅니다. 사유서는 지연 사실과 일정을 알리는 서류입니다.
+  - q: 사유는 얼마나 자세히 쓰나요?
+    a: 사실을 간단히 쓰고, 새 납품 일정과 대책을 구체적으로 적는 편이 협의에 도움이 됩니다.
+  - q: 일부만 먼저 납품해도 되나요?
+    a: 거래처가 받아들이면 가능합니다. 분할 일정표에 수량과 날짜를 적어 합의하십시오.
+related: [purchase-order, delivery-confirmation, unit-price-change-notice, transaction-statement]
+blocks:
+  - type: doc_title
+    text: 납품 지연 사유서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["받는 거래처", "", "담당자", ""]
+      - ["보내는 업체", "", "담당자", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "김서연"]
+      - ["", "새길물산", "", "홍길동"]
+  - type: subtitle
+    text: 2. 주문 및 지연 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["주문 번호", "", "주문일", ""]
+      - ["품목", "", "지연 수량", ""]
+      - ["원래 납기", "", "새 납품 예정일", ""]
+    sample_rows:
+      - ["", "PO-2026-0412", "", "2026-10-05"]
+      - ["", "포장 박스 (중)", "", "2,000개"]
+      - ["", "2026-10-20", "", "2026-11-03"]
+  - type: subtitle
+    text: 3. 분할 납품 일정 (해당 시 작성)
+  - type: table
+    widths: [12, 38, 50]
+    header: ["회차", 납품 예정일, 수량]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "2026-10-30", "800개"]
+  - type: textbox
+    hint: "지연 사유와 재발 방지 또는 만회 대책을 적으십시오."
+    height_mm: 26
+    sample_text: "원자재 입고가 지연되어 생산이 늦어졌습니다. 잔여 물량은 야간 작업으로 만회해 11월 3일까지 납품하겠습니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    29 일
+  - type: sign_line
+    label: 작성자
+    sample_names: [홍길동]
+  - type: notice
+    text: 지연에 따른 책임과 보상은 거래 계약을 확인하십시오.
