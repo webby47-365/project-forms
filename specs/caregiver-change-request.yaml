@@ -1,0 +1,76 @@
+id: caregiver-change-request
+title: 간병인 변경 요청서
+category: welfare
+subcategory: consent
+tags: [간병인변경, 간병인교체, 간병서비스변경, 간병인요청, 병원간병]
+summary: 이용 중인 간병인을 다른 사람으로 바꾸고 싶을 때 변경 사유와 희망 사항을 적어 병원이나 업체에 내는 요청서 양식입니다.
+usage: >
+  간병인과 일정이 맞지 않거나 돌봄 방식이 맞지 않아 교체가 필요할 때 병원 간병 담당 부서나 간병 업체에
+  제출하는 서식입니다. 환자와 요청인의 정보, 현재 간병인과 이용 기간, 변경을 원하는 시기와 사유,
+  바라는 조건을 적습니다. 진단명 등 건강 정보는 쓰지 않아도 되며 필요한 만큼만 적으십시오. 정산과
+  교체 가능 여부는 이용 계약과 기관 기준에 따르므로 제출처에 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 환자와 요청인의 성명, 관계를 적습니다.
+  - 현재 간병인과 이용 기간을 적습니다.
+  - 변경을 원하는 시기와 사유를 적습니다.
+  - 바라는 조건을 적고 요청인이 서명합니다.
+faq:
+  - q: 변경 사유를 자세히 적어야 하나요?
+    a: 사실 위주로 간단히 적으면 됩니다. 건강 정보나 상대방 비방은 쓰지 않는 편이 좋습니다.
+  - q: 이미 낸 비용은 어떻게 되나요?
+    a: 이용 계약과 업체 기준에 따라 다릅니다. 정산 방식은 제출 전에 업체에 확인하십시오.
+  - q: 환자가 직접 쓰지 못하면요?
+    a: 보호자 등이 요청인으로 적고 환자와의 관계를 함께 적으면 됩니다.
+related: [caregiver-contract, home-care-visit-record, care-service-termination-request, welfare-service-change-request]
+blocks:
+  - type: doc_title
+    text: 간병인 변경 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 환자 및 요청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["환자 성명", "", "병실·호실", ""]
+      - ["요청인", "", "환자와의 관계", ""]
+      - ["연락처", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "김서연", "", "본관 5층 502호"]
+      - ["", "이수현", "", "자녀"]
+      - ["", "010-1234-5678", "", ""]
+  - type: subtitle
+    text: 2. 현재 간병 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["간병인 성명", "", "이용 시작일", ""]
+      - ["이용 형태", "", "변경 희망일", ""]
+    sample_rows:
+      - ["", "박○○", "", "2026-10-20"]
+      - ["", "24시간 상주", "", "2026-11-02"]
+  - type: subtitle
+    text: 3. 변경 사유 및 바라는 조건
+  - type: textbox
+    hint: "변경을 요청하는 사유를 사실 위주로 적으십시오."
+    height_mm: 28
+    sample_text: "야간 돌봄 일정이 서로 맞지 않아 교대 가능한 간병인으로 변경을 요청합니다."
+  - type: textbox
+    hint: "새 간병인에게 바라는 조건(경력·성별·근무 시간 등)을 적으십시오."
+    height_mm: 20
+    sample_text: "야간 근무가 가능하고 거동이 불편한 환자 간병 경험이 있는 분을 희망합니다."
+  - type: date_line
+    sample_text: 2026 년   10 월    30 일
+  - type: sign_line
+    label: 요청인
+    sample_names: [이수현]
+  - type: notice
+    text: 교체 가능 여부와 정산은 이용 계약과 기관 기준을 확인하십시오.

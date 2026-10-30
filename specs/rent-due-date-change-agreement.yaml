@@ -1,0 +1,81 @@
+id: rent-due-date-change-agreement
+title: 월세 납부일 변경 합의서
+category: estate
+subcategory: lease
+tags: [월세납부일변경, 월세날짜변경, 임대차합의서, 차임지급일, 월세합의]
+summary: 임대인과 임차인이 월세 내는 날짜를 바꾸기로 합의한 내용을 적어 두는 월세 납부일 변경 합의서 양식입니다.
+usage: >
+  급여일이 바뀌거나 사정이 생겨 월세 납부일을 옮기기로 임대인과 임차인이 합의했을 때, 말로만 두지 않고
+  문서로 남기는 서식입니다. 계약 대상 물건과 기존·변경 납부일, 변경이 시작되는 달, 그 밖의 합의 사항을
+  적고 양쪽이 서명합니다. 월세 금액이나 계약 기간을 바꾸는 합의는 별도 약정으로 확인하십시오.
+  이 서식은 합의 내용을 기록하는 틀이며 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 임대인과 임차인의 성명, 연락처를 적습니다.
+  - 계약 대상 물건의 주소를 적습니다.
+  - 기존 납부일과 변경 납부일, 시작하는 달을 적습니다.
+  - 양쪽이 날짜를 적고 각자 서명합니다.
+faq:
+  - q: 합의서가 있으면 연체 걱정이 없나요?
+    a: 합의한 날짜가 새 기준이 됩니다. 다만 월세 금액과 연체 약정은 원래 계약서를 따로 확인하십시오.
+  - q: 계약서를 다시 써야 하나요?
+    a: 납부일만 바꾸는 경우 이런 합의서를 원 계약서와 함께 보관하는 방식을 많이 씁니다.
+  - q: 구두로 합의해도 되나요?
+    a: 나중의 다툼을 줄이려면 문서로 남기는 편이 안전합니다.
+related: [housing-lease-contract, monthly-rent-receipt, rent-reduction-request, lease-renewal-contract]
+blocks:
+  - type: doc_title
+    text: 월세 납부일 변경 합의서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["임대인", "", "연락처", ""]
+      - ["임차인", "", "연락처", ""]
+    sample_rows:
+      - ["", "박민준", "", "010-1234-5678"]
+      - ["", "김서연", "", "010-9876-5432"]
+  - type: subtitle
+    text: 2. 계약 대상 물건
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["소재지", ""]
+      - ["계약일", ""]
+    sample_rows:
+      - ["", "서울특별시 ○○구 ○○로 00, 101동 1001호"]
+      - ["", "2026-02-15"]
+  - type: subtitle
+    text: 3. 합의 내용
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["월 차임", "", "기존 납부일", ""]
+      - ["변경 납부일", "", "적용 시작", ""]
+    sample_rows:
+      - ["", "500,000원", "", "매월 5일"]
+      - ["", "매월 25일", "", "2026년 12월분부터"]
+  - type: textbox
+    hint: "그 밖의 합의 사항이 있으면 적으십시오."
+    height_mm: 24
+    sample_text: "위 납부일 외 월 차임, 계약 기간, 그 밖의 조건은 기존 임대차계약서를 따른다."
+  - type: para
+    text: 위 내용을 임대인과 임차인이 합의하였음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   10 월    30 일
+  - type: sign_line
+    labels: ["임대인", "임차인"]
+    sample_names: [박민준, 김서연]
+  - type: notice
+    text: 월세 금액·계약 기간 변경은 별도 약정으로 확인하십시오.

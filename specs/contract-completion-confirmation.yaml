@@ -1,0 +1,77 @@
+id: contract-completion-confirmation
+title: 계약 이행 완료 확인서
+category: public
+subcategory: procure
+tags: [계약이행완료, 이행완료확인서, 납품완료, 용역완료확인, 준공확인]
+summary: 계약에 정한 납품이나 용역을 끝냈음을 발주처가 확인해 주는 계약 이행 완료 확인서 양식입니다.
+usage: >
+  물품 납품이나 용역이 계약대로 끝났을 때 계약 상대방이 요청하고 발주 담당자가 확인해 주는 서식입니다.
+  계약명과 계약 기간, 이행 내역, 이행 완료일, 확인 의견을 적고 양쪽이 서명합니다. 대금 청구나 보증금
+  반환을 요청할 때 첨부 자료로 쓰는 경우가 많습니다. 검수 절차와 확인 방법은 계약서와 발주처 규정에
+  따르므로 제출처 기준을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 계약명과 계약 상대방을 적습니다.
+  - 계약 기간과 이행한 내역을 적습니다.
+  - 이행 완료일과 확인 의견을 적습니다.
+  - 확인자와 계약 상대방이 각자 서명합니다.
+faq:
+  - q: 검수조서와 무엇이 다른가요?
+    a: 검수조서는 물품 상태를 점검한 기록이고, 이 확인서는 계약 이행이 끝났다는 사실을 확인하는 문서입니다.
+  - q: 일부만 이행했을 때도 쓸 수 있나요?
+    a: 이행한 범위를 이행 내역에 정확히 적고 미이행 부분을 의견란에 적어 두면 됩니다.
+related: [goods-inspection-report, contract-performance-deposit-refund-request, defect-warranty-deposit-refund-request, delivery-confirmation]
+blocks:
+  - type: doc_title
+    text: 계약 이행 완료 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 계약 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["계약명", "", "", ""]
+      - ["발주처", "", "계약 상대방", ""]
+      - ["계약일", "", "계약 기간", ""]
+    merges:
+      - [0, 1, 0, 3]
+    sample_rows:
+      - ["", "사무용 비품 납품", "", ""]
+      - ["", "○○시청 총무과", "", "(주)새길데이터"]
+      - ["", "2026-08-10", "", "08-10 ~ 09-30"]
+  - type: subtitle
+    text: 2. 이행 내역
+  - type: table
+    widths: [10, 35, 15, 20, 20]
+    header: ["No", 이행 내용, 수량, 이행일, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "책상 납품·설치", "20", "2026-09-25", ""]
+      - ["2", "사무용 의자 납품", "20", "2026-09-25", ""]
+  - type: subtitle
+    text: 3. 확인 의견
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["이행 완료일", "", "확인일", ""]
+    sample_rows:
+      - ["", "2026-09-25", "", "2026-09-28"]
+  - type: textbox
+    hint: "확인 의견을 적으십시오. 미이행 부분이 있으면 함께 적습니다."
+    height_mm: 22
+    sample_text: "계약서에 정한 납품과 설치가 완료되었음을 확인합니다."
+  - type: date_line
+    sample_text: 2026 년   9 월    28 일
+  - type: sign_line
+    labels: ["확인자(발주처)", "계약 상대방"]
+    sample_names: [박민준, 이수현]
+  - type: notice
+    text: 검수·확인 방법은 계약서와 발주처 규정을 확인하십시오.

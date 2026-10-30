@@ -1,0 +1,82 @@
+id: annual-leave-plan-nonsubmission-notice
+title: 연차 사용계획 미제출 안내서
+category: corp
+subcategory: hr
+tags: [연차계획미제출, 연차사용계획, 제출기한안내, 연차촉진, 미제출안내]
+summary: 연차 사용계획서를 기한 안에 내지 않은 근로자에게 제출 기한과 방법을 다시 알리고 안내 사실을 남기는 안내서 양식입니다.
+usage: >
+  연차 사용 촉진 절차에서 근로자에게 사용계획 제출을 요청했는데 기한 안에 받지 못했을 때, 다시 제출을
+  안내하고 그 사실을 기록하는 서식입니다. 대상자 정보와 최초 요청일, 제출 기한, 다시 정한 기한과
+  제출 방법을 적고 담당자가 서명합니다. 근로자 확인란에는 안내를 받은 날짜를 받아 둡니다. 촉진 절차의
+  기한과 방식은 근로기준법과 회사 규정에 따라 달라지므로 제출처·노무 담당자에게 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 대상 근로자의 성명과 소속을 적습니다.
+  - 최초 요청일과 당초 제출 기한을 적습니다.
+  - 다시 정한 제출 기한과 제출 방법을 적습니다.
+  - 담당자가 서명하고 근로자에게 전달해 확인란을 받습니다.
+faq:
+  - q: 이 안내서를 보내면 촉진 절차가 끝나나요?
+    a: 아닙니다. 이 서식은 재안내 사실을 남기는 틀이며, 절차의 효력은 법령과 회사 규정을 확인하십시오.
+  - q: 근로자 확인란에 서명을 못 받으면요?
+    a: 전달 방법과 일시를 비고에 적어 두고, 반송·미수령은 별도 확인서로 남기는 편이 좋습니다.
+related: [annual-leave-plan-submission-request, annual-leave-plan, annual-leave-promotion-notice, annual-leave-notice-receipt]
+blocks:
+  - type: doc_title
+    text: 연차 사용계획 미제출 안내서
+    spaced: false
+  - type: subtitle
+    text: 1. 대상 근로자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "안내일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "과장", "", "2026-11-03"]
+  - type: subtitle
+    text: 2. 제출 요청 및 기한
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["최초 요청일", "", "당초 제출 기한", ""]
+      - ["다시 정한 기한", "", "제출 방법", ""]
+      - ["제출 대상 기간", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "2026-10-26", "", "2026-10-30"]
+      - ["", "2026-11-07", "", "사내 메일 회신"]
+      - ["", "2026년 잔여 연차 전부", "", ""]
+  - type: textbox
+    hint: "안내 내용과 그 밖의 전달 사항을 적으십시오."
+    height_mm: 26
+    sample_text: "연차 사용계획서가 기한까지 접수되지 않아 제출 기한과 방법을 다시 안내드립니다. 사용 희망 일자를 적어 회신해 주십시오."
+  - type: subtitle
+    text: 3. 수령 확인
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["전달 방법", "", "수령일", ""]
+      - ["비고", "", "", ""]
+    merges:
+      - [1, 1, 1, 3]
+    sample_rows:
+      - ["", "사내 메일", "", "2026-11-03"]
+      - ["", "", "", ""]
+  - type: date_line
+    sample_text: 2026 년   11 월    3 일
+  - type: sign_line
+    labels: ["담당자", "근로자 확인"]
+    sample_names: [박민준, 홍길동]
+  - type: notice
+    text: 촉진 절차의 기한과 방식은 법령과 회사 규정을 확인하십시오.
