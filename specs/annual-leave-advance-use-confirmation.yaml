@@ -1,0 +1,66 @@
+id: annual-leave-advance-use-confirmation
+title: 연차 선사용 확인서
+category: corp
+subcategory: hr
+tags: [연차선사용, 연차당겨쓰기, 가불연차, 연차정산, 선사용확인]
+summary: 발생하기 전의 연차를 미리 쓰기로 했을 때 선사용 일수와 정산 방법을 회사와 근로자가 함께 확인해 두는 확인서 양식입니다.
+usage: >
+  입사 초기나 연차 소진 후에 앞으로 발생할 연차를 미리 당겨 쓰기로 했을 때 쓰는 서식입니다. 근로자와
+  소속, 선사용 일수와 기간, 앞으로 발생할 연차에서 차감하는 방식을 적고 양쪽이 서명합니다. 퇴직 등으로
+  차감하지 못한 일수를 어떻게 처리할지도 합의한 대로 적어 두면 나중에 정산 다툼이 줄어듭니다. 임금 공제 등
+  법령과 관련된 부분은 회사 규정과 노무 담당자에게 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 근로자의 성명과 소속, 직위를 적습니다.
+  - 미리 쓴 연차의 일수와 사용 기간을 적습니다.
+  - 앞으로 발생할 연차에서 차감하는 방식을 적습니다.
+  - 차감하지 못한 경우의 처리 방법을 합의해 적고 서명합니다.
+faq:
+  - q: 연차를 미리 쓰게 해도 되나요?
+    a: 회사와 근로자가 합의하면 운영할 수 있습니다. 구체적인 효력은 법령과 회사 규정을 확인하십시오.
+  - q: 퇴직하면 선사용 일수는 어떻게 되나요?
+    a: 합의한 처리 방법을 특약란에 적어 둡니다. 임금에서 빼는 경우는 노무 담당자에게 먼저 확인하십시오.
+related: [annual-leave-accrual-statement, annual-leave-usage-status-confirmation, annual-leave-pay-settlement-statement, annual-leave-carryover-agreement]
+blocks:
+  - type: doc_title
+    text: 연차 선사용 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 근로자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "입사일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "사원", "", "2026-03-02"]
+  - type: subtitle
+    text: 2. 선사용 내용
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["선사용 일수", "", "사용 기간", ""]
+      - ["현재 잔여 연차", "", "차감 예정 시기", ""]
+    sample_rows:
+      - ["", "3일", "", "2026-11-04 ~ 11-06"]
+      - ["", "0일", "", "2027-03 발생분부터"]
+  - type: subtitle
+    text: 3. 정산 방법 및 특약
+  - type: textbox
+    hint: "차감 방식과 퇴직 시 처리 방법을 합의한 대로 적으십시오."
+    height_mm: 30
+    sample_text: "선사용한 3일은 다음 연차 발생일에 차감합니다. 차감 전에 퇴직하는 경우의 처리는 별도로 협의합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월    2 일
+  - type: sign_line
+    labels: ["회사 담당자", "근로자"]
+    sample_names: [박민준, 홍길동]
+  - type: notice
+    text: 임금 공제 등은 법령과 회사 규정을 확인하십시오.

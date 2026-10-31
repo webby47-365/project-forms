@@ -1,0 +1,70 @@
+id: sample-provision-confirmation
+title: 견본 제공 확인서
+category: corp
+subcategory: sales
+tags: [견본제공, 샘플제공확인서, 샘플수령, 견본인수, 샘플반환]
+summary: 거래 검토를 위해 견본(샘플)을 제공할 때 품목·수량·반환 여부와 사용 조건을 적어 서로 확인하는 확인서 양식입니다.
+usage: >
+  본 거래 전에 거래처에 견본을 보내거나 받을 때 쓰는 서식입니다. 제공자와 수령자, 견본 품목과 수량,
+  유상·무상 여부, 반환 필요 여부를 적고 양쪽이 서명합니다. 견본을 시험이나 검토 외 용도로 쓰지 않는다는
+  조건과 반환 기한을 적어 두면 분쟁이 줄어듭니다. 기밀이 포함된 견본은 별도의 비밀유지 약정이 필요한지
+  확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제공하는 회사와 수령하는 회사를 적습니다.
+  - 견본의 품목과 수량, 규격을 적습니다.
+  - 유상·무상 여부와 반환 필요 여부를 표시합니다.
+  - 사용 조건과 반환 기한을 적고 양쪽이 서명합니다.
+faq:
+  - q: 견본도 반환해야 하나요?
+    a: 합의에 따릅니다. 반환이 필요하면 기한과 방법을 조건란에 적어 두십시오.
+  - q: 견본에 기밀이 들어 있으면요?
+    a: 별도의 비밀유지 약정을 함께 맺는 편이 안전합니다. 필요하면 법무 담당자에게 확인하십시오.
+related: [quotation, nda, delivery-confirmation, sales-contract]
+blocks:
+  - type: doc_title
+    text: 견본 제공 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["제공자", "", "담당자", ""]
+      - ["수령자", "", "담당자", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "박민준"]
+      - ["", "한빛물산", "", "김서연"]
+  - type: subtitle
+    text: 2. 견본 내역
+  - type: table
+    widths: [30, 25, 12, 33]
+    header: [품목, 규격, 수량, 비고]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["포장용 박스 견본", "30x20x15cm", "5", "무상 제공"]
+      - ["완충재 견본", "롤 1m", "2", "반환 필요"]
+  - type: subtitle
+    text: 3. 조건
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["제공일", "", "반환 기한", ""]
+    sample_rows:
+      - ["", "2026-10-30", "", "2026-11-30"]
+  - type: textbox
+    hint: "사용 조건과 반환 방법 등 합의 내용을 적으십시오."
+    height_mm: 22
+    sample_text: "견본은 품질 검토 목적으로만 사용하며 제3자에게 제공하지 않습니다."
+  - type: date_line
+    sample_text: 2026 년   10 월   30 일
+  - type: sign_line
+    labels: ["제공자", "수령자"]
+    sample_names: [박민준, 김서연]

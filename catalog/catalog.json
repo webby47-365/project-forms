@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T11:32:10+09:00",
-  "count": 438,
+  "generated_at": "2026-10-31T11:14:07+09:00",
+  "count": 443,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -743,6 +743,104 @@
       "warnings": [],
       "created_at": "2026-10-22T10:25:27+09:00",
       "updated_at": "2026-10-22T10:25:27+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "annual-leave-advance-use-confirmation",
+      "title": "연차 선사용 확인서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연차선사용",
+        "연차당겨쓰기",
+        "가불연차",
+        "연차정산",
+        "선사용확인"
+      ],
+      "summary": "발생하기 전의 연차를 미리 쓰기로 했을 때 선사용 일수와 정산 방법을 회사와 근로자가 함께 확인해 두는 확인서 양식입니다.",
+      "usage": "입사 초기나 연차 소진 후에 앞으로 발생할 연차를 미리 당겨 쓰기로 했을 때 쓰는 서식입니다. 근로자와 소속, 선사용 일수와 기간, 앞으로 발생할 연차에서 차감하는 방식을 적고 양쪽이 서명합니다. 퇴직 등으로 차감하지 못한 일수를 어떻게 처리할지도 합의한 대로 적어 두면 나중에 정산 다툼이 줄어듭니다. 임금 공제 등 법령과 관련된 부분은 회사 규정과 노무 담당자에게 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 39375,
+        "docx": 38448,
+        "hwpx": 9458
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "근로자의 성명과 소속, 직위를 적습니다.",
+        "미리 쓴 연차의 일수와 사용 기간을 적습니다.",
+        "앞으로 발생할 연차에서 차감하는 방식을 적습니다.",
+        "차감하지 못한 경우의 처리 방법을 합의해 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "연차를 미리 쓰게 해도 되나요?",
+          "a": "회사와 근로자가 합의하면 운영할 수 있습니다. 구체적인 효력은 법령과 회사 규정을 확인하십시오."
+        },
+        {
+          "q": "퇴직하면 선사용 일수는 어떻게 되나요?",
+          "a": "합의한 처리 방법을 특약란에 적어 둡니다. 임금에서 빼는 경우는 노무 담당자에게 먼저 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 근로자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "입사일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 선사용 내용",
+          "items": [
+            "선사용 일수",
+            "사용 기간",
+            "현재 잔여 연차",
+            "차감 예정 시기"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 정산 방법 및 특약",
+          "items": [],
+          "note": "차감 방식과 퇴직 시 처리 방법을 합의한 대로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "annual-leave-accrual-statement",
+        "annual-leave-usage-status-confirmation",
+        "annual-leave-pay-settlement-statement",
+        "annual-leave-carryover-agreement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-31T11:13:42+09:00",
+      "updated_at": "2026-10-31T11:13:42+09:00",
       "downloads": 0
     },
     {
@@ -8432,6 +8530,105 @@
         "medical-expense-support"
       ],
       "seal": true
+    },
+    {
+      "id": "case-record-inspection-request",
+      "title": "소송기록 열람·복사 신청서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "소송기록열람",
+        "기록복사신청",
+        "사건기록열람",
+        "열람복사신청서",
+        "재판기록"
+      ],
+      "summary": "진행 중이거나 끝난 사건의 소송기록을 보거나 복사하려고 법원에 내는 열람·복사 신청서 양식입니다.",
+      "usage": "본인이 당사자이거나 이해관계가 있는 사건의 기록을 확인할 때 쓰는 서식입니다. 사건번호와 사건명, 신청인과 사건 관계, 열람할 대상과 복사 범위, 사용 목적을 적습니다. 열람·복사가 가능한 범위와 필요한 서류, 수수료는 사건 종류와 신청인의 지위에 따라 다르므로 담당 법원 민원실의 안내를 확인하십시오. 본 서식은 참고용이며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 44865,
+        "docx": 38574,
+        "hwpx": 9777
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "법원 이름과 사건번호, 사건명을 적습니다.",
+        "신청인의 성명과 연락처, 사건 관계를 적습니다.",
+        "열람할지 복사할지 고르고 대상 서류를 적습니다.",
+        "사용 목적을 적고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "누구나 소송기록을 볼 수 있나요?",
+          "a": "아닙니다. 신청인의 지위와 사건 종류에 따라 범위가 다르므로 담당 법원에 확인하십시오."
+        },
+        {
+          "q": "수수료는 얼마인가요?",
+          "a": "복사 장수 등에 따라 달라집니다. 법원 민원실의 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사건 표시",
+          "items": [
+            "법원",
+            "사건번호",
+            "사건명"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신청인",
+          "items": [
+            "성명",
+            "연락처",
+            "사건 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 신청 내용",
+          "items": [
+            "대상 서류",
+            "쪽수"
+          ],
+          "note": "열람·복사가 필요한 이유(사용 목적)를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "evidence-submission-list",
+        "preparatory-brief",
+        "hearing-date-change-request",
+        "service-address-change-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-31T11:13:49+09:00",
+      "updated_at": "2026-10-31T11:13:49+09:00",
+      "downloads": 0
     },
     {
       "id": "cash-receipt-correction-request",
@@ -24188,6 +24385,107 @@
       "downloads": 0
     },
     {
+      "id": "item-storage-confirmation",
+      "title": "물품 보관 확인서",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "물품보관",
+        "짐보관",
+        "보관확인서",
+        "맡긴물건",
+        "보관증"
+      ],
+      "summary": "이사나 장기 부재로 지인에게 짐을 맡길 때 품목과 보관 기간, 반환 방법을 적어 서로 확인하는 개인 간 물품 보관 확인서입니다.",
+      "usage": "이사 사이의 공백이나 해외 체류처럼 일정 기간 짐을 다른 사람에게 맡길 때 쓰는 서식입니다. 맡기는 사람과 보관하는 사람, 품목과 맡길 당시 상태, 보관 기간과 장소를 적고 양쪽이 서명합니다. 보관 중 파손이나 분실 때의 처리, 보관료 여부는 합의한 대로 특약란에 적어 둡니다. 귀중품은 사진을 함께 남기면 반환할 때 확인이 쉽습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 43230,
+        "docx": 38552,
+        "hwpx": 9768
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "맡기는 사람과 보관하는 사람을 적습니다.",
+        "품목과 수량, 맡길 당시 상태를 함께 확인해 적습니다.",
+        "보관 기간과 보관 장소를 적습니다.",
+        "보관료와 파손·분실 때 처리를 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "보관 기간이 지나도 못 찾으러 가면요?",
+          "a": "미리 연락해 새 기간을 합의하고 확인서에 날짜를 고쳐 적은 뒤 서명해 두십시오."
+        },
+        {
+          "q": "보관료를 꼭 받아야 하나요?",
+          "a": "아닙니다. 받는다면 금액과 지급 시기를 특약란에 적어 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "맡기는 사람",
+            "연락처",
+            "보관하는 사람"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 보관 물품",
+          "items": [
+            "품목",
+            "수량",
+            "맡길 당시 상태"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 기간 및 특약",
+          "items": [
+            "보관 시작일",
+            "반환 예정일",
+            "보관 장소",
+            "보관료"
+          ],
+          "note": "파손·분실 때 처리 방법 등 합의 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "item-loan-confirmation",
+        "moving-checklist",
+        "secondhand-trade-confirmation",
+        "checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-31T11:14:00+09:00",
+      "updated_at": "2026-10-31T11:14:00+09:00",
+      "downloads": 0
+    },
+    {
       "id": "job-application-form",
       "title": "입사지원서",
       "category": "personal",
@@ -36866,6 +37164,105 @@
       "seal": true
     },
     {
+      "id": "sample-provision-confirmation",
+      "title": "견본 제공 확인서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "견본제공",
+        "샘플제공확인서",
+        "샘플수령",
+        "견본인수",
+        "샘플반환"
+      ],
+      "summary": "거래 검토를 위해 견본(샘플)을 제공할 때 품목·수량·반환 여부와 사용 조건을 적어 서로 확인하는 확인서 양식입니다.",
+      "usage": "본 거래 전에 거래처에 견본을 보내거나 받을 때 쓰는 서식입니다. 제공자와 수령자, 견본 품목과 수량, 유상·무상 여부, 반환 필요 여부를 적고 양쪽이 서명합니다. 견본을 시험이나 검토 외 용도로 쓰지 않는다는 조건과 반환 기한을 적어 두면 분쟁이 줄어듭니다. 기밀이 포함된 견본은 별도의 비밀유지 약정이 필요한지 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 40328,
+        "docx": 38501,
+        "hwpx": 9737
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제공하는 회사와 수령하는 회사를 적습니다.",
+        "견본의 품목과 수량, 규격을 적습니다.",
+        "유상·무상 여부와 반환 필요 여부를 표시합니다.",
+        "사용 조건과 반환 기한을 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "견본도 반환해야 하나요?",
+          "a": "합의에 따릅니다. 반환이 필요하면 기한과 방법을 조건란에 적어 두십시오."
+        },
+        {
+          "q": "견본에 기밀이 들어 있으면요?",
+          "a": "별도의 비밀유지 약정을 함께 맺는 편이 안전합니다. 필요하면 법무 담당자에게 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "제공자",
+            "담당자",
+            "수령자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 견본 내역",
+          "items": [
+            "품목",
+            "규격",
+            "수량"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 조건",
+          "items": [
+            "제공일",
+            "반환 기한"
+          ],
+          "note": "사용 조건과 반환 방법 등 합의 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "quotation",
+        "nda",
+        "delivery-confirmation",
+        "sales-contract"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-31T11:14:07+09:00",
+      "updated_at": "2026-10-31T11:14:07+09:00",
+      "downloads": 0
+    },
+    {
       "id": "scholarship-application",
       "title": "장학금 신청서",
       "category": "edu",
@@ -38302,6 +38699,107 @@
       "warnings": [],
       "created_at": "2026-10-11T08:16:43+09:00",
       "updated_at": "2026-10-11T08:17:29+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "shareholder-meeting-proxy",
+      "title": "주주총회 의결권 위임장",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "주주총회위임장",
+        "의결권위임",
+        "의결권대리행사",
+        "주총위임장",
+        "대리인"
+      ],
+      "summary": "주주총회에 직접 참석하지 못하는 주주가 대리인에게 의결권 행사를 맡길 때 쓰는 의결권 위임장 양식입니다.",
+      "usage": "주주총회에 나갈 수 없는 주주가 다른 사람에게 의결권을 대신 행사하게 할 때 회사에 내는 서식입니다. 주주와 대리인, 총회 일시와 소유 주식 수, 위임 범위를 적고 주주가 서명합니다. 안건별로 찬반을 지정할지 대리인에게 맡길지를 구분해 적어 두면 분쟁이 줄어듭니다. 제출 시기와 첨부서류는 정관과 회사 안내를 확인하십시오. 본 서식은 참고용이며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 47895,
+        "docx": 38606,
+        "hwpx": 9885
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "회사 이름과 총회 일시를 적습니다.",
+        "주주의 성명과 소유 주식 수를 적습니다.",
+        "대리인의 성명과 연락처를 적습니다.",
+        "안건별 위임 내용을 적고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "대리인은 아무나 할 수 있나요?",
+          "a": "정관에 제한이 있을 수 있습니다. 회사 정관과 안내를 확인하십시오."
+        },
+        {
+          "q": "안건별 찬반을 꼭 정해야 하나요?",
+          "a": "필수는 아닙니다. 다만 정해 두면 대리인이 어긋나게 행사할 여지가 줄어듭니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 총회 개요",
+          "items": [
+            "회사명",
+            "총회 일시",
+            "총회 종류",
+            "장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 위임인(주주)과 대리인",
+          "items": [
+            "주주 성명",
+            "소유 주식 수",
+            "대리인 성명",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임 내용",
+          "items": [
+            "안건",
+            "찬반 지정"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "shareholder-meeting-notice",
+        "shareholder-meeting-minutes",
+        "shareholder-register",
+        "board-minutes"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-10-31T11:13:55+09:00",
+      "updated_at": "2026-10-31T11:13:55+09:00",
       "downloads": 0
     },
     {

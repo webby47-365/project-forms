@@ -1,0 +1,73 @@
+id: shareholder-meeting-proxy
+title: 주주총회 의결권 위임장
+category: corp
+subcategory: startup
+tags: [주주총회위임장, 의결권위임, 의결권대리행사, 주총위임장, 대리인]
+summary: 주주총회에 직접 참석하지 못하는 주주가 대리인에게 의결권 행사를 맡길 때 쓰는 의결권 위임장 양식입니다.
+usage: >
+  주주총회에 나갈 수 없는 주주가 다른 사람에게 의결권을 대신 행사하게 할 때 회사에 내는 서식입니다.
+  주주와 대리인, 총회 일시와 소유 주식 수, 위임 범위를 적고 주주가 서명합니다. 안건별로 찬반을 지정할지
+  대리인에게 맡길지를 구분해 적어 두면 분쟁이 줄어듭니다. 제출 시기와 첨부서류는 정관과 회사 안내를
+  확인하십시오. 본 서식은 참고용이며 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사 이름과 총회 일시를 적습니다.
+  - 주주의 성명과 소유 주식 수를 적습니다.
+  - 대리인의 성명과 연락처를 적습니다.
+  - 안건별 위임 내용을 적고 날짜와 서명을 합니다.
+faq:
+  - q: 대리인은 아무나 할 수 있나요?
+    a: 정관에 제한이 있을 수 있습니다. 회사 정관과 안내를 확인하십시오.
+  - q: 안건별 찬반을 꼭 정해야 하나요?
+    a: 필수는 아닙니다. 다만 정해 두면 대리인이 어긋나게 행사할 여지가 줄어듭니다.
+related: [shareholder-meeting-notice, shareholder-meeting-minutes, shareholder-register, board-minutes]
+blocks:
+  - type: doc_title
+    text: 주주총회 의결권 위임장
+    spaced: false
+  - type: subtitle
+    text: 1. 총회 개요
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "총회 일시", ""]
+      - ["총회 종류", "", "장소", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "2026-11-20 10:00"]
+      - ["", "임시주주총회", "", "본사 회의실"]
+  - type: subtitle
+    text: 2. 위임인(주주)과 대리인
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["주주 성명", "", "소유 주식 수", ""]
+      - ["대리인 성명", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1,000주"]
+      - ["", "김서연", "", "010-1234-5678"]
+  - type: subtitle
+    text: 3. 위임 내용
+  - type: table
+    widths: [10, 40, 25, 25]
+    header: ["No", 안건, 찬반 지정, 비고]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "이사 선임의 건", "찬성", ""]
+      - ["2", "정관 변경의 건", "대리인 일임", ""]
+  - type: para
+    text: 위 사람을 대리인으로 정하고 위 총회에서 의결권을 행사할 권한을 위임합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   10 일
+  - type: sign_line
+    label: 위임인(주주)
+    sample_names: [홍길동]
+  - type: notice
+    text: 대리인 자격과 제출 기한은 정관과 회사 안내를 확인하십시오.
