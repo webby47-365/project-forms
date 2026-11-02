@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freeforms.kr/</loc><lastmod>2026-10-31</lastmod><priority>1.0</priority></url>
-  <url><loc>https://freeforms.kr/category/corp/hr/</loc><lastmod>2026-10-31</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority></url>
+  <url><loc>https://freeforms.kr/category/corp/hr/</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/corp/admin/</loc><lastmod>2026-09-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/corp/finance/</loc><lastmod>2026-09-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/corp/sales/</loc><lastmod>2026-10-31</lastmod><priority>0.6</priority></url>
@@ -12,11 +12,11 @@
   <url><loc>https://freeforms.kr/category/public/civil/</loc><lastmod>2026-10-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/public/consent/</loc><lastmod>2026-10-29</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/public/family/</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://freeforms.kr/category/public/tax/</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/tax/</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/public/insurance/</loc><lastmod>2026-10-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/public/procure/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
-  <url><loc>https://freeforms.kr/category/public/vehicle/</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://freeforms.kr/category/public/permit/</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/vehicle/</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/public/permit/</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/estate/lease/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/personal/career/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/personal/life/</loc><lastmod>2026-10-31</lastmod><priority>0.6</priority></url>
@@ -118,6 +118,7 @@
   <url><loc>https://freeforms.kr/form/business-registration-change-poa/</loc><lastmod>2026-10-03</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/business-registration-poa/</loc><lastmod>2026-09-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/business-report-agent-poa/</loc><lastmod>2026-09-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/business-representative-change-confirmation/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/business-resumption-confirmation/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/business-suspension-confirmation/</loc><lastmod>2026-10-12</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/business-transfer-contract/</loc><lastmod>2026-09-19</lastmod><priority>0.8</priority></url>
@@ -193,6 +194,7 @@
   <url><loc>https://freeforms.kr/form/disclosure-objection/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/distributor-contract/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/document-register/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/donation-receipt-request/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/employee-roster/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/employment-certificate/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/employment-insurance-history-request/</loc><lastmod>2026-10-03</lastmod><priority>0.8</priority></url>
@@ -355,6 +357,7 @@
   <url><loc>https://freeforms.kr/form/portrait-rights-consent/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/power-of-attorney/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/preparatory-brief/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/prior-employer-withholding-submission/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/privacy-access-request/</loc><lastmod>2026-10-20</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/privacy-consent/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/privacy-consent-marketing/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
@@ -464,6 +467,7 @@
   <url><loc>https://freeforms.kr/form/vaccination-consent/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/vat-filing-document-confirmation/</loc><lastmod>2026-09-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/vat-filing-poa/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/vehicle-co-ownership-agreement/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/vehicle-delivery-confirmation/</loc><lastmod>2026-10-03</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/vehicle-deregistration-poa/</loc><lastmod>2026-09-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/vehicle-inspection-poa/</loc><lastmod>2026-10-03</lastmod><priority>0.8</priority></url>
@@ -496,10 +500,11 @@
   <url><loc>https://freeforms.kr/form/written-apology/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/written-pledge/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/written-statement/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/year-end-dependent-change-notice/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/year-end-tax-checklist/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
-  <url><loc>https://freeforms.kr/about/</loc><lastmod>2026-10-31</lastmod><priority>0.6</priority></url>
-  <url><loc>https://freeforms.kr/privacy/</loc><lastmod>2026-10-31</lastmod><priority>0.3</priority></url>
-  <url><loc>https://freeforms.kr/request/</loc><lastmod>2026-10-31</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freeforms.kr/about/</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/privacy/</loc><lastmod>2026-11-02</lastmod><priority>0.3</priority></url>
+  <url><loc>https://freeforms.kr/request/</loc><lastmod>2026-11-02</lastmod><priority>0.5</priority></url>
   <url><loc>https://freeforms.kr/tools/</loc><lastmod>2026-09-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://freeforms.kr/tools/stamp/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/tools/salary/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>

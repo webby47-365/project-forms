@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T11:14:07+09:00",
-  "count": 443,
+  "generated_at": "2026-11-02T11:18:10+09:00",
+  "count": 448,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -6668,6 +6668,108 @@
       "warnings": [],
       "created_at": "2026-09-29T08:17:16+09:00",
       "updated_at": "2026-09-29T08:17:16+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "business-representative-change-confirmation",
+      "title": "영업 대표자 변경 사실 확인서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "대표자변경",
+        "영업대표자변경",
+        "영업신고변경",
+        "대표자교체확인",
+        "영업자지위"
+      ],
+      "summary": "영업장의 대표자가 바뀐 사실을 변경 전후 대표자 정보와 변경일, 확인인 서명으로 정리하는 확인서입니다.",
+      "usage": "영업신고나 허가를 받은 사업장에서 대표자가 바뀌었을 때 그 사실을 제출처에 설명해야 하는 경우 쓰는 서식입니다. 영업장 정보와 변경 전·후 대표자, 변경일과 사유를 적고 양쪽 대표자가 서명합니다. 변경 신고의 방법과 기한, 필요 서류는 업종과 지자체마다 다르므로 관할 기관 안내를 확인하십시오. 본 서식은 사실을 정리하는 틀이며 변경 신고서를 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 43922,
+        "docx": 38500,
+        "hwpx": 9563
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "영업장의 상호와 소재지, 업종을 적습니다.",
+        "변경 전 대표자와 변경 후 대표자 정보를 적습니다.",
+        "변경일과 변경 사유를 적습니다.",
+        "확인 내용을 읽고 두 대표자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 확인서만 내면 변경 신고가 끝나나요?",
+          "a": "아닙니다. 변경 신고는 관할 기관 절차를 따로 밟아야 하니 방법과 기한을 먼저 확인하십시오."
+        },
+        {
+          "q": "변경 전 대표자가 연락되지 않으면요?",
+          "a": "서명을 받기 어려운 사정은 제출처에 문의하십시오. 기관마다 인정하는 방식이 다릅니다."
+        },
+        {
+          "q": "사업자등록도 함께 바꾸나요?",
+          "a": "세무 정정은 별도 절차입니다. 국세청 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 영업장 정보",
+          "items": [
+            "상호",
+            "업종",
+            "소재지"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대표자 변경 내용",
+          "items": [
+            "변경 전 대표자",
+            "연락처",
+            "변경 후 대표자",
+            "변경일",
+            "변경 사유"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 경위 및 첨부 서류",
+          "items": [],
+          "note": "대표자가 바뀐 경위와 첨부하는 서류(계약서 등)를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-permit-name-change-consent",
+        "business-transfer-contract",
+        "business-registration-change-poa",
+        "permit-application-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-02T11:18:10+09:00",
+      "updated_at": "2026-11-02T11:18:10+09:00",
       "downloads": 0
     },
     {
@@ -14640,6 +14742,114 @@
         "proposal-draft"
       ],
       "seal": false
+    },
+    {
+      "id": "donation-receipt-request",
+      "title": "기부금 영수증 발급 요청서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "기부금영수증",
+        "기부금영수증발급",
+        "연말정산기부금",
+        "기부금확인",
+        "영수증발급요청"
+      ],
+      "summary": "기부한 단체에 연말정산·세금 신고용 기부금 영수증 발급을 요청할 때 기부 내역과 수령 방법을 정리하는 요청서입니다.",
+      "usage": "기부한 뒤 연말정산이나 종합소득세 신고에 쓸 기부금 영수증이 필요할 때 기부 단체에 보내는 서식입니다. 기부자 정보와 기부 일자·금액·종류, 필요한 연도와 받을 방법을 적고 서명합니다. 영수증을 발급할 수 있는지와 필요한 확인 자료는 단체마다 다르므로 먼저 단체 안내를 확인하십시오. 본 서식은 요청 내용을 정리하는 틀이며 법정 기부금 영수증 서식을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 52763,
+        "docx": 38699,
+        "hwpx": 10104
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "기부자 성명과 연락처를 적습니다.",
+        "기부 단체명과 기부 종류를 적습니다.",
+        "기부한 날짜와 금액을 내역표에 적습니다.",
+        "영수증이 필요한 연도와 받을 방법을 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 요청서가 영수증인가요?",
+          "a": "아닙니다. 영수증 발급을 요청하는 서류이며, 영수증은 기부 단체가 따로 발급합니다."
+        },
+        {
+          "q": "발급에 확인 자료가 필요한가요?",
+          "a": "단체마다 다릅니다. 이체 내역 같은 기부 사실 자료를 요구할 수 있으니 먼저 문의하십시오."
+        },
+        {
+          "q": "어느 연도 영수증을 요청하나요?",
+          "a": "공제를 받으려는 해에 기부한 내역을 기준으로 적고, 제출처 기준을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 기부자 정보",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처",
+            "이메일",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 기부 내역",
+          "items": [
+            "기부 단체",
+            "기부 종류",
+            "기부일",
+            "금액(원)",
+            "납부 방법"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 영수증 요청 사항",
+          "items": [
+            "필요 연도",
+            "수령 방법",
+            "사용 목적"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-donation-receipt",
+        "year-end-tax-checklist",
+        "withholding-request",
+        "sponsorship-application"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-02T11:17:45+09:00",
+      "updated_at": "2026-11-02T11:17:45+09:00",
+      "downloads": 0
     },
     {
       "id": "employee-roster",
@@ -31917,6 +32127,115 @@
       "seal": true
     },
     {
+      "id": "prior-employer-withholding-submission",
+      "title": "종전 근무지 근로소득 원천징수영수증 제출서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "종전근무지",
+        "원천징수영수증제출",
+        "중도입사연말정산",
+        "이직연말정산",
+        "근로소득합산"
+      ],
+      "summary": "올해 중도 입사한 근로자가 이전 회사의 근로소득 원천징수영수증을 현재 회사에 제출할 때 쓰는 제출서입니다.",
+      "usage": "한 해 중에 회사를 옮긴 근로자가 연말정산에서 이전 근무지 소득을 합산하기 위해 종전 근무지의 근로소득 원천징수영수증을 현재 회사에 내는 서식입니다. 제출자 정보와 종전 근무지 이름·근무 기간, 첨부 서류를 적고 서명합니다. 합산 방식과 제출 기한은 회사 안내와 국세청 기준에 따라 달라지므로 인사·총무 담당자에게 확인하십시오. 본 서식은 제출 사실을 남기는 틀이며 세액 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54115,
+        "docx": 38727,
+        "hwpx": 10027
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자 성명과 소속 부서를 적습니다.",
+        "종전 근무지 이름과 근무 기간을 적습니다.",
+        "첨부하는 서류의 종류와 장수를 표에 적습니다.",
+        "날짜를 적고 서명한 뒤 담당자에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "종전 근무지 영수증은 어디서 받나요?",
+          "a": "이전 회사에 발급을 요청하거나 국세청 홈택스 안내를 확인하십시오. 발급처는 상황에 따라 다릅니다."
+        },
+        {
+          "q": "제출 기한이 있나요?",
+          "a": "회사의 연말정산 일정에 따라 다릅니다. 인사·총무 담당자에게 기한을 확인하십시오."
+        },
+        {
+          "q": "올해 이직하지 않았다면 내나요?",
+          "a": "해당 없습니다. 올해 이직한 경우에만 이전 근무지 자료를 냅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자 정보",
+          "items": [
+            "성명",
+            "소속 부서",
+            "입사일",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 종전 근무지 정보",
+          "items": [
+            "종전 근무지",
+            "사업자등록번호",
+            "근무 기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 첨부 서류",
+          "items": [
+            "서류명",
+            "장수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 전달 사항",
+          "items": [],
+          "note": "담당자에게 알릴 내용이 있으면 적으십시오. 없으면 비워 둡니다."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "withholding-request",
+        "year-end-dependent-change-notice",
+        "career-certificate-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-02T11:17:52+09:00",
+      "updated_at": "2026-11-02T11:17:52+09:00",
+      "downloads": 0
+    },
+    {
       "id": "privacy-access-request",
       "title": "개인정보 열람 요구서",
       "category": "public",
@@ -43582,6 +43901,112 @@
       "downloads": 0
     },
     {
+      "id": "vehicle-co-ownership-agreement",
+      "title": "자동차 공동소유 합의서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차공동소유",
+        "차량공동명의",
+        "공동소유합의",
+        "차량공동사용",
+        "공동명의합의"
+      ],
+      "summary": "두 사람 이상이 자동차를 함께 소유할 때 지분과 비용 분담, 사용 방법, 처분 방식을 미리 정해 두는 합의서입니다.",
+      "usage": "부부나 가족, 지인이 차량을 공동으로 소유하고 사용하기로 했을 때 나중의 다툼을 줄이기 위해 쓰는 서식입니다. 차량 정보와 공동소유자별 지분, 보험료·세금·수리비 분담, 사용 규칙, 매각 방식을 적고 모두 서명합니다. 등록 방식과 세금 처리는 상황마다 다르므로 관할 기관 안내를 확인하십시오. 본 서식은 당사자 간 합의 내용을 정리하는 틀이며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50785,
+        "docx": 38727,
+        "hwpx": 10006
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "차량 번호와 차종, 등록 정보를 적습니다.",
+        "공동소유자의 성명과 지분 비율을 적습니다.",
+        "보험료·수리비 등 비용을 어떻게 나눌지 적습니다.",
+        "사용 규칙과 매각 방식을 적고 모두 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "지분 비율은 어떻게 정하나요?",
+          "a": "구입 자금을 낸 비율이나 합의한 비율로 적습니다. 정답은 없으니 당사자끼리 정하십시오."
+        },
+        {
+          "q": "한 사람이 팔고 싶을 때는요?",
+          "a": "매각 방식란에 사전 동의, 우선 매입권 등 합의한 방법을 적어 두면 분쟁을 줄일 수 있습니다."
+        },
+        {
+          "q": "이 합의서로 등록이 되나요?",
+          "a": "아닙니다. 등록은 관할 기관 절차에 따르며, 이 서식은 당사자 간 약속을 남기는 용도입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 차량 정보",
+          "items": [
+            "차량 번호",
+            "차종",
+            "차대번호",
+            "취득일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 공동소유자와 지분",
+          "items": [
+            "성명",
+            "연락처",
+            "지분(%)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 비용 분담",
+          "items": [],
+          "note": "보험료, 자동차세, 수리비, 주유비 등을 누가 얼마씩 부담하는지 적으십시오."
+        },
+        {
+          "title": "4. 사용 규칙과 처분 방식",
+          "items": [],
+          "note": "사용 순서, 보관 장소, 매각 시 동의 방법을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-use-consent",
+        "vehicle-delivery-confirmation",
+        "vehicle-lease-contract",
+        "gov-vehicle-transfer-registration"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-02T11:18:03+09:00",
+      "updated_at": "2026-11-02T11:18:03+09:00",
+      "downloads": 0
+    },
+    {
       "id": "vehicle-delivery-confirmation",
       "title": "자동차 인도확인서",
       "category": "public",
@@ -46982,6 +47407,114 @@
         "preparatory-brief"
       ],
       "seal": true
+    },
+    {
+      "id": "year-end-dependent-change-notice",
+      "title": "연말정산 부양가족 변경 신고서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연말정산",
+        "부양가족변경",
+        "부양가족신고",
+        "인적공제",
+        "가족변동신고"
+      ],
+      "summary": "연말정산을 앞두고 결혼·출산·입양 등으로 달라진 부양가족 정보를 회사에 알릴 때 쓰는 변경 신고서입니다.",
+      "usage": "한 해 동안 가족 구성이 바뀐 근로자가 연말정산 담당자에게 변동 내용을 알리는 서식입니다. 신고자 정보와 변경 사유, 추가 또는 제외되는 가족의 관계·생년월일을 적고 서명합니다. 공제 대상 여부는 나이와 소득 등 요건에 따라 달라지므로 국세청 안내와 회사 기준을 확인하십시오. 본 서식은 변동 사항을 알리는 틀이며 공제 가능 여부를 판단하지 않습니다. 주민등록번호는 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55941,
+        "docx": 38817,
+        "hwpx": 10279
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고자 성명과 소속 부서를 적습니다.",
+        "변경 사유와 변경이 생긴 날짜를 적습니다.",
+        "추가되거나 제외되는 가족을 표에 적습니다.",
+        "확인 내용을 읽고 날짜와 서명을 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "주민등록번호도 적나요?",
+          "a": "이 서식에는 생년월일만 적습니다. 회사가 따로 요구하면 담당자 안내에 따르십시오."
+        },
+        {
+          "q": "가족 한 명을 제외할 때도 내나요?",
+          "a": "네, 부양가족에서 빠지는 경우에도 변경 내용을 알려야 합니다. 시기는 회사 일정을 확인하십시오."
+        },
+        {
+          "q": "이 서식으로 공제가 확정되나요?",
+          "a": "아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고자 정보",
+          "items": [
+            "성명",
+            "소속 부서",
+            "사번",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 변경 사유",
+          "items": [
+            "변경 사유",
+            "변경일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 변경 가족 내역",
+          "items": [
+            "관계",
+            "생년월일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 전달 사항",
+          "items": [],
+          "note": "담당자에게 알릴 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "dependent-support-fact-confirmation",
+        "year-end-tax-checklist",
+        "prior-employer-withholding-submission",
+        "family-relationship-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-02T11:17:58+09:00",
+      "updated_at": "2026-11-02T11:17:58+09:00",
+      "downloads": 0
     },
     {
       "id": "year-end-tax-checklist",

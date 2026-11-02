@@ -1,0 +1,76 @@
+id: vehicle-co-ownership-agreement
+title: 자동차 공동소유 합의서
+category: public
+subcategory: vehicle
+tags: [자동차공동소유, 차량공동명의, 공동소유합의, 차량공동사용, 공동명의합의]
+summary: 두 사람 이상이 자동차를 함께 소유할 때 지분과 비용 분담, 사용 방법, 처분 방식을 미리 정해 두는 합의서입니다.
+usage: >
+  부부나 가족, 지인이 차량을 공동으로 소유하고 사용하기로 했을 때 나중의 다툼을 줄이기 위해 쓰는
+  서식입니다. 차량 정보와 공동소유자별 지분, 보험료·세금·수리비 분담, 사용 규칙, 매각 방식을 적고
+  모두 서명합니다. 등록 방식과 세금 처리는 상황마다 다르므로 관할 기관 안내를 확인하십시오.
+  본 서식은 당사자 간 합의 내용을 정리하는 틀이며 법률 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 차량 번호와 차종, 등록 정보를 적습니다.
+  - 공동소유자의 성명과 지분 비율을 적습니다.
+  - 보험료·수리비 등 비용을 어떻게 나눌지 적습니다.
+  - 사용 규칙과 매각 방식을 적고 모두 서명합니다.
+faq:
+  - q: 지분 비율은 어떻게 정하나요?
+    a: 구입 자금을 낸 비율이나 합의한 비율로 적습니다. 정답은 없으니 당사자끼리 정하십시오.
+  - q: 한 사람이 팔고 싶을 때는요?
+    a: 매각 방식란에 사전 동의, 우선 매입권 등 합의한 방법을 적어 두면 분쟁을 줄일 수 있습니다.
+  - q: 이 합의서로 등록이 되나요?
+    a: 아닙니다. 등록은 관할 기관 절차에 따르며, 이 서식은 당사자 간 약속을 남기는 용도입니다.
+related: [vehicle-use-consent, vehicle-delivery-confirmation, vehicle-lease-contract, gov-vehicle-transfer-registration]
+blocks:
+  - type: doc_title
+    text: 자동차 공동소유 합의서
+    spaced: false
+  - type: subtitle
+    text: 1. 차량 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["차량 번호", "", "차종", ""]
+      - ["차대번호", "", "취득일", ""]
+    sample_rows:
+      - ["", "00가 0000", "", "소형 승용차"]
+      - ["", "KMH0000000000", "", "2026-09-15"]
+  - type: subtitle
+    text: 2. 공동소유자와 지분
+  - type: table
+    widths: [8, 22, 22, 18, 30]
+    header: ["No", 성명, 연락처, 지분(%), 비고]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "홍길동", "010-1234-5678", "50", "주 사용자"]
+      - ["2", "김서연", "010-2345-6789", "50", ""]
+  - type: subtitle
+    text: 3. 비용 분담
+  - type: textbox
+    hint: "보험료, 자동차세, 수리비, 주유비 등을 누가 얼마씩 부담하는지 적으십시오."
+    height_mm: 22
+    sample_text: "보험료와 자동차세는 지분 비율대로 나누고, 수리비는 사용한 사람이 먼저 내고 정산합니다."
+  - type: subtitle
+    text: 4. 사용 규칙과 처분 방식
+  - type: textbox
+    hint: "사용 순서, 보관 장소, 매각 시 동의 방법을 적으십시오."
+    height_mm: 24
+    sample_text: "평일은 홍길동, 주말은 김서연이 사용하며 매각할 때는 두 사람이 서면으로 동의합니다."
+  - type: para
+    text: 위 내용을 공동소유자 모두가 확인하고 합의합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    2 일
+  - type: sign_line
+    labels: ["공동소유자 1", "공동소유자 2"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 등록과 세금 처리는 관할 기관 안내를 확인하십시오.

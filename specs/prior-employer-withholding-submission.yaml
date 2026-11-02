@@ -1,0 +1,84 @@
+id: prior-employer-withholding-submission
+title: 종전 근무지 근로소득 원천징수영수증 제출서
+category: public
+subcategory: tax
+tags: [종전근무지, 원천징수영수증제출, 중도입사연말정산, 이직연말정산, 근로소득합산]
+summary: 올해 중도 입사한 근로자가 이전 회사의 근로소득 원천징수영수증을 현재 회사에 제출할 때 쓰는 제출서입니다.
+usage: >
+  한 해 중에 회사를 옮긴 근로자가 연말정산에서 이전 근무지 소득을 합산하기 위해 종전 근무지의
+  근로소득 원천징수영수증을 현재 회사에 내는 서식입니다. 제출자 정보와 종전 근무지 이름·근무 기간,
+  첨부 서류를 적고 서명합니다. 합산 방식과 제출 기한은 회사 안내와 국세청 기준에 따라 달라지므로
+  인사·총무 담당자에게 확인하십시오. 본 서식은 제출 사실을 남기는 틀이며 세액 판단을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자 성명과 소속 부서를 적습니다.
+  - 종전 근무지 이름과 근무 기간을 적습니다.
+  - 첨부하는 서류의 종류와 장수를 표에 적습니다.
+  - 날짜를 적고 서명한 뒤 담당자에게 냅니다.
+faq:
+  - q: 종전 근무지 영수증은 어디서 받나요?
+    a: 이전 회사에 발급을 요청하거나 국세청 홈택스 안내를 확인하십시오. 발급처는 상황에 따라 다릅니다.
+  - q: 제출 기한이 있나요?
+    a: 회사의 연말정산 일정에 따라 다릅니다. 인사·총무 담당자에게 기한을 확인하십시오.
+  - q: 올해 이직하지 않았다면 내나요?
+    a: 해당 없습니다. 올해 이직한 경우에만 이전 근무지 자료를 냅니다.
+related: [year-end-tax-checklist, withholding-request, year-end-dependent-change-notice, career-certificate-request]
+blocks:
+  - type: doc_title
+    text: 종전 근무지 근로소득 원천징수영수증 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속 부서", ""]
+      - ["입사일", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "경영지원팀"]
+      - ["", "2026-06-01", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 종전 근무지 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["종전 근무지", "", "사업자등록번호", ""]
+      - ["근무 기간", "", "", ""]
+    merges:
+      - [1, 1, 1, 3]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "000-00-00000"]
+      - ["", "2026-01-01 ~ 2026-05-31", "", ""]
+  - type: subtitle
+    text: 3. 첨부 서류
+  - type: table
+    widths: [10, 50, 20, 20]
+    header: ["No", 서류명, 장수, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "근로소득 원천징수영수증", "1", "원본"]
+      - ["2", "근무 기간 확인 자료", "1", "사본"]
+  - type: subtitle
+    text: 4. 전달 사항
+  - type: textbox
+    hint: "담당자에게 알릴 내용이 있으면 적으십시오. 없으면 비워 둡니다."
+    height_mm: 18
+    sample_text: "5월 말 퇴사 후 6월 1일 입사했으며, 영수증은 이전 회사에서 발급받아 첨부했습니다."
+  - type: para
+    text: 위와 같이 종전 근무지 근로소득 원천징수영수증을 제출합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    2 일
+  - type: sign_line
+    label: 제출자
+    sample_names: [김서연]
+  - type: notice
+    text: 제출 기한과 합산 방식은 회사 연말정산 안내를 확인하십시오.

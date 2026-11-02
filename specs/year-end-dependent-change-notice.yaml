@@ -1,0 +1,80 @@
+id: year-end-dependent-change-notice
+title: 연말정산 부양가족 변경 신고서
+category: corp
+subcategory: hr
+tags: [연말정산, 부양가족변경, 부양가족신고, 인적공제, 가족변동신고]
+summary: 연말정산을 앞두고 결혼·출산·입양 등으로 달라진 부양가족 정보를 회사에 알릴 때 쓰는 변경 신고서입니다.
+usage: >
+  한 해 동안 가족 구성이 바뀐 근로자가 연말정산 담당자에게 변동 내용을 알리는 서식입니다.
+  신고자 정보와 변경 사유, 추가 또는 제외되는 가족의 관계·생년월일을 적고 서명합니다.
+  공제 대상 여부는 나이와 소득 등 요건에 따라 달라지므로 국세청 안내와 회사 기준을 확인하십시오.
+  본 서식은 변동 사항을 알리는 틀이며 공제 가능 여부를 판단하지 않습니다. 주민등록번호는 적지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신고자 성명과 소속 부서를 적습니다.
+  - 변경 사유와 변경이 생긴 날짜를 적습니다.
+  - 추가되거나 제외되는 가족을 표에 적습니다.
+  - 확인 내용을 읽고 날짜와 서명을 적습니다.
+faq:
+  - q: 주민등록번호도 적나요?
+    a: 이 서식에는 생년월일만 적습니다. 회사가 따로 요구하면 담당자 안내에 따르십시오.
+  - q: 가족 한 명을 제외할 때도 내나요?
+    a: 네, 부양가족에서 빠지는 경우에도 변경 내용을 알려야 합니다. 시기는 회사 일정을 확인하십시오.
+  - q: 이 서식으로 공제가 확정되나요?
+    a: 아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오.
+related: [dependent-support-fact-confirmation, year-end-tax-checklist, prior-employer-withholding-submission, family-relationship-confirmation]
+blocks:
+  - type: doc_title
+    text: 연말정산 부양가족 변경 신고서
+    spaced: false
+  - type: subtitle
+    text: 1. 신고자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속 부서", ""]
+      - ["사번", "", "연락처", ""]
+    sample_rows:
+      - ["", "박민준", "", "영업지원팀"]
+      - ["", "A-1024", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 변경 사유
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["변경 사유", "", "변경일", ""]
+    sample_rows:
+      - ["", "자녀 출생", "", "2026-08-20"]
+  - type: subtitle
+    text: 3. 변경 가족 내역
+  - type: table
+    widths: [8, 18, 14, 22, 18, 20]
+    header: ["No", 성명, 관계, 생년월일, 구분, 비고]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "박서윤", "자녀", "2026-08-20", "추가", ""]
+      - ["2", "박영수", "부", "1952-01-15", "제외", "소득 발생"]
+  - type: subtitle
+    text: 4. 전달 사항
+  - type: textbox
+    hint: "담당자에게 알릴 내용이 있으면 적으십시오."
+    height_mm: 16
+    sample_text: "자녀 출생으로 부양가족을 추가하며, 관련 증빙은 담당자 안내에 따라 제출하겠습니다."
+  - type: para
+    text: 위 내용이 사실과 다름이 없음을 확인하며 부양가족 변경을 신고합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    2 일
+  - type: sign_line
+    label: 신고자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상 여부는 국세청 기준과 회사 안내를 확인하십시오.
