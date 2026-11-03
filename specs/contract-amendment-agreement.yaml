@@ -1,0 +1,78 @@
+id: contract-amendment-agreement
+title: 계약 변경 합의서
+category: legal
+subcategory: contract
+tags: [계약변경합의서, 계약내용변경, 계약조건변경, 변경합의, 계약수정]
+summary: 이미 체결한 계약의 금액·기간 등 일부 조건을 양 당사자가 합의해 바꿀 때 변경 전후 내용을 적는 합의서입니다.
+usage: >
+  이미 맺은 계약의 일부 조건만 바꾸기로 했을 때, 변경 사실과 내용을 문서로 남기는 합의서입니다.
+  원 계약의 이름과 체결일을 밝히고, 바뀌는 조항마다 변경 전과 변경 후 내용을 표로 대비해 적습니다.
+  변경하지 않은 나머지 조항은 그대로 유효하다는 문구를 두면 범위가 분명해집니다. 양 당사자가 서명한 뒤
+  각자 한 부씩 보관하십시오. 계약 내용에 따라 효력과 해석이 달라질 수 있으니 필요하면 전문가에게 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 원 계약의 이름과 체결일, 당사자를 적습니다.
+  - 바뀌는 조항의 변경 전과 변경 후 내용을 적습니다.
+  - 변경 효력이 생기는 날짜를 적습니다.
+  - 양 당사자가 날짜를 적고 서명해 한 부씩 보관합니다.
+faq:
+  - q: 원 계약서를 다시 쓰지 않아도 되나요?
+    a: 일부 조건만 바꾼다면 이 합의서를 원 계약서와 함께 보관하는 방식이 쓰입니다. 전면 변경이면 새 계약서가 낫습니다.
+  - q: 바꾸지 않는 조항은 어떻게 되나요?
+    a: 합의서에 변경하지 않은 조항은 그대로 유효하다고 적어 두면 범위가 분명해집니다.
+  - q: 한쪽만 서명해도 되나요?
+    a: 변경은 양 당사자의 합의가 기본이므로 양쪽이 서명하는 것이 좋습니다.
+related: [service-contract, payment-due-extension-request, contract-assignment-consent, settlement-agreement]
+blocks:
+  - type: doc_title
+    text: 계약 변경 합의서
+    spaced: false
+  - type: subtitle
+    text: 1. 원 계약 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["계약명", "", "체결일", ""]
+      - ["갑", "", "을", ""]
+    sample_rows:
+      - ["", "웹사이트 제작 용역계약", "", "2026-07-01"]
+      - ["", "(주)한빛커머스", "", "홍길동"]
+  - type: subtitle
+    text: 2. 변경 내용
+  - type: table
+    widths: [10, 20, 35, 35]
+    header: ["No", 변경 조항, 변경 전, 변경 후]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "제3조 (기간)", "2026-09-30까지", "2026-10-31까지"]
+      - ["2", "제4조 (대금)", "금 5,000,000원", "금 5,500,000원"]
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["변경 효력일", ""]
+    sample_rows:
+      - ["", "2026-09-15"]
+  - type: subtitle
+    text: 3. 기타 합의 사항
+  - type: textbox
+    hint: "변경 사유와 그 밖에 합의한 내용을 적으십시오."
+    height_mm: 22
+    sample_text: 변경 사유는 추가 요청 기능 반영이며, 이 합의서에서 변경하지 않은 원 계약의 나머지 조항은 그대로 유효합니다.
+  - type: para
+    text: 위와 같이 계약 내용을 변경하기로 합의하고, 이를 증명하기 위하여 각자 서명하여 한 부씩 보관한다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년    9 월   10 일
+  - type: sign_line
+    labels: ["갑", "을"]
+    sample_names: [한빛커머스, 홍길동]
+  - type: notice
+    text: 계약 내용에 따라 효력이 달라질 수 있으니 필요하면 전문가에게 확인하십시오.

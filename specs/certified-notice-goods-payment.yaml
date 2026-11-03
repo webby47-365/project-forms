@@ -1,0 +1,101 @@
+id: certified-notice-goods-payment
+title: 내용증명 (물품대금 청구)
+category: legal
+subcategory: notice
+tags: [내용증명, 물품대금청구, 물품대금, 대금독촉, 거래대금청구]
+summary: 물품을 납품하고도 대금을 받지 못한 공급자가 상대방에게 미수 대금과 지급 기한을 밝혀 청구하는 내용증명 양식입니다.
+usage: >
+  물품을 공급했지만 약속한 날까지 대금을 받지 못한 공급자가 상대방에게 지급을 공식적으로 요구할 때 씁니다.
+  거래한 물품과 납품일, 단가와 수량, 미수 금액을 표로 정리하고 합계를 정확히 적습니다.
+  지급 기한과 입금 계좌를 분명히 밝힌 뒤 우체국 등기로 보내면 통지한 사실과 내용이 증거로 남습니다.
+  기한까지 지급되지 않을 때의 대응은 사안마다 다르므로 필요하면 전문가에게 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+series: certified-notice
+series_name: 내용증명
+variant: 물품대금 청구
+variant_rank: 6
+variant_use: 납품한 물품의 미수 대금을 청구할 때 씁니다.
+howto:
+  - 발신인(공급자)과 수신인(거래처) 정보를 적습니다.
+  - 거래한 물품과 납품일, 수량, 금액을 표에 적습니다.
+  - 합계와 지급 기한, 입금 계좌를 적습니다.
+  - 3부를 출력해 우체국에서 등기로 발송합니다.
+faq:
+  - q: 거래명세서가 없어도 보낼 수 있나요?
+    a: 보낼 수는 있지만 납품 사실을 보여 주는 명세서나 세금계산서를 함께 보관해 두는 편이 좋습니다.
+  - q: 지급 기한은 며칠로 잡나요?
+    a: 정해진 기간은 없습니다. 보통 수령일로부터 7일에서 14일 안팎으로 적는 경우가 많습니다.
+  - q: 내용증명만으로 대금을 받을 수 있나요?
+    a: 내용증명은 청구 사실을 남기는 문서입니다. 이후 절차는 사안에 따라 달라 전문가 확인이 필요합니다.
+related: [small-claims-complaint, complaint-goods-payment, payment-due-extension-request, quotation]
+blocks:
+  - type: doc_title
+    text: 내용증명
+    spaced: true
+  - type: subtitle
+    text: 발신인 (공급자)
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges: [[1, 1, 1, 3]]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울특별시 마포구 월드컵북로 100", "", ""]
+  - type: subtitle
+    text: 수신인 (거래처)
+  - type: grid
+    widths: [15, 35, 15, 35]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges: [[1, 1, 1, 3]]
+    rows:
+      - ["상호·성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "(주)한빛물산 (대표 김서연)", "", "02-1234-5678"]
+      - ["", "경기도 성남시 분당구 판교로 10", "", ""]
+  - type: subtitle
+    text: 1. 미수 대금 내역
+  - type: table
+    widths: [16, 34, 12, 18, 20]
+    header: [납품일, 물품명, 수량, 단가, 금액]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["2026-08-05", "포장용 박스 (대)", "500", "1,200", "600,000"]
+      - ["2026-08-19", "포장용 박스 (중)", "800", "900", "720,000"]
+  - type: grid
+    widths: [30, 70]
+    label_cols: [0]
+    row_height_mm: 8
+    rows:
+      - ["미수 합계", "금                                원정(₩                       )"]
+      - ["지급 기한", ""]
+      - ["입금 계좌", ""]
+    sample_rows:
+      - ["", "금 1,320,000원(₩1,320,000)"]
+      - ["", "본 통지서 수령일로부터 14일 이내"]
+      - ["", "00은행 000-000000-00-000 (예금주 홍길동)"]
+  - type: subtitle
+    text: 2. 통지 내용
+  - type: textbox
+    hint: "거래 경위와 대금을 받지 못한 사정을 사실대로 기재하십시오."
+    height_mm: 28
+    sample_text: 발신인은 수신인의 주문에 따라 위 물품을 납품하였으나, 약정한 지급일이 지났음에도 대금을 지급받지 못하였습니다. 이에 위 미수 대금의 지급을 요청드립니다.
+  - type: para
+    text: 위 기한까지 지급되지 않을 경우 별도의 절차를 진행할 수 있음을 알려드립니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    3 일
+  - type: sign_line
+    label: 발신인
+    sample_names: [홍길동]
+  - type: notice
+    text: 우체국 창구에 발신인용·수신인용·우체국 보관용 3부를 제출합니다. 구체적인 대응은 전문가에게 확인하십시오.

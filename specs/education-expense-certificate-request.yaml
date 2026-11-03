@@ -1,0 +1,86 @@
+id: education-expense-certificate-request
+title: 교육비 납입증명서 발급 요청서
+category: edu
+subcategory: school
+tags: [교육비납입증명서, 교육비발급요청, 연말정산교육비, 학원비증명, 수강료납입증명]
+summary: 연말정산 교육비 자료 제출을 위해 학교·학원에 한 해 동안 낸 교육비의 납입증명서 발급을 요청하는 양식입니다.
+usage: >
+  연말정산을 앞두고 자녀 또는 본인이 한 해 동안 낸 교육비의 납입증명서를 학교나 학원에 요청할 때 씁니다.
+  요청자 정보와 수강생, 증명이 필요한 기간, 수령 방법을 적어 담당 부서에 제출합니다.
+  공제 대상 여부와 제출 가능한 자료의 범위는 국세청 안내와 회사 기준에 따라 달라지니 확인하십시오.
+  본 서식은 발급을 요청하는 틀이며 공제 가능 여부를 판단하지 않습니다. 주민등록번호는 적지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청자 성명과 연락처를 적습니다.
+  - 수강생 성명과 과정명, 수강 기간을 적습니다.
+  - 증명이 필요한 기간과 수령 방법을 고릅니다.
+  - 날짜를 적고 서명해 학교·학원에 냅니다.
+faq:
+  - q: 주민등록번호를 적어야 하나요?
+    a: 이 서식에는 생년월일만 적습니다. 기관이 별도로 요구하면 해당 기관 안내에 따르십시오.
+  - q: 모든 학원비가 공제되나요?
+    a: 대상 범위는 국세청 기준에 따라 다릅니다. 공제 여부는 국세청 안내와 회사 기준을 확인하십시오.
+  - q: 언제까지 요청하면 되나요?
+    a: 발급 소요 기간은 기관마다 다릅니다. 회사의 자료 제출 일정에 맞추어 여유 있게 요청하십시오.
+related: [year-end-tax-checklist, year-end-dependent-change-notice, tuition-refund-request, dependent-support-fact-confirmation]
+blocks:
+  - type: doc_title
+    text: 교육비 납입증명서 발급 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["수강생과의 관계", "", "이메일", ""]
+    sample_rows:
+      - ["", "박민준", "", "010-1234-5678"]
+      - ["", "부", "", "parent@example.com"]
+  - type: subtitle
+    text: 2. 수강 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["수강생 성명", "", "생년월일", ""]
+      - ["과정명", "", "수강 기간", ""]
+    sample_rows:
+      - ["", "박서윤", "", "2016-03-10"]
+      - ["", "초등 영어 B반", "", "2026-01 ~ 2026-12"]
+  - type: subtitle
+    text: 3. 증명 요청 내역
+  - type: table
+    widths: [10, 30, 30, 30]
+    header: ["No", 증명 기간, 납입 항목, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "2026-01 ~ 2026-06", "수강료", ""]
+      - ["2", "2026-07 ~ 2026-12", "수강료", "연말정산 제출용"]
+  - type: subtitle
+    text: 4. 수령 방법
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["수령 방법", "", "희망일", ""]
+    sample_rows:
+      - ["", "이메일 수령", "", "2026-12-15"]
+  - type: para
+    text: 위와 같이 교육비 납입증명서의 발급을 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    3 일
+  - type: sign_line
+    label: 요청자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상 여부는 국세청 기준과 회사 안내를 확인하십시오.

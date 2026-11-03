@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T11:18:10+09:00",
-  "count": 448,
+  "generated_at": "2026-11-03T12:55:43+09:00",
+  "count": 453,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -9035,6 +9035,118 @@
       "seal": true
     },
     {
+      "id": "certified-notice-goods-payment",
+      "title": "내용증명 (물품대금 청구)",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "내용증명",
+        "물품대금청구",
+        "물품대금",
+        "대금독촉",
+        "거래대금청구"
+      ],
+      "summary": "물품을 납품하고도 대금을 받지 못한 공급자가 상대방에게 미수 대금과 지급 기한을 밝혀 청구하는 내용증명 양식입니다.",
+      "usage": "물품을 공급했지만 약속한 날까지 대금을 받지 못한 공급자가 상대방에게 지급을 공식적으로 요구할 때 씁니다. 거래한 물품과 납품일, 단가와 수량, 미수 금액을 표로 정리하고 합계를 정확히 적습니다. 지급 기한과 입금 계좌를 분명히 밝힌 뒤 우체국 등기로 보내면 통지한 사실과 내용이 증거로 남습니다. 기한까지 지급되지 않을 때의 대응은 사안마다 다르므로 필요하면 전문가에게 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 60656,
+        "docx": 38964,
+        "hwpx": 10378
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "certified-notice",
+      "series_name": "내용증명",
+      "variant": "물품대금 청구",
+      "variant_rank": 6,
+      "variant_use": "납품한 물품의 미수 대금을 청구할 때 씁니다.",
+      "howto": [
+        "발신인(공급자)과 수신인(거래처) 정보를 적습니다.",
+        "거래한 물품과 납품일, 수량, 금액을 표에 적습니다.",
+        "합계와 지급 기한, 입금 계좌를 적습니다.",
+        "3부를 출력해 우체국에서 등기로 발송합니다."
+      ],
+      "faq": [
+        {
+          "q": "거래명세서가 없어도 보낼 수 있나요?",
+          "a": "보낼 수는 있지만 납품 사실을 보여 주는 명세서나 세금계산서를 함께 보관해 두는 편이 좋습니다."
+        },
+        {
+          "q": "지급 기한은 며칠로 잡나요?",
+          "a": "정해진 기간은 없습니다. 보통 수령일로부터 7일에서 14일 안팎으로 적는 경우가 많습니다."
+        },
+        {
+          "q": "내용증명만으로 대금을 받을 수 있나요?",
+          "a": "내용증명은 청구 사실을 남기는 문서입니다. 이후 절차는 사안에 따라 달라 전문가 확인이 필요합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "발신인 (공급자)",
+          "items": [
+            "성명",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "수신인 (거래처)",
+          "items": [
+            "상호·성명"
+          ],
+          "note": ""
+        },
+        {
+          "title": "1. 미수 대금 내역",
+          "items": [
+            "납품일",
+            "물품명",
+            "수량",
+            "단가",
+            "금액",
+            "미수 합계",
+            "지급 기한",
+            "입금 계좌"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 통지 내용",
+          "items": [],
+          "note": "거래 경위와 대금을 받지 못한 사정을 사실대로 기재하십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "small-claims-complaint",
+        "complaint-goods-payment",
+        "payment-due-extension-request",
+        "quotation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-03T12:55:25+09:00",
+      "updated_at": "2026-11-03T12:55:25+09:00",
+      "downloads": 0
+    },
+    {
       "id": "certified-notice-loan",
       "title": "내용증명 (대여금 반환청구)",
       "category": "legal",
@@ -10173,6 +10285,117 @@
       "warnings": [],
       "created_at": "2026-10-10T08:17:27+09:00",
       "updated_at": "2026-10-10T08:17:27+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "civil-petition-supplement-submission",
+      "title": "민원 보완서류 제출서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "민원보완서류",
+        "민원보완제출",
+        "보완서류제출서",
+        "민원서류보완",
+        "보완요구회신"
+      ],
+      "summary": "민원 처리 중 보완을 요구받은 서류를 접수번호와 함께 제출하며 보완 내역을 적는 양식입니다.",
+      "usage": "민원을 접수한 뒤 담당 기관에서 서류 보완을 요구받았을 때, 보완한 서류를 모아 제출하며 쓰는 서식입니다. 원 민원의 접수번호와 제목, 보완 요구를 받은 날짜를 적고 이번에 제출하는 서류 목록을 표로 정리합니다. 기관이 정한 보완 기한이 있으니 안내문의 기한을 먼저 확인하십시오. 제출 전 사본을 보관해 두면 편합니다. 본 서식은 제출 내역을 정리하는 틀이며 처리 결과를 보장하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51802,
+        "docx": 38748,
+        "hwpx": 10140
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "민원 접수번호와 제목을 적습니다.",
+        "보완 요구를 받은 날짜와 기한을 적습니다.",
+        "이번에 제출하는 서류를 표에 적습니다.",
+        "날짜를 적고 서명해 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "접수번호를 모르면 어떻게 하나요?",
+          "a": "접수 당시 받은 안내문이나 문자에서 확인합니다. 찾을 수 없으면 담당 기관에 문의하십시오."
+        },
+        {
+          "q": "보완 기한을 넘기면 어떻게 되나요?",
+          "a": "처리 방식은 기관과 민원 종류에 따라 다릅니다. 안내문의 기한과 담당 부서 안내를 확인하십시오."
+        },
+        {
+          "q": "서류 원본을 내야 하나요?",
+          "a": "요구 안내에 따릅니다. 원본이 필요 없으면 사본을 내고 원본은 보관하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "제출 기관",
+            "담당 부서"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 원 민원 정보",
+          "items": [
+            "접수번호",
+            "접수일",
+            "민원 제목",
+            "보완 요구일",
+            "보완 기한"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 제출 서류 목록",
+          "items": [
+            "서류명",
+            "부수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 보완 내용",
+          "items": [],
+          "note": "보완 요구에 대해 어떻게 보완했는지 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "civil-petition",
+        "civil-petition-reply-request",
+        "civil-petition-delay-reminder",
+        "civil-petition-withdrawal"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-03T12:55:43+09:00",
+      "updated_at": "2026-11-03T12:55:43+09:00",
       "downloads": 0
     },
     {
@@ -11411,6 +11634,108 @@
         "invoice-request"
       ],
       "seal": true
+    },
+    {
+      "id": "contract-amendment-agreement",
+      "title": "계약 변경 합의서",
+      "category": "legal",
+      "subcategory": "contract",
+      "tags": [
+        "계약변경합의서",
+        "계약내용변경",
+        "계약조건변경",
+        "변경합의",
+        "계약수정"
+      ],
+      "summary": "이미 체결한 계약의 금액·기간 등 일부 조건을 양 당사자가 합의해 바꿀 때 변경 전후 내용을 적는 합의서입니다.",
+      "usage": "이미 맺은 계약의 일부 조건만 바꾸기로 했을 때, 변경 사실과 내용을 문서로 남기는 합의서입니다. 원 계약의 이름과 체결일을 밝히고, 바뀌는 조항마다 변경 전과 변경 후 내용을 표로 대비해 적습니다. 변경하지 않은 나머지 조항은 그대로 유효하다는 문구를 두면 범위가 분명해집니다. 양 당사자가 서명한 뒤 각자 한 부씩 보관하십시오. 계약 내용에 따라 효력과 해석이 달라질 수 있으니 필요하면 전문가에게 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48076,
+        "docx": 38657,
+        "hwpx": 9915
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "원 계약의 이름과 체결일, 당사자를 적습니다.",
+        "바뀌는 조항의 변경 전과 변경 후 내용을 적습니다.",
+        "변경 효력이 생기는 날짜를 적습니다.",
+        "양 당사자가 날짜를 적고 서명해 한 부씩 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "원 계약서를 다시 쓰지 않아도 되나요?",
+          "a": "일부 조건만 바꾼다면 이 합의서를 원 계약서와 함께 보관하는 방식이 쓰입니다. 전면 변경이면 새 계약서가 낫습니다."
+        },
+        {
+          "q": "바꾸지 않는 조항은 어떻게 되나요?",
+          "a": "합의서에 변경하지 않은 조항은 그대로 유효하다고 적어 두면 범위가 분명해집니다."
+        },
+        {
+          "q": "한쪽만 서명해도 되나요?",
+          "a": "변경은 양 당사자의 합의가 기본이므로 양쪽이 서명하는 것이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 원 계약 정보",
+          "items": [
+            "계약명",
+            "체결일",
+            "갑",
+            "을"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 변경 내용",
+          "items": [
+            "변경 조항",
+            "변경 전",
+            "변경 후",
+            "변경 효력일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 기타 합의 사항",
+          "items": [],
+          "note": "변경 사유와 그 밖에 합의한 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "service-contract",
+        "payment-due-extension-request",
+        "contract-assignment-consent",
+        "settlement-agreement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-03T12:55:40+09:00",
+      "updated_at": "2026-11-03T12:55:40+09:00",
+      "downloads": 0
     },
     {
       "id": "contract-assignment-consent",
@@ -14849,6 +15174,119 @@
       "warnings": [],
       "created_at": "2026-11-02T11:17:45+09:00",
       "updated_at": "2026-11-02T11:17:45+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "education-expense-certificate-request",
+      "title": "교육비 납입증명서 발급 요청서",
+      "category": "edu",
+      "subcategory": "school",
+      "tags": [
+        "교육비납입증명서",
+        "교육비발급요청",
+        "연말정산교육비",
+        "학원비증명",
+        "수강료납입증명"
+      ],
+      "summary": "연말정산 교육비 자료 제출을 위해 학교·학원에 한 해 동안 낸 교육비의 납입증명서 발급을 요청하는 양식입니다.",
+      "usage": "연말정산을 앞두고 자녀 또는 본인이 한 해 동안 낸 교육비의 납입증명서를 학교나 학원에 요청할 때 씁니다. 요청자 정보와 수강생, 증명이 필요한 기간, 수령 방법을 적어 담당 부서에 제출합니다. 공제 대상 여부와 제출 가능한 자료의 범위는 국세청 안내와 회사 기준에 따라 달라지니 확인하십시오. 본 서식은 발급을 요청하는 틀이며 공제 가능 여부를 판단하지 않습니다. 주민등록번호는 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50931,
+        "docx": 38683,
+        "hwpx": 10035
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청자 성명과 연락처를 적습니다.",
+        "수강생 성명과 과정명, 수강 기간을 적습니다.",
+        "증명이 필요한 기간과 수령 방법을 고릅니다.",
+        "날짜를 적고 서명해 학교·학원에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "주민등록번호를 적어야 하나요?",
+          "a": "이 서식에는 생년월일만 적습니다. 기관이 별도로 요구하면 해당 기관 안내에 따르십시오."
+        },
+        {
+          "q": "모든 학원비가 공제되나요?",
+          "a": "대상 범위는 국세청 기준에 따라 다릅니다. 공제 여부는 국세청 안내와 회사 기준을 확인하십시오."
+        },
+        {
+          "q": "언제까지 요청하면 되나요?",
+          "a": "발급 소요 기간은 기관마다 다릅니다. 회사의 자료 제출 일정에 맞추어 여유 있게 요청하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청자 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "수강생과의 관계",
+            "이메일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 수강 정보",
+          "items": [
+            "수강생 성명",
+            "생년월일",
+            "과정명",
+            "수강 기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 증명 요청 내역",
+          "items": [
+            "증명 기간",
+            "납입 항목"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 수령 방법",
+          "items": [
+            "수령 방법",
+            "희망일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-dependent-change-notice",
+        "tuition-refund-request",
+        "dependent-support-fact-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-03T12:55:35+09:00",
+      "updated_at": "2026-11-03T12:55:35+09:00",
       "downloads": 0
     },
     {
@@ -28099,6 +28537,112 @@
         "event-photo-consent"
       ],
       "seal": true
+    },
+    {
+      "id": "minor-overseas-travel-consent",
+      "title": "미성년 자녀 해외여행 동의서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "해외여행동의서",
+        "미성년자해외여행",
+        "친권자동의서",
+        "자녀해외여행",
+        "부모동의서"
+      ],
+      "summary": "미성년 자녀가 부모 한쪽 또는 제3자와 해외여행을 갈 때 친권자가 동행과 일정에 동의함을 적는 양식입니다.",
+      "usage": "미성년 자녀가 친권자 없이, 또는 한쪽 부모만 동행해 해외로 나갈 때 동행을 허락한다는 뜻을 남기는 서식입니다. 자녀와 동의하는 친권자, 동행자의 정보와 여행 목적지, 기간을 적고 친권자가 서명합니다. 항공사와 출입국 심사 기관은 요구 서류가 다를 수 있으므로 출발 전에 별도로 확인하십시오. 본 서식은 동의 사실을 남기는 틀이며 법적 효력이나 입국 허용을 보장하지 않습니다. 여권번호는 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48165,
+        "docx": 38624,
+        "hwpx": 9863
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "자녀의 성명과 생년월일을 적습니다.",
+        "동의하는 친권자와 동행자 정보를 적습니다.",
+        "여행 목적지와 출국·귀국 예정일을 적습니다.",
+        "날짜를 적고 친권자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "부모 한 명만 서명해도 되나요?",
+          "a": "서식은 한 명이 써도 되지만, 이용할 항공사와 방문국이 요구하는 서류와 기준은 미리 확인하십시오."
+        },
+        {
+          "q": "이 동의서만으로 출국이 가능한가요?",
+          "a": "보장하지 않습니다. 출입국 기관과 항공사 안내에 따라 추가 서류가 필요할 수 있습니다."
+        },
+        {
+          "q": "여권번호는 적지 않나요?",
+          "a": "개인정보 보호를 위해 이 서식에는 적지 않습니다. 제출처가 요구하면 별도로 안내를 따르십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 여행하는 자녀",
+          "items": [
+            "성명",
+            "생년월일",
+            "국적",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 동의하는 친권자",
+          "items": [
+            "자녀와의 관계",
+            "주소",
+            "이메일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 여행 정보",
+          "items": [
+            "목적지",
+            "여행 목적",
+            "출국 예정일",
+            "귀국 예정일"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "guardian-consent",
+        "family-relationship-confirmation",
+        "minor-activity-consent",
+        "field-trip-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-03T12:55:30+09:00",
+      "updated_at": "2026-11-03T12:55:30+09:00",
+      "downloads": 0
     },
     {
       "id": "monthly-rent-receipt",

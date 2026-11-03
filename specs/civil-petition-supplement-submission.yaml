@@ -1,0 +1,85 @@
+id: civil-petition-supplement-submission
+title: 민원 보완서류 제출서
+category: public
+subcategory: civil
+tags: [민원보완서류, 민원보완제출, 보완서류제출서, 민원서류보완, 보완요구회신]
+summary: 민원 처리 중 보완을 요구받은 서류를 접수번호와 함께 제출하며 보완 내역을 적는 양식입니다.
+usage: >
+  민원을 접수한 뒤 담당 기관에서 서류 보완을 요구받았을 때, 보완한 서류를 모아 제출하며 쓰는 서식입니다.
+  원 민원의 접수번호와 제목, 보완 요구를 받은 날짜를 적고 이번에 제출하는 서류 목록을 표로 정리합니다.
+  기관이 정한 보완 기한이 있으니 안내문의 기한을 먼저 확인하십시오. 제출 전 사본을 보관해 두면 편합니다.
+  본 서식은 제출 내역을 정리하는 틀이며 처리 결과를 보장하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 민원 접수번호와 제목을 적습니다.
+  - 보완 요구를 받은 날짜와 기한을 적습니다.
+  - 이번에 제출하는 서류를 표에 적습니다.
+  - 날짜를 적고 서명해 담당 부서에 냅니다.
+faq:
+  - q: 접수번호를 모르면 어떻게 하나요?
+    a: 접수 당시 받은 안내문이나 문자에서 확인합니다. 찾을 수 없으면 담당 기관에 문의하십시오.
+  - q: 보완 기한을 넘기면 어떻게 되나요?
+    a: 처리 방식은 기관과 민원 종류에 따라 다릅니다. 안내문의 기한과 담당 부서 안내를 확인하십시오.
+  - q: 서류 원본을 내야 하나요?
+    a: 요구 안내에 따릅니다. 원본이 필요 없으면 사본을 내고 원본은 보관하십시오.
+related: [civil-petition, civil-petition-reply-request, civil-petition-delay-reminder, civil-petition-withdrawal]
+blocks:
+  - type: doc_title
+    text: 민원 보완서류 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["제출 기관", "", "담당 부서", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "마포구청", "", "민원여권과"]
+  - type: subtitle
+    text: 2. 원 민원 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges: [[1, 1, 1, 3]]
+    rows:
+      - ["접수번호", "", "접수일", ""]
+      - ["민원 제목", "", "", ""]
+      - ["보완 요구일", "", "보완 기한", ""]
+    sample_rows:
+      - ["", "2026-123456", "", "2026-10-20"]
+      - ["", "도로 파손 보수 요청", "", ""]
+      - ["", "2026-10-27", "", "2026-11-10"]
+  - type: subtitle
+    text: 3. 제출 서류 목록
+  - type: table
+    widths: [10, 40, 15, 35]
+    header: ["No", 서류명, 부수, 비고]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "현장 사진", "3", "파손 부위 근접 촬영"]
+      - ["2", "위치 약도", "1", ""]
+  - type: subtitle
+    text: 4. 보완 내용
+  - type: textbox
+    hint: "보완 요구에 대해 어떻게 보완했는지 간단히 적으십시오."
+    height_mm: 20
+    sample_text: 안내받은 대로 파손 위치를 알 수 있는 사진과 약도를 보완하여 제출합니다.
+  - type: para
+    text: 위와 같이 요구받은 서류를 보완하여 제출합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    3 일
+  - type: sign_line
+    label: 제출자
+    sample_names: [홍길동]
+  - type: notice
+    text: 보완 기한과 제출 방법은 기관의 안내문을 확인하십시오.
