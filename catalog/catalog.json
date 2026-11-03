@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T12:55:43+09:00",
-  "count": 453,
+  "generated_at": "2026-11-04T07:55:32+09:00",
+  "count": 454,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -3222,6 +3222,110 @@
         "civil-conciliation"
       ],
       "seal": true
+    },
+    {
+      "id": "appointment-contract",
+      "title": "위촉계약서",
+      "category": "legal",
+      "subcategory": "contract",
+      "tags": [
+        "위촉계약서",
+        "위촉 계약",
+        "프리랜서 위촉",
+        "업무위촉",
+        "강사 위촉",
+        "위촉장"
+      ],
+      "summary": "위촉 업무·위촉기간·보수와 업무 수행 방식을 정해 프리랜서와 맺는 위촉계약서 양식입니다.",
+      "usage": "회사나 기관이 외부 전문가·강사·프리랜서에게 특정 업무를 맡길 때 체결하는 위촉계약서입니다. 위촉 업무의 범위와 위촉기간, 보수의 금액과 지급 시기를 구체적으로 적어야 나중에 업무 내용을 증명하는 자료로 쓸 수 있습니다. 세금 처리는 원천징수 여부를 함께 적어 두십시오. 업무 수행 방법을 수탁자가 스스로 정하는지 여부는 근로자성 판단과 연결될 수 있으므로 제출처 또는 전문가 기준을 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 77528,
+        "docx": 39502,
+        "hwpx": 10840
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위촉하는 사람과 위촉받는 사람의 인적사항을 적습니다.",
+        "위촉 업무의 내용과 위촉기간을 적습니다.",
+        "보수 금액과 지급일, 원천징수 여부를 적습니다.",
+        "특약사항을 확인하고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "프리랜서 계약서와 무엇이 다른가요?",
+          "a": "위촉계약서는 업무를 맡기는 위촉 관계를 중심으로 하고, 납품물보다 업무 수행 자체에 초점을 둘 때 씁니다."
+        },
+        {
+          "q": "일한 사실을 증명하는 데 쓸 수 있나요?",
+          "a": "업무 내용과 기간, 보수가 적혀 있어 증빙 자료가 될 수 있습니다. 제출처가 요구하는 형식은 따로 확인하십시오."
+        },
+        {
+          "q": "원천징수는 어떻게 적나요?",
+          "a": "해당 또는 비해당을 고르고 세율은 지급하는 쪽의 세무 처리 기준을 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위촉 개요",
+          "items": [
+            "위촉 업무",
+            "위촉기간",
+            "업무 장소",
+            "보수",
+            "원천징수",
+            "지급 시기"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 당사자",
+          "items": [
+            "위촉자",
+            "수탁자",
+            "제1조 (목적)",
+            "제2조 (업무의 수행)",
+            "제3조 (보수의 지급)",
+            "제4조 (비밀유지)",
+            "제5조 (계약의 해지)",
+            "제6조 (기타)"
+          ],
+          "note": "특약사항 — 계약 연장, 비용 부담, 결과물 이용 범위 등 추가로 합의한 내용을 기재하십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": true,
+      "related": [
+        "freelance-contract",
+        "career-certificate-request",
+        "withholding-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-04T07:55:25+09:00",
+      "updated_at": "2026-11-04T07:55:32+09:00",
+      "downloads": 0
     },
     {
       "id": "articles-of-incorporation",

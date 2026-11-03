@@ -3,10 +3,18 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 453종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 454종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>위촉계약서</title>
+<link>https://freeforms.kr/form/appointment-contract/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/appointment-contract/</guid>
+<category>법률 · 계약</category>
+<pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
+<description>위촉 업무·위촉기간·보수와 업무 수행 방식을 정해 프리랜서와 맺는 위촉계약서 양식입니다.</description>
+</item>
 <item>
 <title>민원 보완서류 제출서</title>
 <link>https://freeforms.kr/form/civil-petition-supplement-submission/</link>
@@ -238,14 +246,6 @@
 <category>공공 · 자동차·교통</category>
 <pubDate>Wed, 28 Oct 2026 00:00:00 +0900</pubDate>
 <description>이미 맺은 자동차 매매계약을 매도인과 매수인이 합의해 해제하고 대금 반환 방법을 적는 합의서입니다.</description>
-</item>
-<item>
-<title>연차 사용 촉진 제외 대상자 확인서</title>
-<link>https://freeforms.kr/form/annual-leave-promotion-exclusion-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/annual-leave-promotion-exclusion-confirmation/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Wed, 28 Oct 2026 00:00:00 +0900</pubDate>
-<description>휴직·퇴사 예정 등으로 연차 사용 촉진 통지를 따로 처리해야 하는 근로자를 사유와 함께 정리하는 확인서입니다.</description>
 </item>
 </channel>
 </rss>
