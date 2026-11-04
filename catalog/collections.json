@@ -63,7 +63,7 @@
       "name": "창업 첫 달 서식",
       "lead": "사업자등록 준비부터 법인 설립 서류, 초기 자금 계획까지 모았습니다.",
       "ids": [
-        "startup-checklist", "business-reg-checklist", "business-registration-poa", "business-plan-simple",
+        "startup-checklist", "business-reg-checklist", "business-registration-poa", "founding-expense-statement", "business-plan-simple",
         "business-plan-standard", "partnership-agreement",
         "articles-of-incorporation", "shareholder-register", "stock-subscription-form",
         "director-acceptance", "corporate-seal-report-poa", "director-resignation-letter", "budget-plan", "vat-filing-poa",
@@ -99,7 +99,7 @@
       "lead": "내용증명으로 먼저 알리고, 합의가 안 되면 소송으로. 단계별로 필요한 서식입니다.",
       "ids": [
         "certified-notice", "certified-notice-goods-payment", "fact-confirmation", "settlement-agreement",
-        "statement-of-facts", "civil-conciliation", "small-claims-complaint",
+        "statement-of-facts", "damage-calculation-statement", "civil-conciliation", "small-claims-complaint",
         "complaint-goods-payment", "answer-brief", "preparatory-brief", "witness-application", "hearing-date-change-request",
         "petition-letter"
       ]

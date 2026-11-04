@@ -1,0 +1,75 @@
+id: year-end-medical-expense-submission
+title: 연말정산 의료비 지출 제출서
+category: corp
+subcategory: finance
+tags: [연말정산, 의료비, 의료비제출, 의료비공제, 지출내역서]
+summary: 연말정산을 위해 근로자가 한 해 동안 쓴 의료비 내역과 증빙 서류를 회사에 제출할 때 쓰는 의료비 지출 제출서 양식입니다.
+usage: >
+  연말정산 때 국세청 간소화 자료에 잡히지 않은 의료비를 회사에 따로 알리고 증빙을 내는 서식입니다.
+  진료받은 사람, 의료기관, 지출일과 금액, 보험금 수령 여부를 표에 적고 영수증 사본을 붙입니다.
+  실손보험으로 돌려받은 금액은 지출액에서 빼서 따로 적어야 합니다. 공제 대상 여부와 한도는
+  세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 소속과 성명, 제출일을 적습니다.
+  - 진료받은 사람과 의료기관, 지출일, 금액을 한 줄씩 적습니다.
+  - 보험금으로 돌려받은 금액이 있으면 따로 적습니다.
+  - 영수증 사본을 붙여 담당 부서에 냅니다.
+faq:
+  - q: 실손보험금을 받은 의료비도 적나요?
+    a: 지출액은 그대로 적고 보험금 수령액을 별도 칸에 적습니다. 공제 계산은 담당 부서 기준을 따르십시오.
+  - q: 간소화 자료에 있는 의료비도 다시 내야 하나요?
+    a: 자료에 이미 조회되는 내역은 보통 따로 내지 않습니다. 빠진 내역만 적는 편이 좋습니다.
+related: [year-end-tax-checklist, year-end-dependent-change-notice, donation-receipt-request, education-expense-certificate-request]
+blocks:
+  - type: doc_title
+    text: 연말정산 의료비 지출 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "제출일", ""]
+      - ["귀속 연도", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "과장", "", "2026-11-04"]
+      - ["", "2026년", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 의료비 지출 내역
+  - type: table
+    widths: [8, 16, 28, 16, 16, 16]
+    header: ["No", 진료받은 사람, 의료기관, 지출일, 지출액(원), 보험금 수령액(원)]
+    empty_rows: 6
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "홍길동", "한빛정형외과", "2026-03-12", "120,000", "80,000"]
+      - ["2", "김서연", "새길치과의원", "2026-07-05", "350,000", "0"]
+      - ["3", "홍길동", "한빛약국", "2026-09-18", "45,000", "0"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["지출 합계", "", "보험금 합계", ""]
+      - ["공제 신청액", "", "증빙 첨부", ""]
+    sample_rows:
+      - ["", "515,000원", "", "80,000원"]
+      - ["", "435,000원", "", "영수증 3부"]
+  - type: textbox
+    hint: "특이사항(난임시술, 미숙아 등 구분이 필요한 내용)이 있으면 적으십시오."
+    height_mm: 20
+    sample_text: "김서연 치과 치료비는 카드 영수증 사본을 첨부했습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월    4 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.

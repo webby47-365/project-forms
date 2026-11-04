@@ -1,0 +1,67 @@
+id: service-application-change-request
+title: 신청 내용 변경 요청서
+category: public
+subcategory: consent
+tags: [신청변경, 변경요청서, 신청내용변경, 민원변경, 변경신청]
+summary: 이미 접수한 신청의 주소·연락처·수령 방법 등 일부 내용을 바꿔 달라고 기관에 요청할 때 쓰는 신청 내용 변경 요청서 양식입니다.
+usage: >
+  기관이나 단체에 신청을 낸 뒤 연락처, 수령 방법, 신청 기간처럼 일부가 달라졌을 때 변경을 요청하는
+  서식입니다. 처음 신청한 접수번호와 신청일, 바꾸려는 항목의 기존 내용과 변경할 내용을 나란히
+  적으면 담당자가 확인하기 쉽습니다. 변경이 가능한 항목과 기한은 기관마다 달라 접수 담당자에게
+  먼저 확인하는 것이 좋습니다. 신청 자체를 거두려면 취하서를 따로 씁니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인 정보와 처음 접수한 번호, 신청일을 적습니다.
+  - 바꿀 항목마다 기존 내용과 변경 내용을 적습니다.
+  - 변경이 필요한 사유를 간단히 적습니다.
+  - 서명하고 증빙이 있으면 함께 제출합니다.
+faq:
+  - q: 접수번호를 모르면 어떻게 하나요?
+    a: 신청일과 신청 종류, 신청인 정보를 적으면 담당자가 찾을 수 있습니다. 접수 확인 문자나 메일을 먼저 확인하십시오.
+  - q: 변경과 취하는 어떻게 다른가요?
+    a: 변경은 신청을 유지한 채 일부 내용만 바꾸는 것이고, 취하는 신청 자체를 거두는 것입니다.
+related: [civil-petition-supplement-submission, civil-petition-withdrawal, civil-petition-reply-request, permit-supplement-submission]
+blocks:
+  - type: doc_title
+    text: 신청 내용 변경 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인 및 접수 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["신청 종류", "", "접수번호", ""]
+      - ["신청일", "", "제출 기관", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-1234-5678"]
+      - ["", "돌봄 서비스 신청", "", "2026-1104-0012"]
+      - ["", "2026-10-28", "", "새길시 복지과"]
+  - type: subtitle
+    text: 2. 변경 항목
+  - type: table
+    widths: [8, 22, 35, 35]
+    header: ["No", 변경 항목, 기존 내용, 변경 내용]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "연락처", "010-0000-0000", "010-1234-5678"]
+      - ["2", "수령 방법", "방문 수령", "우편 수령"]
+  - type: textbox
+    hint: "변경이 필요한 사유를 적으십시오."
+    height_mm: 24
+    sample_text: "연락처가 바뀌었고 방문이 어려워 수령 방법을 우편으로 바꾸고자 합니다."
+  - type: para
+    text: 위와 같이 신청 내용의 변경을 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    4 일
+  - type: sign_line
+    labels: ["요청인"]
+    sample_names: [김서연]
+  - type: notice
+    text: 변경 가능 항목과 기한은 제출 기관의 안내를 확인하십시오.

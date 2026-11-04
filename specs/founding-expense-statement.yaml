@@ -1,0 +1,66 @@
+id: founding-expense-statement
+title: 설립비용 명세서
+category: corp
+subcategory: startup
+tags: [설립비용, 창업비용, 설립비용명세, 법인설립, 비용정리]
+summary: 법인이나 사업을 시작하면서 쓴 등록·인테리어·장비 비용을 항목별로 모아 정리하는 설립비용 명세서 양식입니다.
+usage: >
+  창업이나 법인 설립 과정에서 쓴 비용을 한곳에 모아 두는 서식입니다. 지출일, 항목, 지급처, 금액,
+  증빙 종류를 한 줄씩 적고 마지막에 합계를 냅니다. 공동 창업이라면 누가 얼마를 먼저 냈는지도
+  적어 두면 나중에 정산하기 쉽습니다. 비용의 세무 처리는 상황마다 달라 세무 전문가에게 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 법인명 또는 사업명과 정리 기준일을 적습니다.
+  - 지출일과 항목, 지급처, 금액을 한 줄씩 적습니다.
+  - 지출한 사람과 증빙 종류를 함께 적습니다.
+  - 합계를 맞춘 뒤 작성자가 서명합니다.
+faq:
+  - q: 개인 돈으로 먼저 낸 비용도 적나요?
+    a: 적습니다. 지출한 사람 칸에 이름을 적어 두면 나중에 정산하기 쉽습니다.
+  - q: 영수증이 없는 비용은 어떻게 하나요?
+    a: 증빙 칸에 없음이라고 적고, 이체 내역이나 거래 확인서를 따로 모아 두십시오.
+related: [startup-checklist, articles-of-incorporation, business-plan-simple, business-reg-checklist]
+blocks:
+  - type: doc_title
+    text: 설립비용 명세서
+    spaced: false
+  - type: subtitle
+    text: 1. 기본 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["법인·사업명", "", "대표자", ""]
+      - ["정리 기준일", "", "작성자", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "홍길동"]
+      - ["", "2026-11-04", "", "김서연"]
+  - type: subtitle
+    text: 2. 비용 내역
+  - type: table
+    widths: [8, 14, 24, 20, 18, 16]
+    header: ["No", 지출일, 항목, 지급처, 금액(원), 증빙]
+    empty_rows: 7
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "2026-09-02", "법인 등기 비용", "새길법무사", "850,000", "계산서"]
+      - ["2", "2026-09-15", "사무실 보증금", "한빛빌딩", "5,000,000", "계약서"]
+      - ["3", "2026-10-01", "노트북 구입", "새길전자", "1,450,000", "카드전표"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["합계", "", "먼저 낸 사람", ""]
+    sample_rows:
+      - ["", "7,300,000원", "", "홍길동"]
+  - type: date_line
+    sample_text: 2026 년   11 월    4 일
+  - type: sign_line
+    labels: ["작성자"]
+    sample_names: [김서연]
+  - type: notice
+    text: 비용의 세무 처리는 세무 전문가에게 확인하십시오.

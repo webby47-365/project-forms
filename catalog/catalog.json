@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T07:55:32+09:00",
-  "count": 454,
+  "generated_at": "2026-11-04T12:00:36+09:00",
+  "count": 459,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -13848,6 +13848,100 @@
       "seal": true
     },
     {
+      "id": "damage-calculation-statement",
+      "title": "손해액 산정 내역서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "손해액",
+        "손해액산정",
+        "청구금액",
+        "손해배상",
+        "산정내역"
+      ],
+      "summary": "분쟁이나 소송에서 청구하려는 손해 항목과 금액, 근거 자료를 한 표로 정리해 제출하는 손해액 산정 내역서 양식입니다.",
+      "usage": "상대방에게 금액을 청구하거나 법원·조정 기관에 자료를 낼 때, 손해 항목별 금액과 근거를 정리하는 서식입니다. 항목, 발생일, 금액, 근거 자료를 한 줄씩 적고 합계를 맞춥니다. 금액마다 영수증이나 견적서 같은 증빙 번호를 적어 두면 설명하기 쉽습니다. 이 서식은 정리 틀일 뿐 인정되는 손해의 범위와 금액은 사건마다 다르므로 전문가나 제출처에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50796,
+        "docx": 38727,
+        "hwpx": 10150
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "당사자와 사건 이름, 작성일을 적습니다.",
+        "손해 항목을 한 줄씩 적고 발생일과 금액을 채웁니다.",
+        "항목마다 근거 자료 번호를 적습니다.",
+        "합계를 계산해 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "증빙이 없는 항목도 적어도 되나요?",
+          "a": "적을 수는 있지만 근거 칸을 비워 두면 설명이 어렵습니다. 가능한 자료를 먼저 모으십시오."
+        },
+        {
+          "q": "이 금액이 그대로 인정되나요?",
+          "a": "아닙니다. 인정 여부와 범위는 사건마다 다르므로 제출처나 전문가에게 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자 및 사건",
+          "items": [
+            "청구인",
+            "상대방",
+            "사건명",
+            "작성일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 손해 항목",
+          "items": [
+            "손해 항목",
+            "발생일",
+            "금액(원)",
+            "근거 자료",
+            "증빙 수"
+          ],
+          "note": "산정 방법이나 보충 설명이 필요하면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "evidence-submission-list",
+        "statement-of-facts",
+        "certified-notice",
+        "small-claims-complaint"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-04T12:00:09+09:00",
+      "updated_at": "2026-11-04T12:00:35+09:00",
+      "downloads": 0
+    },
+    {
       "id": "defect-warranty-deposit-refund-request",
       "title": "하자보수보증금 반환 청구서",
       "category": "public",
@@ -17970,6 +18064,101 @@
         "job-description"
       ],
       "seal": true
+    },
+    {
+      "id": "founding-expense-statement",
+      "title": "설립비용 명세서",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "설립비용",
+        "창업비용",
+        "설립비용명세",
+        "법인설립",
+        "비용정리"
+      ],
+      "summary": "법인이나 사업을 시작하면서 쓴 등록·인테리어·장비 비용을 항목별로 모아 정리하는 설립비용 명세서 양식입니다.",
+      "usage": "창업이나 법인 설립 과정에서 쓴 비용을 한곳에 모아 두는 서식입니다. 지출일, 항목, 지급처, 금액, 증빙 종류를 한 줄씩 적고 마지막에 합계를 냅니다. 공동 창업이라면 누가 얼마를 먼저 냈는지도 적어 두면 나중에 정산하기 쉽습니다. 비용의 세무 처리는 상황마다 달라 세무 전문가에게 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51488,
+        "docx": 38858,
+        "hwpx": 10253
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "법인명 또는 사업명과 정리 기준일을 적습니다.",
+        "지출일과 항목, 지급처, 금액을 한 줄씩 적습니다.",
+        "지출한 사람과 증빙 종류를 함께 적습니다.",
+        "합계를 맞춘 뒤 작성자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "개인 돈으로 먼저 낸 비용도 적나요?",
+          "a": "적습니다. 지출한 사람 칸에 이름을 적어 두면 나중에 정산하기 쉽습니다."
+        },
+        {
+          "q": "영수증이 없는 비용은 어떻게 하나요?",
+          "a": "증빙 칸에 없음이라고 적고, 이체 내역이나 거래 확인서를 따로 모아 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 기본 정보",
+          "items": [
+            "법인·사업명",
+            "대표자",
+            "정리 기준일",
+            "작성자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 비용 내역",
+          "items": [
+            "지출일",
+            "항목",
+            "지급처",
+            "금액(원)",
+            "증빙",
+            "먼저 낸 사람"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "startup-checklist",
+        "articles-of-incorporation",
+        "business-plan-simple",
+        "business-reg-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-04T12:00:17+09:00",
+      "updated_at": "2026-11-04T12:00:17+09:00",
+      "downloads": 0
     },
     {
       "id": "franchise-contract",
@@ -27662,6 +27851,97 @@
         "power-of-attorney"
       ],
       "seal": true
+    },
+    {
+      "id": "lost-property-report",
+      "title": "분실물 신고서",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "분실물",
+        "분실신고",
+        "분실물신고서",
+        "물건분실",
+        "유실물"
+      ],
+      "summary": "물건을 잃어버린 장소와 시간, 물건의 특징과 연락처를 적어 시설 관리처나 분실물 센터에 내는 분실물 신고서 양식입니다.",
+      "usage": "지하철·상가·학교·숙소 등에서 물건을 잃어버렸을 때 담당처에 찾아 달라고 요청하는 서식입니다. 분실한 날짜와 장소, 물건의 종류·색상·특징을 구체적으로 적을수록 찾을 가능성이 높아집니다. 지갑이나 카드처럼 금융 정보가 있는 물건은 카드사 분실 신고를 따로 해야 합니다. 이 서식은 접수 요청서일 뿐 반환 여부와 절차는 담당처 규정을 따르므로 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 36003,
+        "docx": 38424,
+        "hwpx": 9436
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고인 이름과 연락처를 적습니다.",
+        "잃어버린 날짜와 시간, 장소를 최대한 구체적으로 적습니다.",
+        "물건의 종류와 색상, 특징을 적습니다.",
+        "찾으면 연락받을 방법을 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "카드나 신분증을 잃어버렸을 때도 이걸 쓰나요?",
+          "a": "이 서식과 별개로 카드사와 발급 기관에 분실 신고를 먼저 하십시오. 이 서식은 물건 찾기 요청용입니다."
+        },
+        {
+          "q": "정확한 장소를 모르면 어떻게 적나요?",
+          "a": "마지막으로 본 곳과 이동 경로를 함께 적으면 담당자가 찾는 범위를 좁힐 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고인",
+          "items": [
+            "성명",
+            "연락처",
+            "이메일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 분실 내용",
+          "items": [
+            "분실 일시",
+            "분실 장소",
+            "물건 종류",
+            "색상·크기",
+            "물건 특징"
+          ],
+          "note": "마지막으로 본 곳과 이동 경로, 그 밖의 참고 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-id-card-loss-report",
+        "item-loan-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-04T12:00:23+09:00",
+      "updated_at": "2026-11-04T12:00:23+09:00",
+      "downloads": 0
     },
     {
       "id": "management-fee-settlement-confirmation",
@@ -38846,6 +39126,100 @@
       "downloads": 0
     },
     {
+      "id": "service-application-change-request",
+      "title": "신청 내용 변경 요청서",
+      "category": "public",
+      "subcategory": "consent",
+      "tags": [
+        "신청변경",
+        "변경요청서",
+        "신청내용변경",
+        "민원변경",
+        "변경신청"
+      ],
+      "summary": "이미 접수한 신청의 주소·연락처·수령 방법 등 일부 내용을 바꿔 달라고 기관에 요청할 때 쓰는 신청 내용 변경 요청서 양식입니다.",
+      "usage": "기관이나 단체에 신청을 낸 뒤 연락처, 수령 방법, 신청 기간처럼 일부가 달라졌을 때 변경을 요청하는 서식입니다. 처음 신청한 접수번호와 신청일, 바꾸려는 항목의 기존 내용과 변경할 내용을 나란히 적으면 담당자가 확인하기 쉽습니다. 변경이 가능한 항목과 기한은 기관마다 달라 접수 담당자에게 먼저 확인하는 것이 좋습니다. 신청 자체를 거두려면 취하서를 따로 씁니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 44862,
+        "docx": 38575,
+        "hwpx": 9832
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인 정보와 처음 접수한 번호, 신청일을 적습니다.",
+        "바꿀 항목마다 기존 내용과 변경 내용을 적습니다.",
+        "변경이 필요한 사유를 간단히 적습니다.",
+        "서명하고 증빙이 있으면 함께 제출합니다."
+      ],
+      "faq": [
+        {
+          "q": "접수번호를 모르면 어떻게 하나요?",
+          "a": "신청일과 신청 종류, 신청인 정보를 적으면 담당자가 찾을 수 있습니다. 접수 확인 문자나 메일을 먼저 확인하십시오."
+        },
+        {
+          "q": "변경과 취하는 어떻게 다른가요?",
+          "a": "변경은 신청을 유지한 채 일부 내용만 바꾸는 것이고, 취하는 신청 자체를 거두는 것입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인 및 접수 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "신청 종류",
+            "접수번호",
+            "신청일",
+            "제출 기관"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 변경 항목",
+          "items": [
+            "변경 항목",
+            "기존 내용",
+            "변경 내용"
+          ],
+          "note": "변경이 필요한 사유를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "civil-petition-supplement-submission",
+        "civil-petition-withdrawal",
+        "civil-petition-reply-request",
+        "permit-supplement-submission"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-04T12:00:01+09:00",
+      "updated_at": "2026-11-04T12:00:01+09:00",
+      "downloads": 0
+    },
+    {
       "id": "service-contract",
       "title": "용역계약서",
       "category": "legal",
@@ -48162,6 +48536,106 @@
       "warnings": [],
       "created_at": "2026-11-02T11:17:58+09:00",
       "updated_at": "2026-11-02T11:17:58+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-medical-expense-submission",
+      "title": "연말정산 의료비 지출 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "의료비",
+        "의료비제출",
+        "의료비공제",
+        "지출내역서"
+      ],
+      "summary": "연말정산을 위해 근로자가 한 해 동안 쓴 의료비 내역과 증빙 서류를 회사에 제출할 때 쓰는 의료비 지출 제출서 양식입니다.",
+      "usage": "연말정산 때 국세청 간소화 자료에 잡히지 않은 의료비를 회사에 따로 알리고 증빙을 내는 서식입니다. 진료받은 사람, 의료기관, 지출일과 금액, 보험금 수령 여부를 표에 적고 영수증 사본을 붙입니다. 실손보험으로 돌려받은 금액은 지출액에서 빼서 따로 적어야 합니다. 공제 대상 여부와 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 60562,
+        "docx": 38889,
+        "hwpx": 10489
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 소속과 성명, 제출일을 적습니다.",
+        "진료받은 사람과 의료기관, 지출일, 금액을 한 줄씩 적습니다.",
+        "보험금으로 돌려받은 금액이 있으면 따로 적습니다.",
+        "영수증 사본을 붙여 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "실손보험금을 받은 의료비도 적나요?",
+          "a": "지출액은 그대로 적고 보험금 수령액을 별도 칸에 적습니다. 공제 계산은 담당 부서 기준을 따르십시오."
+        },
+        {
+          "q": "간소화 자료에 있는 의료비도 다시 내야 하나요?",
+          "a": "자료에 이미 조회되는 내역은 보통 따로 내지 않습니다. 빠진 내역만 적는 편이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "제출일",
+            "귀속 연도",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 의료비 지출 내역",
+          "items": [
+            "진료받은 사람",
+            "의료기관",
+            "지출일",
+            "지출액(원)",
+            "보험금 수령액(원)",
+            "지출 합계",
+            "보험금 합계",
+            "공제 신청액",
+            "증빙 첨부"
+          ],
+          "note": "특이사항(난임시술, 미숙아 등 구분이 필요한 내용)이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-dependent-change-notice",
+        "donation-receipt-request",
+        "education-expense-certificate-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-04T11:59:52+09:00",
+      "updated_at": "2026-11-04T11:59:52+09:00",
       "downloads": 0
     },
     {

@@ -1,0 +1,71 @@
+id: damage-calculation-statement
+title: 손해액 산정 내역서
+category: legal
+subcategory: litigation
+tags: [손해액, 손해액산정, 청구금액, 손해배상, 산정내역]
+summary: 분쟁이나 소송에서 청구하려는 손해 항목과 금액, 근거 자료를 한 표로 정리해 제출하는 손해액 산정 내역서 양식입니다.
+usage: >
+  상대방에게 금액을 청구하거나 법원·조정 기관에 자료를 낼 때, 손해 항목별 금액과 근거를 정리하는
+  서식입니다. 항목, 발생일, 금액, 근거 자료를 한 줄씩 적고 합계를 맞춥니다. 금액마다 영수증이나
+  견적서 같은 증빙 번호를 적어 두면 설명하기 쉽습니다. 이 서식은 정리 틀일 뿐 인정되는 손해의
+  범위와 금액은 사건마다 다르므로 전문가나 제출처에 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 당사자와 사건 이름, 작성일을 적습니다.
+  - 손해 항목을 한 줄씩 적고 발생일과 금액을 채웁니다.
+  - 항목마다 근거 자료 번호를 적습니다.
+  - 합계를 계산해 적고 서명합니다.
+faq:
+  - q: 증빙이 없는 항목도 적어도 되나요?
+    a: 적을 수는 있지만 근거 칸을 비워 두면 설명이 어렵습니다. 가능한 자료를 먼저 모으십시오.
+  - q: 이 금액이 그대로 인정되나요?
+    a: 아닙니다. 인정 여부와 범위는 사건마다 다르므로 제출처나 전문가에게 확인하십시오.
+related: [evidence-submission-list, statement-of-facts, certified-notice, small-claims-complaint]
+blocks:
+  - type: doc_title
+    text: 손해액 산정 내역서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자 및 사건
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["청구인", "", "상대방", ""]
+      - ["사건명", "", "작성일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)새길데이터"]
+      - ["", "물품대금 청구", "", "2026-11-04"]
+  - type: subtitle
+    text: 2. 손해 항목
+  - type: table
+    widths: [6, 22, 16, 17, 39]
+    header: ["No", 손해 항목, 발생일, 금액(원), 근거 자료]
+    empty_rows: 6
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "미지급 물품대금", "2026-08-31", "1,200,000", "거래명세서 (증1)"]
+      - ["2", "반품 운송비", "2026-09-10", "60,000", "운송 영수증 (증2)"]
+      - ["3", "수리 비용", "2026-09-20", "140,000", "견적서 (증3)"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["합계", "", "증빙 수", ""]
+    sample_rows:
+      - ["", "1,400,000원", "", "3건"]
+  - type: textbox
+    hint: "산정 방법이나 보충 설명이 필요하면 적으십시오."
+    height_mm: 20
+    sample_text: "각 금액은 첨부한 증빙 자료의 기재 금액을 그대로 옮겨 적었습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월    4 일
+  - type: sign_line
+    labels: ["작성자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 인정되는 손해의 범위는 사건마다 다르므로 제출처를 확인하십시오.
