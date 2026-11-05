@@ -1,0 +1,81 @@
+id: vehicle-repair-order
+title: 자동차 정비 의뢰서
+category: public
+subcategory: vehicle
+tags: [자동차정비, 정비의뢰서, 차량수리, 수리의뢰, 정비소]
+summary: 차량 수리를 정비소에 맡길 때 차량 정보와 요청 정비 내용, 견적 한도와 인도 일정을 적어 두는 자동차 정비 의뢰서 양식입니다.
+usage: >
+  정비소에 차량을 맡길 때 고객이 원하는 작업과 증상, 견적 한도를 문서로 남기는 서식입니다.
+  차량 번호와 차종, 주행거리, 점검 요청 내용을 적고 추가 수리가 필요하면 먼저 연락받을지 표시합니다.
+  수리비와 부품 보증 조건은 정비소마다 다르므로 작업 전에 견적서와 정비소 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 의뢰인과 정비소 이름, 연락처를 적습니다.
+  - 차량 번호와 차종, 주행거리를 적습니다.
+  - 고치고 싶은 증상과 요청 작업을 적습니다.
+  - 견적 한도와 인도 희망일을 적고 서명합니다.
+faq:
+  - q: 견적 한도는 왜 적나요?
+    a: 한도를 넘는 추가 수리를 하기 전에 연락을 받겠다는 뜻을 남기려는 것입니다. 정비소와 합의한 금액을 적으십시오.
+  - q: 추가 수리가 필요하면 어떻게 되나요?
+    a: 사전 연락 여부를 표시해 두면 정비소가 작업 전에 확인합니다. 실제 방식은 정비소에 확인하십시오.
+  - q: 맡긴 부품은 돌려받을 수 있나요?
+    a: 교체한 부품 반환은 사전에 요청하는 편이 좋습니다. 요청란에 적어 두십시오.
+related: [vehicle-delivery-confirmation, traffic-accident-confirmation, rental-car-return-confirmation, vehicle-inspection-postponement-request]
+blocks:
+  - type: doc_title
+    text: 자동차 정비 의뢰서
+    spaced: true
+  - type: subtitle
+    text: 1. 의뢰인 및 정비소
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["의뢰인", "", "연락처", ""]
+      - ["정비소", "", "접수일", ""]
+    sample_rows:
+      - ["", "박민준", "", "010-1234-5678"]
+      - ["", "한빛카센터", "", "2026-11-05"]
+  - type: subtitle
+    text: 2. 차량 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["차량 번호", "", "차종", ""]
+      - ["연식", "", "주행거리", ""]
+    sample_rows:
+      - ["", "00가 0000", "", "예시 중형 세단"]
+      - ["", "2021년", "", "48,000km"]
+  - type: subtitle
+    text: 3. 요청 정비 내용
+  - type: table
+    widths: [8, 36, 36, 20]
+    header: ["No", 증상 또는 요청 작업, 점검 부위, 우선순위]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "브레이크 소리가 남", "앞바퀴 브레이크 패드", "높음"]
+      - ["2", "엔진오일 교환", "엔진", "보통"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["견적 한도", "", "인도 희망일", ""]
+      - ["추가 수리", "", "교체 부품 반환", ""]
+    sample_rows:
+      - ["", "300,000원", "", "2026-11-07"]
+      - ["", "사전 연락 후 진행", "", "반환 요청"]
+  - type: date_line
+    sample_text: 2026 년   11 월    5 일
+  - type: sign_line
+    labels: ["의뢰인"]
+    sample_names: [박민준]
+  - type: notice
+    text: 수리비와 부품 보증 조건은 정비소 견적서를 확인하십시오.

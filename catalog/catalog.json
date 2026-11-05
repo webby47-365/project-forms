@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T12:00:36+09:00",
-  "count": 459,
+  "generated_at": "2026-11-05T12:23:51+09:00",
+  "count": 464,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -537,6 +537,116 @@
         "civil-petition"
       ],
       "seal": true
+    },
+    {
+      "id": "advance-payment-request",
+      "title": "선금 지급 신청서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "선금",
+        "선금신청",
+        "선급금",
+        "계약선금",
+        "조달"
+      ],
+      "summary": "용역·공사·물품 계약을 맺은 계약상대자가 발주처에 계약금액 일부를 먼저 지급해 달라고 요청할 때 쓰는 선금 지급 신청서 양식입니다.",
+      "usage": "계약을 맺은 뒤 착수 단계에서 필요한 자금을 먼저 받으려는 계약상대자가 발주처에 내는 신청서입니다. 계약 정보와 신청 금액, 사용 계획, 입금 계좌를 적고 보증서 등 필요한 서류를 붙입니다. 지급 가능 여부와 비율, 보증 방식은 계약 조건과 발주처 규정에 따라 달라지므로 계약서와 발주처 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 47042,
+        "docx": 38637,
+        "hwpx": 9854
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "계약명과 계약번호, 계약금액, 계약기간을 적습니다.",
+        "선금으로 신청할 금액과 사용 목적을 적습니다.",
+        "입금받을 계좌 정보를 적습니다.",
+        "보증서 등 첨부 서류를 확인하고 발주처에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "신청 금액은 얼마까지 적을 수 있나요?",
+          "a": "계약서와 발주처 규정에서 정한 범위 안에서 적습니다. 비율은 계약마다 다를 수 있으니 확인하십시오."
+        },
+        {
+          "q": "보증서는 꼭 내야 하나요?",
+          "a": "대개 선금 보증을 요구합니다. 필요한 서류와 보증 방식은 계약서와 발주처 안내를 따르십시오."
+        },
+        {
+          "q": "선금은 아무 곳에나 써도 되나요?",
+          "a": "보통 해당 계약 이행에 쓰도록 정해져 있습니다. 사용 범위는 계약 조건을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 계약 정보",
+          "items": [
+            "계약명",
+            "계약번호",
+            "계약금액",
+            "계약기간",
+            "발주처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신청인",
+          "items": [
+            "상호",
+            "대표자",
+            "사업자등록번호",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 선금 신청 내용",
+          "items": [
+            "신청 금액",
+            "신청 비율",
+            "입금 은행",
+            "계좌번호",
+            "예금주",
+            "보증서 종류"
+          ],
+          "note": "선금을 어디에 쓸 계획인지 항목별로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "contract-completion-confirmation",
+        "contract-period-extension-request",
+        "contract-performance-deposit-refund-request",
+        "goods-inspection-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-05T12:23:30+09:00",
+      "updated_at": "2026-11-05T12:23:30+09:00",
+      "downloads": 0
     },
     {
       "id": "afterschool-program-application",
@@ -5711,6 +5821,100 @@
       "warnings": [],
       "created_at": "2026-10-04T12:02:35+09:00",
       "updated_at": "2026-10-04T12:02:35+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "business-license-return",
+      "title": "영업신고증 반납서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "영업신고증",
+        "반납서",
+        "폐업",
+        "신고증반납",
+        "영업종료"
+      ],
+      "summary": "영업을 그만두면서 발급받은 영업신고증을 담당 기관에 돌려줄 때 반납 사유와 사업장 정보를 적어 내는 영업신고증 반납서 양식입니다.",
+      "usage": "폐업이나 영업 종료로 더 이상 쓰지 않는 영업신고증을 담당 기관에 반납할 때 함께 내는 서식입니다. 영업자 정보와 영업장 소재지, 신고증 번호, 반납 사유를 적고 신고증 원본을 붙입니다. 신고증 분실 시 처리 방법과 폐업 신고 절차는 업종과 기관마다 다르므로 해당 기관 안내를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 39009,
+        "docx": 38453,
+        "hwpx": 9513
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "영업자 이름과 상호, 영업장 주소를 적습니다.",
+        "신고증 번호와 신고일, 업종을 적습니다.",
+        "반납하는 사유와 영업을 끝낸 날짜를 적습니다.",
+        "신고증 원본을 붙여 담당 기관에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "신고증을 잃어버렸으면 어떻게 하나요?",
+          "a": "분실 사유를 적고 신고증 없이 낼 수 있는지 담당 기관에 확인하십시오. 기관 안내를 따르면 됩니다."
+        },
+        {
+          "q": "이 서식이 폐업 신고서를 대신하나요?",
+          "a": "아닙니다. 폐업 신고는 별도 절차일 수 있습니다. 담당 기관에 필요한 신고와 서류를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 영업자 정보",
+          "items": [
+            "영업자",
+            "상호",
+            "연락처",
+            "업종",
+            "영업장 소재지"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신고증 정보",
+          "items": [
+            "신고증 번호",
+            "신고일",
+            "영업 종료일",
+            "반납 매수"
+          ],
+          "note": "반납하는 사유를 적으십시오. 분실로 반납할 수 없으면 그 사유도 적습니다."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-closure-confirmation",
+        "business-license-reissue-request",
+        "business-suspension-confirmation",
+        "business-resumption-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-05T12:23:43+09:00",
+      "updated_at": "2026-11-05T12:23:43+09:00",
       "downloads": 0
     },
     {
@@ -45989,6 +46193,116 @@
       "downloads": 0
     },
     {
+      "id": "vehicle-repair-order",
+      "title": "자동차 정비 의뢰서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차정비",
+        "정비의뢰서",
+        "차량수리",
+        "수리의뢰",
+        "정비소"
+      ],
+      "summary": "차량 수리를 정비소에 맡길 때 차량 정보와 요청 정비 내용, 견적 한도와 인도 일정을 적어 두는 자동차 정비 의뢰서 양식입니다.",
+      "usage": "정비소에 차량을 맡길 때 고객이 원하는 작업과 증상, 견적 한도를 문서로 남기는 서식입니다. 차량 번호와 차종, 주행거리, 점검 요청 내용을 적고 추가 수리가 필요하면 먼저 연락받을지 표시합니다. 수리비와 부품 보증 조건은 정비소마다 다르므로 작업 전에 견적서와 정비소 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49967,
+        "docx": 38678,
+        "hwpx": 10018
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "의뢰인과 정비소 이름, 연락처를 적습니다.",
+        "차량 번호와 차종, 주행거리를 적습니다.",
+        "고치고 싶은 증상과 요청 작업을 적습니다.",
+        "견적 한도와 인도 희망일을 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "견적 한도는 왜 적나요?",
+          "a": "한도를 넘는 추가 수리를 하기 전에 연락을 받겠다는 뜻을 남기려는 것입니다. 정비소와 합의한 금액을 적으십시오."
+        },
+        {
+          "q": "추가 수리가 필요하면 어떻게 되나요?",
+          "a": "사전 연락 여부를 표시해 두면 정비소가 작업 전에 확인합니다. 실제 방식은 정비소에 확인하십시오."
+        },
+        {
+          "q": "맡긴 부품은 돌려받을 수 있나요?",
+          "a": "교체한 부품 반환은 사전에 요청하는 편이 좋습니다. 요청란에 적어 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 의뢰인 및 정비소",
+          "items": [
+            "의뢰인",
+            "연락처",
+            "정비소",
+            "접수일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 차량 정보",
+          "items": [
+            "차량 번호",
+            "차종",
+            "연식",
+            "주행거리"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 요청 정비 내용",
+          "items": [
+            "증상 또는 요청 작업",
+            "점검 부위",
+            "우선순위",
+            "견적 한도",
+            "인도 희망일",
+            "추가 수리",
+            "교체 부품 반환"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-delivery-confirmation",
+        "traffic-accident-confirmation",
+        "rental-car-return-confirmation",
+        "vehicle-inspection-postponement-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-05T12:23:51+09:00",
+      "updated_at": "2026-11-05T12:23:51+09:00",
+      "downloads": 0
+    },
+    {
       "id": "vehicle-sale-cancellation-agreement",
       "title": "자동차 매매 계약 해제 합의서",
       "category": "public",
@@ -47099,6 +47413,109 @@
       "warnings": [],
       "created_at": "2026-10-18T09:49:36+09:00",
       "updated_at": "2026-10-18T09:49:36+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "welfare-facility-visit-request",
+      "title": "복지시설 면회 신청서",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "복지시설",
+        "면회신청",
+        "면회신청서",
+        "방문신청",
+        "시설면회"
+      ],
+      "summary": "복지시설에 계신 가족이나 지인을 만나기 위해 면회 일시와 방문자 정보를 시설에 미리 알릴 때 쓰는 복지시설 면회 신청서 양식입니다.",
+      "usage": "시설 입소자를 방문하려는 가족·지인이 면회 희망 일시와 인원, 입소자와의 관계를 시설에 알리는 서식입니다. 방문자 이름과 연락처, 면회 목적을 적고 시설의 면회 수칙에 동의했는지 표시합니다. 면회 가능 시간과 인원, 방역 절차는 시설마다 다르므로 신청 전에 시설 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 52759,
+        "docx": 38766,
+        "hwpx": 10115
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "입소자 이름과 방문자 이름, 관계를 적습니다.",
+        "희망하는 면회 날짜와 시간, 인원을 적습니다.",
+        "면회 목적과 시설에 알릴 내용을 적습니다.",
+        "시설 면회 수칙에 동의하고 서명해 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "신청 없이 바로 방문해도 되나요?",
+          "a": "시설마다 다릅니다. 사전 신청이 필요한 곳이 많으니 방문 전에 시설에 확인하십시오."
+        },
+        {
+          "q": "방문자 여러 명을 한 장에 적어도 되나요?",
+          "a": "인원 칸에 총 인원을 적고 방문자 명단 표에 이름을 적습니다. 인원 제한은 시설 수칙을 따르십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 입소자 및 신청자",
+          "items": [
+            "입소자 성명",
+            "생활 공간",
+            "신청자 성명",
+            "입소자와의 관계",
+            "연락처",
+            "신청일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 면회 희망 일정",
+          "items": [
+            "희망 날짜",
+            "희망 시간",
+            "방문 인원",
+            "면회 방식"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 방문자 명단",
+          "items": [
+            "이름",
+            "관계"
+          ],
+          "note": "면회 목적이나 시설에 미리 알릴 사항(전달 물품 등)을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "welfare-facility-application",
+        "welfare-facility-outing-request",
+        "welfare-service-change-request",
+        "welfare-facility-withdrawal-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-05T12:23:37+09:00",
+      "updated_at": "2026-11-05T12:23:37+09:00",
       "downloads": 0
     },
     {
@@ -48636,6 +49053,118 @@
       "warnings": [],
       "created_at": "2026-11-04T11:59:52+09:00",
       "updated_at": "2026-11-04T11:59:52+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-rent-tax-credit-submission",
+      "title": "연말정산 월세 세액공제 자료 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "월세",
+        "월세세액공제",
+        "임대차자료",
+        "월세제출"
+      ],
+      "summary": "연말정산에서 월세 세액공제를 받으려는 근로자가 임대차 계약 내용과 월별 납부 내역을 회사에 내는 월세 세액공제 자료 제출서 양식입니다.",
+      "usage": "연말정산 때 월세 지출분을 공제받으려는 근로자가 임대인·주택·계약기간·월세 납부 내역을 정리해 회사 담당 부서에 내는 서식입니다. 임대차계약서 사본과 계좌이체 내역 같은 증빙을 함께 붙이고, 월별 납부액을 표에 적습니다. 공제를 받을 수 있는지와 한도는 소득 수준·주택 요건 등 세법 기준에 따라 달라지므로 국세청 안내와 회사 담당 부서의 안내를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 62185,
+        "docx": 38921,
+        "hwpx": 10522
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 소속과 성명, 귀속 연도를 적습니다.",
+        "임대인 이름과 주택 주소, 계약기간, 월세 금액을 적습니다.",
+        "월별 납부일과 금액을 표에 한 줄씩 적습니다.",
+        "임대차계약서와 이체 내역 사본을 붙여 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "계약서 사본은 꼭 붙여야 하나요?",
+          "a": "보통 계약 내용을 확인하려고 요구합니다. 제출 서류 범위는 회사 담당 부서 안내를 따르십시오."
+        },
+        {
+          "q": "월세를 현금으로 냈으면 어떻게 하나요?",
+          "a": "지급 사실을 보여 줄 영수증이나 이체 기록이 필요할 수 있습니다. 증빙 기준은 담당 부서와 국세청 안내를 확인하십시오."
+        },
+        {
+          "q": "중간에 이사했다면 어떻게 적나요?",
+          "a": "주택별로 서식을 나누어 적고 각각의 계약기간을 구분해 적는 편이 안전합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "귀속 연도",
+            "연락처",
+            "제출일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 임대차 정보",
+          "items": [
+            "임대인",
+            "계약기간",
+            "주택 주소",
+            "보증금",
+            "월세"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 월별 월세 납부 내역",
+          "items": [
+            "납부 월",
+            "납부일",
+            "납부액(원)",
+            "납부 방법",
+            "납부 합계",
+            "첨부 서류"
+          ],
+          "note": "중간 이사, 계약 변경 등 담당 부서가 알아야 할 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "monthly-rent-receipt",
+        "year-end-dependent-change-notice",
+        "prior-employer-withholding-submission"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-05T12:23:24+09:00",
+      "updated_at": "2026-11-05T12:23:24+09:00",
       "downloads": 0
     },
     {

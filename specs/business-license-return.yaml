@@ -1,0 +1,70 @@
+id: business-license-return
+title: 영업신고증 반납서
+category: public
+subcategory: permit
+tags: [영업신고증, 반납서, 폐업, 신고증반납, 영업종료]
+summary: 영업을 그만두면서 발급받은 영업신고증을 담당 기관에 돌려줄 때 반납 사유와 사업장 정보를 적어 내는 영업신고증 반납서 양식입니다.
+usage: >
+  폐업이나 영업 종료로 더 이상 쓰지 않는 영업신고증을 담당 기관에 반납할 때 함께 내는 서식입니다.
+  영업자 정보와 영업장 소재지, 신고증 번호, 반납 사유를 적고 신고증 원본을 붙입니다.
+  신고증 분실 시 처리 방법과 폐업 신고 절차는 업종과 기관마다 다르므로 해당 기관 안내를 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 영업자 이름과 상호, 영업장 주소를 적습니다.
+  - 신고증 번호와 신고일, 업종을 적습니다.
+  - 반납하는 사유와 영업을 끝낸 날짜를 적습니다.
+  - 신고증 원본을 붙여 담당 기관에 냅니다.
+faq:
+  - q: 신고증을 잃어버렸으면 어떻게 하나요?
+    a: 분실 사유를 적고 신고증 없이 낼 수 있는지 담당 기관에 확인하십시오. 기관 안내를 따르면 됩니다.
+  - q: 이 서식이 폐업 신고서를 대신하나요?
+    a: 아닙니다. 폐업 신고는 별도 절차일 수 있습니다. 담당 기관에 필요한 신고와 서류를 확인하십시오.
+related: [business-closure-confirmation, business-license-reissue-request, business-suspension-confirmation, business-resumption-confirmation]
+blocks:
+  - type: doc_title
+    text: 영업신고증 반납서
+    spaced: true
+  - type: subtitle
+    text: 1. 영업자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["영업자", "", "상호", ""]
+      - ["연락처", "", "업종", ""]
+      - ["영업장 소재지", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "한빛분식"]
+      - ["", "010-1234-5678", "", "일반음식점"]
+      - ["", "서울시 마포구 예시로 12, 1층", "", ""]
+  - type: subtitle
+    text: 2. 신고증 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["신고증 번호", "", "신고일", ""]
+      - ["영업 종료일", "", "반납 매수", ""]
+    sample_rows:
+      - ["", "제2024-0123호", "", "2024-03-15"]
+      - ["", "2026-10-31", "", "1부"]
+  - type: textbox
+    hint: "반납하는 사유를 적으십시오. 분실로 반납할 수 없으면 그 사유도 적습니다."
+    height_mm: 24
+    sample_text: "영업을 종료하여 더 이상 사용하지 않는 신고증을 반납합니다."
+  - type: para
+    text: 위와 같이 영업신고증을 반납합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    5 일
+  - type: sign_line
+    labels: ["영업자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 폐업 신고 등 필요한 절차는 담당 기관에 확인하십시오.

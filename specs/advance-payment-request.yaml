@@ -1,0 +1,86 @@
+id: advance-payment-request
+title: 선금 지급 신청서
+category: public
+subcategory: procure
+tags: [선금, 선금신청, 선급금, 계약선금, 조달]
+summary: 용역·공사·물품 계약을 맺은 계약상대자가 발주처에 계약금액 일부를 먼저 지급해 달라고 요청할 때 쓰는 선금 지급 신청서 양식입니다.
+usage: >
+  계약을 맺은 뒤 착수 단계에서 필요한 자금을 먼저 받으려는 계약상대자가 발주처에 내는 신청서입니다.
+  계약 정보와 신청 금액, 사용 계획, 입금 계좌를 적고 보증서 등 필요한 서류를 붙입니다.
+  지급 가능 여부와 비율, 보증 방식은 계약 조건과 발주처 규정에 따라 달라지므로 계약서와 발주처 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 계약명과 계약번호, 계약금액, 계약기간을 적습니다.
+  - 선금으로 신청할 금액과 사용 목적을 적습니다.
+  - 입금받을 계좌 정보를 적습니다.
+  - 보증서 등 첨부 서류를 확인하고 발주처에 냅니다.
+faq:
+  - q: 신청 금액은 얼마까지 적을 수 있나요?
+    a: 계약서와 발주처 규정에서 정한 범위 안에서 적습니다. 비율은 계약마다 다를 수 있으니 확인하십시오.
+  - q: 보증서는 꼭 내야 하나요?
+    a: 대개 선금 보증을 요구합니다. 필요한 서류와 보증 방식은 계약서와 발주처 안내를 따르십시오.
+  - q: 선금은 아무 곳에나 써도 되나요?
+    a: 보통 해당 계약 이행에 쓰도록 정해져 있습니다. 사용 범위는 계약 조건을 확인하십시오.
+related: [contract-completion-confirmation, contract-period-extension-request, contract-performance-deposit-refund-request, goods-inspection-report]
+blocks:
+  - type: doc_title
+    text: 선금 지급 신청서
+    spaced: true
+  - type: subtitle
+    text: 1. 계약 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["계약명", "", "", ""]
+      - ["계약번호", "", "계약금액", ""]
+      - ["계약기간", "", "발주처", ""]
+    sample_rows:
+      - ["", "2026년 사무용 집기 납품", "", ""]
+      - ["", "2026-물품-0123", "", "30,000,000원"]
+      - ["", "2026-10-01 ~ 2026-12-31", "", "한빛시청 총무과"]
+  - type: subtitle
+    text: 2. 신청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["상호", "", "대표자", ""]
+      - ["사업자등록번호", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "박민준"]
+      - ["", "000-00-00000", "", "010-1234-5678"]
+  - type: subtitle
+    text: 3. 선금 신청 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["신청 금액", "", "신청 비율", ""]
+      - ["입금 은행", "", "계좌번호", ""]
+      - ["예금주", "", "보증서 종류", ""]
+    sample_rows:
+      - ["", "9,000,000원", "", "30%"]
+      - ["", "한빛은행", "", "000-000-000000"]
+      - ["", "(주)새길데이터", "", "선금보증서"]
+  - type: textbox
+    hint: "선금을 어디에 쓸 계획인지 항목별로 적으십시오."
+    height_mm: 28
+    sample_text: "납품 물품 제작을 위한 자재 구입비와 운송 준비 비용에 사용할 계획입니다."
+  - type: para
+    text: 위와 같이 계약에 따른 선금 지급을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    5 일
+  - type: sign_line
+    labels: ["신청인"]
+    sample_names: [박민준]
+  - type: notice
+    text: 지급 조건과 제출 서류는 계약서와 발주처 규정을 확인하십시오.

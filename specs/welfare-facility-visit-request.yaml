@@ -1,0 +1,78 @@
+id: welfare-facility-visit-request
+title: 복지시설 면회 신청서
+category: welfare
+subcategory: consent
+tags: [복지시설, 면회신청, 면회신청서, 방문신청, 시설면회]
+summary: 복지시설에 계신 가족이나 지인을 만나기 위해 면회 일시와 방문자 정보를 시설에 미리 알릴 때 쓰는 복지시설 면회 신청서 양식입니다.
+usage: >
+  시설 입소자를 방문하려는 가족·지인이 면회 희망 일시와 인원, 입소자와의 관계를 시설에 알리는 서식입니다.
+  방문자 이름과 연락처, 면회 목적을 적고 시설의 면회 수칙에 동의했는지 표시합니다.
+  면회 가능 시간과 인원, 방역 절차는 시설마다 다르므로 신청 전에 시설 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 입소자 이름과 방문자 이름, 관계를 적습니다.
+  - 희망하는 면회 날짜와 시간, 인원을 적습니다.
+  - 면회 목적과 시설에 알릴 내용을 적습니다.
+  - 시설 면회 수칙에 동의하고 서명해 냅니다.
+faq:
+  - q: 신청 없이 바로 방문해도 되나요?
+    a: 시설마다 다릅니다. 사전 신청이 필요한 곳이 많으니 방문 전에 시설에 확인하십시오.
+  - q: 방문자 여러 명을 한 장에 적어도 되나요?
+    a: 인원 칸에 총 인원을 적고 방문자 명단 표에 이름을 적습니다. 인원 제한은 시설 수칙을 따르십시오.
+related: [welfare-facility-application, welfare-facility-outing-request, welfare-service-change-request, welfare-facility-withdrawal-request]
+blocks:
+  - type: doc_title
+    text: 복지시설 면회 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 입소자 및 신청자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["입소자 성명", "", "생활 공간", ""]
+      - ["신청자 성명", "", "입소자와의 관계", ""]
+      - ["연락처", "", "신청일", ""]
+    sample_rows:
+      - ["", "이수현", "", "301호"]
+      - ["", "홍길동", "", "자녀"]
+      - ["", "010-1234-5678", "", "2026-11-05"]
+  - type: subtitle
+    text: 2. 면회 희망 일정
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["희망 날짜", "", "희망 시간", ""]
+      - ["방문 인원", "", "면회 방식", ""]
+    sample_rows:
+      - ["", "2026-11-08", "", "14:00 ~ 15:00"]
+      - ["", "2명", "", "대면 면회"]
+  - type: subtitle
+    text: 3. 방문자 명단
+  - type: table
+    widths: [8, 24, 24, 24, 20]
+    header: ["No", 이름, 관계, 연락처, 비고]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "홍길동", "자녀", "010-1234-5678", ""]
+      - ["2", "김서연", "손자녀", "010-2345-6789", "미성년"]
+  - type: textbox
+    hint: "면회 목적이나 시설에 미리 알릴 사항(전달 물품 등)을 적으십시오."
+    height_mm: 24
+    sample_text: "생신을 맞아 가족이 함께 방문하려 합니다. 간식류를 전달할 예정입니다."
+  - type: para
+    text: 시설의 면회 수칙을 확인하였으며 이를 지킬 것을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    5 일
+  - type: sign_line
+    labels: ["신청자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 면회 가능 시간과 인원은 시설 안내를 확인하십시오.
