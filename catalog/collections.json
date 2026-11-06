@@ -30,7 +30,7 @@
       "ids": [
         "housing-lease-contract", "commercial-lease-contract",
         "lease-renewal-contract", "lease-renewal-refusal-notice", "move-in-checklist", "monthly-rent-receipt",
-        "moving-in-report", "move-in-report-poa", "moving-checklist", "lease-termination-notice", "lease-repair-request",
+        "moving-in-report", "household-member-move-out-consent", "move-in-report-poa", "moving-checklist", "lease-termination-notice", "lease-repair-request",
         "move-out-checklist", "management-fee-settlement-confirmation",
         "lease-deposit-return-schedule-agreement", "deposit-return-notice", "resident-registration-request"
       ]
@@ -109,7 +109,7 @@
       "name": "관공서 민원 서식",
       "lead": "동네 민원부터 행정처분 이의신청까지, 관공서에 내는 서식을 모았습니다.",
       "ids": [
-        "civil-petition", "civil-petition-supplement-submission", "info-disclosure-request", "disclosure-objection",
+        "civil-petition", "civil-petition-supplement-submission", "civil-petition-objection", "info-disclosure-request", "disclosure-objection",
         "parking-fine-objection", "traffic-violation-driver-confirmation", "administrative-objection",
         "noise-complaint", "illegal-dumping-report", "road-repair-request",
         "moving-in-report", "seal-certificate-poa",

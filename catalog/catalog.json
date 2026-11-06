@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T12:23:51+09:00",
-  "count": 464,
+  "generated_at": "2026-11-06T12:22:32+09:00",
+  "count": 469,
   "forms": [
     {
       "id": "absence-reason-statement",
@@ -9558,6 +9558,112 @@
       "seal": true
     },
     {
+      "id": "certified-notice-rescission",
+      "title": "내용증명 (계약 해제 통보)",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "내용증명",
+        "계약해제통보",
+        "계약해제",
+        "계약해제통지서",
+        "내용증명서식"
+      ],
+      "summary": "상대방의 이행 지체 등으로 계약을 해제한다는 의사와 원상회복 요구를 통보하는 내용증명 양식입니다.",
+      "usage": "계약 상대방이 약속한 기한까지 의무를 이행하지 않아 계약을 처음부터 없던 것으로 하려는 의사를 알릴 때 쓰는 서식입니다. 원 계약의 내용과 이행 기한, 이행 요구 이력, 해제 의사와 해제일, 돌려받을 금액·물건 등 원상회복 요구를 순서대로 적습니다. 해제 요건과 효과는 계약 내용과 사정에 따라 다르므로 필요하면 전문가 확인을 권합니다. 우체국 등기로 보내 통지 사실과 도달 시점의 증거를 남겨 두십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49400,
+        "docx": 38620,
+        "hwpx": 9798
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "certified-notice",
+      "series_name": "내용증명",
+      "variant": "계약 해제",
+      "variant_rank": 8,
+      "variant_use": "이행 지체로 계약을 없던 것으로 하고 싶을 때 씁니다.",
+      "howto": [
+        "발신인과 수신인 정보를 적습니다.",
+        "계약명과 계약일, 이행 기한을 적습니다.",
+        "이행을 요구했던 날짜와 방법을 적습니다.",
+        "해제 의사와 돌려받을 내용을 적습니다.",
+        "등기우편으로 보내고 사본을 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "해지 통보와 무엇이 다른가요?",
+          "a": "해제는 계약을 처음부터 없던 것으로 하는 의사 표시이고, 해지는 앞으로의 효력을 끝내는 것입니다. 구체적 효과는 사정에 따라 다릅니다."
+        },
+        {
+          "q": "먼저 이행을 요구해야 하나요?",
+          "a": "사안에 따라 다릅니다. 기한을 정해 이행을 요구한 기록이 있으면 도움이 되니 전문가 확인을 권합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 발신인",
+          "items": [
+            "성명(상호)",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 원 계약 내용",
+          "items": [
+            "계약명",
+            "계약일",
+            "계약금액",
+            "이행 기한"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 이행 지체 경위",
+          "items": [],
+          "note": "이행 기한이 지난 경위와 이행을 요구한 날짜·방법을 시간순으로 적으십시오."
+        },
+        {
+          "title": "5. 해제 의사 및 요구 사항",
+          "items": [
+            "해제 의사",
+            "해제일",
+            "원상회복 요구"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "contract-performance-demand-notice",
+        "settlement-agreement",
+        "balance-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-06T12:22:07+09:00",
+      "updated_at": "2026-11-06T12:22:07+09:00",
+      "downloads": 0
+    },
+    {
       "id": "certified-notice-terminate",
       "title": "내용증명 (계약 해지 통보)",
       "category": "legal",
@@ -10494,6 +10600,120 @@
       "warnings": [],
       "created_at": "2026-10-24T10:29:25+09:00",
       "updated_at": "2026-10-24T10:29:25+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "civil-petition-objection",
+      "title": "민원 처리결과 이의신청서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "민원이의신청",
+        "민원처리결과이의",
+        "민원재검토",
+        "민원이의제기",
+        "처리결과불복"
+      ],
+      "summary": "받은 민원 처리결과에 동의하기 어려울 때 이유와 재검토 요청 내용을 적어 내는 양식입니다.",
+      "usage": "민원을 낸 뒤 받은 처리결과가 사실과 다르거나 충분하지 않다고 느낄 때 재검토를 요청하는 서식입니다. 원 민원의 접수번호와 처리결과 통지일, 이의 이유와 근거 자료, 바라는 조치를 순서대로 적습니다. 이의 제기 방법과 기한은 기관과 민원 종류에 따라 다르므로 처리결과 통지문의 안내를 먼저 확인하십시오. 본 서식은 재검토 요청을 정리하는 틀이며 결과를 보장하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53835,
+        "docx": 38799,
+        "hwpx": 10108
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "민원 접수번호와 처리결과 통지일을 적습니다.",
+        "처리결과에서 동의하기 어려운 부분을 적습니다.",
+        "근거 자료가 있으면 목록에 적습니다.",
+        "바라는 조치를 적고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "이의 제기 기한이 있나요?",
+          "a": "기관과 민원 종류에 따라 다릅니다. 처리결과 통지문의 안내를 확인하십시오."
+        },
+        {
+          "q": "행정처분 이의신청서와 같은가요?",
+          "a": "아닙니다. 이 서식은 민원 회신 내용의 재검토를 요청하는 용도입니다."
+        },
+        {
+          "q": "근거 자료는 꼭 붙여야 하나요?",
+          "a": "필수는 아니지만 사실관계를 보여 주는 자료가 있으면 검토에 도움이 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "제출 기관",
+            "담당 부서"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 원 민원 정보",
+          "items": [
+            "접수번호",
+            "처리결과 통지일",
+            "민원 제목"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 이의 이유",
+          "items": [],
+          "note": "처리결과에서 사실과 다르거나 충분하지 않다고 보는 부분을 구체적으로 적으십시오."
+        },
+        {
+          "title": "4. 첨부 자료",
+          "items": [
+            "자료명",
+            "부수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "5. 바라는 조치",
+          "items": [],
+          "note": "재확인, 보완 조치 등 바라는 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "civil-petition-reply-request",
+        "civil-petition-delay-reminder",
+        "civil-officer-meeting-request",
+        "gov-admin-appeal"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-06T12:21:55+09:00",
+      "updated_at": "2026-11-06T12:21:55+09:00",
       "downloads": 0
     },
     {
@@ -23724,6 +23944,110 @@
       "warnings": [],
       "created_at": "2026-10-20T10:42:04+09:00",
       "updated_at": "2026-10-20T10:42:04+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "household-member-move-out-consent",
+      "title": "세대원 전출 동의서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "세대원전출동의서",
+        "전출동의",
+        "세대주동의",
+        "전출신고",
+        "주소이전동의"
+      ],
+      "summary": "세대원이 다른 주소로 옮길 때 세대주가 전출에 동의함을 적는 양식입니다.",
+      "usage": "세대원이 같은 세대에서 빠져 다른 곳으로 전출신고를 할 때, 세대주의 동의 사실을 확인받아야 하는 경우에 쓰는 서식입니다. 세대주와 전출하는 세대원의 정보, 현 주소와 옮길 주소, 전출 예정일을 적고 양쪽이 서명합니다. 신고 방식에 따라 필요한 서류가 다르니 읍·면·동 주민센터 안내를 먼저 확인하십시오. 본 서식은 동의 사실을 남기는 틀이며 신고 수리를 보장하지 않습니다. 주민등록번호는 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 42940,
+        "docx": 38494,
+        "hwpx": 9607
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "세대주와 전출하는 세대원의 성명을 적습니다.",
+        "현재 주소와 옮길 주소를 적습니다.",
+        "전출 예정일과 사유를 적습니다.",
+        "날짜를 적고 두 사람이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "세대주가 없으면 어떻게 하나요?",
+          "a": "상황에 따라 필요한 서류가 다릅니다. 주민센터에 확인하십시오."
+        },
+        {
+          "q": "세대주 신분증 사본이 필요한가요?",
+          "a": "제출처마다 요구가 다릅니다. 담당 주민센터 안내를 확인하십시오."
+        },
+        {
+          "q": "직접 방문하지 않아도 되나요?",
+          "a": "위임이나 온라인 신고 가능 여부는 기관 안내에 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 세대주 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "생년월일",
+            "전출 세대원과의 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 전출하는 세대원 정보",
+          "items": [
+            "전출 인원"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 주소 및 전출 내용",
+          "items": [
+            "현재 주소",
+            "옮길 주소",
+            "전출 예정일",
+            "전출 사유"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "moving-in-report",
+        "household-separation-confirmation",
+        "move-in-report-poa",
+        "residence-fact-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-06T12:21:50+09:00",
+      "updated_at": "2026-11-06T12:21:50+09:00",
       "downloads": 0
     },
     {
@@ -40971,6 +41295,111 @@
       "downloads": 0
     },
     {
+      "id": "social-insurance-payment-certificate-request",
+      "title": "사회보험료 납부확인서 발급 요청서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "납부확인서",
+        "사회보험료납부확인",
+        "건강보험납부확인",
+        "국민연금납부확인",
+        "연말정산증빙"
+      ],
+      "summary": "건강보험·국민연금 등 사회보험료 납부 사실 확인서 발급을 요청할 때 쓰는 양식입니다.",
+      "usage": "연말정산이나 각종 제출 서류로 사회보험료를 낸 사실을 증명해야 할 때, 발급 요청 내용을 정리하는 서식입니다. 요청인 정보와 필요한 보험 종류, 증명 기간, 사용 목적, 수령 방법을 적습니다. 발급 가능 여부와 방식은 각 공단 안내에 따르며 온라인 발급이 가능한 경우도 있으니 먼저 확인하십시오. 본 서식은 요청 내용을 정리하는 틀입니다. 주민등록번호는 적지 않으며, 본인 확인은 기관 절차를 따르십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48038,
+        "docx": 38610,
+        "hwpx": 9875
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청인 성명과 연락처를 적습니다.",
+        "필요한 보험 종류와 증명 기간을 적습니다.",
+        "사용 목적과 제출처를 적습니다.",
+        "수령 방법을 고르고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "온라인으로도 받을 수 있나요?",
+          "a": "보험 종류에 따라 온라인 발급이 가능한 경우가 있습니다. 해당 공단 안내를 확인하십시오."
+        },
+        {
+          "q": "연말정산에는 어떤 자료가 필요한가요?",
+          "a": "제출처마다 요구가 다릅니다. 회사 담당자와 국세청 안내를 확인하십시오."
+        },
+        {
+          "q": "가족 것도 요청할 수 있나요?",
+          "a": "본인 외 요청은 위임이나 추가 서류가 필요할 수 있습니다. 공단 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청인 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "생년월일",
+            "이메일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 발급 요청 내용",
+          "items": [
+            "보험 종류",
+            "증명 기간",
+            "부수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 사용 목적과 수령",
+          "items": [
+            "사용 목적",
+            "제출처",
+            "수령 방법"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "national-pension-history-poa",
+        "health-insurance-eligibility-history-poa",
+        "insurance-enrollment-confirmation-request",
+        "social-insurance-correction-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-06T12:22:02+09:00",
+      "updated_at": "2026-11-06T12:22:32+09:00",
+      "downloads": 0
+    },
+    {
       "id": "sole-source-contract-report",
       "title": "수의계약 사유서",
       "category": "public",
@@ -49165,6 +49594,111 @@
       "warnings": [],
       "created_at": "2026-11-05T12:23:24+09:00",
       "updated_at": "2026-11-05T12:23:24+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-simplified-data-consent",
+      "title": "연말정산 간소화자료 제공 동의서",
+      "category": "public",
+      "subcategory": "consent",
+      "tags": [
+        "연말정산",
+        "간소화자료",
+        "자료제공동의",
+        "소득공제자료",
+        "부양가족자료"
+      ],
+      "summary": "연말정산 때 근로자가 회사에 국세청 간소화자료(부양가족 포함) 제공을 동의하는 양식입니다.",
+      "usage": "연말정산을 앞두고 회사가 근로자(또는 부양가족)의 소득·세액공제 자료를 받아 정산에 쓰려면 본인의 동의가 필요합니다. 동의자 정보와 제공 자료의 종류, 이용 목적, 보유 기간을 확인하고 항목별로 동의 여부를 표시한 뒤 서명합니다. 부양가족 자료는 가족 본인의 동의가 따로 필요할 수 있으니 국세청 안내와 회사 기준을 확인하십시오. 본 서식은 동의 의사를 남기는 틀이며 공제 가능 여부를 판단하지 않습니다. 주민등록번호는 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 61134,
+        "docx": 38920,
+        "hwpx": 10265
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "동의자 성명과 소속, 연락처를 적습니다.",
+        "제공할 자료의 종류를 확인하고 동의 여부를 표시합니다.",
+        "부양가족 자료가 있으면 가족 정보를 표에 적습니다.",
+        "날짜를 적고 서명해 연말정산 담당자에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "동의하지 않으면 어떻게 되나요?",
+          "a": "회사가 자료를 받지 못해 해당 공제를 직접 증빙해야 할 수 있습니다. 회사 담당자 안내를 확인하십시오."
+        },
+        {
+          "q": "부양가족 동의도 제가 대신 하나요?",
+          "a": "가족의 정보 제공은 가족 본인의 동의가 필요할 수 있습니다. 국세청 안내와 회사 기준을 확인하십시오."
+        },
+        {
+          "q": "동의 후 철회할 수 있나요?",
+          "a": "철회 방법과 시기는 회사 절차에 따릅니다. 담당 부서에 문의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 동의자 정보",
+          "items": [
+            "성명",
+            "소속 부서",
+            "사번",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 제공 자료와 동의 여부",
+          "items": [
+            "제공 자료",
+            "이용 목적",
+            "동의 여부(○/×)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 부양가족 자료 (해당 시)",
+          "items": [
+            "관계",
+            "생년월일",
+            "가족 동의 확인"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-dependent-change-notice",
+        "prior-employer-withholding-submission",
+        "donation-receipt-request",
+        "dependent-support-fact-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-06T12:21:43+09:00",
+      "updated_at": "2026-11-06T12:22:24+09:00",
       "downloads": 0
     },
     {

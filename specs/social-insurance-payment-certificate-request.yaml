@@ -1,0 +1,78 @@
+id: social-insurance-payment-certificate-request
+title: 사회보험료 납부확인서 발급 요청서
+category: public
+subcategory: insurance
+tags: [납부확인서, 사회보험료납부확인, 건강보험납부확인, 국민연금납부확인, 연말정산증빙]
+summary: 건강보험·국민연금 등 사회보험료 납부 사실 확인서 발급을 요청할 때 쓰는 양식입니다.
+usage: >
+  연말정산이나 각종 제출 서류로 사회보험료를 낸 사실을 증명해야 할 때, 발급 요청 내용을 정리하는 서식입니다.
+  요청인 정보와 필요한 보험 종류, 증명 기간, 사용 목적, 수령 방법을 적습니다.
+  발급 가능 여부와 방식은 각 공단 안내에 따르며 온라인 발급이 가능한 경우도 있으니 먼저 확인하십시오.
+  본 서식은 요청 내용을 정리하는 틀입니다. 주민등록번호는 적지 않으며, 본인 확인은 기관 절차를 따르십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청인 성명과 연락처를 적습니다.
+  - 필요한 보험 종류와 증명 기간을 적습니다.
+  - 사용 목적과 제출처를 적습니다.
+  - 수령 방법을 고르고 날짜와 서명을 합니다.
+faq:
+  - q: 온라인으로도 받을 수 있나요?
+    a: 보험 종류에 따라 온라인 발급이 가능한 경우가 있습니다. 해당 공단 안내를 확인하십시오.
+  - q: 연말정산에는 어떤 자료가 필요한가요?
+    a: 제출처마다 요구가 다릅니다. 회사 담당자와 국세청 안내를 확인하십시오.
+  - q: 가족 것도 요청할 수 있나요?
+    a: 본인 외 요청은 위임이나 추가 서류가 필요할 수 있습니다. 공단 안내를 확인하십시오.
+related: [national-pension-history-poa, health-insurance-eligibility-history-poa, insurance-enrollment-confirmation-request, social-insurance-correction-request]
+blocks:
+  - type: doc_title
+    text: 사회보험료 납부확인서 발급 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청인 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["생년월일", "", "이메일", ""]
+    sample_rows:
+      - ["", "이수현", "", "010-1234-5678"]
+      - ["", "1991-07-08", "", "sample@example.com"]
+  - type: subtitle
+    text: 2. 발급 요청 내용
+  - type: table
+    widths: [8, 24, 52, 16]
+    header: ["No", 보험 종류, 증명 기간, 부수]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "건강보험", "2026-01-01 ~ 2026-10-31", "1"]
+      - ["2", "국민연금", "2026-01-01 ~ 2026-10-31", "1"]
+  - type: subtitle
+    text: 3. 사용 목적과 수령
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["사용 목적", ""]
+      - ["제출처", ""]
+      - ["수령 방법", ""]
+    sample_rows:
+      - ["", "연말정산 증빙 자료 제출"]
+      - ["", "(주)한빛커머스 경영지원팀"]
+      - ["", "이메일 수령"]
+  - type: para
+    text: 위와 같이 사회보험료 납부확인서 발급을 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    6 일
+  - type: sign_line
+    label: 요청인
+    sample_names: [이수현]
+  - type: notice
+    text: 발급 방법과 본인 확인 절차는 해당 공단의 안내를 확인하십시오.

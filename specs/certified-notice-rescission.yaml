@@ -1,0 +1,100 @@
+id: certified-notice-rescission
+title: 내용증명 (계약 해제 통보)
+category: legal
+subcategory: notice
+tags: [내용증명, 계약해제통보, 계약해제, 계약해제통지서, 내용증명서식]
+summary: 상대방의 이행 지체 등으로 계약을 해제한다는 의사와 원상회복 요구를 통보하는 내용증명 양식입니다.
+usage: >
+  계약 상대방이 약속한 기한까지 의무를 이행하지 않아 계약을 처음부터 없던 것으로 하려는 의사를 알릴 때 쓰는 서식입니다.
+  원 계약의 내용과 이행 기한, 이행 요구 이력, 해제 의사와 해제일, 돌려받을 금액·물건 등 원상회복 요구를 순서대로 적습니다.
+  해제 요건과 효과는 계약 내용과 사정에 따라 다르므로 필요하면 전문가 확인을 권합니다.
+  우체국 등기로 보내 통지 사실과 도달 시점의 증거를 남겨 두십시오.
+source: original
+featured: false
+target_pages: 1
+series: certified-notice
+series_name: 내용증명
+variant: 계약 해제
+variant_rank: 8
+variant_use: 이행 지체로 계약을 없던 것으로 하고 싶을 때 씁니다.
+howto:
+  - 발신인과 수신인 정보를 적습니다.
+  - 계약명과 계약일, 이행 기한을 적습니다.
+  - 이행을 요구했던 날짜와 방법을 적습니다.
+  - 해제 의사와 돌려받을 내용을 적습니다.
+  - 등기우편으로 보내고 사본을 보관합니다.
+faq:
+  - q: 해지 통보와 무엇이 다른가요?
+    a: 해제는 계약을 처음부터 없던 것으로 하는 의사 표시이고, 해지는 앞으로의 효력을 끝내는 것입니다. 구체적 효과는 사정에 따라 다릅니다.
+  - q: 먼저 이행을 요구해야 하나요?
+    a: 사안에 따라 다릅니다. 기한을 정해 이행을 요구한 기록이 있으면 도움이 되니 전문가 확인을 권합니다.
+related: [contract-performance-demand-notice, settlement-agreement, balance-confirmation]
+blocks:
+  - type: doc_title
+    text: 내용증명 (계약 해제 통보)
+    spaced: false
+  - type: subtitle
+    text: 1. 발신인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges: [[1, 1, 1, 3]]
+    rows:
+      - ["성명(상호)", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울특별시 마포구 예시로 12", "", ""]
+  - type: subtitle
+    text: 2. 수신인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges: [[1, 1, 1, 3]]
+    rows:
+      - ["성명(상호)", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "(주)새길데이터", "", "02-000-0000"]
+      - ["", "서울특별시 강남구 샘플로 34", "", ""]
+  - type: subtitle
+    text: 3. 원 계약 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["계약명", "", "계약일", ""]
+      - ["계약금액", "", "이행 기한", ""]
+    sample_rows:
+      - ["", "웹사이트 제작 용역계약", "", "2026-06-01"]
+      - ["", "3,000,000원", "", "2026-09-30"]
+  - type: subtitle
+    text: 4. 이행 지체 경위
+  - type: textbox
+    hint: "이행 기한이 지난 경위와 이행을 요구한 날짜·방법을 시간순으로 적으십시오."
+    height_mm: 30
+    sample_text: 이행 기한인 2026-09-30까지 납품이 이루어지지 않았고, 2026-10-10과 10-20에 문자로 이행을 요구하였으나 이행되지 않았습니다.
+  - type: subtitle
+    text: 5. 해제 의사 및 요구 사항
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["해제 의사", ""]
+      - ["해제일", ""]
+      - ["원상회복 요구", ""]
+    sample_rows:
+      - ["", "위 계약을 해제합니다."]
+      - ["", "본 통지서가 도달한 날"]
+      - ["", "이미 지급한 계약금 1,000,000원을 반환해 주시기 바랍니다."]
+  - type: date_line
+    sample_text: 2026 년   11 월    6 일
+  - type: sign_line
+    label: 발신인
+    sample_names: [홍길동]
+  - type: notice
+    text: 해제 요건과 효과는 계약 내용에 따라 다르니 필요하면 전문가 확인을 받으십시오.

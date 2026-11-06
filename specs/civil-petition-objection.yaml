@@ -1,0 +1,88 @@
+id: civil-petition-objection
+title: 민원 처리결과 이의신청서
+category: public
+subcategory: civil
+tags: [민원이의신청, 민원처리결과이의, 민원재검토, 민원이의제기, 처리결과불복]
+summary: 받은 민원 처리결과에 동의하기 어려울 때 이유와 재검토 요청 내용을 적어 내는 양식입니다.
+usage: >
+  민원을 낸 뒤 받은 처리결과가 사실과 다르거나 충분하지 않다고 느낄 때 재검토를 요청하는 서식입니다.
+  원 민원의 접수번호와 처리결과 통지일, 이의 이유와 근거 자료, 바라는 조치를 순서대로 적습니다.
+  이의 제기 방법과 기한은 기관과 민원 종류에 따라 다르므로 처리결과 통지문의 안내를 먼저 확인하십시오.
+  본 서식은 재검토 요청을 정리하는 틀이며 결과를 보장하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 민원 접수번호와 처리결과 통지일을 적습니다.
+  - 처리결과에서 동의하기 어려운 부분을 적습니다.
+  - 근거 자료가 있으면 목록에 적습니다.
+  - 바라는 조치를 적고 날짜와 서명을 합니다.
+faq:
+  - q: 이의 제기 기한이 있나요?
+    a: 기관과 민원 종류에 따라 다릅니다. 처리결과 통지문의 안내를 확인하십시오.
+  - q: 행정처분 이의신청서와 같은가요?
+    a: 아닙니다. 이 서식은 민원 회신 내용의 재검토를 요청하는 용도입니다.
+  - q: 근거 자료는 꼭 붙여야 하나요?
+    a: 필수는 아니지만 사실관계를 보여 주는 자료가 있으면 검토에 도움이 됩니다.
+related: [civil-petition-reply-request, civil-petition-delay-reminder, civil-officer-meeting-request, gov-admin-appeal]
+blocks:
+  - type: doc_title
+    text: 민원 처리결과 이의신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["제출 기관", "", "담당 부서", ""]
+    sample_rows:
+      - ["", "박민준", "", "010-1234-5678"]
+      - ["", "강서구청", "", "도로과"]
+  - type: subtitle
+    text: 2. 원 민원 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges: [[1, 1, 1, 3]]
+    rows:
+      - ["접수번호", "", "처리결과 통지일", ""]
+      - ["민원 제목", "", "", ""]
+    sample_rows:
+      - ["", "2026-234567", "", "2026-10-30"]
+      - ["", "보도 블록 파손 보수 요청", "", ""]
+  - type: subtitle
+    text: 3. 이의 이유
+  - type: textbox
+    hint: "처리결과에서 사실과 다르거나 충분하지 않다고 보는 부분을 구체적으로 적으십시오."
+    height_mm: 32
+    sample_text: 처리결과에는 현장 확인 결과 이상이 없다고 되어 있으나, 제가 촬영한 사진에는 보도 블록이 들떠 있는 모습이 확인되어 재확인을 요청합니다.
+  - type: subtitle
+    text: 4. 첨부 자료
+  - type: table
+    widths: [10, 45, 15, 30]
+    header: ["No", 자료명, 부수, 비고]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "현장 사진", "2", "2026-11-02 촬영"]
+  - type: subtitle
+    text: 5. 바라는 조치
+  - type: textbox
+    hint: "재확인, 보완 조치 등 바라는 내용을 적으십시오."
+    height_mm: 20
+    sample_text: 현장을 다시 확인하고 그 결과를 서면으로 회신해 주시기 바랍니다.
+  - type: para
+    text: 위와 같이 처리결과에 대한 재검토를 요청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    6 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [박민준]
+  - type: notice
+    text: 이의 제기 기한과 방법은 처리결과 통지문과 기관 안내를 확인하십시오.

@@ -1,0 +1,81 @@
+id: household-member-move-out-consent
+title: 세대원 전출 동의서
+category: public
+subcategory: family
+tags: [세대원전출동의서, 전출동의, 세대주동의, 전출신고, 주소이전동의]
+summary: 세대원이 다른 주소로 옮길 때 세대주가 전출에 동의함을 적는 양식입니다.
+usage: >
+  세대원이 같은 세대에서 빠져 다른 곳으로 전출신고를 할 때, 세대주의 동의 사실을 확인받아야 하는 경우에 쓰는 서식입니다.
+  세대주와 전출하는 세대원의 정보, 현 주소와 옮길 주소, 전출 예정일을 적고 양쪽이 서명합니다.
+  신고 방식에 따라 필요한 서류가 다르니 읍·면·동 주민센터 안내를 먼저 확인하십시오.
+  본 서식은 동의 사실을 남기는 틀이며 신고 수리를 보장하지 않습니다. 주민등록번호는 적지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 세대주와 전출하는 세대원의 성명을 적습니다.
+  - 현재 주소와 옮길 주소를 적습니다.
+  - 전출 예정일과 사유를 적습니다.
+  - 날짜를 적고 두 사람이 서명합니다.
+faq:
+  - q: 세대주가 없으면 어떻게 하나요?
+    a: 상황에 따라 필요한 서류가 다릅니다. 주민센터에 확인하십시오.
+  - q: 세대주 신분증 사본이 필요한가요?
+    a: 제출처마다 요구가 다릅니다. 담당 주민센터 안내를 확인하십시오.
+  - q: 직접 방문하지 않아도 되나요?
+    a: 위임이나 온라인 신고 가능 여부는 기관 안내에 따릅니다.
+related: [moving-in-report, household-separation-confirmation, move-in-report-poa, residence-fact-confirmation]
+blocks:
+  - type: doc_title
+    text: 세대원 전출 동의서
+    spaced: false
+  - type: subtitle
+    text: 1. 세대주 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["생년월일", "", "전출 세대원과의 관계", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "1962-05-14", "", "부모"]
+  - type: subtitle
+    text: 2. 전출하는 세대원 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["생년월일", "", "전출 인원", ""]
+    sample_rows:
+      - ["", "홍서준", "", "010-9876-5432"]
+      - ["", "1993-09-21", "", "1명"]
+  - type: subtitle
+    text: 3. 주소 및 전출 내용
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["현재 주소", ""]
+      - ["옮길 주소", ""]
+      - ["전출 예정일", ""]
+      - ["전출 사유", ""]
+    sample_rows:
+      - ["", "서울특별시 마포구 예시로 12, 101동 204호"]
+      - ["", "서울특별시 성동구 샘플길 34, 305호"]
+      - ["", "2026-11-20"]
+      - ["", "직장 이전에 따른 독립 거주"]
+  - type: para
+    text: 위 세대원이 위 주소로 전출하는 것에 세대주로서 동의합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    6 일
+  - type: sign_line
+    labels: ["세대주", "전출 세대원"]
+    sample_names: [홍길동, 홍서준]
+  - type: notice
+    text: 필요 서류와 신고 방법은 관할 주민센터 안내를 확인하십시오.

@@ -1,0 +1,79 @@
+id: year-end-simplified-data-consent
+title: 연말정산 간소화자료 제공 동의서
+category: public
+subcategory: consent
+tags: [연말정산, 간소화자료, 자료제공동의, 소득공제자료, 부양가족자료]
+summary: 연말정산 때 근로자가 회사에 국세청 간소화자료(부양가족 포함) 제공을 동의하는 양식입니다.
+usage: >
+  연말정산을 앞두고 회사가 근로자(또는 부양가족)의 소득·세액공제 자료를 받아 정산에 쓰려면 본인의 동의가 필요합니다.
+  동의자 정보와 제공 자료의 종류, 이용 목적, 보유 기간을 확인하고 항목별로 동의 여부를 표시한 뒤 서명합니다.
+  부양가족 자료는 가족 본인의 동의가 따로 필요할 수 있으니 국세청 안내와 회사 기준을 확인하십시오.
+  본 서식은 동의 의사를 남기는 틀이며 공제 가능 여부를 판단하지 않습니다. 주민등록번호는 적지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 동의자 성명과 소속, 연락처를 적습니다.
+  - 제공할 자료의 종류를 확인하고 동의 여부를 표시합니다.
+  - 부양가족 자료가 있으면 가족 정보를 표에 적습니다.
+  - 날짜를 적고 서명해 연말정산 담당자에게 냅니다.
+faq:
+  - q: 동의하지 않으면 어떻게 되나요?
+    a: 회사가 자료를 받지 못해 해당 공제를 직접 증빙해야 할 수 있습니다. 회사 담당자 안내를 확인하십시오.
+  - q: 부양가족 동의도 제가 대신 하나요?
+    a: 가족의 정보 제공은 가족 본인의 동의가 필요할 수 있습니다. 국세청 안내와 회사 기준을 확인하십시오.
+  - q: 동의 후 철회할 수 있나요?
+    a: 철회 방법과 시기는 회사 절차에 따릅니다. 담당 부서에 문의하십시오.
+related: [year-end-dependent-change-notice, prior-employer-withholding-submission, donation-receipt-request, dependent-support-fact-confirmation]
+blocks:
+  - type: doc_title
+    text: 연말정산 간소화자료 제공 동의서
+    spaced: false
+  - type: subtitle
+    text: 1. 동의자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속 부서", ""]
+      - ["사번", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "경영지원팀"]
+      - ["", "A-2048", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 제공 자료와 동의 여부
+  - type: table
+    widths: [7, 45, 28, 20]
+    header: ["No", 제공 자료, 이용 목적, "동의 여부(○/×)"]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "의료비·교육비 등 공제 자료", "연말정산 세액 계산", "동의"]
+      - ["2", "신용카드·현금영수증 사용액", "소득공제 계산", "동의"]
+      - ["3", "보험료·연금저축 납입 자료", "세액공제 계산", "동의"]
+  - type: subtitle
+    text: 3. 부양가족 자료 (해당 시)
+  - type: table
+    widths: [8, 20, 16, 24, 32]
+    header: ["No", 성명, 관계, 생년월일, 가족 동의 확인]
+    empty_rows: 3
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "홍길동", "배우자", "1990-03-02", "서면 동의서 첨부"]
+  - type: kv_list
+    items:
+      - "제공받은 자료는 연말정산 업무에만 이용하고, 회사 보유 기간이 지나면 파기합니다."
+      - "동의를 거부할 수 있으며, 거부 시 일부 공제를 직접 증빙해야 할 수 있습니다."
+  - type: para
+    text: 위 내용을 확인하였으며 자료 제공에 동의합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    6 일
+  - type: sign_line
+    label: 동의자
+    sample_names: [김서연]
+  - type: notice
+    text: 제출 기한과 방법은 회사 연말정산 안내와 국세청 기준을 확인하십시오.
