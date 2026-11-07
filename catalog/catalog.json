@@ -1,7 +1,116 @@
 {
-  "generated_at": "2026-11-06T12:22:32+09:00",
-  "count": 469,
+  "generated_at": "2026-11-07T11:41:27+09:00",
+  "count": 474,
   "forms": [
+    {
+      "id": "abandoned-vehicle-report",
+      "title": "방치 차량 신고서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "방치차량",
+        "방치차량신고",
+        "무단방치",
+        "장기주차",
+        "차량신고"
+      ],
+      "summary": "도로나 주차장, 공터에 오랫동안 세워진 방치 의심 차량의 위치와 상태를 적어 관할 기관에 신고하는 방치 차량 신고서 양식입니다.",
+      "usage": "오랫동안 움직이지 않는 차량이 통행이나 주차를 막을 때 위치와 상태를 정리해 관할 구청이나 관리 주체에 내는 서식입니다. 차량 번호와 종류, 방치된 장소, 처음 발견한 날, 차량 상태를 적고 사진을 붙입니다. 방치 여부의 판단과 처리 절차는 관할 기관이 정하므로 사실만 적고 추측은 쓰지 않습니다. 신고 방법과 접수 창구는 지역마다 다르니 관할 기관 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45641,
+        "docx": 38600,
+        "hwpx": 9767
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고자 성명과 연락처, 신고일을 적습니다.",
+        "차량 번호와 종류, 색상을 적습니다.",
+        "방치된 장소와 처음 발견한 날, 현재 상태를 적습니다.",
+        "사진 등 증빙을 붙여 관할 기관에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "차량 소유자를 모르면 신고할 수 없나요?",
+          "a": "소유자를 몰라도 차량 번호와 위치만 있으면 신고할 수 있습니다. 소유자 확인은 관할 기관이 합니다."
+        },
+        {
+          "q": "사진은 꼭 붙여야 하나요?",
+          "a": "필수는 아니지만 위치와 상태를 보여 주는 사진이 있으면 확인이 빠릅니다. 번호판이 보이게 찍으십시오."
+        },
+        {
+          "q": "신고하면 바로 견인되나요?",
+          "a": "아닙니다. 소유자 확인과 안내 등 절차를 거치며 기간은 기관과 상황에 따라 다릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고자",
+          "items": [
+            "성명",
+            "연락처",
+            "신고일",
+            "신고 기관",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 차량 정보",
+          "items": [
+            "차량 번호",
+            "차종",
+            "색상",
+            "제조사",
+            "번호판 상태",
+            "소유자 파악"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 방치 장소와 상태",
+          "items": [
+            "방치 장소",
+            "처음 발견일",
+            "방치 기간"
+          ],
+          "note": "타이어 바람 빠짐, 먼지, 파손, 통행 방해 등 눈으로 확인한 상태를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "illegal-dumping-report",
+        "vehicle-deregistration-poa",
+        "road-repair-request",
+        "noise-complaint"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-07T11:41:07+09:00",
+      "updated_at": "2026-11-07T11:41:07+09:00",
+      "downloads": 0
+    },
     {
       "id": "absence-reason-statement",
       "title": "지각·결근 사유서",
@@ -7848,6 +7957,102 @@
       "seal": true
     },
     {
+      "id": "capital-contribution-receipt",
+      "title": "출자금 납입 확인서",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "출자금",
+        "출자금납입",
+        "납입확인서",
+        "자본금납입",
+        "출자확인"
+      ],
+      "summary": "회사 설립이나 증자 때 출자자가 낸 출자금의 금액과 납입일, 납입 방법을 확인해 주는 출자금 납입 확인서 양식입니다.",
+      "usage": "출자자가 회사에 출자금을 냈음을 회사가 확인해 주는 서식입니다. 출자자 성명과 출자 좌수, 출자금액, 납입일, 납입 방법을 적고 회사 대표가 서명합니다. 현금 외에 물건으로 낸 출자는 평가 방법이 달라질 수 있어 납입 방법 칸에 구체적으로 적어야 합니다. 법인 설립과 증자의 구체적 절차는 정관과 관련 법령에 따르므로 전문가 확인을 권합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 43713,
+        "docx": 38537,
+        "hwpx": 9670
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "회사 이름과 출자자의 성명, 연락처를 적습니다.",
+        "출자 좌수와 출자금액, 납입일을 적습니다.",
+        "납입 방법과 입금 계좌를 적습니다.",
+        "회사 대표가 날짜를 적고 서명해 출자자에게 줍니다."
+      ],
+      "faq": [
+        {
+          "q": "계좌로 낸 출자금도 확인서가 필요한가요?",
+          "a": "입금 기록이 있어도 회사 장부 정리와 분쟁 예방에 확인서가 도움이 됩니다. 입금 내역 사본을 함께 두십시오."
+        },
+        {
+          "q": "물건으로 출자하면 어떻게 적나요?",
+          "a": "납입 방법 칸에 물건의 이름과 평가 금액을 적습니다. 평가 방법은 정관과 합의 내용을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 회사",
+          "items": [
+            "회사명",
+            "대표자",
+            "소재지",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 출자자와 납입 내용",
+          "items": [
+            "출자자",
+            "출자 좌수",
+            "1좌 금액",
+            "출자금액",
+            "납입일",
+            "납입 방법",
+            "입금 계좌"
+          ],
+          "note": "물건으로 낸 출자, 분할 납입 등 확인이 필요한 사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "shareholder-register",
+        "stock-subscription-form",
+        "articles-of-incorporation",
+        "shareholder-meeting-minutes"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-07T11:41:27+09:00",
+      "updated_at": "2026-11-07T11:41:27+09:00",
+      "downloads": 0
+    },
+    {
       "id": "car-accident-settlement",
       "title": "교통사고 합의서",
       "category": "personal",
@@ -12875,6 +13080,113 @@
       "warnings": [],
       "created_at": "2026-10-24T10:29:45+09:00",
       "updated_at": "2026-10-24T10:30:03+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "contract-termination-agreement",
+      "title": "계약 합의해지서",
+      "category": "legal",
+      "subcategory": "contract",
+      "tags": [
+        "합의해지",
+        "계약해지",
+        "계약해지합의서",
+        "해지합의",
+        "계약종료"
+      ],
+      "summary": "계약 당사자들이 서로 합의해 계약을 끝내고 정산 방법과 책임 범위를 정리하는 계약 합의해지서 양식입니다.",
+      "usage": "이미 맺은 계약을 양쪽이 동의해 중간에 끝낼 때 해지 날짜와 정산 내용을 문서로 남기는 서식입니다. 원래 계약의 이름과 체결일, 해지일, 이미 이행한 부분의 정산, 돌려줄 물건과 금액을 적습니다. 해지 뒤에 서로 더 이상 청구하지 않는지 여부를 분명히 적어 두면 분쟁을 줄일 수 있습니다. 계약 종류에 따라 정해진 절차가 있을 수 있으니 필요하면 전문가에게 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53529,
+        "docx": 38743,
+        "hwpx": 10133
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "원래 계약의 이름과 체결일, 당사자를 적습니다.",
+        "해지일과 해지 사유를 적습니다.",
+        "정산할 금액과 돌려줄 물건, 지급일을 적습니다.",
+        "추가 청구 여부를 정하고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "한쪽이 서명하지 않으면 효력이 있나요?",
+          "a": "합의해지는 양쪽의 동의가 있어야 성립합니다. 한쪽만 서명한 문서는 합의 증거로 약합니다."
+        },
+        {
+          "q": "이미 낸 계약금은 어떻게 하나요?",
+          "a": "돌려줄지, 얼마를 공제할지 정산 칸에 구체적으로 적어야 합니다. 계약서의 위약금 조항도 함께 확인하십시오."
+        },
+        {
+          "q": "해지 후 추가 청구를 막을 수 있나요?",
+          "a": "추가 청구를 하지 않기로 합의한다는 문구를 넣으면 분쟁을 줄이는 데 도움이 됩니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 해지할 계약",
+          "items": [
+            "계약명",
+            "계약 체결일",
+            "계약 기간",
+            "갑",
+            "을"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 해지 내용",
+          "items": [
+            "해지일",
+            "해지 효력",
+            "해지 사유"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 정산 내역",
+          "items": [
+            "정산 항목",
+            "금액(원)",
+            "지급 기한",
+            "지급 방법"
+          ],
+          "note": "돌려줄 물건, 자료 반환, 추가 청구 여부 등 합의한 나머지 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "settlement-agreement",
+        "quitclaim-letter",
+        "balance-confirmation",
+        "deposit-return-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-07T11:41:19+09:00",
+      "updated_at": "2026-11-07T11:41:19+09:00",
       "downloads": 0
     },
     {
@@ -26768,6 +27080,112 @@
         "employment-certificate"
       ],
       "seal": true
+    },
+    {
+      "id": "landlord-change-notice",
+      "title": "임대인 변경 통지서",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "임대인변경",
+        "집주인변경",
+        "양수통지",
+        "임대인교체",
+        "임대차통지"
+      ],
+      "summary": "임대 중인 집이나 상가의 소유자가 바뀌었을 때 새 임대인과 보증금·월세 지급 방법을 임차인에게 알리는 임대인 변경 통지서 양식입니다.",
+      "usage": "임대차 기간 중에 건물을 팔거나 넘겨서 임대인이 바뀌면 임차인에게 그 사실과 새 연락처, 입금 계좌를 알려야 합니다. 기존 임대인과 새 임대인, 변경일, 보증금과 월세 승계 여부, 이후 월세 입금 계좌를 적습니다. 임차인이 계약 내용이 그대로 이어지는지 확인할 수 있게 계약 정보를 함께 씁니다. 권리 관계는 계약서와 등기 내용에 따르므로 필요하면 전문가나 관할 기관에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48536,
+        "docx": 38665,
+        "hwpx": 9895
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "임차인과 임차 물건의 주소를 적습니다.",
+        "기존 임대인과 새 임대인의 성명, 연락처, 변경일을 적습니다.",
+        "보증금과 월세, 계약 기간이 그대로 이어지는지 적습니다.",
+        "새 입금 계좌를 적고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "임대인이 바뀌면 계약 조건도 바뀌나요?",
+          "a": "보통 기존 계약 내용이 그대로 이어지는 것으로 봅니다. 달라지는 점이 있으면 합의 내용을 따로 적으십시오."
+        },
+        {
+          "q": "통지서만 보내면 월세 계좌를 바꿔도 되나요?",
+          "a": "임차인은 새 계좌가 맞는지 확인하고 싶을 수 있습니다. 새 임대인 명의 계좌인지 서로 확인하는 편이 안전합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 수신 (임차인)",
+          "items": [
+            "임차인",
+            "연락처",
+            "임차 물건"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 임대인 변경 내용",
+          "items": [
+            "기존 임대인",
+            "새 임대인",
+            "변경일",
+            "변경 사유"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 계약 승계 내용",
+          "items": [
+            "보증금",
+            "월 차임",
+            "계약 기간",
+            "승계 여부",
+            "입금 은행",
+            "계좌 명의",
+            "계좌번호",
+            "적용 시작"
+          ],
+          "note": "기존 계약과 달라지는 점이나 임차인에게 알릴 사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "lease-deposit-return-schedule-agreement",
+        "rent-due-date-change-agreement",
+        "lease-termination-notice",
+        "monthly-rent-receipt"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-07T11:41:13+09:00",
+      "updated_at": "2026-11-07T11:41:13+09:00",
+      "downloads": 0
     },
     {
       "id": "lawsuit-withdrawal",
@@ -49382,6 +49800,109 @@
       "warnings": [],
       "created_at": "2026-11-02T11:17:58+09:00",
       "updated_at": "2026-11-02T11:17:58+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-donation-submission",
+      "title": "연말정산 기부금 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "기부금",
+        "기부금제출",
+        "기부금영수증",
+        "기부금공제"
+      ],
+      "summary": "연말정산을 위해 근로자가 한 해 동안 낸 기부금 내역과 영수증 증빙을 회사에 제출할 때 쓰는 기부금 제출서 양식입니다.",
+      "usage": "연말정산 때 국세청 간소화 자료에 조회되지 않는 기부금을 회사에 알리고 영수증을 내는 서식입니다. 기부한 사람, 기부처, 기부일과 금액, 영수증 번호를 표에 한 줄씩 적고 기부금 영수증 사본을 붙입니다. 기부금의 종류에 따라 공제 방식과 한도가 달라지므로 종류 칸을 정확히 고르는 것이 중요합니다. 공제 대상 여부는 세법과 회사 안내에 따라 달라지니 담당 부서와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59322,
+        "docx": 39008,
+        "hwpx": 10514
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속, 제출일을 적습니다.",
+        "기부일과 기부처, 기부금 종류, 금액을 한 줄씩 적습니다.",
+        "영수증 번호를 옮겨 적고 합계를 계산합니다.",
+        "기부금 영수증 사본을 붙여 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "간소화 자료에 있는 기부금도 다시 내야 하나요?",
+          "a": "이미 조회되는 내역은 보통 따로 내지 않습니다. 자료에 빠진 내역만 적는 편이 좋습니다."
+        },
+        {
+          "q": "기부금 종류는 어디서 확인하나요?",
+          "a": "기부금 영수증에 적힌 기부금 구분을 그대로 옮깁니다. 모르면 기부처에 문의하십시오."
+        },
+        {
+          "q": "가족이 낸 기부금도 적을 수 있나요?",
+          "a": "공제 대상 가족인지에 따라 달라집니다. 담당 부서에 확인한 뒤 기부자를 구분해 적으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "제출일",
+            "귀속 연도",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 기부금 내역",
+          "items": [
+            "기부일",
+            "기부처",
+            "기부금 종류",
+            "기부자",
+            "금액(원)",
+            "영수증 번호",
+            "기부금 합계",
+            "증빙 첨부"
+          ],
+          "note": "기부자가 본인이 아닌 경우 관계와 사유 등 구분이 필요한 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "donation-receipt-request",
+        "year-end-medical-expense-submission",
+        "year-end-dependent-change-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-07T11:41:00+09:00",
+      "updated_at": "2026-11-07T11:41:00+09:00",
       "downloads": 0
     },
     {

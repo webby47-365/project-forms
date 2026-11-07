@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 469종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 474종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>출자금 납입 확인서</title>
+<link>https://freeforms.kr/form/capital-contribution-receipt/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/capital-contribution-receipt/</guid>
+<category>기업 · 창업·법인</category>
+<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
+<description>회사 설립이나 증자 때 출자자가 낸 출자금의 금액과 납입일, 납입 방법을 확인해 주는 출자금 납입 확인서 양식입니다.</description>
+</item>
+<item>
+<title>계약 합의해지서</title>
+<link>https://freeforms.kr/form/contract-termination-agreement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/contract-termination-agreement/</guid>
+<category>법률 · 계약</category>
+<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
+<description>계약 당사자들이 서로 합의해 계약을 끝내고 정산 방법과 책임 범위를 정리하는 계약 합의해지서 양식입니다.</description>
+</item>
+<item>
+<title>임대인 변경 통지서</title>
+<link>https://freeforms.kr/form/landlord-change-notice/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/landlord-change-notice/</guid>
+<category>부동산 · 임대·매매</category>
+<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
+<description>임대 중인 집이나 상가의 소유자가 바뀌었을 때 새 임대인과 보증금·월세 지급 방법을 임차인에게 알리는 임대인 변경 통지서 양식입니다.</description>
+</item>
+<item>
+<title>방치 차량 신고서</title>
+<link>https://freeforms.kr/form/abandoned-vehicle-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/abandoned-vehicle-report/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
+<description>도로나 주차장, 공터에 오랫동안 세워진 방치 의심 차량의 위치와 상태를 적어 관할 기관에 신고하는 방치 차량 신고서 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 기부금 제출서</title>
+<link>https://freeforms.kr/form/year-end-donation-submission/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-donation-submission/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산을 위해 근로자가 한 해 동안 낸 기부금 내역과 영수증 증빙을 회사에 제출할 때 쓰는 기부금 제출서 양식입니다.</description>
+</item>
 <item>
 <title>내용증명 (계약 해제 통보)</title>
 <link>https://freeforms.kr/form/certified-notice-rescission/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 세금·사업자</category>
 <pubDate>Mon, 02 Nov 2026 00:00:00 +0900</pubDate>
 <description>올해 중도 입사한 근로자가 이전 회사의 근로소득 원천징수영수증을 현재 회사에 제출할 때 쓰는 제출서입니다.</description>
-</item>
-<item>
-<title>기부금 영수증 발급 요청서</title>
-<link>https://freeforms.kr/form/donation-receipt-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/donation-receipt-request/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Mon, 02 Nov 2026 00:00:00 +0900</pubDate>
-<description>기부한 단체에 연말정산·세금 신고용 기부금 영수증 발급을 요청할 때 기부 내역과 수령 방법을 정리하는 요청서입니다.</description>
-</item>
-<item>
-<title>견본 제공 확인서</title>
-<link>https://freeforms.kr/form/sample-provision-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/sample-provision-confirmation/</guid>
-<category>기업 · 영업·마케팅</category>
-<pubDate>Sat, 31 Oct 2026 00:00:00 +0900</pubDate>
-<description>거래 검토를 위해 견본(샘플)을 제공할 때 품목·수량·반환 여부와 사용 조건을 적어 서로 확인하는 확인서 양식입니다.</description>
-</item>
-<item>
-<title>물품 보관 확인서</title>
-<link>https://freeforms.kr/form/item-storage-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/item-storage-confirmation/</guid>
-<category>개인 · 생활·가정</category>
-<pubDate>Sat, 31 Oct 2026 00:00:00 +0900</pubDate>
-<description>이사나 장기 부재로 지인에게 짐을 맡길 때 품목과 보관 기간, 반환 방법을 적어 서로 확인하는 개인 간 물품 보관 확인서입니다.</description>
-</item>
-<item>
-<title>주주총회 의결권 위임장</title>
-<link>https://freeforms.kr/form/shareholder-meeting-proxy/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/shareholder-meeting-proxy/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Sat, 31 Oct 2026 00:00:00 +0900</pubDate>
-<description>주주총회에 직접 참석하지 못하는 주주가 대리인에게 의결권 행사를 맡길 때 쓰는 의결권 위임장 양식입니다.</description>
-</item>
-<item>
-<title>소송기록 열람·복사 신청서</title>
-<link>https://freeforms.kr/form/case-record-inspection-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/case-record-inspection-request/</guid>
-<category>법률 · 소송·민원</category>
-<pubDate>Sat, 31 Oct 2026 00:00:00 +0900</pubDate>
-<description>진행 중이거나 끝난 사건의 소송기록을 보거나 복사하려고 법원에 내는 열람·복사 신청서 양식입니다.</description>
 </item>
 </channel>
 </rss>

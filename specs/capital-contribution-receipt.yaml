@@ -1,0 +1,72 @@
+id: capital-contribution-receipt
+title: 출자금 납입 확인서
+category: corp
+subcategory: startup
+tags: [출자금, 출자금납입, 납입확인서, 자본금납입, 출자확인]
+summary: 회사 설립이나 증자 때 출자자가 낸 출자금의 금액과 납입일, 납입 방법을 확인해 주는 출자금 납입 확인서 양식입니다.
+usage: >
+  출자자가 회사에 출자금을 냈음을 회사가 확인해 주는 서식입니다.
+  출자자 성명과 출자 좌수, 출자금액, 납입일, 납입 방법을 적고 회사 대표가 서명합니다.
+  현금 외에 물건으로 낸 출자는 평가 방법이 달라질 수 있어 납입 방법 칸에 구체적으로 적어야 합니다.
+  법인 설립과 증자의 구체적 절차는 정관과 관련 법령에 따르므로 전문가 확인을 권합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 회사 이름과 출자자의 성명, 연락처를 적습니다.
+  - 출자 좌수와 출자금액, 납입일을 적습니다.
+  - 납입 방법과 입금 계좌를 적습니다.
+  - 회사 대표가 날짜를 적고 서명해 출자자에게 줍니다.
+faq:
+  - q: 계좌로 낸 출자금도 확인서가 필요한가요?
+    a: 입금 기록이 있어도 회사 장부 정리와 분쟁 예방에 확인서가 도움이 됩니다. 입금 내역 사본을 함께 두십시오.
+  - q: 물건으로 출자하면 어떻게 적나요?
+    a: 납입 방법 칸에 물건의 이름과 평가 금액을 적습니다. 평가 방법은 정관과 합의 내용을 확인하십시오.
+related: [shareholder-register, stock-subscription-form, articles-of-incorporation, shareholder-meeting-minutes]
+blocks:
+  - type: doc_title
+    text: 출자금 납입 확인서
+    spaced: true
+  - type: subtitle
+    text: 1. 회사
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "대표자", ""]
+      - ["소재지", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "홍길동"]
+      - ["", "한빛시 새길로 10", "", "02-1234-5678"]
+  - type: subtitle
+    text: 2. 출자자와 납입 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["출자자", "", "연락처", ""]
+      - ["출자 좌수", "", "1좌 금액", ""]
+      - ["출자금액", "", "납입일", ""]
+      - ["납입 방법", "", "입금 계좌", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-1234-5678"]
+      - ["", "100좌", "", "10,000원"]
+      - ["", "1,000,000원", "", "2026-11-05"]
+      - ["", "계좌이체", "", "한빛은행 000-000-000000"]
+  - type: textbox
+    hint: "물건으로 낸 출자, 분할 납입 등 확인이 필요한 사항이 있으면 적으십시오."
+    height_mm: 22
+    sample_text: "위 출자금 전액이 납입일에 회사 계좌로 입금된 것을 확인합니다."
+  - type: para
+    text: 위와 같이 출자금이 납입되었음을 확인합니다.
+    align: center
+    sample_text: 위와 같이 출자금이 납입되었음을 확인합니다.
+  - type: date_line
+    sample_text: 2026 년   11 월    7 일
+  - type: sign_line
+    labels: ["회사 대표", "출자자"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 출자와 증자의 절차는 정관과 관련 법령을 확인하십시오.
