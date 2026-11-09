@@ -1,0 +1,80 @@
+id: welfare-guardian-contact-change
+title: 보호자 연락처 변경 신고서 (복지시설)
+category: welfare
+subcategory: consent
+tags: [보호자변경, 연락처변경, 복지시설, 비상연락처, 보호자신고]
+summary: 복지시설 이용자의 보호자 연락처나 비상연락 순서가 바뀌었을 때 시설에 알리는 보호자 연락처 변경 신고서 양식입니다.
+usage: >
+  이용자의 보호자 전화번호, 주소, 비상연락 순서가 바뀌었을 때 시설에 알리는 서식입니다.
+  이용자 정보와 변경 전·후 보호자 정보, 비상연락 순서를 적어 시설 담당자에게 냅니다.
+  연락이 닿지 않으면 응급 상황에 대응이 늦어질 수 있으니 변경 즉시 신고하는 편이 좋습니다.
+  보호자 자격이나 서류 요건은 시설마다 다르므로 시설 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 이용자의 성명과 입소일을 적습니다.
+  - 변경 전 보호자와 변경 후 보호자 정보를 나란히 적습니다.
+  - 비상연락 순서를 1순위부터 적습니다.
+  - 날짜와 서명 후 시설 담당자에게 냅니다.
+faq:
+  - q: 연락처만 바뀌어도 신고해야 하나요?
+    a: 전화번호만 바뀌어도 알리는 것이 좋습니다. 응급 연락이 닿지 않으면 곤란할 수 있습니다.
+  - q: 보호자 자체가 바뀌면 다른 서류가 필요한가요?
+    a: 시설에 따라 신분 확인이나 위임 서류를 요구할 수 있습니다. 시설 담당자에게 확인하십시오.
+related: [welfare-facility-application, welfare-facility-visit-request, welfare-facility-withdrawal-request, guardian-consent]
+blocks:
+  - type: doc_title
+    text: 보호자 연락처 변경 신고서
+    spaced: false
+  - type: subtitle
+    text: 1. 이용자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["시설명", "", "입소일", ""]
+      - ["이용자 성명", "", "생년월일", ""]
+    sample_rows:
+      - ["", "한빛복지센터", "", "2025-09-01"]
+      - ["", "김영희", "", "1946-05-20"]
+  - type: subtitle
+    text: 2. 변경 내용
+  - type: grid
+    widths: [16, 42, 42]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["구분", "변경 전", "변경 후"]
+      - ["보호자 성명", "", ""]
+      - ["관계", "", ""]
+      - ["전화번호", "", ""]
+      - ["주소", "", ""]
+    sample_rows:
+      - ["", "", ""]
+      - ["", "홍길동", "홍길동"]
+      - ["", "아들", "아들"]
+      - ["", "010-1234-5678", "010-2345-6789"]
+      - ["", "서울시 ○○구 ○○로 12", "경기도 ○○시 ○○로 34"]
+  - type: subtitle
+    text: 3. 비상연락 순서
+  - type: table
+    widths: [10, 25, 20, 25, 20]
+    header: [순위, 성명, 관계, 전화번호, 연락 가능 시간]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "홍길동", "아들", "010-2345-6789", "종일"]
+      - ["2", "김서연", "며느리", "010-3456-7890", "09~18시"]
+  - type: textbox
+    hint: "변경 사유나 시설에 전달할 사항이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "이사로 연락처가 바뀌어 신고합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월    9 일
+  - type: sign_line
+    labels: ["신고인(변경 후 보호자)"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 보호자 자격과 필요 서류는 시설 안내를 확인하십시오.

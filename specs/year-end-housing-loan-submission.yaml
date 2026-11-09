@@ -1,0 +1,76 @@
+id: year-end-housing-loan-submission
+title: 연말정산 주택자금 상환액 제출서
+category: estate
+subcategory: lease
+tags: [연말정산, 주택자금, 주택임차차입금, 대출이자, 원리금상환]
+summary: 연말정산을 위해 전월세 보증금 대출 원리금이나 주택 대출 이자 상환 내역을 회사에 제출할 때 쓰는 주택자금 상환액 제출서 양식입니다.
+usage: >
+  연말정산 때 주택 관련 대출의 상환 내역을 회사에 알리고 증빙을 내는 서식입니다.
+  대출기관, 대출 종류, 대출 실행일, 올해 원금과 이자 상환액을 적고 금융기관의 상환액 증명서를 붙입니다.
+  임대차계약서와 주민등록등본이 함께 필요한 경우가 많으니 담당 부서의 요청 목록을 먼저 확인하십시오.
+  공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속, 제출일을 적습니다.
+  - 대출기관과 대출 종류, 실행일을 적습니다.
+  - 올해 갚은 원금과 이자를 나누어 적습니다.
+  - 상환액 증명서를 붙여 담당 부서에 냅니다.
+faq:
+  - q: 원금과 이자를 왜 나누어 적나요?
+    a: 대출 종류에 따라 공제 대상이 원리금인지 이자인지 달라서입니다. 증명서의 구분대로 적으십시오.
+  - q: 임대차계약서도 같이 내야 하나요?
+    a: 보증금 대출은 계약서 사본을 요구하는 경우가 많습니다. 담당 부서 안내를 확인하십시오.
+related: [year-end-tax-checklist, year-end-rent-tax-credit-submission, housing-lease-contract, monthly-rent-receipt]
+blocks:
+  - type: doc_title
+    text: 연말정산 주택자금 상환액 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "제출일", ""]
+      - ["귀속 연도", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "과장", "", "2026-11-09"]
+      - ["", "2026년", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 대출 상환 내역
+  - type: table
+    widths: [7, 18, 20, 16, 13, 13, 13]
+    header: ["No", 대출기관, 대출 종류, 대출 실행일, 원금(원), 이자(원), 합계(원)]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "한빛은행", "전세자금대출", "2024-03-15", "0", "1,560,000", "1,560,000"]
+      - ["2", "새길은행", "주택담보대출", "2022-08-01", "2,400,000", "1,800,000", "4,200,000"]
+  - type: subtitle
+    text: 3. 대상 주택
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["주택 소재지", ""]
+      - ["증빙 첨부", ""]
+    sample_rows:
+      - ["", "서울시 ○○구 ○○로 12, 101동 501호"]
+      - ["", "상환액 증명서 2부, 임대차계약서 사본"]
+  - type: textbox
+    hint: "중도 상환, 대환, 계약 변경 등 참고할 내용이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "2026년 5월 금리 변경으로 대출 조건이 바뀌었습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월    9 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.

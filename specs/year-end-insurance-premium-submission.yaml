@@ -1,0 +1,73 @@
+id: year-end-insurance-premium-submission
+title: 연말정산 보험료 납입 자료 제출서
+category: public
+subcategory: tax
+tags: [연말정산, 보험료, 보험료공제, 보장성보험, 납입증명]
+summary: 연말정산을 위해 근로자가 한 해 동안 낸 보험료 내역과 납입증명 서류를 회사에 제출할 때 쓰는 보험료 납입 자료 제출서 양식입니다.
+usage: >
+  연말정산 때 간소화 자료에 빠진 보험료를 회사에 알리고 증빙을 내는 서식입니다.
+  보험회사, 상품명, 피보험자, 납입 기간과 납입액을 한 줄씩 적고 보험회사에서 받은 납입증명서를 붙입니다.
+  저축성 보험과 보장성 보험은 공제 대상이 다를 수 있으니 상품 구분 칸을 정확히 적어 주십시오.
+  공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속, 제출일을 적습니다.
+  - 보험회사와 상품명, 피보험자를 한 줄씩 적습니다.
+  - 납입 기간과 올해 납입액, 상품 구분을 적습니다.
+  - 납입증명서를 붙여 담당 부서에 냅니다.
+faq:
+  - q: 간소화 자료에 있는 보험료도 적나요?
+    a: 이미 조회되는 내역은 보통 다시 내지 않습니다. 빠진 보험만 적는 편이 좋습니다.
+  - q: 보장성과 저축성은 어떻게 구분하나요?
+    a: 보험증권이나 납입증명서의 상품 구분을 보고 적습니다. 모르면 보험회사에 문의하십시오.
+related: [year-end-tax-checklist, year-end-medical-expense-submission, year-end-dependent-change-notice, year-end-simplified-data-consent]
+blocks:
+  - type: doc_title
+    text: 연말정산 보험료 납입 자료 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "제출일", ""]
+      - ["귀속 연도", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "과장", "", "2026-11-09"]
+      - ["", "2026년", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 보험료 납입 내역
+  - type: table
+    widths: [7, 18, 20, 13, 18, 14, 10]
+    header: ["No", 보험회사, 상품명, 피보험자, 납입 기간, 납입액(원), 구분]
+    empty_rows: 6
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "한빛생명", "건강보장보험", "홍길동", "2026.01~12", "960,000", "보장성"]
+      - ["2", "새길화재", "자녀안심보험", "김서연", "2026.01~12", "480,000", "보장성"]
+      - ["3", "한빛손해", "운전자보험", "홍길동", "2026.01~12", "180,000", "보장성"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["납입 합계", "", "증빙 첨부", ""]
+    sample_rows:
+      - ["", "1,620,000원", "", "납입증명서 3부"]
+  - type: textbox
+    hint: "계약자와 피보험자가 다르거나 중도 해약한 보험이 있으면 적으십시오."
+    height_mm: 20
+    sample_text: "자녀안심보험은 계약자가 본인이고 피보험자가 자녀입니다."
+  - type: date_line
+    sample_text: 2026 년   11 월    9 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.

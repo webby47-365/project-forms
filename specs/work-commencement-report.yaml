@@ -1,0 +1,89 @@
+id: work-commencement-report
+title: 착수계 (계약 이행 착수 신고서)
+category: public
+subcategory: procure
+tags: [착수계, 착공신고, 계약이행착수, 용역착수, 공사착수]
+summary: 계약을 체결한 업체가 공사나 용역, 납품 이행을 시작하기 전에 발주처에 착수 일정과 담당자를 알리는 착수계 양식입니다.
+usage: >
+  계약을 맺은 뒤 실제 이행을 시작하기 전에 발주처에 착수 사실과 일정을 알리는 서식입니다.
+  계약 정보, 착수일과 완료 예정일, 현장 책임자와 연락처, 제출 서류 목록을 적어 발주처에 냅니다.
+  완료 예정일은 계약서의 기간과 맞아야 하며 달라지면 기간 연장 요청서 등 별도 절차가 필요할 수 있습니다.
+  제출 서류와 양식은 발주처마다 다르므로 계약서와 발주처 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 계약명과 계약번호, 계약 금액을 적습니다.
+  - 착수일과 완료 예정일을 계약서 기간과 맞춰 적습니다.
+  - 현장 책임자와 연락처를 적습니다.
+  - 함께 내는 서류를 표시하고 날짜와 서명 후 제출합니다.
+faq:
+  - q: 착수일은 계약일과 같아야 하나요?
+    a: 꼭 같지 않습니다. 계약서의 착수 시기 조건에 맞춰 적고, 모호하면 발주처에 확인하십시오.
+  - q: 착수 후 일정이 바뀌면 어떻게 하나요?
+    a: 변경 사유를 정리해 발주처에 알려야 합니다. 기간 연장은 별도 요청서를 쓰는 경우가 많습니다.
+related: [contract-period-extension-request, contract-completion-confirmation, advance-payment-request, contract-performance-deposit-refund-request]
+blocks:
+  - type: doc_title
+    text: 착수계
+    spaced: true
+  - type: subtitle
+    text: 1. 계약 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["계약명", "", "", ""]
+      - ["계약번호", "", "계약 금액", ""]
+      - ["발주처", "", "계약일", ""]
+    sample_rows:
+      - ["", "사무실 도배 보수 공사", "", ""]
+      - ["", "2026-계약-0123", "", "11,000,000원"]
+      - ["", "○○시 ○○구청", "", "2026-11-02"]
+  - type: subtitle
+    text: 2. 이행 일정
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["착수일", "", "완료 예정일", ""]
+      - ["이행 장소", "", "계약 기간", ""]
+    sample_rows:
+      - ["", "2026-11-12", "", "2026-12-12"]
+      - ["", "○○구청 3층", "", "30일"]
+  - type: subtitle
+    text: 3. 수급인 및 책임자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["상호", "", "대표자", ""]
+      - ["현장 책임자", "", "연락처", ""]
+      - ["사업자등록번호", "", "이메일", ""]
+    sample_rows:
+      - ["", "새길인테리어", "", "박민준"]
+      - ["", "이수현", "", "010-1234-5678"]
+      - ["", "000-00-00000", "", "site@example.com"]
+  - type: subtitle
+    text: 4. 함께 제출하는 서류
+  - type: kv_list
+    items:
+      - "□ 공정 계획표(작업 일정표)"
+      - "□ 현장 책임자 지정서 및 연락처"
+      - "□ 보험 가입 증명서 (해당하는 경우)"
+      - "□ 기타 발주처가 요구한 서류"
+  - type: para
+    text: 위와 같이 계약에 따른 이행을 착수하였음을 알립니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   12 일
+  - type: sign_line
+    labels: ["수급인"]
+    sample_names: [박민준]
+  - type: notice
+    text: 제출 서류와 양식은 계약서와 발주처 안내를 확인하십시오.
