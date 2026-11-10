@@ -1,0 +1,71 @@
+id: year-end-pension-savings-submission
+title: 연말정산 연금계좌 납입 자료 제출서
+category: corp
+subcategory: finance
+tags: [연말정산, 연금저축, 퇴직연금, IRP, 납입증명]
+summary: 연말정산을 위해 근로자가 연금저축·퇴직연금(IRP) 계좌에 올해 납입한 금액과 납입증명 서류를 회사에 제출할 때 쓰는 연금계좌 납입 자료 제출서 양식입니다.
+usage: >
+  연말정산 때 간소화 자료에 잡히지 않은 연금계좌 납입 내역을 회사에 알리고 증빙을 내는 서식입니다.
+  금융회사, 계좌 종류, 계좌번호 끝자리, 납입 기간과 올해 납입액을 한 줄씩 적고 금융회사에서 받은 납입내역서를 붙입니다.
+  계좌번호는 전체를 적지 말고 끝 4자리만 적으십시오. 공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속, 제출일을 적습니다.
+  - 금융회사와 계좌 종류, 계좌번호 끝 4자리를 적습니다.
+  - 납입 기간과 올해 납입액을 적습니다.
+  - 납입내역서를 붙여 담당 부서에 냅니다.
+faq:
+  - q: 계좌번호는 전부 적어야 하나요?
+    a: 끝 4자리만 적어도 구분됩니다. 전체 번호가 필요한지는 회사 담당 부서에 확인하십시오.
+  - q: 간소화 자료에 있는 납입액도 적나요?
+    a: 이미 조회되는 내역은 보통 다시 내지 않습니다. 빠진 계좌만 적는 편이 좋습니다.
+related: [year-end-tax-checklist, year-end-insurance-premium-submission, year-end-medical-expense-submission, year-end-simplified-data-consent]
+blocks:
+  - type: doc_title
+    text: 연말정산 연금계좌 납입 자료 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "제출일", ""]
+      - ["귀속 연도", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "과장", "", "2026-11-10"]
+      - ["", "2026년", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 연금계좌 납입 내역
+  - type: table
+    widths: [7, 20, 17, 14, 20, 22]
+    header: ["No", 금융회사, 계좌 종류, 계좌 끝 4자리, 납입 기간, 납입액(원)]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "한빛증권", "연금저축", "1234", "2026.01~10", "4,000,000"]
+      - ["2", "새길은행", "퇴직연금(IRP)", "5678", "2026.03~10", "2,400,000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["납입 합계", "", "증빙 첨부", ""]
+    sample_rows:
+      - ["", "6,400,000원", "", "납입내역서 2부"]
+  - type: textbox
+    hint: "연말까지 추가 납입할 예정이거나 계좌를 옮긴 경우 적으십시오."
+    height_mm: 20
+    sample_text: "12월 중 퇴직연금(IRP) 계좌에 추가 납입할 예정이며, 납입 후 증빙을 다시 제출하겠습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   10 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T11:33:47+09:00",
-  "count": 479,
+  "generated_at": "2026-11-10T13:41:26+09:00",
+  "count": 484,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -24999,6 +24999,102 @@
       "seal": true
     },
     {
+      "id": "illegal-parking-report",
+      "title": "불법 주정차 신고서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "불법주정차",
+        "주정차신고",
+        "민원신고",
+        "불법주차",
+        "교통민원"
+      ],
+      "summary": "소화전·횡단보도·인도 등에 불법으로 세워 둔 차량의 위치와 시간, 차량 정보를 정리해 관할 기관에 신고할 때 쓰는 불법 주정차 신고서 양식입니다.",
+      "usage": "주차 금지 구역의 불법 주정차 차량을 구청이나 지자체 민원 창구에 신고할 때 쓰는 서식입니다. 발견 일시와 장소, 차량번호와 차종, 위반 유형을 적고 현장 사진 촬영 시각과 장수를 함께 적습니다. 신고 방법과 증빙 요건은 지자체마다 다를 수 있으므로 관할 기관 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 47028,
+        "docx": 38633,
+        "hwpx": 9906
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고자 이름과 연락처를 적습니다.",
+        "발견한 일시와 정확한 장소를 적습니다.",
+        "차량번호와 차종, 위반 유형을 적습니다.",
+        "사진 촬영 내역을 적고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "사진은 몇 장 필요한가요?",
+          "a": "지자체마다 다를 수 있습니다. 차량번호와 위치가 함께 보이는 사진을 여러 장 준비하면 도움이 됩니다."
+        },
+        {
+          "q": "신고자 정보는 상대방에게 알려지나요?",
+          "a": "처리 방식은 기관마다 다릅니다. 비공개 요청 가능 여부를 접수 기관에 문의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고자",
+          "items": [
+            "성명",
+            "연락처",
+            "신고일",
+            "회신 방법"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 위반 내용",
+          "items": [
+            "발견 일시",
+            "위반 유형",
+            "발견 장소",
+            "차량번호",
+            "차종·색상",
+            "촬영 시각",
+            "촬영 대상"
+          ],
+          "note": "주정차 상황과 통행 방해 정도를 사실대로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "illegal-advertisement-report",
+        "illegal-dumping-report",
+        "noise-complaint",
+        "road-repair-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-10T13:40:58+09:00",
+      "updated_at": "2026-11-10T13:40:58+09:00",
+      "downloads": 0
+    },
+    {
       "id": "incident-report",
       "title": "경위서",
       "category": "corp",
@@ -37002,6 +37098,102 @@
       "downloads": 0
     },
     {
+      "id": "rent-increase-notice",
+      "title": "임대료 증액 통지서",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "임대료증액",
+        "월세인상",
+        "차임증액",
+        "통지서",
+        "임대차"
+      ],
+      "summary": "임대인이 임차인에게 보증금이나 월 차임을 올리려는 뜻과 증액 내용, 적용 시기를 문서로 알릴 때 쓰는 임대료 증액 통지서 양식입니다.",
+      "usage": "임대차 기간 중 또는 갱신 때 보증금이나 월세를 올리려는 임대인이 그 내용을 임차인에게 문서로 남겨 알리는 서식입니다. 현재 조건과 변경하려는 조건, 적용 시작일을 나란히 적고 증액 사유를 간단히 덧붙입니다. 증액 가능 범위와 시기에는 법령상 제한이 있을 수 있으므로 통지 전에 관련 법령과 계약 내용을 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51663,
+        "docx": 38700,
+        "hwpx": 10008
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "임대인과 임차인, 대상 부동산을 적습니다.",
+        "현재 보증금과 월 차임, 변경할 금액을 나란히 적습니다.",
+        "적용 시작일과 증액 사유를 적습니다.",
+        "날짜를 적고 서명한 뒤 보낸 기록을 남깁니다."
+      ],
+      "faq": [
+        {
+          "q": "통지서는 어떻게 보내나요?",
+          "a": "받은 사실이 남도록 내용증명이나 문자·이메일 등 기록이 남는 방법을 쓰는 편이 좋습니다."
+        },
+        {
+          "q": "얼마까지 올릴 수 있나요?",
+          "a": "증액 한도와 시기는 법령과 계약에 따라 달라집니다. 통지 전에 관련 법령을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자와 대상 부동산",
+          "items": [
+            "임대인",
+            "연락처",
+            "임차인",
+            "소재지",
+            "계약 기간",
+            "계약일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 증액 내용",
+          "items": [
+            "현재 금액(원)",
+            "변경 금액(원)",
+            "증액분(원)",
+            "적용 시작일",
+            "납부일"
+          ],
+          "note": "증액 사유(주변 시세, 세금·관리비 변동 등)를 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "lease-renewal-contract",
+        "lease-renewal-refusal-notice",
+        "certified-notice",
+        "monthly-rent-receipt"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-10T13:40:52+09:00",
+      "updated_at": "2026-11-10T13:41:19+09:00",
+      "downloads": 0
+    },
+    {
       "id": "rent-reduction-request",
       "title": "임대료 감액 요청서",
       "category": "estate",
@@ -39123,6 +39315,105 @@
         "administrative-objection"
       ],
       "seal": true
+    },
+    {
+      "id": "sales-commission-statement",
+      "title": "영업 수수료 정산서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "영업수수료",
+        "정산서",
+        "판매수수료",
+        "인센티브",
+        "영업정산"
+      ],
+      "summary": "영업 담당자나 판매 대행자에게 지급할 건별 매출과 수수료율, 수수료 금액을 정리해 확인받는 영업 수수료 정산서 양식입니다.",
+      "usage": "영업 실적에 따라 수수료를 지급할 때 정산 기간의 거래 건과 매출액, 수수료율, 지급액을 한 장에 정리하는 서식입니다. 거래처명과 매출액, 적용 수수료율을 건별로 적고 합계를 낸 뒤 지급 계좌와 지급 예정일을 확인합니다. 수수료율은 사전에 합의한 계약 또는 내부 기준을 따르며, 세금 처리는 회사 회계 기준을 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 58888,
+        "docx": 38915,
+        "hwpx": 10504
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "정산 기간과 수령자, 작성일을 적습니다.",
+        "거래 건마다 거래처와 매출액, 수수료율을 적습니다.",
+        "건별 수수료와 합계를 계산해 적습니다.",
+        "지급 예정일을 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "수수료율은 어떻게 정하나요?",
+          "a": "사전에 합의한 계약이나 내부 규정의 요율을 적습니다. 건별로 다르면 건마다 적습니다."
+        },
+        {
+          "q": "반품된 거래는 어떻게 적나요?",
+          "a": "비고란에 반품 사실을 적고 해당 건의 수수료를 제외하거나 차감합니다. 기준은 사전 합의를 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 정산 개요",
+          "items": [
+            "정산 기간",
+            "작성일",
+            "수령자",
+            "소속",
+            "지급처",
+            "담당자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 건별 정산 내역",
+          "items": [
+            "거래처",
+            "매출액(원)",
+            "요율(%)",
+            "수수료(원)",
+            "매출 합계",
+            "수수료 합계",
+            "지급 계좌",
+            "지급 예정일"
+          ],
+          "note": "정산 기준이나 조정 사항(반품·취소·이월 등)이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "sales-contract",
+        "invoice-request",
+        "payment-confirmation",
+        "transaction-statement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-10T13:40:48+09:00",
+      "updated_at": "2026-11-10T13:41:26+09:00",
+      "downloads": 0
     },
     {
       "id": "sales-contract",
@@ -48048,6 +48339,102 @@
       "seal": true
     },
     {
+      "id": "wedding-gift-ledger",
+      "title": "경조사비 기록 장부",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "경조사비",
+        "축의금",
+        "부의금",
+        "경조사장부",
+        "기록"
+      ],
+      "summary": "결혼·장례·돌잔치 등에서 주고받은 경조사비의 날짜와 대상, 금액, 답례 여부를 한눈에 기록하는 경조사비 기록 장부 양식입니다.",
+      "usage": "축의금과 부의금을 누구에게 얼마를 냈고 받았는지 잊지 않도록 정리하는 개인용 장부입니다. 날짜와 경조사 종류, 상대 이름과 관계, 낸 금액 또는 받은 금액을 한 줄씩 적고 답례 여부를 표시합니다. 연락처 등 불필요한 개인정보는 적지 말고 이름과 관계 정도만 적어 보관하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 69267,
+        "docx": 39160,
+        "hwpx": 11302
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "장부의 기록 연도와 작성자를 적습니다.",
+        "경조사 날짜와 종류, 상대 이름과 관계를 적습니다.",
+        "낸 금액과 받은 금액을 구분해서 적습니다.",
+        "답례를 했는지 표시하고 연말에 합계를 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "낸 금액과 받은 금액을 같이 적나요?",
+          "a": "한 표에 두 칸을 나눠 적으면 오간 금액을 비교하기 쉽습니다. 해당하는 칸에만 적습니다."
+        },
+        {
+          "q": "상대방의 연락처도 적어야 하나요?",
+          "a": "꼭 필요하지 않습니다. 개인정보 보관을 줄이려면 이름과 관계만 적는 것이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "기록 연도",
+            "작성자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "1. 경조사비 내역",
+          "items": [
+            "날짜",
+            "경조사 종류",
+            "상대 이름",
+            "관계",
+            "낸 금액",
+            "받은 금액",
+            "답례",
+            "낸 금액 합계",
+            "받은 금액 합계"
+          ],
+          "note": "답례 계획이나 기억해 둘 사항을 적으십시오."
+        }
+      ],
+      "seal": false,
+      "from_request": false,
+      "related": [
+        "family-event-notice",
+        "invitation-card",
+        "household-budget",
+        "thank-you-letter"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-10T13:41:03+09:00",
+      "updated_at": "2026-11-10T13:41:15+09:00",
+      "downloads": 0
+    },
+    {
       "id": "weekly-study-plan",
       "title": "주간 학습계획표",
       "category": "edu",
@@ -50517,6 +50904,104 @@
       "warnings": [],
       "created_at": "2026-11-04T11:59:52+09:00",
       "updated_at": "2026-11-04T11:59:52+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-pension-savings-submission",
+      "title": "연말정산 연금계좌 납입 자료 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "연금저축",
+        "퇴직연금",
+        "IRP",
+        "납입증명"
+      ],
+      "summary": "연말정산을 위해 근로자가 연금저축·퇴직연금(IRP) 계좌에 올해 납입한 금액과 납입증명 서류를 회사에 제출할 때 쓰는 연금계좌 납입 자료 제출서 양식입니다.",
+      "usage": "연말정산 때 간소화 자료에 잡히지 않은 연금계좌 납입 내역을 회사에 알리고 증빙을 내는 서식입니다. 금융회사, 계좌 종류, 계좌번호 끝자리, 납입 기간과 올해 납입액을 한 줄씩 적고 금융회사에서 받은 납입내역서를 붙입니다. 계좌번호는 전체를 적지 말고 끝 4자리만 적으십시오. 공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 56171,
+        "docx": 38828,
+        "hwpx": 10281
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속, 제출일을 적습니다.",
+        "금융회사와 계좌 종류, 계좌번호 끝 4자리를 적습니다.",
+        "납입 기간과 올해 납입액을 적습니다.",
+        "납입내역서를 붙여 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "계좌번호는 전부 적어야 하나요?",
+          "a": "끝 4자리만 적어도 구분됩니다. 전체 번호가 필요한지는 회사 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "간소화 자료에 있는 납입액도 적나요?",
+          "a": "이미 조회되는 내역은 보통 다시 내지 않습니다. 빠진 계좌만 적는 편이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "제출일",
+            "귀속 연도",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 연금계좌 납입 내역",
+          "items": [
+            "금융회사",
+            "계좌 종류",
+            "계좌 끝 4자리",
+            "납입 기간",
+            "납입액(원)",
+            "납입 합계",
+            "증빙 첨부"
+          ],
+          "note": "연말까지 추가 납입할 예정이거나 계좌를 옮긴 경우 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-insurance-premium-submission",
+        "year-end-medical-expense-submission",
+        "year-end-simplified-data-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-10T13:40:44+09:00",
+      "updated_at": "2026-11-10T13:40:44+09:00",
       "downloads": 0
     },
     {

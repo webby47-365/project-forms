@@ -1,0 +1,78 @@
+id: rent-increase-notice
+title: 임대료 증액 통지서
+category: legal
+subcategory: notice
+tags: [임대료증액, 월세인상, 차임증액, 통지서, 임대차]
+summary: 임대인이 임차인에게 보증금이나 월 차임을 올리려는 뜻과 증액 내용, 적용 시기를 문서로 알릴 때 쓰는 임대료 증액 통지서 양식입니다.
+usage: >
+  임대차 기간 중 또는 갱신 때 보증금이나 월세를 올리려는 임대인이 그 내용을 임차인에게 문서로 남겨 알리는 서식입니다.
+  현재 조건과 변경하려는 조건, 적용 시작일을 나란히 적고 증액 사유를 간단히 덧붙입니다.
+  증액 가능 범위와 시기에는 법령상 제한이 있을 수 있으므로 통지 전에 관련 법령과 계약 내용을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 임대인과 임차인, 대상 부동산을 적습니다.
+  - 현재 보증금과 월 차임, 변경할 금액을 나란히 적습니다.
+  - 적용 시작일과 증액 사유를 적습니다.
+  - 날짜를 적고 서명한 뒤 보낸 기록을 남깁니다.
+faq:
+  - q: 통지서는 어떻게 보내나요?
+    a: 받은 사실이 남도록 내용증명이나 문자·이메일 등 기록이 남는 방법을 쓰는 편이 좋습니다.
+  - q: 얼마까지 올릴 수 있나요?
+    a: 증액 한도와 시기는 법령과 계약에 따라 달라집니다. 통지 전에 관련 법령을 확인하십시오.
+related: [lease-renewal-contract, lease-renewal-refusal-notice, certified-notice, monthly-rent-receipt]
+blocks:
+  - type: doc_title
+    text: 임대료 증액 통지서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자와 대상 부동산
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["임대인", "", "연락처", ""]
+      - ["임차인", "", "연락처", ""]
+      - ["소재지", "", "", ""]
+      - ["계약 기간", "", "계약일", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-1234-5678"]
+      - ["", "홍길동", "", "010-2345-6789"]
+      - ["", "서울시 ○○구 ○○로 00, 101동 1001호", "", ""]
+      - ["", "2025-01 ~ 2026-12", "", "2024-12-20"]
+  - type: subtitle
+    text: 2. 증액 내용
+  - type: table
+    widths: [22, 26, 26, 26]
+    header: [구분, 현재 금액(원), 변경 금액(원), 증액분(원)]
+    empty_rows: 3
+    row_height_mm: 9
+    sample_rows:
+      - ["보증금", "50,000,000", "50,000,000", "0"]
+      - ["월 차임", "600,000", "630,000", "30,000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["적용 시작일", "", "납부일", ""]
+    sample_rows:
+      - ["", "2027-01-01", "", "매월 5일"]
+  - type: textbox
+    hint: "증액 사유(주변 시세, 세금·관리비 변동 등)를 간단히 적으십시오."
+    height_mm: 24
+    sample_text: "인근 임대료 수준과 보유 비용 변동을 고려하여 월 차임을 조정하고자 합니다. 협의가 필요하시면 연락 주십시오."
+  - type: para
+    text: 위와 같이 임대 조건 변경을 통지합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   10 일
+  - type: sign_line
+    labels: ["임대인"]
+    sample_names: [김서연]
+  - type: notice
+    text: 증액 가능 범위와 시기는 관련 법령과 계약 내용을 확인하십시오.
