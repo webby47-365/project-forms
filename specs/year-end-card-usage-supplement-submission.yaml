@@ -1,0 +1,71 @@
+id: year-end-card-usage-supplement-submission
+title: 연말정산 신용카드 사용액 보완 제출서
+category: corp
+subcategory: finance
+tags: [연말정산, 신용카드, 소득공제, 사용내역, 보완제출]
+summary: 연말정산 간소화 자료에 잡히지 않은 신용카드·체크카드 사용 내역을 근로자가 회사에 보완해서 제출할 때 쓰는 카드 사용액 보완 제출서 양식입니다.
+usage: >
+  연말정산 간소화 자료에서 빠졌거나 금액이 다르게 나온 카드 사용 내역을 회사에 알리는 서식입니다.
+  카드사, 카드 종류, 카드번호 끝 4자리, 사용처 구분과 사용 금액을 한 줄씩 적고 카드사에서 받은 사용내역서를 붙입니다.
+  카드번호는 전체를 적지 말고 끝 4자리만 적으십시오. 공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속, 제출일을 적습니다.
+  - 카드사와 카드 종류, 카드번호 끝 4자리를 적습니다.
+  - 사용처 구분과 보완할 사용 금액을 적습니다.
+  - 카드사 사용내역서를 붙여 담당 부서에 냅니다.
+faq:
+  - q: 카드번호는 전부 적어야 하나요?
+    a: 끝 4자리만 적어도 구분됩니다. 전체 번호가 필요한지는 회사 담당 부서에 확인하십시오.
+  - q: 간소화 자료에 있는 사용액도 적나요?
+    a: 이미 조회되는 내역은 보통 다시 내지 않습니다. 빠졌거나 금액이 다른 부분만 적는 편이 좋습니다.
+related: [year-end-tax-checklist, year-end-simplified-data-consent, year-end-medical-expense-submission, year-end-donation-submission]
+blocks:
+  - type: doc_title
+    text: 연말정산 신용카드 사용액 보완 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "제출일", ""]
+      - ["귀속 연도", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "과장", "", "2026-11-11"]
+      - ["", "2026년", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 보완할 카드 사용 내역
+  - type: table
+    widths: [7, 18, 16, 14, 21, 24]
+    header: ["No", 카드사, 카드 종류, 카드 끝 4자리, 사용처 구분, 사용 금액(원)]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "한빛카드", "신용카드", "1234", "대중교통", "320,000"]
+      - ["2", "새길카드", "체크카드", "5678", "전통시장", "180,000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["보완 합계", "", "증빙 첨부", ""]
+    sample_rows:
+      - ["", "500,000원", "", "사용내역서 2부"]
+  - type: textbox
+    hint: "간소화 자료에서 빠진 이유나 금액이 다른 이유를 아는 대로 적으십시오."
+    height_mm: 20
+    sample_text: "카드 재발급 전 번호로 결제한 내역이 간소화 자료에 조회되지 않아 사용내역서로 보완합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   11 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.

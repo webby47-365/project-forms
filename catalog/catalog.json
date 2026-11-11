@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T13:41:26+09:00",
-  "count": 484,
+  "generated_at": "2026-11-11T11:41:02+09:00",
+  "count": 489,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -5738,6 +5738,100 @@
       "warnings": [],
       "created_at": "2026-10-02T08:15:47+09:00",
       "updated_at": "2026-10-02T08:16:15+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "business-facility-improvement-confirmation",
+      "title": "영업 시설 개선 완료 확인서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "영업시설",
+        "시설개선",
+        "개선완료",
+        "영업신고",
+        "확인서"
+      ],
+      "summary": "영업장의 시설을 고치거나 새로 갖춘 뒤 개선 내용과 완료일을 확인해 관할 기관 제출용으로 남기는 영업 시설 개선 완료 확인서 양식입니다.",
+      "usage": "영업 신고나 변경 신고, 시정 요청 후속 보고에서 시설 개선을 마쳤다는 사실을 문서로 남길 때 쓰는 서식입니다. 영업장 정보와 개선 항목별 내용, 완료일, 시공 또는 확인자를 적고 공사 전후 사진이나 계약서 사본을 첨부합니다. 개선 항목이 법령상 기준을 충족하는지 여부는 이 서식이 판단하지 않으므로 관할 기관이 요구하는 기준과 서식을 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51833,
+        "docx": 38655,
+        "hwpx": 9968
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "영업장 상호와 소재지, 영업 종류를 적습니다.",
+        "개선한 항목과 개선 내용, 완료일을 한 줄씩 적습니다.",
+        "시공업체 또는 확인한 사람을 적고 서명합니다.",
+        "공사 전후 사진이나 계약서 사본을 붙여 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "시공업체 없이 직접 고쳐도 되나요?",
+          "a": "직접 했다면 확인자란에 본인을 적습니다. 관할 기관이 시공 증빙을 요구하는지 확인하십시오."
+        },
+        {
+          "q": "사진은 꼭 붙여야 하나요?",
+          "a": "제출처가 요구하는 경우가 많습니다. 공사 전후를 비교할 수 있는 사진을 보관하는 편이 안전합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 영업장 정보",
+          "items": [
+            "상호",
+            "영업 종류",
+            "소재지",
+            "대표자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 개선 내용",
+          "items": [
+            "개선 항목",
+            "개선 내용",
+            "완료일",
+            "시공·확인자"
+          ],
+          "note": "개선 사유나 관할 기관 요청 사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-premises-area-change-confirmation",
+        "business-premises-restoration-confirmation",
+        "permit-supplement-submission",
+        "business-license-reissue-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-11T11:40:56+09:00",
+      "updated_at": "2026-11-11T11:40:56+09:00",
       "downloads": 0
     },
     {
@@ -31737,6 +31831,106 @@
       "seal": true
     },
     {
+      "id": "parent-cohabitation-support-confirmation",
+      "title": "부모 동거 봉양 확인서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "부모",
+        "동거",
+        "봉양",
+        "확인서",
+        "부양가족"
+      ],
+      "summary": "부모를 모시고 함께 살며 생계를 돌보고 있다는 사실을 확인해 제출처에 내는 부모 동거 봉양 확인서 양식입니다.",
+      "usage": "회사의 가족수당 신청이나 각종 신청에서 부모와 동거하며 봉양한다는 사실을 문서로 남길 때 쓰는 서식입니다. 봉양하는 사람과 부모의 정보, 동거 시작일과 주소, 생활비 부담 방식을 적고 확인자가 서명합니다. 부모의 주민등록번호는 적지 않습니다. 인정 요건은 제출처마다 다르므로 제출처 안내와 필요 서류를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49200,
+        "docx": 38524,
+        "hwpx": 9643
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "봉양하는 사람의 성명과 연락처를 적습니다.",
+        "부모의 성명과 생년월일, 관계를 적습니다.",
+        "동거 시작일과 주소, 생활비 부담 방식을 적습니다.",
+        "제출 목적을 적고 서명한 뒤 제출처에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "주민번호를 적어야 하나요?",
+          "a": "이 서식에는 생년월일만 적습니다. 주민등록 정보가 필요한지는 제출처에 확인하십시오."
+        },
+        {
+          "q": "주민등록상 주소가 같아야 하나요?",
+          "a": "제출처가 주민등록등본으로 확인하는 경우가 많습니다. 제출처 요구 서류를 먼저 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 봉양하는 사람",
+          "items": [
+            "성명",
+            "생년월일",
+            "연락처",
+            "소속"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 봉양받는 부모",
+          "items": [
+            "관계",
+            "동거 시작일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 동거 및 봉양 사실",
+          "items": [
+            "동거 주소",
+            "생활비 부담",
+            "제출 목적"
+          ],
+          "note": "동거 경위나 특이사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "dependent-support-fact-confirmation",
+        "cohabitant-confirmation",
+        "family-relationship-confirmation",
+        "residence-fact-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-11T11:40:59+09:00",
+      "updated_at": "2026-11-11T11:40:59+09:00",
+      "downloads": 0
+    },
+    {
       "id": "parental-leave-request",
       "title": "육아휴직 신청서",
       "category": "corp",
@@ -50107,6 +50301,99 @@
       "downloads": 0
     },
     {
+      "id": "workforce-headcount-change-confirmation",
+      "title": "사업장 근로자 수 변동 확인서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "근로자수",
+        "인원변동",
+        "4대보험",
+        "사업장",
+        "확인서"
+      ],
+      "summary": "사업장의 월별 근로자 수 변동 내역을 정리해 4대보험 관련 제출용으로 남기는 사업장 근로자 수 변동 확인서 양식입니다.",
+      "usage": "지원금 신청이나 보험 관련 확인에서 월별 근로자 수 증감을 보여 줘야 할 때 쓰는 서식입니다. 사업장 정보와 기준 기간을 적고 월별 입사자 수, 퇴사자 수, 월말 근로자 수를 한 줄씩 정리합니다. 근로자 개인정보는 적지 않고 인원 수만 적습니다. 인정 기준과 증빙은 제출처마다 다르므로 제출처 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53579,
+        "docx": 38641,
+        "hwpx": 9998
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사업장명과 사업자 구분, 기준 기간을 적습니다.",
+        "월별 입사자 수와 퇴사자 수를 적습니다.",
+        "월말 근로자 수를 계산해 적습니다.",
+        "대표자가 서명하고 제출처에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "근로자 이름도 적어야 하나요?",
+          "a": "이 서식에는 인원 수만 적습니다. 명단이 필요한지는 제출처에 확인하십시오."
+        },
+        {
+          "q": "월말 근로자 수는 어떻게 구하나요?",
+          "a": "전월 말 인원에 이번 달 입사자를 더하고 퇴사자를 뺍니다. 제출처 산정 기준이 있으면 그에 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사업장 정보",
+          "items": [
+            "사업장명",
+            "대표자",
+            "기준 기간",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 월별 근로자 수 변동",
+          "items": [
+            "해당 월",
+            "입사자 수",
+            "퇴사자 수",
+            "월말 근로자 수"
+          ],
+          "note": "인원 변동의 사유나 제출 목적을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "insurance-enrollment-confirmation-request",
+        "social-insurance-payment-certificate-request",
+        "social-insurance-correction-request",
+        "social-insurance-filing-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-11T11:41:02+09:00",
+      "updated_at": "2026-11-11T11:41:02+09:00",
+      "downloads": 0
+    },
+    {
       "id": "written-apology",
       "title": "시말서",
       "category": "corp",
@@ -50393,6 +50680,104 @@
       "seal": true
     },
     {
+      "id": "year-end-card-usage-supplement-submission",
+      "title": "연말정산 신용카드 사용액 보완 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "신용카드",
+        "소득공제",
+        "사용내역",
+        "보완제출"
+      ],
+      "summary": "연말정산 간소화 자료에 잡히지 않은 신용카드·체크카드 사용 내역을 근로자가 회사에 보완해서 제출할 때 쓰는 카드 사용액 보완 제출서 양식입니다.",
+      "usage": "연말정산 간소화 자료에서 빠졌거나 금액이 다르게 나온 카드 사용 내역을 회사에 알리는 서식입니다. 카드사, 카드 종류, 카드번호 끝 4자리, 사용처 구분과 사용 금액을 한 줄씩 적고 카드사에서 받은 사용내역서를 붙입니다. 카드번호는 전체를 적지 말고 끝 4자리만 적으십시오. 공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59742,
+        "docx": 38849,
+        "hwpx": 10331
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속, 제출일을 적습니다.",
+        "카드사와 카드 종류, 카드번호 끝 4자리를 적습니다.",
+        "사용처 구분과 보완할 사용 금액을 적습니다.",
+        "카드사 사용내역서를 붙여 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "카드번호는 전부 적어야 하나요?",
+          "a": "끝 4자리만 적어도 구분됩니다. 전체 번호가 필요한지는 회사 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "간소화 자료에 있는 사용액도 적나요?",
+          "a": "이미 조회되는 내역은 보통 다시 내지 않습니다. 빠졌거나 금액이 다른 부분만 적는 편이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "제출일",
+            "귀속 연도",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 보완할 카드 사용 내역",
+          "items": [
+            "카드사",
+            "카드 종류",
+            "카드 끝 4자리",
+            "사용처 구분",
+            "사용 금액(원)",
+            "보완 합계",
+            "증빙 첨부"
+          ],
+          "note": "간소화 자료에서 빠진 이유나 금액이 다른 이유를 아는 대로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-simplified-data-consent",
+        "year-end-medical-expense-submission",
+        "year-end-donation-submission"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-11T11:40:50+09:00",
+      "updated_at": "2026-11-11T11:40:50+09:00",
+      "downloads": 0
+    },
+    {
       "id": "year-end-dependent-change-notice",
       "title": "연말정산 부양가족 변경 신고서",
       "category": "corp",
@@ -50601,6 +50986,104 @@
       "warnings": [],
       "created_at": "2026-11-07T11:41:00+09:00",
       "updated_at": "2026-11-07T11:41:00+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-education-expense-submission",
+      "title": "연말정산 교육비 납입 자료 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "교육비",
+        "학원비",
+        "납입증명",
+        "소득공제"
+      ],
+      "summary": "연말정산을 위해 근로자가 본인·자녀 등의 교육비 납입 내역과 납입증명 서류를 회사에 제출할 때 쓰는 교육비 납입 자료 제출서 양식입니다.",
+      "usage": "연말정산 간소화 자료에 잡히지 않은 교육비 납입 내역을 회사에 알리고 증빙을 내는 서식입니다. 교육 대상자의 관계, 교육기관, 교육 구분, 납입 기간과 납입액을 한 줄씩 적고 교육기관에서 받은 납입증명서를 붙입니다. 교육 대상자의 주민등록번호는 적지 않습니다. 공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59805,
+        "docx": 38810,
+        "hwpx": 10278
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속, 제출일을 적습니다.",
+        "교육 대상자와의 관계, 교육기관명을 적습니다.",
+        "교육 구분과 납입 기간, 납입액을 적습니다.",
+        "교육기관 납입증명서를 붙여 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "교육 대상자 주민번호도 적나요?",
+          "a": "이 서식에는 적지 않습니다. 필요 여부는 회사 담당 부서와 교육기관 증명서 기준에 따릅니다."
+        },
+        {
+          "q": "간소화 자료에 있는 교육비도 적나요?",
+          "a": "이미 조회되는 내역은 보통 다시 내지 않습니다. 빠진 교육기관만 적는 편이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "제출일",
+            "귀속 연도",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 교육비 납입 내역",
+          "items": [
+            "관계",
+            "교육기관",
+            "교육 구분",
+            "납입 기간",
+            "납입액(원)",
+            "납입 합계",
+            "증빙 첨부"
+          ],
+          "note": "간소화 자료에 없는 이유나 추가 납입 예정 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-dependent-change-notice",
+        "year-end-medical-expense-submission",
+        "year-end-simplified-data-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-11T11:40:53+09:00",
+      "updated_at": "2026-11-11T11:40:53+09:00",
       "downloads": 0
     },
     {

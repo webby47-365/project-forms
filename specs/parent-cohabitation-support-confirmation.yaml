@@ -1,0 +1,80 @@
+id: parent-cohabitation-support-confirmation
+title: 부모 동거 봉양 확인서
+category: public
+subcategory: family
+tags: [부모, 동거, 봉양, 확인서, 부양가족]
+summary: 부모를 모시고 함께 살며 생계를 돌보고 있다는 사실을 확인해 제출처에 내는 부모 동거 봉양 확인서 양식입니다.
+usage: >
+  회사의 가족수당 신청이나 각종 신청에서 부모와 동거하며 봉양한다는 사실을 문서로 남길 때 쓰는 서식입니다.
+  봉양하는 사람과 부모의 정보, 동거 시작일과 주소, 생활비 부담 방식을 적고 확인자가 서명합니다.
+  부모의 주민등록번호는 적지 않습니다. 인정 요건은 제출처마다 다르므로 제출처 안내와 필요 서류를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 봉양하는 사람의 성명과 연락처를 적습니다.
+  - 부모의 성명과 생년월일, 관계를 적습니다.
+  - 동거 시작일과 주소, 생활비 부담 방식을 적습니다.
+  - 제출 목적을 적고 서명한 뒤 제출처에 냅니다.
+faq:
+  - q: 주민번호를 적어야 하나요?
+    a: 이 서식에는 생년월일만 적습니다. 주민등록 정보가 필요한지는 제출처에 확인하십시오.
+  - q: 주민등록상 주소가 같아야 하나요?
+    a: 제출처가 주민등록등본으로 확인하는 경우가 많습니다. 제출처 요구 서류를 먼저 확인하십시오.
+related: [dependent-support-fact-confirmation, cohabitant-confirmation, family-relationship-confirmation, residence-fact-confirmation]
+blocks:
+  - type: doc_title
+    text: 부모 동거 봉양 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 봉양하는 사람
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["연락처", "", "소속", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1985-03-02"]
+      - ["", "010-1234-5678", "", "(주)한빛커머스"]
+  - type: subtitle
+    text: 2. 봉양받는 부모
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["관계", "", "동거 시작일", ""]
+    sample_rows:
+      - ["", "홍판석", "", "1957-06-15"]
+      - ["", "부", "", "2021-04-01"]
+  - type: subtitle
+    text: 3. 동거 및 봉양 사실
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["동거 주소", ""]
+      - ["생활비 부담", ""]
+      - ["제출 목적", ""]
+    sample_rows:
+      - ["", "서울시 ○○구 예시로 12, 101동 202호"]
+      - ["", "생활비와 의료비 전액을 봉양하는 사람이 부담함"]
+      - ["", "회사 가족수당 신청"]
+  - type: textbox
+    hint: "동거 경위나 특이사항이 있으면 적으십시오."
+    height_mm: 20
+    sample_text: "2021년 4월부터 부모님을 모시고 함께 거주하며 생활을 돌보고 있습니다."
+  - type: para
+    text: 위 내용이 사실임을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   11 일
+  - type: sign_line
+    labels: ["확인자(봉양하는 사람)"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 인정 요건과 필요 서류는 제출처 안내를 확인하십시오.

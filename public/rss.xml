@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 484종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 489종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>사업장 근로자 수 변동 확인서</title>
+<link>https://freeforms.kr/form/workforce-headcount-change-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/workforce-headcount-change-confirmation/</guid>
+<category>공공 · 4대보험·고용</category>
+<pubDate>Wed, 11 Nov 2026 00:00:00 +0900</pubDate>
+<description>사업장의 월별 근로자 수 변동 내역을 정리해 4대보험 관련 제출용으로 남기는 사업장 근로자 수 변동 확인서 양식입니다.</description>
+</item>
+<item>
+<title>부모 동거 봉양 확인서</title>
+<link>https://freeforms.kr/form/parent-cohabitation-support-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/parent-cohabitation-support-confirmation/</guid>
+<category>공공 · 가족·주민등록</category>
+<pubDate>Wed, 11 Nov 2026 00:00:00 +0900</pubDate>
+<description>부모를 모시고 함께 살며 생계를 돌보고 있다는 사실을 확인해 제출처에 내는 부모 동거 봉양 확인서 양식입니다.</description>
+</item>
+<item>
+<title>영업 시설 개선 완료 확인서</title>
+<link>https://freeforms.kr/form/business-facility-improvement-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-facility-improvement-confirmation/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Wed, 11 Nov 2026 00:00:00 +0900</pubDate>
+<description>영업장의 시설을 고치거나 새로 갖춘 뒤 개선 내용과 완료일을 확인해 관할 기관 제출용으로 남기는 영업 시설 개선 완료 확인서 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 교육비 납입 자료 제출서</title>
+<link>https://freeforms.kr/form/year-end-education-expense-submission/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-education-expense-submission/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Wed, 11 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산을 위해 근로자가 본인·자녀 등의 교육비 납입 내역과 납입증명 서류를 회사에 제출할 때 쓰는 교육비 납입 자료 제출서 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 신용카드 사용액 보완 제출서</title>
+<link>https://freeforms.kr/form/year-end-card-usage-supplement-submission/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-card-usage-supplement-submission/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Wed, 11 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산 간소화 자료에 잡히지 않은 신용카드·체크카드 사용 내역을 근로자가 회사에 보완해서 제출할 때 쓰는 카드 사용액 보완 제출서 양식입니다.</description>
+</item>
 <item>
 <title>경조사비 기록 장부</title>
 <link>https://freeforms.kr/form/wedding-gift-ledger/</link>
@@ -206,46 +246,6 @@
 <category>기업 · 회계·세무</category>
 <pubDate>Thu, 05 Nov 2026 00:00:00 +0900</pubDate>
 <description>연말정산에서 월세 세액공제를 받으려는 근로자가 임대차 계약 내용과 월별 납부 내역을 회사에 내는 월세 세액공제 자료 제출서 양식입니다.</description>
-</item>
-<item>
-<title>분실물 신고서</title>
-<link>https://freeforms.kr/form/lost-property-report/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/lost-property-report/</guid>
-<category>개인 · 생활·가정</category>
-<pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
-<description>물건을 잃어버린 장소와 시간, 물건의 특징과 연락처를 적어 시설 관리처나 분실물 센터에 내는 분실물 신고서 양식입니다.</description>
-</item>
-<item>
-<title>설립비용 명세서</title>
-<link>https://freeforms.kr/form/founding-expense-statement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/founding-expense-statement/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
-<description>법인이나 사업을 시작하면서 쓴 등록·인테리어·장비 비용을 항목별로 모아 정리하는 설립비용 명세서 양식입니다.</description>
-</item>
-<item>
-<title>손해액 산정 내역서</title>
-<link>https://freeforms.kr/form/damage-calculation-statement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/damage-calculation-statement/</guid>
-<category>법률 · 소송·민원</category>
-<pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
-<description>분쟁이나 소송에서 청구하려는 손해 항목과 금액, 근거 자료를 한 표로 정리해 제출하는 손해액 산정 내역서 양식입니다.</description>
-</item>
-<item>
-<title>신청 내용 변경 요청서</title>
-<link>https://freeforms.kr/form/service-application-change-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/service-application-change-request/</guid>
-<category>공공 · 신청·동의</category>
-<pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
-<description>이미 접수한 신청의 주소·연락처·수령 방법 등 일부 내용을 바꿔 달라고 기관에 요청할 때 쓰는 신청 내용 변경 요청서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 의료비 지출 제출서</title>
-<link>https://freeforms.kr/form/year-end-medical-expense-submission/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-medical-expense-submission/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
-<description>연말정산을 위해 근로자가 한 해 동안 쓴 의료비 내역과 증빙 서류를 회사에 제출할 때 쓰는 의료비 지출 제출서 양식입니다.</description>
 </item>
 </channel>
 </rss>
