@@ -1,0 +1,87 @@
+id: vehicle-insurance-claim-poa
+title: 자동차보험금 청구 위임장
+category: public
+subcategory: vehicle
+tags: [자동차보험, 보험금청구, 위임장, 대리청구, 사고처리]
+summary: 자동차 사고 뒤 보험금 청구와 수령 절차를 다른 사람에게 맡길 때 쓰는 자동차보험금 청구 위임장 양식입니다.
+usage: >
+  사고를 당한 사람이 직접 보험사를 찾아가기 어려울 때 가족이나 지인에게 보험금 청구를 맡기는 서식입니다.
+  위임인과 수임인, 사고 일시와 장소, 맡기는 업무 범위를 적습니다. 보험금을 받을 계좌 변경 같은 중요한 권한은 따로 표시해야 오해가 없습니다.
+  보험사마다 요구 서류와 본인 확인 방법이 다르므로 청구 전에 해당 보험사에 문의하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 위임인과 수임인의 성명, 연락처를 적습니다.
+  - 사고 일시와 장소, 보험사, 사고 접수번호를 적습니다.
+  - 맡기는 업무에 표시하고 기간을 적습니다.
+  - 날짜를 적고 위임인이 서명합니다.
+faq:
+  - q: 보험금 받을 계좌도 수임인 계좌로 해도 되나요?
+    a: 계좌 지정은 중요한 권한이라 위임 범위에 따로 적어야 합니다. 보험사 규정도 함께 확인하십시오.
+  - q: 위임장만 있으면 청구가 되나요?
+    a: 보험사별로 본인 확인 서류가 더 필요할 수 있습니다. 청구 전에 보험사에 문의하십시오.
+related: [traffic-accident-confirmation, car-accident-settlement, vehicle-repair-order, power-of-attorney]
+blocks:
+  - type: doc_title
+    text: 자동차보험금 청구 위임장
+    spaced: false
+  - type: subtitle
+    text: 1. 위임인과 수임인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["위임인", "", "연락처", ""]
+      - ["수임인", "", "연락처", ""]
+      - ["관계", "", "차량번호", ""]
+    sample_rows:
+      - ["", "박민준", "", "010-1234-5678"]
+      - ["", "이수현", "", "010-2345-6789"]
+      - ["", "형제", "", "00가 0000"]
+  - type: subtitle
+    text: 2. 사고 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["사고 일시", "", "보험사", ""]
+      - ["사고 장소", "", "", ""]
+      - ["접수번호", "", "청구 종류", ""]
+    sample_rows:
+      - ["", "2026-11-05 18:30", "", "한빛화재"]
+      - ["", "서울시 ○○구 ○○로 사거리 인근", "", ""]
+      - ["", "000000", "", "차량 수리비"]
+  - type: subtitle
+    text: 3. 위임하는 업무
+  - type: table
+    widths: [8, 62, 30]
+    header: ["No", 위임 업무, 표시]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "보험금 청구서 작성·제출", "위임함"]
+      - ["2", "보험사와의 진행 상황 문의", "위임함"]
+      - ["3", "보험금 수령 계좌 변경", "위임하지 않음"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["위임 기간", "", "첨부", ""]
+    sample_rows:
+      - ["", "2026-11-12~12-31", "", "신분증 사본"]
+  - type: para
+    text: 위임인은 위 사고의 자동차보험금 청구에 관한 업무를 수임인에게 위임합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   12 일
+  - type: sign_line
+    labels: ["위임인", "수임인"]
+    sample_names: [박민준, 이수현]
+  - type: notice
+    text: 보험사별 요구 서류와 본인 확인 방법을 확인하십시오.

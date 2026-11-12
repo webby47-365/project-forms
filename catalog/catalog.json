@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T11:41:02+09:00",
-  "count": 489,
+  "generated_at": "2026-11-12T12:44:33+09:00",
+  "count": 494,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -23487,6 +23487,108 @@
       "downloads": 0
     },
     {
+      "id": "hearing-absence-reason-statement",
+      "title": "기일 불출석 사유서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "불출석사유서",
+        "변론기일",
+        "재판불출석",
+        "사유서",
+        "법원"
+      ],
+      "summary": "재판 기일에 출석하지 못하게 된 당사자가 사건 정보와 불출석 사유를 적어 법원에 내는 기일 불출석 사유서 양식입니다.",
+      "usage": "지정된 변론기일이나 조정기일에 나갈 수 없을 때 그 사유를 서면으로 알리는 서식입니다. 사건번호와 사건명, 기일, 출석하지 못하는 사유를 적고 사유를 뒷받침하는 자료가 있으면 함께 냅니다. 기일을 바꾸고 싶다면 별도의 기일 변경 신청이 필요할 수 있으며, 제출 방법과 시기는 담당 재판부 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45080,
+        "docx": 38497,
+        "hwpx": 9525
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "법원, 사건번호, 사건명과 불출석하는 기일을 적습니다.",
+        "제출인의 지위와 성명, 연락처를 적습니다.",
+        "출석하지 못하는 사유를 사실대로 적습니다.",
+        "증빙을 붙이고 서명해 재판부에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "사유서만 내면 기일이 바뀌나요?",
+          "a": "사유서는 출석하지 못하는 사정을 알리는 서류입니다. 기일 변경은 별도 신청이 필요할 수 있습니다."
+        },
+        {
+          "q": "어디에 제출하나요?",
+          "a": "사건이 진행 중인 법원 재판부에 냅니다. 제출 방법은 재판부와 전자소송 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 사건 표시",
+          "items": [
+            "법원",
+            "재판부",
+            "사건번호",
+            "사건명",
+            "불출석 기일",
+            "기일 종류"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 제출인",
+          "items": [
+            "지위",
+            "성명",
+            "연락처",
+            "제출일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 불출석 사유",
+          "items": [
+            "첨부 자료"
+          ],
+          "note": "출석하지 못하는 사유를 날짜와 함께 사실대로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "hearing-date-change-request",
+        "preparatory-brief",
+        "written-statement",
+        "evidence-submission-list"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-12T12:44:26+09:00",
+      "updated_at": "2026-11-12T12:44:26+09:00",
+      "downloads": 0
+    },
+    {
       "id": "hearing-date-change-request",
       "title": "변론기일 변경 신청서",
       "category": "legal",
@@ -35098,6 +35200,103 @@
       "downloads": 0
     },
     {
+      "id": "privacy-correction-deletion-request",
+      "title": "개인정보 정정·삭제 요구서",
+      "category": "public",
+      "subcategory": "consent",
+      "tags": [
+        "개인정보정정",
+        "개인정보삭제",
+        "정정요구",
+        "삭제요구",
+        "개인정보보호"
+      ],
+      "summary": "회사나 기관이 보유한 내 개인정보가 틀렸거나 더 이상 필요 없을 때 정정 또는 삭제를 요구하는 개인정보 정정·삭제 요구서 양식입니다.",
+      "usage": "기관이 가지고 있는 내 개인정보를 바로잡거나 지워 달라고 서면으로 요구할 때 쓰는 서식입니다. 요구 대상 기관, 정정 또는 삭제할 항목과 현재 내용, 바라는 내용을 한 줄씩 적고 사유를 덧붙입니다. 본인 확인에 필요한 서류는 기관마다 다르므로 제출 전에 문의하십시오. 법령상 보존 의무가 있는 정보는 삭제되지 않을 수 있습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 52055,
+        "docx": 38653,
+        "hwpx": 9905
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요구자 성명과 연락처, 요구 대상 기관을 적습니다.",
+        "정정 또는 삭제 중 하나를 고르고 대상 항목을 적습니다.",
+        "현재 내용과 바라는 내용을 나란히 적습니다.",
+        "사유를 적고 서명해 기관의 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "정정과 삭제를 한 장에 같이 써도 되나요?",
+          "a": "항목마다 구분란에 정정 또는 삭제를 적으면 한 장에 함께 쓸 수 있습니다."
+        },
+        {
+          "q": "요구하면 바로 지워지나요?",
+          "a": "기관이 법령상 보존해야 하는 정보는 삭제되지 않을 수 있습니다. 처리 결과는 기관 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요구자와 대상 기관",
+          "items": [
+            "요구자",
+            "연락처",
+            "생년월일",
+            "요구일",
+            "요구 대상 기관"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 정정·삭제를 요구하는 항목",
+          "items": [
+            "대상 항목",
+            "현재 내용",
+            "바라는 내용"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 요구 사유",
+          "items": [],
+          "note": "정정 또는 삭제가 필요한 이유를 구체적으로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "privacy-access-request",
+        "privacy-processing-suspension-request",
+        "privacy-consent-withdrawal"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-12T12:44:15+09:00",
+      "updated_at": "2026-11-12T12:44:15+09:00",
+      "downloads": 0
+    },
+    {
       "id": "privacy-processing-suspension-request",
       "title": "개인정보 처리정지 요구서",
       "category": "public",
@@ -43137,6 +43336,100 @@
       "downloads": 0
     },
     {
+      "id": "student-early-leave-request",
+      "title": "조퇴·외출 신청서 (학부모 확인)",
+      "category": "edu",
+      "subcategory": "school",
+      "tags": [
+        "조퇴",
+        "외출",
+        "조퇴신청서",
+        "학부모확인",
+        "학교"
+      ],
+      "summary": "수업 도중 학교를 일찍 나서거나 잠시 나갔다 와야 할 때 학부모 확인을 받아 내는 조퇴·외출 신청서 양식입니다.",
+      "usage": "학생이 수업 시간 중에 조퇴하거나 외출해야 할 때 담임교사에게 내는 서식입니다. 조퇴 또는 외출 중 하나를 고르고 나가는 시각, 돌아오는 시각, 사유를 적은 뒤 학부모가 확인 서명을 합니다. 귀가 방법과 보호자 연락 여부는 학교 규정에 따라 달라질 수 있으니 학교 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 44904,
+        "docx": 38445,
+        "hwpx": 9434
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "학년·반·번호와 학생 이름을 적습니다.",
+        "조퇴 또는 외출을 고르고 나가는 시각을 적습니다.",
+        "외출이면 돌아올 시각을, 조퇴이면 귀가 방법을 적습니다.",
+        "사유를 적고 학부모가 서명한 뒤 담임교사에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "조퇴와 외출은 무엇이 다른가요?",
+          "a": "조퇴는 그날 돌아오지 않고 하교하는 것이고, 외출은 잠시 나갔다 돌아오는 것입니다."
+        },
+        {
+          "q": "미리 내지 못하면 어떻게 하나요?",
+          "a": "급한 경우 학부모가 담임교사에게 먼저 연락하고, 신청서는 학교 안내에 따라 나중에 내기도 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 학생 정보",
+          "items": [
+            "학교",
+            "학년·반·번호",
+            "학생 이름",
+            "담임교사"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신청 내용",
+          "items": [
+            "신청일",
+            "나가는 시각",
+            "돌아올 시각",
+            "귀가 방법",
+            "보호자 연락"
+          ],
+          "note": "조퇴 또는 외출이 필요한 사유를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "student-absence-notice",
+        "guardian-consent",
+        "field-trip-application",
+        "student-record-card"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-12T12:44:24+09:00",
+      "updated_at": "2026-11-12T12:44:24+09:00",
+      "downloads": 0
+    },
+    {
       "id": "student-record-card",
       "title": "학생 생활기록 카드",
       "category": "edu",
@@ -47101,6 +47394,111 @@
       "downloads": 0
     },
     {
+      "id": "vehicle-insurance-claim-poa",
+      "title": "자동차보험금 청구 위임장",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차보험",
+        "보험금청구",
+        "위임장",
+        "대리청구",
+        "사고처리"
+      ],
+      "summary": "자동차 사고 뒤 보험금 청구와 수령 절차를 다른 사람에게 맡길 때 쓰는 자동차보험금 청구 위임장 양식입니다.",
+      "usage": "사고를 당한 사람이 직접 보험사를 찾아가기 어려울 때 가족이나 지인에게 보험금 청구를 맡기는 서식입니다. 위임인과 수임인, 사고 일시와 장소, 맡기는 업무 범위를 적습니다. 보험금을 받을 계좌 변경 같은 중요한 권한은 따로 표시해야 오해가 없습니다. 보험사마다 요구 서류와 본인 확인 방법이 다르므로 청구 전에 해당 보험사에 문의하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55750,
+        "docx": 38713,
+        "hwpx": 9991
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "위임인과 수임인의 성명, 연락처를 적습니다.",
+        "사고 일시와 장소, 보험사, 사고 접수번호를 적습니다.",
+        "맡기는 업무에 표시하고 기간을 적습니다.",
+        "날짜를 적고 위임인이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "보험금 받을 계좌도 수임인 계좌로 해도 되나요?",
+          "a": "계좌 지정은 중요한 권한이라 위임 범위에 따로 적어야 합니다. 보험사 규정도 함께 확인하십시오."
+        },
+        {
+          "q": "위임장만 있으면 청구가 되나요?",
+          "a": "보험사별로 본인 확인 서류가 더 필요할 수 있습니다. 청구 전에 보험사에 문의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 위임인과 수임인",
+          "items": [
+            "위임인",
+            "연락처",
+            "수임인",
+            "관계",
+            "차량번호"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 사고 내용",
+          "items": [
+            "사고 일시",
+            "보험사",
+            "사고 장소",
+            "접수번호",
+            "청구 종류"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 위임하는 업무",
+          "items": [
+            "위임 업무",
+            "표시",
+            "위임 기간",
+            "첨부"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "traffic-accident-confirmation",
+        "car-accident-settlement",
+        "vehicle-repair-order",
+        "power-of-attorney"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-12T12:44:20+09:00",
+      "updated_at": "2026-11-12T12:44:33+09:00",
+      "downloads": 0
+    },
+    {
       "id": "vehicle-lease-contract",
       "title": "자동차 임대차계약서",
       "category": "public",
@@ -50775,6 +51173,103 @@
       "warnings": [],
       "created_at": "2026-11-11T11:40:50+09:00",
       "updated_at": "2026-11-11T11:40:50+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-correction-request",
+      "title": "연말정산 제출 내용 정정 요청서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "정정요청",
+        "공제자료",
+        "제출내용수정",
+        "재제출"
+      ],
+      "summary": "연말정산 자료를 이미 낸 뒤 금액이나 공제 대상이 잘못된 것을 알았을 때 회사에 정정을 요청하는 연말정산 제출 내용 정정 요청서 양식입니다.",
+      "usage": "연말정산 자료를 제출한 근로자가 잘못 적은 금액이나 빠뜨린 항목을 회사 담당 부서에 바로잡아 달라고 요청하는 서식입니다. 정정할 항목마다 이미 낸 내용과 바로잡을 내용을 나란히 적고 새 증빙을 함께 붙입니다. 정정 마감일은 회사 일정에 따라 다르므로 담당 부서 안내를 먼저 확인하십시오. 공제 가능 여부는 세법과 회사 안내를 기준으로 합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 57653,
+        "docx": 38732,
+        "hwpx": 10058
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속, 정정 요청일을 적습니다.",
+        "정정할 공제 항목과 이미 낸 금액을 적습니다.",
+        "바로잡을 금액과 정정 사유를 적습니다.",
+        "새 증빙을 붙여 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "제출 마감 뒤에도 정정할 수 있나요?",
+          "a": "회사 일정에 따라 다릅니다. 마감 뒤 정정 가능 여부는 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "증빙은 처음 낸 것과 같아도 다시 내나요?",
+          "a": "금액이 달라지는 항목은 바뀐 증빙을 새로 붙이는 편이 안전합니다. 담당 부서 안내를 따르십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "정정 요청일",
+            "귀속 연도",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 정정 내역",
+          "items": [
+            "공제 항목",
+            "제출한 금액",
+            "정정할 금액",
+            "정정 사유",
+            "새 증빙",
+            "첨부 장수"
+          ],
+          "note": "위 표에 담기지 않는 정정 내용이나 전달할 말을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-simplified-data-consent",
+        "year-end-dependent-change-notice",
+        "year-end-card-usage-supplement-submission"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-12T12:44:18+09:00",
+      "updated_at": "2026-11-12T12:44:18+09:00",
       "downloads": 0
     },
     {

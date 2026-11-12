@@ -1,0 +1,65 @@
+id: student-early-leave-request
+title: 조퇴·외출 신청서 (학부모 확인)
+category: edu
+subcategory: school
+tags: [조퇴, 외출, 조퇴신청서, 학부모확인, 학교]
+summary: 수업 도중 학교를 일찍 나서거나 잠시 나갔다 와야 할 때 학부모 확인을 받아 내는 조퇴·외출 신청서 양식입니다.
+usage: >
+  학생이 수업 시간 중에 조퇴하거나 외출해야 할 때 담임교사에게 내는 서식입니다.
+  조퇴 또는 외출 중 하나를 고르고 나가는 시각, 돌아오는 시각, 사유를 적은 뒤 학부모가 확인 서명을 합니다.
+  귀가 방법과 보호자 연락 여부는 학교 규정에 따라 달라질 수 있으니 학교 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 학년·반·번호와 학생 이름을 적습니다.
+  - 조퇴 또는 외출을 고르고 나가는 시각을 적습니다.
+  - 외출이면 돌아올 시각을, 조퇴이면 귀가 방법을 적습니다.
+  - 사유를 적고 학부모가 서명한 뒤 담임교사에게 냅니다.
+faq:
+  - q: 조퇴와 외출은 무엇이 다른가요?
+    a: 조퇴는 그날 돌아오지 않고 하교하는 것이고, 외출은 잠시 나갔다 돌아오는 것입니다.
+  - q: 미리 내지 못하면 어떻게 하나요?
+    a: 급한 경우 학부모가 담임교사에게 먼저 연락하고, 신청서는 학교 안내에 따라 나중에 내기도 합니다.
+related: [student-absence-notice, guardian-consent, field-trip-application, student-record-card]
+blocks:
+  - type: doc_title
+    text: 조퇴·외출 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 학생 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["학교", "", "학년·반·번호", ""]
+      - ["학생 이름", "", "담임교사", ""]
+    sample_rows:
+      - ["", "한빛중학교", "", "2학년 3반 15번"]
+      - ["", "이수현", "", "김서연"]
+  - type: subtitle
+    text: 2. 신청 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["구분", "", "신청일", ""]
+      - ["나가는 시각", "", "돌아올 시각", ""]
+      - ["귀가 방법", "", "보호자 연락", ""]
+    sample_rows:
+      - ["", "외출", "", "2026-11-12"]
+      - ["", "13:30", "", "15:00"]
+      - ["", "보호자 동행", "", "연락 완료"]
+  - type: textbox
+    hint: "조퇴 또는 외출이 필요한 사유를 적으십시오."
+    height_mm: 24
+    sample_text: "가족 행사에 참석해야 하여 5교시부터 외출하고 6교시 전에 돌아오겠습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   12 일
+  - type: sign_line
+    labels: ["학부모", "학생"]
+    sample_names: [박민준, 이수현]
+  - type: notice
+    text: 귀가 방법과 확인 절차는 학교 규정을 확인하십시오.

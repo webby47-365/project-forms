@@ -1,0 +1,75 @@
+id: hearing-absence-reason-statement
+title: 기일 불출석 사유서
+category: legal
+subcategory: litigation
+tags: [불출석사유서, 변론기일, 재판불출석, 사유서, 법원]
+summary: 재판 기일에 출석하지 못하게 된 당사자가 사건 정보와 불출석 사유를 적어 법원에 내는 기일 불출석 사유서 양식입니다.
+usage: >
+  지정된 변론기일이나 조정기일에 나갈 수 없을 때 그 사유를 서면으로 알리는 서식입니다.
+  사건번호와 사건명, 기일, 출석하지 못하는 사유를 적고 사유를 뒷받침하는 자료가 있으면 함께 냅니다.
+  기일을 바꾸고 싶다면 별도의 기일 변경 신청이 필요할 수 있으며, 제출 방법과 시기는 담당 재판부 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 법원, 사건번호, 사건명과 불출석하는 기일을 적습니다.
+  - 제출인의 지위와 성명, 연락처를 적습니다.
+  - 출석하지 못하는 사유를 사실대로 적습니다.
+  - 증빙을 붙이고 서명해 재판부에 냅니다.
+faq:
+  - q: 사유서만 내면 기일이 바뀌나요?
+    a: 사유서는 출석하지 못하는 사정을 알리는 서류입니다. 기일 변경은 별도 신청이 필요할 수 있습니다.
+  - q: 어디에 제출하나요?
+    a: 사건이 진행 중인 법원 재판부에 냅니다. 제출 방법은 재판부와 전자소송 안내를 확인하십시오.
+related: [hearing-date-change-request, preparatory-brief, written-statement, evidence-submission-list]
+blocks:
+  - type: doc_title
+    text: 기일 불출석 사유서
+    spaced: false
+  - type: subtitle
+    text: 1. 사건 표시
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["법원", "", "재판부", ""]
+      - ["사건번호", "", "사건명", ""]
+      - ["불출석 기일", "", "기일 종류", ""]
+    sample_rows:
+      - ["", "서울중앙지방법원", "", "제00민사부"]
+      - ["", "2026가소000000", "", "물품대금"]
+      - ["", "2026-11-26 14:00", "", "변론기일"]
+  - type: subtitle
+    text: 2. 제출인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["지위", "", "성명", ""]
+      - ["연락처", "", "제출일", ""]
+    sample_rows:
+      - ["", "피고", "", "홍길동"]
+      - ["", "010-1234-5678", "", "2026-11-12"]
+  - type: subtitle
+    text: 3. 불출석 사유
+  - type: textbox
+    hint: "출석하지 못하는 사유를 날짜와 함께 사실대로 적으십시오."
+    height_mm: 36
+    sample_text: "위 기일에 업무상 해외 출장이 확정되어 출석하기 어렵습니다. 출장 일정 자료를 첨부하며, 다음 기일에는 출석하겠습니다."
+  - type: grid
+    widths: [20, 80]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["첨부 자료", ""]
+    sample_rows:
+      - ["", "출장 일정 확인서 1부"]
+  - type: date_line
+    sample_text: 2026 년   11 월   12 일
+  - type: sign_line
+    labels: ["제출인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 제출 방법과 기일 변경 여부는 담당 재판부 안내를 확인하십시오.

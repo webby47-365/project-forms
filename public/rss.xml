@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 489종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 494종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>기일 불출석 사유서</title>
+<link>https://freeforms.kr/form/hearing-absence-reason-statement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/hearing-absence-reason-statement/</guid>
+<category>법률 · 소송·민원</category>
+<pubDate>Thu, 12 Nov 2026 00:00:00 +0900</pubDate>
+<description>재판 기일에 출석하지 못하게 된 당사자가 사건 정보와 불출석 사유를 적어 법원에 내는 기일 불출석 사유서 양식입니다.</description>
+</item>
+<item>
+<title>조퇴·외출 신청서 (학부모 확인)</title>
+<link>https://freeforms.kr/form/student-early-leave-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/student-early-leave-request/</guid>
+<category>교육 · 학교·학원</category>
+<pubDate>Thu, 12 Nov 2026 00:00:00 +0900</pubDate>
+<description>수업 도중 학교를 일찍 나서거나 잠시 나갔다 와야 할 때 학부모 확인을 받아 내는 조퇴·외출 신청서 양식입니다.</description>
+</item>
+<item>
+<title>자동차보험금 청구 위임장</title>
+<link>https://freeforms.kr/form/vehicle-insurance-claim-poa/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-insurance-claim-poa/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Thu, 12 Nov 2026 00:00:00 +0900</pubDate>
+<description>자동차 사고 뒤 보험금 청구와 수령 절차를 다른 사람에게 맡길 때 쓰는 자동차보험금 청구 위임장 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 제출 내용 정정 요청서</title>
+<link>https://freeforms.kr/form/year-end-correction-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-correction-request/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Thu, 12 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산 자료를 이미 낸 뒤 금액이나 공제 대상이 잘못된 것을 알았을 때 회사에 정정을 요청하는 연말정산 제출 내용 정정 요청서 양식입니다.</description>
+</item>
+<item>
+<title>개인정보 정정·삭제 요구서</title>
+<link>https://freeforms.kr/form/privacy-correction-deletion-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/privacy-correction-deletion-request/</guid>
+<category>공공 · 신청·동의</category>
+<pubDate>Thu, 12 Nov 2026 00:00:00 +0900</pubDate>
+<description>회사나 기관이 보유한 내 개인정보가 틀렸거나 더 이상 필요 없을 때 정정 또는 삭제를 요구하는 개인정보 정정·삭제 요구서 양식입니다.</description>
+</item>
 <item>
 <title>사업장 근로자 수 변동 확인서</title>
 <link>https://freeforms.kr/form/workforce-headcount-change-confirmation/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 신청·동의</category>
 <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
 <description>연말정산 때 근로자가 회사에 국세청 간소화자료(부양가족 포함) 제공을 동의하는 양식입니다.</description>
-</item>
-<item>
-<title>자동차 정비 의뢰서</title>
-<link>https://freeforms.kr/form/vehicle-repair-order/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vehicle-repair-order/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Thu, 05 Nov 2026 00:00:00 +0900</pubDate>
-<description>차량 수리를 정비소에 맡길 때 차량 정보와 요청 정비 내용, 견적 한도와 인도 일정을 적어 두는 자동차 정비 의뢰서 양식입니다.</description>
-</item>
-<item>
-<title>영업신고증 반납서</title>
-<link>https://freeforms.kr/form/business-license-return/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-license-return/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Thu, 05 Nov 2026 00:00:00 +0900</pubDate>
-<description>영업을 그만두면서 발급받은 영업신고증을 담당 기관에 돌려줄 때 반납 사유와 사업장 정보를 적어 내는 영업신고증 반납서 양식입니다.</description>
-</item>
-<item>
-<title>복지시설 면회 신청서</title>
-<link>https://freeforms.kr/form/welfare-facility-visit-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/welfare-facility-visit-request/</guid>
-<category>의료·복지 · 동의·신청</category>
-<pubDate>Thu, 05 Nov 2026 00:00:00 +0900</pubDate>
-<description>복지시설에 계신 가족이나 지인을 만나기 위해 면회 일시와 방문자 정보를 시설에 미리 알릴 때 쓰는 복지시설 면회 신청서 양식입니다.</description>
-</item>
-<item>
-<title>선금 지급 신청서</title>
-<link>https://freeforms.kr/form/advance-payment-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/advance-payment-request/</guid>
-<category>공공 · 조달·입찰</category>
-<pubDate>Thu, 05 Nov 2026 00:00:00 +0900</pubDate>
-<description>용역·공사·물품 계약을 맺은 계약상대자가 발주처에 계약금액 일부를 먼저 지급해 달라고 요청할 때 쓰는 선금 지급 신청서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 월세 세액공제 자료 제출서</title>
-<link>https://freeforms.kr/form/year-end-rent-tax-credit-submission/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-rent-tax-credit-submission/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Thu, 05 Nov 2026 00:00:00 +0900</pubDate>
-<description>연말정산에서 월세 세액공제를 받으려는 근로자가 임대차 계약 내용과 월별 납부 내역을 회사에 내는 월세 세액공제 자료 제출서 양식입니다.</description>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,71 @@
+id: year-end-correction-request
+title: 연말정산 제출 내용 정정 요청서
+category: corp
+subcategory: finance
+tags: [연말정산, 정정요청, 공제자료, 제출내용수정, 재제출]
+summary: 연말정산 자료를 이미 낸 뒤 금액이나 공제 대상이 잘못된 것을 알았을 때 회사에 정정을 요청하는 연말정산 제출 내용 정정 요청서 양식입니다.
+usage: >
+  연말정산 자료를 제출한 근로자가 잘못 적은 금액이나 빠뜨린 항목을 회사 담당 부서에 바로잡아 달라고 요청하는 서식입니다.
+  정정할 항목마다 이미 낸 내용과 바로잡을 내용을 나란히 적고 새 증빙을 함께 붙입니다.
+  정정 마감일은 회사 일정에 따라 다르므로 담당 부서 안내를 먼저 확인하십시오. 공제 가능 여부는 세법과 회사 안내를 기준으로 합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속, 정정 요청일을 적습니다.
+  - 정정할 공제 항목과 이미 낸 금액을 적습니다.
+  - 바로잡을 금액과 정정 사유를 적습니다.
+  - 새 증빙을 붙여 담당 부서에 냅니다.
+faq:
+  - q: 제출 마감 뒤에도 정정할 수 있나요?
+    a: 회사 일정에 따라 다릅니다. 마감 뒤 정정 가능 여부는 담당 부서에 확인하십시오.
+  - q: 증빙은 처음 낸 것과 같아도 다시 내나요?
+    a: 금액이 달라지는 항목은 바뀐 증빙을 새로 붙이는 편이 안전합니다. 담당 부서 안내를 따르십시오.
+related: [year-end-tax-checklist, year-end-simplified-data-consent, year-end-dependent-change-notice, year-end-card-usage-supplement-submission]
+blocks:
+  - type: doc_title
+    text: 연말정산 제출 내용 정정 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "정정 요청일", ""]
+      - ["귀속 연도", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "(주)새길데이터 경영지원팀"]
+      - ["", "대리", "", "2026-11-12"]
+      - ["", "2026년", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 정정 내역
+  - type: table
+    widths: [7, 19, 16, 16, 42]
+    header: ["No", 공제 항목, 제출한 금액, 정정할 금액, 정정 사유]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "교육비", "1,200,000", "1,500,000", "학원비 납입증명 누락분 추가"]
+      - ["2", "기부금", "300,000", "200,000", "영수증 금액 오기재 정정"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["새 증빙", "", "첨부 장수", ""]
+    sample_rows:
+      - ["", "납입증명서, 기부금 영수증", "", "2장"]
+  - type: textbox
+    hint: "위 표에 담기지 않는 정정 내용이나 전달할 말을 적으십시오."
+    height_mm: 20
+    sample_text: "처음 제출한 자료에서 교육비 일부와 기부금 금액을 잘못 적어 정정을 요청합니다. 새 증빙을 함께 냅니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   12 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [김서연]
+  - type: notice
+    text: 정정 마감일과 공제 가능 여부는 회사 안내와 세법을 확인하십시오.
