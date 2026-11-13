@@ -1,0 +1,73 @@
+id: welfare-facility-complaint-report
+title: 복지시설 이용 불편 접수서
+category: welfare
+subcategory: consent
+tags: [복지시설, 불편접수, 이용불편, 고충접수, 시설민원]
+summary: 복지시설을 이용하며 겪은 불편이나 건의 내용을 시설에 공식적으로 알릴 때 쓰는 접수서입니다.
+usage: >
+  이용자나 보호자가 시설 이용 중 겪은 불편, 건의 사항을 문서로 남겨 시설 측에 전달하는 서식입니다.
+  접수자 정보와 불편이 있었던 일시·내용, 바라는 조치를 적고 서명합니다. 사실 위주로 짧게 적을수록
+  처리가 빠릅니다. 건강 상태나 병력은 적지 않고, 이 서식은 접수를 위한 틀이며 처리 결과를 보장하지
+  않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 접수자 성명과 이용자와의 관계를 적습니다.
+  - 불편이 있었던 날짜와 장소를 적습니다.
+  - 있었던 일을 사실 위주로 적습니다.
+  - 바라는 조치를 적고 날짜와 서명을 적습니다.
+faq:
+  - q: 구두로 말했는데도 서면이 필요한가요?
+    a: 서면으로 남기면 접수 사실이 분명해집니다. 시설의 접수 방식도 함께 확인하십시오.
+  - q: 익명으로 낼 수 있나요?
+    a: 시설 방침에 따라 다릅니다. 답변이 필요하면 연락처를 적으십시오.
+  - q: 답변은 언제 받나요?
+    a: 처리 기한은 시설마다 다르므로 접수 담당자에게 문의하십시오.
+related: [welfare-service-change-request, welfare-facility-visit-request, welfare-guardian-contact-change, care-service-termination-request]
+blocks:
+  - type: doc_title
+    text: 복지시설 이용 불편 접수서
+    spaced: false
+  - type: subtitle
+    text: 1. 접수자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["접수자", "", "이용자와 관계", ""]
+      - ["연락처", "", "시설명", ""]
+    sample_rows:
+      - ["", "김서연", "", "자녀"]
+      - ["", "010-1234-5678", "", "행복마을 복지관"]
+  - type: subtitle
+    text: 2. 불편 사항
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["발생 일시", "", "발생 장소", ""]
+    sample_rows:
+      - ["", "2026-11-05 오후", "", "1층 휴게실"]
+  - type: textbox
+    hint: "있었던 일을 사실 위주로 적으십시오."
+    height_mm: 30
+    sample_text: "휴게실 난방이 며칠째 작동하지 않아 이용에 불편이 있었습니다. 점검을 요청드립니다."
+  - type: subtitle
+    text: 3. 바라는 조치
+  - type: textbox
+    hint: "시설에 요청하는 조치를 적으십시오."
+    height_mm: 20
+    sample_text: "난방 설비를 점검하고 처리 결과를 연락처로 알려 주시기 바랍니다."
+  - type: para
+    text: 위와 같이 불편 사항을 접수합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    6 일
+  - type: sign_line
+    label: 접수자
+    sample_names: [김서연]
+  - type: notice
+    text: 처리 절차와 기한은 시설 안내를 확인하십시오.

@@ -1,0 +1,74 @@
+id: price-adjustment-request
+title: 계약금액 조정 신청서
+category: public
+subcategory: procure
+tags: [계약금액조정, 물가변동, 단가조정, 조달계약, 계약변경]
+summary: 계약 기간 중 자재·인건비 등 가격이 바뀌었을 때 계약금액 조정을 발주기관에 요청하는 신청서입니다.
+usage: >
+  계약을 이행하는 중 물가 변동으로 계약금액 조정이 필요한 계약상대자가 발주기관에 제출하는 서식입니다.
+  계약 정보와 조정 요청 항목의 당초 금액·조정 요청 금액, 사유를 적고 서명합니다. 조정 가능 여부와
+  기준은 계약서 조건과 관련 규정에 따르므로 발주기관 안내를 확인하십시오. 산출 근거 자료는 별도로
+  첨부합니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 계약명과 계약일, 계약금액을 적습니다.
+  - 조정을 요청하는 항목을 표에 적습니다.
+  - 가격이 바뀐 사유를 짧게 적습니다.
+  - 날짜와 신청인 서명을 적고 근거 자료를 첨부합니다.
+faq:
+  - q: 근거 자료는 무엇을 붙이나요?
+    a: 가격 변동을 보여 주는 자료와 산출 내역을 붙입니다. 필요한 자료는 발주기관에 확인하십시오.
+  - q: 언제까지 신청해야 하나요?
+    a: 기한은 계약서와 발주기관 규정에 따라 다릅니다. 계약 조건을 먼저 확인하십시오.
+  - q: 신청하면 조정이 확정되나요?
+    a: 아닙니다. 발주기관이 검토해 결정합니다.
+related: [contract-amendment-agreement, unit-price-change-notice, contract-period-extension-request, contract-completion-confirmation]
+blocks:
+  - type: doc_title
+    text: 계약금액 조정 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 계약 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["계약명", "", "", ""]
+      - ["계약일", "", "계약금액", ""]
+      - ["신청인", "", "연락처", ""]
+    sample_rows:
+      - ["", "청사 시설물 보수 용역", "", ""]
+      - ["", "2026-03-10", "", "52,000,000원"]
+      - ["", "(주)한빛물산", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 조정 요청 항목
+  - type: table
+    widths: [7, 25, 14, 18, 18, 18]
+    header: ["No", 항목, 단위, 당초 금액, 요청 금액, 비고]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "철근 자재", "톤", "850,000", "920,000", ""]
+      - ["2", "배관 자재", "식", "1,200,000", "1,310,000", ""]
+  - type: subtitle
+    text: 3. 조정 요청 사유
+  - type: textbox
+    hint: "가격이 바뀐 시기와 이유를 적으십시오."
+    height_mm: 24
+    sample_text: "계약 이후 주요 자재 가격이 올라 당초 금액으로 이행하기 어려워 조정을 요청합니다. 산출 근거는 첨부합니다."
+  - type: para
+    text: 위와 같이 계약금액 조정을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   10 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 조정 기준은 계약서와 발주기관 규정을 확인하십시오.

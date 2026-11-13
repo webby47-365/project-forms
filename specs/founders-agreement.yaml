@@ -1,0 +1,77 @@
+id: founders-agreement
+title: 공동창업자 합의서
+category: corp
+subcategory: startup
+tags: [공동창업, 창업자합의, 지분합의, 역할분담, 동업]
+summary: 공동창업자끼리 지분과 역할, 의사결정과 탈퇴 방식을 미리 정해 두는 합의서입니다.
+usage: >
+  둘 이상이 함께 창업할 때 분쟁을 줄이려고 핵심 조건을 문서로 남기는 서식입니다.
+  창업자 정보와 사업 개요, 지분과 역할, 의사결정 방식, 탈퇴 시 처리 방식을 적고 모두 서명합니다.
+  세부 조항은 상황에 맞게 조정하고, 법인 설립 후 정관·주주 간 계약과 맞는지 확인하십시오. 이 서식은
+  합의의 틀이며 법률 자문을 대신하지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 사업명과 창업자 정보를 적습니다.
+  - 창업자별 지분과 맡을 역할을 표에 적습니다.
+  - 의사결정 방식과 탈퇴 시 처리 방식을 적습니다.
+  - 날짜를 적고 모든 창업자가 서명합니다.
+faq:
+  - q: 지분은 어떻게 정하나요?
+    a: 기여도와 출자 규모를 고려해 서로 합의해 정합니다. 필요하면 전문가 상담을 받으십시오.
+  - q: 법인 설립 전에도 쓸 수 있나요?
+    a: 네, 설립 전 합의용으로 쓸 수 있습니다. 설립 후 정관과 맞는지 다시 확인하십시오.
+  - q: 이 합의서로 법적 효력이 생기나요?
+    a: 합의 내용에 따라 다릅니다. 중요한 조건은 계약서 형태로 정리하고 전문가 확인을 받으십시오.
+related: [partnership-agreement, articles-of-incorporation, capital-contribution-receipt, startup-checklist]
+blocks:
+  - type: doc_title
+    text: 공동창업자 합의서
+    spaced: true
+  - type: subtitle
+    text: 1. 사업 개요
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["사업명", "", "", ""]
+      - ["사업 분야", "", "시작 예정일", ""]
+    sample_rows:
+      - ["", "반려동물 용품 온라인 판매", "", ""]
+      - ["", "전자상거래", "", "2026-12-01"]
+  - type: subtitle
+    text: 2. 창업자별 지분과 역할
+  - type: table
+    widths: [7, 15, 12, 26, 20, 20]
+    header: ["No", 성명, 지분, 담당 역할, 출자액, 연락처]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "홍길동", "50%", "대표·영업", "20,000,000", "010-1234-5678"]
+      - ["2", "김서연", "50%", "개발·운영", "20,000,000", "010-2345-6789"]
+  - type: subtitle
+    text: 3. 합의 사항
+  - type: kv_list
+    items:
+      - "주요 사안은 창업자 과반수 동의로 결정한다."
+      - "창업자가 탈퇴할 때는 지분 처리 방식을 서로 협의해 정한다."
+      - "회사의 비밀 정보는 외부에 공개하지 않는다."
+  - type: textbox
+    hint: "추가로 합의한 내용(급여, 휴직, 지분 확정 시기 등)을 적으십시오."
+    height_mm: 22
+    sample_text: "지분은 2년에 걸쳐 확정하기로 하며, 급여는 매출 발생 후 협의해 정한다."
+  - type: para
+    text: 위 내용을 확인하고 성실히 지킬 것을 합의합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월    9 일
+  - type: sign_line
+    labels: ["창업자 1", "창업자 2"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 법인 설립 후 정관과 맞는지 확인하고, 필요하면 전문가 상담을 받으십시오.
