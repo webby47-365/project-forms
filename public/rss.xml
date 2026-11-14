@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 499종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 504종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>영업장 자체 점검표</title>
+<link>https://freeforms.kr/form/business-self-inspection-checklist/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-self-inspection-checklist/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Sat, 14 Nov 2026 00:00:00 +0900</pubDate>
+<description>영업자가 영업장의 시설·위생·서류 상태를 스스로 점검하고 조치 내용을 남기는 자체 점검표입니다.</description>
+</item>
+<item>
+<title>생활비 분담 약정서</title>
+<link>https://freeforms.kr/form/living-cost-sharing-agreement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/living-cost-sharing-agreement/</guid>
+<category>개인 · 생활·가정</category>
+<pubDate>Sat, 14 Nov 2026 00:00:00 +0900</pubDate>
+<description>함께 사는 사람끼리 월세·공과금·식비 등 생활비를 어떻게 나눌지 미리 정해 두는 약정서입니다.</description>
+</item>
+<item>
+<title>물품 공급계약서</title>
+<link>https://freeforms.kr/form/supply-agreement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/supply-agreement/</guid>
+<category>법률 · 계약</category>
+<pubDate>Sat, 14 Nov 2026 00:00:00 +0900</pubDate>
+<description>일정 기간 동안 물품을 반복해서 납품할 때 발주 방식·납품 일정·검수·대금 지급 조건을 정하는 공급계약서입니다.</description>
+</item>
+<item>
+<title>국세 환급금 계좌 신고서</title>
+<link>https://freeforms.kr/form/national-tax-refund-account-notice/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/national-tax-refund-account-notice/</guid>
+<category>공공 · 세금·사업자</category>
+<pubDate>Sat, 14 Nov 2026 00:00:00 +0900</pubDate>
+<description>세금을 돌려받을 때 입금받을 본인 명의 계좌를 세무서에 알리는 환급금 계좌 신고서입니다.</description>
+</item>
+<item>
+<title>연말정산 부양가족 중복공제 확인서</title>
+<link>https://freeforms.kr/form/year-end-dependent-duplicate-check/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-dependent-duplicate-check/</guid>
+<category>기업 · 인사·노무</category>
+<pubDate>Sat, 14 Nov 2026 00:00:00 +0900</pubDate>
+<description>같은 가족을 다른 사람이 부양가족으로 공제받지 않는다는 점을 연말정산 전에 확인해 회사에 제출하는 확인서입니다.</description>
+</item>
 <item>
 <title>공동창업자 합의서</title>
 <link>https://freeforms.kr/form/founders-agreement/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 세금·사업자</category>
 <pubDate>Mon, 09 Nov 2026 00:00:00 +0900</pubDate>
 <description>연말정산을 위해 근로자가 한 해 동안 낸 보험료 내역과 납입증명 서류를 회사에 제출할 때 쓰는 보험료 납입 자료 제출서 양식입니다.</description>
-</item>
-<item>
-<title>출자금 납입 확인서</title>
-<link>https://freeforms.kr/form/capital-contribution-receipt/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/capital-contribution-receipt/</guid>
-<category>기업 · 창업·법인</category>
-<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
-<description>회사 설립이나 증자 때 출자자가 낸 출자금의 금액과 납입일, 납입 방법을 확인해 주는 출자금 납입 확인서 양식입니다.</description>
-</item>
-<item>
-<title>계약 합의해지서</title>
-<link>https://freeforms.kr/form/contract-termination-agreement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/contract-termination-agreement/</guid>
-<category>법률 · 계약</category>
-<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
-<description>계약 당사자들이 서로 합의해 계약을 끝내고 정산 방법과 책임 범위를 정리하는 계약 합의해지서 양식입니다.</description>
-</item>
-<item>
-<title>임대인 변경 통지서</title>
-<link>https://freeforms.kr/form/landlord-change-notice/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/landlord-change-notice/</guid>
-<category>부동산 · 임대·매매</category>
-<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
-<description>임대 중인 집이나 상가의 소유자가 바뀌었을 때 새 임대인과 보증금·월세 지급 방법을 임차인에게 알리는 임대인 변경 통지서 양식입니다.</description>
-</item>
-<item>
-<title>방치 차량 신고서</title>
-<link>https://freeforms.kr/form/abandoned-vehicle-report/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/abandoned-vehicle-report/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
-<description>도로나 주차장, 공터에 오랫동안 세워진 방치 의심 차량의 위치와 상태를 적어 관할 기관에 신고하는 방치 차량 신고서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 기부금 제출서</title>
-<link>https://freeforms.kr/form/year-end-donation-submission/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-donation-submission/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Sat, 07 Nov 2026 00:00:00 +0900</pubDate>
-<description>연말정산을 위해 근로자가 한 해 동안 낸 기부금 내역과 영수증 증빙을 회사에 제출할 때 쓰는 기부금 제출서 양식입니다.</description>
 </item>
 </channel>
 </rss>

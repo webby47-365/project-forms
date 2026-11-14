@@ -1,0 +1,70 @@
+id: year-end-dependent-duplicate-check
+title: 연말정산 부양가족 중복공제 확인서
+category: corp
+subcategory: hr
+tags: [연말정산, 부양가족, 중복공제, 인적공제, 공제확인]
+summary: 같은 가족을 다른 사람이 부양가족으로 공제받지 않는다는 점을 연말정산 전에 확인해 회사에 제출하는 확인서입니다.
+usage: >
+  맞벌이 부부나 형제자매처럼 한 가족을 둘 이상이 부양할 수 있는 경우, 연말정산에서 같은 가족을 중복으로
+  올리지 않았는지 확인하려고 쓰는 서식입니다. 공제를 신청하는 가족별로 다른 공제 신청자가 있는지,
+  있다면 누구인지 적고 서명합니다. 실제 공제 가능 여부와 기준은 국세청 안내와 회사 기준에 따르며 이 서식은
+  판단을 대신하지 않습니다. 주민등록번호는 적지 않고 생년월일만 적습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신고자 성명과 소속 부서를 적습니다.
+  - 공제를 신청하는 가족의 관계와 생년월일을 적습니다.
+  - 다른 사람이 공제받는지 여부를 가족마다 표시합니다.
+  - 확인 문구를 읽고 날짜와 서명을 적습니다.
+faq:
+  - q: 배우자도 같이 확인해야 하나요?
+    a: 같은 가족을 배우자도 올릴 수 있다면 서로 중복되지 않았는지 미리 맞춰 보는 편이 안전합니다.
+  - q: 중복으로 올리면 어떻게 되나요?
+    a: 정정이나 추가 납부가 필요할 수 있습니다. 구체적인 처리는 국세청 안내와 회사 담당자에게 확인하십시오.
+  - q: 이 확인서로 공제가 확정되나요?
+    a: 아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오.
+related: [year-end-dependent-change-notice, year-end-dependent-income-statement, year-end-tax-checklist, dependent-support-fact-confirmation]
+blocks:
+  - type: doc_title
+    text: 연말정산 부양가족 중복공제 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 신고자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속 부서", ""]
+      - ["사번", "", "연락처", ""]
+    sample_rows:
+      - ["", "박민준", "", "영업지원팀"]
+      - ["", "A-1024", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 공제 신청 가족과 중복 여부
+  - type: table
+    widths: [7, 14, 12, 19, 14, 14, 20]
+    header: ["No", 성명, 관계, 생년월일, 타인 공제, 공제자 성명, 공제자 관계]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "박영수", "부", "1952-01-15", "없음", "", ""]
+      - ["2", "김영희", "모", "1955-03-02", "있음", "박서연", "누나"]
+  - type: subtitle
+    text: 3. 전달 사항
+  - type: textbox
+    hint: "중복 여부와 관련해 담당자에게 알릴 내용을 적으십시오."
+    height_mm: 16
+    sample_text: "모친은 누나와 협의해 제가 공제받기로 했으며, 변동이 생기면 바로 알리겠습니다."
+  - type: para
+    text: 위 내용이 사실과 다름이 없음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   14 일
+  - type: sign_line
+    label: 신고자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상 여부는 국세청 기준과 회사 안내를 확인하십시오.

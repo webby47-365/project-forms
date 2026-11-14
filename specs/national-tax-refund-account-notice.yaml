@@ -1,0 +1,86 @@
+id: national-tax-refund-account-notice
+title: 국세 환급금 계좌 신고서
+category: public
+subcategory: tax
+tags: [국세환급금, 환급계좌, 계좌신고, 세금환급, 환급금]
+summary: 세금을 돌려받을 때 입금받을 본인 명의 계좌를 세무서에 알리는 환급금 계좌 신고서입니다.
+usage: >
+  세금을 더 냈거나 경정청구 등으로 환급금이 생겼을 때, 입금받을 계좌를 세무서에 알리는 서식입니다.
+  신고인 정보와 환급 사유, 입금 계좌를 적고 서명합니다. 계좌는 신고인 본인 명의를 기준으로 하며,
+  제출 방법과 필요한 서류는 관할 세무서 안내를 확인하십시오. 계좌번호는 오기입이 없도록 통장 사본과
+  대조해 적습니다. 주민등록번호는 적지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신고인 성명과 연락처, 사업자 여부를 적습니다.
+  - 환급받을 세목과 귀속 연도, 사유를 적습니다.
+  - 은행명과 계좌번호, 예금주를 통장과 맞춰 적습니다.
+  - 날짜와 서명을 적고 통장 사본을 함께 냅니다.
+faq:
+  - q: 다른 사람 계좌로 받을 수 있나요?
+    a: 원칙은 본인 명의 계좌입니다. 예외가 가능한지는 관할 세무서에 확인하십시오.
+  - q: 어디에 제출하나요?
+    a: 해당 세금을 관할하는 세무서나 안내된 온라인 창구입니다. 제출처는 세무서 안내를 확인하십시오.
+  - q: 환급금은 언제 들어오나요?
+    a: 처리 기간은 세목과 심사 상황에 따라 다릅니다. 세무서 안내를 확인하십시오.
+related: [tax-data-inquiry-consent, tax-payment-extension-reason-statement, withholding-request, income-tax-filing-poa]
+blocks:
+  - type: doc_title
+    text: 국세 환급금 계좌 신고서
+    spaced: false
+  - type: subtitle
+    text: 1. 신고인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명(상호)", "", "생년월일(사업자번호)", ""]
+      - ["연락처", "", "이메일", ""]
+      - ["주소", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "한빛물산", "", "000-00-00000"]
+      - ["", "010-1234-5678", "", "hong@example.com"]
+      - ["", "서울시 ○○구 ○○로 1", "", ""]
+  - type: subtitle
+    text: 2. 환급 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["세목", "", "귀속 연도", ""]
+      - ["환급 예상액", "", "환급 사유", ""]
+    sample_rows:
+      - ["", "종합소득세", "", "2025년"]
+      - ["", "320,000원", "", "경정청구"]
+  - type: subtitle
+    text: 3. 입금 계좌
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["은행명", "", "예금주", ""]
+      - ["계좌번호", "", "", ""]
+    merges:
+      - [1, 1, 1, 3]
+    sample_rows:
+      - ["", "○○은행", "", "한빛물산"]
+      - ["", "000-000-000000", "", ""]
+  - type: para
+    text: 위 계좌로 국세 환급금을 입금해 주실 것을 신고합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   14 일
+  - type: sign_line
+    label: 신고인
+    sample_names: [홍길동]
+  - type: para
+    text: ○○세무서장 귀하
+    align: left
+  - type: notice
+    text: 제출처와 첨부 서류는 관할 세무서 안내를 확인하십시오.

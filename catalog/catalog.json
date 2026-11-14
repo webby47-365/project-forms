@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T12:21:42+09:00",
-  "count": 499,
+  "generated_at": "2026-11-14T12:00:59+09:00",
+  "count": 504,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -7385,6 +7385,108 @@
       "warnings": [],
       "created_at": "2026-10-23T10:56:49+09:00",
       "updated_at": "2026-10-23T10:56:49+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "business-self-inspection-checklist",
+      "title": "영업장 자체 점검표",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "영업장점검",
+        "자체점검",
+        "위생점검",
+        "영업시설",
+        "점검표"
+      ],
+      "summary": "영업자가 영업장의 시설·위생·서류 상태를 스스로 점검하고 조치 내용을 남기는 자체 점검표입니다.",
+      "usage": "식당·카페·매장처럼 신고 또는 허가를 받아 영업하는 곳에서 점검을 앞두거나 정기적으로 상태를 확인할 때 쓰는 서식입니다. 점검 항목별로 이상 여부를 표시하고, 미비한 곳은 조치 계획과 완료일을 적습니다. 실제 점검 기준은 업종과 관할 기관 안내에 따르므로 이 표는 스스로 확인하기 위한 기록용으로 쓰십시오. 기관 제출용 법정 서식이 아닙니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59493,
+        "docx": 38896,
+        "hwpx": 10144
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "영업장 이름과 점검일, 점검자를 적습니다.",
+        "항목마다 양호·미흡 중 하나를 표시합니다.",
+        "미흡한 항목은 조치 내용과 완료 예정일을 적습니다.",
+        "점검자가 서명하고 일정 기간 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 점검표를 기관에 제출하나요?",
+          "a": "제출 서식이 아니라 자체 기록용입니다. 제출이 필요한지는 관할 기관 안내를 확인하십시오."
+        },
+        {
+          "q": "얼마나 자주 점검하나요?",
+          "a": "정해진 주기는 업종마다 다릅니다. 월 1회처럼 스스로 정해 꾸준히 기록하는 방식이 무난합니다."
+        },
+        {
+          "q": "항목을 더 추가해도 되나요?",
+          "a": "네, 업종 특성에 맞는 항목을 아래 빈 줄에 추가해 쓰십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 점검 개요",
+          "items": [
+            "영업장명",
+            "업종",
+            "점검일",
+            "점검자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 점검 항목",
+          "items": [
+            "점검 항목",
+            "양호",
+            "미흡",
+            "조치 내용·완료 예정일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 종합 의견",
+          "items": [],
+          "note": "미흡 사항의 후속 조치와 다음 점검 계획을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-facility-improvement-confirmation",
+        "business-license-reissue-request",
+        "business-closure-confirmation",
+        "business-premises-area-change-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-14T12:00:59+09:00",
+      "updated_at": "2026-11-14T12:00:59+09:00",
       "downloads": 0
     },
     {
@@ -28981,6 +29083,117 @@
       "downloads": 0
     },
     {
+      "id": "living-cost-sharing-agreement",
+      "title": "생활비 분담 약정서",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "생활비분담",
+        "룸메이트",
+        "공동생활",
+        "공과금",
+        "분담약정"
+      ],
+      "summary": "함께 사는 사람끼리 월세·공과금·식비 등 생활비를 어떻게 나눌지 미리 정해 두는 약정서입니다.",
+      "usage": "룸메이트나 동거 가족처럼 한 집에서 비용을 나누는 사람들이 분담 항목과 비율, 납부일, 정산 방법을 서로 확인하려고 쓰는 서식입니다. 항목별로 누가 얼마를 내는지 적고, 변경과 퇴거 때의 처리 방식을 정해 둡니다. 임대차계약상의 책임은 이 약정서와 별개이므로 계약서 내용을 따로 확인하십시오. 법률 판단을 대신하지 않는 사적 합의 문서입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 62767,
+        "docx": 38838,
+        "hwpx": 10275
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "함께 사는 사람들의 이름과 연락처를 적습니다.",
+        "월세·공과금·식비 등 항목별 금액과 분담 비율을 적습니다.",
+        "납부일과 정산 방법을 정해 적습니다.",
+        "날짜를 적고 모두 서명해 사진이나 사본을 나눠 갖습니다."
+      ],
+      "faq": [
+        {
+          "q": "월세는 어떻게 나누는 게 좋나요?",
+          "a": "방 크기나 사용 면적을 고려해 합의하면 됩니다. 정해진 기준은 없으니 서로 납득할 비율로 적으십시오."
+        },
+        {
+          "q": "중간에 한 명이 나가면 어떻게 하나요?",
+          "a": "퇴거 통지 시점과 정산 방법을 미리 적어 두면 분쟁이 줄어듭니다. 아래 특약란을 활용하십시오."
+        },
+        {
+          "q": "임대인에게도 효력이 있나요?",
+          "a": "아닙니다. 사는 사람들 사이의 합의이며 임대차계약의 책임은 계약서를 따로 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 공동생활 정보",
+          "items": [
+            "거주지",
+            "약정 기간",
+            "정산일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 참여자",
+          "items": [
+            "성명",
+            "연락처",
+            "입주일",
+            "서명"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 분담 내역",
+          "items": [
+            "항목",
+            "월 금액",
+            "분담 비율",
+            "납부 담당"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 특약",
+          "items": [],
+          "note": "퇴거·변경·연체 때의 처리 방식 등 따로 정한 내용을 적으십시오."
+        }
+      ],
+      "seal": false,
+      "from_request": false,
+      "related": [
+        "move-in-checklist",
+        "monthly-rent-receipt",
+        "household-budget",
+        "item-loan-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-14T12:00:55+09:00",
+      "updated_at": "2026-11-14T12:00:55+09:00",
+      "downloads": 0
+    },
+    {
       "id": "loan-agreement",
       "title": "차용증 (금전소비대차계약서)",
       "category": "legal",
@@ -31627,6 +31840,113 @@
       "warnings": [],
       "created_at": "2026-10-06T08:17:10+09:00",
       "updated_at": "2026-10-06T08:17:46+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "national-tax-refund-account-notice",
+      "title": "국세 환급금 계좌 신고서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "국세환급금",
+        "환급계좌",
+        "계좌신고",
+        "세금환급",
+        "환급금"
+      ],
+      "summary": "세금을 돌려받을 때 입금받을 본인 명의 계좌를 세무서에 알리는 환급금 계좌 신고서입니다.",
+      "usage": "세금을 더 냈거나 경정청구 등으로 환급금이 생겼을 때, 입금받을 계좌를 세무서에 알리는 서식입니다. 신고인 정보와 환급 사유, 입금 계좌를 적고 서명합니다. 계좌는 신고인 본인 명의를 기준으로 하며, 제출 방법과 필요한 서류는 관할 세무서 안내를 확인하십시오. 계좌번호는 오기입이 없도록 통장 사본과 대조해 적습니다. 주민등록번호는 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49518,
+        "docx": 38530,
+        "hwpx": 9552
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고인 성명과 연락처, 사업자 여부를 적습니다.",
+        "환급받을 세목과 귀속 연도, 사유를 적습니다.",
+        "은행명과 계좌번호, 예금주를 통장과 맞춰 적습니다.",
+        "날짜와 서명을 적고 통장 사본을 함께 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "다른 사람 계좌로 받을 수 있나요?",
+          "a": "원칙은 본인 명의 계좌입니다. 예외가 가능한지는 관할 세무서에 확인하십시오."
+        },
+        {
+          "q": "어디에 제출하나요?",
+          "a": "해당 세금을 관할하는 세무서나 안내된 온라인 창구입니다. 제출처는 세무서 안내를 확인하십시오."
+        },
+        {
+          "q": "환급금은 언제 들어오나요?",
+          "a": "처리 기간은 세목과 심사 상황에 따라 다릅니다. 세무서 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고인",
+          "items": [
+            "성명(상호)",
+            "생년월일(사업자번호)",
+            "연락처",
+            "이메일",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 환급 내역",
+          "items": [
+            "세목",
+            "귀속 연도",
+            "환급 예상액",
+            "환급 사유"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 입금 계좌",
+          "items": [
+            "은행명",
+            "예금주",
+            "계좌번호"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "tax-data-inquiry-consent",
+        "tax-payment-extension-reason-statement",
+        "withholding-request",
+        "income-tax-filing-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-14T12:00:48+09:00",
+      "updated_at": "2026-11-14T12:00:48+09:00",
       "downloads": 0
     },
     {
@@ -44181,6 +44501,112 @@
       "seal": true
     },
     {
+      "id": "supply-agreement",
+      "title": "물품 공급계약서",
+      "category": "legal",
+      "subcategory": "contract",
+      "tags": [
+        "물품공급",
+        "공급계약",
+        "납품계약",
+        "정기납품",
+        "발주"
+      ],
+      "summary": "일정 기간 동안 물품을 반복해서 납품할 때 발주 방식·납품 일정·검수·대금 지급 조건을 정하는 공급계약서입니다.",
+      "usage": "한 번 파는 매매와 달리, 정해진 기간 동안 발주에 따라 물품을 여러 차례 납품하는 거래에서 쓰는 계약서입니다. 공급 품목과 단가, 발주 절차, 납품·검수 방법, 대금 지급일을 정해 두면 분쟁을 줄일 수 있습니다. 각 조항은 거래 사정에 맞게 고쳐 쓰고, 중요한 거래는 전문가 검토를 받으십시오. 이 서식은 틀만 제공하며 법률 판단을 대신하지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 93822,
+        "docx": 39621,
+        "hwpx": 11024
+      },
+      "pages": 2,
+      "previews": [
+        "preview-1.webp",
+        "preview-2.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "공급자와 수요자 정보, 계약 기간을 적습니다.",
+        "공급 품목과 규격, 단가를 표에 적습니다.",
+        "발주·납품·검수 방법과 대금 지급일을 확인해 고칩니다.",
+        "날짜를 적고 양쪽이 서명해 한 부씩 보관합니다."
+      ],
+      "faq": [
+        {
+          "q": "단가는 계약 기간 중 바꿀 수 있나요?",
+          "a": "양쪽이 서면으로 합의하면 바꿀 수 있습니다. 변경 방법을 조항에 미리 적어 두는 편이 좋습니다."
+        },
+        {
+          "q": "최소 발주량을 정해야 하나요?",
+          "a": "필수는 아닙니다. 공급자가 재고를 준비해야 한다면 최소 발주량을 정해 두면 분쟁을 줄입니다."
+        },
+        {
+          "q": "일반 판매계약서와 무엇이 다른가요?",
+          "a": "한 번의 매매가 아니라 기간 동안 반복되는 발주와 납품을 전제로 합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "공급자(갑)",
+            "수요자(을)",
+            "대표자",
+            "주소",
+            "계약 기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "공급 품목",
+          "items": [
+            "품목",
+            "규격",
+            "단위",
+            "단가",
+            "제1조 (목적)",
+            "제2조 (발주)",
+            "제3조 (납품과 검수)",
+            "제4조 (대금 지급)",
+            "제5조 (단가 변경)",
+            "제6조 (계약의 해지)",
+            "제7조 (비밀유지와 분쟁)"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "purchase-order",
+        "delivery-confirmation",
+        "goods-inspection-report",
+        "transaction-statement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-14T12:00:50+09:00",
+      "updated_at": "2026-11-14T12:00:50+09:00",
+      "downloads": 0
+    },
+    {
       "id": "supply-purchase-request",
       "title": "비품구매요청서",
       "category": "corp",
@@ -51787,6 +52213,109 @@
       "warnings": [],
       "created_at": "2026-11-02T11:17:58+09:00",
       "updated_at": "2026-11-02T11:17:58+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-dependent-duplicate-check",
+      "title": "연말정산 부양가족 중복공제 확인서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "연말정산",
+        "부양가족",
+        "중복공제",
+        "인적공제",
+        "공제확인"
+      ],
+      "summary": "같은 가족을 다른 사람이 부양가족으로 공제받지 않는다는 점을 연말정산 전에 확인해 회사에 제출하는 확인서입니다.",
+      "usage": "맞벌이 부부나 형제자매처럼 한 가족을 둘 이상이 부양할 수 있는 경우, 연말정산에서 같은 가족을 중복으로 올리지 않았는지 확인하려고 쓰는 서식입니다. 공제를 신청하는 가족별로 다른 공제 신청자가 있는지, 있다면 누구인지 적고 서명합니다. 실제 공제 가능 여부와 기준은 국세청 안내와 회사 기준에 따르며 이 서식은 판단을 대신하지 않습니다. 주민등록번호는 적지 않고 생년월일만 적습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 61527,
+        "docx": 38803,
+        "hwpx": 10174
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고자 성명과 소속 부서를 적습니다.",
+        "공제를 신청하는 가족의 관계와 생년월일을 적습니다.",
+        "다른 사람이 공제받는지 여부를 가족마다 표시합니다.",
+        "확인 문구를 읽고 날짜와 서명을 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "배우자도 같이 확인해야 하나요?",
+          "a": "같은 가족을 배우자도 올릴 수 있다면 서로 중복되지 않았는지 미리 맞춰 보는 편이 안전합니다."
+        },
+        {
+          "q": "중복으로 올리면 어떻게 되나요?",
+          "a": "정정이나 추가 납부가 필요할 수 있습니다. 구체적인 처리는 국세청 안내와 회사 담당자에게 확인하십시오."
+        },
+        {
+          "q": "이 확인서로 공제가 확정되나요?",
+          "a": "아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고자 정보",
+          "items": [
+            "성명",
+            "소속 부서",
+            "사번",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 공제 신청 가족과 중복 여부",
+          "items": [
+            "관계",
+            "생년월일",
+            "타인 공제",
+            "공제자 성명",
+            "공제자 관계"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 전달 사항",
+          "items": [],
+          "note": "중복 여부와 관련해 담당자에게 알릴 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-dependent-change-notice",
+        "year-end-dependent-income-statement",
+        "year-end-tax-checklist",
+        "dependent-support-fact-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-14T12:00:44+09:00",
+      "updated_at": "2026-11-14T12:00:44+09:00",
       "downloads": 0
     },
     {
