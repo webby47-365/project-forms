@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://freeforms.kr/</loc><lastmod>2026-11-16</lastmod><priority>1.0</priority></url>
   <url><loc>https://freeforms.kr/category/corp/hr/</loc><lastmod>2026-11-14</lastmod><priority>0.6</priority></url>
-  <url><loc>https://freeforms.kr/category/corp/admin/</loc><lastmod>2026-09-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freeforms.kr/category/corp/admin/</loc><lastmod>2026-11-16</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/corp/finance/</loc><lastmod>2026-11-16</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/corp/sales/</loc><lastmod>2026-11-16</lastmod><priority>0.6</priority></url>
   <url><loc>https://freeforms.kr/category/corp/startup/</loc><lastmod>2026-11-13</lastmod><priority>0.6</priority></url>
@@ -173,6 +173,7 @@
   <url><loc>https://freeforms.kr/form/complaint-goods-payment/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/complaint-handling/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/complaint-loan-return/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://freeforms.kr/form/construction-work-order/</loc><lastmod>2026-11-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/consulting-contract/</loc><lastmod>2026-09-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/contract-amendment-agreement/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority></url>
   <url><loc>https://freeforms.kr/form/contract-assignment-consent/</loc><lastmod>2026-10-29</lastmod><priority>0.8</priority></url>
