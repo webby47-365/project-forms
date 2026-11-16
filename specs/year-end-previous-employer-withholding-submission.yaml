@@ -1,0 +1,72 @@
+id: year-end-previous-employer-withholding-submission
+title: 연말정산 전 근무지 근로소득 원천징수영수증 제출서
+category: corp
+subcategory: finance
+tags: [연말정산, 전근무지, 중도입사, 원천징수영수증, 근로소득합산]
+summary: 올해 중간에 입사한 근로자가 전 근무지에서 받은 급여와 이미 낸 세금 자료를 현 직장 연말정산에 합산하도록 제출하는 전 근무지 근로소득 원천징수영수증 제출서 양식입니다.
+usage: >
+  올해 안에 직장을 옮긴 근로자는 전 근무지 소득을 현 직장 연말정산에 합산해야 합니다.
+  이 서식으로 전 근무지 상호, 근무 기간, 급여 총액과 이미 낸 세금을 정리해 전 근무지에서 받은 근로소득 원천징수영수증과 함께 담당 부서에 냅니다.
+  금액은 영수증에 적힌 대로 옮겨 적고 추정해서 적지 마십시오. 합산 방법과 제출 기한은 회사 안내와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속, 입사일을 적습니다.
+  - 전 근무지 상호와 근무 기간을 적습니다.
+  - 영수증에 적힌 급여 총액과 이미 낸 세금을 옮겨 적습니다.
+  - 원천징수영수증 사본을 붙여 담당 부서에 냅니다.
+faq:
+  - q: 전 근무지 영수증은 어디서 받나요?
+    a: 전 근무지 인사·총무 부서에 요청하면 받을 수 있습니다. 퇴사 때 받은 것이 있으면 그대로 냅니다.
+  - q: 전 근무지가 두 곳 이상이면 어떻게 하나요?
+    a: 표에 한 줄씩 나누어 적고 영수증도 곳마다 붙입니다.
+  - q: 제출하지 않으면 어떻게 되나요?
+    a: 전 근무지 소득이 합산되지 않아 나중에 직접 신고해야 할 수 있습니다. 회사 담당 부서에 확인하십시오.
+related: [year-end-tax-checklist, year-end-simplified-data-consent, year-end-correction-request, year-end-dependent-change-notice]
+blocks:
+  - type: doc_title
+    text: 연말정산 전 근무지 근로소득 원천징수영수증 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["직위", "", "입사일", ""]
+      - ["귀속 연도", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "대리", "", "2026-06-01"]
+      - ["", "2026년", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 전 근무지 소득 내역
+  - type: table
+    widths: [6, 22, 22, 18, 16, 16]
+    header: ["No", 전 근무지 상호, 근무 기간, 급여 총액(원), 결정세액(원), 기납부세액(원)]
+    empty_rows: 4
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "(주)새길데이터", "2026.01~05", "18,500,000", "310,000", "420,000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["급여 합계", "", "증빙 첨부", ""]
+    sample_rows:
+      - ["", "18,500,000원", "", "영수증 사본 1부"]
+  - type: textbox
+    hint: "전 근무지 퇴사일, 영수증을 아직 받지 못한 사정 등 참고할 내용을 적으십시오."
+    height_mm: 20
+    sample_text: "전 근무지는 2026년 5월 31일 퇴사했으며, 영수증 원본은 이번 주 안에 받아 추가로 제출하겠습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   16 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 금액은 영수증 기재 금액과 같아야 합니다. 합산 방법은 회사 안내와 국세청 안내를 확인하십시오.

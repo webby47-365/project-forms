@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T12:00:59+09:00",
-  "count": 504,
+  "generated_at": "2026-11-16T11:41:50+09:00",
+  "count": 509,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -9959,6 +9959,106 @@
       "seal": true
     },
     {
+      "id": "certified-notice-reply",
+      "title": "내용증명 회신서",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "내용증명회신",
+        "내용증명답변",
+        "답변서",
+        "회신문",
+        "이의제기"
+      ],
+      "summary": "상대방에게 내용증명을 받았을 때 받은 내용에 대한 입장과 사실관계, 요구 사항을 정리해 답하는 내용증명 회신서 양식입니다.",
+      "usage": "내용증명을 받고 가만히 있으면 상대 주장을 인정한 것처럼 보일 수 있어 입장을 문서로 남겨 두는 서식입니다. 받은 내용증명의 발송일과 제목, 그 내용에 대한 인정·부인 여부, 내 입장과 근거를 차례로 적습니다. 감정적인 표현은 빼고 날짜와 금액 같은 사실 위주로 쓰십시오. 법적 대응이 필요한 사안이면 전문가 상담을 권합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45222,
+        "docx": 38510,
+        "hwpx": 9494
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "받는 사람과 보내는 사람 정보를 적습니다.",
+        "받은 내용증명의 발송일과 제목을 적습니다.",
+        "상대 주장 중 인정하는 부분과 다투는 부분을 나누어 적습니다.",
+        "요구 사항을 적고 서명해 우체국에서 다시 내용증명으로 보냅니다."
+      ],
+      "faq": [
+        {
+          "q": "회신하지 않으면 불리한가요?",
+          "a": "회신 의무가 정해져 있지는 않지만, 입장을 남기지 않으면 다툼이 생길 때 설명이 어려울 수 있습니다."
+        },
+        {
+          "q": "회신서도 내용증명으로 보내야 하나요?",
+          "a": "보낸 사실과 내용을 남기려면 내용증명으로 보내는 편이 좋습니다. 같은 문서를 세 부 준비합니다."
+        },
+        {
+          "q": "일부만 인정해도 되나요?",
+          "a": "됩니다. 인정하는 부분과 다투는 부분을 나누어 적는 편이 오해를 줄입니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "수신인",
+            "연락처",
+            "주소",
+            "발신인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 받은 내용증명",
+          "items": [
+            "발송일",
+            "제목"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 회신 내용",
+          "items": [],
+          "note": "상대 주장 중 인정하는 부분과 사실과 다른 부분을 날짜·금액 위주로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "certified-notice",
+        "statement-of-facts",
+        "settlement-agreement",
+        "repayment-plan"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-16T11:41:42+09:00",
+      "updated_at": "2026-11-16T11:41:42+09:00",
+      "downloads": 0
+    },
+    {
       "id": "certified-notice-rescission",
       "title": "내용증명 (계약 해제 통보)",
       "category": "legal",
@@ -14421,6 +14521,114 @@
         "job-application-form"
       ],
       "seal": true
+    },
+    {
+      "id": "credit-limit-request",
+      "title": "거래처 여신한도 신청서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "여신한도",
+        "외상거래",
+        "신용한도",
+        "거래한도",
+        "거래처신용"
+      ],
+      "summary": "외상 거래를 하는 거래처에 신용 한도와 결제 조건을 정하기 위해 영업 담당이 작성하는 거래처 여신한도 신청서 양식입니다.",
+      "usage": "외상으로 물건을 공급하기 전에 거래처별로 어디까지 외상을 줄지 정해 두는 서식입니다. 거래처 정보와 거래 품목, 예상 월 거래액, 신청하는 한도와 결제 조건, 신청 사유를 적어 내부 결재를 받습니다. 한도는 거래 이력과 대금 회수 실적을 보고 정하고, 한도에 가까워지면 다시 검토하십시오. 신용 조사 결과는 회사 규정에 따라 별도로 관리합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53681,
+        "docx": 38633,
+        "hwpx": 9825
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "거래처 상호와 담당자, 거래 시작일을 적습니다.",
+        "주요 거래 품목과 예상 월 거래액을 적습니다.",
+        "신청 한도, 결제 조건과 신청 사유를 적습니다.",
+        "담당자 서명 후 결재란에 순서대로 받습니다."
+      ],
+      "faq": [
+        {
+          "q": "한도는 어떻게 정하나요?",
+          "a": "정해진 공식은 없습니다. 예상 월 거래액과 결제 주기, 과거 대금 회수 실적을 함께 보고 회사 규정에 맞춰 정합니다."
+        },
+        {
+          "q": "신규 거래처에도 한도를 주나요?",
+          "a": "거래 이력이 없으면 낮게 시작하고 실적에 따라 올리는 방식이 흔합니다."
+        },
+        {
+          "q": "담보나 보증이 필요한가요?",
+          "a": "회사 규정에 따라 다릅니다. 필요하면 사유란에 보증 방법을 함께 적으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 거래처 정보",
+          "items": [
+            "거래처 상호",
+            "대표자",
+            "담당자",
+            "연락처",
+            "거래 시작일",
+            "주요 품목"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신청 한도와 결제 조건",
+          "items": [
+            "예상 월 거래액",
+            "신청 한도",
+            "결제 조건",
+            "적용 기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 신청 사유",
+          "items": [
+            "결재",
+            "직위·성명",
+            "의견"
+          ],
+          "note": "거래 실적, 대금 회수 이력, 한도가 필요한 이유를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vendor-registration",
+        "sales-contract",
+        "payment-due-extension-request",
+        "balance-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-16T11:41:48+09:00",
+      "updated_at": "2026-11-16T11:41:48+09:00",
+      "downloads": 0
     },
     {
       "id": "customer-card",
@@ -30683,6 +30891,109 @@
       "seal": true
     },
     {
+      "id": "minor-child-account-opening-consent",
+      "title": "미성년 자녀 금융계좌 개설 동의서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "미성년자계좌",
+        "자녀통장",
+        "법정대리인동의",
+        "친권자동의",
+        "계좌개설"
+      ],
+      "summary": "미성년 자녀의 은행·증권 계좌를 만들 때 부모 등 법정대리인이 동의함을 밝히는 미성년 자녀 금융계좌 개설 동의서 양식입니다.",
+      "usage": "자녀 이름으로 통장이나 증권 계좌를 만들 때 금융회사가 법정대리인의 동의를 확인하는 경우에 쓰는 서식입니다. 자녀와 법정대리인의 인적사항, 개설할 금융회사와 계좌 종류, 동의하는 범위를 적습니다. 금융회사마다 요구 서류와 자체 양식이 다르므로 방문 전에 먼저 확인하십시오. 가족관계증명서 등 관계 증빙은 금융회사 안내에 따라 따로 준비합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50341,
+        "docx": 38545,
+        "hwpx": 9559
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "자녀의 성명과 생년월일을 적습니다.",
+        "동의하는 법정대리인의 성명과 관계를 적습니다.",
+        "금융회사, 계좌 종류와 동의 범위를 적습니다.",
+        "서명하고 금융회사가 요구하는 증빙과 함께 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "부모 중 한 명만 동의해도 되나요?",
+          "a": "금융회사마다 기준이 다릅니다. 방문 전에 한 명 동의로 충분한지 확인하십시오."
+        },
+        {
+          "q": "이 서식으로 바로 계좌가 만들어지나요?",
+          "a": "아닙니다. 금융회사 자체 양식이 우선일 수 있어, 이 서식은 동의 내용을 정리해 가는 용도입니다."
+        },
+        {
+          "q": "주민등록번호를 적어야 하나요?",
+          "a": "이 서식에는 생년월일만 적습니다. 본인 확인 번호는 금융회사 창구에서 따로 확인합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 미성년 자녀",
+          "items": [
+            "성명",
+            "생년월일",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 법정대리인",
+          "items": [
+            "자녀와의 관계",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 개설할 계좌와 동의 범위",
+          "items": [
+            "금융회사",
+            "계좌 종류",
+            "동의 범위"
+          ],
+          "note": "계좌의 사용 목적, 한도 등 법정대리인이 따로 정하는 조건이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "guardian-consent",
+        "minor-activity-consent",
+        "family-relationship-confirmation",
+        "resident-register-copy-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-16T11:41:46+09:00",
+      "updated_at": "2026-11-16T11:41:46+09:00",
+      "downloads": 0
+    },
+    {
       "id": "minor-overseas-travel-consent",
       "title": "미성년 자녀 해외여행 동의서",
       "category": "public",
@@ -43854,6 +44165,105 @@
       "seal": true
     },
     {
+      "id": "streetlight-malfunction-report",
+      "title": "가로등 고장 신고서",
+      "category": "public",
+      "subcategory": "civil",
+      "tags": [
+        "가로등고장",
+        "가로등신고",
+        "보안등",
+        "민원신고",
+        "시설물수리"
+      ],
+      "summary": "길가의 가로등이 꺼지거나 깜빡일 때 위치와 증상을 정리해 관할 기관에 수리를 요청하는 가로등 고장 신고서 양식입니다.",
+      "usage": "밤길이 어두워 위험하거나 가로등이 계속 깜빡일 때 관할 기관에 알리는 서식입니다. 고장 위치는 도로명과 가까운 건물, 전봇대 번호(있으면)를 함께 적어야 현장 확인이 빠릅니다. 고장이 보이기 시작한 날과 증상, 위험한 점을 적고 가능하면 사진을 붙입니다. 가로등은 관리 주체가 달라 지자체 안내를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 51871,
+        "docx": 38596,
+        "hwpx": 9642
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고자의 성명과 연락처를 적습니다.",
+        "고장 난 가로등의 위치를 도로명과 주변 건물로 적습니다.",
+        "증상과 처음 발견한 날, 위험한 점을 적습니다.",
+        "사진을 붙여 관할 기관에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "어디에 신고하나요?",
+          "a": "공공 도로 가로등은 보통 시·군·구청이 관리합니다. 아파트 단지 안이나 사유지는 관리사무소가 맡습니다."
+        },
+        {
+          "q": "전봇대 번호를 꼭 적어야 하나요?",
+          "a": "필수는 아닙니다. 번호가 있으면 위치 확인이 훨씬 빨라 적어 두면 좋습니다."
+        },
+        {
+          "q": "처리 결과를 받을 수 있나요?",
+          "a": "연락처를 적으면 처리 결과를 안내받을 수 있는 경우가 많습니다. 기관별 방식은 다릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고자",
+          "items": [
+            "성명",
+            "연락처",
+            "회신 방법",
+            "신고일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 고장 위치와 증상",
+          "items": [
+            "도로명 주소",
+            "주변 건물",
+            "전봇대 번호",
+            "고장 개수",
+            "증상",
+            "처음 발견일"
+          ],
+          "note": "밤길에 위험한 점(어린이 통학로, 급커브 등)과 추가로 알릴 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "road-repair-request",
+        "noise-complaint",
+        "civil-petition",
+        "illegal-dumping-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-16T11:41:50+09:00",
+      "updated_at": "2026-11-16T11:41:50+09:00",
+      "downloads": 0
+    },
+    {
       "id": "student-absence-notice",
       "title": "결석계 (학부모 확인서)",
       "category": "edu",
@@ -53020,6 +53430,108 @@
       "warnings": [],
       "created_at": "2026-11-10T13:40:44+09:00",
       "updated_at": "2026-11-10T13:40:44+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-previous-employer-withholding-submission",
+      "title": "연말정산 전 근무지 근로소득 원천징수영수증 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "전근무지",
+        "중도입사",
+        "원천징수영수증",
+        "근로소득합산"
+      ],
+      "summary": "올해 중간에 입사한 근로자가 전 근무지에서 받은 급여와 이미 낸 세금 자료를 현 직장 연말정산에 합산하도록 제출하는 전 근무지 근로소득 원천징수영수증 제출서 양식입니다.",
+      "usage": "올해 안에 직장을 옮긴 근로자는 전 근무지 소득을 현 직장 연말정산에 합산해야 합니다. 이 서식으로 전 근무지 상호, 근무 기간, 급여 총액과 이미 낸 세금을 정리해 전 근무지에서 받은 근로소득 원천징수영수증과 함께 담당 부서에 냅니다. 금액은 영수증에 적힌 대로 옮겨 적고 추정해서 적지 마십시오. 합산 방법과 제출 기한은 회사 안내와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 63786,
+        "docx": 38818,
+        "hwpx": 10184
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속, 입사일을 적습니다.",
+        "전 근무지 상호와 근무 기간을 적습니다.",
+        "영수증에 적힌 급여 총액과 이미 낸 세금을 옮겨 적습니다.",
+        "원천징수영수증 사본을 붙여 담당 부서에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "전 근무지 영수증은 어디서 받나요?",
+          "a": "전 근무지 인사·총무 부서에 요청하면 받을 수 있습니다. 퇴사 때 받은 것이 있으면 그대로 냅니다."
+        },
+        {
+          "q": "전 근무지가 두 곳 이상이면 어떻게 하나요?",
+          "a": "표에 한 줄씩 나누어 적고 영수증도 곳마다 붙입니다."
+        },
+        {
+          "q": "제출하지 않으면 어떻게 되나요?",
+          "a": "전 근무지 소득이 합산되지 않아 나중에 직접 신고해야 할 수 있습니다. 회사 담당 부서에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "직위",
+            "입사일",
+            "귀속 연도",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 전 근무지 소득 내역",
+          "items": [
+            "전 근무지 상호",
+            "근무 기간",
+            "급여 총액(원)",
+            "결정세액(원)",
+            "기납부세액(원)",
+            "급여 합계",
+            "증빙 첨부"
+          ],
+          "note": "전 근무지 퇴사일, 영수증을 아직 받지 못한 사정 등 참고할 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-simplified-data-consent",
+        "year-end-correction-request",
+        "year-end-dependent-change-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-16T11:41:40+09:00",
+      "updated_at": "2026-11-16T11:41:40+09:00",
       "downloads": 0
     },
     {
