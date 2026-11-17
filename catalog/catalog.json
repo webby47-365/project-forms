@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T18:38:45+09:00",
-  "count": 510,
+  "generated_at": "2026-11-17T14:02:25+09:00",
+  "count": 515,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -12782,6 +12782,117 @@
       "seal": true
     },
     {
+      "id": "consumer-dispute-mediation-application",
+      "title": "소비자 분쟁 조정 신청서",
+      "category": "legal",
+      "subcategory": "litigation",
+      "tags": [
+        "소비자분쟁조정",
+        "피해구제신청",
+        "분쟁조정신청서",
+        "환불분쟁",
+        "소비자피해"
+      ],
+      "summary": "물품·서비스 대금 환불이나 보상을 두고 판매자와 합의하지 못했을 때 분쟁 조정 기관에 내는 소비자 분쟁 조정 신청서 양식입니다.",
+      "usage": "판매자와 환불·교환·보상 협의가 되지 않을 때 소비자 피해구제 기관 등에 조정을 요청하며 쓰는 신청서입니다. 신청인과 상대방 정보, 거래 내용과 금액, 분쟁 경위와 원하는 해결 방법을 차례로 적고 증빙을 붙입니다. 접수 기관마다 전용 양식이 있을 수 있으므로 먼저 확인하십시오. 조정 결과나 승소 여부는 이 서식으로 정해지지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55120,
+        "docx": 38647,
+        "hwpx": 9663
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인과 상대방(판매자)의 정보를 적습니다.",
+        "거래 일자와 품목, 결제 금액을 적습니다.",
+        "분쟁 경위를 시간 순서로 간단히 적습니다.",
+        "원하는 해결 방법을 표시하고 증빙을 붙여 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "판매자와 먼저 협의해야 하나요?",
+          "a": "대부분 먼저 시도한 기록을 묻습니다. 환불 요청 내용을 문자·메일로 남겨 두십시오."
+        },
+        {
+          "q": "어떤 증빙을 붙이나요?",
+          "a": "결제 영수증, 계약서, 대화 내용 캡처, 상품 사진 등 거래와 분쟁을 보여 주는 자료입니다."
+        },
+        {
+          "q": "기관 전용 양식이 따로 있으면 어떻게 하나요?",
+          "a": "기관 양식을 우선하고, 이 서식은 내용을 정리하는 용도로 쓰십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인과 상대방",
+          "items": [
+            "신청인",
+            "연락처",
+            "상대방 상호",
+            "상대방 연락처",
+            "상대방 주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 거래 내용",
+          "items": [
+            "거래 일자",
+            "결제 금액",
+            "품목·서비스",
+            "결제 수단"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 분쟁 경위",
+          "items": [],
+          "note": "문제가 생긴 시점부터 판매자와 협의한 과정까지 시간 순서로 적으십시오."
+        },
+        {
+          "title": "4. 원하는 해결 방법",
+          "items": [
+            "희망 사항",
+            "첨부 증빙"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "claim-assignment-notice",
+        "evidence-submission-list",
+        "certified-notice-goods-payment",
+        "damage-calculation-statement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-17T14:02:25+09:00",
+      "updated_at": "2026-11-17T14:02:25+09:00",
+      "downloads": 0
+    },
+    {
       "id": "contract-amendment-agreement",
       "title": "계약 변경 합의서",
       "category": "legal",
@@ -17798,6 +17909,99 @@
         "campaign-result"
       ],
       "seal": true
+    },
+    {
+      "id": "event-safety-pledge",
+      "title": "행사 참가 안전 서약서",
+      "category": "public",
+      "subcategory": "consent",
+      "tags": [
+        "안전서약서",
+        "행사안전서약",
+        "참가서약서",
+        "안전수칙동의",
+        "현장체험서약"
+      ],
+      "summary": "행사나 현장 활동에 참가하는 사람이 주최 측 안전수칙을 지키겠다고 서약하는 행사 참가 안전 서약서 양식입니다.",
+      "usage": "체육대회·야외 행사·현장 체험처럼 안전수칙이 필요한 행사에서 참가자에게 받는 서약서입니다. 행사 정보와 참가자 정보를 적고 주최 측이 정한 수칙을 읽은 뒤 지키겠다는 항목에 표시하고 서명합니다. 미성년자는 보호자 동의서를 함께 받으십시오. 수칙 내용은 행사 성격에 맞게 고쳐 쓰며, 책임 범위는 별도 약관이나 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55568,
+        "docx": 38620,
+        "hwpx": 9548
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "행사명과 일시, 장소를 적습니다.",
+        "참가자 성명과 연락처를 적습니다.",
+        "안전수칙을 읽고 지킬 항목에 표시합니다.",
+        "서약 날짜를 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "안전수칙은 어떻게 정하나요?",
+          "a": "행사 성격에 맞게 주최 측이 정합니다. 아래 예시 항목을 고쳐 쓰면 됩니다."
+        },
+        {
+          "q": "미성년자도 직접 서명하나요?",
+          "a": "보호자 동의서를 따로 받는 편이 안전합니다. 미성년자 활동 동의서를 함께 쓰십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 행사 정보",
+          "items": [
+            "행사명",
+            "주최",
+            "일시",
+            "장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 참가자",
+          "items": [
+            "성명",
+            "소속",
+            "연락처",
+            "비상 연락처"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "minor-activity-consent",
+        "event-application",
+        "event-plan",
+        "event-photo-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-17T14:02:21+09:00",
+      "updated_at": "2026-11-17T14:02:21+09:00",
+      "downloads": 0
     },
     {
       "id": "evidence-submission-list",
@@ -32984,6 +33188,106 @@
       "warnings": [],
       "created_at": "2026-11-11T11:40:59+09:00",
       "updated_at": "2026-11-11T11:40:59+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "parent-counseling-request",
+      "title": "학부모 상담 신청서",
+      "category": "edu",
+      "subcategory": "school",
+      "tags": [
+        "학부모상담신청서",
+        "상담신청",
+        "담임상담",
+        "학부모면담",
+        "학교상담"
+      ],
+      "summary": "학부모가 담임교사나 학교에 상담 일정과 상담하고 싶은 내용을 미리 알리는 학부모 상담 신청서 양식입니다.",
+      "usage": "학부모가 자녀의 학교생활이나 진로에 대해 담임교사와 면담하거나 통화하고 싶을 때 쓰는 신청서입니다. 학생 정보와 희망 일시, 상담 방식, 나누고 싶은 주제를 적어 담임교사에게 냅니다. 민감한 내용은 자세히 적지 않고 주제만 적은 뒤 상담 때 말씀하셔도 됩니다. 실제 일정은 학교와 조율해 확정하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48178,
+        "docx": 38544,
+        "hwpx": 9547
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "학생의 학년·반·이름과 신청 학부모 정보를 적습니다.",
+        "희망하는 상담 방식을 표시합니다.",
+        "가능한 날짜와 시간을 1~3순위로 적습니다.",
+        "상담하고 싶은 주제를 간단히 적어 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "상담 내용을 자세히 적어야 하나요?",
+          "a": "주제만 간단히 적으면 됩니다. 자세한 이야기는 상담 때 직접 나누셔도 됩니다."
+        },
+        {
+          "q": "희망 일시가 맞지 않으면 어떻게 되나요?",
+          "a": "담임교사가 가능한 시간을 다시 안내합니다. 여러 순위로 적어 두면 조율이 쉽습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 학생과 신청자",
+          "items": [
+            "학생 이름",
+            "학년·반",
+            "신청자",
+            "학생과의 관계",
+            "연락처",
+            "통화 가능 시간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 희망 상담 방식과 일시",
+          "items": [
+            "상담 방식",
+            "1순위",
+            "2순위",
+            "3순위"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 상담 주제",
+          "items": [],
+          "note": "상담하고 싶은 주제를 간단히 적으십시오. 자세한 내용은 상담 때 말씀하셔도 됩니다."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "counseling-log",
+        "student-early-leave-request",
+        "afterschool-program-application",
+        "guardian-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-17T14:02:24+09:00",
+      "updated_at": "2026-11-17T14:02:24+09:00",
       "downloads": 0
     },
     {
@@ -51956,6 +52260,109 @@
       "seal": true
     },
     {
+      "id": "workers-comp-accident-fact-confirmation",
+      "title": "업무상 사고 사실 확인서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "산재사실확인서",
+        "업무상사고확인서",
+        "재해경위확인서",
+        "사업주확인서",
+        "산재신청"
+      ],
+      "summary": "근로자가 업무 중 겪은 사고의 일시·장소·경위를 사업주나 동료가 사실대로 확인해 적는 업무상 사고 사실 확인서 양식입니다.",
+      "usage": "업무 중 사고가 났을 때 사고 일시와 장소, 경위를 사업장 측이 확인해 남기는 서식입니다. 산재 신청이나 내부 보고 때 참고 자료로 쓰며, 사고 당시 상황을 아는 확인자가 본 사실만 적습니다. 치료·병명 같은 건강 정보는 적지 않고, 추측이나 책임 판단도 쓰지 않습니다. 신청 기관의 별도 양식과 첨부 서류는 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 44955,
+        "docx": 38494,
+        "hwpx": 9440
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "사고를 당한 근로자와 사업장 정보를 적습니다.",
+        "사고 일시와 장소, 당시 맡은 업무를 적습니다.",
+        "사고 경위를 본 그대로 시간 순서로 적습니다.",
+        "확인자가 서명하고 사업주 확인을 받습니다."
+      ],
+      "faq": [
+        {
+          "q": "병명이나 치료 내용도 적나요?",
+          "a": "적지 않습니다. 이 서식은 사고 사실만 확인하며 건강 정보는 신청 서류에 따로 냅니다."
+        },
+        {
+          "q": "목격자가 없으면 쓸 수 없나요?",
+          "a": "사업주 확인만으로도 작성할 수 있습니다. 사고를 직접 본 사람이 있으면 함께 적는 편이 좋습니다."
+        },
+        {
+          "q": "이 확인서로 산재가 인정되나요?",
+          "a": "이 서식은 참고 자료입니다. 인정 여부는 신청 기관이 판단하므로 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 근로자와 사업장",
+          "items": [
+            "근로자",
+            "소속·직위",
+            "사업장명",
+            "대표자",
+            "사업장 주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 사고 개요",
+          "items": [
+            "사고 일시",
+            "사고 장소",
+            "당시 업무",
+            "목격자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 사고 경위",
+          "items": [],
+          "note": "본 사실만 시간 순서로 적으십시오. 추측과 책임 판단은 적지 않습니다."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "workers-comp-claim-poa",
+        "incident-report",
+        "social-insurance-filing-poa",
+        "statement-of-facts"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-17T14:02:19+09:00",
+      "updated_at": "2026-11-17T14:02:19+09:00",
+      "downloads": 0
+    },
+    {
       "id": "workers-comp-claim-poa",
       "title": "산재보험 급여 청구 위임장",
       "category": "public",
@@ -53449,6 +53856,113 @@
       "warnings": [],
       "created_at": "2026-11-04T11:59:52+09:00",
       "updated_at": "2026-11-04T11:59:52+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-midyear-resignee-settlement-request",
+      "title": "중도 퇴사자 연말정산 자료 요청서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "중도퇴사연말정산",
+        "퇴사자정산",
+        "근로소득원천징수영수증",
+        "연말정산요청",
+        "퇴직자"
+      ],
+      "summary": "연도 중간에 퇴사한 근로자가 이전 회사에 근로소득 원천징수영수증 발급과 정산 자료를 요청하는 중도 퇴사자 연말정산 자료 요청서 양식입니다.",
+      "usage": "연도 중에 퇴사해 이미 회사를 떠난 근로자가 이전 회사에 퇴사 연도의 근로소득 원천징수영수증과 정산 내역을 요청할 때 쓰는 서식입니다. 요청자 정보와 근무 기간, 필요한 서류의 종류와 받을 방법을 적어 회사 인사·급여 담당 부서에 냅니다. 새 직장이나 세무서에 제출해야 하는 경우 제출처와 기한도 함께 적으면 처리가 빠릅니다. 발급 가능 시기와 방법은 회사 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53936,
+        "docx": 38719,
+        "hwpx": 9985
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청자의 성명과 근무 부서, 근무 기간을 적습니다.",
+        "필요한 서류 종류를 표시합니다.",
+        "서류를 받을 방법과 연락처를 적습니다.",
+        "제출처가 있으면 제출처와 기한을 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "퇴사 연도 자료는 언제 받을 수 있나요?",
+          "a": "회사의 정산 일정에 따라 다릅니다. 발급 시기는 담당 부서에 먼저 확인하십시오."
+        },
+        {
+          "q": "새 직장에 어떤 서류를 내야 하나요?",
+          "a": "새 직장 안내를 따르되, 보통 이전 회사의 근로소득 원천징수영수증을 요구합니다."
+        },
+        {
+          "q": "이미 퇴사했는데 회사에 요청할 수 있나요?",
+          "a": "퇴사 후에도 본인 근로소득 자료는 요청할 수 있습니다. 신분 확인 방법은 회사 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청자",
+          "items": [
+            "성명",
+            "근무 부서",
+            "입사일",
+            "퇴사일",
+            "연락처",
+            "이메일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 요청 서류",
+          "items": [
+            "요청 서류",
+            "필요 부수"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 수령 방법과 제출처",
+          "items": [
+            "수령 방법",
+            "수령 주소·메일",
+            "제출처",
+            "제출 기한"
+          ],
+          "note": "요청 사유나 회사에 전달할 말을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-previous-employer-withholding-submission",
+        "year-end-tax-checklist",
+        "career-certificate-request",
+        "separation-certificate-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-17T14:02:16+09:00",
+      "updated_at": "2026-11-17T14:02:16+09:00",
       "downloads": 0
     },
     {

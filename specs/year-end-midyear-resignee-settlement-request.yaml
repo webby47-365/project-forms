@@ -1,0 +1,77 @@
+id: year-end-midyear-resignee-settlement-request
+title: 중도 퇴사자 연말정산 자료 요청서
+category: corp
+subcategory: finance
+tags: [중도퇴사연말정산, 퇴사자정산, 근로소득원천징수영수증, 연말정산요청, 퇴직자]
+summary: 연도 중간에 퇴사한 근로자가 이전 회사에 근로소득 원천징수영수증 발급과 정산 자료를 요청하는 중도 퇴사자 연말정산 자료 요청서 양식입니다.
+usage: >
+  연도 중에 퇴사해 이미 회사를 떠난 근로자가 이전 회사에 퇴사 연도의 근로소득 원천징수영수증과 정산 내역을 요청할 때 쓰는 서식입니다.
+  요청자 정보와 근무 기간, 필요한 서류의 종류와 받을 방법을 적어 회사 인사·급여 담당 부서에 냅니다.
+  새 직장이나 세무서에 제출해야 하는 경우 제출처와 기한도 함께 적으면 처리가 빠릅니다. 발급 가능 시기와 방법은 회사 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청자의 성명과 근무 부서, 근무 기간을 적습니다.
+  - 필요한 서류 종류를 표시합니다.
+  - 서류를 받을 방법과 연락처를 적습니다.
+  - 제출처가 있으면 제출처와 기한을 적고 서명합니다.
+faq:
+  - q: 퇴사 연도 자료는 언제 받을 수 있나요?
+    a: 회사의 정산 일정에 따라 다릅니다. 발급 시기는 담당 부서에 먼저 확인하십시오.
+  - q: 새 직장에 어떤 서류를 내야 하나요?
+    a: 새 직장 안내를 따르되, 보통 이전 회사의 근로소득 원천징수영수증을 요구합니다.
+  - q: 이미 퇴사했는데 회사에 요청할 수 있나요?
+    a: 퇴사 후에도 본인 근로소득 자료는 요청할 수 있습니다. 신분 확인 방법은 회사 안내를 확인하십시오.
+related: [year-end-previous-employer-withholding-submission, year-end-tax-checklist, career-certificate-request, separation-certificate-request]
+blocks:
+  - type: doc_title
+    text: 중도 퇴사자 연말정산 자료 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "근무 부서", ""]
+      - ["입사일", "", "퇴사일", ""]
+      - ["연락처", "", "이메일", ""]
+    sample_rows:
+      - ["", "박민준", "", "영업지원팀"]
+      - ["", "2024-03-04", "", "2026-08-31"]
+      - ["", "010-1234-5678", "", "minjun@example.com"]
+  - type: subtitle
+    text: 2. 요청 서류
+  - type: table
+    widths: [8, 38, 18, 36]
+    header: ["No", 요청 서류, 필요 부수, 비고]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "근로소득 원천징수영수증", "1부", "퇴사 연도 분"]
+      - ["2", "급여 지급 내역서", "1부", "1월~8월"]
+  - type: subtitle
+    text: 3. 수령 방법과 제출처
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["수령 방법", "", "수령 주소·메일", ""]
+      - ["제출처", "", "제출 기한", ""]
+    sample_rows:
+      - ["", "이메일 발송", "", "minjun@example.com"]
+      - ["", "새 직장 인사팀", "", "2026-12-20"]
+  - type: textbox
+    hint: "요청 사유나 회사에 전달할 말을 적으십시오."
+    height_mm: 20
+    sample_text: "새 직장 연말정산에 제출해야 해서 퇴사 연도 근로소득 원천징수영수증 발급을 요청합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   17 일
+  - type: sign_line
+    labels: ["요청자"]
+    sample_names: [박민준]
+  - type: notice
+    text: 발급 가능 시기와 신분 확인 방법은 이전 회사의 안내를 확인하십시오.

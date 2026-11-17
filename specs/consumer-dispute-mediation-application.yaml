@@ -1,0 +1,83 @@
+id: consumer-dispute-mediation-application
+title: 소비자 분쟁 조정 신청서
+category: legal
+subcategory: litigation
+tags: [소비자분쟁조정, 피해구제신청, 분쟁조정신청서, 환불분쟁, 소비자피해]
+summary: 물품·서비스 대금 환불이나 보상을 두고 판매자와 합의하지 못했을 때 분쟁 조정 기관에 내는 소비자 분쟁 조정 신청서 양식입니다.
+usage: >
+  판매자와 환불·교환·보상 협의가 되지 않을 때 소비자 피해구제 기관 등에 조정을 요청하며 쓰는 신청서입니다.
+  신청인과 상대방 정보, 거래 내용과 금액, 분쟁 경위와 원하는 해결 방법을 차례로 적고 증빙을 붙입니다.
+  접수 기관마다 전용 양식이 있을 수 있으므로 먼저 확인하십시오. 조정 결과나 승소 여부는 이 서식으로 정해지지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신청인과 상대방(판매자)의 정보를 적습니다.
+  - 거래 일자와 품목, 결제 금액을 적습니다.
+  - 분쟁 경위를 시간 순서로 간단히 적습니다.
+  - 원하는 해결 방법을 표시하고 증빙을 붙여 냅니다.
+faq:
+  - q: 판매자와 먼저 협의해야 하나요?
+    a: 대부분 먼저 시도한 기록을 묻습니다. 환불 요청 내용을 문자·메일로 남겨 두십시오.
+  - q: 어떤 증빙을 붙이나요?
+    a: 결제 영수증, 계약서, 대화 내용 캡처, 상품 사진 등 거래와 분쟁을 보여 주는 자료입니다.
+  - q: 기관 전용 양식이 따로 있으면 어떻게 하나요?
+    a: 기관 양식을 우선하고, 이 서식은 내용을 정리하는 용도로 쓰십시오.
+related: [claim-assignment-notice, evidence-submission-list, certified-notice-goods-payment, damage-calculation-statement]
+blocks:
+  - type: doc_title
+    text: 소비자 분쟁 조정 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 신청인과 상대방
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["신청인", "", "연락처", ""]
+      - ["상대방 상호", "", "상대방 연락처", ""]
+      - ["상대방 주소", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "한빛커머스", "", "02-123-4567"]
+      - ["", "서울시 중구 예시로 10", "", ""]
+  - type: subtitle
+    text: 2. 거래 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["거래 일자", "", "결제 금액", ""]
+      - ["품목·서비스", "", "결제 수단", ""]
+    sample_rows:
+      - ["", "2026-10-05", "", "320,000원"]
+      - ["", "공기청정기", "", "신용카드"]
+  - type: subtitle
+    text: 3. 분쟁 경위
+  - type: textbox
+    hint: "문제가 생긴 시점부터 판매자와 협의한 과정까지 시간 순서로 적으십시오."
+    height_mm: 40
+    sample_text: "제품을 받은 뒤 작동 불량이 있어 10월 12일 환불을 요청했으나 판매자가 거절했습니다. 이후 두 차례 문자로 다시 요청했으나 답이 없었습니다."
+  - type: subtitle
+    text: 4. 원하는 해결 방법
+  - type: grid
+    widths: [16, 84]
+    label_cols: [0]
+    row_height_mm: 9
+    rows:
+      - ["희망 사항", "□ 환불  □ 교환  □ 수리  □ 보상 (금액:        원)"]
+      - ["첨부 증빙", ""]
+    sample_rows:
+      - ["", "■ 환불  □ 교환  □ 수리  □ 보상 (금액:        원)"]
+      - ["", "영수증, 문자 캡처, 제품 사진"]
+  - type: date_line
+    sample_text: 2026 년   11 월   17 일
+  - type: sign_line
+    labels: ["신청인"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 접수 기관의 전용 양식과 제출 방법을 먼저 확인하십시오.

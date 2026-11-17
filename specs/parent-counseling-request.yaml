@@ -1,0 +1,71 @@
+id: parent-counseling-request
+title: 학부모 상담 신청서
+category: edu
+subcategory: school
+tags: [학부모상담신청서, 상담신청, 담임상담, 학부모면담, 학교상담]
+summary: 학부모가 담임교사나 학교에 상담 일정과 상담하고 싶은 내용을 미리 알리는 학부모 상담 신청서 양식입니다.
+usage: >
+  학부모가 자녀의 학교생활이나 진로에 대해 담임교사와 면담하거나 통화하고 싶을 때 쓰는 신청서입니다.
+  학생 정보와 희망 일시, 상담 방식, 나누고 싶은 주제를 적어 담임교사에게 냅니다.
+  민감한 내용은 자세히 적지 않고 주제만 적은 뒤 상담 때 말씀하셔도 됩니다. 실제 일정은 학교와 조율해 확정하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 학생의 학년·반·이름과 신청 학부모 정보를 적습니다.
+  - 희망하는 상담 방식을 표시합니다.
+  - 가능한 날짜와 시간을 1~3순위로 적습니다.
+  - 상담하고 싶은 주제를 간단히 적어 냅니다.
+faq:
+  - q: 상담 내용을 자세히 적어야 하나요?
+    a: 주제만 간단히 적으면 됩니다. 자세한 이야기는 상담 때 직접 나누셔도 됩니다.
+  - q: 희망 일시가 맞지 않으면 어떻게 되나요?
+    a: 담임교사가 가능한 시간을 다시 안내합니다. 여러 순위로 적어 두면 조율이 쉽습니다.
+related: [counseling-log, student-early-leave-request, afterschool-program-application, guardian-consent]
+blocks:
+  - type: doc_title
+    text: 학부모 상담 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 학생과 신청자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["학생 이름", "", "학년·반", ""]
+      - ["신청자", "", "학생과의 관계", ""]
+      - ["연락처", "", "통화 가능 시간", ""]
+    sample_rows:
+      - ["", "홍길동", "", "3학년 2반"]
+      - ["", "김서연", "", "어머니"]
+      - ["", "010-1234-5678", "", "평일 18시 이후"]
+  - type: subtitle
+    text: 2. 희망 상담 방식과 일시
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["상담 방식", "□ 방문  □ 전화  □ 화상", "", ""]
+      - ["1순위", "", "2순위", ""]
+      - ["3순위", "", "", ""]
+    merges:
+      - [0, 1, 0, 3]
+    sample_rows:
+      - ["", "■ 방문  □ 전화  □ 화상", "", ""]
+      - ["", "11월 24일 16:00", "", "11월 25일 16:30"]
+      - ["", "11월 26일 17:00", "", ""]
+  - type: subtitle
+    text: 3. 상담 주제
+  - type: textbox
+    hint: "상담하고 싶은 주제를 간단히 적으십시오. 자세한 내용은 상담 때 말씀하셔도 됩니다."
+    height_mm: 35
+    sample_text: "최근 학교생활 적응 상황과 2학기 학습 계획, 진로 선택 과목에 대해 상담하고 싶습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   17 일
+  - type: sign_line
+    labels: ["신청자"]
+    sample_names: [김서연]
+  - type: notice
+    text: 실제 상담 일정은 담임교사와 조율해 확정하십시오.

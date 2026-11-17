@@ -1,0 +1,71 @@
+id: workers-comp-accident-fact-confirmation
+title: 업무상 사고 사실 확인서
+category: public
+subcategory: insurance
+tags: [산재사실확인서, 업무상사고확인서, 재해경위확인서, 사업주확인서, 산재신청]
+summary: 근로자가 업무 중 겪은 사고의 일시·장소·경위를 사업주나 동료가 사실대로 확인해 적는 업무상 사고 사실 확인서 양식입니다.
+usage: >
+  업무 중 사고가 났을 때 사고 일시와 장소, 경위를 사업장 측이 확인해 남기는 서식입니다.
+  산재 신청이나 내부 보고 때 참고 자료로 쓰며, 사고 당시 상황을 아는 확인자가 본 사실만 적습니다.
+  치료·병명 같은 건강 정보는 적지 않고, 추측이나 책임 판단도 쓰지 않습니다. 신청 기관의 별도 양식과 첨부 서류는 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 사고를 당한 근로자와 사업장 정보를 적습니다.
+  - 사고 일시와 장소, 당시 맡은 업무를 적습니다.
+  - 사고 경위를 본 그대로 시간 순서로 적습니다.
+  - 확인자가 서명하고 사업주 확인을 받습니다.
+faq:
+  - q: 병명이나 치료 내용도 적나요?
+    a: 적지 않습니다. 이 서식은 사고 사실만 확인하며 건강 정보는 신청 서류에 따로 냅니다.
+  - q: 목격자가 없으면 쓸 수 없나요?
+    a: 사업주 확인만으로도 작성할 수 있습니다. 사고를 직접 본 사람이 있으면 함께 적는 편이 좋습니다.
+  - q: 이 확인서로 산재가 인정되나요?
+    a: 이 서식은 참고 자료입니다. 인정 여부는 신청 기관이 판단하므로 안내를 확인하십시오.
+related: [workers-comp-claim-poa, incident-report, social-insurance-filing-poa, statement-of-facts]
+blocks:
+  - type: doc_title
+    text: 업무상 사고 사실 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 근로자와 사업장
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["근로자", "", "소속·직위", ""]
+      - ["사업장명", "", "대표자", ""]
+      - ["사업장 주소", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "홍길동", "", "물류팀 사원"]
+      - ["", "(주)한빛물산", "", "김서연"]
+      - ["", "서울시 중구 예시로 10", "", ""]
+  - type: subtitle
+    text: 2. 사고 개요
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["사고 일시", "", "사고 장소", ""]
+      - ["당시 업무", "", "목격자", ""]
+    sample_rows:
+      - ["", "2026-11-10 14:20", "", "본사 창고 2층"]
+      - ["", "상품 적재 작업", "", "이수현"]
+  - type: subtitle
+    text: 3. 사고 경위
+  - type: textbox
+    hint: "본 사실만 시간 순서로 적으십시오. 추측과 책임 판단은 적지 않습니다."
+    height_mm: 45
+    sample_text: "14시 20분경 창고 2층에서 상품을 선반에 올리던 중 바닥에 놓인 상자에 발이 걸려 넘어졌다고 근로자가 말했고, 옆에서 작업하던 직원이 이를 보았습니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   12 일
+  - type: sign_line
+    labels: ["확인자", "사업주"]
+    sample_names: [이수현, 김서연]
+  - type: notice
+    text: 건강 정보는 적지 않습니다. 신청 기관의 양식과 첨부 서류를 확인하십시오.
