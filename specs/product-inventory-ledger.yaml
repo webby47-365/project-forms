@@ -1,0 +1,74 @@
+id: product-inventory-ledger
+title: 상품수불부
+category: corp
+subcategory: finance
+tags: [상품수불부, 재고수불부, 입출고대장, 재고관리, 상품재고, inventory-ledger]
+summary: 상품별로 입고·출고 수량과 재고를 일자순으로 기록하는 상품수불부 양식입니다.
+usage: >
+  상품을 사들여 보관하고 판매하는 사업장에서 상품별 입고·출고·재고 수량을 일자순으로
+  기록하는 장부입니다. 상품명과 규격, 전기이월 수량을 먼저 적고, 거래가 있을 때마다
+  입고 또는 출고 수량을 적은 뒤 잔량을 바로 갱신합니다. 거래처와 증빙번호를 함께
+  남기면 나중에 확인하기 쉽습니다. 월말에는 합계를 계산해 실제 재고와 맞는지
+  확인하고 담당자와 책임자가 서명합니다.
+source: original
+featured: false
+target_pages: 1
+version: 1
+created_by: agent
+status: published
+from_request: true
+howto:
+  - 상품명, 규격, 단위, 관리 기간과 전기이월 수량을 적습니다.
+  - 입고나 출고가 생길 때마다 날짜순으로 한 줄씩 적습니다.
+  - 거래처와 증빙번호를 적어 근거를 남깁니다.
+  - 거래마다 잔량을 바로 갱신합니다.
+  - 월말에 합계를 내고 실제 재고와 맞는지 확인한 뒤 서명합니다.
+faq:
+  - q: 상품이 여러 개면 장부를 따로 쓰나요?
+    a: 상품별로 한 장씩 쓰는 것이 확인하기 편합니다. 종류가 많으면 상품마다 따로 출력해 사용하십시오.
+  - q: 장부 잔량과 실제 재고가 다르면 어떻게 하나요?
+    a: 거래 순서대로 누락이나 계산 오류를 다시 확인하고, 차이와 사유를 비고란에 남기십시오.
+related: [purchase-order, transaction-statement, asset-ledger, delivery-confirmation]
+blocks:
+  - type: doc_title
+    text: 상품수불부
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["상품명", "", "규격·단위", ""]
+      - ["관리 기간", "", "전기이월", ""]
+    sample_rows:
+      - ["", "무선 마우스 M200", "", "개"]
+      - ["", "2026-09 월", "", "40"]
+  - type: subtitle
+    text: 입출고 내역
+  - type: table
+    widths: [13, 20, 10, 10, 10, 20, 17]
+    header: [일자, 거래처, 입고, 출고, 잔량, 증빙번호, 비고]
+    empty_rows: 10
+    row_height_mm: 7
+    body_align: center
+    sample_rows:
+      - ["2026-09-03", "한빛물산", "100", "", "140", "IN-0903", ""]
+      - ["2026-09-07", "새길데이터", "", "30", "110", "OUT-0907", ""]
+      - ["2026-09-15", "한빛커머스", "", "45", "65", "OUT-0915", ""]
+      - ["2026-09-24", "한빛물산", "50", "", "115", "IN-0924", ""]
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    rows:
+      - ["입고 합계", "", "출고 합계", ""]
+      - ["기말 재고", "", "실사 재고", ""]
+    sample_rows:
+      - ["", "150", "", "75"]
+      - ["", "115", "", "115"]
+  - type: date_line
+    sample_text: 2026 년    9 월    30 일
+  - type: sign_line
+    labels: ["담당자", "책임자"]
+    sample_names: [박민준, 김서연]
+  - type: notice
+    text: 잔량은 전기이월 수량에서 시작해 입고는 더하고 출고는 빼서 계산하며, 월말에 실사 재고와 대조하십시오.

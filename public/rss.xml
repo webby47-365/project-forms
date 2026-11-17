@@ -3,10 +3,18 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 515종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 516종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
 <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>상품수불부</title>
+<link>https://freeforms.kr/form/product-inventory-ledger/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/product-inventory-ledger/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+<description>상품별로 입고·출고 수량과 재고를 일자순으로 기록하는 상품수불부 양식입니다.</description>
+</item>
 <item>
 <title>소비자 분쟁 조정 신청서</title>
 <link>https://freeforms.kr/form/consumer-dispute-mediation-application/</link>
@@ -238,14 +246,6 @@
 <category>공공 · 인허가·영업신고</category>
 <pubDate>Wed, 11 Nov 2026 00:00:00 +0900</pubDate>
 <description>영업장의 시설을 고치거나 새로 갖춘 뒤 개선 내용과 완료일을 확인해 관할 기관 제출용으로 남기는 영업 시설 개선 완료 확인서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 교육비 납입 자료 제출서</title>
-<link>https://freeforms.kr/form/year-end-education-expense-submission/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-education-expense-submission/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Wed, 11 Nov 2026 00:00:00 +0900</pubDate>
-<description>연말정산을 위해 근로자가 본인·자녀 등의 교육비 납입 내역과 납입증명 서류를 회사에 제출할 때 쓰는 교육비 납입 자료 제출서 양식입니다.</description>
 </item>
 </channel>
 </rss>
