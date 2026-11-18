@@ -3,10 +3,18 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 521종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 522종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
 <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>원천세 납부서</title>
+<link>https://freeforms.kr/form/withholding-tax-payment-form/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/withholding-tax-payment-form/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
+<description>근로소득 지급명세서 신고 후 원천징수한 소득세와 지방소득세의 납부 내역을 정리해 기록하는 납부서 양식입니다.</description>
+</item>
 <item>
 <title>연말정산 환급금 수령 계좌 신고서</title>
 <link>https://freeforms.kr/form/year-end-refund-account-notice/</link>
@@ -238,14 +246,6 @@
 <category>교육 · 학교·학원</category>
 <pubDate>Thu, 12 Nov 2026 00:00:00 +0900</pubDate>
 <description>수업 도중 학교를 일찍 나서거나 잠시 나갔다 와야 할 때 학부모 확인을 받아 내는 조퇴·외출 신청서 양식입니다.</description>
-</item>
-<item>
-<title>자동차보험금 청구 위임장</title>
-<link>https://freeforms.kr/form/vehicle-insurance-claim-poa/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vehicle-insurance-claim-poa/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Thu, 12 Nov 2026 00:00:00 +0900</pubDate>
-<description>자동차 사고 뒤 보험금 청구와 수령 절차를 다른 사람에게 맡길 때 쓰는 자동차보험금 청구 위임장 양식입니다.</description>
 </item>
 </channel>
 </rss>
