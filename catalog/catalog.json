@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T15:46:48+09:00",
-  "count": 516,
+  "generated_at": "2026-11-18T13:08:50+09:00",
+  "count": 521,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -320,6 +320,104 @@
         "counseling-log"
       ],
       "seal": false
+    },
+    {
+      "id": "academy-leave-of-absence-request",
+      "title": "학원 휴원 신청서",
+      "category": "edu",
+      "subcategory": "school",
+      "tags": [
+        "학원휴원신청서",
+        "수강휴원",
+        "학원휴원",
+        "수강일시중지",
+        "휴원신청"
+      ],
+      "summary": "질병·여행·시험 준비 등으로 일정 기간 수강을 쉬려는 학부모가 학원에 내는 학원 휴원 신청서 양식입니다.",
+      "usage": "학원에 다니는 학생이 일정 기간 수업을 쉬어야 할 때 학부모가 학원에 휴원을 알리는 서식입니다. 학생 정보와 수강 과목, 휴원 기간과 사유, 복귀 예정일을 적고 보호자가 서명합니다. 휴원 기간의 수강료 처리와 보강 여부는 학원 규정에 따르므로 신청 전에 학원에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 43514,
+        "docx": 38442,
+        "hwpx": 9401
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "학생 이름과 학년, 수강 과목을 적습니다.",
+        "휴원 시작일과 복귀 예정일을 적습니다.",
+        "휴원 사유를 간단히 적습니다.",
+        "보호자가 날짜를 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "휴원 기간의 수강료는 어떻게 되나요?",
+          "a": "학원 규정에 따라 다릅니다. 이월이나 감면 여부를 신청 전에 학원에 확인하십시오."
+        },
+        {
+          "q": "복귀일이 바뀌면 어떻게 하나요?",
+          "a": "학원에 미리 알리고 변경 내용을 다시 적어 제출하면 됩니다."
+        },
+        {
+          "q": "사유를 자세히 적어야 하나요?",
+          "a": "간단히 적으면 충분합니다. 건강 정보는 꼭 필요한 만큼만 적으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 학생 정보",
+          "items": [
+            "학생 이름",
+            "학년",
+            "수강 과목",
+            "담당 선생님",
+            "보호자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 휴원 기간과 사유",
+          "items": [
+            "휴원 시작일",
+            "복귀 예정일",
+            "휴원 사유"
+          ],
+          "note": "학원에 전달할 내용이나 수강료·보강 관련 요청을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "tuition-refund-request",
+        "academy-attendance",
+        "student-early-leave-request",
+        "afterschool-program-application"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-18T13:08:45+09:00",
+      "updated_at": "2026-11-18T13:08:45+09:00",
+      "downloads": 0
     },
     {
       "id": "access-pass-request",
@@ -9639,6 +9737,111 @@
         "settlement-agreement"
       ],
       "seal": true
+    },
+    {
+      "id": "certified-notice-damages",
+      "title": "내용증명 (손해배상 청구)",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "내용증명",
+        "손해배상청구",
+        "손해배상내용증명",
+        "피해배상",
+        "내용증명서식"
+      ],
+      "summary": "상대방의 행위로 입은 손해의 내용과 금액을 밝혀 배상을 요구하는 내용증명 양식입니다.",
+      "usage": "물건 파손, 계약 불이행, 시공 하자 등으로 손해를 입었을 때 상대방에게 배상을 공식적으로 요구하는 통지서입니다. 손해가 생긴 경위와 일시, 손해 항목별 금액과 증빙을 적고 지급 기한과 계좌를 밝힙니다. 우체국 등기로 보내면 통지한 사실과 내용이 기록으로 남습니다. 책임 유무와 배상액은 사안마다 다르므로 필요하면 전문가 상담을 받으십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 63662,
+        "docx": 38889,
+        "hwpx": 10188
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "certified-notice",
+      "series_name": "내용증명",
+      "variant": "손해배상 청구",
+      "variant_rank": 9,
+      "variant_use": "상대방의 행위로 입은 손해의 배상을 요구할 때 씁니다.",
+      "howto": [
+        "발신인과 수신인의 성명·주소를 적습니다.",
+        "손해가 생긴 일시와 경위를 사실대로 적습니다.",
+        "손해 항목별 금액과 증빙을 적고 합계를 냅니다.",
+        "지급 기한과 계좌를 적고 등기로 보냅니다."
+      ],
+      "faq": [
+        {
+          "q": "증빙은 꼭 붙여야 하나요?",
+          "a": "필수는 아니지만 견적서·영수증·사진 등을 목록으로 적어 두면 청구 근거가 분명해집니다."
+        },
+        {
+          "q": "기한까지 배상하지 않으면 어떻게 하나요?",
+          "a": "소액사건 등 별도 절차를 검토할 수 있습니다. 사안별로 전문가 상담을 권합니다."
+        },
+        {
+          "q": "배상 금액은 어떻게 정하나요?",
+          "a": "실제 입은 손해를 증빙으로 계산해 적습니다. 인정 범위는 사안마다 다릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 발신인·수신인",
+          "items": [
+            "발신인",
+            "연락처",
+            "주소",
+            "수신인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 손해 발생 경위",
+          "items": [],
+          "note": "손해가 생긴 일시·장소와 경위를 사실대로 시간순으로 적으십시오."
+        },
+        {
+          "title": "3. 청구 손해 내역",
+          "items": [
+            "손해 항목",
+            "금액(원)",
+            "증빙",
+            "청구 합계",
+            "지급 기한",
+            "입금 계좌",
+            "예금주"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "certified-notice-reply",
+        "settlement-agreement",
+        "small-claims-complaint",
+        "car-accident-settlement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-18T13:08:40+09:00",
+      "updated_at": "2026-11-18T13:08:40+09:00",
+      "downloads": 0
     },
     {
       "id": "certified-notice-deposit",
@@ -49693,6 +49896,108 @@
       "downloads": 0
     },
     {
+      "id": "vehicle-repair-completion-confirmation",
+      "title": "자동차 수리 완료 인수 확인서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차수리완료확인서",
+        "차량수리인수",
+        "정비완료확인",
+        "수리비정산",
+        "차량인수확인서"
+      ],
+      "summary": "정비소에서 수리를 마친 자동차를 돌려받으며 수리 내용과 비용, 인수 상태를 확인하는 수리 완료 인수 확인서 양식입니다.",
+      "usage": "자동차를 정비소에 맡겼다가 수리가 끝나 찾아갈 때, 어떤 수리를 했고 비용이 얼마인지, 차량 상태가 어떤지를 서로 확인해 두는 서식입니다. 차량 정보와 수리 내역, 비용, 보증 기간을 적고 차량 주인과 정비업체가 함께 서명합니다. 나중에 수리 범위나 비용을 두고 다툼이 생길 때 근거 자료가 됩니다. 보증 조건은 정비업체 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 56314,
+        "docx": 38728,
+        "hwpx": 10065
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "차량번호와 차종, 입고일을 적습니다.",
+        "수리한 부위와 내용을 한 줄씩 적습니다.",
+        "수리 비용과 보증 기간을 적습니다.",
+        "차량 상태를 확인하고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "수리 후 문제가 생기면 어떻게 하나요?",
+          "a": "확인서의 보증 기간과 내용을 근거로 정비업체에 재점검을 요청합니다. 조건은 업체 안내를 확인하십시오."
+        },
+        {
+          "q": "수리 전 견적서도 필요한가요?",
+          "a": "필수는 아니지만 견적과 최종 비용을 비교하려면 함께 보관하는 것이 좋습니다."
+        },
+        {
+          "q": "교체한 부품은 받을 수 있나요?",
+          "a": "업체와 협의할 사항입니다. 받기로 했다면 비고란에 적어 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 차량 정보",
+          "items": [
+            "차량번호",
+            "차종",
+            "입고일",
+            "출고일",
+            "차량 주인",
+            "정비업체"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 수리 내역",
+          "items": [
+            "수리 부위",
+            "수리 내용",
+            "비용(원)",
+            "총 수리비",
+            "보증 기간",
+            "결제 방법",
+            "인수 시 주행거리"
+          ],
+          "note": "차량 상태 확인 결과나 특이사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "vehicle-repair-order",
+        "vehicle-delivery-confirmation",
+        "vehicle-insurance-claim-poa",
+        "vehicle-maintenance-history"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-18T13:08:42+09:00",
+      "updated_at": "2026-11-18T13:08:42+09:00",
+      "downloads": 0
+    },
+    {
       "id": "vehicle-repair-order",
       "title": "자동차 정비 의뢰서",
       "category": "public",
@@ -53143,6 +53448,101 @@
       "downloads": 0
     },
     {
+      "id": "year-end-couple-dependent-allocation",
+      "title": "연말정산 맞벌이 부부 부양가족 공제 배분 확인서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "맞벌이부부공제",
+        "부양가족공제배분",
+        "연말정산부양가족",
+        "공제대상자확인",
+        "연말정산서류"
+      ],
+      "summary": "맞벌이 부부가 자녀·부모 등 부양가족을 누가 공제받을지 정해 각자의 회사에 제출하는 연말정산 공제 배분 확인서 양식입니다.",
+      "usage": "부부가 모두 근로소득이 있을 때 같은 부양가족을 두 사람이 중복해서 공제받지 않도록, 부양가족별로 누가 공제받을지 미리 정해 두는 서식입니다. 부부의 성명과 소속을 적고, 부양가족마다 관계와 공제받을 사람을 표시한 뒤 두 사람이 함께 서명합니다. 각자의 회사 연말정산 담당자에게 사본을 내면 중복 공제 확인이 수월합니다. 공제 요건과 유리한 배분은 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59208,
+        "docx": 38753,
+        "hwpx": 10143
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "부부 각자의 성명과 근무처를 적습니다.",
+        "부양가족의 성명과 관계를 한 줄씩 적습니다.",
+        "가족마다 공제받을 사람을 한 명만 표시합니다.",
+        "날짜를 적고 부부가 함께 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "같은 가족을 부부가 둘 다 공제받아도 되나요?",
+          "a": "한 부양가족은 한 사람만 공제받을 수 있습니다. 중복되면 나중에 추가 납부가 생길 수 있습니다."
+        },
+        {
+          "q": "이 확인서를 국세청에 내야 하나요?",
+          "a": "보통 각자의 회사에 내는 내부 확인용입니다. 제출 여부는 회사 안내를 확인하십시오."
+        },
+        {
+          "q": "배분은 해마다 바꿀 수 있나요?",
+          "a": "해마다 요건을 다시 확인해 정합니다. 어느 쪽이 유리한지는 국세청 안내를 참고하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 부부 정보",
+          "items": [
+            "성명",
+            "근무처",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 부양가족별 공제 배분",
+          "items": [
+            "부양가족 성명",
+            "관계",
+            "공제받을 사람"
+          ],
+          "note": "배분 사유나 회사에 전달할 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-dependent-duplicate-check",
+        "year-end-dependent-income-statement",
+        "dependent-support-fact-confirmation",
+        "year-end-tax-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-18T13:08:47+09:00",
+      "updated_at": "2026-11-18T13:08:47+09:00",
+      "downloads": 0
+    },
+    {
       "id": "year-end-dependent-change-notice",
       "title": "연말정산 부양가족 변경 신고서",
       "category": "corp",
@@ -54264,6 +54664,105 @@
       "warnings": [],
       "created_at": "2026-11-16T11:41:40+09:00",
       "updated_at": "2026-11-16T11:41:40+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-refund-account-notice",
+      "title": "연말정산 환급금 수령 계좌 신고서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산환급금",
+        "환급계좌",
+        "환급금수령계좌",
+        "연말정산계좌신고",
+        "급여계좌"
+      ],
+      "summary": "연말정산 결과 환급금이 생길 때 받을 계좌를 회사에 알리는 연말정산 환급금 수령 계좌 신고서 양식입니다.",
+      "usage": "연말정산 환급금을 급여 계좌가 아닌 다른 계좌로 받고 싶거나, 급여 계좌가 바뀌었을 때 회사 급여 담당자에게 알리는 서식입니다. 신고자 정보와 수령 계좌의 은행·계좌번호·예금주를 적고 서명해 제출합니다. 지급 시기와 방식은 회사 급여 일정에 따르므로 담당 부서 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46570,
+        "docx": 38517,
+        "hwpx": 9499
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "성명과 소속 부서, 사번을 적습니다.",
+        "환급금을 받을 은행과 계좌번호를 적습니다.",
+        "예금주가 본인인지 확인해 적습니다.",
+        "날짜를 적고 서명해 급여 담당자에게 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "급여 계좌와 다른 계좌로 받을 수 있나요?",
+          "a": "회사 지급 방식에 따라 다릅니다. 본인 명의 계좌를 쓰는 것이 일반적이므로 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "환급금은 언제 들어오나요?",
+          "a": "회사의 정산 일정에 따라 다릅니다. 보통 급여와 함께 정산되는지 담당 부서에 문의하십시오."
+        },
+        {
+          "q": "계좌번호를 잘못 적으면 어떻게 되나요?",
+          "a": "지급이 지연될 수 있습니다. 통장 사본과 대조해 정확히 적으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고자",
+          "items": [
+            "성명",
+            "사번",
+            "소속 부서",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 환급금 수령 계좌",
+          "items": [
+            "귀속 연도",
+            "은행명",
+            "계좌번호",
+            "예금주",
+            "기존 계좌 변경 여부",
+            "변경 사유"
+          ],
+          "note": "회사에 전달할 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-correction-request",
+        "year-end-tax-checklist",
+        "payslip",
+        "withholding-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-18T13:08:50+09:00",
+      "updated_at": "2026-11-18T13:08:50+09:00",
       "downloads": 0
     },
     {

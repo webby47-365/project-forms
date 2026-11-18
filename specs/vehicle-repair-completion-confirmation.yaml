@@ -1,0 +1,76 @@
+id: vehicle-repair-completion-confirmation
+title: 자동차 수리 완료 인수 확인서
+category: public
+subcategory: vehicle
+tags: [자동차수리완료확인서, 차량수리인수, 정비완료확인, 수리비정산, 차량인수확인서]
+summary: 정비소에서 수리를 마친 자동차를 돌려받으며 수리 내용과 비용, 인수 상태를 확인하는 수리 완료 인수 확인서 양식입니다.
+usage: >
+  자동차를 정비소에 맡겼다가 수리가 끝나 찾아갈 때, 어떤 수리를 했고 비용이 얼마인지, 차량 상태가 어떤지를 서로 확인해 두는 서식입니다.
+  차량 정보와 수리 내역, 비용, 보증 기간을 적고 차량 주인과 정비업체가 함께 서명합니다.
+  나중에 수리 범위나 비용을 두고 다툼이 생길 때 근거 자료가 됩니다. 보증 조건은 정비업체 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 차량번호와 차종, 입고일을 적습니다.
+  - 수리한 부위와 내용을 한 줄씩 적습니다.
+  - 수리 비용과 보증 기간을 적습니다.
+  - 차량 상태를 확인하고 양쪽이 서명합니다.
+faq:
+  - q: 수리 후 문제가 생기면 어떻게 하나요?
+    a: 확인서의 보증 기간과 내용을 근거로 정비업체에 재점검을 요청합니다. 조건은 업체 안내를 확인하십시오.
+  - q: 수리 전 견적서도 필요한가요?
+    a: 필수는 아니지만 견적과 최종 비용을 비교하려면 함께 보관하는 것이 좋습니다.
+  - q: 교체한 부품은 받을 수 있나요?
+    a: 업체와 협의할 사항입니다. 받기로 했다면 비고란에 적어 두십시오.
+related: [vehicle-repair-order, vehicle-delivery-confirmation, vehicle-insurance-claim-poa, vehicle-maintenance-history]
+blocks:
+  - type: doc_title
+    text: 자동차 수리 완료 인수 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 차량 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["차량번호", "", "차종", ""]
+      - ["입고일", "", "출고일", ""]
+      - ["차량 주인", "", "정비업체", ""]
+    sample_rows:
+      - ["", "12가 3456", "", "소형 승용"]
+      - ["", "2026-11-10", "", "2026-11-17"]
+      - ["", "박민준", "", "한빛정비소"]
+  - type: subtitle
+    text: 2. 수리 내역
+  - type: table
+    widths: [8, 30, 34, 28]
+    header: ["No", 수리 부위, 수리 내용, 비용(원)]
+    empty_rows: 5
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "앞 범퍼", "교체 및 도색", "450,000"]
+      - ["2", "전조등", "교체", "180,000"]
+      - ["3", "엔진오일", "교환", "70,000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["총 수리비", "", "보증 기간", ""]
+      - ["결제 방법", "", "인수 시 주행거리", ""]
+    sample_rows:
+      - ["", "700,000원", "", "6개월"]
+      - ["", "카드", "", "45,200km"]
+  - type: textbox
+    hint: "차량 상태 확인 결과나 특이사항을 적으십시오."
+    height_mm: 20
+    sample_text: "수리 부위를 확인하였으며 외관과 작동 상태에 이상이 없음을 확인합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   17 일
+  - type: sign_line
+    labels: ["차량 주인", "정비업체"]
+    sample_names: [박민준, 한빛정비소]
+  - type: notice
+    text: 보증 조건과 범위는 정비업체의 안내를 확인하십시오.

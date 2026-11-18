@@ -1,0 +1,67 @@
+id: year-end-refund-account-notice
+title: 연말정산 환급금 수령 계좌 신고서
+category: corp
+subcategory: finance
+tags: [연말정산환급금, 환급계좌, 환급금수령계좌, 연말정산계좌신고, 급여계좌]
+summary: 연말정산 결과 환급금이 생길 때 받을 계좌를 회사에 알리는 연말정산 환급금 수령 계좌 신고서 양식입니다.
+usage: >
+  연말정산 환급금을 급여 계좌가 아닌 다른 계좌로 받고 싶거나, 급여 계좌가 바뀌었을 때 회사 급여 담당자에게 알리는 서식입니다.
+  신고자 정보와 수령 계좌의 은행·계좌번호·예금주를 적고 서명해 제출합니다.
+  지급 시기와 방식은 회사 급여 일정에 따르므로 담당 부서 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 성명과 소속 부서, 사번을 적습니다.
+  - 환급금을 받을 은행과 계좌번호를 적습니다.
+  - 예금주가 본인인지 확인해 적습니다.
+  - 날짜를 적고 서명해 급여 담당자에게 냅니다.
+faq:
+  - q: 급여 계좌와 다른 계좌로 받을 수 있나요?
+    a: 회사 지급 방식에 따라 다릅니다. 본인 명의 계좌를 쓰는 것이 일반적이므로 담당 부서에 확인하십시오.
+  - q: 환급금은 언제 들어오나요?
+    a: 회사의 정산 일정에 따라 다릅니다. 보통 급여와 함께 정산되는지 담당 부서에 문의하십시오.
+  - q: 계좌번호를 잘못 적으면 어떻게 되나요?
+    a: 지급이 지연될 수 있습니다. 통장 사본과 대조해 정확히 적으십시오.
+related: [year-end-correction-request, year-end-tax-checklist, payslip, withholding-request]
+blocks:
+  - type: doc_title
+    text: 연말정산 환급금 수령 계좌 신고서
+    spaced: false
+  - type: subtitle
+    text: 1. 신고자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "사번", ""]
+      - ["소속 부서", "", "연락처", ""]
+    sample_rows:
+      - ["", "박민준", "", "A-20315"]
+      - ["", "영업지원팀", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 환급금 수령 계좌
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["귀속 연도", "", "은행명", ""]
+      - ["계좌번호", "", "예금주", ""]
+      - ["기존 계좌 변경 여부", "", "변경 사유", ""]
+    sample_rows:
+      - ["", "2026년", "", "한빛은행"]
+      - ["", "000-000-000000", "", "박민준"]
+      - ["", "변경", "", "급여 계좌 변경"]
+  - type: textbox
+    hint: "회사에 전달할 내용이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "환급금은 위 계좌로 지급해 주시기 바랍니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   18 일
+  - type: sign_line
+    labels: ["신고자"]
+    sample_names: [박민준]
+  - type: notice
+    text: 지급 시기와 방식은 회사 급여 담당 부서의 안내를 확인하십시오. 통장 사본을 함께 내라고 할 수 있습니다.

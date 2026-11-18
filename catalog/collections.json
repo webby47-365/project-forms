@@ -98,7 +98,7 @@
       "name": "분쟁 해결 서식",
       "lead": "내용증명으로 먼저 알리고, 합의가 안 되면 소송으로. 단계별로 필요한 서식입니다.",
       "ids": [
-        "certified-notice", "certified-notice-goods-payment", "certified-notice-reply", "fact-confirmation", "settlement-agreement",
+        "certified-notice", "certified-notice-goods-payment", "certified-notice-damages", "certified-notice-reply", "fact-confirmation", "settlement-agreement",
         "statement-of-facts", "damage-calculation-statement", "civil-conciliation", "small-claims-complaint",
         "complaint-goods-payment", "answer-brief", "preparatory-brief", "witness-application", "hearing-date-change-request",
         "petition-letter"
