@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T13:57:21+09:00",
-  "count": 522,
+  "generated_at": "2026-11-19T13:06:23+09:00",
+  "count": 527,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -29148,6 +29148,113 @@
       "downloads": 0
     },
     {
+      "id": "lease-restoration-cost-statement",
+      "title": "임대차 원상복구 비용 정산서",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "원상복구비용",
+        "보증금공제",
+        "퇴거정산",
+        "임대차정산",
+        "원상복구"
+      ],
+      "summary": "임차인이 퇴거한 뒤 원상복구가 필요한 항목과 비용을 정리하고 보증금에서 공제할 금액을 임대인과 임차인이 함께 확인하는 정산서 양식입니다.",
+      "usage": "임대차가 끝나고 퇴거한 뒤 원상복구 비용을 두고 다툼이 생기지 않도록 항목별 금액을 적어 두는 서식입니다. 목적물과 보증금을 적고, 복구가 필요한 항목마다 내용과 비용을 한 줄씩 적은 다음 보증금에서 공제할 금액과 반환액을 계산합니다. 임대인과 임차인이 모두 확인하고 서명해 두면 나중에 근거가 됩니다. 비용의 적정성은 계약서와 실제 견적서를 기준으로 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 57699,
+        "docx": 38769,
+        "hwpx": 10177
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "목적물 주소와 보증금, 퇴거일을 적습니다.",
+        "복구가 필요한 항목과 비용을 한 줄씩 적습니다.",
+        "공제 합계와 보증금 반환액을 계산해 적습니다.",
+        "양쪽이 내용을 확인하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "자연스러운 낡음도 복구 비용에 넣나요?",
+          "a": "통상적인 사용에 따른 노후는 별도로 다툼이 될 수 있습니다. 계약서와 사진 자료를 함께 확인하십시오."
+        },
+        {
+          "q": "견적서가 꼭 필요한가요?",
+          "a": "필수는 아니지만 비용 근거가 되므로 있으면 첨부하는 것이 좋습니다."
+        },
+        {
+          "q": "합의가 안 되면 어떻게 하나요?",
+          "a": "합의된 항목만 먼저 정리하고, 남은 부분은 제출처나 관련 기관의 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 목적물 및 보증금",
+          "items": [
+            "목적물 주소",
+            "보증금",
+            "퇴거일",
+            "임대인",
+            "임차인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 원상복구 내역",
+          "items": [
+            "복구 항목",
+            "복구 내용",
+            "비용(원)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 정산",
+          "items": [
+            "공제 합계",
+            "반환 금액",
+            "반환 예정일",
+            "반환 계좌"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "move-out-checklist",
+        "lease-deposit-return-schedule-agreement",
+        "management-fee-settlement-confirmation",
+        "deposit-return-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-19T13:06:13+09:00",
+      "updated_at": "2026-11-19T13:06:13+09:00",
+      "downloads": 0
+    },
+    {
       "id": "lease-termination-notice",
       "title": "임대차계약 해지통보서",
       "category": "legal",
@@ -43742,6 +43849,105 @@
       "downloads": 0
     },
     {
+      "id": "shareholder-written-voting-form",
+      "title": "주주총회 서면 의결권 행사서",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "서면의결권",
+        "서면투표",
+        "주주총회서면",
+        "의결권행사",
+        "주주총회"
+      ],
+      "summary": "주주총회에 참석하지 못하는 주주가 안건별 찬성·반대 의사를 서면으로 적어 회사에 내는 의결권 행사서 양식입니다.",
+      "usage": "주주총회에 직접 참석하기 어려운 주주가 안건마다 찬성·반대·기권 중 하나를 표시해 회사에 보내는 서식입니다. 주주의 성명과 보유 주식수를 적고, 안건별로 의사를 표시한 뒤 서명합니다. 서면 의결권 행사를 허용하는지는 회사의 정관과 소집 통지 내용에 따르므로 먼저 확인하십시오. 위임장과 달리 대리인 없이 주주 본인이 의사를 직접 적는 방식입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55745,
+        "docx": 38712,
+        "hwpx": 10010
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "주주의 성명과 보유 주식수를 적습니다.",
+        "총회 일시와 회사명을 소집 통지서와 맞춰 적습니다.",
+        "안건마다 찬성·반대·기권 중 하나에 표시합니다.",
+        "날짜를 적고 서명한 뒤 기한 안에 회사에 냅니다."
+      ],
+      "faq": [
+        {
+          "q": "서면으로 의결권을 행사할 수 있나요?",
+          "a": "회사 정관과 소집 통지에 따라 달라집니다. 허용 여부를 먼저 회사에 확인하십시오."
+        },
+        {
+          "q": "위임장과는 무엇이 다른가요?",
+          "a": "위임장은 대리인이 대신 행사하고, 이 서식은 주주 본인이 안건별 의사를 직접 적습니다."
+        },
+        {
+          "q": "제출 기한은 언제인가요?",
+          "a": "소집 통지서에 적힌 기한을 따릅니다. 기한을 넘기면 반영되지 않을 수 있습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 주주 및 총회 정보",
+          "items": [
+            "회사명",
+            "총회 일시",
+            "주주 성명",
+            "보유 주식수",
+            "주식 종류",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 안건별 의결권 행사",
+          "items": [
+            "안건",
+            "찬성",
+            "반대",
+            "기권"
+          ],
+          "note": "안건에 대한 의견이나 참고 사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "shareholder-meeting-notice",
+        "shareholder-meeting-proxy",
+        "shareholder-meeting-minutes",
+        "shareholder-register"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-19T13:06:16+09:00",
+      "updated_at": "2026-11-19T13:06:16+09:00",
+      "downloads": 0
+    },
+    {
       "id": "signboard-installation-consent",
       "title": "간판 설치 동의서",
       "category": "public",
@@ -51313,6 +51519,107 @@
       "downloads": 0
     },
     {
+      "id": "welfare-facility-fee-payment-confirmation",
+      "title": "복지시설 이용료 납부 확인서",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "복지시설이용료",
+        "이용료납부확인",
+        "본인부담금",
+        "납부확인서",
+        "복지시설"
+      ],
+      "summary": "복지시설 이용자가 월별로 낸 이용료·식비·기타 비용과 납부일을 시설이 확인해 주는 납부 확인서 양식입니다.",
+      "usage": "복지시설에 낸 이용료 내역을 제출처에 보여야 할 때 시설에 발급을 요청해 받는 확인서입니다. 이용자와 보호자, 확인 기간을 적고 월별 이용료·식비·기타 비용과 납부일을 표로 정리한 뒤 시설 대표가 확인합니다. 세금 공제나 지원금 신청 등 쓰임에 따라 필요한 항목이 다를 수 있으므로 제출처 기준을 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 60846,
+        "docx": 38801,
+        "hwpx": 10223
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "이용자와 보호자 성명, 확인 기간을 적습니다.",
+        "월별 이용료와 식비, 기타 비용을 한 줄씩 적습니다.",
+        "납부일을 적고 월별 합계를 계산합니다.",
+        "시설 대표가 확인하고 직인 또는 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "영수증으로 대신할 수 있나요?",
+          "a": "제출처가 영수증을 인정하면 가능합니다. 제출처가 요구하는 형식을 먼저 확인하십시오."
+        },
+        {
+          "q": "어느 기간까지 적어야 하나요?",
+          "a": "제출처가 요구한 기간만큼 적습니다. 정해진 기간이 없으면 필요한 달을 모두 적으면 됩니다."
+        },
+        {
+          "q": "누가 작성하나요?",
+          "a": "이용자나 보호자가 내용을 정리해 요청하고, 시설이 사실과 맞는지 확인해 서명합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 이용자 및 시설",
+          "items": [
+            "이용자 성명",
+            "보호자 성명",
+            "시설명",
+            "확인 기간",
+            "제출처",
+            "제출 용도"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 월별 납부 내역",
+          "items": [
+            "월",
+            "이용료(원)",
+            "식비(원)",
+            "기타(원)",
+            "합계(원)",
+            "납부일"
+          ],
+          "note": "확인 사항이나 특이 사항(감면·미납 등)이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "welfare-facility-application",
+        "welfare-service-change-request",
+        "welfare-facility-withdrawal-request",
+        "medical-expense-support"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-19T13:06:18+09:00",
+      "updated_at": "2026-11-19T13:06:18+09:00",
+      "downloads": 0
+    },
+    {
       "id": "welfare-facility-outing-request",
       "title": "시설 외출·외박 신청서",
       "category": "welfare",
@@ -53472,6 +53779,105 @@
       "downloads": 0
     },
     {
+      "id": "year-end-child-tax-credit-confirmation",
+      "title": "연말정산 자녀 세액공제 대상 확인서",
+      "category": "corp",
+      "subcategory": "hr",
+      "tags": [
+        "자녀세액공제",
+        "연말정산자녀",
+        "자녀공제확인",
+        "출산입양공제",
+        "연말정산부양가족"
+      ],
+      "summary": "연말정산에서 자녀 세액공제를 받으려는 직원이 자녀별 출생연도·동거 여부·출산·입양 해당 여부를 적어 회사에 내는 확인서 양식입니다.",
+      "usage": "직원이 자녀 공제를 신청할 때 자녀별 사항을 정리해 회사 연말정산 담당자에게 내는 서식입니다. 신청인의 성명과 소속을 적고, 자녀마다 성명·출생연도·동거 여부·출산 또는 입양 해당 연도를 한 줄씩 적습니다. 맞벌이 부부는 같은 자녀를 중복해 신청하지 않도록 누가 신청하는지 함께 표시합니다. 공제 요건과 금액은 해마다 달라질 수 있으므로 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 56710,
+        "docx": 38733,
+        "hwpx": 10038
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신청인의 성명과 소속 부서를 적습니다.",
+        "자녀의 성명과 출생연도를 한 줄씩 적습니다.",
+        "동거 여부와 출산·입양 해당 연도를 표시합니다.",
+        "배우자가 신청하는 자녀가 아닌지 확인하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "자녀 주민등록번호를 적어야 하나요?",
+          "a": "이 서식에는 주민등록번호 칸이 없습니다. 증빙이 필요하면 회사 안내에 따라 별도로 제출하십시오."
+        },
+        {
+          "q": "부부가 모두 신청해도 되나요?",
+          "a": "같은 자녀는 한 사람만 공제받을 수 있습니다. 신청자를 미리 정해 한쪽만 내십시오."
+        },
+        {
+          "q": "공제 금액은 이 서식에서 정해지나요?",
+          "a": "아닙니다. 금액과 요건은 국세청 안내와 회사 정산 기준에 따라 정해집니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신청인",
+          "items": [
+            "성명",
+            "소속 부서",
+            "연락처",
+            "정산 연도",
+            "배우자 근로 여부",
+            "배우자 신청 여부"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 자녀별 확인",
+          "items": [
+            "자녀 성명",
+            "출생연도",
+            "동거 여부",
+            "출산·입양 연도"
+          ],
+          "note": "함께 살지 않는 자녀가 있다면 사유를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-couple-dependent-allocation",
+        "year-end-dependent-duplicate-check",
+        "year-end-dependent-change-notice",
+        "child-rearing-fact-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-19T13:06:11+09:00",
+      "updated_at": "2026-11-19T13:06:11+09:00",
+      "downloads": 0
+    },
+    {
       "id": "year-end-correction-request",
       "title": "연말정산 제출 내용 정정 요청서",
       "category": "corp",
@@ -53974,6 +54380,104 @@
       "warnings": [],
       "created_at": "2026-11-13T12:21:24+09:00",
       "updated_at": "2026-11-13T12:21:24+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-document-receipt-ledger",
+      "title": "연말정산 서류 접수 대장",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산접수대장",
+        "연말정산서류",
+        "공제서류접수",
+        "연말정산담당자",
+        "서류수합"
+      ],
+      "summary": "직원들이 낸 연말정산 공제 증빙 서류를 제출일·제출자·서류 종류별로 기록하고 누락을 확인하는 접수 대장 양식입니다.",
+      "usage": "연말정산 담당자가 직원별로 공제 증빙 서류를 받을 때마다 한 줄씩 적어 두는 대장입니다. 제출일, 제출자의 성명과 부서, 받은 서류 종류와 매수, 접수자를 적고 보완이 필요하면 비고에 남깁니다. 마감 뒤에는 미제출자와 보완 요청 대상을 한눈에 골라낼 수 있습니다. 서류는 연말정산 목적 외에 쓰지 않도록 보관·파기 기준을 회사 방침에 맞추십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 69015,
+        "docx": 39083,
+        "hwpx": 10965
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "대장 위쪽에 정산 연도와 담당자를 적습니다.",
+        "서류를 받는 즉시 제출일과 제출자를 적습니다.",
+        "받은 서류 종류와 매수를 적고 접수자가 확인합니다.",
+        "보완이 필요한 서류는 비고에 사유를 남깁니다."
+      ],
+      "faq": [
+        {
+          "q": "서류 사본을 따로 보관해야 하나요?",
+          "a": "보관 기간과 방법은 회사 방침과 관련 규정에 따릅니다. 필요 이상으로 오래 두지 않는 것이 좋습니다."
+        },
+        {
+          "q": "간소화 자료는 어떻게 적나요?",
+          "a": "제출 형태(출력본·파일)를 서류 종류 칸에 함께 적어 두면 나중에 찾기 쉽습니다."
+        },
+        {
+          "q": "늦게 낸 서류는 어떻게 하나요?",
+          "a": "제출일 그대로 적고 비고에 \"마감 후 제출\"이라고 남겨 처리 기준을 확인합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "",
+          "items": [
+            "정산 연도",
+            "담당자",
+            "접수 기간",
+            "소속 부서"
+          ],
+          "note": ""
+        },
+        {
+          "title": "1. 접수 내역",
+          "items": [
+            "제출일",
+            "제출자",
+            "서류 종류",
+            "매수",
+            "접수자"
+          ],
+          "note": "미제출자·보완 요청 현황 등 마감 후 확인 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-tax-checklist",
+        "year-end-correction-request",
+        "year-end-simplified-data-consent",
+        "document-register"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-19T13:06:08+09:00",
+      "updated_at": "2026-11-19T13:06:23+09:00",
       "downloads": 0
     },
     {

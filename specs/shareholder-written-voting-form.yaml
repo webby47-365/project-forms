@@ -1,0 +1,70 @@
+id: shareholder-written-voting-form
+title: 주주총회 서면 의결권 행사서
+category: corp
+subcategory: startup
+tags: [서면의결권, 서면투표, 주주총회서면, 의결권행사, 주주총회]
+summary: 주주총회에 참석하지 못하는 주주가 안건별 찬성·반대 의사를 서면으로 적어 회사에 내는 의결권 행사서 양식입니다.
+usage: >
+  주주총회에 직접 참석하기 어려운 주주가 안건마다 찬성·반대·기권 중 하나를 표시해 회사에 보내는 서식입니다.
+  주주의 성명과 보유 주식수를 적고, 안건별로 의사를 표시한 뒤 서명합니다.
+  서면 의결권 행사를 허용하는지는 회사의 정관과 소집 통지 내용에 따르므로 먼저 확인하십시오.
+  위임장과 달리 대리인 없이 주주 본인이 의사를 직접 적는 방식입니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 주주의 성명과 보유 주식수를 적습니다.
+  - 총회 일시와 회사명을 소집 통지서와 맞춰 적습니다.
+  - 안건마다 찬성·반대·기권 중 하나에 표시합니다.
+  - 날짜를 적고 서명한 뒤 기한 안에 회사에 냅니다.
+faq:
+  - q: 서면으로 의결권을 행사할 수 있나요?
+    a: 회사 정관과 소집 통지에 따라 달라집니다. 허용 여부를 먼저 회사에 확인하십시오.
+  - q: 위임장과는 무엇이 다른가요?
+    a: 위임장은 대리인이 대신 행사하고, 이 서식은 주주 본인이 안건별 의사를 직접 적습니다.
+  - q: 제출 기한은 언제인가요?
+    a: 소집 통지서에 적힌 기한을 따릅니다. 기한을 넘기면 반영되지 않을 수 있습니다.
+related: [shareholder-meeting-notice, shareholder-meeting-proxy, shareholder-meeting-minutes, shareholder-register]
+blocks:
+  - type: doc_title
+    text: 주주총회 서면 의결권 행사서
+    spaced: false
+  - type: subtitle
+    text: 1. 주주 및 총회 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["회사명", "", "총회 일시", ""]
+      - ["주주 성명", "", "보유 주식수", ""]
+      - ["주식 종류", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "2026-12-20 10:00"]
+      - ["", "홍길동", "", "1,000주"]
+      - ["", "보통주", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 안건별 의결권 행사
+  - type: table
+    widths: [8, 40, 16, 16, 20]
+    header: ["No", 안건, 찬성, 반대, 기권]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "제1호 재무제표 승인의 건", "○", "", ""]
+      - ["2", "제2호 이사 선임의 건", "", "", "○"]
+  - type: textbox
+    hint: "안건에 대한 의견이나 참고 사항이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "제2호 안건은 후보자 자료를 더 검토한 뒤 판단하고자 기권합니다."
+  - type: para
+    text: 위와 같이 서면으로 의결권을 행사합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   12 월   10 일
+  - type: sign_line
+    label: 주주
+    sample_names: [홍길동]
+  - type: notice
+    text: 서면 행사 가능 여부와 제출 기한은 회사 정관과 소집 통지서를 확인하십시오.

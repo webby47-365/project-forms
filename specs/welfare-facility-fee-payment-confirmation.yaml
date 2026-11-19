@@ -1,0 +1,70 @@
+id: welfare-facility-fee-payment-confirmation
+title: 복지시설 이용료 납부 확인서
+category: welfare
+subcategory: consent
+tags: [복지시설이용료, 이용료납부확인, 본인부담금, 납부확인서, 복지시설]
+summary: 복지시설 이용자가 월별로 낸 이용료·식비·기타 비용과 납부일을 시설이 확인해 주는 납부 확인서 양식입니다.
+usage: >
+  복지시설에 낸 이용료 내역을 제출처에 보여야 할 때 시설에 발급을 요청해 받는 확인서입니다.
+  이용자와 보호자, 확인 기간을 적고 월별 이용료·식비·기타 비용과 납부일을 표로 정리한 뒤 시설 대표가 확인합니다.
+  세금 공제나 지원금 신청 등 쓰임에 따라 필요한 항목이 다를 수 있으므로 제출처 기준을 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 이용자와 보호자 성명, 확인 기간을 적습니다.
+  - 월별 이용료와 식비, 기타 비용을 한 줄씩 적습니다.
+  - 납부일을 적고 월별 합계를 계산합니다.
+  - 시설 대표가 확인하고 직인 또는 서명을 합니다.
+faq:
+  - q: 영수증으로 대신할 수 있나요?
+    a: 제출처가 영수증을 인정하면 가능합니다. 제출처가 요구하는 형식을 먼저 확인하십시오.
+  - q: 어느 기간까지 적어야 하나요?
+    a: 제출처가 요구한 기간만큼 적습니다. 정해진 기간이 없으면 필요한 달을 모두 적으면 됩니다.
+  - q: 누가 작성하나요?
+    a: 이용자나 보호자가 내용을 정리해 요청하고, 시설이 사실과 맞는지 확인해 서명합니다.
+related: [welfare-facility-application, welfare-service-change-request, welfare-facility-withdrawal-request, medical-expense-support]
+blocks:
+  - type: doc_title
+    text: 복지시설 이용료 납부 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 이용자 및 시설
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["이용자 성명", "", "보호자 성명", ""]
+      - ["시설명", "", "확인 기간", ""]
+      - ["제출처", "", "제출 용도", ""]
+    sample_rows:
+      - ["", "홍길동", "", "김서연"]
+      - ["", "행복마을 노인복지센터", "", "2026-09 ~ 2026-11"]
+      - ["", "소속 회사 인사팀", "", "연말정산 제출"]
+  - type: subtitle
+    text: 2. 월별 납부 내역
+  - type: table
+    widths: [14, 20, 16, 16, 18, 16]
+    header: [월, 이용료(원), 식비(원), 기타(원), 합계(원), 납부일]
+    empty_rows: 6
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["9월", "300,000", "90,000", "0", "390,000", "09-05"]
+      - ["10월", "300,000", "90,000", "20,000", "410,000", "10-06"]
+      - ["11월", "300,000", "90,000", "0", "390,000", "11-05"]
+  - type: textbox
+    hint: "확인 사항이나 특이 사항(감면·미납 등)이 있으면 적으십시오."
+    height_mm: 16
+    sample_text: "위 기간의 이용료는 모두 납부되었으며 미납액은 없습니다."
+  - type: para
+    text: 위 내용이 사실임을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   19 일
+  - type: sign_line
+    labels: ["시설 대표", "요청인"]
+    sample_names: [박민준, 김서연]
+  - type: notice
+    text: 제출처가 요구하는 형식과 기간을 먼저 확인하십시오.
