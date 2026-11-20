@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T13:06:23+09:00",
-  "count": 527,
+  "generated_at": "2026-11-20T12:58:48+09:00",
+  "count": 532,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -27729,6 +27729,99 @@
       "seal": true
     },
     {
+      "id": "job-application-withdrawal-notice",
+      "title": "입사 지원 철회서",
+      "category": "personal",
+      "subcategory": "career",
+      "tags": [
+        "입사 지원 철회",
+        "지원 취소",
+        "채용 포기",
+        "철회 요청"
+      ],
+      "summary": "이미 제출한 입사 지원을 거두어 달라고 채용 담당자에게 알리는 철회서입니다.",
+      "usage": "다른 곳에 합격했거나 사정이 바뀌어 지원을 이어갈 수 없을 때, 채용 담당자에게 정중하게 철회 의사를 전하는 서식입니다. 지원 공고와 지원 직무, 접수 일자를 적고 철회 사유를 짧게 씁니다. 사유는 자세히 쓰지 않아도 되며, 제출한 서류의 파기를 요청하려면 해당 칸에 표시합니다. 면접 일정이 잡혀 있다면 가능한 빨리 보내는 것이 예의입니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46871,
+        "docx": 38488,
+        "hwpx": 9385
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "지원 회사와 공고명, 지원 직무를 적습니다.",
+        "지원서를 접수한 날짜와 지원자 정보를 적습니다.",
+        "철회 사유를 한두 문장으로 적습니다.",
+        "서류 파기 요청 여부를 표시하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "철회 사유를 자세히 써야 하나요?",
+          "a": "아니요. 개인 사정이나 다른 기회를 택했다는 정도로 짧게 적어도 충분합니다."
+        },
+        {
+          "q": "제출한 서류를 돌려받을 수 있나요?",
+          "a": "파기나 반환 요청을 적어 둘 수 있으나 처리는 회사 방침에 따릅니다."
+        },
+        {
+          "q": "면접 직전에 철회해도 되나요?",
+          "a": "가능한 한 빨리 알리는 것이 좋습니다. 전화나 이메일로 먼저 알리고 서면을 보내면 정중합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 지원 정보",
+          "items": [
+            "지원 회사",
+            "공고명",
+            "지원 직무",
+            "접수 일자",
+            "지원자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 철회 사유",
+          "items": [],
+          "note": "철회 사유를 한두 문장으로 정중하게 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "job-offer-acceptance-letter",
+        "job-application-form",
+        "interview-evaluation",
+        "career-certificate-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-20T12:58:23+09:00",
+      "updated_at": "2026-11-20T12:58:23+09:00",
+      "downloads": 0
+    },
+    {
       "id": "job-description",
       "title": "직무기술서",
       "category": "corp",
@@ -32569,6 +32662,109 @@
         "housing-lease-contract"
       ],
       "seal": true
+    },
+    {
+      "id": "moving-damage-claim-request",
+      "title": "이삿짐 파손 보상 요청서",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "이삿짐 파손",
+        "이사 피해",
+        "보상 요청",
+        "이사업체"
+      ],
+      "summary": "이사 중 가구·가전이 파손되었을 때 이사업체에 보상을 요청하는 서식입니다.",
+      "usage": "이삿짐을 옮기다 파손되거나 분실된 물건이 있을 때, 이사업체에 피해 내용을 정리해 알리는 서식입니다. 계약일과 이사일, 업체 정보를 적고 파손 물품마다 상태와 요청 사항을 표로 적습니다. 파손 부위가 보이는 사진과 이사 계약서 사본을 함께 보관하면 확인이 쉽습니다. 보상 범위와 방법은 계약서의 약관과 업체 기준에 따르니 계약서를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 53168,
+        "docx": 38657,
+        "hwpx": 9905
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "이사업체와 계약일, 이사일, 연락처를 적습니다.",
+        "파손된 물품과 파손 상태를 한 줄씩 적습니다.",
+        "요청하는 보상 방법과 희망 금액을 적습니다.",
+        "날짜를 적고 서명한 뒤 사진과 함께 보냅니다."
+      ],
+      "faq": [
+        {
+          "q": "이사 당일에 확인하지 못했는데 요청할 수 있나요?",
+          "a": "발견한 즉시 사진을 남기고 업체에 알리는 것이 좋습니다. 접수 기한은 계약서 약관을 확인하십시오."
+        },
+        {
+          "q": "수리비와 교환 중 무엇을 요청하나요?",
+          "a": "파손 정도에 따라 다릅니다. 요청 칸에 원하는 방법을 적고 업체와 협의합니다."
+        },
+        {
+          "q": "합의가 안 되면 어떻게 하나요?",
+          "a": "소비자상담 기관 등에 상담을 받을 수 있습니다. 먼저 이 요청서를 서면으로 남겨 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 이사 정보",
+          "items": [
+            "이사업체",
+            "업체 연락처",
+            "계약일",
+            "이사일",
+            "요청자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 파손 물품",
+          "items": [
+            "물품",
+            "파손 상태",
+            "구입 시기",
+            "요청 사항"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 요청 내용",
+          "items": [],
+          "note": "발견 시점과 희망하는 보상 방법을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "moving-checklist",
+        "item-loan-confirmation",
+        "consumer-dispute-mediation-application",
+        "lost-property-report"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-20T12:58:26+09:00",
+      "updated_at": "2026-11-20T12:58:26+09:00",
+      "downloads": 0
     },
     {
       "id": "moving-in-report",
@@ -44263,6 +44459,109 @@
       "downloads": 0
     },
     {
+      "id": "social-insurance-filing-ledger",
+      "title": "4대보험 취득·상실 신고 접수 대장",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "4대보험",
+        "취득신고",
+        "상실신고",
+        "신고 대장",
+        "사회보험"
+      ],
+      "summary": "직원의 4대보험 취득·상실 신고 내역과 접수 상태를 한 곳에 기록해 두는 관리 대장입니다.",
+      "usage": "입사자와 퇴사자가 생길 때마다 4대보험 신고를 했는지, 언제 접수됐는지 놓치지 않으려고 쓰는 사내 관리 대장입니다. 직원 이름과 취득·상실 구분, 사유 발생일, 신고일, 접수 확인 여부를 한 줄씩 적습니다. 신고 기한은 보험별로 다르니 각 공단의 안내를 확인하십시오. 주민등록번호는 적지 않고 사번이나 생년월일만 적습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 71403,
+        "docx": 39133,
+        "hwpx": 10976
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "대장 기간과 작성 담당자를 적습니다.",
+        "입사·퇴사가 생기면 직원 이름과 구분을 한 줄에 적습니다.",
+        "사유 발생일과 신고일을 적고 접수 여부를 표시합니다.",
+        "월말에 빠진 신고가 없는지 확인하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "주민등록번호를 적어야 하나요?",
+          "a": "이 대장에는 적지 않습니다. 사번이나 생년월일로 직원을 구분하십시오."
+        },
+        {
+          "q": "신고 기한은 며칠인가요?",
+          "a": "보험별로 다릅니다. 국민연금·건강보험·고용·산재 각 공단의 안내를 확인하십시오."
+        },
+        {
+          "q": "월마다 새로 만들어야 하나요?",
+          "a": "기간을 달리해 월별이나 분기별로 새로 작성하면 관리하기 쉽습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 대장 정보",
+          "items": [
+            "사업장명",
+            "기간",
+            "작성 담당자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 신고 접수 내역",
+          "items": [
+            "직원명",
+            "사번",
+            "사유 발생일",
+            "신고일",
+            "접수 확인"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 월말 점검",
+          "items": [],
+          "note": "빠진 신고나 보완이 필요한 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "social-insurance-filing-poa",
+        "insurance-enrollment-confirmation-request",
+        "social-insurance-correction-request",
+        "labor-contract-standard"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-20T12:58:30+09:00",
+      "updated_at": "2026-11-20T12:58:48+09:00",
+      "downloads": 0
+    },
+    {
       "id": "social-insurance-filing-poa",
       "title": "4대보험 신고 업무 위임장",
       "category": "public",
@@ -47772,6 +48071,110 @@
         "payment-confirmation"
       ],
       "seal": true
+    },
+    {
+      "id": "transaction-statement-correction-request",
+      "title": "거래명세서 정정 요청서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "거래명세서",
+        "정정",
+        "수량 오류",
+        "단가 오류",
+        "거래처"
+      ],
+      "summary": "받은 거래명세서의 품목·수량·단가·금액이 실제와 다를 때 정정을 요청하는 서식입니다.",
+      "usage": "납품받은 내용과 거래명세서가 맞지 않을 때, 어느 항목이 어떻게 다른지 표로 정리해 거래처에 보내는 서식입니다. 명세서 번호와 거래일을 먼저 적고, 항목별로 기재된 내용과 올바른 내용을 나란히 적습니다. 정정본을 언제까지 받고 싶은지 함께 적어 두면 대금 정산이 늦어지지 않습니다. 이미 세금계산서가 발행된 경우의 처리는 세무 담당자나 거래처와 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 56814,
+        "docx": 38739,
+        "hwpx": 10057
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "명세서 번호와 거래일, 거래처 정보를 적습니다.",
+        "다른 항목마다 기재 내용과 올바른 내용을 적습니다.",
+        "정정본을 받고 싶은 기한을 적습니다.",
+        "날짜를 적고 요청자 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "정정 근거 자료도 같이 보내야 하나요?",
+          "a": "납품 확인서나 주문서 사본을 함께 보내면 거래처가 확인하기 쉽습니다."
+        },
+        {
+          "q": "세금계산서도 같이 고쳐야 하나요?",
+          "a": "이미 발행된 경우 처리 방법이 달라질 수 있으니 세무 담당자나 거래처와 확인하십시오."
+        },
+        {
+          "q": "이메일로만 보내도 되나요?",
+          "a": "가능하지만 서명한 사본을 보관하면 나중에 확인하기 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 거래 정보",
+          "items": [
+            "수신(거래처)",
+            "요청자(회사)",
+            "명세서 번호",
+            "거래일",
+            "담당자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 정정 요청 항목",
+          "items": [
+            "품목",
+            "항목",
+            "기재된 내용",
+            "올바른 내용"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 요청 사항",
+          "items": [],
+          "note": "정정본 회신 기한과 그 밖에 알릴 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "transaction-statement",
+        "delivery-confirmation",
+        "tax-invoice-correction-request",
+        "return-exchange-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-20T12:58:20+09:00",
+      "updated_at": "2026-11-20T12:58:20+09:00",
+      "downloads": 0
     },
     {
       "id": "travel-plan",
@@ -54380,6 +54783,109 @@
       "warnings": [],
       "created_at": "2026-11-13T12:21:24+09:00",
       "updated_at": "2026-11-13T12:21:24+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-dependent-separate-residence-reason",
+      "title": "연말정산 부양가족 별거 사유서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "연말정산",
+        "부양가족",
+        "별거",
+        "주거형편",
+        "거주지 상이"
+      ],
+      "summary": "연말정산에서 공제받으려는 가족과 주소지가 달라 따로 살게 된 사유를 적어 회사에 제출하는 사유서입니다.",
+      "usage": "공제를 신청하는 가족이 학업·직장·요양 등으로 주소지가 다른 경우, 따로 사는 사유와 생활비 지원 여부를 적어 회사 담당자에게 알리는 서식입니다. 가족별로 현재 거주지와 별거 사유, 기간을 적고 서명합니다. 공제 가능 여부는 요건에 따라 정해지므로 국세청 안내와 회사 기준을 확인하십시오. 주민등록번호는 적지 않고 생년월일만 적으며, 건강 상태나 병명은 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 63147,
+        "docx": 38862,
+        "hwpx": 10217
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "신고자 성명과 소속 부서를 적습니다.",
+        "따로 사는 가족의 관계와 생년월일, 현재 거주지를 적습니다.",
+        "따로 살게 된 사유와 기간을 적습니다.",
+        "확인 문구를 읽고 날짜와 서명을 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "사유서를 내면 공제가 확정되나요?",
+          "a": "아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오."
+        },
+        {
+          "q": "병명이나 진단 내용도 적어야 하나요?",
+          "a": "적지 않습니다. 요양 중이라면 \"요양 중\" 정도로만 적고 자세한 내용은 쓰지 않습니다."
+        },
+        {
+          "q": "가족이 여럿이면 어떻게 적나요?",
+          "a": "표에 가족별로 한 줄씩 적고, 칸이 모자라면 서식을 한 장 더 사용합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 신고자 정보",
+          "items": [
+            "성명",
+            "소속 부서",
+            "사번",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 별거 가족과 사유",
+          "items": [
+            "관계",
+            "생년월일",
+            "현재 거주지",
+            "별거 사유",
+            "기간"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 생활비 지원 등 전달 사항",
+          "items": [],
+          "note": "생활비를 어떻게 지원하는지 등 담당자에게 알릴 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-dependent-duplicate-check",
+        "year-end-dependent-income-statement",
+        "dependent-support-fact-confirmation",
+        "year-end-tax-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-20T12:58:17+09:00",
+      "updated_at": "2026-11-20T12:58:17+09:00",
       "downloads": 0
     },
     {

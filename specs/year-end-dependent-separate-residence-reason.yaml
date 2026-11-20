@@ -1,0 +1,70 @@
+id: year-end-dependent-separate-residence-reason
+title: 연말정산 부양가족 별거 사유서
+category: public
+subcategory: tax
+tags: [연말정산, 부양가족, 별거, 주거형편, 거주지 상이]
+summary: 연말정산에서 공제받으려는 가족과 주소지가 달라 따로 살게 된 사유를 적어 회사에 제출하는 사유서입니다.
+usage: >
+  공제를 신청하는 가족이 학업·직장·요양 등으로 주소지가 다른 경우, 따로 사는 사유와 생활비 지원 여부를
+  적어 회사 담당자에게 알리는 서식입니다. 가족별로 현재 거주지와 별거 사유, 기간을 적고 서명합니다.
+  공제 가능 여부는 요건에 따라 정해지므로 국세청 안내와 회사 기준을 확인하십시오. 주민등록번호는 적지
+  않고 생년월일만 적으며, 건강 상태나 병명은 적지 않습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 신고자 성명과 소속 부서를 적습니다.
+  - 따로 사는 가족의 관계와 생년월일, 현재 거주지를 적습니다.
+  - 따로 살게 된 사유와 기간을 적습니다.
+  - 확인 문구를 읽고 날짜와 서명을 적습니다.
+faq:
+  - q: 사유서를 내면 공제가 확정되나요?
+    a: 아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오.
+  - q: 병명이나 진단 내용도 적어야 하나요?
+    a: 적지 않습니다. 요양 중이라면 "요양 중" 정도로만 적고 자세한 내용은 쓰지 않습니다.
+  - q: 가족이 여럿이면 어떻게 적나요?
+    a: 표에 가족별로 한 줄씩 적고, 칸이 모자라면 서식을 한 장 더 사용합니다.
+related: [year-end-dependent-duplicate-check, year-end-dependent-income-statement, dependent-support-fact-confirmation, year-end-tax-checklist]
+blocks:
+  - type: doc_title
+    text: 연말정산 부양가족 별거 사유서
+    spaced: false
+  - type: subtitle
+    text: 1. 신고자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속 부서", ""]
+      - ["사번", "", "연락처", ""]
+    sample_rows:
+      - ["", "박민준", "", "영업지원팀"]
+      - ["", "A-1024", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 별거 가족과 사유
+  - type: table
+    widths: [7, 13, 11, 17, 22, 18, 12]
+    header: ["No", 성명, 관계, 생년월일, 현재 거주지, 별거 사유, 기간]
+    empty_rows: 5
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "박영수", "부", "1952-01-15", "충북 청주시", "요양 거주", "2년"]
+      - ["2", "박서현", "자녀", "2006-05-20", "서울 관악구", "학업(기숙)", "1년"]
+  - type: subtitle
+    text: 3. 생활비 지원 등 전달 사항
+  - type: textbox
+    hint: "생활비를 어떻게 지원하는지 등 담당자에게 알릴 내용을 적으십시오."
+    height_mm: 24
+    sample_text: "부친의 생활비는 매월 계좌로 송금하고 있으며, 주소지 변동이 있으면 바로 알리겠습니다."
+  - type: para
+    text: 위 내용이 사실과 다름이 없음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   20 일
+  - type: sign_line
+    label: 신고자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상 여부는 국세청 기준과 회사 안내를 확인하십시오.

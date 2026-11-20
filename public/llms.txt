@@ -1,6 +1,6 @@
 # 무료서식 다운로드 (freeforms.kr)
 
-> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 527종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-11-19 기준, 매일 새 서식 추가)
+> 회원가입·로그인 없이 업무·법률·공공·부동산·교육·의료복지·생활 분야의 한국어 문서 양식 532종을 PDF·Word(DOCX)·한글(HWPX) 세 가지 형식으로 무료 제공하는 서식 다운로드 사이트입니다. (2026-11-20 기준, 매일 새 서식 추가)
 
 ## 이 사이트의 특징
 
@@ -51,7 +51,7 @@
 - [기업 · 인사·노무](https://freeforms.kr/category/corp/hr/): 61종
 - [기업 · 총무·행정](https://freeforms.kr/category/corp/admin/): 26종
 - [기업 · 회계·세무](https://freeforms.kr/category/corp/finance/): 35종
-- [기업 · 영업·마케팅](https://freeforms.kr/category/corp/sales/): 22종
+- [기업 · 영업·마케팅](https://freeforms.kr/category/corp/sales/): 23종
 - [기업 · 창업·법인](https://freeforms.kr/category/corp/startup/): 23종
 - [법률 · 계약](https://freeforms.kr/category/legal/contract/): 22종
 - [법률 · 통지·증명](https://freeforms.kr/category/legal/notice/): 23종
@@ -59,14 +59,14 @@
 - [공공 · 민원·신고](https://freeforms.kr/category/public/civil/): 22종
 - [공공 · 신청·동의](https://freeforms.kr/category/public/consent/): 22종
 - [공공 · 가족·주민등록](https://freeforms.kr/category/public/family/): 22종
-- [공공 · 세금·사업자](https://freeforms.kr/category/public/tax/): 23종
-- [공공 · 4대보험·고용](https://freeforms.kr/category/public/insurance/): 22종
+- [공공 · 세금·사업자](https://freeforms.kr/category/public/tax/): 24종
+- [공공 · 4대보험·고용](https://freeforms.kr/category/public/insurance/): 23종
 - [공공 · 조달·입찰](https://freeforms.kr/category/public/procure/): 22종
 - [공공 · 자동차·교통](https://freeforms.kr/category/public/vehicle/): 23종
 - [공공 · 인허가·영업신고](https://freeforms.kr/category/public/permit/): 22종
 - [부동산 · 임대·매매](https://freeforms.kr/category/estate/lease/): 23종
-- [개인 · 취업·경력](https://freeforms.kr/category/personal/career/): 22종
-- [개인 · 생활·가정](https://freeforms.kr/category/personal/life/): 22종
+- [개인 · 취업·경력](https://freeforms.kr/category/personal/career/): 23종
+- [개인 · 생활·가정](https://freeforms.kr/category/personal/life/): 23종
 - [교육 · 학교·학원](https://freeforms.kr/category/edu/school/): 24종
 - [의료·복지 · 동의·신청](https://freeforms.kr/category/welfare/consent/): 23종
 
@@ -97,7 +97,7 @@
 
 - [퇴사할 때 필요한 서식 14종](https://freeforms.kr/collection/resignation/)
 - [취업 준비 서식 10종](https://freeforms.kr/collection/job-hunting/)
-- [이사·임대차 서식 18종](https://freeforms.kr/collection/moving/)
+- [이사·임대차 서식 19종](https://freeforms.kr/collection/moving/)
 - [돈 빌려주고 받을 때 11종](https://freeforms.kr/collection/lending/)
 - [거래·정산 서식 13종](https://freeforms.kr/collection/trading/)
 - [창업 첫 달 서식 17종](https://freeforms.kr/collection/startup/)
@@ -122,6 +122,7 @@
 - [차용증 (금전소비대차계약서)](https://freeforms.kr/form/loan-agreement/): 차용금액·변제기일·이자율·변제방법과 기한이익 상실 조항을 담은 금전 차용증입니다.
 - [4대보험 가입 확인 요청서](https://freeforms.kr/form/insurance-enrollment-confirmation-request/): 근로자가 회사에 4대보험 가입 여부와 가입일 확인을 요청할 때 쓰는 요청서로, 확인받을 보험과 용도를 적습니다.
 - [4대보험 신고 업무 위임장](https://freeforms.kr/form/social-insurance-filing-poa/): 4대 사회보험(국민연금·건강보험·고용보험·산재보험) 신고 업무를 노무사·세무대리인에게 맡길 때 쓰는 위임장입니다.
+- [4대보험 취득·상실 신고 접수 대장](https://freeforms.kr/form/social-insurance-filing-ledger/): 직원의 4대보험 취득·상실 신고 내역과 접수 상태를 한 곳에 기록해 두는 관리 대장입니다.
 - [가계부 (연간)](https://freeforms.kr/form/household-budget-yearly/): 한 해의 월별 수입·지출과 저축을 기록하고 항목별 연간 집계와 내년 목표를 정리하는 연간 가계부 양식입니다.
 - [가계부 (월간)](https://freeforms.kr/form/household-budget/): 월별 수입·지출을 항목별·분류별로 기록하고 월말 수지를 정산하는 가계부 양식입니다.
 - [가계부 (주간)](https://freeforms.kr/form/household-budget-weekly/): 한 주간의 수입·지출을 날짜별로 기록하고 분류별 소계와 총평을 정리하는 주간 가계부 양식입니다.
@@ -129,10 +130,9 @@
 - [가맹계약서](https://freeforms.kr/form/franchise-contract/): 영업표지 사용·영업지역·가맹금·교육지원과 계약기간·해지를 정하는 가맹계약서입니다.
 - [가족관계 사실 확인서](https://freeforms.kr/form/family-relationship-confirmation/): 확인인과 상대방의 가족관계를 사실대로 적어 제출처에 알리는 일반 용도의 가족관계 사실 확인서입니다.
 - [가족관계증명서 발급 위임장](https://freeforms.kr/form/family-certificate-issuance-poa/): 본인이 직접 방문하기 어려울 때 가족관계증명서·기본증명서 등의 대리 발급을 위임하는 위임장입니다.
-- [각서](https://freeforms.kr/form/written-pledge/): 일방이 상대방에게 특정 사항을 약속하고 확인하는 각서 양식입니다.
 
 ## Optional
 
-- [전체 서식 목록 527종](https://freeforms.kr/llms-full.txt)
+- [전체 서식 목록 532종](https://freeforms.kr/llms-full.txt)
 - [사이트맵](https://freeforms.kr/sitemap.xml)
 - [RSS](https://freeforms.kr/rss.xml)

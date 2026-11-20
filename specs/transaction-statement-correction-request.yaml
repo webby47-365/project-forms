@@ -1,0 +1,69 @@
+id: transaction-statement-correction-request
+title: 거래명세서 정정 요청서
+category: corp
+subcategory: sales
+tags: [거래명세서, 정정, 수량 오류, 단가 오류, 거래처]
+summary: 받은 거래명세서의 품목·수량·단가·금액이 실제와 다를 때 정정을 요청하는 서식입니다.
+usage: >
+  납품받은 내용과 거래명세서가 맞지 않을 때, 어느 항목이 어떻게 다른지 표로 정리해 거래처에 보내는
+  서식입니다. 명세서 번호와 거래일을 먼저 적고, 항목별로 기재된 내용과 올바른 내용을 나란히 적습니다.
+  정정본을 언제까지 받고 싶은지 함께 적어 두면 대금 정산이 늦어지지 않습니다. 이미 세금계산서가
+  발행된 경우의 처리는 세무 담당자나 거래처와 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 명세서 번호와 거래일, 거래처 정보를 적습니다.
+  - 다른 항목마다 기재 내용과 올바른 내용을 적습니다.
+  - 정정본을 받고 싶은 기한을 적습니다.
+  - 날짜를 적고 요청자 서명을 합니다.
+faq:
+  - q: 정정 근거 자료도 같이 보내야 하나요?
+    a: 납품 확인서나 주문서 사본을 함께 보내면 거래처가 확인하기 쉽습니다.
+  - q: 세금계산서도 같이 고쳐야 하나요?
+    a: 이미 발행된 경우 처리 방법이 달라질 수 있으니 세무 담당자나 거래처와 확인하십시오.
+  - q: 이메일로만 보내도 되나요?
+    a: 가능하지만 서명한 사본을 보관하면 나중에 확인하기 좋습니다.
+related: [transaction-statement, delivery-confirmation, tax-invoice-correction-request, return-exchange-request]
+blocks:
+  - type: doc_title
+    text: 거래명세서 정정 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 거래 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["수신(거래처)", "", "요청자(회사)", ""]
+      - ["명세서 번호", "", "거래일", ""]
+      - ["담당자", "", "연락처", ""]
+    sample_rows:
+      - ["", "한빛물산", "", "(주)새길데이터"]
+      - ["", "TS-2026-1108", "", "2026-11-08"]
+      - ["", "김서연", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 정정 요청 항목
+  - type: table
+    widths: [7, 18, 14, 22, 22, 17]
+    header: ["No", 품목, 항목, 기재된 내용, 올바른 내용, 비고]
+    empty_rows: 5
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "A4 용지", "수량", "100박스", "80박스", "납품확인서"]
+      - ["2", "토너", "단가", "52,000원", "48,000원", "견적서 기준"]
+  - type: subtitle
+    text: 3. 요청 사항
+  - type: textbox
+    hint: "정정본 회신 기한과 그 밖에 알릴 내용을 적으십시오."
+    height_mm: 22
+    sample_text: "위 항목을 바로잡은 명세서를 2026-11-27까지 보내 주시기 바랍니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   20 일
+  - type: sign_line
+    label: 요청자
+    sample_names: [김서연]
+  - type: notice
+    text: 정정 내용은 주문서·납품확인서 등 근거 자료와 함께 보관하십시오.

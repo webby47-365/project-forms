@@ -1,0 +1,68 @@
+id: job-application-withdrawal-notice
+title: 입사 지원 철회서
+category: personal
+subcategory: career
+tags: [입사 지원 철회, 지원 취소, 채용 포기, 철회 요청]
+summary: 이미 제출한 입사 지원을 거두어 달라고 채용 담당자에게 알리는 철회서입니다.
+usage: >
+  다른 곳에 합격했거나 사정이 바뀌어 지원을 이어갈 수 없을 때, 채용 담당자에게 정중하게 철회 의사를
+  전하는 서식입니다. 지원 공고와 지원 직무, 접수 일자를 적고 철회 사유를 짧게 씁니다. 사유는 자세히
+  쓰지 않아도 되며, 제출한 서류의 파기를 요청하려면 해당 칸에 표시합니다. 면접 일정이 잡혀 있다면 가능한
+  빨리 보내는 것이 예의입니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 지원 회사와 공고명, 지원 직무를 적습니다.
+  - 지원서를 접수한 날짜와 지원자 정보를 적습니다.
+  - 철회 사유를 한두 문장으로 적습니다.
+  - 서류 파기 요청 여부를 표시하고 서명합니다.
+faq:
+  - q: 철회 사유를 자세히 써야 하나요?
+    a: 아니요. 개인 사정이나 다른 기회를 택했다는 정도로 짧게 적어도 충분합니다.
+  - q: 제출한 서류를 돌려받을 수 있나요?
+    a: 파기나 반환 요청을 적어 둘 수 있으나 처리는 회사 방침에 따릅니다.
+  - q: 면접 직전에 철회해도 되나요?
+    a: 가능한 한 빨리 알리는 것이 좋습니다. 전화나 이메일로 먼저 알리고 서면을 보내면 정중합니다.
+related: [job-offer-acceptance-letter, job-application-form, interview-evaluation, career-certificate-request]
+blocks:
+  - type: doc_title
+    text: 입사 지원 철회서
+    spaced: true
+  - type: subtitle
+    text: 1. 지원 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["지원 회사", "", "공고명", ""]
+      - ["지원 직무", "", "접수 일자", ""]
+      - ["지원자", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)한빛커머스", "", "2026 하반기 신입 공채"]
+      - ["", "마케팅 기획", "", "2026-11-03"]
+      - ["", "이수현", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 철회 사유
+  - type: textbox
+    hint: "철회 사유를 한두 문장으로 정중하게 적으십시오."
+    height_mm: 26
+    sample_text: "개인 사정으로 이번 채용에 더 참여하기 어려워 지원을 철회하고자 합니다. 검토해 주신 점 감사드립니다."
+  - type: subtitle
+    text: 3. 제출 서류 처리
+  - type: kv_list
+    items:
+      - "□ 제출한 서류를 파기해 주시기 바랍니다."
+      - "□ 제출한 서류를 반환해 주시기 바랍니다."
+      - "□ 별도 요청 없음"
+  - type: para
+    text: 위와 같이 입사 지원을 철회하오니 처리해 주시기 바랍니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   20 일
+  - type: sign_line
+    label: 지원자
+    sample_names: [이수현]
+  - type: notice
+    text: 서류 처리는 회사 방침에 따르며 채용 담당자에게 확인하십시오.

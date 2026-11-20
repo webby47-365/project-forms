@@ -1,0 +1,69 @@
+id: moving-damage-claim-request
+title: 이삿짐 파손 보상 요청서
+category: personal
+subcategory: life
+tags: [이삿짐 파손, 이사 피해, 보상 요청, 이사업체]
+summary: 이사 중 가구·가전이 파손되었을 때 이사업체에 보상을 요청하는 서식입니다.
+usage: >
+  이삿짐을 옮기다 파손되거나 분실된 물건이 있을 때, 이사업체에 피해 내용을 정리해 알리는 서식입니다.
+  계약일과 이사일, 업체 정보를 적고 파손 물품마다 상태와 요청 사항을 표로 적습니다. 파손 부위가 보이는
+  사진과 이사 계약서 사본을 함께 보관하면 확인이 쉽습니다. 보상 범위와 방법은 계약서의 약관과 업체
+  기준에 따르니 계약서를 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 이사업체와 계약일, 이사일, 연락처를 적습니다.
+  - 파손된 물품과 파손 상태를 한 줄씩 적습니다.
+  - 요청하는 보상 방법과 희망 금액을 적습니다.
+  - 날짜를 적고 서명한 뒤 사진과 함께 보냅니다.
+faq:
+  - q: 이사 당일에 확인하지 못했는데 요청할 수 있나요?
+    a: 발견한 즉시 사진을 남기고 업체에 알리는 것이 좋습니다. 접수 기한은 계약서 약관을 확인하십시오.
+  - q: 수리비와 교환 중 무엇을 요청하나요?
+    a: 파손 정도에 따라 다릅니다. 요청 칸에 원하는 방법을 적고 업체와 협의합니다.
+  - q: 합의가 안 되면 어떻게 하나요?
+    a: 소비자상담 기관 등에 상담을 받을 수 있습니다. 먼저 이 요청서를 서면으로 남겨 두십시오.
+related: [moving-checklist, item-loan-confirmation, consumer-dispute-mediation-application, lost-property-report]
+blocks:
+  - type: doc_title
+    text: 이삿짐 파손 보상 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 이사 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["이사업체", "", "업체 연락처", ""]
+      - ["계약일", "", "이사일", ""]
+      - ["요청자", "", "연락처", ""]
+    sample_rows:
+      - ["", "한빛이사", "", "02-1234-5678"]
+      - ["", "2026-10-20", "", "2026-11-14"]
+      - ["", "홍길동", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 파손 물품
+  - type: table
+    widths: [7, 20, 28, 20, 25]
+    header: ["No", 물품, 파손 상태, 구입 시기, 요청 사항]
+    empty_rows: 5
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["1", "식탁", "모서리 깨짐", "2024년", "수리 요청"]
+      - ["2", "TV", "화면 균열", "2023년", "교환 요청"]
+  - type: subtitle
+    text: 3. 요청 내용
+  - type: textbox
+    hint: "발견 시점과 희망하는 보상 방법을 적으십시오."
+    height_mm: 24
+    sample_text: "이사 다음 날 짐을 풀다 발견했으며 사진을 첨부합니다. 수리 또는 비용 보상을 요청합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   20 일
+  - type: sign_line
+    label: 요청자
+    sample_names: [홍길동]
+  - type: notice
+    text: 보상 범위는 이사 계약서의 약관을 확인하고, 파손 사진을 함께 보관하십시오.
