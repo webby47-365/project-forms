@@ -3,10 +3,26 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 532종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 534종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>입찰 참가자격 자기확인서</title>
+<link>https://freeforms.kr/form/bid-qualification-self-check/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/bid-qualification-self-check/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Sat, 21 Nov 2026 00:00:00 +0900</pubDate>
+<description>입찰에 참가하기 전 사업자등록·업종 등록·세금 및 보험료 납부·제재 이력 등 참가 요건을 스스로 점검해 적는 입찰 참가자격 자기확인서 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 부양가족 정보 제공 동의서</title>
+<link>https://freeforms.kr/form/year-end-dependent-info-consent/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-dependent-info-consent/</guid>
+<category>공공 · 신청·동의</category>
+<pubDate>Sat, 21 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산에서 부양가족의 인적사항과 소득 요건 자료를 회사에 내도 된다는 부양가족 본인의 동의를 받는 연말정산 부양가족 정보 제공 동의서 양식입니다.</description>
+</item>
 <item>
 <title>4대보험 취득·상실 신고 접수 대장</title>
 <link>https://freeforms.kr/form/social-insurance-filing-ledger/</link>
@@ -230,22 +246,6 @@
 <category>기업 · 회계·세무</category>
 <pubDate>Mon, 16 Nov 2026 00:00:00 +0900</pubDate>
 <description>올해 중간에 입사한 근로자가 전 근무지에서 받은 급여와 이미 낸 세금 자료를 현 직장 연말정산에 합산하도록 제출하는 전 근무지 근로소득 원천징수영수증 제출서 양식입니다.</description>
-</item>
-<item>
-<title>영업장 자체 점검표</title>
-<link>https://freeforms.kr/form/business-self-inspection-checklist/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/business-self-inspection-checklist/</guid>
-<category>공공 · 인허가·영업신고</category>
-<pubDate>Sat, 14 Nov 2026 00:00:00 +0900</pubDate>
-<description>영업자가 영업장의 시설·위생·서류 상태를 스스로 점검하고 조치 내용을 남기는 자체 점검표입니다.</description>
-</item>
-<item>
-<title>생활비 분담 약정서</title>
-<link>https://freeforms.kr/form/living-cost-sharing-agreement/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/living-cost-sharing-agreement/</guid>
-<category>개인 · 생활·가정</category>
-<pubDate>Sat, 14 Nov 2026 00:00:00 +0900</pubDate>
-<description>함께 사는 사람끼리 월세·공과금·식비 등 생활비를 어떻게 나눌지 미리 정해 두는 약정서입니다.</description>
 </item>
 </channel>
 </rss>

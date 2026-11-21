@@ -1,0 +1,86 @@
+id: bid-qualification-self-check
+title: 입찰 참가자격 자기확인서
+category: public
+subcategory: procure
+tags: [입찰참가자격, 자격확인서, 입찰자격확인, 입찰서류, 자기확인서]
+summary: 입찰에 참가하기 전 사업자등록·업종 등록·세금 및 보험료 납부·제재 이력 등 참가 요건을 스스로 점검해 적는 입찰 참가자격 자기확인서 양식입니다.
+usage: >
+  입찰 공고에 적힌 참가자격 요건을 갖췄는지 입찰자가 스스로 점검하고 확인하는 서식입니다.
+  입찰자 정보와 입찰 건명을 적고, 요건별로 충족 여부에 ○·×를 표시한 뒤 대표자가 서명합니다.
+  공고마다 요구하는 요건과 증빙이 다르므로 공고문을 먼저 확인하고, 제출 방식은 발주처 안내를 따르십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 입찰자 상호와 대표자, 사업자 정보를 적습니다.
+  - 입찰 공고번호와 건명을 공고문대로 적습니다.
+  - 요건마다 충족 여부에 ○ 또는 ×를 표시합니다.
+  - 날짜를 적고 대표자가 서명 또는 날인합니다.
+faq:
+  - q: 요건 항목은 공고마다 같은가요?
+    a: 같지 않습니다. 공고문의 참가자격 항목을 기준으로 표를 고쳐 쓰십시오.
+  - q: ×가 하나라도 있으면 제출할 수 없나요?
+    a: 공고에서 필수 요건으로 정했다면 참가가 어려울 수 있습니다. 발주처에 확인하십시오.
+  - q: 증빙 서류도 같이 내야 하나요?
+    a: 공고에서 요구하면 함께 냅니다. 입찰 제출서류 목록표로 빠진 것이 없는지 점검하면 편합니다.
+related: [bid-document-submission-list, gov-bid-participation, bid-performance-certificate, integrity-pledge-bidding]
+blocks:
+  - type: doc_title
+    text: 입찰 참가자격 자기확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 입찰자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [2, 1, 2, 3]
+    rows:
+      - ["상호", "", "대표자", ""]
+      - ["사업자등록번호", "", "연락처", ""]
+      - ["소재지", "", "", ""]
+    sample_rows:
+      - ["", "(주)한빛물산", "", "홍길동"]
+      - ["", "000-00-00000", "", "010-1234-5678"]
+      - ["", "서울시 중구 예시로 12", "", ""]
+  - type: subtitle
+    text: 2. 입찰 건
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 8
+    merges:
+      - [0, 1, 0, 3]
+      - [1, 1, 1, 3]
+    rows:
+      - ["공고번호", "", "", ""]
+      - ["입찰 건명", "", "", ""]
+      - ["발주처", "", "개찰일", ""]
+    sample_rows:
+      - ["", "2026-공고-0123", "", ""]
+      - ["", "사무용품 연간 단가 구매", "", ""]
+      - ["", "한빛시청", "", "2026-12-03"]
+  - type: subtitle
+    text: 3. 참가자격 요건 점검
+  - type: table
+    widths: [8, 52, 20, 20]
+    header: ["번호", "요건", "충족(○/×)", "증빙 첨부"]
+    empty_rows: 5
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "사업자등록이 유효합니다", "○", "사본"]
+      - ["2", "공고 업종의 등록·면허를 보유합니다", "○", "사본"]
+      - ["3", "국세·지방세를 체납하지 않았습니다", "○", "납세증명"]
+      - ["4", "입찰 참가 제한 처분을 받지 않았습니다", "○", "-"]
+  - type: para
+    text: 위 내용이 사실과 다름이 없음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   21 일
+  - type: sign_line
+    labels: ["입찰자 대표"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 요건과 증빙은 입찰 공고문을 기준으로 합니다. 제출 방식은 발주처 안내를 확인하십시오.

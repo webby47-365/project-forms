@@ -1,0 +1,78 @@
+id: year-end-dependent-info-consent
+title: 연말정산 부양가족 정보 제공 동의서
+category: public
+subcategory: consent
+tags: [연말정산, 부양가족동의서, 부양가족정보제공, 가족정보동의, 소득공제동의]
+summary: 연말정산에서 부양가족의 인적사항과 소득 요건 자료를 회사에 내도 된다는 부양가족 본인의 동의를 받는 연말정산 부양가족 정보 제공 동의서 양식입니다.
+usage: >
+  연말정산 때 부양가족 공제를 받으려면 가족의 이름·생년월일·소득 요건 같은 정보를 회사 급여 담당자에게 내야 합니다.
+  이 서식은 그 정보를 내도 된다는 부양가족 본인의 동의를 남기는 용도입니다.
+  근로자 정보와 부양가족 정보, 제공 항목과 이용 목적을 적고 부양가족이 직접 서명합니다.
+  제공 범위와 보관 기간은 회사 안내에 따르므로 제출 전 담당 부서에 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 근로자의 성명과 소속 부서, 사번을 적습니다.
+  - 부양가족의 성명, 생년월일, 관계를 적습니다.
+  - 제공에 동의하는 항목에 ○를 표시합니다.
+  - 부양가족이 날짜를 적고 직접 서명합니다.
+faq:
+  - q: 부양가족이 꼭 서명해야 하나요?
+    a: 가족의 정보를 회사에 내는 것이므로 본인 동의를 받아 두는 편이 안전합니다. 회사 요구 방식은 담당 부서에 확인하십시오.
+  - q: 미성년 자녀는 누가 서명하나요?
+    a: 보통 법정대리인인 부모가 대신 서명합니다. 이 경우 관계를 함께 적어 두면 됩니다.
+  - q: 동의한 뒤 철회할 수 있나요?
+    a: 철회 방법과 시기는 회사 개인정보 처리 안내에 따릅니다. 담당 부서에 서면으로 알리는 것이 일반적입니다.
+related: [year-end-dependent-income-statement, year-end-dependent-change-notice, year-end-tax-checklist, year-end-simplified-data-consent]
+blocks:
+  - type: doc_title
+    text: 연말정산 부양가족 정보 제공 동의서
+    spaced: false
+  - type: subtitle
+    text: 1. 근로자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "사번", ""]
+      - ["소속 부서", "", "귀속 연도", ""]
+    sample_rows:
+      - ["", "박민준", "", "A-20315"]
+      - ["", "영업지원팀", "", "2026년"]
+  - type: subtitle
+    text: 2. 부양가족 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["근로자와의 관계", "", "연락처", ""]
+    sample_rows:
+      - ["", "김서연", "", "1962-03-05"]
+      - ["", "어머니", "", "010-1234-5678"]
+  - type: subtitle
+    text: 3. 제공 항목과 동의 여부
+  - type: table
+    widths: [32, 40, 28]
+    header: ["제공 항목", "이용 목적", "동의 여부(○/×)"]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["성명·생년월일·관계", "부양가족 공제 대상 확인", "○"]
+      - ["소득 요건 확인 자료", "소득 기준 충족 여부 확인", "○"]
+      - ["동거 여부 확인 자료", "공제 요건 확인", "○"]
+  - type: textbox
+    hint: "제공 정보의 보관 기간이나 전달할 내용이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "위 정보는 연말정산 부양가족 공제 확인 목적으로만 사용하는 데 동의합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   21 일
+  - type: sign_line
+    labels: ["부양가족", "근로자"]
+    sample_names: [김서연, 박민준]
+  - type: notice
+    text: 제공 범위와 보관 기간은 회사의 개인정보 처리 안내를 확인하십시오.
