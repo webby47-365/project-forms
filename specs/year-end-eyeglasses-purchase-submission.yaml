@@ -1,0 +1,72 @@
+id: year-end-eyeglasses-purchase-submission
+title: 연말정산 안경·콘택트렌즈 구입비 제출서
+category: corp
+subcategory: finance
+tags: [연말정산, 안경구입비, 콘택트렌즈, 의료비공제, 구입비제출]
+summary: 연말정산을 위해 근로자와 부양가족의 안경·콘택트렌즈 구입 내역과 영수증을 회사에 제출할 때 쓰는 구입비 제출서 양식입니다.
+usage: >
+  연말정산에서 안경·콘택트렌즈 구입비는 의료비 항목으로 신고할 수 있는 지출 중 하나이며, 구입처가 간소화 자료에 잡히지 않는 경우가 있어 영수증을 따로 내야 할 수 있습니다.
+  이 서식에는 사용하는 사람, 구입처, 구입일, 품목과 금액을 표로 적고 영수증 사본을 붙입니다.
+  공제 한도와 대상 여부는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속 부서, 귀속 연도를 적습니다.
+  - 안경·렌즈를 쓰는 사람과 근로자와의 관계를 적습니다.
+  - 구입일, 구입처, 품목, 금액을 한 줄씩 적습니다.
+  - 영수증 사본을 붙이고 날짜와 서명을 합니다.
+faq:
+  - q: 안경 영수증은 어떤 것을 내나요?
+    a: 구입처 상호, 구입일, 품목, 금액이 보이는 영수증이면 됩니다. 인정 범위는 회사와 국세청 안내를 확인하십시오.
+  - q: 가족이 구입한 것도 적나요?
+    a: 부양가족 공제 대상 가족의 구입비라면 사용하는 사람란에 가족을 적고 관계를 함께 적습니다. 대상 여부는 담당 부서에 확인하십시오.
+  - q: 현금으로 샀는데 영수증이 없으면 어떻게 하나요?
+    a: 구입처에 재발급이나 확인 가능한 증빙을 요청해 보십시오. 인정 여부는 제출처 판단에 따릅니다.
+related: [year-end-medical-expense-submission, year-end-document-receipt-ledger, year-end-tax-checklist, year-end-refund-account-notice]
+blocks:
+  - type: doc_title
+    text: 연말정산 안경·콘택트렌즈 구입비 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "사번", ""]
+      - ["소속 부서", "", "귀속 연도", ""]
+    sample_rows:
+      - ["", "박민준", "", "A-20315"]
+      - ["", "영업지원팀", "", "2026년"]
+  - type: subtitle
+    text: 2. 구입 내역
+  - type: table
+    widths: [14, 16, 16, 22, 18, 14]
+    header: ["사용자", "관계", "구입일", "구입처", "품목", "금액(원)"]
+    empty_rows: 6
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["박민준", "본인", "2026-03-12", "한빛안경", "안경", "180,000"]
+      - ["김서연", "배우자", "2026-07-02", "새길안경", "렌즈", "65,000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["구입 건수", "", "합계 금액", ""]
+    sample_rows:
+      - ["", "2건", "", "245,000원"]
+  - type: textbox
+    hint: "영수증 첨부 여부나 회사에 전달할 내용을 적으십시오."
+    height_mm: 18
+    sample_text: "영수증 사본 2장을 첨부합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   23 일
+  - type: sign_line
+    label: 제출자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.

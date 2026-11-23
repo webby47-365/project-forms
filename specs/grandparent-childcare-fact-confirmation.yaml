@@ -1,0 +1,80 @@
+id: grandparent-childcare-fact-confirmation
+title: 조부모 손자녀 양육 사실 확인서
+category: public
+subcategory: family
+tags: [손자녀양육, 조부모양육, 양육사실확인, 조손가정, 돌봄확인서]
+summary: 조부모가 손자녀를 실제로 돌보고 있는 기간과 양육 상황을 확인해 제출처에 내는 조부모 손자녀 양육 사실 확인서 양식입니다.
+usage: >
+  부모를 대신해 조부모가 손자녀를 키우고 있음을 학교·기관·직장 등에 알려야 할 때 쓰는 서식입니다.
+  양육하는 조부모와 손자녀의 정보, 양육 시작일과 동거 여부, 양육 사유를 적고 확인자가 서명합니다.
+  지원 제도 신청에는 제출처가 정한 별도 서류가 필요할 수 있으니 해당 기관 안내를 먼저 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 양육하는 조부모의 성명과 연락처를 적습니다.
+  - 손자녀의 성명, 생년월일, 관계를 적습니다.
+  - 양육 시작일과 동거 여부, 양육 사유를 적습니다.
+  - 날짜를 적고 확인자가 서명합니다.
+faq:
+  - q: 이 확인서만으로 지원금을 받을 수 있나요?
+    a: 아닙니다. 지원 제도마다 요건과 서류가 다릅니다. 신청 기관의 안내를 먼저 확인하십시오.
+  - q: 부모의 동의도 받아야 하나요?
+    a: 제출처에서 요구하면 부모 확인란에 서명을 받아 두는 편이 좋습니다. 요구 여부는 제출처에 확인하십시오.
+  - q: 양육 사유는 자세히 적어야 하나요?
+    a: 필요한 만큼만 간단히 적습니다. 민감한 가정 사정은 제출처가 요구할 때만 적으십시오.
+related: [child-rearing-fact-confirmation, cohabitant-confirmation, dependent-support-fact-confirmation, family-relationship-confirmation]
+blocks:
+  - type: doc_title
+    text: 조부모 손자녀 양육 사실 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 양육자(조부모) 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [1, 1, 1, 3]
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    sample_rows:
+      - ["", "김서연", "", "010-1234-5678"]
+      - ["", "부산광역시 해운대구 000로 00", "", ""]
+  - type: subtitle
+    text: 2. 손자녀 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["양육자와의 관계", "", "동거 여부", ""]
+    sample_rows:
+      - ["", "박하준", "", "2019-05-14"]
+      - ["", "외손자", "", "동거"]
+  - type: subtitle
+    text: 3. 양육 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["양육 시작일", "", "제출처", ""]
+    sample_rows:
+      - ["", "2024-03-01", "", "한빛초등학교"]
+  - type: textbox
+    hint: "양육하게 된 사유와 현재 양육 상황을 간단히 적으십시오."
+    height_mm: 24
+    sample_text: "부모의 근무 사정으로 2024년 3월부터 함께 살며 등하교와 식사 등 일상 돌봄을 하고 있습니다."
+  - type: para
+    text: 위 내용이 사실임을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   23 일
+  - type: sign_line
+    labels: ["양육자", "확인자"]
+    sample_names: [김서연, 박민준]
+  - type: notice
+    text: 지원 제도 신청 시 제출처가 요구하는 서류를 확인하십시오.

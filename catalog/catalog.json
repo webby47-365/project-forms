@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T12:53:49+09:00",
-  "count": 534,
+  "generated_at": "2026-11-23T12:40:12+09:00",
+  "count": 539,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -6323,6 +6323,98 @@
       "warnings": [],
       "created_at": "2026-11-05T12:23:43+09:00",
       "updated_at": "2026-11-05T12:23:43+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "business-name-change-confirmation",
+      "title": "영업 상호 변경 사실 확인서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "상호변경",
+        "영업상호",
+        "상호변경확인서",
+        "영업신고",
+        "간판상호"
+      ],
+      "summary": "영업장의 상호가 바뀐 사실과 변경 전후 상호·변경일을 확인해 제출처에 내는 영업 상호 변경 사실 확인서 양식입니다.",
+      "usage": "식당·가게·사업장의 상호를 바꾼 뒤 관청·거래처·금융기관에 변경 사실을 알릴 때 쓰는 서식입니다. 변경 전 상호와 변경 후 상호, 변경일, 영업장 주소와 대표자 정보를 적고 서명합니다. 영업 신고 사항의 변경은 별도 신고 절차가 있을 수 있으므로 관할 기관 안내를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45888,
+        "docx": 38444,
+        "hwpx": 9353
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "영업장 주소와 대표자 성명을 적습니다.",
+        "변경 전 상호와 변경 후 상호를 적습니다.",
+        "상호를 바꾼 날짜와 사유를 적습니다.",
+        "제출처와 날짜를 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 확인서로 상호 변경 신고가 끝나나요?",
+          "a": "아닙니다. 관청 신고나 사업자등록 정정은 별도 절차입니다. 관할 기관 안내를 확인하십시오."
+        },
+        {
+          "q": "변경일은 간판을 바꾼 날인가요?",
+          "a": "실제로 새 상호를 쓰기 시작한 날을 적는 것이 일반적입니다. 제출처 기준이 있으면 그에 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 영업장 정보",
+          "items": [
+            "영업장 주소",
+            "대표자",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 상호 변경 내용",
+          "items": [
+            "변경 전 상호",
+            "변경 후 상호",
+            "변경일",
+            "제출처"
+          ],
+          "note": "상호를 바꾼 사유와 함께 첨부하는 서류(간판 사진 등)를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-license-reissue-request",
+        "business-representative-change-confirmation",
+        "business-report-agent-poa",
+        "business-premises-area-change-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-23T12:40:09+09:00",
+      "updated_at": "2026-11-23T12:40:09+09:00",
       "downloads": 0
     },
     {
@@ -13508,6 +13600,114 @@
       "downloads": 0
     },
     {
+      "id": "contract-down-payment-refund-agreement",
+      "title": "계약금 반환 합의서",
+      "category": "legal",
+      "subcategory": "contract",
+      "tags": [
+        "계약금반환",
+        "계약금합의",
+        "반환합의서",
+        "계약해제",
+        "환불합의"
+      ],
+      "summary": "계약이 이행되지 않게 되었을 때 이미 받은 계약금을 돌려주는 금액·기한·방법을 당사자끼리 정리하는 계약금 반환 합의서 양식입니다.",
+      "usage": "매매나 용역 계약을 맺고 계약금을 주고받은 뒤 계약을 진행하지 않기로 했을 때 쓰는 서식입니다. 원래 계약의 내용, 받은 계약금, 반환할 금액과 기한, 계좌를 적고 양쪽이 서명합니다. 위약금이나 공제 항목이 있다면 반환액 산정 방법을 빠짐없이 적어 두십시오. 책임 소재는 이 서식이 판단하지 않으며 분쟁 소지가 있으면 전문가 상담을 권합니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 52639,
+        "docx": 38623,
+        "hwpx": 9678
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "원래 계약의 이름과 계약일, 계약 당사자를 적습니다.",
+        "받은 계약금과 반환하기로 한 금액을 적습니다.",
+        "반환 기한과 입금받을 계좌를 적습니다.",
+        "공제 항목이 있으면 사유와 금액을 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "계약금을 전부 돌려받는 것으로 적어야 하나요?",
+          "a": "반드시 그렇지는 않습니다. 당사자끼리 정한 대로 적되, 공제가 있으면 사유와 금액을 분명히 적으십시오."
+        },
+        {
+          "q": "반환을 나누어 받을 수도 있나요?",
+          "a": "가능합니다. 반환 일정란에 회차별 금액과 날짜를 적고 지연 시 처리 방법을 함께 적어 두면 좋습니다."
+        },
+        {
+          "q": "합의서를 쓰면 더 이상 청구하지 못하나요?",
+          "a": "합의서 문구에 따라 달라질 수 있습니다. 추가 청구 가능성이 있다면 서명 전에 전문가와 상의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "반환받는 사람",
+            "연락처",
+            "반환하는 사람"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 원래 계약",
+          "items": [
+            "계약 내용",
+            "계약일",
+            "받은 계약금"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 반환 조건",
+          "items": [
+            "반환 금액",
+            "반환 기한",
+            "공제 금액",
+            "공제 사유",
+            "입금 계좌",
+            "예금주",
+            "합의 내용"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "contract-termination-agreement",
+        "deposit-return-notice",
+        "certified-notice-deposit",
+        "receipt"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-23T12:40:03+09:00",
+      "updated_at": "2026-11-23T12:40:03+09:00",
+      "downloads": 0
+    },
+    {
       "id": "contract-performance-demand-notice",
       "title": "계약 이행 최고서",
       "category": "legal",
@@ -13710,6 +13910,113 @@
       "warnings": [],
       "created_at": "2026-10-08T08:16:33+09:00",
       "updated_at": "2026-10-08T08:16:33+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "contract-period-extension-agreement",
+      "title": "계약 기간 연장 합의서",
+      "category": "legal",
+      "subcategory": "contract",
+      "tags": [
+        "계약기간연장",
+        "계약연장합의",
+        "기간연장",
+        "갱신합의",
+        "연장합의서"
+      ],
+      "summary": "계약 만료 전에 기존 계약의 종료일을 늘리고 연장 기간의 대금·조건을 확인하는 계약 기간 연장 합의서 양식입니다.",
+      "usage": "용역·임대·공급 등 기간이 정해진 계약을 같은 조건으로 더 이어가려 할 때 씁니다. 기존 계약의 이름과 종료일, 연장할 종료일을 적고 연장 기간 동안 바뀌는 금액이나 조건이 있는지 표시합니다. 연장 합의는 반드시 기존 계약이 끝나기 전에 맺어 두십시오. 법적 효과와 갱신 조건은 계약서 문구에 따라 달라지므로 필요하면 전문가와 상의하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50942,
+        "docx": 38655,
+        "hwpx": 9855
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "기존 계약의 이름, 계약일, 당사자를 적습니다.",
+        "기존 종료일과 연장할 종료일을 적습니다.",
+        "연장 기간의 금액이나 조건이 바뀌면 그 내용을 적습니다.",
+        "날짜를 적고 양쪽이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "기존 계약이 끝난 뒤에 써도 되나요?",
+          "a": "가능은 하지만 공백 기간의 처리가 애매해질 수 있습니다. 가급적 기존 종료일 전에 작성하십시오."
+        },
+        {
+          "q": "금액이 그대로면 합의서를 안 써도 되나요?",
+          "a": "구두 합의는 나중에 다툼이 생기기 쉽습니다. 기간만 늘어나도 서면으로 남겨 두는 편이 안전합니다."
+        },
+        {
+          "q": "연장은 몇 번까지 가능한가요?",
+          "a": "계약서나 관련 법령에 제한이 있을 수 있습니다. 기존 계약서의 갱신 조항을 먼저 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "갑",
+            "연락처",
+            "을"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 기존 계약과 연장 기간",
+          "items": [
+            "계약 이름",
+            "계약일",
+            "기존 종료일",
+            "연장 시작일",
+            "연장 종료일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 연장 기간의 조건",
+          "items": [
+            "항목",
+            "기존 조건",
+            "연장 후 조건",
+            "합의 내용"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "contract-amendment-agreement",
+        "contract-termination-agreement",
+        "lease-renewal-contract",
+        "contract-down-payment-refund-agreement"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-23T12:40:05+09:00",
+      "updated_at": "2026-11-23T12:40:05+09:00",
       "downloads": 0
     },
     {
@@ -23770,6 +24077,109 @@
         "counseling-log"
       ],
       "seal": true
+    },
+    {
+      "id": "grandparent-childcare-fact-confirmation",
+      "title": "조부모 손자녀 양육 사실 확인서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "손자녀양육",
+        "조부모양육",
+        "양육사실확인",
+        "조손가정",
+        "돌봄확인서"
+      ],
+      "summary": "조부모가 손자녀를 실제로 돌보고 있는 기간과 양육 상황을 확인해 제출처에 내는 조부모 손자녀 양육 사실 확인서 양식입니다.",
+      "usage": "부모를 대신해 조부모가 손자녀를 키우고 있음을 학교·기관·직장 등에 알려야 할 때 쓰는 서식입니다. 양육하는 조부모와 손자녀의 정보, 양육 시작일과 동거 여부, 양육 사유를 적고 확인자가 서명합니다. 지원 제도 신청에는 제출처가 정한 별도 서류가 필요할 수 있으니 해당 기관 안내를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49046,
+        "docx": 38501,
+        "hwpx": 9514
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "양육하는 조부모의 성명과 연락처를 적습니다.",
+        "손자녀의 성명, 생년월일, 관계를 적습니다.",
+        "양육 시작일과 동거 여부, 양육 사유를 적습니다.",
+        "날짜를 적고 확인자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 확인서만으로 지원금을 받을 수 있나요?",
+          "a": "아닙니다. 지원 제도마다 요건과 서류가 다릅니다. 신청 기관의 안내를 먼저 확인하십시오."
+        },
+        {
+          "q": "부모의 동의도 받아야 하나요?",
+          "a": "제출처에서 요구하면 부모 확인란에 서명을 받아 두는 편이 좋습니다. 요구 여부는 제출처에 확인하십시오."
+        },
+        {
+          "q": "양육 사유는 자세히 적어야 하나요?",
+          "a": "필요한 만큼만 간단히 적습니다. 민감한 가정 사정은 제출처가 요구할 때만 적으십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 양육자(조부모) 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 손자녀 정보",
+          "items": [
+            "생년월일",
+            "양육자와의 관계",
+            "동거 여부"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 양육 내용",
+          "items": [
+            "양육 시작일",
+            "제출처"
+          ],
+          "note": "양육하게 된 사유와 현재 양육 상황을 간단히 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "child-rearing-fact-confirmation",
+        "cohabitant-confirmation",
+        "dependent-support-fact-confirmation",
+        "family-relationship-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-23T12:40:12+09:00",
+      "updated_at": "2026-11-23T12:40:12+09:00",
+      "downloads": 0
     },
     {
       "id": "guardian-consent",
@@ -55397,6 +55807,107 @@
       "warnings": [],
       "created_at": "2026-11-11T11:40:53+09:00",
       "updated_at": "2026-11-11T11:40:53+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-eyeglasses-purchase-submission",
+      "title": "연말정산 안경·콘택트렌즈 구입비 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "안경구입비",
+        "콘택트렌즈",
+        "의료비공제",
+        "구입비제출"
+      ],
+      "summary": "연말정산을 위해 근로자와 부양가족의 안경·콘택트렌즈 구입 내역과 영수증을 회사에 제출할 때 쓰는 구입비 제출서 양식입니다.",
+      "usage": "연말정산에서 안경·콘택트렌즈 구입비는 의료비 항목으로 신고할 수 있는 지출 중 하나이며, 구입처가 간소화 자료에 잡히지 않는 경우가 있어 영수증을 따로 내야 할 수 있습니다. 이 서식에는 사용하는 사람, 구입처, 구입일, 품목과 금액을 표로 적고 영수증 사본을 붙입니다. 공제 한도와 대상 여부는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 60715,
+        "docx": 38788,
+        "hwpx": 10211
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속 부서, 귀속 연도를 적습니다.",
+        "안경·렌즈를 쓰는 사람과 근로자와의 관계를 적습니다.",
+        "구입일, 구입처, 품목, 금액을 한 줄씩 적습니다.",
+        "영수증 사본을 붙이고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "안경 영수증은 어떤 것을 내나요?",
+          "a": "구입처 상호, 구입일, 품목, 금액이 보이는 영수증이면 됩니다. 인정 범위는 회사와 국세청 안내를 확인하십시오."
+        },
+        {
+          "q": "가족이 구입한 것도 적나요?",
+          "a": "부양가족 공제 대상 가족의 구입비라면 사용하는 사람란에 가족을 적고 관계를 함께 적습니다. 대상 여부는 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "현금으로 샀는데 영수증이 없으면 어떻게 하나요?",
+          "a": "구입처에 재발급이나 확인 가능한 증빙을 요청해 보십시오. 인정 여부는 제출처 판단에 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자 정보",
+          "items": [
+            "성명",
+            "사번",
+            "소속 부서",
+            "귀속 연도"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 구입 내역",
+          "items": [
+            "사용자",
+            "관계",
+            "구입일",
+            "구입처",
+            "품목",
+            "금액(원)",
+            "구입 건수",
+            "합계 금액"
+          ],
+          "note": "영수증 첨부 여부나 회사에 전달할 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-medical-expense-submission",
+        "year-end-document-receipt-ledger",
+        "year-end-tax-checklist",
+        "year-end-refund-account-notice"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-23T12:39:59+09:00",
+      "updated_at": "2026-11-23T12:39:59+09:00",
       "downloads": 0
     },
     {

@@ -1,0 +1,82 @@
+id: contract-period-extension-agreement
+title: 계약 기간 연장 합의서
+category: legal
+subcategory: contract
+tags: [계약기간연장, 계약연장합의, 기간연장, 갱신합의, 연장합의서]
+summary: 계약 만료 전에 기존 계약의 종료일을 늘리고 연장 기간의 대금·조건을 확인하는 계약 기간 연장 합의서 양식입니다.
+usage: >
+  용역·임대·공급 등 기간이 정해진 계약을 같은 조건으로 더 이어가려 할 때 씁니다.
+  기존 계약의 이름과 종료일, 연장할 종료일을 적고 연장 기간 동안 바뀌는 금액이나 조건이 있는지 표시합니다.
+  연장 합의는 반드시 기존 계약이 끝나기 전에 맺어 두십시오.
+  법적 효과와 갱신 조건은 계약서 문구에 따라 달라지므로 필요하면 전문가와 상의하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 기존 계약의 이름, 계약일, 당사자를 적습니다.
+  - 기존 종료일과 연장할 종료일을 적습니다.
+  - 연장 기간의 금액이나 조건이 바뀌면 그 내용을 적습니다.
+  - 날짜를 적고 양쪽이 서명합니다.
+faq:
+  - q: 기존 계약이 끝난 뒤에 써도 되나요?
+    a: 가능은 하지만 공백 기간의 처리가 애매해질 수 있습니다. 가급적 기존 종료일 전에 작성하십시오.
+  - q: 금액이 그대로면 합의서를 안 써도 되나요?
+    a: 구두 합의는 나중에 다툼이 생기기 쉽습니다. 기간만 늘어나도 서면으로 남겨 두는 편이 안전합니다.
+  - q: 연장은 몇 번까지 가능한가요?
+    a: 계약서나 관련 법령에 제한이 있을 수 있습니다. 기존 계약서의 갱신 조항을 먼저 확인하십시오.
+related: [contract-amendment-agreement, contract-termination-agreement, lease-renewal-contract, contract-down-payment-refund-agreement]
+blocks:
+  - type: doc_title
+    text: 계약 기간 연장 합의서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["갑", "", "연락처", ""]
+      - ["을", "", "연락처", ""]
+    sample_rows:
+      - ["", "(주)한빛물산", "", "02-123-4567"]
+      - ["", "(주)새길데이터", "", "02-234-5678"]
+  - type: subtitle
+    text: 2. 기존 계약과 연장 기간
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["계약 이름", "", "", ""]
+      - ["계약일", "", "기존 종료일", ""]
+      - ["연장 시작일", "", "연장 종료일", ""]
+    sample_rows:
+      - ["", "사무실 청소 용역계약", "", ""]
+      - ["", "2025-12-01", "", "2026-11-30"]
+      - ["", "2026-12-01", "", "2027-11-30"]
+  - type: subtitle
+    text: 3. 연장 기간의 조건
+  - type: table
+    widths: [24, 38, 38]
+    header: ["항목", "기존 조건", "연장 후 조건"]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["월 대금", "1,200,000원", "1,200,000원"]
+      - ["지급일", "매월 25일", "매월 25일"]
+  - type: article
+    heading: 합의 내용
+    lines:
+      - "1. 양 당사자는 기존 계약의 종료일을 위 연장 종료일로 연장한다."
+      - "2. 위에서 바꾸기로 한 조건을 제외한 나머지는 기존 계약에 따른다."
+  - type: date_line
+    sample_text: 2026 년   11 월   23 일
+  - type: sign_line
+    labels: ["갑", "을"]
+    sample_names: [박민준, 이수현]
+  - type: notice
+    text: 기존 계약서의 갱신·연장 조항을 확인한 뒤 서명하십시오.
