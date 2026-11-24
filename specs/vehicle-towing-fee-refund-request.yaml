@@ -1,0 +1,67 @@
+id: vehicle-towing-fee-refund-request
+title: 차량 견인료 환불 요청서
+category: public
+subcategory: vehicle
+tags: [견인료, 환불요청, 차량견인, 견인비, 이의]
+summary: 부당하거나 과다하게 부과된 것으로 보이는 차량 견인료와 보관료의 확인·환불을 요청할 때 쓰는 요청서 양식입니다.
+usage: >
+  차량이 견인된 뒤 견인 사유나 요금에 의문이 있을 때 견인 주체나 관할 기관에 확인과 환불을 요청하는 서류입니다.
+  견인 일시와 장소, 낸 금액, 이의 사유를 적고 영수증과 현장 사진을 첨부합니다.
+  환불 가능 여부는 견인 경위와 관련 규정에 따라 달라지므로 관할 기관 판단을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청인과 차량번호를 적습니다.
+  - 견인 일시와 장소, 낸 금액을 적습니다.
+  - 환불을 요청하는 이유를 구체적으로 적습니다.
+  - 영수증과 사진을 붙이고 날짜와 서명을 합니다.
+faq:
+  - q: 영수증이 없으면 요청할 수 없나요?
+    a: 견인보관소에 재발급을 요청해 보십시오. 대체 증빙 인정 여부는 제출처에 확인하십시오.
+  - q: 어디에 제출하나요?
+    a: 견인을 한 기관이나 업체, 또는 관할 구청에 제출합니다. 접수처는 견인 경위에 따라 다릅니다.
+  - q: 환불은 반드시 받을 수 있나요?
+    a: 견인 경위와 규정에 따라 달라지므로 관할 기관의 판단을 확인하십시오.
+related: [parking-fine-objection, traffic-violation-driver-confirmation, illegal-parking-report]
+blocks:
+  - type: doc_title
+    text: 차량 견인료 환불 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청인 및 차량
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["차량번호", "", "차종", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "12가3456", "", "승용차"]
+  - type: subtitle
+    text: 2. 견인 내역
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["견인 일시", "", "견인 장소", ""]
+      - ["낸 금액(원)", "", "견인 주체", ""]
+    sample_rows:
+      - ["", "2026-11-10 14:00", "", "한빛구 새길로 앞"]
+      - ["", "60,000", "", "한빛견인(주)"]
+  - type: subtitle
+    text: 3. 환불 요청 사유
+  - type: textbox
+    hint: "견인에 이의가 있는 이유를 구체적으로 적으십시오."
+    height_mm: 35
+    sample_text: "주차 가능 표지가 있는 구역이었으나 견인되었습니다. 현장 사진을 첨부하며 사실 확인과 환불을 요청드립니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   24 일
+  - type: sign_line
+    label: 요청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 영수증과 현장 사진을 함께 제출하십시오. 환불 여부는 관할 기관이 판단합니다.

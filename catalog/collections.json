@@ -99,7 +99,7 @@
       "lead": "내용증명으로 먼저 알리고, 합의가 안 되면 소송으로. 단계별로 필요한 서식입니다.",
       "ids": [
         "certified-notice", "certified-notice-goods-payment", "certified-notice-damages", "certified-notice-reply", "fact-confirmation", "settlement-agreement",
-        "statement-of-facts", "damage-calculation-statement", "civil-conciliation", "small-claims-complaint",
+        "statement-of-facts", "damage-calculation-statement", "civil-conciliation", "civil-conciliation-withdrawal", "small-claims-complaint",
         "complaint-goods-payment", "answer-brief", "preparatory-brief", "witness-application", "hearing-date-change-request",
         "petition-letter"
       ]
@@ -111,7 +111,7 @@
       "ids": [
         "civil-petition", "civil-petition-supplement-submission", "civil-petition-objection", "info-disclosure-request", "disclosure-objection",
         "parking-fine-objection", "traffic-violation-driver-confirmation", "administrative-objection",
-        "noise-complaint", "illegal-dumping-report", "road-repair-request", "streetlight-malfunction-report",
+        "noise-complaint", "illegal-dumping-report", "road-repair-request", "streetlight-malfunction-report", "street-tree-pruning-request", "illegal-structure-report",
         "moving-in-report", "seal-certificate-poa",
         "family-certificate-issuance-poa", "vehicle-registration-poa",
         "vehicle-registration-reissue-poa", "vehicle-deregistration-poa", "permit-application-poa",

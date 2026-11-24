@@ -1,0 +1,71 @@
+id: year-end-housing-subscription-savings-submission
+title: 연말정산 주택청약저축 납입 확인 제출서
+category: corp
+subcategory: finance
+tags: [연말정산, 주택청약저축, 납입확인, 소득공제, 제출서]
+summary: 연말정산을 위해 주택청약종합저축 등의 납입 내역과 확인서를 회사에 제출할 때 쓰는 제출서 양식입니다.
+usage: >
+  주택청약저축 납입액은 요건에 해당하면 소득공제를 받을 수 있는 항목으로 안내되며, 은행이 발급한 납입 확인서를 회사에 내야 할 수 있습니다.
+  이 서식에는 가입 금융기관, 상품명, 납입 금액을 적고 확인서 사본을 첨부합니다.
+  공제 대상 여부와 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속 부서, 귀속 연도를 적습니다.
+  - 가입한 금융기관과 상품명을 적습니다.
+  - 연간 납입 금액과 계좌 개설일을 적습니다.
+  - 납입 확인서를 붙이고 날짜와 서명을 합니다.
+faq:
+  - q: 어떤 확인서를 내나요?
+    a: 금융기관이 발급한 납입 확인서를 냅니다. 필요한 서류는 회사 안내를 확인하십시오.
+  - q: 공제를 받을 수 있는 사람이 정해져 있나요?
+    a: 공제 요건은 세법에 따라 정해지므로 국세청 안내와 회사 담당 부서에 확인하십시오.
+  - q: 계좌번호를 모두 적어야 하나요?
+    a: 뒤 네 자리만 적어도 되는지는 회사 방침에 따릅니다. 안내를 확인하십시오.
+related: [year-end-document-receipt-ledger, year-end-pension-savings-submission, year-end-tax-checklist, year-end-refund-account-notice]
+blocks:
+  - type: doc_title
+    text: 연말정산 주택청약저축 납입 확인 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "사번", ""]
+      - ["소속 부서", "", "귀속 연도", ""]
+    sample_rows:
+      - ["", "박민준", "", "A-20315"]
+      - ["", "영업지원팀", "", "2026년"]
+  - type: subtitle
+    text: 2. 납입 내역
+  - type: table
+    widths: [24, 24, 18, 18, 16]
+    header: ["금융기관", "상품명", "계좌 개설일", "연간 납입액(원)", "계좌 끝 4자리"]
+    empty_rows: 4
+    row_height_mm: 10
+    body_align: center
+    sample_rows:
+      - ["한빛은행", "주택청약종합저축", "2021-05-10", "2,400,000", "0000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["합계 금액", "", "확인서 첨부", ""]
+    sample_rows:
+      - ["", "2,400,000원", "", "있음 (1부)"]
+  - type: textbox
+    hint: "회사에 전달할 내용이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "납입 확인서 1부를 첨부합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   24 일
+  - type: sign_line
+    label: 제출자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.

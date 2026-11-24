@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 539종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 544종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>차량 견인료 환불 요청서</title>
+<link>https://freeforms.kr/form/vehicle-towing-fee-refund-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/vehicle-towing-fee-refund-request/</guid>
+<category>공공 · 자동차·교통</category>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0900</pubDate>
+<description>부당하거나 과다하게 부과된 것으로 보이는 차량 견인료와 보관료의 확인·환불을 요청할 때 쓰는 요청서 양식입니다.</description>
+</item>
+<item>
+<title>조정신청 취하서</title>
+<link>https://freeforms.kr/form/civil-conciliation-withdrawal/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/civil-conciliation-withdrawal/</guid>
+<category>법률 · 소송·민원</category>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0900</pubDate>
+<description>법원에 낸 민사조정 신청을 합의나 사정 변경으로 거두어들일 때 쓰는 조정신청 취하서 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 주택청약저축 납입 확인 제출서</title>
+<link>https://freeforms.kr/form/year-end-housing-subscription-savings-submission/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-housing-subscription-savings-submission/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산을 위해 주택청약종합저축 등의 납입 내역과 확인서를 회사에 제출할 때 쓰는 제출서 양식입니다.</description>
+</item>
+<item>
+<title>불법 건축물 신고서</title>
+<link>https://freeforms.kr/form/illegal-structure-report/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/illegal-structure-report/</guid>
+<category>공공 · 민원·신고</category>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0900</pubDate>
+<description>허가 없이 증축·개축된 것으로 보이는 건축물을 관할 지자체에 신고해 현장 확인을 요청하는 신고서 양식입니다.</description>
+</item>
+<item>
+<title>가로수 가지치기 요청서</title>
+<link>https://freeforms.kr/form/street-tree-pruning-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/street-tree-pruning-request/</guid>
+<category>공공 · 민원·신고</category>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0900</pubDate>
+<description>간판·창문·전선을 가리거나 보행에 불편을 주는 가로수 가지의 정비를 관할 지자체에 요청할 때 쓰는 요청서 양식입니다.</description>
+</item>
 <item>
 <title>조부모 손자녀 양육 사실 확인서</title>
 <link>https://freeforms.kr/form/grandparent-childcare-fact-confirmation/</link>
@@ -206,46 +246,6 @@
 <category>법률 · 소송·민원</category>
 <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
 <description>물품·서비스 대금 환불이나 보상을 두고 판매자와 합의하지 못했을 때 분쟁 조정 기관에 내는 소비자 분쟁 조정 신청서 양식입니다.</description>
-</item>
-<item>
-<title>학부모 상담 신청서</title>
-<link>https://freeforms.kr/form/parent-counseling-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/parent-counseling-request/</guid>
-<category>교육 · 학교·학원</category>
-<pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
-<description>학부모가 담임교사나 학교에 상담 일정과 상담하고 싶은 내용을 미리 알리는 학부모 상담 신청서 양식입니다.</description>
-</item>
-<item>
-<title>행사 참가 안전 서약서</title>
-<link>https://freeforms.kr/form/event-safety-pledge/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/event-safety-pledge/</guid>
-<category>공공 · 신청·동의</category>
-<pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
-<description>행사나 현장 활동에 참가하는 사람이 주최 측 안전수칙을 지키겠다고 서약하는 행사 참가 안전 서약서 양식입니다.</description>
-</item>
-<item>
-<title>업무상 사고 사실 확인서</title>
-<link>https://freeforms.kr/form/workers-comp-accident-fact-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/workers-comp-accident-fact-confirmation/</guid>
-<category>공공 · 4대보험·고용</category>
-<pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
-<description>근로자가 업무 중 겪은 사고의 일시·장소·경위를 사업주나 동료가 사실대로 확인해 적는 업무상 사고 사실 확인서 양식입니다.</description>
-</item>
-<item>
-<title>중도 퇴사자 연말정산 자료 요청서</title>
-<link>https://freeforms.kr/form/year-end-midyear-resignee-settlement-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-midyear-resignee-settlement-request/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
-<description>연도 중간에 퇴사한 근로자가 이전 회사에 근로소득 원천징수영수증 발급과 정산 자료를 요청하는 중도 퇴사자 연말정산 자료 요청서 양식입니다.</description>
-</item>
-<item>
-<title>공사발주서</title>
-<link>https://freeforms.kr/form/construction-work-order/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/construction-work-order/</guid>
-<category>기업 · 총무·행정</category>
-<pubDate>Mon, 16 Nov 2026 00:00:00 +0900</pubDate>
-<description>발주자가 시공업체에 공사를 의뢰할 때 공사명·공사 범위·금액·공사 기간·지급 조건을 적어 보내는 공사발주서 양식입니다.</description>
 </item>
 </channel>
 </rss>

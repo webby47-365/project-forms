@@ -1,0 +1,75 @@
+id: street-tree-pruning-request
+title: 가로수 가지치기 요청서
+category: public
+subcategory: civil
+tags: [가로수, 가지치기, 전정요청, 민원, 도로관리]
+summary: 간판·창문·전선을 가리거나 보행에 불편을 주는 가로수 가지의 정비를 관할 지자체에 요청할 때 쓰는 요청서 양식입니다.
+usage: >
+  가로수 가지가 건물 창이나 간판을 가리거나 보행·차량 통행에 불편을 줄 때 관할 구청이나 도로관리 부서에 정비를 요청하는 서류입니다.
+  요청인의 연락처, 가로수 위치, 불편 내용을 적고 현장 사진이 있으면 함께 냅니다.
+  가로수는 공공 관리 대상이므로 개인이 직접 가지를 자르지 말고 반드시 관할 부서에 요청하십시오. 처리 시기와 방법은 관할 기관의 판단에 따릅니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 요청인의 성명과 연락처를 적습니다.
+  - 가로수가 있는 도로명과 가까운 건물 번호를 적습니다.
+  - 가지 때문에 생기는 불편을 구체적으로 적습니다.
+  - 현장 사진을 붙이고 날짜와 서명을 합니다.
+faq:
+  - q: 어디에 제출하나요?
+    a: 해당 도로를 관리하는 구청 도로·공원 관련 부서에 냅니다. 부서명은 관할 기관 안내를 확인하십시오.
+  - q: 제가 직접 가지를 잘라도 되나요?
+    a: 가로수는 공공 재산이므로 임의로 자르지 말고 관할 부서에 요청하십시오.
+  - q: 사진은 꼭 필요한가요?
+    a: 필수는 아니지만 위치와 상태를 설명하기 쉬워 처리 확인에 도움이 됩니다.
+related: [road-repair-request, streetlight-malfunction-report, civil-petition-reply-request]
+blocks:
+  - type: doc_title
+    text: 가로수 가지치기 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 요청인
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["주소", "", "", ""]
+    merges:
+      - [1, 1, 1, 3]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "서울시 한빛구 새길로 12", "", ""]
+  - type: subtitle
+    text: 2. 대상 가로수
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["도로명", "", "인근 건물 번호", ""]
+      - ["수종(아는 경우)", "", "그루 수", ""]
+    sample_rows:
+      - ["", "새길로", "", "12번지 앞"]
+      - ["", "은행나무", "", "2그루"]
+  - type: subtitle
+    text: 3. 불편 내용
+  - type: textbox
+    hint: "가지 때문에 생기는 불편을 구체적으로 적으십시오."
+    height_mm: 30
+    sample_text: "가지가 2층 창문과 상가 간판을 가리고 있으며, 비 오는 날 보행자 통행에도 불편이 있습니다."
+  - type: subtitle
+    text: 4. 요청 사항
+  - type: textbox
+    hint: "원하는 조치를 적으십시오."
+    height_mm: 20
+    sample_text: "현장 확인 후 가지 정비를 요청드립니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   24 일
+  - type: sign_line
+    label: 요청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 처리 시기와 방법은 관할 기관의 판단에 따릅니다.
