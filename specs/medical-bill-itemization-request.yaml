@@ -1,0 +1,71 @@
+id: medical-bill-itemization-request
+title: 진료비 세부내역서 발급 신청서
+category: welfare
+subcategory: consent
+tags: [진료비세부내역서, 진료비영수증, 병원서류발급, 보험청구, 의료기관신청]
+summary: 병원에서 받은 진료비의 항목별 내역을 확인하기 위해 의료기관에 진료비 세부내역서 발급을 요청하는 신청서 양식입니다.
+usage: >
+  보험금 청구나 회사 제출, 진료비 확인이 필요할 때 의료기관에 진료비 세부내역서를 요청하는 서식입니다.
+  환자 정보와 진료 기간, 필요한 부수와 제출처, 수령 방법을 적습니다.
+  병명이나 치료 내용은 제출처가 꼭 요구할 때만 의료기관과 상의해 정하고 이 서식에는 적지 않습니다.
+  대리인이 신청하면 위임 확인이 필요할 수 있으니 병원 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 환자의 성명과 생년월일, 연락처를 적습니다.
+  - 진료받은 기간과 병원 이름을 적습니다.
+  - 필요한 부수와 제출처를 적습니다.
+  - 수령 방법을 고르고 신청인이 서명합니다.
+faq:
+  - q: 진료비 영수증과 세부내역서는 다른가요?
+    a: 영수증은 금액 합계 중심이고 세부내역서는 항목별 내역을 보여 줍니다. 제출처가 어느 쪽을 요구하는지 확인하십시오.
+  - q: 가족 대신 신청할 수 있나요?
+    a: 대리 신청은 위임 확인이 필요할 수 있습니다. 병원이 요구하는 서류를 먼저 확인하십시오.
+  - q: 수수료가 있나요?
+    a: 병원마다 다를 수 있으니 접수 창구에 확인하십시오.
+related: [hospitalization-confirmation-request, outpatient-visit-certificate, medical-record-request, year-end-medical-expense-submission]
+blocks:
+  - type: doc_title
+    text: 진료비 세부내역서 발급 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 환자 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["환자 성명", "", "생년월일", ""]
+      - ["연락처", "", "병원명", ""]
+    sample_rows:
+      - ["", "홍길동", "", "1990-01-01"]
+      - ["", "010-1234-5678", "", "한빛병원"]
+  - type: subtitle
+    text: 2. 발급 요청 내용
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["진료 기간", "", "구분", ""]
+      - ["필요 부수", "", "제출처", ""]
+      - ["수령 방법", "", "신청인 관계", ""]
+    sample_rows:
+      - ["", "2026-10-05 ~ 10-12", "", "입원"]
+      - ["", "2부", "", "보험사"]
+      - ["", "방문 수령", "", "본인"]
+  - type: textbox
+    hint: "제출 목적이나 병원에 전달할 내용을 적으십시오."
+    height_mm: 20
+    sample_text: "보험금 청구에 필요하여 세부내역서 2부를 신청합니다."
+  - type: para
+    text: 위와 같이 진료비 세부내역서 발급을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   25 일
+  - type: sign_line
+    label: 신청인
+    sample_names: [홍길동]
+  - type: notice
+    text: 발급 수수료와 대리 신청 서류는 해당 의료기관에 확인하십시오.

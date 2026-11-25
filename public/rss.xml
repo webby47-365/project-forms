@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 544종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 549종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>진료비 세부내역서 발급 신청서</title>
+<link>https://freeforms.kr/form/medical-bill-itemization-request/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/medical-bill-itemization-request/</guid>
+<category>의료·복지 · 동의·신청</category>
+<pubDate>Wed, 25 Nov 2026 00:00:00 +0900</pubDate>
+<description>병원에서 받은 진료비의 항목별 내역을 확인하기 위해 의료기관에 진료비 세부내역서 발급을 요청하는 신청서 양식입니다.</description>
+</item>
+<item>
+<title>임대차 중도해지 합의서</title>
+<link>https://freeforms.kr/form/lease-early-termination-agreement/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/lease-early-termination-agreement/</guid>
+<category>부동산 · 임대·매매</category>
+<pubDate>Wed, 25 Nov 2026 00:00:00 +0900</pubDate>
+<description>임대차 기간이 끝나기 전에 임대인과 임차인이 합의로 계약을 끝낼 때 해지일·보증금 반환·정산 조건을 적는 중도해지 합의서 양식입니다.</description>
+</item>
+<item>
+<title>하도급 계약 통보서</title>
+<link>https://freeforms.kr/form/subcontract-notification/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/subcontract-notification/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Wed, 25 Nov 2026 00:00:00 +0900</pubDate>
+<description>계약상대자가 계약 일부를 하도급으로 맡기게 되었을 때 그 내용을 발주처에 알리는 하도급 계약 통보서 양식입니다.</description>
+</item>
+<item>
+<title>기성대가 지급 청구서</title>
+<link>https://freeforms.kr/form/progress-payment-claim/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/progress-payment-claim/</guid>
+<category>공공 · 조달·입찰</category>
+<pubDate>Wed, 25 Nov 2026 00:00:00 +0900</pubDate>
+<description>공사·용역 계약의 일부를 이행한 뒤 이행 부분에 대한 대가를 발주처에 청구할 때 쓰는 기성대가 지급 청구서 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 교복 구입비 제출서</title>
+<link>https://freeforms.kr/form/year-end-school-uniform-purchase-submission/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-school-uniform-purchase-submission/</guid>
+<category>기업 · 회계·세무</category>
+<pubDate>Wed, 25 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산을 위해 중·고등학생 자녀의 교복·체육복 구입 내역과 영수증을 회사에 제출할 때 쓰는 교복 구입비 제출서 양식입니다.</description>
+</item>
 <item>
 <title>차량 견인료 환불 요청서</title>
 <link>https://freeforms.kr/form/vehicle-towing-fee-refund-request/</link>
@@ -206,46 +246,6 @@
 <category>공공 · 세금·사업자</category>
 <pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
 <description>맞벌이 부부가 자녀·부모 등 부양가족을 누가 공제받을지 정해 각자의 회사에 제출하는 연말정산 공제 배분 확인서 양식입니다.</description>
-</item>
-<item>
-<title>학원 휴원 신청서</title>
-<link>https://freeforms.kr/form/academy-leave-of-absence-request/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/academy-leave-of-absence-request/</guid>
-<category>교육 · 학교·학원</category>
-<pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
-<description>질병·여행·시험 준비 등으로 일정 기간 수강을 쉬려는 학부모가 학원에 내는 학원 휴원 신청서 양식입니다.</description>
-</item>
-<item>
-<title>자동차 수리 완료 인수 확인서</title>
-<link>https://freeforms.kr/form/vehicle-repair-completion-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/vehicle-repair-completion-confirmation/</guid>
-<category>공공 · 자동차·교통</category>
-<pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
-<description>정비소에서 수리를 마친 자동차를 돌려받으며 수리 내용과 비용, 인수 상태를 확인하는 수리 완료 인수 확인서 양식입니다.</description>
-</item>
-<item>
-<title>내용증명 (손해배상 청구)</title>
-<link>https://freeforms.kr/form/certified-notice-damages/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/certified-notice-damages/</guid>
-<category>법률 · 통지·증명</category>
-<pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
-<description>상대방의 행위로 입은 손해의 내용과 금액을 밝혀 배상을 요구하는 내용증명 양식입니다.</description>
-</item>
-<item>
-<title>상품수불부</title>
-<link>https://freeforms.kr/form/product-inventory-ledger/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/product-inventory-ledger/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
-<description>상품별로 입고·출고 수량과 재고를 일자순으로 기록하는 상품수불부 양식입니다.</description>
-</item>
-<item>
-<title>소비자 분쟁 조정 신청서</title>
-<link>https://freeforms.kr/form/consumer-dispute-mediation-application/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/consumer-dispute-mediation-application/</guid>
-<category>법률 · 소송·민원</category>
-<pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
-<description>물품·서비스 대금 환불이나 보상을 두고 판매자와 합의하지 못했을 때 분쟁 조정 기관에 내는 소비자 분쟁 조정 신청서 양식입니다.</description>
 </item>
 </channel>
 </rss>

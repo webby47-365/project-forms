@@ -1,0 +1,80 @@
+id: progress-payment-claim
+title: 기성대가 지급 청구서
+category: public
+subcategory: procure
+tags: [기성대가, 기성금청구, 대금청구서, 계약이행, 조달계약]
+summary: 공사·용역 계약의 일부를 이행한 뒤 이행 부분에 대한 대가를 발주처에 청구할 때 쓰는 기성대가 지급 청구서 양식입니다.
+usage: >
+  계약 기간 중에 일정 부분을 완료하고 그만큼의 대금을 먼저 받으려 할 때 발주처에 내는 서식입니다.
+  계약 정보와 이번 청구 회차, 계약금액과 누계 기성 금액, 이번 청구 금액과 입금 계좌를 적습니다.
+  기성 검사 여부, 선금 정산, 부가가치세 처리는 계약서와 발주처 규정에 따르므로 계약 담당자에게 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 계약명과 계약번호, 계약금액을 적습니다.
+  - 이번 청구 회차와 이행 기간을 적습니다.
+  - 이전까지 받은 금액과 이번 청구액을 적습니다.
+  - 입금 계좌를 적고 날짜와 서명·날인을 합니다.
+faq:
+  - q: 청구 전에 기성 검사를 받아야 하나요?
+    a: 계약서에 검사 절차가 있으면 먼저 받는 것이 일반적입니다. 필요한 절차는 계약서와 발주처 안내를 확인하십시오.
+  - q: 선금을 받았으면 어떻게 적나요?
+    a: 선금 정산 방식은 계약마다 다르므로 비고란에 적고 발주처 담당자와 확인하십시오.
+related: [advance-payment-request, work-commencement-report, contract-completion-confirmation, contract-performance-deposit-refund-request]
+blocks:
+  - type: doc_title
+    text: 기성대가 지급 청구서
+    spaced: true
+  - type: subtitle
+    text: 1. 계약 정보
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges: [[0, 1, 0, 3]]
+    rows:
+      - ["계약명", "", "", ""]
+      - ["계약번호", "", "계약금액(원)", ""]
+      - ["계약 기간", "", "청구 회차", ""]
+    sample_rows:
+      - ["", "본관 사무실 내부 개선공사", "", ""]
+      - ["", "2026-0123", "", "58,000,000"]
+      - ["", "2026-08-01 ~ 12-20", "", "제2회"]
+  - type: subtitle
+    text: 2. 기성 내역
+  - type: table
+    widths: [28, 24, 24, 24]
+    header: ["구분", "이행 기간", "공정률(%)", "금액(원)"]
+    empty_rows: 4
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["이전 기성 누계", "~2026-09-30", "30", "17,400,000"]
+      - ["이번 청구분", "10-01~11-15", "35", "20,300,000"]
+  - type: grid
+    widths: [18, 32, 18, 32]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["이번 청구액(원)", "", "누계 청구액(원)", ""]
+      - ["입금 은행", "", "계좌번호", ""]
+      - ["예금주", "", "연락처", ""]
+    sample_rows:
+      - ["", "20,300,000", "", "37,700,000"]
+      - ["", "한빛은행", "", "000-000-000000"]
+      - ["", "(주)새길건설", "", "010-1234-5678"]
+  - type: textbox
+    hint: "검사 일자, 선금 정산, 비고 사항을 적으십시오."
+    height_mm: 20
+    sample_text: "기성 검사는 2026-11-18에 완료되었습니다."
+  - type: para
+    text: 위 금액을 계약에 따라 청구하오니 지급하여 주시기 바랍니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   25 일
+  - type: sign_line
+    labels: ["청구인(계약상대자)", "접수 담당자"]
+    sample_names: [김서연, ""]
+  - type: notice
+    text: 검사 절차와 제출 서류는 계약서와 발주처 규정을 확인하십시오.

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T16:29:02+09:00",
-  "count": 544,
+  "generated_at": "2026-11-25T14:22:21+09:00",
+  "count": 549,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -29638,6 +29638,108 @@
       "downloads": 0
     },
     {
+      "id": "lease-early-termination-agreement",
+      "title": "임대차 중도해지 합의서",
+      "category": "estate",
+      "subcategory": "lease",
+      "tags": [
+        "임대차",
+        "중도해지",
+        "계약해지합의",
+        "보증금반환",
+        "퇴거합의"
+      ],
+      "summary": "임대차 기간이 끝나기 전에 임대인과 임차인이 합의로 계약을 끝낼 때 해지일·보증금 반환·정산 조건을 적는 중도해지 합의서 양식입니다.",
+      "usage": "이직·이사 등으로 계약 기간 중에 집을 비워야 하거나 임대인 사정으로 계약을 일찍 끝내기로 했을 때 양쪽 합의 내용을 남기는 서식입니다. 계약 정보, 합의한 해지일과 명도일, 보증금 반환 금액과 시기, 밀린 월세·관리비 정산 내용을 적고 양쪽이 서명합니다. 중개보수와 위약금 부담은 계약서와 합의 내용에 따라 달라지므로 필요하면 전문가와 상의하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55338,
+        "docx": 38666,
+        "hwpx": 9766
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "임대 목적물 주소와 원래 계약 기간을 적습니다.",
+        "합의한 해지일과 집을 비우는 날을 적습니다.",
+        "보증금 반환액, 반환일, 정산 항목을 적습니다.",
+        "양쪽이 날짜를 적고 서명·날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "해지일과 집을 비우는 날이 달라도 되나요?",
+          "a": "달라도 됩니다. 두 날짜를 각각 적고 그 사이 월세와 관리비를 누가 내는지 특약란에 함께 적어 두십시오."
+        },
+        {
+          "q": "보증금은 언제 돌려받나요?",
+          "a": "합의로 정하는 것이므로 반환일을 날짜로 구체적으로 적어 두는 편이 분쟁을 줄입니다."
+        },
+        {
+          "q": "중개보수는 누가 내나요?",
+          "a": "계약서와 합의 내용에 따라 달라지므로 특약란에 부담자를 적어 두십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 계약 및 당사자",
+          "items": [
+            "임대 목적물",
+            "원 계약 기간",
+            "임대인",
+            "연락처",
+            "임차인",
+            "보증금(원)",
+            "월세(원)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 합의 내용",
+          "items": [
+            "해지일",
+            "명도일",
+            "보증금 반환액",
+            "반환일",
+            "정산 항목",
+            "정산 금액"
+          ],
+          "note": "중개보수·원상복구·위약금 등 특약 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "lease-deposit-return-schedule-agreement",
+        "lease-restoration-cost-statement",
+        "move-out-checklist",
+        "management-fee-settlement-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-25T14:22:11+09:00",
+      "updated_at": "2026-11-25T14:22:11+09:00",
+      "downloads": 0
+    },
+    {
       "id": "lease-renewal-contract",
       "title": "임대차 계약 갱신계약서",
       "category": "estate",
@@ -31710,6 +31812,104 @@
         "probation-evaluation"
       ],
       "seal": true
+    },
+    {
+      "id": "medical-bill-itemization-request",
+      "title": "진료비 세부내역서 발급 신청서",
+      "category": "welfare",
+      "subcategory": "consent",
+      "tags": [
+        "진료비세부내역서",
+        "진료비영수증",
+        "병원서류발급",
+        "보험청구",
+        "의료기관신청"
+      ],
+      "summary": "병원에서 받은 진료비의 항목별 내역을 확인하기 위해 의료기관에 진료비 세부내역서 발급을 요청하는 신청서 양식입니다.",
+      "usage": "보험금 청구나 회사 제출, 진료비 확인이 필요할 때 의료기관에 진료비 세부내역서를 요청하는 서식입니다. 환자 정보와 진료 기간, 필요한 부수와 제출처, 수령 방법을 적습니다. 병명이나 치료 내용은 제출처가 꼭 요구할 때만 의료기관과 상의해 정하고 이 서식에는 적지 않습니다. 대리인이 신청하면 위임 확인이 필요할 수 있으니 병원 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49299,
+        "docx": 38490,
+        "hwpx": 9499
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "환자의 성명과 생년월일, 연락처를 적습니다.",
+        "진료받은 기간과 병원 이름을 적습니다.",
+        "필요한 부수와 제출처를 적습니다.",
+        "수령 방법을 고르고 신청인이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "진료비 영수증과 세부내역서는 다른가요?",
+          "a": "영수증은 금액 합계 중심이고 세부내역서는 항목별 내역을 보여 줍니다. 제출처가 어느 쪽을 요구하는지 확인하십시오."
+        },
+        {
+          "q": "가족 대신 신청할 수 있나요?",
+          "a": "대리 신청은 위임 확인이 필요할 수 있습니다. 병원이 요구하는 서류를 먼저 확인하십시오."
+        },
+        {
+          "q": "수수료가 있나요?",
+          "a": "병원마다 다를 수 있으니 접수 창구에 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 환자 정보",
+          "items": [
+            "환자 성명",
+            "생년월일",
+            "연락처",
+            "병원명"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 발급 요청 내용",
+          "items": [
+            "진료 기간",
+            "필요 부수",
+            "제출처",
+            "수령 방법",
+            "신청인 관계"
+          ],
+          "note": "제출 목적이나 병원에 전달할 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "hospitalization-confirmation-request",
+        "outpatient-visit-certificate",
+        "medical-record-request",
+        "year-end-medical-expense-submission"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-25T14:22:14+09:00",
+      "updated_at": "2026-11-25T14:22:14+09:00",
+      "downloads": 0
     },
     {
       "id": "medical-expense-support",
@@ -38185,6 +38385,105 @@
       "warnings": [],
       "created_at": "2026-11-17T15:46:34+09:00",
       "updated_at": "2026-11-17T15:46:48+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "progress-payment-claim",
+      "title": "기성대가 지급 청구서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "기성대가",
+        "기성금청구",
+        "대금청구서",
+        "계약이행",
+        "조달계약"
+      ],
+      "summary": "공사·용역 계약의 일부를 이행한 뒤 이행 부분에 대한 대가를 발주처에 청구할 때 쓰는 기성대가 지급 청구서 양식입니다.",
+      "usage": "계약 기간 중에 일정 부분을 완료하고 그만큼의 대금을 먼저 받으려 할 때 발주처에 내는 서식입니다. 계약 정보와 이번 청구 회차, 계약금액과 누계 기성 금액, 이번 청구 금액과 입금 계좌를 적습니다. 기성 검사 여부, 선금 정산, 부가가치세 처리는 계약서와 발주처 규정에 따르므로 계약 담당자에게 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 59527,
+        "docx": 38798,
+        "hwpx": 10136
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "계약명과 계약번호, 계약금액을 적습니다.",
+        "이번 청구 회차와 이행 기간을 적습니다.",
+        "이전까지 받은 금액과 이번 청구액을 적습니다.",
+        "입금 계좌를 적고 날짜와 서명·날인을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "청구 전에 기성 검사를 받아야 하나요?",
+          "a": "계약서에 검사 절차가 있으면 먼저 받는 것이 일반적입니다. 필요한 절차는 계약서와 발주처 안내를 확인하십시오."
+        },
+        {
+          "q": "선금을 받았으면 어떻게 적나요?",
+          "a": "선금 정산 방식은 계약마다 다르므로 비고란에 적고 발주처 담당자와 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 계약 정보",
+          "items": [
+            "계약명",
+            "계약번호",
+            "계약금액(원)",
+            "계약 기간",
+            "청구 회차"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 기성 내역",
+          "items": [
+            "이행 기간",
+            "공정률(%)",
+            "금액(원)",
+            "이번 청구액(원)",
+            "누계 청구액(원)",
+            "입금 은행",
+            "계좌번호",
+            "예금주",
+            "연락처"
+          ],
+          "note": "검사 일자, 선금 정산, 비고 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "advance-payment-request",
+        "work-commencement-report",
+        "contract-completion-confirmation",
+        "contract-performance-deposit-refund-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-25T14:22:06+09:00",
+      "updated_at": "2026-11-25T14:22:21+09:00",
       "downloads": 0
     },
     {
@@ -46852,6 +47151,102 @@
         "transaction-statement"
       ],
       "seal": true
+    },
+    {
+      "id": "subcontract-notification",
+      "title": "하도급 계약 통보서",
+      "category": "public",
+      "subcategory": "procure",
+      "tags": [
+        "하도급",
+        "하도급통보",
+        "계약상대자",
+        "발주처통보",
+        "조달계약"
+      ],
+      "summary": "계약상대자가 계약 일부를 하도급으로 맡기게 되었을 때 그 내용을 발주처에 알리는 하도급 계약 통보서 양식입니다.",
+      "usage": "원 계약을 맡은 업체가 일부 공정이나 용역을 다른 업체에 맡길 때, 계약서나 관련 규정에 따라 발주처에 알려야 하는 경우가 있습니다. 이 서식에는 원 계약 정보, 하도급 업체와 하도급 범위, 금액과 기간을 적습니다. 통보 또는 승인이 필요한지와 제출 기한은 계약서와 관련 법령에 따라 다르므로 계약 담당자에게 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 52361,
+        "docx": 38571,
+        "hwpx": 9630
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "원 계약의 계약명과 계약번호를 적습니다.",
+        "하도급 업체의 상호와 대표자, 연락처를 적습니다.",
+        "하도급 범위와 금액, 기간을 적습니다.",
+        "날짜를 적고 서명·날인합니다."
+      ],
+      "faq": [
+        {
+          "q": "하도급은 항상 통보해야 하나요?",
+          "a": "계약서와 관련 법령에 따라 통보나 승인이 필요한 경우가 있습니다. 해당 여부는 계약 담당자에게 확인하십시오."
+        },
+        {
+          "q": "하도급 계약서 사본도 내나요?",
+          "a": "발주처가 요구하는 경우가 많으므로 사본을 함께 준비해 두는 것이 무난합니다. 필요 서류는 발주처 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 원 계약 정보",
+          "items": [
+            "계약명",
+            "계약번호",
+            "계약금액(원)",
+            "원 계약업체",
+            "대표자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 하도급 내용",
+          "items": [
+            "하도급 업체",
+            "사업자등록번호",
+            "연락처",
+            "하도급 금액(원)",
+            "하도급 기간",
+            "하도급 범위"
+          ],
+          "note": "하도급 사유나 발주처에 전달할 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "subcontract-agreement",
+        "work-commencement-report",
+        "progress-payment-claim",
+        "integrity-pledge-bidding"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-25T14:22:09+09:00",
+      "updated_at": "2026-11-25T14:22:09+09:00",
+      "downloads": 0
     },
     {
       "id": "sublease-contract",
@@ -57238,6 +57633,108 @@
       "warnings": [],
       "created_at": "2026-11-05T12:23:24+09:00",
       "updated_at": "2026-11-05T12:23:24+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-school-uniform-purchase-submission",
+      "title": "연말정산 교복 구입비 제출서",
+      "category": "corp",
+      "subcategory": "finance",
+      "tags": [
+        "연말정산",
+        "교복구입비",
+        "교육비공제",
+        "중고등학생",
+        "구입비제출"
+      ],
+      "summary": "연말정산을 위해 중·고등학생 자녀의 교복·체육복 구입 내역과 영수증을 회사에 제출할 때 쓰는 교복 구입비 제출서 양식입니다.",
+      "usage": "연말정산에서 교복 구입비는 교육비 항목으로 신고할 수 있는 지출 중 하나로, 구입처에 따라 간소화 자료에 잡히지 않아 영수증을 따로 내야 하는 경우가 있습니다. 이 서식에는 학생의 이름과 학교, 구입일과 구입처, 품목과 금액을 표로 적고 영수증 사본을 붙입니다. 공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 61638,
+        "docx": 38958,
+        "hwpx": 10287
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명과 소속 부서, 귀속 연도를 적습니다.",
+        "학생 이름, 관계, 학교를 적습니다.",
+        "구입일, 구입처, 품목, 금액을 한 줄씩 적습니다.",
+        "영수증 사본을 붙이고 날짜와 서명을 합니다."
+      ],
+      "faq": [
+        {
+          "q": "교복 영수증은 어떤 것을 내나요?",
+          "a": "구입처 상호, 구입일, 품목, 금액이 보이는 영수증이면 됩니다. 인정 범위는 회사와 국세청 안내를 확인하십시오."
+        },
+        {
+          "q": "체육복도 같이 적나요?",
+          "a": "학교가 정한 체육복이라면 품목란에 함께 적고 영수증을 붙입니다. 포함 여부는 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "학교에서 단체로 구입했으면 어떻게 하나요?",
+          "a": "학교나 납부 대행처에서 받은 납입 확인 자료를 영수증 대신 붙입니다. 인정 여부는 제출처 판단에 따릅니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자 정보",
+          "items": [
+            "성명",
+            "사번",
+            "소속 부서",
+            "귀속 연도"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 교복 구입 내역",
+          "items": [
+            "학생",
+            "관계",
+            "학교",
+            "구입일",
+            "구입처",
+            "품목",
+            "금액(원)",
+            "구입 건수",
+            "합계 금액"
+          ],
+          "note": "영수증 첨부 여부나 회사에 전달할 내용을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-education-expense-submission",
+        "year-end-child-tax-credit-confirmation",
+        "year-end-document-receipt-ledger",
+        "year-end-tax-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-25T14:22:03+09:00",
+      "updated_at": "2026-11-25T14:22:03+09:00",
       "downloads": 0
     },
     {

@@ -1,0 +1,72 @@
+id: year-end-school-uniform-purchase-submission
+title: 연말정산 교복 구입비 제출서
+category: corp
+subcategory: finance
+tags: [연말정산, 교복구입비, 교육비공제, 중고등학생, 구입비제출]
+summary: 연말정산을 위해 중·고등학생 자녀의 교복·체육복 구입 내역과 영수증을 회사에 제출할 때 쓰는 교복 구입비 제출서 양식입니다.
+usage: >
+  연말정산에서 교복 구입비는 교육비 항목으로 신고할 수 있는 지출 중 하나로, 구입처에 따라 간소화 자료에 잡히지 않아 영수증을 따로 내야 하는 경우가 있습니다.
+  이 서식에는 학생의 이름과 학교, 구입일과 구입처, 품목과 금액을 표로 적고 영수증 사본을 붙입니다.
+  공제 대상과 한도는 세법과 회사 안내에 따라 달라지므로 담당 부서와 국세청 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명과 소속 부서, 귀속 연도를 적습니다.
+  - 학생 이름, 관계, 학교를 적습니다.
+  - 구입일, 구입처, 품목, 금액을 한 줄씩 적습니다.
+  - 영수증 사본을 붙이고 날짜와 서명을 합니다.
+faq:
+  - q: 교복 영수증은 어떤 것을 내나요?
+    a: 구입처 상호, 구입일, 품목, 금액이 보이는 영수증이면 됩니다. 인정 범위는 회사와 국세청 안내를 확인하십시오.
+  - q: 체육복도 같이 적나요?
+    a: 학교가 정한 체육복이라면 품목란에 함께 적고 영수증을 붙입니다. 포함 여부는 담당 부서에 확인하십시오.
+  - q: 학교에서 단체로 구입했으면 어떻게 하나요?
+    a: 학교나 납부 대행처에서 받은 납입 확인 자료를 영수증 대신 붙입니다. 인정 여부는 제출처 판단에 따릅니다.
+related: [year-end-education-expense-submission, year-end-child-tax-credit-confirmation, year-end-document-receipt-ledger, year-end-tax-checklist]
+blocks:
+  - type: doc_title
+    text: 연말정산 교복 구입비 제출서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "사번", ""]
+      - ["소속 부서", "", "귀속 연도", ""]
+    sample_rows:
+      - ["", "박민준", "", "A-20315"]
+      - ["", "영업지원팀", "", "2026년"]
+  - type: subtitle
+    text: 2. 교복 구입 내역
+  - type: table
+    widths: [14, 12, 18, 14, 18, 12, 12]
+    header: ["학생", "관계", "학교", "구입일", "구입처", "품목", "금액(원)"]
+    empty_rows: 6
+    row_height_mm: 9
+    body_align: center
+    sample_rows:
+      - ["박서준", "자녀", "한빛중", "2026-02-20", "새길교복", "교복", "320,000"]
+      - ["박서준", "자녀", "한빛중", "2026-03-05", "새길교복", "체육복", "58,000"]
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["구입 건수", "", "합계 금액", ""]
+    sample_rows:
+      - ["", "2건", "", "378,000원"]
+  - type: textbox
+    hint: "영수증 첨부 여부나 회사에 전달할 내용을 적으십시오."
+    height_mm: 18
+    sample_text: "영수증 사본 2장을 첨부합니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   25 일
+  - type: sign_line
+    label: 제출자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상과 한도는 세법과 회사 안내를 확인하십시오.
