@@ -1,0 +1,80 @@
+id: year-end-overseas-dependent-confirmation
+title: 연말정산 해외 거주 부양가족 확인서
+category: public
+subcategory: consent
+tags: [연말정산, 해외거주, 부양가족, 거주사실, 인적공제]
+summary: 연말정산에서 해외에 사는 부양가족을 공제 대상으로 올릴 때 관계와 거주 국가, 부양 내용을 확인해 회사에 내는 확인서 양식입니다.
+usage: >
+  가족이 해외에 살고 있어 국내 자료로 확인되지 않을 때 근로자가 직접 관계와 거주 사실을 밝혀 회사에 내는 서식입니다.
+  가족의 성명·생년월일·관계와 거주 국가, 체류 시작일, 부양한 내용을 적고 증빙 서류 목록을 함께 적습니다.
+  공제 대상 여부와 필요한 증빙은 세법과 회사 안내에 따라 달라지므로 제출 전에 담당 부서에 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명·소속과 제출일을 적습니다.
+  - 해외에 사는 가족의 성명, 생년월일, 관계를 적습니다.
+  - 거주 국가와 체류 시작일, 생활비 지원 내용을 적습니다.
+  - 첨부할 증빙 서류를 표시하고 서명합니다.
+faq:
+  - q: 이 확인서만 내면 공제가 되나요?
+    a: 아닙니다. 공제 여부는 세법 요건에 따라 정해지며 별도 증빙을 요구할 수 있습니다. 담당 부서에 확인하십시오.
+  - q: 외국어 서류는 번역해야 하나요?
+    a: 제출처가 번역본을 요구하는 경우가 있습니다. 회사 안내를 먼저 확인하십시오.
+  - q: 체류 시작일을 모르면 어떻게 적나요?
+    a: 출국일이나 거주를 시작한 시기를 연·월 단위로라도 적고, 정확한 날짜는 증빙에 맞춰 보완합니다.
+related: [year-end-dependent-info-consent, year-end-dependent-change-notice, year-end-dependent-separate-residence-reason, year-end-tax-checklist]
+blocks:
+  - type: doc_title
+    text: 연말정산 해외 거주 부양가족 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["귀속 연도", "", "제출일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "2026년", "", "2026-11-26"]
+  - type: subtitle
+    text: 2. 해외 거주 가족
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["가족 성명", "", "생년월일", ""]
+      - ["관계", "", "거주 국가", ""]
+      - ["체류 시작일", "", "체류 목적", ""]
+    sample_rows:
+      - ["", "김서연", "", "1960-05-10"]
+      - ["", "모", "", "캐나다"]
+      - ["", "2024-03", "", "가족 방문"]
+  - type: subtitle
+    text: 3. 부양 내용
+  - type: textbox
+    hint: "생활비 송금 방법과 횟수, 함께 지내지 못하는 사정을 적으십시오."
+    height_mm: 26
+    sample_text: "분기마다 생활비를 해외 송금했고 송금 내역을 첨부합니다. 가족은 현지 가족 방문으로 체류 중입니다."
+  - type: subtitle
+    text: 4. 첨부 서류
+  - type: grid
+    widths: [25, 25, 25, 25]
+    label_cols: []
+    row_height_mm: 9
+    rows:
+      - ["□ 가족관계 서류", "□ 송금 내역", "□ 체류 확인 서류", "□ 기타"]
+  - type: para
+    text: 위 내용이 사실임을 확인하며 제출합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   26 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공제 대상과 필요한 증빙은 세법과 회사 안내를 확인하십시오.

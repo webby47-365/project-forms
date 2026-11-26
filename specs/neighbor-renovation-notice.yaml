@@ -1,0 +1,73 @@
+id: neighbor-renovation-notice
+title: 인테리어 공사 이웃 양해 요청서
+category: personal
+subcategory: life
+tags: [인테리어공사, 이웃양해, 공사안내문, 소음양해, 공동주택]
+summary: 집 안 공사 기간과 시간, 소음이 큰 작업 일정을 이웃에게 미리 알리고 양해를 구하는 인테리어 공사 안내 양식입니다.
+usage: >
+  아파트·빌라에서 인테리어 공사를 시작하기 전에 엘리베이터나 현관에 붙이거나 이웃에게 전달하는 서식입니다.
+  공사 세대와 기간, 작업 시간, 소음이 큰 작업 일정, 연락처를 적어 불편을 줄이고 민원을 예방합니다.
+  관리규약에 따라 관리사무소 신고나 공사 시간 제한이 있을 수 있으니 먼저 확인한 뒤 일정을 적으십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 공사하는 동·호수와 공사 기간을 적습니다.
+  - 평일 작업 시간과 쉬는 날을 적습니다.
+  - 소음이 큰 작업과 예정 일정을 표에 적습니다.
+  - 연락처를 적어 엘리베이터나 현관에 게시합니다.
+faq:
+  - q: 공사 시간은 아무 때나 정해도 되나요?
+    a: 아파트는 관리규약으로 시간이 정해진 경우가 많습니다. 관리사무소에 먼저 확인하십시오.
+  - q: 모든 이웃에게 직접 전달해야 하나요?
+    a: 위아래·옆 세대는 직접 전달하고 나머지는 게시판이나 엘리베이터 게시로 알리는 편이 좋습니다.
+related: [moving-checklist, moving-damage-claim-request, lease-repair-request, management-fee-settlement-confirmation]
+blocks:
+  - type: doc_title
+    text: 인테리어 공사 이웃 양해 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 공사 개요
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["공사 세대", "", "공사 기간", ""]
+      - ["작업 시간", "", "쉬는 날", ""]
+      - ["공사 내용", "", "담당 업체", ""]
+    sample_rows:
+      - ["", "101동 1203호", "", "2026-12-01 ~ 12-20"]
+      - ["", "평일 09:00~17:00", "", "일요일·공휴일"]
+      - ["", "주방·욕실 교체", "", "한빛인테리어"]
+  - type: subtitle
+    text: 2. 소음이 큰 작업 일정
+  - type: table
+    widths: [10, 30, 30, 30]
+    header: ["No", 작업 내용, 예정 일자, 작업 시간]
+    empty_rows: 4
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "철거·타일 제거", "12-01 ~ 12-03", "09:00~17:00"]
+      - ["2", "전기·배관 작업", "12-04 ~ 12-06", "09:00~17:00"]
+  - type: subtitle
+    text: 3. 양해 말씀
+  - type: textbox
+    hint: "이웃에게 전하고 싶은 양해 말씀과 요청 사항을 적으십시오."
+    height_mm: 24
+    sample_text: "공사 중 소음과 먼지로 불편을 드려 죄송합니다. 불편하신 점은 아래 연락처로 말씀해 주시면 바로 조치하겠습니다."
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["공사 세대 연락처", "", "현장 담당자", ""]
+    sample_rows:
+      - ["", "010-1234-5678", "", "김서연 팀장"]
+  - type: date_line
+    sample_text: 2026 년   11 월   26 일
+  - type: sign_line
+    labels: ["공사 세대"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공사 시간과 신고 방법은 관리규약과 관리사무소 안내를 확인하십시오.

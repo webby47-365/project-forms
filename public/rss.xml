@@ -3,10 +3,50 @@
 <channel>
 <title>무료서식 다운로드 — 최근 추가 서식</title>
 <link>https://freeforms.kr/</link>
-<description>회원가입 없이 내려받는 무료 문서 양식 549종. 새로 추가된 서식을 알려드립니다.</description>
+<description>회원가입 없이 내려받는 무료 문서 양식 554종. 새로 추가된 서식을 알려드립니다.</description>
 <language>ko</language>
 <atom:link href="https://freeforms.kr/rss.xml" rel="self" type="application/rss+xml" />
-<lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0900</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 00:00:00 +0900</lastBuildDate>
+<item>
+<title>견적 수락 확인서</title>
+<link>https://freeforms.kr/form/quotation-acceptance-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/quotation-acceptance-confirmation/</guid>
+<category>기업 · 영업·마케팅</category>
+<pubDate>Thu, 26 Nov 2026 00:00:00 +0900</pubDate>
+<description>받은 견적서의 금액과 조건을 그대로 받아들이기로 했음을 알리는 견적 수락 확인서 양식입니다.</description>
+</item>
+<item>
+<title>인테리어 공사 이웃 양해 요청서</title>
+<link>https://freeforms.kr/form/neighbor-renovation-notice/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/neighbor-renovation-notice/</guid>
+<category>개인 · 생활·가정</category>
+<pubDate>Thu, 26 Nov 2026 00:00:00 +0900</pubDate>
+<description>집 안 공사 기간과 시간, 소음이 큰 작업 일정을 이웃에게 미리 알리고 양해를 구하는 인테리어 공사 안내 양식입니다.</description>
+</item>
+<item>
+<title>영업장 소재지 이전 사실 확인서</title>
+<link>https://freeforms.kr/form/business-relocation-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/business-relocation-confirmation/</guid>
+<category>공공 · 인허가·영업신고</category>
+<pubDate>Thu, 26 Nov 2026 00:00:00 +0900</pubDate>
+<description>영업장을 새 주소로 옮긴 사실과 이전 전후 주소·이전일을 확인해 제출처에 내는 영업장 소재지 이전 사실 확인서 양식입니다.</description>
+</item>
+<item>
+<title>법인 상호 변경 결의서</title>
+<link>https://freeforms.kr/form/corporate-name-change-resolution/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/corporate-name-change-resolution/</guid>
+<category>기업 · 창업·법인</category>
+<pubDate>Thu, 26 Nov 2026 00:00:00 +0900</pubDate>
+<description>주식회사가 상호를 바꾸기로 결의한 내용과 정관 변경 사항을 기록하는 법인 상호 변경 결의서 양식입니다.</description>
+</item>
+<item>
+<title>연말정산 해외 거주 부양가족 확인서</title>
+<link>https://freeforms.kr/form/year-end-overseas-dependent-confirmation/</link>
+<guid isPermaLink="true">https://freeforms.kr/form/year-end-overseas-dependent-confirmation/</guid>
+<category>공공 · 신청·동의</category>
+<pubDate>Thu, 26 Nov 2026 00:00:00 +0900</pubDate>
+<description>연말정산에서 해외에 사는 부양가족을 공제 대상으로 올릴 때 관계와 거주 국가, 부양 내용을 확인해 회사에 내는 확인서 양식입니다.</description>
+</item>
 <item>
 <title>진료비 세부내역서 발급 신청서</title>
 <link>https://freeforms.kr/form/medical-bill-itemization-request/</link>
@@ -206,46 +246,6 @@
 <category>부동산 · 임대·매매</category>
 <pubDate>Thu, 19 Nov 2026 00:00:00 +0900</pubDate>
 <description>임차인이 퇴거한 뒤 원상복구가 필요한 항목과 비용을 정리하고 보증금에서 공제할 금액을 임대인과 임차인이 함께 확인하는 정산서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 자녀 세액공제 대상 확인서</title>
-<link>https://freeforms.kr/form/year-end-child-tax-credit-confirmation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-child-tax-credit-confirmation/</guid>
-<category>기업 · 인사·노무</category>
-<pubDate>Thu, 19 Nov 2026 00:00:00 +0900</pubDate>
-<description>연말정산에서 자녀 세액공제를 받으려는 직원이 자녀별 출생연도·동거 여부·출산·입양 해당 여부를 적어 회사에 내는 확인서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 서류 접수 대장</title>
-<link>https://freeforms.kr/form/year-end-document-receipt-ledger/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-document-receipt-ledger/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Thu, 19 Nov 2026 00:00:00 +0900</pubDate>
-<description>직원들이 낸 연말정산 공제 증빙 서류를 제출일·제출자·서류 종류별로 기록하고 누락을 확인하는 접수 대장 양식입니다.</description>
-</item>
-<item>
-<title>원천세 납부서</title>
-<link>https://freeforms.kr/form/withholding-tax-payment-form/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/withholding-tax-payment-form/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
-<description>근로소득 지급명세서 신고 후 원천징수한 소득세와 지방소득세의 납부 내역을 정리해 기록하는 납부서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 환급금 수령 계좌 신고서</title>
-<link>https://freeforms.kr/form/year-end-refund-account-notice/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-refund-account-notice/</guid>
-<category>기업 · 회계·세무</category>
-<pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
-<description>연말정산 결과 환급금이 생길 때 받을 계좌를 회사에 알리는 연말정산 환급금 수령 계좌 신고서 양식입니다.</description>
-</item>
-<item>
-<title>연말정산 맞벌이 부부 부양가족 공제 배분 확인서</title>
-<link>https://freeforms.kr/form/year-end-couple-dependent-allocation/</link>
-<guid isPermaLink="true">https://freeforms.kr/form/year-end-couple-dependent-allocation/</guid>
-<category>공공 · 세금·사업자</category>
-<pubDate>Wed, 18 Nov 2026 00:00:00 +0900</pubDate>
-<description>맞벌이 부부가 자녀·부모 등 부양가족을 누가 공제받을지 정해 각자의 회사에 제출하는 연말정산 공제 배분 확인서 양식입니다.</description>
 </item>
 </channel>
 </rss>

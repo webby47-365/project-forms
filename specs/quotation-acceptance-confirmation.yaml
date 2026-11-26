@@ -1,0 +1,72 @@
+id: quotation-acceptance-confirmation
+title: 견적 수락 확인서
+category: corp
+subcategory: sales
+tags: [견적수락, 견적승인, 발주확인, 수락확인서, 견적서회신]
+summary: 받은 견적서의 금액과 조건을 그대로 받아들이기로 했음을 알리는 견적 수락 확인서 양식입니다.
+usage: >
+  견적서를 받은 쪽이 거래를 진행하기로 결정했을 때 상대에게 보내는 서식입니다. 견적서 번호와 일자,
+  수락 금액, 납기, 결제 조건, 수정이 필요한 항목을 적어 두면 나중에 조건이 달라졌다는 다툼을 줄입니다.
+  정식 계약이나 발주서가 따로 필요한지는 거래 관행과 내부 규정을 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 견적서 번호와 견적일, 견적 제출처를 적습니다.
+  - 수락하는 금액과 납기, 결제 조건을 적습니다.
+  - 견적과 달라지는 조건이 있으면 표에 적습니다.
+  - 담당자 정보를 적고 서명해 보냅니다.
+faq:
+  - q: 수락 확인서가 계약서를 대신하나요?
+    a: 거래 내용에 따라 다릅니다. 금액이 크거나 조건이 복잡하면 계약서나 발주서를 따로 쓰십시오.
+  - q: 견적과 일부 조건이 다르면 어떻게 하나요?
+    a: 달라지는 항목을 표에 적어 상대가 확인하게 합니다. 합의되기 전에는 전부 수락으로 보지 않습니다.
+related: [purchase-order, delivery-confirmation, quotation-validity-extension-request, service-contract-simple]
+blocks:
+  - type: doc_title
+    text: 견적 수락 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 견적 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["견적서 번호", "", "견적일", ""]
+      - ["견적 제출처", "", "담당자", ""]
+    sample_rows:
+      - ["", "Q-2026-0142", "", "2026-11-10"]
+      - ["", "(주)새길데이터", "", "김서연 과장"]
+  - type: subtitle
+    text: 2. 수락 내용
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["수락 금액", "", "납기", ""]
+      - ["결제 조건", "", "수락일", ""]
+    sample_rows:
+      - ["", "3,300,000원(부가세 포함)", "", "2026-12-15"]
+      - ["", "납품 후 30일 이내", "", "2026-11-26"]
+  - type: subtitle
+    text: 3. 견적과 달라지는 조건
+  - type: table
+    widths: [10, 30, 30, 30]
+    header: ["No", 항목, 견적 내용, 변경 내용]
+    empty_rows: 3
+    row_height_mm: 8
+    sample_rows:
+      - ["1", "납기", "2026-12-20", "2026-12-15"]
+  - type: textbox
+    hint: "그 밖에 확인할 사항이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "위 견적 내용대로 진행하며 변경 항목은 납기 단축 한 가지입니다."
+  - type: date_line
+    sample_text: 2026 년   11 월   26 일
+  - type: sign_line
+    labels: ["수락인"]
+    sample_names: [박민준]
+  - type: notice
+    text: 계약서나 발주서가 필요한지는 거래 관행과 내부 규정을 확인하십시오.

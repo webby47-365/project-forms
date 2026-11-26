@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T14:22:21+09:00",
-  "count": 549,
+  "generated_at": "2026-11-26T13:52:48+09:00",
+  "count": 554,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -7370,6 +7370,99 @@
       "downloads": 0
     },
     {
+      "id": "business-relocation-confirmation",
+      "title": "영업장 소재지 이전 사실 확인서",
+      "category": "public",
+      "subcategory": "permit",
+      "tags": [
+        "영업장이전",
+        "소재지변경",
+        "사업장이전",
+        "이전확인서",
+        "영업신고"
+      ],
+      "summary": "영업장을 새 주소로 옮긴 사실과 이전 전후 주소·이전일을 확인해 제출처에 내는 영업장 소재지 이전 사실 확인서 양식입니다.",
+      "usage": "가게나 사업장을 다른 곳으로 옮긴 뒤 관청·거래처·금융기관에 이전 사실을 알릴 때 쓰는 서식입니다. 이전 전 주소와 이전 후 주소, 이전일, 영업 재개일, 대표자 정보를 적고 서명합니다. 영업 신고와 사업자등록의 주소 변경은 별도 절차가 있으므로 관할 기관 안내를 먼저 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45711,
+        "docx": 38452,
+        "hwpx": 9433
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "상호와 대표자 성명, 연락처를 적습니다.",
+        "이전 전 주소와 이전 후 주소를 적습니다.",
+        "이전일과 영업 재개일을 적습니다.",
+        "제출처와 날짜를 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 확인서로 주소 변경 신고가 되나요?",
+          "a": "아닙니다. 영업 신고와 사업자등록 주소 변경은 별도 절차입니다. 관할 기관 안내를 확인하십시오."
+        },
+        {
+          "q": "이전일과 영업 재개일은 다른가요?",
+          "a": "짐을 옮긴 날과 실제로 영업을 다시 시작한 날이 다를 수 있어 각각 적습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 영업장 정보",
+          "items": [
+            "상호",
+            "대표자",
+            "연락처",
+            "제출처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 소재지 이전 내용",
+          "items": [
+            "이전 전 주소",
+            "이전 후 주소",
+            "이전일",
+            "영업 재개일"
+          ],
+          "note": "이전 사유와 함께 첨부하는 서류(임대차계약서 사본 등)를 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "business-name-change-confirmation",
+        "business-premises-area-change-confirmation",
+        "business-registration-change-poa",
+        "business-resumption-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-26T13:52:42+09:00",
+      "updated_at": "2026-11-26T13:52:42+09:00",
+      "downloads": 0
+    },
+    {
       "id": "business-report-agent-poa",
       "title": "영업 신고 대행 위임장",
       "category": "public",
@@ -14655,6 +14748,110 @@
         "receipt"
       ],
       "seal": true
+    },
+    {
+      "id": "corporate-name-change-resolution",
+      "title": "법인 상호 변경 결의서",
+      "category": "corp",
+      "subcategory": "startup",
+      "tags": [
+        "법인상호변경",
+        "상호변경결의",
+        "정관변경",
+        "결의서",
+        "변경등기"
+      ],
+      "summary": "주식회사가 상호를 바꾸기로 결의한 내용과 정관 변경 사항을 기록하는 법인 상호 변경 결의서 양식입니다.",
+      "usage": "법인이 상호를 바꿀 때 결의한 사실을 남기는 서식입니다. 결의 일시와 장소, 변경 전후 상호, 정관 변경 조항, 참석 및 찬성 현황을 적고 대표이사가 서명합니다. 결의 방식과 정족수는 정관과 법령에 따라 달라지고 변경등기는 별도 절차이므로 법무사 또는 등기소 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 52976,
+        "docx": 38617,
+        "hwpx": 9716
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "결의 일시와 장소, 회의 종류를 적습니다.",
+        "변경 전 상호와 변경 후 상호를 적습니다.",
+        "정관에서 바뀌는 조항과 내용을 적습니다.",
+        "참석·찬성 주식 수를 적고 대표이사가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이사회와 주주총회 중 어디서 결의하나요?",
+          "a": "정관 변경이 필요해 보통 주주총회 결의를 거칩니다. 회사 정관과 법령을 확인하십시오."
+        },
+        {
+          "q": "이 결의서로 등기까지 끝나나요?",
+          "a": "아닙니다. 변경등기와 사업자등록 정정은 별도로 해야 합니다. 등기소 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 결의 개요",
+          "items": [
+            "회사명",
+            "대표이사",
+            "결의 일시",
+            "결의 장소",
+            "본점 주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 상호 변경 내용",
+          "items": [
+            "변경 전 상호",
+            "변경 후 상호",
+            "변경 정관 조항",
+            "효력 발생일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 참석 및 결의 현황",
+          "items": [
+            "발행주식 총수",
+            "참석 주식 수",
+            "찬성 주식 수",
+            "반대 주식 수"
+          ],
+          "note": "상호 변경 사유와 그 밖의 결의 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "shareholder-meeting-minutes",
+        "board-minutes",
+        "corporate-seal-report-poa",
+        "business-registration-change-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-26T13:52:38+09:00",
+      "updated_at": "2026-11-26T13:52:38+09:00",
+      "downloads": 0
     },
     {
       "id": "corporate-seal-report-poa",
@@ -34105,6 +34302,107 @@
       "seal": true
     },
     {
+      "id": "neighbor-renovation-notice",
+      "title": "인테리어 공사 이웃 양해 요청서",
+      "category": "personal",
+      "subcategory": "life",
+      "tags": [
+        "인테리어공사",
+        "이웃양해",
+        "공사안내문",
+        "소음양해",
+        "공동주택"
+      ],
+      "summary": "집 안 공사 기간과 시간, 소음이 큰 작업 일정을 이웃에게 미리 알리고 양해를 구하는 인테리어 공사 안내 양식입니다.",
+      "usage": "아파트·빌라에서 인테리어 공사를 시작하기 전에 엘리베이터나 현관에 붙이거나 이웃에게 전달하는 서식입니다. 공사 세대와 기간, 작업 시간, 소음이 큰 작업 일정, 연락처를 적어 불편을 줄이고 민원을 예방합니다. 관리규약에 따라 관리사무소 신고나 공사 시간 제한이 있을 수 있으니 먼저 확인한 뒤 일정을 적으십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54780,
+        "docx": 38656,
+        "hwpx": 9927
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "공사하는 동·호수와 공사 기간을 적습니다.",
+        "평일 작업 시간과 쉬는 날을 적습니다.",
+        "소음이 큰 작업과 예정 일정을 표에 적습니다.",
+        "연락처를 적어 엘리베이터나 현관에 게시합니다."
+      ],
+      "faq": [
+        {
+          "q": "공사 시간은 아무 때나 정해도 되나요?",
+          "a": "아파트는 관리규약으로 시간이 정해진 경우가 많습니다. 관리사무소에 먼저 확인하십시오."
+        },
+        {
+          "q": "모든 이웃에게 직접 전달해야 하나요?",
+          "a": "위아래·옆 세대는 직접 전달하고 나머지는 게시판이나 엘리베이터 게시로 알리는 편이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 공사 개요",
+          "items": [
+            "공사 세대",
+            "공사 기간",
+            "작업 시간",
+            "쉬는 날",
+            "공사 내용",
+            "담당 업체"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 소음이 큰 작업 일정",
+          "items": [
+            "작업 내용",
+            "예정 일자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 양해 말씀",
+          "items": [
+            "공사 세대 연락처",
+            "현장 담당자"
+          ],
+          "note": "이웃에게 전하고 싶은 양해 말씀과 요청 사항을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "moving-checklist",
+        "moving-damage-claim-request",
+        "lease-repair-request",
+        "management-fee-settlement-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-26T13:52:44+09:00",
+      "updated_at": "2026-11-26T13:52:44+09:00",
+      "downloads": 0
+    },
+    {
       "id": "noise-complaint",
       "title": "층간소음 민원 신청서",
       "category": "public",
@@ -39150,6 +39448,108 @@
         "tax-invoice"
       ],
       "seal": true
+    },
+    {
+      "id": "quotation-acceptance-confirmation",
+      "title": "견적 수락 확인서",
+      "category": "corp",
+      "subcategory": "sales",
+      "tags": [
+        "견적수락",
+        "견적승인",
+        "발주확인",
+        "수락확인서",
+        "견적서회신"
+      ],
+      "summary": "받은 견적서의 금액과 조건을 그대로 받아들이기로 했음을 알리는 견적 수락 확인서 양식입니다.",
+      "usage": "견적서를 받은 쪽이 거래를 진행하기로 결정했을 때 상대에게 보내는 서식입니다. 견적서 번호와 일자, 수락 금액, 납기, 결제 조건, 수정이 필요한 항목을 적어 두면 나중에 조건이 달라졌다는 다툼을 줄입니다. 정식 계약이나 발주서가 따로 필요한지는 거래 관행과 내부 규정을 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50846,
+        "docx": 38595,
+        "hwpx": 9759
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "견적서 번호와 견적일, 견적 제출처를 적습니다.",
+        "수락하는 금액과 납기, 결제 조건을 적습니다.",
+        "견적과 달라지는 조건이 있으면 표에 적습니다.",
+        "담당자 정보를 적고 서명해 보냅니다."
+      ],
+      "faq": [
+        {
+          "q": "수락 확인서가 계약서를 대신하나요?",
+          "a": "거래 내용에 따라 다릅니다. 금액이 크거나 조건이 복잡하면 계약서나 발주서를 따로 쓰십시오."
+        },
+        {
+          "q": "견적과 일부 조건이 다르면 어떻게 하나요?",
+          "a": "달라지는 항목을 표에 적어 상대가 확인하게 합니다. 합의되기 전에는 전부 수락으로 보지 않습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 견적 정보",
+          "items": [
+            "견적서 번호",
+            "견적일",
+            "견적 제출처",
+            "담당자"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 수락 내용",
+          "items": [
+            "수락 금액",
+            "납기",
+            "결제 조건",
+            "수락일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 견적과 달라지는 조건",
+          "items": [
+            "항목",
+            "견적 내용",
+            "변경 내용"
+          ],
+          "note": "그 밖에 확인할 사항이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "purchase-order",
+        "delivery-confirmation",
+        "quotation-validity-extension-request",
+        "service-contract-simple"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-26T13:52:47+09:00",
+      "updated_at": "2026-11-26T13:52:47+09:00",
+      "downloads": 0
     },
     {
       "id": "quotation-comparison",
@@ -57222,6 +57622,118 @@
       "warnings": [],
       "created_at": "2026-11-17T14:02:16+09:00",
       "updated_at": "2026-11-17T14:02:16+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-overseas-dependent-confirmation",
+      "title": "연말정산 해외 거주 부양가족 확인서",
+      "category": "public",
+      "subcategory": "consent",
+      "tags": [
+        "연말정산",
+        "해외거주",
+        "부양가족",
+        "거주사실",
+        "인적공제"
+      ],
+      "summary": "연말정산에서 해외에 사는 부양가족을 공제 대상으로 올릴 때 관계와 거주 국가, 부양 내용을 확인해 회사에 내는 확인서 양식입니다.",
+      "usage": "가족이 해외에 살고 있어 국내 자료로 확인되지 않을 때 근로자가 직접 관계와 거주 사실을 밝혀 회사에 내는 서식입니다. 가족의 성명·생년월일·관계와 거주 국가, 체류 시작일, 부양한 내용을 적고 증빙 서류 목록을 함께 적습니다. 공제 대상 여부와 필요한 증빙은 세법과 회사 안내에 따라 달라지므로 제출 전에 담당 부서에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 55350,
+        "docx": 38631,
+        "hwpx": 9742
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명·소속과 제출일을 적습니다.",
+        "해외에 사는 가족의 성명, 생년월일, 관계를 적습니다.",
+        "거주 국가와 체류 시작일, 생활비 지원 내용을 적습니다.",
+        "첨부할 증빙 서류를 표시하고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "이 확인서만 내면 공제가 되나요?",
+          "a": "아닙니다. 공제 여부는 세법 요건에 따라 정해지며 별도 증빙을 요구할 수 있습니다. 담당 부서에 확인하십시오."
+        },
+        {
+          "q": "외국어 서류는 번역해야 하나요?",
+          "a": "제출처가 번역본을 요구하는 경우가 있습니다. 회사 안내를 먼저 확인하십시오."
+        },
+        {
+          "q": "체류 시작일을 모르면 어떻게 적나요?",
+          "a": "출국일이나 거주를 시작한 시기를 연·월 단위로라도 적고, 정확한 날짜는 증빙에 맞춰 보완합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "귀속 연도",
+            "제출일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 해외 거주 가족",
+          "items": [
+            "가족 성명",
+            "생년월일",
+            "관계",
+            "거주 국가",
+            "체류 시작일",
+            "체류 목적"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 부양 내용",
+          "items": [],
+          "note": "생활비 송금 방법과 횟수, 함께 지내지 못하는 사정을 적으십시오."
+        },
+        {
+          "title": "4. 첨부 서류",
+          "items": [
+            "□ 가족관계 서류",
+            "□ 체류 확인 서류"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-dependent-info-consent",
+        "year-end-dependent-change-notice",
+        "year-end-dependent-separate-residence-reason",
+        "year-end-tax-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-26T13:52:36+09:00",
+      "updated_at": "2026-11-26T13:52:36+09:00",
       "downloads": 0
     },
     {
