@@ -1,0 +1,79 @@
+id: interview-schedule-change-request
+title: 면접 일정 변경 요청서
+category: personal
+subcategory: career
+tags: [면접일정변경, 면접연기, 면접시간조정, 면접일정조율, 채용]
+summary: 채용 면접 일정을 바꾸고 싶을 때 기존 일정과 변경 희망 일시, 사유를 정리해 채용 담당자에게 보내는 요청서 양식입니다.
+usage: >
+  이미 잡힌 면접에 갈 수 없는 사정이 생겼을 때 채용 담당자에게 정중하게 일정 조정을 요청하는 서식입니다.
+  지원 직무와 기존 면접 일시, 변경을 원하는 후보 일시를 두세 개 적고 사유를 짧게 밝힙니다.
+  요청은 가능한 한 빨리 보내고 회신을 받은 뒤 확정된 일정을 다시 확인하십시오.
+  회사 사정에 따라 변경이 어려울 수 있으니 기존 일정에 참석할 수 있는지도 함께 살펴보십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 지원자 성명과 지원 직무, 연락처를 적습니다.
+  - 기존에 안내받은 면접 일시와 장소를 적습니다.
+  - 변경을 원하는 일시를 후보로 두세 개 적습니다.
+  - 변경 사유를 짧게 쓰고 서명해 보냅니다.
+faq:
+  - q: 사유를 자세히 써야 하나요?
+    a: 길게 쓸 필요 없습니다. 사정을 한두 문장으로 밝히고 대안 일시를 함께 제안하면 충분합니다.
+  - q: 언제까지 보내야 하나요?
+    a: 사정을 안 즉시 보내는 것이 좋습니다. 면접이 임박했다면 전화나 메일로 먼저 알리십시오.
+  - q: 변경이 꼭 받아들여지나요?
+    a: 회사 사정에 따라 어려울 수 있습니다. 회신을 받기 전에는 기존 일정을 유지한다고 생각하십시오.
+related: [job-application-form, job-application-withdrawal-notice, job-offer-acceptance-letter, reference-check-consent]
+blocks:
+  - type: doc_title
+    text: 면접 일정 변경 요청서
+    spaced: false
+  - type: subtitle
+    text: 1. 지원자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "연락처", ""]
+      - ["지원 회사", "", "지원 직무", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "(주)한빛커머스", "", "마케팅 담당"]
+  - type: subtitle
+    text: 2. 기존 면접 일정
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["면접 일시", "", "면접 장소", ""]
+    sample_rows:
+      - ["", "2026-12-03 14:00", "", "본사 3층 회의실"]
+  - type: subtitle
+    text: 3. 변경 희망 일정
+  - type: table
+    widths: [14, 43, 43]
+    header: ["순위", "희망 일시", "비고"]
+    empty_rows: 3
+    row_height_mm: 9
+    sample_rows:
+      - ["1", "2026-12-04 10:00", "오전 가능"]
+      - ["2", "2026-12-05 15:00", ""]
+  - type: subtitle
+    text: 4. 변경 사유
+  - type: textbox
+    hint: "변경이 필요한 사정을 한두 문장으로 적으십시오."
+    height_mm: 24
+    sample_text: "기존 면접 시간에 이전 직장의 인수인계 일정이 겹쳐 부득이하게 조정을 요청드립니다."
+  - type: para
+    text: 위와 같이 면접 일정 변경을 요청드리며, 불편을 끼쳐 죄송합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   27 일
+  - type: sign_line
+    labels: ["지원자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 변경 여부는 채용 담당자의 회신으로 확정됩니다.

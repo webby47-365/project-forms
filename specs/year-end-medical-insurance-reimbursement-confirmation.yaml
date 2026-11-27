@@ -1,0 +1,70 @@
+id: year-end-medical-insurance-reimbursement-confirmation
+title: 연말정산 실손의료보험금 수령 확인서
+category: public
+subcategory: tax
+tags: [연말정산, 실손보험, 보험금수령, 의료비공제, 의료비]
+summary: 연말정산 의료비 자료를 낼 때 실손의료보험 등으로 돌려받은 보험금 내역을 적어 회사에 함께 내는 수령 확인서 양식입니다.
+usage: >
+  병원비를 낸 뒤 보험사에서 보험금을 받았다면 의료비 자료에서 그 금액을 따로 밝혀야 하는 경우가 있습니다.
+  이 서식은 의료비를 낸 병원과 총 지출액, 받은 보험금과 수령일, 보험사 이름을 한곳에 정리해 회사 담당 부서에 내는 용도입니다.
+  보험금을 아직 받지 못했거나 청구 중이면 그 사실을 비고에 적으십시오.
+  공제 대상 여부와 계산은 세법과 회사 안내에 따라 달라지므로 제출 전에 담당 부서에 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 제출자의 성명·소속과 귀속 연도를 적습니다.
+  - 의료비를 낸 병원과 지출 금액을 표에 적습니다.
+  - 받은 보험금과 수령일, 보험사를 같은 줄에 적습니다.
+  - 청구 중인 건은 비고에 적고 서명합니다.
+faq:
+  - q: 보험금을 받지 않았다면 내야 하나요?
+    a: 받은 보험금이 없으면 따로 낼 필요가 없는 경우가 많습니다. 회사 안내를 먼저 확인하십시오.
+  - q: 다음 해에 받을 보험금은 어떻게 적나요?
+    a: 청구 중이거나 수령 예정이면 비고에 적어 두고, 처리 방법은 담당 부서에 문의하십시오.
+  - q: 영수증도 함께 내야 하나요?
+    a: 의료비 자료와 함께 내는 것이 일반적입니다. 필요한 증빙은 회사 안내를 따르십시오.
+related: [year-end-medical-expense-submission, medical-bill-itemization-request, year-end-correction-request, year-end-tax-checklist]
+blocks:
+  - type: doc_title
+    text: 연말정산 실손의료보험금 수령 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 제출자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속", ""]
+      - ["귀속 연도", "", "제출일", ""]
+    sample_rows:
+      - ["", "홍길동", "", "(주)한빛커머스 영업팀"]
+      - ["", "2026년", "", "2026-11-27"]
+  - type: subtitle
+    text: 2. 의료비 지출 및 보험금 수령 내역
+  - type: table
+    widths: [22, 18, 18, 16, 14, 12]
+    header: ["병원·약국명", "지출 금액", "받은 보험금", "수령일", "보험사", "비고"]
+    empty_rows: 6
+    row_height_mm: 9
+    sample_rows:
+      - ["한빛내과의원", "120,000원", "90,000원", "2026-08-12", "A보험", ""]
+      - ["새길정형외과", "350,000원", "280,000원", "2026-10-05", "A보험", ""]
+      - ["한빛약국", "45,000원", "0원", "-", "-", "청구 중"]
+  - type: subtitle
+    text: 3. 특이사항
+  - type: textbox
+    hint: "청구 중이거나 다음 해에 받을 보험금이 있으면 병원명과 금액을 적으십시오."
+    height_mm: 22
+    sample_text: "한빛약국 지출분은 보험금을 청구 중이며 수령하면 담당 부서에 알리겠습니다."
+  - type: para
+    text: 위 내용이 사실임을 확인하며 제출합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   27 일
+  - type: sign_line
+    labels: ["제출자"]
+    sample_names: [홍길동]
+  - type: notice
+    text: 공제 대상과 계산 방법은 세법과 회사 안내를 확인하십시오.

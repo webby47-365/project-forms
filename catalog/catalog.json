@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T13:52:48+09:00",
-  "count": 554,
+  "generated_at": "2026-11-27T13:56:07+09:00",
+  "count": 559,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -16223,6 +16223,109 @@
       "downloads": 0
     },
     {
+      "id": "debt-repayment-extension-request",
+      "title": "변제기한 연장 요청서",
+      "category": "legal",
+      "subcategory": "notice",
+      "tags": [
+        "변제기한연장",
+        "상환유예",
+        "지급기한연장",
+        "채무변제",
+        "기한연장요청"
+      ],
+      "summary": "갚아야 할 돈의 변제 기한을 늦춰 달라고 상대방에게 요청할 때 채무 내용과 연장 희망일, 분할 방법, 사유를 적는 요청서 양식입니다.",
+      "usage": "약속한 날까지 돈을 갚기 어려울 때 연체가 되기 전에 상대방에게 기한을 늦춰 달라고 알리는 서식입니다. 채무의 발생 원인과 남은 금액, 기존 기한과 연장을 희망하는 기한, 나눠 갚을 계획이 있다면 그 일정을 적습니다. 이 요청서는 상대방이 받아들여야 효력이 생기는 제안이므로 합의가 되면 별도 합의서나 각서로 남기는 것이 좋습니다. 이자와 지연 책임은 계약 내용에 따라 달라질 수 있으니 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49531,
+        "docx": 38532,
+        "hwpx": 9546
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "요청자와 상대방의 성명·연락처를 적습니다.",
+        "채무의 내용과 남은 금액, 기존 변제기한을 적습니다.",
+        "연장을 희망하는 기한과 분할 일정을 적습니다.",
+        "사유를 쓰고 서명해 상대방에게 전달합니다."
+      ],
+      "faq": [
+        {
+          "q": "요청서를 보내면 기한이 자동으로 늘어나나요?",
+          "a": "아닙니다. 상대방이 받아들여야 합니다. 합의되면 그 내용을 합의서 등으로 따로 남기십시오."
+        },
+        {
+          "q": "일부라도 먼저 갚으면 도움이 되나요?",
+          "a": "일부 변제 의사와 일정을 밝히면 협의에 도움이 될 수 있습니다. 이체 내역은 보관하십시오."
+        },
+        {
+          "q": "기한이 지난 뒤에도 보낼 수 있나요?",
+          "a": "보낼 수는 있으나 가능하면 기한 전에 알리는 것이 좋습니다. 지연에 따른 책임은 계약을 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자",
+          "items": [
+            "요청인",
+            "연락처",
+            "상대방"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 채무 내용",
+          "items": [
+            "채무 발생 원인",
+            "발생일",
+            "남은 금액",
+            "기존 변제기한",
+            "연장 희망 기한",
+            "분할 여부"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 연장 요청 사유와 변제 계획",
+          "items": [],
+          "note": "기한 내 변제가 어려운 사정과 연장 후 변제 계획을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "repayment-plan",
+        "settlement-agreement",
+        "payment-pledge",
+        "certified-notice-reply"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-27T13:56:05+09:00",
+      "updated_at": "2026-11-27T13:56:05+09:00",
+      "downloads": 0
+    },
+    {
       "id": "defect-warranty-deposit-refund-request",
       "title": "하자보수보증금 반환 청구서",
       "category": "public",
@@ -18060,6 +18163,108 @@
       "warnings": [],
       "created_at": "2026-10-03T08:15:42+09:00",
       "updated_at": "2026-10-03T08:15:42+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "employment-start-date-change-request",
+      "title": "입사일 조정 요청서",
+      "category": "personal",
+      "subcategory": "career",
+      "tags": [
+        "입사일조정",
+        "입사일변경",
+        "입사일연기",
+        "출근일조정",
+        "입사승낙"
+      ],
+      "summary": "입사를 승낙한 뒤 사정이 생겨 출근 시작일을 늦추거나 당기고 싶을 때 희망일과 사유를 적어 회사에 보내는 요청서 양식입니다.",
+      "usage": "최종 합격 후 이전 직장 인수인계나 이사 일정 때문에 안내받은 입사일에 맞추기 어려울 때 쓰는 서식입니다. 기존 입사일과 희망하는 입사일, 조정이 필요한 사유를 적고 전 직장 퇴사 예정일도 함께 밝히면 회사가 판단하기 쉽습니다. 입사일은 근로계약과 보험 가입 일정에 영향을 줄 수 있으므로 회신으로 확정된 날짜를 문서로 남기십시오. 요청한다고 반드시 받아들여지는 것은 아닙니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 42237,
+        "docx": 38435,
+        "hwpx": 9403
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "지원자 성명과 입사 예정 직무를 적습니다.",
+        "안내받은 입사일과 희망하는 입사일을 적습니다.",
+        "전 직장 퇴사 예정일 등 조정이 필요한 사유를 적습니다.",
+        "서명해 인사 담당자에게 보내고 회신을 확인합니다."
+      ],
+      "faq": [
+        {
+          "q": "이미 입사 승낙서를 냈는데 요청해도 되나요?",
+          "a": "요청은 할 수 있으나 받아들일지는 회사가 정합니다. 가능한 한 빨리 담당자에게 알리십시오."
+        },
+        {
+          "q": "희망 입사일은 하나만 적어야 하나요?",
+          "a": "가능한 범위를 함께 적으면 조율이 쉽습니다. 가장 빠른 날과 늦은 날을 적어 두십시오."
+        },
+        {
+          "q": "확정된 입사일은 어떻게 남기나요?",
+          "a": "회사의 회신 메일이나 근로계약서에 날짜가 적혀 있는지 확인하고 사본을 보관하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 요청자 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "입사 회사",
+            "입사 직무"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 입사일 조정 내용",
+          "items": [
+            "기존 입사일",
+            "희망 입사일",
+            "전 직장 퇴사 예정일",
+            "조정 가능 범위"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 조정 사유",
+          "items": [],
+          "note": "입사일 조정이 필요한 사정을 구체적으로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "job-offer-acceptance-letter",
+        "resignation-letter",
+        "labor-contract-standard",
+        "career-certificate-request"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-27T13:56:03+09:00",
+      "updated_at": "2026-11-27T13:56:03+09:00",
       "downloads": 0
     },
     {
@@ -28096,6 +28301,114 @@
       "seal": true
     },
     {
+      "id": "interview-schedule-change-request",
+      "title": "면접 일정 변경 요청서",
+      "category": "personal",
+      "subcategory": "career",
+      "tags": [
+        "면접일정변경",
+        "면접연기",
+        "면접시간조정",
+        "면접일정조율",
+        "채용"
+      ],
+      "summary": "채용 면접 일정을 바꾸고 싶을 때 기존 일정과 변경 희망 일시, 사유를 정리해 채용 담당자에게 보내는 요청서 양식입니다.",
+      "usage": "이미 잡힌 면접에 갈 수 없는 사정이 생겼을 때 채용 담당자에게 정중하게 일정 조정을 요청하는 서식입니다. 지원 직무와 기존 면접 일시, 변경을 원하는 후보 일시를 두세 개 적고 사유를 짧게 밝힙니다. 요청은 가능한 한 빨리 보내고 회신을 받은 뒤 확정된 일정을 다시 확인하십시오. 회사 사정에 따라 변경이 어려울 수 있으니 기존 일정에 참석할 수 있는지도 함께 살펴보십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 50963,
+        "docx": 38587,
+        "hwpx": 9715
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "지원자 성명과 지원 직무, 연락처를 적습니다.",
+        "기존에 안내받은 면접 일시와 장소를 적습니다.",
+        "변경을 원하는 일시를 후보로 두세 개 적습니다.",
+        "변경 사유를 짧게 쓰고 서명해 보냅니다."
+      ],
+      "faq": [
+        {
+          "q": "사유를 자세히 써야 하나요?",
+          "a": "길게 쓸 필요 없습니다. 사정을 한두 문장으로 밝히고 대안 일시를 함께 제안하면 충분합니다."
+        },
+        {
+          "q": "언제까지 보내야 하나요?",
+          "a": "사정을 안 즉시 보내는 것이 좋습니다. 면접이 임박했다면 전화나 메일로 먼저 알리십시오."
+        },
+        {
+          "q": "변경이 꼭 받아들여지나요?",
+          "a": "회사 사정에 따라 어려울 수 있습니다. 회신을 받기 전에는 기존 일정을 유지한다고 생각하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 지원자 정보",
+          "items": [
+            "성명",
+            "연락처",
+            "지원 회사",
+            "지원 직무"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 기존 면접 일정",
+          "items": [
+            "면접 일시",
+            "면접 장소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 변경 희망 일정",
+          "items": [
+            "순위",
+            "희망 일시"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 변경 사유",
+          "items": [],
+          "note": "변경이 필요한 사정을 한두 문장으로 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "job-application-form",
+        "job-application-withdrawal-notice",
+        "job-offer-acceptance-letter",
+        "reference-check-consent"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-27T13:56:00+09:00",
+      "updated_at": "2026-11-27T13:56:00+09:00",
+      "downloads": 0
+    },
+    {
       "id": "invitation-card",
       "title": "초대장",
       "category": "personal",
@@ -35012,6 +35325,110 @@
       "warnings": [],
       "created_at": "2026-11-17T14:02:24+09:00",
       "updated_at": "2026-11-17T14:02:24+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "parental-leave-confirmation",
+      "title": "육아휴직 사용 확인서",
+      "category": "public",
+      "subcategory": "insurance",
+      "tags": [
+        "육아휴직확인서",
+        "육아휴직사용확인",
+        "휴직기간확인",
+        "육아휴직급여",
+        "휴직증명"
+      ],
+      "summary": "육아휴직 급여 신청 등에 필요한 휴직 기간과 대상 자녀, 급여 지급 여부를 회사가 확인해 주는 육아휴직 사용 확인서 양식입니다.",
+      "usage": "육아휴직 급여를 신청하거나 기관에 휴직 사실을 증명해야 할 때 근로자가 회사에 발급을 요청하고 회사가 내용을 확인해 내주는 서식입니다. 근로자 정보와 자녀 정보, 휴직 기간, 휴직 중 급여 지급 여부를 적고 회사 담당자가 확인란에 서명합니다. 자녀의 주민등록번호는 적지 않고 생년월일만 적습니다. 급여 신청에 필요한 서류와 기한은 기관 안내를 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 49692,
+        "docx": 38522,
+        "hwpx": 9542
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "근로자의 성명과 소속, 입사일을 적습니다.",
+        "자녀의 성명과 생년월일을 적습니다.",
+        "휴직 시작일과 종료일, 휴직 중 급여 지급 여부를 적습니다.",
+        "회사 담당자가 확인란에 서명하고 직인을 찍습니다."
+      ],
+      "faq": [
+        {
+          "q": "자녀 주민등록번호도 적어야 하나요?",
+          "a": "이 서식은 생년월일만 적습니다. 제출처가 따로 요구하면 해당 기관의 서식을 사용하십시오."
+        },
+        {
+          "q": "휴직 중 급여 지급 여부는 왜 적나요?",
+          "a": "휴직 기간에 회사가 준 금액이 있으면 급여 신청에 영향을 줄 수 있어 확인하는 항목입니다. 기준은 기관 안내를 보십시오."
+        },
+        {
+          "q": "휴직이 아직 끝나지 않았다면 어떻게 적나요?",
+          "a": "종료일에 예정일을 적고 비고에 예정이라고 표시하십시오. 종료 후 변경되면 다시 확인받는 것이 좋습니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 근로자",
+          "items": [
+            "성명",
+            "생년월일",
+            "소속",
+            "입사일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 대상 자녀",
+          "items": [
+            "자녀 성명"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 육아휴직 내용",
+          "items": [
+            "휴직 시작일",
+            "휴직 종료일",
+            "휴직 중 급여 지급",
+            "지급 금액·기간"
+          ],
+          "note": ""
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "parental-leave-request",
+        "gov-parental-leave-benefit",
+        "employment-certificate",
+        "gov-separation-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-27T13:56:07+09:00",
+      "updated_at": "2026-11-27T13:56:07+09:00",
       "downloads": 0
     },
     {
@@ -57515,6 +57932,109 @@
       "warnings": [],
       "created_at": "2026-11-04T11:59:52+09:00",
       "updated_at": "2026-11-04T11:59:52+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-medical-insurance-reimbursement-confirmation",
+      "title": "연말정산 실손의료보험금 수령 확인서",
+      "category": "public",
+      "subcategory": "tax",
+      "tags": [
+        "연말정산",
+        "실손보험",
+        "보험금수령",
+        "의료비공제",
+        "의료비"
+      ],
+      "summary": "연말정산 의료비 자료를 낼 때 실손의료보험 등으로 돌려받은 보험금 내역을 적어 회사에 함께 내는 수령 확인서 양식입니다.",
+      "usage": "병원비를 낸 뒤 보험사에서 보험금을 받았다면 의료비 자료에서 그 금액을 따로 밝혀야 하는 경우가 있습니다. 이 서식은 의료비를 낸 병원과 총 지출액, 받은 보험금과 수령일, 보험사 이름을 한곳에 정리해 회사 담당 부서에 내는 용도입니다. 보험금을 아직 받지 못했거나 청구 중이면 그 사실을 비고에 적으십시오. 공제 대상 여부와 계산은 세법과 회사 안내에 따라 달라지므로 제출 전에 담당 부서에 확인하십시오.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 62968,
+        "docx": 38813,
+        "hwpx": 10191
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "제출자의 성명·소속과 귀속 연도를 적습니다.",
+        "의료비를 낸 병원과 지출 금액을 표에 적습니다.",
+        "받은 보험금과 수령일, 보험사를 같은 줄에 적습니다.",
+        "청구 중인 건은 비고에 적고 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "보험금을 받지 않았다면 내야 하나요?",
+          "a": "받은 보험금이 없으면 따로 낼 필요가 없는 경우가 많습니다. 회사 안내를 먼저 확인하십시오."
+        },
+        {
+          "q": "다음 해에 받을 보험금은 어떻게 적나요?",
+          "a": "청구 중이거나 수령 예정이면 비고에 적어 두고, 처리 방법은 담당 부서에 문의하십시오."
+        },
+        {
+          "q": "영수증도 함께 내야 하나요?",
+          "a": "의료비 자료와 함께 내는 것이 일반적입니다. 필요한 증빙은 회사 안내를 따르십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 제출자",
+          "items": [
+            "성명",
+            "소속",
+            "귀속 연도",
+            "제출일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 의료비 지출 및 보험금 수령 내역",
+          "items": [
+            "병원·약국명",
+            "지출 금액",
+            "받은 보험금",
+            "수령일",
+            "보험사"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 특이사항",
+          "items": [],
+          "note": "청구 중이거나 다음 해에 받을 보험금이 있으면 병원명과 금액을 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-medical-expense-submission",
+        "medical-bill-itemization-request",
+        "year-end-correction-request",
+        "year-end-tax-checklist"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-27T13:55:59+09:00",
+      "updated_at": "2026-11-27T13:55:59+09:00",
       "downloads": 0
     },
     {

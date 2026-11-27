@@ -1,0 +1,79 @@
+id: parental-leave-confirmation
+title: 육아휴직 사용 확인서
+category: public
+subcategory: insurance
+tags: [육아휴직확인서, 육아휴직사용확인, 휴직기간확인, 육아휴직급여, 휴직증명]
+summary: 육아휴직 급여 신청 등에 필요한 휴직 기간과 대상 자녀, 급여 지급 여부를 회사가 확인해 주는 육아휴직 사용 확인서 양식입니다.
+usage: >
+  육아휴직 급여를 신청하거나 기관에 휴직 사실을 증명해야 할 때 근로자가 회사에 발급을 요청하고 회사가 내용을 확인해 내주는 서식입니다.
+  근로자 정보와 자녀 정보, 휴직 기간, 휴직 중 급여 지급 여부를 적고 회사 담당자가 확인란에 서명합니다.
+  자녀의 주민등록번호는 적지 않고 생년월일만 적습니다.
+  급여 신청에 필요한 서류와 기한은 기관 안내를 확인하십시오.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 근로자의 성명과 소속, 입사일을 적습니다.
+  - 자녀의 성명과 생년월일을 적습니다.
+  - 휴직 시작일과 종료일, 휴직 중 급여 지급 여부를 적습니다.
+  - 회사 담당자가 확인란에 서명하고 직인을 찍습니다.
+faq:
+  - q: 자녀 주민등록번호도 적어야 하나요?
+    a: 이 서식은 생년월일만 적습니다. 제출처가 따로 요구하면 해당 기관의 서식을 사용하십시오.
+  - q: 휴직 중 급여 지급 여부는 왜 적나요?
+    a: 휴직 기간에 회사가 준 금액이 있으면 급여 신청에 영향을 줄 수 있어 확인하는 항목입니다. 기준은 기관 안내를 보십시오.
+  - q: 휴직이 아직 끝나지 않았다면 어떻게 적나요?
+    a: 종료일에 예정일을 적고 비고에 예정이라고 표시하십시오. 종료 후 변경되면 다시 확인받는 것이 좋습니다.
+related: [parental-leave-request, gov-parental-leave-benefit, employment-certificate, gov-separation-confirmation]
+blocks:
+  - type: doc_title
+    text: 육아휴직 사용 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 근로자
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "생년월일", ""]
+      - ["소속", "", "입사일", ""]
+    sample_rows:
+      - ["", "김서연", "", "1992-03-15"]
+      - ["", "(주)한빛커머스 영업팀", "", "2019-04-01"]
+  - type: subtitle
+    text: 2. 대상 자녀
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["자녀 성명", "", "생년월일", ""]
+    sample_rows:
+      - ["", "홍하늘", "", "2026-02-10"]
+  - type: subtitle
+    text: 3. 육아휴직 내용
+  - type: grid
+    widths: [20, 30, 20, 30]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["휴직 시작일", "", "휴직 종료일", ""]
+      - ["휴직 중 급여 지급", "□ 없음  □ 있음", "지급 금액·기간", ""]
+      - ["비고", "", "", ""]
+    merges:
+      - [2, 1, 2, 3]
+    sample_rows:
+      - ["", "2026-09-01", "", "2027-08-31"]
+      - ["", "☑ 없음  □ 있음", "", ""]
+      - ["", "", "", ""]
+  - type: para
+    text: 위 사람이 위와 같이 육아휴직을 사용하였음을(사용 중임을) 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   27 일
+  - type: sign_line
+    labels: ["회사 담당자 (직인)"]
+    sample_names: [박민준]
+  - type: notice
+    text: 급여 신청에 필요한 서류와 기한은 기관 안내를 확인하십시오.
