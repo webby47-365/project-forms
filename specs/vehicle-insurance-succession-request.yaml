@@ -1,0 +1,73 @@
+id: vehicle-insurance-succession-request
+title: 자동차보험 승계 신청서
+category: public
+subcategory: vehicle
+tags: [자동차보험, 보험승계, 명의변경, 차량양도, 보험변경]
+summary: 차량을 사고팔거나 물려받을 때 기존 자동차보험 계약을 새 소유자에게 넘겨 달라고 요청하는 신청서입니다.
+usage: >
+  차량 명의가 바뀔 때 보험 계약을 새 소유자가 이어받도록 보험사에 신청하는 서식입니다.
+  양도인과 양수인 정보, 차량번호와 차종, 보험사와 증권번호, 승계 희망일을 적고 두 사람이 서명합니다.
+  승계 가능 여부와 보험료 정산은 보험사 약관에 따라 달라지므로 보험사에 먼저 확인하십시오.
+  주민등록번호는 적지 않으며 보험사가 따로 요구하면 안내에 따릅니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 양도인과 양수인의 성명과 연락처를 적습니다.
+  - 차량번호와 차종을 적습니다.
+  - 보험사, 증권번호, 승계 희망일을 적습니다.
+  - 날짜를 적고 양도인과 양수인이 서명합니다.
+faq:
+  - q: 보험은 자동으로 넘어가나요?
+    a: 아닙니다. 승계 가능 여부와 절차는 보험사마다 다르니 먼저 문의하십시오.
+  - q: 남은 보험료는 어떻게 되나요?
+    a: 정산 방식은 보험사 약관에 따릅니다. 이 서식은 승계 의사를 알리는 틀입니다.
+  - q: 이전등록도 이 서식으로 하나요?
+    a: 아닙니다. 이전등록은 별도 신청이 필요합니다.
+related: [gov-vehicle-transfer-registration, used-car-payment-receipt, vehicle-delivery-confirmation, vehicle-insurance-claim-poa]
+blocks:
+  - type: doc_title
+    text: 자동차보험 승계 신청서
+    spaced: false
+  - type: subtitle
+    text: 1. 당사자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["양도인 성명", "", "연락처", ""]
+      - ["양수인 성명", "", "연락처", ""]
+    sample_rows:
+      - ["", "홍길동", "", "010-1234-5678"]
+      - ["", "김서연", "", "010-9876-5432"]
+  - type: subtitle
+    text: 2. 차량 및 보험 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["차량번호", "", "차종", ""]
+      - ["보험사", "", "증권번호", ""]
+      - ["승계 희망일", "", "양도일", ""]
+    sample_rows:
+      - ["", "12가 3456", "", "소형 승용차"]
+      - ["", "한빛화재", "", "000-0000-000"]
+      - ["", "2026-12-05", "", "2026-12-05"]
+  - type: subtitle
+    text: 3. 요청 사항
+  - type: textbox
+    hint: "보험사에 전달할 내용이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "차량 양도에 따라 기존 자동차보험 계약의 승계 가능 여부와 절차를 안내해 주시기 바랍니다."
+  - type: para
+    text: 위와 같이 자동차보험 계약의 승계를 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   28 일
+  - type: sign_line
+    labels: ["양도인", "양수인"]
+    sample_names: [홍길동, 김서연]
+  - type: notice
+    text: 승계 가능 여부와 보험료 정산은 보험사 약관을 확인하십시오.

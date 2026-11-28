@@ -1,0 +1,69 @@
+id: year-end-birth-adoption-credit-confirmation
+title: 연말정산 출생·입양 자녀 공제 확인서
+category: public
+subcategory: family
+tags: [연말정산, 출생, 입양, 자녀공제, 세액공제, 자녀확인]
+summary: 올해 자녀가 태어났거나 입양된 근로자가 연말정산 담당자에게 자녀 정보와 출생·입양일을 알리는 확인서입니다.
+usage: >
+  한 해 동안 자녀가 태어나거나 입양된 근로자가 연말정산 담당자에게 해당 사실을 알릴 때 쓰는 서식입니다.
+  근로자 정보, 자녀의 성명·생년월일·관계, 출생 또는 입양일을 적고 서명합니다.
+  공제 여부와 금액은 국세청 기준과 회사 안내에 따라 정해지므로 이 서식은 사실을 알리는 틀로만 쓰십시오.
+  주민등록번호는 적지 않고 생년월일만 적습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 근로자 성명과 소속 부서를 적습니다.
+  - 자녀의 성명, 생년월일, 관계를 표에 적습니다.
+  - 출생일 또는 입양일을 구분해 적습니다.
+  - 확인 문구를 읽고 날짜와 서명을 적습니다.
+faq:
+  - q: 입양한 자녀도 이 서식을 쓰나요?
+    a: 네, 구분란에 입양을 표시하고 입양일을 적으면 됩니다. 제출 서류는 회사 안내를 확인하십시오.
+  - q: 자녀가 둘 이상이면 어떻게 적나요?
+    a: 표에 한 줄씩 이어서 적습니다. 칸이 모자라면 한 장을 더 쓰면 됩니다.
+  - q: 이 서식으로 공제가 확정되나요?
+    a: 아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오.
+related: [year-end-child-tax-credit-confirmation, year-end-dependent-change-notice, year-end-tax-checklist, family-relationship-confirmation]
+blocks:
+  - type: doc_title
+    text: 연말정산 출생·입양 자녀 공제 확인서
+    spaced: false
+  - type: subtitle
+    text: 1. 근로자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["성명", "", "소속 부서", ""]
+      - ["사번", "", "연락처", ""]
+    sample_rows:
+      - ["", "박민준", "", "영업지원팀"]
+      - ["", "A-1024", "", "010-1234-5678"]
+  - type: subtitle
+    text: 2. 자녀 내역
+  - type: table
+    widths: [8, 18, 14, 22, 14, 24]
+    header: ["No", 자녀 성명, 관계, 생년월일, 구분, 출생·입양일]
+    empty_rows: 4
+    row_height_mm: 8
+    body_align: center
+    sample_rows:
+      - ["1", "박서윤", "자녀", "2026-03-14", "출생", "2026-03-14"]
+  - type: subtitle
+    text: 3. 전달 사항
+  - type: textbox
+    hint: "담당자에게 알릴 내용이 있으면 적으십시오."
+    height_mm: 18
+    sample_text: "올해 자녀가 태어나 연말정산에 반영되도록 알립니다. 필요한 서류는 안내에 따라 제출하겠습니다."
+  - type: para
+    text: 위 내용이 사실과 다름이 없음을 확인합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   28 일
+  - type: sign_line
+    label: 작성자
+    sample_names: [박민준]
+  - type: notice
+    text: 공제 대상 여부와 금액은 국세청 기준과 회사 안내를 확인하십시오.

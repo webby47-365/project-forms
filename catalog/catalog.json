@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T13:56:07+09:00",
-  "count": 559,
+  "generated_at": "2026-11-28T13:41:34+09:00",
+  "count": 564,
   "forms": [
     {
       "id": "abandoned-vehicle-report",
@@ -44162,6 +44162,117 @@
       "seal": true
     },
     {
+      "id": "school-transfer-request",
+      "title": "전학 신청서",
+      "category": "edu",
+      "subcategory": "school",
+      "tags": [
+        "전학",
+        "전학신청",
+        "학교전학",
+        "학생이동",
+        "학부모신청"
+      ],
+      "summary": "이사 등으로 다른 학교로 옮기려는 학생의 보호자가 현재 학교와 희망 학교 정보를 적어 내는 전학 신청서입니다.",
+      "usage": "보호자가 자녀의 전학을 학교에 신청할 때 쓰는 서식입니다. 학생 정보, 현재 학교와 학년, 전학 희망 학교, 전학 사유와 희망일을 적고 보호자가 서명합니다. 전학 절차와 필요 서류는 교육청과 학교 안내에 따라 다르므로 학교 담당자에게 먼저 확인하십시오. 주민등록번호는 적지 않고 생년월일만 적습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 46877,
+        "docx": 38526,
+        "hwpx": 9556
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "학생 성명과 생년월일을 적습니다.",
+        "현재 학교와 학년·반을 적습니다.",
+        "전학 희망 학교와 희망일, 사유를 적습니다.",
+        "날짜를 적고 보호자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "전학 사유는 자세히 적어야 하나요?",
+          "a": "이사, 직장 이동처럼 간단히 적으면 됩니다. 학교가 따로 요구하면 안내에 따르십시오."
+        },
+        {
+          "q": "이 서식만 내면 전학이 끝나나요?",
+          "a": "아닙니다. 필요 서류와 절차는 학교와 교육청 안내를 확인하십시오."
+        },
+        {
+          "q": "희망 학교가 정해지지 않았으면요?",
+          "a": "희망 지역만 적고 학교 담당자와 상의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 학생 정보",
+          "items": [
+            "학생 성명",
+            "생년월일",
+            "현재 학교",
+            "학년·반"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 전학 정보",
+          "items": [
+            "희망 학교",
+            "희망일",
+            "전학 사유"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 보호자 정보",
+          "items": [
+            "보호자 성명",
+            "관계",
+            "연락처",
+            "주소"
+          ],
+          "note": ""
+        },
+        {
+          "title": "4. 전달 사항",
+          "items": [],
+          "note": "학교에 알릴 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "student-record-card",
+        "student-absence-notice",
+        "tuition-refund-request",
+        "move-in-report-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-28T13:41:33+09:00",
+      "updated_at": "2026-11-28T13:41:33+09:00",
+      "downloads": 0
+    },
+    {
       "id": "seal-certificate-poa",
       "title": "인감증명 발급 위임장",
       "category": "public",
@@ -52015,6 +52126,109 @@
       "downloads": 0
     },
     {
+      "id": "vehicle-insurance-succession-request",
+      "title": "자동차보험 승계 신청서",
+      "category": "public",
+      "subcategory": "vehicle",
+      "tags": [
+        "자동차보험",
+        "보험승계",
+        "명의변경",
+        "차량양도",
+        "보험변경"
+      ],
+      "summary": "차량을 사고팔거나 물려받을 때 기존 자동차보험 계약을 새 소유자에게 넘겨 달라고 요청하는 신청서입니다.",
+      "usage": "차량 명의가 바뀔 때 보험 계약을 새 소유자가 이어받도록 보험사에 신청하는 서식입니다. 양도인과 양수인 정보, 차량번호와 차종, 보험사와 증권번호, 승계 희망일을 적고 두 사람이 서명합니다. 승계 가능 여부와 보험료 정산은 보험사 약관에 따라 달라지므로 보험사에 먼저 확인하십시오. 주민등록번호는 적지 않으며 보험사가 따로 요구하면 안내에 따릅니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 48808,
+        "docx": 38500,
+        "hwpx": 9501
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "양도인과 양수인의 성명과 연락처를 적습니다.",
+        "차량번호와 차종을 적습니다.",
+        "보험사, 증권번호, 승계 희망일을 적습니다.",
+        "날짜를 적고 양도인과 양수인이 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "보험은 자동으로 넘어가나요?",
+          "a": "아닙니다. 승계 가능 여부와 절차는 보험사마다 다르니 먼저 문의하십시오."
+        },
+        {
+          "q": "남은 보험료는 어떻게 되나요?",
+          "a": "정산 방식은 보험사 약관에 따릅니다. 이 서식은 승계 의사를 알리는 틀입니다."
+        },
+        {
+          "q": "이전등록도 이 서식으로 하나요?",
+          "a": "아닙니다. 이전등록은 별도 신청이 필요합니다."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 당사자 정보",
+          "items": [
+            "양도인 성명",
+            "연락처",
+            "양수인 성명"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 차량 및 보험 정보",
+          "items": [
+            "차량번호",
+            "차종",
+            "보험사",
+            "증권번호",
+            "승계 희망일",
+            "양도일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 요청 사항",
+          "items": [],
+          "note": "보험사에 전달할 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "gov-vehicle-transfer-registration",
+        "used-car-payment-receipt",
+        "vehicle-delivery-confirmation",
+        "vehicle-insurance-claim-poa"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-28T13:41:31+09:00",
+      "updated_at": "2026-11-28T13:41:31+09:00",
+      "downloads": 0
+    },
+    {
       "id": "vehicle-lease-contract",
       "title": "자동차 임대차계약서",
       "category": "public",
@@ -56222,6 +56436,109 @@
       "seal": true
     },
     {
+      "id": "year-end-birth-adoption-credit-confirmation",
+      "title": "연말정산 출생·입양 자녀 공제 확인서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "연말정산",
+        "출생",
+        "입양",
+        "자녀공제",
+        "세액공제",
+        "자녀확인"
+      ],
+      "summary": "올해 자녀가 태어났거나 입양된 근로자가 연말정산 담당자에게 자녀 정보와 출생·입양일을 알리는 확인서입니다.",
+      "usage": "한 해 동안 자녀가 태어나거나 입양된 근로자가 연말정산 담당자에게 해당 사실을 알릴 때 쓰는 서식입니다. 근로자 정보, 자녀의 성명·생년월일·관계, 출생 또는 입양일을 적고 서명합니다. 공제 여부와 금액은 국세청 기준과 회사 안내에 따라 정해지므로 이 서식은 사실을 알리는 틀로만 쓰십시오. 주민등록번호는 적지 않고 생년월일만 적습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 57499,
+        "docx": 38713,
+        "hwpx": 9956
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "근로자 성명과 소속 부서를 적습니다.",
+        "자녀의 성명, 생년월일, 관계를 표에 적습니다.",
+        "출생일 또는 입양일을 구분해 적습니다.",
+        "확인 문구를 읽고 날짜와 서명을 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "입양한 자녀도 이 서식을 쓰나요?",
+          "a": "네, 구분란에 입양을 표시하고 입양일을 적으면 됩니다. 제출 서류는 회사 안내를 확인하십시오."
+        },
+        {
+          "q": "자녀가 둘 이상이면 어떻게 적나요?",
+          "a": "표에 한 줄씩 이어서 적습니다. 칸이 모자라면 한 장을 더 쓰면 됩니다."
+        },
+        {
+          "q": "이 서식으로 공제가 확정되나요?",
+          "a": "아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 근로자 정보",
+          "items": [
+            "성명",
+            "소속 부서",
+            "사번",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 자녀 내역",
+          "items": [
+            "자녀 성명",
+            "관계",
+            "생년월일",
+            "출생·입양일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 전달 사항",
+          "items": [],
+          "note": "담당자에게 알릴 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-child-tax-credit-confirmation",
+        "year-end-dependent-change-notice",
+        "year-end-tax-checklist",
+        "family-relationship-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-28T13:41:24+09:00",
+      "updated_at": "2026-11-28T13:41:24+09:00",
+      "downloads": 0
+    },
+    {
       "id": "year-end-card-usage-supplement-submission",
       "title": "연말정산 신용카드 사용액 보완 제출서",
       "category": "corp",
@@ -56608,6 +56925,107 @@
       "warnings": [],
       "created_at": "2026-11-18T13:08:47+09:00",
       "updated_at": "2026-11-18T13:08:47+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-deceased-dependent-notice",
+      "title": "연말정산 부양가족 사망 신고서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "연말정산",
+        "부양가족",
+        "사망",
+        "인적공제",
+        "가족변동"
+      ],
+      "summary": "한 해 동안 부양가족이 사망한 근로자가 연말정산 담당자에게 사망 사실과 사망일을 알리는 신고서입니다.",
+      "usage": "연중에 부양하던 가족이 사망한 근로자가 연말정산 담당자에게 그 사실을 알릴 때 쓰는 서식입니다. 근로자 정보와 해당 가족의 성명·관계·생년월일·사망일을 적고 서명합니다. 사망한 해의 공제 처리는 국세청 기준과 회사 안내에 따르므로 이 서식은 사실을 알리는 틀로만 쓰십시오. 주민등록번호와 사망 원인은 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 45406,
+        "docx": 38465,
+        "hwpx": 9408
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "근로자 성명과 소속 부서를 적습니다.",
+        "해당 가족의 성명, 관계, 생년월일을 적습니다.",
+        "사망일을 적습니다.",
+        "확인 문구를 읽고 날짜와 서명을 적습니다."
+      ],
+      "faq": [
+        {
+          "q": "사망 원인도 적어야 하나요?",
+          "a": "아니요, 이 서식에는 원인란이 없습니다. 사망일만 적으면 됩니다."
+        },
+        {
+          "q": "사망한 해에도 공제 대상인가요?",
+          "a": "요건에 따라 달라집니다. 국세청 기준과 회사 안내를 확인하십시오."
+        },
+        {
+          "q": "증빙서류가 필요한가요?",
+          "a": "제출 서류는 회사마다 다를 수 있으니 연말정산 담당자에게 문의하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 근로자 정보",
+          "items": [
+            "성명",
+            "소속 부서",
+            "사번",
+            "연락처"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 해당 가족 정보",
+          "items": [
+            "관계",
+            "생년월일",
+            "사망일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 전달 사항",
+          "items": [],
+          "note": "담당자에게 알릴 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-dependent-change-notice",
+        "year-end-dependent-duplicate-check",
+        "year-end-tax-checklist",
+        "family-relationship-confirmation"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-28T13:41:27+09:00",
+      "updated_at": "2026-11-28T13:41:27+09:00",
       "downloads": 0
     },
     {
@@ -58872,6 +59290,106 @@
       "warnings": [],
       "created_at": "2026-11-06T12:21:43+09:00",
       "updated_at": "2026-11-06T12:22:24+09:00",
+      "downloads": 0
+    },
+    {
+      "id": "year-end-spouse-income-confirmation",
+      "title": "연말정산 배우자 소득 확인서",
+      "category": "public",
+      "subcategory": "family",
+      "tags": [
+        "연말정산",
+        "배우자",
+        "소득확인",
+        "인적공제",
+        "배우자공제"
+      ],
+      "summary": "연말정산에서 배우자를 부양가족으로 올릴 때 배우자의 올해 소득 내역을 직접 적어 확인하는 서식입니다.",
+      "usage": "배우자 공제를 받으려는 근로자가 배우자의 올해 소득 종류와 금액을 적어 담당자에게 내는 서식입니다. 배우자 성명과 생년월일, 소득 종류별 금액을 적고 배우자가 서명합니다. 공제 가능 여부는 소득 기준 등 요건에 따라 달라지므로 국세청 기준과 회사 안내를 확인하십시오. 금액은 본인이 아는 범위에서 적고 주민등록번호는 적지 않습니다.\n",
+      "formats": [
+        "pdf",
+        "docx",
+        "hwpx"
+      ],
+      "file_sizes": {
+        "pdf": 54187,
+        "docx": 38637,
+        "hwpx": 9835
+      },
+      "pages": 1,
+      "previews": [
+        "preview-1.webp"
+      ],
+      "sample_preview": true,
+      "series": "",
+      "series_name": "",
+      "variant": "",
+      "variant_rank": 99,
+      "variant_use": "",
+      "howto": [
+        "근로자와 배우자의 성명을 적습니다.",
+        "배우자의 생년월일을 적습니다.",
+        "소득 종류별로 올해 금액을 표에 적습니다.",
+        "날짜를 적고 근로자와 배우자가 서명합니다."
+      ],
+      "faq": [
+        {
+          "q": "소득이 없으면 어떻게 적나요?",
+          "a": "금액란에 0 또는 \"없음\"이라고 적습니다."
+        },
+        {
+          "q": "정확한 금액을 모르면 어떻게 하나요?",
+          "a": "증빙 자료로 확인한 뒤 적는 것이 안전합니다. 제출 서류는 회사 안내를 확인하십시오."
+        },
+        {
+          "q": "이 서식으로 공제가 확정되나요?",
+          "a": "아닙니다. 공제 여부는 요건에 따라 정해지니 국세청 기준과 회사 안내를 확인하십시오."
+        }
+      ],
+      "outline": [
+        {
+          "title": "1. 인적사항",
+          "items": [
+            "근로자 성명",
+            "소속 부서",
+            "배우자 성명",
+            "생년월일"
+          ],
+          "note": ""
+        },
+        {
+          "title": "2. 올해 소득 내역",
+          "items": [
+            "소득 종류",
+            "금액(원)"
+          ],
+          "note": ""
+        },
+        {
+          "title": "3. 전달 사항",
+          "items": [],
+          "note": "소득 관련하여 알릴 내용이 있으면 적으십시오."
+        }
+      ],
+      "seal": true,
+      "from_request": false,
+      "related": [
+        "year-end-dependent-income-statement",
+        "year-end-couple-dependent-allocation",
+        "year-end-tax-checklist",
+        "year-end-dependent-duplicate-check"
+      ],
+      "featured": false,
+      "featured_rank": 99,
+      "version": 1,
+      "source": "original",
+      "source_note": "",
+      "law_ref": {},
+      "created_by": "manual",
+      "status": "published",
+      "warnings": [],
+      "created_at": "2026-11-28T13:41:29+09:00",
+      "updated_at": "2026-11-28T13:41:29+09:00",
       "downloads": 0
     },
     {

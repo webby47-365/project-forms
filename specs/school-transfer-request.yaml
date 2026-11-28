@@ -1,0 +1,85 @@
+id: school-transfer-request
+title: 전학 신청서
+category: edu
+subcategory: school
+tags: [전학, 전학신청, 학교전학, 학생이동, 학부모신청]
+summary: 이사 등으로 다른 학교로 옮기려는 학생의 보호자가 현재 학교와 희망 학교 정보를 적어 내는 전학 신청서입니다.
+usage: >
+  보호자가 자녀의 전학을 학교에 신청할 때 쓰는 서식입니다.
+  학생 정보, 현재 학교와 학년, 전학 희망 학교, 전학 사유와 희망일을 적고 보호자가 서명합니다.
+  전학 절차와 필요 서류는 교육청과 학교 안내에 따라 다르므로 학교 담당자에게 먼저 확인하십시오.
+  주민등록번호는 적지 않고 생년월일만 적습니다.
+source: original
+featured: false
+target_pages: 1
+howto:
+  - 학생 성명과 생년월일을 적습니다.
+  - 현재 학교와 학년·반을 적습니다.
+  - 전학 희망 학교와 희망일, 사유를 적습니다.
+  - 날짜를 적고 보호자가 서명합니다.
+faq:
+  - q: 전학 사유는 자세히 적어야 하나요?
+    a: 이사, 직장 이동처럼 간단히 적으면 됩니다. 학교가 따로 요구하면 안내에 따르십시오.
+  - q: 이 서식만 내면 전학이 끝나나요?
+    a: 아닙니다. 필요 서류와 절차는 학교와 교육청 안내를 확인하십시오.
+  - q: 희망 학교가 정해지지 않았으면요?
+    a: 희망 지역만 적고 학교 담당자와 상의하십시오.
+related: [student-record-card, student-absence-notice, tuition-refund-request, move-in-report-poa]
+blocks:
+  - type: doc_title
+    text: 전학 신청서
+    spaced: true
+  - type: subtitle
+    text: 1. 학생 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["학생 성명", "", "생년월일", ""]
+      - ["현재 학교", "", "학년·반", ""]
+    sample_rows:
+      - ["", "박서윤", "", "2015-06-21"]
+      - ["", "새길초등학교", "", "4학년 2반"]
+  - type: subtitle
+    text: 2. 전학 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    merges:
+      - [0, 1, 0, 3]
+    rows:
+      - ["희망 학교", "", "", ""]
+      - ["희망일", "", "전학 사유", ""]
+    sample_rows:
+      - ["", "한빛초등학교", "", ""]
+      - ["", "2026-12-21", "", "이사"]
+  - type: subtitle
+    text: 3. 보호자 정보
+  - type: grid
+    widths: [16, 34, 16, 34]
+    label_cols: [0, 2]
+    row_height_mm: 9
+    rows:
+      - ["보호자 성명", "", "관계", ""]
+      - ["연락처", "", "주소", ""]
+    sample_rows:
+      - ["", "박민준", "", "부"]
+      - ["", "010-1234-5678", "", "서울시 예시구 예시로 1"]
+  - type: subtitle
+    text: 4. 전달 사항
+  - type: textbox
+    hint: "학교에 알릴 내용이 있으면 적으십시오."
+    height_mm: 16
+    sample_text: "이사로 인해 전학을 신청합니다. 필요한 서류는 안내에 따라 제출하겠습니다."
+  - type: para
+    text: 위와 같이 전학을 신청합니다.
+    align: center
+  - type: date_line
+    sample_text: 2026 년   11 월   28 일
+  - type: sign_line
+    label: 보호자
+    sample_names: [박민준]
+  - type: notice
+    text: 전학 절차와 필요 서류는 학교와 교육청 안내를 확인하십시오.
